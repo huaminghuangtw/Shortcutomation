@@ -1,0 +1,166 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "9FE7F550-03C5-4CA4-8D16-03C92255C406"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🔎 What do you want to search?\n￼\n→ Press \"Done\" to view journals",
+                        "attachmentsByRange": {
+                            "{31, 1}": {
+                                "OutputUUID": "9FE7F550-03C5-4CA4-8D16-03C92255C406",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "4FC2E11D-E9CE-40A1-95B8-DFDA5BBC7DAA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "WFAskActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "4FC2E11D-E9CE-40A1-95B8-DFDA5BBC7DAA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "778856F5-3F59-4D07-9A7C-4D1B98CF1C61"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "778856F5-3F59-4D07-9A7C-4D1B98CF1C61",
+                            "Type": "ActionOutput",
+                            "OutputName": "Provided Input"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "2CA851D3-FA74-477D-AAA1-B50DA364D7D6",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "778856F5-3F59-4D07-9A7C-4D1B98CF1C61",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "248731B4-AC30-4D31-8EDD-10912ED28C2F",
+                    "workflowName": "Search in Daily Bullet Journals (Notion)",
+                    "isSelf": false
+                },
+                "UUID": "A0B39F60-7E37-48A6-B77E-0FE1979E18E6",
+                "WFWorkflowName": "Search in Daily Bullet Journals (Notion)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "778856F5-3F59-4D07-9A7C-4D1B98CF1C61",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "BF38ADE2-5DAA-40CB-9721-7D6E3B3671AF",
+                    "workflowName": "👀 Show Search Results in Daily-Bullet-Journal DB",
+                    "isSelf": false
+                },
+                "UUID": "7D8D95CE-E097-43FD-9DA0-6EC12C43093A",
+                "WFWorkflowName": "👀 Show Search Results in Daily-Bullet-Journal DB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2CA851D3-FA74-477D-AAA1-B50DA364D7D6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "231963F2-C559-4ACE-B3DE-15508CBC1F21",
+                    "workflowName": "Open All Daily Bullet Journals",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Open All Daily Bullet Journals",
+                "UUID": "17468F3F-8BC0-41E1-B9BE-5293AC855423"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2CA851D3-FA74-477D-AAA1-B50DA364D7D6",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 3,
+            "Text": "Notion API Key"
+        },
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 5,
+            "Text": "Database ID"
+        }
+    ],
+    "WFWorkflowTypes": [
+        "QuickActions"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

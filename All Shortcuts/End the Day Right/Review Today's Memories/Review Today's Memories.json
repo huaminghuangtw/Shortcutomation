@@ -1,0 +1,193 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "A0C94307-6713-40D9-A870-11D2E377530A",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8389C34E-9B96-4E21-A51C-1DC6B0A82055"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+            "WFWorkflowActionParameters": {
+                "fileName": "Daily Routine",
+                "UUID": "9DCA9604-17C4-4AB7-A5C7-E4AAB79596F3",
+                "parameter": {
+                    "Value": {
+                        "OutputUUID": "8389C34E-9B96-4E21-A51C-1DC6B0A82055",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL Encoded Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "A0C94307-6713-40D9-A870-11D2E377530A",
+                "UUID": "11D82252-166A-4F38-90AA-5BFD98C1DF73"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "C0F26DDA-7E6B-44C9-8BD0-47A42F0CFF2A",
+                    "workflowName": "🎞️ My \"Photos\" Manager",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🎞️ My \"Photos\" Manager",
+                "UUID": "382876AF-DCAC-4A72-B9CD-03C5D9213C8C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4FA3149-9E96-4CF7-A822-8021FB2E247E",
+                    "workflowName": "💫 Organize Today's Photos",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "💫 Organize Today's Photos",
+                "UUID": "7D1242AD-7781-44CB-9457-84DD57325EF8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+                    "workflowName": "getDayOfWeek",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "getDayOfWeek",
+                "UUID": "8649AC4B-0073-474D-9874-7B4C391375AB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "8649AC4B-0073-474D-9874-7B4C391375AB",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sunday",
+                "GroupingIdentifier": "FD5999BB-551A-4D6B-9202-B1985A01D20B",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "16",
+                "UUID": "DEB24506-43EC-4F8C-86A2-8F4925D593D5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DEB24506-43EC-4F8C-86A2-8F4925D593D5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
+                    "workflowName": "Open My iPhone Shortcut(s)",
+                    "isSelf": false
+                },
+                "UUID": "A227E079-3907-4414-A40B-BE24F7C2B931",
+                "WFWorkflowName": "Open My iPhone Shortcut(s)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "FD5999BB-551A-4D6B-9202-B1985A01D20B",
+                "UUID": "28F5F12E-0CD7-4497-BC60-077AA4088DF5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "28F5F12E-0CD7-4497-BC60-077AA4088DF5",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

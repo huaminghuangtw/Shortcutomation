@@ -1,0 +1,147 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61459
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.photos",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "Enumeration": {
+                                        "Value": "Unsorted",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Album"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "UUID": "807EBAED-B4DE-451F-BC0B-F15145EC0B9C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "807EBAED-B4DE-451F-BC0B-F15145EC0B9C",
+                            "Type": "ActionOutput",
+                            "OutputName": "Photos"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "8E16C3BD-9146-42C2-A3E4-A6BB0B09086E",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "co.slidebox.Slidebox",
+                    "Name": "Slidebox",
+                    "TeamIdentifier": "J56WWFX4H2"
+                },
+                "WFAppIdentifier": "co.slidebox.Slidebox",
+                "UUID": "AAEBB41F-9078-4EDD-970A-7C650675DF5A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "34",
+                "UUID": "0E194906-9136-41EC-B9CD-D2B5F8364537"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0E194906-9136-41EC-B9CD-D2B5F8364537",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
+                    "workflowName": "Open My iPhone Shortcut(s)",
+                    "isSelf": false
+                },
+                "UUID": "174BF10A-AD61-4350-BB6C-A1E6F0A75790",
+                "WFWorkflowName": "Open My iPhone Shortcut(s)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8E16C3BD-9146-42C2-A3E4-A6BB0B09086E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "✅ All photos have been sorted!",
+                "UUID": "F342CC35-29B2-42A8-8880-73EC3C70FBC6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F342CC35-29B2-42A8-8880-73EC3C70FBC6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "1D7446C1-C862-4CD1-93C9-C38D42D2BB04",
+                    "workflowName": "Show Text Banner",
+                    "isSelf": false
+                },
+                "UUID": "239FBA9E-6481-42BF-AE8F-476CD83C0F8A",
+                "WFWorkflowName": "Show Text Banner"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "8E16C3BD-9146-42C2-A3E4-A6BB0B09086E",
+                "UUID": "69E2F9EB-4AA4-48E9-8D03-68A091349DED"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

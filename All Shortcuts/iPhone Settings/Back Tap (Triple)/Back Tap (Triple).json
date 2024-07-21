@@ -1,0 +1,178 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "7A801488-E9F5-4D57-BB38-F8ED1A5AB020",
+                    "workflowName": "Set Average Brightness",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Set Average Brightness",
+                "UUID": "3EB9CDEF-0540-4C12-90D5-B5C5221400DD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Ideal Day.Unwind Start Time",
+                "UUID": "BB6098D8-1445-4D1D-9174-1BF110FFB779"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Ideal Day.Unwind End Time",
+                "UUID": "93D1F01E-C1C5-4B29-890B-880D1BCC21CC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "BB6098D8-1445-4D1D-9174-1BF110FFB779",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentDate"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFAnotherDate": {
+                    "Value": {
+                        "OutputUUID": "93D1F01E-C1C5-4B29-890B-880D1BCC21CC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "BDCE3C77-FBE6-44DE-B7D2-4CBCCF4A1ED0",
+                "WFCondition": 1003
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {
+                "UUID": "403EA178-0028-4918-A7B3-56CD8D7CFCFC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BDCE3C77-FBE6-44DE-B7D2-4CBCCF4A1ED0",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "1CBABAC6-1319-4F97-9CCF-C3ECA062B8E8",
+                    "workflowName": "⏸️ Pause App Off Time",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "⏸️ Pause App Off Time",
+                "UUID": "353F512F-1BC2-4D75-A502-D516F25F18FB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BDCE3C77-FBE6-44DE-B7D2-4CBCCF4A1ED0",
+                "UUID": "D6F4510B-751C-4EA9-B6C0-53D564E93ECE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Blocked Apps",
+                "UUID": "20A5AC6E-9A7E-4139-92FB-4610707A2711"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "20A5AC6E-9A7E-4139-92FB-4610707A2711",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFChooseFromListActionPrompt": "👇Select one or multiple👇",
+                "UUID": "CBD03F9E-93F7-4924-B830-779802D1E986",
+                "WFChooseFromListActionSelectMultiple": true,
+                "WFChooseFromListActionSelectAll": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CBD03F9E-93F7-4924-B830-779802D1E986",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "7E933B33-4A1B-4B7B-9AC2-2884D7A46F85",
+                    "workflowName": "Batch Open Apps",
+                    "isSelf": false
+                },
+                "UUID": "C2A92145-8085-46C3-BC13-6F384B7158EA",
+                "WFWorkflowName": "Batch Open Apps"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

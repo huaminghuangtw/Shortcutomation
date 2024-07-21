@@ -1,0 +1,218 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 946986751,
+        "WFWorkflowIconGlyphNumber": 61444
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "E85F4F61-32A6-486E-8656-3D425E75DA34",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "UUID": "9CA546BE-40CB-4B35-9F18-6616424F488E",
+                "WFInputType": "Text",
+                "WFAskActionPrompt": "🤖 Where are you going? (address)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9CA546BE-40CB-4B35-9F18-6616424F488E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "Destination"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E85F4F61-32A6-486E-8656-3D425E75DA34",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "Destination"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E85F4F61-32A6-486E-8656-3D425E75DA34",
+                "UUID": "5D6AC0D1-7905-42FA-A840-402DFC750F9C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettraveltime",
+            "WFWorkflowActionParameters": {
+                "WFGetDirectionsActionMode": "Transit",
+                "WFDestination": {
+                    "Value": {
+                        "VariableName": "Destination",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "F542DE77-5A42-4972-80F4-CEC6FA0F61BD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F542DE77-5A42-4972-80F4-CEC6FA0F61BD",
+                                "Type": "ActionOutput",
+                                "OutputName": "Travel Time"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateFormatStyle": "None",
+                "UUID": "4919D68B-6222-425B-8A9A-F0A09DC82FF5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🤖 It'll take you ￼ to arrive at ￼ — you should arrive around ￼ if you leave now. :-)",
+                        "attachmentsByRange": {
+                            "{18, 1}": {
+                                "OutputUUID": "F542DE77-5A42-4972-80F4-CEC6FA0F61BD",
+                                "Type": "ActionOutput",
+                                "OutputName": "Travel Time"
+                            },
+                            "{33, 1}": {
+                                "VariableName": "Destination",
+                                "Type": "Variable"
+                            },
+                            "{62, 1}": {
+                                "OutputUUID": "4919D68B-6222-425B-8A9A-F0A09DC82FF5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "43541741-09C2-484E-AC68-32C140163EA8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "43541741-09C2-484E-AC68-32C140163EA8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Google Maps Universal (Cross-Platform) URLs:\n\nhttps://developers.google.com/maps/documentation/urls/get-started"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Destination",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "5A5F350E-882F-40F0-AC7D-2AD5EF18E453"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "https://www.google.com/maps/dir/?api=1&destination=￼",
+                        "attachmentsByRange": {
+                            "{51, 1}": {
+                                "OutputUUID": "5A5F350E-882F-40F0-AC7D-2AD5EF18E453",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "901B31E8-FFDD-498B-A0B4-92DE9125CD2F"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFLocation",
+            "Category": "Parameter",
+            "ActionIndex": 1,
+            "Text": "What's your home address?"
+        }
+    ],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

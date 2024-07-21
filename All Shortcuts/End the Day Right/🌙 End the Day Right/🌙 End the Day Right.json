@@ -1,0 +1,101 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 59782
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+            "WFWorkflowActionParameters": {
+                "UUID": "D68D1F70-B1F8-4123-AD72-EFB65D344B3B",
+                "Folder": {
+                    "Identifier": "CEDF21D7-4E55-4C50-BE94-5750D2032F29",
+                    "DisplayString": "End the Day Right"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": ",",
+                "UUID": "3541B388-F515-47E2-A69B-39B7C5BC094D",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "D68D1F70-B1F8-4123-AD72-EFB65D344B3B",
+                        "Type": "ActionOutput",
+                        "OutputName": "My Shortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "3541B388-F515-47E2-A69B-39B7C5BC094D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Combined Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "36126734-5700-48C9-A2C6-31D1D3539377"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+            "WFWorkflowActionParameters": {
+                "fileName": "Daily Routine",
+                "UUID": "508D2B41-0FD6-4282-A5BE-89D0F2905C0E",
+                "parameter": {
+                    "Value": {
+                        "OutputUUID": "36126734-5700-48C9-A2C6-31D1D3539377",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL Encoded Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "F0D7A53D-9AD1-41ED-91D3-73091FFC67D9",
+                    "workflowName": "Prep 🌙 End the Day Right",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Prep 🌙 End the Day Right",
+                "UUID": "13652439-1E12-4C62-A8BF-58BDD6320225"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "Category": "Parameter",
+            "ParameterKey": "WFTextActionText",
+            "ActionIndex": 2,
+            "Text": "What's your first name?",
+            "DefaultValue": ""
+        }
+    ],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

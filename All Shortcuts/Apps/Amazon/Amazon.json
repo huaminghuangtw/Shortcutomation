@@ -1,0 +1,179 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤡 Which one?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "🔎 Search Items",
+                    "🛒 Open Shopping Cart",
+                    "🧾 Open My Orders"
+                ],
+                "GroupingIdentifier": "DFE9D4F1-E298-4A06-A7AD-B424A1AF9031"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "🔎 Search Items",
+                "GroupingIdentifier": "DFE9D4F1-E298-4A06-A7AD-B424A1AF9031",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "WFAskActionPrompt": "❓❓❓",
+                "UUID": "8AFBDE18-7A64-480E-A3CF-F1DD82A27B51"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8AFBDE18-7A64-480E-A3CF-F1DD82A27B51",
+                                "Type": "ActionOutput",
+                                "OutputName": "Provided Input"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "172EF086-D09E-41F2-B9C3-E18497C34000"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "https://www.amazon.de/s?k=￼",
+                        "attachmentsByRange": {
+                            "{26, 1}": {
+                                "OutputUUID": "172EF086-D09E-41F2-B9C3-E18497C34000",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9251CE28-82D5-4596-A2AA-6C84966C2F99"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "🛒 Open Shopping Cart",
+                "GroupingIdentifier": "DFE9D4F1-E298-4A06-A7AD-B424A1AF9031",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "https://www.amazon.de/-/en/gp/aw/c?ref_=navm_hdr_cart",
+                "UUID": "15B1811C-1503-4A22-A00C-9F554D30852A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "🧾 Open My Orders",
+                "GroupingIdentifier": "DFE9D4F1-E298-4A06-A7AD-B424A1AF9031",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "https://www.amazon.de/-/en/gp/css/order-history",
+                "UUID": "54BB738F-67ED-4B8A-B993-B86352EE8CC9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DFE9D4F1-E298-4A06-A7AD-B424A1AF9031",
+                "UUID": "15959688-C523-46FF-907D-3EA873BD4B84"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.link",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "15959688-C523-46FF-907D-3EA873BD4B84",
+                                "Type": "ActionOutput",
+                                "OutputName": "Menu Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1334C274-2B6E-4F70-87A7-2191075F52C5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1334C274-2B6E-4F70-87A7-2191075F52C5",
+                        "Type": "ActionOutput",
+                        "OutputName": "URLs"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8B03160E-DBFD-47AA-A2EA-1C0949510B20"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}
