@@ -1,5 +1,15 @@
 # Welcome to my  Apple's Shortcuts Gallery
 
+<p align="left">
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery"><img src="https://badges.frapsoft.com/os/v3/open-source.svg?v=103" alt="Open Source Love"></a><br/>
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/releases"><img src="https://img.shields.io/github/v/release/huaminghuangtw/Apple-Shortcuts-Gallery.svg?display_name=tag&style=plastic&color=lightgrey"></a>
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tags"><img src="https://img.shields.io/github/v/tag/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=plastic&color=lightgrey"></a><br/> 
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/stargazers"><img src="https://img.shields.io/github/stars/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social"></a>
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/fork"><img src="https://img.shields.io/github/forks/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social"></a>
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/issues"><img src="https://img.shields.io/github/issues/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social&logo=github"></a>
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/pulls"><img src="https://img.shields.io/github/issues-pr/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social&logo=github"></a>
+</p>
+
 > Latest Update: 2024-07-21  
 
 ## <a id="stats" />📊 Shortcuts Library Stats [^1]
