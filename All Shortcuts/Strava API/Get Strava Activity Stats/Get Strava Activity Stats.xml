@@ -8,6 +8,15 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>https://developers.strava.com/docs/reference/#api-Athletes-getStats</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -20,12 +29,12 @@
 					<key>isSelf</key>
 					<false/>
 					<key>workflowIdentifier</key>
-					<string>832F2594-7D68-46A0-A869-13613662F4A2</string>
+					<string>2F0DF206-94E7-4B0B-932C-9218D668A5DD</string>
 					<key>workflowName</key>
-					<string>Get Strava API Access Token</string>
+					<string>Refresh Strava API Access Token</string>
 				</dict>
 				<key>WFWorkflowName</key>
-				<string>Get Strava API Access Token</string>
+				<string>Refresh Strava API Access Token</string>
 			</dict>
 		</dict>
 		<dict>
@@ -34,21 +43,56 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
-				<string>athleteID</string>
+				<string>athlete_id</string>
 				<key>UUID</key>
-				<string>48D97B5C-795E-43F6-A077-8B3997246B19</string>
+				<string>7BB7E8CE-4AD7-446A-B29B-2F1761CD0DFA</string>
 				<key>keyPath</key>
-				<string>Strava.athleteID</string>
+				<string>API Credentials.Strava.athlete_id</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.dictionary</string>
+			<string>com.alexhay.ToolboxProForShortcuts.BuildURLIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>DA6C50E8-8E35-4865-B7C1-5D43783AEC42</string>
-				<key>WFItems</key>
+				<string>0D8615C3-EDED-4D26-A9BC-505A9D8F3402</string>
+				<key>host</key>
+				<string>www.strava.com</string>
+				<key>path</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{17, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>athlete_id</string>
+								<key>OutputUUID</key>
+								<string>7BB7E8CE-4AD7-446A-B29B-2F1761CD0DFA</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>/api/v3/athletes/￼/stats</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowHeaders</key>
+				<false/>
+				<key>UUID</key>
+				<string>B98C7913-DF8E-4D00-AD9C-EEC606816235</string>
+				<key>WFHTTPHeaders</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -62,7 +106,7 @@
 									<key>Value</key>
 									<dict>
 										<key>string</key>
-										<string>accessToken</string>
+										<string>Authorization</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -73,7 +117,7 @@
 									<dict>
 										<key>attachmentsByRange</key>
 										<dict>
-											<key>{0, 1}</key>
+											<key>{7, 1}</key>
 											<dict>
 												<key>OutputName</key>
 												<string>accessToken</string>
@@ -84,43 +128,7 @@
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>￼</string>
-									</dict>
-									<key>WFSerializationType</key>
-									<string>WFTextTokenString</string>
-								</dict>
-							</dict>
-							<dict>
-								<key>WFItemType</key>
-								<integer>0</integer>
-								<key>WFKey</key>
-								<dict>
-									<key>Value</key>
-									<dict>
-										<key>string</key>
-										<string>athleteID</string>
-									</dict>
-									<key>WFSerializationType</key>
-									<string>WFTextTokenString</string>
-								</dict>
-								<key>WFValue</key>
-								<dict>
-									<key>Value</key>
-									<dict>
-										<key>attachmentsByRange</key>
-										<dict>
-											<key>{0, 1}</key>
-											<dict>
-												<key>OutputName</key>
-												<string>athleteID</string>
-												<key>OutputUUID</key>
-												<string>48D97B5C-795E-43F6-A077-8B3997246B19</string>
-												<key>Type</key>
-												<string>ActionOutput</string>
-											</dict>
-										</dict>
-										<key>string</key>
-										<string>￼</string>
+										<string>Bearer ￼</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -131,32 +139,27 @@
 					<key>WFSerializationType</key>
 					<string>WFDictionaryFieldValue</string>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>dk.simonbs.Scriptable.ParameterizedRunScriptIntent</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>ShowWhenRun</key>
-				<false/>
-				<key>UUID</key>
-				<string>BA4DD4D6-B216-43F0-A7C1-4444FEBCEB55</string>
-				<key>fileName</key>
-				<string>Get Strava Activity Stats</string>
-				<key>parameter</key>
+				<key>WFURL</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>OutputName</key>
-						<string>Dictionary</string>
-						<key>OutputUUID</key>
-						<string>DA6C50E8-8E35-4865-B7C1-5D43783AEC42</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>URL</string>
+								<key>OutputUUID</key>
+								<string>0D8615C3-EDED-4D26-A9BC-505A9D8F3402</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
 					</dict>
 					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
+					<string>WFTextTokenString</string>
 				</dict>
 			</dict>
 		</dict>
@@ -174,9 +177,9 @@
 							<key>{0, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Output</string>
+								<string>Contents of URL</string>
 								<key>OutputUUID</key>
-								<string>BA4DD4D6-B216-43F0-A7C1-4444FEBCEB55</string>
+								<string>B98C7913-DF8E-4D00-AD9C-EEC606816235</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -199,9 +202,9 @@
 	<key>WFWorkflowIcon</key>
 	<dict>
 		<key>WFWorkflowIconGlyphNumber</key>
-		<integer>59697</integer>
+		<integer>61440</integer>
 		<key>WFWorkflowIconStartColor</key>
-		<integer>4251333119</integer>
+		<integer>2846468607</integer>
 	</dict>
 	<key>WFWorkflowImportQuestions</key>
 	<array/>
