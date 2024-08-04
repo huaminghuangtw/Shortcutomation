@@ -1,0 +1,23 @@
+name: Auto Create Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: CHANGELOG.md
+          draft: false
+          prerelease: false
+          discussion_category_name: Show and tell
+          generate_release_notes: true
+          make_latest: true
+          token: ${{ secrets.APPLE_SHORTCUTS_GALLERY }}
