@@ -8,20 +8,28 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.dictionary</string>
+			<string>dk.simonbs.DataJar.GetValueIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>FA71DD06-1640-40AD-B35B-38E97D9E6BC6</string>
-				<key>WFInput</key>
+				<string>4B6A94B2-CC84-40AD-9902-CB2AD3039BC3</string>
+				<key>keyPath</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>Type</key>
-						<string>ExtensionInput</string>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{30, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>ExtensionInput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>Reminder Lists.EvergreenLists.￼</string>
 					</dict>
 					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
+					<string>WFTextTokenString</string>
 				</dict>
 			</dict>
 		</dict>
@@ -55,21 +63,8 @@
 										<dict>
 											<key>Value</key>
 											<dict>
-												<key>Aggrandizements</key>
-												<array>
-													<dict>
-														<key>DictionaryKey</key>
-														<string>reminderListName</string>
-														<key>Type</key>
-														<string>WFDictionaryValueVariableAggrandizement</string>
-													</dict>
-												</array>
-												<key>OutputName</key>
-												<string>Dictionary</string>
-												<key>OutputUUID</key>
-												<string>FA71DD06-1640-40AD-B35B-38E97D9E6BC6</string>
 												<key>Type</key>
-												<string>ActionOutput</string>
+												<string>ExtensionInput</string>
 											</dict>
 											<key>WFSerializationType</key>
 											<string>WFTextTokenAttachment</string>
@@ -263,14 +258,31 @@
 						<dict>
 							<key>{2, 1}</key>
 							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFDictionaryContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>DictionaryKey</key>
+										<string>headerTitle</string>
+										<key>Type</key>
+										<string>WFDictionaryValueVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Value</string>
+								<key>OutputUUID</key>
+								<string>4B6A94B2-CC84-40AD-9902-CB2AD3039BC3</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>| ￼ | Notes |
+						<string>| ￼ | Note |
 | --- | --- |</string>
 					</dict>
 					<key>WFSerializationType</key>
@@ -463,6 +475,40 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>Notes</string>
+				<key>UUID</key>
+				<string>DAFAF82F-8EF2-4F22-91B3-D386D2153937</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item 3</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>4E87BADF-ACE9-44B5-9E41-30FD93D50FEF</string>
+					<key>workflowName</key>
+					<string>Sanity Check Markdown Content</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Sanity Check Markdown Content</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.conditional</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -518,10 +564,12 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
+								<key>OutputName</key>
+								<string>Notes</string>
+								<key>OutputUUID</key>
+								<string>DAFAF82F-8EF2-4F22-91B3-D386D2153937</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item 3</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -556,10 +604,12 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
+								<key>OutputName</key>
+								<string>Notes</string>
+								<key>OutputUUID</key>
+								<string>DAFAF82F-8EF2-4F22-91B3-D386D2153937</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item 3</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -738,6 +788,40 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>Title</string>
+				<key>UUID</key>
+				<string>7E20CF85-CD75-45BA-B094-422FE9ABB343</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item 2</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>4E87BADF-ACE9-44B5-9E41-30FD93D50FEF</string>
+					<key>workflowName</key>
+					<string>Sanity Check Markdown Content</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Sanity Check Markdown Content</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -751,10 +835,12 @@
 						<dict>
 							<key>{2, 1}</key>
 							<dict>
+								<key>OutputName</key>
+								<string>Title</string>
+								<key>OutputUUID</key>
+								<string>7E20CF85-CD75-45BA-B094-422FE9ABB343</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item 2</string>
+								<string>ActionOutput</string>
 							</dict>
 							<key>{6, 1}</key>
 							<dict>
@@ -877,28 +963,16 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{139, 1}</key>
+							<key>{172, 1}</key>
 							<dict>
 								<key>Aggrandizements</key>
 								<array>
 									<dict>
-										<key>DictionaryKey</key>
-										<string>reminderListName</string>
+										<key>CoercionItemClass</key>
+										<string>WFDictionaryContentItem</string>
 										<key>Type</key>
-										<string>WFDictionaryValueVariableAggrandizement</string>
+										<string>WFCoercionVariableAggrandizement</string>
 									</dict>
-								</array>
-								<key>OutputName</key>
-								<string>Dictionary</string>
-								<key>OutputUUID</key>
-								<string>FA71DD06-1640-40AD-B35B-38E97D9E6BC6</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-							<key>{285, 1}</key>
-							<dict>
-								<key>Aggrandizements</key>
-								<array>
 									<dict>
 										<key>DictionaryKey</key>
 										<string>spreadsheetId</string>
@@ -907,13 +981,13 @@
 									</dict>
 								</array>
 								<key>OutputName</key>
-								<string>Dictionary</string>
+								<string>Value</string>
 								<key>OutputUUID</key>
-								<string>FA71DD06-1640-40AD-B35B-38E97D9E6BC6</string>
+								<string>4B6A94B2-CC84-40AD-9902-CB2AD3039BC3</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
-							<key>{330, 1}</key>
+							<key>{208, 1}</key>
 							<dict>
 								<key>Aggrandizements</key>
 								<array>
@@ -929,14 +1003,14 @@
 								<key>Type</key>
 								<string>CurrentDate</string>
 							</dict>
-							<key>{431, 1}</key>
+							<key>{312, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
 								<string>ToC</string>
 							</dict>
-							<key>{434, 1}</key>
+							<key>{315, 1}</key>
 							<dict>
 								<key>OutputName</key>
 								<string>mainContent</string>
@@ -945,16 +1019,20 @@
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
+							<key>{32, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>ExtensionInput</string>
+							</dict>
 						</dict>
 						<key>string</key>
-						<string>&lt;div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; text-align: center;"&gt;
-Welcome to my evergreen list "￼." &lt;br&gt; Feel free to download it in PDF, CSV, Microsoft Excel, or any other preferred format via &lt;a href="https://docs.google.com/spreadsheets/d/￼"&gt;this link&lt;/a&gt;!
-&lt;/div&gt;
+						<string>| Welcome to my evergreen list "￼." &lt;br&gt; Feel free to download it in PDF, CSV, Microsoft Excel, or any other preferred format [here](https://docs.google.com/spreadsheets/d/￼)! |
+| :---: |
 
 &gt; **Last Update:** ￼  
-&gt; Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️  
+&gt; Curated by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️  
 
-# Table of Contents
+# 📑 Table of Contents
 
 ￼
 
@@ -996,21 +1074,8 @@ Welcome to my evergreen list "￼." &lt;br&gt; Feel free to download it in PDF, 
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
-								<key>Aggrandizements</key>
-								<array>
-									<dict>
-										<key>DictionaryKey</key>
-										<string>reminderListName</string>
-										<key>Type</key>
-										<string>WFDictionaryValueVariableAggrandizement</string>
-									</dict>
-								</array>
-								<key>OutputName</key>
-								<string>Dictionary</string>
-								<key>OutputUUID</key>
-								<string>FA71DD06-1640-40AD-B35B-38E97D9E6BC6</string>
 								<key>Type</key>
-								<string>ActionOutput</string>
+								<string>ExtensionInput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -1036,21 +1101,8 @@ Welcome to my evergreen list "￼." &lt;br&gt; Feel free to download it in PDF, 
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
-								<key>Aggrandizements</key>
-								<array>
-									<dict>
-										<key>DictionaryKey</key>
-										<string>reminderListName</string>
-										<key>Type</key>
-										<string>WFDictionaryValueVariableAggrandizement</string>
-									</dict>
-								</array>
-								<key>OutputName</key>
-								<string>Dictionary</string>
-								<key>OutputUUID</key>
-								<string>FA71DD06-1640-40AD-B35B-38E97D9E6BC6</string>
 								<key>Type</key>
-								<string>ActionOutput</string>
+								<string>ExtensionInput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -1072,7 +1124,7 @@ Welcome to my evergreen list "￼." &lt;br&gt; Feel free to download it in PDF, 
 						<key>crossDeviceItemID</key>
 						<string>docs.icloud.com:com.apple.CloudDocs/22362A82-A46C-440F-89FB-352DE861EE60/f1e4c30f38ff24106eb8159f36d13cd90dc73a66</string>
 						<key>fileProviderDomainID</key>
-						<string>com.apple.CloudDocs.iCloudDriveFileProvider/8CD4A3FB-3479-45CB-829A-CE2FA3119626</string>
+						<string>com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185</string>
 						<key>relativeSubpath</key>
 						<string>iCloud~md~obsidian/Documents/Second-Brain/EvergreenLists</string>
 					</dict>
