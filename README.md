@@ -10,26 +10,40 @@
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/pulls"><img src="https://img.shields.io/github/issues-pr/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social&logo=github"></a>
 </p>
 
-> **Last Update:** 2024-08-18  
-> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lüneburg, Germany](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)
+> **Last Update:** 2024-08-25  
+> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)
+> [Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable _notifications_ and _widgets_ created with [Scriptable](https://scriptable.app).
+
+## 🙏 Acknowledgments
+
+This library wouldn't be possible without the incredible Shortcuts-enhancing apps listed below:
+- [Data Jar](https://datajar.app)
+- [Scriptable](https://scriptable.app)
+- [Actions](https://sindresorhus.com/actions)
+- [Toolbox Pro](https://toolboxpro.app)
+- [Pushcut](https://www.pushcut.io)
+- [Charty](https://chartyios.app)
+- [QR Pop](https://www.fromshawn.dev/qrpop)
+- [Day Progress](https://sindresorhus.com/day-progress)
+- [Text Case](https://textcase.app)
 
 ## 📊 Shortcuts Library Stats ¹
 
-* In total, there are **512** Shortcuts with **5187** actions in **58** folders
+* In total, there are **533** Shortcuts with **5419** actions in **60** folders
 * The pure average comes out to about **10** actions per Shortcut
 * The typical Shortcut has around **7+** actions
 * 🏅 Top 5 Most Complex Shortcuts:
-    1. [Check Last Run Time](./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Last%20Run%20Time) - 69 actions
+    1. [Check Last Run Time](./All%20Shortcuts/Productivity/Check%20Last%20Run%20Time) - 69 actions
     2. [🌐 Search Web](./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%90%20Search%20Web) - 62 actions
-    3. [✍️ Log Daily Bullet Journal](./All%20Shortcuts/Notion%20API/%E2%9C%8D%EF%B8%8F%20Log%20Daily%20Bullet%20Journal) - 58 actions
-    4. [Choose Calendar Event Time](./All%20Shortcuts/Utility%20Helper%20Functions/Choose%20Calendar%20Event%20Time) - 56 actions
-    5. [EvergreenList2GoogleSheets](./All%20Shortcuts/Utility%20Helper%20Functions/EvergreenList2GoogleSheets) - 52 actions
+    3. [✍️ Log Journal](./All%20Shortcuts/Notion%20API/%E2%9C%8D%EF%B8%8F%20Log%20Journal) - 58 actions
+    4. [Choose Calendar Event Time](./All%20Shortcuts/Productivity/Choose%20Calendar%20Event%20Time) - 56 actions
+    5. [EvergreenList2GoogleSheets](./All%20Shortcuts/My%20PPS%20%26%20PKMS/EvergreenList2GoogleSheets) - 52 actions
 * 🎖️ Top 5 Largest Shortcuts:
     1. [iPhone Alarm Ringtone](./All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone) - 423 KB
     2. [Water Eject](./All%20Shortcuts/Standalone%20Fun/Water%20Eject) - 192 KB
     3. [Time's Up!](./All%20Shortcuts/Sound%20Files/Time's%20Up!) - 125 KB
     4. [📑 ANotes](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%91%20ANotes) - 35 KB
-    5. [EvergreenList2GoogleSheets](./All%20Shortcuts/Utility%20Helper%20Functions/EvergreenList2GoogleSheets) - 34 KB
+    5. [EvergreenList2GoogleSheets](./All%20Shortcuts/My%20PPS%20%26%20PKMS/EvergreenList2GoogleSheets) - 34 KB
 
 <p align="center">
     <a href="https://chartyios.app">
@@ -40,38 +54,47 @@
     <p align="center">Overview of This Year ²</p>
 </p>
 
-## 📂 Shortcuts Library Folder Structure ³
+## 📂 Shortcuts Library Folder Structure ³⁴
 
 <details>
 
 <summary>
    <strong>
-      <a href="./All%20Shortcuts">All Shortcuts (512)</a>
+      <a href="./All%20Shortcuts">All Shortcuts (533)</a>
    </strong>
 </summary>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20Authentication">API Authentication (2)</a>
+        <a href="./All%20Shortcuts/API%20OAuth%20Dancing">API OAuth Dancing (3)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/API%20Authentication/Get%20API%20Access%20Token">Get API Access Token</a>
+       <a href="./All%20Shortcuts/API%20OAuth%20Dancing/_Get%20Authorization%20Code">_Get Authorization Code</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQb3a4Nvmy3JOqNmC-R_oWHVQC3xAUyg_4w-lWN3kZ0l8-3NmsrPdYLS%2F%24%7Bf%7D%3Fo%3DAjCrLSfjshc_UXtuG5VahmQ2_J5eIl8v0th46Ws-y8Ts%26v%3D1%26x%3D3%26a%3DCAogYtyvOc8a1KqN1WwrhDkak20dHOBh2UWRVz68m1kknd4SbRDI36qoljIYyO-l_J8yIgEAUgTVQC3xWgTPdYLSaiaNsp6d1bNB22kifwRo8V3u3n6Fpkq8TdHeYV1TdRvF4DESDSzGN3ImvCqE4YGwQ8_D7bmhBW1CIoQ_UVAMXDHWnQ1C2zdf7IKl_GAGM6U%26e%3D1726569084%26fl%3D%26r%3DF7F7CFA2-294D-4ABC-85FD-E5BA763D89BD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DW61f1c38-30CrgWywnnXxOnG-Zc&uk=Icbjcq544Fr0tGsbkN_Wtw&f=Get%20API%20Access%20Token.shortcut&sz=29643">
-       <img src="./All%20Shortcuts/API%20Authentication/Get%20API%20Access%20Token/Get%20API%20Access%20Token.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcluiwVn2Ksz0Dad7iBNBPFR5LqTAWi-t1JgEa0F4MvlZa-YOQLIk6MT%2F%24%7Bf%7D%3Fo%3DAgxmGlHsizfa5eha1jS5IO9HrZP4Rkd_vcAKEaQ0voH9%26v%3D1%26x%3D3%26a%3DCAogLwIEkkYwgF0HEKdkxzury8hz8HxfCIUJDZm4cY171iQSbRC8lu3JmDIYvKbonaIyIgEAUgRR5LqTWgTIk6MTaiYXz-er3S_9cdVup70BHczXkyM--NFTyrlJANoeEHEPWNW2-AHbnHImrAT5tU7IRBa3pAkhgglIrdwXW35PDj8YG5HLuSjY-uDlBSHOaBY%26e%3D1727176250%26fl%3D%26r%3DE89EF9E2-020C-4084-8CE8-4670D3CA5712-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3JiFuU-_0Es4Tppp_7fxMNl_gIk&uk=WWYlJDFL6_CwGQ4LjwFoXA&f=_Get%20Authorization%20Code.shortcut&sz=30266">
+       <img src="./All%20Shortcuts/API%20OAuth%20Dancing/_Get%20Authorization%20Code/_Get%20Authorization%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/API%20Authentication/Refresh%20API%20Access%20Token">Refresh API Access Token</a>
+       <a href="./All%20Shortcuts/API%20OAuth%20Dancing/Exchange%20for%20Access%20%26%20Refresh%20Tokens">Exchange for Access & Refresh Tokens</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU2xCtaXJSuOy66U9lOJPBPLxyuTAUg8dUbhcjkwfr-uoZSiX7qwqrU5%2F%24%7Bf%7D%3Fo%3DAte9H_HU4Pk5VpchQPFum0Y0C--wfO6jh8JrHBpYe0TB%26v%3D1%26x%3D3%26a%3DCAogsbsJ0rYgmTNy3wx6wwLsg8lxdiEVoxzcxWxGDY9rilASbRDq6aqoljIY6vml_J8yIgEAUgTLxyuTWgSwqrU5aiZL0nVBFFqHYLs3c_8CtCIARb2qBo7K11R7mHoB8qYjBe0p5JJMbHImf0hQ-OZYFJnJBCQejh5ssi4VjSzWq62C6R2UKLqLtaqEZyhk_Gs%26e%3D1726569086%26fl%3D%26r%3D1AF81C4E-BA3C-49AE-929A-9A0227CB1775-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWHJP3xZElcDjcCX855ChgMKkSn4&uk=aC_msfFcym9lQOFwF9KiBg&f=Refresh%20API%20Access%20Token.shortcut&sz=27936">
-       <img src="./All%20Shortcuts/API%20Authentication/Refresh%20API%20Access%20Token/Refresh%20API%20Access%20Token.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb0OshnCx9Aqzn9s53OJWQDev3VLAWLxVCoarXTUSzYbpQ3GXiBsuo7h%2F%24%7Bf%7D%3Fo%3DAmzCSk5IwBY2w8STgbhxpPLCBtNSp4h0Yd_i28XHL8Xo%26v%3D1%26x%3D3%26a%3DCAogAChYaygUvMjtskGkB6vVZZ45drbGrKjmObfaIu7EExwSbRCusO3JmDIYrsDonaIyIgEAUgTev3VLWgRsuo7haiaGXLAkomfKZpqU-R3LLRUyhtrju5RwFTlvGMSZqavkBXIfpSc-fnImTuHFBDnFiNXoHX6NKAWWN1XcLGTO6DRO5k6R0G0IHCUY5Zs-3R4%26e%3D1727176253%26fl%3D%26r%3D514FBC4F-22AC-49BD-9F1C-62F5DC3BBE8C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOEKgQAZleGDgsssb6_jk_Kt3lJE&uk=Ckx_Bx1An_VH0ljB-M1wog&f=Exchange%20for%20Access%20%26%20Refresh%20Tokens.shortcut&sz=29469">
+       <img src="./All%20Shortcuts/API%20OAuth%20Dancing/Exchange%20for%20Access%20%26%20Refresh%20Tokens/Exchange%20for%20Access%20%26%20Refresh%20Tokens.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/API%20OAuth%20Dancing/Refresh%20Access%20Token">Refresh Access Token</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcPCa10GtM63k5jj9YTNrcMKZrhtASEvet212chNCCxxTsJxKEB01n6Q%2F%24%7Bf%7D%3Fo%3DAsSInXaUmM95QDWF1nP1SwhDvGGe7DGFEZjhdLc883UT%26v%3D1%26x%3D3%26a%3DCAogI45TtzB01P3jazhafKY-saHJYxIrlA0dNE9Xn-QtQRESbRCyyO3JmDIYstjonaIyIgEAUgQKZrhtWgR01n6QaibSlfU6KG_k3pl3vf9Oh5IeszpST5IXzNpVyDZw0Akyto4du5c6FXIm4Oni25SQGf_Sd84f4pvIfNUKGh9nSdWJ9YtU89KlzTyJIfPVHZo%26e%3D1727176256%26fl%3D%26r%3D0B3BCB68-B2C4-4049-A8ED-64C75C871559-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEi6PozSmQ6ZVw8I0hTpTDFQq2aI&uk=ZZU0I9Hx62Q0uTPZg0wmSw&f=Refresh%20Access%20Token.shortcut&sz=28918">
+       <img src="./All%20Shortcuts/API%20OAuth%20Dancing/Refresh%20Access%20Token/Refresh%20Access%20Token.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -87,7 +110,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Open%20Apple%20Calendar%20on%20Specific%20Date">Open Apple Calendar on Specific Date</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXSX9VOFeMpJFwoIc4ljZXXiNqo8AfrjNN5WfB0oaa77seNqH6gboFWL%2F%24%7Bf%7D%3Fo%3DAgwWzv7Dh5qrylxL5NjrkjDdGAoVsR3fAGn-WB5xIz7l%26v%3D1%26x%3D3%26a%3DCAog6kmTKD2WQGeepU63rJtCgbKb8aTDgYRavi8BziQdfjQSbRDqo6moljIY6rOk_J8yIgEAUgTiNqo8WgQboFWLaiaT6jifq52fLd0AGQJnnFx9lugxtgf4kgghLPz3wLWDVXM8FMvEznImD4ZOwU4QmN_udUEvRXj2DhnZv8RjD0RS3V7Oa121Ua6sWa4_0jA%26e%3D1726569060%26fl%3D%26r%3DEDDBF5F9-6AAC-4243-A551-80DC98197BC8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dl7cLnBNsH5QD48GaNlJ3E4RcUzs&uk=Do_DbIgSO5iW_ZgLkf12jw&f=Open%20Apple%20Calendar%20on%20Specific%20Date.shortcut&sz=26703">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbltSqjoqN1_xct7sLL82fmjXlIdAWN5wr1W9jNg77oqypmy7jiiZDIV%2F%24%7Bf%7D%3Fo%3DAmIaz56fM8uGFbarC56OBLKGRSAKtubVrMTFxaFP0nOO%26v%3D1%26x%3D3%26a%3DCAogE0Gd8yRR36E63k80j0TGyC6EDBZPBB708vjGQRJKxBQSbRCy6unJmDIYsvrknaIyIgEAUgSjXlIdWgSiZDIVaibz7K0TAQERtanjiyf0QnVQr2gGOZBlA7JaTy5J2gedorpFO2jSWnImplGQ-G3pKALudsOYwX8917aNe5w_XAQaDfpwdlgUIkSGIjuKeSM%26e%3D1727176195%26fl%3D%26r%3DE7A1E5DB-6B15-453E-AABA-E8EA0E40F3BA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqukVb7VqnlVyHPRjEL0FL5fVIko&uk=WNNaBSqd9HAH_rZlcV9B0Q&f=Open%20Apple%20Calendar%20on%20Specific%20Date.shortcut&sz=26702">
        <img src="./All%20Shortcuts/Apple%20Calendar/Open%20Apple%20Calendar%20on%20Specific%20Date/Open%20Apple%20Calendar%20on%20Specific%20Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -96,7 +119,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Get%20Calendar%20Action%20Items">Get Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAawmjx11SMAR7uij3CF8s1KmuCdVAZCxk_IBMEEhUVvdAb_Cy_ht7ycQ%2F%24%7Bf%7D%3Fo%3DAqmdcvaCPLNcwbrnxmi7LK1aIbPROPfDWXnLfnI-Pv5U%26v%3D1%26x%3D3%26a%3DCAog-stbN1XpS5CyVdwv_WuF_Tn91v57-xhkYVzZ4FkUAloSbRDprqmoljIY6b6k_J8yIgEAUgSmuCdVWgRt7ycQaiZiIn9Kw3EuQAcxU4RsHCcHrbjSm1CZsZEHD_4HVXDIdfkH_S5jrHIma-YhtXBuIaznhml10T_VHlPU2IxzX_8wNbcmQUN15JutFNruCF8%26e%3D1726569062%26fl%3D%26r%3D20B282EA-E894-4D23-9972-11B6A283983B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNaW31vLrmQaJfG12GZaqwYjcQsY&uk=YCxfjjYlzjXj119G-SbpDA&f=Get%20Calendar%20Action%20Items.shortcut&sz=28783">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ3rzhEsiyEpW-aqsObzP4lLB9wIARWvo6hjQibIYf0Twz_bLZDiZdp4%2F%24%7Bf%7D%3Fo%3DAqpYcLlUi8-aW6wdlRr72WjYKrj7yW-wUv8aezgGBaM-%26v%3D1%26x%3D3%26a%3DCAogv8lurKd-ShIWp12UTRzDqc5uEL6C0sJROTSIHj-NLjESbRCRg-rJmDIYkZPlnaIyIgEAUgRLB9wIWgTiZdp4aibpgp9eElru32SrL1P08sz45aBRX2n9zRIUDa94W2Joa7wml4Af6HImHPKuIH_fpI7n-CWzw5kGIQSjTIV4hjydMbWVP9dRdKF4y1ei9tw%26e%3D1727176198%26fl%3D%26r%3D67381F2E-FBE0-41F3-9FCA-86F8413A8432-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DusBs9CcxQ8e8dn-EH4M_zh02Dtc&uk=8a2GDRzmjiFLNpVC7ambZQ&f=Get%20Calendar%20Action%20Items.shortcut&sz=28781">
        <img src="./All%20Shortcuts/Apple%20Calendar/Get%20Calendar%20Action%20Items/Get%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -105,7 +128,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Count%20Number%20of%20Calendar%20Action%20Items">Count Number of Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcgs40qmmtfCmKoAe1r4HGst1vs2ARehHONLCtAOVDMkztzD9Mf3J2VY%2F%24%7Bf%7D%3Fo%3DAlwcq-V3PTgEWKq83s1q77i-ygyzMI_zxm_nsLjyFpf_%26v%3D1%26x%3D3%26a%3DCAogi4FM6UyHGVNLFUcIfbhiK3OBJEpKRngKyGJV7KXMf_ASbRCluamoljIYpcmk_J8yIgEAUgQt1vs2WgT3J2VYaiYUsiTOA4Ruv8HrjJgMHaUWpZeP5KP0yvinjL9u4rnKkgwyOC_D0HImdsRw74ajBCTfB4V6Ve23CN-PzTTeLFPQskOUQM_g-5gQcEGDeVM%26e%3D1726569063%26fl%3D%26r%3DF460F309-7C39-4911-9987-FDD7FA048465-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4Ca39XCMMq7dk_xnR4CCcyl280g&uk=aks5FEhbPo1uUVRLBG7V0g&f=Count%20Number%20of%20Calendar%20Action%20Items.shortcut&sz=27046">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd8MjC09u-Gqzf66hYA-qhmdCa7pAeSMwn5pR8Hn1gs5ssQsUvOl9XUd%2F%24%7Bf%7D%3Fo%3DAs1rnAJo-Yiv8379IrTdpiBDSy2y8BdXRK9UiJ9jCMPO%26v%3D1%26x%3D3%26a%3DCAogOyM1quWb2g-Lv1uOJh1aIhQt72pDjmX8MNB1xtWyhnYSbRD-murJmDIY_qrlnaIyIgEAUgSdCa7pWgSl9XUdaibOwPipUZAKksMmrsi4QMLVqcxOdQ1hRpfNphyaSpYGWjM_-b_mrnIms2X-5hFatCiors3O71054GmmFSehpu779GL9vF6pqSRb-86AV-U%26e%3D1727176201%26fl%3D%26r%3D8183480F-A6D7-458C-900E-AA59576AB160-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ds1s3ORO6UKlMCLwu1U8n8mp2QEs&uk=Z-EbYl-4nggFzVycwyOGXg&f=Count%20Number%20of%20Calendar%20Action%20Items.shortcut&sz=27045">
        <img src="./All%20Shortcuts/Apple%20Calendar/Count%20Number%20of%20Calendar%20Action%20Items/Count%20Number%20of%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -114,7 +137,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Quick%20Look%20Calendar%20Action%20Items">Quick Look Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeEpdbB0X0z8LEcwTfGjUfpwcMe0AZYYk06v6lqMerNxE3kkaQ_2rz36%2F%24%7Bf%7D%3Fo%3DAk0cHL3anmSQiQ1cPr-Emrf99ZUq8207IgAhm25WHRXI%26v%3D1%26x%3D3%26a%3DCAogSHWH6JS2WRjQ8ctHaTrziVQ7Yr2FClCYsokrPX4oo74SbRDGw6moljIYxtOk_J8yIgEAUgRwcMe0WgT2rz36aibv_lG1wbAAYOvXbn6YqFXKCWuUg8o77LHezOgpO6KMingC0VDpJ3ImQU_IwTMDZPOKcPmgBCUik54oRBXXAQSTNoyp0QeweGmucR9FwvI%26e%3D1726569064%26fl%3D%26r%3DD1B2A12E-9089-42E6-8F96-840B74359A83-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjT_7LVdXpu7soN1exRalqvjIeWI&uk=UW4f0bKFMnTEoCE03Ne4bg&f=Quick%20Look%20Calendar%20Action%20Items.shortcut&sz=27379">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeEw1sbr75fHn_gDjkMJ4d18wu02AbhLWa7myIOTTfVlfaIycK_nPet9%2F%24%7Bf%7D%3Fo%3DAixOzcZC6CKWbgnFX0vHkcxZdBItV_IFfUIe-a4Z6euJ%26v%3D1%26x%3D3%26a%3DCAogjDWvhsqsHIREkP8kiiwPSlHfCV0KJeKYgu-gSZOscycSbRChs-rJmDIYocPlnaIyIgEAUgR8wu02WgTnPet9aiZNtqkCQuOFggRUZiRsiVXHA8RUdt-_uEFiPve6qAJFgqw42OBAvnImuGT3vOPJoPdUc4yw1HRKoMysHjYJLJqgYrWmDdYpRo9XHedqhGo%26e%3D1727176204%26fl%3D%26r%3D6E74C222-63AC-4CF1-BB0A-B428A1308CD4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DejtujME85LAj_S9cic4OxXDzQOM&uk=pooeWrX3ItjIfJv8RME1Ig&f=Quick%20Look%20Calendar%20Action%20Items.shortcut&sz=27378">
        <img src="./All%20Shortcuts/Apple%20Calendar/Quick%20Look%20Calendar%20Action%20Items/Quick%20Look%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -123,7 +146,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Show%20Number%20of%20Calendar%20Action%20Items">Show Number of Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV0JyZgjmD_6fOWKsLfjgcp5BNu_AcaQG8OfYyHh-JnlDoni4rK0XGsD%2F%24%7Bf%7D%3Fo%3DAp2or59Zq0_ye75alsPkBIpeuejawNI81NCM1qXUJfZc%26v%3D1%26x%3D3%26a%3DCAog91jvoGcl7PGlMMSAw_MsTZKjrhhSJux-jwySWkBajfESbRD2zamoljIY9t2k_J8yIgEAUgR5BNu_WgS0XGsDaiZGB0Xh64qon1FozlZb9eqA8vr_IjLgEBYkU-zKEhn8lRggYlHICnIm9PG5_F_Q8rIHi5bVFP6edhrzN7eb2Kdfq_uFOYDUKIe7ktZEEwM%26e%3D1726569066%26fl%3D%26r%3DFDBA9BA8-48E5-4298-87C8-D7B6AC2B8082-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4ZB3d_4zhr4yJXDnQuxugCaFaqw&uk=cm0SdOQhs_hPmGRLAaKTLA&f=Show%20Number%20of%20Calendar%20Action%20Items.shortcut&sz=28193">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbTMygndLdTNpW2b-A6lFQm_1Ah4AfteKjTUI-nS3FX6JfNnKlQvxwVd%2F%24%7Bf%7D%3Fo%3DAp_rtGIHLSYAW-2l5j7EFOi8rr9_t1arUlwqrpWGTiMd%26v%3D1%26x%3D3%26a%3DCAogj4SNeDmNIA5qAHAQkcoPoWFwP7qBEmEP5Bcu8e0xYkgSbRDCy-rJmDIYwtvlnaIyIgEAUgS_1Ah4WgQvxwVdaiYpeHKlo9wpoHrdmSLnTAZ23ViTVA9iY_GN644g3lbFtrWdeCgDOXImtdvcs2JqlZYmBQ_lH4mdxJN7NbFczwuNcL4Fo2FkX1o0KYu0bhY%26e%3D1727176207%26fl%3D%26r%3DD5432487-1176-4C78-9367-9D853E7E4C95-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Doc4mFnG7ugZvqIrN2tM5HiELeuI&uk=-1Gvt2AWslaIkJB7l9wlTQ&f=Show%20Number%20of%20Calendar%20Action%20Items.shortcut&sz=28192">
        <img src="./All%20Shortcuts/Apple%20Calendar/Show%20Number%20of%20Calendar%20Action%20Items/Show%20Number%20of%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -132,7 +155,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Show%20Calendar%20Action%20Items">Show Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATjrkBto6AVG3b7i5fJL4LFpZYAhAWxf1iCXOfI4BlONfYJjOsKViHMP%2F%24%7Bf%7D%3Fo%3DAgFnTfvzuiC3WaPCtB9wOESEds_6YScIyEAjWE1_afOL%26v%3D1%26x%3D3%26a%3DCAogMBNqrIw4ZS8MK1Oe0pjJ8nHHsxTwSwaKHgt3rzZll4gSbRDP2KmoljIYz-ik_J8yIgEAUgRpZYAhWgSViHMPaiZHOpJT4ZcDTQcAw65pImvCehUilF1gBkT0SEuqdEqBwJNA-4Ngt3ImMXTBQF-m8zXXob0uCTn4yzYs0aEdJ4g6nuiN-1lKW_EepsSS-GU%26e%3D1726569067%26fl%3D%26r%3D76CF0834-A33E-4DA7-BAD6-2BC045524787-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DO-O2uWzp85cbXjSpNu7Z3DjKj2c&uk=qnhljW4HCc6h_ElzmunDbQ&f=Show%20Calendar%20Action%20Items.shortcut&sz=28978">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWHLqKOkAGSRtJHKZpn0ywhCStFGAas_-4XRx3kdj9-7YFb6pWH0AszA%2F%24%7Bf%7D%3Fo%3DAiq42Vu6Bb2BnnUIpsXp3_PPSHVSaJ-tDEVQC996Vh5-%26v%3D1%26x%3D3%26a%3DCAogq83Qqmdd2etpwe9f9OIO8lyo5MbLPZCzpG9ZiQtgu04SbRCH5OrJmDIYh_TlnaIyIgEAUgRCStFGWgT0AszAaiYTfLNpcM3igHwj-7OD99XKscy8ha1AyI3aEJmJMxAx3-aNlPOHQnImAIUxXBAIXDLMSKBbBYbEOv2ShAoZUR_hOkMV7Zw7CGYedvYWxzY%26e%3D1727176210%26fl%3D%26r%3D4CCA8560-575B-495F-B56B-A665662AB813-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQlurP6XrDapk4J30jV_v-0byAN8&uk=KTN-P3RqyBWT-X_yjMK90w&f=Show%20Calendar%20Action%20Items.shortcut&sz=28982">
        <img src="./All%20Shortcuts/Apple%20Calendar/Show%20Calendar%20Action%20Items/Show%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -141,7 +164,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Speak%20Calendar%20Action%20Items">Speak Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS4lEyo_5-WhsY4S1Mxqt8dMu-MzAVOsSxW6VAV5v_4YVXXzsW2CKQwJ%2F%24%7Bf%7D%3Fo%3DAmy7z12WnM1rWQFJlvYNTlQtLnlDbPV1PxEv3ht11cPc%26v%3D1%26x%3D3%26a%3DCAog8raywFpedw2T-cUrfcGBDIUTXajs9nIDm9pDbY-dlBkSbRDb4qmoljIY2_Kk_J8yIgEAUgRMu-MzWgSCKQwJaiZE2ALHJanKJbIU_9KDQ16o9V7ZBsITE-H5eqaO4rVmjdK_F_RmfHIm7MNHS39nnH7AFaQRu3mgeVMKwYCjr1C9SUFM0ktGP_WQu8wEAM4%26e%3D1726569068%26fl%3D%26r%3DCA4524A9-D917-4608-8CC1-BC407E42D4DE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIJ_xF9W9tp_bpk-a6wC2OGcgwBw&uk=9Crp0M-Sy927IYTy_bfEdw&f=Speak%20Calendar%20Action%20Items.shortcut&sz=28832">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfPMm4zDvrBynCiTmZZmndloNVztAW2o8rHRgIBgLUzmQO56XPK9tFWX%2F%24%7Bf%7D%3Fo%3DAmK3eCp_vvjDrn5PnU3CtqOqcw1qh7zLtt4K5usev9Y1%26v%3D1%26x%3D3%26a%3DCAogOXfKS4Ut6xjryBUewLQLQnrCEajAx2ngQuw0QvEYMrASbRDt_OrJmDIY7YzmnaIyIgEAUgRoNVztWgS9tFWXaibSxu4IS7lrB-32KepTYoDwmqNwxbr5JZ63Or3xr3OMDArsInYM1XImh15NVMZGh7ESICzeR71VTJ77YaUM8ai2Odq1TcP12SVtZjKPCGY%26e%3D1727176214%26fl%3D%26r%3D43976BEA-EAC6-4100-B906-48EEFB5ED27A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYtcRy41szz5ThPOpivqoxZkjoUU&uk=KoBlIEkgmD0Dve4WssPVaQ&f=Speak%20Calendar%20Action%20Items.shortcut&sz=28827">
        <img src="./All%20Shortcuts/Apple%20Calendar/Speak%20Calendar%20Action%20Items/Speak%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -150,7 +173,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Calendar/Speak%20Number%20of%20Calendar%20Action%20Items">Speak Number of Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVIcHAsLrd7_DaB8YPI9cHTlFoeyAaFd3GD2ZaOMhXNFU_DexLATqPoI%2F%24%7Bf%7D%3Fo%3DAmKCVMu4ya5tj-sYLKDdju--aeQinHetbOfZ9oI88cch%26v%3D1%26x%3D3%26a%3DCAogOArNH3KRP1bhhL_JaizvQ2hMouM2PhEe0J6z9eHAU7oSbRDL7amoljIYy_2k_J8yIgEAUgTlFoeyWgQTqPoIaib24eVVn4aS_dFvkFfsrrM5Aw13-mHGwWq2g2M5CP4kGS5tWsHVGXIm190nqPsXew-SEYQp2siP6-NiuaO_iMJp9fEOXxjZGPJqhQFPtLQ%26e%3D1726569070%26fl%3D%26r%3D03C9FD05-5A39-4A9D-B68A-514A9E3C0E4E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbWBZeWEKWHcUZlVuxYIOwu4ek0U&uk=bW8Mhh5b8WKtH9QJTOv6Lg&f=Speak%20Number%20of%20Calendar%20Action%20Items.shortcut&sz=28158">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWUot49nSNr7ye-mmqEUXsUvDyeAAVZU4vQpLt6inv5rV0zQZy62BrZw%2F%24%7Bf%7D%3Fo%3DAkCqw2xWDNEBG5MQS_buFTQ8wt-7hITY9z303US6Zs0C%26v%3D1%26x%3D3%26a%3DCAogZbDwrSxQgFPp5LjCMCg8V6ptf-cQEw9bA2FOTaY6cP4SbRCjlevJmDIYo6XmnaIyIgEAUgQvDyeAWgS2BrZwaiYgBK9Dnaw3wynpVyeoaVbcXRtOXFNwVPyjsQYs1nFnIe6ewFyM0HIm2ohcow2AysBJW6aKU6d9ZOparl80CCHsGREEFeT4W3vSFWSXxjk%26e%3D1727176217%26fl%3D%26r%3D3E7051CA-3F1A-4870-9121-B8D020240A7C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL4YFYYwOJVrIKqmhR1DOZAr4kTg&uk=JGluow8GcQoKHWOSQfYk-g&f=Speak%20Number%20of%20Calendar%20Action%20Items.shortcut&sz=28157">
        <img src="./All%20Shortcuts/Apple%20Calendar/Speak%20Number%20of%20Calendar%20Action%20Items/Speak%20Number%20of%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -167,7 +190,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Notes/Search%20Apple%20Notes">Search Apple Notes</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAShoyipH-kaEbeShCusjYsRbR_GUATEE0ZTrbEgtFCK7fMNgOUCzvOe3%2F%24%7Bf%7D%3Fo%3DAktz2BR7OikTHQ44ew16s04fPju7oU5uqfunn3b77v_z%26v%3D1%26x%3D3%26a%3DCAog5c80r-DZP4mBArbbRkygTKEDIUohbkBUXHYgdB6UeDASbRDa2aioljIY2umj_J8yIgEAUgRbR_GUWgSzvOe3aiY5MKxERVG0O9NGyzS_tWPIba1n8J_XCrRWG-nYr3fhsvkRJCJvsXIm4pme8gbu9AL2tY8y8lvf1d6iMCI1_UydCaPG6XEc2NmATrENdX0%26e%3D1726569051%26fl%3D%26r%3DD507DD19-6B9F-455A-8C7F-3BE392C7E8E5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaIol8v7oouSYfn6rFrmtfoSyxq8&uk=_kpOmuQXJSrEYZjPo8fQ2A&f=Search%20Apple%20Notes.shortcut&sz=32884">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaKGBnxKwVFOKsvTBKKN-FhCV7e2AfGlGH-_n4pjPBL8f0zGLkfZpQK_%2F%24%7Bf%7D%3Fo%3DArrLZDLyVFfP8wt8wsuv63OuonMzfADv6sYM9Bw-ripQ%26v%3D1%26x%3D3%26a%3DCAog5m2jjb9APSNzkuYYoFNGUMOhCiSiQPLRmSBXznF_zmQSbRC7xejJmDIYu9XjnaIyIgEAUgRCV7e2WgTZpQK_aib_HSLckZHBct2P88Q8yaj8KWn9yFwFFPh3EYGKm-x-z5mlcxmMBXImLNBStwDC4lBQYSu1-pmZgZb3zIGjWMZFz65qcgrwYTskky6vJ-M%26e%3D1727176174%26fl%3D%26r%3DF8E7EED4-B811-43CA-950F-6F7F67AACB05-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1ubD0hCbA8CN1abOdWnh1OCZuUM&uk=eQGo_SVVq4S-orQ2XDj1DQ&f=Search%20Apple%20Notes.shortcut&sz=32884">
        <img src="./All%20Shortcuts/Apple%20Notes/Search%20Apple%20Notes/Search%20Apple%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -176,7 +199,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Notes/Get%20Title%20of%20Apple%20Notes">Get Title of Apple Notes</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeEdfNmZ_x_IczqCEl0gRxo8kKFbAX3-8dG0SBWiSG-1gzH-V3JZu4FQ%2F%24%7Bf%7D%3Fo%3DAtfd6HpchNFWaYpHbc6uqM1d4YjwK20xx38_u2YL2B-Y%26v%3D1%26x%3D3%26a%3DCAogLR1FQsqDZ0uSMsVpc4y56jxMVDribX7Qy9i7fDIboQESbRCa5KioljIYmvSj_J8yIgEAUgQ8kKFbWgRZu4FQaiY-2V4nECgqn4bxYLDtTwlvLnp6esvc79zrDG4f_F5jb87ugy6jB3ImzbeykjT7XIiOuMBeeF2H4nL_xhMDei7C_S7balX4W41SgeYibJI%26e%3D1726569052%26fl%3D%26r%3D11C4C233-2BDD-4D17-A1DC-ACD21B9AAD32-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrwGvGjUcJX8tG_15Z13EXJsERfQ&uk=Z0MIlSfxgW16K_Y1ilLO_g&f=Get%20Title%20of%20Apple%20Notes.shortcut&sz=26893">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbbaTgJt95bSbzEh-upntvRjrrpUAQr98XzZZHdarXebeV2e8WNgYVvR%2F%24%7Bf%7D%3Fo%3DAm_vOJCLE3Gwn73FdtaUMoK_H7cOufIGr23fO2wImOKY%26v%3D1%26x%3D3%26a%3DCAogHrmDqkzm4Qo7ImTwTQoqVOatlFNoZDF7ebD4b7ao5BgSbRDq3OjJmDIY6uzjnaIyIgEAUgRjrrpUWgRgYVvRaibfS9naSwgMf6P6OG9RHTTtbHg6HumWz0inazbUkE77mTBVJP73q3Imw_g6rzML9k88sJuwz1DXnNILYJr9HhgcALBBF5BUkWTpSLo5g4E%26e%3D1727176177%26fl%3D%26r%3D69245FD6-A506-40E7-B043-5881B760DC54-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DE7vxX04kfAHled4vPTzNfF0xvH8&uk=JGQgNuvqYRJaBtrvRE45aw&f=Get%20Title%20of%20Apple%20Notes.shortcut&sz=26892">
        <img src="./All%20Shortcuts/Apple%20Notes/Get%20Title%20of%20Apple%20Notes/Get%20Title%20of%20Apple%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -185,7 +208,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text)">Get Body of Apple Notes (Plain Text)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbUqT0qqFEzfbQ828r7FKp9sh2ztARzJKaJIOM1ELKgp7aBVxG14Xb9T%2F%24%7Bf%7D%3Fo%3DAsYCURdrxkBpJl6ZGYBXl8_XxBd1_zwHuhmAjylkPDBE%26v%3D1%26x%3D3%26a%3DCAogZFgVgtoaOwc_jCsHI6snFa-UGvjaU329bKuUQ2FDko4SbRCG76ioljIYhv-j_J8yIgEAUgRsh2ztWgR4Xb9TaiYYvxCh_td3y3no73JZExybIqUcPtLpEg_MxFXMQRBlqpVsmPAqzHIms1O5TSOTESswxBoTdEqhEargQo2RVTRPY3iSV4lizl128nBxGCI%26e%3D1726569054%26fl%3D%26r%3D10FD3BC3-4C8B-426F-A17B-C4028358D26B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJtHyeQbAPHtXEuHKsOJk8v4VPE4&uk=VxbzFNQC-hHJwAkRRD0dCQ&f=Get%20Body%20of%20Apple%20Notes%20%28Plain%20Text%29.shortcut&sz=26911">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY60zWT55As8fr5c2t3B63KhYV6YAeGernWqPrbABKWlCjf3bGVXAcdW%2F%24%7Bf%7D%3Fo%3DAlP9XDfqyPVN_bCXx8h1Pc4wXXIeKJx7Ziqf-5LAM_Kr%26v%3D1%26x%3D3%26a%3DCAogUjxL_b-jzS9zAnMnZSCDT8kiIOgfOhVkYwBnBKi1SDoSbRDC9OjJmDIYwoTknaIyIgEAUgShYV6YWgRXAcdWaiYQPqGa6ZmFup-4soA29D7crwBheZYyNZvR5uUUdCgYTKNkczjX4HImGu6hNruJNAinsDUXg26nuSXZxnUq7UAUziqk8ME1xVTItKxmh_c%26e%3D1727176180%26fl%3D%26r%3D0C294C82-48B6-4183-9A92-1C62800AC247-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0MlS8oSxlTeFusmhCCo30wqUu4E&uk=Y1JYZWCPPgGvs7ZVhPld0w&f=Get%20Body%20of%20Apple%20Notes%20%28Plain%20Text%29.shortcut&sz=26910">
        <img src="./All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text)/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -194,7 +217,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text)">Get Body of Apple Notes (Rich Text)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATy7nVFQCROFLpojxMIG-vd6eiksAcGvX0368he7OZCwYLH4zHh5WlBa%2F%24%7Bf%7D%3Fo%3DAm_lH9kK6T2JpnOtRjcJSPVBIOT_Fn1_lfQ5GVSxn4wX%26v%3D1%26x%3D3%26a%3DCAog5WU9lHi0QEKcvsOxkTbcC7s_g1eoMC7iIGaQ0s5PpVcSbRDl-aioljIY5Ymk_J8yIgEAUgR6eiksWgR5WlBaaibv25ebeCOJVCDj4i8z7b4zWxrrYd7T8XqS7IyqtGCt25I6V7twlHImSW77f_O305eZpus7T9WnpnL8-YccMyegMUtlT_hJNqD0Cm8zquk%26e%3D1726569055%26fl%3D%26r%3D372A939B-39E1-473A-9A6C-780E8144C0D3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Drrrm4qodwRh3kyFgTC_9yWYB6oE&uk=O7FT8O4Jyavr6cwYeRxMVQ&f=Get%20Body%20of%20Apple%20Notes%20%28Rich%20Text%29.shortcut&sz=27382">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc0lYdu_4VHpflm7tDgtIvX7LUTmAS6ytL7ujTthOFAtJNj2MTqZDoXn%2F%24%7Bf%7D%3Fo%3DAgAi9Aupzmsx20B51W-1VA8Km_TwUfqPTF-GPyEzcmxI%26v%3D1%26x%3D3%26a%3DCAogsBaANNBfBpr9s9P7RqdNR6uexLAqf04LVQG__AX8HssSbRC3jOnJmDIYt5zknaIyIgEAUgT7LUTmWgSZDoXnaiZWk12b58zSVw9AdYNwLXoTzTqLDUbN9gDU12fu2h7TyDoZbVLYHnImP0AaXg5g2wcAjKGM9rQuLpMOsO7FHcEn_r9_KODAZbeKOpxDkpI%26e%3D1727176183%26fl%3D%26r%3D91AAAFCB-B87C-4CCB-8C34-5E72B6444D71-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DV1qo4pIh_aq0SFZK7ju6bZORJQw&uk=7WQPjpb0II-1oTiPHuPPnQ&f=Get%20Body%20of%20Apple%20Notes%20%28Rich%20Text%29.shortcut&sz=27382">
        <img src="./All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text)/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -211,7 +234,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Reminders/Add%20Mutilines%20to%20Reminders">Add Mutilines to Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaPm9cNhdcc8HT77b3P3ms4JNaF4AQh5B9KW1-grHqI3es2JeLy80SBK%2F%24%7Bf%7D%3Fo%3DAvls3mReXPbfzpLebr78LLNffQF9rjQAP8vNdfYLMh7e%26v%3D1%26x%3D3%26a%3DCAogz0YzVbjWQHPQc1oFYkM5Nms91H72-romRH3k1ion7joSbRD8g6moljIY_JOk_J8yIgEAUgQJNaF4WgS80SBKaiYYq_GGXZeZxO2eujI4pk26PIyPMtmkFsZoMrdGqrgagH0JJrTtznImg29uwpFbRFnG5uCOWVt9Cnc7O5cn9nI7w9waFmyFGlrSzbHJqHs%26e%3D1726569056%26fl%3D%26r%3D3701A35A-D5C3-44C8-813C-71DAB4DC7233-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrtuWL-Lj_HpM4CxmbVcLOLqg_Ls&uk=3EYVD045PktMIH5LNNaulg&f=Add%20Mutilines%20to%20Reminders.shortcut&sz=27522">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf7chb4OubrbXNoElRXjWKp85yOPAdbQBCRQMU3HZF9FIl9oaRWey5L2%2F%24%7Bf%7D%3Fo%3DAiK-fiW36Wvh5ITui02Al2m6i-Aa8reh09U7RCVL1BKf%26v%3D1%26x%3D3%26a%3DCAogJx8OeScsUYc-kiNF4sh1QT_CswIBrj09HqLnlSw5HI0SbRC8pOnJmDIYvLTknaIyIgEAUgR85yOPWgSey5L2aiYOAxCgojGIlRQ4vL_ZjKJQYLHqSCOQE5B98AaxvA8xfkwcTyG8_XImvX2cGHs3OvkPfvucifXNE8Ah-ptzW_equCdv2GjNqW8yu575iZA%26e%3D1727176186%26fl%3D%26r%3DFD86EE1A-1498-4644-8FC9-D858E10903FE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DD-ab4Fr66NvZA9GNKjN4y_dTCK4&uk=9tu8YpIxVhxPlJ-_IlQJJA&f=Add%20Mutilines%20to%20Reminders.shortcut&sz=27521">
        <img src="./All%20Shortcuts/Apple%20Reminders/Add%20Mutilines%20to%20Reminders/Add%20Mutilines%20to%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -220,7 +243,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Reminders/Reminders2Markdown">Reminders2Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbe0tZ7fNuEOXxJpcK8V2w_klc8AASHxerDyUDEDc4tgHWq2pC2GH98n%2F%24%7Bf%7D%3Fo%3DAh-l72ulUz6FwaAUucuJJ20ZMncmRUlOiUgz2VvvZtqQ%26v%3D1%26x%3D3%26a%3DCAogf-3Rg-qOv9J3autNTxKsn6KFaOIcbfDLnp-edDIIclISbRCxjqmoljIYsZ6k_J8yIgEAUgTklc8AWgSGH98naibS5SdxHTTpLx_mAM2dXCiAWdTrSEFRiHejha9WUcOjpyefm9L5O3Imm57FJoFFO8yzd52SCwI2IjL-wGzfyrvKJWjZP9P_6bpDkY_dwjo%26e%3D1726569058%26fl%3D%26r%3D74DF8382-B483-4A18-914E-52470F1CE3A4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwVcfQrOxRt3d9g6GZW7xTwcJMfE&uk=X7P2BWcoYzvvxM1ktSzhAQ&f=Reminders2Markdown.shortcut&sz=30577">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX-24IT9BRadLnV9BOB-_E33_6RUAXScb0sELjL-VBbzaw1WNiehCSNp%2F%24%7Bf%7D%3Fo%3DAjVi7_zxC-CI2B1_te-NnfmurDxFHR36G139SEb28gdu%26v%3D1%26x%3D3%26a%3DCAoguu5UhMrvnYuOSRpEjGZRbfQsGV405cyptCE8PO9pmyESbRDFvenJmDIYxc3knaIyIgEAUgT3_6RUWgShCSNpaiZEDl-gwhhIydw3eU4AizwBiAoDE7m0kWLK5MGptUDoFHsaT8YIgnImfdcIcGwcs3dxLhsOXpY15VFdJUEnSOSFJYDh3S6VmcpyspEHpvY%26e%3D1727176189%26fl%3D%26r%3DAE103E76-14B0-4EB6-8735-BA944F82A075-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAL_uRRw-hLxG334cWCmR0UvbTYc&uk=gdCQ7Yofdd0Q36JMdY_jfw&f=Reminders2Markdown.shortcut&sz=30577">
        <img src="./All%20Shortcuts/Apple%20Reminders/Reminders2Markdown/Reminders2Markdown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -229,7 +252,7 @@
        <summary>
        <a href="./All%20Shortcuts/Apple%20Reminders/Show%20AReminders%20List">Show AReminders List</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbjtNcF3NzJcCS2WSvV0WDNpvtENAWVI0Zbycsyg0JjHwITsh3tqAO07%2F%24%7Bf%7D%3Fo%3DAkXxRC4PGrggdd3Dssat_uo-fwaV5G3Vb0tf81XVGAeb%26v%3D1%26x%3D3%26a%3DCAog4QUhJY2uscsL_FbfteJuu_2sKu-Gw7SF_1le2i_grWASbRD0mKmoljIY9Kik_J8yIgEAUgRpvtENWgRqAO07aiZ91dP037fMzFKBjodCTRKN3HUQ-xJoOqRcB0d4AUON7B-BGoGGgHIm3TfjGfCbpG0EavVC7-48aPiuJIBS3c54t94rCfoZfHrDMHupuM0%26e%3D1726569059%26fl%3D%26r%3D389B8FCB-B1B1-4F35-A1B8-E513B5B41177-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqR2eCfXYFWOzp2gWwbQsSjYINj4&uk=xf_Nhf_l8AA6LAUlx44e1g&f=Show%20AReminders%20List.shortcut&sz=28018">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdQsZZ7G9Hfi8-dbJHFXx-C4PVQXAaa788BKXRKocEOpvC0y6MeStCjQ%2F%24%7Bf%7D%3Fo%3DAlzGniFrq4HNerxDmVNgPukFsAoARmEsHtW87OPtLqOw%26v%3D1%26x%3D3%26a%3DCAogQx9RdYRD-XswMnhJRhP_LMuWGUerW6mQ6bGJ6ySL9_0SbRDz0-nJmDIY8-PknaIyIgEAUgS4PVQXWgSStCjQaibjn83myeZltuqSD9Z4iq_Pgaaj5CV5joSezjV7EixXPBbbSoPnqXImKmHjxhkKVcHdBAHaGHLRqRXOo-4LWm455BtRjvfleWXDE0gXrDQ%26e%3D1727176192%26fl%3D%26r%3DC91B1696-CE31-459A-AEE5-D31BF8B0D333-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqBc2p5FwSkCx25481XI71CIl3ss&uk=Ixh4TaSwGW1E8jgFBTeAGQ&f=Show%20AReminders%20List.shortcut&sz=27791">
        <img src="./All%20Shortcuts/Apple%20Reminders/Show%20AReminders%20List/Show%20AReminders%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -246,7 +269,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Play%20Background%20Sound">Play Background Sound</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXMS0zXDOJkAdkjWZlfT8GDhyxiGAYgr9BJ7pwWi_Q7yLx0oURI1T54Q%2F%24%7Bf%7D%3Fo%3DAjeeCH78N6O4ox-60L22ghkwGmbnuZXP7QPFB4IYM8VD%26v%3D1%26x%3D3%26a%3DCAoglbpTy0NsnPqM0NpWHaBgmAy2fXYhmSd2EQ_lFSKsecQSbRCctbOoljIYnMWu_J8yIgEAUgThyxiGWgQ1T54Qaia5kqKW0mVSmxXS9GCMX8RMqHFIdPX5Db9sCdaNA9yojjErR4Cj63ImleiOgi1P5IHm2MzxkBbL6jz5Yrr-Eip0VGKXof436eU0tMEoYwQ%26e%3D1726569226%26fl%3D%26r%3D0A945E89-C793-4564-BA34-45442AE4CE47-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTSQJO4aqLECdjPlfZB10ys5rt5M&uk=_7RINZVSll4spCLbVtK65g&f=Play%20Background%20Sound.shortcut&sz=28288">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUHOTDpmfcDDSGW4lorUdqSoCPq0ATFI_5J3ciIzAVzRrVPzuR08t8t0%2F%24%7Bf%7D%3Fo%3DAsypcNo6qLpDKkt5tJJlwV5NCbKKH-HuB5c9KM5ErJKC%26v%3D1%26x%3D3%26a%3DCAogsPNp_JwsNipxjRinWRqQF7NQ4cF8bwTpiOrKFFGyWTESbRC_3ofKmDIYv-6CnqIyIgEAUgSoCPq0WgQ8t8t0aibBWoTvmHpLJ-zpPDWR0rmxPgdA02Gpb4Wagq6si7fUDraz7l5ppHImEnsZwOlKsQEY1K5SJF4s1xLpfhBmrPBOuJKLvEvfoB8BnSgDeM4%26e%3D1727176685%26fl%3D%26r%3DE5C1B7CF-A8D3-4DCB-882F-178CBA8B95D8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRseOQsEE5kxjq0ma5evAKCqt5Eo&uk=rit_ETuL8pJRx5HxVlA6wA&f=Play%20Background%20Sound.shortcut&sz=28286">
        <img src="./All%20Shortcuts/Audio/Play%20Background%20Sound/Play%20Background%20Sound.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -255,7 +278,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Convert%20Sound%20File%20to%20Base64">Convert Sound File to Base64</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa4HJTA2wxfsmLvl-HwToNOcubI3AWmnCgiFe-Rug7ZPreDi6X8D8GuR%2F%24%7Bf%7D%3Fo%3DAg_V9MSM-w7M0sORzDNaxIhvbcnP6g4t3JBcsMgc8EW8%26v%3D1%26x%3D3%26a%3DCAogMUZGD4myfbmqYQpe2lpl_53aDcxJpInGaoBl_upZFVUSbRC1v7OoljIYtc-u_J8yIgEAUgScubI3WgQD8GuRaiZMfGiKP0xyAetEhHMtv0QrAMxXbfNaH-vp2Ho5fYtoL_Nf5bOJXXImetLkEW1eO0a2JSiIc2ByQnuM04NDr2pMVbpuo-2DAH_PR2-T2jE%26e%3D1726569228%26fl%3D%26r%3D2EF5EFDA-096E-47B5-A087-E5372B006A1C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvZz7X7qp3hF7-G-SgScAwHOIXuc&uk=QiM5IgplmSFmlPZmKlSx_Q&f=Convert%20Sound%20File%20to%20Base64.shortcut&sz=26820">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAflr2EUrGv6pK7vkUc7xrikfe4pXAenU4NF4DG4gg-aVcJ9LKnQKIm_n%2F%24%7Bf%7D%3Fo%3DAnMCi3mg1CprzP15dEGeVAEwkA0dGee_fcHxNQQiHhoc%26v%3D1%26x%3D3%26a%3DCAogq9rYOD5IYrY05prp7-ms89qbcLL5_XWCK9sR-9xC9tYSbRDV-IfKmDIY1YiDnqIyIgEAUgQfe4pXWgQKIm_naiaD9_YQ4cjVrLpnOh0KgHG_G-dBcMCXC5XpX1-gWK1ABKungyULI3Im_7MX-SYwY9_SIF8hxdjQnze74ZKydKspnKOu593wyDwQOiIyhvA%26e%3D1727176688%26fl%3D%26r%3D7FA68F24-4638-4628-9BCB-C12FE2CC361D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwxhxytMNxD63Vu1wJICfAUa8s4s&uk=IjZxQ9Vsa5CeMQ2Hb_Z3Ug&f=Convert%20Sound%20File%20to%20Base64.shortcut&sz=26821">
        <img src="./All%20Shortcuts/Audio/Convert%20Sound%20File%20to%20Base64/Convert%20Sound%20File%20to%20Base64.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -264,7 +287,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Pause%20Audio">Pause Audio</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASKUxrvL1fK1qMkBt6Qv3P2KhJcaAeLpiUwo4otz-xDIVDkdaBQLjYeC%2F%24%7Bf%7D%3Fo%3DAtW1lZjgN11hSdp07d8HDKHm_16nRO4nNdjo6A8Rr0lB%26v%3D1%26x%3D3%26a%3DCAogfNN8Ync4kADya7aM1M5L1JvWNPNyJ5qTrIyrMxMAZn0SbRCLyrOoljIYi9qu_J8yIgEAUgSKhJcaWgQLjYeCaiYVlbFMcWiyUZLoMawoYM8OouSKHwyzOohbn36VYB8FRxxb7VkmX3ImhHyQcACBgpQdhuVFpveLqRsM4VRLaK4pcDa3Gjv5m7s9SWVFmeQ%26e%3D1726569229%26fl%3D%26r%3DEA88C114-763C-4569-8BFA-95AC37763410-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3WymYa5HChm7oc7AuiRRKhTMk3s&uk=0igzAIoLve3jhatii8K2KQ&f=Pause%20Audio.shortcut&sz=26660">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVIh_Mw2rVfyJpFvCAXY-x1qNTdzAZ8tlv3asAmqHbPB1V16HtmNgDSH%2F%24%7Bf%7D%3Fo%3DAlutYm2k-b7sBu1Nqd46k7yiFiY9tQIQkY56VTxoAIX-%26v%3D1%26x%3D3%26a%3DCAogNTWv8NBsShs-gfoS7EzbJemPJNqYcRGV841tl0gltCwSbRDJkIjKmDIYyaCDnqIyIgEAUgRqNTdzWgSNgDSHaibIC8tJoGdMAAw8JeehuxGVnlqFt0Q7wknMQqjQzWAk6u02fwqqQ3Im50AKyWkGcdoe9mumwL8_JnkTOYbD2tVJp1uafR0LBh6uuP-C2Lk%26e%3D1727176691%26fl%3D%26r%3D1FE8593C-0719-4855-987D-352B98637329-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXAKnnBy6kURpMK2paO6oTvDJd0U&uk=dMPUV9ZHXG4PxtnpLVtzuQ&f=Pause%20Audio.shortcut&sz=26981">
        <img src="./All%20Shortcuts/Audio/Pause%20Audio/Pause%20Audio.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -273,7 +296,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Audio%20Timer">Audio Timer</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb5w3q8X8fn8Gty3nGmOPezjttDCATDpfxNBmzFjrD6JVFLtr09hz9SE%2F%24%7Bf%7D%3Fo%3DAvGjO4IMfGc5Qci9H_4EJrcdeo0642kS1ZeTSzagUMaw%26v%3D1%26x%3D3%26a%3DCAogayu324lMYIujSynb02iv947U8SIsUL7fM--IzF0gkX8SbRDZ1LOoljIY2eSu_J8yIgEAUgTjttDCWgRhz9SEaibCntac8DCONrN_8fK5A0t9UsVsg_JVhFl-4WJouTjlnxJ287BYgHImybzxLplQasuedZThQAfTHPZySDE3bo_91Svb5n96EO6CmqUtp2E%26e%3D1726569230%26fl%3D%26r%3D2C46F3C3-EE76-4CFD-B454-C81FD07ED544-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2HPzrra39hqJ7HW7qiVxuHU47lc&uk=PQ0eYVRIkruZ9-jwKjUwLg&f=Audio%20Timer.shortcut&sz=27803">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ2yIAjMfh3Ul6k6Zvx2e6Mpo9BrAZ-YjRInhju_3qkV9rXKOAqAlcNC%2F%24%7Bf%7D%3Fo%3DAqckpnQKHsYGOBUCVyKTwy6CAwP96QEtW0bwOzYVRMsg%26v%3D1%26x%3D3%26a%3DCAogFpWSW-QtrpZuJDn2QsUuK5QSQo6pIVeVvRU95JUwqQYSbRCup4jKmDIYrreDnqIyIgEAUgQpo9BrWgSAlcNCaiZoMo1MdFXIh96tLHt2nfcGM6f-SacNQ6OjGwvW3Zm6Zvd2AiD3cXIm72ZDTj0zzOIJLZjh7iBzaXWmQe12z-SOEe74VjLM189KfqTjh5A%26e%3D1727176694%26fl%3D%26r%3DE859611C-05DA-425A-B569-D97A9861579A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcDxTbwZ8GrvVKf38AdyzEkWdHMk&uk=8gbVieulopuCjwax1GrEdQ&f=Audio%20Timer.shortcut&sz=27802">
        <img src="./All%20Shortcuts/Audio/Audio%20Timer/Audio%20Timer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -282,7 +305,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/MakeTTSSpokenAudio">MakeTTSSpokenAudio</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAetD708a1qNM2f-GSmA0DFTXwEtKATLmC1CCZrCeYf7M2daFf8_2FFch%2F%24%7Bf%7D%3Fo%3DAgMglqRQR8rnC0rAZ5GK9AWuJ0Fq8nPtXkWf7euQdDLa%26v%3D1%26x%3D3%26a%3DCAogLQ3Bbvm0x7GQ-tbqpeoNbnJRLZT2pCdD8aBzuPErBBUSbRC037OoljIYtO-u_J8yIgEAUgTXwEtKWgT2FFchaiYAFa66nBDVQH3o-8nO1jGL7dNzbxSYdRFMsDxEMeHgNHTMwmSf-HIm-UmkLM-DU9lhvlqJaeDwxSKOUmneFMofGKk_K736n9W4desaOXI%26e%3D1726569232%26fl%3D%26r%3D30198311-450B-4BF9-B0CF-AAA778D780E9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5zjCh2iKZKWwrctxvc5z562Pofc&uk=KnJUe76K8AKXf8sRB0AQ2w&f=MakeTTSSpokenAudio.shortcut&sz=28705">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUoW7-d_BvJAeYRlCpeEkaLjxoUxAdWnWopPaK76OmKuJxmR9owJxpaJ%2F%24%7Bf%7D%3Fo%3DAkFPTOhFW5_rIkqrMMUjBeV9S1REsZ08aP01h_QdDPwD%26v%3D1%26x%3D3%26a%3DCAogSLi6qUst7N-3twhh16lVxfxsWdiwlX17jcDVDI77PeUSbRD6vYjKmDIY-s2DnqIyIgEAUgTjxoUxWgQJxpaJaibxvKxIttyx2MasQ5n0ULakMUDCDh_RmxCBMEVy4Zf4ErL_O3FI0HImLlXy5TIgPy_a0iW9vpsaXhZlRuA3mu91fDe5liTrT1kDK69TLkU%26e%3D1727176697%26fl%3D%26r%3DFD896926-5B07-4537-824E-5E69C74829C3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dp9ZLY_ZWtpLKtgG712I7YRnaSBs&uk=Sbxsgm07igUF0uyjgqa7Vw&f=MakeTTSSpokenAudio.shortcut&sz=28700">
        <img src="./All%20Shortcuts/Audio/MakeTTSSpokenAudio/MakeTTSSpokenAudio.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -291,7 +314,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Text2Speech">Text2Speech</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASULu4V_fxKqu_bEV8ZtF67q30o6AcJS-maewdPBi5C6AYpv-vJcNhxP%2F%24%7Bf%7D%3Fo%3DAtddbgA8hslE8UuAgfD_sZKLMDYYm3Ah_h-d0-L1NW98%26v%3D1%26x%3D3%26a%3DCAogWsQAPWM_1f7A-CNpVrV-0UEi9G_DUw09cpkDRj_7ZjYSbRDJ6bOoljIYyfmu_J8yIgEAUgTq30o6WgRcNhxPaibgcmzeq3mN8VFiv7qjRCYyhHCIbAAYQM25HV5A9sFvx8C0ourDBHImVPPuIsHeMpru6yqbvv_1trHHozRuvLqGVrIJ-OcIFZh2zOYtpBg%26e%3D1726569233%26fl%3D%26r%3DB6DCA3BF-081A-43DD-978C-DF33E6F30ABD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Da0y-muhvOusgrNJ_Tnwkbake9WY&uk=kRuvpAAxqJr_heem-2DJ6Q&f=Text2Speech.shortcut&sz=28852">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdxOe-fiEX1zaOk3L1stDDs8ffYuAZ02Jq_UNHIRzrd-AsW0OPtqV3yc%2F%24%7Bf%7D%3Fo%3DAiQOrrO1qju4sd2lB6yuJs5NQtjHSxg_-kkGKVyYwR6o%26v%3D1%26x%3D3%26a%3DCAogWOABDxORKgAe0i7zHnGicZiYCLGaGd3F4g_7bC4IxmYSbRCQ1YjKmDIYkOWDnqIyIgEAUgQ8ffYuWgRqV3ycaibCcqTflIX10ttsuUHgUSUW4uDQVJmNYpfSzafmeKcB6IZnttz2rnImEdM7O32vNIUsw4x8VrhluKmOXtaVuA2yFca4Fce_1nBxEsDwq_k%26e%3D1727176700%26fl%3D%26r%3D8BD7FEDD-BD18-4A55-BB34-BB35201C510E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZTbGHz5r8_hKeWyuGhcWpu0gTnE&uk=f_r2iZTKdAAvll6_TOXhJw&f=Text2Speech.shortcut&sz=28851">
        <img src="./All%20Shortcuts/Audio/Text2Speech/Text2Speech.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -300,7 +323,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Text2SpeechAudioFile(s)">Text2SpeechAudioFile(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbwwrymfD9EBg-ydlMJ4MHq9UXQYAXER2kvDjzUv9IhLamlzEXkbbh3Y%2F%24%7Bf%7D%3Fo%3DAgH9lWChIghLXUewf5afXKhd99y1EeGlDJWaBazqEV36%26v%3D1%26x%3D3%26a%3DCAogLwK_hN1-7XhaIgc67aBcliWTRlGJoYU40VhxWuaKRS8SbRD187OoljIY9YOv_J8yIgEAUgS9UXQYWgQbbh3YaibYweOsOA4IX8S6F81LmYPCcaT9FKFFLynzESftFBrzrCZLVpqUcnImPjVlmgWj57u3VyuotkDYfsjV9Ik9WxAe96tC_AMSFdTMzOPf0-8%26e%3D1726569234%26fl%3D%26r%3DC472098D-454C-4296-B12A-65ED2DC9169D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmUjr4iy3Z4qB02WoVcozh-q0XRI&uk=vs2rXOSts6rITXXqCvrGMA&f=Text2SpeechAudioFile%28s%29.shortcut&sz=29001">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaHtlcbrDHI8CcYV5WTi404hyzScATnWLRK14DSX76M2iJCX0vRyXLvd%2F%24%7Bf%7D%3Fo%3DAjyEVfMximU18hbMmB0XvIfbgJU4aHGpy1b_fafNwFOu%26v%3D1%26x%3D3%26a%3DCAogy2SJQv0vITU8Rb3V4rZBcHFm_Ibu4ASSfrUwOANEQQUSbRCr7IjKmDIYq_yDnqIyIgEAUgQhyzScWgRyXLvdaiaQ2fYdORrMCio9T9qm2oRBYwvQ1Uo_Ck3Zndm3tS904N1kfgdWaXImbVIjNpAKR6X4hIYSR8h-pL8Y5OQtBXK5UmtoRLD6S1V9HsM1bM8%26e%3D1727176703%26fl%3D%26r%3D60A28E48-CB15-4545-B8E5-4A2765DA0D61-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrMTRCTBCR6ead2f1vfjWQ5O93ks&uk=lKC9SQwxuh4EZbocRkNkww&f=Text2SpeechAudioFile%28s%29.shortcut&sz=28996">
        <img src="./All%20Shortcuts/Audio/Text2SpeechAudioFile(s)/Text2SpeechAudioFile(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -309,7 +332,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audio/Play%20Audio%20File(s)">Play Audio File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAatAjHDhKu4HDNMIHkelqpAhyt_fAf2PJxIWTLXL7ps0ZlEHtAMwJMFM%2F%24%7Bf%7D%3Fo%3DAtKnYg2z5dT1uXaKskYIm88Oob8RAy3pU7gWxrQLXY15%26v%3D1%26x%3D3%26a%3DCAogo6gw3MNe_V-KZEpGaNMXYdajXhwLYxfS8VIIlVF0ZdcSbRCJ_rOoljIYiY6v_J8yIgEAUgQhyt_fWgQwJMFMaiaD_e6b9-qBpg8AeT2mtXcXx7J_n46-ug7FkHkzrQ9ijwpaFJyQynImhWa3cv0f-qTlMsszkc4FdtsShCPb0nqTatEGOmsLGCKkq0ATiHU%26e%3D1726569236%26fl%3D%26r%3DDF5E002E-AF68-466C-83AD-CCF258F24B60-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdyZEEk-c0Hkmbck0lSIi9UjOH_A&uk=48-GFL7HD_SSUXPVD8OGvw&f=Play%20Audio%20File%28s%29.shortcut&sz=28478">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWx7mtyz89a2aIuvUrsncNBLqXkMAUxbIev-iwpCAh7HI_vyMMgGhBub%2F%24%7Bf%7D%3Fo%3DAhRvZZi-Jcrb_jIyQBOe4YEoBMfQzkQRkjF0m4MpZyS_%26v%3D1%26x%3D3%26a%3DCAogCFdGdQQxWSBrPosXS-26FHN77fV1c46grgicGfS8-f4SbRDVhInKmDIY1ZSEnqIyIgEAUgRLqXkMWgQGhBubaiZgqyv1DY0NiySHq4kPp82_lS8wxQzsGumdnWlne6Dl8XDytA-N5XImJ54714GgiRD0a03ggT4j8Ur04yEX2hvI2pr8pCkLE8BeAqcy3DM%26e%3D1727176706%26fl%3D%26r%3D464A032E-719A-43CE-A981-313C731269E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5MI9IxmjlnWkXm-cniOFUh98PDI&uk=yqpilhoWrm6jtM_H05XbJw&f=Play%20Audio%20File%28s%29.shortcut&sz=28479">
        <img src="./All%20Shortcuts/Audio/Play%20Audio%20File(s)/Play%20Audio%20File(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -326,7 +349,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible">📖 Audible</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUfJ_P5XM7ih0Udgji8oIy43EGXRAXLsfFqPZIlHv41KH9Lxwpkdj8VQ%2F%24%7Bf%7D%3Fo%3DAsVvW-y7oiGp7s2xIDPBjYoqyuS2bd2qWWJ-xA8vmsZL%26v%3D1%26x%3D3%26a%3DCAogvZSw08ymSIfhmIONxdXVS3N9AV2QmnLjsg81wGVpWBsSbRCegMSoljIYnpC__J8yIgEAUgQ3EGXRWgQdj8VQaiajMt0VqqhOLViPbmEMZ5aqrXtD-UsmMiGmdYvPtr_6bT5Ba7-FGXIm0JCmTGdZdgrfd41USYrJ0YkgIEOFol7WAr7Q8FnPYzvnKr2XPfk%26e%3D1726569498%26fl%3D%26r%3D060A8DEE-B89C-4EF4-A97A-AB31A8E32AEE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdtKzkDaEmdVWwm1JtCE8uZSZ21I&uk=gqUpX0MJCD5781G2bhBFaQ&f=%F0%9F%93%96%20Audible.shortcut&sz=26356">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVK13kkZfJL2hb-AJlksvwih8oF0AZUlvbkSnjABgd2cgY5QLeAEU0em%2F%24%7Bf%7D%3Fo%3DAo7kL0BU_8qphEPDWqRMyFWVwWgpOvXJCBHD8TW9B6Ip%26v%3D1%26x%3D3%26a%3DCAog8U6UXcVeuWUnrvEJM3CX2uXtEU24AQ9LCLl93hZCd8wSbRCk4cjKmDIYpPHDnqIyIgEAUgSh8oF0WgQEU0emaibmOkgKIDshFIZMYKbfWyJCVuUMHMJUo6wLQP1Ika45m1tXW_t_HnImDaf761pnpVYLUTXRa0QzjLxwerU7_Es1fZkR0w8DQratFd3BYKA%26e%3D1727177750%26fl%3D%26r%3D16DEFDD0-B3F1-48C0-A364-3D1879485252-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DF_xqMbrKUERx00taZmabV9M_VGo&uk=XUTn4s69R_9is7NW0OpwFw&f=%F0%9F%93%96%20Audible.shortcut&sz=26357">
        <img src="./All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible/%F0%9F%93%96%20Audible.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -335,7 +358,7 @@
        <summary>
        <a href="./All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Kindle">📖 Kindle</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV1DkeUyywmTVwpcvlLP-eLeAsAWAbxiowEQth-FZL2qG2JvnbUSBzJc%2F%24%7Bf%7D%3Fo%3DAqlnF3jDiW9JRwcqnJsQfCXzfZJEk_miZO48vDi6nv9g%26v%3D1%26x%3D3%26a%3DCAog7ZO_xaptWV4_KBB95epEPWoNRRIXCgGzELhw3UzaAZcSbRDd9sWoljIY3YbB_J8yIgEAUgTeAsAWWgQSBzJcaiaeIUGKudRODt9rRfNXYzY0weMzF790C4PQPDjXkIf4jnZj3N8elXImMBtoc0DJP9_zbJwhl4NBs5M3a6terDMGsBxbYLtNLud5ws3yw6o%26e%3D1726569530%26fl%3D%26r%3D9BC88704-2453-43D0-B4BA-EB5E530CDC18-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dws9U1P0u_fUdb_r9aYJanxLRXZw&uk=oY97hj75cZAUEz46yoELfQ&f=%F0%9F%93%96%20Kindle.shortcut&sz=26356">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVp0ESd6H4TO4Hh9MDULEiXZEWqJAaITpjXu50p_p48Lw1B60NfY0P_4%2F%24%7Bf%7D%3Fo%3DAhWTtcjuvLqK4rF02g7ptXJ3XRW9NXu75jVImw3EcC_J%26v%3D1%26x%3D3%26a%3DCAogand74-H-Gpi04wF6xYLUJFUznmIHOmhS_EQw8JQx2mUSbRDL58rKmDIYy_fFnqIyIgEAUgTZEWqJWgTY0P_4aibaSP9qnhW2W7TJnOGETmxjoG2RRUWHLq-N7KZEm-zSLqGcEgTdiXImkHOcAPT4i3PQwOxJ3ud9xx9CInxAUzaVDqhcwyzNOrwa7AegNTI%26e%3D1727177784%26fl%3D%26r%3D3DC15016-E8E1-4EBB-BBAA-49506BBA67AB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoBqlUCrtIBywCgAu3e2fldAbCe4&uk=wu8VDUkhOuHiEmw4e36Fpw&f=%F0%9F%93%96%20Kindle.shortcut&sz=26355">
        <img src="./All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Kindle/%F0%9F%93%96%20Kindle.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -344,15 +367,24 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (10)</a>
+        <a href="./All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (11)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
+       <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Remove%20Toolbox%20Pro%20Notifications"># Remove Toolbox Pro Notifications</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe75do4Lx7JYot0HWSamyQaMXtcxAf35e0xKaQwkp3okXSLRsuKo2o0n%2F%24%7Bf%7D%3Fo%3DAhCGlViLFc4UibPSlP34yTA-U_qi500U0ICXfN7A8oc9%26v%3D1%26x%3D3%26a%3DCAogTHEaFL6Vy5VwTNbSXzF26WjCCWAHLDoQjr3t95SpTc8SbRDqwufLmDIY6tLin6IyIgEAUgSMXtcxWgSo2o0naiYdqgMJKNvtnjCcl6S2CT4oGgOU9S7w2odmTc1_BgRcm0hXSTJhUnImzZFDegPjOaEFXE2iQMG44F_mnnH0VHn5UDtpagwjbcB1WkiZg8I%26e%3D1727180351%26fl%3D%26r%3DCC32B883-EC23-4200-8887-FA8EE2FB9015-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAnhOJTSykhp1yfJPByWicAi3SGc&uk=vV50P6njG23nRmsGZ4Fcuw&f=%23%20Remove%20Toolbox%20Pro%20Notifications.shortcut&sz=26587">
+       <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Remove%20Toolbox%20Pro%20Notifications/%23%20Remove%20Toolbox%20Pro%20Notifications.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Set%20Sport%20eDevice%20Charging%20Reminders"># Set Sport eDevice Charging Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ6Vabqs_eTaVqCqNCdGLvgHqx7IAaX4K_amyAt2wuclSoCoeesxGz6A%2F%24%7Bf%7D%3Fo%3DAqYL_ICDv1ID4Qz8saLUnDwu1kMOqKQU9z5jkZ2OY8Ho%26v%3D1%26x%3D3%26a%3DCAogMCKT9K3UpX5D_lAxOHuA99aNGGFq4SWd5DmnRkQYNJkSbRDw8dmpljIY8IHV_Z8yIgEAUgQHqx7IWgQxGz6AaiYKl8ByzKOWBSYUTI0KfPsGr_LHJ139-3P2YGVvBShSdu3Q2KLCa3ImHdeFqD9nzOH7MatLeQaf7RHYaxoT6yTF-KKuSUljgeZ2gSoeRdE%26e%3D1726571954%26fl%3D%26r%3DDD0D25DC-B57F-4396-B0DD-7A9A6AD812FF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmUe1KA5Vl-gMPSir25s9VFozNfc&uk=yumEBo51JiHlqniG9_IkNg&f=%23%20Set%20Sport%20eDevice%20Charging%20Reminders.shortcut&sz=26665">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR5Knfc6cAPrwUo9trpUMtK8wE1NAc8ukkDROlRfs9nX5GGTHySxfwAD%2F%24%7Bf%7D%3Fo%3DAq6tYis6YhtDVpdsvDG5Mb1jSFTtQcm3eSa8sH_U4-u6%26v%3D1%26x%3D3%26a%3DCAogs-E6ezvLPf7g2vs0DwqA5cr2KpjknpSRceWcD1m0a1QSbRDVzenLmDIY1d3kn6IyIgEAUgS8wE1NWgSxfwADaiab0b6-Y7Srj6r3K1y7tfG_1QHVeisuCjpOpjnfEVY2E-JM1UG0A3ImtXkbbmziHJuTEf0s_Ua8WRJI53hDr6AJw5xxd5LExp3ZFdlaVzY%26e%3D1727180386%26fl%3D%26r%3D7D05E196-0807-474D-8F5D-657CD9806855-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXrvxbdeO9vAWigriR6CsNnWZ8QQ&uk=TIkz4jiqzen4-l204SrBWA&f=%23%20Set%20Sport%20eDevice%20Charging%20Reminders.shortcut&sz=26664">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Set%20Sport%20eDevice%20Charging%20Reminders/%23%20Set%20Sport%20eDevice%20Charging%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -361,7 +393,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Sanity%20Check%20Last%207%20Days%20Journals"># Sanity Check Last 7 Days Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeMhaMeQbLwH6InI4ihvchfsHl_6AXy_C6goSPflcpQmIKMCldn9kisD%2F%24%7Bf%7D%3Fo%3DAvzE_GxX-LxPSbRX_h-__xZ86qQAk1AGUP8I7LTW1qrf%26v%3D1%26x%3D3%26a%3DCAoggtqEBrV1NcAnJfG7cAlrZgtDyVUqnypc7XtMgDsnARUSbRDv6NupljIY7_jW_Z8yIgEAUgTsHl_6WgT9kisDaiYI53DPiM4tjMDe1DCl3eddHfDAgf2EUgd80y2fEhK3bQaF-_eNn3ImrnSJVND19EuXvoGYkO4rAV-kchZc00R-YMomtr-dboJrHWMoFSA%26e%3D1726571986%26fl%3D%26r%3DC6D60542-9D68-4168-816D-66AA520059B2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DtpAr1xzlESs2TX0wLU_lw1bqLas&uk=MVOG-fB3azkahJkGD8e3yg&f=%23%20Sanity%20Check%20Last%207%20Days%20Journals.shortcut&sz=26734">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc1C-Phq9R3J2jWcKzRL2jt3VGuwAU83bLB2NAS9vxnhf7zapfhOE4Y4%2F%24%7Bf%7D%3Fo%3DAj-l6IyBmjnTLKi6P81rXehrwuKL4fbj1-URUZBJanW4%26v%3D1%26x%3D3%26a%3DCAogRZcumkEST8qCURKu4nXh8PYhN8WmP-7z6VpcZ1iFCbISbRCd1evLmDIYneXmn6IyIgEAUgR3VGuwWgROE4Y4aibUeIv4IeZxSJKVcB_exUbmrrblZZ2Hkdb-f3izM-24QkhWBomzMnImLQs1K8dmNCfmxmK-VdGCla9vb74BVS159qneSSoDtFsm_BRNKgE%26e%3D1727180419%26fl%3D%26r%3D6821C066-294A-408B-A4EF-28048D646389-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dyh0V7BHyvjF9S3Ba0jQmWA2Ypu8&uk=D10w-OqSGCf6cyVqHr_4mQ&f=%23%20Sanity%20Check%20Last%207%20Days%20Journals.shortcut&sz=26733">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Sanity%20Check%20Last%207%20Days%20Journals/%23%20Sanity%20Check%20Last%207%20Days%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -370,7 +402,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Create%20Today's%20Bullet%20Journal%20Item"># Create Today's Bullet Journal Item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcASKZDJ7N-T2ld6gIJ-3GL8OZTWATyZGdR1ZzHJIGll3PRYldRdNycv%2F%24%7Bf%7D%3Fo%3DAhLlaOhNE9aEHqhcYMdzC3jxvnJrPpf-ptcTRCL79EMd%26v%3D1%26x%3D3%26a%3DCAogWDWyD1hOSAKwpe-ucQKLn0s4K_laNW-T0RvZ-3QvCyASbRC6392pljIYuu_Y_Z8yIgEAUgT8OZTWWgRdNycvaiYoo0pGe6KvTWFplmwKsQ_Z2tfyQxOoKJHaIbUmoOuivPj4tKZ3JnImgNRvPrIcCB9Hum6WZBHYIIu9qUo0SRWQ4YW4xn9lDuMNeCJdgg8%26e%3D1726572017%26fl%3D%26r%3D9DEED437-B3C5-41C2-A211-2E6798DB4303-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRvQkXifqgN_XOzQr4elSZBvLe-A&uk=Ew8cnX7yyizbCCavXK6Hyw&f=%23%20Create%20Today%27s%20Bullet%20Journal%20Item.shortcut&sz=26892">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQMf0Btro3zZ9vM4aP5sETu0DhEeAVwXAuRfsdrR8g5INNCkHjBiyWbg%2F%24%7Bf%7D%3Fo%3DAo8YQIFzNO6hxHFsAvDf1jts8dD6hr98jMVSLPbsWx1d%26v%3D1%26x%3D3%26a%3DCAogz15kiVmc6ZJFMQ82Fiwddl1YrKhb8aW52ZTxS_-EZPISbRDe2u3LmDIY3uron6IyIgEAUgS0DhEeWgRiyWbgaiZK7_VfV3GMxGIAwNQlbI4cUmBeKKyCPKLkj0Qm-nkAaCRaLujkoHImRP1ZHc5P0LbAjycrtmBOo1_0K62WJj7tu8Vb3sWt-dgC3-8fHgU%26e%3D1727180453%26fl%3D%26r%3D595CAA96-9F63-4E84-8155-C814B234BDF1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC5yRMd-av55jA88TaFEhM5JfBbM&uk=u-q0QAyKvJR3TTbB8E7nmw&f=%23%20Create%20Today%27s%20Bullet%20Journal%20Item.shortcut&sz=26891">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Create%20Today's%20Bullet%20Journal%20Item/%23%20Create%20Today's%20Bullet%20Journal%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -379,17 +411,17 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Fetch%20Today's%20Weather%20Info"># Fetch Today's Weather Info</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAShUypQfbRU1-yivkzGstLsh5lI1AfilL5A0ieb9DaXygDSS9y-MqmQL%2F%24%7Bf%7D%3Fo%3DAiHD6SJt5Wubt43D1z7gxAHLA-V3mkjtjurJGcSsO99g%26v%3D1%26x%3D3%26a%3DCAogrKmE-stdWDI8yaP958drekCz66q27oZhvV8A_dypHFoSbRD61N-pljIY-uTa_Z8yIgEAUgQh5lI1WgSMqmQLaibWKtlVPjmK-ILgkO4czaFuDXmdpTkWMUFMkyZ4JnnBdXaiNb_hFnImT1ha2Y9zZLgg0P57ZNnfKYQxlmH6VL8-z9GDuJmP-Ht9ZEzR5T4%26e%3D1726572049%26fl%3D%26r%3D7EB4A17E-3A5C-4026-9871-135285A98D77-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3De94jGxqKyaSZvL4uLW1q3tnMJaw&uk=KnwjdUurCFIxXYRVhK8ucg&f=%23%20Fetch%20Today%27s%20Weather%20Info.shortcut&sz=26659">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaDYqNt5A2a9hO6aRpdvy93OdsK-AQ56cFvEMXITOeOajW3kKgTGbeQn%2F%24%7Bf%7D%3Fo%3DAi-u1VxykSHrRhSrQbb0VUSvVDSLXsRxvSZPZTcK6yTE%26v%3D1%26x%3D3%26a%3DCAogI04as14ZLMj3tDl8VVvBaMvbwy6VdCBaOzJoiVLNz8oSbRDL4O_LmDIYy_Dqn6IyIgEAUgTOdsK-WgTGbeQnaiYcRu7Ouqx4g8YmpHosEiHqbT4l3QsrpgayrDTo8Vmk9ZvVfzgm3nImIcZvrb74FI3rXJ8kcWHppfUhA0b_xpEDo3kqwcyIESAz1RJWDAY%26e%3D1727180486%26fl%3D%26r%3D147D492D-705B-4888-A5BB-E6951B41B2E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DH1eWSnCasFWODHLaWNNDEw2SmWE&uk=ARqV1Io0bsniExkBsyOwUQ&f=%23%20Fetch%20Today%27s%20Weather%20Info.shortcut&sz=26658">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Fetch%20Today's%20Weather%20Info/%23%20Fetch%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data%20from%20iPhone"># Backup Data Jar Data from iPhone</a>
+       <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data"># Backup Data Jar Data</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU2vf9izmTm4hq85BiijB0_qSoYkAedjKuizTkyED9hUAUg6gTM5zHe1%2F%24%7Bf%7D%3Fo%3DAox6jIg_xy98ZdsHx7-MHVF3YMueM-RO6N5UhODAi7lG%26v%3D1%26x%3D3%26a%3DCAogo86WhzZBLfkw_LtuNlxtKOMB4RMaA7m00_jFLE3MBvwSbRCcyuGpljIYnNrc_Z8yIgEAUgTqSoYkWgQ5zHe1aiZwAfCdAUx6hHW9f53fI8JLAtOjWwveecLHRAhWOUk5007DOPgd33ImPA9-neyaG1iPc5G8SKR1DUSmOYI7hkFgJZ3rPp0PHCDwjmrcXT8%26e%3D1726572080%26fl%3D%26r%3DE687A80D-B859-459D-A916-72AB832522CC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DudOvRWZQn4oEXBj1qisgkn446O8&uk=KgNzvGtJjldpOwBK8i4hXw&f=%23%20Backup%20Data%20Jar%20Data%20from%20iPhone.shortcut&sz=27329">
-       <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data%20from%20iPhone/%23%20Backup%20Data%20Jar%20Data%20from%20iPhone.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASmk8qTEwH9jTsmg-RiL9xET3dzPAZNNUMDEdTGBM2S6wjwTP592U8Yp%2F%24%7Bf%7D%3Fo%3DAjWe5iJ6wJyXL8w_BI3m24Egipvh-4QXPGi5yNUsZ0nw%26v%3D1%26x%3D3%26a%3DCAogIr9OaHWPs3iR0KcHkZkMxCPaCqEe0AFtm9aOrgVRlg0SbRDC6PHLmDIYwvjsn6IyIgEAUgQT3dzPWgR2U8YpaibQBWpviPUJqxjeEegBlrr_5UtOTSdHOw0MR5BBJEhhV_MhecrRsXImT-Ux4OjBJmZRnOVC9EdALRkvFU3ijMbBCZsbOX0vTuQ2FidZ5jA%26e%3D1727180520%26fl%3D%26r%3D97D5B3A0-382B-4D5A-AB57-0F18773D5451-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9Ce2O2BvashhjZ3SDSM7ZKCRFYg&uk=_4wJBFhoDmfAqoX2OLFaxw&f=%23%20Backup%20Data%20Jar%20Data.shortcut&sz=27328">
+       <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data/%23%20Backup%20Data%20Jar%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -397,7 +429,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Cleanup%20Completed%20Reminders"># Cleanup Completed Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfYJTPRB5mQ4C0g5Gyb71Up3oW55AYNyEhF8ar7MYxRicIceqQe96Nw8%2F%24%7Bf%7D%3Fo%3DAk_KnetiF3jitUmPAjq9weTdu8AMhDAttvEdJwbJeK8v%26v%3D1%26x%3D3%26a%3DCAogsw7zGCX5kAEhLuddc9R8GW-x_nlkww1i3l35YdaGMyoSbRDqwOOpljIY6tDe_Z8yIgEAUgR3oW55WgS96Nw8aiYuOySWHZyF7Gvmjzw7ISdwgGLmUDh_wtc-pR2mLOZl9anWDwh-lHIm3WyNSezdyQEGbAGIp8rZld7HncMnn1qxH2jXul1HM_CxBB0Fe_c%26e%3D1726572111%26fl%3D%26r%3D28AB67CC-8D5A-4052-BCB3-409F87305B59-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMMPQisMbs_XKOT0vIDKQsK1RVdY&uk=TyjrXHgbFhNV-wAlHKpQug&f=%23%20Cleanup%20Completed%20Reminders.shortcut&sz=27863">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY4cBcnc-TJlqLCzbfO_rbQ7Gdb0ARS1J9O1UN0KicHCOeOa6NyJzOt4%2F%24%7Bf%7D%3Fo%3DAgX_eLduFRqCXJbiE8jzx_4TJLJnAFYRU9E7oEQD9ql9%26v%3D1%26x%3D3%26a%3DCAogrz2Pu5rTmFH4SsfZO1-n-HdBP_ia23_xJVSfYcyNVscSbRDO7fPLmDIYzv3un6IyIgEAUgQ7Gdb0WgSJzOt4aib4tVtpuTlhKVnWA7RSnOZy5YnQ4iLwtDkeiBjC_BOTn5YAiFwNLnImI5zkBYuIzCzzrZYurn8YVnEhvz2AVmVo1KMbR8pPfSfTmqf9Vcg%26e%3D1727180553%26fl%3D%26r%3D78300A79-606B-4E99-8ABA-B98247251663-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdHfL9KIQkdTL7OUST3kPjLRQ30I&uk=9FGjhMlBledzpnVjz81OGQ&f=%23%20Cleanup%20Completed%20Reminders.shortcut&sz=27877">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Cleanup%20Completed%20Reminders/%23%20Cleanup%20Completed%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -406,7 +438,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Sync%20Abfuhrkalendar%20to%20Reminders"># Sync Abfuhrkalendar to Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVkJ6T_RsBYNRXacLjs83lijcfvkAUyQ2iklfMix8g5k2JQ3qwa82EGt%2F%24%7Bf%7D%3Fo%3DAlkP3Qi1x7TxcgVALZWF6fdIyEDYdsgnP9d7TK-3V0rN%26v%3D1%26x%3D3%26a%3DCAogygQG79W38FGz0DuxBidsFd9cO-NPj3zVn5cEpV25UxISbRDBtuWpljIYwcbg_Z8yIgEAUgSjcfvkWgS82EGtaiairvhyPWKaMRX8KsI-1BY2znJG4AZ1INssjuToOr8AMAaSKJ4cfXImdf3fE0705RjPVazQWPvihP6f1BsE5m4rR6TfF2XkRnwkJ3c4I9E%26e%3D1726572143%26fl%3D%26r%3DE453B366-680F-42CB-B231-7373CA2B8DC1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhIRUMTY9pLUSuksyxZGvPUZ0U7U&uk=7GzD6HOcq3uckHzD-_3Dag&f=%23%20Sync%20Abfuhrkalendar%20to%20Reminders.shortcut&sz=30369">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXu1huCLb6EfNjNmkZfvaUwIRBiGAV-Dg5EmORmfnSIWna6dFUD4eAtG%2F%24%7Bf%7D%3Fo%3DArl4fUUoemwzSxwARdPC-zFSqxjBGZi2ILvvpYhFCC3e%26v%3D1%26x%3D3%26a%3DCAogBtQXPN60HRBoMpgD8ScLeJpNC1OiEHuRW9zDhRlcz6MSbRDm8_XLmDIY5oPxn6IyIgEAUgQIRBiGWgT4eAtGaibPVOaxavgRoBbo3EyYTUI3ppjM7e0IDCPIARRwZncPyaFFAUVNnnIm6RWEvs8hinvr-_a-QAf6C3EQrIun2xxwF21OkWeqrBAWQOdgTt8%26e%3D1727180587%26fl%3D%26r%3D5A5F3373-DB2E-4EEF-9BBF-526C76EA6B1A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DI1qqtgeFUuYs6x8_nRoBQtZSMt8&uk=v32IYpG7Gv573in7vxCHHg&f=%23%20Sync%20Abfuhrkalendar%20to%20Reminders.shortcut&sz=30368">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Sync%20Abfuhrkalendar%20to%20Reminders/%23%20Sync%20Abfuhrkalendar%20to%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -415,7 +447,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Update%20My%20Life%20Rules"># Update My Life Rules</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZAKtN7VihTuJiRS91zld7lRCpD9AVW_1x_uJWLgPwCisKJpFeyPLjUF%2F%24%7Bf%7D%3Fo%3DAshQ7MwtbTXkTXBPfPxrtDKgJeIa50dwyHLRT7WmSe5J%26v%3D1%26x%3D3%26a%3DCAogF6B7nVjpq0rSQSRsqgI2RRnBq6xkC9hTJNS14xvrvicSbRDcrOepljIY3Lzi_Z8yIgEAUgRRCpD9WgSPLjUFaiZNXPP6w43rP4PBpyCqVQi53KJCxIF_OJqvpA9uSTajsW-mHo0uWXImr_nyI5QId5jhY2IiieI9eXlRou3rt71ruXPLtRH8alDOFyqefeI%26e%3D1726572174%26fl%3D%26r%3DA6315BF5-04B4-46FB-B372-8C7AEF608592-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeBpTGvBPNM8h_Nl5hc7G0Ws3hdw&uk=nug8ZNZJTHXy2Zla7A5jGw&f=%23%20Update%20My%20Life%20Rules.shortcut&sz=27925">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATl8t_Y52Ivyh4cMUpMWVqPga_avASu9vPtjZcKUgHUQE83E1X8ssJ27%2F%24%7Bf%7D%3Fo%3DAqkXFGN3Ug40u5OyByqPi5fYlNmo29BbeQRTBOaWKazn%26v%3D1%26x%3D3%26a%3DCAogD6IqKX-_fQDkqENco42ytqGAxwNYY5Bh4k6M2Ib9kccSbRCP-vfLmDIYj4rzn6IyIgEAUgTga_avWgQssJ27aiYgPSiL3q535lGgf7V0UiuU9CDQDOHaCvoI1jLQVKBgSRLjz_rE9HIm120kvROLcwjLWPjD5AgIqte5lIR6MSKBFIEW6PAyEvpY0aTHxKk%26e%3D1727180621%26fl%3D%26r%3D9E505E41-6B60-4267-BB27-FE509EDC4602-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DsMtb1c8nHXDKMYZ1tAbrs88kUIE&uk=J4VZfJP-ftlNWyGmm6tsLA&f=%23%20Update%20My%20Life%20Rules.shortcut&sz=27924">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Update%20My%20Life%20Rules/%23%20Update%20My%20Life%20Rules.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -424,7 +456,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Inbox%20Zero"># Inbox Zero</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXt6dlNBRZxJ9nkME1gENtKcIAlmASM16D3yOEuc4yyFdE8FIQJVtMnA%2F%24%7Bf%7D%3Fo%3DAr4a-VVjHg7e1XWN6oOtL8dII_4vcSRAUmFQ20IAOOTr%26v%3D1%26x%3D3%26a%3DCAog8cfCePnM94M5kF21GwDgxKuSilspUSJPQoMww_RgR0ASbRCdoumpljIYnbLk_Z8yIgEAUgScIAlmWgRVtMnAaib2MUjzeusxu5_CfS1ePO6dUsE9-U6Yjz679wor_IfmLmDv0iUN0XImwJ4SEHKY_-iJ6W0JFfRFRvxGbdtcuBCFbxB_Gx8DkKCg-XGdA-M%26e%3D1726572206%26fl%3D%26r%3DD7DF73C5-D879-44CD-9E7B-58D284143681-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyLBAhoJY2qUTE_1_kkkGOrKivwU&uk=YH5QF0jFY3pdPKnK1zhR2g&f=%23%20Inbox%20Zero.shortcut&sz=28125">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYiNjZxR7rWwcYFCGKkM0Y2XRdPYAUhIgGO-QXZzqdm6LfQwxzMiagnZ%2F%24%7Bf%7D%3Fo%3DAqP_2QvyHPRuSDvLBLz13uvR4h5gUBC3MmbtAfYPZ-SK%26v%3D1%26x%3D3%26a%3DCAogrTzsB7oxb6DXwekhw3XncH49DelwLlrH2Gxwk1oOez8SbRDfgPrLmDIY35D1n6IyIgEAUgSXRdPYWgQiagnZaibeZAEuCaJbWhddDqn1M2lltebo9ZtvCXaiSbilsGeo-36aNjcyAXImmhBF-K8XG0ygKxhIxv49N0fe6Mqf6nQNWp6knEgzSAK25xQl9rQ%26e%3D1727180654%26fl%3D%26r%3DEFC8D352-DC71-48DA-85CE-5A480FBA5F4C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJJUfGJYeghBxD37g9zu0rWa-vC4&uk=4KJKbgc6ebebMLIRL1lOfQ&f=%23%20Inbox%20Zero.shortcut&sz=28124">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Inbox%20Zero/%23%20Inbox%20Zero.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -433,7 +465,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20My%20Dear%20Yi"># My Dear Yi</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa5EuC47McFYukihSt8FaHfPxcAUAXJQ-lxKeC7pQssvA6s-jqW7OAyc%2F%24%7Bf%7D%3Fo%3DAiLRE8afLcFQ7sFeeoXzTJQt99h5DxtkZCqNKbRzHoY0%26v%3D1%26x%3D3%26a%3DCAogQN4AnMGttNElUh39A19Frc5lDqko0zUVaXYLBmGplJQSbRDwl-upljIY8Kfm_Z8yIgEAUgTPxcAUWgS7OAycaiYAnyzhUdgRw5Gtd5QEh5D-rec740yFLW67empgYoXZU7XWiWtGInImCX18GW4NHrNsFIsphxQZ1mXN9qm1v7tPpcPNu-ePubRhchM4Y7c%26e%3D1726572237%26fl%3D%26r%3DAE1751C0-8F9C-4A31-A152-C09726D20CD2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzsKn62Msjw9IubgMNMHLWkFYO9U&uk=XySg-i8jUcobTW406yK7wg&f=%23%20My%20Dear%20Yi.shortcut&sz=26667">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUTnagOzSNOrtca-QkR-N5ZPsHLNAVcoIuMxveWK5r838OASrCyjcyW4%2F%24%7Bf%7D%3Fo%3DAvFPz3B-9HNZrbVOPfovlAKDOzswhppyGLwXISCFp1kY%26v%3D1%26x%3D3%26a%3DCAog7FVkSpkR98XBmRWK_sHGVThpLd8S2MszWSeH3SjGWp4SbRCAhvzLmDIYgJb3n6IyIgEAUgRPsHLNWgSjcyW4aiah7ynzpkUJ7IKH_qFLD4sCua8M_iiZnuaGqNlyxjR-w6ro2yhnx3ImWjfln2FzVW7I730RQbRTfxqy_v65YBL2tv_7tDRfrspK4a7iy5E%26e%3D1727180688%26fl%3D%26r%3D3DFA7FFD-6687-4133-A13A-D68F3C678825-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL3RczXS6kU_I2uPdQrP4GFA3sqI&uk=YJo9bfqhjBOa6yCrx-cxqg&f=%23%20My%20Dear%20Yi.shortcut&sz=26666">
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20My%20Dear%20Yi/%23%20My%20Dear%20Yi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -450,7 +482,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Monthly/%23%201%20%7C%20Backup%20Daily%20Bullet%20Journals"># 1 | Backup Daily Bullet Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAbCUiIeYIHnwjf9lw-tfaJ9eUXh7Ad3pfbvW2j78xoiA0Xfo2bIDqGEM%252F%2524%257Bf%257D%253Fo%253DAsIGx5O7FaRUudL56C5Qkm4C2T9Ouqu9MIgPQClgf--p%2526v%253D1%2526x%253D3%2526a%253DCAogDSHWnsjhLLA-qrnSPLfA-cDN8K4hesUomP1-uAID_JYSbRCB8PKpljIYgYDu_Z8yIgEAUgReUXh7WgQDqGEMaiZ6hQ5j0xVMjFy0yHKKflqJ6_dmDsTxiKRRxvF4-Qhjm0ouXfa3nXImk4VgEUMoUPGIji4XaaFlCUyxPz7jvxULJnG6ge1NiuYYqKva_EI%2526e%253D1726572363%2526fl%253D%2526r%253D36EFF7A2-2CEC-4B35-A6E8-94EB0249A3CD-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253DyjTZV5g6qtvp_zOisEuBRenAgTQ&uk=zjyhRFct0qlG6ZhN3YpPxg&f=%2523%25201%2520%7C%2520Backup%2520Daily%2520Bullet%2520Journals.shortcut&sz=27227">
+       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAbH7QhzEJFaODpp1N89PZJo15Q9AAZ3jmREFVt_tBXCZXqJvBCatRtLH%252F%2524%257Bf%257D%253Fo%253DAhvrWD1e3-gpgaf6WRaMxSmaBl-icZcOqqB9c9vR9LZC%2526v%253D1%2526x%253D3%2526a%253DCAogJakmLIXkJMxRiy8XbYih9u1uvMpRG6wxZfgjx0OtYcQSbRC0uYPMmDIYtMn-n6IyIgEAUgQ15Q9AWgStRtLHaiYJLOJneItyM5Y98iD25CQi9MpD9ovn4pDVR6YOdkJ8Bau3XUgNH3Im4_b9Tuou243ai5OiaD7F1BuEa_e-WSHl2NuzpZ1fR0k6UUL7jYQ%2526e%253D1727180809%2526fl%253D%2526r%253D2AC10ECF-665C-450C-9374-3A2B7B045A10-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253DNRfiURxqsJYGjykvC7-a9n3wne8&uk=_hACaFkruEWDvX8SFGE5FQ&f=%2523%25201%2520%7C%2520Backup%2520Daily%2520Bullet%2520Journals.shortcut&sz=27031">
        <img src="./All%20Shortcuts/Automation%20-%20Monthly/%23%201%20%7C%20Backup%20Daily%20Bullet%20Journals/%23%201%20%7C%20Backup%20Daily%20Bullet%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -467,7 +499,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Friday%20%7C%20Weekly%20Brain%20Food%20Delivery"># Friday | Weekly Brain Food Delivery</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAaEcdiwjdM6g4WfhphEkwcOuAtjPARO0UW_pNBwNOpEAcVvvuzz8zuus%252F%2524%257Bf%257D%253Fo%253DAjqz2h9jtD2y2Am2yASc04URX6-v3sbUODfixYYVRhTc%2526v%253D1%2526x%253D3%2526a%253DCAogugriNDNm4JFIDnwc-9_2RGNsLco7hdzOlS56P1zMvOISbRD0je2pljIY9J3o_Z8yIgEAUgSuAtjPWgT8zuusaiavQtla-mU_iHgJYm94JMzCwUq1zFvMQUzwAUjDumnAJdUhRSjTLnImKjEh3ERXC9EayjhYLHucCsN5RY3AYpjhsruUAcwAE4tjSg8XugM%2526e%253D1726572269%2526fl%253D%2526r%253DB1D5CD94-E862-41EE-BC4C-D3F642087A43-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253DtZGmU_LtrP4vMrSUPL3t6XpBH3w&uk=1uVkuMfESmn957oPjM2Bsg&f=%2523%2520Friday%2520%7C%2520Weekly%2520Brain%2520Food%2520Delivery.shortcut&sz=26786">
+       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAQFFaRyoX2jyiMTFCzqktNjmgGV-AYBJyKVjb9k6G2kNBlIFBRZOzqgx%252F%2524%257Bf%257D%253Fo%253DAvEOqtUrMAasr31v0ZOt1OgBaVUk3B-Kbt-ixwRnqfn7%2526v%253D1%2526x%253D3%2526a%253DCAog2C0ZXr6LSL_ci2WIXA2v8X2YUc2zpIDL6H0JQk45lCsSbRCwi_7LmDIYsJv5n6IyIgEAUgTmgGV-WgROzqgxaiYsBiR9ClBu8KX9Y9inyYyRJlfSrGRPmUeyctjHXOOr-9fzCiCvvHIm84iuBjJ1KU0P-XXZ2kMHz7hbriMpJF3PJFgY0KZ3cBzybYt83lY%2526e%253D1727180721%2526fl%253D%2526r%253D30B8788C-2547-4226-B7E5-3980B1B6DB95-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253DWL9_WTaQE8Rcm779yGdA2vbkDjA&uk=vkTXs5iCC4HpFmhCr31dGA&f=%2523%2520Friday%2520%7C%2520Weekly%2520Brain%2520Food%2520Delivery.shortcut&sz=26785">
        <img src="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Friday%20%7C%20Weekly%20Brain%20Food%20Delivery/%23%20Friday%20%7C%20Weekly%20Brain%20Food%20Delivery.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -476,7 +508,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Saturday%20%7C%20Backup%20Evergreen%20Lists"># Saturday | Backup Evergreen Lists</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAeMgj5x7JtJIujdGM5dhpth_TA8PAYrRYBF0m7vF_REAnh_-BX9FnEPq%252F%2524%257Bf%257D%253Fo%253DArl4hAWQpauGkhtEbWDgUyXHrYdDQnXvY8ZhizzFYHv8%2526v%253D1%2526x%253D3%2526a%253DCAog3t3duaWGN1B7LgS1913hNO5Ohw15bMXz5uGEdS0RkZYSbRC1hO-pljIYtZTq_Z8yIgEAUgR_TA8PWgRFnEPqaiZju0I4Gd_10yBIbPM5Tis-Cj7CkB-jaRYDzZ9L86_l-5oXZ92513ImBhg6EGlyFNAIgAsAfpluPC4LLHnvfPaHpdu_eL-ZF2wo3PrLf2A%2526e%253D1726572300%2526fl%253D%2526r%253D6A7EE724-3B98-4840-A34B-A009B5EB4023-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253DQeRB2sKSl8wLz_WSmeI3qUgUsnc&uk=LHY_bq83W-QRNHBcB8h0wg&f=%2523%2520Saturday%2520%7C%2520Backup%2520Evergreen%2520Lists.shortcut&sz=27321">
+       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAW5IGhh5iMnrOqZFMdulv-9_kuvIAWxE11ZTDZAobTLNPenL4cAA5w07%252F%2524%257Bf%257D%253Fo%253DAvVpaF86e4Bt63062BkaDp21Oq_sx0B7s5YuM5DqyMZc%2526v%253D1%2526x%253D3%2526a%253DCAogi1dVLsOTAnBfuF6x183tf3-GuU2PZIlgBgpkvZVXF24SbRCgloDMmDIYoKb7n6IyIgEAUgR_kuvIWgQA5w07aib5JjRoNjxlTZXdXnaMTSfx-0KtiW41Nevyh22FkKeSE5zEEY6OQnImhjI8gaSbHGHDSImuRDrO-wP1zuaAFZvHnWICiFbAUmX35n8gq0Y%2526e%253D1727180755%2526fl%253D%2526r%253D38445996-F661-4962-AEE9-7A357A2C5E55-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253D7gpOU3mzlcSLQAVI8UdGV-9hWPE&uk=W76vOozoaK6nI1OZ7c_Qog&f=%2523%2520Saturday%2520%7C%2520Backup%2520Evergreen%2520Lists.shortcut&sz=27320">
        <img src="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Saturday%20%7C%20Backup%20Evergreen%20Lists/%23%20Saturday%20%7C%20Backup%20Evergreen%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -485,7 +517,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Sunday%20%7C%20Run%20Weekly%20Mindware%20Update"># Sunday | Run Weekly Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FAZB5qYJ6vOsrvOAw2J_zpSwlBxjgARU4qReXF7wjalwNFE_bL-VwM-nd%252F%2524%257Bf%257D%253Fo%253DAi72G5Gyqia_cwV3LRlQjVVKPQfJtptx4iIxs864myq4%2526v%253D1%2526x%253D3%2526a%253DCAoggFS0YZekDoHksFIkd2UEX4Lsr4jn56wvuZtYoD3ixkESbRCR-vCpljIYkYrs_Z8yIgEAUgQlBxjgWgRwM-ndaiavdLCYH1nMmql4QouIvJXgWgDQS2jHNYGdkpV6x-xo9LGO2UhO5XImIZJl8Ag9EB9M-cEKIeCFXuOCc_7rP65FLORUbBuNvyorpnZgY7w%2526e%253D1726572332%2526fl%253D%2526r%253DC305CC47-B8A8-41DD-B19D-E0DF23A4D1ED-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253DzQQGiHwzRGix343ChKAKfI-35-U&uk=XgfxgQ_HYdVRu0NCujgQ_A&f=%2523%2520Sunday%2520%7C%2520Run%2520Weekly%2520Mindware%2520Update.shortcut&sz=30095">
+       <a href="https://www.icloud.com/attachment/?u=https%253A%252F%252Fcvws.icloud-content.com%252FB%252FATg8zdb7rKPy-D77IFYNIr0cW8NHAfH2Ty7blzEilik-qoIT5yhOGYOs%252F%2524%257Bf%257D%253Fo%253DAk25qwm2XQcS2RvgBtemft8aOv6y-xZQa3V8XaUAhE5b%2526v%253D1%2526x%253D3%2526a%253DCAogzExPlpnFcVBDrcoS5mkEoAAEx-rVVt9ZlSGeTJhY2QMSbRDNrIHMmDIYzbz8n6IyIgEAUgQcW8NHWgROGYOsaibCaZeU6Mjr_9iYOKuL0UZL2vS9helIN9w8QMXQEsJ493IH6jHO8nImMXg937YZ61sEZ6nVHHVPJgugMAm3XY-TFiM9m6PrXlKA2bCCslg%2526e%253D1727180774%2526fl%253D%2526r%253DB00B1CE5-80F5-4C4C-8215-F576320F372C-1%2526k%253D%2524%257Buk%257D%2526ckc%253Dcom.apple.clouddocs%2526ckz%253Dcom.apple.CloudDocs%2526p%253D108%2526s%253D2ZBxey_KRs9LF-nBJ4vhzc9qFyQ&uk=grjB3tqC-dl6B9QHf5ApTA&f=%2523%2520Sunday%2520%7C%2520Run%2520Weekly%2520Mindware%2520Update.shortcut&sz=30089">
        <img src="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Sunday%20%7C%20Run%20Weekly%20Mindware%20Update/%23%20Sunday%20%7C%20Run%20Weekly%20Mindware%20Update.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -494,7 +526,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20Modules">Automation Modules (30)</a>
+        <a href="./All%20Shortcuts/Automation%20Modules">Automation Modules (28)</a>
       </strong>
     </summary>
 
@@ -502,7 +534,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device">Choose Audio Device</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbNdhenixnAtQfrlFSN8mFaTmVVhAfRVK2V5TJEDdz423aCQDbvq8YSG%2F%24%7Bf%7D%3Fo%3DAmcVv5nipFHOABijYxUX6ThEtOxg0WWt0b_PaNO-6H_o%26v%3D1%26x%3D3%26a%3DCAog5s0dNbNVMPsrv7V_lk5hyflwDr_Z75mWZskCait8u64SbRDd9o6pljIY3YaK_Z8yIgEAUgSTmVVhWgTq8YSGaiZLVgBRhxhphdHbBrNurzhwUgifpd2fdFKq0vzjAjCWlzzwsYdA8HImiOFuxly6-HLYMb3hcw5UO44k9fyBtXyzwaDdANbtKmNf2PYsKqE%26e%3D1726570726%26fl%3D%26r%3D6FEAF68D-EE4A-481C-8173-E015D8E7F954-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmwEtzY7m8xBiD4ZmSMMwgQBGboc&uk=_kzLLDAsurGys0WkxLjpNg&f=Choose%20Audio%20Device.shortcut&sz=27059">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARCBxd-uSwPQpXcE5Gk1fnxlbsgGAQi4_g6qi-FfSV2h7Am5Q6s219zg%2F%24%7Bf%7D%3Fo%3DAorUgziuwHzFW1ELzdWJVK77px4ZLrPw3Sls220zvDUw%26v%3D1%26x%3D3%26a%3DCAog5r1_yr3hY6ygoF8dIcmBG3Hm8pEQrjN2Vhryve16cOMSbRDAtJnLmDIYwMSUn6IyIgEAUgRlbsgGWgQ219zgaiZS1RijhPxOUKcG9ob2ahvu48rK95Wkj5ddIdKmWULd2NEkWVmIX3ImMP6Bs0sZTl1pGQVbKoDtmHEGRXhcjJ03knz9wW-XeQ6bR7vQHwM%26e%3D1727179072%26fl%3D%26r%3D3D2CEC3E-2C76-4318-9D36-C576E0FAD123-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAHxEPnubvvic9ABiBiL7lWpFPY0&uk=fkRg8pzJ0TGABjwiUyvxbg&f=Choose%20Audio%20Device.shortcut&sz=27058">
        <img src="./All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device/Choose%20Audio%20Device.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -511,7 +543,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device%20-%20Kernel">Choose Audio Device - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdyxezsvXapVDTL0tTXe7nfUC9CUAZLcsAfDOznbQGgBOIKFCC1y2j8c%2F%24%7Bf%7D%3Fo%3DAqEXliKkQr-gFOdsyEYU12gN24CfEmAhMjTxtg2-K9DW%26v%3D1%26x%3D3%26a%3DCAogR9-YPIsfkn2bncsNGzJ4R6nDgH8nmNYYqhhmhOAw-bISbRDs7JCpljIY7PyL_Z8yIgEAUgTUC9CUWgRy2j8caiYWDH8j3Fpp0oLkKBiysbq7ZwrdGvJZ0VEO12JGea4DIFH3CA2qrXIma3XeL18PrpTdDBsVnJnPHo_ML72IiG6wyTjek6yGKzqfzN5XRjg%26e%3D1726570757%26fl%3D%26r%3D58DD2595-C686-4862-9B0C-B40DA78B29D6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmAz5a-8PEj3OEasFDBUHbTO3PB4&uk=qG5GkkoXGGFM-fSYxCk9cg&f=Choose%20Audio%20Device%20-%20Kernel.shortcut&sz=28777">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbLWY4cTflAa7Clh2ruSvFnmRHNkAaj29J6FoGE_vx1QYmwttYLMG9si%2F%24%7Bf%7D%3Fo%3DAigSJHlBaTIsjvI3NhjDW49NukB431oc_Ufrs8x28BZB%26v%3D1%26x%3D3%26a%3DCAogfdi1kCc922FOosgznhcnbdJBlxB_XFpNvsrtoQ6vTrQSbRCaupvLmDIYmsqWn6IyIgEAUgTmRHNkWgTMG9siaia73FpM5MUlXGm8dRY5oyhxN5Y3Zo9wQsJGhuIb10dtZWNgqAXgzXImjz5P8c7dTFs-BPSj7evlv5QA42M9AT24ePNfYueLe6CbqXvJ0ps%26e%3D1727179105%26fl%3D%26r%3DCE3DBDDC-00C5-4772-A531-EFCBDB7C0AE9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DKGgzfG_cScdibhLDoEwzSEq3fno&uk=4P5y2LMZ0e4cC1sdtfwqmA&f=Choose%20Audio%20Device%20-%20Kernel.shortcut&sz=28777">
        <img src="./All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device%20-%20Kernel/Choose%20Audio%20Device%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -520,7 +552,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened">When "Komoot" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARamUf5h52L2NoMW5vrGkeBHDzIZAQ1mlk2kkqLFIyIs7ys7SX_tfjYL%2F%24%7Bf%7D%3Fo%3DAi1tSJo1uIds7wfF_xfYhwOETGVZ3UQSuHjDbmTUVmRa%26v%3D1%26x%3D3%26a%3DCAogAd0wHfirm3xb6P29TRuUlrYWoMBNRUSZFh314o1ZhWcSbRDh4pKpljIY4fKN_Z8yIgEAUgRHDzIZWgTtfjYLaiY2H9hGa39UYuth9FccdwInvp_ejT-PDG92Bd60UKVgmzno96fkKXImah_JwT94zeSi9oox2cPlfdtQSFLwexiPZG98MjIHuG73z7fNA7Q%26e%3D1726570789%26fl%3D%26r%3D22140EB6-78E9-427A-90B9-F09B0DF7F08B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHpaR7p9BKYorurWnuEvXJ-N6Wfs&uk=_BlFoCbNGUSyJIf0MEKwDw&f=When%20%22Komoot%22%20is%20opened.shortcut&sz=27033">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVPTPWsSUh-7_UUUaV8_QtipHyuoAbd56kFW8pOLgmu5ZZYAsN1QxQes%2F%24%7Bf%7D%3Fo%3DAiSWgtCDI7xTTBF1c8J8I_e87ZBN4bHUqUNJN6_9fDPG%26v%3D1%26x%3D3%26a%3DCAogM83Y7kHQsjCP2QzEf60PxAT6X12r23McFHlV2d7JcSUSbRDwv53LmDIY8M-Yn6IyIgEAUgSpHyuoWgRQxQesaibzftGvOlJM6L6_LkvxXPBnfi3SEzWu8dBYtp4LKQTG6QKYgMkFmXImMzxjbKkBMJp8uWKcVXbSGcqlq1CalymNPaiIrC08fwFDsZYOMbk%26e%3D1727179139%26fl%3D%26r%3D222F8290-44FD-4932-936D-DC5D7A93EE61-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_CIeuckmQVX0dAk6h6tj5ac_2_o&uk=7P8qQ17KensgPbshFC--Hw&f=When%20%22Komoot%22%20is%20opened.shortcut&sz=27032">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened/When%20%22Komoot%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -529,26 +561,8 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened%20-%20Kernel">When "Komoot" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWEIhwvFUufIPu7v2dGP9rQUK7rwAT4tnyCVKpwwwaNsVkBvkiEAQtyy%2F%24%7Bf%7D%3Fo%3DAjP2xbbUCZl9JY05TB45dmuolqMplNzu1L_cnZresBMy%26v%3D1%26x%3D3%26a%3DCAogL7VMHQ1AwKAUpe60xtrZTylGgZsrm-UTcUXhreATZBUSbRDG2JSpljIYxuiP_Z8yIgEAUgQUK7rwWgQAQtyyaiZu6RNIQdtqHgmp_V-EEJbzUHOX0_SQGIn5NeBjguMzWC-009RSuXImHQxJh0Ja87aJeMsUYTYzStTb_ycl38D_fcAiGwJxSBEEKdzQeIM%26e%3D1726570820%26fl%3D%26r%3DFA1BC8E1-808C-4E3B-9DD5-226102F04242-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJhXYOxQ_JXU70yu5lUmN47F6ypU&uk=nodY8Ic2Ps4ZZwEy6cTpzQ&f=When%20%22Komoot%22%20is%20opened%20-%20Kernel.shortcut&sz=26787">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXPrK1TV0-qrq1jNljdSGCntdQiAAU6wqo9M3HePYjdtgsCxeu0bFbh1%2F%24%7Bf%7D%3Fo%3DAtUf9sfcj9UAqpPWSxBL7TxyEHeEnQMns93ddSYYz0Hh%26v%3D1%26x%3D3%26a%3DCAogcqnBaStHmxBmy5ljYL336R7RiXYyNThZJJufW4l7gz0SbRCfxp_LmDIYn9aan6IyIgEAUgTtdQiAWgQbFbh1aibUZC1kMkYMvbanMqfvByXilKj5W0kaxOshydolFlO0ynID55G2F3ImhLqW8iabkniuRi9VNt1AjEFs096RjpsI3pB0PAH4fJ0ZQZLJscA%26e%3D1727179172%26fl%3D%26r%3DE103BD6C-A3B5-4814-A870-B6A54C0351CC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxFVQnOvL4MuAQvkkGV9-l2BqTLw&uk=A8gQGJzG3krwGCbqDnJERw&f=When%20%22Komoot%22%20is%20opened%20-%20Kernel.shortcut&sz=26786">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened%20-%20Kernel/When%20%22Komoot%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Safari%22%20is%20opened">When "Safari" is opened</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATDf7t6xvu49cbul3HhKtxYMLfwxAf9l7EzPz4X2NdOuHzpT_9wnZeBh%2F%24%7Bf%7D%3Fo%3DAo8_izYPEigIzzMg1i-yKD5Vm9puD2X87vcTRMUd5QUr%26v%3D1%26x%3D3%26a%3DCAogcV2OdGGRs-IT-XefE7ek4qbCwSTmNkx5C6OUjlYmM8ESbRCXzpapljIYl96R_Z8yIgEAUgQMLfwxWgQnZeBhaibzOukj2eHuAlfshDv9P5DHAyZxvpYm8E4n25UmBD0NkyyY24KLyHImR5AIGXo9Pk6Zf973hIPYjBpVEEPEPItc-v-Nin9hq0kO78aS0Hg%26e%3D1726570852%26fl%3D%26r%3DDB0D00DE-09A6-41DE-9320-9606B189DB44-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-xH78zt4PLb5xEemHT6pbfaDsw0&uk=-tV48vL2DWnX42oBrZXnZw&f=When%20%22Safari%22%20is%20opened.shortcut&sz=27031">
-       <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Safari%22%20is%20opened/When%20%22Safari%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Safari%22%20is%20opened%20-%20Kernel">When "Safari" is opened - Kernel</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATb4-qcR6mWAEX1vpeziaGXF9us5AQeQypfDB_Ss8cjFYEcIS-bSECwZ%2F%24%7Bf%7D%3Fo%3DAhnhMdiJuSVFnxgF795sEdSIcE4kpIRqLbezvdP09kIO%26v%3D1%26x%3D3%26a%3DCAogpiuk5407RB-p0ymHnTMfAq90WZxOsZx7AlVwmsR5hqISbRDZw5ipljIY2dOT_Z8yIgEAUgTF9us5WgTSECwZaia_nqw0U9XI72wnqHjrmN5aOYoDsYEqTw5q24KzJIkYRNsDDtG-VnImIeKLjGKmjKac4uQOlIA9TKg4ORb_euwd_sqMXLse6WBcN8_4KPw%26e%3D1726570883%26fl%3D%26r%3D069F38BD-2372-40A1-9078-57435C9FFE4F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWhH5goyXXedmxaFqEvAOSR6spnY&uk=gMKwG7AsT-pHBeMnuv_1kQ&f=When%20%22Safari%22%20is%20opened%20-%20Kernel.shortcut&sz=28454">
-       <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Safari%22%20is%20opened%20-%20Kernel/When%20%22Safari%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -556,7 +570,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened">When "Friendly" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdGf680JiJXaMqCIWckgMy3AzanUAfeh-6bHdRtzZwVdVlgtavCYHzye%2F%24%7Bf%7D%3Fo%3DAkeqmEFKln2JiRXCqKe9RqDARZIpakEOUsrk0ieTKdk9%26v%3D1%26x%3D3%26a%3DCAogjIFqvM4ToOcOTrOVFhIH3C8qN5C7XlJo_tS3SvWIsl4SbRCduZqpljIYncmV_Z8yIgEAUgTAzanUWgSYHzyeaia0t6wZ8-qro9tVweC31LBvqI_7EiEg-frWwueZK_47iqiOOFk1sHImIulmBq7uUXZAuSVcgznorwXZRX3O0d-_xUyPvfwI3QV8H0JFF70%26e%3D1726570914%26fl%3D%26r%3D8967710A-7BAD-4129-BD1D-E3E065A71BFD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyErPPtFVMKOvzmjfVE2h3p-u98o&uk=Gz6kHBa59oGiPAw5R5CUZg&f=When%20%22Friendly%22%20is%20opened.shortcut&sz=27037">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZeNwrmvc_Jg6aMdGnxvFsOhWeugASFj1Q0ZWXTa0J97SX6O7i9jk8VA%2F%24%7Bf%7D%3Fo%3DAlSmNJMHjWXanfDIlxNoTvQx1FTqmKy3Qjw5wq9uzs_o%26v%3D1%26x%3D3%26a%3DCAog-s9yDjCZbojlDCn3byj2PRMCB1qg22zfxmpLGeClG4sSbRDWy6HLmDIY1tucn6IyIgEAUgShWeugWgRjk8VAaiYuSw46X_KlLgW3NPJpUs6t2LkSWNZz-RLVwz4gLQjDAbTYc8M4-HImWgBDLYZPlu5_0hJs6EgS0T5qz9R5alj3ii4mmtQdp9-qM6voiuI%26e%3D1727179206%26fl%3D%26r%3DA5E71FC1-6406-4DD3-967A-40A026153432-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DI12U9XGmtwfAepV3oQingLGxWoc&uk=OQPaJ3hfuoIQNbE077HKhg&f=When%20%22Friendly%22%20is%20opened.shortcut&sz=27036">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened/When%20%22Friendly%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -565,7 +579,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened%20-%20Kernel">When "Friendly" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAewZgd9CeFzZqqtbB-632bxMzrfdAR_4-x_Z4UiD7vp4PN5j13Ap4tTW%2F%24%7Bf%7D%3Fo%3DAgyos4GXW4P0vybBE6VyNQc_rK6VUhpX5RiMS9K1ZNKV%26v%3D1%26x%3D3%26a%3DCAogkINzjGBFugGIzOaHErjw2fTG9xR46FOQbErXx8aRB7sSbRDBrpypljIYwb6X_Z8yIgEAUgRMzrfdWgQp4tTWaiZjvIHAfLeSSqpRlVzPTidbb6Dd0tY6b2opTwdb2dMAZKMZz64a9nImwGxAoF8hEI4ljklNTmxuBFyD8bf-vf3ukSdBYuCt1seczcQsgFc%26e%3D1726570946%26fl%3D%26r%3DF5442F55-DADB-4532-A3CD-591CD1DD2A8D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVG6hytvXbmY35Yx6IlbNttA6cI8&uk=86mMk__0PcXE2oRi8quW-w&f=When%20%22Friendly%22%20is%20opened%20-%20Kernel.shortcut&sz=26644">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb8mEgdbt8tNiunU7Te-kf8nJOlyAYLNvE5_k4GaK8AowaWrDVIUYVBW%2F%24%7Bf%7D%3Fo%3DAkHcz57zJHM95ujqv6uQP3AdDjl1Uymiy0DSbhNr9VuG%26v%3D1%26x%3D3%26a%3DCAogpseWQj5foCaOHDJ91zLihZ7470C8p4tqv3nkgvVuYlcSbRD10KPLmDIY9eCen6IyIgEAUgQnJOlyWgQUYVBWaibrgu8ADMfPdAnRC44svJQ6PsGZGXj7b0OcMW0cTUDSWkM8Y3ZbmHImTxKkIAwtAYNGC_j1j42B0KdsmCG4vuRGmCaotqrirsWoOTXRXhw%26e%3D1727179239%26fl%3D%26r%3DC0CABE12-4F0E-4063-91C1-62E495447F4B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcP6QfeKtxJ98CUP0B9wa5yW1Mb0&uk=YP0zCEHxj5agesTFPN1JJQ&f=When%20%22Friendly%22%20is%20opened%20-%20Kernel.shortcut&sz=26643">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened%20-%20Kernel/When%20%22Friendly%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -574,7 +588,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20connected%20to%20power">When my Apple device is connected to power</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVB2mQwDpuzXd9zh6LptcrPtU4XBASsJUQNkUmeD_ENKY0Hp3cZJfu8i%2F%24%7Bf%7D%3Fo%3DAs1_NTEAd5AjHYFT1wib9OQVoyJgmnJzbKJo177n3N0C%26v%3D1%26x%3D3%26a%3DCAogSFrnh940LCjFwDBMs62WFDJfycyXyoSFN-VvzS6kdFkSbRDVpJ6pljIY1bSZ_Z8yIgEAUgTtU4XBWgRJfu8iaibfZAns1iwGIKWMlmvBuTCIx-8Fnb3WSRzOHDGwT4rL7CDcoRZVanImu-DmeRI2-0nlB1n8XeVH7eJ7PwkP_882lBOysO6CP9O96dGz_uM%26e%3D1726570977%26fl%3D%26r%3D22C37F33-4BB7-4F98-936C-6258984E20EB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOZuikghQMj6qAOQXnNra3OgMFvc&uk=hd43--1xICyaBHKX9WcRbw&f=When%20my%20Apple%20device%20is%20connected%20to%20power.shortcut&sz=27075">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdC8GY7zvjqqLoZMmLRAnfIx1KpJAa9m_O369y3LIMgvdNOK0QsZaNuA%2F%24%7Bf%7D%3Fo%3DAmlnBU4fvm_uq5Chq8jbWCPIgwVyeuZSrSGInrmX2IL9%26v%3D1%26x%3D3%26a%3DCAogXsL7Cb6wo8c9V6teAyr_AcY_x0bKV9XpCFXMZcXT_1kSbRDX1qXLmDIY1-agn6IyIgEAUgQx1KpJWgQZaNuAaiZiAGdQWl6bQ4cjXUqS0v6HavgzWBzXkyWW05N-SwZVHJYDSTrzdXImsNxCEvq-rSsu8f4meMzvTqdkePsUWwDVmFYEkDIe139LvNxumP8%26e%3D1727179273%26fl%3D%26r%3D5F458436-AAF1-4046-AD79-D2980B6C1B99-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSv2Rkoy21GNcroC0hmhH6lFoxZQ&uk=cmd03OfsjXs5x5SfUx8qxg&f=When%20my%20Apple%20device%20is%20connected%20to%20power.shortcut&sz=27074">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20connected%20to%20power/When%20my%20Apple%20device%20is%20connected%20to%20power.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -583,7 +597,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20disconnected%20from%20power">When my Apple device is disconnected from power</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWTfssNAKXxTk9-4N4pd_rsq_fGCAcbnufGmrDD7QgVcH-PNnWlaBXEq%2F%24%7Bf%7D%3Fo%3DAjEailghJoJgojMZudmLPLb6o7KASHwG2jtAWo41Gi4W%26v%3D1%26x%3D3%26a%3DCAog3mt6K5MERVsJpDgt-MLzMJky_ULyR7h48kPug33w2wwSbRCam6CpljIYmqub_Z8yIgEAUgQq_fGCWgRaBXEqaiayEHOWzaay8khNEJsysGYbXBQrpLgAuMtB8x5mIRD4XLMdPYeLZnImIawSeFmZgtNZNL9x5V1Xm3Kukj2vF2PrIdpjMs3Pbbk76YvhOEA%26e%3D1726571009%26fl%3D%26r%3D1D332ECB-2C5A-4CDA-8521-DC09EEA84D06-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzhpG7ZB_7NtdzgZuBxZ7MZSGrKE&uk=Q8lt2UNFxiVoU9K1KceeqQ&f=When%20my%20Apple%20device%20is%20disconnected%20from%20power.shortcut&sz=27820">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ5M8h6Z-MKGcTgJ0tZtXVQzhQVVAdhxb49yyRJ2YrLBEaC9W7zeQv2M%2F%24%7Bf%7D%3Fo%3DAmFOVlPtOMj86YwrFo0CQD5H3h95I0qqOy2heEb9OYNr%26v%3D1%26x%3D3%26a%3DCAogLJ9DEAWYJ3YEwV8R7NhYYbRGPNMCyTjvv8kjcxkJSkISbRC13afLmDIYte2in6IyIgEAUgQzhQVVWgTeQv2MaiZne_RFysxisBSOtjUUQiZ1zXutCFZTbuv1Ey0qYAYcaaEhjh822nIm9P3odpwnGH1sRN9kM3dpjIEUE38-wNAAdn_VgwKxzteqk6HhE2Y%26e%3D1727179306%26fl%3D%26r%3D34EFDD6C-5910-409A-BF71-F3A2E485E17C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhfOQ3hqjaS6Qhk55lNLhPyvyDAk&uk=j5fDiynaJcY7lmwXa1nSpA&f=When%20my%20Apple%20device%20is%20disconnected%20from%20power.shortcut&sz=27819">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20disconnected%20from%20power/When%20my%20Apple%20device%20is%20disconnected%20from%20power.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -592,7 +606,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened">When "Obsidian" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbT852C_3Z3gw90qviOO0KdlCdoBAdVEn2BK7lxrfeCAYgqe8TwkIFg9%2F%24%7Bf%7D%3Fo%3DAoeRnMvSikXni4cK92zfCoHoynKgpIRk4lkN-KDiE5ba%26v%3D1%26x%3D3%26a%3DCAogQn3t5SY4_JWwSNGL1ndo2s26XOidnKfwqLJ1Wn7VHx0SbRCTkaKpljIYk6Gd_Z8yIgEAUgRlCdoBWgQkIFg9aibINbjwRDNXZqJV9M499v7972ZYYC9ihq7pu7mJkQusl_e-UE6fLXImZ1syaaEzWtV9J9bn0hNwAtbx9sT3pS7Pwz0cT71h7ErU5DN8h9I%26e%3D1726571040%26fl%3D%26r%3D99AC99B3-FDF3-4319-9468-A54EC0718C5B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGtBc_7N3251DGuv_DX_LX6SGStw&uk=TDxhImQHmVtUHuHFlInf6w&f=When%20%22Obsidian%22%20is%20opened.shortcut&sz=27036">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdl1fnQ92G0CvygRl8ooTeh2mvW-AdHoEHXiafYpcO6uSsX-E6wIG-kH%2F%24%7Bf%7D%3Fo%3DAj3J3GFfW-9DUlyw7hthoOdirTH5hartaoZp6FoC1IYN%26v%3D1%26x%3D3%26a%3DCAogWK9a5BzFzCye7HhKzG9MGBm7y3cGuSVnxf_2SuZ-O5oSbRC-46nLmDIYvvOkn6IyIgEAUgR2mvW-WgQIG-kHaiZOxPhq44fHR-XZCzFP-IaBinCUdEPa1u5oAK-HPIFqaAyHnlHLenImEBjKrZ9x9Gf7ucYPcP6PvPOaKvUL5TPzsVs-QT54sa3chQA2H3Q%26e%3D1727179340%26fl%3D%26r%3DCB095849-4877-4F14-AB95-F23FA6BFF0D6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcLKtBf2YIqw5W9zUElDaOfz1qXI&uk=HUUmgadXmffpf2awA5pj3w&f=When%20%22Obsidian%22%20is%20opened.shortcut&sz=27035">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened/When%20%22Obsidian%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -601,7 +615,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel">When "Obsidian" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaq8xotc6s9O_Gh0cfCBOz1gZVY0ASsaSJwpLfLHhqtR8x_Rxaccf7Q7%2F%24%7Bf%7D%3Fo%3DAidBKz7q53TmWs-NYEk6Yn9p6ACokX4YK_sFm6WztW_Q%26v%3D1%26x%3D3%26a%3DCAogQSKn2XfwbF07ItSPBkTtqzBkU9AYFYGtyYqI7k8VbfoSbRDohqSpljIY6Jaf_Z8yIgEAUgRgZVY0WgQcf7Q7aiapdtBaIOSid4HesyVyvVYV08wxG_Ho6juZqJPaH1WJvxYZDSA8oXImSJRdpaSpFFGqpih7_WgoEA_WbYwRAKYJezbVetxSRBLlEmwdJro%26e%3D1726571072%26fl%3D%26r%3D4CDAFB25-32F0-4CF7-87D1-8A649D0CE139-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DB_C4_kwQy4aVi3vz_w3xjEMiwgg&uk=NWqPsu-PiitrX-dtkUDguw&f=When%20%22Obsidian%22%20is%20opened%20-%20Kernel.shortcut&sz=27515">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcx2CjaozE-7vJWlzX23R-ZXL-qgAWtln65uQjYcTAVlURVbw1nreWVI%2F%24%7Bf%7D%3Fo%3DAlBAOjdfhEAym2GmiD3LPeGtptcvBu17NcMSSdOp0ZJ9%26v%3D1%26x%3D3%26a%3DCAogrLorQxzJ1herO1oxWMvU52aGblu5pL5ID4pEajGuy9gSbRC56avLmDIYufmmn6IyIgEAUgRXL-qgWgTreWVIaiZqp5-nPrmqtfIaorHOSjtRxBvwLdfrjxO132q8nEPHFoY8RvNuqnIm_4sFQx4swAwVJntaanrKLoRfLqPefLDf1XILauuKD02wTMpKv90%26e%3D1727179373%26fl%3D%26r%3DD26E6ECE-5823-476F-AF88-90E2B25FBBB2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLDmq-JMdzZ-w3z9OOS4rrk5x9OI&uk=Zoj3yvd5YpeaTyjioIPTnw&f=When%20%22Obsidian%22%20is%20opened%20-%20Kernel.shortcut&sz=27541">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel/When%20%22Obsidian%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -610,7 +624,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed">When "Obsidian" is closed</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa9au8hMftWbAe__cMzqfP-tOZ15AWKZn_J587BihG_lhBAMemw3UtXs%2F%24%7Bf%7D%3Fo%3DAi1sN1M6lxIZZHub2ZiUzgzIvbpGaG1w5x7rVg6ETuAn%26v%3D1%26x%3D3%26a%3DCAogrKfE0YVk6MaZE6T02uHN-eO2OSi2SKSFgZQF0mDp7bMSbRDv_KWpljIY74yh_Z8yIgEAUgStOZ15WgQ3UtXsaiY8S-cUcKzW_A8x-3dm5j60Yf5KhnRfE_7Ro94VVFoZe_8ZxWGAFnIm05UmxPYHe2myLwg10H_SjtZbq4O0tBTR8f5qkhdA6xxSYuMYq8M%26e%3D1726571103%26fl%3D%26r%3D4223B71E-C78C-4EF8-BF9D-860CD205F89A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMgr2Ampxa7uKE_XSIlheS5OQYIQ&uk=rJldc0hi_9UpVsjuP8U2Zw&f=When%20%22Obsidian%22%20is%20closed.shortcut&sz=27037">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVQNz-zwAStDdyz4CZqjn08CNfpTAYABh4isC16i7sy1jQ_m1oy7qvRJ%2F%24%7Bf%7D%3Fo%3DAqKkXLw8mW7fW50IyKn27KVV0YUT7bnyKlzJwmcukt5j%26v%3D1%26x%3D3%26a%3DCAogwvq3N5uUDeyJlAyNf6gAgD4-VVRXPJbNVAaMybjvI6kSbRDz7q3LmDIY8_6on6IyIgEAUgQCNfpTWgS7qvRJaiZ01KS0K21gcgL6fZ2zorL2l-pUzWFgUtyGNmwWHtFw9mCOjtAtWHImmLezQKE88L9PXz5JVeIrKHl-VJoYtVtj6mj5EIH72i_kWufVYOk%26e%3D1727179407%26fl%3D%26r%3D8BB4B12D-4A11-460A-B909-3A3D5A383A84-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRjbixzmErzO-mQl-2WhMCSHsbmQ&uk=pCZJJXO0efITKwm81-EZzQ&f=When%20%22Obsidian%22%20is%20closed.shortcut&sz=27036">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed/When%20%22Obsidian%22%20is%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -619,7 +633,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel">When "Obsidian" is closed - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVPNFVLs1uFR8yjD-lMAokzrWnZ9Ab4bbsHr7uQzZAMVMRchAkxvVIEm%2F%24%7Bf%7D%3Fo%3DAvqIh1kY2K8tXYE-h89JltktYtBFyRUv_85R3E3dGhaT%26v%3D1%26x%3D3%26a%3DCAogbhLjwaQwAPdlkk-3A6hV68BjhUHzjgbAi9Ht5jm1hgcSbRC286epljIYtoOj_Z8yIgEAUgTrWnZ9WgRvVIEmaiap8pgxu8Ok4YZFkiiHEdk3DLXwqrfdDIqhgtTvOJCFHoU_N7HMWXImCk9TBBspk3C6kdxiy033mkiO5088qP1D_QnVN6xCqVCZwliXQjs%26e%3D1726571135%26fl%3D%26r%3D84D78970-4EA3-4717-9D59-D7507D58A51E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwVR-VKjuEGAPMt1t36oM4xhJqtg&uk=ULB474hTgXRX6WM3zScJag&f=When%20%22Obsidian%22%20is%20closed%20-%20Kernel.shortcut&sz=27959">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATAgcfN0s2L5uRI2q-9f6xdgtO7OAVf9Sayl7Ztk2IY5tRqbMskXsp5Y%2F%24%7Bf%7D%3Fo%3DAnvGm5Y7jU1fVHoFY3KCIVPK-jsSdRzNVH6XcVbmbZ1C%26v%3D1%26x%3D3%26a%3DCAogNX96fs5A9BDGLofKmuq9gzIOIvkvMwT4ODrwnRxcX04SbRCG9a_LmDIYhoWrn6IyIgEAUgRgtO7OWgQXsp5YaiZ9a4OkHfS5t-gO6pe5xXrkN3gqr0MDUmSVtFPy-IT34uhjX16YSXImBZjwXfD0l3VTy8mj3c0OSaym1qXKh9VBhgq5KoJnFCYG45w2Pz0%26e%3D1727179440%26fl%3D%26r%3DF6765B90-7E1A-44C9-BFF9-3DBFD0A1CF99-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DayceWwXmD-CFGNH5Tkefa4Kd8Vg&uk=jOl9SSS9hpgkLYDY0Pifcg&f=When%20%22Obsidian%22%20is%20closed%20-%20Kernel.shortcut&sz=27987">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel/When%20%22Obsidian%22%20is%20closed%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -628,7 +642,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Calendar%22%20is%20opened%20or%20closed">When "Calendar" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAff5u0oRGljLt8aIRYOpqkCMVsATAYJ4-zoOcHitu-jw2pB9YQJ5yTUs%2F%24%7Bf%7D%3Fo%3DAtVFtkYFDFtZH-9SCaRWkpkxbxVncGxv-WTyd3fPrYZs%26v%3D1%26x%3D3%26a%3DCAogCMn8Ht91YpIfV_KFMjhGJNbkoX9MQSd946gEWs8FvvoSbRCZ6ampljIYmfmk_Z8yIgEAUgSMVsATWgR5yTUsaibmzGdC6SgtKN3mn-Z2tE3FjSK-Crfg0v2GHuklubjQ6a3u72VIIHIm6JOrUG9QaHxyLjZAvra1zHuNA3uQH5f7MGW_0ru7VC8znOb-WkA%26e%3D1726571166%26fl%3D%26r%3D1424AD42-9F62-4FD3-9251-CDA8C66C14A4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMhVoCi02Tq6qV52JaYYeDhc7AzE&uk=QEQXjlt0FApr-loP2ZRbpQ&f=When%20%22Calendar%22%20is%20opened%20or%20closed.shortcut&sz=26667">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATd98uLFQMOUSEe7gViB_fNh_X70AQSt1BSkXlgbtEgjsr9al7EB-Ttm%2F%24%7Bf%7D%3Fo%3DAluQM6m7wNB9aLfY_eiItAQv3l1zj5jfj77kpVkzDjW3%26v%3D1%26x%3D3%26a%3DCAog1iTP27UpEre0yYCf86ACeTvbX6g9qx9yfc7gryoJW6sSbRDL-7HLmDIYy4utn6IyIgEAUgRh_X70WgQB-TtmaibjugD273glx5Yxdzx4VPU3ZwFjkzBKtfcpqOjCBVDDTDdwDJ0L_3ImhLOXJgSEQs7lIJYmn0AEgb9304ZXNIkeJET9J2djNyi5zGFpOp8%26e%3D1727179474%26fl%3D%26r%3D02FE4E60-16C2-4C51-8ED3-1774EC8DD462-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFI4APTe61v6fBY3_nvJQvrr8Fdo&uk=JDITUKWYkbzdQJhiSY5XTA&f=When%20%22Calendar%22%20is%20opened%20or%20closed.shortcut&sz=26666">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Calendar%22%20is%20opened%20or%20closed/When%20%22Calendar%22%20is%20opened%20or%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -637,7 +651,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Notion%22%20is%20opened%20or%20closed">When "Notion" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXX0iVP8__1DMd3Rz9V07bDEcm8MAfmSmqk2_1ov_z_jz_sAaLJ-o_op%2F%24%7Bf%7D%3Fo%3DAtCzMa89klgfXjBHbbVbhnOfl0oSO5CRWuyj6kBnEamE%26v%3D1%26x%3D3%26a%3DCAogVG9m8zk_korFqeVfI5IVIPohT2z6Ro-rurfgEkx0zNkSbRC436upljIYuO-m_Z8yIgEAUgTEcm8MWgR-o_opaiaM9KulFw_F1J0ybznLWbXaa4_weLuB6VXteFRORbDtdxknspDRW3ImSgbpiMcTrj8Sqem2E4F8S6BzCrPln1KfQ-wlP3s4Gjo9XttVBaE%26e%3D1726571198%26fl%3D%26r%3D871AF98E-F184-4D96-910E-9393FF83BA6E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DBhO5nksQrrhpCpUlnjvrcc5rW4s&uk=43uXRlasBE45r2VEYpeZMg&f=When%20%22Notion%22%20is%20opened%20or%20closed.shortcut&sz=27104">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfFZbHSZMlu7mpXxBC88YS0utwkHAfANH6nYcUwJmbS_V9hJnzbpAmFI%2F%24%7Bf%7D%3Fo%3DAm-mBZjtlM3XoCt8rhzcdbdA62EhYmLnpnf6jYeJAhda%26v%3D1%26x%3D3%26a%3DCAogVKn35qT0QWZwxziTYQYtZhXaAw-fdp-qqGzFHC9RmpYSbRCZgbTLmDIYmZGvn6IyIgEAUgQutwkHWgTpAmFIaiateELMen76amfXb5SVwe5YbJCCykmfvkGM9PfP0m3qt_F8cuozl3Im-bCT0jKOD5ejUZOtn-XmK3a1RVZRrLrWliTuWUannnNKzRozIUk%26e%3D1727179507%26fl%3D%26r%3DEBB4C366-81C3-497F-A22F-A743291E02BE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjdOgpV6wPx3-_TBKPYO9iMZA2JI&uk=DTVZe65PPdHFMS1IXjSpIw&f=When%20%22Notion%22%20is%20opened%20or%20closed.shortcut&sz=27473">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Notion%22%20is%20opened%20or%20closed/When%20%22Notion%22%20is%20opened%20or%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -646,7 +660,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20opened%20or%20closed">When "Reminders" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaW9MMm2uDxeim-zvq30CYWXfCjbASVIiZHLGVsqUpELbLt-qBkl_IY9%2F%24%7Bf%7D%3Fo%3DAm_fyWsPeJlmaXrhBhs5s_nNUWpgq2nKeY5UStpNye_a%26v%3D1%26x%3D3%26a%3DCAogcMiThowJfohAmyJv91upxIzohf8VqsAkDSjbmKUqmaMSbRC71a2pljIYu-Wo_Z8yIgEAUgSXfCjbWgQl_IY9aiZQYVuyEHZKVeAbm7lIMQoKH44IhUY5AHkZ7vWK03iCO_9MsC31yXIme3sSrSqrdRipK9wCECviaSfFlv7T6fhaCxN71APQMS8h45L0g4Q%26e%3D1726571229%26fl%3D%26r%3DE1DE6E60-5CCF-4B0B-B802-4B5200FC36C4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvcRGGQYjAvF0fzHxCEFNNDFwOtc&uk=A_F9m5zOTLdJ9bfFgJfhPg&f=When%20%22Reminders%22%20is%20opened%20or%20closed.shortcut&sz=27540">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXEfFFRt-iPohnxI8wc6nZ42DLMbASCo5g1h3R7Ed3h4k1NyVnQ3Gr0C%2F%24%7Bf%7D%3Fo%3DAsX_DCYImLo3VyTn37AOGg_Phx9216Iol7drVWMNtusy%26v%3D1%26x%3D3%26a%3DCAogGd0v4SYT_7wFrVKl-jmGIEc5xNj8z9mVdw1t7tvYocESbRDRhrbLmDIY0Zaxn6IyIgEAUgQ2DLMbWgQ3Gr0CaibEDT9O0Q29Ev-OKHvnRWnu_uNE6y2UOAHpgyPbc54rtWn37kX-_nIm0Rpk4blOdPvL8lD0xGzwd-eQhlmob7diGETT7XhqTHBUppGpIQo%26e%3D1727179541%26fl%3D%26r%3D60FABC67-AA50-4165-B1B7-594322E4BE60-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxfneEEVL_Sku0S8hM0CPpuouNYQ&uk=RwOgMc_lExQZ71wW0r-thw&f=When%20%22Reminders%22%20is%20opened%20or%20closed.shortcut&sz=27540">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20opened%20or%20closed/When%20%22Reminders%22%20is%20opened%20or%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -655,35 +669,8 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20opened%20or%20closed%20-%20Kernel">When "Reminders" is opened or closed - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQx1eKvgwF1KP4Z4cqNa3B99WsGvATTczsGoVEridRyFp0J975Ps6l09%2F%24%7Bf%7D%3Fo%3DAl2D4y1RFk-P2wPp2nCYcVsOkT0twPaHQmxRdw5Mu2Wr%26v%3D1%26x%3D3%26a%3DCAogCdHm4MPPV_v6CNUDXe9H0IgNPgfuhdZzsd_Ww6bHcKISbRCEzK-pljIYhNyq_Z8yIgEAUgR9WsGvWgTs6l09aiYUTdiy2fuh51_q9o42Vf8BpUo7Sz82qyLA7lh__ZvDP0Fp4w-NV3Im64M14-Jx-PDhKxCdVKv2p8Tx9YVvFD46Q4jZecbveuSGLJdumNc%26e%3D1726571261%26fl%3D%26r%3D17FBFAD5-1771-4D05-8E2E-F0B1A820D284-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DORIOTtjZ19aLY0Vpc8ikHOK2Dl0&uk=0ZMQ1IDPsuwUq3rwKnWlbw&f=When%20%22Reminders%22%20is%20opened%20or%20closed%20-%20Kernel.shortcut&sz=27268">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfd6gi8NYgk42BrJKAQJzba7Wvc9ATV-qRfHZ8MT-lTV2ZHV5Nu1agVh%2F%24%7Bf%7D%3Fo%3DAmdlRsiPAHPY8bbCy7ts8gpTdG2LVPHjHeHee_mdA6Av%26v%3D1%26x%3D3%26a%3DCAogqgd6rKcQ3zOeqVFPURmbn0glWPHwClIcpPsi5NG9YEQSbRCHm7jLmDIYh6uzn6IyIgEAUgS7Wvc9WgS1agVhaiaPrCfFeXmVZI0BlMwFkTvszz25ri6OhfAoDVigW1_yXY3krEa1b3ImW8dPNkRjw4kZGlUiNYqYiv9Ay1EIZs6qZltGhlXoEE1Q4tpGcjg%26e%3D1727179576%26fl%3D%26r%3D200C0A4F-8C71-4E57-ADAC-013FD05316E5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPHpOvCtlwIxRlxU3c35__AFmMzk&uk=TMlq-DzF0xICYZJfjj9M3w&f=When%20%22Reminders%22%20is%20opened%20or%20closed%20-%20Kernel.shortcut&sz=27267">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20opened%20or%20closed%20-%20Kernel/When%20%22Reminders%22%20is%20opened%20or%20closed%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Automation%20Modules/When%20turning%20%22%23MakerMode%22%20on">When turning "#MakerMode" on</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARSG4ZybWQT86c4tiKnOFvW5oJEzAT-Y_9kVOjqLzIKNbNzL3vwihURX%2F%24%7Bf%7D%3Fo%3DAminU3-c513kj_xn9j-YDQ3STVH4h7uox5SIA9NKqQVV%26v%3D1%26x%3D3%26a%3DCAogPjUyqGAX2-LNMfufoTUjYMTKq7EhdIcpyMf3f8K5mU0SbRDTwrGpljIY09Ks_Z8yIgEAUgS5oJEzWgQihURXaiaNcnJa3cmqCALJGx-iggpTCWuQsidF2gDLSobTUcezhQEKbv503nImRFq38iNlX9IF2wnqMIkF-J96SjquxmCptO6Lcs5BF5DPJcEgJXI%26e%3D1726571293%26fl%3D%26r%3D85D1507B-93C7-4929-8E35-8A4FF9263E9A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHdr7x4Apn5KT6lp550cD5X61gVw&uk=gamdGw8dUi9VGNhdtVFaGQ&f=When%20turning%20%22%23MakerMode%22%20on.shortcut&sz=27112">
-       <img src="./All%20Shortcuts/Automation%20Modules/When%20turning%20%22%23MakerMode%22%20on/When%20turning%20%22%23MakerMode%22%20on.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Automation%20Modules/When%20turning%20%22%23MonkMode%22%20on">When turning "#MonkMode" on</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfLihoyJ8uueP12NibS2l0xil4b6ATSgouX0uVcwDKonoMWHIrf9f4tw%2F%24%7Bf%7D%3Fo%3DAriMpsrU3a0mlt_QXIG5z9GHZ2loPFpcYJKahkVgNn8s%26v%3D1%26x%3D3%26a%3DCAogpwtAPeHlaCr7m2y101YbqCjDMcuYpiQbszQqfiWLPwUSbRD3uLOpljIY98iu_Z8yIgEAUgRil4b6WgT9f4twaiaUGb1Hyqn1Dcv1MzjgB42UNoZsFAEA60sDNBOXezpY-pwkPi3gAHImqYXJzm4SlUBIOPRsA-58OZmT_TFgdZz29061Osk2n_ldc3QdweE%26e%3D1726571324%26fl%3D%26r%3D68EAFD75-B208-458B-A383-5F9EED7AC8B1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Defo_AfSP47tNvH1ip--ebr7fUck&uk=h9HnJlJIv2kddxIJ0TQWmQ&f=When%20turning%20%22%23MonkMode%22%20on.shortcut&sz=26662">
-       <img src="./All%20Shortcuts/Automation%20Modules/When%20turning%20%22%23MonkMode%22%20on/When%20turning%20%22%23MonkMode%22%20on.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Automation%20Modules/When%20turning%20%22%23UnwindMode%22%20on">When turning "#UnwindMode" on</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAalV9qQK2DSy6wjLlYvpahfgk_5XAYztRRV_w83i-1ZSLT5fYzRVpmLB%2F%24%7Bf%7D%3Fo%3DAhIP6FJtHhZprHTfZHNNsOwb7ava9OFd17WjygtE6QNu%26v%3D1%26x%3D3%26a%3DCAogSyXYHbtJerC_F9031eXsZVNZNVtDUWFydNxz920BlCQSbRDErrWpljIYxL6w_Z8yIgEAUgTgk_5XWgRVpmLBaibbK0PM7_AovQILe476f98I1YnUtlMKeUZOgC6c_X87toMK8iYibXIm7wOU0B60WoHuWmP8f7_vvvdA0f5lvGUsTe__RjEL-f87HR2VbvI%26e%3D1726571355%26fl%3D%26r%3D29905CAA-619E-476F-AE75-3E904C0D522A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvSl1QoY2Dhquz_ZjjsAxCNP7Dxs&uk=eBy5toKo2wsvOPOPcZ_J8w&f=When%20turning%20%22%23UnwindMode%22%20on.shortcut&sz=27986">
-       <img src="./All%20Shortcuts/Automation%20Modules/When%20turning%20%22%23UnwindMode%22%20on/When%20turning%20%22%23UnwindMode%22%20on.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -691,7 +678,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened">When "Podcasts" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXIZYIijSUmLwV3kJPsn5fsctL8AATb0U4yUciON2UhQWGnHL32V8Z2y%2F%24%7Bf%7D%3Fo%3DAlTku1s76-JWnVmplFvHlmhYqk26kl6_nM-D3X5_Xs3T%26v%3D1%26x%3D3%26a%3DCAogpYJFAMTg06gb6UyFl6RXbQb3cS6VwXe5YsK745szpZQSbRCRpbepljIYkbWy_Z8yIgEAUgQctL8AWgSV8Z2yaiarKFI10_4lzUup1kvrJIAxO5dmqbXAoYoCQpsIMAHQm0vCZPK_p3ImrlP_dFaxFY4awcVqoIgUqBr3GnxOiztoVk-gd-T_AV7MrILU0UE%26e%3D1726571387%26fl%3D%26r%3D7E40E5D2-B7D1-4B2E-BC6C-A080FA8E35FE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8SK6KWfe8YvMsDTgPDytW3W3XSo&uk=KDqS1JzS6HDvjYxnAwdOgQ&f=When%20%22Podcasts%22%20is%20opened.shortcut&sz=26758">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZD1ft0_8hVX0XjRFEMxF80qiBvcAUbNJ2GWmZk1-34V38HnCXI6N-n3%2F%24%7Bf%7D%3Fo%3DAu8nN5ckBWMo44bNPL5rLkT1h03ruLvK029fN-3MiSfT%26v%3D1%26x%3D3%26a%3DCAogQ3Qx48NdFQZaoEdU_Cro7ZZ8DJSfO6jZ0Jr8IGe4-aoSbRDMpbrLmDIYzLW1n6IyIgEAUgQqiBvcWgQ6N-n3aiaQXxSuf7Gx1tylYukPFO3Ydls6MQrzZX1pRicJdZtqlAKBd3Q64XImHS1i4OBCTcBgsMj-ju5v27f70aaJD-qlyVPQ1QAu24sb42iGxPA%26e%3D1727179610%26fl%3D%26r%3DF75B54C1-B8C9-4590-9D9B-255016454702-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNVpGh1WIWeOLFd27oqP_fkqmfQk&uk=7Y8Kx7DBlO7yE-xU1N_iOw&f=When%20%22Podcasts%22%20is%20opened.shortcut&sz=26757">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened/When%20%22Podcasts%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -700,7 +687,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened%20-%20Kernel">When "Podcasts" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASu5viKIaAor6wYigSO2DfIzE4N_AW8InJH5FRaDfhxCw8AYssz8TdsK%2F%24%7Bf%7D%3Fo%3DAuKCVJf-xcSC4LtpnOsnZmhsBLEVwuYJ5sfg7vuxytmf%26v%3D1%26x%3D3%26a%3DCAogcoGzGB_UWOqWwRjGInLt_Ix-kLqXpUO2AYIKdxvIii0SbRDcmrmpljIY3Kq0_Z8yIgEAUgQzE4N_WgT8TdsKaia322z3L6x3ds8gsgVtXn-LZXYwIXfy_R36g3vUDmyR4PBgBCvdAXImErXzR4OsDw1CuT3yWRV26ho5piTsDEQkz5jSQ_mRYUY2wGy5Uzs%26e%3D1726571418%26fl%3D%26r%3DF1FF30CA-D4A6-415C-AA7F-C25A30D63C9B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL3jV0Tzs2XEcePsJguu6ByH2b-k&uk=yy38QdnbbjNT0jYXhZgg-A&f=When%20%22Podcasts%22%20is%20opened%20-%20Kernel.shortcut&sz=27561">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWKF6L2ibkeVK1EKgsKiDQhkv_VQAQnGAQhtbdwLFIZqeQ-NhLg2zqUm%2F%24%7Bf%7D%3Fo%3DAv_Z5sxQWvbuCNFBmfxqhF-hlY4h6B7fU_bOaTdhcv3W%26v%3D1%26x%3D3%26a%3DCAogv_4KSff56Ab_mqdTXhJrcje_IIwGFkFQspmA0FmtTCoSbRCRrLzLmDIYkby3n6IyIgEAUgRkv_VQWgQ2zqUmaiY3WLGxfj3WhgFy6LPnNkcYK8hHNRuEWnJsIGFMeA863iV4UHiBUHImAiUQxXpItzubbOJjbYS_-XXNz6q7ZhCsmE3eb6sYT4lkeF7r8zs%26e%3D1727179644%26fl%3D%26r%3DB02C82B6-E2A8-4CCD-9EDB-FAD799570E1E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU3DL3rgw3k7-R0dKihezOQIYbEQ&uk=Xk13t_QfqwYRU7RUCSKspQ&f=When%20%22Podcasts%22%20is%20opened%20-%20Kernel.shortcut&sz=27560">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened%20-%20Kernel/When%20%22Podcasts%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -709,7 +696,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Spotify%22%20is%20opened">When "Spotify" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcJD5EzuOkiZ3eXpGJDkwdqzUsN1AZ4CG8jc7JVTWPEAQ-ApTyQCqO1g%2F%24%7Bf%7D%3Fo%3DAn6cHgsJlhC-kG88uuBiLvoLWvPTOkIS3pH4Z8NArx9j%26v%3D1%26x%3D3%26a%3DCAogP8EUDObtZu34rpay613PWmF-ed63sU-zQnNMtljRL98SbRDekLupljIY3qC2_Z8yIgEAUgSzUsN1WgQCqO1gaiYPCW_xGeOF4o0f3lkawBjhzzCYjVAJ0NvQxutAGnLoUiF2MQGmK3Im17PklbQxdajhZYV3KZtP1-bOaw1GyhuTJWNl2FOVTSpaaAKduMw%26e%3D1726571450%26fl%3D%26r%3D6985DB7F-7606-4691-90D6-DCA4E923E4D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dz68MG_wzbNgJs9vnfcQrsNpkA_M&uk=gGTDUBxfzJ65u_zN0aOpRw&f=When%20%22Spotify%22%20is%20opened.shortcut&sz=26951">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVklqHsTMvPaEA1nxRpwY6piOf-hAaAbIXZZj0UHoup0MBNykc578lcF%2F%24%7Bf%7D%3Fo%3DAjFzmZ4AYP9n-lU82TItt1rwNNabPo2H0hqdg9QS6Tra%26v%3D1%26x%3D3%26a%3DCAogxwX9vUrt7paQsRHsszED2Lf9RJBjqqW-ABQppaQ1rpISbRCStL7LmDIYksS5n6IyIgEAUgRiOf-hWgR78lcFaibtQz7OteMiOwPq7tUsJHbTPM8TpKz6M2lwXBquAKIIIi0jlo7NO3ImaVHrZplc1e0SqRWupyyFHwrzJDBVjgkreGqDtRLWXzM2S6ttGfs%26e%3D1727179678%26fl%3D%26r%3D2461A6F9-141C-4C86-99CD-8F0EC758DFD6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1RmaRmHGzyAT4VEYb3FU8L7Qnpg&uk=SGceBGCtRC71LTwotLSg9A&f=When%20%22Spotify%22%20is%20opened.shortcut&sz=26950">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Spotify%22%20is%20opened/When%20%22Spotify%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -718,7 +705,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Photos%22%20is%20opened%20or%20closed">When "Photos" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaUgP5Zviv3L89Dioap2u5Xa_Ds1ATqJxIhOtGJtJw8db0ZpUwcPUKrA%2F%24%7Bf%7D%3Fo%3DAiLpDyRrzMBUNUax8KEuBiKKyk_f2jWsUqLrUKk9AOa9%26v%3D1%26x%3D3%26a%3DCAogAhTLwLpQHu39e2VKQtpLKdHb_hTrEN6ukyWKZQpDsBASbRDRhr2pljIY0Za4_Z8yIgEAUgTa_Ds1WgQPUKrAaiZ3NkMZQjdmyXAENWShT3ERYgRpy1LFHQS7TKz0kxxTEMQKmhW983Im9VkXW8mIQoblJz2HjGwAXX-XiiKTSRxL8QGELyQxzHVWbg_LSOM%26e%3D1726571481%26fl%3D%26r%3D7E0156E8-D3CD-471F-B1AC-AACD1033F6FF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmsQs_8hDBXVkJKU81Z1SbfHbymk&uk=v09_XoDw8-wN2_VhFks7mw&f=When%20%22Photos%22%20is%20opened%20or%20closed.shortcut&sz=26673">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU7xjrU9aXdY0rn8l_CE8U42OfjhAXGsbJ7T0A_axHb2jduP63f-Os95%2F%24%7Bf%7D%3Fo%3DAo9NGB4LtZzh3vLk1blfPmkLIl89YqxSjRoN1rwQ5dUw%26v%3D1%26x%3D3%26a%3DCAogoqDmekDMU7LNj3LlTpaRLxHWWnQIEgBUoiJLzgJJorESbRC-y8DLmDIYvtu7n6IyIgEAUgQ2OfjhWgT-Os95aiYlgSrMK69tzQwgNLLzCDuV4rPwKP4JkjfH4e0VhqakR2-7KGvrG3ImbsW4ZHA6fTRu7LAao4ak_CE91IwkacfEolDe_rKOeEQcOev4Szs%26e%3D1727179713%26fl%3D%26r%3D70C67F82-7ED2-4494-AE7B-667326E960DA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnO1AHFQx7LhR21S90uvcpjF033Y&uk=qphWnB7Nnd-7reDgsOV7BQ&f=When%20%22Photos%22%20is%20opened%20or%20closed.shortcut&sz=26672">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Photos%22%20is%20opened%20or%20closed/When%20%22Photos%22%20is%20opened%20or%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -727,7 +714,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Mail%22%20is%20opened">When "Mail" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcQegNhnKaZXLaguX8Hm5BF5fsEwATUdgcaQTj_R647brBgO5TKwKNPt%2F%24%7Bf%7D%3Fo%3DAgHHPCQRKE1cX6OVkNf-jBzpG3Lj6xi02tyrLrLlvBnC%26v%3D1%26x%3D3%26a%3DCAognhDiB8VpTtwY5oHXrGGzlvoH3cKg3BFQtWy2w54PBqYSbRDK_L6pljIYyoy6_Z8yIgEAUgR5fsEwWgSwKNPtaibH2jwKdHQ4UWiiDDYZ6ZGEXrYYsENkAmAq_qLOMnfw0TUXUtJUDHImTK60KaIWVlSN65ojCjy3ZwULIDzBaZOJNSCZ5eJ2IvUeUWu-Urw%26e%3D1726571513%26fl%3D%26r%3D270210B6-C7A4-43D4-A444-CC9396A3FEAF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYnK48ALPkCEGPXf1yvrbcta91fQ&uk=Y3NQerLamMVb8U6RDgEuTg&f=When%20%22Mail%22%20is%20opened.shortcut&sz=27029">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVpvkOWoEnvfO8ChgOhQl4RKSPezAS4YWD98VUqiXEfJ0UxSWa-KoF3i%2F%24%7Bf%7D%3Fo%3DArLaeE7Ds_lNmlFs6aasBhGfpHZuHKMMEOvPoJirx-v6%26v%3D1%26x%3D3%26a%3DCAogpjPNZLnZGlyh2-c_oWZ2TnEtkgFevIylV0y44J-_JBkSbRD60cLLmDIY-uG9n6IyIgEAUgRKSPezWgSKoF3iaiaXXMe9RTHxsMzszOmIQ4IdX01YM6OuD0iThbCmnsR-fm4YoMPYznImNtGSij8j5G0UfLJMp7Eyu7rcmYBK8y4o9lWj6cEX-6P_UHTOMgw%26e%3D1727179747%26fl%3D%26r%3D0A333A7A-EAAE-4E3A-A092-989801085495-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DX7YzvsZTswlZohx-K0hyCKx6Is0&uk=kUWEnTflGJcr5S-kvKkUwA&f=When%20%22Mail%22%20is%20opened.shortcut&sz=27028">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Mail%22%20is%20opened/When%20%22Mail%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -736,8 +723,35 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Mail%22%20is%20opened%20-%20Kernel">When "Mail" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbDjmFgCReLWiOx-b1DZB5bhEo5AAR3lvDxW1mNqGqo1XJcGrTm04ypC%2F%24%7Bf%7D%3Fo%3DAqFcK0S_YMPVXWtQ7b1hypzXWXy7B8oasOY5lKQSdtV9%26v%3D1%26x%3D3%26a%3DCAogIzUiOOhBVM7fHARwYtcurVbyyIwPbcqtWJJNDjNp4v4SbRDd8sCpljIY3YK8_Z8yIgEAUgThEo5AWgS04ypCaia2PzzXqMO6bVHW0GBy5OFXAJ689-ymBBMzRTlSKI6F4iOKB3nd_XImg2WNWVWkJB-Ro36p6Lhk7zTErg_XVVoEidK0Mt9l1z023ZrWejs%26e%3D1726571544%26fl%3D%26r%3D92BD0A58-97E5-4FEF-9B57-0D31C2A47428-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEbbZ9bV1ofM-JXloi3FYCDsvV4A&uk=y5r_73ocdZSrwnzrH_5ScA&f=When%20%22Mail%22%20is%20opened%20-%20Kernel.shortcut&sz=27474">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbEyDBAnU-BqETAxvBjzIoYBzppKASdQicIcWa8FJIyw2-bUlM8iG_bM%2F%24%7Bf%7D%3Fo%3DAoyKTpDh6_OnOphnSEbYz09NV8IOpknEX9o5pvgX4ykA%26v%3D1%26x%3D3%26a%3DCAog2UupvfNp8JsDwFpu-7lPNjBYZ5Pp9S8sTSk5BoyBwc0SbRCa2cTLmDIYmum_n6IyIgEAUgQBzppKWgQiG_bMaibJlF4XMjRqYY39USg-jqlU6fw13hnyPUbRstMSg0d2bRrOqHn10XImU_IzBLWLkGDTmr9fSiit5vMoYKeMD8AwWFGhLpwAnZ5Kabrm7oU%26e%3D1727179781%26fl%3D%26r%3D439DD941-138E-4AFA-9FA5-A03D49C83F36-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0wYoCAkMlrhVNN-Su6xF5BXuh7A&uk=OjE6MxmBAVb01MjRGA5jdQ&f=When%20%22Mail%22%20is%20opened%20-%20Kernel.shortcut&sz=27567">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Mail%22%20is%20opened%20-%20Kernel/When%20%22Mail%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Mail%22%20is%20closed">When "Mail" is closed</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXiizjpZcI9fi3h5tYCFlHrsCqogAWZqnF2B0RsFjutT3fRxZo7b_dP-%2F%24%7Bf%7D%3Fo%3DAhUogbAcuFyx6Qqs7iOaT2li83cH3DuipFxzW0ybH2Ft%26v%3D1%26x%3D3%26a%3DCAogoUJkysW0sIc-K8hZtEBDOmzGW8GUMu5yRc9WB1aupAESbRD63cbLmDIY-u3Bn6IyIgEAUgTsCqogWgTb_dP-aiY6WzeM638dYUu9xwhgMpwfavrY6NZ1bDAEOED58AjD0sDyQEXxC3ImwfxenghcE4YDj_SaxqTYDIiZlS39pEySJfY4V0hxabcKBPhDqNs%26e%3D1727179814%26fl%3D%26r%3D8FF3661B-82AC-4396-8A64-956E29D56419-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7Cn5IHram-__7EEuoDuAZXXIwCs&uk=yHTgN3osiJ-kIt_1nGbugA&f=When%20%22Mail%22%20is%20closed.shortcut&sz=26600">
+       <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Mail%22%20is%20closed/When%20%22Mail%22%20is%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home">When I Arrive Home</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYpNJvyjYJvCa984QGq0tq4R3Op7AdVI8M1AsuGytyYmQ9Vm23AJpKKM%2F%24%7Bf%7D%3Fo%3DAtkSS0-tp-ARQqqJvUcARfhO0urFihQbcLserp6rGmSk%26v%3D1%26x%3D3%26a%3DCAogxOQlxhqrgfrOqYgsSP2kQ6QQVRnK-qFycYnuWj77Q6MSbRC048jLmDIYtPPDn6IyIgEAUgQR3Op7WgQJpKKMaiZcKayKK14vKyDEw9tbQLWpAXlSTuzgIJwzp_anayeYGVaB3dnQsnImdeXcp1aatt9HeUOd2P8BSGJqx1EO1SuaPxwXW8YgCXDXN8V1Ox8%26e%3D1727179848%26fl%3D%26r%3D992F382C-1398-43B2-A095-AB3B938486C2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dt_TVVAWFmPq2mVWZvpq0M7HcTis&uk=ytzeZ3dLXe9SkyAVYEC1vg&f=When%20I%20Arrive%20Home.shortcut&sz=26645">
+       <img src="./All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home/When%20I%20Arrive%20Home.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Automation%20Modules/When%20I%20Leave%20Home">When I Leave Home</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZXci8eAykB4782kR2radPrUncAfARvvwdmDKsOZxn_k8e6EXkYAXp4K%2F%24%7Bf%7D%3Fo%3DAs9d4HSEMklHbtk25_KvmcjfH1J8UEONUGUwa-_zFNfC%26v%3D1%26x%3D3%26a%3DCAogpoINqFrg2FPvrrbVdTtfKqaX0XI8oJe3AWRi8_9HT50SbRC86MrLmDIYvPjFn6IyIgEAUgTUncAfWgQAXp4Kaia5QQY6kFcjnRdaKtrwXPaFSmVgX1-t-1k4KHfJZM2J2lj2x5A5NnImJqriEXOA8Oi83mqLO8p_if41s8wLF73r3qixPv5K5asknC08_Rc%26e%3D1727179881%26fl%3D%26r%3D225351EC-C469-43BC-A20C-CCE45EED0291-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7wGvwxSPfAShHoyEBiNdiKygxUU&uk=HszAsLNODvWeYhtnHs6rmg&f=When%20I%20Leave%20Home.shortcut&sz=26830">
+       <img src="./All%20Shortcuts/Automation%20Modules/When%20I%20Leave%20Home/When%20I%20Leave%20Home.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -745,7 +759,7 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20Communication%20App%20is%20opened">When Communication App is opened</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZOoKYI7oBvatmysOPrk1Cv0YWTgAWTqSgfIz0doncLhm86fmCQuzUp5%2F%24%7Bf%7D%3Fo%3DAnI46XrU9KnQhbnfYl5G4BpSHkljJDHbpmnnbXfmFN7g%26v%3D1%26x%3D3%26a%3DCAoghNbqZqwklS8fjsOIBPyz7Za3as6asfF-oYNNk-HO4MASbRDR6MKpljIY0fi9_Z8yIgEAUgT0YWTgWgQuzUp5aiaP_1CkGfeGWb3mTJNEG1xiKFAapDXInVPaE_3PK-I0OkJCsX5JbHIm-BZRdrEflhHcnYbnFz4asdr5MSU-TlOB012E_xvlyZuAb_bhTsw%26e%3D1726571576%26fl%3D%26r%3DE5B9D8EE-5065-40EC-A847-78EF10C86617-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Do_x8yY0-e3AipBGIMhaf7TMGGK8&uk=GlSwTVhqkPZhIvoLHLKVOg&f=When%20Communication%20App%20is%20opened.shortcut&sz=28342">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQwWo7rnunFsPVHhbPaMb-TfeEquAfG9Y7KNSfJWWV1ZN4Liy0uteUea%2F%24%7Bf%7D%3Fo%3DApiTJcmDcyUI-IafGCcDDXJ7VfHKMDFJAK0l0pf-y1cC%26v%3D1%26x%3D3%26a%3DCAogwdBJjDXWWY-EFBuvw9gwFsqNhvbtqv7eEeeUvbU8qZwSbRDQ7szLmDIY0P7Hn6IyIgEAUgTfeEquWgSteUeaaiY8860osz8v4E1ZNAP8ivc3pAUIX82sPd3ywP2LvLuIQ-NU8Jl4NHImYpqrv2F2goYTk6nIUnQSmqDMeo7snJul1hsYN82U76SUcbujhNo%26e%3D1727179915%26fl%3D%26r%3D27A681AA-3894-4447-BDCD-CD75013FE175-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlxAlC59HQ0WC1TFj0MIMpmHJqKg&uk=kfYWQzDczg6DJhYQc550cw&f=When%20Communication%20App%20is%20opened.shortcut&sz=28341">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20Communication%20App%20is%20opened/When%20Communication%20App%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -754,17 +768,17 @@
        <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20Mac%20Wakes%20Up">When Mac Wakes Up</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd0QRR7MjJxLG4IriV6SAXwv6kXIAWtswsOcbufCvho9q-h9SO0kClSq%2F%24%7Bf%7D%3Fo%3DApSRxwgbr6Tj167udhdBG7_E9S7VFAmFCEBTHmHygwwW%26v%3D1%26x%3D3%26a%3DCAogkC_m2BYt4Z3N_xqNBYC7K4vzMK-kijOejs2OgFVhMkYSbRC43sSpljIYuO6__Z8yIgEAUgQv6kXIWgQkClSqaiYKRgjRTOJfNqpXUxzIGR2maUwBoX0OpVc6WTF1Sh-iWiKO75kMf3Imix-POohaz0u_XDVzRmHz5KJvZIIitXRBuc_PV1lVzT5_8eJkuqc%26e%3D1726571607%26fl%3D%26r%3DB509521E-C89E-4430-97C8-4076692AED93-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRpgEAx4FStXazR2065267cx-LdY&uk=MaAT94NsLDgi_OsaQN-l_g&f=When%20Mac%20Wakes%20Up.shortcut&sz=29916">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYax9gf0IgEd0Q_d2s8W1GAWugq_AQBPHgJH8q78kWXaRo5VIYc2DSgb%2F%24%7Bf%7D%3Fo%3DAsVD3R2ELlZZyOPQFm2OkrKKdHw036tY6iylvRRyitd_%26v%3D1%26x%3D3%26a%3DCAog7GvmOGw_kqZljEsPFWvbPXDnGbupCH5B5ChCBBC19ykSbRDL9c7LmDIYy4XKn6IyIgEAUgQWugq_WgQ2DSgbaiarbY8vzs9Y9nzPIBZzjWpv7W5ndkMwICLOYf6Y9CTQqUo1ybWANHImm8jpeXRLIaD_-1nXcRy9CNFRAKdMGfsbC_7HBPzYV8EqjwNkAts%26e%3D1727179948%26fl%3D%26r%3D86B751F5-D0FB-46A8-B8CD-610656CAEFB8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDV2RcwKd1obfwxRRQ_O1jFKaCCE&uk=0vlucp3V49cnqCtnf0Km-A&f=When%20Mac%20Wakes%20Up.shortcut&sz=28849">
        <img src="./All%20Shortcuts/Automation%20Modules/When%20Mac%20Wakes%20Up/When%20Mac%20Wakes%20Up.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home">When I Arrive Home</a>
+       <a href="./All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on">When turning my focus mode on</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAab87rC53QfvqfQUqKta8PK5dwwsAdltI-eEUnoy5CtNwyRL22Yxt-cy%2F%24%7Bf%7D%3Fo%3DAiDeIzbkfNaSuEp0JGEIbeGn72yPzBGPIAUx7W2iiPO6%26v%3D1%26x%3D3%26a%3DCAogA-Eci1Wd8mEGC2pTjIFVAGIxPrksCcKhJ0kzJCJDgDkSbRCb1MapljIYm-TB_Z8yIgEAUgS5dwwsWgQxt-cyaiZDRgxSqAR7DP3lSnubcU1T_RJSMvAXXt-G8LEjcXbAVxgV_5aFy3ImeYhsyXD42gF-woR0kOyy3xItHpDmP01J-OPNucHdUdRUTKJepb8%26e%3D1726571639%26fl%3D%26r%3D794C1F93-FF6D-417B-BB0B-573506312BFC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4J7YKI3ytvPuPmu6Y1TQsa3LIFg&uk=7zU2JnclNrdmBdBKqe_syQ&f=When%20I%20Arrive%20Home.shortcut&sz=27189">
-       <img src="./All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home/When%20I%20Arrive%20Home.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYkljtWsS58lHRYBOrE3x5qrMbzFASSPi-I_UWw1XjV74kvUEoaYv7jX%2F%24%7Bf%7D%3Fo%3DAgGA3XqdAelq-sAg7-no6K2sni-cNs6dLdyUd8cVHVCw%26v%3D1%26x%3D3%26a%3DCAog_hj_xBVgOKprETwQR-WeJ6ZcKpEkQHbjbz2rkZ5OXGsSbRCT-tDLmDIYk4rMn6IyIgEAUgSrMbzFWgSYv7jXaibphAHxAIv3HmteFIr7mxB_aGMESytFDz3WiE0WGrPKOPUaysPyH3Imkd8rJIvrXcFwufQQwMzfxQ-YlWg1OsF3Bfg4KhygBSBmxYSd0jI%26e%3D1727179982%26fl%3D%26r%3D486993B1-AEA8-454A-A55C-75506AFEB6EC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUIynMUVVLeKGWVLtl1YniN_zJbM&uk=jRBQhw06tyQcQkwAWlfy_g&f=When%20turning%20my%20focus%20mode%20on.shortcut&sz=30611">
+       <img src="./All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on/When%20turning%20my%20focus%20mode%20on.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -780,7 +794,7 @@
        <summary>
        <a href="./All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20SoundCore::Sport">🔊 SoundCore::Sport</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQy6Aj93LzYsOuZOEw3KFVVrQNscAd-crss31b6gBBMQdC4Szzx8rHjx%2F%24%7Bf%7D%3Fo%3DAqinWOpmYYeVd9V5MUr6cxF_pNhu70yPIbdsh7AFgGLv%26v%3D1%26x%3D3%26a%3DCAog9zVMrxce0mdYzSnkgYDDybGqtuSHEI8XSaqC9m0CcHISbRDFk8ColjIYxaO7_J8yIgEAUgRrQNscWgR8rHjxaiZB-Zp4l2N09j0Hd0GQ43za_wtVx2pDb6IpoNxXe7ZTXKvFeJnfUnImtE5_1lG8VA10OHs4OeEbWHq04ZhSWPfe3VSoNYmJKSQxiYbv-a8%26e%3D1726569435%26fl%3D%26r%3DC4B1F01A-EBB2-4955-994F-7D2EBD7F44A4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPEX8VyuV_4WDW1eeb2PFrJjjSTc&uk=33azjNH6VlRVkK3URYZbFw&f=%F0%9F%94%8A%20SoundCore%3A%3ASport.shortcut&sz=26682">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAafj7iUR5I9DZJ_4iO425EdfHAJNASLs9hRRKF_Y1e1OV9SMrPIsU5WQ%2F%24%7Bf%7D%3Fo%3DAo-PJPCf4UnVG_qk3rDrKpaOVMoY4HC1uGj9MSlTBa7S%26v%3D1%26x%3D3%26a%3DCAog0sk3mIQ6hMGnIZFYt1gYZg4wAKtpmQQXPuqsEW0wyYISbRD608TKmDIY-uO_nqIyIgEAUgRfHAJNWgQsU5WQaib7vEikEv6FhGWws37L6vg_ckg-RU8hsBh2X1wt3JbjENzpbEPyyXIm5LfGRGUyqdRiJQGuCGL1yAHy_fWKD6laPhdnjOlqrMrunfWCEjA%26e%3D1727177683%26fl%3D%26r%3D0B9FCE2F-4B93-431D-87B9-22F8197F19D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Duzab3DLC0848FbBbOgYBb-llm8w&uk=elnRK2h2bBfHdMo7PIikRA&f=%F0%9F%94%8A%20SoundCore%3A%3ASport.shortcut&sz=26681">
        <img src="./All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20SoundCore::Sport/%F0%9F%94%8A%20SoundCore::Sport.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -789,7 +803,7 @@
        <summary>
        <a href="./All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20SoundCore::Mini">🔊 SoundCore::Mini</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZX3iEUROeG2n568925Hy5UIuRWsAS1_Pw8q9rN3xsR7RTunbiacyupR%2F%24%7Bf%7D%3Fo%3DAp2ZVKRZh6J2f2OSFTXP8vlhnUFn6ziqcVa__xRvuvhw%26v%3D1%26x%3D3%26a%3DCAog9TBDGJZyN2EsxiKq5XEOxJQuZvzUQ0RKiqFrURLbEWISbRCvisKoljIYr5q9_J8yIgEAUgQIuRWsWgScyupRaibItPpiW0KHI22LIWxWivAV-oSnaHZ0JpAsa0kQEB9vQsoS_jcMBHImo8efdGEA3yUsubCt6pbb-ck_JFF8l-gsHmtd6F0Z-eignQuZWNQ%26e%3D1726569467%26fl%3D%26r%3D217684B5-7739-4446-96E8-2781495EE6D8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dtbam8nh3UnmF5mxewXnnf3BitUY&uk=-hj50JFeBCvIpwT39wLWVw&f=%F0%9F%94%8A%20SoundCore%3A%3AMini.shortcut&sz=26683">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAckAO2WX6iW-XLtjKRXbsTyT-w9cAZGGpda1hrtnKweCwtCOijL69aAL%2F%24%7Bf%7D%3Fo%3DAguNq_aCJnXp_YNF47p4duXA9eArUt-pXw3XgjCgTLbw%26v%3D1%26x%3D3%26a%3DCAogjRON0EwR_BOGDexvM6K_LsCqw-fEy7-aA3sjPSmr0ksSbRCX28bKmDIYl-vBnqIyIgEAUgST-w9cWgT69aALaibzTjdHrncX_jfBNmuE2RnEEN2DlZZsP0fPxHpqTmj5ZVG1RxT8v3Imn7o6ZtFaZ8jLaxSZas2OIDxGi0tQ95eSyeeXRK54o5ZyQ4zdBkk%26e%3D1727177717%26fl%3D%26r%3D023C9BD0-04D1-436D-9C62-75CF11CCE8A6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMamCXt2T8Za3FDFI5HFWA0ox3SY&uk=2Z4CKHbxzDI_wF2jmTHGYw&f=%F0%9F%94%8A%20SoundCore%3A%3AMini.shortcut&sz=26682">
        <img src="./All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20SoundCore::Mini/%F0%9F%94%8A%20SoundCore::Mini.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -806,7 +820,7 @@
        <summary>
        <a href="./All%20Shortcuts/Build%20URLs/Build%20Scriptable%20URL">Build Scriptable URL</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWhy_2solV3d0PC8sAd96h90K7tZAU0e9R1h8IX4fS4sOcxjBsQcFBjV%2F%24%7Bf%7D%3Fo%3DAiB2z-ORD5adRLuHQupI13MKGkBtBBTQ7wnKea-uMeyU%26v%3D1%26x%3D3%26a%3DCAoghQyzgATIKfq1bt4qefFXnLuAAt3FM07v92JENRBaXdwSbRDy96moljIY8oel_J8yIgEAUgR0K7tZWgQcFBjVaiZQBm6wsjqxdESlpyxqgboFAtkB9_Ay4TfAOYzoutOk4SjYW9_a7XImTULncUZcmNSHVGY3JWoJ0x0ewXd4RUD3RYaqKDZ2BNFJiX7ghv0%26e%3D1726569071%26fl%3D%26r%3DE0DC13E9-93B6-41F7-83DA-C7F080ED630E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpJ4vmhbUR_W5tetF7Gzqy5qWj0E&uk=kBvFuGGSHAMoc4XmKVw4PQ&f=Build%20Scriptable%20URL.shortcut&sz=27718">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWyv_f_EPmFdqLHw5ZxyzLnYiCNuAX1iJk3o1EuCPKgv-Qf3mn7EmVsa%2F%24%7Bf%7D%3Fo%3DAhJFKKxH6YZOtApjJYuUpR9Pe_jKJ7hwVNHgISXcqjzE%26v%3D1%26x%3D3%26a%3DCAogEwqReHP2y0lN9I9ZXUhU1QCca_-Uu0K4bsWyzvalSDgSbRCarevJmDIYmr3mnaIyIgEAUgTYiCNuWgTEmVsaaiYwU3D4x6EpAdfcqtP_FB50FSXSPdxdcX8wMCOmu6Ec8Ev7IIcMbnImGG0ZINKJ9VvfEqdrQr-wdbcMEfyHKWAjRwdZgYLV-_lRmZaJ1ko%26e%3D1727176220%26fl%3D%26r%3D6CEFC848-2C99-4964-8BEB-47FD45368ED0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwRgzd3lWQ1zu0gTVwwMG526HgZk&uk=I8YwBI5Ee0OJJd1wXHmwMg&f=Build%20Scriptable%20URL.shortcut&sz=27717">
        <img src="./All%20Shortcuts/Build%20URLs/Build%20Scriptable%20URL/Build%20Scriptable%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -815,7 +829,7 @@
        <summary>
        <a href="./All%20Shortcuts/Build%20URLs/Build%20Google%20Search%20URL">Build Google Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV3Umh5CWZesVTKwmOzJGZSF4YvmAX_A6bQlx5eOyZ4tj_Bn8LSyKQ8r%2F%24%7Bf%7D%3Fo%3DAqmW0kZChmBN2LV_Sa4z2ELfhdpQbL2G94VudHSU0FHa%26v%3D1%26x%3D3%26a%3DCAogiNiQbPlcjmaaJXZSm3WtxWBTBNVD4fvllhgeR4H9JX0SbRDQgqqoljIY0JKl_J8yIgEAUgSF4YvmWgSyKQ8raiabbh0MpKovlBgHQSQzjFehZ9pRkvbyVRikVSucdsmc8Dd3HYsDIHImwYjJbDg4k9FhTc4ZXXg05scqS7etjwIsSCMiGlYQt18v048gr8k%26e%3D1726569072%26fl%3D%26r%3D0B38D8AC-C797-45AB-83B1-D3E8E14471EF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyfC0LU40Szcsz75lPQRyKy57YBg&uk=N8RGnURvP443cJ3SQbRPlg&f=Build%20Google%20Search%20URL.shortcut&sz=26871">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZaFymZoGohwhn4BkerZJntOl43_ATGynYPw5MgFkvYH6NhMlZfQ1JvR%2F%24%7Bf%7D%3Fo%3DAjGdtQOAOSM9JAphzXTP-T_rhQB0c0rcRLymW3BwnEVZ%26v%3D1%26x%3D3%26a%3DCAogVRic7NEk176JHuBQx6Fi0qwJXM9hrnN12MkCRybm9NUSbRDlxOvJmDIY5dTmnaIyIgEAUgROl43_WgTQ1JvRaiZjNnarUPhYPvOa7OGYfahP3TbcGyDoQ-T4Z5ggK7z5rubMmFoaPHImY2KrgeVk1a7P-YmNiCQKuqi0jC4CmrxAPJqzeLSCBypOmqRi7To%26e%3D1727176223%26fl%3D%26r%3D1588FA67-6CE0-48A5-88C8-8246F3CD62A8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPAVd_dyi1Bi9P6NwJqnILkVeJpU&uk=LgOeGB_b_vkXVsJwPMq3tw&f=Build%20Google%20Search%20URL.shortcut&sz=26870">
        <img src="./All%20Shortcuts/Build%20URLs/Build%20Google%20Search%20URL/Build%20Google%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -824,7 +838,7 @@
        <summary>
        <a href="./All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20URL">Build Google Maps URL</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaT1ZSsK-Nu7DRITjl0fL1z2FmGuAf0nht4IoSjNNknW9Sys3wdsQ13T%2F%24%7Bf%7D%3Fo%3DAniknUFZEGNAXHe83HyCo3N3rJYM_72aLMtJQrIqX9zX%26v%3D1%26x%3D3%26a%3DCAogVWZybYxoY2udoV4C0t9J45GicP0_ZU59M0GwSmUxdE8SbRDSjKqoljIY0pyl_J8yIgEAUgT2FmGuWgRsQ13Taia1pqMSS5uAHy2x73VFwhYLUFiuvx8DyY2biZrUQ6F9Sg2iFx1rZHIm2FeOiM4P_IpiqRK8HUSugB4gVuva7lqJvlZIIFL5ar-xCcXebI4%26e%3D1726569074%26fl%3D%26r%3D566829D9-0764-4376-8BA0-012177520FDA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSxlev58Fo-PQ-N98jnq_N_oyZj8&uk=IDJq5gju0p7MZIcshVkyfw&f=Build%20Google%20Maps%20URL.shortcut&sz=26965">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS1pjkFf8yy_XsTeve25lMwDs5X0ATzObdTGLzZ-NxWqxhT4M_oYmhCw%2F%24%7Bf%7D%3Fo%3DAr93bsO-k383n94FKnmdE46P_06Ma3PkocG70673yOja%26v%3D1%26x%3D3%26a%3DCAogur44W6CoA8enJ8PdrLYXrzisqKMub74R4TkMSz4xj_kSbRCH3evJmDIYh-3mnaIyIgEAUgQDs5X0WgQYmhCwaiaQjPuvM-VeLca5i73BjdvJfdz1YO7WmZXuQsPNKrCFI3UmH-XAyXImMrGUDy1WuY5UVT9xwf3p1WKwyWSpjODDMJfGEshBBA-sL1oG59E%26e%3D1727176226%26fl%3D%26r%3D331514A5-F497-4B4B-AE62-A64FE0E7C5F4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-HgPq7e4sQ-nTwKmPVH36HdwLWE&uk=PnIijlQGosKtJ2JXzzHZ8w&f=Build%20Google%20Maps%20URL.shortcut&sz=26964">
        <img src="./All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20URL/Build%20Google%20Maps%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -833,7 +847,7 @@
        <summary>
        <a href="./All%20Shortcuts/Build%20URLs/Build%20Goodreads%20Search%20URL">Build Goodreads Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe_YSPVQPZNHebf6iwVZxLzpn3U3AVK1bKkBS9-K5_Admze146T42mqc%2F%24%7Bf%7D%3Fo%3DAgzRoBnQ0KfniwEBL2iDwboDZKzM10e0U3ZscBPZnyYS%26v%3D1%26x%3D3%26a%3DCAogIwcvrfET3at3OHlMS0US4l6LEB_TKAvn2yhc4Wt1lX4SbRDNlqqoljIYzaal_J8yIgEAUgTpn3U3WgT42mqcaiYrckOdcHpj8PfdFkknaMMnU8y_xYdCqsX9f7456GtZYukApUbQL3ImjSTp5tkxDof9tGwUG5awtj6bqcrBhUEyS2FLK7R6IbKjcRuhHiI%26e%3D1726569075%26fl%3D%26r%3DE2B6C2DC-AB8C-448F-AB61-C864655BC48A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DT6gnPP9mfASqsnNbfpLZfwuQehs&uk=x4Y2hu-jmSFzOjNwFPGGeA&f=Build%20Goodreads%20Search%20URL.shortcut&sz=26733">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVLk0uWE782dWXeuP6cKp40AX5NLATPV5Rew7PcLAimGVVy8AD8s6M4I%2F%24%7Bf%7D%3Fo%3DApDXZJpQ85FN8HaYiddYzcrq_245cDSzDNjnqch4eFuV%26v%3D1%26x%3D3%26a%3DCAogakbDG14g0A_jveTxC0FEpSrKe-HCAGMHPHCuNTfgRxMSbRCO9evJmDIYjoXnnaIyIgEAUgQAX5NLWgQs6M4IaiaLQI2v3jVO_4mtzyW_xG9KQoLE3xT4Cn71XPLb_XBB0be-frUD9nImwT8o8WRcYQ8AeZCIwWtPxNG2TKZ1x8VqbQEc7e8ROUx5ANqFdXQ%26e%3D1727176229%26fl%3D%26r%3D8819502B-2B64-473B-83D0-95C72835BCBF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DK48fCr8gWrSaqCe8fe_j_LJ80IM&uk=w_yEtCjrCE3QM6AdBQzhog&f=Build%20Goodreads%20Search%20URL.shortcut&sz=26732">
        <img src="./All%20Shortcuts/Build%20URLs/Build%20Goodreads%20Search%20URL/Build%20Goodreads%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -842,7 +856,7 @@
        <summary>
        <a href="./All%20Shortcuts/Build%20URLs/Build%20Spotify%20URL">Build Spotify URL</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUcZJM0DRTecLHYGAt8pEFw9P8tSAfvzYn5rC10OGa4HgmZMDOjRkdeR%2F%24%7Bf%7D%3Fo%3DAjnnJFXQal1FUCS6efjKegDMze4tLifZ6pk-8HTyj1k-%26v%3D1%26x%3D3%26a%3DCAogzvoqmTSsDx2AiBrsWsbtDhdlNIag9Kb1UBwYyuDXr0wSbRCzoaqoljIYs7Gl_J8yIgEAUgQ9P8tSWgTRkdeRaiagy6SJQOlzg6adNTxMJQL8ysxsvmZWrTiYH_LUe4H-rKjmy-DHRHImt8rVg_bFn49ixINGyUAbudZzLkl1Wg6wbaPQeVIGJOcckOpF-_4%26e%3D1726569076%26fl%3D%26r%3D47DDEE47-8B5D-4D69-8FD3-0289D7869C73-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_AOkD9YzabaOuegj6fmkUSd9Gds&uk=rQtu2GPY1p4_TjG340wu4w&f=Build%20Spotify%20URL.shortcut&sz=27638">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbJ_aPfqzi1UOQ0GDkr9i2ULJxqRAV50mQGxM6uWR7bXgq9bOQtPDyxx%2F%24%7Bf%7D%3Fo%3DApUldAIiDRf-L-lTqy4WTxrfJlZKybRtpKHsxm51U3gC%26v%3D1%26x%3D3%26a%3DCAogRBQQiSuXh0sZRM7Gfvx5YbRLaiFHsKipi-2BIgDfSwMSbRD9jezJmDIY_Z3nnaIyIgEAUgQLJxqRWgRPDyxxaib_E5aQv7ytCcgVErCOiycTVo-oHZTh6i7du_i2uxzxuCW7Le8SlHImHE7_QzchrTAt7mijKWomkfEXVcAV7la-oQyHoPSVWv4yM7PD0rI%26e%3D1727176232%26fl%3D%26r%3D19FE01E5-8311-4DD5-B2D2-D439A1C5AACA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXOgcDH4lcFX5rSoEMfsYiYEHQiE&uk=6Lt-taCJzpcEnPAs1_WJ7Q&f=Build%20Spotify%20URL.shortcut&sz=27638">
        <img src="./All%20Shortcuts/Build%20URLs/Build%20Spotify%20URL/Build%20Spotify%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -859,7 +873,7 @@
        <summary>
        <a href="./All%20Shortcuts/Clipboard/Show%20Clipboard">Show Clipboard</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWbuxPmhlaRYOYf2yywDNULs6VgCAV2sYSvkvSdGHVZWtsILozbvGOF9%2F%24%7Bf%7D%3Fo%3DAmpml6zCNJXX-9tRenNPNNZwaLA_0TockGQgbSeNZYlb%26v%3D1%26x%3D3%26a%3DCAog_WKN6HPSIUDnisKZMGBAunP4duEJ09Hp9GEcoLLT1X0SbRCgi7OoljIYoJuu_J8yIgEAUgTs6VgCWgTvGOF9aiYItSg00craIu3YQe3bUk6I3UyP5isyX2hZWSSoVFovxLlOfvmqwnIm7LMuet66ySwFF4bKbuP3sDbwVv4QwJncNF8Va6b3vsqsNzn1MmA%26e%3D1726569221%26fl%3D%26r%3D16BF2D57-FD40-4F44-8080-586CC0C59A59-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCDoqtSeppxsbjtz7cKU0Yc642W0&uk=3DPT9XXjUIPSNHE_v1SrsA&f=Show%20Clipboard.shortcut&sz=26640">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaEjLpEjuRmGHH06uf93-kzVvFTgAXPDJDx134FJ1YbQfpG3KiePEJGh%2F%24%7Bf%7D%3Fo%3DAhbq-pRrxlq7Jc3QupD6x6Fq_jsjEjclfMMckx30DUrk%26v%3D1%26x%3D3%26a%3DCAogNDuaphqMm02N6xnFS1Nvu_frpVL-9QJMK2pERXg6oxYSbRCM_obKmDIYjI6CnqIyIgEAUgTVvFTgWgSPEJGhaiYN1oB15D9DPxi5qasUF5G4Ip9GzrfrGmSYQRy20pa9-PNExaPhNnImukPqVrt2MfnhXq4fhxAr4DAlQcAdfqCPIX2gDMNRlhLZeeDL7X4%26e%3D1727176673%26fl%3D%26r%3D79356649-BB13-4E90-BD3C-4B03ED18AC3B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7dnmXEGTMA1y8T21aBKLKvQNUdQ&uk=cKqdw93WWQPoK_PrFiCoHg&f=Show%20Clipboard.shortcut&sz=26639">
        <img src="./All%20Shortcuts/Clipboard/Show%20Clipboard/Show%20Clipboard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -868,7 +882,7 @@
        <summary>
        <a href="./All%20Shortcuts/Clipboard/Clear%20Clipboard">Clear Clipboard</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb0FkqRTzRR8mJ1--HeVinJXH8YsAWIRjRbfZszu4fWolVBgv_W8v2lW%2F%24%7Bf%7D%3Fo%3DAlhhY-YmLO98RdBMjtxy_HlmL9xsdI8APuEUb1x6Wg3I%26v%3D1%26x%3D3%26a%3DCAogQA2qSw8Xp-ZbVB_vH73LnXpa337Vzs4S8HXkWpIXl08SbRCclbOoljIYnKWu_J8yIgEAUgRXH8YsWgS8v2lWaibem32DHZTaeqK4VgKnkNXvqqA7YzRn2tocsp8iEUrw3aPWCH35rnIm7dZqBXxTTXxJXSZiimNH3VnFw6YkPM-j3fdZFD3HAyVTxQ-PMi0%26e%3D1726569222%26fl%3D%26r%3DC88D021C-C680-4245-B407-1EACC0B7260D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpOZloNjpB0YI65SQyUP4mwkwdug&uk=Fik1BiBhpo3E3u1sh9q5kQ&f=Clear%20Clipboard.shortcut&sz=26683">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATOKjMCJLZkgFrLYejS0yv9V8jdrAalgTwU85ZmwsF1rty2Al9qF3JDB%2F%24%7Bf%7D%3Fo%3DAtFZRuzQXDwbdNEIwfqNeh8OX21zIIBMrpOjyhGtef38%26v%3D1%26x%3D3%26a%3DCAogAkQDSMOocVHr0agiEZ3byJQ94aFs9L7JXrN3-LseRyQSbRDdlYfKmDIY3aWCnqIyIgEAUgRV8jdrWgSF3JDBaiZ1QpldVy6j3JxJi1ue7FOOk0vEsc7lLuKlteC82fY99oNWey-Xo3ImN2wxr6N-dWdBFwG-xSOXJdADs-6qdsQwzNWxYafbaki5QXBK_0Y%26e%3D1727176676%26fl%3D%26r%3D0EDE63F2-28C5-404C-8942-AA7B5B843590-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ds1sPz6vhAA9OYGW1zbuM0ERPLME&uk=BDYuK_lVIjs63WBzwfmBMw&f=Clear%20Clipboard.shortcut&sz=26682">
        <img src="./All%20Shortcuts/Clipboard/Clear%20Clipboard/Clear%20Clipboard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -877,7 +891,7 @@
        <summary>
        <a href="./All%20Shortcuts/Clipboard/Copy%20to%20Clipboard">Copy to Clipboard</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASG9Tyaf3RalY-1ypVNwH7Xvcwk6AWFPuANdTBNdRjCOcNsB1wOtZoH_%2F%24%7Bf%7D%3Fo%3DAkJtc_0QGuBTNcn5P-MjFi4A0yiG4Uu5JegeZ8BSTM7s%26v%3D1%26x%3D3%26a%3DCAoghc6aLahAnRdeSn6-m-s8dUq3ibkrFqTsVlUZpXRg1HgSbRDan7OoljIY2q-u_J8yIgEAUgTvcwk6WgStZoH_aiYdFQT8bc6SEcvuFoRlIAqZX-3MxEYGgvGj_Wkqpl9sKN81NYX6oHImUNq5HF2x-pgxfrchXERwF6puw105GqaP1zgdRcAnCmtUXG08jxE%26e%3D1726569224%26fl%3D%26r%3DD9C4E701-A73D-44ED-99AD-34A5225B94AA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUIwAo9U4fDZ5omwuDp5ByJYrM9U&uk=Sq9h9ivwNFlbaOEZKSaiCw&f=Copy%20to%20Clipboard.shortcut&sz=26477">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWJnY8oucX8I4k3UlnopmJyVbeE3Af__dbYjqhltK7m6l8fxveHIW5Bp%2F%24%7Bf%7D%3Fo%3DAraAka9OhxZ3Ysv-5jMwvWKg2WyLycpyfnvGY1aiIblD%26v%3D1%26x%3D3%26a%3DCAogFPgNUxkUacjVRUs7gHA7HBc5UzJ7E932NNUfiH3uJR0SbRCnrIfKmDIYp7yCnqIyIgEAUgSVbeE3WgTIW5BpaiZEH57KzjJ3ZSdYpTpmditq_VJqAoiDuBtneE_uKwy953UsuzS_ynImT0FEmQ8xyO57lIItkehc3UjOaY_tZnWntdwjTKSEJnvQWjc9RnY%26e%3D1727176678%26fl%3D%26r%3D0129ECEC-FDD6-4E4C-95CF-CB1868D61C4C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMijFbTekomykOMk8ZTNMYPm-RVc&uk=vfblKSm6OxQrh6LkwgRLbQ&f=Copy%20to%20Clipboard.shortcut&sz=26479">
        <img src="./All%20Shortcuts/Clipboard/Copy%20to%20Clipboard/Copy%20to%20Clipboard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -886,7 +900,7 @@
        <summary>
        <a href="./All%20Shortcuts/Clipboard/Notify%20%22Copied%20to%20Clipboard!%22">Notify "Copied to Clipboard!"</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVhjfOFO3rARQJ8NA8KHoF9ZNx6uAQbb1zu0B-_bsXdkPrsge2aF81T-%2F%24%7Bf%7D%3Fo%3DAr4hGgceDCwO0DwAgvZuS1pH_K6LN_YItcuzcDAKWcOd%26v%3D1%26x%3D3%26a%3DCAogKIXxl73Yb7L83mirplgHUzDyqchMMWIUyro0W6Ir920SbRCdqrOoljIYnbqu_J8yIgEAUgRZNx6uWgSF81T-aibwj4HfoWIFI8VHyn8H5IJ0S57iELTv0EjVzjH12Mc2SPpppMHuF3ImU-yZzmZiIF9AP0xAl_9H5rioxDbhmW2pJFB5gYHg3tWjqWLuVOw%26e%3D1726569225%26fl%3D%26r%3D7A4DCE03-74F2-4E8D-9DFA-D1D8919B95E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dz5w_XJgdln24oSsP2VPdCoZPWBI&uk=wymY0y1jYGqcX6RARWWpag&f=Notify%20%22Copied%20to%20Clipboard%21%22.shortcut&sz=26967">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdugasbj6ujDnOpaooJzZ1lD4GYNAQQMT77pAeJSbOiquy4StckI8GId%2F%24%7Bf%7D%3Fo%3DAuZ0R2C3s2xh7d6SsJzELsrpaLZaIUJ-EaV0ixDM4Yp0%26v%3D1%26x%3D3%26a%3DCAogJUwPym1ZlWT51InSfxO_SSo8y_5Rsn3AgvPaCxUSNwcSbRD6w4fKmDIY-tOCnqIyIgEAUgRD4GYNWgQI8GIdaiZBOTJpDVQ20Nc5TgG8_mSfjAxZoQAIyEfAQYQMJVMynQRSL3CHa3ImbMMR_KEJ-5D0bdCXmCIzWEYlzYTejppJM0SS8s9ATM8WVsz_Svk%26e%3D1727176681%26fl%3D%26r%3D53987376-32AA-4374-83BD-7A6F27E3DE00-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzuqPE3tSsAHIuIi-k5_89AE-Rwk&uk=gs6_DmiUrliFgWuBeauuLg&f=Notify%20%22Copied%20to%20Clipboard%21%22.shortcut&sz=26966">
        <img src="./All%20Shortcuts/Clipboard/Notify%20%22Copied%20to%20Clipboard!%22/Notify%20%22Copied%20to%20Clipboard!%22.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -903,7 +917,7 @@
        <summary>
        <a href="./All%20Shortcuts/Data%20Jar/View%20Value%20at%20Key%20Path%20in%20Data%20Jar">View Value at Key Path in Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdJvhvp1PisYT13FYDxalFwaP-6NAcDmYtIXUAi-Y13iWZ83GpWf8QSt%2F%24%7Bf%7D%3Fo%3DAhktrL_kF9Q0BkYaQjhN81Y94PjUdIRoUp-4Jn--sVes%26v%3D1%26x%3D3%26a%3DCAogVrxykBkrzG7FyfGMoHNNVJVFBAGKngsUO945qPZE2F8SbRCRk4mpljIYkaOE_Z8yIgEAUgQaP-6NWgSf8QStaia_Rle1QUDNMwKNVNa4mnm2N3Ob6WUfHVyQv1LwL9zD-kun_eM_cnImPTh5oLiIGh5IDE9mX3lyGOH9K3PaKiVRs4mXLLwDxh96cD1cQEw%26e%3D1726570631%26fl%3D%26r%3DB587A6AB-4F56-47D1-9C57-BD86FE0F1E1B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUkCMi2XBy7p_kGsbBBFBNb2q8sU&uk=q0sTavu1ZyYyKoqJXCYf3A&f=View%20Value%20at%20Key%20Path%20in%20Data%20Jar.shortcut&sz=26807">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeIhgQMcUVclXJamCHuwZfxApL4DAY0VhsAj29IJuIBGi4_ow9yQITPv%2F%24%7Bf%7D%3Fo%3DAkQA4Wn-UqnEvUzcC8iWc1-POujT4x3cJ9BrX3UVgCtC%26v%3D1%26x%3D3%26a%3DCAogQb0Pgl1LxG1t-QubJw_z9TcEmTumNIiIbE4-vJO8J88SbRDD1pLLmDIYw-aNn6IyIgEAUgRApL4DWgSQITPvaiaFfaRKAL9WWVxG1Qj2vpbll4DR5ktGQjKbUnNQPpjl5vLXr3fzt3Im2fQGNb-TKc-4lTbOAnerSNyp7Gx8b8nakVZkF-TPf20GeOYf6Tc%26e%3D1727178961%26fl%3D%26r%3D021C2A99-561F-4B7E-A4D1-93F5EB07F1B1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DD8nDw92EZo2wTf9BIPgtlRZ5cek&uk=lghFbCRHLxaHiMiyRG-WRg&f=View%20Value%20at%20Key%20Path%20in%20Data%20Jar.shortcut&sz=26806">
        <img src="./All%20Shortcuts/Data%20Jar/View%20Value%20at%20Key%20Path%20in%20Data%20Jar/View%20Value%20at%20Key%20Path%20in%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -912,7 +926,7 @@
        <summary>
        <a href="./All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar">Set Key Path to Value in Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdlm780B0t-bwzxYUwXgxN2-MArkAcU3YC7oiQeAY2PGkZ0pJRuE21PB%2F%24%7Bf%7D%3Fo%3DAqMm80dqBjgpg3ZjxpjKbbH2B58TXFXnS7SUgwMeBTMh%26v%3D1%26x%3D3%26a%3DCAoglJfLOKr2cnoevvIRe5veAbu4Y7th3sRcpHEO1NV-GK8SbRDDjIupljIYw5yG_Z8yIgEAUgS-MArkWgSE21PBaiaDZj52e5d5vIlXOUB7_sExoPJl1mtEg3DXNrHVAnbjQYHYqyXq3nImqPSO_rQX1iKIJ0xGFFHON9cpJd8Qe6HvXsOCsQZhXpXsQHte_hg%26e%3D1726570663%26fl%3D%26r%3DAA78ECF0-CDAF-4AC6-AA4B-9C8BBBC76146-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D560GosMZj6B94eIDHp6DI0fbOQw&uk=G6mPXY1ej7jM7ulAjFt7cQ&f=Set%20Key%20Path%20to%20Value%20in%20Data%20Jar.shortcut&sz=29269">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXRMhe2V6ohd1tWeex3zBr1b0IMuAejcWm4hSKDMd8PLNPN_V6KLEIcj%2F%24%7Bf%7D%3Fo%3DAjW0ivl7YUdWYp46t8QNi-Gk8bfcnolXa3EUvl7yzf7U%26v%3D1%26x%3D3%26a%3DCAogEjDTyE8wTW-9yxX7ZjtQrJI3Hb0CZLY0JWGJtntk-P8SbRC2pJPLmDIYtrSOn6IyIgEAUgRb0IMuWgSLEIcjaiZPNGcTkfMUeLMvJxIVTWN9I8j34Ytqitcf3xP8tmHc550LSkp--XImPrQsKss8AlPwDUrVrgDTXJY6kW7XzclaL9V9r43xLa6xPXm41bo%26e%3D1727178971%26fl%3D%26r%3D5F55397C-D671-4AEC-A3E1-36A732844CED-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMKQDQ3J4LAVgzVflgEprq8-FHB0&uk=i9TW44vJDTkhnKsgEJTJxw&f=Set%20Key%20Path%20to%20Value%20in%20Data%20Jar.shortcut&sz=29265">
        <img src="./All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -921,7 +935,7 @@
        <summary>
        <a href="./All%20Shortcuts/Data%20Jar/Import%20Data%20Jar">Import Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASjLN5eLOB5qWkdkLaPrPgxHlGdUAUfrzC0VdXVUtJu8U-DsHBeh-5fL%2F%24%7Bf%7D%3Fo%3DAkNqpPJhGIUHsi-HBN917gOlMFQvxYLsnkW6ZmF-gD3K%26v%3D1%26x%3D3%26a%3DCAogrGTvUPwFUMxYMN6D2ad2ea6VpJ_loenghCFHNkLGgjkSbRCp0YupljIYqeGG_Z8yIgEAUgRHlGdUWgSh-5fLaiZ0o7qi38gYg_oj24u-Pl8mA3HLuG5yYCfOp8tpz53XdPoRQ2iioXImzhr3-1XBjAcUl8E0iJ4WSlzLzCEj_pVtY5IVUrBPPPmSxKiYqKM%26e%3D1726570672%26fl%3D%26r%3D3F37009F-CA3C-4CE4-B321-F26837D3BFD3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAOlUB9djewP4wBAXxfIt2IZi7xc&uk=DOPmvqzgEwX4gHifE0cwYg&f=Import%20Data%20Jar.shortcut&sz=28436">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAboblJBRHHcYKCY5GRMbVQg6_5XiAb_ovwjv3UgI7NcMQF68cSpYksrg%2F%24%7Bf%7D%3Fo%3DAmf8RXJoEuYkxddkNsNQGGJUoaCu38uD8b8agVNcCsWx%26v%3D1%26x%3D3%26a%3DCAogWthHh5-QxqGjuphC7zscHReBMwzk3IMJwWPIML2RyPoSbRDNqpXLmDIYzbqQn6IyIgEAUgQ6_5XiWgRYksrgaiZ1suH1vYBQCdL8CVxdpB7824iTYW2GaBTXYLKZRfmBU-nO8uNtrHImWO6t-pY2C_JhjpDkje5DNqfpycNgkdtdpJh7pihACes8SscBvSU%26e%3D1727179005%26fl%3D%26r%3D245418FE-08C1-4061-B282-D65EE41234E5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DViTivJRpbbKc48naqGXWABO8ZE8&uk=_l_tJ8EiLg7oXwmQB9-W0g&f=Import%20Data%20Jar.shortcut&sz=28435">
        <img src="./All%20Shortcuts/Data%20Jar/Import%20Data%20Jar/Import%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -930,7 +944,7 @@
        <summary>
        <a href="./All%20Shortcuts/Data%20Jar/Export%20Data%20Jar">Export Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWImJ3DrZSBjNtw950NWgL-nvrJuATyt1gz5nBpAtuSeE1-HkSCdOASc%2F%24%7Bf%7D%3Fo%3DAgCOZSl-7g8R8Ro-T2h2LV0bnnTKXK5wxEixmUA75U-H%26v%3D1%26x%3D3%26a%3DCAogbl5l1rEuOKjQjKe3THij4FSebPVVUjv-y4NRV1QFFvMSbRDy_4ypljIY8o-I_Z8yIgEAUgSnvrJuWgSdOAScaiYiyzAiLggvElWYowI8cR77YN3tRe3fdryk5mg4vs3P7fbLRhmaxHImEUqrEhbZ07nyGoJWCH9cjWxoVID1dzTbtC2tL_OAT-AkmfdiNiE%26e%3D1726570694%26fl%3D%26r%3DC6CF763B-F3F4-4ACE-BD92-05364797D696-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DiPZX5TqH1MAnjmNPG90ylL_WrRw&uk=BS1kkpNcl3lDxV4C6pqbhA&f=Export%20Data%20Jar.shortcut&sz=29240">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATcqKzX1-Wzq6SMZShXjS6C0KbCIAX5l23OLsjqqcjbdOAf4HcxOlYwl%2F%24%7Bf%7D%3Fo%3DAnAMFih4prhZWPIF6OQh-gTA-ZDSNMXxLsU91s4I5sUQ%26v%3D1%26x%3D3%26a%3DCAogniFA-cWOWxpheHl4fjgu09ptBn2q9_2GuTC6eqT-ulUSbRDDr5fLmDIYw7-Sn6IyIgEAUgS0KbCIWgROlYwlaiZbRC2I9jgMHz7EAp6TFbHKXUt0iAd_J3INWwoHW5ATgcZd0psxDnImNACh2rQ-0bZk-lIdbeX5s4T7gNaMHghNzJckHQJs-u0WE1VDR3o%26e%3D1727179038%26fl%3D%26r%3DC1A3D21C-C33B-454A-AF4A-7187E0A53064-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAsWDtrSyjYNx1PJwS_Gu9AoJPSI&uk=T---uq0AlnJKBvMX_MebTQ&f=Export%20Data%20Jar.shortcut&sz=29240">
        <img src="./All%20Shortcuts/Data%20Jar/Export%20Data%20Jar/Export%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -945,19 +959,19 @@
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Date%20%26%20Time/CurrentDate2UnixTimestamp">CurrentDate2UnixTimestamp</a>
+       <a href="./All%20Shortcuts/Date%20%26%20Time/Date2UnixTimestamp">Date2UnixTimestamp</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZNsZi-4Vkz6LY12ULc03KIwkc1LASc4fFfo8ZSv9c6HPEUTya01Kwgu%2F%24%7Bf%7D%3Fo%3DAlJSw_e0WdIJsPAEPyOWrU2xTl9dT8l--EPO9H1Oh3rV%26v%3D1%26x%3D3%26a%3DCAog_EmBs5nVwvP0CJy6ld_3aWAeK2XRdZ6tX384c8RnxFMSbRCmgLColjIYppCr_J8yIgEAUgQwkc1LWgQ1KwguaibefrKJNrTF1-UUDxkbCN8LT67KDhNJWzEtmqQtarE8hIYl6JMCjHImz51ehzBhZvJ00A4yyJux41joYy9selRursv2z_lNk2zCpKKN3-w%26e%3D1726569170%26fl%3D%26r%3DAE2DF062-4FF8-462D-B945-A12BD8982666-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlXsFlyUksr_cpPv_rOW0WYQk1eM&uk=04Hjh5UFEK3DxUz3naXPsA&f=CurrentDate2UnixTimestamp.shortcut&sz=27148">
-       <img src="./All%20Shortcuts/Date%20%26%20Time/CurrentDate2UnixTimestamp/CurrentDate2UnixTimestamp.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY2C0WevBGbAO9oUP_Vu0CKPQv5eAaWiEQHSbbYwoLlkkmGPiFhvo55o%2F%24%7Bf%7D%3Fo%3DAg8YCMp-keWJmPSVHR_ntp44tcJtizFZNX4hD8-Nu4e8%26v%3D1%26x%3D3%26a%3DCAogicNXfhJGZ798jSkhYz437qxEqEwaqUXvfL_u9wbnrQ0SbRCzzfzJmDIYs933naIyIgEAUgSPQv5eWgRvo55oaibkx1Z1t5Hrs6teKv9GBu1TIJ7U0NcEZPDuDkT2ANW7BPBIJ0rkeHIm72eHod8FBl9pRb6reAocwbg68scYMzKysHgf-czBsl-FcdFueKI%26e%3D1727176502%26fl%3D%26r%3D58D2BE0D-13FF-4458-B4E3-52F292269E03-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaGgIgXu8BkBValCXmn3d_u_3Mxk&uk=ePs94Lqlo5WErNWaU_MceQ&f=Date2UnixTimestamp.shortcut&sz=27145">
+       <img src="./All%20Shortcuts/Date%20%26%20Time/Date2UnixTimestamp/Date2UnixTimestamp.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Date%20%26%20Time/UnixTime2CurrentDate">UnixTime2CurrentDate</a>
+       <a href="./All%20Shortcuts/Date%20%26%20Time/UnixTimestamp2Date">UnixTimestamp2Date</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZMn5-eU0scFAmNMxeLvyMyQnskbAQXC1XXGw6NbLumjeBSQkWlpdD1U%2F%24%7Bf%7D%3Fo%3DAiJ5GVEpFXZ6qTNbr6W3s1dBhOstxSBh-aYWi9KFgvfI%26v%3D1%26x%3D3%26a%3DCAogi5R1sqPN7jrIBZwVVIOO_02dw1RVI_nQidCwf8INCaESbRDhirColjIY4Zqr_J8yIgEAUgSQnskbWgRpdD1UaiarUObDC2j8kVWFLvrYysfRsfB8exTvCdwZ47lN8zi1AqN9bZqUEXImeGodKiZfOtOC2FH5d93QjbEfz67ukuO37lAvWWh5XXVQWAXn5rE%26e%3D1726569172%26fl%3D%26r%3DFCBC1C09-6F5C-4AEC-B3EA-D4C691FEBEA5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdV1NnH-KNS8ZdlM7qPA-WAzv_OE&uk=vN-ozsxoNjBqRQMOzUiijw&f=UnixTime2CurrentDate.shortcut&sz=27358">
-       <img src="./All%20Shortcuts/Date%20%26%20Time/UnixTime2CurrentDate/UnixTime2CurrentDate.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbZZel8wZNzOZz9deT-OkF1NRMPdAfydeR-gDkNPD-4XGa8zNk25NQwF%2F%24%7Bf%7D%3Fo%3DAiby0CR5hYlB6qSVkPmjVfjnZTKI7TQH_OY34AMVKL5W%26v%3D1%26x%3D3%26a%3DCAogaxh2hPCHpVZWs1hyTQK-ee1cpl7-36vhMRMhZV6W6igSbRDm5fzJmDIY5vX3naIyIgEAUgRNRMPdWgS5NQwFaiYp2cTbjhrAQkzVVHrrM_1fV0i1UKQQfTjxexgziU7b5B0DSBcas3Im_eaofbIaDTadrg8Ll9Mpfa0VnWltv40f6oaa5h06AtC1tCfGz5Q%26e%3D1727176506%26fl%3D%26r%3DF936424C-3F24-4879-8C45-7F1180E5E658-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DESEyvdFxSjPR9G75nBP2xxEJokg&uk=6NZeXFWHu2vjVl59jhxMZg&f=UnixTimestamp2Date.shortcut&sz=27354">
+       <img src="./All%20Shortcuts/Date%20%26%20Time/UnixTimestamp2Date/UnixTimestamp2Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -965,7 +979,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayInTheFirstWeekOfTheMonth%3F">isTodayInTheFirstWeekOfTheMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaQ-LnxyG-ja8TiuHGoAsGKE76NaAVrrnhCBupHI0lKEE54l9HGv7fBr%2F%24%7Bf%7D%3Fo%3DAs_GqZ4G-DL-Zm1eowkOtfOhNrmgqxm_BrYxB_SQTJ1I%26v%3D1%26x%3D3%26a%3DCAogOVObVP_iFPE076tqQl6ZqyYO2ruX5hkFovMNBaK9QlcSbRDIlbColjIYyKWr_J8yIgEAUgSE76NaWgSv7fBraiZHKwBxtwau8N2s_wAQH9P2RZRlTBz_BsQiiV5oweQz6h2TmwHmuXImsCM1VpQWzM_ejbfTz4xydk5Tf3KX1pY9f9fUmBUkT3i-4uCfNHI%26e%3D1726569173%26fl%3D%26r%3DEB7C0AE7-A796-4518-8BC2-071FB5028588-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_hN5DnQiTH3i7yRnvyo-MJ6HVIk&uk=j449lBl8ryfYj8e5P8uwrg&f=isTodayInTheFirstWeekOfTheMonth%3F.shortcut&sz=27825">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS8K3c96giIfIz9KN8CmRdy1h_d2AaO5Ao-gomGS19c8IKizFu-b7rgL%2F%24%7Bf%7D%3Fo%3DAmKkw6Ma_ItAmXzjpCbQ9rkXhCDwaDGpT1_AWMwa8-Kg%26v%3D1%26x%3D3%26a%3DCAog3AXm8HxDnXqNkur9tSom7xhGyfnOsO92RLo5Ru8fCXoSbRCI_fzJmDIYiI34naIyIgEAUgS1h_d2WgSb7rgLaia79doa7exTC2Hn6cjlCRISnAH4v4pcZMORUFUdTiCGwzOex7SryHIm1RbR1YRgb_GwiqcwIS0VMbywE87MzmklB9D76hJZ5Buj1hPBh4A%26e%3D1727176509%26fl%3D%26r%3DB8D5C298-03E5-481A-BFA5-FC25C1C33960-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9cVlRzJY6Mp0Yq_pfJQg1gLEA3k&uk=wiTujRbfL_zUQOAQOGySOw&f=isTodayInTheFirstWeekOfTheMonth%3F.shortcut&sz=27824">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayInTheFirstWeekOfTheMonth%3F/isTodayInTheFirstWeekOfTheMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -974,7 +988,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayInTheLastWeekOfTheMonth%3F">isTodayInTheLastWeekOfTheMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcXzyPnswyUfpLfdbmJGZ3a1W9ALAVbhpQhqO0pHHvT06QkkqK9uV3BO%2F%24%7Bf%7D%3Fo%3DAkpN9jpB1FOisczPFqvDM0-9twraMAt368UUl5bbI0ag%26v%3D1%26x%3D3%26a%3DCAogzg2ZB9MJdEZQXBsOGiLwoDqLn7rAuE2dKzz5gYuk3CASbRDmn7ColjIY5q-r_J8yIgEAUgS1W9ALWgRuV3BOaiapnj5EY-7-FYoM8Ja6sqXc6aok_yHABVk4Hkg9qwnpKUPS2UFH9HImpbhMx5yzH4j0tWC0ugRkVYUcSn5G-6aG2yJKedv_LUzgvB8sY5s%26e%3D1726569175%26fl%3D%26r%3D021F999D-9293-49E4-A36A-D31509078915-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfaWkC3yR4yB1fsHyVsJa5ow_Ek8&uk=alk2rpJ2hHEr458f7l72gQ&f=isTodayInTheLastWeekOfTheMonth%3F.shortcut&sz=27801">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc4enJQt8p-qXgazVQBBWYzmca6IAYs2thZLphe9n0QEGwcjdQSJJyeh%2F%24%7Bf%7D%3Fo%3DAoFwyp9CiUJ2mmoYubPxIWL8myv1EJLOEncnXAudiWir%26v%3D1%26x%3D3%26a%3DCAog7pg8hXFZ_jZox7ovU66KpmOzyjD1G19bXrnj6BFSqM8SbRD4lf3JmDIY-KX4naIyIgEAUgTmca6IWgSJJyehaiaN5z5oLQHNxgnXzHNXxQEVo1oLlxV6TV3pTshC-ZLnhDKB1BoU8XImZf5BCSVm44-_6p8fxwkFBC7era1HVx9poNipBYsUZBE2mNsKI7o%26e%3D1727176512%26fl%3D%26r%3DA5C9370B-AD5F-4BA2-9052-A6496AA6BCE5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJhD-YD1sEbdM7nSgWOqOH7VJ3y0&uk=w5A3hI-VWvFLcLTmKf-dGQ&f=isTodayInTheLastWeekOfTheMonth%3F.shortcut&sz=27800">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayInTheLastWeekOfTheMonth%3F/isTodayInTheLastWeekOfTheMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -983,7 +997,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayWorkday%3F">isTodayWorkday?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeAdGvFwKKk6EF6GsbUwkYtKoD2JAfcFQB96rsGtyWi0IrCguq9hafD-%2F%24%7Bf%7D%3Fo%3DAhoPkYInbRK1MjE_ogq-1cnpESC1Bo1EAYmIiFqpbMVA%26v%3D1%26x%3D3%26a%3DCAogk81Zznz0hCt-PEX_0uguLuOyeeZa8byy0-JiwDZBr1ISbRCGqrColjIYhrqr_J8yIgEAUgRKoD2JWgRhafD-aibfN30yetCFOxbe2OuO9KdyKbaTURgjKp-vftdJJZT3pLcTXPSOX3ImDgj5z3C2pGCeDuIa4LXW2W_iYbuQa6BJj4OxGg79dP8Tq9Il7VM%26e%3D1726569176%26fl%3D%26r%3D045C6F49-29A4-42F0-A11A-7B717867ED85-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2nsRn4DsztTABs8rbuFpCNep5HI&uk=-6Ra6-TfRIuM323IYOZRDg&f=isTodayWorkday%3F.shortcut&sz=27866">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXkFnZe9ZpaffFZJj7ACDbbQG1JzAcuYEKc3dEf0fIT4arNjJlTbCrrR%2F%24%7Bf%7D%3Fo%3DAtLGencDDVTJ3qXpAelLsVhcEsSxmLPuwHLZ1pu8Kg14%26v%3D1%26x%3D3%26a%3DCAogbiAPrd9FRytE7bhHOTAOACcV8Y1eb4zpEtOJcW13mGcSbRCutv3JmDIYrsb4naIyIgEAUgTQG1JzWgTbCrrRaiYjXSzEVCeFGC7jTv-AFk2bnJNqGC0QCob0gKVxmSJ8WyRNDhciV3ImfwmhpKK5FlPGIESxH4B9SMkv_awV218UGZsa4xQDvl5OSpNO_lY%26e%3D1727176516%26fl%3D%26r%3D0D454F7C-B70A-47E3-A32C-3A5FF490A176-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DafZ_5WYkfTUrz7Y7DvPL9kYthOI&uk=vtuPl43Jcq4Wh42sLkio6A&f=isTodayWorkday%3F.shortcut&sz=27865">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayWorkday%3F/isTodayWorkday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -992,7 +1006,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTomorrowWorkday%3F">isTomorrowWorkday?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeanwSOisTENMO43ZhLFbi6o-JD8AdPu3a2TtalKp49B2tSmYizXLO4S%2F%24%7Bf%7D%3Fo%3DAlBI4TnTqJ84JyZKjkveaOqKUe6UmeQyxGOpYkJK3ZCA%26v%3D1%26x%3D3%26a%3DCAogWBFPYX45k9akkimCJm3JTTRmcYSpjCsQQsQY0_fGhgYSbRCBtLColjIYgcSr_J8yIgEAUgSo-JD8WgTXLO4SaiZnLVGrXiTRa7U-qBaxoZ_ou1D3yYWheOEqqPrqqE-lMEPmrc_h0nImvkeEmlEuGZbJslrJYHvUloPdqHFv9AVVCu9P4mkM0yX-v-aINeI%26e%3D1726569177%26fl%3D%26r%3D8577CCB6-C413-46D7-9FA0-49739503F96F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dmsx0uZPXpYBudvnKESRre9R24u0&uk=emusQ7fU2KjEvTEGbkKVLw&f=isTomorrowWorkday%3F.shortcut&sz=27899">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASRXgWonWnvlNo-c-qIVhwd6pMjqAU4pzgTnAtgTZLqieJqqovgzvI9v%2F%24%7Bf%7D%3Fo%3DAu7H4sLaBznX6iY8g28CXYOh_bJFwQUyLWrOrg7aabcv%26v%3D1%26x%3D3%26a%3DCAogpsr1MDzWG_HAiX42DYEOZrw3BUxusXRVl0BFn8OErdoSbRDt3_3JmDIY7e_4naIyIgEAUgR6pMjqWgQzvI9vaiYotEwsyX1jStWddEJSq3zGX5nWLLOkwm4weFiWFE35TsE845rc2HImibIOde21F9cauwIL890-2CNi8_g5kVBY8BE8vHOLkUMuW1EfsL8%26e%3D1727176521%26fl%3D%26r%3DDF4204C5-012F-4202-96A3-1230A3BA7662-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeQfTWgPUz6f3w7xGcTp1vnqut3o&uk=81_IY62SfpghzkTNiFcxvQ&f=isTomorrowWorkday%3F.shortcut&sz=27898">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTomorrowWorkday%3F/isTomorrowWorkday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1001,7 +1015,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayPublicHoliday%3F">isTodayPublicHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbLRGYsJh_FjOnLwwIyqkGaldAaPAbQsQ6dmnSDwGWfAibuRdjCghHy-%2F%24%7Bf%7D%3Fo%3DAotZaK3YNWLKNbZgxD4jg7o1RcrLBJUqBMods8Nu8a6-%26v%3D1%26x%3D3%26a%3DCAog5ibVy42vWHKG3Ah7LBUSlFF-_8lH5Vr020CxbuXaeKcSbRC5vrColjIYuc6r_J8yIgEAUgSldAaPWgSghHy-aiZ9foDCV63y8qTCcHwuG6ZZpYb3OTfBh14PADtvj-8edwUN6l9zQXImqhoRAtVwyy9p-BycxvB4D39GWEsw2PcDkC8Bf8ltZDyoa3jeimY%26e%3D1726569178%26fl%3D%26r%3DEAB24D81-AC8A-4AF2-B13D-F04A1B87B53A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Do93Tqalzkp_6ZupkLKtJG8PiL60&uk=1wDV_DEh2xjtlk41Sb9YeA&f=isTodayPublicHoliday%3F.shortcut&sz=27588">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYge4ELo6QCz-6zJJBUrsGwjAzYaAUZxkevHES0MhyrVR3tcLPdtgQWo%2F%24%7Bf%7D%3Fo%3DAqojEP4DLfhnoZsjbNM-nM7W2AfCgmLPx_QICXM_w47m%26v%3D1%26x%3D3%26a%3DCAogFUMJliv_TrNxFkMcfUCMZUByGfXvRhvd4Ay3OkOCU5ASbRCZhv7JmDIYmZb5naIyIgEAUgQjAzYaWgRtgQWoaiYqfKssKOY4yJVHgNUIAiCKzYMyL_MegwinuIC4hFru1R_hUao6W3ImdJ4dPOdIK_fo0MaMcHetfTWiIo9ZGkhbosKP_i_eA-wvC_g78q0%26e%3D1727176526%26fl%3D%26r%3DED7AE4DA-810E-494F-A934-651AD9BA9846-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFJsx1KtoAwNAULxEoNsYTJTmipM&uk=2y_-OTuOokSW4xRg7xzCWA&f=isTodayPublicHoliday%3F.shortcut&sz=27587">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayPublicHoliday%3F/isTodayPublicHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1010,7 +1024,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTomorrowPublicHoliday%3F">isTomorrowPublicHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASYcbjvkwxyr5_kFmyJnuiNoAxVHAc-6QWWSTJGujla5TWp3hI0L3sCp%2F%24%7Bf%7D%3Fo%3DAhM_fDZQVgxmqo3fnz02iee6wbxiWoNTD_CS8_6u6eia%26v%3D1%26x%3D3%26a%3DCAog-8OoGCkGfn0RDZCvMB7jU82zi0ex0Nu6jSOnut7jLw8SbRDfyLColjIY39ir_J8yIgEAUgRoAxVHWgQL3sCpaiYK59WT3OAvlzCWAEdYU2B2kaVXR6tjDUljA87Ru4eIdWM_F1uAOnImWD1JTnRXL42cy6kmrmpLUAW6ceZdODfMB6FWAWkVTJ7xmquIRc8%26e%3D1726569180%26fl%3D%26r%3DE960CBC5-FE03-4B7F-BD42-7B50F848FAFC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DW-BNw5aXKFWu8luRfF0HfiAaMmM&uk=3sdf_6qX8TC4HHSLxyQ7dg&f=isTomorrowPublicHoliday%3F.shortcut&sz=27588">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVvcDx3uu-odJVMnimZqOmCyN36bASSKMWSS37Ye1qg9w_H-Bk6JVUGd%2F%24%7Bf%7D%3Fo%3DAhAiCXepuqqfwkXstpDz6P1sOHbjhBu-suGPZVS1ilz4%26v%3D1%26x%3D3%26a%3DCAogFJFYasY-LcHl9L6PYwsPH4jn8coUjfuHkbMzdBQ62noSbRCjrf7JmDIYo735naIyIgEAUgSyN36bWgSJVUGdaibFd8ewCjKOnFT61tLmBQgLLc-UD_dt_J3DDC0c1dPGpMxkR6EQgHImr_buQpv_1KL_YgvY0VYYZfGqLRuRY5XBmJ2We1fLu4UjV23WPAI%26e%3D1727176531%26fl%3D%26r%3DBCDA5A29-7D59-4B6B-B186-7F1169CF7150-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnXNJJs-mROejYa7mVHNsoH-kD1A&uk=48hSj8raFlBhsxA0HwctaQ&f=isTomorrowPublicHoliday%3F.shortcut&sz=27587">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTomorrowPublicHoliday%3F/isTomorrowPublicHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1019,7 +1033,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayMyHoliday%3F">isTodayMyHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQWX-1y83Kldfk-EudJ-aO0RsPTJAXsTvz6xcStdWUrB3qWXen_ZMZCW%2F%24%7Bf%7D%3Fo%3DAgtk9ulSDjH4X2Fnuawxewai4z6QUrV2TvTU6FQ8dISP%26v%3D1%26x%3D3%26a%3DCAogTm2WBbDSyPRNDe385Qn3EWP_6P0ZQeTYMRa6CYqOu78SbRCY07ColjIYmOOr_J8yIgEAUgQRsPTJWgTZMZCWaiYJvhw3yFbuSzYDheo1eVFEQo0u4a4mWgD61SAGw_axzdy1ve0RDHIm1XBTC1vMSitEHtbY2HO1GhTT9QJpUtwZXrgXCkRzGiTZmLLrdMI%26e%3D1726569181%26fl%3D%26r%3D6DC579BE-1C67-4A33-81FB-85AF2D24576F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWQsp9ovYFzbyv_Pn0ka75yYH_L8&uk=tQzB1Fv-SfOB_Wo5jI59Zg&f=isTodayMyHoliday%3F.shortcut&sz=27547">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQsE-yVHlW2V5kl_K7mPY0hDMPapAeW7SBxE1FSYyEWHnm9x73xdy36n%2F%24%7Bf%7D%3Fo%3DAp0VJQOeh5kiSr8l2YDwbWRF7dXhnKUyxOVsxiLfNrqj%26v%3D1%26x%3D3%26a%3DCAogMRfX3xTfr4M3qJ-ugew7y_c1z0u3LbmXSxGUxeG-4VsSbRCJ1f7JmDIYieX5naIyIgEAUgRDMPapWgRdy36naiYwt-2U4qZnLwsn7vvlJ1NR50I1mlsH_Fcz8zdFM1yZtbeSkxi3j3ImPB2Mdy0BWS-izDWcefmAWKNCYY5ZSXXPO2kuxOXEdiVHPrmEu98%26e%3D1727176536%26fl%3D%26r%3D488B9CFB-94E2-48C6-BBE3-39E280047CCF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEUMzd3sUmGwGPwrHYNtVncBO9wo&uk=E-i2BTMPchNKorhMLDtUBw&f=isTodayMyHoliday%3F.shortcut&sz=27546">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayMyHoliday%3F/isTodayMyHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1028,7 +1042,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTomorrowMyHoliday%3F">isTomorrowMyHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQkuhQ0bjbSyIRDxU08PS54hw1G3AY9d3ku1axVAFOgZF5K7e1DeZrqo%2F%24%7Bf%7D%3Fo%3DArrfByx4OhwLD7pfMJA79S-Nm0AIIejYr6_qnQaG5O9t%26v%3D1%26x%3D3%26a%3DCAogIciX-srfqsHboNJU_w3V-otNtu7jlz0sH760DL5ZZakSbRD43LColjIY-Oyr_J8yIgEAUgQhw1G3WgTeZrqoaibqINtIfFwbmvaN-CiRnZDZBdGqehOGFbzkJiri8eacmgJ4Kz5gP3ImrgUeN6uvB94qVcBPrRaODn7-mCpjBcz5vPyhaJwMc8bka_4nQgI%26e%3D1726569182%26fl%3D%26r%3D3459831C-CF8B-4164-A031-E4C7002B1177-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dp1AaCKaWESkIIKNLL9jG-Xd00YM&uk=A3Agh1IoSxJfDNzFpLYSeg&f=isTomorrowMyHoliday%3F.shortcut&sz=27547">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUUQtnD_7ehSYRLpJnGOf_fueaYmAZX_JmvJ_ruGgg7JtwmquBuFW52w%2F%24%7Bf%7D%3Fo%3DAgh3LsVBU_RHNhbmS0YMumhLVUsggW1bGMsPb0SSfeh4%26v%3D1%26x%3D3%26a%3DCAogYPK31u1Hm88TcFuoi-A1qLKjuPBOQcGk5lxcDSG3l7ESbRDZ-v7JmDIY2Yr6naIyIgEAUgTueaYmWgSFW52waiagQ4oKt2UDpXKoYSnd9B2B3MQiSOKA6CYOTiaezI_WSa9tgdeusHIm46jDjvrAz8IkBl_RikhdZZ4HB5UR9RGWf2L8w-8EdR2BUjsC_w0%26e%3D1727176541%26fl%3D%26r%3D87013ED6-8C4C-4308-97E3-53F665882902-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DArS5Dvum5EVMLb3GxjsCD6ettf8&uk=LIKQkpJSzoASGWjeqXq1pQ&f=isTomorrowMyHoliday%3F.shortcut&sz=27544">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTomorrowMyHoliday%3F/isTomorrowMyHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1037,7 +1051,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayWeekend%3F">isTodayWeekend?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcSRprD7u2JHrNQoEs2_6cnXdvskAfaEhTyJVhaFIy-MUNDLI2-tOGJT%2F%24%7Bf%7D%3Fo%3DAlVxx95yrJ_UKca61YBtzFhR6ytt--13VJBSwDiLNkIR%26v%3D1%26x%3D3%26a%3DCAogeUQ9fQEUjiM5IY9xVP2DQhJEMrLvbbMIel6Qt7Cakn0SbRCL57ColjIYi_er_J8yIgEAUgTXdvskWgStOGJTaibzMOUmmDKb35KvcI9vIMWrYpWJQozC0uwfkkSdPjrz4YHlqPL2QnImaQDW-GiTWowdyZ2oABoI1Bwlw-eLDEScqZ0ca_asIJ2Y7koT0F0%26e%3D1726569184%26fl%3D%26r%3DB8294AB1-F5FC-4696-82DE-768240AA7818-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8mb0ZKZpTfpnMKuBDSKmIF9XilY&uk=qisrZ86DKX34ylK_MC9q8Q&f=isTodayWeekend%3F.shortcut&sz=27292">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATuTs-8lJ_yTC_O_uwqJ0fPJED_MAUmGq9kH9ybMNd3JSwcTtj0mwrTg%2F%24%7Bf%7D%3Fo%3DAjmxHwGmYhLbRWeOyXMGGeXzE_OFiVoLbUlKTSiebHcS%26v%3D1%26x%3D3%26a%3DCAog6-IaCdFtPWt_lMqGiin74d0mZm4fhIbtZbepLMBPag4SbRC9of_JmDIYvbH6naIyIgEAUgTJED_MWgQmwrTgaiZjgjGj4Q43j9ysrFoGb7x0DgzlM9jdWGzaB7f6IWlvpgcTEDQHQXImVSDMSOHk1tug4PePoNm3Mg5Y0eyeLdel5AkiUDsCSoZ--11_mDI%26e%3D1727176546%26fl%3D%26r%3D3D64FE62-7A88-40AB-AF12-347ED36C1B74-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMAyYlz2ZqoJV0ui6DEMJtlBNAmg&uk=jaxHCUXAdGO07q3jPnkkfw&f=isTodayWeekend%3F.shortcut&sz=27291">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayWeekend%3F/isTodayWeekend%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1046,7 +1060,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTomorrowWeekend%3F">isTomorrowWeekend?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASHYClV4vRqxyWb9rHFBVKY0vi-1AVW_JjDdAEnDUxa4Xzx0pZjgYJFX%2F%24%7Bf%7D%3Fo%3DAhRj5l_A-6ao7rBz_yjmEPj9cWJj5Njlm6xs_zSvOc41%26v%3D1%26x%3D3%26a%3DCAogd8QexuI5qoJqUeIAnb-8sKFKhtZ5LruXT84554CkmL0SbRCq8bColjIYqoGs_J8yIgEAUgQ0vi-1WgTgYJFXaiaebkTYm2ntUmE0_bls8kYlv9dWlrKb2JsL7Je6zDD4OWX1EItpMXImIDgWUsEDSEB-H7vGfKIFk7d9UL6rFhxLL0vOb1kAKye156TIzDA%26e%3D1726569185%26fl%3D%26r%3D240B5C99-7591-4962-896A-F62B5D11F2CA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DagNR70Gmk1frd74yGRU5_Age7Mw&uk=kSTk1bnG7kfNevHr8sN4Sw&f=isTomorrowWeekend%3F.shortcut&sz=27281">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYJtc5mOMHdWD_ZEcgGtkUe_6lcHAbPSixro2nQCErGxDpm6hhkc9pnY%2F%24%7Bf%7D%3Fo%3DAoclxW3zs2X0NjCLrGOsJccmRZINxB5Ue0wF18intE2R%26v%3D1%26x%3D3%26a%3DCAog546fyeoB42mwMVap5t3LvPJ5BxzuFuTvXQ5RCJMY6lsSbRCJxf_JmDIYidX6naIyIgEAUgS_6lcHWgQc9pnYaiZ04QsojtNETzKv2ZrEmjStee-e_HkdGeFEkNIARhqpn-V2RClg_HIma7zLdz1NM9yVXQjwxbW0XjabvVR3g4Ki-N03HMT1Pvg6nr6ani0%26e%3D1727176551%26fl%3D%26r%3DEE6FF526-EE36-47E6-8EFC-008FCCCF4659-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DsGmjLG14xbgDn7Ufhs4-WgvMeqo&uk=6bta6awFleK2On43rlSn_g&f=isTomorrowWeekend%3F.shortcut&sz=27286">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTomorrowWeekend%3F/isTomorrowWeekend%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1055,7 +1069,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayStartOfMonth%3F">isTodayStartOfMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcKlgOJbjHhjiPDSfXR1Xi3xzlxcAUqw_nmleon93HzuwvefPa9weZo6%2F%24%7Bf%7D%3Fo%3DAnAzRiCG4n3FfoHzyfb3I4oz2N_pY_fbqiq-tF3tYb44%26v%3D1%26x%3D3%26a%3DCAogwGnGzaz4AS0ZwmyKtJFJp_9TwYRygrdBkPXw8m3hsusSbRCj-7ColjIYo4us_J8yIgEAUgTxzlxcWgRweZo6aiZsaHQW_6cpuXTOgRLARqkTgTvnqQB6F14T_fGB890Um7fGw5M63XIm7Sgb4IJPAYjH322V9f_T2pEcMM5kZlkSn01xl3v2pF_Y4d5gldE%26e%3D1726569186%26fl%3D%26r%3DD04F382F-6860-432C-991E-AFBA880C4596-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dvihk24nUeTdFF_WkYj0sxfRoVYw&uk=2w2OOshqPAM4f49ONB5o1A&f=isTodayStartOfMonth%3F.shortcut&sz=27129">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdVUL_Lv6B2Q9MOwNib1BPIXw6j-AcO2k84vYNK9B6IB85ATTs2jsdZa%2F%24%7Bf%7D%3Fo%3DAtYjZ6x9ZBmELne7KuAzvlfYfRuYFqeeUdk4GSq_XBSW%26v%3D1%26x%3D3%26a%3DCAog64weQ_37bFSg9ZDnD-nfgZSuwOcZlOn86RmWk7nfBvkSbRCR6__JmDIYkfv6naIyIgEAUgQXw6j-WgSjsdZaaia17zl4DdgvPJeQiB-gsDelHx6gLeDaibSBABBfxTIPrsQXHP0KEXImI-kA2iAByeULsqFPherMEZpzJJIFYe_VjcXv6EOm0hJ2JkqjwU8%26e%3D1727176555%26fl%3D%26r%3D3263EC7E-B106-4CBA-B6E7-46142323A6D4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHUqSU4BuvGQulUG651Yiio6exy0&uk=XLEKn39xkaritlvx5SpDrg&f=isTodayStartOfMonth%3F.shortcut&sz=27128">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayStartOfMonth%3F/isTodayStartOfMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1064,7 +1078,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayEndOfMonth%3F">isTodayEndOfMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYWlNDl-z9aTM5gXdK8knUpgx8S6AevCD2bfG7ucxCYTowxumjwqYPpN%2F%24%7Bf%7D%3Fo%3DAlXzcBh6pVrRYP8-0X19KjujcwmQyjGxT2t2HiwqtTbJ%26v%3D1%26x%3D3%26a%3DCAogGjt9bEAKY4CyrUMfdkKDcfToZrlh9UFzXusT6_1ltEQSbRDXhbGoljIY15Ws_J8yIgEAUgRgx8S6WgQqYPpNaibXPg8bAMdRho2DplJTbx1q7lKyEKCtldLqhKoqNBrm-6Pf1iE31HImbUrzNxKKUAUb3RvJbIPVLK1NbyGOKCZNURu-12IaO7jR84iaTb8%26e%3D1726569188%26fl%3D%26r%3D4F25FAE9-0410-4695-AEB9-22E8E30B8B0B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIw7K0W9Si8ABWfV1vWDAPWiVqeM&uk=IxGxoXBhkj0j0qRON1qyiw&f=isTodayEndOfMonth%3F.shortcut&sz=27133">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfGjKFue4sSXeI2pPKy1Hisc3qxyAQTrzgAlo0KseajJVTAcCn86p1dv%2F%24%7Bf%7D%3Fo%3DArh17w2tviPZr4Fv_TlqlQnjMifWy68HIyyqyq13rG6S%26v%3D1%26x%3D3%26a%3DCAog4TTjtgB58zymXtO8AR4Sy3tIyNd5v_oWbudfYtTmMnYSbRDhkIDKmDIY4aD7naIyIgEAUgQc3qxyWgQ6p1dvaiYX5qoBYAZgFbQDGIFkMJiGdTQ7o2JfjZn5Ec0kvtjDHgE57M1fc3ImIePX_imdF7xpLaAgLzHqMRr0Hqr-WQ4D8QM2bttT26W-e4WYFV0%26e%3D1727176560%26fl%3D%26r%3D4EFABC63-FE59-41DC-A693-37FD79572F43-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Djgdc3qzpSt_gR20Iz9s0h5Yea38&uk=wSQuwGVAYi7xL-JOtBa-GA&f=isTodayEndOfMonth%3F.shortcut&sz=27132">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayEndOfMonth%3F/isTodayEndOfMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1073,7 +1087,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayEndOfQuarter%3F">isTodayEndOfQuarter?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAViz0oe0QrYJgQ0hKkbJ9MW8HBKEAVQq8vrjSPh0dv7lcWhtpa7W8wAK%2F%24%7Bf%7D%3Fo%3DAtNPaUyhXbPNXPXYnm3FT-nJWxaM8JpkecFaccSF0-w8%26v%3D1%26x%3D3%26a%3DCAogJSAgOJJpiDfPcnoixbcCdkI9tTNnmZqHm-pJSIGeeIQSbRCrkbGoljIYq6Gs_J8yIgEAUgS8HBKEWgTW8wAKaibMdJ2tEKfL4S1OLrgogOWSh8lRb45tvCs3txTYW_o88Pj-Axq5OnImUbWhxx3K2w8Ng0BJIICvoNTXswJH192RyT3yeyz18dG8kUScOT4%26e%3D1726569189%26fl%3D%26r%3DE8F87284-5494-4E9D-90A8-25497326B8CC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmezIVILj8pTeRi8IZfmW_-DqH04&uk=Hr7Id4Eyqg87P5PDqnXcgg&f=isTodayEndOfQuarter%3F.shortcut&sz=27279">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaqw7sfpeharJxCKH_C8AqYj9I3GAQigqhvG6_H_2rMQVIef0vwC09am%2F%24%7Bf%7D%3Fo%3DArpWhO4kJzKvGUznMrcqFHoRnz-jGwQfvGhGuXSQ5WVS%26v%3D1%26x%3D3%26a%3DCAogbk5LN0o9LMA10CgWuBb-duBw1l7Ae8vMOu6BttX9QBQSbRC1tYDKmDIYtcX7naIyIgEAUgQj9I3GWgQC09amaib2aErAlLUXGy3oGzU09OiRib36SI5XIHwnrRHvamrgKvtKiDZOd3Im4g13m4OmFhjEU7d5bq_KOOT_EIWBOlfBnUHoBhdIbRNbf-Fg5OA%26e%3D1727176565%26fl%3D%26r%3D1C12918A-FDFA-4892-A9E0-15F99AD9C6EE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaGvrKr236trq18TYb1HeyR_l1aE&uk=h6u2psNAR_SULMi2_2kRYQ&f=isTodayEndOfQuarter%3F.shortcut&sz=27278">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayEndOfQuarter%3F/isTodayEndOfQuarter%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1082,7 +1096,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayNewYear'sDay%3F">isTodayNewYear'sDay?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXZ-VLZswbbU1V3g8Zn-ORJqYkbFAU54xsKiXH9_EuqECXvwyDaRDpCq%2F%24%7Bf%7D%3Fo%3DAsn0FYlJiePXehz8HX7DzfbGE1BK4Eppz3wcbTpFOuqa%26v%3D1%26x%3D3%26a%3DCAog9HLm-jdnzyGqCNfx2z9R9TdCd8qqMsSYOt6oS_PUJBMSbRDEm7GoljIYxKus_J8yIgEAUgRqYkbFWgSRDpCqaiYbKZaonRSEeAqrI1JKm-DxhaCdJtN89Ee6hEItCqt0pCTlP2vmLXImYfS2vcm6zhC9qeXFxwcEchtisv9xQalKhvS657fF_cMFU9ZTsTQ%26e%3D1726569190%26fl%3D%26r%3D96548078-5679-4720-AB58-ABDDC51D4DB9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRlyk-ukAoO5m9FUMUJu59tAMGBs&uk=IUP9ERMdAXM7Ubhith6sDQ&f=isTodayNewYear%27sDay%3F.shortcut&sz=27171">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS1VJLSisCeEf1sXci1wxbotzC85AdbVMcLNg7RR6vKEbhI-xtwD8BrI%2F%24%7Bf%7D%3Fo%3DAlOJvfWc2GOizr_GmJ2-hC9nHYn_1cAPhZBK1GcOPq6V%26v%3D1%26x%3D3%26a%3DCAoggjTfB7kA2L75G_K2aGclnBttvooF91XUYk5ORsTcqtASbRCW2oDKmDIYlur7naIyIgEAUgQtzC85WgQD8BrIaibaz0VibJlgtjZNvT5PhE9rdlBKOAavSrpANZ7sAxUnPBkH6XGh8nImJvLfojjLFSotAxjMZnGwBNyXELVfI3lWzz-fpPkgdJRJ6PUAv-8%26e%3D1727176570%26fl%3D%26r%3D514413A2-8560-49EA-8E82-C41F0739C940-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL9WvD5w_xzwHnFx9wrzMnoHpekc&uk=fUR6WeSlbCuyNihrAmSsvQ&f=isTodayNewYear%27sDay%3F.shortcut&sz=27171">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayNewYear'sDay%3F/isTodayNewYear'sDay%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1091,7 +1105,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTodayWFH%3F">isTodayWFH?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfKaZTt3BbpWhRwXtXA_240Kvi-OAdeK3N8NyaHrQA6bFFWhpmnLpoIQ%2F%24%7Bf%7D%3Fo%3DAj9mXwoZmxKsxAaWJyupM75Sqfy9BUKbfH9pkz1QE3t2%26v%3D1%26x%3D3%26a%3DCAog1FpWIseoVLA28fqeLRTmKJF4Fr4Yz9AU6ABPpe4K60YSbRD4pbGoljIY-LWs_J8yIgEAUgQKvi-OWgTLpoIQaiZnkqb5E0NpLAA-UtWSZhOUM97Yhuo2lQ0m3JfxtMcnLQk8x-ta33ImBdQTYO94bx4QDRpLl3Pj4lrC5Pn3wiW7dPxXERBVjSRZ0aqHAuA%26e%3D1726569192%26fl%3D%26r%3D335428C9-6C38-42EF-9A35-4DE411D5ABFD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRziQvaDMW7qKhrQD-VAaSI3K_fk&uk=L3QmYMgVDILhj1JgvT7FvQ&f=isTodayWFH%3F.shortcut&sz=27626">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYeBI_3CLzreqIkRr7DGaPmnViIjAVn8-7bzFVil4QapzcRjeAqJYOZZ%2F%24%7Bf%7D%3Fo%3DAjCNxOPceSlvGaPWaMAAXs6KHxaHZAh12p0Gb7CDd4YG%26v%3D1%26x%3D3%26a%3DCAogYW9o0qBz0XOfyBW2pIFLHmKsJQ_PWGSjR11Ghf_caLsSbRCjgIHKmDIYo5D8naIyIgEAUgSnViIjWgSJYOZZaiZ-6w_AKapard0znccwyEywof-q5kWvzyOzpq5awTUQ2wG1mie7T3ImOBmUGOuIBIhNlNQ3Go64pUWQiD5hsCyM6nPR7MxOQ-jwTBqpxx4%26e%3D1727176575%26fl%3D%26r%3DA9D1FCB2-B4F0-4BF3-9636-C91F76CF15E6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJkZiZ7xFZIxSz13lECds1unsTBo&uk=ztUcMb7ZymBhgEsyC1FNcw&f=isTodayWFH%3F.shortcut&sz=27626">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTodayWFH%3F/isTodayWFH%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1100,7 +1114,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/isTomorrowWFH%3F">isTomorrowWFH?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FActWvlYhLd0MHpSuYWCmkJQpW3w_ASeNHU1V1cVYN0NAUt2OPSKaOzF-%2F%24%7Bf%7D%3Fo%3DAjUuQdzoURc5BlYLabYP81f4ca8W9GY-6uFQmvCYRddd%26v%3D1%26x%3D3%26a%3DCAog1f0zJZY0ojGLOKE--lLnGMd_yxOMPoeg932bgZeIn34SbRD9r7GoljIY_b-s_J8yIgEAUgQpW3w_WgSaOzF-aiZOKVEBCF4zaTL3pNUtqk16pSlWMive7eoz2u6g5wsNNJzO-C82mnImtiF5UHty_aPuJal6lflwbdMnCmf5c5thqjUNSAz7mqQBvtAiKyM%26e%3D1726569193%26fl%3D%26r%3DA2E524E7-A007-4588-89E0-8F04CC589AE9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DozT0YcjYhKaNTow-ANljnaOE5XM&uk=r8YEoTybysnAj0Bin3Z8Ew&f=isTomorrowWFH%3F.shortcut&sz=27625">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXFd2CHcYLslMG_RT1S1nvWl51ziAeKX94zH4MPAQjXLDDTX8OO8-yKV%2F%24%7Bf%7D%3Fo%3DAoUM5jy8b_Qvj3CfmbXYfjIxwFtRJeme0cgqYO0Gw-8T%26v%3D1%26x%3D3%26a%3DCAogNKqwdsHnDqq0wrDE8yo04SRBfkILIlz4I38ZAGbiWRQSbRC6pYHKmDIYurX8naIyIgEAUgSl51ziWgS8-yKVaiY4tvJ0l-5C_y0TsTRATkNEwbvzptZohq69twMBjTzGK41GAzbKAnImzkF-DOGHhSRjigLYJnZrXh9zu5fJAX4TeWCSwRfvxnLUJB2078k%26e%3D1727176579%26fl%3D%26r%3D23C36039-D4A2-418A-A787-2C778C8BC00C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRDMvcgHitg4ckJwOkge3ohaMLIw&uk=dcL_0KfO9iPSGBGRe4Zysg&f=isTomorrowWFH%3F.shortcut&sz=27624">
        <img src="./All%20Shortcuts/Date%20%26%20Time/isTomorrowWFH%3F/isTomorrowWFH%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1109,7 +1123,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/getCurentWeekNumber1">getCurentWeekNumber1</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASpwV2ruCSmQHDEjYFnfuji_BX7aAaRxbJW9Tg-X8siRhEcfRbD4kAPE%2F%24%7Bf%7D%3Fo%3DAlYHHNTCrfrKvQ23VfEF29bQmUrLMia2zVHftuzJesvV%26v%3D1%26x%3D3%26a%3DCAoglJHyeTD_C7LoKbSzBsqCsVTvP2yUyAQWaVkk8SX5LfgSbRCTurGoljIYk8qs_J8yIgEAUgS_BX7aWgT4kAPEaiblJmczw28EdN76_PIdsfzCUiigp4MhCbfZL9WKTskgg3QCbo0senIm_sBfmxn2ov-fS3HWF3iMjnxaCrbX96aDwYKjsWI6PkYgK_e_V54%26e%3D1726569194%26fl%3D%26r%3DD68E3A38-8BE9-4507-AF44-BB6F1E60718A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmlIQg9OGgT31OwYPUQZVe5idxiE&uk=ZAlBcuIM_ZX29N111B_2Bg&f=getCurentWeekNumber1.shortcut&sz=27222">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWblNSNgSaV5BYnFutCUGSg4Xst4Ae80S9PEsT0mEIjRHjvy57IbAFJS%2F%24%7Bf%7D%3Fo%3DAvxIbC-szTDtQrV_UyOxpHsckbX2itJnTNfYo2_uqrjm%26v%3D1%26x%3D3%26a%3DCAogDXSeoDR_C3vlDxrCI9aAJf0B8vkt5FJ4KipdIVhKJvwSbRDJyoHKmDIYydr8naIyIgEAUgQ4Xst4WgQbAFJSaiZ79C-Iv4o5-84GaE-5kN7hfualEDy_WfMGOa54N3qntP0x34M92HImXDXfflOjNbvjkeSUARUjo7S3POEyP7s78n0luqtFWoDRc2iXkPo%26e%3D1727176584%26fl%3D%26r%3D40922707-71F4-428C-B813-A9BF394AA6E9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvqS_dEfcAbjYgnygRu-XkCk-iSk&uk=XVvNaK9POHjnjz3mWLENAg&f=getCurentWeekNumber1.shortcut&sz=27223">
        <img src="./All%20Shortcuts/Date%20%26%20Time/getCurentWeekNumber1/getCurentWeekNumber1.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1118,7 +1132,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/getCurentWeekNumber2">getCurentWeekNumber2</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ6I_19VhIcdC_SjcC7z7ae2CfJTAZaEuvAdQgvF_K2EMuzKnzI6Q1j_%2F%24%7Bf%7D%3Fo%3DAiJ9FIH4LUL_w_Yk_A-xxdDKXPZYt4xgMBI3oNkGNwur%26v%3D1%26x%3D3%26a%3DCAogVHkJ9T6ef5vcYMYCvRhCRr2S1mybvxCF7Dle6FCYwfoSbRD8xLGoljIY_NSs_J8yIgEAUgS2CfJTWgQ6Q1j_aibZOLtxJ1NhGim509lJwx-XVvGxuVkvV9D12kq6oslXrBMKFjDQ7nIm6azRXf-o6papJh7ZURx4wvG3KECwpFHFTR4dTpWnICC6VkZBjzU%26e%3D1726569196%26fl%3D%26r%3D62049348-1CE2-4F5D-B911-62988C15D30F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8lQpq6Yr4V4U9YdvO5VLmkF1CPU&uk=tLtpWis6MbSENgghde7n4Q&f=getCurentWeekNumber2.shortcut&sz=27225">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbye4NR4TedAdASErLdKXeO-grfIAZpQ3G9_W0TvYfjmCguAgDcCOI4n%2F%24%7Bf%7D%3Fo%3DAlhOY9uw926LZzqukBcAjUq8-QkLUrQm8rIHJlgctnDK%26v%3D1%26x%3D3%26a%3DCAogRBmfmlPpGO-aWP4bRQq1t0uhL8uEhH6czRoneUiORNwSbRDf8IHKmDIY34D9naIyIgEAUgS-grfIWgQCOI4naiZ_GYqtiil-iySRI4VWF5LVSY34K8NTXuTnyKIVmOJXXjGvad0FU3ImHxn6Yb6-DrLg3lXfwp3BI_5LaUMgUOGgVoQ7aKr38jNPtK_Ph0o%26e%3D1727176589%26fl%3D%26r%3DC4556108-1DC1-4304-93FC-3913185268D5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWzMnZ4n1_IuM9wu_P9gaUzs6QRY&uk=ocW8_GxEGL9tAxKSB1Ktyg&f=getCurentWeekNumber2.shortcut&sz=27224">
        <img src="./All%20Shortcuts/Date%20%26%20Time/getCurentWeekNumber2/getCurentWeekNumber2.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1127,7 +1141,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/getDayOfWeek">getDayOfWeek</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXCrsefyb8vbqg1hFjC-tlkdYiGZAS7qEr16_dLKce7q-F-XBFGnjYHB%2F%24%7Bf%7D%3Fo%3DAvBVNLUfZ6F-sm0sy5IgKR5thpOfGqi3FW82vt0uw0cL%26v%3D1%26x%3D3%26a%3DCAogISJgqay4HUo8m4dUZXWLDcjnwKweU6QH5bqFOfgGfSUSbRDoz7GoljIY6N-s_J8yIgEAUgQdYiGZWgSnjYHBaibQNLi5Mcflvdp6aCNzzFmKQiNGM3qaT8MkWipTodqAObP6a4sq03ImbfYKo0bjmHxpV3hHXJ5bWkkdAbQbGpPHvv_NH-plIErOGiMGoa4%26e%3D1726569197%26fl%3D%26r%3DFED68805-9C84-4DFA-81C5-833A34B6ED8C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWfHIUh45t-ug2RKbQoeHQ_RyMsQ&uk=h9PIuyNnIEFH9Jz7DLE8HQ&f=getDayOfWeek.shortcut&sz=27117">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU39pmxdgrXF1AbCJaDS5GqbpUjcAR9d_LQYj7QQ-42T5Fn7khJlWiBP%2F%24%7Bf%7D%3Fo%3DAqK2NFM6gMdcgm11vuw74jsgdUSePbkmaDBeQW2UXO6P%26v%3D1%26x%3D3%26a%3DCAogHEZ51uOQCcnAUsobqP7f6J732nSmmmdixibkm1aOinwSbRDMlYLKmDIYzKX9naIyIgEAUgSbpUjcWgRlWiBPaiYRxlb9Oo1QcCoQPPWd_AFwbYUGQgGT9SWPPcCHkMnbTSSwTd5-_nImuDq03FRUDZCVnscI4r2Fok13W_-FqtFhC1X17mGc4mMjh17uBcw%26e%3D1727176594%26fl%3D%26r%3D9BCA9706-1679-4E7E-9C79-630C23F96F11-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrsI-sCS_40-rF-Ste9hyqg2cpTE&uk=TaJbunNLlMe6RQ-NHgDzTA&f=getDayOfWeek.shortcut&sz=27116">
        <img src="./All%20Shortcuts/Date%20%26%20Time/getDayOfWeek/getDayOfWeek.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1136,7 +1150,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/getDayOfMonth">getDayOfMonth</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb1cYXVi1jyZwl3WCc6Pwlvdb_8uAcL1O46cwUzqsNbaAgFC5sUub3b2%2F%24%7Bf%7D%3Fo%3DApl54Ma0kkBkss3sLFWyWQHcNK4eRvlcVvlkHrVxr7eM%26v%3D1%26x%3D3%26a%3DCAogtJen2lITqCzaTGhyTViGUsmRDPwZg_2eeqvzCzamCjsSbRDz2bGoljIY8-ms_J8yIgEAUgTdb_8uWgQub3b2aiajPV3Bpd0JfDZRUeqhWBXZuEUVyYqQwhRrnnkfjvwP5ls2QeCah3ImLCMQfH7YaH8sDCoLEP9BzECggc7kMKnkCbH7BG7Jecv-asgM6hU%26e%3D1726569198%26fl%3D%26r%3D2733F6EA-E7FC-4E54-94E3-D96F29650DA5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTyXxfkpwAzMgwZ-yJRmPjyottiI&uk=7THhrCkegKHdb_HweY2lfA&f=getDayOfMonth.shortcut&sz=27025">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARQWwEbr4dqVqBMPgyaghQsMSjBQAWQkHqTWu7dgzETE4e5m9uPiz7aM%2F%24%7Bf%7D%3Fo%3DAnFSyzDcjBYWhfDut97ofNDTZ9r2-EP_vt2AfTh8U38S%26v%3D1%26x%3D3%26a%3DCAogPFwxQ2RoyRMdDZzy7ygNNjqNDiA1nPxMJR50f6uHg-MSbRCouoLKmDIYqMr9naIyIgEAUgQMSjBQWgTiz7aMaiboz5fXxIj1Ye9B1Coj9LenhnDAv5x45ES8Zk8SybFQ8bRTewwEznImTyX16jHX5tVYxmx2PVEO3kAtuy8pk0bkCLYQ2F4bTp0hJGPb55c%26e%3D1727176598%26fl%3D%26r%3DDA661B45-68C6-46DC-A3DE-880A9B661F2E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DKfBTafXEjgyQ76pTmkfsJKZRsUI&uk=Ku2ELfRKWsANU_HTgc-KAQ&f=getDayOfMonth.shortcut&sz=27024">
        <img src="./All%20Shortcuts/Date%20%26%20Time/getDayOfMonth/getDayOfMonth.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1145,7 +1159,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/Get%20Relative%20Date%20Text">Get Relative Date Text</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe4r9BN0rXu400R7NJThS09zit2UAU8KMN28hpV8P7Bxi26OccEV1bP5%2F%24%7Bf%7D%3Fo%3DAngaBblE9XGT06U5-y80Tn-pDcUcLDjSMJmBgntG_tSn%26v%3D1%26x%3D3%26a%3DCAogJyrd-vCkb4dK3E7RP7A3MargJutsdfnqgP5m9zWQQpISbRDU5LGoljIY1PSs_J8yIgEAUgRzit2UWgQV1bP5aiaQudItYNmnf-3igSU3oTTStWtIm8KnFSV2U92RqW1hfznIRM1PFHImJS-OL1FgZYwXVJJCJEyPM_B1n04nK4vaRstV8J55-uF-5Y3OlqQ%26e%3D1726569200%26fl%3D%26r%3D10971F27-3FE4-4270-9168-CA1221208C1D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCrmLsKgHD_XaOOINzJmyXZE-s8g&uk=TqmAckEGEjUvJHBcl0ilVg&f=Get%20Relative%20Date%20Text.shortcut&sz=27733">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeWYOc7T6pZauq9gMfd5TesK7PIqAZ_6xa7KcOhmKY2av-CGlXbceqid%2F%24%7Bf%7D%3Fo%3DAv9hPl9wySfMR-0_8LgLjhgOUbeJyXFkqbzdgso6lszr%26v%3D1%26x%3D3%26a%3DCAogMaRfCoTqUUDNp0iJBqEosMsFTkXHoZ3SRbX97rnwBycSbRCA4ILKmDIYgPD9naIyIgEAUgQK7PIqWgTceqidaiZ6-VD-DWgvSOWXSw2Zp248XRejLpcCrJuq4IeDtdOAZuETtZc56nImDLJD4cRbojC8yPzMgkS5qdKxNR_xINy8oHOSjg3FK84mAb2oiS0%26e%3D1727176603%26fl%3D%26r%3D71A5F0BF-3CF3-4B7D-BE4E-E066077E58E7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D40_-AOFRO60FRDOocST4XW3Pj0g&uk=JU4oPOZy79cpznhRkfRAFQ&f=Get%20Relative%20Date%20Text.shortcut&sz=27732">
        <img src="./All%20Shortcuts/Date%20%26%20Time/Get%20Relative%20Date%20Text/Get%20Relative%20Date%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1154,7 +1168,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/getFirstAndLastDayOfMonthAgo">getFirstAndLastDayOfMonthAgo</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaLNh344uxdrc2TCKvA5u9loDqtHAd1wIxyJ959Uxaklc296AG-otp23%2F%24%7Bf%7D%3Fo%3DAmw-XqqkUBbozyZceqRPKImZ1zvS6W8JwZBu5WJqtz4t%26v%3D1%26x%3D3%26a%3DCAogcWnw-er4e0VNC-pD3cf29NFTtnanSnB17xLFpwbqXSQSbRDb7rGoljIY2_6s_J8yIgEAUgRoDqtHWgSotp23aiZNFCpt6DtuAkhV6LiW_uhul8mmoEWLoVzU2LEzaRQy5t8wGDRhMHImawgKM2B2qoCziqOuTe8mjdZFVqlL87hoUHftIdgJDSwdkwIxiBo%26e%3D1726569201%26fl%3D%26r%3D5194E62F-3D55-4B26-9C4A-C7CA7C8A881E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_-zC4fR7YbVqcE2T5UNy3K6bTsA&uk=0ubxAcEfG5YjQJFb5yEDiA&f=getFirstAndLastDayOfMonthAgo.shortcut&sz=27448">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd5ig03owoGQ02_2qBgMmBtcvQSEATPrTCfG5-HZKg6RjZYdJAtcDJRm%2F%24%7Bf%7D%3Fo%3DAiSJsZ-TwlKmcXtS_GYPPe9uj-aGBWGs5T96EyN5iAqY%26v%3D1%26x%3D3%26a%3DCAogZkieWJ-TFnYw_WUtPkKEX1hFdZwerb8HnTuWUuDiKuISbRDKiIPKmDIYypj-naIyIgEAUgRcvQSEWgRcDJRmaiZD6abvIKkjuktcBTtl1-h-fpgDIbuIcnVxWASq9hvRKNRoff67gnImgBSupEHUNVj-g_JrkgW436r4HpJOYUEqJ1sPyrYYQQ7zQN9T8og%26e%3D1727176608%26fl%3D%26r%3DC83231F5-75E5-4552-B00F-066A2EDEFE54-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6uOJMtQPmxpr79Hs_qtl5bMB-4s&uk=s1tIzP4jqeES4rQzrSxmYg&f=getFirstAndLastDayOfMonthAgo.shortcut&sz=27447">
        <img src="./All%20Shortcuts/Date%20%26%20Time/getFirstAndLastDayOfMonthAgo/getFirstAndLastDayOfMonthAgo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1163,7 +1177,7 @@
        <summary>
        <a href="./All%20Shortcuts/Date%20%26%20Time/Prefix%20Chinese%20AM%20or%20PM">Prefix Chinese AM or PM</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAROf5mEfzlQcQS5ejaCNrpw6ehZ8AceKXbWfpSghO5nQQtXwicw_ndAo%2F%24%7Bf%7D%3Fo%3DAup-hFpHz6RE6sfMxnV1JH4swwC_j2RMtfYxrrx80kTU%26v%3D1%26x%3D3%26a%3DCAog69NSewdZWDi2pJZWEZpbTsWrXXqLHuC4LqeICGB4ACQSbRDd-LGoljIY3Yit_J8yIgEAUgQ6ehZ8WgQ_ndAoaiYGJYtddwPzF6WQ2o6SIyI5vOhf3gppg8Xp4HuUuFlHK1C94B4opXImhmxGDFnUVTAhN1Jqq19naLowcW61HqK5Qzlee1OsNhDHogkj2ZI%26e%3D1726569202%26fl%3D%26r%3D16629E56-1F2A-475E-9C46-6035B26169E8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DsSKSyIQGANRouq16tj5wZDa1qEk&uk=sZ50717dTR0eWKAKVShvtA&f=Prefix%20Chinese%20AM%20or%20PM.shortcut&sz=28655">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXQ0qHYrSsmG98D_5gwEFpEU8KoUAX6Gzjcon64LcbBOsbhyfHp5onl4%2F%24%7Bf%7D%3Fo%3DAnZun_5k_2lA8-bsojlzWma7BFIalnRhByqowotOtF9a%26v%3D1%26x%3D3%26a%3DCAogDsLi6p7iW3ZArOfvjwibQ2gV0wC_XeEWDp3S5xm_pscSbRDwsoPKmDIY8ML-naIyIgEAUgQU8KoUWgR5onl4aibIOBpiAwpNP9c4Eb4anVzPu3ef6wWghJhN-ufi0GpETbt7DjzSTnIm1JzsqivbmD92KMdJx6C78xQCuXFO90l7KWR1DiqVuXgeE7p9K20%26e%3D1727176614%26fl%3D%26r%3D0030760F-4E52-4871-9195-D1F64080A6D7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpWItbQE7X6QVq07v-aqJhCwE834&uk=irxvgDvx-HC5S-2mYQjxiw&f=Prefix%20Chinese%20AM%20or%20PM.shortcut&sz=28651">
        <img src="./All%20Shortcuts/Date%20%26%20Time/Prefix%20Chinese%20AM%20or%20PM/Prefix%20Chinese%20AM%20or%20PM.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1172,7 +1186,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Day%20In%20Life">Day In Life (6)</a>
+        <a href="./All%20Shortcuts/Day%20In%20Life">Day In Life (3)</a>
       </strong>
     </summary>
 
@@ -1180,7 +1194,7 @@
        <summary>
        <a href="./All%20Shortcuts/Day%20In%20Life/Review%20Daily%20Memories">Review Daily Memories</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVnXY6pceXSwuxVX6ktFxNDuuW0OAbZTGwhar8vS4xuBynJiCgDdADYK%2F%24%7Bf%7D%3Fo%3DAifn_NXreP4bPMFPFWsTM2gdTj73Ad5BKkIRInAMrg8C%26v%3D1%26x%3D3%26a%3DCAogZfexedFoqlUyRPnKLd_p0nlfPElgZeniO62Bxe7YI9oSbRCilJyoljIYoqSX_J8yIgEAUgTuuW0OWgTdADYKaiYM_CTLkVG-9pq0K4JqPrN4aL_WEp7V7BXTf-JR6Ae9IPxGzMuFYXIm3UXzp5ll3kfuj4IU77ZRd8CazfjS_2xjxYte0XL5CoxL1r_IbT4%26e%3D1726568845%26fl%3D%26r%3D3D5560A4-C739-4D72-A8B4-8655DC40DB50-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlxaShETeGRxfISpSV9odGjMVJ6A&uk=10XIf9eQ5I7qgEWs5o5FXA&f=Review%20Daily%20Memories.shortcut&sz=28508">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUp-OAkEs-gAR0zcayiCpZ-UaOyTAc0Inb6XXLdZEWnthzaMl8YACnWR%2F%24%7Bf%7D%3Fo%3DAmujQQXatj9fOd1PyAptX1fYX2xTdGy-9AGPYVV0kWrg%26v%3D1%26x%3D3%26a%3DCAog13yedj9pwLGfv1hJ-EEqtdoXvWGPJm9mdpP5RGlW25USbRCh-9DJmDIYoYvMnaIyIgEAUgSUaOyTWgQACnWRaiby81lknhW5PDiC7g_mLtQOYFuXSSTMtO9oN8IIzq5thqSBjtyBHXImZc-ltKO_6eXGA1PGFfg5CLTZpoci_agMkrWwKMG3JNm9Kk_sVuk%26e%3D1727175787%26fl%3D%26r%3D0BDC1271-E062-4FD0-BEBD-DB45F218E82F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5sc1lcqL-x9xP-jTOp4jeC3LfoM&uk=wkHnMsjAlEY_l3dfqpeKBQ&f=Review%20Daily%20Memories.shortcut&sz=28706">
        <img src="./All%20Shortcuts/Day%20In%20Life/Review%20Daily%20Memories/Review%20Daily%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1189,44 +1203,17 @@
        <summary>
        <a href="./All%20Shortcuts/Day%20In%20Life/Done%20with%20Daily%20Memories">Done with Daily Memories</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbcdQkMlcfDyPPf3wpjHEYTGLw4BAViLUbmILzCGwIpqFw7sj0XbJWKg%2F%24%7Bf%7D%3Fo%3DAkC1kA2P8_rXWISKZCFCxcf3fbA1iWug6vlo0mTS3A2Z%26v%3D1%26x%3D3%26a%3DCAogUACfvQ8LyBsAd_igSns9gPrd3IXgbMC28cg_SZ74C8YSbRC2npyoljIYtq6X_J8yIgEAUgTGLw4BWgTbJWKgaiYjxXtdJtAQP2WADD2FpaLIPanAw3V6Q7ly1kU8Mg-nLdrKO1cW03Imrs1o8jX0I4koAPOBxCbABehqsON7hdvqjU5DAMl79m1y3JhzwLI%26e%3D1726568847%26fl%3D%26r%3D5E829284-8FD5-460B-9707-6371CB2BC015-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3BPiZjFB6iyfH_HvN9WSAh3m_FA&uk=ap0BlwkU_7hkw4fs5_yuJA&f=Done%20with%20Daily%20Memories.shortcut&sz=27852">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYsiLGtRovfRLcGAsJvGLy6htq5DAUfpNghmw4yLQanwyzv9uP_kB_rF%2F%24%7Bf%7D%3Fo%3DArBR_H1SDg4cyCJWJODMv4Z_JHiH8a_F7XiEUXOFK7_e%26v%3D1%26x%3D3%26a%3DCAogT6rJxdjUgkkNYTn9buegr2itbwBb__EtzTwVnXuUG4kSbRDrp9HJmDIY67fMnaIyIgEAUgShtq5DWgTkB_rFaiaYhRVJ-V3jSI6SI8beuySsuzCUJQJgeQlTPkmKur2NtJPENDUXcnIm1gg1y56wjzTYkllr1PFEWaMGeF72fyYnX5qLLsiOkjxQiITHhxI%26e%3D1727175793%26fl%3D%26r%3D74483DEF-8537-4B64-AD42-44EBCBF1462A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJrdqrFd8sXFuqkUWtPSrT6-LQEo&uk=BdQbVF24ll3nUFaeyfJ51Q&f=Done%20with%20Daily%20Memories.shortcut&sz=27812">
        <img src="./All%20Shortcuts/Day%20In%20Life/Done%20with%20Daily%20Memories/Done%20with%20Daily%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Day%20In%20Life/Backup%20Weekly%20Memories">Backup Weekly Memories</a>
+       <a href="./All%20Shortcuts/Day%20In%20Life/%F0%9F%8C%B8%20Day%20In%20Life">🌸 Day In Life</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ57df2aWC0ku1UpnkoRPMwDlFzMAbrZdT7PhB9m7V-o2KkvrN5BrgBi%2F%24%7Bf%7D%3Fo%3DAh97NnFfw5pGCKHuP4uyUKzqV0sZktfZGPtFGtXtnMlw%26v%3D1%26x%3D3%26a%3DCAog5pW3IdRnKTKWTtHZXAmSJiEIBVXEeLPMM_VlrvV-fEUSbRDeqJyoljIY3riX_J8yIgEAUgQDlFzMWgRBrgBiaiZE_z0dGDOwE-0x9dYvZvbEsjH-jTqIu1MmPRF_vZq4KRDlpMqqpHIm6I1SrjDSfMOFW2bqkf6Ir84V_OyC01vagySMdmYHXe3GKTGWTpU%26e%3D1726568848%26fl%3D%26r%3DFEB531A0-6E47-4D3C-A1E0-5B1B9C832B82-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7FyzpTbCtkr2P0WLYBNBQbdkG6c&uk=1Etiri02g05u2iHzOg59Zg&f=Backup%20Weekly%20Memories.shortcut&sz=28645">
-       <img src="./All%20Shortcuts/Day%20In%20Life/Backup%20Weekly%20Memories/Backup%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Day%20In%20Life/Review%20Weekly%20Memories">Review Weekly Memories</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYdnxtN28zwSHdiR1jnXzuS2xD17AdnWK6AMQgitDzS_nNODFWwqOgG7%2F%24%7Bf%7D%3Fo%3DAlCoOEwAyP-YYfEWjziAFUiqSVBK-gaCj0pDbiYSQmgD%26v%3D1%26x%3D3%26a%3DCAog0IC7Qev0txHUM-1ohMJwTPQJZ2qIZAu9Ys3c5Pi63-ASbRDpspyoljIY6cKX_J8yIgEAUgS2xD17WgQqOgG7aiZ0mCqj6QXau-MKoN95aHWOmzQRKA7nkRUIB4tZ1V5QOin_tsiJ33ImDPL1TQyT-EOW89KOyfbw7yM_xfU_fBCTDUDb4HwwJTA4UZvQiBA%26e%3D1726568849%26fl%3D%26r%3DFB341C9B-10C2-42F0-B221-9A4A8F953376-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjQoeKsdsNVtzYMErA5ToE8i6hpw&uk=jVI4SLltObBzx2AISx3BHA&f=Review%20Weekly%20Memories.shortcut&sz=28493">
-       <img src="./All%20Shortcuts/Day%20In%20Life/Review%20Weekly%20Memories/Review%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Day%20In%20Life/Done%20with%20Weekly%20Memories">Done with Weekly Memories</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQTekRuAYU0PeHtNaQv_1n-oHq5FAXJbxj5TdYbjIP-2Di0ujElzwl85%2F%24%7Bf%7D%3Fo%3DAmOC2O0rxYq293nnGPMYQIIF6e-quwm03zMBRaEpn-Oy%26v%3D1%26x%3D3%26a%3DCAogbSjO0sJBNxOH8PLTmMkFOu5DIPu5mv8pftu6u0x3df8SbRCgvZyoljIYoM2X_J8yIgEAUgSoHq5FWgRzwl85aibVSgF3RHbHrV7e_hMDZ3XJUKqOUvh13PiDanE1PuxgV7zv6GjP4HIm8xWJAsUcDo1lBL7BChSO-0Ccf8DihTIuYxRbpamujQj12pSR4KM%26e%3D1726568851%26fl%3D%26r%3D2F461446-8171-4B1C-9F2F-B2404A3CD483-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Db770aYg0z0mbWx5tysvbGgl6_9A&uk=NU52EBcEykfA41i7TmtvVQ&f=Done%20with%20Weekly%20Memories.shortcut&sz=27575">
-       <img src="./All%20Shortcuts/Day%20In%20Life/Done%20with%20Weekly%20Memories/Done%20with%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Day%20In%20Life/Day%20In%20Life">Day In Life</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYovFZan6OFcUKwHnP2Kp8qhrkIPARFgAErJcOrjr3RW2bgJNF3_qAC8%2F%24%7Bf%7D%3Fo%3DAkc5TUbx4-Crx8BaFAS341brFt1clzXbJiOuK99OuTsb%26v%3D1%26x%3D3%26a%3DCAogVCkqulPKbmy9PY72Eb7dJGoc2XnT86EA892_WbURc-sSbRDLx5yoljIYy9eX_J8yIgEAUgShrkIPWgT_qAC8aiYlC-TStegp1kdT1q16WAd04dDH5X5R5XUyOBjge5DDJG30mm_bf3Im40WOhqZb1jww6ik70wgUZuzqSiE_5QRJJRhewkOGMozEhuHlow0%26e%3D1726568852%26fl%3D%26r%3D1A8B9729-8EB2-43A0-9C73-B655A9055DBB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D36ZBCBSsTdJ_pNaDd9HAREDyfZ0&uk=QHrMgnGXmOSdXa44FfkEwg&f=Day%20In%20Life.shortcut&sz=28276">
-       <img src="./All%20Shortcuts/Day%20In%20Life/Day%20In%20Life/Day%20In%20Life.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATAZs8NIYCV6DAW0E7H8QEe_VE77ATgVDkUUD1w2XQF8nmvq7SwO_KHj%2F%24%7Bf%7D%3Fo%3DAlK373ZcrECKBGIZ_0qTaxGP7aQG7e0cvId68kUwVQVA%26v%3D1%26x%3D3%26a%3DCAogfhH5ZyTVsj9xU17_KyyNxmQj2RQxx5czxcZdKNCs1zYSbRCtw9HJmDIYrdPMnaIyIgEAUgS_VE77WgQO_KHjaiZOJ5TnJg_fk7KUyAEDYZ1Woby_Se2oSBb-7CzZc7j26xnz8aE11nImDvXeER_5c4x0pqf4Uo4HRazJMyTAtiTpRGE2AKO5uEZxfvWOAMg%26e%3D1727175797%26fl%3D%26r%3D7AEC8B74-BF95-494D-A23D-1ACA53E521BE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D23l0nwoIE4ewMSlsXHI4AKiFjMk&uk=nZgOznLCk3XafrJIAezJ9A&f=%F0%9F%8C%B8%20Day%20In%20Life.shortcut&sz=28228">
+       <img src="./All%20Shortcuts/Day%20In%20Life/%F0%9F%8C%B8%20Day%20In%20Life/%F0%9F%8C%B8%20Day%20In%20Life.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -1242,7 +1229,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Links/PTT">PTT</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb4H_EyxeVL6gVHzbJk5l3gH31OIAUQzl8_pfN5Xz3m4q9pTlWsFnvXx%2F%24%7Bf%7D%3Fo%3DAqvpm8nNmSKh4PC5f9CEARxGu7fTQSVIJmLRXWSGRXMH%26v%3D1%26x%3D3%26a%3DCAogBeFpE9eNDxms-eGUEFbIq8bTxVa0Q4F0sxxMYBPjaMQSbRC6q6qoljIYurul_J8yIgEAUgQH31OIWgQFnvXxaiYHBdMIYKz_BxwKiDOsyv7FhLJJ8myJL4Q-JrrNtkVQ9lL079BrJnImD7l4M5ILAeMYsZG-VBm5NpBOPv6QrKoMMo-fbnl9t_B41FtclmY%26e%3D1726569078%26fl%3D%26r%3D2B876501-0D44-421D-9CE1-BF90052C9D31-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPwvKSmEpjdbeg2acicCqSUwsOb4&uk=1FeS5kSz3czhz6kHgaK6lw&f=PTT.shortcut&sz=28395">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb9ae5XHnL4QpbBNKjo6y_I-3YpJAcsWSchoTgCc9eUY5lrGNwDlU1nL%2F%24%7Bf%7D%3Fo%3DAkhd62GbIf1To-fjctcHHTWUDd8eAJJKBJQvOt7T-3O7%26v%3D1%26x%3D3%26a%3DCAogXwcwvD2nm3kqEqPsocn1tYDxcDUcbzsdx7NizqRRdbESbRCapOzJmDIYmrTnnaIyIgEAUgQ-3YpJWgTlU1nLaiby4b96hDqsY0F0XNtJypH9o0wo_0Xag48LeafsVWRzO6KXotwXUnIm8DHddxolb-PtbmcTS6tVE49o9066Skb0lhjE3F5zpmCQW1OAJdE%26e%3D1727176235%26fl%3D%26r%3DC0C84399-63B0-41AF-86D5-53F98991FBAC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnbLoifqyouN-PKmQDgnPgORXzs8&uk=AXAgrYCFZiOTgbGpK3L50A&f=PTT.shortcut&sz=28394">
        <img src="./All%20Shortcuts/Deep%20Links/PTT/PTT.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1251,7 +1238,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Links/Reddit">Reddit</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa1VGpecrOHXGdbJqrvJuIQ7F3diATQ4U8YRAmvZ_zXCp8hm4db9MIc8%2F%24%7Bf%7D%3Fo%3DAqTVQKPDMQjm5Bom66Dpje8NEF53VubkBD_g_pJymDyM%26v%3D1%26x%3D3%26a%3DCAog0zvH076dupDuZ0jeF12YDhgD7t_9MQ3ZNixWwFN9MB0SbRCbtqqoljIYm8al_J8yIgEAUgQ7F3diWgT9MIc8aiYFp6haEjYIUCKjltcaXfNP7jYxbfGwGbL-U86jHnLtOTQ6868_9HIm_MvhyS3hzHeZXNnblqOJzwl4Eto0p-pfFl7NSK3XRpT4f0CDl6o%26e%3D1726569079%26fl%3D%26r%3D32B12634-8EFF-49FC-AF80-46BE531AB55E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNkYqrTfMSRLnUupLnZJ9w8T4Z9w&uk=i-nNGpqQhvDrVPs0Qx8acw&f=Reddit.shortcut&sz=27913">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARqNTxu710mohtZdKKgNK16mkAjtASUSvG-Yhh2wqS12mr1N45aTAxGH%2F%24%7Bf%7D%3Fo%3DAgpERST4Oq-kPIYluw5eul14LFMrR_uewt2M30CZLB01%26v%3D1%26x%3D3%26a%3DCAogGrVHJjyXyEoIWSDgEQ5DcAbKKileGWxVLBIgimk9K6wSbRDUu-zJmDIY1MvnnaIyIgEAUgSmkAjtWgSTAxGHaiYMCkLHoEIfkGouFW0EzgVUyR6DgTpXQbYedR3h6_67vWkxjovZpnImu4TTLpsy_KGKTvA5T8vsrJFWfKT88X_HHBuRWdCeFBFleS-txi8%26e%3D1727176238%26fl%3D%26r%3D126AE516-F55A-4C91-B643-A19F87C1C716-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU5NQxmvmS7jZk1nxEN_5CAs30Nc&uk=Rgt-b-Z3WMWGxLKG2ppcHQ&f=Reddit.shortcut&sz=27912">
        <img src="./All%20Shortcuts/Deep%20Links/Reddit/Reddit.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1260,7 +1247,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Links/YouTube">YouTube</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQKKxoPPcCRfWZKXCVoiFAyg3MFbAbUe8UKQ5xOSV6HmosNuqbJibP1k%2F%24%7Bf%7D%3Fo%3DAlhoED0m83NoeTaochrgnnt-qG-qiheKn9MxdtbYLJxx%26v%3D1%26x%3D3%26a%3DCAogNxISjyb4Cw0RJ3iJXZw6DhM3DiFuTb6LFjKI3EIyWmcSbRCvwKqoljIYr9Cl_J8yIgEAUgSg3MFbWgRibP1kaia6cePJAHUwFMwMlDg3_NOdxlhmCwy0hW9zYc2D2qAATKMkeVz1enImcobUUpbJBs4fb1Xi5wkNUK3OlwcsicE403j5twjlZvkCHYJFc6U%26e%3D1726569080%26fl%3D%26r%3DCC8A1C64-DF45-4566-ABF6-B9A24E2CB387-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dc4dLkUN_wn1xnzJFXEPZP4-WY0g&uk=6DBBgZP8qXy5wWJLw3SQLA&f=YouTube.shortcut&sz=28484">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATDS5cSFNoAAHv2RHOIayDEfIw1XAbcqwqRNmTnUVCa6FLzjEh0AyHZB%2F%24%7Bf%7D%3Fo%3DAhztzZ38Y5RuGo-jIGwcEcHfE8Yf0z8Ju6naXWECZkzx%26v%3D1%26x%3D3%26a%3DCAogeFQpF3xPQUz47q_fGS0396uhjqSgU8Ug-RdTtvA4h6oSbRCL0uzJmDIYi-LnnaIyIgEAUgQfIw1XWgQAyHZBaiZgloaBz8k3Ajd7yhl9Iixn58nSEndi69Qv1sK6OgWXHDrKLZn9a3ImOHjyJQtHTKvATgf8zzKyfaWbw60GQtF7piLFsclDQcycxMQ-riM%26e%3D1727176241%26fl%3D%26r%3DF8DECFCF-7EAF-4506-BDA9-242D54AB5838-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnwW9N5Qjhd9D7BXOzqo2Ci1kdgY&uk=42jeFs-RTJUYwwfEA0o6Lg&f=YouTube.shortcut&sz=28551">
        <img src="./All%20Shortcuts/Deep%20Links/YouTube/YouTube.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1269,7 +1256,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Links/Amazon">Amazon</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfn_DfFQhWB5zH9td0FzVafAY_CpAeNBrIYpdrJ3_e8GeZhW-veUfKLV%2F%24%7Bf%7D%3Fo%3DAvgtXTgx7u7ULk7i_AcDNj_Nx3gq0h1yrZGnaJwWJjI9%26v%3D1%26x%3D3%26a%3DCAogQ5JSqfpTaXIOKidYu23JJ8tmVZApHsiUwBHbj-3o_zUSbRDUyqqoljIY1Nql_J8yIgEAUgTAY_CpWgSUfKLVaiYwiEQtvzbH-OLtDwaCPqvqdX9Q440J1Hb-GnUB086ZhPnD6EbP9XImzn8kATPLennK2ImVB8-g0ChIC-xDxOeXdXMmJcMWO28ne68Ov6g%26e%3D1726569082%26fl%3D%26r%3D332BDF8F-6ADB-475D-BFA2-25D95247A87D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwcTdltmbUqCSLlpGapnq97qzh_o&uk=9HQ9VIDA-LdZbhaxZaBFyQ&f=Amazon.shortcut&sz=28114">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVv1K5hCCxJPDDHJDLiRmZpcuyCHAXRl89gKiZXZ3e_tpC3ovRAJ7y5p%2F%24%7Bf%7D%3Fo%3DApXCIriHpj5fkamxpXVunWzJ-RY3711Z4jmQIzMxk600%26v%3D1%26x%3D3%26a%3DCAogbKFMWP7lrwlwdnVOItA_Muli8UFDsfH614cSWIYkeFgSbRDC6OzJmDIYwvjnnaIyIgEAUgRcuyCHWgQJ7y5paiaGmO77aDXUoPzmAWJB3KrGxlSPjZH0NKphCF6gfK67ztx6YY5KaHIm0lWE1C0RM6UT-AJisn8QYwewi6X0Dvfg26Yx9VpgImvM6OdauQo%26e%3D1727176244%26fl%3D%26r%3D873D9BC9-7146-4EAB-BC16-515C52C6EDDD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJ-sQ7LRkOdgpsFAECZLWSk2Y2So&uk=SsDvYphxAC1uAuvuO7uffA&f=Amazon.shortcut&sz=28111">
        <img src="./All%20Shortcuts/Deep%20Links/Amazon/Amazon.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1278,7 +1265,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Links/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab">👨🏻‍⚕️ Ask Huberman Lab</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbAf3qrY3dRJxZuyf_rvEJm616HjARXbrjPKPrNN0P0ebFc9bw37Szw_%2F%24%7Bf%7D%3Fo%3DAh8D6ObRchmbKHKbSw8Qg5sh32AM9SZ8sc7xU4fXE8rz%26v%3D1%26x%3D3%26a%3DCAogFn4HBK32cwSrz3VuCnlXAaZVAAZYOwASnPzQQlagGNUSbRDm1KqoljIY5uSl_J8yIgEAUgS616HjWgT7Szw_aiYMiO9XukC7ptLAH5l0c0yyqALETGjLQaj2wdzw5X3LoKvjT2-S4XImHtAm2Rigd37wZi2QxywLUgdLiyvOfaBvFtUUlXNe_DnEJPgff7s%26e%3D1726569083%26fl%3D%26r%3DA661C493-DE75-4455-AC9C-28F59EE8BA00-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8CBqYk-4jqHKqThoemKg3EkqXUs&uk=vdpKW1rDB2PnuuCFtZz2oQ&f=%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab.shortcut&sz=27497">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYK6eq1Y4Y1Ezm3oufn3FU9u-PL9AUIf2yIndREhdr4uhu4UR3fJyLbS%2F%24%7Bf%7D%3Fo%3DAsPJTeI3c4FgYeoXI1GM5KUe8jZr5XNYFK2S5lZvEngD%26v%3D1%26x%3D3%26a%3DCAogRAaUbdHySCXRrZVThJ4m7B4PQat6bieL6trdNEwylrESbRDg_uzJmDIY4I7onaIyIgEAUgRu-PL9WgTJyLbSaia4Eg3hh3ZZMz1dwOujuIAjjZ94WyZS4gYHq3COcfrpI5gLrKUldHIm_2-C-qZnHnYgRXMokkH-StX5dT8o5iSyDdro5sE3B27fZkwxY0Y%26e%3D1727176247%26fl%3D%26r%3DCFC8DBFF-A53C-4BE3-9C32-3DCD0B12B187-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgtVMyQLmGvuoK0aqaAcNKn_il0E&uk=5Re2ETVGp6LB3yYD9kOGng&f=%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab.shortcut&sz=27496">
        <img src="./All%20Shortcuts/Deep%20Links/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1295,7 +1282,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session">⏳ Short Focus Session</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXzal9wKX0wpn0C4Z0PDTREDSlPRAf-OMyHPV2n9SaDLoRG9iYwciHi0%2F%24%7Bf%7D%3Fo%3DArht697tm97HKWA7B0zUBPitjNKNxZqMoKJEs4NAof5F%26v%3D1%26x%3D3%26a%3DCAogInejduQ207NaoQyU2rDeJWRRLufBq1CVzfyn4pgwDPUSbRDH74apljIYx_-B_Z8yIgEAUgQDSlPRWgQciHi0aibeg9Y2Ojnftkqw49Oz_TtPwyok8NtkH1kcbOUBdUPlhDgrEYOWKXImfKQXjsKkDgqYg5rAehaJCVtxSlnzyLBhG3vAoeHFdRABA9GLYTU%26e%3D1726570594%26fl%3D%26r%3DE1C61A8D-937A-4393-8E96-8742096E01D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZp_Ym5jaToDzSWGTwnp0gXWdVN8&uk=sW0cnL7M6b2_iDLo__5Yzg&f=%E2%8F%B3%20Short%20Focus%20Session.shortcut&sz=26705">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX6gqR43cfKNBoe4xDehtMI3jqlHARUqP3n81S_JbDrQZLTLvKRDkhL7%2F%24%7Bf%7D%3Fo%3DAoPGyz5WY984H2_A-6a7sLnbLqWKIuTZYXfe0fG-4hoK%26v%3D1%26x%3D3%26a%3DCAogqnkCS3BEjDjmhIi590FEBuo6W0Cw44ZmXvW92Nw6MoISbRD10o_LmDIY9eKKn6IyIgEAUgQ3jqlHWgRDkhL7aibLnM9qtXK2SaqmJgeBwrjh8oZ1kgDxmEoaL4cyuMKMBa39meQvvHIm2O5rEGAE5REerp30xjLneKvmRlbejlyVFoJXwe7x85BTVkR6TXs%26e%3D1727178912%26fl%3D%26r%3D627BCCDF-87E3-441D-85E3-7949DCD1DD14-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2uPtSUHPAJJMvOGq5fnJ2-TGW0E&uk=nFvuiZEKfIjfL9j9zwodBg&f=%E2%8F%B3%20Short%20Focus%20Session.shortcut&sz=26704">
        <img src="./All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session/%E2%8F%B3%20Short%20Focus%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1304,7 +1291,7 @@
        <summary>
        <a href="./All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session">⏳ Long Focus Session</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARWfD7DyoZG64J-Deeg8UIlUDYHdAQYuX81JIVfje_nG5k6oXk4Z0xi_%2F%24%7Bf%7D%3Fo%3DAmekze7IIaPaK0YpPFtSJ_JyDjLQt3bPx5Zz4yHDtbJz%26v%3D1%26x%3D3%26a%3DCAogK3DEY8Y0pP2cok4fcKddYAsdbFwhkwiALLEdpFX3iQYSbRCA_YepljIYgI2D_Z8yIgEAUgRUDYHdWgQZ0xi_aiaq2rRD3FffK55dOC9Lu1FSRzsLQM67VU7354ShUOCvQ2AR2xzAJXImfLmHAuJ1LE2k_sRAtFf3JK-Ycx9Ymytl0y3e65IGt_9D9tNmiqw%26e%3D1726570612%26fl%3D%26r%3D79305A9B-C485-4032-9A0D-87A88B32AB79-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkRfBguNc2K7gOqrCXGx0FdGCqIk&uk=PxcMtiKzZ58c7XbmelaN0Q&f=%E2%8F%B3%20Long%20Focus%20Session.shortcut&sz=28438">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdBGoK4Wr_YXtzuX9vx4cHGx7JHDASCq9BFsc_bybGeIg49hdXClXw9N%2F%24%7Bf%7D%3Fo%3DArmkkeXSGb31BjcyJxbGH5-hq7pF7NpzzglNtky-XigV%26v%3D1%26x%3D3%26a%3DCAoggSTSGMTFoEJfxzwX9acvRan5Uz-abALk6-wwxqBr_JYSbRDW7pDLmDIY1v6Ln6IyIgEAUgSx7JHDWgSlXw9Naib7ieYGsyJwD_RD8_iwBwC-pBa2EHH8vNuI2D802tvdiplATwyPFnImWZpVRxItJ2v8otXIrXxMBPMYqU8dsw82hGJtbtWl1z01hIQSiZA%26e%3D1727178932%26fl%3D%26r%3D90D111CB-2A47-4363-A51C-19900C25F4CF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZ3WyewWvNOPqpQ3aPNnJiLPIVDY&uk=HsT2zv3cmX64cvYvANpVxA&f=%E2%8F%B3%20Long%20Focus%20Session.shortcut&sz=28437">
        <img src="./All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session/%E2%8F%B3%20Long%20Focus%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1321,7 +1308,7 @@
        <summary>
        <a href="./All%20Shortcuts/Dictionary/isDictionary%3F">isDictionary?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZeTWyvUSKrXL6IbRqvqSZQP231nAQO0LYzZXhaLPgDC5Kruy6doUj2x%2F%24%7Bf%7D%3Fo%3DAhlK-nwKluEckXbplj2Ecf-b2HRVpBnSoM9qeszv7qGU%26v%3D1%26x%3D3%26a%3DCAogwf3PGHuK3s9WkFv8yYt9rFAF3Ok4RmgjxAbxARBvwYoSbRDa4a-oljIY2vGq_J8yIgEAUgQP231nWgRoUj2xaiap9RyOtgRSA0Yum8p1FgKsID8VdsunILtkvSSD2i2rN1RUzKyPlXIm5D-SmllLawZAwkaVA7lA5ndnozoipyvne8D-9qG59CRGGMZTaQY%26e%3D1726569167%26fl%3D%26r%3D98A4AFFF-0A9F-4BF7-8590-9A85B0CEC192-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfetIGtT7FdO8hZDknXO0HbQAWSI&uk=R5cI-uV49nbbocudLhbq7A&f=isDictionary%3F.shortcut&sz=27048">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ9FvWiwwD4kXqjz-P5iN2KGWOVlAd4xJlKjdx_vh4jLotL9aIe7GZIS%2F%24%7Bf%7D%3Fo%3DAvEjtAEZGco-LzvL0fozOarbVhLzLhrE_igmCKKViawV%26v%3D1%26x%3D3%26a%3DCAog3yckDDFwHcH6ENfJE5_SZNXdXrwZJf2fPcpj_qBZPiQSbRDfg_zJmDIY35P3naIyIgEAUgSGWOVlWgS7GZISaibejXLD_blwtDjqyV7rO1kaIfDDAvLRZjVNHJWqDNT9xDb0_UVADHIm_xtrDmuCbaocpqKMlSJkZJcA7HOsmeMZwGXm4hr7sf6CcMeu2Jo%26e%3D1727176493%26fl%3D%26r%3D4112BC95-7970-4270-84CD-1E3BAEADE913-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbeDY5XFUcCGEdLi1Sgs6-F5bOCc&uk=NJQGrvYAZMx7quyPH0jdzg&f=isDictionary%3F.shortcut&sz=27049">
        <img src="./All%20Shortcuts/Dictionary/isDictionary%3F/isDictionary%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1330,7 +1317,7 @@
        <summary>
        <a href="./All%20Shortcuts/Dictionary/Merge%20Dictionaries">Merge Dictionaries</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYX8c2exCI4VpdAnBtwD6pJ0DhtAAaXERWhgoyOjPTLvnk3OA3YKiqTj%2F%24%7Bf%7D%3Fo%3DAslP5PcmCw1xe0SV4s2m9wRz_VAHoZ9Wxo-yHK0WAROc%26v%3D1%26x%3D3%26a%3DCAogsfB7y4PP-lwDSbTgfaOpBW-bASWbr4_IDaxYs70xmN4SbRD266-oljIY9vuq_J8yIgEAUgR0DhtAWgQKiqTjaibolyN2LapIdO2cIK-_UKArZBhq6ywZGcjxwIa57vm7TWIoaPweKHImjpL3svqeyJeF_ELnYb1pGenryWgdnqlMKL54QrkOR2A26QIzX6o%26e%3D1726569168%26fl%3D%26r%3D4509CBEC-843F-45D0-94C0-DA3719919329-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdyAfv_XYjG-04KO-FVxj0IusddY&uk=a8qvMJ50deC8-NfDzP05Ew&f=Merge%20Dictionaries.shortcut&sz=26704">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU8VklmHjkYxx66ury9RlWrFwF2uAXDdeaPg5R4F_AX4X_ojSy_lIuaf%2F%24%7Bf%7D%3Fo%3DAnji8M6sGtEh-SleokNCbRutSfm6rnotemNVmQszN3nc%26v%3D1%26x%3D3%26a%3DCAogG9khKA_iMUmxE9os0Y4J9WF4U0RF55yHM9g0JvUJR7cSbRDcnPzJmDIY3Kz3naIyIgEAUgTFwF2uWgTlIuafaibPqE8yiQlAX-N1KeUKTxu8TVswYuYJIhpSN3cUNjTj0WANzLFqrHImT9eU0Mjpwtngrxx-M85emePW_Wflu05hIvogIotjiplcb_w0iSA%26e%3D1727176496%26fl%3D%26r%3D5B6860AC-E0DF-4194-82EE-2345EA2B518C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvMXGOoJBu82xilID-DTusBMIFBc&uk=_I858OkN56FbEIHH8uCYgQ&f=Merge%20Dictionaries.shortcut&sz=26703">
        <img src="./All%20Shortcuts/Dictionary/Merge%20Dictionaries/Merge%20Dictionaries.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1339,7 +1326,7 @@
        <summary>
        <a href="./All%20Shortcuts/Dictionary/Pretty%20Print%20Dictionary">Pretty Print Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAViKZSw5sgV_RgnJTKHHGTJ9YJRVAWtQF7KzcVtDdnjHjhfPc3MJqiLJ%2F%24%7Bf%7D%3Fo%3DAstHkzs8JGEO4m_kqUKvvK0k83Qw5ZV-_Zfr2yesAD5z%26v%3D1%26x%3D3%26a%3DCAogFze9Xl9OuGL31CXJCaPZqGo45c7xrq-lTI3HVl9ljC0SbRCN9q-oljIYjYar_J8yIgEAUgR9YJRVWgQJqiLJaiYQvjgBJRc0gyqTH4xMqiHKOA-5pPwVx0gZyr9efGCzC3VbFRpw4nImRBSNP-r8Byw9s1dakTHdu3Yp3szvnEV3MuJaGXRlG9eX49GhNDg%26e%3D1726569169%26fl%3D%26r%3D696968DF-774A-4B4D-8D00-595706129AB3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeYlezAu3wrUff8Dlyk-quFQXUrU&uk=3tTA9TnyOOc-fH11NoIvhw&f=Pretty%20Print%20Dictionary.shortcut&sz=27346">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYgC7BVWaBGtUz3nY-BBRGlbHUiCAU233XzSxutUz0Nbcqw93AW7Le0B%2F%24%7Bf%7D%3Fo%3DAsdBBvsPndOoLkC1wsOQfaolixCMIYF7eufA7te2_q5Q%26v%3D1%26x%3D3%26a%3DCAogO4rAFrfDCCtcEEs-TepApKdXEO15X6ELkeGnQkIcKbwSbRCps_zJmDIYqcP3naIyIgEAUgRbHUiCWgS7Le0BaiYglg58h7_AGZ9BeYbSST_LNcqb6NRL9EFwehmcv9wBKTdYTI0mrnImZsHU1NY-7683i2-T1DeiSEUplSpWGYJR6E18z8yJc0TiOi535s8%26e%3D1727176499%26fl%3D%26r%3D29B09821-FECD-4B4B-A8F8-90CF19E5CDCD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dk0WfbmutDQ_GcVZUHYQzQBWSimY&uk=FkZUfE4CAjOyX5M3r3r0Bw&f=Pretty%20Print%20Dictionary.shortcut&sz=27345">
        <img src="./All%20Shortcuts/Dictionary/Pretty%20Print%20Dictionary/Pretty%20Print%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1356,17 +1343,17 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Memories">Review Today's Memories</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQFd7CTUxr-OShx6j1HkHGtztCijAcAHeXIHE7gUTtEFuklo37wjTrnK%2F%24%7Bf%7D%3Fo%3DAhuFhVMLzRYmatX6zMzbcCq7xOO-cwapLKwSLbi53si6%26v%3D1%26x%3D3%26a%3DCAogE9VRbAy6l3CUHUrYpRix665pGayphMSfQONI6o7vt8sSbRDjwJuoljIY49CW_J8yIgEAUgRztCijWgQjTrnKaiZVonNfri13d9CjgUYnRsxOD_tlnjLHVjeAUSJfV13kNJ-7mRY9QXIm9s7eYoPCG4tG3IVY0IL9AZdtsFXl3eEKbNhw4g-B0QK59Klmsmk%26e%3D1726568835%26fl%3D%26r%3DFD242F2E-CA21-4B54-8034-E8C4436C75FD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dbm_b9aJb4LiDxWlTY7vUPmUO7P0&uk=6T7CUPOGcsni6hhDf-IduQ&f=Review%20Today%27s%20Memories.shortcut&sz=26767">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfp474TEU5-ejVmYpUWPcqfSJVSPAUTxmW2CuJ5jaPPAwdlU_DE2l3G0%2F%24%7Bf%7D%3Fo%3DAjekZu-1crvNXd-hL0ErzmqG7tMvkbGUjtVXSe_DQsiV%26v%3D1%26x%3D3%26a%3DCAogwMbNbG8aCbmz_VvtjHwlKna0U5WxLIOOqH2OkepX0jESbRDnp8_JmDIY57fKnaIyIgEAUgTSJVSPWgQ2l3G0aiaYs_UNgJzc4MvCzB1nDcr-I_Nn8plW75jTuq6PDqEaHe4RzlSwP3ImYx6nKrAl3C4J-IaVBuFB_peDhOlPzI65wRDY_nwxkaV4ZSJo_mQ%26e%3D1727175760%26fl%3D%26r%3DFFF0660A-09DA-4939-B132-2385320F59C5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Da5AGUKajDu6QPb9htDX4IMLzkrw&uk=YoNSQzqQX7GNP_0K_RlA5g&f=Review%20Today%27s%20Memories.shortcut&sz=27100">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Memories/Review%20Today's%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Training">Review Today's Training</a>
+       <a href="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Strava%20Activities">Review Strava Activities</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYXKN8_GRg0V6DoJNx_Mg6mhO-41Af1bAr2JZaIM-ma51MiydPlAfi98%2F%24%7Bf%7D%3Fo%3DAuqcZobvN9Jf8Ek7LnFON-r0I1u56xMzWCFTNoH-oW6z%26v%3D1%26x%3D3%26a%3DCAogsthSRA3kJTqRFPZ83mQ8GJK86MO3jGxBBjXVjurI9LcSbRDgypuoljIY4NqW_J8yIgEAUgShO-41WgRAfi98aiZzM6X00MntbG-cl68D1wRuJfgzzysjsZP2_qd9Gd20mnBqLE1wi3ImuUqmEU-LDBxnvjZ0EzbJhDuLY9UxF6u0WBGBhtQSfvW54M1bEm4%26e%3D1726568836%26fl%3D%26r%3DE86DCCE7-7603-483B-9AB7-C9AA10A18E12-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3De9NgNvOdJt85iEMAy8D7OuoU_o8&uk=laJOYEOpphcKKh1Uk2ozKw&f=Review%20Today%27s%20Training.shortcut&sz=31284">
-       <img src="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Training/Review%20Today's%20Training.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQOCihPgdRN7DSzSGTk3FP-OUxEbATBgVWtFLwPgWtCZoqZQRYtfxeac%2F%24%7Bf%7D%3Fo%3DAqRUAPQrzoniCcFI7fQzn8Pb_Q5Zre4TxjyfKzX13hgN%26v%3D1%26x%3D3%26a%3DCAog5AfGyXUYEP3cnhevgahF8MyZpnf6SUrgT5LIEGVsx90SbRDZws_JmDIY2dLKnaIyIgEAUgSOUxEbWgRfxeacaibnpr27cU3ai40BvReBQPm9kA-OJRhhxPRTyw5Jjm53_dtUEmdsXXIm_LK7nNpYHHtiHLfYhdgASD1AvXY6LXSlJAGQIVImKQ8uZXVMzLg%26e%3D1727175764%26fl%3D%26r%3DDCB29BF2-29E2-4BE4-8538-2D4F34F412B5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnVlRCvGOmPWTKOEa2W99TnWCtBY&uk=o-06JO2-Vi8VuZmcbnlsTg&f=Review%20Strava%20Activities.shortcut&sz=27938">
+       <img src="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Strava%20Activities/Review%20Strava%20Activities.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1374,7 +1361,7 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Podcast%20Shownotes">Review Podcast Shownotes</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAculMmfx4m7GhcP1t8TdWfq2v7lHAffz41Ms6_saplwfnOQc3jAY6hHg%2F%24%7Bf%7D%3Fo%3DAsn4K4Yhx7LQdcQRBMLM6fqk2nC01BZUSenJ7otIQQzR%26v%3D1%26x%3D3%26a%3DCAoge6kpgovXgGHyvCKXD_YTrPv3hQ10UWZ1VcTxFMbok3sSbRCR1ZuoljIYkeWW_J8yIgEAUgS2v7lHWgQY6hHgaiZJ9CxiWCi3WfDOxJpYDIul8Jcqf5QTuhF_aoTCEyTKUrwXbmvhx3ImvZXHRjbSt8rsfiItxeF756yyevXjt6q-2DmWdwSH83LwNflBvCI%26e%3D1726568837%26fl%3D%26r%3DBFF4E887-01E4-4FBA-9ECA-60CAE44AA40A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DD577f1mvNzWgh6F3bY0WajmFvog&uk=ohvPgQGBKpU8DZLkkjc1vg&f=Review%20Podcast%20Shownotes.shortcut&sz=27876">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXzUj4V3P1PqISV1zCOHbJvR1imlARtpfuHs3rbqiMtUWNuup5wuJ5TC%2F%24%7Bf%7D%3Fo%3DArpD2cY8yGRuqYqNVKQ_wKem2LJ3_6zW4P17o5fsBLEf%26v%3D1%26x%3D3%26a%3DCAog-6Oko4vS7ITxClojsYVHuUFyNDMMzUi8Nm5BR58jp1MSbRDq3M_JmDIY6uzKnaIyIgEAUgTR1imlWgQuJ5TCaiZ2KvNzR-L4h9TyY7hSps8F_GDcEa8X0f9uhPzWC6mpwa38HxgBP3Im20cogGGSkyasFS57JzmGw4J7jEFVPyYc2YB5qgPJPaa56K47NKo%26e%3D1727175767%26fl%3D%26r%3D7017B284-B5A0-4DC3-926B-04974B53FFB7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU7Nr8mG3uWnPqNKf-WhOrm48Fm8&uk=isTFkbVOwJno-1z2KtVlwA&f=Review%20Podcast%20Shownotes.shortcut&sz=27801">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Podcast%20Shownotes/Review%20Podcast%20Shownotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1383,7 +1370,7 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Captures">Review Today's Captures</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc36HmCgOASmY4WTBnQiRn_fA5IIAQvxrPMihbKEiJ6OsQKBka41vH4w%2F%24%7Bf%7D%3Fo%3DApoqJqJ78u4JqRI8jLAEOa5QmmwR0kJ39fyM7H7E1_t8%26v%3D1%26x%3D3%26a%3DCAogFTP26NcfnxBHo4SvuAX0AzBXoMGvYc9K__wME8CBQVcSbRDY35uoljIY2O-W_J8yIgEAUgTfA5IIWgQ1vH4waiZ2c5ktpVYbfQ6zADCgF8Z1kn1ny-j-oHxGfoz6eWoqaD_7HTpJQHImthcULS4IK_9laU0j2DhsgbKCvKZNo83vDf0BVjklsc0ZRZQMCjU%26e%3D1726568839%26fl%3D%26r%3DEB22D080-581F-489A-AF06-EA969E61AABD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3DyLwE5LsBd85rCOyHER8TfL2oQ&uk=YqBTNgMa2b0QMQGLN4V6AQ&f=Review%20Today%27s%20Captures.shortcut&sz=27831">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZDgPZMUcna3b0kwkI7cUT-3dObwAXvm-VksHRzxt5hd_JsRYHxoVvtm%2F%24%7Bf%7D%3Fo%3DAuFjtBjUBXSoYphWn_N1m_kBbkjY6DKE4T84mT0-JQL-%26v%3D1%26x%3D3%26a%3DCAogO9n0a0J4vA9mjrmA_CaXcsSHeazXFHhEE_XeKYRREaYSbRCx9M_JmDIYsYTLnaIyIgEAUgS3dObwWgRoVvtmaiZKzDnzUM7m4xsgxf7bdqyu8798fbFWEvSabjjXL3x4TVMn1qOA3HImykUofRQ-pSIMmNl9ahglxuVGjMd5zokJ4sMKFtseV-Owj_IYfFs%26e%3D1727175770%26fl%3D%26r%3D10156A24-93F3-42D4-913A-4B499E50677A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrUtfXdSBrRAdrVJel-We4G9Y2dM&uk=kRL3H_ZGboj9TtXon3eEwA&f=Review%20Today%27s%20Captures.shortcut&sz=27824">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Captures/Review%20Today's%20Captures.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1392,7 +1379,7 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/Journaling">Journaling</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZTSdofOYna4Rdb1YCjTYG-87CydAReKeiw_QfLsZRhRNfAxL3Un1Ml2%2F%24%7Bf%7D%3Fo%3DAoCnJe-5j661Nuiqas9tARnNCBQVBM_Pjtf-G9yzIx8i%26v%3D1%26x%3D3%26a%3DCAogoc1oI_qowEf0I40T9z9xZtxLJluOdNshmlElkoggB9ASbRCF6puoljIYhfqW_J8yIgEAUgS87CydWgQn1Ml2aibFbuMb4a59rF4ahlNmrvzuLSxs4vv5t8IlJfLe0QsW9VAsXGL9C3ImQrNXPKvu1B9Fn-v7rhG4z5xSoMZK3rwQ3KfvDM8RBJlo1roMLmY%26e%3D1726568840%26fl%3D%26r%3DF59CC22E-5667-4D6C-B42B-202BE01885FD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOMM27NHsDZIDb9gjApXOrKdzPuQ&uk=iOWglm2QG_BFUmvjMJOWpw&f=Journaling.shortcut&sz=27946">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYtCuKLSWdLYysBez4O9Lt3IzjlTATl4PULWkjZWhaL9Hc9m4UZY0gFv%2F%24%7Bf%7D%3Fo%3DAu0Lcvsd5ldcTk_TwBjK12M4TsyA6CeeyYwd-ouXoGQA%26v%3D1%26x%3D3%26a%3DCAogySdnf-lqKjSDQkIUVRasIXRzNy84zG3RioFNnyYgdbASbRDKjdDJmDIYyp3LnaIyIgEAUgTIzjlTWgRY0gFvaiayinRGoqu_rio11_Cchg3dLV5pPg3iRS7t4kMm9QCVsUx4YpyLR3Imh3uStgtIVgNZMhLv8-9p8rcTVyuGnXkLZUpWvk1bOf-1etGmYH4%26e%3D1727175773%26fl%3D%26r%3DF4E601B4-DEE8-4EC9-A204-CFAD58BEBF7C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEzI5mxeBWXMaf6JXHJavsUvoRHY&uk=4C6nUcLeBcD7sZ-OaI-vLg&f=Journaling.shortcut&sz=27836">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Journaling/Journaling.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1401,7 +1388,7 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/Plan%20Tomorrow">Plan Tomorrow</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAemn5CQIoaJ6DrjaBXWQ01WziiXjAZjv6eqQjNwfEp3Wlgf-JjSR4QLg%2F%24%7Bf%7D%3Fo%3DAmyFmqK8gD3-7zssJGaj_7DkHEe3KTf1i40MEO8kJjY5%26v%3D1%26x%3D3%26a%3DCAogLxoxpBsl47Tfty6v4qaOGLfoWngevUGR2ExTVwI1h_sSbRCl9ZuoljIYpYWX_J8yIgEAUgSziiXjWgSR4QLgaibekY0_dNTBRgQ5N2XevCA3pHDCldzxHthm2hdzRDsG5PHlXRqUQXImCeYNftP7cOZHxTYtRYmS5JT2Yp8N22LAbHfuWhDNV6SMcsVqQOQ%26e%3D1726568841%26fl%3D%26r%3DB4CAA27C-047A-44F0-BFEA-9DA387D4475B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOx8ZgpEAN9EG-OCmEMwzYPimMTM&uk=c-nXSx66gisY0vsp6Lk15A&f=Plan%20Tomorrow.shortcut&sz=26778">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcs-k1Gq4Nb-dRxI_iLBSpnWFlWiAS-v-eSFM5Yp88ImY5jpKKtqTXdx%2F%24%7Bf%7D%3Fo%3DAt4ZEvVd8hRUNtptZheITseUBQXLHA2Prpq_fiKHmJrX%26v%3D1%26x%3D3%26a%3DCAogjXtDDpScm-0DWfEAim-zDAa7hWD7YYmhvOLIXaURpokSbRC9pdDJmDIYvbXLnaIyIgEAUgTWFlWiWgRqTXdxaiZ4WgLw7kVXseY9i3Ev-NiTt8kjsPGJgEZaU1rnBGLmUBFh8i9NaXImUIuH8sGH97eBAyvND_dmTZ70JFJxFYqwwUFIqRRC3ke-5BeJP70%26e%3D1727175776%26fl%3D%26r%3DD2BF635F-0548-4190-9A49-D212FAE4C7B7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuqYGQ827ujmuTMJqrHN0zaJwkAg&uk=nzrNVjpYgLI4cINLEBsm8Q&f=Plan%20Tomorrow.shortcut&sz=26792">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Plan%20Tomorrow/Plan%20Tomorrow.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1410,7 +1397,7 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/Sleep%20Like%20A%20Baby">Sleep Like A Baby</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZcTpJFPrKZUt2bQ8B84-dF1kvmyAeMoHX_jm3IU1eC1uIOarTUIIqWT%2F%24%7Bf%7D%3Fo%3DAvvOUkYhBVCa9KUw_lgCBQoHns5Ugrn_TkDfFVvsVFVY%26v%3D1%26x%3D3%26a%3DCAogsqfr3ppXlULuy0Lag1LiyS1ZDhWowoymsVdfllPEvl4SbRCNgJyoljIYjZCX_J8yIgEAUgR1kvmyWgQIIqWTaiY-ai5J7JIytOwIq8BTogPF12scvbg6AGMOnfZXz16gcEWJULk8TXImeglc6QUc6m_jhb6XyHA7balAmW10AI6iOeP6d_7hOqTZHbYIZsQ%26e%3D1726568843%26fl%3D%26r%3DA22BFA20-CFA4-421E-9E17-BA002836C945-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dwyr3B7ow-6Kj4azKcELrCJ9ed5g&uk=17L9hWTUdgmwLqEqGqWbYw&f=Sleep%20Like%20A%20Baby.shortcut&sz=26809">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeBNNDi_uIoLB7A1bjro6T5oyRj8AS5dhfIdKJ_foKxdhFwVxanRVfc0%2F%24%7Bf%7D%3Fo%3DAkce5GO9lg2htuj1cTJ98yBxCo6sES_jmayYpMRv0iqR%26v%3D1%26x%3D3%26a%3DCAogYfxN8GUTAP9rTnKZ1nEVpDxr9noB8CbhNn1Da8WbXWESbRCgu9DJmDIYoMvLnaIyIgEAUgRoyRj8WgTRVfc0aiZW-GyqnNBEgmxoiqRDRCZJcaZGDm2_kx81FrnC_nf-thGnD1mWAHImRIV1HDwRp59OjapCH1ZDZyEEj2XhvYhkdm05VWqNyjfWlDgqBKg%26e%3D1727175779%26fl%3D%26r%3D0CA77B65-6952-4B29-92DB-642BCAAB2D25-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DN-vYqgQF9vqyyQKOtIpimz6FVZM&uk=IFG_JQdjdxkoRskCp2Z5mA&f=Sleep%20Like%20A%20Baby.shortcut&sz=26826">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Sleep%20Like%20A%20Baby/Sleep%20Like%20A%20Baby.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1419,7 +1406,7 @@
        <summary>
        <a href="./All%20Shortcuts/End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right">🌙 End the Day Right</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcFtRVxEfj0hRU1D7vA32YBdeIPaAWzT3Jyxgzg8kAFieGc_0SoZRI3_%2F%24%7Bf%7D%3Fo%3DAu5f37UBN_0l88S7DACAGGZGGmxws97Ykf7Tj0DjBr2s%26v%3D1%26x%3D3%26a%3DCAogQduJSf4AnOGcl6RPJafedrxj1rwnfPAZljhQBPGUkEcSbRD8iZyoljIY_JmX_J8yIgEAUgRdeIPaWgQZRI3_aiZzAVBZqGE40PWePAOqAC17bCM7XDlL20K_N4un3jR60_IJ9IG5unImHa7bQkZM-t5uDQcwzzHIZL2WclB4ANvzkMBrdwKhpiTYRKsvrSo%26e%3D1726568844%26fl%3D%26r%3DA889AC96-FA4E-4533-A328-1B3F53473D53-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQIp6J2HBccnRtGNaFJwdC2AuYbY&uk=vCGwGAg8TiQ2Qb2MTJZHWQ&f=%F0%9F%8C%99%20End%20the%20Day%20Right.shortcut&sz=27280">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVtZ1ohPpuwS1H55IWcMbim-bdD9AXUJYFI07IAAuqhSI6KVU0Eceyvz%2F%24%7Bf%7D%3Fo%3DAorMagP4fTXRPmwiyw5viol2qdrvCNBn50oLtD8YO-xE%26v%3D1%26x%3D3%26a%3DCAogw8LDwHvBinYSZuNAU--2l4ycVBqwjaYAdEefYiOg-DgSbRD939DJmDIY_e_LnaIyIgEAUgS-bdD9WgQceyvzaiaEICR2LZOMq61YVzEHVfbO-j94Q7ws4j6tcz1672tNSgzyP-g3aXImJ03w9zbw-bSzYrS6bpniqNxfyVkmC8ey2wLd7t-HtR--3-Wf_30%26e%3D1727175784%26fl%3D%26r%3D807B77BC-E39C-49CB-858A-798C060062FF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1mtJOdyKS6SsEnuhjm1MuVhzN4o&uk=ll3LrK2mmVOwCFhRP_xtfg&f=%F0%9F%8C%99%20End%20the%20Day%20Right.shortcut&sz=26851">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1436,7 +1423,7 @@
        <summary>
        <a href="./All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%81%20Save%20Files">📁 Save Files</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdEMMkuWKyBeBckaB5vnl9nklcpfARBiKlK8k4kbpqtUt2fkgiUmJ54D%2F%24%7Bf%7D%3Fo%3DAqn_uX3Oy7YkzTJ6NvhJkeOTm14N-CAiZ2fR4m_aWDm-%26v%3D1%26x%3D3%26a%3DCAogXyP8Eyh0sJruwiUL9xwFSoKF03XQYc_4MGVNlzfsUp8SbRDs67KoljIY7Put_J8yIgEAUgTklcpfWgQmJ54DaiawZIY9LCbUfisiBKkGu9nXfpNmadfZQ8i-voqT0yZXDcXZ-qFCBHImJmx024-dqQ_K3W11xBBz704b48KRf9z1mvdzQX5BO778KD9Nl5s%26e%3D1726569217%26fl%3D%26r%3DEAD3DEBA-94D3-4F15-A481-430CFDEBF216-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ds4nC8z3S37ymTJCLaYfTnKilDk4&uk=4pH5GWO1izOpRx0iOXM7vw&f=%F0%9F%93%81%20Save%20Files.shortcut&sz=26811">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASTlbAGhFhY9bxfp2zEyRuYKSSODAe0ok09aVgQATPtQF_tg0kMfGMTj%2F%24%7Bf%7D%3Fo%3DAjPCntseaSMSMFdro8WWzOyjZNXXMXyXD4V0l6jgW5WF%26v%3D1%26x%3D3%26a%3DCAogu9b0OcPXle0NOylqUzSq3hz5_IgD-tvW4MpyU5d-bNUSbRC1tIbKmDIYtcSBnqIyIgEAUgQKSSODWgQfGMTjaiYNQx267ONjkCYRfrF_EvMx6bikgdTciK1pShSLj88C_rttGhwM5HIm8ayyqWAfBwMNAW9IPGF6KH8_4abMtk8c049AchrmpBqJY0_zPz0%26e%3D1727176663%26fl%3D%26r%3D252B9DF4-274F-4AD3-B0D7-6344099CA0FC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dn7J6pGsH5VnlGZrawOmSHJPJUDc&uk=D0R3hlAOY2lB3s3Gg_E_Bg&f=%F0%9F%93%81%20Save%20Files.shortcut&sz=26810">
        <img src="./All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%81%20Save%20Files/%F0%9F%93%81%20Save%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1445,7 +1432,7 @@
        <summary>
        <a href="./All%20Shortcuts/Files%20%26%20Folders/Cleanup%20Folder">Cleanup Folder</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbM1dPz0G0PUZ0vWt81wvwcPICjuAXyHjDyXVDJOdljrtBJX2QSygark%2F%24%7Bf%7D%3Fo%3DAjNAe7nhYCEXsSgutwvNE--Gs57uMGnMD5tEqryDRMbD%26v%3D1%26x%3D3%26a%3DCAogWp7tbk9XbTb1l_XKU8GEPKJK_n74AOmaGwjv5keg31MSbRDn9rKoljIY54au_J8yIgEAUgQPICjuWgSygarkaiZc1ETSWpXCMsQMimsU4iOkK7_8OFzrYH2jfPzBvhI4NFoK_9PuA3Im8i451FQm6ukRrt0qUBbfS4MVNG0joc5CHmvTeXdcziSdfF4bu8A%26e%3D1726569218%26fl%3D%26r%3D1FB34751-3AD1-4ED0-9D43-6EA21242AACC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU7P3STf9I8mGd8oxRcmk-vP8Qz4&uk=cQ9QMJP-pV-fC55Zy5dbeA&f=Cleanup%20Folder.shortcut&sz=26744">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXhHfjulj6yOhIxN5Qf_YntiTxFPAet_NbAzTVjwLY_j37T6a34TgJH4%2F%24%7Bf%7D%3Fo%3DAqdgQCJWzp6PR1L8t-lkUaHf-plFnD3_vVq-NucsRZcC%26v%3D1%26x%3D3%26a%3DCAogpmtAdKR0KA8UfeaeJF0FRmHgo1LGRgli7zfCF14zW4YSbRCrzobKmDIYq96BnqIyIgEAUgRiTxFPWgQTgJH4aiZ3Cal5iDCy627uOK3v-wDFYXJ7k0IvKVm4rYj5SEaeY98gk5ZaM3Imc0aLUYZGCmAZjMoxZKLt9vLs5td5T45CRen2BRpssfnJKFKYsCo%26e%3D1727176666%26fl%3D%26r%3D38EB4D1D-B8CB-41CD-BA21-B320E2FE52E3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dvg0fBd3WyWcFKAJIRL9-lTYZ-T0&uk=0nX9CCIg6at7omUs7TjpeQ&f=Cleanup%20Folder.shortcut&sz=26743">
        <img src="./All%20Shortcuts/Files%20%26%20Folders/Cleanup%20Folder/Cleanup%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1454,7 +1441,7 @@
        <summary>
        <a href="./All%20Shortcuts/Files%20%26%20Folders/Create%20Empty%20File%20or%20Clear%20File">Create Empty File or Clear File</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfkL7REXEz12vsj4oweOLVxCb6DuAZyIpf0GIzIpkonZ_TKpCjJjqTPR%2F%24%7Bf%7D%3Fo%3DAugPNgHE96XZGMChfcUaQ4V9qXC4_TrZ5wMaWgBGeaqV%26v%3D1%26x%3D3%26a%3DCAogcrhsTN9e9Z-a27l060AA1AQ3uyNyXsDEBbJ2YgKABtoSbRCHgbOoljIYh5Gu_J8yIgEAUgRCb6DuWgRjqTPRaiZNSu9wyfxkc3ZneKhLOb-tMuwxd2BQHVKnAazYyX9AiUkTHGTDiXImrRR4wQ_quJxi_c3kcjfGvPUzMRejJl7NZ2fyH6ZKuJMvHCFILeM%26e%3D1726569220%26fl%3D%26r%3DACDEA0B2-11DC-4DF0-80C8-FD7C5867E425-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwLqOZ8RstzEid97K90nuDzTeX1I&uk=2GMij8399ZkKq3HZjS5-Yw&f=Create%20Empty%20File%20or%20Clear%20File.shortcut&sz=27264">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATnS0GRoZbWbgRYN38WbKrGa3hq_AavOFNpBO15opZiQ2-sIt3hvVbvu%2F%24%7Bf%7D%3Fo%3DAvTZ2aTYB4E8HmomZ0q6XsUhQobspDjZZXGOgLdS0RZ-%26v%3D1%26x%3D3%26a%3DCAog9pI2jPcOmK_NSEVcYTt0HXKmTGScIjevujBy6MW1m_oSbRDw5YbKmDIY8PWBnqIyIgEAUgSa3hq_WgRvVbvuaibzf_61_SnISYdxpRQWf3CIv9j0qZBpFyuTfiOme2ZXBQrorQgJIHImeciXtwcz4whiTfcJqoK4AvozDTeEWxGhZHvwpp5suycoD5b805E%26e%3D1727176669%26fl%3D%26r%3D7B095C67-85EB-4F9B-A8FC-33D3FD31CEC6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvRnstnUBYPYkASjcWzxrbkFZZIU&uk=Q8bRl7gMWWv4ippwTAfxqA&f=Create%20Empty%20File%20or%20Clear%20File.shortcut&sz=27263">
        <img src="./All%20Shortcuts/Files%20%26%20Folders/Create%20Empty%20File%20or%20Clear%20File/Create%20Empty%20File%20or%20Clear%20File.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1471,7 +1458,7 @@
        <summary>
        <a href="./All%20Shortcuts/Gmail%20API/Check%20If%20Any%20Unread%20Newsletters">Check If Any Unread Newsletters</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVl0d5k1dmZesMterzdkLSWpwlFWAbjF_le8Ah33gXP8y0sA2mjRb4EJ%2F%24%7Bf%7D%3Fo%3DAqDHuSDaibVt5nZx5KsVECr74rjHq7_A-OQuVOXbTukW%26v%3D1%26x%3D3%26a%3DCAogxpGJTZ0-_8TaC5hgVORBQ7iuySTdqzAg3gR2psvMmpMSbRD8uK6oljIY_Mip_J8yIgEAUgSpwlFWWgTRb4EJaiZ9ALesNdm2aMr-zBBbHVFvDz0uTuGlLTwG_-iSUgKiF--iKjjnZHImPWdTaW6NfpXYu_HXhkzw8dsAIOGdUODxXsXxDgD6_IeDfdGvQm8%26e%3D1726569145%26fl%3D%26r%3D05944668-CEA4-4C1A-8A0E-CF3714004E39-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC9EvYMhigGpY4xNNjr0iPdWCn44&uk=rz3y0rJlocgpsRDTUOjSfw&f=Check%20If%20Any%20Unread%20Newsletters.shortcut&sz=28336">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQa9cPBTpAt2xKS_Aojgz_MZzk_VAZJMMfLbTgHPQcUOkFpu95eehMp-%2F%24%7Bf%7D%3Fo%3DAu7qrKjHxdTEBXk1A4FMPRnYLGo5vdTtwf3qMzIDqsIU%26v%3D1%26x%3D3%26a%3DCAogP8mD75n5gHtQc7-AjIPReGJD744xJLohUKBxWK_qPCgSbRD_xfjJmDIY_9XznaIyIgEAUgQZzk_VWgSehMp-aia4SjvruseXsuel8Czglq4bU2VUHbWQ37fNe9hPJypO3pwNKVsggXImZfV4CvVEhedHUEFvVr2Tui7my0rOUsJ2FmonoreE50nUMCj-2Oo%26e%3D1727176436%26fl%3D%26r%3DDF378D60-6298-43AC-AB66-DD42CD33F50E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbylapYjxY51PqUay4N45P5rfK7I&uk=qhiLB1LL0QHsYhEID1ouGg&f=Check%20If%20Any%20Unread%20Newsletters.shortcut&sz=28335">
        <img src="./All%20Shortcuts/Gmail%20API/Check%20If%20Any%20Unread%20Newsletters/Check%20If%20Any%20Unread%20Newsletters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1488,7 +1475,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Evening/Evening%20Greetings">Evening Greetings</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeLzwgMc1RWTb2SyVs-ziKEGcKzMAQoWBOJdBdY1BEpxFUu0xTLWRYe-%2F%24%7Bf%7D%3Fo%3DAtK3Je8MYClwXcqcqV-IH59MlEHCT1RNW5JCaj3oRZHX%26v%3D1%26x%3D3%26a%3DCAogCUpwFUoxr_iMF_n6gFrf58iWYkUtJcV8B4_D1aGVDxoSbRDOuZ2oljIYzsmY_J8yIgEAUgQGcKzMWgTWRYe-aibm_HhoNUeVbZzAVMygBoFxP6kO6JHeZ_h5ZgPlLx7n1mz5JRZF4nImyLi1eS1KZgrzQxpsZcJU5omOytQjn-Fui5kUKSVVvpHbfiWY3yk%26e%3D1726568867%26fl%3D%26r%3D7DBDC577-A4BB-460F-9D67-3C90AA6B2521-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLgHGdgDLg9uPAYnC4o3xhtNUDSE&uk=ws5oJs9EpIYyaOSbssHFyQ&f=Evening%20Greetings.shortcut&sz=27671">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVqL3ULpxrrrO8OuWTrtppGvI1O_AQZdtqcKIoadA1k7AF7fi3TCvDjR%2F%24%7Bf%7D%3Fo%3DAsAgxEEQUi92cnJO2xavyO9t8wrrDdpauNtW2iBsBi3H%26v%3D1%26x%3D3%26a%3DCAogrW4U4K_LgC4QM_2ez7T8A0Hi-9cxZnSQyGlK5BPbQQMSbRC6j9TJmDIYup_PnaIyIgEAUgSvI1O_WgTCvDjRaia7fBzvWz9hTYR3YpmjrL2H1HPoedwHUrr5GkNfbNLhxp6hsngrQHImQuRC3ZtnUmgsrqSg_wIyS0K5m3sul9t0rpxT1rGezDNidJxAp38%26e%3D1727175839%26fl%3D%26r%3DE84ABF97-275C-42CD-B759-D1487448833F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DY7z1iL44qU2o3ghrFoQd226kntk&uk=lY0QtiQuV7RuB8QAtU2TuA&f=Evening%20Greetings.shortcut&sz=27670">
        <img src="./All%20Shortcuts/Good%20Evening/Evening%20Greetings/Evening%20Greetings.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1497,7 +1484,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Evening/Death%20Clock">Death Clock</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASAR6aiP8tGt62we0SfqQQIii2gjAe2Kk-elUGP-q3xm15l1yOo3Y7L7%2F%24%7Bf%7D%3Fo%3DAkax3pGSRjjQPauaBV1_Vx8BXtPOzrZatFhLRfv4CPI9%26v%3D1%26x%3D3%26a%3DCAogr9GS_oVoi_37ylKqt8ixIxtrBfW0a9GvT515aLHcOVoSbRDrw52oljIY69OY_J8yIgEAUgQii2gjWgQ3Y7L7aiZ2tu0NKMDbems0XFei7NLdVsEvtTuLea432bkiGLB5-cP1cDolr3ImdmbvZk6-uczMeBDBgD_pN1wHZ0ZBnAwlEiIDF-eVBSCf241nTx4%26e%3D1726568868%26fl%3D%26r%3D01D38BE5-3D20-4D13-AF87-173E9778D55C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFOqUJ84cwZ_aF9hImLELdB9B7B0&uk=VxiHYKWKMndjdFg0ZmwXqg&f=Death%20Clock.shortcut&sz=27962">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXfvRUhXyewTuTWYH7aLwUjlBnj9AQbCdNW258LrFpcqIgAXXqjgFLmh%2F%24%7Bf%7D%3Fo%3DAusZHU0aDMOdln-ecQCLfYk18h0-l1pfrP5eAyi7McPq%26v%3D1%26x%3D3%26a%3DCAogqA5Hi8GIC53FMvnsoHaIEyDMd0plV58uR_VvE-Nio_USbRClp9TJmDIYpbfPnaIyIgEAUgTlBnj9WgTgFLmhaiaIrROfoPFPki41Ffqpbx1iEIdf4U4bw2Ozvjx5-j3p56rzA8YulHImwcxq6FTwWy7geVA0tLj4fhcpxMLQlAf2P4DncMqX8ZB81JhICEQ%26e%3D1727175842%26fl%3D%26r%3DC48EFC02-EC5D-4356-82CD-16E1880D5976-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIPTAvPeCAXUs1YAgJ-BBio6JY4Y&uk=KWU8lW3J_jvoTPxVI7ryfw&f=Death%20Clock.shortcut&sz=27961">
        <img src="./All%20Shortcuts/Good%20Evening/Death%20Clock/Death%20Clock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1506,7 +1493,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Evening/1%25%20Better%20Every%20Single%20Day">1% Better Every Single Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARt219uarq1SinNExf58XOW4Q-9TARQ-WGKfdvyIsdvHULAM33QI7g2c%2F%24%7Bf%7D%3Fo%3DAixTbGITsMiAGHwP9qqrH1mTMhyB7F3GeK_Whixt3SfZ%26v%3D1%26x%3D3%26a%3DCAogsGo2mxIsZPRfW8fKpf4_9sdCgHjX6dFxfEwQPBOzh4cSbRCSzp2oljIYkt6Y_J8yIgEAUgS4Q-9TWgQI7g2caiYa4MiLm5uANraNteZqWQs2vnIy9cEBvSmHSsJssaGf_yGopXhHqHImMLQLoLBjIllWPXhLOGh9ks6_SSF9PEyrAxIhw2drF2rUhOdzvxE%26e%3D1726568869%26fl%3D%26r%3D2232C905-8F06-4D73-BFCE-E8ECDB1FA68B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDRFKkR_ukqpLjgHU41Rs3CuDrOo&uk=ILkFfiCJ7gVz1fzv37OlNg&f=1%25%20Better%20Every%20Single%20Day.shortcut&sz=27069">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUphKiOXYDpiGIQsNRk8nb9qm1cuAabJATNhgGEkuCjwU5d2pF0hbYlC%2F%24%7Bf%7D%3Fo%3DAo0mAOZccWwxIr_31bgWUxFq30oUbr2cvm7c0cKS36vh%26v%3D1%26x%3D3%26a%3DCAogErfNMcpVl1VMaeY8oZt-PBLtg-c58oc528MrJaWNutgSbRDuvtTJmDIY7s7PnaIyIgEAUgRqm1cuWgQhbYlCaiZT8E95IayoYME85Og3USEU9VHKM0Jz6OQ381HwsGpbBCjOsQnVL3Imk9GhQwrAkWkv-uMysnGryRW6uKNDI3kConxK_y-b65lwTHWsar4%26e%3D1727175845%26fl%3D%26r%3D969D865F-04B2-469F-BC73-DFD6E2FA3A0E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dsi0vV5cb7tm6tP6-KPuaFwTKZ9w&uk=7FL7Pz4eeBRWAQ8dYiOhIA&f=1%25%20Better%20Every%20Single%20Day.shortcut&sz=27068">
        <img src="./All%20Shortcuts/Good%20Evening/1%25%20Better%20Every%20Single%20Day/1%25%20Better%20Every%20Single%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1515,7 +1502,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Evening/Subconscious%20Mind%20Exercise">Subconscious Mind Exercise</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYWXU_5ztLNFmn1pZYmq9ej0E0zwAdY9_Wbe7O0xMO6UXCsFIEsqIk8f%2F%24%7Bf%7D%3Fo%3DAsxXNgStW2BRYTzJ2cyS9qPAemNyODZ_u6-JLBNK6EuI%26v%3D1%26x%3D3%26a%3DCAogPokqRyal4SgVsQq0kDtrOo5kRCHL_fJ40Zvfw_rcVH4SbRCO2J2oljIYjuiY_J8yIgEAUgT0E0zwWgQqIk8faiYutqjsQtmYlz1yH3UMIW1UI6NvRNO0zdU0XLaOvkeE7Ucm8_-VMHImUtkorOYsdTYqXgPi8Syve0dLuTA4UsWe_ZnmlwOQuhDw56Ka8Jg%26e%3D1726568870%26fl%3D%26r%3D7135A64F-FC2F-40AC-AA2E-6CFDA1A28502-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIkEm4kvG8lI8k_dLjN1mrE4kP64&uk=bwp0HNEK0ZIMWas8GVSOWA&f=Subconscious%20Mind%20Exercise.shortcut&sz=26794">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAasIoz7dWJxUxwQafiwFIGY3laa9AafHNUCyzWIVdbwGae0LUQA3P8AC%2F%24%7Bf%7D%3Fo%3DAoh27IUnLB8XiMwg7m0wmP9gB9yoIcJhcwBT3BeWNx2A%26v%3D1%26x%3D3%26a%3DCAogCaJ0FmFXyheNg3AuNTKTN26PBpnvB-FDt1Wip8XTUJcSbRDN2NTJmDIYzejPnaIyIgEAUgQ3laa9WgQ3P8ACaiZub7iciCKP1M5SKQPl57Bezgsd29NtBVG74n9Bsuel-7FVUpcTMHImqESwN8wF7RHdJFK72hWE4C6eXjh6uKw3U2f5EuoYmxSrsjhHXkE%26e%3D1727175849%26fl%3D%26r%3D70B7317C-CB1C-4572-B965-E3AFC7DFAD1C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfFbE_92sh6HMQCtVJmKBk891UcA&uk=3xMaC_N3Wc5-SKeSa4FRdg&f=Subconscious%20Mind%20Exercise.shortcut&sz=26792">
        <img src="./All%20Shortcuts/Good%20Evening/Subconscious%20Mind%20Exercise/Subconscious%20Mind%20Exercise.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1532,7 +1519,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Morning/Morning%20Greetings">Morning Greetings</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATKInqf2rTr9lrmEHYvc8GtIZ91FATGFtJgGIj3YNywtsai9O5VF1SSS%2F%24%7Bf%7D%3Fo%3DAgP8Yu0z-_cjmITejrfeF_IXECGoFg5qDdJ44J3gf4_9%26v%3D1%26x%3D3%26a%3DCAoggGxP-OeRC45vM-M6OxQAn_Cppq_OdYsvrDwfr-1FcykSbRDThp2oljIY05aY_J8yIgEAUgRIZ91FWgRF1SSSaiYFMdp1IjoZklQ5iTs6Uz6fW_jZwvZG9-TfBJn9dxAe_p7PYx6jgXImVNk7YA3GwVDDqe_2b3dV88A7ogyoIPoIHaepYiiZBPhw9fAADBA%26e%3D1726568860%26fl%3D%26r%3DF617EC16-0D90-4D6A-A220-B5BD679C6083-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUu494d8YJ2SBw9NGW2hU_JNBx1U&uk=2Cdq5eY-a-zibP156SwE-g&f=Morning%20Greetings.shortcut&sz=29049">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfF9VPXWC8Nn3zNmSIEUyskuXA1GAVeJ7TqE8kr642s3LVA5AZrIIwV_%2F%24%7Bf%7D%3Fo%3DAl4O0v74zomwdXYF3SNJx0Vo_56OfDnn0wQG7pfi45gO%26v%3D1%26x%3D3%26a%3DCAogQoj3OetoCunABrcyZN7ixiyp-v2elqJP0FxTWe1C-vgSbRDSjNPJmDIY0pzOnaIyIgEAUgQuXA1GWgTIIwV_aiZ5w6QnK930sCBta4jeVa6y9I9442gp8vIbTypQggVygAt6WedvknImTvBPl2qcNgycsmkfgSLEMV0_rMaJKo-KwMqh35PxlMjdn0ZVCpI%26e%3D1727175822%26fl%3D%26r%3D55593098-7454-46E5-B12B-EAC6E6377118-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjZGTG45U4iuGoCpBnl7Zj7bwY7E&uk=Xcd2qx1wY-mJXghsrhtitw&f=Morning%20Greetings.shortcut&sz=29052">
        <img src="./All%20Shortcuts/Good%20Morning/Morning%20Greetings/Morning%20Greetings.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1541,7 +1528,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Morning/Speak%20Today's%20Weather%20Info">Speak Today's Weather Info</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU4PDhmm0xQxVDPrHGFrczogbVrvAS_952k_mCT7UVcbAohK9ZDCDqIS%2F%24%7Bf%7D%3Fo%3DArVKgD08SfUl00p-GCqC5xDcDeKhWqj-Myhuz1Fgk2W_%26v%3D1%26x%3D3%26a%3DCAogRuUFfZjSc-2CLjr4IMZVEfu3OBlzzH2ExyHOniMljFsSbRDkkJ2oljIY5KCY_J8yIgEAUgQgbVrvWgTCDqISaiZjbNhfyoth0d-9_k6Ddl7o06qCKx8eGYSxnPxKqSuGV04mPrmb1XImDJk2sSopIS9MwCHnT0Nug5KWTFkkMeK3lGiOVcW5dXanh25IcFs%26e%3D1726568861%26fl%3D%26r%3D5A865105-564E-4DA6-8C09-BE1A08B09342-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfQIArTSbOcFnjINq2dD5nd0insM&uk=BrGIt82E_ZRiHv_zMNXhUg&f=Speak%20Today%27s%20Weather%20Info.shortcut&sz=27318">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWWbDGNPWWkOiXrtFtoR1TyKVlBzAXYXNOtQlUwVW0zhxVeWYJH86T8b%2F%24%7Bf%7D%3Fo%3DAqS4fT9iAWT17DexQu7hz8cxnu9uPzBtoZ-ACr1-_RBL%26v%3D1%26x%3D3%26a%3DCAogMj56Sj-1pj96f26S0Lt-Gf50XXyk49TTa-Opg2n-jGcSbRDSpdPJmDIY0rXOnaIyIgEAUgSKVlBzWgT86T8baiYwc-sf81pl_qp-GeYtLbMwWCRYrGKu-tNzr262SyNxSMTm26hEcXImN9Z5-i_SQumIY5HsJRSXiP6B2JfcFIVu0Nf_h3gtG2NoOrewTf8%26e%3D1727175826%26fl%3D%26r%3D87A7AA35-2E72-4953-AAFD-C7D807D2F1C4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEZBhfo1FrL6ALWIvlmps99CTOms&uk=ywYNcGk6pnevfn70fO6MqQ&f=Speak%20Today%27s%20Weather%20Info.shortcut&sz=27317">
        <img src="./All%20Shortcuts/Good%20Morning/Speak%20Today's%20Weather%20Info/Speak%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1550,7 +1537,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Morning/Speak%20Number%20of%20Today's%20Calendar%20Action%20Items">Speak Number of Today's Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATdsn70Jlk23WHaPZT-6DAgYC5VoAeZn1QvIar53NoWmx0aFvsI5tIrN%2F%24%7Bf%7D%3Fo%3DAgNqn2hYSE2cxnXCoA0sEjhEBgSn83jChHOGJhEiHyLf%26v%3D1%26x%3D3%26a%3DCAogiUiXmEbiuAokJVVArjFJ5CUY-tnyw4LMn-I3c0Kqt8ISbRDxmp2oljIY8aqY_J8yIgEAUgQYC5VoWgQ5tIrNaiYlVEPKCAqkiViCz8JDoSmjJib0ZQaAa0jhl3cMmY4WKCZ6nW0cxnImSy6A66VxwAQEhEF2ch9OEiEMKVm_JdWyMYQMkI7Kv68BAL8gybI%26e%3D1726568863%26fl%3D%26r%3D848008FF-8D7C-4366-9199-708E41815D0A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjoJ4JvAWUlpQEmeFuSMhJxdNQLc&uk=iLR5DzJZOu_TzMd8uJcDcA&f=Speak%20Number%20of%20Today%27s%20Calendar%20Action%20Items.shortcut&sz=26628">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeZbSsmUFeS7vBp83l1lJVP29hodAbz5IclrwLCGHa87rKCN8RhR0WiR%2F%24%7Bf%7D%3Fo%3DAlXP2TX7LbrAcxCK9gJMOyru41HY6BvCwKQcnQZhr52P%26v%3D1%26x%3D3%26a%3DCAogz8HaPKgxufBhYil_BntzGIejMYEQh4HyYeK4k0pYqqwSbRDnwdPJmDIY59HOnaIyIgEAUgT29hodWgRR0WiRaibW9AFWm97S2_Bb1aDvqn0yFM6svqCZABKRh_2SnnzTsVWD9UmTGHIm1PhSeOYNcunCbLzcyWDXVMUcV1jBoU4Rq9yD4Gg7AmgHsJsGWZY%26e%3D1727175829%26fl%3D%26r%3DC1E8E0E5-FBA6-4FE1-97D1-D5C147C99884-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQImgoCymv3ey_f5CqdTLCE4VGoo&uk=tGT6Y9FLEkmtegRRAT4itA&f=Speak%20Number%20of%20Today%27s%20Calendar%20Action%20Items.shortcut&sz=26627">
        <img src="./All%20Shortcuts/Good%20Morning/Speak%20Number%20of%20Today's%20Calendar%20Action%20Items/Speak%20Number%20of%20Today's%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1559,7 +1546,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Morning/Speak%20Today's%20Calendar%20Action%20Items">Speak Today's Calendar Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV9XwAJWhm0YUesSqYw1FzS2j14jAeonW8iYGwMmaWHRGB_taoMhHeWi%2F%24%7Bf%7D%3Fo%3DAvpLbxTyC9wgmi2N1VnWU7Pjl9hDfHnKrrvYmb38-YEN%26v%3D1%26x%3D3%26a%3DCAog0FoojPFLe4mFoBITfy2yzpgi3BGuI2KDfcHI4UHf9DQSbRDHpZ2oljIYx7WY_J8yIgEAUgS2j14jWgQhHeWiaibtfDVCzMyE_HzWFoGrE-2BVig4naiRurEUSMHvUe91KJXoOc5isXImzl0a_r0TBlHZSLdymk0m5TeGY_6h-KDx34XQ8wkX6CwHudtbP6U%26e%3D1726568864%26fl%3D%26r%3D5E6C3A16-609E-49C2-9E27-4FA400A49494-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DiptNZWhSx5zDsgF3OhY7nW_Fzac&uk=6gOZy3xzsM7UNxKJMBmQoQ&f=Speak%20Today%27s%20Calendar%20Action%20Items.shortcut&sz=26624">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZyCasawbQQ3Wf1Xs5xscgqj_30NASrup417RCgAG18q62kr4JcfS7ZD%2F%24%7Bf%7D%3Fo%3DAs2zLDvGy60cYOX2WqKZjgRWU7kz8DEXj1pyRP4-6vUu%26v%3D1%26x%3D3%26a%3DCAogsKwo0q9wTgllAfai_aq2lNBSLr9dxBRqnWfMDBO1AjMSbRD829PJmDIY_OvOnaIyIgEAUgSj_30NWgQfS7ZDaiZJzudCryPWoJh26QR-csr5ze5QvPzMHOU2B0xMxfl6t5IQDjZQSHIm3L0ppiyCxWOjTh-gpcynW6x5PweS3uuMNBlJg6ykstzgcilVna4%26e%3D1727175833%26fl%3D%26r%3D7194E843-AA80-421A-AD23-C2889F44889D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXipmJmFgQ5JoTb0OrEKEmEcDZwU&uk=AMqFBZCmsVpn0s8g9PFegw&f=Speak%20Today%27s%20Calendar%20Action%20Items.shortcut&sz=26623">
        <img src="./All%20Shortcuts/Good%20Morning/Speak%20Today's%20Calendar%20Action%20Items/Speak%20Today's%20Calendar%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1568,7 +1555,7 @@
        <summary>
        <a href="./All%20Shortcuts/Good%20Morning/Set%20Intention%20for%20the%20Day">Set Intention for the Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY70usJ6Qr2cFTPNwkUylT07-f4-Aapum9P24b9YQ-TMo-g3HX339Knl%2F%24%7Bf%7D%3Fo%3DAvFEb6-FWW5gLvNay1OIx8KUICRS3w4ylj6ICJn62a8c%26v%3D1%26x%3D3%26a%3DCAog-RyzaqqaOT5HpPDkX0aJVu7M7CL79qbzDhFUrhUdZwUSbRDdr52oljIY3b-Y_J8yIgEAUgQ7-f4-WgT39KnlaiZMJcUmwwMLH6Jroz6G4YWx15oyqXIi_EL2WxNai_dlFBLldIL_-nIm8qndN6k6WHdN3RhqdDq0PBd43KmrEpHX7BSOm6PIhcIDGxCqnac%26e%3D1726568865%26fl%3D%26r%3DC47BB7D0-4A5E-496E-9D0D-6AD482D39635-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0_Uxlb0v3R3VWAsdfwv9cvWfk-o&uk=L05o1zfGMSihYzHFqZohjw&f=Set%20Intention%20for%20the%20Day.shortcut&sz=27066">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbOBheI7B9NsOWyXUPEPMUQTPswPAYxiwdsirZXZ_IaY5MyUPUaBiFDl%2F%24%7Bf%7D%3Fo%3DAnHqQSEYeRcMSCw_RWh9IvZtdZasf2AlwsfGJd-WyjsH%26v%3D1%26x%3D3%26a%3DCAogDkMLeIuDM4yV991SyquIw2OEI9T7QmMnZCuaI5lVO0ASbRCx9dPJmDIYsYXPnaIyIgEAUgQTPswPWgSBiFDlaibqDQpmOh_DBnlND-wbpbirEVmDjl4ebLssYDt6TykkpOmSwe5Lg3Imiz94cb9VH-coRAEwhVh-CKN6WRZQDGsqACtJefVf-ZoAGtN5gW8%26e%3D1727175836%26fl%3D%26r%3D8BD9A35B-6F10-4294-9241-761AF171374A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dw19oP5-L17Fa8P5ttZYaFqMja7E&uk=QG3RGtkG8STmZ1YpvKQ1Tg&f=Set%20Intention%20for%20the%20Day.shortcut&sz=27065">
        <img src="./All%20Shortcuts/Good%20Morning/Set%20Intention%20for%20the%20Day/Set%20Intention%20for%20the%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1585,7 +1572,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Write%20Cells">Write Cells</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS0PgBtEVUH3Zp02GcNE2bcsVWb-Afn2YSsTo7QilnHzgHxZ-67DcpDi%2F%24%7Bf%7D%3Fo%3DAnzH4jz4T0L_rb7wugW98sgS7nmgmaewds_Yf0Df3Vy1%26v%3D1%26x%3D3%26a%3DCAognhchAplVUL5NDu9ceZerCOYZfgrrDziBpFtqODogaNoSbRCC0a2oljIYguGo_J8yIgEAUgQsVWb-WgTDcpDiaiap5_pLIkQQ1GrM0IJ5eAZx1176mWlti2C-7IE5PfyTkRVD7Om2-XImC0W8FkiylBe8BdEpOzsETdhUWR58EG7tlhdOhT2XbdQ4Z5xRcPQ%26e%3D1726569132%26fl%3D%26r%3D310F00C4-B5E9-4E6A-A46F-1605E6D044AB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfLv7SWdYAoyL7kzf54Zqh-PHRG4&uk=CHltpFu2Bif3LMGBb2Zt7w&f=Write%20Cells.shortcut&sz=28134">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATbkZn_uR61ERt2GU4b1v8h491pPATKsCtJXuRJcoLibNU4MSM8YiB5a%2F%24%7Bf%7D%3Fo%3DAmTxdYhK6L1Wu9caPSdWHp39WN7ocdgR_jeCX1AqxYvr%26v%3D1%26x%3D3%26a%3DCAogswQT1zGX8e0ft1NZCSV9Mds92TBG9kId390eLIc-DwYSbRCY7fXJmDIYmP3wnaIyIgEAUgR491pPWgQYiB5aaiZrEA6yz8OdDynZ5aMsGQ22V43JE8sWOTadjKOIqeVa7Jr41_Joi3ImaRagSne9Ks2PbH5EenyR4xClnmVsoNdsKw6SOEScUnqHvjQ7FGQ%26e%3D1727176392%26fl%3D%26r%3D7BF023F9-1BDB-4156-A163-0E75978AC8AF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrYhuUTdxRIuU12uC3S3r-j10j1I&uk=V2S3iyj6VSEHK236TChprA&f=Write%20Cells.shortcut&sz=28133">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Write%20Cells/Write%20Cells.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1594,7 +1581,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Batch%20Update%20Cells">Batch Update Cells</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQOmPclmsjSzdXY7f1HFUjJ-NmnTAZKcFrQ4YN98O3rsFQUut561Q5hA%2F%24%7Bf%7D%3Fo%3DAugc_G1La_R3bc0cRpqBuvgpQC186feVLfIBk5DwJ8D-%26v%3D1%26x%3D3%26a%3DCAogspP3ZyVgUCsSGAtrBvjihqOO0Ij59Q5weUlauiq6zucSbRC4262oljIYuOuo_J8yIgEAUgR-NmnTWgS1Q5hAaiaXcxu15WcxiMJbrO2sTPniknsrpNu69aCid2kyh4DQ6gZ4eDv3DXIm4r4xcjXr3vPEeJ3MX40uzKpIID7IwQrOMeu130nh3tF28p4QQZk%26e%3D1726569133%26fl%3D%26r%3DD22F803E-02C6-403A-A430-9A8393F7A84B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Db1cZHv9CGK7amJe4Y8If8E0JnXA&uk=LxPKN_duZXELFe3j_gIPoA&f=Batch%20Update%20Cells.shortcut&sz=28007">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYC_ejb9acU3QMSwhesZsYPQIupsAR4Pk8Y860tg3_R--yXU3HQok3IO%2F%24%7Bf%7D%3Fo%3DAkIjw1XzfupDY21xVBVKRTGHlMCg_8KphOgi7GEP5qTF%26v%3D1%26x%3D3%26a%3DCAog1thez58DEnRPeDAYRcYhbh3CT8TANDqyUzYbwjj8ztUSbRDAk_bJmDIYwKPxnaIyIgEAUgTQIupsWgQok3IOaibgrbhvi-3RO48JsYhKORyYBUnh0EWbIbLjBKkpSuiEVUFKEQIYz3ImRFlb7u0TJHtwsRIODfDkSIIcgWQixN2aBPq7qxl8LD73hzotAoo%26e%3D1727176397%26fl%3D%26r%3DB32D2BA1-0CE4-4464-ACF5-ADC7E0B4E4B6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZE9peux6gC6oan7hbWvjbAiAZ0w&uk=u37E3b1gGJHBA54qqEqXAA&f=Batch%20Update%20Cells.shortcut&sz=28006">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Batch%20Update%20Cells/Batch%20Update%20Cells.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1603,7 +1590,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Add%20Sheet">Add Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYs9aL8bnSbV4giiOtgmSw4PY_SyAapMXLXqhJvELj72YGR0z5bBzdEG%2F%24%7Bf%7D%3Fo%3DAhxBZl4rKXtXQb0GbfseOuqhHpPuLr8VVefXEVHVRCSH%26v%3D1%26x%3D3%26a%3DCAog-DyZdIrS2Tydo4JwPAQ-6eB8-sd1wCJ3YYLf1baRxtESbRCI5q2oljIYiPao_J8yIgEAUgQPY_SyWgTBzdEGaiZVAGQR1BYfY7GVyyoD4sYV-Egz6V0IaA5AEoh9T1R9uq6oMg3FHXImHIbUL5bzNv7nGtBd-NCkD0AIHgbrcbxhIwPfPoyl2m1mKo6kbNg%26e%3D1726569134%26fl%3D%26r%3D42D0B8EA-0340-4C71-8B72-0DF118E97D80-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIPpFw9iX4Bnf9cuMGc9ZyLUuKHI&uk=83avj0XWKf-znvRRyHpFzQ&f=Add%20Sheet.shortcut&sz=27379">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUPOUFKTKY3tiRfnUMPRl-8h3NP2Ab1qju5hxTSIIJDiCvM5l34K_LCg%2F%24%7Bf%7D%3Fo%3DAojiouRSU9ofKCcBwgDVf1KOzrbGZ6ljbRWhWnSJT1uv%26v%3D1%26x%3D3%26a%3DCAog2T4PeeHYoqg2l2jyxuN-y2ArvMt_9ezHUuzp31LMiJESbRD0tvbJmDIY9MbxnaIyIgEAUgQh3NP2WgQK_LCgaiZnTOECG65CQxCiJp8V3X_2R2J1w1IErzQ0lW5BHPUkAN67IF6BDnIm5brf9rbavk4jLSKkaa5nibJECmiGsljGYTTe7ppXleaqKN8PjHs%26e%3D1727176401%26fl%3D%26r%3DFFA87E39-89A6-4AE4-83D0-71527A245703-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoaaNcU9gJpGScrBwVCHk5bq5EAg&uk=hahxTAQt9DY1zkTca9r1Zw&f=Add%20Sheet.shortcut&sz=27378">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Add%20Sheet/Add%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1612,7 +1599,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Clear%20Sheet">Clear Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATBrQnw8sGJAKa4bMXvb5o0UzQmTARSIVipu7Wqpikd2PenBy4svj8kp%2F%24%7Bf%7D%3Fo%3DAnkrWwavfbBCG7h0D8tlHGrxl8Odsnni_jz-SEruzoZN%26v%3D1%26x%3D3%26a%3DCAoguBgMsVX1AQtP2G8KQbFBb7xjGsuiNw--3adAYFgojkISbRDu8K2oljIY7oCp_J8yIgEAUgQUzQmTWgQvj8kpaib7_tv4R_Tq6hK1uUPlnyWH-2sxE7rpOl9kSBZa86xFsY63sceQSHImLiSgIRZUp0z1Fo3cKmhLcXkpQfepn-3RaODg0_vDWDIP3hJhH94%26e%3D1726569136%26fl%3D%26r%3DEC4CF549-2148-4C66-8FE5-C1B6763208D8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxUMu2Z70h7zrCHzynVASXX3KOvQ&uk=P8dXQQbcAwTcsPT6pkV5mg&f=Clear%20Sheet.shortcut&sz=27709">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfWtDYLFxhyc50dKz0OTQjhUMBkuAfXb3FdICt9oNdPpmmB6qXhJy6jS%2F%24%7Bf%7D%3Fo%3DAsaOP2XMFglgDcNmg1h-2n_4dzJkwTCfX41DZwNiHrDh%26v%3D1%26x%3D3%26a%3DCAogsvbFgrZGG_oE6eWKfWM6ABnvSXzBD3aqX61g95-WwPwSbRC_1fbJmDIYv-XxnaIyIgEAUgRUMBkuWgRJy6jSaiZrU-IBnA9LokjZLlbvyZZCDMoMnK-zfVelajy1CjkVl7KhLJCs3HIm6NHDd5gz6j6579ESnRFl6WZ1XAUqGVcMJ_XWSdEow8vtuECs5Tc%26e%3D1727176405%26fl%3D%26r%3D31B81C28-41A7-4A7F-B1D7-A1C8D6832DB4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DiAvvoCbReuguRkkyBD0yGbZ4c50&uk=PoJrXcASNFNXNysvCZ485g&f=Clear%20Sheet.shortcut&sz=27708">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Clear%20Sheet/Clear%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1621,7 +1608,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Delete%20Sheet">Delete Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaSGFuQvueRE3Hv6KHLsIJxpGSy9AVNnie6AhfflPxFv192APChqhgNx%2F%24%7Bf%7D%3Fo%3DAkiQcnVccSuoBp-CVRsIXeumR153jdi9mYuM0gakwIR9%26v%3D1%26x%3D3%26a%3DCAogAqa8vOKt4fLJ3Qhp5iaHe-aGKFRI0rEKETdHQAYISYoSbRCD-62oljIYg4up_J8yIgEAUgRpGSy9WgRqhgNxaibJ7eD2TldJSDRaGoPXkY6Lscmn2wFrc-Cf8dpGOTAGQ0RfVyTOFXImaD5S4OwAhAh8jHgM3_ZQjaNMCCFU9uX2AcTYNlWmte42dqXcC30%26e%3D1726569137%26fl%3D%26r%3D2A187950-74AC-472C-9BD3-19D38DA07A85-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGE2UYl-1dYf6R1JWr9do2VwlAFk&uk=efFzI0ZchsYF0-GjVV33jg&f=Delete%20Sheet.shortcut&sz=27356">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASEa5ZzuyFx-XeMogSvdcwHvnD33AW0CDa980Hy7lC38evY0WMJEkH3W%2F%24%7Bf%7D%3Fo%3DAn1FeQKCpD9w9lGuhz_Nkc_j10XRFD3tUf8U1PDG1Tgm%26v%3D1%26x%3D3%26a%3DCAog9w7w1_iPgVWWN2JNKPRoJQfxvxtxeDIafz8mdWouNx8SbRDu8_bJmDIY7oPynaIyIgEAUgTvnD33WgREkH3WaiZGT8t1I-hM60B2HEzVobWTSG9JKOiEkJLX0it1R3nYYbPNzjGaMXImvO2589Nd0k2pndq8vxlysxpNTUOYzYTRjr9Foge-VuaZn-WEoTg%26e%3D1727176409%26fl%3D%26r%3D4D22815F-944F-4362-B986-CBD0FC4238F1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyE6i3mq2iRv4q--P6ndZnJ_DhsE&uk=IivE-YBS_aSmLcS8_SJE4Q&f=Delete%20Sheet.shortcut&sz=27355">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Delete%20Sheet/Delete%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1630,7 +1617,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Hide%20Sheet">Hide Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATEqGDEMyhAVw0PH90T14VimIV-DAfPi2t2NPDEBXTLkPhVcC2sQSyxg%2F%24%7Bf%7D%3Fo%3DAuA63Rrl1YfZka2Zmn6ydDrsTvdUkD9vIVpoPJjmH4SQ%26v%3D1%26x%3D3%26a%3DCAogwtjhvgIuYsSpMJlkq6SqiZcrnlEmJ_eioZXD57SEfaUSbRCAha6oljIYgJWp_J8yIgEAUgSmIV-DWgQQSyxgaiZLGUqYIiT21oOCCjwGnpuB_3dCraEQhacWriaNfX5ZP9cLoYiOenImNQkvIWhm9G33ZjWb9SAxJxwoLI7L0U1CMkOHih4tkIIJrMKWbSw%26e%3D1726569138%26fl%3D%26r%3D1822C79C-71A6-4A3D-A9B3-FE6C80E3F16E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhqrQ26FH4gyMbrEl50iqnUy1D_I&uk=IBprJPfd7YrwMDrWwGZwLg&f=Hide%20Sheet.shortcut&sz=27435">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAboj2p4suCpbT341ub_VB5DqPObUAergkun5hsyu4O1s3WRo4Oj8YAgr%2F%24%7Bf%7D%3Fo%3DAjIPgrYRetIHfS-soxIYNiPMZt0ZPoCszelE0H2YHLTV%26v%3D1%26x%3D3%26a%3DCAog0o-6WVeiduN4XSasGhQ6GL3lGsJhfABh9nn7UDZdCgkSbRDqmPfJmDIY6qjynaIyIgEAUgTqPObUWgT8YAgraibweVwS-WqE27N5-Ipl8HuvWK4NMM9d5MYFfiUjlBHBzQRFodvEYXImkX4Mnb4gf8NaDOZSprsAir_xA1b2lUQSFzNVU0cGbxriDvi6dqk%26e%3D1727176414%26fl%3D%26r%3D6960EBDE-0E08-440E-9D60-3310B96993A8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuYvNR1qBF32Dxa0oygIVycKT50E&uk=CnhRPqivZbKUotp5Bs6wyA&f=Hide%20Sheet.shortcut&sz=27434">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Hide%20Sheet/Hide%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1639,7 +1626,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Unhide%20Sheet">Unhide Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVJPF2vJTX5lzTFtOuyLQKtT-zbQAdnfT3VbbEQFtfHDa-wHDB-2PAWD%2F%24%7Bf%7D%3Fo%3DAjiF4-w_6AppkkrZGSFO81AWiArrXiQUQbDq_E9QFujW%26v%3D1%26x%3D3%26a%3DCAoglYEn2DfxQCq5gsKFfn80TkULplqNSD4xPlOeZlOdlEkSbRCSj66oljIYkp-p_J8yIgEAUgRT-zbQWgS2PAWDaiZMqc8AtgE6RRsyoWd1D1qjhNXoDvhelkQL5Yx3FdvRT28lHuPNSnImpliJfgLtWglLSJBVnBgt890Xjmtjbii1NKKj7SkZOSbEfJ1RA7E%26e%3D1726569140%26fl%3D%26r%3DFAFCEF77-AA41-44D6-BB23-23F14A6D2B85-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfvJF3CNxL__PFrf_Wg4Ke5EQRSU&uk=JvfWkut54JtbTBu-g5HcCQ&f=Unhide%20Sheet.shortcut&sz=27437">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWOqeRa6xzPK_r1q84AY81noqckzARc3uayGe7RHY6iX_zq4ACGzqwtW%2F%24%7Bf%7D%3Fo%3DAua5R4P7Se5EnyNEc3FJmBoFSN7RnL0_NQPqKMwMtzkF%26v%3D1%26x%3D3%26a%3DCAogSnTDdEtYlBQBVHDHTGHFpDTEt7k5_Qkyo2x1H8IoaRASbRCvwPfJmDIYr9DynaIyIgEAUgToqckzWgSzqwtWaiZ7i_taapjqRdwI4ElqWWTZHAp8S925dZEQk8qgTolt4JMDIrVDgXIm_rp6-TgIDFPhg-mnXy-ux5Tn7qPK_2iHYCkuXNJB9mE907qsFQs%26e%3D1727176419%26fl%3D%26r%3DE749DCF9-38C9-441E-837A-5DF8A692FD2B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6FZIrsZ9ru-ArhJlsFHcQWewinU&uk=I53OeUiKiLagJSFp31hngg&f=Unhide%20Sheet.shortcut&sz=27436">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Unhide%20Sheet/Unhide%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1648,7 +1635,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Get%20Spreadsheet">Get Spreadsheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATYFlInajBn5bnIVybHEMoZ-tN23AbmpIIpa8pv4cMunMXQ4u0rp3Gsn%2F%24%7Bf%7D%3Fo%3DAjrqhqLR9k8Aj2ftUFPi4bjWiJ9lI48AlniwKQqaJhyh%26v%3D1%26x%3D3%26a%3DCAogxEoka_Ry-y6yptDUu9w4en9ULqSkvwyJYzEba12iFRISbRDVma6oljIY1amp_J8yIgEAUgR-tN23WgTp3Gsnaial4D3GdGKYcjMXbJnkqLtXIl1okLPTrH4MyiWh9LP-5uHATDzqEHIm7xAywYSWN0OqXeVvRUyyZditajQ4HBdjbb_gWe-tzFp24yvCgpo%26e%3D1726569141%26fl%3D%26r%3DDC25BE6F-7841-42F6-8FFD-7CFE8B3D553B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8qHyUnku7yI-9ziEAev5seyyB6Q&uk=p6Ar_hVDN6xI_7epLqSQFA&f=Get%20Spreadsheet.shortcut&sz=27639">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWnAGVOCw4y1APbUJjdJmD9R3a8vAWcuC_U8jHXlRlnXvGW7hPfu7O2o%2F%24%7Bf%7D%3Fo%3DAp9IIsEweMvf2xJCwhXuMBlRrQ7sZp5ggN99quN4vPo0%26v%3D1%26x%3D3%26a%3DCAogfskZFy0cFOvhzeAjndQ1u0Wmx_vCQtp1oX59kZQnKSMSbRDB5_fJmDIYwffynaIyIgEAUgRR3a8vWgTu7O2oaiYvY473DnY_HHtvwsJQn-9fhQxK6kixF-tcVKhyQ8sCxConOcOlzHImTzIU_5K3DTmnGFz92r2oz5StyA0UYTq4upAqVQDetolLJ-Dn-hI%26e%3D1727176424%26fl%3D%26r%3D22ADC4DB-692D-4FB6-9B27-4B2688E3F942-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dr7sL9E5Mz7T9FXJ4Ce0-SpOXfWg&uk=hjBjCX9KU5zWOchlyC-dpw&f=Get%20Spreadsheet.shortcut&sz=27638">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Get%20Spreadsheet/Get%20Spreadsheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1657,7 +1644,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Set%20Spreadsheet%20Title">Set Spreadsheet Title</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXj27Qv-qq7ysAUnkwuHwM39mu80AY96z9OZeV10c7qTCZgU3pp0Ae1x%2F%24%7Bf%7D%3Fo%3DAp4dipz9yJWzAN_ZWDy0J_1c7nfIJOXpdBtvn4L-2nuY%26v%3D1%26x%3D3%26a%3DCAog7_K9t5yiSYQWaCl2nmFZXVqA_sl6dO_NsnFn1Luab2QSbRDro66oljIY67Op_J8yIgEAUgT9mu80WgR0Ae1xaiaUNksVu2kizGNSDgfZlQWHASjH8cUY6TLbBkUS6mM1iBclQpM3Q3ImDdf_FM7uDqriJuFO3D59dnTZ4psh_ntIToUrWsUs0xjvDyVr6iw%26e%3D1726569142%26fl%3D%26r%3D6323B760-B3A6-4A32-B91E-79F6A59ED120-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dwy-JfZ54UtC9aLqL5qvPO9AxhBE&uk=XeSf-0jcOZk3jR48jjagVw&f=Set%20Spreadsheet%20Title.shortcut&sz=27395">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZRsg3OXcfD03phP7Zs84L6sXBiEAWQ4N01XKj1ETMYXaaaUep7E-Csp%2F%24%7Bf%7D%3Fo%3DAuchrwlINDQckwgxyE187fXMX_ygvJK_C7869p0jHX8_%26v%3D1%26x%3D3%26a%3DCAogFkplW6hRYC7wLd31v3UpuIRGw5i_8_2ADs6uQYIWP8QSbRDwhfjJmDIY8JXznaIyIgEAUgSsXBiEWgTE-Cspaib-d8CfTjnIYLaFoBn5TNlTnj-SJRGUBOp0U8MQvGofPl3pwmMd-HImhwuxXTWhYoRQdyI8_2t10yJHBooUXPkMNbgbb1k6i5M1YGA4JTA%26e%3D1727176428%26fl%3D%26r%3DA8BA6A7B-C953-4D32-BE76-8B0858281D1C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHMV7Ia7dqA2yVCqN7Vrz_yBXPHY&uk=ITKVK7wNOiNaBCc4IvOCEQ&f=Set%20Spreadsheet%20Title.shortcut&sz=27394">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Set%20Spreadsheet%20Title/Set%20Spreadsheet%20Title.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1666,7 +1653,7 @@
        <summary>
        <a href="./All%20Shortcuts/Google%20Sheets%20API/Cleanup%20Spreadsheet">Cleanup Spreadsheet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbhub9An5NRlHQGAA4hafAm9N93GAeH_i78PTiSVWmFSAojbil3-IoJm%2F%24%7Bf%7D%3Fo%3DAnNWyZhmTiTJgyqeMPN1FELlaxvRhip_weF4LAjISAm5%26v%3D1%26x%3D3%26a%3DCAog9tcc_swBYdcKKK80Zfql53Pw38XSSt4d7Gf2q4cFgqISbRCtrq6oljIYrb6p_J8yIgEAUgS9N93GWgT-IoJmaiZRXBcZZ2GVlP0iH5VCx4LGI8Anziso3FKKE8y8jH3tfm0xcB-G_XImQdTq5KATboOyWvOOC5KdGaNCksYLX7GSUxpDqDpl2O4XcCGZJos%26e%3D1726569144%26fl%3D%26r%3D4DFF0B6A-6354-4EED-9CE6-2BADF539B538-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnKiWCdagmL4_yaz57oqbbeykNo0&uk=WqD8AnUkv3lDu7iaOr09PQ&f=Cleanup%20Spreadsheet.shortcut&sz=28101">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXng3lSZTSNG9XpTjoCvI6fGSWd_AasBJNsyiquQ3tdbMaFF_4cjVIxE%2F%24%7Bf%7D%3Fo%3DAk6khwzG8EJ-XyJVksUlNlDZMfkxjddY19nJzrMcXXEb%26v%3D1%26x%3D3%26a%3DCAogDTwXkEr1hjIvxzlkKTg769I1vHHdwU2zBzSeqGILsNISbRC-pfjJmDIYvrXznaIyIgEAUgTGSWd_WgQjVIxEaibuG1UhApsDJdpQTZZp_mCqT1gL5zeWATwJaizyAXhj1p2-lJyss3ImarwfjAw2nNZ25QapDxFhn9jcv8prRR_4WQZUKQ19fOWN2jEmDhw%26e%3D1727176432%26fl%3D%26r%3D82EE22DE-E5A6-4896-9C16-87C50C113426-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2_YhIizP-BJaWQ8B3LQBBJTz-aM&uk=sOUlzuVECyuHG9YRC307fg&f=Cleanup%20Spreadsheet.shortcut&sz=28100">
        <img src="./All%20Shortcuts/Google%20Sheets%20API/Cleanup%20Spreadsheet/Cleanup%20Spreadsheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1683,7 +1670,7 @@
        <summary>
        <a href="./All%20Shortcuts/Grocery%20Shopping/%E6%89%93%E9%96%8B%E9%9B%86%E9%BB%9E%20App">打開集點 App</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY0AY5ASyksMrC6miWj8gWnSxdqTAelnYWXTY_usSyq-bk8PCdcp3noc%2F%24%7Bf%7D%3Fo%3DAhZr5FLgqnwOMFRymjjRBp3VT7VEmZSj2glVmcUB6rn7%26v%3D1%26x%3D3%26a%3DCAogcpvvr3cBnPvaeDcdrVtjiJhURI7zAR73mRXrqPuK48cSbRDw_6aoljIY8I-i_J8yIgEAUgTSxdqTWgQp3nocaiYWo8NHZ8r-EiANwl2YhdzH2rGFaQ2hsaScXeANJx5jNtUL6YVznXIm5moAk7dGWRucXhTJ0hmZszn3SjNEf5xK6S7icN0aI1LwW2B9fzk%26e%3D1726569023%26fl%3D%26r%3D46EB2EA4-E072-4B70-B0B9-496DF61895C1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdsYVyHxLimd4ohHbc4B39aUhU84&uk=wkwlOslDxrj6vhICr-hceA&f=%E6%89%93%E9%96%8B%E9%9B%86%E9%BB%9E%20App.shortcut&sz=29175">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYGPiDkGhJQa68yPCcefJiCLySNCAffRTygnRxKkY38Ye4U_nZc6BAQw%2F%24%7Bf%7D%3Fo%3DApWngEVTeS7nr0m0X_S97fmB2frmkiX7ZMg6FYvuKZDh%26v%3D1%26x%3D3%26a%3DCAogHWTSnPqu616mRZr-Tf5EKbx_b60k_nyEtn8in1bccgoSbRCG4eLJmDIYhvHdnaIyIgEAUgSLySNCWgQ6BAQwaiYn74spebcFRHRuDHcavHs8Z6jT2wbuWm5pjoAJLpthgCoWUDCiSXImcMX6uO8wtMNnVjKSfljXhVAJSUhUeRtMl3zvxKYbo1VlyS3FI04%26e%3D1727176079%26fl%3D%26r%3D590BF3B4-1BEF-4BE4-942B-FB52F0025B1F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWoc2ShEBxb789-Ty_CGF9C29IzQ&uk=mGklFTTmDkrZIC5LBjsvJg&f=%E6%89%93%E9%96%8B%E9%9B%86%E9%BB%9E%20App.shortcut&sz=29174">
        <img src="./All%20Shortcuts/Grocery%20Shopping/%E6%89%93%E9%96%8B%E9%9B%86%E9%BB%9E%20App/%E6%89%93%E9%96%8B%E9%9B%86%E9%BB%9E%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1692,7 +1679,7 @@
        <summary>
        <a href="./All%20Shortcuts/Grocery%20Shopping/%E5%87%BA%E7%A4%BA%E6%A2%9D%E7%A2%BC%E5%92%8C%E7%B5%90%E5%B8%B3">出示條碼和結帳</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdrPO_MYzYNUm0LvCuG8Cj27L72iAQSUZ51-L7l04ci0x4e6X0XIPH0F%2F%24%7Bf%7D%3Fo%3DAh6-30nrS3yMBfVy0M5jlsBMAo3f94A9RAKvNVb1cllf%26v%3D1%26x%3D3%26a%3DCAogNAFKq7f9DjWsjQTrFPJOgquaU0ju-02zLbbfcSvnfPsSbRCViqeoljIYlZqi_J8yIgEAUgS7L72iWgTIPH0Faiak301Zv7VhTeNLyxbTMbeJUIjvMQOrs2PyhEfa1kYVcrH9y_n0WHImunAAHGCFT09o05iPSjTvyW0IpS_5fTlE3Btz8tKljv3XbeLxpbk%26e%3D1726569024%26fl%3D%26r%3D986CA20F-E833-436B-8C47-45A305E55A85-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHqmVNjPURDb_a6vrt6CFkyOlm4o&uk=6zm8CSnImOLTfBF5R9uBcw&f=%E5%87%BA%E7%A4%BA%E6%A2%9D%E7%A2%BC%E5%92%8C%E7%B5%90%E5%B8%B3.shortcut&sz=29002">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWaLmbf8YXwXqQgKzyfR_6EOXSb6AX6GOndzGIQKelUIxCw30oUDaJSp%2F%24%7Bf%7D%3Fo%3DAmy2xr_2rSy2O35-EQzFvV0Z-U5W_uP96U0jJse97Xbe%26v%3D1%26x%3D3%26a%3DCAog-9GJOSixGGDEZNkVEBoIKJUuAgi_CJOUacZDsWddqhISbRCljOPJmDIYpZzenaIyIgEAUgQOXSb6WgQDaJSpaibrAJh0IqDlZGK-5RKGqxYIWYaGoFGSwqiTNchhHBuaUQeEzHq23HIm4yrj6M19puNcOH3ZrIVQqJNOOCWATP306pRiDgMrx6KA5eBVGq4%26e%3D1727176085%26fl%3D%26r%3D59BCF02F-C8E0-4D09-A57F-D12F1D5EA5F8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7Ns3dodtdJ5N7Og6Nya0RK9FLdU&uk=XJtAzuToohcTHMAF_P6AvA&f=%E5%87%BA%E7%A4%BA%E6%A2%9D%E7%A2%BC%E5%92%8C%E7%B5%90%E5%B8%B3.shortcut&sz=28999">
        <img src="./All%20Shortcuts/Grocery%20Shopping/%E5%87%BA%E7%A4%BA%E6%A2%9D%E7%A2%BC%E5%92%8C%E7%B5%90%E5%B8%B3/%E5%87%BA%E7%A4%BA%E6%A2%9D%E7%A2%BC%E5%92%8C%E7%B5%90%E5%B8%B3.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1701,17 +1688,17 @@
        <summary>
        <a href="./All%20Shortcuts/Grocery%20Shopping/%E5%AE%8C%E6%88%90%E8%B3%BC%E7%89%A9%E6%8E%A1%E8%B2%B7%E8%A1%8C%E7%A8%8B">完成購物採買行程</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASY7n5x9TDcxLKSYrTI3MJ7EO1deAWJ6QxWtTfqaKm0cC7LqwTX5f-iM%2F%24%7Bf%7D%3Fo%3DAnVR9RrC1_sLecA-WzFyeDwkmvQpZvkm4aKctuWTCC2y%26v%3D1%26x%3D3%26a%3DCAogxBjM9MBRi29H_s6Ic_WKM2JnKQpowdg_DtI_Vr7Vu5kSbRCXlaeoljIYl6Wi_J8yIgEAUgTEO1deWgT5f-iMaiYRZOhKvS5HnFOuzhUE9Bo4KUTT3IynsCC43M-D75iVdxaFGXa-uHIm0Z9VDH6ZEAESckqCYx0QIfAzEC7hjy5h556pE1N65W-zJUbz6kU%26e%3D1726569026%26fl%3D%26r%3DD88A4A30-8341-47C4-98AC-BE10D6E04E27-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdHH7CEdt0ID3rIUC0NHtENZYdyA&uk=6GVS9-nIEdYgGIa1VZRcxQ&f=%E5%AE%8C%E6%88%90%E8%B3%BC%E7%89%A9%E6%8E%A1%E8%B2%B7%E8%A1%8C%E7%A8%8B.shortcut&sz=27245">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATnRn9wcbZPX-e4SkAYaRcWx_MKDAfc2gpriuV1ibqESyA39xxrmwldL%2F%24%7Bf%7D%3Fo%3DAtwaHGW4WDw46bRG-P6HbkccLWWmJLWZHdWwjVTxRgk5%26v%3D1%26x%3D3%26a%3DCAogts35dP7aRkZDqg50L-LfP7PKM6wdvffwCUciSAfk-FESbRDdsuPJmDIY3cLenaIyIgEAUgSx_MKDWgTmwldLaiaPsSTmtSdthwuzhp68g9dZfjwq5nuGBbQJIb4c_NukVYLk6hm37nImw7qG_v-yHWCGa3LVSYBIVBqCklRyN363t9mensMPYtO7f3laggE%26e%3D1727176089%26fl%3D%26r%3D59148623-C766-4D63-B022-6429041CD38B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlQ719HHasWaIK6rvPmxOQGAvE-Q&uk=oTXOkDoFvIZAHeozSyinaA&f=%E5%AE%8C%E6%88%90%E8%B3%BC%E7%89%A9%E6%8E%A1%E8%B2%B7%E8%A1%8C%E7%A8%8B.shortcut&sz=27244">
        <img src="./All%20Shortcuts/Grocery%20Shopping/%E5%AE%8C%E6%88%90%E8%B3%BC%E7%89%A9%E6%8E%A1%E8%B2%B7%E8%A1%8C%E7%A8%8B/%E5%AE%8C%E6%88%90%E8%B3%BC%E7%89%A9%E6%8E%A1%E8%B2%B7%E8%A1%8C%E7%A8%8B.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Grocery%20Shopping/Grocery%20Shopping">Grocery Shopping</a>
+       <a href="./All%20Shortcuts/Grocery%20Shopping/%F0%9F%9B%92%20Grocery%20Shopping">🛒 Grocery Shopping</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASAFgJjw2f4v7j87kpBEMCnrsvz3AcT7SYH7YTDxVvOoreFfDZxxXvUg%2F%24%7Bf%7D%3Fo%3DAt_rdg7erHiRlMv1J0vNAgv3dYLa-GjwPS2HDMC-UBot%26v%3D1%26x%3D3%26a%3DCAog4vS-hpuM-lcnosaNPZMRLadbCX7hCS_tHsQGlh0PexUSbRC_n6eoljIYv6-i_J8yIgEAUgTrsvz3WgRxXvUgaibJDa2gcAvNpoN1n5RijebvrSAJZT70m6tTh19fAbK59m1OeKLGfXIms9NAqv6rdwbXyYAvsbUxzCqdUe5x_JrdOrtWyBx3cUWuCFK7qwM%26e%3D1726569027%26fl%3D%26r%3D76E134B2-8DD1-4269-9B96-966CBA19E7AD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkdUxbO47zJgoelK1jGq2xQsuNQM&uk=2lNxtFo0UAPH-Z_PAzcIUg&f=Grocery%20Shopping.shortcut&sz=28989">
-       <img src="./All%20Shortcuts/Grocery%20Shopping/Grocery%20Shopping/Grocery%20Shopping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATEMgWHfKmNW7TsVmUWTXfT3-WHUAYRzwOQJjMcjae96G0VkSN1ySpJy%2F%24%7Bf%7D%3Fo%3DAnYHuZs6Wz0k1-B4D6D6dgpn5CIcoEMqLGBgfMkUJ8Fb%26v%3D1%26x%3D3%26a%3DCAogFyn5UC6gfDr3vZVNm_ghuU8LVPIK85_vFtX5YX7VFPkSbRDr2OPJmDIY6-jenaIyIgEAUgT3-WHUWgRySpJyaiaCuYPeKzogNzHdNMl_HLST784ZE0TQoR0685kuoR6qbqZEloVJiHImzAeGxyR92x72JStbmnNrlqcrsS_PCKSy5ldqxRuU_efNRmFs4J4%26e%3D1727176094%26fl%3D%26r%3D5FDE27D0-6EE6-4A8D-B453-F959EA36F769-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DV8ZH0ubUz_kEpWFAZOsapbhD9ps&uk=9K7wIppLhbV5wzmhKB3hnA&f=%F0%9F%9B%92%20Grocery%20Shopping.shortcut&sz=28988">
+       <img src="./All%20Shortcuts/Grocery%20Shopping/%F0%9F%9B%92%20Grocery%20Shopping/%F0%9F%9B%92%20Grocery%20Shopping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -1727,7 +1714,7 @@
        <summary>
        <a href="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20Soundcore::Navy%20Blue">🎧 Soundcore::Navy Blue</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR3ulPug0jpWq6TA3g73nMIKV8rRAVBGr8sqWWpFNg4-CxHnpWSHhGF8%2F%24%7Bf%7D%3Fo%3DAqlQsygy3tNt0tstSwh7y8brM-PzcuCkGm90nJFsMXTZ%26v%3D1%26x%3D3%26a%3DCAog_74VdeexKyJd05rGb5oyYR0eEI4i-px_C5iFwRlU-tASbRC3ubeoljIYt8my_J8yIgEAUgQKV8rRWgSHhGF8aiZfzWjWjIiIEVNpcw88sCcEmF9f_Gnoc64eqlGW9GcnmIxnUShft3ImOlMoroZMhC6CaY3f4KQQwapkTR17kGKCXNb7DEk4eR1vGcSooLs%26e%3D1726569292%26fl%3D%26r%3D90DD7537-65B6-413F-ADB4-75780E4F5774-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_KKNKOlbJBcWQIio3Ak8QM9Y3gg&uk=tu8dehMjxnhPHtvIHJQIPQ&f=%F0%9F%8E%A7%20Soundcore%3A%3ANavy%20Blue.shortcut&sz=26696">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZIRXbqs_SgJYyn3D903bXq343k8AVJoOZa_uxiCCUd8_nciQUckgiMz%2F%24%7Bf%7D%3Fo%3DAj3AUpHHaaq_mfBNKY6iQWYL4tnnOTNW1xyWKxE8ehc3%26v%3D1%26x%3D3%26a%3DCAogUriTG9_52RfGWq4ABs4xMKKhZX6ahEnLl0USXnp3VHwSbRD3tbrKmDIY98W1nqIyIgEAUgS343k8WgQkgiMzaiZTlJaGLVQ8KSxSfav-EL3q_wse0ZZBpToyTs9IBi8bgejVx5ZEFXImnRGW4BHNE-WEbzcJAU1O4Vlonq55LLsppoLPbb4HYwtj0bEbNZU%26e%3D1727177515%26fl%3D%26r%3DF9EB8C2D-1340-4B0D-A3FD-E132285C6FF8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFOouvQdnlRKEs1Y7Qo9f_PVPrM4&uk=rOpQ4UA5A-O28uBTJ-dBTA&f=%F0%9F%8E%A7%20Soundcore%3A%3ANavy%20Blue.shortcut&sz=26695">
        <img src="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20Soundcore::Navy%20Blue/%F0%9F%8E%A7%20Soundcore::Navy%20Blue.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1736,7 +1723,7 @@
        <summary>
        <a href="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20TOZO::T10">🎧 TOZO::T10</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXdUxPmRhaZ2Rabjbrt6OCIcvRerAQ_Fx-5-OI0yhhomxGZlBurQvhjE%2F%24%7Bf%7D%3Fo%3DAh9iSi5LQKWpH8aXRp_JgG_sxEYf00jYkSWE1G4Rm1l9%26v%3D1%26x%3D3%26a%3DCAogA0pr53sDJBvfEpu0UiJuQTnakELGtwfBoxZMD9zeFyoSbRDEubioljIYxMmz_J8yIgEAUgQcvRerWgTQvhjEaib_WWKARDax-5M6ndmK2LsFVuAsZ-9P-td1jk4sdghpQAYvKUtqpnImTUFhMzp-Rb2Z0ZGjD2gR5N_5RCtgoGv7CC5_7kz2ENimhpaXJqc%26e%3D1726569309%26fl%3D%26r%3D32D7B887-18D1-4D04-A7D4-EBF0CF8AFC9A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dz3Li1BvDDPbQoD3XFQHh-QdWJ2c&uk=2CBmtVXY4Y_UhOxmVsJeag&f=%F0%9F%8E%A7%20TOZO%3A%3AT10.shortcut&sz=26669">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX7PmFl0KDHr947dEuJg_ED560OqAb-4akFXazeUPgYbpd0xRipelFhB%2F%24%7Bf%7D%3Fo%3DAj4WN22rs9R5EshJABIu18FLc8cTOikrh4FnF3qbPI4f%26v%3D1%26x%3D3%26a%3DCAogRG8wS7vjnymGmgvDNW4-7DkXsyCJAaxVPtLOdSqTvQUSbRC2vrzKmDIYts63nqIyIgEAUgT560OqWgRelFhBaiaNEkYpgLCmwEFpHLrjMvId-L5v1QuPUX03F51OjgUIyOjoxEjUmHImHXwaQMtiRYkrpEemH8exj0R7sfFUQ6s1noEXkds24G_EuTntAxo%26e%3D1727177549%26fl%3D%26r%3DE896CA16-2C26-4175-95A9-AF736CEA9740-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVEavw4CPFOyen3M50I1OnCi3EBI&uk=PslEiuwUdplwqSNOw8Af3A&f=%F0%9F%8E%A7%20TOZO%3A%3AT10.shortcut&sz=26668">
        <img src="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20TOZO::T10/%F0%9F%8E%A7%20TOZO::T10.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1745,7 +1732,7 @@
        <summary>
        <a href="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20TOZO::T12%20Pro">🎧 TOZO::T12 Pro</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQeWNvbNz0wizZF0htG7nRjzoqQYAeMo4-v5_i8biBdtzwrLY25s6w5x%2F%24%7Bf%7D%3Fo%3DAh3pZyIlaqL4B3gllFv7JJXuT-374SsB3ozNuiznjMtz%26v%3D1%26x%3D3%26a%3DCAogw6yF5muKNCQBDamTkmGhR5kCCqP45Q2CtCIP-S18oyISbRCHsbqoljIYh8G1_J8yIgEAUgTzoqQYWgRs6w5xaiYc7UG35mqywp-VsgnpimUg4YeM3Ie1RX4iFHmkqoxW0G8wiHaM0XImcnGbBo7qJQfg4BRComggqy2tGP5R83OfZMqjuAh8EF4GpJhgnA0%26e%3D1726569341%26fl%3D%26r%3D12F21CF1-F2F8-41D3-B963-F29425D5B059-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPoVIOHtIRjuAjJbAINP1NT7bU4k&uk=0ZR3BsYEFawuJALlc73bEw&f=%F0%9F%8E%A7%20TOZO%3A%3AT12%20Pro.shortcut&sz=26678">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS4wkl4GghWGTpiTqMp6Sul1eGBvAT7dPa_cUqcCpxf7U6tlulW4Qx1C%2F%24%7Bf%7D%3Fo%3DAqAUdLQywbVBtC99DzIvY86ewsd5G1sRoENc0Rkq7ocF%26v%3D1%26x%3D3%26a%3DCAogQm9uFRLrDePLiTTDK8IyECEjhyPMkzEHcFXfq7dtY9ESbRCgxL7KmDIYoNS5nqIyIgEAUgR1eGBvWgS4Qx1CaiaTCfl4TOKfegMJFr77vRfxwoEmmZvGPpw-7g0PiCa73ZFYmgnA43ImZNDLhP-K5gNHbSDosikX7gDKira4Hc9roxdOea4Pp0oAEGfjT88%26e%3D1727177583%26fl%3D%26r%3D84F97DE4-0AD2-4575-BDEB-C1951DA02EE0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfZTnsJFsIzgiIKFcTTmyJIjfeTg&uk=R9VlwS85VUxYlvyErEVp9g&f=%F0%9F%8E%A7%20TOZO%3A%3AT12%20Pro.shortcut&sz=26677">
        <img src="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20TOZO::T12%20Pro/%F0%9F%8E%A7%20TOZO::T12%20Pro.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1754,7 +1741,7 @@
        <summary>
        <a href="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20TOZO::NC2">🎧 TOZO::NC2</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY43mBb5GI7yExiICozXCbz3FN3bAahX0g3Exk8rjk7WRtAGggOY5kB0%2F%24%7Bf%7D%3Fo%3DAutr0xNQcy6J_6FLEVvNXLEkSh2eXph_cu1_N3xGrGGm%26v%3D1%26x%3D3%26a%3DCAogNBRpR_7J4AjHlKdpLi6Lsz-Hz3OGwywEdH4Ec-1ZIV0SbRCKp7yoljIYire3_J8yIgEAUgT3FN3bWgSY5kB0aia9lKdS44vOYMmTcPOCJrebIo50HhpNkPDNK9QLE04hFMNz1PTcxnImEjeDWy8fwXVARqFP__d3k9FYTX7kd9YfhM9fEG5iz3kgfpKmF0o%26e%3D1726569372%26fl%3D%26r%3DF4E77909-DC9E-47EF-839C-79B5848ABFBE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXCy9lU6I_hAeGhxF5JT6e8822cU&uk=sYmuaTJ4H0GVfM4ivFqssA&f=%F0%9F%8E%A7%20TOZO%3A%3ANC2.shortcut&sz=26671">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdF6m-deenrhZKfeATsHmetzEvOMAWnh759k5U94tqBVV12dz4rAOWJS%2F%24%7Bf%7D%3Fo%3DAj3whtSQc7f43mqMnIorS5LxXmldJ3wwbfAYFw-dZlG8%26v%3D1%26x%3D3%26a%3DCAogwBs29P3qQKPPaCJa1vaRSjirckgqXWvviJZh47HVvpwSbRC6y8DKmDIYutu7nqIyIgEAUgRzEvOMWgTAOWJSaiYIUfOUk8ujuaRJZpevA7WM8QFElR7MvTndIigbSu-YTHrhCu0EHXImDCEYQ9nmwEC0c6sIa_qnF2NEpS2JSLfGnNQz2b0u0HCDpAzTNhQ%26e%3D1727177616%26fl%3D%26r%3D1D39238B-DB6C-462C-8F1A-67454378B61C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVeNgA9U3k-TUjhcn685Mlz5wHUA&uk=FLuV9M8yuw5Dzu4kvHZHCw&f=%F0%9F%8E%A7%20TOZO%3A%3ANC2.shortcut&sz=26670">
        <img src="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20TOZO::NC2/%F0%9F%8E%A7%20TOZO::NC2.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1763,7 +1750,7 @@
        <summary>
        <a href="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20JBL::UA%20Train">🎧 JBL::UA Train</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQdcZ4hbu-KL4iHtasvihGZ9KbDOAZRMkDkaTlVP0u0776Hz4H10mFgM%2F%24%7Bf%7D%3Fo%3DAvNnOQ5QIhIhqZDQc5WofggkbtvWy7wF7U2qQOPQRpwL%26v%3D1%26x%3D3%26a%3DCAoggK2DCClOfn5ayQBv3NydlipdpLVOnGjuyt6uDlp9CwUSbRDRnb6oljIY0a25_J8yIgEAUgR9KbDOWgR0mFgMaib5VNqB0z9C1HU1ZEDN4eUUObV9nbWVpSCsOfr-icyLMXZ3wWEHMXImc6qT4Ey3qqTtEhRFbAPJrYgHAOtKAhpjgBZEz3ymM95q8zhRoUo%26e%3D1726569404%26fl%3D%26r%3D024C92B6-5F11-43DD-A77D-38FD19C80EAD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dqc0gF-VvPMz8pOooMHH9adlvsUc&uk=VM8fghuS1jaLggszCKp43g&f=%F0%9F%8E%A7%20JBL%3A%3AUA%20Train.shortcut&sz=26685">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATa-OFIuEVIL_9raieezSxWaXDhaAXfj1p0o8bR-KhvmbOF0yoPTOboM%2F%24%7Bf%7D%3Fo%3DAvHSgqys2x3Jxdm8dJ-UsDfIbnyBuV3tNcIxJnzTA2sD%26v%3D1%26x%3D3%26a%3DCAogrwSmLkTxNEbawHGDfhUN9m-FzhYoY7OMwJ1_wpEw5JwSbRCYz8LKmDIYmN-9nqIyIgEAUgSaXDhaWgTTOboMaibs9u9Fws1wdNEA8EuYyL_M0CXo05jmfMsdBRSJsJDQ1kkLrB_aJ3Impplt4p5rlfW-NDf6IR-rjeCWGcldGYlVm3dfD7sQPthDeoEWKYA%26e%3D1727177650%26fl%3D%26r%3DEB73735A-B759-4824-8F54-1E8F927DE748-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdtcSiAuO6cL7mRdywb9xh0DpmAY&uk=uWXky3JmZQ2Dzh6ffi11Eg&f=%F0%9F%8E%A7%20JBL%3A%3AUA%20Train.shortcut&sz=26684">
        <img src="./All%20Shortcuts/Headphone/%F0%9F%8E%A7%20JBL::UA%20Train/%F0%9F%8E%A7%20JBL::UA%20Train.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1772,7 +1759,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/iPhone%20Settings">iPhone Settings (23)</a>
+        <a href="./All%20Shortcuts/iPhone%20Settings">iPhone Settings (25)</a>
       </strong>
     </summary>
 
@@ -1780,7 +1767,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Enable%20Auto-Lock">Enable Auto-Lock</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYZECESd391DwwkimitS3eedh7KGAQNgA8_cR52tCQj6Yh27UznIB2QS%2F%24%7Bf%7D%3Fo%3DAmagT9IPRILp_ObEVo9FdMEH3GNlG7GPO0YeGCr7duhV%26v%3D1%26x%3D3%26a%3DCAogI_UxlXRmofPe_CVJcyB_lqOGI_hEpiFykd7kufE865oSbRD4iLSoljIY-Jiv_J8yIgEAUgSdh7KGWgTIB2QSaiZGu7GQsuqv42ucu52mx8h08rsdS7Y90Zp8AhwGgzvekpkYSuudJ3ImOvqZuydZvIAx76U85rIgUK7wtA1ZLBjf2t8nK8oLm1xijBgKYts%26e%3D1726569237%26fl%3D%26r%3DD05623A0-E2A4-415F-98A5-E4CC1808005C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMNKwRJzvvLOJq0vImCC2icg1h-A&uk=sn_tFmNOJVH6A8X_PllITw&f=Enable%20Auto-Lock.shortcut&sz=26861">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVNoUDfo3YMvaoP_FdjBMDabYe5rAXZyalM3dWjNFVTp8dhOxvqGXHdA%2F%24%7Bf%7D%3Fo%3DAmNZSSW97-B0E7weD9SmdRFFO4ilTofATuKma0FZahWA%26v%3D1%26x%3D3%26a%3DCAog1daK20UZ_2WecQrK54LNPWQJxQEjaaJXMlEoSx78YfsSbRDfnInKmDIY36yEnqIyIgEAUgSbYe5rWgSGXHdAaiaxxc7UnuK897Lv6JlCEBG0QQ6HHkUVmupbGHn8US1y6QZ1knpWZnIm9GRddxTgmyb0hYL0VHOjquY1fo7xJQa6k6hWh9e7sm8Dc2wR-Jw%26e%3D1727176709%26fl%3D%26r%3DE13A00C8-7DA9-4E96-AC8F-C7BF9F98AA3D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyGR0YcQs8yCc2caRndMlT2mSj7s&uk=Fz3V_cZcGUsKQzdfxxDoxw&f=Enable%20Auto-Lock.shortcut&sz=26860">
        <img src="./All%20Shortcuts/iPhone%20Settings/Enable%20Auto-Lock/Enable%20Auto-Lock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1789,7 +1776,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Disable%20Auto-Lock">Disable Auto-Lock</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQvcsYTFPUtFYQ1u0aLu7oP6AreQAcMX6B_Zk4kKL4wXOJCuGPFVw-I5%2F%24%7Bf%7D%3Fo%3DApHSScRA16qKpFPvDZsrMQqFjivZ_XXSyFe2aZjE6pH3%26v%3D1%26x%3D3%26a%3DCAogCXfwsO38TyIhe9XUHUIj6Vzzw5X-onh4vUPo-To16YESbRDwk7SoljIY8KOv_J8yIgEAUgT6AreQWgRVw-I5aibijdGm64zp9_Ezqz_abgo_5uDFfhBQmvYuC0S9csGS8FD9pc3ssXImptCCZJRGaOgPwjQQJS-Ga095ueutTPVKhZ1UKNDob8RHQYTFpoE%26e%3D1726569239%26fl%3D%26r%3DF5DFA9F3-E7A7-43AD-AEC1-E690DAB3554C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfN68LoQKsDO9PSQZAgmU11aV5mU&uk=--7g5ZaLGrblwTPf24K1hw&f=Disable%20Auto-Lock.shortcut&sz=26852">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe-om2QlxATMolj0Y4y20B_K-J8fAQgMCTakDaTautraT2vwTm0Zwlek%2F%24%7Bf%7D%3Fo%3DAqT21s5gOa7FZ8Mh53zh6PEDM_CS6Mul6Ug0DleEvj1M%26v%3D1%26x%3D3%26a%3DCAogaQef6rNCrVTNQDKk4cs3XvtC9OvP7HbsgWid9Fw9tEASbRDVtInKmDIY1cSEnqIyIgEAUgTK-J8fWgQZwlekaiZHqbr7hboQfdKhdNwxsD3--1w6Dycea6_yVcQaWnzCxnGPXSfYanImjFdJBuEnIw3qKLjRo2-tSO02YlteQFMQi-x49TMTxq5e6Kng8A8%26e%3D1727176712%26fl%3D%26r%3D9CE636DB-9F76-4156-842D-4B3176C059AF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEm5mOCZ1tsQ-s1KAmAkRX5Sdsrg&uk=Gdr1vq_Ubda8yNjH630ZoA&f=Disable%20Auto-Lock.shortcut&sz=26851">
        <img src="./All%20Shortcuts/iPhone%20Settings/Disable%20Auto-Lock/Disable%20Auto-Lock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1798,7 +1785,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Check%20App%20Subscriptions">Check App Subscriptions</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAViOyoqN_drolHwuLJFFMxATr7QzATvssDBa047ON-YjT2Kzg4zn1wj1%2F%24%7Bf%7D%3Fo%3DAsdcaJQlcwafMn7dOEaDAJtNe0OQH8j0WObxIQSzm7qa%26v%3D1%26x%3D3%26a%3DCAogV9LdN0Hp_aW6K6mXS5rl3ECFvTGGAkx8hS5eCv5qJIISbRCcnrSoljIYnK6v_J8yIgEAUgQTr7QzWgTn1wj1aibsCyMjyNT9sRXMKftAn9xoILsdFEtVV2zdAu8JD3xusL8bEPmoF3Imh1QXA1hKyBKQJGTihnIQ2Sg4IXOyIddqwMUvIXowkYKUGj8vOE4%26e%3D1726569240%26fl%3D%26r%3DFDB4CE34-03D2-4831-A9BC-7917FBC6897D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfxZocVSsbbJlPjtzIuA5tpEYwqo&uk=QiCxlqxy9PBh9kRsbmZLkg&f=Check%20App%20Subscriptions.shortcut&sz=26589">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARmz7NFr_nF3W0BwYMAw2Y6zE7puARQJduCIIDmrUy_XGe9t3aXgBAou%2F%24%7Bf%7D%3Fo%3DArc48nML8YO0fhjCGX7fXheDRpWMEQjtJ33vvwN-d41M%26v%3D1%26x%3D3%26a%3DCAogWD-GooJtLUwHqXNT99oXEvzRt_57Ss_dbrzueN4wXmISbRCDzInKmDIYg9yEnqIyIgEAUgSzE7puWgTgBAouaiZzdrZi5WnUBwfOCeZb2H8gxNaSGA_xM_n5CRJVq-SW27PyFH1ASXImt18C3ri7T_bOWFt0EsK3vlCEpu8hDLBZiappW0QbZb9pupjuPfg%26e%3D1727176715%26fl%3D%26r%3DFF8E1DB8-2E93-452D-9E06-DDEDE8835538-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHS_MQw_WvM41LvKFVcjyBJ_Msuw&uk=EsYDzk_ycN18R6nCb_5EzQ&f=Check%20App%20Subscriptions.shortcut&sz=26588">
        <img src="./All%20Shortcuts/iPhone%20Settings/Check%20App%20Subscriptions/Check%20App%20Subscriptions.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1807,7 +1794,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Go%20to%20Auto-Lock%20Setting">Go to Auto-Lock Setting</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASbP_KmRfcCVDIvQnNVhAQAi1IjbASmaI34Y_OyL-DBQnPVS4bEtJI_p%2F%24%7Bf%7D%3Fo%3DAuAXwFlG-zm7fn4tFeL8evZKgCYc0pDh9LKStSzIhS22%26v%3D1%26x%3D3%26a%3DCAogI47SSM6H7sYUdaL4g-JToAV8rUEHGg-qgVAH86vsepASbRDDqLSoljIYw7iv_J8yIgEAUgQi1IjbWgQtJI_paibqhyv0IJtM05r5tBTzSgqCbQZ_xqeoBc9qLhE__oBPwoHMZKfLWXImHBKgsDKz_aHzHxTpCTUcLTLuJIVWGJcNgwM_WxcZ2uUUP0iorCg%26e%3D1726569241%26fl%3D%26r%3D6B51EB8D-0ADD-4907-BAF1-8505A021FC42-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dbkbj7CaruoT_AMk5Vhe9ZAN7Dkk&uk=o2WYPnfFe4h0Rj3WgHir5A&f=Go%20to%20Auto-Lock%20Setting.shortcut&sz=26626">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaN-7wlzlSk48kXMTmEY27ktGljzAfc0FotXYH52v5_BK1I5HOgcn6_f%2F%24%7Bf%7D%3Fo%3DArWs8N4Ufeiusd2uNj-wFks6EoZG2Zu3ulZ6aBKKPhQa%26v%3D1%26x%3D3%26a%3DCAoghRDqTao3Gd5OUpHrBrSLYfpMqSulAORuclrC7d9zy0ISbRDY5InKmDIY2PSEnqIyIgEAUgQtGljzWgQcn6_faib1Fr8UXA5_wGIIfexL0ar1Lv0nZYSpoF-q-DwRGDVjCRPsSnfiE3ImV9nj_kuejRzMTgRLNWxYbE_edZRDPmF8JHZqXcRFrSEBvlzl6fU%26e%3D1727176718%26fl%3D%26r%3D8F437CE1-0098-4CEA-B51A-9F1044FC94F4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuyvXZtfQwGAMECrxKLEAI8uMpno&uk=cXDd5oPUb83n537IpbRRtA&f=Go%20to%20Auto-Lock%20Setting.shortcut&sz=26625">
        <img src="./All%20Shortcuts/iPhone%20Settings/Go%20to%20Auto-Lock%20Setting/Go%20to%20Auto-Lock%20Setting.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1816,7 +1803,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time">Go to Screen Time</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcbE-vrj1Em7bH3FQv0JbEmlCnLWAQRDjXaRQpH0M7jy-UkBsKtLXLNJ%2F%24%7Bf%7D%3Fo%3DAnQT9GR3-NnrnVOjseG5A7SlGIDbzCHa_oF3A123Z98p%26v%3D1%26x%3D3%26a%3DCAog7i5BTf4Q-6stTo9GDuKkE51EKm5MdwcFvm6aNGFw3dkSbRC5srSoljIYucKv_J8yIgEAUgSlCnLWWgRLXLNJaiaFI3ulktEqEd7NYzMHSsZpNCTTor73nXLToxdaW-AJ4lt47AgYFXIma-CyV9PZLhCTteFKABpFYerlvW8X0mHoARWuZNo72QhdejCVSdw%26e%3D1726569242%26fl%3D%26r%3D4BB70069-48FC-4326-A285-891C1F935487-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSryPcxRr24kt9GGlBLg6GfNMy2Q&uk=cuM4GG-H0XfZEnkLa1GBvQ&f=Go%20to%20Screen%20Time.shortcut&sz=26563">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX5qAi1ijFbjwLQs8AEazXUZRIbhAYLttJl3izhgHKW49RNGRwotrUdG%2F%24%7Bf%7D%3Fo%3DAhPjc8_UiGRTcByks1R0KvO2TPmWS4Tr67IlX_EwApN3%26v%3D1%26x%3D3%26a%3DCAogEw7BJeBgDw1HZEjO1gCVDN_hHwfCYqsU9USn3kidhRkSbRDf_YnKmDIY342FnqIyIgEAUgQZRIbhWgQtrUdGaibEbQwlR34VrsWq7UyW-7k33No-_POb-pNOa2cAoZeUpJjdxxSWuHImJjpD_Q4S0WiabSNZNLQQu1uh5T2aApF__95BVuxpK9OYS-nwowA%26e%3D1727176722%26fl%3D%26r%3D8CF2CFA7-C73D-480F-8798-110FD5AC5EAB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhtrSsPSAaU-WOMXphq-8TfCVcp4&uk=yw9rreVi2akIuN9qtq1DzA&f=Go%20to%20Screen%20Time.shortcut&sz=26562">
        <img src="./All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time/Go%20to%20Screen%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1825,7 +1812,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Go%20to%20Bluetooth%20Setting">Go to Bluetooth Setting</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQXo1ieUH0p-BPUHMWWkAFweNisCATOkLv0idaHNDnLUk-eTpuHOn-3-%2F%24%7Bf%7D%3Fo%3DAkkpxvn_QspSduS9QgzurPhz9Qltwq7UjksKo-aMg2b8%26v%3D1%26x%3D3%26a%3DCAogRMldcHMq5779vvMWo8I-TWPttCJ8pt79jZykCYBgaSYSbRDVvbSoljIY1c2v_J8yIgEAUgQeNisCWgTOn-3-aiZSZgskxuN6e5mGgApWt1AwF5mrnFTQRKYwTmibwTdYkfkC_X8Na3ImoAy9kw42gPIHeEZjZQkfgCzlAmjMhyguj_69b6XvgQTZB-o1Cns%26e%3D1726569244%26fl%3D%26r%3D8823A848-4D3A-445C-B95B-7524C7CAD7DA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4Wn7mTFCNCrZAxZPZIR_NOyyAJU&uk=OD-Ne9amvR_WKczwnSooWw&f=Go%20to%20Bluetooth%20Setting.shortcut&sz=26564">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQdtgSr9-ucpC77x_lQw7g3bTbIZARecZsUPFOhNcBhlLItvfbX9khXD%2F%24%7Bf%7D%3Fo%3DAh9LlQFZ-0Cmlkkd-ePi-PRX9MyRux2kGpPV1He_soj9%26v%3D1%26x%3D3%26a%3DCAog-Wqn0dybCph6dXk8AFwEI-4XJiORCvvg4sd3HT4hx1oSbRDSlIrKmDIY0qSFnqIyIgEAUgTbTbIZWgT9khXDaib8i8tFAljeuE_5ta_nEOhBOO9L711pqvRWAO3MSxtcgZlmSOH1inIm03ckyOKFofXvmYExVRFkwUWpvOjR8Zde6pnlJ-Emru7gmANMoy8%26e%3D1727176725%26fl%3D%26r%3D7250307F-D6DB-4FD2-ACA7-DDED86C33A9C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Db-LfhEugLD55KNqff436I1RkfQI&uk=cVSc9qbqUU9VKsFNb7_yng&f=Go%20to%20Bluetooth%20Setting.shortcut&sz=26563">
        <img src="./All%20Shortcuts/iPhone%20Settings/Go%20to%20Bluetooth%20Setting/Go%20to%20Bluetooth%20Setting.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1834,7 +1821,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Go%20to%20WiFi%20Setting">Go to WiFi Setting</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUOShCG6Yx45HwCkVOrJ8rWwCgsQAcaJDKR2Lma6YLEisco2tJED6Dxc%2F%24%7Bf%7D%3Fo%3DAiJlthfZ6noJI2kZNA5MtEtVyCBqWlRa1iRKKpeQMJp_%26v%3D1%26x%3D3%26a%3DCAog2pCyf-VneSEhnp1dpyABRDlpcVMuCFkc2wn3fO5haRkSbRDix7SoljIY4tev_J8yIgEAUgSwCgsQWgQD6DxcaiYrtdQTBe-JfpvzeqKvpQbawuJx3be8NzV0KpM5zMR8xdn8iMibrXIm3R4Kq6yMZRd_KxoBdG4hOsYRgTocav0ulJH4S33y0Z5LTyqey58%26e%3D1726569245%26fl%3D%26r%3DBBB44B37-4743-499B-A18C-BE4D6C4A2375-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRTkSHd-ferUVSVPA_ygs4hJcvsM&uk=7wzlmuaYHfOxg_6UEdJdhg&f=Go%20to%20WiFi%20Setting.shortcut&sz=26559">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYjEGCHfQu6LOHNdpxXpUPGK4OP-AQKhnRvPhOpNYNP76Xo8FzwmFxgp%2F%24%7Bf%7D%3Fo%3DAmJPwa9SniMHPPvjZCpdMboY6_JvRtuVHMQfem9Zloah%26v%3D1%26x%3D3%26a%3DCAogxpA1T3-BiEEftWcNOfV7gE57iDx_GBzaMOaaDoOIw0MSbRD3rYrKmDIY972FnqIyIgEAUgSK4OP-WgQmFxgpaiZ2Jh2ky8kGPXl_NSxxOTL7TEQtmjIvdWtvSaO9nexOPuHt3AFlC3ImYoVKhHaoxZInOQ---e0EFve8IORGrpe1l13OIEAIsDIuOcXjtdE%26e%3D1727176728%26fl%3D%26r%3DFAACB046-1514-4C49-B151-48FF6C6A3D5F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMPA1WwCc0cpdB89q_SVBme-th8o&uk=UzIlBpbuSIYTaYNWR0LvdQ&f=Go%20to%20WiFi%20Setting.shortcut&sz=26558">
        <img src="./All%20Shortcuts/iPhone%20Settings/Go%20to%20WiFi%20Setting/Go%20to%20WiFi%20Setting.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1843,7 +1830,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Join%20WiFi">Join WiFi</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXLi1s9PSgOIQHI8v1BRNzMvoX8gASgdiqlK6RHkj3zMFWOTluLanFcJ%2F%24%7Bf%7D%3Fo%3DAgb_duvnpFuvAwADo39HQgiNTjna-8YjTQHBaBxgGqzj%26v%3D1%26x%3D3%26a%3DCAogaV_M7Fy7O8R8qnlgW9r1Mg_yQbjatWLQVuQLd5jajdYSbRDr0bSoljIY6-Gv_J8yIgEAUgQvoX8gWgTanFcJaibzFKd4P81QN1lOLxKn6HyRNmPCljps0RdO_DUcMux9PbxQ3h2ybXIm8rXrPHjcsjCUUvkA8urIghQivJfgmyISSOkGnC5MQhkFy79wgys%26e%3D1726569246%26fl%3D%26r%3DB383D340-34CB-4CCC-B677-DF40C2AC695B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIcGCLnh042uBIykoLmk_1HhVU48&uk=BM8STj_2fTZg8mcSHLShKg&f=Join%20WiFi.shortcut&sz=26404">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVFwxO-vkT8CcNGtcem1ZiZ0lbqTAXalXj5FYr1pdqyoajay2ClCLMTd%2F%24%7Bf%7D%3Fo%3DAinJvp5PgQ7TqXj838LEn1dVnPdCsgjiPc8A2fbJMxDA%26v%3D1%26x%3D3%26a%3DCAog2KfudStQO4FFmYIPNWDdKXdRFIMFXx-ZBMaTv9YKDT8SbRC3xIrKmDIYt9SFnqIyIgEAUgR0lbqTWgRCLMTdaiaG465VcXFce2rBPy64f6dJuYj4YYXNuOZ6OLQv_wClJN-isGscaHIm_ZhHYnakWRhG6HasRz0tdU7qM8RlsFLEaio7lerVkiIH_peFVFY%26e%3D1727176731%26fl%3D%26r%3DE35DFBCF-B4D2-4BB2-B3FA-BF277D8D7C6C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZl6P0pjRKD4DGhjD5eg4Pw5qxBg&uk=Th-CW6vV-6wloKablvXkhw&f=Join%20WiFi.shortcut&sz=26403">
        <img src="./All%20Shortcuts/iPhone%20Settings/Join%20WiFi/Join%20WiFi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1852,7 +1839,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Toggle%20AssistiveTouch">Toggle AssistiveTouch</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQuip7e4HySSGQAwlxZHMm-22wrdAXd_XE1NLiCrCViWymTbVp6qzYlk%2F%24%7Bf%7D%3Fo%3DAi0JXU_KhaOjYntbsrqcpQBTHpPe6d7OZy9JuGw4A3s_%26v%3D1%26x%3D3%26a%3DCAog308jRfe1QL0FN-lCqPGu-oet3FJZimf2eFw0nzo4c1wSbRCF3bSoljIYhe2v_J8yIgEAUgS22wrdWgSqzYlkaibmP7-Gk5In4LYzVwzAHat6BAYjM8p7bxgOgHjLGE3qhYPC95ioIHImyjtZHZOe1er3mYXQDpEK-jUeCmLx6l0NKalp4et00IVGNHX0lN0%26e%3D1726569248%26fl%3D%26r%3D2697D7C8-642E-4BD5-BC62-8D5AE758996E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCXX5gvLckYCGvpgPGNq8dYOhToE&uk=qbhIejIJWcZciYF_6mHQwA&f=Toggle%20AssistiveTouch.shortcut&sz=26599">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARDL5gTm-0Vs9NnyVwxRoCi0UZbnAcs2x1CRPfhG1ceb-4tKthwxlAY-%2F%24%7Bf%7D%3Fo%3DAm3Ej4t7G9HpGNTfLLcnrMHG6g3jeKAknl95zSJG-tNZ%26v%3D1%26x%3D3%26a%3DCAogG5CEvLYbWDYFg8QmaQ1PRXChmx8fHxrL6BADQaGs2I4SbRDy2orKmDIY8uqFnqIyIgEAUgS0UZbnWgQxlAY-aiY_kWjKWzioMXi-5aslekqXbvEaNzAMeJaC72jVtfueYnmufgM15nIme7fypVNUEKtkItmxlCj3gffbdFZWizWCwUt3106wVALIuwfMiB0%26e%3D1727176734%26fl%3D%26r%3DEBC119D0-2199-4678-B238-1DBE0FF22988-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQc4EMh5gFRIeXgBOf7IdluuYJ2A&uk=qiDY1x7Qum_IMd_ZS_hF2Q&f=Toggle%20AssistiveTouch.shortcut&sz=26598">
        <img src="./All%20Shortcuts/iPhone%20Settings/Toggle%20AssistiveTouch/Toggle%20AssistiveTouch.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1861,7 +1848,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Search%20App%20Store">Search App Store</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb2sXoPxPkZptPSo7wQlsQehE2CvAYbAS3x0nAWC2QL10DAcNflw7sN-%2F%24%7Bf%7D%3Fo%3DAsz3Ody_JbRUuFqCfm-XUux8tczpIzJSWaJ-QqIKJibM%26v%3D1%26x%3D3%26a%3DCAogxGIBTp0O0eD5JPtW8ruKo-WwfwuNQlv0bCTVZ9OdgCISbRCc57SoljIYnPev_J8yIgEAUgShE2CvWgRw7sN-aiZhTm79t43qtTkxsoBOTFMpVFBqdMVOSVV6rFPy_WAlUhTxaYQSUHImePqvLq_CaHBtV-WPJMUeaGslWKxrcPLcwXMQVk5oVoqC-etYInk%26e%3D1726569249%26fl%3D%26r%3D8FF1A143-AAC8-4596-9A84-9D5DB39289C2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DriZzYJBdrZjKA6X2s6kR0Cjcc1U&uk=WAsZMxTRAt9TDtSCFBC2fg&f=Search%20App%20Store.shortcut&sz=27935">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVIpChLNIZEbUyQeKMDIyT-AVQD9ARPoWSC24FAAxMuYs8o6ux0VWdG4%2F%24%7Bf%7D%3Fo%3DAm4b5g055rUf8KfoX7VzoHNfFjlwf7QibIbtZ4IsqJtr%26v%3D1%26x%3D3%26a%3DCAogLpP2ra4NBI0xsy3drTnm_9u6eQ89Af50bG7mHcyJ_24SbRDR8YrKmDIY0YGGnqIyIgEAUgSAVQD9WgQVWdG4aiYMFCQGahlIs_2uxrHUlt2k27VLkEw65LmtGqBT26N-isu6NObx5HImf8vxQzKGywznblCaREvdPPBqN2e_nljY-vXsECr_DINOnjKsqQE%26e%3D1727176736%26fl%3D%26r%3DB09AF5CC-4F77-473B-9AD4-42580DCCA500-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTmAveF44MvfElBZcJO6LvAnDdTg&uk=BKo0-_sewQQZVbXNJSny6A&f=Search%20App%20Store.shortcut&sz=27953">
        <img src="./All%20Shortcuts/iPhone%20Settings/Search%20App%20Store/Search%20App%20Store.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1870,7 +1857,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver">Ultra Low Power Saver</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUKu-j0JyDC1_YhoUvG3v2fPKiLJAWhb9iTax88a5cWRRAMebxA2NT5d%2F%24%7Bf%7D%3Fo%3DAk45ICa3_FAe19bAZdzsUxuGEHWK866ntJhqZtWRoQk0%26v%3D1%26x%3D3%26a%3DCAog_PKgmmPpa4C8vBTr08XWqGS8abGqlYW4Ls7CTASI2SASbRD88bSoljIY_IGw_J8yIgEAUgTPKiLJWgQ2NT5daiZZreqfk4HXxY5jPHT4IeMb6bls_dHiuYSt6SVTj3YFYXF3efkxBnImG9S_XOZ6h81ILjhRbw6frnWb8T-GTOeGr_d51shWSOYxauZSnUc%26e%3D1726569251%26fl%3D%26r%3D6F6199BD-8F45-4FBC-9E8F-075DA56BC2CF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoAMLW84SffLgdXAvfKddPewSypg&uk=6WHRhJHuHFZT7cSTcAGtww&f=Ultra%20Low%20Power%20Saver.shortcut&sz=26754">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdN8NJY6DwN3LYCJypsJdbXOpTQ6AYH2oFUvqzGFTb1x3qWGnWCQnwZ7%2F%24%7Bf%7D%3Fo%3DAlLS8FGqR50XtuwQZM5cbgQpEW6Ro_OaPEoehkFdGBpP%26v%3D1%26x%3D3%26a%3DCAogfywImuxwXaFn_hNB4ID21hyLYqta6D9Xt1UIBumIHFkSbRDFiIvKmDIYxZiGnqIyIgEAUgTOpTQ6WgSQnwZ7aiYLcJe6WdUE6WJJINJT0gxz25Fcq5e1OFPkcBQrvrEzdzSQmovhbnImQsbjrZHwYx_CcYosI-QnA4fVy6trYdu7i_PoLZUbk7vgSSzzAnA%26e%3D1727176739%26fl%3D%26r%3DC426267D-BBA7-47F4-B13D-3BBF2A8AB62D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC_o4Rerext1vcS_mhzt4H7Qg9j0&uk=2v4OZ5le_P6_h-jRVnb6dw&f=Ultra%20Low%20Power%20Saver.shortcut&sz=26753">
        <img src="./All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver/Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1879,7 +1866,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver">Recover from Ultra Low Power Saver</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbVqfKDeT2GmwENlPT1PTlHUYcfeAW7yQ4S6DULTVkhseP1hIpXb6CYu%2F%24%7Bf%7D%3Fo%3DAkLLdbc2d5vmi1kpWh5lgJ2jXzVcJNeDKWMxaAgl6t_N%26v%3D1%26x%3D3%26a%3DCAogCJ7lsy0h-PUdOP29k6e9iopZHFobkP2DUBXA32XyE-ASbRD8-7SoljIY_Iuw_J8yIgEAUgTUYcfeWgTb6CYuaiYlBPIkKoGPAlxMgQBElyPFmhk2SiEOltysInSrMOhc6hv-NASyaXImkWjpbTVaQAv9CnoaQ0um12M1JGwAhH2n0pa4dAuLJTcTtz5ELQw%26e%3D1726569252%26fl%3D%26r%3DD26D9122-9A57-41BA-A3D4-4D5A6749BECE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoPm9GmMnohbdRlCdqUDyDRX7rfw&uk=DwKMfipdxJCLPLt8SaGCWA&f=Recover%20from%20Ultra%20Low%20Power%20Saver.shortcut&sz=26849">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXjL_q9qof1TvSc3UZSZ4rCpv5jrAePSI4ElofoE0W1jCHtH9uSYtlzl%2F%24%7Bf%7D%3Fo%3DAoY1mAI3Ckv4kMFr-RYQkbqUxT20Yk7XOAqxdQuWmyk6%26v%3D1%26x%3D3%26a%3DCAog1sBfpK05MlYEfBmyGso8o4QiS0RbU8He0NmGul7P01cSbRDqoIvKmDIY6rCGnqIyIgEAUgSpv5jrWgSYtlzlaibfz1aohFMV85xP0rn06riFZ6ChGbS-Ixi2rH3cc35n06LeZj2rHXImsvjlT7uJu8lX_C56RRsrsfw4JBnqxPQ38wAqVYLm16BGbgAGPWE%26e%3D1727176743%26fl%3D%26r%3DD00FC4D5-DE03-4C5C-97DE-6AD581D42647-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxcP8r73uTJMw8BxJm8jtsQah88o&uk=B7nIwHr9G1v60D64vb7j0Q&f=Recover%20from%20Ultra%20Low%20Power%20Saver.shortcut&sz=26848">
        <img src="./All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver/Recover%20from%20Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1888,7 +1875,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Turn%20on%20Grayscale">Turn on Grayscale</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfHTC3eROQpG0yRkFuRvesG2ARziAcuSyZh9cT5xwMoVAJiM7bWgp9sX%2F%24%7Bf%7D%3Fo%3DAjoNoA1CQtmwmb0TKyHCKrYQl7l1jUCE5HJAvKCmJqnq%26v%3D1%26x%3D3%26a%3DCAogHUG1mT4hGAgaV0Ro9MiqaJ8I9GhiIbnj36mSG3k7LMUSbRCGhrWoljIYhpaw_J8yIgEAUgS2ARziWgSgp9sXaiZvSBs2gYwQDjwMMIgIN34YztEBBrJdpyo_GzW3UOBVY20ytA1SyHImsf2kY51y4rfEWlnc-NOAOwU709FvXpuQFnqBoO7B0FtZrbXuOmI%26e%3D1726569253%26fl%3D%26r%3D6235F8BC-4A52-4727-A74B-4102B9170CC9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3AxBJgkBpgekeXzfJQe6QFaiIdg&uk=w8__VxhwYmkx7skRDB_LsQ&f=Turn%20on%20Grayscale.shortcut&sz=26659">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaxCcZbGwts5zmJWq68F6ebEWfWaAcmeKxk2Kk924LDLsj0iH_OvGvR1%2F%24%7Bf%7D%3Fo%3DAjGM8jRdliRvkZQhxNXpl_MYajlpzMyYWr4kXe0cLxGC%26v%3D1%26x%3D3%26a%3DCAogLuLnIJTY7yXxXE5V2AKCbXV-5kyxYT8fK558dGloebMSbRCBuYvKmDIYgcmGnqIyIgEAUgTEWfWaWgSvGvR1aiakDDfTUx44n0and636zqpqyJE5fy46UsR3Ff2g8keS4P4SOKYpanImIm2285A3GNsDFHFNnodz-YCLZ3K5azaSjdBKzQ-bMEn9C1rk7Uo%26e%3D1727176746%26fl%3D%26r%3DA14430E7-F059-456E-B96F-CA323286F639-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DD4IcgXvdC7_JTReylHUmI8iPF5I&uk=UbTCvOJ3BrUZfQ3lggf5eA&f=Turn%20on%20Grayscale.shortcut&sz=26658">
        <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20on%20Grayscale/Turn%20on%20Grayscale.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1897,8 +1884,26 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Grayscale">Turn off Grayscale</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfD9OnUO8SaRMSA6uXXT2EblXIj4AWrD_IGHxcrJpcQCDvE7_BIIARtP%2F%24%7Bf%7D%3Fo%3DAkLJcz3-tXlThJd49bJ-bDdS59jiRg8AilyWDvsXW6yU%26v%3D1%26x%3D3%26a%3DCAogPKcyOEK4o0MAHu24gasj0EKFEX-ILs5Bc4UgF_LAgusSbRCIkLWoljIYiKCw_J8yIgEAUgTlXIj4WgQIARtPaiaqzJDOVXBmqaYwaOaDPEYJxhlBgVYL1w8VoQj1UUIt2Wa5NEQvaHImtfbEEp9E0bnBkZLwzgnMYQDkUTRaqfdnZELcHnPnbWrbmEbMhc4%26e%3D1726569254%26fl%3D%26r%3D25B0E9D8-25BF-4FD4-9C5D-3A9F1875A4E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DK1Ggj_1wXpMK7cmxXV8cr8Lxjbs&uk=tKeIVJZYyoW-ZnKvByi5cA&f=Turn%20off%20Grayscale.shortcut&sz=26657">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWvsTjx6Oj3e33a6lfx5mpvcKLA0AbDwqwrM80Mpcg5jAjKficyQNByF%2F%24%7Bf%7D%3Fo%3DAgTtrQ6-hGWFXHhW4d_zrF5FY8WQXqz5Fm1RNCiKrLQN%26v%3D1%26x%3D3%26a%3DCAogZtl9WNEEOVq4OdztiHK_UFwdOLa9rdxuwxJ0Rnth8xwSbRCUz4vKmDIYlN-GnqIyIgEAUgTcKLA0WgSQNByFaiZ9rcZtrtFZt0Tlt2UwAiHDhF5KwjEu_21QFOATPT8w-WnBN7PEEHImP2q0TynnXC_Gxyj5Il2lF26bH-j_PPEwyiu_nmUVdxYLdOGjG3o%26e%3D1727176748%26fl%3D%26r%3D3F2D5F0B-7BF1-4441-B7BB-4018B42ED143-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DArP4lT0TU0s4nXbo5b81A4dGkL4&uk=G6c8p39PeoxkQx1QmjNQOg&f=Turn%20off%20Grayscale.shortcut&sz=26656">
        <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Grayscale/Turn%20off%20Grayscale.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/iPhone%20Settings/Turn%20on%20Smart%20Invert">Turn on Smart Invert</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa_v4fZNwQF2ssVQrOhvSjL5ox33ARyveZp3heNKpaj3dyE9F18lBjAY%2F%24%7Bf%7D%3Fo%3DAmZlcwMHFzZwwH4WOHGgS7p5A8C98pOC9W_oRG-ysTe0%26v%3D1%26x%3D3%26a%3DCAoga8wN6MsoWeZXEiasAW7bx56qmElywMhTesvOJfauBi4SbRCf5ovKmDIYn_aGnqIyIgEAUgT5ox33WgQlBjAYaibqBOp8dk305HOmTrmZO4dTQnxqIrLssQE_s1UM-GGEpWw_Xw7mHHImOvan-ISqNgvQbYPz4Qbpt-v8VJfBq1KZaxkXco45cUD-xdEvT_w%26e%3D1727176751%26fl%3D%26r%3DD655B61F-F7C5-4334-86C8-BE6577B9B9C1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2kDk19ydWPLGsnLqb8mUAcCtuxY&uk=3A4z6Id_XE99h8d2kDBvow&f=Turn%20on%20Smart%20Invert.shortcut&sz=26745">
+       <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20on%20Smart%20Invert/Turn%20on%20Smart%20Invert.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Smart%20Invert">Turn off Smart Invert</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASn8eSPyAczynYs67v0Er3pheSoHAWRfeuGZRIPJFU2oDCJKVDcyyHQU%2F%24%7Bf%7D%3Fo%3DAto3cMeP8mbZNv6RA51lZjvaFBcX3UsVxk9kdV3-j0Gc%26v%3D1%26x%3D3%26a%3DCAogqC3P7B6ll95GoInEMxpWRpxof43PHsrdqTuP-oxD1mISbRDf_ovKmDIY346HnqIyIgEAUgRheSoHWgQyyHQUaiahEDry3Eqw_Ng2sigGjPnzq46x1xn94PDB2Vu3mIbhrfzbdS33XnIm5LC0gwA0ma18OC1f0VnwsHaKGbBQz3tsf8wc2mrskDN9oZtqsjg%26e%3D1727176755%26fl%3D%26r%3DE481DDB2-11A0-42FA-80BA-C316966D95FD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRy_mAigf3wvpfxy3ZBytn6_qtoc&uk=0RkYLbgOPCfo74CvPP08yQ&f=Turn%20off%20Smart%20Invert.shortcut&sz=26607">
+       <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Smart%20Invert/Turn%20off%20Smart%20Invert.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1906,7 +1911,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Double)">Back Tap (Double)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATV_dPJcPzgzF3RZOBTmneMV4IrjAawyHnTlkCuoxjuvliAHOiupa_ns%2F%24%7Bf%7D%3Fo%3DAs1wPskIAI85WcDpyid2Ck2la8o7bLsbgF7BrQpvktDw%26v%3D1%26x%3D3%26a%3DCAogPDV74ysKjrAKteyyt--zbIO0wBhBhyXmzfTuoUfZ2goSbRDzmrWoljIY86qw_J8yIgEAUgQV4IrjWgSpa_nsaiaaWofg0v-Jqt5zo71KygMlskZsP5wjFsTVo7U-_JYdgvWhQ-acBnImWDF_B0BLR37qfO_31SZJPWC8w1TDb94xEChzj-SsERlO9qefbU4%26e%3D1726569256%26fl%3D%26r%3D5D736CE3-2AA8-4F28-AEE4-D6E93DEC7424-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyOdnQYLeSyPoTFvWSUM_SddsEoU&uk=gHAeGk_QemBTnuXq_L7DFg&f=Back%20Tap%20%28Double%29.shortcut&sz=27674">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcXYdQSpqEpZQO-oygW478pNQDBaAdUF7dm1Uu44vV-gl0VQgGn5kyp5%2F%24%7Bf%7D%3Fo%3DAunYSAxZTpqwiPX-YGDS7gh_rqboefo2NoWtGn0MLLkE%26v%3D1%26x%3D3%26a%3DCAog9C4Yv_IyPBMBDg6bsq6ZMDjVXaIPhDiOiAFrqJ5Ijw8SbRD_l4zKmDIY_6eHnqIyIgEAUgRNQDBaWgT5kyp5aiY1LKMOTO4qiiTmKs7bk4Km70oJwq6fxqMh9-RwwTMihc6jpeQL2nImKultt6S4JAEQ7UpnkSNRpKmX8QWm1KsC47wpeDEZ_4GXYAf8NP8%26e%3D1727176758%26fl%3D%26r%3D8C30536B-2C0D-4607-B5BC-2F4A71E3CEAF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlheLiDc0NZ7eNkfWRPSllmUwfIM&uk=D3RqyLeEyDRCigYA-I-QSw&f=Back%20Tap%20%28Double%29.shortcut&sz=27673">
        <img src="./All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Double)/Back%20Tap%20(Double).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1915,7 +1920,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Triple)">Back Tap (Triple)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbx_HTyQWtji104ZxlXRGeRpITA1AZQqXX98hBPdRtnBopUnfaTts6wg%2F%24%7Bf%7D%3Fo%3DAtXTyxvvRNPrgABImRgeN46dJkhk0gjYtG1EZgcHzpCJ%26v%3D1%26x%3D3%26a%3DCAogWt2g_gtjwdVuF6xvVWYPXFmP5BL5XKlLrJV6ix40nDQSbRCFpbWoljIYhbWw_J8yIgEAUgRpITA1WgTts6wgaiYE_6mECXJHV61YVQtJ_VyzGIsZDushc7x5epcwTre-28Ef7diO8nIm3daP6LR3gvFMg2QnoWkJ-9S8spOOAo9lxi77uFN_dQkMnXpHeE4%26e%3D1726569257%26fl%3D%26r%3DB7A3CDB5-01EB-44AE-BE78-CEDDE7FD1397-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAEBBWN2HJmvIfKGS8Yp5QfMFZ-8&uk=gnXS1wW0xNFEB6XGGrr29g&f=Back%20Tap%20%28Triple%29.shortcut&sz=27915">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU1nqHWY_bzJBAqo6ADCxq6tMY3rAX28xY0vjf7kDs45Fp-hlnXNJwmH%2F%24%7Bf%7D%3Fo%3DAm3mSbIejjJwhdN-S63DH1SkgWfhcA5ePUoP-cle0fDC%26v%3D1%26x%3D3%26a%3DCAogtsdQGUz1O4p9sJ7gWUZ01wQyUDQBZZCwOxPbf5IwFMESbRD9sIzKmDIY_cCHnqIyIgEAUgStMY3rWgTNJwmHaiYIdxsjnMxNxWvZgj-bQkZUZmrZ9O4tAVB4rp1uBiCCBsV5bgtFzXImgjjJkSqb2Ujfeha9KWsXICerlq-v88aPIws2f8x7Wou6Vgb6pHY%26e%3D1727176761%26fl%3D%26r%3D3D08BDC3-56C1-4107-AF83-EB4BA0DC57AA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUMy8ok1li2Qyya0gx-Bze3yNAMc&uk=ttxzeCWt3a-D0FxvNorobA&f=Back%20Tap%20%28Triple%29.shortcut&sz=27534">
        <img src="./All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Triple)/Back%20Tap%20(Triple).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1924,7 +1929,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Connect%20to%20Internet">Connect to Internet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUYc9ebUYMqX2Qb3nig_VbxnBuIJAZ6mqqSUNDouUIyzK6AhyKQd7x62%2F%24%7Bf%7D%3Fo%3DAmXaH1V11iuDI5_ZKZ3f24lMZs17QV1wX-eCR3iT-BzM%26v%3D1%26x%3D3%26a%3DCAogy8CtvWffLWwQFq4XjhNvIbR8CnUm3pLBaCQvcKoDCoUSbRDRr7WoljIY0b-w_J8yIgEAUgRnBuIJWgQd7x62aia5VUQElhbNVmCyaQy0D9KRirr5-AXDVKQU3rI2lhdTaeGDePhIO3ImJRpUf1CXNeDnjqseoriVcfOofEnTLc9-s-FVKAyslr_mtoJXjLk%26e%3D1726569258%26fl%3D%26r%3D7C58834F-C7C3-45E2-9F70-5A5F5754D376-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcOS0rqn7Ym1dsVlCjleSr-6AxMU&uk=WrjbIDHj9dCeCJLtwMrwiA&f=Connect%20to%20Internet.shortcut&sz=27409">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfbJRYMN-uWj9I1X8kCPs-eDq8jbAfzmdjpuiOGvDfElfdbF_vQT6Ih8%2F%24%7Bf%7D%3Fo%3DAkHYtQH0lL8E1eZ3s82Qx9H0I-qK0RwwKWGr0c6Bjsvi%26v%3D1%26x%3D3%26a%3DCAogZ9zBXMPwT3R3P-PZZ3iSto2Mf9K3CmtlH_2obkaI-HoSbRC5yYzKmDIYudmHnqIyIgEAUgSDq8jbWgQT6Ih8aiY02Zc4Rve8xFreVty4e6s468kiU9rLHJHYJBXQ9o7yLrv27wuU23ImGxcwkJUnpBtxJCzmUHzbD2X37d75wx0HwCOuPHkqAF9S8ewBaGA%26e%3D1727176764%26fl%3D%26r%3D82F98F0A-5A9A-46EF-923C-F0E646B91203-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGWM7bzQzLW24NI_h0IUivcodfzg&uk=yTgbMgrwC9_ki8FRdHTFHQ&f=Connect%20to%20Internet.shortcut&sz=27409">
        <img src="./All%20Shortcuts/iPhone%20Settings/Connect%20to%20Internet/Connect%20to%20Internet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1933,7 +1938,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Disconnect%20from%20Internet">Disconnect from Internet</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASYM_R-X3Pn-XNzH7Um4aGz2YY0AAYB2riWfKhG42viNKlm_t3DsbfYY%2F%24%7Bf%7D%3Fo%3DAr8WqtVWjsWXWIvTyhtoEy0XddUrcEzLOOpzpMzrwSnw%26v%3D1%26x%3D3%26a%3DCAogTt4fWJOVOinsl9CQspFX8q-oO9eDHwGvKR_taN60WKUSbRDOubWoljIYzsmw_J8yIgEAUgT2YY0AWgTsbfYYaibmlyMjdboPSD-u8DsHpuuTBDeYNAkmO_5s6wr5kozSyWYQrTChUXImQ-nTJaAtyooHVfKO_dStr4OgA6mMuc53Fif3UC1xgSdiLJlAgOM%26e%3D1726569260%26fl%3D%26r%3D978D8928-304C-446F-896F-D14C0B11213A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2D72T-D7zqq48mdeRcFyisd-kfE&uk=tJzRQA_0ioFZb0zuZSVy_Q&f=Disconnect%20from%20Internet.shortcut&sz=26527">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAanTW3m0bx4qD74Qq24_hThYbsS3ARk7NGd_unDZiV4FqFVzXa-GFsCk%2F%24%7Bf%7D%3Fo%3DAo0ZVbruqOnEiAgqVXDXg-9-r6FcOanL23Hy9HBaSi0i%26v%3D1%26x%3D3%26a%3DCAogeEU8ppFhSM3VZL4nBqCLFvaz5iYkPZAF-ebgAeidjw0SbRCt4IzKmDIYrfCHnqIyIgEAUgRYbsS3WgSGFsCkaiaYtDOAAJCeH2wzzPFA8k1_6x7cmAE-JG6oQM4SAWJErqbxwE14anImFX2OKn0QyWmC-6lBxvfY1HtokIM8-_pJQ-6hNY3_R4WlP54WqnA%26e%3D1727176767%26fl%3D%26r%3D90C9D435-71C9-4DE8-93C3-16CF2C7BD07D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Das1XB4nk0wtEPfp_Q5RW2efojjk&uk=STyabAx7yOSYZf8Hltcypw&f=Disconnect%20from%20Internet.shortcut&sz=26526">
        <img src="./All%20Shortcuts/iPhone%20Settings/Disconnect%20from%20Internet/Disconnect%20from%20Internet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1942,7 +1947,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Save%20Cellular%20Data">Save Cellular Data</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdPTuP_VvH9E_SND5gF4OTw2If30AfllFrTSkGn8EKqPSDm392j5o-6G%2F%24%7Bf%7D%3Fo%3DAs9YlCPdzmZGCablxlNu590qRHHATn27_Wq6cJz6yn2C%26v%3D1%26x%3D3%26a%3DCAogYpqUvECPZE2y1y02c4hztEJUsaNeCsTxGYZ3gFrfOlsSbRDkw7WoljIY5NOw_J8yIgEAUgQ2If30WgT5o-6GaiahoSZkuJIjDW6SyJbH7W0AHkZ0X6_YyNfdEzAPD_au4M-BskG4DHImJXf8VuTi1zFnsqTxd0UdtZP9VHfA8owuamZKYy13q2eN-YFZbvk%26e%3D1726569261%26fl%3D%26r%3D6D71E8A4-B9DA-45BB-89B9-4FE71FF2C8DD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DB4Nm87s-YaQVRjg0ukaBZm4wkOQ&uk=h9bfGMwpTxCFLOgvkK9ALg&f=Save%20Cellular%20Data.shortcut&sz=26838">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbEjfJjU-gnUhMk7tXFntijtDBbBATl0smyfTYXYB2SgYKLg6AUuHeoP%2F%24%7Bf%7D%3Fo%3DAtLE88khvDC6ibfxKIn1rzotocNrZfqPS4qbGXGCwGqG%26v%3D1%26x%3D3%26a%3DCAogR6O3MFmlIhO9AVI5JCC7y2udShFQkbEgybeJ78Fl9dgSbRD7-IzKmDIY-4iInqIyIgEAUgTtDBbBWgQuHeoPaiZGwJJigpleL7G9AsDek_TuM8RsLvFPWeN-pk8UTAluBpdxAPHXtXIm_5GIVHnEIKfxU5rzhdCJIGqi8ysSIFuZki9-rQZFpYdFXLsBMJk%26e%3D1727176770%26fl%3D%26r%3D4EC1F441-E300-42F5-A538-4230A8B0AED3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpRopxXyk5PNAhu9z57fafmEJTKM&uk=VjnUtYn4rwi859V-7dTbmA&f=Save%20Cellular%20Data.shortcut&sz=26837">
        <img src="./All%20Shortcuts/iPhone%20Settings/Save%20Cellular%20Data/Save%20Cellular%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1951,7 +1956,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Battery%20Charging%20Reminder">Battery Charging Reminder</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeGDslYmQ3lRM0z1Sh87uqvvKKQwAeenyZqwKyfl2xlZjXj25bO5kiu9%2F%24%7Bf%7D%3Fo%3DAqJAUv2t-nUBIlO1bUaDGDR27f8au7SP6TgDR6fyn0Fb%26v%3D1%26x%3D3%26a%3DCAogJv_eEr89cBJ80iC803K5jthLryYBtyZkOySBFK4W5_sSbRDvzbWoljIY792w_J8yIgEAUgTvKKQwWgS5kiu9aiYbnH47rTwnJgHmQtYJtto_m8vMGyGm8uGV5V4Mb1OHUezrhWvNI3ImHLNbSCttEaeQ8qAvEfJuIS9lsC1Dwdh8uWpO2EmJqlG3jMKONSw%26e%3D1726569262%26fl%3D%26r%3DECAAD3DE-39EB-4838-8A02-1A42091EF626-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC6W6RHCjBgZXvvqtg37KtdUuWB4&uk=HOJBFrKTl10Y3Jo0Ir1xQQ&f=Battery%20Charging%20Reminder.shortcut&sz=27061">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdxv9SEo0TbhucscEVfPy_CMmboZAaiILlIZYf7Gs1RqMHGmZjKRKyE9%2F%24%7Bf%7D%3Fo%3DAsrLZDjKCu6nAPrnsphrSfmIo3B-1OTw5CgVVE8zgYbJ%26v%3D1%26x%3D3%26a%3DCAogoYUIdWgYTBvxwcMmv6CDsI88z_hoZqAWnxoO2_TBsr0SbRCIkI3KmDIYiKCInqIyIgEAUgSMmboZWgSRKyE9aiYYJ31-28ywo3R-XOZ1KDZFc7Ty5z16YbZzAedV_I2ITO-sKkPWt3Im6mqXOoIWlhrhj-OYUtmy41EBo2lpq9M6rxgF2rbzJPqTFZ7RAgI%26e%3D1727176773%26fl%3D%26r%3D3F4900DC-57B0-4B0F-B410-8E861D9F438D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0sc3vi-rYEhjhBIFEvtml15pjhQ&uk=H1UfEz-OYfCG30kePz58sQ&f=Battery%20Charging%20Reminder.shortcut&sz=27060">
        <img src="./All%20Shortcuts/iPhone%20Settings/Battery%20Charging%20Reminder/Battery%20Charging%20Reminder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1960,7 +1965,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level">Toggle Low Power Mode Based on Battery Level</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUg7fkQq4XyKhzE6bw4zrKRFSlBTASUibuOV18Y0mOxONJ3tXAihtS1D%2F%24%7Bf%7D%3Fo%3DApvrM_NTOrKHdVaZk-JswrquBHfjOKmsu_2L6YANrDny%26v%3D1%26x%3D3%26a%3DCAogM76R5K9VyIy3NncNUlQuWGvNxuGvisCj7yWNK-K4Xu0SbRCD2LWoljIYg-iw_J8yIgEAUgRFSlBTWgShtS1DaibitQdCBkovCmymgpmoSC2dpToJMkyGJejUyUJOlsVm-pHaSHAoF3Im5YQCHbd-Iy-YeaaGvEuNhckMtjXfAqz7CzW22cfSbuZgQ2KhJi0%26e%3D1726569264%26fl%3D%26r%3D7CC89FE1-35EA-45BB-ABF5-2CD387D9143E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC-IvpdmsfQzqmH4bhFGceuei5HM&uk=aJcFkAR1WvepklGAkXeIuA&f=Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level.shortcut&sz=26997">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARkez5f0OhrtJrhrnzrubWaJ6zg-AafPCSloJfkaPfOiMd1-ECpNo7Em%2F%24%7Bf%7D%3Fo%3DAqkRN7BvqZCwrIxVPH2A8PK9jx8CnVB6dqsLQbgr9Iqt%26v%3D1%26x%3D3%26a%3DCAogPSzuvFwokfEf2TIE61U_jHHffj1kJtCOM9EZfXuCsqgSbRDClI_KmDIYwqSKnqIyIgEAUgSJ6zg-WgRNo7EmaiaulhIvQ0_q4qX7YrbLvL5aW5OlIdywmSRBixlkqohDNbDkbLOsznImrIn4JZGqVdjlRs0O2ec-7gwiTxnUswSnvCp44Hc-O9Rx1Q0Co8s%26e%3D1727176806%26fl%3D%26r%3DB09955BF-CB5B-498D-9233-B470DAE9D96F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYx8CsoSGiwW4o9srDRSgEuKrTt8&uk=WmTsuFJGKopw6rd-Jo5cgw&f=Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level.shortcut&sz=26996">
        <img src="./All%20Shortcuts/iPhone%20Settings/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1969,7 +1974,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Read%20Battery%20Info">Read Battery Info</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARwMWeJ3vqEvrZcjMsPWKmdG6nu7AbEySdTFgoHeKAh0QO6SSLFt_kB-%2F%24%7Bf%7D%3Fo%3DAl0BzsFidzbGaF_GH2i9GX6ETwIuO-S9NzDekvoPt2G_%26v%3D1%26x%3D3%26a%3DCAogjR0frWYQrP0N-4JEgddmev98s522UXV4D9jxoqFX-bISbRCI4rWoljIYiPKw_J8yIgEAUgRG6nu7WgRt_kB-aiZX_qbmUhUCAeyJrdUEsZ9z993B3X2NN7RStEs3Jgpz0VpUrCGFlHImecib_hYsFaK0C_bUZOahrNcpitGb1oroEyP9UhvuojRGoEAFjgg%26e%3D1726569265%26fl%3D%26r%3D7305F6B0-69B9-491F-95AC-88184CD16180-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVT2meQVGph9Dkj-rSucW0naT5K4&uk=pn8bKm-Ku0PZWihiXV6cCQ&f=Read%20Battery%20Info.shortcut&sz=28561">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbJuY7lLQHxEQuSPa6vCUggDzcBCAVOyvJUbCcV4uSR0Hcw4NQ3bWwB7%2F%24%7Bf%7D%3Fo%3DApyO9TajrByV_KiNrWXstLnEWc6ur3JWPkqUFl-fpy8o%26v%3D1%26x%3D3%26a%3DCAogbAYYAWhEAJJg0s8N4Hn8Orb87qfPf-1dlRG8XvtXqYsSbRDxnJHKmDIY8ayMnqIyIgEAUgQDzcBCWgTbWwB7aiYIdFlA0jURP9qMP917I_psKGcXu70q0jKR4ciwL1ppgmmuEgPLLXImvu_lYWmeA9nTC2n-abwrrH0Jle1vvAE7xxKsFjJ-mPr_EJHp3BM%26e%3D1727176840%26fl%3D%26r%3DD7343F35-46F6-4839-AA91-2F8086660FB5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_wPRzESbhjMHrct9W42IJPoOs3Q&uk=ekDJPJ4y1aAxqv8zYCHWEQ&f=Read%20Battery%20Info.shortcut&sz=29263">
        <img src="./All%20Shortcuts/iPhone%20Settings/Read%20Battery%20Info/Read%20Battery%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1978,7 +1983,7 @@
        <summary>
        <a href="./All%20Shortcuts/iPhone%20Settings/Write%20Battery%20Info">Write Battery Info</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVIljhPjBNc0UPmqGzjXO8762pz_ATJQU2br7AsdE50Lhsa0ECmAeeoL%2F%24%7Bf%7D%3Fo%3DAmU6q_4WZifurCAvfzRtvbm7b821ZBpuAN0latH3Rmz4%26v%3D1%26x%3D3%26a%3DCAogoCVIwvF1NCLclDhpHD9IbrJVQLB0OUFt4xrwJMC0mXQSbRCh7LWoljIYofyw_J8yIgEAUgT62pz_WgSAeeoLaiaXwFGl5g1VTMDFhIeOZlY2_XvAdXESQKyi-EeNOW9vzjNEk8i-WXImzhNxyI2iQKEkyf5jEF9laFqD_VwdzMf32eBBB5kyKZ0Udn49CWs%26e%3D1726569266%26fl%3D%26r%3D4FFDB524-22D1-4AF2-A32F-88F5F86B0618-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DShYIPCcTbrAvxgij6szwf53e6Xo&uk=xcqT9f-bQA_FqXqvFfRFbg&f=Write%20Battery%20Info.shortcut&sz=27390">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ99Fce70UAqsiHukHFixYzMN26lAeyA7YLmy_Jwn09qM2QDKCqPqnmJ%2F%24%7Bf%7D%3Fo%3DAtGJYDbkfpjClQZMkES4K2ZcGV4wuVDh2bwelbpXA1BB%26v%3D1%26x%3D3%26a%3DCAogEYmLRAP9NMZli4uh7N2FzXWSze85sfNvH7AXNC6IZcoSbRD4oJPKmDIY-LCOnqIyIgEAUgTMN26lWgSPqnmJaiY3D1E7gzcKqdnlte9hFG4frxOILxgjE4upZdwZZcSrboW4LtsswXImS0H4ByuR9tKmptbyIpVxNdUaZkY7Q_SeNw1Auc2TjUSj9EGKsP4%26e%3D1727176874%26fl%3D%26r%3D1E1D0E44-C438-431F-8504-37419E3C20DC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuoAyWdmP2wPnqCDs4nC4IQFbYW4&uk=u-bJrQrwSSRpbYit20hDSw&f=Write%20Battery%20Info.shortcut&sz=27389">
        <img src="./All%20Shortcuts/iPhone%20Settings/Write%20Battery%20Info/Write%20Battery%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1995,7 +2000,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/Get%20List%20from%20Input">Get List from Input</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUV2SwUYJmFtni6v5qc9wH-ZDzKRAR_9a8Lj5geMkDnP8y3dI99DGyrU%2F%24%7Bf%7D%3Fo%3DAgO2qrnRjcUHZ8aK60fWM0k_MULVTEAy4U4kAKPFguDo%26v%3D1%26x%3D3%26a%3DCAognIk5R8x_cYxUFCd0SWuYwo8xhLHgQQdv4cIM3-w5BOMSbRDkl6-oljIY5Keq_J8yIgEAUgSZDzKRWgRDGyrUaiY7TJD8w56NUO1jPpIHAbWeE0bsXPCsXOk74x4RFa1_tMx7gPiAWHImzPesoNMQ2Y7SQTeiFfS8fhhqf3__0daL1ICPp-MX66wGAiHd0LA%26e%3D1726569157%26fl%3D%26r%3DDA9CCE61-62F1-49D3-85ED-E4F344A0A327-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbbrxWdz6c60Zg6BENU0pvf-HUt8&uk=ZWCfXuIcJV31eYNhZBPPiQ&f=Get%20List%20from%20Input.shortcut&sz=27050">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbVFwCYLN3q5jgMUQ8K9LMt9GTzTAdU4qWoP85tCtURoPWp6zRmgwD0N%2F%24%7Bf%7D%3Fo%3DAidrHkXHu5aIssbATr0A3yEwxuU3kMKM6Xg6PDwcInip%26v%3D1%26x%3D3%26a%3DCAogeu3ByXuLWEEA9UTmn19fa9pQSxCdJH08tDGPWotxNoQSbRDq2frJmDIY6un1naIyIgEAUgR9GTzTWgSgwD0NaiYaxQqLmI5nv16d8aIRjb5_pCSKqjud05Uh8FsvdYZprQGLYynSrXIm3TY6PHZRL-iortmZVkzFjU8JyuOikEBKrs-WqjnIXdse_kHPYC4%26e%3D1727176471%26fl%3D%26r%3D86A44D5B-D99C-4BA4-B9A0-3182348FD1BA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5lJxBs5hsU9u-4uIr97hSoIXiU4&uk=SbONtT6xDcrF7VRlI59gUg&f=Get%20List%20from%20Input.shortcut&sz=27049">
        <img src="./All%20Shortcuts/List/Get%20List%20from%20Input/Get%20List%20from%20Input.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2004,7 +2009,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/Transform%20to%20List%20String">Transform to List String</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdiHQFtRerk29smRXr65aWWSRm-DAWZmULhPKDvuKA7jH8pe0_5iFqIN%2F%24%7Bf%7D%3Fo%3DAt_E5-qQWFRVKXs0oscRd9WM_ZO5p7AqzTg568eC8d5K%26v%3D1%26x%3D3%26a%3DCAogQzTkKrbwIRGSkGeTSmgVGRGUdY8R1JOXRnz5DFAy1MESbRDToq-oljIY07Kq_J8yIgEAUgSSRm-DWgRiFqINaiahjqi1JAgjLDmoSsN-qf5YOuZ1MZ4XTbOSPwZboLPjm6JKgYYJgXIm3sDvCcRRBUfc9BPzEeYDh6_l4gX2-r4zzWyiJixIA--Q6Insy-0%26e%3D1726569158%26fl%3D%26r%3DD2E87A79-D64B-4947-BD89-7FE0F0B36852-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfUGgWvW_RDuNG81EcKf2bjkvYdM&uk=cSDO4l6yK54UPS-fSxBGbg&f=Transform%20to%20List%20String.shortcut&sz=26831">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaNBl2eu-pYUNTTH7nUi7MrTz8bYAYv3z28z7juVc4fMb_cyTytZO_rC%2F%24%7Bf%7D%3Fo%3DAiHQgIrp2Jw54f6vgyhn_MSgLXryANZzjqR0Oq61Y4oN%26v%3D1%26x%3D3%26a%3DCAogvk5gDIC3mTimTWJuAJWupDR73s3ajBgL4CjYCy5Lr30SbRCF9frJmDIYhYX2naIyIgEAUgTTz8bYWgRZO_rCaiYAFBmy32TWgPtvsI_2YFXwcsSs0ngrP5dXkqKXUgAmGOcbiS1uCnImhXK2gbQJ_oVChmRjh5kb39YxPLzkXiFPLSvNQnfzo2aWyUCvOpk%26e%3D1727176475%26fl%3D%26r%3D7EB3EF98-30E4-4794-8343-589EE54CF556-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHt7CON3vDeVfNUAtNTUjDx3uikk&uk=DaUKbHt9ZjpmL0KMfi7bdg&f=Transform%20to%20List%20String.shortcut&sz=26830">
        <img src="./All%20Shortcuts/List/Transform%20to%20List%20String/Transform%20to%20List%20String.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2013,7 +2018,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/Get%20Random%20Item%20From%20List">Get Random Item From List</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbsNUKoGYoS1rBEOVvxkof0I5z0pAeoOtT00SUvtVJU_JIsWcx2Qd6BM%2F%24%7Bf%7D%3Fo%3DAmP_u3Ea4UIXzt6uXupt3eTTipGuZUwEVUWhHBG4Z5hh%26v%3D1%26x%3D3%26a%3DCAogbaFukMAT4u56rP2ePTDXkQWECioo2ZlHqpYoa-9sGB8SbRCIra-oljIYiL2q_J8yIgEAUgQI5z0pWgSQd6BMaiay0dFRu0scgDFK3D5szgQgPPSppeD-PmI7N53ji1HkxKknLtHWBnImXCHQSODkV6kmYdzVJR85pDXqu3jZdJlfd-bcbjtzmZ9Eq3TdV04%26e%3D1726569160%26fl%3D%26r%3D8D4B9B10-9C14-4612-9AEE-8351B08C3C4E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYUktjd02kInA2KF6QdN_l4TfuPw&uk=E1sVOhWhVgXDx2NKUD4-5g&f=Get%20Random%20Item%20From%20List.shortcut&sz=27186">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAerLGEp2QtaiMD84tr8Q9K6ZMRMqAZ-oAoVYudsxAFEf3fWVRotVTjEv%2F%24%7Bf%7D%3Fo%3DAgFrqWqE2LDoMiwQvNG-nSCzCoE2bnay_UDQCyt-wSDe%26v%3D1%26x%3D3%26a%3DCAog757Xa3DEMiFywPY7M5ReYG-goC_cu2RdBNptGXBYZUwSbRCDjfvJmDIYg532naIyIgEAUgSZMRMqWgRVTjEvaiZjS1fdLcwUaiqQGQmtwfQBgMZksFACaAN1tLFkKUWj6125YUK2TnImAGYGkEspefBHQf-UZF0w5tlQBziGXOSlgiX4R6h3scYSkZljzak%26e%3D1727176478%26fl%3D%26r%3D31769F19-55F1-4ADF-9626-AD87EACDD3F5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSfzCf-buxHBvB35i15OY2nSYdx4&uk=wqwJw1YeMZQ3fOM5dbHXkQ&f=Get%20Random%20Item%20From%20List.shortcut&sz=27185">
        <img src="./All%20Shortcuts/List/Get%20Random%20Item%20From%20List/Get%20Random%20Item%20From%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2022,7 +2027,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/Get%20Random%20Index%20From%20List">Get Random Index From List</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc47asHhxXKqY0FV2jSCN4tvxzAeAQpPlK_eLaXHcA8AK0VCWogoLjmn%2F%24%7Bf%7D%3Fo%3DAmzQ_5E8eXJTABYhK8HTRyHfSUvRH-InbYu385_9th7l%26v%3D1%26x%3D3%26a%3DCAogLUw8eo_yHb08ZOPQr3JCFzeluEEk9Mr770uw36BYAFMSbRCit6-oljIYoseq_J8yIgEAUgRvxzAeWgQoLjmnaibXwZevz-QSNcayWwM1JbuhpQoHWvIpPlMfI5epML_9nbk-Qhc3D3Im6NrlxNpupqHFnWpwDNvF_CitqJ-_ZpdwEMPY2qhDsT6j0iOgNhc%26e%3D1726569161%26fl%3D%26r%3D41185B74-6071-4481-B2FB-D80101BF3DB4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNqvyhiFuaXLOZ6XFETTcGlFAb5Y&uk=Hm39W7z95VBAHyzX6D72Sw&f=Get%20Random%20Index%20From%20List.shortcut&sz=26709">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfXzIR5XPd6MKTpTP4YvC4xCUprQARWDucWJCH-lMHpENfbhBfEfO22O%2F%24%7Bf%7D%3Fo%3DAg8hEEDruvy6pOef7mjtbnMhlh-yufs4K0NnjBdOKYV8%26v%3D1%26x%3D3%26a%3DCAogwunSxB0dopR_ZNXx3UsYXO6_AAllLs5zOFXlAKB5T44SbRCRpfvJmDIYkbX2naIyIgEAUgRCUprQWgQfO22OaiYRpRT2GSoAYV4aFSVhunqq5N_R71MDh6xlXKW7_YEqD3TTjBxKkHImh1hA4nheD0Uo_WuZ5pXUhqLVoOGEMBdd0d4LtsDl5x4AQKVe_VI%26e%3D1727176481%26fl%3D%26r%3D080BABEC-A409-4276-8B05-26697AA9D460-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DR_Qp7Hq_c4eSDoZkGm4YvElCTps&uk=bu5Fdo6eIqkF686E4hpPHQ&f=Get%20Random%20Index%20From%20List.shortcut&sz=26708">
        <img src="./All%20Shortcuts/List/Get%20Random%20Index%20From%20List/Get%20Random%20Index%20From%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2031,7 +2036,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/Count%20Occurrence%20Of%20Unique%20List%20Items">Count Occurrence Of Unique List Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbuMu6g4IBA5R8j_il1c8mCXy-aVAT-hb_sPECyAYy1nz5T_NJs222tG%2F%24%7Bf%7D%3Fo%3DAnKxof4s2A5q4Y0SA0-dYNCuL2RWkYy7A1xxOGRAxS9w%26v%3D1%26x%3D3%26a%3DCAogzSmMkzvREO9gHYnW9cbTQZ_5PeKnNjjY74hJoBhtCAQSbRCqwa-oljIYqtGq_J8yIgEAUgSXy-aVWgQ222tGaiYbSEXAdFh75ddB6PpfSoOPz9ooRV-SrUwt92_A-DNGMln1H3EGd3ImNTtwvEjli33Ukuy69XWPCxbgVP0MfVZZVa1eCH6-Kugewh6QhkI%26e%3D1726569162%26fl%3D%26r%3D09BF83AD-0F46-4017-BE63-EB5136B37AC9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DektBEizEQHyTyIxuEObCR7IFHBE&uk=UOTuek3P9mziXp3jSmoAJQ&f=Count%20Occurrence%20Of%20Unique%20List%20Items.shortcut&sz=27518">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe0dgUpC6bDrxG8rQdAxqgC5wimKATqByhwjhNSlfOolkZb6-0ezFPyR%2F%24%7Bf%7D%3Fo%3DArxqAwRHaHUMD2Lh5HLi2tThOv6r-IffnpjKjEQcvIMW%26v%3D1%26x%3D3%26a%3DCAogZ5vitcNXMmZJTvQV7Jczp058LU-_iAsIp-d6oQ3HrmESbRDBvfvJmDIYwc32naIyIgEAUgS5wimKWgSzFPyRaiYRrUK3rGUJKzdmWz5qnOrVNgvsyXv-ZO3SOgQu0qPUA_6Fe5hQW3ImRLJ-tqLkKyBL4HPKSkZqWmA_G1LzEjeaalF3h3XxCXw5vd9MzlQ%26e%3D1727176484%26fl%3D%26r%3DCBDDFA80-79A7-4511-926C-7F98964D93E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCYtvMlyT8h7mdC3ssC7YNXNv3-w&uk=eQ92Ty8UoKrqDD4hc5QL7Q&f=Count%20Occurrence%20Of%20Unique%20List%20Items.shortcut&sz=27517">
        <img src="./All%20Shortcuts/List/Count%20Occurrence%20Of%20Unique%20List%20Items/Count%20Occurrence%20Of%20Unique%20List%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2040,7 +2045,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/isList%3F">isList?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcBxCmtGoWM46zM_mktNUdZZTHTiAWv8YEuE1iR8EzyM-Byo_v86_S4M%2F%24%7Bf%7D%3Fo%3DAialj2e9OjP9OBl46stSJySob-MzZGPyZTq3r0IeBxCt%26v%3D1%26x%3D3%26a%3DCAogPQ3j_fDdKiCiFAJlzUblY9boeWB-DOFOo5ezG7NawRQSbRC6y6-oljIYutuq_J8yIgEAUgRZTHTiWgQ6_S4MaibZSx-oYTWLf5bMem-MB9JB_WBoY_SsTBl1cs2oPYUG6GvcQ271w3ImZe0OokOmmjN1KWn9gLWme_0g9UUPaH3YZFuZzvudvMWJm5gpt2Q%26e%3D1726569164%26fl%3D%26r%3DD2779628-8556-4876-84D2-F0660DC6C015-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYFDJTL1FDaP-CgqP85pourwNwTE&uk=-H6y0p9pLkgr03lV_Y_f8g&f=isList%3F.shortcut&sz=27745">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVmr65BficWaxe5AUXBJPADfGSJfAUN0JtfjOEJ8zPaoJZF4IQW8VuJn%2F%24%7Bf%7D%3Fo%3DAhLB6iVzrskF9Zh6IOm5a-hjuuQ-44tUCxEt7UmbbGkF%26v%3D1%26x%3D3%26a%3DCAogqRevdWlvTbcO9kLZwNXvmT_zCpaFq9xOgU8YuWnYoj0SbRCZ1vvJmDIYmeb2naIyIgEAUgTfGSJfWgS8VuJnaiacFWPj3mf3vRf35gOY3Bf4SScSHaJBlEmw56kMN7IxFP4pSrs_q3ImsF4n7JIUz9hImRSK8SjvjofmFpPrcGxV7xd4wIV0DH-9IiOJBvk%26e%3D1727176487%26fl%3D%26r%3DFF142E4C-5382-4E0C-B41B-49349C6B55C7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQ_zNoKlU99Ph1mdNC0U0gIL4520&uk=XO5NS-r5mRygwxwMSr8buA&f=isList%3F.shortcut&sz=27744">
        <img src="./All%20Shortcuts/List/isList%3F/isList%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2049,7 +2054,7 @@
        <summary>
        <a href="./All%20Shortcuts/List/Merge%20Lists">Merge Lists</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfYy-T5rqhl859HnoaeumXCJLimmAfN1xUIun_kvas3nM9I4iyiX3tKl%2F%24%7Bf%7D%3Fo%3DAudAtJ74x7vcAWU5MlGaKRm6xM2Eesjs31xt5Iw-xmeX%26v%3D1%26x%3D3%26a%3DCAogqG0nTEBdWE-5rR88UZ5awh8kNhlVsqDwmtJTFMveFzYSbRDV1q-oljIY1eaq_J8yIgEAUgSJLimmWgSX3tKlaia-rk3Vy6hgGPWmRS3iEF3aSp0lw97WKm7ll4HjqlRYdq6K5dlDT3Im636vtiruODtn39MG8Y-sAk2T-2yasieINKe-7FnSuKETh_NbEgw%26e%3D1726569165%26fl%3D%26r%3D7891A85E-8652-4780-B8BD-41DC92D5445B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuaydXkwlTO4Vzs1gXirJ888RylQ&uk=UdwBfU8gFjLyBza2g5whxA&f=Merge%20Lists.shortcut&sz=26628">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZZeuUDUhS7KGh8KH_dysQl-xLu_ASlCz1jM2wNTHh-xqce_cDEXxjnX%2F%24%7Bf%7D%3Fo%3DAn1zBaDrI9gQuRV8kQG7IzOLshXCKTaca7aq3RG_Gpwz%26v%3D1%26x%3D3%26a%3DCAogEx08t1wO-Ase5m_Pt9w0S9mVJKcvUZXmLnDKRZKVN3ISbRDO7PvJmDIYzvz2naIyIgEAUgR-xLu_WgQXxjnXaib09oqA8zBN3ao64eQTwhqgtiIzRw9ojIHXkV2Bu_mAhhOq15v-rXImkVwvmfuS_I51Z_PZkaznt-vnjHGQ69OELl2Hp6SYjKydxvsxNWE%26e%3D1727176490%26fl%3D%26r%3DD699B0C5-5E75-4584-BF57-B61C63476046-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjUyX8EEBxwYX70AotmrcmtJSmyI&uk=y8RAsVe4zm-6ZXU6cx-TOg&f=Merge%20Lists.shortcut&sz=26627">
        <img src="./All%20Shortcuts/List/Merge%20Lists/Merge%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2066,7 +2071,7 @@
        <summary>
        <a href="./All%20Shortcuts/Motivate%20Me/%F0%9F%93%9C%20My%20Life%20Rules">📜 My Life Rules</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYuNMpk2_ZiUpyAvgTrCk4HsAoKhAUy5g1nO-6rg4z3pJJsMPpoeTjRK%2F%24%7Bf%7D%3Fo%3DAkeCcVZVKReJHOS6M84uN0I8HHzu68eHP-gyZFYQY3v6%26v%3D1%26x%3D3%26a%3DCAogV-t6rKFDGEf2tRPqK_Mpj2-GTzDdF-qkUak9IbS-gRgSbRDXpLeoljIY17Sy_J8yIgEAUgTsAoKhWgQeTjRKaibYoPTILbAMOWv6BqwaWUGrcm9e3l7k-jSLIjX_YetMKi-HtNA1cHImqdJwENpi1wEggJfAIMl6KOHL6lAexx94U3ipgIxHPC2wjTj4MO0%26e%3D1726569290%26fl%3D%26r%3D265A3FD8-3E75-4666-8E4F-1E3E1603ED9A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0hcyJH7bw1IQXiW41KfQ-YqcAWM&uk=ubl59WtrTAPzAovYjz6iMg&f=%F0%9F%93%9C%20My%20Life%20Rules.shortcut&sz=28233">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVIxoNo4V3llGFE0SW-KpHtbn6wiASJRhcpvXsw8s1SRisUmVNncuZ8S%2F%24%7Bf%7D%3Fo%3DAt-aeDSBT3im77koBpc7dnJ6YicAQitm-kU9yxCzDKgv%26v%3D1%26x%3D3%26a%3DCAogXRHrmY30NfgWTUdUD44QwSF1qHJLzcYwbWjCu-Us1rkSbRDjnrbKmDIY466xnqIyIgEAUgRbn6wiWgTcuZ8SaiZ-foiWCrFS0qf8EK_THekjXTfHCB5XZSbLFkbvdhewN-XNcrxkj3Im0SJ3mBacgd8JBt75arl4INOSGVHy7dAaxZa55hDEswsxzRQFHDk%26e%3D1727177447%26fl%3D%26r%3DBE835DBC-3E55-4DC8-B234-FF5B24352304-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyZxgASLbaVXfa3W9rqtGiqCWklA&uk=N3_2wFPSMg682GT7f2syAA&f=%F0%9F%93%9C%20My%20Life%20Rules.shortcut&sz=28232">
        <img src="./All%20Shortcuts/Motivate%20Me/%F0%9F%93%9C%20My%20Life%20Rules/%F0%9F%93%9C%20My%20Life%20Rules.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2075,7 +2080,7 @@
        <summary>
        <a href="./All%20Shortcuts/Motivate%20Me/%F0%9F%A6%93%20The%20Mamba%20Mentality">🦓 The Mamba Mentality</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASnKB2xFbt-CbZUxmjSKsFMZlOTjAYNoTc4KNwwiQfL8uZ1SeAqjeo3W%2F%24%7Bf%7D%3Fo%3DAkFH2Tyt-UELP0X9BuT1mQtyKp8UGuEyGOSNEwQBYDaO%26v%3D1%26x%3D3%26a%3DCAogsTlqZSkzc1WJv0mp6Ow8XAY6esmfUpGtACDg0wwc8OcSbRCSr7eoljIYkr-y_J8yIgEAUgQZlOTjWgSjeo3WaiaYw8rgNtn2zy1GSK8MD6tkBENtAZ8Bgx_BNpLwjfP1uiRKiNLSInImwNo8iZe-qGSy0MvhvBzIHFTLlU4iy2Z9CcI3myB_ve9W-IWMMWE%26e%3D1726569291%26fl%3D%26r%3D16949D2B-B4FB-42A0-817E-F251247E15DA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSU8HI89n2WUe9dJncIQZz68yUkA&uk=kAnnfF9jVa--4QPOKjidrg&f=%F0%9F%A6%93%20The%20Mamba%20Mentality.shortcut&sz=27195">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQZy-UrEQmCKMM6xAwxQKAno-n93ASlFWaCKlA0LScXkzpG_pOG9pQ_L%2F%24%7Bf%7D%3Fo%3DAv4zdsM8jMtvppdtwGhKy0yqkKM5-I5RsAX8j2hT2kbK%26v%3D1%26x%3D3%26a%3DCAog5mqqPFFpG7XrsfrjNnjCm2CFg2NnZCFtGz7N_PTkb-ASbRDwrrjKmDIY8L6znqIyIgEAUgTo-n93WgS9pQ_LaibSqRMa39f14zwa291_c1u1fdUyPQWvFkZjBvNb41NOkMhFDE4aaHIm2ZhcP1VEulBRo3A8J5iGKsj8DLUYK_AfCbo8KIZzuySioTBV6go%26e%3D1727177482%26fl%3D%26r%3DEBD5F16B-6A68-4C3C-BA85-D7E4B52A650E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdmdxYv4GLMBRTF0ppr0WBiHiPZ0&uk=9hdSxxUcDXQ9gNZhJ6ac5Q&f=%F0%9F%A6%93%20The%20Mamba%20Mentality.shortcut&sz=27194">
        <img src="./All%20Shortcuts/Motivate%20Me/%F0%9F%A6%93%20The%20Mamba%20Mentality/%F0%9F%A6%93%20The%20Mamba%20Mentality.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2092,7 +2097,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkeys">👀 Sanity Check Keyboard Hotkeys</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASIziOxtgxEqyFT9ZxAyo5EfD9wQASiPaZuFICTMrf1XvpaGYcQWHjMS%2F%24%7Bf%7D%3Fo%3DAmR3MZ8r8_7eBRf1AYz8jLBG6gA8gc18NqP_1beosLC2%26v%3D1%26x%3D3%26a%3DCAogikhtrjFECm8N9NjEVBMJw2noxk6vix7pzdKuO-F9PFsSbRCvysipljIYr9rD_Z8yIgEAUgQfD9wQWgQWHjMSaibgOPB1sNbNvylQQq3CNbFBrTTLucEZg_Q5vf4mNYDWlC-PBiwg0nImS5T1Kxpdptvcq0xOuZLhhhZ7spS4h-crAN8wsul7A3rtcgd8tvg%26e%3D1726571670%26fl%3D%26r%3DD239F730-89FF-4BF1-8212-842C57B766DE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfI02jq7mNHuTxD7u-IHgycx59BQ&uk=XwrGOd022f3tFma1CrS2lw&f=%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkeys.shortcut&sz=28897">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfeWEiHEPB4SKzuFk_ykVI4A7FI1AZRveNzKoaoc1zHU24dYOgixlrWB%2F%24%7Bf%7D%3Fo%3DAqvUrOVphhp1e5mBKto9kuSmBI_6tfw-DRzCLHPK5uBY%26v%3D1%26x%3D3%26a%3DCAoge22LH1lEuSK-0RwTdXAYEQpN84Y6dP9Vbeg25uHxYfkSbRCNgNPLmDIYjZDOn6IyIgEAUgQA7FI1WgSxlrWBaiZCI7-_tVnOvA30DhQR17d0CzueG8RCb1EvVQG6Fy5bfJ30U4-G_HIm1roH1qZFcYkmJzFjXUbVIrNmVw2xuwUmzh8q3bZGhN1PeBU_Cq8%26e%3D1727180015%26fl%3D%26r%3DE54D8E74-764B-4BFA-8E3C-FAE4F4C4A73E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dk-c254rfuNNPWrFQkO46LgUmHRc&uk=8nggwexm2_E6BfYR476_yw&f=%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkeys.shortcut&sz=28897">
        <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkeys/%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkeys.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2101,17 +2106,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox">🧺 Organize Idea Capture Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ_OyTGrtUMl8M_Vd9muVbyMNUu3Afff8zcUcWca6P88XFf8bc8Ty5sB%2F%24%7Bf%7D%3Fo%3DAvjyqqDBMYDW4s2KW8JflApjlA6eSNj30Fxsefd4Qdjw%26v%3D1%26x%3D3%26a%3DCAogeX5GNs7AggQ9sa1hQMWnhP_3z8affKvMOiKm4o85Y-oSbRCCwMqpljIYgtDF_Z8yIgEAUgSMNUu3WgQTy5sBaiZltieL0ZFuHVphfEAebrjK3XmTdXL7CM5lBhazRBQq2d-lQ9QR2XImWpfhHbv9DmVaIzAGw1YdDtXrRnEqHw1VzO2iO98n0oQ4S1sS1PY%26e%3D1726571702%26fl%3D%26r%3D23D9E52D-B60C-4370-A577-9509B24B8483-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ds9rwJFdh3uQrKTZNqwabwQU0uUc&uk=Rd3pq0e-CwwW6ekTLIwPEw&f=%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox.shortcut&sz=30787">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWPUUH_8oC8cJp9jV36sLtOMhddAAZziIUGED9XxO4Yu7TfNAkkU2Kqa%2F%24%7Bf%7D%3Fo%3DArfeDxXVs1r4z2pEDyptGIuKZQLnNcInMpLr_h5Gwk38%26v%3D1%26x%3D3%26a%3DCAogFj8W9JQw5nXYrE1XKKzBeW0Cw5MZFuQHuQBZ0jFone0SbRD5iNXLmDIY-ZjQn6IyIgEAUgSMhddAWgQU2Kqaaibntxi2sz2yWvVYRXuS0BhoiTfdjQyg7Wtn51jXMwz8Hgg6EfQC-3ImMExBGFSBrcTpvN2PI-HZZcDP_UJ3i5AVCUukysz6l4XmEXZiDHo%26e%3D1727180049%26fl%3D%26r%3DC8E70E50-92D4-4E89-BF59-107ED2918741-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D42FisSvwdsumYJuxxVa0KOGCTew&uk=-DNnDsG104AstOwNavs8ZA&f=%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox.shortcut&sz=30787">
        <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%93%9D%20Auto%20Log%20Daily%20Bullet%20Journal">📝 Auto Log Daily Bullet Journal</a>
+       <a href="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%93%9D%20Auto%20Log%20Journal">📝 Auto Log Journal</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcRXa426Csf07wLKufLcGTaLSuVpAezZthhBg5PTKvNuwk99TtVndC3d%2F%24%7Bf%7D%3Fo%3DAhU4sHFnj57Z4SC3jKmlBlyCiCc2iLjj_wmXlOVaMDVC%26v%3D1%26x%3D3%26a%3DCAog76ybKPSAldB9I2IVgg5a7CPz_Gi57lVJzgNISHvGmccSbRDytsypljIY8sbH_Z8yIgEAUgSLSuVpWgRndC3daib9wXlUhyRE4QOBFJOW3tBU5qDza8A2t689Z9_dyxjQ1uwCNX5BH3Imhvwr0cvM3xuxnR_8CLQUNYBob-IsziUaXmkPpULZlBSs1bUhSI8%26e%3D1726571733%26fl%3D%26r%3D4AC5A54B-BF51-4770-BA63-49CC9533521E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxPlO3c-NRWQPWd9DjTSl_ScCSyI&uk=zej0MDRlSrTPZZEMxAAdbQ&f=%F0%9F%93%9D%20Auto%20Log%20Daily%20Bullet%20Journal.shortcut&sz=28253">
-       <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%93%9D%20Auto%20Log%20Daily%20Bullet%20Journal/%F0%9F%93%9D%20Auto%20Log%20Daily%20Bullet%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATPAsVFYycW2MVWITPadcJAknGEqAUim1NfV3QtJ1G7LzoyyB4oyD4fI%2F%24%7Bf%7D%3Fo%3DAp0iP090dvETsR8zoJMmmgN_odqqERAW5-cpSdIYxiV1%26v%3D1%26x%3D3%26a%3DCAoghHIZfRl8gJKaA1AijRLcp-JJjsL6_XKl5PG1Hyg9YfoSbRD-jtfLmDIY_p7Sn6IyIgEAUgQknGEqWgQyD4fIaiaATOfTeh2IAxQGLkCz_hFzWA85UKjSBK8lWFdsAvZAzxLYJ2R-WXImpVB4Cv25cI3FUaHtb79msWp5iSXxyUCMQi26KMjinbtuiD6diaM%26e%3D1727180083%26fl%3D%26r%3D9B8A75E1-AED6-4DD9-A8D6-DECFCF590E02-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUrFUu-Qohqs_7VUGpdB_msUWMd4&uk=GWCiicmBvu1EzBekgAvKPg&f=%F0%9F%93%9D%20Auto%20Log%20Journal.shortcut&sz=28252">
+       <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%93%9D%20Auto%20Log%20Journal/%F0%9F%93%9D%20Auto%20Log%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2119,7 +2124,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%97%92%EF%B8%8F%20Auto%20Log%20Fleeting%20Notes">🗒️ Auto Log Fleeting Notes</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASqQ4ryfROqjJFVSFTl9HFORCxF-AafjUqY2T4bVdaYp9Ls26zfxa39D%2F%24%7Bf%7D%3Fo%3DAvMGlN7c3TMNQ0MPudXOmc9NZzYDZWQLF5RrmqL0zMeg%26v%3D1%26x%3D3%26a%3DCAogSkyUWNygIESdyIp41UECW28mQU0QQ1irl7DCqcn3AuMSbRDlrM6pljIY5bzJ_Z8yIgEAUgSRCxF-WgTxa39DaiZizpu6hbBJDhQVqVV9DyYdYPaoQJUgPYEgBtRaG6c8WurtQfvlmHIm4C_fnZ3lpu393Y5wesOt-ir2ko01MSXdMKtyOGRUuXgmpeL8gVI%26e%3D1726571765%26fl%3D%26r%3D3CE7FBE3-83E5-4229-A70A-818614DA30E6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcddL6dIz5j-bCsWPREBXbyC7zvA&uk=MpFUwY1tP9ccG6dD2Wcrpw&f=%F0%9F%97%92%EF%B8%8F%20Auto%20Log%20Fleeting%20Notes.shortcut&sz=27585">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcLvdsKUQlD1vo8L_R67utOmoXlYAYODqpqUOo-1M105z_2GSXR6UBtH%2F%24%7Bf%7D%3Fo%3DAp78s91ZmpEBZbY1EEXobPiHJNTACSsGb-t-l1CaSIw1%26v%3D1%26x%3D3%26a%3DCAogNNNIAB__6DxhXvP84GQWzbVPZ3rkUCi8ZP9ytHsZJpASbRDXlNnLmDIY16TUn6IyIgEAUgSmoXlYWgR6UBtHaib_OcegwP7-nnn3GJSiH0-5wvJSsJ8zn94pX3y66B_-UB-Juom00HIm6u5x4x2v6AeKJfKkQx4A12keZolUuUdKahBcGMmconv5JHsmVog%26e%3D1727180116%26fl%3D%26r%3DAE65CB94-7AD8-4EC6-BBF1-2DA8DAE66B30-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSDd2WZNYu225zqqW-TZuxR-uK0A&uk=sZyL_3VwIOJEV9WmJZuBwQ&f=%F0%9F%97%92%EF%B8%8F%20Auto%20Log%20Fleeting%20Notes.shortcut&sz=27584">
        <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%97%92%EF%B8%8F%20Auto%20Log%20Fleeting%20Notes/%F0%9F%97%92%EF%B8%8F%20Auto%20Log%20Fleeting%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2128,7 +2133,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%A7%B9Cleanup%20Parent%20Reminders%20in%20Inbox">🧹Cleanup Parent Reminders in Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQPBcqCtfH2yQYcimxTKYR3PGw_KAV--XXsqG7Q_pxUgIeRM71Xg1pNM%2F%24%7Bf%7D%3Fo%3DAklltNe3d5LVxavInQItNTeWmkf_T6j2WHeBY6e1uwbJ%26v%3D1%26x%3D3%26a%3DCAognjJ1ZvbDSmc-xNKjzCBuDVbC9ZDN1xiD02Y6EaFaPO0SbRCCo9CpljIYgrPL_Z8yIgEAUgTPGw_KWgTg1pNMaiZWBNhj1kxiqHeJv5EK5tHuNvH41TE2CXCv-21cCZ-RQeA1SHRiM3ImOwAQ_IqrfyaEmI9x4kL-Ms5Apvit9S-3O6nJEvlgyPrAlTbagCI%26e%3D1726571796%26fl%3D%26r%3DF83F164F-BEDF-4129-9AF1-A9B48F44ADE2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyEvOkGb-dTCq0if66kqNxtGa8BU&uk=VEOjziGnkVpoVbNHMKJrMQ&f=%F0%9F%A7%B9Cleanup%20Parent%20Reminders%20in%20Inbox.shortcut&sz=27032">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe9XVd9OWfxX5YH1QDpyFDOsFzbzAfSh7rumawZYgyVIjK-NJ6oFZIzc%2F%24%7Bf%7D%3Fo%3DArQmx3nAQc9sPqzZ7QCG-C5IW-52_UkiQTb45DpE07X_%26v%3D1%26x%3D3%26a%3DCAogiVmQEQuXTmvbxWfmj8FKAeLffcP77MQpVkNBKayB1T4SbRD1mtvLmDIY9arWn6IyIgEAUgSsFzbzWgQFZIzcaiafqjOxaNlJY7F99_7MSVaYZcapCtslVJNXMWypJajV9AyYluh9y3Imyin8esa4PJPQip8PDmhxepyruNS0z71cgs5vbL9rKKcqIhvolow%26e%3D1727180150%26fl%3D%26r%3D7464ED8A-03C2-4F91-8CDC-7AFCC859D1CD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DY9GsoD30rKzOq-0cd8ORUfShzOg&uk=dAxJf6zsNf10eYK-9_umtQ&f=%F0%9F%A7%B9Cleanup%20Parent%20Reminders%20in%20Inbox.shortcut&sz=27031">
        <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%A7%B9Cleanup%20Parent%20Reminders%20in%20Inbox/%F0%9F%A7%B9Cleanup%20Parent%20Reminders%20in%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2145,7 +2150,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Send%20Yesterday's%20Photos">🤍 Send Yesterday's Photos</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU5aqlSwSzMt2hvySPZOc4KsuTO7AWeYDNYHHScYsWeNjgVEPVZLF73Z%2F%24%7Bf%7D%3Fo%3DAtqWLZwE6WK7Hy63Kei3etbIXD5A52mPlViaPZvQ92R8%26v%3D1%26x%3D3%26a%3DCAogJDqVKQ8tUiFdE0KZoWW7_VVi8iS1FLRUR84C5JgtdBwSbRCty6GoljIYrduc_J8yIgEAUgSsuTO7WgRLF73ZaiaaOKaticMq6-2spHtPqNrlpkQIbcCPx6sHlTvgMTQCWmG4lDhgEnImDreXKKagkbGTMLA28DlmtAtCAsDcwgGHeG5FpY_W8Jiz-GsO5xQ%26e%3D1726568934%26fl%3D%26r%3D9198A5B3-9C51-46B6-A18B-22E82258ABFC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DBNdjik68IVz5gCHSKJi9yBzyVXY&uk=2uf0BTfvYCKmAAYR72TPbw&f=%F0%9F%A4%8D%20Send%20Yesterday%27s%20Photos.shortcut&sz=27319">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeqU4YbuoEieBenjqTQllsyPImdTAYCHcHDZYZ39PZ8QFXX4Gc8M2OO8%2F%24%7Bf%7D%3Fo%3DAvNRJx0TY6veA5zWgX4Gnun1CQYSdfDlOmUEIGhZTBUz%26v%3D1%26x%3D3%26a%3DCAogNojoQYmbtqVbPYHql2Vr0pgUTDs43qULs5luNEzyd44SbRCKtMzJmDIYisTHnaIyIgEAUgSPImdTWgQM2OO8aiaYIlna09Qppr-0TvwlGMbKXOmbpyAf9GE-wlnLccOIHVv9j4dO7XImeDOxGL4n7PKx-LwuhtB3AwFiQTyPS0p-hrvo9M5GpmaX1Bzhqpg%26e%3D1727175713%26fl%3D%26r%3DFE0783A2-B1D0-4354-89CD-7C02C5B4A35A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dn8rDVXsFqklqOJMj9jMPvfb_YdI&uk=WhF9dzB7C0BnT8aeNGzSeQ&f=%F0%9F%A4%8D%20Send%20Yesterday%27s%20Photos.shortcut&sz=27318">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Send%20Yesterday's%20Photos/%F0%9F%A4%8D%20Send%20Yesterday's%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2154,7 +2159,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Today's%20Weather%20Summary">🤍 Today's Weather Summary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZVRt3IypaP2KPSZJn9lHyY_ASeHAa0RklaNUCh9zJJfoZ7tSLGcR1Ou%2F%24%7Bf%7D%3Fo%3DAhhWHBwiLeGOgFG5R8e355zYbwl-6dfwLutg3r4KYjca%26v%3D1%26x%3D3%26a%3DCAogktsvlygn3wlxPgaRDhQUojslWEMBCQR98SRukNPe58gSbRCu1aGoljIYruWc_J8yIgEAUgQ_ASeHWgScR1Ouaib4_23LW2nt70Sz8nC8_VGAk3pLztgJwK7uDjHQBgxBTcWxOgIIk3ImrKTwjiDpAmmyFHHi7iduOxZRBXupDh8UfiMhNen0d3Efw97mq2U%26e%3D1726568936%26fl%3D%26r%3DAEC342B7-D04C-433D-A7AE-C9E72248E1CB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrhxU1VGo0E78gv5nMwOeFydxOaM&uk=X7nrLp_WwpqgzGBqa1QpQw&f=%F0%9F%A4%8D%20Today%27s%20Weather%20Summary.shortcut&sz=26930">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWtquPp_8l8EAcUkEJxR0cllJfEaAfTfv5UYicd_2rOKR8jYPp4Xbbif%2F%24%7Bf%7D%3Fo%3DArC_ixI8p2sKmln_pbhFVJrCHXUrTJx_Z1-gavW3dsXY%26v%3D1%26x%3D3%26a%3DCAogEUSxrad6uxwZCW9kw31-eiGGyjeUOYhdqHOaw5vAYvQSbRDkzMzJmDIY5NzHnaIyIgEAUgRlJfEaWgQXbbifaiYcThB6fN8X3VzqI2EjFzlnvOkhltiVZQwwqV2SZEVdTmKcPuVF23ImVtQfKTJGamrrpkcHUvOgrPWiIHHeSfssMI2SsqmX5_1PQKR9dyQ%26e%3D1727175716%26fl%3D%26r%3D37229D59-55F4-4308-9B40-F3DE9667EE3B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dy_2ZNnWWm5FxfWytEt2wBi3VSOs&uk=qjbORc-hwGuFrCVwz20cQw&f=%F0%9F%A4%8D%20Today%27s%20Weather%20Summary.shortcut&sz=26929">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Today's%20Weather%20Summary/%F0%9F%A4%8D%20Today's%20Weather%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2163,7 +2168,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Journal%20Prompt%20Question">🤍 Journal Prompt Question</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbvycpwDw5Jf4wDfN80EcAVie7kuAbqP8mU_Nj3ZJmQb6RWp8yUnB10X%2F%24%7Bf%7D%3Fo%3DAh8rTAjCwBiUjav6VpYXS113rKMUVjdyo8bxzeU7I1cf%26v%3D1%26x%3D3%26a%3DCAogX3gNa-rOscFvaWM1aZVlnHzSKXIVMpNBFC7z5qzqeGcSbRDV36GoljIY1e-c_J8yIgEAUgRie7kuWgQnB10XaiaZSIMAjLtCO6XkcPJZhdvtUIdPODmUwm3QnN7ZZKeLTSpdD1bXhXIm-clTnooZD6OKqSCKildcqsdcl_n5A9l5Y1NNv-iQ5EacrY0zVdw%26e%3D1726568937%26fl%3D%26r%3D9FD2DF4F-D138-4432-81BA-EDB039F65575-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOZpwmpVAzZE5rJOaFYf6Dcismfk&uk=32xZzEufaQXcck5EqUYxug&f=%F0%9F%A4%8D%20Journal%20Prompt%20Question.shortcut&sz=26958">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXqbb2X6_XjkTcTwCtMmxiB-AoPyAYS7MKB4qrwGKERyf-Cp6rQS6Wo_%2F%24%7Bf%7D%3Fo%3DAkOYmPGg-65pHypW8uyzDjOktZb5StrGKHID3jcs7r4_%26v%3D1%26x%3D3%26a%3DCAogzcoZGTce5dQk89GZbmcgsci-yvFmJHQLv5cknmkCR3gSbRCm5szJmDIYpvbHnaIyIgEAUgR-AoPyWgQS6Wo_aiZP_pULRqEZt_UV_-OhAwFoCAdhJSbKrSNaGO2BY9xp0h-Jo2Bl6HImT9iti9eQovE3Y0NL1OP4P48pA_-XMas2iBfdu2keT4xqLZW0ytc%26e%3D1727175719%26fl%3D%26r%3D2C96D58F-EF0A-456B-94B3-0E5F58AA4BDA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D66kcMY49xyRiRpRZPJ-o-Zj7JUA&uk=jQUv8twPDDDhqJgFA4aABw&f=%F0%9F%A4%8D%20Journal%20Prompt%20Question.shortcut&sz=27141">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Journal%20Prompt%20Question/%F0%9F%A4%8D%20Journal%20Prompt%20Question.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2172,7 +2177,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Quote">🤍 Random Quote</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbFmqQFXg8C5gmNmJgx0Av0EARnjAam7I3uIxv1rylfKbaLiVLGt_0vm%2F%24%7Bf%7D%3Fo%3DAiOd3h-5PQNarRcr8BA5hhDsxNsZH4JXM0Iac155IZ8C%26v%3D1%26x%3D3%26a%3DCAogAxiHKNhHNJBoKP3FjdsYQqrWstcybI4hIGegfDYM_vkSbRD76aGoljIY-_mc_J8yIgEAUgQEARnjWgSt_0vmaibkAA8-BdokMeRdgG-xDI7jVrMPv3G4MaqMIt1Ii1BPAGHDzOcs1XImMtf7iqptHKPEWw1Si0JN9ECcAL-0nCbfysViZt7ggBO1JvJvSmw%26e%3D1726568938%26fl%3D%26r%3DE50E5CEF-F3FB-4C81-99DE-267262B78821-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyB-uBo9QrpZ3vlXuVEBokWR7oV8&uk=bYk9i9uefalXxzBphXelfg&f=%F0%9F%A4%8D%20Random%20Quote.shortcut&sz=26839">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWESaZl6Sqq6PoEfimMM9Pfsr-Z1AQ_Uu6iTE9l39UB2ODQBaV8rbfpj%2F%24%7Bf%7D%3Fo%3DAsmWXNfAZf15V7qupSNXZzL43YHssKbuo7Gw5Gr53hsv%26v%3D1%26x%3D3%26a%3DCAogz2XhMuckQV76w9-r71J1wJO4VMO7_cZcDND2m3YA6UISbRCogM3JmDIYqJDInaIyIgEAUgTsr-Z1WgQrbfpjaibXy1YRLKm7lhFHhOxbLNO7sjCrEmigjziEOjGl3foPh6NYLWA3_HImy3EwAbli1-sQmLqr3ce3uZ4625t-045UNaAfXZwIlqd_nbW7mFY%26e%3D1727175723%26fl%3D%26r%3D3970EA89-EB4C-438E-A514-A4197A8B3B02-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLC-Oj5pbvWosrIZql4QKylvnkIA&uk=r3EWFObMlDKG1wd_erVxLw&f=%F0%9F%A4%8D%20Random%20Quote.shortcut&sz=27016">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Quote/%F0%9F%A4%8D%20Random%20Quote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2181,7 +2186,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Joke">🤍 Random Joke</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVVEaqtxaKGXoVbvs1n5ytzBivlAAdSIARMbbl-eSBuq5LNkJfr22lSF%2F%24%7Bf%7D%3Fo%3DAhEWJdLsr8pquleiq4k-6SPfKYm3Vlr79JUXpqIhCAaJ%26v%3D1%26x%3D3%26a%3DCAog0Ra2aJCPTPhn8D8MN8JiX8wTS3Z7_cb4FZCy-__zdloSbRC-9KGoljIYvoSd_J8yIgEAUgTBivlAWgT22lSFaiaJV4Hgn2BAoAUcKr68l4cuR8W4XRcyKMhnA_6WoCUi-zHZfe4pcnIm8h6n5eQ4W1v3qQYwvdIMuKQdDfgJvtAFlr17gUSul32mQSNYhz8%26e%3D1726568940%26fl%3D%26r%3DEF6D5B32-ACB1-4095-994C-BDADEAECF6AA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqotZbwgPLYdRCrtWmiYDsv8BzHQ&uk=Y5fN--vnrQaJNtBjKPKROw&f=%F0%9F%A4%8D%20Random%20Joke.shortcut&sz=27387">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfErZOwDbMaybi1DsoLEsZMADaLNAZD-A9TVGo2flPSNtaDy7Mxi0r42%2F%24%7Bf%7D%3Fo%3DAoneNYaH72kMXD7rqLjjX1jErSuPe_0d-t19wTsndH4l%26v%3D1%26x%3D3%26a%3DCAogM0RFWK0BM8gnTqWSQVSa7ssbQycbu4FgOWh4xnHPIEASbRDomc3JmDIY6KnInaIyIgEAUgQADaLNWgRi0r42aiZ7Od2LpQVSeVcMpdnV7Jj9DgnUBpeaEdF9H4b0Wtp0-qYVdd2gZ3ImFjs6rKZwpdcImwDBZmC_SlIjX_uqnETlp5kzm-TzXUgIu_-gh2I%26e%3D1727175726%26fl%3D%26r%3D16C8FD8B-5540-4D90-A316-F229D61EE445-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DujVo14vZZlzbny8wF1WW9IKLu80&uk=WKv17cjRcZwI_hhZcwr_bQ&f=%F0%9F%A4%8D%20Random%20Joke.shortcut&sz=27211">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Joke/%F0%9F%A4%8D%20Random%20Joke.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2190,7 +2195,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Life%20Pro%20Tip">🤍 Life Pro Tip</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUaXLEIsW1tNub2S6ZL3a2aU2SzfAd6sYh0SaZtN50kAslEXdgvowe-i%2F%24%7Bf%7D%3Fo%3DAlmUb4y4_qAJZAAUj9JyFwyDbhj0PH6-KuEZXF4YPaXl%26v%3D1%26x%3D3%26a%3DCAogJaNigzblKKGkh7ZgUJOwUj1tkKUdR3-ONt3D7HuKawcSbRDV_qGoljIY1Y6d_J8yIgEAUgSU2SzfWgTowe-iaibeLF1CBFezd7CVoLfKzjEpk59WDrMGD7yCx1YhSJ3R2I4D7Sl_FHImKpoFzqNA2lARPT_HCS828Gy2KXl5M0R-jeaOik4QG_stOdr_ivA%26e%3D1726568941%26fl%3D%26r%3DE6119C66-CA45-49EC-9643-11E26405996F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DN0FbTDeIEWJZ8Y9J1rmRaGW8KXM&uk=Atpemx11ka9VFpBx6c4Z1A&f=%F0%9F%A4%8D%20Life%20Pro%20Tip.shortcut&sz=26844">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVilaof7jc9G3C8DY7kpKYzyRebBAbpZyrxJFYj_US_LBTK5yoPlhWy5%2F%24%7Bf%7D%3Fo%3DAjhp9csScaag4w3Q3egg22aJvcMZtY6deS6cg86Kp-EM%26v%3D1%26x%3D3%26a%3DCAogUZsavEjMQk2d2AvtZJS8i2ya_Kbvsp_FCk7pIgmJB6kSbRDGsc3JmDIYxsHInaIyIgEAUgTyRebBWgTlhWy5aiYBifwbBEN6J4atMVGciVBh7T4pWIsjrPGWqOWm1NINOBoBCHhYgnImbqAU2hauhl23jROHOF6zknBGw-EtAPKgU1JHeAa_UryW9CFPnFo%26e%3D1727175729%26fl%3D%26r%3D474A565D-D794-4572-BFC6-6656BD400D4B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DBxuaaLXDXCK_fHAYYYCkSgcEZjo&uk=dLr9PI_lsTkVpurDyUjHxg&f=%F0%9F%A4%8D%20Life%20Pro%20Tip.shortcut&sz=26843">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Life%20Pro%20Tip/%F0%9F%A4%8D%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2199,7 +2204,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You">🤍 I Love You</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXYM_BoQ-1DNeKfDg2v2AiisRVWoAcCgbFDboGVDnT7K6FshdE2zsi3I%2F%24%7Bf%7D%3Fo%3DAr4FWgSDiY1rKZgpvLcRUvEVX6-0Fhduc3kP3IHP91Qh%26v%3D1%26x%3D3%26a%3DCAogyEtgpEB9wcYtZHtrrtcnxrlTN9_EchGNx_T9dXQzWjYSbRDNiKKoljIYzZid_J8yIgEAUgSsRVWoWgSzsi3IaiZVCOrZmW1Dl6d3DNkPpguMmRfSrE6az2i6squn7r3XURUXQbtG5nIm6uMXitIsGzz6lm7kHszZFs0TcAhQeYOmKSWwAh-JysJ15ECpfPg%26e%3D1726568942%26fl%3D%26r%3DAB10F0F8-44B8-40DA-ADD3-65C1B20A4200-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjfL1auEk6kVqBVD-gkcwTag1RDo&uk=XL0TnZ92RgkROtrEb8uEsQ&f=%F0%9F%A4%8D%20I%20Love%20You.shortcut&sz=27905">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVOtq6hySQwGbSN4fyABrrMwOECMAQaPAVnZrdJLkK79eYWsuzR5vT4V%2F%24%7Bf%7D%3Fo%3DAtJn7mu7pB1D5cHNPFy0UbyCglUtBh0TzVvZakqJXhvZ%26v%3D1%26x%3D3%26a%3DCAogonRnxgIv9NCt_fz1-meDvcFgjTj0Ttyozd6vIWYQweISbRDUyc3JmDIY1NnInaIyIgEAUgQwOECMWgR5vT4VaiZa0GOC8U-OzmP4x0TJEwsOLqnfok5qfPKKCY5_wP0FSb6MjPWwEnImGfLOOtyARov-pNu6etYtMXTC6KKWz2iTbsbMQgRUyJN0rXveLe0%26e%3D1727175732%26fl%3D%26r%3D05B75F9C-4343-4B48-8A2D-C36680FAA112-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkYo2MN82VVuiN2QjW39E_0cUaf4&uk=wkAjws_RAHK8KRVbfl1i3w&f=%F0%9F%A4%8D%20I%20Love%20You.shortcut&sz=27904">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You/%F0%9F%A4%8D%20I%20Love%20You.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2208,7 +2213,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar">🤍 Memory Dividends Calendar</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATZmlJMWDMBLMtrlAxPhWJ8A_gheAcjDsuhbMkZeEuIj8UhiB4WyGVjv%2F%24%7Bf%7D%3Fo%3DAsoFeda8zEFzXWjB4OYAAGk-c_zp-i0m8fdYl6DOJcYt%26v%3D1%26x%3D3%26a%3DCAogjR5fxKB3f0NReK-fIcjJE_cijC8nmkYkCdZSxuIm3VQSbRD8kqKoljIY_KKd_J8yIgEAUgQA_gheWgSyGVjvaibC168CEDCWN2NlkTgR0fqHHUXlxEB8WxVeDfMe6AL2-4uM4vYxEHImb0urtyCkAbcw0027In7XsFUtO71wFcUGKyzmbQgs9jmneVDZ2xU%26e%3D1726568943%26fl%3D%26r%3D192181C8-55EA-4FDA-8FFB-4D8D3DBFD5FB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL96g94-hInVM7yL7UOpSvuhv9ug&uk=sJK5uZ6Y-nS3XzqMDl9dog&f=%F0%9F%A4%8D%20Memory%20Dividends%20Calendar.shortcut&sz=28341">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa__h1nvjxNFJywUWGMTBcx968gZAU4XhxEo2KC_-9aSfz5B27JijHBa%2F%24%7Bf%7D%3Fo%3DAoBmSuU2_vUTwwbOun2OOCo0faMd00bBYxWEb0o5NiIa%26v%3D1%26x%3D3%26a%3DCAogZJqAicM6xchDI_G3JaUCJOA_F4quHPp2HtqIVJkFhHUSbRCs4c3JmDIYrPHInaIyIgEAUgR968gZWgRijHBaaiZmB7o8YF3ss_StMHPgq8Mqid2WSUodQM1lbo-mRtr1aTtDv_p183ImIoXR1HiYdrRYbIDiFu2hAXTKrIl7yliOQgeCN9TNrd9JXNiES00%26e%3D1727175735%26fl%3D%26r%3D32EC60D7-1E8F-4176-88C0-3D188E5443E4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DinYqf_IwKUDDvl9Yiy5R7TX1BPo&uk=Xdl2PM75c60gTxO0CjUIPg&f=%F0%9F%A4%8D%20Memory%20Dividends%20Calendar.shortcut&sz=28340">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2217,7 +2222,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20Mars%20Rover%20Photo">🤍 NASA's Mars Rover Photo</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcdAiCer8n9mqqohkvXTywpuW9mLAX3yj_R6TK7a1rcc6cOrDzyM4ZtV%2F%24%7Bf%7D%3Fo%3DAqXgtx86AY6rOtWx8D9s_X7JQEHM75skJMnEjixI7iFW%26v%3D1%26x%3D3%26a%3DCAog-yPR1qNfEuADgEs-DfqbUNTkJXuUzlTcNLYRLP-9QroSbRD2naKoljIY9q2d_J8yIgEAUgRuW9mLWgSM4ZtVaia6kLqbbJxSat_wDYCU-CJcHPcek2InJMMPIH9zEaEvl8j2SoOeqnImGKglQmDft4r7v_AdJlbVIXEP-if3m9TwyW5Pq2Sq2Avv34NOx9g%26e%3D1726568945%26fl%3D%26r%3D326CDC4A-FA2F-4F75-866C-7748C5AC8EB1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-ntakXvYuvwKFNTFZtADPpss5YE&uk=sn_zJCMeObGAylCkphFJHQ&f=%F0%9F%A4%8D%20NASA%27s%20Mars%20Rover%20Photo.shortcut&sz=26999">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQaliuzyyV5KOsUoxE1bxHTOD-MkAfMchGCzpEhYfVd5jY03eWBejIS4%2F%24%7Bf%7D%3Fo%3DAidD6g26q9WS5kR0bAIB1aTE8WxmHA5DmIDdFuvVMHvK%26v%3D1%26x%3D3%26a%3DCAogstSRpdsw1pY5jA7_Cf0a4Ysf86AXGmi55ACe3SHU6owSbRCN-c3JmDIYjYnJnaIyIgEAUgTOD-MkWgRejIS4aib-pEaYc5SIZBhfZ6kdexezvBDjo62X2sH6oQMbXwwO1CiCiz5LCXIm7yN6Df1brmS46o7bi2b41Wvb8qFwQbe27wOKcZzGmShQ_tOw5LI%26e%3D1727175738%26fl%3D%26r%3D084A5CE5-38AE-4ADF-8F21-C345D9772A03-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D271bTw9ZlgYWzp4xFFe4saZy2pA&uk=h1E-6d1RV4bWaWT-ZT_PUg&f=%F0%9F%A4%8D%20NASA%27s%20Mars%20Rover%20Photo.shortcut&sz=26998">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20Mars%20Rover%20Photo/%F0%9F%A4%8D%20NASA's%20Mars%20Rover%20Photo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2226,7 +2231,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20APOD">🤍 NASA's APOD</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX3s6mnhdTu1lXnK9jdExrW8XmufAVCz2E5Q-tFW14md4P15C9uNJaZ8%2F%24%7Bf%7D%3Fo%3DAguSTXgjaIuikgN0bosdj8-mXeZziBa_QWAtgLIZmZH0%26v%3D1%26x%3D3%26a%3DCAogslEpeOnU3YLMrcJYSeHRO8knoxrU4Vrgykxhet5qeKkSbRCDqKKoljIYg7id_J8yIgEAUgS8XmufWgSNJaZ8aibrXDBoYxZo6o3D1C0hWcS-bMIJtV7w3OCW_maDKzU23MsgIuU7u3Im0IFRZeLXiYA7MepMxp2IeL9e8ODscOBX9tLsV8qHCNtYT-tHfng%26e%3D1726568946%26fl%3D%26r%3DC6631F9E-1022-4381-ABC4-F2139071EE3B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnBm0c-_ALjrWgWN8dW8h40X3jgs&uk=YZ7w5Y6x8CEsvHVoPBXAjw&f=%F0%9F%A4%8D%20NASA%27s%20APOD.shortcut&sz=28921">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATC1j9XZoRctTmS_-vKGHpbc-7a9AZJu8mIYxIfDI-0nE8NvFokjfSFK%2F%24%7Bf%7D%3Fo%3DAicr6XX3lIcIv87_JPgytVlJsZ9m-bTmtLVNhPRsm3gB%26v%3D1%26x%3D3%26a%3DCAogkvgtgrsOquqIf92iq5vdndLnkbDJQ-n08QC_Xe4dvsoSbRCWks7JmDIYlqLJnaIyIgEAUgTc-7a9WgQjfSFKaiZd5cV9oxCEKMtbztmJ8vZzTVJJMWWjoBNCXTTpQD_7_lPY-8o_aXImBtgQwYI9a165P66bqx4VCcCwBkr31aPbD2mif7q1mBePsnXYUYc%26e%3D1727175741%26fl%3D%26r%3DEC6844B9-C46B-413E-9336-BF653D1F8C18-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoJ-8q5EClFdmk6nlNLAcJGbx7qc&uk=4Y9aulRajlBuHwDbkQw0iQ&f=%F0%9F%A4%8D%20NASA%27s%20APOD.shortcut&sz=30159">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20APOD/%F0%9F%A4%8D%20NASA's%20APOD.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2243,7 +2248,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training">💪 Schedule My Training</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcEURip2LYTYY7h7qHVLJjzxEkeGAfyVyMbhLmuW5BxkSbjtUu3nItVO%2F%24%7Bf%7D%3Fo%3DAt3dfwZqCtpTeq-WO49lQeUJ4bJJeKBCnU8m1zq5JMg2%26v%3D1%26x%3D3%26a%3DCAog_qiTst7VFHcVw89bTXA0riiWeScdr4GthLao8nnPG7gSbRD7q6ColjIY-7ub_J8yIgEAUgTxEkeGWgTnItVOaibyS8VDxItxmS-zm4nbTeWk0-VKmOiT_Damd1Eivi6oi357Ekf1h3Im4tmKUhVM0kq2UumJ33Smfkvtltcw4y1w4To51_qMFfvwdbaFalA%26e%3D1726568914%26fl%3D%26r%3D6DBD7CF0-0F0D-45FE-9E7E-2ADEA0BF79BD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpLH953i0xO0b8y87ZrF_1Mdo7MQ&uk=uN-I0ZKMfZvaSN2qpOdw6Q&f=%F0%9F%92%AA%20Schedule%20My%20Training.shortcut&sz=29555">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVyAyZN0FwW5ynBrEL2tNDPXXefjAUEIZloRDO7iia3Kje7ioXDe4C1A%2F%24%7Bf%7D%3Fo%3DAgrNTTHx9J0SoMQIGetiyMfVPcZaqFJ27z1d3zarRV_e%26v%3D1%26x%3D3%26a%3DCAogkueGmSAo48GxNE9YuZ7LmdH050yErwhK_qvHcehpXykSbRCUvcnJmDIYlM3EnaIyIgEAUgTXXefjWgTe4C1AaiYMQ5iq5Y0bJmGzbziCGJOPxj8OqeZZlukcc_AIu1AOv0Kh-yIQj3Im2LGM1jOILsuEKqxlE8065mQWS0wcQ5eIURzGd_DnNgeP2SsYbQo%26e%3D1727175665%26fl%3D%26r%3D208B6E59-3260-43D3-8A1A-BEFFEEF046CC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dat5xfMT6GlmdyE7PDZgQmeNlor0&uk=v0h1TgxVGCfN2fTDC4YAYg&f=%F0%9F%92%AA%20Schedule%20My%20Training.shortcut&sz=29713">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training/%F0%9F%92%AA%20Schedule%20My%20Training.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2252,7 +2257,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel">💪 Schedule My Training - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbPwwHlK-0HtipIU4BECNLCNjRfyAVGNul-JO9hPLtzWxamnCiEv1Hog%2F%24%7Bf%7D%3Fo%3DAhvrHGUsOL3x92cLenu7lP0VxFGxT2gmcVKpVHGb0m2G%26v%3D1%26x%3D3%26a%3DCAogrg_DBycX3OgHKhLM4AXAhToE7cgFiFEBLfeqOtEDI1kSbRDotqColjIY6Mab_J8yIgEAUgSNjRfyWgQv1HogaiYOc3zqDofypRuCVVH3D3dUAk38fKC_4LbJayL5aSM29sQOYGAvYXIm86SEZZa78-RnU8y3HvodHpKeZOcvYalXMkeejq1xum7FrPF0hYw%26e%3D1726568915%26fl%3D%26r%3D4644D135-A5B4-4BE4-AB8F-AC6E08F9B09F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPiDz-PtgX8G6KnO8Auk1xy6NvpU&uk=LFlh3FkjR8GpyZf7WySkrQ&f=%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel.shortcut&sz=30878">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbzI3ejZFb6S5BiDyPK_LpbmxCSWASiXzrXOAmRNNVr0JarFbERIObwA%2F%24%7Bf%7D%3Fo%3DAqxJ2hWeE3N07_0NXSbEM-7HHWnGbMiar0XQrcxJ9S-X%26v%3D1%26x%3D3%26a%3DCAogRzIvFZqxnVRdYbx8xMEuCQoXZ25i1g2q0bklmruYWz0SbRDm18nJmDIY5ufEnaIyIgEAUgTmxCSWWgRIObwAaiZaMUacuCz6VzgdbyMftccoDol6IPT1CxE81Pr3wpFEILJ1B7pNcHImAURqTg2qCLwaJ3sEXSFn-hXvXQc679oywPbWKUtFmKNi0VMM1ek%26e%3D1727175668%26fl%3D%26r%3D90FA70AA-2826-4876-B2E5-053138587673-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DepsoJkNPx1zInNRGF2Bk896JPjs&uk=Z5dQh_r3OFGJby0DULikyQ&f=%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel.shortcut&sz=30874">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2261,7 +2266,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%92%AA%20Move%20My%20Body%20Every%20Single%20Day">💪 Move My Body Every Single Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaDemxGhASfL2nBghPJtwa7NgfFMAfOxSKmeB4M4aUx7NyzevFEDmBsf%2F%24%7Bf%7D%3Fo%3DAv5J91tGGor7qzNi_ECnGNUqpovj-mLQA3vCMAGW3A8B%26v%3D1%26x%3D3%26a%3DCAogfgacRE5aCjX1IZGKHYvc3UlxH3qnb5G1iZFs1RYnzxISbRCFwqColjIYhdKb_J8yIgEAUgTNgfFMWgQDmBsfaiZ9cucwDbXnzlVfNgEj-Q_BkML1eLiHBcbg-XntUfnv99Z_OvfagnImml2r5JlwY2B8Mw9IvR0NaPAmi5Il4SY6fvBgwNFhIyjIKJk7dr0%26e%3D1726568917%26fl%3D%26r%3D27576125-D516-4B4C-8719-E0CD561ADC3D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9eEWnPu12nAz39X1uFuGkdX_7CQ&uk=DUwMgVvJVTCyz3WW-wQvrg&f=%F0%9F%92%AA%20Move%20My%20Body%20Every%20Single%20Day.shortcut&sz=27328">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb1a42hEKTQvFAErLurg73cmJjHsAfENQAu7EXVBVr2xhQgOD_o91TOQ%2F%24%7Bf%7D%3Fo%3DAgeMuGnINmnqUUIDXRw0tE_ctC9qpWa-KB0NCqLU5bzI%26v%3D1%26x%3D3%26a%3DCAogs9f-DJmp9m8bwuZxoLy3U5CxYdJg206OQXvGSSnP4pISbRCo8cnJmDIYqIHFnaIyIgEAUgQmJjHsWgQ91TOQaiZzwIG-C3CzPCypGyF9t2nvOuZyvbOW59AbHYbUbdvLtLmq8ckvXnImDXG5tiiQtIyKyyzVvCJsutOhC9uBOskpoMdtUo7HKLfGa-myoWM%26e%3D1727175671%26fl%3D%26r%3D94A669D4-2298-4F8E-B1FA-3ED3873D6AD7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8jBDdXVRPAT1DgXSjeLmeBETj4E&uk=-igV7SbllrB823RoLl-i8w&f=%F0%9F%92%AA%20Move%20My%20Body%20Every%20Single%20Day.shortcut&sz=27327">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%92%AA%20Move%20My%20Body%20Every%20Single%20Day/%F0%9F%92%AA%20Move%20My%20Body%20Every%20Single%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2270,7 +2275,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session">🏋️ Gym Session</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS8-fxN25Ue4GmwxEbRl0kfbjZIpAS-cRvdlxR-Jgz810R9VPJHsi7xg%2F%24%7Bf%7D%3Fo%3DAo9Y3CdicgcPQirJ7cgk4xX2_pBe0hybYAyP4GbQF9iX%26v%3D1%26x%3D3%26a%3DCAogGp9XhjKXlnu-r4R2q6APn6XESfR9RPTbHjun4LaMvxISbRCIzKColjIYiNyb_J8yIgEAUgTbjZIpWgTsi7xgaiYXCOpQHQ5RI6dU7GUGh8qt1aD26RkUETKB4XSnPQD4iwk2Lj2UqHImfJ23dxD5hArUUrGJsAN5t8P-vQ5vd_55bhpKhM9nEMFU4ibAAW0%26e%3D1726568918%26fl%3D%26r%3D9EF52216-C09A-47FE-928C-53811CD2E486-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFlS26NkLZHczuAFLBiD_PhWjZaw&uk=rqr8gaNO3l0HK6djyPhXLw&f=%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session.shortcut&sz=27203">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYqMZwtlYnTPKhmvnhheM_5OY1xQAZCVvt0fbW3SaxKJAruv3iYmvG5H%2F%24%7Bf%7D%3Fo%3DAog3UXlDpc93mfEFLdcsNNifTdCs7sUyyiyYj62poJbE%26v%3D1%26x%3D3%26a%3DCAoge2LtwBJMNFkLOafRaX-KuTpU1SKLby9N0vUCHbwZE3MSbRCwi8rJmDIYsJvFnaIyIgEAUgROY1xQWgQmvG5HaiZwHQRaIa8_ulph2aKqdFc_ylTQnnbsq53UORjd80hmxgcCj_FWiHImWOxwgRwdsQzqThV7O75-Axp39z0hC7uMKIH5C610IysVUBCG1Pk%26e%3D1727175675%26fl%3D%26r%3D236630F8-8357-4D7F-B100-7F85E3D0AD29-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQADkUrICa9yD0dXBCw4P5kYCze4&uk=YCIRkckZ8ntt-5sR8MiluQ&f=%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session.shortcut&sz=27202">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2279,7 +2284,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%9A%B4%20Indoor%20Cycling">🚴 Indoor Cycling</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf_ILFjkXL41XRiuU7oMUzFKvQecAXV3jrbXESzYs1wDmit5r-taBmR1%2F%24%7Bf%7D%3Fo%3DAo1cpfnml-sW5KdX4FEf69KjRox1kj68P8qVGDPuYu4G%26v%3D1%26x%3D3%26a%3DCAogeQeQ92q-AhlDIxDd-_ZCoxaPB_dKQttDDsPiGS7Xuw8SbRCG2KColjIYhuib_J8yIgEAUgRKvQecWgRaBmR1aia3l7eyc3rpmjD0RvRpwpVcZ8OpmArPkA6WGFElPxkG74s-_OdjpXImNLPdBuMgdxwgKjyHgrnVAXwlSuVbQGsxv1yKu9xyKwvD8b9VIfo%26e%3D1726568920%26fl%3D%26r%3D26690A0D-78FC-452A-B9A5-D83F9EBE89AB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dvy0a6fUJJ-tpg3X06AQ4v0O0tOM&uk=apagT-0gcII5n6eFzSH_aQ&f=%F0%9F%9A%B4%20Indoor%20Cycling.shortcut&sz=28252">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZz-T2611hWvI7-C7AnFe7IcuyodAYDeQ6PB1VS3Qx48gxJp8syCfTgC%2F%24%7Bf%7D%3Fo%3DAnSrCYUgv6mEaQefYSlhyMQR95UKy7EXcBsCtJILeALh%26v%3D1%26x%3D3%26a%3DCAogWcbQp9YS0TCaQg8FudIc00EWFy6VFuTXltoa5dxHf0oSbRDypMrJmDIY8rTFnaIyIgEAUgQcuyodWgSCfTgCaiYFZGI1_ywNzDzJdj836SIT6xqWCczowQyqTfMvaxuB6KBEWKnzIHImfmbHhSIvEsHzGDq-SuWaPh-LQcoEcsAIFpwGzqSNyvmS79tG-ts%26e%3D1727175678%26fl%3D%26r%3D1E45AF24-BE49-46AF-A25C-2B1C6302AAB6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEnQ_WNQ5pF3SMmd-jpf9EuLAhAk&uk=D7Mgma0VuqkwhTL_bCGXeQ&f=%F0%9F%9A%B4%20Indoor%20Cycling.shortcut&sz=28249">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%9A%B4%20Indoor%20Cycling/%F0%9F%9A%B4%20Indoor%20Cycling.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2288,7 +2293,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%9A%B4%20Outdoor%20Cycling">🚴 Outdoor Cycling</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXBAnTyweJyNMnQfk4jWujXHOtDEAVf22jvmhrnwk69CuvYMQ-Pdixvd%2F%24%7Bf%7D%3Fo%3DAobKuBug1JEcVGKpoR0Cb98eazJ1TFWXFCm5w6JD8MWL%26v%3D1%26x%3D3%26a%3DCAogvUn3ctc_kkdpZvbNzyQ0nfyPmL4mILJliGpcrfccsiwSbRCw46ColjIYsPOb_J8yIgEAUgTHOtDEWgTdixvdaiavPBYvZTmAfSxjbzcH84ZI81bWDpiAVqC0zqg2I9i50ulHsET_0nImjEskfkV3i7K3S3P8_Z35oAVz0se224x3ZGlsc9gd6RUjJ6d2FOo%26e%3D1726568921%26fl%3D%26r%3DFD77836C-71C6-464B-8953-EAFEB25F76E2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhU_HRs_O9ZiyvtDPophHJTlehsg&uk=r4mSOYApjUM988kZaGzQMw&f=%F0%9F%9A%B4%20Outdoor%20Cycling.shortcut&sz=26842">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATLxsXSl_0SRJ01SoxJD2Dxg_bX7Afy1cIkdUsC5-La3xNKr-gm3rFMe%2F%24%7Bf%7D%3Fo%3DAnRrN0Ly7jveMIVkaooOgVdN2-wvbgSNNnxxhVBzq5xD%26v%3D1%26x%3D3%26a%3DCAogBkdVmz37cSdOb-YrOPd05aRxmg5FN2ijun0QQZgRV38SbRCZv8rJmDIYmc_FnaIyIgEAUgRg_bX7WgS3rFMeaiZkt54vUQ0XjPDFFbhta6nX7tMwptuuJYqZ3VMKNIsMSCgPb1P9VXImdJVpu_DDRDzTOp4j02vjoTtfKOX3GYlVlr2YQgr8SWCJozeOW-U%26e%3D1727175681%26fl%3D%26r%3DC2B04C4C-4D9F-4404-B0D3-BB0B90CEEB1E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DiiJyaots9GIzxDRTwU0zObAKFY0&uk=4SuFbE8zcYkZhNjeYUfVIw&f=%F0%9F%9A%B4%20Outdoor%20Cycling.shortcut&sz=26841">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%9A%B4%20Outdoor%20Cycling/%F0%9F%9A%B4%20Outdoor%20Cycling.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2297,7 +2302,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%8F%83%20Running">🏃 Running</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcH20pb-699wyqMoqxpOd8qE5JxjAYh0a8LAidOhwrBwem-VwwEA2A_4%2F%24%7Bf%7D%3Fo%3DAgmuLoe2kH48OG7SZpBhZTi0eQ7fxuglS-dFb43zg8lD%26v%3D1%26x%3D3%26a%3DCAogjZFBjv3U8BK-X3ySNIDjNS7BI11u9wYa35XMBwHi-DcSbRC27qColjIYtv6b_J8yIgEAUgSE5JxjWgQA2A_4aiYBaOpHfwc_lyX982_PUJU0ga8OrO8XbzzBT46Tuc_CFwrwOYw8VHImBb2DdACTQ4kQBpbdKh82UeDzA9DlqIlkKAwoqr9Uxyz1FQpPngg%26e%3D1726568922%26fl%3D%26r%3D90FDFACC-5A99-4C2E-8EFF-A950B272F9FD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8xRzRcMH-7tS-0Kt6hj1JlOYb3o&uk=MHum66_tnQOrmCKIjhM4Ww&f=%F0%9F%8F%83%20Running.shortcut&sz=26842">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASruXG4OSLp_CALlB2H_8cAzkKJNAXiv1B1kayTu5La8OOlnM4GBJO_0%2F%24%7Bf%7D%3Fo%3DAt8OYafzSEhAKk6CkLTRzB5yIc4Y_EtKDVZmbche9MFE%26v%3D1%26x%3D3%26a%3DCAogn3JujsNAVJxZ2C_L5OJizS8Bp49x-ffD-w0t5_sTwJASbRD_2MrJmDIY_-jFnaIyIgEAUgQzkKJNWgSBJO_0aiag_XDyQyHvi5UP1I7la_YNgFFG0L2hVJHT_DeVEZVBsQkYLYn1M3ImOgwgl_3Kmn6mst3NpCh-ZoDnWJtLF40ajeo-HR-GTU9uo9gUlwc%26e%3D1727175685%26fl%3D%26r%3DB29B2CC8-4590-498A-9390-6B0327EB5046-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dv9Y00eiYARDZp1nEsVGGJ403rmE&uk=HqmM4_ofe9M9CXFujRzSYw&f=%F0%9F%8F%83%20Running.shortcut&sz=26841">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%8F%83%20Running/%F0%9F%8F%83%20Running.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2306,7 +2311,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/Outdoor%20Training%20Preparation">Outdoor Training Preparation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUMHp5AzMkXDNA1R18gFv7K86e6YAfIekKBDIo8N8IPXFgKYzrwPmK8y%2F%24%7Bf%7D%3Fo%3DAmZ5HNKFR9FGKKwX2NJjqU5ikEZIRo457tj9sf3On6zH%26v%3D1%26x%3D3%26a%3DCAoglA3wfNxqvpUfi82BAss2Lcxw2Z7CDc-AejBunoWbFP0SbRCZ-aColjIYmYmc_J8yIgEAUgS86e6YWgQPmK8yaia6Gr3x_WZvdUZboTeFRviXJ4o-hftgNlbASoIUY3i67niUc2M3N3ImlFLariR_AUB61Z9jJA8-JiEL3sg3gWfHEcR8U183yuMYHghIf1c%26e%3D1726568924%26fl%3D%26r%3DD0412DDE-5808-449C-A9F5-841E41878B33-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9iWwfJ1BlJ0tMsDWyOP7TlVv5XY&uk=3F1dV2V4y6hBfXL9UF56bg&f=Outdoor%20Training%20Preparation.shortcut&sz=27778">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR01vrs32TDzo-k-8eNza62yX3ZDAUUx6EsfqFmr73o5TQHV8E2sMB2U%2F%24%7Bf%7D%3Fo%3DAhXbptgbYYZmmb-2WFQ2cjpbFeNqnWYcqfVK0wkUU1RL%26v%3D1%26x%3D3%26a%3DCAog8j7ClMsNCvYFvKiwAEZDA9RipPgeHl52lnnQzZ0hNxUSbRDF78rJmDIYxf_FnaIyIgEAUgSyX3ZDWgSsMB2Uaia4ZKIbuVoQ-iq1XwFRZnwKPbHelDq-3kd7s6d2iYAfO7CdkPvp13Im53DMx4sE9K7NfkVAVLRvhkmUmoZnLpUbzmhbYcoJRp-3o_A2yAQ%26e%3D1727175688%26fl%3D%26r%3D740F7E17-4976-46EE-BC2E-9BDE5BF2596E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMmCfrDTaAWo_Y4UAyBYYHdOdwtE&uk=nB2AorVn5HPJJ8SZMgsqlA&f=Outdoor%20Training%20Preparation.shortcut&sz=27777">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/Outdoor%20Training%20Preparation/Outdoor%20Training%20Preparation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2315,7 +2320,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside">⚠️ Before Going Outside</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAas1a5E8m0_rfsFSWAW_zhjLmW-0AVKUYXZXTSjoFmd-7YWKoalQtPKt%2F%24%7Bf%7D%3Fo%3DAnX77S7_-CWJKcHpkdWphHkAnJ-e9guFX7Fuw_xsaPE7%26v%3D1%26x%3D3%26a%3DCAogKXh6xauzo5g6Bb1-Jg0ubbCb5zxHXBhUOJLZXRHRvh4SbRCpg6GoljIYqZOc_J8yIgEAUgTLmW-0WgRQtPKtaiaJ9lUsVAUH3jYU3CXQqg0r4FoSZJLxltA-rFiFeTcH4LgvV9qyznImw2UIqQqgk9gNPIm8h_Rntgg_kD_-wmqXeYZvlRLJMR84Eef5EWE%26e%3D1726568925%26fl%3D%26r%3D0836E655-7B29-4CA0-9BE7-0E3B7E4992C3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUyQjPVsPl66MzOoRCSl6rUabIhk&uk=r7AFk4JrifFRlYO3ARAKNg&f=%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside.shortcut&sz=27875">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZHcv4qSmiz-masV9I-w8UcuyP5vAbLoMGQEyEz2kOppR8dPJnmHYEQI%2F%24%7Bf%7D%3Fo%3DAubgSnN4X7brA8avBknUJOF16zFniT-a0vMB-lRFRJ3u%26v%3D1%26x%3D3%26a%3DCAogRBLB7ajDPT8oMxd4-X-myodJYWxfTuiPuOHQeB__Oq8SbRD1h8vJmDIY9ZfGnaIyIgEAUgQuyP5vWgSHYEQIaiY7MQWhZioP6xe-ZiIhrf1yeqyZ7S90FATm_8We0TSu4pFdMzRDLXImtaClpxm9q7kHHvKcnEsARYL626WNTNokfI7Zg4ytpuj-lWI7aCM%26e%3D1727175691%26fl%3D%26r%3DF4F7B7DD-083A-4408-8DA2-D78B0307FD4D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DsCARU_jI6NAbiZUnSVmTND6wzVM&uk=iTkeF-RicWx0-fsX82faFQ&f=%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside.shortcut&sz=27878">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2324,7 +2329,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%93%B1%20Outdoor%20iPhone%20Settings">📱 Outdoor iPhone Settings</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUjud-7mZNgGrGTn2usNKgmXsrlbATVxhQoUSett7MVBMOE4dh7yox93%2F%24%7Bf%7D%3Fo%3DAkGs-HVTveWiMWTTHF52-Yald6tHZuEG-McZgRfD4AP0%26v%3D1%26x%3D3%26a%3DCAogoN24T2iYFmesJnsp0kUEGNd_pyfF-EmksR4XLMXYgy8SbRD0jaGoljIY9J2c_J8yIgEAUgSXsrlbWgTyox93aiY2pWuipqbMo5NhqxS3c3wIwK_4MNDyuRVmt6xL0L-HKTv3rQG783ImZe3nm8uhp9VRqIun-ONORgGRhmHjiP4UjPvKzCj9RkGD1X13-eA%26e%3D1726568926%26fl%3D%26r%3DD2C78AC2-DE4D-4907-92B6-E0196B5002AC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-xeW1tc1rJKRlJlkj9nzuCuUo90&uk=egwleJB74irKWs5D2iAfqA&f=%F0%9F%93%B1%20Outdoor%20iPhone%20Settings.shortcut&sz=26843">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcuQG5kC1wrC_4enVT-l4Bei1_8iAW0WE92nHDGS0xr14KBhop1ALOCZ%2F%24%7Bf%7D%3Fo%3DAn9bKjpJ6pVQ4AEOHRAaXtqX2W3lGFlRIaeAXz1tfUjj%26v%3D1%26x%3D3%26a%3DCAogv52hTudJ02Fpatm3CHHBObJ622YYyRrQOtxtvOfHIXkSbRCEosvJmDIYhLLGnaIyIgEAUgSi1_8iWgRALOCZaibUZDvuVLOamdRYGJP0-3Epe7dQoibUjtX1II_Lw_PtJWkSSyACJ3Imc9SV5qDaSpT87oqKGDxPOX483FIbrzTVASDPfkWy0X-U_4rcWlk%26e%3D1727175694%26fl%3D%26r%3DC8CF9A07-A6F6-4A3A-A5F5-4650EA9A39D7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaGcXBbr-mzGteVg5eB57rI0u3c4&uk=vqi1jFtP0JK1jdh8_bPJKw&f=%F0%9F%93%B1%20Outdoor%20iPhone%20Settings.shortcut&sz=26842">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%F0%9F%93%B1%20Outdoor%20iPhone%20Settings/%F0%9F%93%B1%20Outdoor%20iPhone%20Settings.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2333,7 +2338,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/%E2%98%81%20Upload%20Workout">☁ Upload Workout</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWvtd2ziuD85cGJ1Iqe0R8hZ61I3AUc0ySmvj-G3Q4Jfl4TkrZ0WCnW-%2F%24%7Bf%7D%3Fo%3DAhLYMMn9hIki9g8EJ-MV1VBrBroUCrYFCjTtv8w63VS4%26v%3D1%26x%3D3%26a%3DCAog6yWLsN--vnxErtJF07wo0z2rkEtCa5jWGGKC2vdt__QSbRDtl6GoljIY7aec_J8yIgEAUgRZ61I3WgQWCnW-aibzV8Ph_wU6c5SjHwKsZT6imb5p88NE9JfT66R-Ow2kUbSZKgDm_3ImrR0j8aQ4OTrLqo6y0kHsTyiy15eMlRyvL_dd6dgRfk1BcqZ2Qow%26e%3D1726568928%26fl%3D%26r%3D6691911E-5950-450F-9D78-6998BB12E417-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DiOzwsWC5c5rYhNAH2PoSFANrIZw&uk=0U4n1a-ht7SuCTAgS5rWhg&f=%E2%98%81%20Upload%20Workout.shortcut&sz=27019">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATPKw84bXaC0WGiWRd-6RtPtU2utAdW6NX9P-nyqof0_444sfrqPaltf%2F%24%7Bf%7D%3Fo%3DAhPY9I_7V_s2kuR097xconhWJl16aibcqjN0ScKymIl-%26v%3D1%26x%3D3%26a%3DCAogLv2J7lIUjQbo9f4kxBwtMeDF9z7rPJfySiTxIaWN5TQSbRCCvMvJmDIYgszGnaIyIgEAUgTtU2utWgSPaltfaiY07CuGUnxI4ovZt0doykdaZ7LXF1TBPlaQ6Nx9LxnngSVOD_VQB3ImjTKV3vkWCFRn4V6E0PI1umGwjwcugbdoMPf-W6WgqU4P00mptvc%26e%3D1727175697%26fl%3D%26r%3DE95C77A7-FEBE-4389-AFCF-C6A766896BB7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4tvMmXVZYCtDiXyoZhLxP1XHqno&uk=shF39VHMnbWsMX6C4TF97g&f=%E2%98%81%20Upload%20Workout.shortcut&sz=27018">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/%E2%98%81%20Upload%20Workout/%E2%98%81%20Upload%20Workout.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2342,7 +2347,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/Open%20Fitness%20App">Open Fitness App</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU9VSxQs7fLONpKLpcX10-92G_wrARC59MVOFPQF4Zhu21vhdgNw91jA%2F%24%7Bf%7D%3Fo%3DAtnC2uNHkKjiF7M98t3bWX9AoPpwnwOKm5bver8WY1gC%26v%3D1%26x%3D3%26a%3DCAog-8i8K7oMnjb-0kBmL2_7eddYoVfvWiqeFT0vvh63V2QSbRCKoqGoljIYirKc_J8yIgEAUgR2G_wrWgRw91jAaiY8yISqOPg-pt1DE3MIcSz3VbdM-eWuJtpULEbU1c2c8SYf6uArPXIm_PNF-EpmmY9iGli8k-yOQkl9IV_EgAZsBZ8dRPenIcoVryNf2gM%26e%3D1726568929%26fl%3D%26r%3DB7A964DA-C30E-4DB5-B741-65D58A0126D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJjboRdgWqQFVdML5d_qfB90NBRM&uk=xXyqNyg-Zbiv3hwITpmOeA&f=Open%20Fitness%20App.shortcut&sz=27077">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbcZFP4iX4mo6XCrNQgk2M6Y0WnrAfybmSydnm2UkGz04KqHfihw8uHa%2F%24%7Bf%7D%3Fo%3DAj5IwizDle8FDypqxINt1BkgfE9UsZYkI0fntFUerc6E%26v%3D1%26x%3D3%26a%3DCAogZu-a7OG9r3j805bV6OnwkYJSiPpwuDMwvvdOwEevbt8SbRDl1cvJmDIY5eXGnaIyIgEAUgSY0WnrWgRw8uHaaiYUXVKBj7R4h3qx54Ji8J-dkUND6VdRoAGc4YIQ6Flb_0Uiyouqo3ImsWtceUBS0JGictnpSw1AETTnEYf7KxQq5-B89qvxDmXgjj6P4a0%26e%3D1727175701%26fl%3D%26r%3DCCADD94A-8B41-45ED-89BE-870E31EB0F2C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZHEngabeEZrwkRF5Ghejoll7Vuw&uk=nR73fTab2L-mfbdDVLC-yA&f=Open%20Fitness%20App.shortcut&sz=27076">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/Open%20Fitness%20App/Open%20Fitness%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2351,7 +2356,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/Zwift">Zwift</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU7JBzfk4h681_OAHGdkHz9l6k1CAUO7HCPmjX6LwmUqslWEIP7sbKAd%2F%24%7Bf%7D%3Fo%3DArp0Usi0mQGe-6CqmrOyBrNlrgnf_8dC2gA76JgX0XYg%26v%3D1%26x%3D3%26a%3DCAogB45yPCO1kSCXfYxa_zKDsfp9b-AqQmaUm2YLzWCX4QgSbRC3rKGoljIYt7yc_J8yIgEAUgRl6k1CWgTsbKAdaiaSqTLQpGnFmTDpLle7WbyY0ih8avQr-w8nGED7ewOY6pp3rEQsWHImuEE13wMWSVwY4u4zci2pWEjF9mdpsZ3cvOHnOjpUDBIdi-JoO5A%26e%3D1726568930%26fl%3D%26r%3D0DD77C3E-62DE-433F-A203-CD7B674FDCCC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D44RTY8QAqdWHe-A-TkHuffhUi3I&uk=D6vIob2_bevaILB0e2fKYw&f=Zwift.shortcut&sz=27008">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASjO7EN_OmS6jwTvFgblkDE8UyYLAc0YQ0o7gXaGMcXA9R_yB70p1GFB%2F%24%7Bf%7D%3Fo%3DAoUJBFb1XsdmJsL-Spfdc0z9pNP2mr9cHrjCuKEpFbDM%26v%3D1%26x%3D3%26a%3DCAoglYC7RKnOwIhvS1Zq0JcFXJu0dkzGU_Hk5h0SdY12yjISbRDu68vJmDIY7vvGnaIyIgEAUgQ8UyYLWgQp1GFBaiYZXkrGAvIX10L7kcCIRZRzOR8SNkPdyzcMyuMOuEO5jl2OZ3IOAHImDOfGqe0_8Rc4dMYzQlokUUF2K5AcmkEgXUGqqALCOZEn7PnkXk8%26e%3D1727175704%26fl%3D%26r%3D1423774E-547B-46AF-A5F0-ED0020820CCC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL3Oz3IF27xxc14Hm11Cs66F_G3g&uk=ylewKZ-c8hRt3G9VLowB3A&f=Zwift.shortcut&sz=27007">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/Zwift/Zwift.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2360,7 +2365,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/TrainerDay">TrainerDay</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASk-6NPlf1rQJS_B1jCYsc3PZyv1Ae4LDe0i8r8TL30Hity1l1KUSBxO%2F%24%7Bf%7D%3Fo%3DAhx1k0fYMjst8otq_HAIIY8r8Kj9Psbh9Te09efDOkML%26v%3D1%26x%3D3%26a%3DCAogYzMN21lx_0wELUC1wvQ0G6PRcEPlwSLSaE7H0Xy2aqASbRDDtqGoljIYw8ac_J8yIgEAUgTPZyv1WgSUSBxOaiZLPipMHgJjjFHPRRgw2NExiETme7cbRmyZu_sBh5az39oyH08SfXImvCOieP9tCwGfeo49JaL9sTd-4IQBVIMxCE2R36PKm2xTCRIUviY%26e%3D1726568932%26fl%3D%26r%3DD355EA6A-9222-4238-A983-B7C4ABA0F307-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5M4Q7owKJ3W2kTRROO_657etQ5Q&uk=R67bW5ppvXQiEcXYCAOdLw&f=TrainerDay.shortcut&sz=28650">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ8VMn61Azpsm3dmHyUbwDC-fCsWAcexmCkJiQ5QjxvH1SMoA99ct2Jo%2F%24%7Bf%7D%3Fo%3DArFgZu3eAK4NCLGPbgfJzlvx72lcbkTg9q96xcaAynec%26v%3D1%26x%3D3%26a%3DCAogT2O95SYG6dVcgU_gJQDjw50Bvt_nSry16IHM6Q9P2coSbRCXg8zJmDIYl5PHnaIyIgEAUgS-fCsWWgRct2JoaiYzFEvZnnQZJzsJe2pjMEzQSvTQZPkqLv1JUGyxEY3_ctIjfizC8HImRHlt1PVPIG_JT6lGuPIkw8iKw6G8zFnn0mTxSMm9TH0YA1qPCzY%26e%3D1727175707%26fl%3D%26r%3DE906D273-8659-4305-8BBD-7FFC07DA81DA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoQvkuHSeFRzPROmrQnbuSXF_tTs&uk=IZ8XsFKQfoqheIi8XVPFHA&f=TrainerDay.shortcut&sz=28649">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/TrainerDay/TrainerDay.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2369,7 +2374,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Fitness%20Training/Set%20Sport%20eDevice%20Charging%20Reminders">Set Sport eDevice Charging Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYdtMu3qoG7dPdGqgpfzmWKLSSHKAeY-TID65qdOR2LvbRrlHgs3gm4x%2F%24%7Bf%7D%3Fo%3DAlNZ-AEc24kkY-BWMU5vJ9-hg0wY0P7YCyjnVPQfupSs%26v%3D1%26x%3D3%26a%3DCAogmz9OjU-DFvXm8vxezGhT4nRrDLhQ8IldC6G0FH7jVkwSbRDewKGoljIY3tCc_J8yIgEAUgSLSSHKWgQ3gm4xaiZ_x8jTbf0-tbF9TqBFThW-0PokAjAsjVdVXMUjkGacfnzJQ1YSxnImTJySKxC41Vbd0sMvLVIOh_YwU4mWJDv5a9Mi943fAGTQGKtewsM%26e%3D1726568933%26fl%3D%26r%3D2D47D34A-46D7-4242-A387-68722BBD9874-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Db5PBdAgiRobT7TpRzJkxUSBXfZM&uk=MmKikFDVLyyPFzA59qkmKw&f=Set%20Sport%20eDevice%20Charging%20Reminders.shortcut&sz=30276">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARxUSCbg5NJNtg7gkou2P_N_wQt6AVXlap_OZKfJiSEoOx_ls28A9rnJ%2F%24%7Bf%7D%3Fo%3DAgDj9zCLLf1aMNlaK32IuqX-MYGyo-puDmXWwdTkAMpd%26v%3D1%26x%3D3%26a%3DCAogp1BcxvHXICJZgtf-EtBh8p6dkwvnFOMSC-AzEz_Lk64SbRCem8zJmDIYnqvHnaIyIgEAUgR_wQt6WgQA9rnJaibCd4K0jSYsqE2pXqJGbBlNnwRSrZpf9scynE-tSVoyG8eb9n25Z3Im3bkbzjdITyHTZwW4v3y8n1WhpiodASwA2gaCPCbgdxOgz0jNjyg%26e%3D1727175710%26fl%3D%26r%3DD8FB3BF6-F2FE-4579-8D87-5639DA8BC744-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFOfCEkaHcY3TDmMASbYoNF-o8xk&uk=UO7J8MHjH2WSCj5WIIFmZQ&f=Set%20Sport%20eDevice%20Charging%20Reminders.shortcut&sz=30279">
        <img src="./All%20Shortcuts/My%20Fitness%20Training/Set%20Sport%20eDevice%20Charging%20Reminders/Set%20Sport%20eDevice%20Charging%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2378,7 +2383,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20Life%20Automation">My Life Automation (4)</a>
+        <a href="./All%20Shortcuts/My%20Life%20Automation">My Life Automation (5)</a>
       </strong>
     </summary>
 
@@ -2386,7 +2391,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Life%20Automation/Get%20Life%20Automation%20Shortcuts">Get Life Automation Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ_hTS07XKWDIiMjPCLBSOuj-AGSAUnyev0xjqTrb3ZojOtiiibuwaJ6%2F%24%7Bf%7D%3Fo%3DAtZ50pIVr0k-B3G5mJJhSMaJfz3o1N4kRlIa7wS86k9s%26v%3D1%26x%3D3%26a%3DCAogCEDg2vS4SxUvO3TWNsTOd7VrnJP42XMmT_dcIbxFqWASbRCXmdKpljIYl6nN_Z8yIgEAUgSj-AGSWgTuwaJ6aiZU-bYGkg2SD2r9PtUdjtgWK-LUgTMFIgVih2-MI21WlR6B_nejdXImnT1AR2nsXotfLgNT9JDAqiX7n7Ein-lKcp2lF3RK-lU6Owe7-d4%26e%3D1726571828%26fl%3D%26r%3DB282A175-233F-4E56-9B5C-C38ABA6FBD29-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC8NKkqJEoY0gzKxuU5JxDVEhJDE&uk=ua-8v9FYmAM5KMi6Puh5AA&f=Get%20Life%20Automation%20Shortcuts.shortcut&sz=28485">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWfg2wiDynACvBoDhVOAMhw0lXUKAdGuhVOezcofLm63xKqNjvkFv4XU%2F%24%7Bf%7D%3Fo%3DAtaUdCuGI1A-vuwCIfyc_FMAnKCOXh92Dt_L8zhUSlE4%26v%3D1%26x%3D3%26a%3DCAog1G6L59tRVYyCBU_MhaaO2vTkPkX6TfoYp3lxEa-6yBkSbRD0oN3LmDIY9LDYn6IyIgEAUgQ0lXUKWgQFv4XUaiaDFgDB-6jx2mb7yEwvQ3o5EiUztGdI-3J76ROSCJ2ywdt-1YOnAXImWnCkmTU0800ipPmXJZWEsuEwq6DJn_Z00npLW70lnqhiVHx7BTQ%26e%3D1727180183%26fl%3D%26r%3D6752100B-6208-457F-B035-B2E3DFE21B43-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbrpS5DLRIm_pjvR1-mszynBmIDE&uk=WINzPFf-Fe118TXj3ZCJuQ&f=Get%20Life%20Automation%20Shortcuts.shortcut&sz=28705">
        <img src="./All%20Shortcuts/My%20Life%20Automation/Get%20Life%20Automation%20Shortcuts/Get%20Life%20Automation%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2395,7 +2400,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Life%20Automation/Batch%20Run%20Life%20Automation%20Shortcuts">Batch Run Life Automation Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcaT0TTBes0NjKU83rfdPQyKZXhcAaUP_Z9oued3w_qowbG6DE8GoyWs%2F%24%7Bf%7D%3Fo%3DArYPhN7JRAoT5yRjjWFTSM1lSt_jd5kJCUwdehWog5Y8%26v%3D1%26x%3D3%26a%3DCAogbwhRqhx2JE0iW3OkkgbZiGto7xUyv70NlsUbShWliZsSbRCnj9SpljIYp5_P_Z8yIgEAUgSKZXhcWgQGoyWsaiZHrzfc4FnYLjBYRc8OcVq4rkrqgdY-XePWUdeN10275nKP9YPS1XImDHMQX09MWAvuihx-qc3487zM0OylDmBVGxLBUUogsfUjKZWRzH8%26e%3D1726571859%26fl%3D%26r%3D330937B9-AB2C-4632-97ED-D4B5F485635B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUFvKRn-QGunvz5QT-gd5lgwS89I&uk=hDlBU4_lX3y7kNSyWpfNgg&f=Batch%20Run%20Life%20Automation%20Shortcuts.shortcut&sz=28514">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXk3x-kxUvtdNA6ycJ-hGfB0mQG-ASq_V0zsQboyKYUW6i-KX_5O_lnd%2F%24%7Bf%7D%3Fo%3DAidlTQQkSVEMc9BLnSCnspTqyE3bCnh-9sHxv0coKj-6%26v%3D1%26x%3D3%26a%3DCAogdvahiFQe8CX9ZcYAqPDZrg-79Gh4h8skQtcOiHn3_JwSbRDeqt_LmDIY3rran6IyIgEAUgR0mQG-WgRO_lndaiZTyzbfZkuFCqJiB5EjfYg9fz9LoS-AQKEi34g-nO6ny_VTsRSvrXIm2GxAB7sufXYl1l1N-1dEV_vRzRhY2ARpjIJqpUlP4zbUcGImL90%26e%3D1727180217%26fl%3D%26r%3D2ADB9580-BFCB-431C-BCB5-8B3E0151379A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DibieY2_TDtmFWjnq_9My3wBxTt0&uk=p4BpTPR2AgLFnilPPkWkdw&f=Batch%20Run%20Life%20Automation%20Shortcuts.shortcut&sz=28055">
        <img src="./All%20Shortcuts/My%20Life%20Automation/Batch%20Run%20Life%20Automation%20Shortcuts/Batch%20Run%20Life%20Automation%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2404,8 +2409,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation">⚙️ My Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUTDW0yCUI32vCCqcebi60XZR1mbAac4gjFaudwi4FaMqLkfpb9XdrS3%2F%24%7Bf%7D%3Fo%3DArZZic6Vg67Tw3XopVBsAuoqiXDpcJptalUmmsR3XZjc%26v%3D1%26x%3D3%26a%3DCAogfYA4W0lxLF0tXw9A_HWoOC4MW88OrWMZtnXX-3saVPgSbRDRhdapljIY0ZXR_Z8yIgEAUgTZR1mbWgRXdrS3aib8Xd3ys5CBm0r1stA_dj6el-uOzKRLxwR9W_uhM8BXbLrLZPtFTHIm21dqg-5M2mF8PdXMb6G7o0KveyO67O0M_SQkU1Y45_zvTRS0oVw%26e%3D1726571891%26fl%3D%26r%3DC4464CA1-9B8F-4136-BE93-0A124559870B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVgPA2orzWQID7hjFQs8-sxfssAU&uk=vl5U7jYPAZDYifwix1dK3w&f=%E2%9A%99%EF%B8%8F%20My%20Life%20Automation.shortcut&sz=27821">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfy30Xcx_-MPrL0UWEaMX4tW1ioMAfItX2WouGEIQhxTMtSAiv1oebjN%2F%24%7Bf%7D%3Fo%3DAuG5-7Vg9UP3DW8sI45SSxeND9be7AiSFd00IZRnCcPL%26v%3D1%26x%3D3%26a%3DCAogco4VXlQ2kZ-Zj9xkD_-WNcPclq25SYqC6s7ISXrw1A8SbRDJsOHLmDIYycDcn6IyIgEAUgRW1ioMWgRoebjNaiad3n9sYQuZMwZH8cz_ROfBn-SAmZ8i9VLFYG27dO_TVBtXlCgiMXImDOUsMoo9UVLwcEmiNFlBcHfZtWoVg3gZDrbq3Xu4ftVbRqnAKCM%26e%3D1727180251%26fl%3D%26r%3D5EDA64E4-CF61-4470-99E1-98BEA973273D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLyo7CPt2JlKowLFhokkis26icsQ&uk=iyuZtUSSk6oNCLxTuBh1ww&f=%E2%9A%99%EF%B8%8F%20My%20Life%20Automation.shortcut&sz=26908">
        <img src="./All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation%20-%20Kernel">⚙️ My Life Automation - Kernel</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdhYzCn3AxJcFQccZmtE2gBOt9l7AZZv5IW_pN6grHOpKzdYCkwZvxTf%2F%24%7Bf%7D%3Fo%3DAr9CusRRRj1OLkhN933sfhlp0mP8dGuYKxeaJHcIYtjs%26v%3D1%26x%3D3%26a%3DCAoge_IMPeO_iSET_wY0CJUHBbGo8VzAsgCYgfX6EnTcVfsSbRCRt-PLmDIYkcfen6IyIgEAUgROt9l7WgQZvxTfaibUjjzkAqQZ8HnCIetFKUt9P1wwkOn5lGVVvvjgWEIFP21nggSGPnIm6DMhlZvIRCbKXrdtMfTqhK90_2AY_MFlrlkCE65PrB41KZmOTkA%26e%3D1727180284%26fl%3D%26r%3D9CBBCC65-EEA4-4202-B7BA-3FAC3AECE21D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dp9b3fpQzPiJZllGk5iSdDrrPP0A&uk=Jzt1eAMfbRBrTZj5uvdABw&f=%E2%9A%99%EF%B8%8F%20My%20Life%20Automation%20-%20Kernel.shortcut&sz=27843">
+       <img src="./All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation%20-%20Kernel/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2413,7 +2427,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation">✔ Check Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeWkEfF7EZIt7hv8kNTKAZBipyiQASotBp0CXVcMZfu4xXvgo60-Uk13%2F%24%7Bf%7D%3Fo%3DAlD1aOR6l7wnIpoY8B_Ar7e0SusuO4O9kpSLL-q48Qy8%26v%3D1%26x%3D3%26a%3DCAogp4I8idUwz-AJAb8WBNMVrO9808hmxv82Cw8BnU7DWpYSbRCC_NepljIYgozT_Z8yIgEAUgRipyiQWgQ-Uk13aiYwX7IdHYw4cid8Nx5oArP6rmR4J_mkv5UY4KGfxbPai2Y3DZBV03Im-2vtz0Y3tWEx_oyWoy6MRFQ5lTzgsRpkzcfjkDojq-BXECgH12M%26e%3D1726571922%26fl%3D%26r%3D3A45C81E-42E5-4C79-82D4-F0A75F193578-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_vkyAO8QgXUDO3GDm3z853jAX4A&uk=zJBChmmRg4fNOmKzWxHhHA&f=%E2%9C%94%20Check%20Life%20Automation.shortcut&sz=31109">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcu3cmUlqteHzXYxGPmIbPbuks2pAbyUGeV-unx2nCEu0NiGYVJ0QqCB%2F%24%7Bf%7D%3Fo%3DArXSb1iWcRHNvT6wDmC4kptrADCrSAegoxSewCMPAOxM%26v%3D1%26x%3D3%26a%3DCAoglOUnVF7VANOsG-uGdIUtE0Gb50fArJgR_3wtCyyEbKkSbRDuu-XLmDIY7svgn6IyIgEAUgTuks2pWgR0QqCBaiYrpwVGkrRE-Zuv4OMFkRsSDFY5zKl25IKpSQzz5H7lcwSe1YpwCnImJnO75IWxe-bNP4Yznc5CcdlrIfp5OepURC__bBWyySeWHanplG4%26e%3D1727180318%26fl%3D%26r%3DF0377896-7A87-4B48-9665-EF1E4AFA15A0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMV5qoEFli9Idev6eq985m-MrNCM&uk=0oPWEzntNe8cDxi6HBtVNw&f=%E2%9C%94%20Check%20Life%20Automation.shortcut&sz=31689">
        <img src="./All%20Shortcuts/My%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2422,15 +2436,33 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits">My LifeOS Toolkits (32)</a>
+        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits">My LifeOS Toolkits (43)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day">🌻 My Life On This Day</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAajZQLQqCEFYKlVLLIR4i1oIKXZKARdrtpe0su9mXDJH-xX3O2RXodIV%2F%24%7Bf%7D%3Fo%3DAmSwiFwld99YiIZhv-_6iGwyLwGLUeSiZySBo6TRzPYN%26v%3D1%26x%3D3%26a%3DCAogjzEoKxXFlOqLAAnsAWMmnYKoQwAz8gSoFgN4p3haBckSbRC69MDJmDIYuoS8naIyIgEAUgQIKXZKWgRXodIVaiavnaAsv4kKszezDBywdJYPpTFN6BTInwHfpoPZJmnzvyRPJFDpWHImal_4vPC2KTMg1QLK5_ZIL2Zrpey4l_-D_nUBFlqfwCHcp9Emex0%26e%3D1727175524%26fl%3D%26r%3DDC0DF81D-85E6-4CF4-B759-AA3EDC486B6E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZSSLeEgR879j2bCSBS07NjqhhJk&uk=DPOx5wtqqUPpmPZ9AEtSOQ&f=%F0%9F%8C%BB%20My%20Life%20On%20This%20Day.shortcut&sz=26797">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel">🌻 My Life On This Day - Kernel</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ0vmspvp3gi788AfCdPpccrz-IjAQXJaUF5O_mk72EzDj8qjrEfStXc%2F%24%7Bf%7D%3Fo%3DAj-XTbJR6E63Z-v11dpZBIBdJw2kbIUqbUfwdkg2OEjI%26v%3D1%26x%3D3%26a%3DCAogFHFC8Jj5lut1Q3CKeDMs7vqDpX5E2UsMwItbugLZn8YSbRCZnsHJmDIYma68naIyIgEAUgQrz-IjWgQfStXcaiYtzY7zNIVbQ4h5Hq1SAF2TCL8ilsvp2m44pRU8u7cWur603RymxnIma_bk3hBju9OlQpgceB7Tq7BNGeBOUCx6bfqGB9xL9owQ6usuGoQ%26e%3D1727175530%26fl%3D%26r%3DFF92210E-3F93-48E1-BFBF-29A090BC6177-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_cc0ZpwMqAM-ui81mx7A0XMEwtk&uk=1Bnqjmds94pGOQ6YXM1cjA&f=%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel.shortcut&sz=26595">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A6%BB%20Listen%20to%20Something">🦻 Listen to Something</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUKhJRxZcvhU0oothFoCJcE36kqGAWp0yrvrqOuWGrewum2B9CQmi21k%2F%24%7Bf%7D%3Fo%3DAkdDT8iD3e9l8aPEHSXSKE3eQJnrlCs-ae_vYvQDcAXm%26v%3D1%26x%3D3%26a%3DCAog22gXSJ__aLloUF0UX3mj40s7dQ4HnJuYxlS9V6jA2ioSbRDK4p2oljIYyvKY_J8yIgEAUgQ36kqGWgQmi21kaiYsrFX3BIYkg9Y68PqKJr-3pj3TpFKe9ar0t1s4eQseqpFh6eeqZXImdRhsaA8XFvvUUx5j53tmD2th9tAiQa05-c3NkXcUWoP0e7dNrnQ%26e%3D1726568872%26fl%3D%26r%3DADA353BF-6F3C-4B4A-85E5-B97D5B3CCABD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D85HV2NywB-_UGAoJUQP7BLsXbJA&uk=KBMSNgGD36k4njtntSi1_Q&f=%F0%9F%A6%BB%20Listen%20to%20Something.shortcut&sz=27748">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVr8r8RZtQMsjhHHeqpxP_lEdkoMAQTq1dbGvCrExra4MKAjNZvluSs-%2F%24%7Bf%7D%3Fo%3DAlhVf4sanZjJ5oUxeISyXcSQIrlBhCMiz6csVwM2SsDB%26v%3D1%26x%3D3%26a%3DCAogKx1yf5MK1pIsPxUPVcHhnv9osxCnGwnsJE-StEyk5D4SbRDhwcHJmDIY4dG8naIyIgEAUgREdkoMWgTluSs-aibSTs0GOsEzLwC--P8FNHy50-qndb4eTnTNU5j6PD9GLgPix5Q_MXImKBet90U17VHJ1oGLRpgY42f2byc2H2t8js4X3xEIBCpcsbvIDm8%26e%3D1727175534%26fl%3D%26r%3D77024D7B-0032-4BCE-838E-7513AB6D85EF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkokKa8S48k6iWuQl0qBSqxLwHbY&uk=qBBwkCvQ_t42nY9mto8uIA&f=%F0%9F%A6%BB%20Listen%20to%20Something.shortcut&sz=27717">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A6%BB%20Listen%20to%20Something/%F0%9F%A6%BB%20Listen%20to%20Something.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2439,7 +2471,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%A7%20Connect%20to%20Headphone">🎧 Connect to Headphone</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXG6-UmnbgyNm5I-M2Ldd_Tbv1GsAa4IDxi3Icyi84hJorRAa2-pxMXE%2F%24%7Bf%7D%3Fo%3DAnUtu3lR0hAfvh0vr-tnyzfmYKMvY07MN-VbVik7pv4K%26v%3D1%26x%3D3%26a%3DCAogG0xyrQR79J6anKFtP3U6Hnld8fRXixk14SuDlQKXvx8SbRDj7J2oljIY4_yY_J8yIgEAUgTbv1GsWgSpxMXEaiZDc1D3Frb1NuSuEkAmqrh4IjAha6Yb8bf0JMyai4wgWvIRYrmh7HImPROLONdhOzc6CtE6YbxmZ31kaDrhBvCsgoIGvsMVqGSKLnK-Xag%26e%3D1726568873%26fl%3D%26r%3D80C0F196-C1DF-45B6-9711-99B6788F9D77-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DizmPZ2RJ740ZANnKf4zyxE2NKrs&uk=LMb5sUuC10Bwzwe7GMzzWw&f=%F0%9F%8E%A7%20Connect%20to%20Headphone.shortcut&sz=27145">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS4M6e81IiigzfBjTBdfKUOh3trqAeL4kQUZ9fCsyYt6hoeMIscoiY6P%2F%24%7Bf%7D%3Fo%3DAjAfdqFqhlrjMi0APLSDmKj8CJChZU4ccRPncHOL6ELq%26v%3D1%26x%3D3%26a%3DCAogUN4z7QJDm7yx0nAbGccdGHgQQW23nQvjKe5ivWCKIq8SbRD22sHJmDIY9uq8naIyIgEAUgSh3trqWgQoiY6PaiaJHYz6yZ5aiPXhEHFVKw4rnvlH_orDGzMR4d_gm52JSb--2v4er3ImFP56jA0XMlXu0iGSdZQ1xAjm6TVyMmZJXz596fopUZCaVaNPQ1A%26e%3D1727175538%26fl%3D%26r%3D53EDA629-4947-4031-8DDC-3D1D7943E49A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvmGM0ksNyp4HVWVTmRLgH16xGWI&uk=uPnLmbfT6y3i6p7ZyJWnuA&f=%F0%9F%8E%A7%20Connect%20to%20Headphone.shortcut&sz=27144">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%A7%20Connect%20to%20Headphone/%F0%9F%8E%A7%20Connect%20to%20Headphone.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2448,17 +2480,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%90%20Search%20Web">🌐 Search Web</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZxKDnV1YoawG8PoP3lYpi-_WRWvAaMuOI9Vx9Bd5Mayo2PfUqtYk0qK%2F%24%7Bf%7D%3Fo%3DApeAZPpzP-1wynFObUZ3RtLJ0duqk9Rd71BumzeF9iYk%26v%3D1%26x%3D3%26a%3DCAog6qXUH44DJST_HSgeXhH0akdB1DhF_sS582mK3UmuFC8SbRCz952oljIYs4eZ_J8yIgEAUgS_WRWvWgRYk0qKaibkKfxmHIRJqGIWleksuTeuCdN4BFek5_fqJ27LcgA8sCBPQ_ZHYHImjur1jHcO3XnpUNCwdTldeSO_xIQRvBoJTakqp_hOGI0V2z1KB3E%26e%3D1726568874%26fl%3D%26r%3DFBD6C2A1-DB51-4EB1-AB31-F3BE234171AD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLh8UJ6fovCM9kiExlL48JZvmOHU&uk=bltC-fgdU3F1FYS4h7nx8g&f=%F0%9F%8C%90%20Search%20Web.shortcut&sz=32103">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfyBoju-mrcfCoVgwN37bR10Wq0wAf3mHRGnbJyQAp9CcoL-RMYNR0oe%2F%24%7Bf%7D%3Fo%3DAtaTDvr7DwFSsVJcmRC0iQ-rwSVupXxfXg5sCCkJmZFS%26v%3D1%26x%3D3%26a%3DCAogUU_2hjateRSJvnSOUKwVGEuNrI6ZLHp8ZqgN1BDzTXsSbRDr9MHJmDIY64S9naIyIgEAUgR0Wq0wWgQNR0oeaiZMTX998kiYWpEthmPVbR72BtlicV94CRNRiIofxLpns0-dU_Ky5nImD_o1qXueKdv2sDYPbAr6Tv2cIunCQ9q5-MgS9g1MXaLX2NObPsk%26e%3D1727175541%26fl%3D%26r%3DBE2D2537-9C54-4E50-AC9D-95D0EAD651E9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyuH0cPfQ0qTnvtYrgenNpNJl4aw&uk=7PV031QTuW9UGPMH9zwFjQ&f=%F0%9F%8C%90%20Search%20Web.shortcut&sz=32103">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%90%20Search%20Web/%F0%9F%8C%90%20Search%20Web.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20View%20Unsorted%20Photos">🎞️ View Unsorted Photos</a>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20View%20My%20Album">🎞️ View My Album</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcx6SOen_ahKIZAoQuW9RYzBmoQ3AWex8PML6byVqijVbnrrVIt8FFsA%2F%24%7Bf%7D%3Fo%3DAodc0dTukrMjzwbKLN9vD-7VPsZF8CSU2GPGCmg4qzWg%26v%3D1%26x%3D3%26a%3DCAogQe5NjQxhcEzCxcog4ApeIsRRe0ppCO-xclYXSuyiMUgSbRDxgZ6oljIY8ZGZ_J8yIgEAUgTBmoQ3WgR8FFsAaiZcJMsabhcy0RSXXYsRkw_Q4UyoQqjrdcSu3HM6pBdJQN6WnnOGh3ImjXVyY-YYD-u18VoJV81wMR8JVGPl6HFdgEu177b-nGmALiisXNA%26e%3D1726568876%26fl%3D%26r%3DDE3086D3-5C8D-489A-A627-90F4004CD3E3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9U2Fm4OkoZ78r2H-Gj1n_wHtvxk&uk=0y25OMDgeQxpv0ojHMhB8Q&f=%F0%9F%8E%9E%EF%B8%8F%20View%20Unsorted%20Photos.shortcut&sz=27572">
-       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20View%20Unsorted%20Photos/%F0%9F%8E%9E%EF%B8%8F%20View%20Unsorted%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVwNzZMLYb6KLLLx8nngMW0GXYbCAbHzYJh-Ovtb55eCr0URJOdMgYlB%2F%24%7Bf%7D%3Fo%3DAluJJFIvgrjn-A4pYvxvo9DtN4E0Xtk6nS5noUoRb-aW%26v%3D1%26x%3D3%26a%3DCAogdL2jeZgQwBWtviVnulKFVZX_9Gr5RWUk5JUgeT0mTYQSbRD7jMLJmDIY-5y9naIyIgEAUgQGXYbCWgRMgYlBaiZSaiJXapT09R1rkGnMt0rsPYvFuBc2Xe5XnmWqGASi6hsi6cQuTnImd70Rq4LVRL4ndkwLI1-fCYWfMuGxUuH3AiJOXHTc32xSiDef_OA%26e%3D1727175544%26fl%3D%26r%3D5BDACB64-E225-4994-94AB-CD7318A9BF27-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuRkG4XEMHVg3yyssGaX66_yEcRE&uk=cNCvPxM4OtlnfLm-NJN3IQ&f=%F0%9F%8E%9E%EF%B8%8F%20View%20My%20Album.shortcut&sz=29453">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20View%20My%20Album/%F0%9F%8E%9E%EF%B8%8F%20View%20My%20Album.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2466,7 +2498,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%93%82%20File%20Manager">📂 File Manager</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQYiaaU4PLHIhzKGdg3UnTojE7EvAVeq6sqxMy0Q_wb_GVzjDt4YgC9L%2F%24%7Bf%7D%3Fo%3DAsnso34sEuaYrUtgA3szgxTKFV82iuQVDxSYMy41Pcuk%26v%3D1%26x%3D3%26a%3DCAogRKZ9bODgypXHmDqU8cNvS6PSUnHs_vK-ZhZMZs0pIGcSbRDyi56oljIY8puZ_J8yIgEAUgQjE7EvWgQYgC9LaiZaMW-ecIO7HHw9QlKOGPBJ1E6QJ9xsmOh3uo-7As-7vcYiiPmsVnImI0GNDdd3XaVmT791C29GgAjnV6lBRyquGZRlONMf8SX0J0DB_DI%26e%3D1726568877%26fl%3D%26r%3DA49D8190-2A32-4DD6-B3C9-84CF065F386F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4iiSfuOEiQ_ADU17MLApz5NMEoo&uk=Ik5j7HUyzouA3BqGevgX3g&f=%F0%9F%93%82%20File%20Manager.shortcut&sz=29936">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAed1INneWsfJ7eW9S9rxdH2q0K8gAbi02LCdBgQGlxBSCQscNETpEJhd%2F%24%7Bf%7D%3Fo%3DAhES6-q1HjoNkGp5WPrJklW3vhYej7L7s96ZrI7vsE8m%26v%3D1%26x%3D3%26a%3DCAogKdjTp8iEEBjXSEWsr8fQq0CF10ScsJYScdo8kVKJOAsSbRCwpcLJmDIYsLW9naIyIgEAUgSq0K8gWgTpEJhdaiYQlrEENsj9JIRSQuahhDKRCs2_eZb0f-l_5SdM40qX7uDa4cMAu3ImRC6wxLwVM5Z2Y3CzudPXz2npnoBje83VoE-I6-OzakS_a9KT8CE%26e%3D1727175547%26fl%3D%26r%3DB1E9D43F-9961-4253-9460-E3C9E61FC729-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQkzihTsd-euOXiozEkGIIGYNASk&uk=GmzqnRUyl1qzaSgjXuuFAg&f=%F0%9F%93%82%20File%20Manager.shortcut&sz=28278">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%93%82%20File%20Manager/%F0%9F%93%82%20File%20Manager.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2475,7 +2507,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%B8%20Split%20Monthly%20Grocery%20Shopping%20Bills">💸 Split Monthly Grocery Shopping Bills</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbuxdoBLNjpAZSw69mfVXy_gEopfAU2ns5-uqW08nwHHD8WXwuIJcZTq%2F%24%7Bf%7D%3Fo%3DAvKSWGbJz-9umjaNx9FXFPn_yE1STSNz9OSBzln8wS6Z%26v%3D1%26x%3D3%26a%3DCAog7X4oIS0rXbFIHpSAW6mlLtl3bdMZCbcWG84XFpz4s4MSbRCvlp6oljIYr6aZ_J8yIgEAUgTgEopfWgQJcZTqaibYq4DadKP8iNX2pov6aPv6aPUN5hOQ5gRwPHTtJAWJRpuvKZCk3nImbu5gmsmFyGjzmvY1XWT5bJFj-Pv3PROrOLa_Z4QBfSbcvgaa47M%26e%3D1726568878%26fl%3D%26r%3D22870EFC-49FF-412F-84B6-BECE289E19B8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6vSnVxy8bQCNCHUUvWaiVeA40MI&uk=havJX3sR4ZxdzZkn5PBc5Q&f=%F0%9F%92%B8%20Split%20Monthly%20Grocery%20Shopping%20Bills.shortcut&sz=30239">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX1Lgdx-WFFPqf9UepMIG-Ou0dQSAeuQ4GdPxt5EHWz6NAudkFMcILVD%2F%24%7Bf%7D%3Fo%3DAoDwuWysi3mXzqoPNl8BYzlOJ97Yy3nGDBGI7go6BFn1%26v%3D1%26x%3D3%26a%3DCAogUbYofxeFvJiWNpzzQ3dKxm0Xo2C5maJOsVbVIjmS8qMSbRD2vsLJmDIY9s69naIyIgEAUgSu0dQSWgQcILVDaibGpwPd1-_E8KPQGoo-AIlhvOirX3i5Tl-3IumyQmnt-vqPIrjq33ImtI0izjv6vME7sMIKqzffanlNEDD5SwuI9jWT7df3Z_LZctnf3IQ%26e%3D1727175550%26fl%3D%26r%3DDF5B1272-3357-467B-BD76-A6EFE8FBD8B2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D84O9AszaISUTO4NNZG661gXungQ&uk=GQpQC-oUp419S0OaO28Gsg&f=%F0%9F%92%B8%20Split%20Monthly%20Grocery%20Shopping%20Bills.shortcut&sz=30240">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%B8%20Split%20Monthly%20Grocery%20Shopping%20Bills/%F0%9F%92%B8%20Split%20Monthly%20Grocery%20Shopping%20Bills.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2484,7 +2516,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D">🚛 REWE 雜貨宅配</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXWrW9ebtDaVbd5GNJsZyKOr5pzUAUEBnvWfVx97mhOvQpA5gI7xb4sI%2F%24%7Bf%7D%3Fo%3DAly3b7rxU1cusCx7Gbb9SMfwGAV4x6vakPUHDNSokbyj%26v%3D1%26x%3D3%26a%3DCAoggirtG3pQXpeukB9zLauA9lpjD8zPedn8-C6wGUxqyCcSbRDUoJ6oljIY1LCZ_J8yIgEAUgSr5pzUWgTxb4sIaiZrgZxikE1MLa-3rBHspfzeElAxDm_FWUF_l6d8YIYV0XAjUmvWKHImkiflZFYERVydgxrl_iYnCfe83N5eFbFeXie7usjeSBOHfGn07rI%26e%3D1726568880%26fl%3D%26r%3D361243AB-46B8-4EBA-9287-B793452A4727-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8Y5GoK5F2jcItSsZFEKkSbXvq5o&uk=J9HOiMtR4j1eF_4Sz5nSjw&f=%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D.shortcut&sz=30117">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcJxgrYftyHj1veqkfY18vHe30ZBAUV-he8u5oMLxy5mmFieUqkOug4i%2F%24%7Bf%7D%3Fo%3DApoSn74WSO5GJZvO4OajTlHZtHIJBfxUy3j5PZtG0Zdd%26v%3D1%26x%3D3%26a%3DCAogRgrmsNdQTXO6i4ZaB4Th3aSBUbowQa-PIov9Cm43AkESbRCu2MLJmDIYrui9naIyIgEAUgTe30ZBWgQOug4iaiYbz4cOKXLJDyu9YvC9C3ZMAVC9hNqwx_0eaHIY-Rh8jUeeTSLsF3ImgqxQqEB6SsKjtgO7UHt2B4cqyD2pYrClhuCxHr0Cvd61brAIppA%26e%3D1727175554%26fl%3D%26r%3D6C82B705-E933-4E43-B962-792B62BC85BE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6ibNiilxlvdJHKothAF5-cqIAHg&uk=1_ug5fhzOi0gVhya3YkIZw&f=%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D.shortcut&sz=30114">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2493,7 +2525,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%94%A2%20Record%20Body%20Weight">🔢 Record Body Weight</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATEaBD45oaaqDOiycZVVFh7zpzW-AeTz4Q-TapUS8TZQvPAt53FVycEj%2F%24%7Bf%7D%3Fo%3DAtcz0fpcS2xVtUS4MNiN0SWTx-PfvmNBazM_ZTZdM4qk%26v%3D1%26x%3D3%26a%3DCAoggROtpFrnEiDJT4heF-wCeG5S8pr-Pc1tNwE0RJNI0NASbRCGq56oljIYhruZ_J8yIgEAUgTzpzW-WgRVycEjaiaVPkB2nXYSpFT2DeKeisdqLa9RKW_Y54Gdt93ceAvHVUYhfouHwHImcR_6OhxHCjtrS2FuWTHbb2LXk1MH_sN-WZKHpUOIx64LNsFuNRA%26e%3D1726568881%26fl%3D%26r%3D49462D47-A5D4-474D-9B68-69FCD68F954A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYRoa2fkdq6wCtJazMwRWb2LiOcQ&uk=IMYgGWtzzXtF9gvcaVlRhQ&f=%F0%9F%94%A2%20Record%20Body%20Weight.shortcut&sz=26679">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbkEfcfEPPkC7Ru_c63o4Q2giKhHARy6agn3s2djYyoCFoK8WXkvW5II%2F%24%7Bf%7D%3Fo%3DAotUJMuEh5H-CH_9SonrfxBPDdxxVKtnCQ4pnTTq3ow2%26v%3D1%26x%3D3%26a%3DCAogWnJebco3ueFdw3nrCeitTeCESoMvdUR4e6HQyhGg_-4SbRCT8sLJmDIYk4K-naIyIgEAUgSgiKhHWgQvW5IIaiYCDwycqgSDJuRFDjNNUjy2tbkH6A6bXh3VmejJZNkTnQYNnm2tCHImAHRgM9iZarD3itLnqa0wD0Mkf-sHRXUDgCBLctOCfi9v9KCUemg%26e%3D1727175557%26fl%3D%26r%3DF1D700AD-B827-41E3-AFAB-0F10631F72BC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8pilgtqviHuJkXoCPE8dw47lut8&uk=71jziDzBwlv2xlgKjqfzSg&f=%F0%9F%94%A2%20Record%20Body%20Weight.shortcut&sz=26678">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%94%A2%20Record%20Body%20Weight/%F0%9F%94%A2%20Record%20Body%20Weight.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2502,7 +2534,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%88%20Quote%20Of%20The%20Day">🌈 Quote Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUUUl8Q5wcan9-DexhQ2VTvL6CcxAbRxSAD5tE6gGzbteg5UkobXL7r_%2F%24%7Bf%7D%3Fo%3DAofC_IBSf6-NPd6ZBbwozUEEZrbXiT_pPe1pSnm--V0e%26v%3D1%26x%3D3%26a%3DCAog8oZXM1OcExsgp-RoBIInZSwtOovWCqnCRFAU7LzBM0cSbRCStZ6oljIYksWZ_J8yIgEAUgTL6CcxWgTXL7r_aibIMGlzVPdNNeDaH3_taELugdSxLou9rDzHmrKlKm8LMvjbWtkoOXImmAAHTw6QZzhDZfh9lKwmKwo1VR6aMMUPOhBw8-HPZFWQ_7lNkHg%26e%3D1726568882%26fl%3D%26r%3DF8BFEC5E-0465-416D-87E7-3E0A4132ED84-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dsmt8uzp7HCjPFlcys6a87ZRjUPo&uk=esZ7dgJVyeg1rto53SEyDQ&f=%F0%9F%8C%88%20Quote%20Of%20The%20Day.shortcut&sz=27979">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATn0erAtemMNdKNHz9YqSZ92Y6n9Ab2hfZ9WptIXZZh5Yjmt7ea32xKL%2F%24%7Bf%7D%3Fo%3DAlKPSacFbt862XFwUkN4-00L-ObI_i-afsFRQR_wiMWv%26v%3D1%26x%3D3%26a%3DCAogNM2Pd1gFYYq5a6GUwBkvqur6V_23wVbotCIg2V47go4SbRDki8PJmDIY5Ju-naIyIgEAUgR2Y6n9WgS32xKLaiZHF5yOJUoL3lZH-7I-VOVsVFEds0jo5Pt6vvtJxY7yMa-FrCN4_XImEY-6jhHXBNf3i0kWW8Ky0LVRAETPTi0jmtIqPGqnTdRWiHAIRzs%26e%3D1727175560%26fl%3D%26r%3D9113A5E3-AC54-41C7-994D-769A502D6B35-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzGBuaYhunFgvlmuqw8D4-K6toyM&uk=gFieYVn7XBN8_lHt3zbCCg&f=%F0%9F%8C%88%20Quote%20Of%20The%20Day.shortcut&sz=27979">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8C%88%20Quote%20Of%20The%20Day/%F0%9F%8C%88%20Quote%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2511,7 +2543,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%88%20Quote%20Of%20The%20Day">Helper for 🌈 Quote Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdSt1cjYL-AKYRevltUtghl3BFonAarOGFC_MuAGqDjVdPrGQik5hgE6%2F%24%7Bf%7D%3Fo%3DAi8qcLoZCcbp-uk4r2zJHTe7h2BTB9wu-27kF0XXbjhV%26v%3D1%26x%3D3%26a%3DCAog8tFmBUWjSoKmft_r72XEoxeLlrfFckLa-TTRVkg0E80SbRC3v56oljIYt8-Z_J8yIgEAUgR3BFonWgQ5hgE6aiY_6keoflm9LIywddaeinY3gRr4LajQo00Gs11lEJ_9408fr8kRunImCnTKryIiikU0JI2qIhglxzHi5r0nRo9EsVaIUNIdCN6viUqBXCw%26e%3D1726568884%26fl%3D%26r%3D25B3C1CD-1F29-4C61-99FF-86A44EBE5F3D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dg0Oou2mCAaT1wqWaocb8SlA-HHI&uk=1FymSMOUbZYiPvOEw-CXBg&f=Helper%20for%20%F0%9F%8C%88%20Quote%20Of%20The%20Day.shortcut&sz=26893">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeMLg5NwOPJswl55InXC5W4e84VRAVlLKYAeIuCy5I0azhTGbGLcFO8C%2F%24%7Bf%7D%3Fo%3DAs_Q9JWI6QdAuitgHel_aiQKn05OqWIFbf0dbXMtbqZF%26v%3D1%26x%3D3%26a%3DCAogRR0P_G_Xqd_vRgFjzuRuVV-CMW8sunjP58MpkeiTNhUSbRCApcPJmDIYgLW-naIyIgEAUgQe84VRWgTcFO8Caib_wcgeCYNfepvCeVJyda7wvbHmO4dPbOoPbgzOFBsKlx_6ttal2XImjY0Ox4OSZUf3dkrfRT8cAWsWKQfX9pSbqXUDLQHj99XZ7MruDts%26e%3D1727175563%26fl%3D%26r%3DBCA2D8A1-ECFD-4CCE-9786-411E0EF79432-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DG2aIV3f1J9TjE9A0NYwiTGWIHZY&uk=SPfASDnpq7roSgoevoC-ZQ&f=Helper%20for%20%F0%9F%8C%88%20Quote%20Of%20The%20Day.shortcut&sz=26783">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%88%20Quote%20Of%20The%20Day/Helper%20for%20%F0%9F%8C%88%20Quote%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2520,7 +2552,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%91%91%20Life%20Pro%20Tips">👑 Life Pro Tips</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVNAeZ877DCP491kn3XfjThnAkcqAXMuLTlRhKZSbUPJm4LFboHj_L5q%2F%24%7Bf%7D%3Fo%3DAlCjC3Y0LpIupMxRwtcqmt18B4g05dDyDyh9mBk4j_75%26v%3D1%26x%3D3%26a%3DCAogAnr8GNXDI2ZJaHoQu5i_tnmXFynd1IO8EGzF_gz0ekISbRDFyZ6oljIYxdmZ_J8yIgEAUgRnAkcqWgTj_L5qaibqnTdZhM5M0tweZttjPXIb8i9GQS3zRWI3Cdsj6B_F4fDEgNogMnImcNozX4wy8ahKtMUKEC85fGutZu5BC-w_-Z8po_JpNOZOYX1D2EQ%26e%3D1726568885%26fl%3D%26r%3D7FD7BFC7-E2A8-4AA6-A0BC-A7188BE52A92-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Df5-2ZlZk0Q6YwQCasRLVFx-mVuQ&uk=lLyaLnx51DG-vUXWylczlQ&f=%F0%9F%91%91%20Life%20Pro%20Tips.shortcut&sz=27716">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbgDOzowUfTT_8w707wLFAG4Nrc_Af9Op18VWadx0e4eoGfta7QAz3Ea%2F%24%7Bf%7D%3Fo%3DAoH8A4IJz9cYELI0SEwseNpfe9kNo-x0Pu3nIO55lzyJ%26v%3D1%26x%3D3%26a%3DCAog_RE9u6aqdVI79FNXKK1nkuqWQ559-50UcHqfRrmfxz0SbRC_vMPJmDIYv8y-naIyIgEAUgS4Nrc_WgQAz3EaaibLA89xB48jx9AfKUaiqaU3gkjfk4mBGrus_QvE9lgQAW9-bNtoPHImCqILeDkGgi4iXcT0VTG4SaiDYUJew4roYii159KOAUGox1k88Qs%26e%3D1727175566%26fl%3D%26r%3DA0DAF45C-75D1-4060-BA54-F6E0FF51D054-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcCJ6eLEitcNolBj_bHqwUZpwdUw&uk=44VQZKxUY0pUAQXCCGjp-g&f=%F0%9F%91%91%20Life%20Pro%20Tips.shortcut&sz=28188">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%91%91%20Life%20Pro%20Tips/%F0%9F%91%91%20Life%20Pro%20Tips.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2529,7 +2561,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips">Helper for 👑 Life Pro Tips</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASa8nSFHcXrrFfOSbb7h5QGXdlk3AdknV9SAoT_RLiXhI-yimkDzGdLZ%2F%24%7Bf%7D%3Fo%3DAs0pyNUHR9SjoKFRclLnFJYItUMoUQP5oBz_R2COG6aH%26v%3D1%26x%3D3%26a%3DCAogKxav7XpavKU_Pi9ZJbY7yn7beHbLCK43e-pNMduBFSASbRCm056oljIYpuOZ_J8yIgEAUgSXdlk3WgTzGdLZaiZ1MLgC7HGx7sr95yxE8j9RoeK6dA6--13Z06GB3a6bLLGbovUedHImIhetpIOyrYSy68F-eAvxGy0jUus-5bHng0WzA1TIqqobbVsomtY%26e%3D1726568886%26fl%3D%26r%3DBFD764C7-A41E-42EF-A96E-E6AA7F89420A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJVu7UJ5KpN0aUJT9v-rsrRK6qk4&uk=a6KBZoFEJve0BwvdLs3hww&f=Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips.shortcut&sz=26860">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAblBricuuaDLUd-7qJ643ONeQdXgAenOXIw57HBUGZLQCpSaTOjy7Syy%2F%24%7Bf%7D%3Fo%3DAh_Ddwet_utHW9Lub0N20CJ0ntRdW-HeFEzt3heFDBgf%26v%3D1%26x%3D3%26a%3DCAogvmSg7nkyO46HLNbQ0z1ByVnDjZYapm8Vua34ABH3UkgSbRCK1MPJmDIYiuS-naIyIgEAUgReQdXgWgTy7SyyaiZxPSkOsrEwiTTY6vilrM5gkjP5Km1c06SaXhCCTOWUdP9zgJKbg3ImiEHZxOja8GtaTxWv6ltNukHmlPHr8I49yoDkl6jT-SW3XFSOp-8%26e%3D1727175569%26fl%3D%26r%3D13B3826C-2F88-43C8-B89B-292E3F61EECB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoFeikTnGh-02jebqGR5_K48K7Pc&uk=qV1XUs2WGvHeGiLQpYwEfw&f=Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips.shortcut&sz=26513">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2538,7 +2570,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Recharger">🧠 Brain Recharger</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcr6XxJqiIChuj8rfnju-Z2cofnQAfgpEbORKquFXRXr5YwkDZytlkdz%2F%24%7Bf%7D%3Fo%3DAvSEwJeialWlLuwYM8QoZP3XCJlf7kFkdDhtMBPX-5RD%26v%3D1%26x%3D3%26a%3DCAogcReAd9MXO8JNgpLV-9bxZOhSqpAs9gvG_25sZ56H0zISbRDH3Z6oljIYx-2Z_J8yIgEAUgScofnQWgStlkdzaibwaafPnk7kNWUoAfOGpj7YEmbt9JwwZCfrF_tRFPOCeIXtnCR51HImDpZuPzLybyMY3J4PPHUojuma_3PGhO4fL0HFjBzvv6OvRO7n2rA%26e%3D1726568888%26fl%3D%26r%3D32C9A35A-F7DA-48F9-8BAC-23278ABC4D3F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEdUVUrIANuez19N3z-Iqo2Qz-YA&uk=Syy6Yk3Se4ViLtYU9Qz4Qw&f=%F0%9F%A7%A0%20Brain%20Recharger.shortcut&sz=31451">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAThemNToRFC6PD38UFj19iIK2SPlAVzOL8Ak-ZsgmBYVMMa9ht9bIcBI%2F%24%7Bf%7D%3Fo%3DAs2HRoTC-UqE6HURjotT-sjNY6fe-jaG2l_RpD0LWPei%26v%3D1%26x%3D3%26a%3DCAogYiVHhroDo8YgVIIo4An_htcv5ux-esHdb0D4E9fJasMSbRCd7sPJmDIYnf6-naIyIgEAUgQK2SPlWgRbIcBIaibcxBsVkggu1MYKY1PQbfUmkIsN-LkNAhXyyYDb-GoH5LvrrGm5Y3Im8ezVCEHs3H1XVLP6_hM4S72-t2qQGKoc6wN3XFp_1LPXjzOi3Bw%26e%3D1727175573%26fl%3D%26r%3DE0CB405C-6DD2-403F-AE92-FFF569D003E8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYMKMuZwZMCzUZNtae6lloQmg0Ys&uk=qiRFEH_taniVl2RNxj1zfg&f=%F0%9F%A7%A0%20Brain%20Recharger.shortcut&sz=31448">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Recharger/%F0%9F%A7%A0%20Brain%20Recharger.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2547,8 +2579,26 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Food">🧠 Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW8JUCcVaVs-1DpE-1eUdNVetRa6AUR1O5mvIcNHCfsbUBBwRdwN9v8e%2F%24%7Bf%7D%3Fo%3DAoJVtHnE5_X9BVwv4iPTPB9L2fGpyB870AFAmwb_sT9k%26v%3D1%26x%3D3%26a%3DCAogJ9R_P6t-KGXkMH-zmxtCxUQcYVqchGZpMsaESvStIFMSbRD7556oljIY-_eZ_J8yIgEAUgRetRa6WgQN9v8eaib9_UDIZg94Bt1BXxKTFAFvIGmSCosGYtNOdOhg5-6nbrFtL4v9JXImPmhTV5KZoO6TbAwu-obPo3ifkATF2KhTcxRXow5k6rS4OubbcRE%26e%3D1726568889%26fl%3D%26r%3D1EE57E27-F44B-4AFB-A506-B96A750F0F8E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzPo7Vpw9kg1WpaQx6CVw0WOs6O4&uk=JmuHVKuTBypAgsojyXlLQw&f=%F0%9F%A7%A0%20Brain%20Food.shortcut&sz=29023">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVh5GZL1beDpWLjSsDMdRhdL2mktAWRcEt617QLSx0WppmzfQyJk10UY%2F%24%7Bf%7D%3Fo%3DAqwZNPkalFtNPwGTkZz2Ow9a0_V3gS3isYBklK3hKg2s%26v%3D1%26x%3D3%26a%3DCAogzhm7_7FMuTK5OP5lszyN6orJlFO0yD3TjBMQ_MLB9EoSbRCAiMTJmDIYgJi_naIyIgEAUgRL2mktWgRk10UYaiYxFh_vW_yTa_AqJPURUhZmzfCBFwXIUg47x-44WZyBiX1jiAaHwHImb2sB_1pQzTTnW2ne0MryeeivBLXwAn6N0WpMDuKu0iXlQNO1kd4%26e%3D1727175576%26fl%3D%26r%3DF6C64A34-4808-4BE4-9898-4D405CA56F84-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dro-caE1AWNZI_F2WNvqyS2ehKn0&uk=VFVEsPQ8sxvGt8rqU-UznQ&f=%F0%9F%A7%A0%20Brain%20Food.shortcut&sz=29023">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Food/%F0%9F%A7%A0%20Brain%20Food.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food">😉 Enjoy Quality Brain Food</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASR9rS9e0-2PH3npMjg5bS4ekV5KAc3ztMsEmJz7xW-vbwCsPDgCQfrx%2F%24%7Bf%7D%3Fo%3DAgChzttDnoqu7dfHm9TR8X-IXz75FfEdkJOkLKQ5c0Bj%26v%3D1%26x%3D3%26a%3DCAogsk-kpEFpPmUn8zSacKzDLa8WeSnJg7itYCa9zGXy8HASbRCFoMTJmDIYhbC_naIyIgEAUgQekV5KWgQCQfrxaibBbWRhyEgHCimS1H1AFjp9LIys5UwrfCvdU6m0yiTz0nEnUjZsfHImvqJrYccu7zcyMrP6X0tcbfGED-kZeXhhzADWBeK6y21uX8QXptY%26e%3D1727175579%26fl%3D%26r%3D741AEF91-DA63-413C-95BE-CFD1A195FFC7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3PNZHvcSxxORKrLzXE5Znn1rwOc&uk=gXlyTjGlb_a04SWZD0H9og&f=%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food.shortcut&sz=27739">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8F%81%20Mindware%20Upgrade">🏁 Mindware Upgrade</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf853JGoHq1gRXhGGm4h8evkJTH1ATlbzOqXtb8ZHgynr1PUqIxQPbXg%2F%24%7Bf%7D%3Fo%3DAgPodpYGfleyZIGawVonaZNXq3s1PZtXUcKtK1jv9z7s%26v%3D1%26x%3D3%26a%3DCAogYbEhubDNUAN9gMrpRYZbzBLGr5c2uQxy9AJMjQXpzxMSbRCEuMTJmDIYhMi_naIyIgEAUgTkJTH1WgRQPbXgaibSrvYRliwk5u25oRIILXHPuV_fiyHuGEoA2zynbqdNvRY2TfbksHIm_QQnX7yYsCFmiw_cWd6l7qgfsK-IXxjswhMuEnXxctlqF_SKEww%26e%3D1727175582%26fl%3D%26r%3D75B3141D-B0F8-4CE3-8576-E2D09D993306-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7GJumMmqs_EagdSeMBcqZpPlgVg&uk=V5pGww_bNtYK2DwiR3GqrQ&f=%F0%9F%8F%81%20Mindware%20Upgrade.shortcut&sz=30837">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8F%81%20Mindware%20Upgrade/%F0%9F%8F%81%20Mindware%20Upgrade.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2556,7 +2606,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown">🥱 Pre-Sleep Cooldown</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd0p862odrlhhvveKpRZG1HYfumaAaZlrGQBzoTyXfofQDbIA1AhA9l4%2F%24%7Bf%7D%3Fo%3DAmSI4vlJvNNx8wJBKOGzhPcVsAET24GpwGQPZ03Qhs-n%26v%3D1%26x%3D3%26a%3DCAogs16BhV8SQPKmYRkSBcGI_wlHf8Be93alvADkajzfAcgSbRD28Z6oljIY9oGa_J8yIgEAUgTYfumaWgQhA9l4aibQ22HAmeqiyru3oZiwum_bdWWAGqUssnozG6rOrCWLeOBncmNNC3Imxtf45bOwj2LXMlNTgilraSmpQvT8Aw2kyJC4dDIVqPg8o6kZlic%26e%3D1726568890%26fl%3D%26r%3D20B2274E-DD84-44C6-8C3E-AA8477662A74-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPe2AQOaYy6rn6q_hMbuLMJv0Zp4&uk=F2f5VotXKhCD_rBdDKQm6A&f=%F0%9F%A5%B1%20Pre-Sleep%20Cooldown.shortcut&sz=27168">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfBnloiNfp2ZUsnxJ1lOkA7W38BLATSuXX_PNNU_0-L0y4DqS-W3b9E_%2F%24%7Bf%7D%3Fo%3DAlegZBJhdnIXtmpf3tlGYqt1gKEM71D_Rl5TVbIOs8gv%26v%3D1%26x%3D3%26a%3DCAog9pGFiibwvldDNcqtlQ9Qm83l6qJzl2H2hWi4zW_OmYwSbRDy0cTJmDIY8uG_naIyIgEAUgTW38BLWgS3b9E_aibbNnE6KXjV9k-MjDu-pohLxRYsox-349usuAuuWb5THEuYCFosKnImiY9QYkHTY4tLE64U53Su10L532p4-eqMVTehPnnXk01qdvR4OZc%26e%3D1727175586%26fl%3D%26r%3DBED66B84-FC33-44A9-9F87-CC1CA2C9AFB3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4Udrr8ct7tdN1N-lklr12w2lzlM&uk=gHR2PFYH_7-TxPmCchzKuw&f=%F0%9F%A5%B1%20Pre-Sleep%20Cooldown.shortcut&sz=27167">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2565,7 +2615,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup">☄️ Pre-Work Warmup</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUtXY0hvOuSneslC-IvUD0SdK6-hAfSrWzbfpUe62R-jrWybAuQR54Yo%2F%24%7Bf%7D%3Fo%3DAs1LvQTgtFjVVTI8ekm5x4yZx3Jk7bVr3VWzVyiZV-0l%26v%3D1%26x%3D3%26a%3DCAogFqL-mg_BXAxp4H_soRG1Ead1yv8TQ1J1CH9N3APl5VgSbRDt-56oljIY7Yua_J8yIgEAUgSdK6-hWgQR54YoaiaLBfPyGblehQA25mik314cebQoZmnt3H9VMr4dJ4stP83YgT_STXImvjRywljqM64Vvc6604FUtOwZBzHScuKDyUqTywcM_dOvxjVPa78%26e%3D1726568891%26fl%3D%26r%3D31FA3F36-17D7-468B-9A26-1108448F08B8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLVbv_xxFY3xHPgtyNOl4-WOVrfc&uk=h74pzvtN0v98NJ_84XZcOA&f=%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup.shortcut&sz=26806">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYjhKnJSHyr3aVnduo4noCebTrEQAfFPDd0ccsYPrkWgPAK0p_uqKzaZ%2F%24%7Bf%7D%3Fo%3DAmAcpgQUIMejBbpS5biBOvRInY3c_4KPPncMrMY5Btii%26v%3D1%26x%3D3%26a%3DCAog97FiL0EZn2D_cee8vYuVvS_VzJPWmrtZPJH1pv-iJAoSbRDb6cTJmDIY2_m_naIyIgEAUgSbTrEQWgSqKzaZaiYIsS-SNX1US0W2Nc2ArC8YyMlX3X4x7tKJceIehnVIMC6q1JI0onIm3aSu0JIfDpSM5HByogfjkns36WTEWm4SOQFl3vs7SI4yJu6jeeM%26e%3D1727175589%26fl%3D%26r%3DAC0C54F7-A9AC-4E40-9D41-F1F833BF5268-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DY4ruNcHTUH84iBATCBN8GSyZgtM&uk=UCEM6K_RGR_sIijqnBjnNQ&f=%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup.shortcut&sz=26805">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2574,7 +2624,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love">❤️ Call People I Love</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYutY8khyMSJdR_aiuYZNPZ5rYy_Af8AmzbQldjjgpzsYRRNOz-Vupnn%2F%24%7Bf%7D%3Fo%3DAsIENaAv7V1ljFCtm33yTxNsKwq9fqQrs-j33f8Crwl0%26v%3D1%26x%3D3%26a%3DCAogoa2rc1FoUf8aNqqUawnqzCJ4-QSkzFDPU6BvpzYYPKoSbRDuhZ-oljIY7pWa_J8yIgEAUgR5rYy_WgSVupnnaiaJHaViNcSwWCRx8kT0luSdphwLmAzhWgkqPXlMObhu1SjQIZ1QT3ImtpZ1R-7n-KS0kWtgaAhCWHH66VBE-wdkEtnDeQF_2vvIZ0hI2KI%26e%3D1726568893%26fl%3D%26r%3D29972F5B-F509-4125-9F78-10F23DEBEFD7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAn5AQmOcNg4wWxykzMT3Fnl_lrQ&uk=6s6S6rqOc-FRKU0fdyk7HQ&f=%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love.shortcut&sz=28214">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeHpOxxuf3PFxTIePIq7wFU7wp_YATmjWQv3znhr4BqQungEQLD5ch-R%2F%24%7Bf%7D%3Fo%3DAgCcPy0sjslw3bl4-3yEkH4f87eNjgZNxZOtwn0VOP8g%26v%3D1%26x%3D3%26a%3DCAogGlilFwynB0V9SyBIot-FEq3Ml8c0shxcC-F_Y-KG8Z8SbRDlgMXJmDIY5ZDAnaIyIgEAUgQ7wp_YWgT5ch-RaiZW1oKs7BZCnm68zlpt5PFtgB33PZM9o-dMj6LK9aF003YddJ3vFHImGaHXKRFOhSbZvhXdF0Yn_OTWdq4BYwyoZgzH66fVWfphQrlAW3c%26e%3D1727175592%26fl%3D%26r%3D32EA300B-4B87-48C5-8C78-2A7849D35DC6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Do7bJRF9XBuOuJR8t3rE5ipjkACA&uk=VKL1UBMABs9vBWYUuiHaWA&f=%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love.shortcut&sz=28212">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2583,7 +2633,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love">💌 Send SMS to People I Love</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdiWjEjXhl2zHwoZnmiYQ0o7ZuWHAeW8L9hID689lFRJ5lhSvCkgNxpa%2F%24%7Bf%7D%3Fo%3DAqcOZsu9wMYWl4WTfRB7uoZklrmgERSngVgdtA5WmCPz%26v%3D1%26x%3D3%26a%3DCAogrunrwIqA3vmPsV7qw8KxeBoMPYOidaO-l7GxubRG-dYSbRCfkJ-oljIYn6Ca_J8yIgEAUgQ7ZuWHWgQgNxpaaiYZx-cGZ9RbQi4XO91H2syC96Tpu2sOitNRelKEwy-Gq4OlkRtXrHImwqSbqOSWXkwVmGSL8goUlo4TAxsTFKMZG9-aM_IeTiPG8s7kAs8%26e%3D1726568894%26fl%3D%26r%3DFE4B51B6-5426-4850-BE1E-6D7BB62E403F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzAtvhtvUlWyCuVqZtrFDToZfENc&uk=09vBVWJkPcdIVC8w4WsWrg&f=%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love.shortcut&sz=28610">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQDZXSnrlTtIj3mEnqqrc7BfdscNAeO8-upDnmqo-PvenSutnwgqsJEw%2F%24%7Bf%7D%3Fo%3DAs80uQ-rCrZ_GPsvCdBdUCRoYnUMBUAmRjVixAi7r0Rf%26v%3D1%26x%3D3%26a%3DCAogHYsUlZB3ypV09O-igv-KwQWJRHYppz21FjR2MMF-LD8SbRCBm8XJmDIYgavAnaIyIgEAUgRfdscNWgQqsJEwaib3sflk-sZ05GdI6t3x0EhGerV4l_InCCxBjBBYrmBrixFDMjLLUHImz61v48msYgSxLN6F2g9cE5zBYaTIknYi61-FRdQEu1ZBtz0XK8s%26e%3D1727175595%26fl%3D%26r%3DEA9D9E81-9B48-4DE1-A864-3CCFCABA605A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfTRl3bEZ1_w7IpkFEF0AskHl6ak&uk=DzRGnxfS1_Aq2WVanwzNXQ&f=%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love.shortcut&sz=28609">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2592,7 +2642,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%93%A7%20Read%20Email%20Newsletter">📧 Read Email Newsletter</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUJ5QnABuZAJTedBwaY9-vJ4lKp9Ab8bL0APhli9L22z1A2B-dFKKxes%2F%24%7Bf%7D%3Fo%3DAuCYg_RU8jvbELRgyi9IK_jQuatGf0sbU9JTDYBChG1o%26v%3D1%26x%3D3%26a%3DCAogTYLwF0zC1Y1oznQ77Pwbwuvqzgi42ByAYd7UNLHiDooSbRDPmp-oljIYz6qa_J8yIgEAUgR4lKp9WgRKKxesaiaKg2x9Lx35-JYBeYIREXobehXeSi8WOUBE9V4fi8kK9rvGjpma-HImeh60k8GvWjVUmyn-MTqCo1YQwku4dFPuQvJre6OrZv0zoYrnFIM%26e%3D1726568895%26fl%3D%26r%3D5D26CC24-1EBB-4074-860D-64125902BEAC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVu7WzMX2netKeGQJ7QUTLAvXIH8&uk=Bl9Z9-g8DTqtVD0Pf7rmEA&f=%F0%9F%93%A7%20Read%20Email%20Newsletter.shortcut&sz=26814">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeneLf1NV8PgerdoS5woiwV8jzEiASjjrn46dzjl_Ef0QocjcZ2QfMWN%2F%24%7Bf%7D%3Fo%3DAhznSpndWxTgfghKhGcueMxCsBnYnI_Fp67qKmZDgeKN%26v%3D1%26x%3D3%26a%3DCAogOiuwLWFO1tyG1KKrEWleBysvNEtNgL7nIE6qImfC58ISbRDOtMXJmDIYzsTAnaIyIgEAUgR8jzEiWgSQfMWNaia9NzGGAQGzfquDWG6xwRtUEjDQ55CY0NWM1b9UlihK79IQac5p3XImgKLddvDTl5ehXRyKGucvHRpevSmr6qXGX2qd7zAl2zrubZBk_XI%26e%3D1727175598%26fl%3D%26r%3DEEEC0FAD-BF46-4D40-8A86-4CB79BFDDC99-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAMhC-Z0s4CUq-NN_V09iFkHZzl8&uk=EsgSL_rmWs9nSsdnLU_sKg&f=%F0%9F%93%A7%20Read%20Email%20Newsletter.shortcut&sz=26868">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%93%A7%20Read%20Email%20Newsletter/%F0%9F%93%A7%20Read%20Email%20Newsletter.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2601,17 +2651,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%93%96%20Read%20Latest%20WMU">📖 Read Latest WMU</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARinFqfyVhC3RdFuN9q8vd_sa3GYARq1xxBZ5ymG1_oxu4uP-EtDQH_6%2F%24%7Bf%7D%3Fo%3DAlVBShg64o1gBkLjN3s0F_5B95yIvzYLTJ9aaNGgKovF%26v%3D1%26x%3D3%26a%3DCAogyXoPQsnJ8w1P8Xv3HGOlC4JXVlPlONLd4HznKEYstfQSbRDjpJ-oljIY47Sa_J8yIgEAUgTsa3GYWgRDQH_6aiYLRrs9rBO-_hXNR3ewTRigNi1noJ9pjX9iWvK5TbC5aBczJI3DQHIm7V8DzeB3I6LkMC6xySnnjaj9xagQ3n01WHI96WAr_S2nUpedU3o%26e%3D1726568897%26fl%3D%26r%3D6E718509-76F6-4E88-8EBD-12B11B85103C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DulT4ceiUNrM6dNF8WxjEbJknRjI&uk=2Hom7U9X_5nz1WiZkqBRvg&f=%F0%9F%93%96%20Read%20Latest%20WMU.shortcut&sz=28098">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATq8_j-S_c9BFpRkl-u7J6gWL81rAalnmF5ZM-A7qcP_HreeHP3DMoK5%2F%24%7Bf%7D%3Fo%3DAvzPPfNvEAEQMs-PLObOmE412F70Vpdq3S_XnpRpj9p-%26v%3D1%26x%3D3%26a%3DCAogTmUUce6vCEApmRFUWWU4EGJ_OxD5d7vX4vFz9vCn99ISbRDqzcXJmDIY6t3AnaIyIgEAUgQWL81rWgTDMoK5aiZceAo0lEYeNvWA0Xl-17S398yQPVFuI4lNwtTaOL_d5wgMEfVeu3ImJsxkAEtDcBnI64pV89yLUJIa3EcUHw7CUXANmOWwEx4zEPVbQLw%26e%3D1727175601%26fl%3D%26r%3D3DFC8306-8761-4F1C-925F-32C3F2241DF9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dv7D9F3ckINuEzNVPqH28bQuGcMg&uk=8nkMZooR8_Az-Juq3ydHOA&f=%F0%9F%93%96%20Read%20Latest%20WMU.shortcut&sz=27672">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%93%96%20Read%20Latest%20WMU/%F0%9F%93%96%20Read%20Latest%20WMU.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9B%8C%20Set%20Bedtime%20Timer">🛌 Set Bedtime Timer</a>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%A9%20The%204%20Quarters%20Rule">🧩 The 4 Quarters Rule</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe-H6hfG2SiKuOPpF6wtNaPOGDcFAUEHtwYOathbaoyrbwWziNjGOBby%2F%24%7Bf%7D%3Fo%3DAvM8h5h9myui1IdrfyLPaXu7qvqOmcQkiddegf_3AZfV%26v%3D1%26x%3D3%26a%3DCAogP4mPfptza9drqgc7L9KKJRdM2i8Q3aUDAxbWe-sYcFkSbRCbr5-oljIYm7-a_J8yIgEAUgTOGDcFWgTGOBbyaiZnj4ZDKC2Q_JE_093UJl_IDiGoEnqoN0tiNdqw9pkBOPK0pjyPXHImPVdNFsB3AsmgVkyjrR_5EmZC2Ue7xAWrngdSp3Tgjh4qu43H52Y%26e%3D1726568898%26fl%3D%26r%3D5DBD5877-5A51-4814-95FB-94FF0DE90DAE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dj3uFkCk85fF30L3tZUBFIj849fM&uk=SGZsAxTu6A0kR00k6zHN1Q&f=%F0%9F%9B%8C%20Set%20Bedtime%20Timer.shortcut&sz=28260">
-       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9B%8C%20Set%20Bedtime%20Timer/%F0%9F%9B%8C%20Set%20Bedtime%20Timer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZtUtrS7BKsZvmHfS9ahn41Knz3GAS-Ah8-F5Y8BjTC0heZFwvqrD6yh%2F%24%7Bf%7D%3Fo%3DAjW-2MTE2y-kuopBUK3Ly0Tv5sxwSH0llqj-jh8CDWy7%26v%3D1%26x%3D3%26a%3DCAogjBCMm19__iUrkRZ7cZgnfiw4RcbWg9PIHci40ha2kigSbRCj58XJmDIYo_fAnaIyIgEAUgRKnz3GWgSrD6yhaia08_nBw3gkXRxNL02Py3UNNPHPD5-CYswRPiLHa4O4DY7JmcRIlXImGQXVjWdlCiqq0HH8WgttNUBT2wphRmkfB5lj0kndR5cLaqPsnV4%26e%3D1727175605%26fl%3D%26r%3D689AEC58-FFB0-4775-B470-09CACD134A7D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCpHqkks61iHGiJm-6kICFKvQDQU&uk=U0hmbmTq9pRM2l3oOdE91Q&f=%F0%9F%A7%A9%20The%204%20Quarters%20Rule.shortcut&sz=28201">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%A9%20The%204%20Quarters%20Rule/%F0%9F%A7%A9%20The%204%20Quarters%20Rule.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2619,7 +2669,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%98%E2%80%8D%E2%99%82%EF%B8%8F%20Meditation">🧘‍♂️ Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASJhoPtnogQxo_nzmpe5eucfTYONAZ1tYK2el0hzR5lH_Ip3CmgLikXD%2F%24%7Bf%7D%3Fo%3DAtYkfuxo3ZMRt4i1SHuwZLRMm3Jms_iEwEj9bj6JesQ8%26v%3D1%26x%3D3%26a%3DCAogVi3u_5KnOperBuGiGkNqkBcLmXRkXK65B-BLDEAKV8oSbRDWuZ-oljIY1sma_J8yIgEAUgQfTYONWgQLikXDaiaxQa3Moyu1iWEwdalRIy2qKIQ6BpR6iJsMrhQFWgm4UtLz3YuyDHImYO3vMTtX8AXC3MkFzBtT79DPheEFpf81RtyPtPAOO63CL1SvBJ8%26e%3D1726568899%26fl%3D%26r%3DBC78AA38-B679-4698-B627-EEBC24E08BC5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoUGfaMiPOzq_6ihxu1Tgg8CkVWk&uk=QndkmgmO4eanF7Aabc4BQg&f=%F0%9F%A7%98%E2%80%8D%E2%99%82%EF%B8%8F%20Meditation.shortcut&sz=27058">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAafB6hrL3yrMsBWdCXxH5LzBi-OiAYktx47CWpVx9IoqWpQLV67lYeI4%2F%24%7Bf%7D%3Fo%3DAjm0abOxxU2bze7K3yPWaFZyz7UhIz4tq-5CDO4oWmNa%26v%3D1%26x%3D3%26a%3DCAogHan-5jFIlMkISiD3ZxX8Cg6WV0cXc0m0B9kYeQ7NNlESbRDF_sXJmDIYxY7BnaIyIgEAUgTBi-OiWgTlYeI4aiZuijv08gsrfq-rp2bNEiKtpAfX_4RcHiLC084JPM3Y1LYvSK9wCHImfgjJNNAsEb8DTIeWV_yZG3P2Jq3q6vBVZ3_Bq1fnTHSzkgv5pyU%26e%3D1727175608%26fl%3D%26r%3D3B610407-C4BC-433B-AEC1-233CCC46DF2B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3aiHYRKt4-5YhnKy3l38NG-y4DE&uk=mqeM-Eu7VzcCGC_cQTSBhQ&f=%F0%9F%A7%98%E2%80%8D%E2%99%82%EF%B8%8F%20Meditation.shortcut&sz=27057">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A7%98%E2%80%8D%E2%99%82%EF%B8%8F%20Meditation/%F0%9F%A7%98%E2%80%8D%E2%99%82%EF%B8%8F%20Meditation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2628,7 +2678,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9B%80%20Heat-Cold%20Contrast%20Therapy">🛀 Heat-Cold Contrast Therapy</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeclSU8GgOPeLFYar9ehgPRW51etAUcTyAXq-SV-ozv01feRrjLmXqVg%2F%24%7Bf%7D%3Fo%3DAje22dTPbxfWuqWXmPrGYReTIdTGWFau9ES1JLS18Huf%26v%3D1%26x%3D3%26a%3DCAogqY4cnzSPCWEGjnueZSDr2kyC8TcoLhpU_6j-lJoaJZ0SbRD7w5-oljIY-9Oa_J8yIgEAUgRW51etWgTmXqVgaia87L2sMvd5joc2IfyDEZrjwrJu38Fk1WmmtGxAzBaO7v6oDhy0tHImm-pmlYVGECQcQJ0cNgeragoEMjrVuLSUqfLGftMsgbujmnHJz4I%26e%3D1726568901%26fl%3D%26r%3D9A63CBAB-B007-41AF-A7F8-F8B5153B8820-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dz5I8ee9IzJqH-NtQrfk9vHKLBPg&uk=X_aiGki4TMtu3I2-jYzbeg&f=%F0%9F%9B%80%20Heat-Cold%20Contrast%20Therapy.shortcut&sz=27065">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZx8T2Azvys-hgGiBvClXyXd18KrAbKP29iHWQhTpVDCThKjfEWqmr7T%2F%24%7Bf%7D%3Fo%3DAhiwNdZhQs2uN1Y0_invadPBdBRql4dW_QvhqTHjE9sk%26v%3D1%26x%3D3%26a%3DCAogchVftET8i-Sgy6qr7qxofXZbF-DonA1ojshF2paQebASbRD6lcbJmDIY-qXBnaIyIgEAUgTd18KrWgSqmr7Taiawvafq1pGu6Y-GmP0VtFzeNeg6TSu147RvCWVPijwrq3ria15vk3ImLVQ4P9eGoNuSU9Rld5uvOR-hkw9MVcMiq16gwZEe49VVdxVhCLQ%26e%3D1727175611%26fl%3D%26r%3D96F488B5-47D8-4D17-AD8B-51F1E9BDB862-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1-2MTYjaUw45S3jVa1M89QoF26U&uk=SWuEeG42jmTJG80Phan9qA&f=%F0%9F%9B%80%20Heat-Cold%20Contrast%20Therapy.shortcut&sz=27064">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9B%80%20Heat-Cold%20Contrast%20Therapy/%F0%9F%9B%80%20Heat-Cold%20Contrast%20Therapy.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2637,7 +2687,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9A%B6%20Long%20Walk">🚶 Long Walk</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUWhW_BS7JlJNxqjss8qmfOuPImMASZExD-xU-JdBVZnwnN_ygTukWrN%2F%24%7Bf%7D%3Fo%3DAoUi1HLrorgEHWJX0RCiwpg-icQ8n3-DiTd5NGQOFmZq%26v%3D1%26x%3D3%26a%3DCAogYaHuGELypY9qwNoXHp8GzLWGlnp2OS0x2wR7ndf0XZYSbRD8zp-oljIY_N6a_J8yIgEAUgSuPImMWgTukWrNaiZ2Dc-1k0nuc3U4wRj6zwL-JuRgW-r2SIZzbXNsUJVj6Ep6lgwOwHImcF6J5_bJ7npMYpcIo148qMVm4DNxrMaeKW2rllWuUSPNT2HwgnQ%26e%3D1726568902%26fl%3D%26r%3DA49DB5DB-F52D-4DC0-969E-2A37A21A1F2D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DY1MFMbUUhYbml31hQjdwepO9MoI&uk=CXeKCc8XQw4X6utG_DPMMg&f=%F0%9F%9A%B6%20Long%20Walk.shortcut&sz=27064">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbWpcrbHCsxr1BgGx53ZCI1ztUhSATh_qpFFl6yKJc2dGaTYalDVIeJs%2F%24%7Bf%7D%3Fo%3DAgzKxJ3fwiJT55-aYbqDCqJiinfUnioEdU6uySaKTJW0%26v%3D1%26x%3D3%26a%3DCAog6COm-dyYgWMEDCRRMxjgJ3TgFNFjMy69LCC7721fWygSbRCWr8bJmDIYlr_BnaIyIgEAUgRztUhSWgTVIeJsaibwIFi6Wl2s4g9vBO3-ckrA0-MhizBYQSlATryyF5VNo0GFvHcb3XImFRddWaQOQpNaX78YhpmSqFpGKMcCb5b32ooXWscmBVH0lJVqSNE%26e%3D1727175614%26fl%3D%26r%3D0723B2C4-7ABC-47E0-9CBC-78F9C511D991-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGNL0aqW_fJzKtONikBQDVAsYOqQ&uk=51XzIBsPkg7-MZvFWCeazw&f=%F0%9F%9A%B6%20Long%20Walk.shortcut&sz=27063">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9A%B6%20Long%20Walk/%F0%9F%9A%B6%20Long%20Walk.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2646,7 +2696,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A4%B8%20%E7%91%9C%E7%8F%88%20+%20%E6%8B%89%E7%AD%8B%20+%20%E6%8C%89%E6%91%A9">🤸 瑜珈 + 拉筋 + 按摩</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ84EFgc2GJo5_iAm5xDHJMcrg2kARfHFh9CDvLQraM6k7B9mSr84uX1%2F%24%7Bf%7D%3Fo%3DAoDDc12YU6cFh3uwn6FwXmlqWCcutphbv4kHk1xcaosj%26v%3D1%26x%3D3%26a%3DCAogZx_WgEg89rBpbT7LPUObUcKbAQBUFlJal4ZR2WhfLNkSbRCm2Z-oljIYpuma_J8yIgEAUgQcrg2kWgT84uX1aibdYEuEa5NImxUMJ5WjkwSyZNZagNKUPox4SX4AnLVBS-Xu1dp_JHImZfGJFE9bifa1dR6edvdl-4mN7DN0Bwxp3CvqI2aNGKLa9TX4b-g%26e%3D1726568903%26fl%3D%26r%3D47A4AB60-1625-479B-B392-0D31DCE5876E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9aD6Rxo_9ROLq3ynOSRFG63lGYE&uk=qQ4Ury4kO0klcqL9fudhzg&f=%F0%9F%A4%B8%20%E7%91%9C%E7%8F%88%20%2B%20%E6%8B%89%E7%AD%8B%20%2B%20%E6%8C%89%E6%91%A9.shortcut&sz=27067">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQKqW0JbENQN-95AJPF3itrM1wFGAYkeTZcM8k68D4Xbnn3XJZFlDwFa%2F%24%7Bf%7D%3Fo%3DAkhGFnihk3SIy45M9usl3A8rEU4lDj5HW-G8GY9h9WQU%26v%3D1%26x%3D3%26a%3DCAogJI4uyQWb8CniGDOTdfsoQOU7Wkk2oVFrQ6yz3FTxF0ISbRCMycbJmDIYjNnBnaIyIgEAUgTM1wFGWgRlDwFaaibddsJYpid2iZdzJFNsi95vkaxs6LB7MeRFHCBzmexLeCvyKEfzlXImmkWLV13ca_PJih3FKa2_A1-LrA7wVrg3YNSyts1Fs1nmxd52z7I%26e%3D1727175617%26fl%3D%26r%3D500D600C-3496-43FB-8BCA-C8B056DF8F51-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ddm2BzXwxRD-AkaSc3Qu9d5Gy8HM&uk=AecbxE4t19t3oyHCF5sd-w&f=%F0%9F%A4%B8%20%E7%91%9C%E7%8F%88%20%2B%20%E6%8B%89%E7%AD%8B%20%2B%20%E6%8C%89%E6%91%A9.shortcut&sz=27066">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A4%B8%20%E7%91%9C%E7%8F%88%20+%20%E6%8B%89%E7%AD%8B%20+%20%E6%8C%89%E6%91%A9/%F0%9F%A4%B8%20%E7%91%9C%E7%8F%88%20+%20%E6%8B%89%E7%AD%8B%20+%20%E6%8C%89%E6%91%A9.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2655,7 +2705,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%98%8C%20Take%20A%20Deep%20Breath">😌 Take A Deep Breath</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUmOeajk75Hm9LXNKhOccKlXFEtiAcv3Co1RLEYaLCDNHcPLg3KXBk8X%2F%24%7Bf%7D%3Fo%3DAkLcZJy9xCuziDkbSq4trCB8DwAjRHSUHZqEBAzrsB-C%26v%3D1%26x%3D3%26a%3DCAogzOdZOxNrdXyWT8TRrgOed9bbL-iW6ydqN2utp-LKCS4SbRCC5J-oljIYgvSa_J8yIgEAUgRXFEtiWgSXBk8XaiZCJuTg90zUqf-j3Vl4mYFsmlLGdEfX2H-zu2s0G86N9o2a-kBzgnImcGOOJllmYTBPXSR5mDIGZkvH40808ENFZn_4sgTDU8Le8MLrRuA%26e%3D1726568905%26fl%3D%26r%3DE76DBC80-9309-46D4-9F6E-FF648A656B77-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DBdXfZdtKIdUd7S6D588BCW9TDhI&uk=9mCjlUSUW2NkWbYfLxbFjg&f=%F0%9F%98%8C%20Take%20A%20Deep%20Breath.shortcut&sz=27767">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUsvKFqERBQe8cYmAfZoAbpIu79nAWevDUastHq57x-VkkU5MSyN9C6L%2F%24%7Bf%7D%3Fo%3DAsx9hcov5cdnBeWVabkjkgTDLgcsLaDN_szyc45g2DvT%26v%3D1%26x%3D3%26a%3DCAogNa8Wx8lA1om_SmLifuqTS1XC70GrbvrJxUQOe-PN2kwSbRDJ4sbJmDIYyfLBnaIyIgEAUgRIu79nWgSN9C6LaibSNniboGuX-StNqZUvqCmFjtv_KVfs_3rFPhaYTeBSWtn5p_JWeXImh4yR9Zb6WK26kxtFiTpnx415MrHceLDnlBXcm8VIcVVZ_GFdRow%26e%3D1727175620%26fl%3D%26r%3DE54A5376-632D-4494-8A6F-8F12DB1F36B6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqqIdR1TZ2DRmNTCg-IpYtz8rai4&uk=5Sj625pOA6ul38Z96B1XWA&f=%F0%9F%98%8C%20Take%20A%20Deep%20Breath.shortcut&sz=27880">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%98%8C%20Take%20A%20Deep%20Breath/%F0%9F%98%8C%20Take%20A%20Deep%20Breath.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2664,7 +2714,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9A%A6%20Pause%20App%20Off%20Time">🚦 Pause App Off Time</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf_ExXhv_TCweIV4lyeHr5wDP5vsAR9WQAIk4WBzIgcJ4G2bn4Ev604s%2F%24%7Bf%7D%3Fo%3DAtkizSskQqWgHoa_Hh8VijmsH5wYkPu2BP8MsyVu6MFO%26v%3D1%26x%3D3%26a%3DCAogC6AssZ-LrCpuEgryMOVFqRG1FTikdKu5PSOnQr4m_EUSbRD27Z-oljIY9v2a_J8yIgEAUgQDP5vsWgQv604saiauctsR9mz2GcfRnp4JjS7gKnEJOVQBKdmalpTEM7_bUvD5Qrb1p3ImpQ_O3FyfJ9sfYXYu1UupPnHiSrI_trUVkgGOG1ihguBo3DILqSg%26e%3D1726568906%26fl%3D%26r%3DC0C555F9-0CEA-4195-8D00-4041CFE18352-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHpZ7DSaA4VwaIvoyrsT8V9HMJQc&uk=iohgkgrQHsHuC11MDMvV8A&f=%F0%9F%9A%A6%20Pause%20App%20Off%20Time.shortcut&sz=30602">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdYydfhRwxUtBG8IwDCZS-f5_Ia5AVINhZl8KJwWGiaeldzps2K7XWn2%2F%24%7Bf%7D%3Fo%3DAl7iHl_isrH9rJpmkC4tkwm-qD4R6ySuBMdN5TA0JcmO%26v%3D1%26x%3D3%26a%3DCAogp6q4qsDsrS0oCCF6weLK_8lmNLf7oH2Ym09H34zbZs8SbRDX-8bJmDIY14vCnaIyIgEAUgT5_Ia5WgS7XWn2aiaYUoZG3YUUttNZD_itxL3lmATRjqDAKal5he0Pc9R8f7zia2O2MXImr2LujVJ-N1I7o-TVzHIldWQmsTLVSjBkJHIBDOyrEdXWAgXtBU4%26e%3D1727175624%26fl%3D%26r%3D93F6E2F8-D58D-4ACD-A2C9-051B5F308A4F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dqe_MRPqkBggLQNPmpZXv4_080fM&uk=qr4xLC_oq6eI_8gnsL_8Cg&f=%F0%9F%9A%A6%20Pause%20App%20Off%20Time.shortcut&sz=30590">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%9A%A6%20Pause%20App%20Off%20Time/%F0%9F%9A%A6%20Pause%20App%20Off%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2673,17 +2723,8 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%B3%20Pay%20the%20Bills">💳 Pay the Bills</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQy7LgqdsyKhSzdpr4zvePgUIfVDATHiFGnNtXe7mv893iqqj72oPt0y%2F%24%7Bf%7D%3Fo%3DAhXcm97dGea3uHWqFEyT4HZzFhVokbU1y5ugIstyoRas%26v%3D1%26x%3D3%26a%3DCAogh35zlPNniyZJ8lI5ZYy_CpmM1UN24dq0THekUlTz6k8SbRCL-J-oljIYi4ib_J8yIgEAUgQUIfVDWgSoPt0yaiZ1C-rDH09rexfYmQjRtyjK8D8VZKrxIxAYwxRHPjt6moo8q2ndsHImpo7eOjlS3hsY2MAKktQjMZVo7Py544h8Q3i_v5MCzBif1esVg-o%26e%3D1726568907%26fl%3D%26r%3D79E2B238-3119-4CE7-A506-BE4183DA5797-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7S02e3fuRDPEHYfxpROoxHyDDQQ&uk=99EBiXYXl3qiuW_aXwCVuw&f=%F0%9F%92%B3%20Pay%20the%20Bills.shortcut&sz=26855">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ7JopLtlLa8mHYvuUmQDBBAKNMOAat9ogUQE3h7dYqQHju2kubNE3o6%2F%24%7Bf%7D%3Fo%3DAviMLx1JXxSZj9n0q9W4FYCd7tKcFS7Ndi-ldaY3IT3X%26v%3D1%26x%3D3%26a%3DCAogVoitAaT6-YDZLMtHnE1acCE0CAu0JlLeXqIhkV2JhAASbRCclcfJmDIYnKXCnaIyIgEAUgRAKNMOWgTNE3o6aiaKwh_ytMoaT5TV9hvGJn5OfTRLquDksN_HGdD3gBlPYRlD9bFl7nIm2xKLf2f_LO1XDUPc0EAb-3urTzhtI74durp5bH542ARiKc-Q9-k%26e%3D1727175627%26fl%3D%26r%3DF7851717-CAF4-4FF9-B8C2-CD0C55554085-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnxdWKTskLhIdJxU2Ue8KRTad3wg&uk=l3uxpLgJ8T2-0Qoemm56rw&f=%F0%9F%92%B3%20Pay%20the%20Bills.shortcut&sz=26854">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%B3%20Pay%20the%20Bills/%F0%9F%92%B3%20Pay%20the%20Bills.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%94%84%20Midday%20Routine">🔄 Midday Routine</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbkfqY9pGJ_X3fMBqjV7HksIpoPZAS377wPXsXY27oO7CD_NFyxXWYem%2F%24%7Bf%7D%3Fo%3DAolXek9QoR3fqov-0G5rBNCMg2drxHj-o-UJRIu2n5fE%26v%3D1%26x%3D3%26a%3DCAogmy8p7ua0PVl0Yune3lseEj0Qi6NkPqba8LVuQkYau6kSbRCagqColjIYmpKb_J8yIgEAUgQIpoPZWgRXWYemaiYUZGKSzX3DmT0hAnhpO8MSr60M8mWao2NCUwbz7CxX3IpSqNVCG3ImASZl8_5W05JE91GGKM_-bTm7K-zA9PT4vV4XFBqQQTUm33bv5xA%26e%3D1726568909%26fl%3D%26r%3DDE589ECE-E10D-497F-83A5-1CF0C2BA33C2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVN6jrMkdB6qnQdyj568qusEu9Mw&uk=Mt8I7lHComTNV3GmnXzr0Q&f=%F0%9F%94%84%20Midday%20Routine.shortcut&sz=26700">
-       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%94%84%20Midday%20Routine/%F0%9F%94%84%20Midday%20Routine.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2691,7 +2732,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%91%A9%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20My%20Dear%20Yi">👩‍❤️‍👨 My Dear Yi</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVrGVb9RKcpFdbYJTC-SI2eMNFm2AaDJUBmd7NnFYnvcPOQIGifus-1P%2F%24%7Bf%7D%3Fo%3DAvGRPpeGCHHt3pgcCac1-yZT8LDnfAqz_R-CDgDDD5si%26v%3D1%26x%3D3%26a%3DCAog2mxv1KA_jodL-G2k-jhUx4Stisy-F9B-SdAes8vFMp0SbRD5jKColjIY-Zyb_J8yIgEAUgSMNFm2WgTus-1PaiZUSrDDU2pawWV3zX1RdUvGdphuxfU_e83lPTPFBVypfCsVfloyD3ImPxMfNSRGm2-5sTG7rCb10MjLTi8ll7WyQs6Ujk52895w9rHCUmc%26e%3D1726568910%26fl%3D%26r%3D8470EC72-B863-4890-8644-68A6C69C8E50-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIbC5OYT97M-UwevzRiZ4wSmlXQU&uk=0r-FOjCUBAlkJeMIZNYW0g&f=%F0%9F%91%A9%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20My%20Dear%20Yi.shortcut&sz=27761">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZScYS8hSoLFCa7JUhZwSXfSDoM0AVUa0wk4J58Br4qaR4sz2WgVzXP_%2F%24%7Bf%7D%3Fo%3DAqDjfrfo5NwJkTovMYQ7XdhHiYfU9TFsreXpB1erg3US%26v%3D1%26x%3D3%26a%3DCAogozu5FFeVETnzViHHENPPaJv-Kpl8BFBV7mJhBaPluAYSbRC9r8fJmDIYvb_CnaIyIgEAUgTSDoM0WgQVzXP_aia59b9mzcRpjrO-BFGvsx20_oOoonDrNCe_90GPsB42QVdYujHdPnImt2uXx-eHQn5C78McFveLDOEvNwBEJ_w-BQzkBREu95iBZd2OJT8%26e%3D1727175630%26fl%3D%26r%3DD2140117-87C3-417A-9E4C-931FD89085AB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DghW6qiPCvzyhDvLNW31pZl2Q4S4&uk=3HetC7ObO7lxFYrPVvgAKg&f=%F0%9F%91%A9%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20My%20Dear%20Yi.shortcut&sz=27760">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%91%A9%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20My%20Dear%20Yi/%F0%9F%91%A9%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20My%20Dear%20Yi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2700,8 +2741,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%92%20Relationships%20Reflection">💒 Relationships Reflection</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWkqnMJjhXkZXMzAAnW_-T08-_dJAQ-4gKGHFBQWebcGgW89DWJVD3w_%2F%24%7Bf%7D%3Fo%3DAjw3_VGE24EF4HJtjLneLb1nWGoOHjtyUng7I-h-8qZW%26v%3D1%26x%3D3%26a%3DCAogA-nAi3FYKYhYS6TTIuCIuOSbmTCy1qMzblKpLN0KMN4SbRCTl6ColjIYk6eb_J8yIgEAUgQ8-_dJWgRVD3w_aiaYO30jXNqrGxvRoXH-fpUqpLB7WQ_aXiRmXfQ4ulwaxccNsaFH8HImQLUs3ey6jCqlcfAlPJgYZ6wSrWebi8S2to8HCHNRE9n1g6IVjmM%26e%3D1726568911%26fl%3D%26r%3DE8182522-6070-49EC-8F2B-473A7FDD6F05-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPKLgwEi0mW6TkVe_7TzxRv9ql5I&uk=1kJ3QdOtqG93OIOsdK86pQ&f=%F0%9F%92%92%20Relationships%20Reflection.shortcut&sz=27726">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAREULYFTFpjQzuDvqhuRXxU7FuPvAY0BafzW5OoFD_-yUn38iuAkKbEI%2F%24%7Bf%7D%3Fo%3DAjZCo3FLxNCiMTAGfxAFtHKwTiKfBjxHcuh7Y7yXHxSH%26v%3D1%26x%3D3%26a%3DCAogAQWVOVUHuQIR5gyqUaCr4IONGno-2l_UFfH3wjdwzocSbRDhycfJmDIY4dnCnaIyIgEAUgQ7FuPvWgQkKbEIaiaTPAoiuL_wT8TZz3kqeZqriC0Id1vEBk9JmAMLnXrHlZK0PdFxenImGp_aqX0spbuTbz7aD7ndj2kRPt2FUMZfadymHMvl5t1KF0D8O6A%26e%3D1727175634%26fl%3D%26r%3D25C88AF1-2537-4818-B2EE-F6778C2A5E8D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpBhrbkLVPxSnzl-17qmZOSqICt4&uk=PG3OnJIpB1e7_7soJN7vgQ&f=%F0%9F%92%92%20Relationships%20Reflection.shortcut&sz=27725">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%92%92%20Relationships%20Reflection/%F0%9F%92%92%20Relationships%20Reflection.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8D%85%20Deep%20Work%20Machine">🍅 Deep Work Machine</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa6K6oSkLWRExIeYOevu0ecILFxiAWHw_ffWyZFyr3fqxdKx_uDvBpbO%2F%24%7Bf%7D%3Fo%3DAqx72O7NkIZUsfol4OjTUGdLE8oQ-c1a1j1oKDRfI5VD%26v%3D1%26x%3D3%26a%3DCAogjsc1aZay5S6iFRshslRakl1RxWRETePjRipKTOaEFBQSbRCW4cfJmDIYlvHCnaIyIgEAUgQILFxiWgTvBpbOaiZcvUpmtUlge6AtYgy0UoLj5dfrLwF5KPMjrP2gkAe4xPwc9te5-HImpaf83BMRSG8-QOCxrlS6HFu1bHf7ILmFeKVkM4RMqdWFOjz7rl0%26e%3D1727175637%26fl%3D%26r%3D3396C259-2A71-49A6-8DB6-2701BBFA96C1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJRNkSP2RSanK0mpwUZe8pN2yZj0&uk=I3t5IuM6ODtY9GELf8zN5w&f=%F0%9F%8D%85%20Deep%20Work%20Machine.shortcut&sz=27859">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8D%85%20Deep%20Work%20Machine/%F0%9F%8D%85%20Deep%20Work%20Machine.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2709,8 +2759,71 @@
        <summary>
        <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8D%AD%20You%20Deserve%20It">🍭 You Deserve It</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWhBh6goJsX96haeYS-Oc3dfQDFFAdPXO5ZgOrwFt3Iz5rKcFAfFF-Ws%2F%24%7Bf%7D%3Fo%3DAuCxR5TVPZjRz3MJHNqYMbYJ2rod9bpbhlSF1MvAtmTC%26v%3D1%26x%3D3%26a%3DCAogwWX1tItDb4ILbwj95lJJkoSTx4OzP_XttiESEwWb5bUSbRDroaColjIY67Gb_J8yIgEAUgRfQDFFWgTFF-WsaiapleSDuyzfFy66p19Tb6bPIQiadj4nqCPZRf9GIHzjPUYKIe8dRHImFr40BjXA-H-BJ1dvZiWNZ5q912HZ2SKVcg35WXFbB08wjlcijo8%26e%3D1726568913%26fl%3D%26r%3DC4AEF62C-6F02-4FB4-94B4-C305FA95DB0F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyT7-5ULH-t2zjmhU9YxP6CRY6lQ&uk=IFgMSBcsa9M0rS1zZUDYaA&f=%F0%9F%8D%AD%20You%20Deserve%20It.shortcut&sz=27676">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUPZ0no-boP8K4hVTSFkYQus6VGWAZoe9LFCvygi6XUU4B1GnZATVSO_%2F%24%7Bf%7D%3Fo%3DAgdCQDsG151XUH_yqowGZE-D6P_G9nZMSl0h4M8ECiD6%26v%3D1%26x%3D3%26a%3DCAogD2W6hI0zYQ1v0aQf4aBykYXfkihj-SqechJIWF5h9TcSbRCn-cfJmDIYp4nDnaIyIgEAUgSs6VGWWgQTVSO_aiYenTLe_mfWa9_jZgXtq2JBTADH7pmeJ7RjawMOtOaVpB2sMUYyrnImHkZHrcFf7zP6V-4Qm6lrm2ny3OQrdpKfuOiFcCI0ZavjVsXr0IU%26e%3D1727175640%26fl%3D%26r%3D1E1098BB-86FA-403A-A0AD-9D39BA6AC107-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyhGFNaTjZ3nhVEeAPKqz6TRFhLk&uk=rNb4jy-lpJ0bVXMuhpFMAg&f=%F0%9F%8D%AD%20You%20Deserve%20It.shortcut&sz=27678">
        <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8D%AD%20You%20Deserve%20It/%F0%9F%8D%AD%20You%20Deserve%20It.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Get%20Random%20Journal%20Prompt%20Item(s)">Get Random Journal Prompt Item(s)</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR1goEm2MhFMOvS-YjK4ykG_DIwVAawFRnXAB02maY51d6myqxgh94-E%2F%24%7Bf%7D%3Fo%3DAvZFxZ0rahFPeMA8lXXfaoRr4dY8Y3npHioOpoAQa0vy%26v%3D1%26x%3D3%26a%3DCAogc-bkja0Nf4B-JB0AYbEC0M9Au81mEnc1SNU8i2ncCKsSbRChkcjJmDIYoaHDnaIyIgEAUgS_DIwVWgQh94-EaiZX-gjTIDEQWUGbJtZEZUzWGbL6By15sP4VnV6EKkcNQ-tzPgfL4nImYiS5kia4fJz3RcjXwzcypbBOinl5V-NvgXHZxqNXMVlJ5Cr9Vzk%26e%3D1727175643%26fl%3D%26r%3D84D2BF85-3E30-4452-BD7F-A748937C367F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ds_5SYTL-at4hL2JCf5EZg2kr4to&uk=DjWSKwakSdjw3kKGc1PMgw&f=Get%20Random%20Journal%20Prompt%20Item%28s%29.shortcut&sz=29412">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Get%20Random%20Journal%20Prompt%20Item(s)/Get%20Random%20Journal%20Prompt%20Item(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Build%20Journal%20Prompt%20Question(s)%20Opener">Build Journal Prompt Question(s) Opener</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZKKtHxgMoJDKjUAZZzL4E2dviu8AeWtrTbR3TIIkhLAikXVWh6JUgvJ%2F%24%7Bf%7D%3Fo%3DAmQAOWsrPxMzIakopGQHls3gOcsmvR2HpvRrjxD_lQIc%26v%3D1%26x%3D3%26a%3DCAogZVN4SBp6bGlnk0pkfkrktValzsIABbpuPTnEfDzHbjgSbRCPrMjJmDIYj7zDnaIyIgEAUgSdviu8WgSJUgvJaiY3v85Js2IWOhuvspcBhXhjfLtJxKlps-Viw2_hyPeEeRRNqYszDHIm7u2uGi8o4wbFJWCFrSjjJy31zDwYKatu7DapW8K8A-AxmqWhmPM%26e%3D1727175646%26fl%3D%26r%3D1181323E-8869-4DAC-83F6-E7C4C2C9CEE7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfCvDn6bEVcCG8kyxiaGsi90_7qs&uk=aK_E6m2hANYJ4fPQsIWOrA&f=Build%20Journal%20Prompt%20Question%28s%29%20Opener.shortcut&sz=27779">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Build%20Journal%20Prompt%20Question(s)%20Opener/Build%20Journal%20Prompt%20Question(s)%20Opener.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Refresh%20Quote%20Widget">Refresh Quote Widget</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAemZ2IO3pQ9ITUNYHhgl6i9ElNA2AfcCGx-0aVVMKdZwx1Bi4aRKWlqX%2F%24%7Bf%7D%3Fo%3DAid3TtnFcDPYFsWAMQaiHE4hIOv0FsKF1dc9MO1jUOfG%26v%3D1%26x%3D3%26a%3DCAogL5XWI__t3kmhwcNhcukQtkpJjfuNO3sbJO2Dk1qCfVMSbRCXw8jJmDIYl9PDnaIyIgEAUgRElNA2WgRKWlqXaibodpbKhGuQfzk_Ue4K89E_iPU-FjyTgWnA272lp65gQF3j3SkQ2HImJQmVmIwRAxfhbTZWhu-J3MGjouRxjvdqc5L3l-bODkvdgBW61BM%26e%3D1727175649%26fl%3D%26r%3D16D528A2-D837-4D3D-8F01-CEDD06903852-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Djy30iRJtB7R1cj4ZQn_Huy_2LnI&uk=9s37ISRf_Dz6_NYW2BA7kg&f=Refresh%20Quote%20Widget.shortcut&sz=26638">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Refresh%20Quote%20Widget/Refresh%20Quote%20Widget.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Refresh%20Journal%20Prompt%20Widget">Refresh Journal Prompt Widget</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQHlMrONTpvT67ZS20UNsEcg8cqkAZmp3PbypfQDjSbQ-9KKlliSGYNt%2F%24%7Bf%7D%3Fo%3DAlY79c8LyR9R9QrsLRA0ZCSWYw6tF6uW12D8PJiVa1Dp%26v%3D1%26x%3D3%26a%3DCAogwskXXOQfVOHft48RPedkcdNoOUQHXLtl1s1Qz4oy1k4SbRCt2cjJmDIYrenDnaIyIgEAUgQg8cqkWgSSGYNtaiauBrhdtYBAO41Z1WiwaBOSLTenrQkR-_8qlOSPeQdx3LWdIVciyHIm3OD_Cv92GGuJlAWfbKC6Hx33G1WWwt3mavB2B8Ay4hLF8LVHoz4%26e%3D1727175652%26fl%3D%26r%3D477D1495-2A45-487F-8D43-2959ACD51FA0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7TXshvq5LKQrhQsC6DhdGgGRoxo&uk=mldoBMOnhP1P-Dy1MWmJtQ&f=Refresh%20Journal%20Prompt%20Widget.shortcut&sz=26814">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Refresh%20Journal%20Prompt%20Widget/Refresh%20Journal%20Prompt%20Widget.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Get%20Random%20Life%20Pro%20Tip">Get Random Life Pro Tip</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU5cpTdVMp4iQEWiXBXcsrEMUVwVAVWBCvVi7q00Nc63rpN1GkfTCywM%2F%24%7Bf%7D%3Fo%3DAgJPdTlYAUk4GbkhEW2z0-vFPTNo9TcYcJFSIjtwfyJr%26v%3D1%26x%3D3%26a%3DCAogS72eb52D0UXjCdnbg3dAjlZQs4WBVIEOxK0vZf0lV_USbRDn8MjJmDIY54DEnaIyIgEAUgQMUVwVWgTTCywMaiZkOQCMPlx7sogoSuCwliEsN--juMWa7aWgbPOdRXvEwLQctC4jv3ImYG2b12rar65IzaM2IpI7J7DCugULtVTWE_oXgI9_U63m3UrmuCQ%26e%3D1727175655%26fl%3D%26r%3D262E323B-9B93-49EF-B074-2EC6811D0615-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdZ-fO1GiO2lCd91yD1XAPYUXcQ0&uk=a4zfRTBOs3ZW3HsbpdUXyQ&f=Get%20Random%20Life%20Pro%20Tip.shortcut&sz=28359">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Get%20Random%20Life%20Pro%20Tip/Get%20Random%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Speak%20Journal%20Prompt%20Question(s)">Speak Journal Prompt Question(s)</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYbHpudWm00-GTEvxxdAc2ss5OmRAd-2qLz204O9QD1DietclnpNqgjN%2F%24%7Bf%7D%3Fo%3DArYo8fGLkl-D3mNAaU89FZmDwtdsROJJ4S0zWvTa4aKz%26v%3D1%26x%3D3%26a%3DCAogzj0eeNEmv2DEWCX8v2k69u3It12-K4Ar_o6JIU6Z2_QSbRCtisnJmDIYrZrEnaIyIgEAUgQs5OmRWgRNqgjNaiYRYkBIaP3m4muaHmZJQWvu7MsI7ltrF2pxuri_QL_PMdgiF3ezZHImUjKT70FvOM0A1faD3k17WDRdv6j0pdnzDKW8qwf4vl2gHOhT9fs%26e%3D1727175658%26fl%3D%26r%3DFCCE9C8C-5B38-4736-BF36-3F9B02D9F62E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DV6ZGZYp9Wx1nE_LdfapsbdljGWo&uk=VlOQeYDb2fr230iD165JUQ&f=Speak%20Journal%20Prompt%20Question%28s%29.shortcut&sz=27804">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Speak%20Journal%20Prompt%20Question(s)/Speak%20Journal%20Prompt%20Question(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20LifeOS%20Toolkits/Update%20Journal%20Prompt%20Widget%20Text">Update Journal Prompt Widget Text</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYJ_sMAQfgqyzM0gLkCl0d4ImfYOAccFf5BmzgSg6H1S2XYF2aWauK8F%2F%24%7Bf%7D%3Fo%3DAr0qKdh9U500Tf_3iXT44xSxpRn9TxYVSq6b_LDdEt_X%26v%3D1%26x%3D3%26a%3DCAogWnrCxlzrF67ALWKkRhR6oWte2uU5TUEb_AD2_rrh1IQSbRDSo8nJmDIY0rPEnaIyIgEAUgQImfYOWgSauK8FaiZi5po95Dkpnw_AYV5uq4tL_OJEP5qqIpxz2v5CzEIfQaejMchnfnImXVVXH30K5-LuIgpyKpVB_02qPcsxzsWGYQ98H6K7a9NX-XZ30I4%26e%3D1727175662%26fl%3D%26r%3DB473E38C-0860-4843-A389-D8702BF7754D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7NdN8nDZTbFnauPYTN6dhpKH_Fc&uk=ikgBS5wqKKSiDax9ORW6tA&f=Update%20Journal%20Prompt%20Widget%20Text.shortcut&sz=28012">
+       <img src="./All%20Shortcuts/My%20LifeOS%20Toolkits/Update%20Journal%20Prompt%20Widget%20Text/Update%20Journal%20Prompt%20Widget%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -2718,15 +2831,24 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS">My PPS & PKMS (18)</a>
+        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS">My PPS & PKMS (23)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%A4%93%20One%20Visual%20A%20Day">🤓 One Visual A Day</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQOTy7VRBgwiw54HbxTbIyi4h6gwARgR1ayJb7L0i98OYzeHUIWAaDr9%2F%24%7Bf%7D%3Fo%3DAun7NEny-gIA0mgDPsAu9S9KigkiMYAa_y9GL6mXlIYo%26v%3D1%26x%3D3%26a%3DCAogFJfyhgzKkqet6fIg5GaDYVkIrmWeOA_0kctOfzp8nsoSbRCY4LnJmDIYmPC0naIyIgEAUgS4h6gwWgSAaDr9aiajm7MLQZ3XvD_ns1vELKsKeTYSduhJdRiX2CzWdWvquwUxWqKcGXImfJiG9zGyutyPczM3FTrWUHU6LUFWUmMgwSFlJ-7iBBx02eUa_cU%26e%3D1727175407%26fl%3D%26r%3D8DE22E18-2C4E-4F83-BD89-12C252E26F50-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCvisLz9m6rgTjiwUg6ZT3M8WySM&uk=O6GxPiSPRRFeI9lIlC-cbg&f=%F0%9F%A4%93%20One%20Visual%20A%20Day.shortcut&sz=28074">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%A4%93%20One%20Visual%20A%20Day/%F0%9F%A4%93%20One%20Visual%20A%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%B8%20Extract%20Text%20from%20Screenshot">📸 Extract Text from Screenshot</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe6EDguG1AyTQZOPHf8H1fckzHa4AfWl6U55JOYehRf7bhnVmesZaue9%2F%24%7Bf%7D%3Fo%3DAsj8XmGdzPDOPaLnG0KKelpyJGKG1QpXGkJ41nTO-Qg1%26v%3D1%26x%3D3%26a%3DCAogWYnGlhw7H0Ylc75g7IW5-ZxG666ZZi4GFAml8fObWvESbRClz5moljIYpd-U_J8yIgEAUgQkzHa4WgQZaue9aiYLB_bqfuNxFY8AAeK82bNDvz9fVAjDBIzy2akBddEv-79B3sKRn3ImGwrcFOkOe2qm8_U32g4aWz_lQtcRDaXytSiB3_5I7g8u8Og1Yck%26e%3D1726568804%26fl%3D%26r%3DDAF779B7-4F3C-4B39-999F-0101C16FA93F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJ8qD7QDCI5UcmSL4J-ps7_ThQF8&uk=yyIvRHGpmFUkB3KOh3Gurg&f=%F0%9F%93%B8%20Extract%20Text%20from%20Screenshot.shortcut&sz=27255">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASv69E-tloko2IrCDx2szM4C_SbHAUaowPJsKl-02dz1uQwogfWPdKa9%2F%24%7Bf%7D%3Fo%3DAoi1enjTY_8EIRUC00ev9Wdf97d7ryjrfLioa2Vl1iNm%26v%3D1%26x%3D3%26a%3DCAoggMO06ftBSLqdFu2oBCAK4mGkYfUcBrjH_JbDJFO6xkISbRCdjLrJmDIYnZy1naIyIgEAUgQC_SbHWgSPdKa9aia1ZnNANC6LQSLvMPtY8WPc5kHq-Agzr4yXEex43CSrLTuvQtI_b3Imw149KyDq_fim5XLw8nPjJ4KLlak1mbH0npO-vQvrM49QycLVMBk%26e%3D1727175413%26fl%3D%26r%3D2F9D647E-9729-4251-A40F-02E2E2266B1B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dm8pB0i89__UFatizy5BELtXpsX0&uk=d1KA7OWitrGPsjb_AHyM9w&f=%F0%9F%93%B8%20Extract%20Text%20from%20Screenshot.shortcut&sz=27254">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%B8%20Extract%20Text%20from%20Screenshot/%F0%9F%93%B8%20Extract%20Text%20from%20Screenshot.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2735,7 +2857,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%B8%20Process%20Extracted%20Text%20from%20Screenshot">📸 Process Extracted Text from Screenshot</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQP30lO8SD9AasMwsQCYfcy7o4BYAfyrua-EZN0TMellshvBgPXg0rCi%2F%24%7Bf%7D%3Fo%3DAiAtoIbkIOHz4rfHsX2DWXDGVNCqT7aVwwVOqxJnqXpE%26v%3D1%26x%3D3%26a%3DCAogEiVgeMhFUhoKZBT6FKW775QmBt_6LbTr0LbaWJmxZv8SbRCV2ZmoljIYlemU_J8yIgEAUgS7o4BYWgTg0rCiaiYDAJvDfsl3YIY_4jM6IsFpcxY5NvPqBzKpJEANmRHBvq4luvjfpHImNk5B5srH9aie9yIKVqOYut9GQ5IAS-w6RW5mBBuMCIwiHYSHAk8%26e%3D1726568805%26fl%3D%26r%3D6C0701BF-19F6-4D4A-AAA5-91AFF999DFE6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXqV391YdS4DI0kgb-Mc4NlR3WBM&uk=A4MOEUFTPs4mecTWeDMXTg&f=%F0%9F%93%B8%20Process%20Extracted%20Text%20from%20Screenshot.shortcut&sz=29458">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASO8sXqazujjV7Ag4UbB6EP7TOcuAdJ-dHLiIFQj45ikHfPl_N1R4tZu%2F%24%7Bf%7D%3Fo%3DAl1t2QGcXJrkkeeo2uUe6zUpS00SCUdadX-2E0UpoU7Z%26v%3D1%26x%3D3%26a%3DCAogESdsk4VPp8QKB0dHEp7HHhBeMH3wg63Z5URb5sTgmKsSbRCqtLrJmDIYqsS1naIyIgEAUgT7TOcuWgRR4tZuaiaavuTra5W2z1NouapBUCcCz6S9ocsGiacqh6pG7Opc1kXxOEa1YHImoMCwNOvWhhJUZZNeB8_WZ2XeS5VuQjRKH3PR11PmYQwcNVqz57E%26e%3D1727175418%26fl%3D%26r%3D9435C451-6718-4B91-AE13-580C5E813628-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGSpKnfUqeBmGgpdzJEOuZtXIvxY&uk=Ip4BdvEOyJgguD43mF_lZA&f=%F0%9F%93%B8%20Process%20Extracted%20Text%20from%20Screenshot.shortcut&sz=29458">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%B8%20Process%20Extracted%20Text%20from%20Screenshot/%F0%9F%93%B8%20Process%20Extracted%20Text%20from%20Screenshot.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2744,7 +2866,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List">📽️ Add to Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUea3DM-tA5sF4nYnzDsYNMBW-F2AWQH-3eibpcidaWBHEmIaWqjlA3m%2F%24%7Bf%7D%3Fo%3DAt7Ge4DRniIMrYN7VCElG4onQYk9xbi4xXsO_V-92WE4%26v%3D1%26x%3D3%26a%3DCAogYQcPoVPMiKmhpi8poI6XatYhIWSHObYh-vFuHAT5ItgSbRDN5pmoljIYzfaU_J8yIgEAUgQBW-F2WgSjlA3maiZN4W9-jzNLgmjSgR0d2COB20o2bAK-kdmzTQ1z2nCyZu0g49VV5HImla6dWirQ2Ct87H37ouszOU1vkdjSRLq3L9Un2GF1AIPNoLV4nsc%26e%3D1726568807%26fl%3D%26r%3D37E2805E-BE2F-4647-A39A-7BECBF029AC7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4Q0hp05I80X2VistRohCzfVEBD8&uk=GEQ60ZUpzjaQ9LE8DZOiLA&f=%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List.shortcut&sz=28891">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAapiolovnjQYEpKqNTGI8vKHQp8dAdtXWrpUo8E2-oq-pXf28Oal8BLB%2F%24%7Bf%7D%3Fo%3DAiTj2Gr7SsZpB8sDEkIr6f3y9V1IuL4AtvqQ9LhZjnAb%26v%3D1%26x%3D3%26a%3DCAogKrRo8I47B2sic8_gO29-lrDQBy7WIGF3aXcqPXykqjoSbRD82brJmDIY_Om1naIyIgEAUgSHQp8dWgSl8BLBaiYAlepiQLa2zE_LFUOCZyGXmPr8rfx4SaYJTT-HJ7xvfkeTelPpsnImEBWa31CjvUzw9P_1hg3Y5y90KS5cnUVYxvu_drg6S29o4DtYeUc%26e%3D1727175423%26fl%3D%26r%3DA4D79974-F059-4422-88E3-DD0ED7B5C23E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPtky2VBvalhklD7fc4KmAWuQKmY&uk=eia1xkm4Ut0Dctbx4YJ8Mg&f=%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List.shortcut&sz=29600">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2753,7 +2875,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%9A%20Add%20to%20Reading%20List">📚 Add to Reading List</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc_sf9bmxnVN83wO9Y5Ptfj_xVLMAdC81t2Rzl--zlQwx3oADGdkhkvm%2F%24%7Bf%7D%3Fo%3DAhHwXaX64q3FgFdwb-mVdSQKPZtTVatEpztDb0eLB2YE%26v%3D1%26x%3D3%26a%3DCAogR_Kfp1iz_sCR7eRwvl1p57URyidNPsplr7iyA8RHVqQSbRDu8JmoljIY7oCV_J8yIgEAUgT_xVLMWgRkhkvmaiYFAmvcrp3_FShhHUlhsLpaP9H57uvPlyUY5_I6KmNwBr_fagve5XImCQbG6n_XlPWJ7L8TdQYcGkyveUcSZpZ_Xvc9tHe_i5Zu3T284Nk%26e%3D1726568808%26fl%3D%26r%3D5E39E495-C652-4F50-A4E5-8D4935108D8B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DKkzO8V4WI_rneQpECLN_twRjZoc&uk=nnjZB7dwgfm1OXSGycoRZA&f=%F0%9F%93%9A%20Add%20to%20Reading%20List.shortcut&sz=27896">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAckkSfRiDqSF_DjFsjUMAAh8wt_dAfpgB4LpaFYpP1sCadpgIJM6Mka6%2F%24%7Bf%7D%3Fo%3DAoZC_tSRMfJoiYqbWjbBGGo8SC-zBjodIxV9C96ZUpZb%26v%3D1%26x%3D3%26a%3DCAogvzxnZgIDN_qdiUWHqIqaQS5IPN1cbaMG7q-Bk_-vypMSbRDY_rrJmDIY2I62naIyIgEAUgR8wt_dWgQ6Mka6aiY3iyqT6VoB2N9eu82zu7KqyK3JWQPd7oRqwlD9eVQyMFiH8kWAznImwIUeGcV9UPReW5NXfdkgwDqVRrhdN3VbU74bKPsg-4jSsKkW-cs%26e%3D1727175427%26fl%3D%26r%3D461DBF0F-2D48-4D2F-A963-9B5C6C1B4488-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dd1cnIEAhCtaKqpNbs9mhT9GHXWs&uk=BU_hIgvywDs6NCcKGRrR5g&f=%F0%9F%93%9A%20Add%20to%20Reading%20List.shortcut&sz=27896">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%9A%20Add%20to%20Reading%20List/%F0%9F%93%9A%20Add%20to%20Reading%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2762,7 +2884,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%BF%20Auto%20Backup%20My%20Vault%20Repo">💿 Auto Backup My Vault Repo</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATmKtBnmrhsL6oV7Qum6eo8r9FGTAWirRRPzFX11BfDGaadUZ_5fcJd_%2F%24%7Bf%7D%3Fo%3DAm3_ISxOzvFtbcQBLM0m_8GaqRkHNPgKd8ueNAyU2hN7%26v%3D1%26x%3D3%26a%3DCAogcArjR6Gp6A3QdEVjW1ObptRjwRek8fHfSbEzORbeAZASbRCF-5moljIYhYuV_J8yIgEAUgQr9FGTWgRfcJd_aiZyH_dM_EqcrxLe7BORQ6XxkNKTkzySS3NhwfF4DULaKrYWR3KA3HImYPv7z19cmK5CBsxAR3lfJKAxc05rX4ewuiVKT7gPZOnkOvKruM8%26e%3D1726568809%26fl%3D%26r%3D3159D6A2-9B74-44AC-B039-B4A093E28634-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DF3n7Q68U6NqRVH0zwir0ZWW6vRY&uk=mL2Nrh-mhQKnvqLkVIVtBQ&f=%F0%9F%92%BF%20Auto%20Backup%20My%20Vault%20Repo.shortcut&sz=29514">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdKhtO4lUAnsluMgPCokRszFvM_EAUzZF4X6brIGcujX5B_uHR0-BqM1%2F%24%7Bf%7D%3Fo%3DAmolBQwjUzTP05fyebwX0OfDSDIFgynDkCDhAYwiES-k%26v%3D1%26x%3D3%26a%3DCAogLzAmg-S1otnEbGOEF39trG8lEodQ4HwUCy7cI7qARZYSbRDCprvJmDIYwra2naIyIgEAUgTFvM_EWgQ-BqM1aiYcTIK_PeOkJqVUwlTc6zNgdE9xaq6f-EqB0R8fEEvnoodHMb4NK3Im1rbajWNDvGCDs2_ChUPZYRVEJvZtXIyl54YGbhIoySzg2JoWDfc%26e%3D1727175433%26fl%3D%26r%3DAA4BEA16-32E6-4E55-93B5-9644CA569CC0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDXQhkOORlQ_WPap14EJptd4d3vY&uk=S84mkDVLLtXQ8mlGpyXd6A&f=%F0%9F%92%BF%20Auto%20Backup%20My%20Vault%20Repo.shortcut&sz=29514">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%BF%20Auto%20Backup%20My%20Vault%20Repo/%F0%9F%92%BF%20Auto%20Backup%20My%20Vault%20Repo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2771,8 +2893,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9C%85%20Add%20New%20TODO(s)">✅ Add New TODO(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASafduhLqVqiEkoiKnDZ8LjcLyz_AeO2hTAT6p55qq0gEpZUuSjoVbsH%2F%24%7Bf%7D%3Fo%3DAt_bXJTizw0SRJM-hZCArDZSyVTbI561XwK7b5aWwtjc%26v%3D1%26x%3D3%26a%3DCAogmdZhx0NRXXottJvQ2wy7Jx4tC4cm5aKJQe3MzUtRtVcSbRCnhZqoljIYp5WV_J8yIgEAUgTcLyz_WgToVbsHaiZCZDXb6QGpS_eUt_oOMJK0T9QYfXDmr74dpzCDrvWDTJfXSGIlxHIm3KANL9ExrgOx_GFvZ6BAktXkVabXMaZdb_5QtCEIKWjc8AEqkqQ%26e%3D1726568811%26fl%3D%26r%3D0B57FC84-D9E7-4FBB-9DC0-D892EAB02C8F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHkmVKCfkN5GAcpfloLSp4A0Nd3c&uk=mnI1aWAELjHwpn29Wb4-dA&f=%E2%9C%85%20Add%20New%20TODO%28s%29.shortcut&sz=31943">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf3ogpPkUIP43Zl1sbHXLln1nilNAdgD82sepy8LeptYYIs6GGFNnEM0%2F%24%7Bf%7D%3Fo%3DAo88v23_nlHR6wM4v0BuhGHlWeKZS-L5d5J1DmE2henu%26v%3D1%26x%3D3%26a%3DCAogo6PpSxMpWIN2lovSifrg0R9zgMN9YH1i0D-uDa5Px1YSbRDKzbvJmDIYyt22naIyIgEAUgT1nilNWgRNnEM0aiaQv7TfbcRgihfVoJJJ6eRPxmwFpZ_ZCjDy7eJbKcEZhdUAzF1ltHImz7O93CmviircjIzYxmhVPlf4DGytSTIbC02TEX9M5KohbtR1vHw%26e%3D1727175438%26fl%3D%26r%3D04839467-7DB8-4B12-AC67-35D184C27E7F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRqmA_3XO398wn4Su2f-o61jG0bU&uk=VbUhc0jUaiWOkdVlKx6g0A&f=%E2%9C%85%20Add%20New%20TODO%28s%29.shortcut&sz=32018">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9C%85%20Add%20New%20TODO(s)/%E2%9C%85%20Add%20New%20TODO(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9D%97%EF%B8%8FRemind%20Me">❗️Remind Me</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVMDKGzmnLEDEkljMG85aQmZkBSoAUV9bTHi1vgRr3-LLq2maqeCDSXS%2F%24%7Bf%7D%3Fo%3DAre1DenEqPWkijV_IsuDhCJnd9yJpTWacjhYQ856nnDv%26v%3D1%26x%3D3%26a%3DCAogT5rdLyB0tdgpqWxZyMcTQGtiZXzoN--EDc0-66PXMt4SbRDj9bvJmDIY44W3naIyIgEAUgSZkBSoWgSCDSXSaibusCydfNX99m1c3pJEiTPnX916J7iuTy6h1ae2sZ-pJ5v8JEgwyHIm3bpQdrwdSUCH6_X1_2CMhyxMSIvefSJEeckL6X3DyvUtx5i4ymM%26e%3D1727175443%26fl%3D%26r%3DA3F8E634-E006-4E68-B4CB-18CF2EE1D45F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DD3_TK-e4hNR61pysn42RTBIaa0k&uk=vcC1EnZ7eQFBQJrRm7yGuQ&f=%E2%9D%97%EF%B8%8FRemind%20Me.shortcut&sz=28973">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9D%97%EF%B8%8FRemind%20Me/%E2%9D%97%EF%B8%8FRemind%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2780,8 +2911,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Ideas">🗂️ Organize Today's Ideas</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe20SVZ1bgv-r5QcX7HhgLig_7soAWI0SR6xCrJRcMllRAVy5l2i2Mlx%2F%24%7Bf%7D%3Fo%3DAt8gbw9dBv9WdGh2ZTR6J15oodZzQTOmCW4o7JLmtHZ_%26v%3D1%26x%3D3%26a%3DCAogaiawxNOCktBqg5xlUbn3kQEqlO80tX7OIbId_9Cy2MUSbRDJkJqoljIYyaCV_J8yIgEAUgSg_7soWgSi2MlxaiY0I2O2KgGyNUR3c9Kjcsn2Mqr5POyy7dIuyLk1PJPQ-odyR0GbK3ImX1KbiaNLZ6tmr9hlL3k5gJvgSRnWANUGm0ZY45fGViIpu8WXR2Q%26e%3D1726568812%26fl%3D%26r%3DCC78E32C-5771-4F80-AC0F-45BB4ECB00D3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4UU_qvqXCElYb6StSIMwuXAB_YY&uk=9WiVNFYKKf1nXrILceKa9Q&f=%F0%9F%97%82%EF%B8%8F%20Organize%20Today%27s%20Ideas.shortcut&sz=30322">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVNzx3K3TnCfV-Hb9uyw_ygOTljfAQ-RDNVTKd9dWijeY2T6dIKgUu41%2F%24%7Bf%7D%3Fo%3DAmpx35pU1K0sm4gX4c68-EUF3Rp43f5ZJUoCY4qtrzrr%26v%3D1%26x%3D3%26a%3DCAogT2lWH39fhlUhIvzv2awb563RQEMvpvu0XIHHLBBvOUgSbRCgnbzJmDIYoK23naIyIgEAUgQOTljfWgSgUu41aiYdG0_nGgr7K0VIRVNB2fPkrsR1kE2nXXfxGacqH8kHbJTAFFAGSnImi_CXobFYjhx2aI9z0XWLHOs0upC-GCCL88TaWs793rwq-kauHyc%26e%3D1727175448%26fl%3D%26r%3D8943C89D-8599-445A-BBDC-00EE08EF5363-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNFL0nLeTR1a1uU9ftzSnNLQDjhQ&uk=9-5a0mCtckX9S-FoUjaNxw&f=%F0%9F%97%82%EF%B8%8F%20Organize%20Today%27s%20Ideas.shortcut&sz=30320">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Ideas/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Ideas.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%8D%A9%20AppRem">🍩 AppRem</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQodFzKnu3Wq0CmcxoBWcAebBfSzAT46IV41Hzkm2XdyCjlQCKVuZLvt%2F%24%7Bf%7D%3Fo%3DAtqGtA6EnMaB_0K5T_YxG2QyHnIC2-n0OtWVC3_-k9Ix%26v%3D1%26x%3D3%26a%3DCAogHVbsPi_VUET_GYNxjGAWQrPEDNwNFMXV1Sc9sfwzu0USbRDcxbzJmDIY3NW3naIyIgEAUgSbBfSzWgRuZLvtaiZCdGoVK51h2PPf3LzypxlEz_peQJKmKXQth9iKFQ4fCFaCiBYpI3Im4r6sNDaRN1s9XrKiHgG2AHssrzT_K8FGxC3ONkUPZ8g2MtWvPLY%26e%3D1727175453%26fl%3D%26r%3DA284DA46-6104-43BE-A222-4DB3430C747B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlM1H-6qvuEunEHFr_nNYBbF5fsY&uk=heifBM0nTW8xJUsXcZBV9w&f=%F0%9F%8D%A9%20AppRem.shortcut&sz=29560">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%8D%A9%20AppRem/%F0%9F%8D%A9%20AppRem.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2789,7 +2929,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%91%20ANotes">📑 ANotes</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWYeX6EwVJNxS_uthhJQEM7qN7qmAQNiPJol7k38Upswe3f--LpK4oTj%2F%24%7Bf%7D%3Fo%3DAi61Rgwjsujm885Zed9KpjhhRASUVnFKze-h12s7_6O3%26v%3D1%26x%3D3%26a%3DCAogh_OYAOb2xL6oXOUqgaXWVe3J282EeMDebPhQEGQh9EMSbRDhmpqoljIY4aqV_J8yIgEAUgTqN7qmWgRK4oTjaiYy1CCM5k5yXPsf4XqKLy9eDJhVVENSvfG5hrZJzLj-YbrsxRvd4XIm25FLxGZ4EWsVR2OhyzOquMybVE1V8WeCwwNDpW_9ZpLTuJYU6-I%26e%3D1726568813%26fl%3D%26r%3DCA9C7342-72A8-4556-8436-198EC716C364-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dn-MhLdMDvuO-NexnpLjmys5Tv5k&uk=B3Pu2iIfW26yttUr8MOBCA&f=%F0%9F%93%91%20ANotes.shortcut&sz=34716">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY8R-vL-997jKvdtuqYGlcuYHgcmAcIQ5sLuc6_P9EGlCsw2K1UesBYc%2F%24%7Bf%7D%3Fo%3DAg-fj0ARX7W05ef1_bSgRsU2RxNjydA7xDyHdn02Irlx%26v%3D1%26x%3D3%26a%3DCAogDkrNme35DviF56DnF54HgK1K1mN9U01zNBaGn2KY1-gSbRDh6rzJmDIY4fq3naIyIgEAUgSYHgcmWgQesBYcaiZADbLtH4Qkqk_isqY9dSL9lUy7U3GM_P8GeQaRsjdhrE7W1Mq503Imee9114WxWjgkBF_-u3GCCDOGx7jskRxJjJObTR3NTjln6EoN3jQ%26e%3D1727175458%26fl%3D%26r%3D0F457913-DEE2-48BC-9E9B-09F5647A9C2F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJuWd8VD_G_uJ3MuXaBmOl3OvcAE&uk=mnw3xeeoves74FYHequrkA&f=%F0%9F%93%91%20ANotes.shortcut&sz=34717">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%91%20ANotes/%F0%9F%93%91%20ANotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2798,7 +2938,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%91%20Obsidian">📑 Obsidian</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX7NI6pCNHt56FUq0S2jqum44xCwAXk6OPRs9kQsuO_AI4fIZUXjGo8O%2F%24%7Bf%7D%3Fo%3DAkLS7iYTJdme0Wv1gT0e0fh5EdXEkK2WWx87BD2wwJ-G%26v%3D1%26x%3D3%26a%3DCAogBA16WhGdpfHkIP2V8eCufuAQQQH9VfzGoCJQXQ-i3fkSbRCWpZqoljIYlrWV_J8yIgEAUgS44xCwWgTjGo8OaiYa0aqvYO3lTUdhNyePqZuNoblLTKG_yS3t0Q_MTW9cYR-SYoOT1nImiy9F7HcGHw2IEntbQHOGpeqtcmhqF7FW4G4GahmTHcKwGMYnmpw%26e%3D1726568815%26fl%3D%26r%3DF9E6D79C-00F3-4E10-9E85-F3D61BEFB9D5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dmh5mxcQYVuVfiKysdOmCQaCdvjM&uk=872ELj6wuklqT_xXD777IQ&f=%F0%9F%93%91%20Obsidian.shortcut&sz=28026">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZWEn_v7haNPIsfHomhelJQaJ26SAX7sG61_06Okj1daotEZwcOYP9eh%2F%24%7Bf%7D%3Fo%3DAqRk_DQcKDUTWr2hHODo2keP_vPqjs-qAQw26UZXcYk2%26v%3D1%26x%3D3%26a%3DCAogfi7bLBDclzGW3yfw7tP7AWjn1OQ5HSC1_ZjKrpMiuJ0SbRD8kb3JmDIY_KG4naIyIgEAUgQaJ26SWgSYP9ehaiYzDwKrL1o-UGOCB-3deoOuOoQO3DvBL2-IIYNNxODVH19HMkB2UnImCX6vGIj2wpCJNHdPTMTAB6_1GqnTMO3NH6PR7xw3eKE8xuko-NQ%26e%3D1727175463%26fl%3D%26r%3D3C2A40DB-83AD-4EF2-9580-18442DB21149-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU0M3XTbQEH3x9wHfsvd79GR4kaw&uk=BARBHqG43OgovDJOh1B67w&f=%F0%9F%93%91%20Obsidian.shortcut&sz=28025">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%91%20Obsidian/%F0%9F%93%91%20Obsidian.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2807,17 +2947,17 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%94%83%20!Mindware">🔃 !Mindware</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQTeYxUEHMdpKlxJPiPLeFeDp6y3AQQaVIb-68EKxub5l2CwQyZ9bLrl%2F%24%7Bf%7D%3Fo%3DApve0rQoGwluC8T4O1sYJv27YlhGlwKMHDSmeaansgmZ%26v%3D1%26x%3D3%26a%3DCAog5e0d3fCirjebzXKlC2Ml0GG_5wTET8QOA226VGle89oSbRCnr5qoljIYp7-V_J8yIgEAUgSDp6y3WgR9bLrlaiaS3sAdX9pbwqc6S0miKRX2EkOoPUk3NGmVYrGahYiHowUGTLf81XImt2vy1d8bnDlGwV0tM4S9lq9sAtOWyroB8gb7OBWP2dEmN_Hctu4%26e%3D1726568816%26fl%3D%26r%3DB13B64B3-1249-4398-B922-2C6FA6166294-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DheTtnhE_CNuLURC5U_uMOAzunKk&uk=GZdhxiAEeWYUkWlD6VCi-w&f=%F0%9F%94%83%20%21Mindware.shortcut&sz=28121">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXYWC7UXt0Jq25roSQQnhi6fiAsTAdNgq7oGWmGBw1oMOrOFGmXtbT3l%2F%24%7Bf%7D%3Fo%3DAsurDRLDq_ZZZ0kasxsrZPplEJu0jPppf9xKd4KvsjKL%26v%3D1%26x%3D3%26a%3DCAogPtsDarKNpJFjpg1AKG6qhbPkPWEtNs0MHXZKeEpal6cSbRC7t73JmDIYu8e4naIyIgEAUgSfiAsTWgTtbT3laiaZ6APMA06g-ayXCmAaOYi2MSf7dMGDMnqoRdvH1_tkcT2bvByDl3ImWW2xuGCC0LJkViXxFg-xr-92LbpK-BclO2TZHgBOAkeyMjt3TeQ%26e%3D1727175467%26fl%3D%26r%3DD71B9E7B-1D3E-47D1-B976-99CA794D104C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNFBNCgceUg9rKRo4P7Yq-olnApM&uk=xh7MeZgZaKmQvdHPUOTvYg&f=%F0%9F%94%83%20%21Mindware.shortcut&sz=28120">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%94%83%20!Mindware/%F0%9F%94%83%20!Mindware.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9D%97%EF%B8%8FRemind%20Me">❗️Remind Me</a>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%A1%20Capture%20Ideas">💡 Capture Ideas</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQiO1BLN_377h6ZhErReZJoLSFZLAaS8wniFQooutta081x8kXDDt_1X%2F%24%7Bf%7D%3Fo%3DAnLv33X81dzyegFl7eq6QivOUA9yBwfyuSKLQ-DEp6jd%26v%3D1%26x%3D3%26a%3DCAogiqAWeT7aQ4Slk9Fpn3BnY3yy9UJ58WzKf9BHQB9DHYYSbRDQuZqoljIY0MmV_J8yIgEAUgQLSFZLWgTDt_1Xaia0XEp93gG3UZZ41GnQrB_NoHxIcqLf-L-9hCxjGugCMFFG2JHTPXImXTvHcQ4Z4zaC6Rq03dIzXd04g6FAs4Z2kXI4Rg5rdsjtbesgGiI%26e%3D1726568817%26fl%3D%26r%3DB7844EA1-D1E2-4F19-A448-35779F5D9FE2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGehkb71I6CT-oVEcw5Fhq2fhaDo&uk=7wQ5wQu69QhfPUhBDCqtRw&f=%E2%9D%97%EF%B8%8FRemind%20Me.shortcut&sz=29381">
-       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9D%97%EF%B8%8FRemind%20Me/%E2%9D%97%EF%B8%8FRemind%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASTvnSoJrxPEUXRg5399C_Ao2rg8AU78cUTLx3aYkiS3if8qbPJKbKB1%2F%24%7Bf%7D%3Fo%3DAlx2Z5mhrjUiSa9bvBgiE4tQqgmgAWMaB5iSYTLMqTTR%26v%3D1%26x%3D3%26a%3DCAog0DHoJiQ8JHKFhGlOU0wr_zJiluylpKRf1bcWON6moWYSbRDu3L3JmDIY7uy4naIyIgEAUgQo2rg8WgRKbKB1aiYsS33aVXRFWtYnz8a_rRwpr5QEPSeIKwmAXI30YRVnCZkmxmUFHHImwRBn2VQyhUJI3ENjjVcbADZM4_KEN88Xc63QrXS_H1Y-SJKV694%26e%3D1727175472%26fl%3D%26r%3D4B71FF70-0B83-4FA3-BF4C-8252771CA8B8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCfbDJP6z_jhJRp2lSACf8FsvCh4&uk=EiM9LCuD2VOzKH3dYFaIZQ&f=%F0%9F%92%A1%20Capture%20Ideas.shortcut&sz=29599">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%A1%20Capture%20Ideas/%F0%9F%92%A1%20Capture%20Ideas.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2825,7 +2965,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%A5%20Add%20to%20Inbox">📥 Add to Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeJMsDT-QJXpnVYNHU0F8pP0Li0SAYk0pGcO53RaB1lAO3mGKgdhbjD3%2F%24%7Bf%7D%3Fo%3DAtufyt8GhfBi0c877TooxAR7clAMiTQOZD07VV8xQ_mP%26v%3D1%26x%3D3%26a%3DCAogOrxT-Qt9tuizr5nI-IP36lsYVR-jJPXwEV19GQp-uy4SbRDnw5qoljIY59OV_J8yIgEAUgT0Li0SWgRhbjD3aiYS2Qd0_I4xMwN1qJIGMyMj1KNMJ7WCr9pwEldfVsWPZAFquE0GPXImz6YNz9xdqfv_mVf_Bclh-KSar2HdnF0qMW8VGV_2hwSTLIzmOLU%26e%3D1726568819%26fl%3D%26r%3D5A38C12B-37FA-4CA9-AA46-1B0EBD5C0257-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Df1DrKOkVvr6HZY_fdjB1Hr5snfA&uk=jTwWXEnLsSAo_igOmuSlHQ&f=%F0%9F%93%A5%20Add%20to%20Inbox.shortcut&sz=27376">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARCkWsPGdjSECJfcoHmSD53FIpmTAfbjjMnHwRM3U8ybk9gwQH636JEa%2F%24%7Bf%7D%3Fo%3DAuaJU8w97tnorDz0AaRbbsdX9Ms1HcG2ddMQiwanI4hG%26v%3D1%26x%3D3%26a%3DCAoglbFPYcNJ1--1F3OuPlX8P0w0EH943ILKyFSUvZyhJdsSbRCth77JmDIYrZe5naIyIgEAUgTFIpmTWgS36JEaaiZFiAwqVw6zYYct6c61VtMU2DCQckfNQtUDA7sxSgJOg8C_tGJpL3ImXFC_yQaaDgE9p615OkLv0NIZVMrT6fvAhiCSvCo5g7IzoEzyxr4%26e%3D1727175478%26fl%3D%26r%3D1BA7F01B-2519-4CC4-933B-3B387ABAFC8B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAYpeUOlTi11aVc9EKrLd8a74-j8&uk=C1T3MQxucGhQe_tjPnIHoQ&f=%F0%9F%93%A5%20Add%20to%20Inbox.shortcut&sz=27371">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%A5%20Add%20to%20Inbox/%F0%9F%93%A5%20Add%20to%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2834,7 +2974,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%A5%20Add%20to%20AReminders">📥 Add to AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYzL8jDdBZQbXzwbXDNhxUly9d3wAbuQEZ9AlvBcYagzizKxeRaOBXKk%2F%24%7Bf%7D%3Fo%3DAqmwkRE-IG74pIftZImUbMzfdt3Qj4HM2FDvpUVscRof%26v%3D1%26x%3D3%26a%3DCAogUAo3zS6gBSp4WXy2UZDFHE4hSuxtvQgBVshrl4tzIakSbRC0zpqoljIYtN6V_J8yIgEAUgRy9d3wWgSOBXKkaiYwjGFs2-Y8wHGcKOcgwSmCkca-2o9BvGepo0MWik8VMVB0UIoDcnImeOlBiNsnNn8eB4ZbE_vlSZVnOIou93fn66tdkQL9vv244Eycckg%26e%3D1726568820%26fl%3D%26r%3D7BBB3A92-CB1F-45ED-BB03-5EBEA6BCC4D7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DscPbVkBJ-5rm7TLxrARjbJKir-k&uk=3ApWAsvH8yta3r7Nd5_1sw&f=%F0%9F%93%A5%20Add%20to%20AReminders.shortcut&sz=31913">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAT_2s74E5Qs-JPOGdhj-J_pu5FcFAXjXHz9ie9r8RTHWvRyWBMXg7E6E%2F%24%7Bf%7D%3Fo%3DAovholQHRARiiLUWkCscc-3TfPXVB3DWQ-OVMSC4P1c2%26v%3D1%26x%3D3%26a%3DCAoggbZMXuW3jphrtCnz_FVS50Hh5zky5O0TxBmAnoRhI6cSbRDvq77JmDIY77u5naIyIgEAUgRu5FcFWgTg7E6EaiYOcKuyRSn2JWSD89WjB9KxDJlVZA6VMGtpUjz3I8Pz1hoL1DBjJXImdtSyfo6N9MG6Q-zaGUBS1ZG918sos4GmctKSYywjaljBwkLl3tE%26e%3D1727175482%26fl%3D%26r%3D7AD7CD64-69A9-43B1-B2CC-E85A4E0DB39F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPrclCB_MILSp4B_kZJa2Gv6U-jw&uk=rNg_WsXRbvM56nUYZmqw4A&f=%F0%9F%93%A5%20Add%20to%20AReminders.shortcut&sz=31914">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%A5%20Add%20to%20AReminders/%F0%9F%93%A5%20Add%20to%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2843,26 +2983,8 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%A5%20Add%20to%20Fleeting%20Notes">📥 Add to Fleeting Notes</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ8QosMZWSjz0IWB4Tb1x66cB5auASNfYeD7yRuOFUfr816Ga_KtFFsM%2F%24%7Bf%7D%3Fo%3DAox_VvKqIChH8nJ3pFzCkbsR-JdZjObLNSKTnbPcf5oH%26v%3D1%26x%3D3%26a%3DCAoglYnnbNrPoovaVG1Qjh-F2LAkejNnx1IlQA5PBoQZQ04SbRC32ZqoljIYt-mV_J8yIgEAUgScB5auWgStFFsMaiYyL3b5XAHVjhjz1ackSH_vRdq__JKBSuOtDbjyYaEALkSje_j9CHImIjUOso2Ru1IBxOsqhuhyd3j1AVpmh6fG6B8aV7d3LC0EQf3UoRU%26e%3D1726568821%26fl%3D%26r%3D5130926E-0D1A-47D7-BFD9-736D3F9125EE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Did0P0dDxZ4PKvK4zCu6Zsrp-vFQ&uk=3y71_H5yc2SNpzuxKTNF3g&f=%F0%9F%93%A5%20Add%20to%20Fleeting%20Notes.shortcut&sz=27043">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcBQaMgHOewI2ESuzfjnl0mpdyvzAV-3XxhJytI7B6L2-kedWLIs1Yb9%2F%24%7Bf%7D%3Fo%3DAr4C1wjpDbBeasUtZwXHJfcaQGg6MznsP6bNLE49yVO0%26v%3D1%26x%3D3%26a%3DCAog7qRFCFVLjDvC3rYsiKcjUbTVArh95K97MXu38UUGAKYSbRDi1b7JmDIY4uW5naIyIgEAUgSpdyvzWgQs1Yb9aiY1FuAY2CjDR0873O3WwWLZZWH39J8p3lAahBzxG5NCC3cApgdUyHImjCcvzvy6d3hqH8PdhJDkE-bO0751SHSoYAkUem-HAgDeZKgAgfY%26e%3D1727175488%26fl%3D%26r%3DA3858630-EDEA-4311-A43D-4DC04DDE5091-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGnEnQ6DkLYDYZrHG3RWP4SnZL7g&uk=zDNiAuOo_xvNhpC6uvUfNQ&f=%F0%9F%93%A5%20Add%20to%20Fleeting%20Notes.shortcut&sz=27043">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%A5%20Add%20to%20Fleeting%20Notes/%F0%9F%93%A5%20Add%20to%20Fleeting%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%A1%20Capture%20Ideas">💡 Capture Ideas</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYgLKpvELX3_bpbNy4F1BQ2aNWQuAcRGsxNxD1h-jg6OPcyjTidIpBgG%2F%24%7Bf%7D%3Fo%3DApU2kCMegYcINYgEio1g2FB_kfwEdotsjiSj9zOy5p5d%26v%3D1%26x%3D3%26a%3DCAoggYd0bzEeeSSDIn1HlyIN_bEAjgAImXBd_K3Jc3iGjfESbRCu45qoljIYrvOV_J8yIgEAUgSaNWQuWgRIpBgGaialGFF6tDx9IOv2LGTVqi_kWDMCOxOpysugEXFGKWyd2_6Eh75y_XImbI86GaWPgEHOSo_FLxMoPp1N8LbclF0ptRA7aaQepHEO1PGfLyU%26e%3D1726568823%26fl%3D%26r%3D51FCA4AD-153A-4EF7-816D-8BF2688879E5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dc30qlkS-3Fzx9aEqQvegpW0qXXU&uk=VTjdSv0iB5u05pL4f3PRLQ&f=%F0%9F%92%A1%20Capture%20Ideas.shortcut&sz=29600">
-       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%A1%20Capture%20Ideas/%F0%9F%92%A1%20Capture%20Ideas.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%8D%A9%20AppRem">🍩 AppRem</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeQABDDB-Nny7Yg3kGrz6jI0xJxpAdsfHEY7jMYDK3n9dbjVuUQJjlIw%2F%24%7Bf%7D%3Fo%3DAj_xBc1UgD_a7N3G2z1KlYAmAWThyBNVnV5muCRc-iwO%26v%3D1%26x%3D3%26a%3DCAogTA_EHr2DBxSmf-yfjbktrL6rGi4P5N0hkb_Rtckg3R8SbRDi7ZqoljIY4v2V_J8yIgEAUgQ0xJxpWgQJjlIwaiY-nqa1ZM1yQNd1NPLwUbOws3_GUw3zZdYsqGp6ejxTW4CEyCPSaXImsWknJNqOshtoMfnVvEc2vburd3jOxn4SDnvU9LDZEdznwCdp064%26e%3D1726568824%26fl%3D%26r%3DA3C1BB7C-72BF-4417-95F0-814AD4CCD781-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCW01I51g8iGmoC8QmtcZKqO0hMw&uk=oUQs-5JoFWgV8CEp3RHJqQ&f=%F0%9F%8D%A9%20AppRem.shortcut&sz=29564">
-       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%8D%A9%20AppRem/%F0%9F%8D%A9%20AppRem.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2870,7 +2992,7 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day">🗓️ Plan My Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcvRXTW3KWjGjUbTmAn-A5chA6LXAXOQi8nz_mq7dIc53ARX-2Jbl6yn%2F%24%7Bf%7D%3Fo%3DAkaOTvjn5jgNm_0BS-wp3r-pvcTGglAzcurE8Y2dLJ5v%26v%3D1%26x%3D3%26a%3DCAogyZKjfKMVMLBYMfvMSjobadCftdTxn8WXbiAeMEowHTYSbRDf95qoljIY34eW_J8yIgEAUgQhA6LXWgRbl6ynaibvM7MPxDFsiBBrp8DMRsvtznToZ9nvfWhy1o3RvHwois-Gq1CR8XImidx4OVE8n57ZeQFnEOoK21WCsgKe_c5LSV_kGjVcWq2k-9U4xIQ%26e%3D1726568825%26fl%3D%26r%3D38B0DF7A-1321-41EF-AD30-B42B81AA1592-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DL6ZpfC53w2fa_BgTOJ2yWh3Imto&uk=VmzZKAX3Z4mgGHMqffc6jQ&f=%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day.shortcut&sz=29296">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbqLlJ23SW1MOB_docnhQ_8QZ91KAawPSr2ppzc9D11gR5pETapbaI-L%2F%24%7Bf%7D%3Fo%3DAk-_Y0NKRxNtQuMiH9VkJxqHoxJp9kSDpiJP_ksAiyaF%26v%3D1%26x%3D3%26a%3DCAogShSSXnSPQ-YFvvBqlWPyKD7hnpXlDVAnZdOmzOA5s0kSbRCZ-r7JmDIYmYq6naIyIgEAUgQQZ91KWgRbaI-LaiayqdJb5-1m6YeNo4_oyrfjVe06b8fKGB3gY1IJhujVWCAFFn28tXIm6WrFZe6tFjxwyza8pAPOcWsZCUAJIGZAnwYdB24x817xWbOQ9N8%26e%3D1727175492%26fl%3D%26r%3DAA6D207F-62F5-4B88-8044-FAC793F20B48-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6_Q420j_3MIVuVMGVr2k2VB_6sw&uk=fTzgTHIFdfnj6Rb1SFEX-A&f=%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day.shortcut&sz=28856">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2879,61 +3001,44 @@
        <summary>
        <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%86%20Daily%20Planner">📆 Daily Planner</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbAx_UERcMXZSdzL-5qVrfxpbxOHAZGquHJ3KhPRKM1_sFzIJqvnFrVd%2F%24%7Bf%7D%3Fo%3DAmYGE-JOD2L2e4XiDRoGYaoGCcO82tX5z9N__Y4HV39h%26v%3D1%26x%3D3%26a%3DCAogpWz8cQhmbDAqJNBaR-nXH6H9ybs1s1ZSXJypdbrL1hYSbRDFgpuoljIYxZKW_J8yIgEAUgRpbxOHWgTnFrVdaiYx1WCTH5gHefuFDJkZ8_dgxIeHeNn2AirsINWYCE21I7csDib993ImbkXfcy2t5nMxr0aKgEuMD06CmS30x-nrRs0fRYAikJs_jFY8rwA%26e%3D1726568827%26fl%3D%26r%3DC7871A45-C99C-455D-9A14-553C54C3703F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3cl624pm3hfbONJLkPyxGTTeoXc&uk=MPoaegH1xNWk6Cg3aW5fVA&f=%F0%9F%93%86%20Daily%20Planner.shortcut&sz=30917">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXkJj7IdowDp8RCYqMEes9HppFtqAbyxX2n7EnxDAstA4ppisHDYydDy%2F%24%7Bf%7D%3Fo%3DAveW8ETPx3dfez6nT5QTpr3CVO3b8evFiQqKAVwRByEi%26v%3D1%26x%3D3%26a%3DCAogcgJlszuSqHhVO-XWZFB11dOyUs8n8IynRKVE4x3OWe4SbRDroL_JmDIY67C6naIyIgEAUgTppFtqWgTYydDyaibInjc_5pJl9PAKs_-7GGksTFpFAJsI6wOu-wUi64TNx641MhEWqHImkH4bolTPTLtCTxy0NFQ_4gQ7OaKtJYYWWfoi4v3W_gvx2bnJqdU%26e%3D1727175497%26fl%3D%26r%3D408A933C-47F0-4712-A722-0CCBC11EEF81-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2RnqZ3MC7Fi5QnMLcxedRHQn3HM&uk=ij-zYOb1CewaG6eMSKQ8GQ&f=%F0%9F%93%86%20Daily%20Planner.shortcut&sz=30916">
        <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%93%86%20Daily%20Planner/%F0%9F%93%86%20Daily%20Planner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
-  </details>
-
-- <details>
-    <summary>
-      <strong>
-        <a href="./All%20Shortcuts/My%20Voice%20Assistant">My Voice Assistant (5)</a>
-      </strong>
-    </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%A4%A0%20Start%20My%20Day">🤠 Start My Day</a>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/EvergreenList2MarkdownTables">EvergreenList2MarkdownTables</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZQoPWytzErQvpY42gcS-xVvnQGPAaAvOEHEK9puEkFTzUdqIruEWTrC%2F%24%7Bf%7D%3Fo%3DAgVo7PtGGd8MGd0MkBbodMsVntOJp5B8nLmOzMuz-VnD%26v%3D1%26x%3D3%26a%3DCAogSKgIjSibmWMMD5qb8nVbntAaACCO5TcTj_l7vqHRQb4SbRDd0ZyoljIY3eGX_J8yIgEAUgRvnQGPWgSEWTrCaibtPmjlatpj787HPor3MKOrBUJyzpzmHxlEKDMRNf1tMU7_ih-Q4XImYxVXYepujJeB82mlJQN3BLT-0t5QTEXtaqMhdkJZnMDzzP-vQaA%26e%3D1726568853%26fl%3D%26r%3DF110D2C1-EC69-4A60-B7DE-5DB6CB15FF4E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkZT3mB5EhrmTV9xURYzKr3tI6i4&uk=wJInk5c_F-KttSgyHkCsDg&f=%F0%9F%A4%A0%20Start%20My%20Day.shortcut&sz=26786">
-       <img src="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%A4%A0%20Start%20My%20Day/%F0%9F%A4%A0%20Start%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfUBpeVUdVIG6AWfXOeyfL552SSDAWopFQW7pY0XfhYNkgtM5wkmS-mQ%2F%24%7Bf%7D%3Fo%3DAmk_g2ORrVrHB-03qZdUdkA0Gazx9Dh2xCZU3QRxwm1S%26v%3D1%26x%3D3%26a%3DCAogngC4iW6A6bu9hZXQfzOUauK5zljaUa9WAErPRmzevwkSbRCeyL_JmDIYnti6naIyIgEAUgR52SSDWgQmS-mQaib1juph1026gx1SJkGjRnR5njnJ4o00hknvIexncGYUUmGtpZzkynIm7rw6QncO1D6GnjFJ8gN7BTZ6vbSPDfVnqVpU3HTF0cy21fpdwS8%26e%3D1727175502%26fl%3D%26r%3D3C3F16C1-BB5A-4AB2-80DE-AB1D22A998B4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4uZf_xyD1T9YsA9wXMPMQNpu_B8&uk=zf0lIIYOJEUy6ldYk7Xrsg&f=EvergreenList2MarkdownTables.shortcut&sz=31491">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/EvergreenList2MarkdownTables/EvergreenList2MarkdownTables.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%A4%A0%20Start%20My%20Day%20-%20Kernel">🤠 Start My Day - Kernel</a>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/EvergreenList2GoogleSheets">EvergreenList2GoogleSheets</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAas75X_77K4QVS5cl_prV1SvmB5hAemmqLIgWmOf2iHowz_2sAKndEIt%2F%24%7Bf%7D%3Fo%3DAllicw5EYaZtY5i714toyYobLMOu8S6PPsNfAbGfWEsz%26v%3D1%26x%3D3%26a%3DCAogRVrD4K1yct-ySoYvOzQWn1xVh0jm--HuoLpK2a75vsYSbRDA3JyoljIYwOyX_J8yIgEAUgSvmB5hWgSndEItaiZ1k0oh5qizdDBHLqxqKVyfTYo9nQa3TtonXoevAMtCHfqf1CAQAXImFoQ6LT8NC9K_Y_8Vhd3OB4aSSuKU1EA7BduoDKsSwFKRNVzavvI%26e%3D1726568855%26fl%3D%26r%3D2A736ECD-D920-40B0-BBD7-460B8A8FC72D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dv3tATR-HSmrrUU4QnFMKhfw9Z1k&uk=a1t7pFkvGO4dN4LT0eA0gQ&f=%F0%9F%A4%A0%20Start%20My%20Day%20-%20Kernel.shortcut&sz=26665">
-       <img src="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%A4%A0%20Start%20My%20Day%20-%20Kernel/%F0%9F%A4%A0%20Start%20My%20Day%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWNwSzpkyXfDZTZEziLJOGy7pYlbAQ19pd95NLl8fE9ydTW5FxJZDymz%2F%24%7Bf%7D%3Fo%3DAvAfpNe83FpuzcdqQyxNZdNKzFfjEOnSIXNfzgoeO2Fx%26v%3D1%26x%3D3%26a%3DCAogoz6x6_IG8r8u929T179tj7A_XC_M-R8_ao10HFCUZqkSbRDB77_JmDIYwf-6naIyIgEAUgS7pYlbWgRZDymzaiYgSZxP4Ewf1ljRKM8TRUKZy_u_dddUE7hHSiRDw_K7NTMjyAzuHHImrBgiWYa7psb74NhCewMXlCTYhxfHLwRCIPlIcS-PSEHLuYkzsSs%26e%3D1727175507%26fl%3D%26r%3DE82438D9-C633-4632-BAD0-6673F9294B24-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgDWx2dGcoKo2zf7v9yjJlVyM11Q&uk=XW_HWNISjJgh617VjbL1xA&f=EvergreenList2GoogleSheets.shortcut&sz=34306">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/EvergreenList2GoogleSheets/EvergreenList2GoogleSheets.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%98%B4%20End%20My%20Day">😴 End My Day</a>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/Copy%20Watch%20Later%20List%20to%20AReminders">Copy Watch Later List to AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW1jyDuLvk4U4sIjEz-Fra5FvdSkAS30xW06ZbgmazbJrO2_XclU4xWT%2F%24%7Bf%7D%3Fo%3DAiBsiQRE-twMKgFuktubyPQlKOapgFpRAy1gCQiJBbNR%26v%3D1%26x%3D3%26a%3DCAogvI0SJevlpiEpWByvgKdSEFNRBB1S9trhH8hoXW2glrUSbRCT55yoljIYk_eX_J8yIgEAUgRFvdSkWgRU4xWTaiZQEhEnpyxhZKYzv2H1ZhiJyo7DL91iU1SgsIugx42tkZujf-BNmXImVXrNZea5rFa_79ZTccXUGgV8w1kXlZs55MT86Gvg1-aSF3w8V1o%26e%3D1726568856%26fl%3D%26r%3D700654B8-A224-4818-A292-24180931638F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxKyCD7DzN5KoZHegzwaasJWyNjc&uk=CD7hYqJqD6kGrLR0fLejtw&f=%F0%9F%98%B4%20End%20My%20Day.shortcut&sz=26781">
-       <img src="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%98%B4%20End%20My%20Day/%F0%9F%98%B4%20End%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfGNsgynH1r7s8AAEZMaMWTI2J3yAQLL24HaS31a1V-Ktdn2h496Jb5t%2F%24%7Bf%7D%3Fo%3DAhn_8BjAwXDLz0bvmvT-Nk1qM-KxkIowl1YX-KK_nTrr%26v%3D1%26x%3D3%26a%3DCAogNITH0lO0CGim36WSeVeKi7p_1b5SXC60jW3xeHZs-9YSbRDnpsDJmDIY57a7naIyIgEAUgTI2J3yWgR6Jb5taiZbbhIMx3-aoSTwbqkWX294MJZHGgrEtdfYEl4DnQqDa9M3-nO8HnImeVa8Nuknpud2uwsO0ynUBMw6a4qoMnbu6iauOJWvcTWFEKcw_2A%26e%3D1727175514%26fl%3D%26r%3DAE6CAA45-3186-4F1F-82AF-51FD9B65FAB2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_Ng4PbHUZ0xkgDf-ReFAttzjJUI&uk=Tcg7hN9Y6b7yyW_CtBrotA&f=Copy%20Watch%20Later%20List%20to%20AReminders.shortcut&sz=30586">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/Copy%20Watch%20Later%20List%20to%20AReminders/Copy%20Watch%20Later%20List%20to%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%98%B4%20End%20My%20Day%20-%20Kernel">😴 End My Day - Kernel</a>
+       <a href="./All%20Shortcuts/My%20PPS%20%26%20PKMS/Copy%20Reading%20List%20to%20AReminders">Copy Reading List to AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeZcpzGnQc2PePAc3P0IQkIroEGSAYx3DDjrPjo2PC06Mjm1WqGwbBCm%2F%24%7Bf%7D%3Fo%3DAh1KFfbKn_9DHtwHd6a_PIZZjUbWMKPkKtfA4y6vYsw3%26v%3D1%26x%3D3%26a%3DCAogSS8UUh3b3BmsGhVLdiUryyv5HUkZmZL_s9CiWYJC-8ISbRCC8pyoljIYgoKY_J8yIgEAUgQroEGSWgSwbBCmaibB7l3VHpGDAg-wSRjjTmWaFHmsFuXwdK2CXfz-13cOENK4xc4eGXImsInhoNX24jOnXlSRhmJzvYkof4oAJEw0nWSZOe9a17_yMKm-Frk%26e%3D1726568857%26fl%3D%26r%3D9130746C-808D-4576-978B-872BE17D4EFC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCHuGrNt2JUzl3L2L9wLLcdo56CY&uk=WlbYMyIIqTVn7r8rWaQGvg&f=%F0%9F%98%B4%20End%20My%20Day%20-%20Kernel.shortcut&sz=26665">
-       <img src="./All%20Shortcuts/My%20Voice%20Assistant/%F0%9F%98%B4%20End%20My%20Day%20-%20Kernel/%F0%9F%98%B4%20End%20My%20Day%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/My%20Voice%20Assistant/My%20Voice%20Assistant">My Voice Assistant</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQICXmhS4NuK-OlthLh05HAS6sfsATD-tu32k-er1vDtgMXtM2HlSoBR%2F%24%7Bf%7D%3Fo%3DAn9N6xY9fbddB342d1Np3hcpaaqZztwNT2z9jtRtbf5J%26v%3D1%26x%3D3%26a%3DCAogi1VmKGPotwrwcT798Yko24puYUSiJfWjTUDrVOSXXGcSbRDl_JyoljIY5YyY_J8yIgEAUgQS6sfsWgTlSoBRaiby_PQdend6Xk_3AEFZttc_tAst6_pJfwb6zKZiC72oZLRk85Tp-3Im17t7yLCE6_763rOeyRBujl-JgxEK8hasUBWWO67tObqQg_hAoAc%26e%3D1726568859%26fl%3D%26r%3D1DF973DC-4AA4-4A7C-891F-D0B02C7969F0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyDrpIde3HPdsmkxgBg5u10xyGzw&uk=wnhvjaiazr1FnSzZaZM3RA&f=My%20Voice%20Assistant.shortcut&sz=27293">
-       <img src="./All%20Shortcuts/My%20Voice%20Assistant/My%20Voice%20Assistant/My%20Voice%20Assistant.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfroug7jlzSojDSnjg5lMonRo8PEAQM_nsXgQ6omHWlsbs2cflR4X8V-%2F%24%7Bf%7D%3Fo%3DAr1HjWlmMKmU2HtpV8HsoLk45a0J7jtxSgyFamSrQYsQ%26v%3D1%26x%3D3%26a%3DCAogcYH48ueyPtBi-89qSRP622NGRo8cACKJDHONZuAP6-QSbRC4zsDJmDIYuN67naIyIgEAUgTRo8PEWgR4X8V-aibHmUItroIT9uHQUd6ECWP9-i3dUf8Ae-dEmUqNGfpr_4lW00Mav3ImbIMtBegbDpXwJtTKLNPSkQ8fKI_5PB9ehzLDjXW36mMm4BjwjA4%26e%3D1727175520%26fl%3D%26r%3DB864795D-52B7-46CB-A58B-25A3D0844215-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXq-U5XATfUeQ9gt60ZBzU4SomFA&uk=nbZCKOdxc2J_OAyXJ8AUog&f=Copy%20Reading%20List%20to%20AReminders.shortcut&sz=29444">
+       <img src="./All%20Shortcuts/My%20PPS%20%26%20PKMS/Copy%20Reading%20List%20to%20AReminders/Copy%20Reading%20List%20to%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -2949,7 +3054,7 @@
        <summary>
        <a href="./All%20Shortcuts/NASA%20API/%E2%98%84%EF%B8%8F%20Search%20NASA%20Media%20Library">☄️ Search NASA Media Library</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATNJ6Foha7fCHnCZHh2094e4Ml54AeC-URTYrP4z8bBk-hhjzp5ssKN5%2F%24%7Bf%7D%3Fo%3DAomlYpyx9F3wQUXCo8TAebP1V1gemDEX6kaOKK5-54s0%26v%3D1%26x%3D3%26a%3DCAogRDX6j3_0jS3TVKz11OqGiBthKg8i11KERSCAVYbUUWsSbRDGw66oljIYxtOp_J8yIgEAUgS4Ml54WgRssKN5aibb7-0jSLJ-qSuPNHb2hso-U2r13YD8rxPWZuPk9dStWQ2GOr9mrnImnL1G7SsBETMs3SLho5bJ19Fz9fLT0fJ4bruYHfSCHsvUH_Ed4ZA%26e%3D1726569146%26fl%3D%26r%3D3A0847B5-0554-4E88-8749-51DB86C119FA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUOM8vcUKx8JJVL-5vGqAnAtdWGs&uk=Yp84DiXUcD9giYwtwwdK1A&f=%E2%98%84%EF%B8%8F%20Search%20NASA%20Media%20Library.shortcut&sz=28118">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY9DZ9cyvqYDw3NHFmtcoJDypD6gAYccKCRqRW9ITrYrVORwTvZnSIl9%2F%24%7Bf%7D%3Fo%3DAnqAcAAkpkZVnsEoCYTS4varNy7JIcV4HVdUqPXAd-Xs%26v%3D1%26x%3D3%26a%3DCAogx8gDpgr-ZZfaP3BA34sH-C4Cp26TecKk0vUe0ugPemcSbRCk5_jJmDIYpPfznaIyIgEAUgTypD6gWgRnSIl9aibpkiGBfZQFloFBtPidrK4Vr_irw_vIAGaBbOTwn8prAFQgjOsTCXImEUnRR6Kcu5NZyro1SFIGSLB_wPqkGkmLzy2ocF6oTQ68BNEAYgg%26e%3D1727176440%26fl%3D%26r%3DF095B3CF-3C6A-4EE3-AEF0-3CAF893093A9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJOf2Z8rZmlicUQXRhhMVrosZIg8&uk=Q1JbMRoT9octTvotVExWYA&f=%E2%98%84%EF%B8%8F%20Search%20NASA%20Media%20Library.shortcut&sz=28117">
        <img src="./All%20Shortcuts/NASA%20API/%E2%98%84%EF%B8%8F%20Search%20NASA%20Media%20Library/%E2%98%84%EF%B8%8F%20Search%20NASA%20Media%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2958,7 +3063,7 @@
        <summary>
        <a href="./All%20Shortcuts/NASA%20API/%F0%9F%9B%B0%EF%B8%8F%20Get%20Astronomy%20Picture%20of%20the%20Day">🛰️ Get Astronomy Picture of the Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfOvXfNPwXC8_Wfms41qNyq0myrsAXe2LdI1KUrnOH593w1HCUTwfqFw%2F%24%7Bf%7D%3Fo%3DAnqV_lcyQkd9BT_0VPkRRkS889Nk91okjNfqVJJsvDct%26v%3D1%26x%3D3%26a%3DCAoglUHe-2yawlQIWCDoLj9qPzTUC5Z7LlTevohhkVVyocMSbRDtza6oljIY7d2p_J8yIgEAUgS0myrsWgTwfqFwaiZXq1Cyu0gQ8e77wtVktkV6Djo1ERz_mARTY2RHLaFkRj-mCFlWXXIm0uicyR3fCbWRBA1XNg9DmElOOtnxHrQgWwOxfq2dYInZ4cVyB0w%26e%3D1726569148%26fl%3D%26r%3D14A02B3F-81A8-4E35-8A4A-5EC9D15BA37C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmqmJ7ZtuYAjwdJhDm6RBm3pRKB0&uk=Fax6dn97kbnzCiGlA7Ij1Q&f=%F0%9F%9B%B0%EF%B8%8F%20Get%20Astronomy%20Picture%20of%20the%20Day.shortcut&sz=27542">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbipt32v6SymPfyw_WppJ1qTpnmLAQ5vrnSir-5T-3z4eAN7okMnxL6j%2F%24%7Bf%7D%3Fo%3DAvhGRtDVcPICsznJsknOx0iVkTL_EERkTHgX5XDfTq0Q%26v%3D1%26x%3D3%26a%3DCAogpaqpQM4W7tShVh_9Xhw1K4PPc6JzWl8YuVXYR5eyOAUSbRDhifnJmDIY4Zn0naIyIgEAUgSTpnmLWgQnxL6jaibT0BBBmw9G6iitSLoaCqZzh6nM_baL4gX_K8tDw9Yiwxz9IEt8SHImSk10wjRq8XSveLpysAsomOohAtbKHUWU4L2iw-UfJMiWBOXCPVw%26e%3D1727176445%26fl%3D%26r%3D5DE997C3-8529-489F-8AB7-9F95E626A7CF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DH68gM9xBYuGudYkMDmztqTSoha8&uk=3Jz7W6Z4vsuqzVQYy_Pw5A&f=%F0%9F%9B%B0%EF%B8%8F%20Get%20Astronomy%20Picture%20of%20the%20Day.shortcut&sz=27829">
        <img src="./All%20Shortcuts/NASA%20API/%F0%9F%9B%B0%EF%B8%8F%20Get%20Astronomy%20Picture%20of%20the%20Day/%F0%9F%9B%B0%EF%B8%8F%20Get%20Astronomy%20Picture%20of%20the%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2967,7 +3072,7 @@
        <summary>
        <a href="./All%20Shortcuts/NASA%20API/%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo">🪐 Get Mars Rover Photo</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARICcSbSaNeGllrYGxLqNRE_cb5wAWf9CrGbREgAvc5LRpeKImuiFM_P%2F%24%7Bf%7D%3Fo%3DAirOt7fD4Yhs464GYfOlr1n2pEQ3Og2be2jx1RLB8NCG%26v%3D1%26x%3D3%26a%3DCAogx4FyicAamlTssuhQC0nNfiQh6-6hrABykVptvKa-J1QSbRDw166oljIY8Oep_J8yIgEAUgQ_cb5wWgSiFM_PaiZGnzAWLZo6_CbkwEP9VmeadDgxLOoEZm3rJWhP-cyiAvxcT7KhrHIminjvs2Wr3cK2QOe_aGXO_XYDEcIeDbbxL2SR0tjonywW5AN91yo%26e%3D1726569149%26fl%3D%26r%3D90ABADA7-E6B5-44AB-B8E4-F82A45951978-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Du58yXyPjcoWtfWrv6aJ0a5MhyyI&uk=kMcLijMTmvxoMbgC_4m02w&f=%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo.shortcut&sz=27653">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWd2xFgxBDpkrtZeMcqFOYFNpqlsAUlg8nBg1vSW2Z5M7MXEiEkbV8Jm%2F%24%7Bf%7D%3Fo%3DAlYKLNftSuxCCd_Zi6XmLvN1ivwI90L62hQthXr3JJ-f%26v%3D1%26x%3D3%26a%3DCAogM7XKvrudFmFRvW0E5i8IHL1VmQehzSHXfSaeI6pbOP8SbRCQsvnJmDIYkML0naIyIgEAUgRNpqlsWgQbV8JmaibsrToppNw21ZkAsw9Te-58yUoZbt7LF_i3TyK8i01pBUeE0ufL1XImstIedTAf1m4pJ9PypB1Gts9rQqjQhqwCQJGq-1L_CMQu55yHbEg%26e%3D1727176450%26fl%3D%26r%3DFC4622A1-3B29-4711-982F-F1E0CD3FC91D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dl9lEP0ziZN6Y3dZGiFUAC1yUWqA&uk=BGd0dEROHGaOZxtOaGXUIA&f=%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo.shortcut&sz=27652">
        <img src="./All%20Shortcuts/NASA%20API/%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo/%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2976,43 +3081,34 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Notion%20API">Notion API (27)</a>
+        <a href="./All%20Shortcuts/Notion%20API">Notion API (26)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/%E2%9C%8D%EF%B8%8F%20Log%20Daily%20Bullet%20Journal">✍️ Log Daily Bullet Journal</a>
+       <a href="./All%20Shortcuts/Notion%20API/%E2%9C%8D%EF%B8%8F%20Log%20Journal">✍️ Log Journal</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWkuFFRgXh40MY0aR8x77iYyiHTKAfFDrBEB_wYpDlOHgpWHj9GhOb5v%2F%24%7Bf%7D%3Fo%3DArsHHugFm6IzK5AISaH7oqWNJ5XUdDzjCiljOW51Fl7x%26v%3D1%26x%3D3%26a%3DCAogmWMCH4mGbFqTDjLfdB_LBzFzJ-YDDN5z4UEI6y1I4JkSbRCp9KqoljIYqYSm_J8yIgEAUgQyiHTKWgShOb5vaiYIwiiNAeXJMrzyYRlHWVx8Ngb9Ro7VM0amCUJxMpzFQqI_DRAhynImNHlgqz8eOyrrDuZ3Jam0ijJ-1G8out7-H6IMyIVY6Y0hiKyxssU%26e%3D1726569087%26fl%3D%26r%3DD2C6E468-6981-4811-9F1E-6DBD586720E2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2xdhs-LS00mi6DStRW-Ncc0AsqU&uk=gp7oCF8Sc6l3BbenEKZN4A&f=%E2%9C%8D%EF%B8%8F%20Log%20Daily%20Bullet%20Journal.shortcut&sz=32649">
-       <img src="./All%20Shortcuts/Notion%20API/%E2%9C%8D%EF%B8%8F%20Log%20Daily%20Bullet%20Journal/%E2%9C%8D%EF%B8%8F%20Log%20Daily%20Bullet%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARSVv6kXiSKyMc1unlbrMml7HNOWAdlwITWlTQwK3iTGLPLicLskbbwR%2F%24%7Bf%7D%3Fo%3DAsN7zyNem-zHnKDMj-Yo_J2UKF9yEisPEWL5LRs-9OtW%26v%3D1%26x%3D3%26a%3DCAogWXr26amBVfKOtpSxeHBI-EYvreEFtg9gh0tnj_G0OBASbRC23u3JmDIYtu7onaIyIgEAUgR7HNOWWgQkbbwRaib-Nb5LKYr4DZ_j9woZzD_n5fsiNUdv8Jq87p9DtiYi_Xv0BVsP1HImRFOaeqYFP6C15DghMS7Q3Izoidz5o-9j1h4irRA8H6aeuRw4XGA%26e%3D1727176259%26fl%3D%26r%3D96EEBFF5-4B8B-4DAE-998C-2F4AFDBC1222-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMx2ZFm1TLriOP7_1mh6ym6PP3gQ&uk=z8UkSdBu4WsP4ojQ7mzrbw&f=%E2%9C%8D%EF%B8%8F%20Log%20Journal.shortcut&sz=32648">
+       <img src="./All%20Shortcuts/Notion%20API/%E2%9C%8D%EF%B8%8F%20Log%20Journal/%E2%9C%8D%EF%B8%8F%20Log%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/%F0%9F%94%8E%20Search%20Daily%20Bullet%20Journals">🔎 Search Daily Bullet Journals</a>
+       <a href="./All%20Shortcuts/Notion%20API/%F0%9F%94%8E%20Search%20Journals">🔎 Search Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAacTLfZCdY0P6ICUOKisUV-Xbdj3AQ9tXnLFlrJtJzg0fEYcHP0wjID4%2F%24%7Bf%7D%3Fo%3DAjUm9rQRIVsXcM-PHXaVDg5CQQy1rQUPN7PKkJJ-4CkE%26v%3D1%26x%3D3%26a%3DCAogA5APLvtjqlC6qCM0ZAQrWR-0pAUZQ_VDKcdcXcjb8QwSbRDB_6qoljIYwY-m_J8yIgEAUgSXbdj3WgQwjID4aiaqQwwrO5wamoi_TSpDdQoS_gmeKBmKDDdCvMAietJYFnoLXh5gWXImbNvKsxFzByMoorK2DN9r94-niOJ2LkGgxpkI7pdrRmD20uxgjmQ%26e%3D1726569088%26fl%3D%26r%3DC00D2CC8-A803-416E-BFDC-5944103AFD8F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9scobU2sdBRXgyhBsyc6gzOuY5c&uk=ZkMXG7J485SZNX16FkX5FA&f=%F0%9F%94%8E%20Search%20Daily%20Bullet%20Journals.shortcut&sz=27897">
-       <img src="./All%20Shortcuts/Notion%20API/%F0%9F%94%8E%20Search%20Daily%20Bullet%20Journals/%F0%9F%94%8E%20Search%20Daily%20Bullet%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfUx4fa_M25eKu_KWdG-X96DSy_dAeTpaftJxac1m-LMUnM51pon8oNo%2F%24%7Bf%7D%3Fo%3DApCWEe8hhymiYg3ClHyc2VSEjtmZgQ1685qVpUuw1qJb%26v%3D1%26x%3D3%26a%3DCAogQY5Nnb62vMc3-72TwmYRqBu1udcXpy6lPnm40H4RZPQSbRCf-O3JmDIYn4jpnaIyIgEAUgSDSy_dWgQn8oNoaiZI0_w-zDr31TBFcjW5jNT8FSKYY0E-7eOl_8VmndORImiGJlHLnHImc5DpEWM3sgYLlYBmR6pDap1XOAn1MnOZCqToxFk-WiITjglVO1g%26e%3D1727176262%26fl%3D%26r%3DCB6209FF-9BEB-4106-8A76-BBE8FC9CA38B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJdtyhnnqs0iAuNaNUzEBZEGVLOc&uk=zX10nD1pKSryf4CxwuK2Yw&f=%F0%9F%94%8E%20Search%20Journals.shortcut&sz=27897">
+       <img src="./All%20Shortcuts/Notion%20API/%F0%9F%94%8E%20Search%20Journals/%F0%9F%94%8E%20Search%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day">🌻 My Life On This Day</a>
+       <a href="./All%20Shortcuts/Notion%20API/%F0%9F%93%95%20Review%20Journals%20On%20This%20Day">📕 Review Journals On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdawTJt-VdbMoUslGX8Eqzh3-oo9AdDdKfSdi30dHn9txgAZoFS_iXxf%2F%24%7Bf%7D%3Fo%3DAl5gtatYBv9rkk5nwBbQw9dGdyUySby7_qu1vsLsh3so%26v%3D1%26x%3D3%26a%3DCAogEjoDL4IkHrGJr4WddMht6ljykR--CLFff7yXinhQQ1sSbRCqiquoljIYqpqm_J8yIgEAUgR3-oo9WgS_iXxfaibdvXQJbJwM0SMKCpMEMzcqAlVFmNfBA5MQE18kClgXELD3Nww47XIm-uiRMKEFMeiphSxYghe6PCvCunfzTGiIBxs9PtqXnu6AY2wg2Oc%26e%3D1726569090%26fl%3D%26r%3D8D96202C-1546-4CC6-9CE7-2930ABB2A7D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIaW0GtUQ7zOcrQgmzhRMW181PDM&uk=CuRK8-LzLWPOmdQ8QdQzTw&f=%F0%9F%8C%BB%20My%20Life%20On%20This%20Day.shortcut&sz=26798">
-       <img src="./All%20Shortcuts/Notion%20API/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Notion%20API/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel">🌻 My Life On This Day - Kernel</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa7YCWhkbUZVBmGUO8n5obmJvT-rAZouFUv_OsVHmjiSps9Xl7KkACSd%2F%24%7Bf%7D%3Fo%3DAisDBYSqnovB8rRmk6Y3fH3kIuN4Il4tJvK5Qjso13wu%26v%3D1%26x%3D3%26a%3DCAogwTutGnOMEaMEP_5LBKsLxBzccRlfxizadZ6bmFyEK0ISbRD5lKuoljIY-aSm_J8yIgEAUgSJvT-rWgSkACSdaiZfFqRz6WVEeEMiloguUv_SdxaVznC1z-uUWXwZHouhLjKA16y5K3ImvL6lMdP1Dgsjj7MO4z3K4Hue4OFKfkLYd6vIyHcEzg6isq_rea8%26e%3D1726569091%26fl%3D%26r%3DE4874C17-34E0-40B3-B02A-F42052BBD1EA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D97ljx733cP2H_uL3Dg93MhKKb84&uk=nLcJe0eQ9M519Fjgy9CQcA&f=%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel.shortcut&sz=28262">
-       <img src="./All%20Shortcuts/Notion%20API/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATWC5Fk9XljMTRy-v2eHNSesh2qJATT8gMhT-dcppMfnZDuf2TaihL75%2F%24%7Bf%7D%3Fo%3DAg8RHSHZ0qsBjusYRqezkpv_Fmo_W-o-QnkTl0heujZJ%26v%3D1%26x%3D3%26a%3DCAogeWoYro3LFgX1ygEN8Aef_1xx-b3XyHEuf4Q3vYy4msYSbRCLke7JmDIYi6HpnaIyIgEAUgSsh2qJWgSihL75aiZZcrSzT4nnSmlolAYKuA2VvrbhU9Zk2wEEng96lh7Y_oe_8J6hAXImWSu-9SAug1dQmLOq31Hr9Rih77l7ggqGXC5FM5ya4Yznum8oJHQ%26e%3D1727176265%26fl%3D%26r%3D0B6ED749-2ABB-4B3A-85F2-9C91A162365E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DK9JuzpHaRaTRuM2RJwgzd-fxo5s&uk=Zrwvc9AzITIYwq7zPU5SDw&f=%F0%9F%93%95%20Review%20Journals%20On%20This%20Day.shortcut&sz=27701">
+       <img src="./All%20Shortcuts/Notion%20API/%F0%9F%93%95%20Review%20Journals%20On%20This%20Day/%F0%9F%93%95%20Review%20Journals%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3020,35 +3116,35 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/%F0%9F%93%87%20Review%20Last%20Week's%20Journals">📇 Review Last Week's Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe9MadPhr9P744WbMgtIQByz0XbbATan0dSn5YjhDdEGT9efr-lRDzER%2F%24%7Bf%7D%3Fo%3DAgx8Iy7uZ7jz5t9FgXd274-hrAoVfFvMl8SCgdjeGBxn%26v%3D1%26x%3D3%26a%3DCAogC1YfylXub6nFn6KMhJ0tKdcjCGHICvDN4sn4so89bW4SbRDAn6uoljIYwK-m_J8yIgEAUgSz0XbbWgRRDzERaiaGfPDsmIhSYFsnePomyOHNVBJVduZKu_mnKt__BfpU2cUVLdGnLXImzGAVL-tE_puY8USxdyBS_svpOKGlk8IPoJRIxBL2-1KFzKHQpxA%26e%3D1726569093%26fl%3D%26r%3D9D73FD32-9C93-4FD8-9304-C7356305540F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbLcsStWIK7hDaoNkabs1t3s2qH4&uk=Y6Uv0At9uMKFgl4DzSnzhw&f=%F0%9F%93%87%20Review%20Last%20Week%27s%20Journals.shortcut&sz=26781">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQzfEz9zK2f5IBnAzO-WS2yi08UOAaFiZ1XcpmvzcAnvza1GT2vRnLLX%2F%24%7Bf%7D%3Fo%3DAm9WJWI8P3wC5Alu8wHjdcmDu24oEwETiTGBQcgvF66Y%26v%3D1%26x%3D3%26a%3DCAogg8NQuPJcA89CU46vmhH3DS18YkDKNKJdwCtUsqY--q8SbRC0qe7JmDIYtLnpnaIyIgEAUgSi08UOWgTRnLLXaiZDEnAdbrkjLo2ykv9KjpFhHNmOky0KeWFjJUy7WBYRy88DKCqj4HIm9wkgtO_Qxs5uc-J3DcDJaRcqgjxZaSzrSpJwuwU0pQ_2ziQdweA%26e%3D1727176268%26fl%3D%26r%3DBFF0FBFB-8434-47AA-9BD8-13CF3D2F70BC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Ds6eD5YnR7IMSMMXUtncGhD3B_cE&uk=GL6DGLdYpCaBD42O7sEhnQ&f=%F0%9F%93%87%20Review%20Last%20Week%27s%20Journals.shortcut&sz=26672">
        <img src="./All%20Shortcuts/Notion%20API/%F0%9F%93%87%20Review%20Last%20Week's%20Journals/%F0%9F%93%87%20Review%20Last%20Week's%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Query%20Single%20Daily%20Bullet%20Journal%20Item">Query Single Daily Bullet Journal Item</a>
+       <a href="./All%20Shortcuts/Notion%20API/Query%20Single%20Journal%20Item">Query Single Journal Item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAflicS0RVSZh5YUawE6UqKRxuDzFAdaE-G1evnZMBCn8wDwdW7NUlEad%2F%24%7Bf%7D%3Fo%3DArRxEaxpG6MT32ugGmgrq_Wx0TyXkD9QHiE2sDQePdxP%26v%3D1%26x%3D3%26a%3DCAogTBGDAZ04XaOsRP25KnvBQt1kVdu_d4cz3mP7N0scWQoSbRDtqauoljIY7bmm_J8yIgEAUgRxuDzFWgRUlEadaibAULTknTGYXgrH9NijytvvN6RyOiF9azE4MBGMXLuVExAlFGjtSnImy7VUUplU_cr03ykNJ0innQV5_q1W0zIq1xhKgay5JUcn4ybUCo8%26e%3D1726569094%26fl%3D%26r%3D83806D21-F26D-43A7-9FC6-B8D6ABABEDA0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXVnI29fRqOt7NKU7ssutNPuU6lI&uk=toNzXMYLpsJp_oBdFDWt-g&f=Query%20Single%20Daily%20Bullet%20Journal%20Item.shortcut&sz=27598">
-       <img src="./All%20Shortcuts/Notion%20API/Query%20Single%20Daily%20Bullet%20Journal%20Item/Query%20Single%20Daily%20Bullet%20Journal%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa4M737xNGTGyQJ3NB0qUCIkiexvAXzCmU_EnG8HaxQTssCfEBYBL6Ac%2F%24%7Bf%7D%3Fo%3DAriS-MOUSXEZ7Pa-kjdL7rNFEWN5l7qVgV_96KJ1cOSN%26v%3D1%26x%3D3%26a%3DCAogJ4Vdnz9c_NBZc_TcD2GDhLAlfOXTqt78TljHAt69tJ0SbRD5we7JmDIY-dHpnaIyIgEAUgQkiexvWgQBL6AcaibzwV6a3U4MyQBquoZPKRMPgzTJzBJtw846jmzzBW23DAvyTvpc8XImAptWjxaJmLpyE3fbq4yEPs5yNkcLTvshKgThKU-E5u9Gzjs4cII%26e%3D1727176272%26fl%3D%26r%3DCF196D6E-8506-41E6-B21A-F9C9BA21EA09-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOa4VkZxVxY1M3qh-5SmIH3LeVWg&uk=__jAGnw64ZA-AdmgD06qbQ&f=Query%20Single%20Journal%20Item.shortcut&sz=27597">
+       <img src="./All%20Shortcuts/Notion%20API/Query%20Single%20Journal%20Item/Query%20Single%20Journal%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Query%20Month%20Ago%20Daily%20Bullet%20Journal%20Items">Query Month Ago Daily Bullet Journal Items</a>
+       <a href="./All%20Shortcuts/Notion%20API/Query%20Month%20Ago%20Journal%20Items">Query Month Ago Journal Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfmH_JMKvznT61BgHUyhwuUND62FAZzRjnmK8fgzb4WywkW8jZ1OQYO2%2F%24%7Bf%7D%3Fo%3DAkYzYz52Ey_fCVBn4T7M25gbAx0aAwl-ED6t5qTQU-YX%26v%3D1%26x%3D3%26a%3DCAogS0V9U6J5M1wkYoh8zCQHRdJTjoE3lRNB6mbamGTwU08SbRCLtKuoljIYi8Sm_J8yIgEAUgQND62FWgROQYO2aia_OtLeCbvrTReANVIY7OTYsTWJoZceMVFotZqIKwrSdB3ATIWUmXIm8tIepKDuYazuoQwTgveQBV-VbrtnMfElR3oCGT9IsLTc6GmVI0I%26e%3D1726569095%26fl%3D%26r%3D45626AC3-47FD-4C33-8548-B0A985B1BE36-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhUdVZk9xo1k4v0llPF9Vf_0xeSM&uk=2ClcWG35mB6Gc-d2LqYC-w&f=Query%20Month%20Ago%20Daily%20Bullet%20Journal%20Items.shortcut&sz=27800">
-       <img src="./All%20Shortcuts/Notion%20API/Query%20Month%20Ago%20Daily%20Bullet%20Journal%20Items/Query%20Month%20Ago%20Daily%20Bullet%20Journal%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZrORJH1apmpZuIGCBrUIZjamgiXAQws5imhXEOWIg1tkMESeZVlgf74%2F%24%7Bf%7D%3Fo%3DAr3sJ3z7pRbLwCl8e-3fCQsLmBoprx7y-7dWSVjkROvm%26v%3D1%26x%3D3%26a%3DCAogVN8GSyMXDEsYNVUJ3khdQTAdM1Xz4yaGqGlHwqaI0XcSbRCb2u7JmDIYm-rpnaIyIgEAUgTamgiXWgRlgf74aia74RJjv1kya1mU7yM9ViZ3vcCAN5q47I9_wjbuGN9tAI-_kjFpt3Im_lh2XmVLGZYyNLQRg0xqzbUqkeQlNs2fdGOuAybhM-Gby8BQWx8%26e%3D1727176275%26fl%3D%26r%3DD821B903-47E1-4C86-B03D-61D671E718A1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DtFHjVkPnXf2J5LvElGoQV9j80V8&uk=HoQjjlkebxs7YpJp67VliA&f=Query%20Month%20Ago%20Journal%20Items.shortcut&sz=27799">
+       <img src="./All%20Shortcuts/Notion%20API/Query%20Month%20Ago%20Journal%20Items/Query%20Month%20Ago%20Journal%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Query%20All%20Daily%20Bullet%20Journal%20Items">Query All Daily Bullet Journal Items</a>
+       <a href="./All%20Shortcuts/Notion%20API/Query%20All%20Journal%20Items">Query All Journal Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfOl9Oq_ZcsmGf_9pD398-n4GvEdATxLcFpqBkFEJ9zU7QX_gR5HqOzT%2F%24%7Bf%7D%3Fo%3DAixrluzxhVBz_QzGpFRcVlbEhW_ZPIuVWiZ9HIsS-Zv7%26v%3D1%26x%3D3%26a%3DCAogFxi6jm7GVfJtO9qgxzgmIVq_RxM6rZrijFVe0To1vEYSbRCPwKuoljIYj9Cm_J8yIgEAUgT4GvEdWgRHqOzTaiaeJ9qU5D729CFZKpiJGN9dr6sJ0kiEOsKtWmdFyhRh0CpH6YBGUnImfOiFEbR6G9ovKEffTRAokPB9dHFaP9MX6PgJxjmF2zYy1lVZ40I%26e%3D1726569097%26fl%3D%26r%3D831C096E-7BAB-4C63-A19D-0A8E337302BF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_HybG458aFTUe_I9q-GcHIZrLUM&uk=PnFCasF3u-IdbxH1_Vy3rw&f=Query%20All%20Daily%20Bullet%20Journal%20Items.shortcut&sz=28713">
-       <img src="./All%20Shortcuts/Notion%20API/Query%20All%20Daily%20Bullet%20Journal%20Items/Query%20All%20Daily%20Bullet%20Journal%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb4FwGGjbqwiL2uWFAqgwCFCRSGQARJOIwjAZ65T0ndYEjyFiROv7QQW%2F%24%7Bf%7D%3Fo%3DAjRzvJrx1VjgRFIaob-b0mWeTh3mZoVCZMl5634em1uU%26v%3D1%26x%3D3%26a%3DCAog6z3qnyxRViBkBZueaiWhqCIA1IGV78TexVxVITqOKgISbRDs8u7JmDIY7ILqnaIyIgEAUgRCRSGQWgSv7QQWaibuu4PGmzt4j135dPPKacYi5qZvH1eGG4A1YW65Rtz8qVz44BXWgnImU0mNaC8S_FBYY6U_PxY2C-ibZDeCZbCxqA_N7i1O-AAS_stBaSQ%26e%3D1727176278%26fl%3D%26r%3D35103F12-EB28-48E4-8B0E-033FFEE22342-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dnk_dQr3_7WehtQ6tz68HH_e2sC8&uk=fRLrkBZhp5RNAuzSAiN-gA&f=Query%20All%20Journal%20Items.shortcut&sz=28708">
+       <img src="./All%20Shortcuts/Notion%20API/Query%20All%20Journal%20Items/Query%20All%20Journal%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3056,7 +3152,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/Query%20On%20This%20Day%20Journal(s)">Query On This Day Journal(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVaBpIhYl9-x8ff8qlL5iHUkrJ6ZAfzD6CJI5R9JR0O1stgePWgYPbR0%2F%24%7Bf%7D%3Fo%3DAlYf7yHtgFHqxi_N-ZT7y7Tq1i14-WXYZdiUal3AVEfe%26v%3D1%26x%3D3%26a%3DCAogSHZQLROQgOLT5ODHGBHz9vkR5n_t6HEx7btAArrBeY8SbRDKyquoljIYytqm_J8yIgEAUgQkrJ6ZWgQYPbR0aiacSVzyfDe3DqEfXaj8trdpgtEMdeGHlkPLsct19KbD4mA6lk4gGXIm0rBA2EGJ9aStCBSliF-I0NAUL6lmyPYoghVg-qZUg-fE4367uhQ%26e%3D1726569098%26fl%3D%26r%3D22EF7D8D-D374-4649-A74D-C6E0EF19941B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXXmMrmNOFx5Js-IyHKUMcswkdjM&uk=gAJKrLYOQY3DXHErwyKPbw&f=Query%20On%20This%20Day%20Journal%28s%29.shortcut&sz=28481">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY6ngh38AXl5rVKWdSEntpYQv9MTAUdtjXaPVNC3cu2sixISaftxwdTb%2F%24%7Bf%7D%3Fo%3DAsSflsPlJd2uyM0XFe2AiSts4rRFjmoHTSjfCVHeD8oF%26v%3D1%26x%3D3%26a%3DCAog_0QprPZy2i_cYSoU4W0__KraCe5mkdVSj4zDRBl18MkSbRDKi-_JmDIYypvqnaIyIgEAUgQQv9MTWgRxwdTbaibMqY243h1-lJ3fFH1xoIyabjXQVNcXtLort7nDhMmtEyLjrfn_jXIms8x3LrGNLiM4SpEjioqDW73WOO53VFmO6LNQ_U6aecD0YzuBQYI%26e%3D1727176281%26fl%3D%26r%3D97813C1F-CFE0-47BC-A772-F8CE13D6F343-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dg3YOwVFSWOy1aM7pSd1UDA1Q2Ro&uk=qT6YMNDQ7zyQ3lAjRhni1A&f=Query%20On%20This%20Day%20Journal%28s%29.shortcut&sz=28479">
        <img src="./All%20Shortcuts/Notion%20API/Query%20On%20This%20Day%20Journal(s)/Query%20On%20This%20Day%20Journal(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3065,7 +3161,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/Query%20This%20Week's%20Journals">Query This Week's Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdxTy07tRRoLOJWorC6cTjfRbTWDAaQG-zs5jH-lrJLm1LV2EHu_hygJ%2F%24%7Bf%7D%3Fo%3DAnBEpTCrorgVCK9XumKL7C4JK8EHVulHC-Snc4iMi1qI%26v%3D1%26x%3D3%26a%3DCAogWTPQe1DAibZY0PprQrWSvEQTsza1mNZPAVZJXGT0sEMSbRCd1auoljIYneWm_J8yIgEAUgTRbTWDWgS_hygJaiYt_HokW80yrQg_MlQDjlyW2tENV6kkGKvH2NI5-AOrL5sgER0s03Im2VLqqCj3DZHhozllzkX38y7okJSxPypBv8S10Wds_3NqnkeM1zk%26e%3D1726569099%26fl%3D%26r%3DC932CFAD-E545-4C5E-BC30-7211A4703C4A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYttSdYqX3cra7Q4wE-nkb1irlJw&uk=Boi0J0kFQ6GkilQ3JpqNoQ&f=Query%20This%20Week%27s%20Journals.shortcut&sz=27195">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfdam1QrQ8_m2tS3qQIb83iWECk7AR5sTDBq7Knbt7EEASEi1DmJHEXr%2F%24%7Bf%7D%3Fo%3DAkIXNNc4WErefQsHc0UDjEqbY2oo3IHhvOUvNnN2tSF2%26v%3D1%26x%3D3%26a%3DCAogW-tOpLzz4w0gHLcYITH5R-rEtE8iqM6sZA-ewcjpb1MSbRCso-_JmDIYrLPqnaIyIgEAUgSWECk7WgSJHEXraiaJNVJYqZiCeyDkhrxg7CnAykWMxcUUpse_qA95CD1mkmKlVbx79nImXbbbSspIZxb8fz6iyjGQYWnrzsA56wLpFOfOlcomnryLrdMkg9A%26e%3D1727176284%26fl%3D%26r%3DAEEC0088-631A-4B7D-A2FE-CC5E5B0CE30A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3vS7MAyzzg9jjk72sW-ryzEoq-o&uk=tv8rovzdPedVAhDp1q0gHA&f=Query%20This%20Week%27s%20Journals.shortcut&sz=27194">
        <img src="./All%20Shortcuts/Notion%20API/Query%20This%20Week's%20Journals/Query%20This%20Week's%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3074,7 +3170,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/Query%20Last%20Week's%20Journals">Query Last Week's Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXhIfyOh9L47nJlXx9bcVmYacrGAAQmr4RJnVkHYx2w4manMrur5ddAx%2F%24%7Bf%7D%3Fo%3DAoZ2QSqg9iTBgAooZ-FMyosyodB4A5aQQGDdirnDcwtU%26v%3D1%26x%3D3%26a%3DCAog8hCPhI3z1inqA9zp5VO0LWCwvH98_rFw_RbVi2H-ukESbRDl36uoljIY5e-m_J8yIgEAUgQacrGAWgT5ddAxaibmTh0eavMwRyTi-lPJZ1NGekTKfiBHJ9ZK0TYHsPkLcuvHEaXYR3Imz0-3honMNFmwh5JofLDBuNxu7fv5VhHA49I6d8qBdKuNMMIwiXA%26e%3D1726569101%26fl%3D%26r%3D3C80B252-C7DB-497D-BA7D-C84479BB29C3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9TF7stgY27RG8-4eFQPuz9W1yBM&uk=LILXEt_I0pEj1JYblSl7Fg&f=Query%20Last%20Week%27s%20Journals.shortcut&sz=27196">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfbnOuD55UFjW0U9j034yM-kiHtzAQEtxla41UC-nuwXZAFuHLetBl9m%2F%24%7Bf%7D%3Fo%3DAmDEKAjgr_jSS51evtpjhjTRiEHOWQgWSr688_iALzor%26v%3D1%26x%3D3%26a%3DCAogy8KDb10U7Q3mpPKXXStAK7wz7Ahfp9cr8GnHv0WPY6wSbRCju-_JmDIYo8vqnaIyIgEAUgSkiHtzWgStBl9maiZfcy16dtO6mp0wbn3vfKZRHwUvZCw3h7Js8c_46M6ldxJhav39onImtkD88MvXnXgODme7dlXOuiTy95aiJkbV9CZ-dCexQOMev_Z8I-w%26e%3D1727176287%26fl%3D%26r%3D8B271B1E-02EA-4876-AFEB-E325F65D0CFC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNLcjoAv5iWTTOpp83Sx7saAX534&uk=wLuxRjI3Pl8J7KitVgC_4Q&f=Query%20Last%20Week%27s%20Journals.shortcut&sz=27195">
        <img src="./All%20Shortcuts/Notion%20API/Query%20Last%20Week's%20Journals/Query%20Last%20Week's%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3083,26 +3179,26 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/Query%20Last%207%20Days%20Journals">Query Last 7 Days Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATNYuh7oIBG2Ze_Zuy6-eCIq0okoAUYxTinbG1WoGnqXvOFLaa7-3BQn%2F%24%7Bf%7D%3Fo%3DArtN35Ra3AMoJpvx91FPGGW7T1kDdiZERMHzKJf2SBvH%26v%3D1%26x%3D3%26a%3DCAogb0QXQQaLZ1uUfIFOqCaHVVeag0nW82MT0YpnYShFkucSbRDW6quoljIY1vqm_J8yIgEAUgQq0okoWgT-3BQnaiYnue6PgPJuJF2Q-Q_CSyJS_eCOLKUN1Pvppiu_6I7GfaLGKFPK7nImzG_pR8iQeVt-RDGIHpHAGMhmlUfmQsIvlQNlhJZgit3Xu5sIgVo%26e%3D1726569102%26fl%3D%26r%3D321EC9BC-DE94-4068-A3C8-5AF3ED05722D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzyyJ9COIVskddnYwLz3H-5Ew0FE&uk=fesYdpWNBsREmhNHr6XDNA&f=Query%20Last%207%20Days%20Journals.shortcut&sz=27661">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf6OcmoZtyy4mrGyox0-NhpFy-S5Abr79OO_FfRr2XHX9sLcOgE-b5cD%2F%24%7Bf%7D%3Fo%3DAgGtqHmFu3iMhHRuDghqA31CiqO5RxapHAQIOfmFCIf8%26v%3D1%26x%3D3%26a%3DCAogQc9545Tfaj6aLz42xDQIgTx_--h4t3EmrZ4UdSJfDA4SbRCd0-_JmDIYnePqnaIyIgEAUgRFy-S5WgQ-b5cDaiaRqnX3L-voRmhFBkTo_GEZXQkAkmVnYX3wyDgQsSnEGznOxzNTZnImcZJbq39DfJQ4cpYBJsO1tMpWMOXLft3cOnhXThJSQC66RnsTurA%26e%3D1727176290%26fl%3D%26r%3D1F8C5D2D-B749-4607-B873-BD1ED4864DA4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Di8k0bJAYgR1mY1kc7NjyljjaFEg&uk=jnpI1ebYBiuvQokH_F48sg&f=Query%20Last%207%20Days%20Journals.shortcut&sz=27660">
        <img src="./All%20Shortcuts/Notion%20API/Query%20Last%207%20Days%20Journals/Query%20Last%207%20Days%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Create%20Daily%20Bullet%20Journal%20Item">Create Daily Bullet Journal Item</a>
+       <a href="./All%20Shortcuts/Notion%20API/Create%20Journal%20Item">Create Journal Item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASSx9khlKJRULr8hS5K9k0fuxYbUATQhb8OYf2664op-Eoup8KRO6Iuj%2F%24%7Bf%7D%3Fo%3DAuACHk29DAgN2-4ttdl2GjS4S6wjNNt-SUffcoWjv0A5%26v%3D1%26x%3D3%26a%3DCAogT4h1XkDIYEqWdfq5N4TWo_eJCDn7wExfE3byy5ZDgHgSbRDv9KuoljIY74Sn_J8yIgEAUgTuxYbUWgRO6Iujaia-pkJCYtOV9TyxS-wHP1QbNzsf818TDFK59x_eAm-lGYsqsw4hXXImmJSatGsJB5P_vIZnbh5rMK1_XPP10ezZaoZSbfatvhpyYWwKTRc%26e%3D1726569103%26fl%3D%26r%3DD3861A4A-3CDE-41EF-AF66-0D01B8710B25-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxkEwmPboAmuD1sIWcKqf5rU0Lts&uk=PHceBRn1lpGdI2rrew02xg&f=Create%20Daily%20Bullet%20Journal%20Item.shortcut&sz=28314">
-       <img src="./All%20Shortcuts/Notion%20API/Create%20Daily%20Bullet%20Journal%20Item/Create%20Daily%20Bullet%20Journal%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUJiM3FINNA14gb_rGy27J54m0yRATLZOmcO21rLeFKs6daW9gzLZv2q%2F%24%7Bf%7D%3Fo%3DAnDflk21xqCcMuQw5r1dWkxFA8q5HaJXIiPcBFhJW-qw%26v%3D1%26x%3D3%26a%3DCAogV-ldUmYm1JmVKGtoyyW-X0vTKqMpsbTl-k3Rp_QqzhcSbRCb6-_JmDIYm_vqnaIyIgEAUgR4m0yRWgTLZv2qaiZtiPMDhfwYuw1s6mEAoYl5RtszziyFuvFzNHMdSCWU-NepgCFMqnImMd4sAdwa16vsIpcm1bNoAAs_FKiykxMFGeubymZVYUrEBNkmEA0%26e%3D1727176293%26fl%3D%26r%3D5A11567B-2891-431B-B776-7E8D66C0F163-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwnmxmTYc5sSqsczWT4ME16iTl4U&uk=yCBv50z43NV48G8WnJQmxw&f=Create%20Journal%20Item.shortcut&sz=28491">
+       <img src="./All%20Shortcuts/Notion%20API/Create%20Journal%20Item/Create%20Journal%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Open%20Daily%20Bullet%20Journal">Open Daily Bullet Journal</a>
+       <a href="./All%20Shortcuts/Notion%20API/Open%20Journal%20Item">Open Journal Item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdF8W-5z_lk6ICFDDLOlYL1N0uNRARfxH4HU47pdf2diQQh2LeCF8jgK%2F%24%7Bf%7D%3Fo%3DAq6qYKAELSSLNQVQcfdStRjayKuTPo2CK6gDsqUAJh9W%26v%3D1%26x%3D3%26a%3DCAoguHmvxKzcN8KOPJhnLflF9B_-8AN_Ll_bztWgTQHLIgcSbRCP_6uoljIYj4-n_J8yIgEAUgRN0uNRWgSF8jgKaibIu80GTL1irtULyR25qPD_Pg3znsREQ5Kca0r8cLcnabBczqOg4nImf-QV3pj9qSYB3nWyJ1ZpaVVUsXUMXC6tbhAYZyFDKd6gWdWmHcU%26e%3D1726569105%26fl%3D%26r%3D711AB354-074C-43BC-A6D3-6E66BCFEB8D7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyzDWb6E4apB3DYLrTcShz1zKZG4&uk=uu7YWxvMoWWELv8WY_Ie4Q&f=Open%20Daily%20Bullet%20Journal.shortcut&sz=27100">
-       <img src="./All%20Shortcuts/Notion%20API/Open%20Daily%20Bullet%20Journal/Open%20Daily%20Bullet%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVsGcGXIsaz2nomJguDlyWO5N1ZLAS6VUsFZZKXgZdbwjTwK4fARTRUA%2F%24%7Bf%7D%3Fo%3DAv1Dt9PI5uBPFCySB3oXCHTBlDKDl8JIOhGYr1KlEobb%26v%3D1%26x%3D3%26a%3DCAogqGTtFf5PIrZvzCpkuppZye4GdJcFRkaR2mrzs2xLFY4SbRDtgfDJmDIY7ZHrnaIyIgEAUgS5N1ZLWgQRTRUAaiYQIMDtN6tzSmg9cixVyEZsSoFhxsrevC6WoPDS26Oufe7eiTFTL3ImZ7kzPs4Mdi9q2JU-ZZEhVj7ZJ2xVL5Q5yj4t6df7qQ3ZbIw2MaQ%26e%3D1727176296%26fl%3D%26r%3D983E517F-2482-4A0F-A6B4-DB17CBF31641-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAnJ6omvZVCOe5yRL96Nj-HGJt2I&uk=DTFCo6rmwlo8OGjxCTlpDw&f=Open%20Journal%20Item.shortcut&sz=27099">
+       <img src="./All%20Shortcuts/Notion%20API/Open%20Journal%20Item/Open%20Journal%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3110,53 +3206,53 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/View%20All%20Journals">View All Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZL0V9-3ciEFtyvb2ywKlufDm1CfAVj7KZbGtbBLRuio-Ph703Px9bbd%2F%24%7Bf%7D%3Fo%3DAmNmVg3zx4OBaf0sxWeS7BY1iqosG3Fc_1dc57esRS6D%26v%3D1%26x%3D3%26a%3DCAogcj9t_N2ujrXueqWMrjE829V7uXa3-MOEeA3V_vsuqNgSbRC5iayoljIYuZmn_J8yIgEAUgTDm1CfWgTx9bbdaiZ2hurGhmG6An3vu0gLTeiF3C9Ibg1NduP3atTATxidA4QaaysC2HImDbBUQb2hzhEsm2nZVf1z6RRxfVYF_wNYDZz9wo0Oj_1L9gZTqK8%26e%3D1726569106%26fl%3D%26r%3D783E2D23-7293-494D-A6DF-A70B787C3EF1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DB8f6RYVZ3JAcQL6uHft8jhuLT_s&uk=xdrJh6v4pVK7_PZsk-oMLw&f=View%20All%20Journals.shortcut&sz=26377">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZBHRSJyjUqtip5SLL2hPyBd97VJAe9pT69kB77dpH4MwJRB55CEpsT7%2F%24%7Bf%7D%3Fo%3DAlt6X9bGAuYuwyl4BmR8AAjB-TlgtpY-BE3elXVyK5e9%26v%3D1%26x%3D3%26a%3DCAogdIoYbtAYvbJglE3AVjRhrdBTo1ptDhAj-oTm7gV_DlESbRCVmPDJmDIYlajrnaIyIgEAUgRd97VJWgSEpsT7aibrkRho_XmPxHNejE8_z1ob6UhqjXp99wtOt3FHDFFBMoYAEotm9XImp1y-9CgSlpvaL6-JUJIQTW4U6oYIDxRWQhIRM1uEI-Rg1HGs7do%26e%3D1727176299%26fl%3D%26r%3D605ABE28-DB4F-4F67-A5BC-FFB844895EFC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3De8c_nEOQBrIxacRmde6OY_TpWLU&uk=yjVglSRdlsgEPKrJN3TlSQ&f=View%20All%20Journals.shortcut&sz=26376">
        <img src="./All%20Shortcuts/Notion%20API/View%20All%20Journals/View%20All%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Sanity%20Check%20Daily%20Bullet%20Journals">Sanity Check Daily Bullet Journals</a>
+       <a href="./All%20Shortcuts/Notion%20API/Sanity%20Check%20Journals">Sanity Check Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASEimp1__bVnVoAsAu6AUgbMOBGYAUzUffUTTub3P4nIn7lJeyFJX2CY%2F%24%7Bf%7D%3Fo%3DAoDXa8UXFTdMw2bbsC2iSg8OxRwucffzXIShIK9m6s1W%26v%3D1%26x%3D3%26a%3DCAogzkvhVrmDhm0tex4_DG5wQsYUzqqUOJedDLWe_0IKKTASbRCklKyoljIYpKSn_J8yIgEAUgTMOBGYWgRJX2CYaiaGKd3AS3qw-nMfJRI25x9U9BjVuyR2HtaPE5DhFXmT7wtvT4gEBXImPROiBkps8ePEQZEwQk5iUwNsM5QbbehwZp6_gEzQvFBIe6Tm0LU%26e%3D1726569108%26fl%3D%26r%3D8A517E34-F835-4988-8309-4E7DFAA6EF4F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DK-8ImUt6p2zoh4af2yQrLp7Mr9s&uk=Nf5sVyfKYVhDotdEuKlX1Q&f=Sanity%20Check%20Daily%20Bullet%20Journals.shortcut&sz=29077">
-       <img src="./All%20Shortcuts/Notion%20API/Sanity%20Check%20Daily%20Bullet%20Journals/Sanity%20Check%20Daily%20Bullet%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfbuSngefnB1QrkAnbfYQf7R3RfFAWutdK0wxk6vyG2o8Z4reH9azDHb%2F%24%7Bf%7D%3Fo%3DArnVuLqdBq4s12BZKAWXC2YG_DpwaJysoPw8IHftHzcD%26v%3D1%26x%3D3%26a%3DCAoge900uzeKqyLQIxTi0zsHvIXIkxv-5Vdn-VWmCgTjkJ8SbRDsrvDJmDIY7L7rnaIyIgEAUgTR3RfFWgRazDHbaiaWV83d1q-P_nEiemIOXg7s3DoaubVlbMzgNfE3jAvevpzAFTbeFXIm8t8VDFa5maKA2JqdWDKn7wHIbByiCeIzfjyK0uo6a8crCxuksq8%26e%3D1727176302%26fl%3D%26r%3D87E7A526-624E-4368-95F5-2F723EC2C923-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9pgONY7IZXruHl23uJMNov3O9Tw&uk=kulVn9mDDl-T1s5Lb6wNSg&f=Sanity%20Check%20Journals.shortcut&sz=29073">
+       <img src="./All%20Shortcuts/Notion%20API/Sanity%20Check%20Journals/Sanity%20Check%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Backup%20Daily%20Bullet%20Journals">Backup Daily Bullet Journals</a>
+       <a href="./All%20Shortcuts/Notion%20API/Backup%20Journals">Backup Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVD55kjAKI3tLrc_4MQ1x9D5IGdeAZ4ADMqjWmip4JpaSTHpNjTCw_Kh%2F%24%7Bf%7D%3Fo%3DAv_56f4cTZCJkVSJ658KBfl5u7W4lHO_SG0fUw9Hwk6B%26v%3D1%26x%3D3%26a%3DCAogz6ulflSpJBwTlah-082yRWgqnhmJXzyC1bIKVz5yx60SbRDJnqyoljIYya6n_J8yIgEAUgT5IGdeWgTCw_KhaiZUVdmVWyV1SGcuLSUtvRNMNWEep28Xe5yUHYm0IZarqYPQWcyY_HImjaI11KU_IGrkgF7PMYW9zv3ze39Q7kjqpx3GluMvkZx-cyDIPEY%26e%3D1726569109%26fl%3D%26r%3D000E794D-1B78-4280-9A43-E009FF2B698C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhGMZYjnXB7Bi9JfyMTyyy7wSwRY&uk=pmGlQS-cDGDQiFFStY_1_Q&f=Backup%20Daily%20Bullet%20Journals.shortcut&sz=30750">
-       <img src="./All%20Shortcuts/Notion%20API/Backup%20Daily%20Bullet%20Journals/Backup%20Daily%20Bullet%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeXRhEER-iYYHEtjLtUNzsm3JPgSAZAboYNLMqJjISnuueic8HftZTyw%2F%24%7Bf%7D%3Fo%3DAsELDhbAGQb0h14Ei_lm8KXkHKzZnruZDP54SDz6J35G%26v%3D1%26x%3D3%26a%3DCAogFFA_SQcJNLVRBjdFLxSGwlQidCySyiPzFEVDEN5rfmMSbRCDx_DJmDIYg9frnaIyIgEAUgS3JPgSWgTtZTywaibCLPFboDkAhQ56E90E3DGh2KTBkNDQMrA7DQgHqydv36ef0f15xXImAuUmqQRy9Djtzj9e_oATswP9Pc-HekZJM9VJUrR5TiiX43wIGuc%26e%3D1727176305%26fl%3D%26r%3D69D6B2C4-DF0F-4D62-973F-6C592553F1F2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpQOnO0EgNS2EMYGK_KFNKEz2c7c&uk=uqmc0qKQBc90SS4gB-8qcA&f=Backup%20Journals.shortcut&sz=30747">
+       <img src="./All%20Shortcuts/Notion%20API/Backup%20Journals/Backup%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Trash%20Daily%20Bullet%20Journals">Trash Daily Bullet Journals</a>
+       <a href="./All%20Shortcuts/Notion%20API/Trash%20Journals">Trash Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATlP5DempAQeoLLvV5mCxsg8eVEbAWUFxvnpcBzQha9l4nOSX1ixMXBk%2F%24%7Bf%7D%3Fo%3DAvVaWAFxy_4v1NEnLXcZKrhl1FOVoVIYk10jxKTsR4Hq%26v%3D1%26x%3D3%26a%3DCAogXBb9QAOpWluvlcjf_qpIKvfX7wWtfSJCSrIZBCjME1wSbRCxqayoljIYsbmn_J8yIgEAUgQ8eVEbWgSxMXBkaiaCSZJx0OK4N-32JAqy-Yn_hcISJfDuQ3CTOu2NAyaiYeDlRhyzi3Im8LCKnuH6uBEauKTelpHC7-yDMX5eidQX9vGRINZUy722Kw-ZQ4Q%26e%3D1726569110%26fl%3D%26r%3DFFB8CE45-33E6-40DC-AB02-2E902B7585E5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUmCtZin9EdZtKuI_rmXBpkbp9eY&uk=K9s0ZOK4oNV64QRU8wdI8A&f=Trash%20Daily%20Bullet%20Journals.shortcut&sz=27075">
-       <img src="./All%20Shortcuts/Notion%20API/Trash%20Daily%20Bullet%20Journals/Trash%20Daily%20Bullet%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfi0Qe2qbCoZ244HhUyo09jpxa37AbtS9PoQPm0-mWS2RcIw9Ph1eF29%2F%24%7Bf%7D%3Fo%3DAg4JemP_7dsEYJXm404rsipOSFHDxGYz2T9LMaQmjv4A%26v%3D1%26x%3D3%26a%3DCAogIxXrATwt-WyS1oSjkSJ55gQvdtt4XDbXy1aDbnZKuiISbRDT3fDJmDIY0-3rnaIyIgEAUgTpxa37WgR1eF29aiYXqy6ZXEUrbB6bIePAyPATLKlIIwfV62DDOP-7-fM_vQ6kV7Hkt3ImBLCSzd-H6_e4_7RNoCi0s4nXoYdfc-GuTSm-zlpjDcIBSLw9WBg%26e%3D1727176308%26fl%3D%26r%3DBBB60940-12B7-47B3-981F-6EB008E9EB44-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvHFj-Xm_RPcvSY3A-e5rd_fznr0&uk=p7pEiZFnw8eDRzUuwUpFIg&f=Trash%20Journals.shortcut&sz=27074">
+       <img src="./All%20Shortcuts/Notion%20API/Trash%20Journals/Trash%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/Search%20and%20Open%20Daily%20Bullet%20Journals">Search and Open Daily Bullet Journals</a>
+       <a href="./All%20Shortcuts/Notion%20API/Search%20and%20Open%20Journals">Search and Open Journals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVjk65P0wkrJhzZwBazP45TR9MadAcUN8FTQFrR162DrUVR8LcLi3gmS%2F%24%7Bf%7D%3Fo%3DAh1fkn9Z25XG6vvxIDCYmkJ14qhH3uir6tnw_cdp_gG3%26v%3D1%26x%3D3%26a%3DCAogjqFGMu6zKnT2cK9vQ_8M0GVQ6mY1oj6WXG1otyV2mekSbRC-s6yoljIYvsOn_J8yIgEAUgTR9MadWgTi3gmSaiZNkUyB3xDMgJXhFm7roSsD993PJap9DZbQDwKQg_2lAob_Fhr963ImNOaKj61jSGJzilods95yQypmj95VYkrMQnXX6yZNuJrs15pKkHk%26e%3D1726569111%26fl%3D%26r%3D964AAC6D-B691-4019-9A4B-06947C65DDEF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DWTcc-fgbzc3cEdcimS2l1HhAa5k&uk=XtcavbqA2zWDQmSMYlLJZQ&f=Search%20and%20Open%20Daily%20Bullet%20Journals.shortcut&sz=28994">
-       <img src="./All%20Shortcuts/Notion%20API/Search%20and%20Open%20Daily%20Bullet%20Journals/Search%20and%20Open%20Daily%20Bullet%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVqq5ABywAnnFKNPsaUxDEeEhfL2AWR42jHi9n7qRVIWSPNng-LGzSSc%2F%24%7Bf%7D%3Fo%3DAvT0E0mprzJ6EtSOrcP66VuXr30gCO7ufhlrvgzIaRQT%26v%3D1%26x%3D3%26a%3DCAogVnd0CT0gerikobHWASnIE9ScLkKrZPi6c0_JM-gc92YSbRCY9PDJmDIYmITsnaIyIgEAUgSEhfL2WgTGzSScaiaQUUEF2F0EuJYlS0nMGWRdAJkshTyKiBzgaaTx6VH52jrFaRa963Im_wQyAuj-8tjBWidd-4yHvf_rNCNNr-8yFgbIzQwl1vbQJMamjoc%26e%3D1727176311%26fl%3D%26r%3DD4092794-50EC-46A1-A1AC-26F8C2FF8310-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dt3ceubSDCwKa4T7bwlryWhWnqAo&uk=ZbhW5du1xwpQ8Qdd_JFZdA&f=Search%20and%20Open%20Journals.shortcut&sz=28989">
+       <img src="./All%20Shortcuts/Notion%20API/Search%20and%20Open%20Journals/Search%20and%20Open%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Notion%20API/(Batch)%20Open%20Daily%20Bullet%20Journal%20Item(s)">(Batch) Open Daily Bullet Journal Item(s)</a>
+       <a href="./All%20Shortcuts/Notion%20API/(Batch)%20Open%20Journal%20Item(s)">(Batch) Open Journal Item(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARVqOHVZRQ1dtbBzuyZahOf9xSH3ASTuSe6fl7VWuAG60m77ksI-j6B_%2F%24%7Bf%7D%3Fo%3DAszoTFl4Ej10l6KhW3YF1w6EtIcSjYSZr8DIR4GtjbQ0%26v%3D1%26x%3D3%26a%3DCAogTgNY5bsCluZZBmWcse8soNjUKLkxjYI1-i1LDhh3fqESbRD5vayoljIY-c2n_J8yIgEAUgT9xSH3WgQ-j6B_aib4UowPOK7h1DJOBEKoHDFin-dFE0jXIM6dErFxi46mpkRiGoKUCXImPXKZdE84F7eilfd4GHPhfvo-wDYKvbdmOJW7wSmNzxFCgc2fAqQ%26e%3D1726569113%26fl%3D%26r%3D7D047805-E031-4C46-AD89-24C0D5AF8AF3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeOFi0Q1SraJmd2zjoNWEuwWbOyI&uk=ZTSu257redjld9nGWXgYjg&f=%28Batch%29%20Open%20Daily%20Bullet%20Journal%20Item%28s%29.shortcut&sz=27634">
-       <img src="./All%20Shortcuts/Notion%20API/(Batch)%20Open%20Daily%20Bullet%20Journal%20Item(s)/(Batch)%20Open%20Daily%20Bullet%20Journal%20Item(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAclXosRWaLb7GK2TUs-0MHZN8quqAWMJn5hv6a73nfHE6f8YYxwPqdd-%2F%24%7Bf%7D%3Fo%3DAnfX1ZD-9Zd3moEchPz0xjJSOes1hVCEfwfq1NHUGM6V%26v%3D1%26x%3D3%26a%3DCAogjpkCnSob8hdB4tGzzKn10wfYAqUz3hn9kaG5k_2cQHkSbRCNjPHJmDIYjZzsnaIyIgEAUgRN8quqWgQPqdd-aiZYg64OZHVwVi5V0tR0BMGSeX30Rrh-vOehX9ZgqNdI95C5rG8MW3ImcIz-y5iNsytseO0fjl_znhDkVpMFH66oDnB4ZUJgmWJ0osyovWE%26e%3D1727176314%26fl%3D%26r%3D6994BAF0-113F-44EE-808C-5BA70B52D190-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZeiIQvoLliT2ZU_kMLeBdNL_94s&uk=LvqtBQAvIZO3LQFhB7UShg&f=%28Batch%29%20Open%20Journal%20Item%28s%29.shortcut&sz=27633">
+       <img src="./All%20Shortcuts/Notion%20API/(Batch)%20Open%20Journal%20Item(s)/(Batch)%20Open%20Journal%20Item(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3164,7 +3260,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Send%20POST%20request%20for%20query">_Send POST request for query</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZpcs0h9M3XXCJxTZNWGVZbDjBFOATIaKDHgJpizjAJEFt4G2q4HBRnB%2F%24%7Bf%7D%3Fo%3DAidQUS65qpE7nXbMgF-D7mIqBYTln9lFKL3sHJaSVS_n%26v%3D1%26x%3D3%26a%3DCAogl1kMp9PSmhtS6ryJ2Ugzuj8PXc6OHm7x0sGrRp7fnBYSbRCiyKyoljIYotin_J8yIgEAUgTDjBFOWgQHBRnBaibLusAHcY9yS2sbdiuBtqwg4W_GYhws-F0IFs6pcaXpVrGdydwKOXImLdRAaWIKz7pVX_Rig7eIullIhUUMCIf9gk_VRIRYna874smaYV0%26e%3D1726569114%26fl%3D%26r%3D52A07F5E-3BD2-48CB-B4A4-B855D8848C96-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkgWm-2VNA2HA-5RVPNwkPeQG7H4&uk=Op1hNTtV8SHSZzk_cDXfBA&f=_Send%20POST%20request%20for%20query.shortcut&sz=27431">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXmIyB_Ak9jQnqEowmUjIF5tsPHBAcfbnQaW-hUbYe2noPsmcwQCw9Ax%2F%24%7Bf%7D%3Fo%3DAogSt8KIwvJvQF1Z2xcHR8s6Y_YMOgB_Q1WjI0OklavS%26v%3D1%26x%3D3%26a%3DCAoglK8thIiXsoPXVZBdQDzZ3IOX8QgJWjz6IbODT7YBj0ESbRDko_HJmDIY5LPsnaIyIgEAUgRtsPHBWgQCw9AxaiY-SMZFn_lriaNluh0ddSIbD1Qv00veHf7lkCWgzuaxMYAe6tYk6HImbrkWxUxv7PHz4tZwGIeVK7gWKFXF4yEjYuIXphbU3E63K8HG51Y%26e%3D1727176317%26fl%3D%26r%3DF30A0C77-31CE-4704-9020-A69BE8CE7A34-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dv9aWP2_xTIjlsvMPYuwUBYetW1I&uk=UG9jVnPlj1i7r1BbvW9dDg&f=_Send%20POST%20request%20for%20query.shortcut&sz=27430">
        <img src="./All%20Shortcuts/Notion%20API/_Send%20POST%20request%20for%20query/_Send%20POST%20request%20for%20query.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3173,7 +3269,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Retrieve%20a%20page%20property%20item">_Retrieve a page property item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXhvA_qAazj5JS4WAeP7pbbeD2ztAYwd86vHtCjw6UKZ9J0ThPOZFvmu%2F%24%7Bf%7D%3Fo%3DAmz5nssgq4GNfvYRgCvw-GrjHm5gwsSTYlkBW93nmE7q%26v%3D1%26x%3D3%26a%3DCAog35UJ7OjiYtZpeCxxFAQBWTmM57gj5o8P1hLbZkl5qqkSbRDA0qyoljIYwOKn_J8yIgEAUgTeD2ztWgSZFvmuaibjsI_C0SOk3mBqMDacJOVnEXtD4nWnGK_nJBIbG4aJXXJvDB_dHXIm3EKIb4GHa6InKCG9rcc1xryGKatGukeJVEvhs3nnpqMfidPnZ0g%26e%3D1726569115%26fl%3D%26r%3DF9C8917D-0547-41FB-A413-ECD6D6529298-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhtrYDaVV4Pm2od77n2cZIGUGtAA&uk=hFM-E88kGARRszdYfcQ6pQ&f=_Retrieve%20a%20page%20property%20item.shortcut&sz=27669">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd4jzJueGEZHqoE6RC1plLiDITaaAT632QEJvPMrkYKCDEDcbRisRbWj%2F%24%7Bf%7D%3Fo%3DAg5hEuOsl5lnlLoWh2viXQ2GEOCX0w8HiA9uKxTLb1Gq%26v%3D1%26x%3D3%26a%3DCAogVOOyBAbtGYXTr3BDXrt1vfrwXrzADtyfc8DLkEPjMnASbRCSvPHJmDIYkszsnaIyIgEAUgSDITaaWgSsRbWjaiZoExXpccYVDOGJtOQwYvskSSRCzRfGozc9fPQxSyGGtPyHAe73FnImmOiAHbugfLnUHr1CbC733Ct3ts3wrTA2T6-Fa6DEf0-QFqJMbF0%26e%3D1727176320%26fl%3D%26r%3DFF05AEF8-0879-48A7-9583-99C516234E19-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dd9-RGOUgHhWvLoDtDjYXvWPG1io&uk=cB7fZ5vRbvVdR5KDq3_KNw&f=_Retrieve%20a%20page%20property%20item.shortcut&sz=27668">
        <img src="./All%20Shortcuts/Notion%20API/_Retrieve%20a%20page%20property%20item/_Retrieve%20a%20page%20property%20item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3182,7 +3278,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Retrieve%20plain%20text">_Retrieve plain text</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUrCbJQ7Gm43IeJVMaH3FRXT3lk7Ad3FFsu23YF9LJ6On3K-pSDCgi1K%2F%24%7Bf%7D%3Fo%3DAthDB6eUh6jJmbwZLRWPrWEku3P32QvDGNYU7wX-vGz2%26v%3D1%26x%3D3%26a%3DCAogVRUXkSV0jhtlWKC-5AHSImRFDEYFfX_kl0NN33pUz4gSbRCQ3ayoljIYkO2n_J8yIgEAUgTT3lk7WgTCgi1KaiZhA81lob9er-S4_RhJfTiYgONk-ngFcJS22g1i9VZs0SJNNWbQTXImLnyx7Y0fLhqMHiBpOKEJYA923D4VHJWaaRbj6BQD2-q4hIEy10w%26e%3D1726569117%26fl%3D%26r%3DCBEFBB07-2111-40BA-85B2-D9BAF91D00E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgWkT58yso1aMEqv76SsshNZJxLI&uk=ieEyeGK5LvN9sG2ZIGQInQ&f=_Retrieve%20plain%20text.shortcut&sz=27479">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXJp7qLEK8LPbOQzm4ROU06KxiDxAT_JmdmLdcQySLdSmJAxebk19HFv%2F%24%7Bf%7D%3Fo%3DAiRsaRMcKj0oKhWdamvuq1n3E_bDux1kTscGiCtzYtW-%26v%3D1%26x%3D3%26a%3DCAogLWwonogxFW9eHq8-tHuKN62YQ3cMR-RWdF-2ZR6RfCwSbRDp0_HJmDIY6ePsnaIyIgEAUgSKxiDxWgQ19HFvaiZBMQHYxr61HUa1oyEC1_wR3GGBNR1NSMQYCfRBhGQeo9nVnd5Se3Imdw2oNctBqTIrOneggy8Dg3njJZlYXNUkHz5l4NRFeL3CUO-Rl1Q%26e%3D1727176323%26fl%3D%26r%3D0FE6E544-08CC-49A6-BF86-924B81E8B21C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDUnfVGMmpgfzxepffxG7bFhvj5Q&uk=g1IcfTlK9sQQFx5p2RjA8g&f=_Retrieve%20plain%20text.shortcut&sz=27478">
        <img src="./All%20Shortcuts/Notion%20API/_Retrieve%20plain%20text/_Retrieve%20plain%20text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3191,7 +3287,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Update%20page%20properties">_Update page properties</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdpGqwTeQhvRv63Uqn2QV_8lkWnyAXCKskEk243OZci-1Xaf4EMi92s-%2F%24%7Bf%7D%3Fo%3DAt_MPF3iLmJwA5ZqTfS9YaCGRPPe89DfxdqppV_PXP1H%26v%3D1%26x%3D3%26a%3DCAogfXRJehbx_SVPtTyA6gCEi4MqPn-k8OwLy252GveiL1cSbRDB56yoljIYwfen_J8yIgEAUgQlkWnyWgQi92s-aia70jD1C5ixhPXikq-gSECPys5gkt5P__hWgzPT3P1kjjyxwBUfl3Imbn6mgEajiTiy6Y9wXN5PmO-3_TmmIxwC7u1zOq3jzLpK8GkgfRo%26e%3D1726569118%26fl%3D%26r%3DB973F287-E603-4F6A-88D8-4EE7441E20BE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DioYyLzgpSBjrhuWMT6FmVBm9yQ4&uk=5sUS5cvmFjMVssFtS6SCZg&f=_Update%20page%20properties.shortcut&sz=27507">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUfFMx06vuk2F_gLQPedeIvlXbATAe16ZSGMMxgB8xP6WHjfcSBDG-d_%2F%24%7Bf%7D%3Fo%3DAvXxwMnzvNTfZqxJHzwEZllGuh_jN_Yu5ZDTkqaAWDA_%26v%3D1%26x%3D3%26a%3DCAogeMErr-GCMwhKJyDg84SwsKsEwv5p9gPkew4cGJX1T0QSbRC36vHJmDIYt_rsnaIyIgEAUgTlXbATWgRDG-d_aibZhm-nkO56Rn9ZINl1hyvCZjG-PfNS0x-u_KtqLExASfkKDx0AYXImD7E_VUcJ29urNkfBnjCgN3mFkbFMbB8yjCl9W8qOV41fRVDWZeo%26e%3D1727176326%26fl%3D%26r%3D9B9AF4C5-C5EB-47ED-9098-03D1D67C06E8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFkEO1RSaWWfd5b8JUjyZIivAhPU&uk=92enhD8Ea5k3xUXW7Pyukg&f=_Update%20page%20properties.shortcut&sz=27506">
        <img src="./All%20Shortcuts/Notion%20API/_Update%20page%20properties/_Update%20page%20properties.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3200,7 +3296,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Overwrite%20plain%20text">_Overwrite plain text</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARvmyqqACucqdMdnEDZ7fcxGJ6FVAV4FM_ta7ZtLhioCQmLs9SGRBfb2%2F%24%7Bf%7D%3Fo%3DAgeMPC2rmzK7WV1I8a5oFus5aQoCy5xg2bX_Np6tz7On%26v%3D1%26x%3D3%26a%3DCAogw83qFKzFUbd_NoLZvgEACcbxNgctDTyeqoZl2V-04ygSbRC48qyoljIYuIKo_J8yIgEAUgRGJ6FVWgSRBfb2aiboWCUQnntdExq1PfBd3FvJr2LuuqCtrHofQ3CkZu0XaYe-ncgEenImi2eHYeO6XRFmhzEBKXH57zIS07JoqiwmO3VI1sp-D58uJp7bbdk%26e%3D1726569120%26fl%3D%26r%3DF6FFFD39-AB5F-44E7-8DCA-F2282A003439-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DK-3UydGlnrUwyxPPOY9_BlqD2rY&uk=Ff7ghWnA-SFOnw4dZYv0nA&f=_Overwrite%20plain%20text.shortcut&sz=27690">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZUHWe21fiDTzTopl2yRgQ2hpi2JASi3DDBfiCQdmysLbbNxiBTf6wWA%2F%24%7Bf%7D%3Fo%3DAnkDcugsUFiUYbzW97R9s4bjrV0-HAzSrnc93RRhypYt%26v%3D1%26x%3D3%26a%3DCAogathk5lFqkP3-f4tGx9xBJsbKHlRkZ92Zj4SJctFUEBcSbRCLhfLJmDIYi5XtnaIyIgEAUgShpi2JWgTf6wWAaib_R8kUM9b9HgEZ4HEGtInbFrEl5XI1gsInG7SAyzLL2xqXS-iEfHImboLB4jB3VRfQpEF2i3svvGbxmX70zB0HxkJSnKlFEFTtRZQhAdU%26e%3D1727176329%26fl%3D%26r%3D9B942CD7-C026-4133-9266-8843042CEFA0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYyLlZru-1yEAqXjJIg-FHOo75qE&uk=OnRtrLnILcVNuO2GadQi0A&f=_Overwrite%20plain%20text.shortcut&sz=27689">
        <img src="./All%20Shortcuts/Notion%20API/_Overwrite%20plain%20text/_Overwrite%20plain%20text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3209,7 +3305,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Append%20plain%20text">_Append plain text</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ3lAsJfK2Em_SPl_YbV707lwEPBAYxf62HsAd5NR545mlniXyi-oECV%2F%24%7Bf%7D%3Fo%3DArEU4iN2jPs3G-fijoNidZI5dhyjPKlouik4rJHxZsbc%26v%3D1%26x%3D3%26a%3DCAoggY_8SYAX3ztkpst73LlGRXMBDJxHq55yvNHCXwho790SbRCU_ayoljIYlI2o_J8yIgEAUgTlwEPBWgS-oECVaibdTG9mv_kQ8S79zAk334wnkEyoCLYo9d7q9001jdMkdVlhp2VA7nImjxXdQ-YgvP2EottQa919gVFseIBjIIyWkKG_k2XJRjjmpyaT7EM%26e%3D1726569121%26fl%3D%26r%3D6A1DFD8C-9704-4CF3-8455-258BA7592CB6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbPt0D2cCcxEK6Jh9r5avYl4Rvqo&uk=NDc86d17pDumFMCEOL265w&f=_Append%20plain%20text.shortcut&sz=28763">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbzDaf_sGXWlKKyEeq-2I7vjWendAS0DZTL_GNd0P9vPf6bFiI4eju50%2F%24%7Bf%7D%3Fo%3DAkWLdwJIPvcWuJsPebxiNdXQn8HAX_Q1m9_H34deNZdQ%26v%3D1%26x%3D3%26a%3DCAogODEZp9sZHv_Q75SHzUQQ67-2EB5m4oAMFC5mGhEnQXsSbRDznPLJmDIY86ztnaIyIgEAUgTjWendWgQeju50aiZhzL07NEIod3Kn8M2Di5pOUFBVBubWLGYbvr5mEobwFjxZUmtRb3ImjK51lRdvqliHqEdl-hlV8YjWZMFurA--vw3zR21_MkND7cgyZJY%26e%3D1727176332%26fl%3D%26r%3D4B97171B-CEB2-4A09-ADAD-C4A1C748BD76-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgocTCo49VQDF6O-NNYyq3nI8_WA&uk=H50wedXHjMUZrtqYgIkF1Q&f=_Append%20plain%20text.shortcut&sz=28762">
        <img src="./All%20Shortcuts/Notion%20API/_Append%20plain%20text/_Append%20plain%20text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3218,7 +3314,7 @@
        <summary>
        <a href="./All%20Shortcuts/Notion%20API/_Archive%20or%20trash%20a%20page">_Archive or trash a page</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdoffoFaEw63thOCXLqz-P__7YEQATWkV7A33FTgYOLTcLh8pATD4qKt%2F%24%7Bf%7D%3Fo%3DAqrW11k8dbFefjzi090vWMJD6BdzJf-DG0894Kr2hWyr%26v%3D1%26x%3D3%26a%3DCAogvHORoSH9ok5kz4W_MbNVppn6-gr7HT2lzAhDiRyRt0USbRDJh62oljIYyZeo_J8yIgEAUgT_7YEQWgTD4qKtaiZakjwxl6tYsnB3iIhf5mRG7WUe0GZgzwIGK2iv93MryF745J7ynnImagNBAH4ro474jNkXl5YuaVM8Z0CVLLA1q4WN12vn-rPXAuYQtks%26e%3D1726569122%26fl%3D%26r%3D99633BDF-2543-4B7A-8A5C-14592B837B45-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGu9bcJbrVQbPTMg7bGfYIe7f_W0&uk=_a3zNEolJF80ygVWKOzPsw&f=_Archive%20or%20trash%20a%20page.shortcut&sz=27366">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfYdJHfQHge0R2L2svQhT_jg1OVYAeyQqWfdRRrtmHfS4FqgHPKkg5Rn%2F%24%7Bf%7D%3Fo%3DApo1rXdAuIJoPmpj5UraKAd_TrD6pC16e5nhD1lD7pfX%26v%3D1%26x%3D3%26a%3DCAogQUGZK9r_8q2Q6K3zmP8-PaRXWxlvBLx_FffNcCeh0cwSbRDzs_LJmDIY88PtnaIyIgEAUgTg1OVYWgSkg5RnaiZNV6ZhuqmW-vLGjBAQG6SeGv8oTgAm3kyeIYDgxr5SYi5bHhEGsHIm9k99ktlC3G709kgU7cjSuiqio5Jwcl7trB6ajceKCY0D5jbYDAA%26e%3D1727176335%26fl%3D%26r%3D299BE175-0F98-4BBF-B8EA-C4E04AB62BBB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUN94_-w_wHo6V37EhEaZmV0dREE&uk=kdA-jqpgafE5t5WP_PDnZg&f=_Archive%20or%20trash%20a%20page.shortcut&sz=27367">
        <img src="./All%20Shortcuts/Notion%20API/_Archive%20or%20trash%20a%20page/_Archive%20or%20trash%20a%20page.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3235,7 +3331,7 @@
        <summary>
        <a href="./All%20Shortcuts/Obsidian/Search%20Obsidian%20Vault">Search Obsidian Vault</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfUHpfQ6vbLLuHrdjfRhLSDOVyqdAVvUN0-JNj7iNBJSlO982kcrU9oz%2F%24%7Bf%7D%3Fo%3DAlJw70H4jBoFTuVgB7GRv1h2vM3DWPuZw0dVTX4raeZZ%26v%3D1%26x%3D3%26a%3DCAogdvJWSRPNpGnSK1JcP67dWHVYZamOb2IxMOJmRJ6UrbYSbRD_jJuoljIY_5yW_J8yIgEAUgTOVyqdWgQrU9ozaiandzx5iUrUSmuqhobQ1McUeLhDvG3p5_v4NSjF4RtrVFCRbK72GXImExjqn8rLLbNFUT38S5NnWf5qMA-w0EyIl79vobbuMGN1v51mYNE%26e%3D1726568828%26fl%3D%26r%3D2283580F-E302-48A5-97AF-EF605CDE1348-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGE3LV49VDmgSTzUzWVfcV74wsIM&uk=K_YmeMAwYbxqVOdj9g_T6Q&f=Search%20Obsidian%20Vault.shortcut&sz=27301">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaa3nd6C41yfTcTFHBjxPlj1UcKWAVqYZfgGGXjz4YIykSLxMuYIg10U%2F%24%7Bf%7D%3Fo%3DAljjkuRPS4uUyse9gKqye1oll7PXKd2ZhqOFcM-jggr2%26v%3D1%26x%3D3%26a%3DCAog_JgKjGBigcqwEfDd-Oh0amoej635B4LDdJMRiuP9zG4SbRDsq87JmDIY7LvJnaIyIgEAUgT1UcKWWgQIg10UaibdKOdvCNFRqk5m6YukhLqmkQpPgiAOfS9156qizxIoUhXTYGgefHImaThTSJsax2qYlmZqGLuf5PhsvFNTNKSTMwD7aBkN1GuOrRg4IYc%26e%3D1727175745%26fl%3D%26r%3D6F18EF0B-5437-4BF8-978A-0CC05946FF9D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCCcQECPEdsYDOH2rspCO5n0dbN4&uk=y2kI9jt4SuvHFEIAaLvVJw&f=Search%20Obsidian%20Vault.shortcut&sz=27300">
        <img src="./All%20Shortcuts/Obsidian/Search%20Obsidian%20Vault/Search%20Obsidian%20Vault.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3244,7 +3340,7 @@
        <summary>
        <a href="./All%20Shortcuts/Obsidian/(Batch)%20Open%20Obsidian%20Note(s)">(Batch) Open Obsidian Note(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc9vVD2DDEIWBlDbQNTmSmI4g5mGATXFvR0fADBBz3Lr12rfr5NwQYv8%2F%24%7Bf%7D%3Fo%3DAqpYzR6yJYz0pL3Yanlq926GjGJVdyuUA6R8E2qpLcrQ%26v%3D1%26x%3D3%26a%3DCAog6kNUgLww1CX5LMKVeJC4gp5FJ_KFNsNsNwWfGJKhgkwSbRDBl5uoljIYwaeW_J8yIgEAUgQ4g5mGWgRwQYv8aiZ1dkU7xmQ2Fm5wUta_XjsZ1qv-Fj8c-pkhAjz6VCdgkRq_AksjkXImxNkY3OPMTF3jm9hcCTnGwZxpRbxpb6YKSRe6DZU0LZDtRok-gEk%26e%3D1726568829%26fl%3D%26r%3D7F89196C-FE80-4EEE-9D8B-68D46D517E18-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DH6f5Ki7BS-B_VL0YT0JsAUJML5s&uk=FWHdgURNPMS77xc9xRq3wg&f=%28Batch%29%20Open%20Obsidian%20Note%28s%29.shortcut&sz=28136">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASuJgpOCrUIBrg_CPNxpQijNCVBKASTlv4fUDOwcq3vR-nQQk3cZs6m4%2F%24%7Bf%7D%3Fo%3DAh39PgbUU2Ocjp5IM-ynoLQE-m82tliL_sFcXkdP8RTD%26v%3D1%26x%3D3%26a%3DCAogVKQ17gR5wdp4ElqTwtuF6I7E6hafQ6sFON9WjIzwMhISbRCdxs7JmDIYndbJnaIyIgEAUgTNCVBKWgQZs6m4aiY386WZ-r8wflknlQT7q_gSCQZI_y7Xgvt3ufixAVvw5JsebWlU9HImpATrCk4ZPnDGEI6SpdLW3wNAVtyKFTYI7xJMTcpbs7igWzaAK-c%26e%3D1727175748%26fl%3D%26r%3D1F6CA1C9-2D23-4184-A8F9-E65C08F42C8C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-vEgA2VgV_sZzMoYrjN8UxSt1xA&uk=h42_DvOgPUqbQSdPSgWJzg&f=%28Batch%29%20Open%20Obsidian%20Note%28s%29.shortcut&sz=28399">
        <img src="./All%20Shortcuts/Obsidian/(Batch)%20Open%20Obsidian%20Note(s)/(Batch)%20Open%20Obsidian%20Note(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3261,7 +3357,7 @@
        <summary>
        <a href="./All%20Shortcuts/Other%20APIs/Playing%20Card%20Shuffler">Playing Card Shuffler</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUZ3bQa41-CQcAwhezfVts7xE_rSAT66fbmBkAwUhJEwamoQNK0YsBx9%2F%24%7Bf%7D%3Fo%3DArMZPRXoF45sxOlmVZx34BhDUnitiRcZcIuqPrTI0RDi%26v%3D1%26x%3D3%26a%3DCAogAPMo9xjpKThMy2GfAQzPnfUJN2fopadWmH8bEaqzj2ESbRCS4q6oljIYkvKp_J8yIgEAUgTxE_rSWgQYsBx9aiZZTWC9vqzXk2CjirigtbprojcRv5bCFvBFVm9RQ5HrNvb8e8VVQHImPiua4EtFrIy_OHOa2sCDVSseYQBWdIQCD2Qq5z0Lv39K5Hqydnw%26e%3D1726569150%26fl%3D%26r%3D2B5598AC-47A8-44E0-8ECB-4C369C0320C2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSmMhrYwPMUW5Bd_6ME6tnKx1jH4&uk=HJ7wOyKJyUAh5YMgA2GVfQ&f=Playing%20Card%20Shuffler.shortcut&sz=27866">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR3WKUfyiQCspgA6HwCu8QUeAI9nAXt5RmKv20s7Wb8q7-XaF7t54sPT%2F%24%7Bf%7D%3Fo%3DAigycGfvzp8jv-Jy34j6Hc8WghtFIktSx2QCj_ZQS6Mi%26v%3D1%26x%3D3%26a%3DCAogNxzvhQ-1aTbTuQSzi2WgIzjK9QQlAP7aYaF-v_qVVpQSbRDQ0PnJmDIY0OD0naIyIgEAUgQeAI9nWgR54sPTaibegquAig6bCmO3Uz7_jZtPJPzTHWCmlxw00AvT42kvmwocKIOOy3ImBi9MxgCPbn3fkMN8kicwAg2eyXjV4S8PxW5YioNJFOTZhL2N1QQ%26e%3D1727176454%26fl%3D%26r%3DD10115F6-A871-46D8-93FC-2F507D14ECF1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4tLPusziCHSloBKG6GkUZ-pBuak&uk=XyhEwDzVHpZUYOqqUp4msw&f=Playing%20Card%20Shuffler.shortcut&sz=27866">
        <img src="./All%20Shortcuts/Other%20APIs/Playing%20Card%20Shuffler/Playing%20Card%20Shuffler.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3270,7 +3366,7 @@
        <summary>
        <a href="./All%20Shortcuts/Other%20APIs/Find%20Emoji">Find Emoji</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUAaxWQvnyEyrWY8GeMxWUCoH-3XAQdfj9rW2imuI6pP9DorUX4YPVDQ%2F%24%7Bf%7D%3Fo%3DAtdu60PeZixeikj5fyaorsUx_fIWpYbOiQVRTxlBCfD2%26v%3D1%26x%3D3%26a%3DCAogZF7TOLHWZwwobYE_GQ_3zvq90LP7X_Qbsydy2sYwi-ISbRD27K6oljIY9vyp_J8yIgEAUgSoH-3XWgQYPVDQaibYaYDWqnEpmLaSOqP8aFx_PXL0fzw9gAOSFKXPwgofe-mMlHb3zHImbhIe7iI-A32AxqNjpELn_bQp0Nbkoz_6C8NFohn2zPQ1rkbHjiM%26e%3D1726569152%26fl%3D%26r%3D52552F2B-C56B-42CA-B0BD-889EC57F9E97-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dphly8d6ijYsMpj9WAhUmZ9oRJ-s&uk=50pmhQXgIuuGIaoXh-UeVQ&f=Find%20Emoji.shortcut&sz=28133">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUA-01ZpBod_hhpHun7tiYtV638lAa0R8fV6EbS83h-apyjlm5Wk9n3Z%2F%24%7Bf%7D%3Fo%3DAjG_XFPFI4vQqWym9LX6JeFSb3-cWQXVLH5gFOKwnY_c%26v%3D1%26x%3D3%26a%3DCAogI26DGAIrkv9rOH773oFfVlw6KxfnwZiJXiLgmQSkUbgSbRD07_nJmDIY9P_0naIyIgEAUgRV638lWgSk9n3ZaiY2Q87jiTjL711DhayXmba13XnpALCcQks-nNboJ2PJ7KQRV-wcgXIm4OYrmY4UJOuvh5AM1QNdBMG09SurAcg6vq9jKWWeYq1Erlp8KsY%26e%3D1727176458%26fl%3D%26r%3D8ACBB04C-B3F0-46BA-90D4-DCAC8770DC7A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIPnRsvcFxE0FVW9bjIuLscSVUmw&uk=Q8k2WryllG7xZy8ERAe8Ig&f=Find%20Emoji.shortcut&sz=28132">
        <img src="./All%20Shortcuts/Other%20APIs/Find%20Emoji/Find%20Emoji.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3279,7 +3375,7 @@
        <summary>
        <a href="./All%20Shortcuts/Other%20APIs/Get%20Random%20Quote">Get Random Quote</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaXGtgigguvHi_SI1iqO1QDTGhcyAeHRISFPeeqdjUzvjCu-2tpml0bk%2F%24%7Bf%7D%3Fo%3DAjRgRiWpbkK8Sf7AXIRToVqLxxX9JMXecV2GKKWgLavY%26v%3D1%26x%3D3%26a%3DCAogiwDGtI2nxdfoYzR_uS1M72RyF2SyJIZR9PpUMqkoevoSbRDf966oljIY34eq_J8yIgEAUgTTGhcyWgRml0bkaiY1ZUH7DPs2JNzisaRR2aZQhA52bV9RGQPoNAoJSdOK7s2UM1i8hXImAgXYdQTOn9qo1Urdt2VN12gQDFhaKzQHD4xufwbRGGThFLcGSGE%26e%3D1726569153%26fl%3D%26r%3D11108901-F2FD-4A82-A917-B398D898BEA9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnpV13Y7VVM9OkgDzgc_bISd31cY&uk=hXKNppIYcqwa-lpwFtrlxA&f=Get%20Random%20Quote.shortcut&sz=26939">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUUnL7qktoj4_9L4_0gmQ54ySo4xARY4fh839ihLJaDWEX5eyPFhN23c%2F%24%7Bf%7D%3Fo%3DAgaN0jI8aLvfkgi8roNOt0F2cl4TD6tEinLEfI3WK5Jw%26v%3D1%26x%3D3%26a%3DCAogHSwEz2iPV1h6B4IXGgqGEV9ioOyWQAgP7al8ZeUAnAMSbRCSi_rJmDIYkpv1naIyIgEAUgQySo4xWgRhN23caia0YCuCFRn6N-UexJWxMHOjvlcuGldCFrCp_OWw5_64ycGzDSu6K3Imp0w4HSOFGFJkHXFpsseOqratXlp7qSX3wSDmc_rhuw2icjM2164%26e%3D1727176461%26fl%3D%26r%3D6BCB8FED-7ED3-4852-BAFC-B5A31CBB7C8F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJwbYR0W3kOk0ufbpoD4Z5xCFt8Y&uk=XQmWvmPenRM2VQORO5Kj-g&f=Get%20Random%20Quote.shortcut&sz=26938">
        <img src="./All%20Shortcuts/Other%20APIs/Get%20Random%20Quote/Get%20Random%20Quote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3288,7 +3384,7 @@
        <summary>
        <a href="./All%20Shortcuts/Other%20APIs/Get%20Random%20Joke">Get Random Joke</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbYYICumkbDmD1ZZC6kgi1YTPpv7AaKbsgqrpgBtFr8IiEX0gidcUXPm%2F%24%7Bf%7D%3Fo%3DAskELf7X4AtnV0xsTiWwt93qsRUb3Co7NMzmq6Wr7mP0%26v%3D1%26x%3D3%26a%3DCAogZDvQYNXXfll6whQnjTT1-sJgx6oUxDPyP0j2lb0nit4SbRDngq-oljIY55Kq_J8yIgEAUgQTPpv7WgRcUXPmaia7v8nHeXn7ntT0GQk4Df5p6pkT_UXJvjVktru_eafCVYF61AWL-3ImwL-ptOnpVvKjTNeoKDnTVGbvubEle8s4i8Q6EIyv0--7vaLkMNU%26e%3D1726569154%26fl%3D%26r%3DAD2BC973-9E17-48FF-B630-765E740C7CFA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnAvumtjb1egvCIEf4Rr-8mjY0bs&uk=Aljjvoq8b5tR6HwOE6PgEw&f=Get%20Random%20Joke.shortcut&sz=26682">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAawh-61T8pA7_f9Z4ZyvKu1LYmZqAQmhxqlZOaTiIjKtlL5_U_eXPnTO%2F%24%7Bf%7D%3Fo%3DAgG2-QroNpRbrdiZv3kHznRYBVt46IG6W4XHfkIMj4Zf%26v%3D1%26x%3D3%26a%3DCAogbDarJiVKPSmR8zwRNbzdEBwQZbXzBpozY-IN2F2jmRgSbRDQpvrJmDIY0Lb1naIyIgEAUgRLYmZqWgSXPnTOaiYG1oyPyye5o769yeR_ofONPxfcW0eravcoIUyHI6U1ndw9AA26iHImuvYDSwoyPdPvna7_wCIM3D6efdcTn0gICHLjgZeQyxvYG9bXv20%26e%3D1727176465%26fl%3D%26r%3DF233A4C9-EB02-4022-A2D6-CF3F3D112EA8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3De9jQ_9Y4IdC45tmmUHVXljsPzJE&uk=WDxq5wlPe5WPMgdI9KBXaA&f=Get%20Random%20Joke.shortcut&sz=26681">
        <img src="./All%20Shortcuts/Other%20APIs/Get%20Random%20Joke/Get%20Random%20Joke.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3297,7 +3393,7 @@
        <summary>
        <a href="./All%20Shortcuts/Other%20APIs/Get%20Quote%20Of%20The%20Day">Get Quote Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR8opIS4kvjkcqzXulAX3DPJGASAAWmyXlpT3JFwhtM2Y0Bg-rOdDVFr%2F%24%7Bf%7D%3Fo%3DAstaDm1BgiJJl6AttTBwiLUCjqG4muhU4SLTgAxtdj5v%26v%3D1%26x%3D3%26a%3DCAogytsdTKyZqhmSrMd2GrElLuiCrK6IJweXkQ7WjBS17acSbRCXja-oljIYl52q_J8yIgEAUgTJGASAWgSdDVFraiYbwqN2_8f_qGD41k_lAxsG1EAFbkfpt1MWa0Lkgwe70XVVBcH6HnIm8UGxMjb3zcgZcd3vzS2cV_Qgt48cjtagDTyGgFikQ7dx7qwgSas%26e%3D1726569156%26fl%3D%26r%3DC0C65BFC-0B16-4751-8C8C-67A613A0A062-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTDiPqyNKg5v8Tw1cjQVPFJusBJk&uk=vSF6VV0Sc6rP6r4gxkv2Yg&f=Get%20Quote%20Of%20The%20Day.shortcut&sz=27093">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASbSwAFiQM7Oot5zEMBHJbil3wzOAVzQ5K9OblT-HZXfJ3v2dMtI6A-a%2F%24%7Bf%7D%3Fo%3DAug560IPXjac1m_RScpV6bsNpmkS7i2tXD8W0llG69bC%26v%3D1%26x%3D3%26a%3DCAognXJxKNb6vOJZ8JpgI3z6i4svLIrgm2lLa6PtZvuizYYSbRDxwPrJmDIY8dD1naIyIgEAUgSl3wzOWgRI6A-aaiaK5dv0v31C_-PEsttR2xOOnP-1jNUa7MZCQ57sscRdwyg3zT_coHImHLv9nIUNuz9A5nY0r9jgPqEqedCCfUP4rywvO1ES2so-lVG4izk%26e%3D1727176468%26fl%3D%26r%3D72E13CFC-6D48-40AB-A392-B2487896E31E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DThdEQx6MtEze3YsevQgVuO17igU&uk=8nMq59xU5EcsLEK0OUoJBw&f=Get%20Quote%20Of%20The%20Day.shortcut&sz=27092">
        <img src="./All%20Shortcuts/Other%20APIs/Get%20Quote%20Of%20The%20Day/Get%20Quote%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3314,7 +3410,7 @@
        <summary>
        <a href="./All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast">🎙️ Snipd Podcast</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdOQmluwhfF9hziaopWS6ftcwmSeAfGfbtqHnFu8NvtVrhUZQUGezQ_k%2F%24%7Bf%7D%3Fo%3DAk-LlY_QnNYjbS-jWMytggoGJvY8QEUqAcB8a4WlTc3a%26v%3D1%26x%3D3%26a%3DCAog99AcXzZioccfHIDgrCnxfrbIFwzgjAPWUTr5QJq7vH0SbRC87ceoljIYvP3C_J8yIgEAUgRcwmSeWgSezQ_kaibKa7Cq4ymY2qX7x9D2gaAH0LFNiK8oeNBauI8b9KL1uk_-p170JHImWXHWqeRQiig-1ou9js7uj4rDvmZ2y7viJHKcJ36sHzING4SreG8%26e%3D1726569561%26fl%3D%26r%3DC853F014-F248-47C3-BB4D-F35BEF234340-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DviOFOfVd9ToeGrN0fbI9lKp-g2k&uk=thhqyFQtBCJg2Yj8gvOZUQ&f=%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast.shortcut&sz=26372">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZBsdkDe1POqwNkrPd04l0JrcmdgAR53wS-txo_5UVyMLIKqcHieEh4B%2F%24%7Bf%7D%3Fo%3DAjGfKiTKROEt0dRmUph3JYf3NP8-eaqz9y2LqstDV6O5%26v%3D1%26x%3D3%26a%3DCAog2uwwpVOX9wXQiZZHCuoqeE-TR8XFgxG03HBb4jVS1psSbRCQ68zKmDIYkPvHnqIyIgEAUgRrcmdgWgSeEh4BaiZltRFfb4dtOrhu5wKXEAJzURRs1w9K_wvRB7ZzY-IPndQ2slCoGnImnO2xYwtoBkItNcbZFImSXhPzJwaCJBl7QRi-iI5nwACG4xvdCoE%26e%3D1727177817%26fl%3D%26r%3DDF35D9C9-1B64-42AB-B343-54DAAB443C6D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dj5JcpQP9Kpajnvrow4LCOV1KW_4&uk=ofqnffClNEA_NwpDCTOVyw&f=%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast.shortcut&sz=26371">
        <img src="./All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast/%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3323,7 +3419,7 @@
        <summary>
        <a href="./All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast">🎙️ Apple Podcast</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATYVtDtjMFdxILYOzZmwoDmOqvXOAcz1ZUhlvxJYwEGQ7VuURxcuwbga%2F%24%7Bf%7D%3Fo%3DAntHA1VggP3V1xQzvBMtTYPK-c-0BGvGbsmjGHw_hjRs%26v%3D1%26x%3D3%26a%3DCAogBhf7kdARYu7aCuKZLK9-rqDmD8HPXJx8AhVN9Jfp9ToSbRDJ48moljIYyfPE_J8yIgEAUgSOqvXOWgQuwbgaaiaBdn6zHMoxxbziGNF5Jite6Jqqil-Eiv5ARzioScd7IXyopUtna3Im1q-q5szyFtU0VMhAim9lKGrWzU7hCDXOTMgTQ_HUd4phU_9tXFc%26e%3D1726569593%26fl%3D%26r%3DD005A27E-1692-4D72-B74D-60A5EDA69C88-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8Y3KTQ-tDvdI8_CgDZi9quUsBrs&uk=U5DyNyuOTmLyngrF8IZ0ow&f=%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast.shortcut&sz=26356">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfMUo7qVMyE51j_vBb3psJg4vmZ3ATwULnrKUDAXJrPxhW-8bos5XUdW%2F%24%7Bf%7D%3Fo%3DArqWIAsdoeukIXzbb9oxJ2u_qgx7afwRvD6TOiHpAvfW%26v%3D1%26x%3D3%26a%3DCAogHwzqjOqPotmnd7FoKmX_2iZYhqIMSWZNN0wWBHH_4Q0SbRCS8s7KmDIYkoLKnqIyIgEAUgQ4vmZ3WgQ5XUdWaiYbkPSp8lbFG4ZZYbg52670L3RVLEOm0vT_MuzAyB2sXaumjjMpFXIm115XCMt7Ckm1gNDIMpK-bp5KOsh-pZwbvGxxOwCljCiFMTAoWc8%26e%3D1727177851%26fl%3D%26r%3D788AF6CB-9CE7-47CA-9BC8-DAD2BBBD1531-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLvtRY15i5eSEIX_zmy1ejnHBcU0&uk=iOp0RFbEz_CdI58wzQvVww&f=%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast.shortcut&sz=26355">
        <img src="./All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast/%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3332,8 +3428,214 @@
        <summary>
        <a href="./All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Spotify%20Podcast">🎙️ Spotify Podcast</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYJUTgC6p3ws-wJV32kEW7SV6dgOAYr08yIbTVgh7hMXJFAMt5A5WhTS%2F%24%7Bf%7D%3Fo%3DAtk2T8ycctHMEF3XG1bB2fT1Z1Im197Hemgr5RoSn04a%26v%3D1%26x%3D3%26a%3DCAogJHfGgnOXeV10U2vhOll6OuyfmF4kqtmWQ8pdNJmo-3cSbRC42cuoljIYuOnG_J8yIgEAUgSV6dgOWgQ5WhTSaiaIj5PtB9NAHRaM0X1TfRi0oXwbLPV9LZBhuUie2lILFv4UntzRgHImMKi4FR2bwllAnwPwvhCCbvv8Ey7Yrn9xA_FwZVL_48342izD6VU%26e%3D1726569624%26fl%3D%26r%3D4311D2C7-19C0-46F8-A221-29B4CC32D194-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEerHPSNYNvz-p0AKrZB1SFm0j8s&uk=4VXdO0UKciRwWmVF3ocovA&f=%F0%9F%8E%99%EF%B8%8F%20Spotify%20Podcast.shortcut&sz=26290">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdkw5yg4YA1_HNwMAAZfGZDcYmtHAbH6qMaZ2ODQJ1Z4tK0jz9NiE7Xq%2F%24%7Bf%7D%3Fo%3DAqtHuIdkXhNi6f_eJCvUdXEZ1Pz7mh6vRiwqbSgSIl4K%26v%3D1%26x%3D3%26a%3DCAogNDExfeI9MHxPF9XPP9Gavh-wCYAlxP7bYzbf0dnlr5ASbRDx99DKmDIY8YfMnqIyIgEAUgTcYmtHWgRiE7XqaiYuKBFJbMWy9pLhvKj9HzW3zlIg4Cx_wlP9klWLELhCZuh5fXVFf3ImHTpTMU9Q46U5E-kM9N0mzHQOSCVCHLEm7wbkKUf-8KPcdJe4npw%26e%3D1727177884%26fl%3D%26r%3DDB53AEB5-C5E5-45DC-9056-312B79D04A4C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIvlsO9vaeootWMiQ3TuBPOG2DFk&uk=efPYJGzbmaESG-gKz6zejQ&f=%F0%9F%8E%99%EF%B8%8F%20Spotify%20Podcast.shortcut&sz=26289">
        <img src="./All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Spotify%20Podcast/%F0%9F%8E%99%EF%B8%8F%20Spotify%20Podcast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
+        <a href="./All%20Shortcuts/Productivity">Productivity (22)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Open%20iMessage%20Chat%20Window%20for%20Contacts">Open iMessage Chat Window for Contacts</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYLaFAyaY9l2x0txVZS1xz2JfZp9ARS9lVvLBXXdzSh5GqX5uvWKiUkb%2F%24%7Bf%7D%3Fo%3DAimGjdSjX3P82lB1bATE1vLUxNwjWYhpFIveeAqE4z0H%26v%3D1%26x%3D3%26a%3DCAogZOkWO9zwaDSyEZTxQhrxR3BZ7LPMwVCCeVq4CqkKw0MSbRC38tTJmDIYt4LQnaIyIgEAUgSJfZp9WgSKiUkbaiYsXIXHtydicJmL7DRJHg8FOJuOPqUyoW7CQfU_Rr5rMxvtZPZYuHImSwDASK2-dWC0uO9oYFpZWi8qteqJnxC1hHMm0HhFleFf2ROp8UQ%26e%3D1727175852%26fl%3D%26r%3D488113CE-840B-4E80-AC37-14490ECC86EB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2HIdY61DwvxgV7ndF7D4wXEx5BI&uk=gDUvGubaNCRJLidy9064_Q&f=Open%20iMessage%20Chat%20Window%20for%20Contacts.shortcut&sz=26781">
+       <img src="./All%20Shortcuts/Productivity/Open%20iMessage%20Chat%20Window%20for%20Contacts/Open%20iMessage%20Chat%20Window%20for%20Contacts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Organize%20My%20Photos">Organize My Photos</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATKaAPIsRip7H7mUoi0hj0zicRQjAV6qeOxVNypudsuVX1B3WCBZaMpO%2F%24%7Bf%7D%3Fo%3DAvxyKsOwp2bAEl6FQpIpABdk5b-OHY5JWvJkBa7x4Zwv%26v%3D1%26x%3D3%26a%3DCAog2XOa6e_h_-96Xkv7WqhE7kvS7rdgJ80tpZ2JA60o7fESbRDHm9XJmDIYx6vQnaIyIgEAUgTicRQjWgRZaMpOaiYawcXAPPbR1vj6C58bnGzUHV5q6AOPHpAaamAMWpBj5z0nU49TrXImOvPhKRz8Ml-hfbJgvelEDyGzmwZymj-dMbLrl5Kztwd8P5z7Js8%26e%3D1727175857%26fl%3D%26r%3D1ECBA7E6-DDC7-49C7-8DEF-CDA97DE77F65-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFnQpkBazKE2-FkqlTf9XiN-1c8Q&uk=Xa51wsLnDSmJQPEAShF0Kg&f=Organize%20My%20Photos.shortcut&sz=28419">
+       <img src="./All%20Shortcuts/Productivity/Organize%20My%20Photos/Organize%20My%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Check%20Last%20Run%20Time">Check Last Run Time</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbOBHbgN8kURG11H8SrBtqfJ05PdAc_HPbz14pMCymu-eMyt_HOqqq50%2F%24%7Bf%7D%3Fo%3DAnolbpMPEteW0sWktWOtTkHlGjq4uL2EVjlYsc4638ve%26v%3D1%26x%3D3%26a%3DCAog0yb7hkS8UyjyrlC0JwWxmgKlTlYjGvGy4u2ykOqL6mYSbRC_wtXJmDIYv9LQnaIyIgEAUgTJ05PdWgSqqq50aiazZ2jSm-aw7v4a9bnlFvbAejc48IsbEGuGdJokLgUuXkFRrGisOHImCfn_OH5e56FwWPN-xEkCudkVPo5u1-DdI9WNNhS9cbK__O88soc%26e%3D1727175862%26fl%3D%26r%3D6E90EE42-D5A8-485A-9313-5C38CAF393B9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFsVeIWSL0_cMfEnrfcl8QPrMoto&uk=FF2a3pRGFtyAQdb9u6J4XA&f=Check%20Last%20Run%20Time.shortcut&sz=31727">
+       <img src="./All%20Shortcuts/Productivity/Check%20Last%20Run%20Time/Check%20Last%20Run%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/You%20Are%20All%20Set">You Are All Set</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASt4Dpm1GHJzHszl-vnwmZtFG2PJASpRLea8MPtU35DMJxQcmdBoHXcS%2F%24%7Bf%7D%3Fo%3DAvc4jLVL5FwVjjiyHql4bZ0qijtLEwvbKNWNl-mA53w_%26v%3D1%26x%3D3%26a%3DCAog2GyUEKwybQkFrPP0wM5__dq0H5TM7FjHQ10Qe9P7hWUSbRDl6tXJmDIY5frQnaIyIgEAUgRFG2PJWgRoHXcSaiYvpm_Mgol7vaOZnMCl5bZaHGtXhMv3RNUA2OVXJLHRrJdQ0nlWUHImdEHkLsE4tGQvhC5IdcNIofUTFzUNdRaCX9KLRgUD6rFeO963NBQ%26e%3D1727175867%26fl%3D%26r%3D4E67D4E9-613F-4462-B4E1-2DC5C0FF42B7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dd1lTTR4_vwLrfr0s3aTKcH05rQM&uk=yzeNj4tQhcbI6jutCGImIw&f=You%20Are%20All%20Set.shortcut&sz=27101">
+       <img src="./All%20Shortcuts/Productivity/You%20Are%20All%20Set/You%20Are%20All%20Set.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Wait%20to%20return">Wait to return</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW-RQ275NEpi1qt3_g3Kq_sWvV5hAb90JygIj6FycmpRIhXOqTb0Pmmd%2F%24%7Bf%7D%3Fo%3DAlFJ3xuV39dt62mOywxBoXHKPO7X1tXXg0S92V7RoTxU%26v%3D1%26x%3D3%26a%3DCAog9GSWYmWEEK-NPYu8svV4zRmmERMx0aOlKhTOK7oFzWQSbRCyj9bJmDIYsp_RnaIyIgEAUgQWvV5hWgT0PmmdaiZeegewZq6BU47f5vAF5Lb5zOC0r9WQASLrGw4lXDuS6zeoWP1i2nImj9tXQO4toFpblgo_r7h0pIGM9RI9reO3ozgjfZISoNCPY6pfFxw%26e%3D1727175872%26fl%3D%26r%3DABE3ED9B-DF31-478C-9F05-99F9261EB62E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1XZCTpKJi4L-m9gjso9UFLuZcJw&uk=NTO7GpJcmzegSBVe8qpnWw&f=Wait%20to%20return.shortcut&sz=27949">
+       <img src="./All%20Shortcuts/Productivity/Wait%20to%20return/Wait%20to%20return.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Open%20AReminder%20with%20UUID">Open AReminder with UUID</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYgv09AXSq_UP5KRgyFPcdZDLBh_AfatnzlX7zdsZaiefTRkJAOZjRw-%2F%24%7Bf%7D%3Fo%3DAjeFX2NkuhZoiOqeskNcZpkocjoxBRADLMxQ68M4_KrE%26v%3D1%26x%3D3%26a%3DCAogbNCZEAYTcZa4xEaheI-skNf_z3dkuCM53XowQyN8ed0SbRC2ttbJmDIYtsbRnaIyIgEAUgRDLBh_WgSZjRw-aiZCslALtJaDsoxzZkJGYs4D2ssatBVdwFV3wKQwlC23M6xPy-XJ23ImmFtPwlbwgjfTSEjofkbfvfS_CAV5m69VmZhJ5_7G27bMTcCFvvY%26e%3D1727175877%26fl%3D%26r%3DC962B690-91AC-4F75-94E0-A44D12DE8E3C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVVySSAPQ7SgZOke-o0u-wrDrxD8&uk=JO34moiroWzfF21DNPc0pw&f=Open%20AReminder%20with%20UUID.shortcut&sz=27274">
+       <img src="./All%20Shortcuts/Productivity/Open%20AReminder%20with%20UUID/Open%20AReminder%20with%20UUID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Filter%20Reminder%20Lists">Filter Reminder Lists</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeMPy1bFHi3qRDwYcds3reKD7XvRAUFxwBjRHCLgTa3xI9-xQckqhwLh%2F%24%7Bf%7D%3Fo%3DAq8ILum6GRQrkMMd9AWSuD-ofplPA3uJw-PJ7aUlhMK7%26v%3D1%26x%3D3%26a%3DCAogPGtYQkpmu5qusxflG4-eg7uCHPehltMDW9kQ65cQgggSbRCE39bJmDIYhO_RnaIyIgEAUgSD7XvRWgQqhwLhaiYfeQeMa511KxNlyDuKiFukyTEDFsDdmsD65EG6zacLxdyCIBnSdXImp7hsFO5yZZm6Z9v4S7oQfLCfOd3Xl8YEhOosSLeXPxsTlc_IjaU%26e%3D1727175882%26fl%3D%26r%3D242A076C-2CBB-4161-A5A4-76DBB49B40ED-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DX6JwTI8w9xszHqBq2EdcencTN64&uk=VCdEYBimA4lEyZEhs6C2rQ&f=Filter%20Reminder%20Lists.shortcut&sz=27637">
+       <img src="./All%20Shortcuts/Productivity/Filter%20Reminder%20Lists/Filter%20Reminder%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Play%20Music%3F">Play Music?</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQAaluNclDOawoTw6Iyyi9s5_wVBAXz4PqmKsVX0HtjjfVU7WyurKiGZ%2F%24%7Bf%7D%3Fo%3DAiJTHWXhG4FFKZRm7WlKQmDsQ3Zd7v68waOyLpClkDIn%26v%3D1%26x%3D3%26a%3DCAogIDZYGR1qx355n0y_0bbq5xc3FVhAJA52p5KedQCaRgQSbRDHhdfJmDIYx5XSnaIyIgEAUgQ5_wVBWgSrKiGZaiZBdbcWwHsWuilXOn8gQQ3rtIWSqvqGh-dXAlwjCfdGFGeTeVdL03ImCpBVjNPdajzSW5QvX_DWmt9lbSsG9DufgT7lFbENb9yUoPz6Vx4%26e%3D1727175887%26fl%3D%26r%3D5FEF99BA-F663-4CED-BEB9-A839DD8077B2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbO6l7USqOb67MMzo3csnqhWJk6w&uk=s0aJnstPN7nzsLCAlR6Thg&f=Play%20Music%3F.shortcut&sz=27671">
+       <img src="./All%20Shortcuts/Productivity/Play%20Music%3F/Play%20Music%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Play%20Music%20(with%20Timer)">Play Music (with Timer)</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeMovAogAjc6qOVba68jxSGrVfSDAUJnpbm55OYohcgAfez5JtXx9tbv%2F%24%7Bf%7D%3Fo%3DArOJbMy-Kn4sOFFt_7thGcxyQuFPDyCurBNFyQeKJKU4%26v%3D1%26x%3D3%26a%3DCAogFeGb8UG0oXJgH-CFQfwUkaz2pp_CPU1YjOPAqj__2C8SbRD0qNfJmDIY9LjSnaIyIgEAUgSrVfSDWgTx9tbvaiYeuud-fvA3kihAcBcdV1lvJ4-Y3A23TpyZ3rJtepktkT-8c2NhsXImueLlV2d4NPtjEP-iBNT9TolCa-rPmQ6m9_3v2oSkMyihTn13mWE%26e%3D1727175892%26fl%3D%26r%3DD7322934-5C34-4A5D-A4BF-2D14FFC4DE5B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3Vq20Mzk9c1KYA1C9YE5fF8Rm44&uk=dpyrKEmQeOupkZRWp07aPQ&f=Play%20Music%20%28with%20Timer%29.shortcut&sz=28054">
+       <img src="./All%20Shortcuts/Productivity/Play%20Music%20(with%20Timer)/Play%20Music%20(with%20Timer).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Choose%20Calendar%20Event%20Time">Choose Calendar Event Time</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ8wQsLc-5zbsogsEaioAO1XNM5cAWKivkE3PaN9kZE7LV6Fqh6FlRV4%2F%24%7Bf%7D%3Fo%3DAlYvVFi1bMn0lT16ZwnhY1AkCCwy_I4jxT8xO2W7DJmQ%26v%3D1%26x%3D3%26a%3DCAog9Dx1MkHHdrUVBpR66kvQrMqEdkJ5fOKqiWXwIVgXV-0SbRD5ztfJmDIY-d7SnaIyIgEAUgRXNM5cWgSFlRV4aiadbhqjm5cyu-0GXIMNi5rUAAQhskW4cfkhEfk3mwhgYBUJIaspYXImlgaGW1rNlxJGC1E9kg8lEfYYNt5LfTNJPNlKXNxn8hFTPsxgj-8%26e%3D1727175896%26fl%3D%26r%3DDF8D352E-0DA4-4871-A5F1-00A8F1D9C678-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DK0ZuG0T84yncVSECRTy_1SKDj1E&uk=WZsWyjGRQmkIBxDlIx_tBw&f=Choose%20Calendar%20Event%20Time.shortcut&sz=33333">
+       <img src="./All%20Shortcuts/Productivity/Choose%20Calendar%20Event%20Time/Choose%20Calendar%20Event%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Open%20BRAINWAVE%20App">Open BRAINWAVE App</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYMAL_dM7Y6CN7qTYTvanoc3LcQbASUgRdNicG3NLbCHZTaHkTdJcWJ_%2F%24%7Bf%7D%3Fo%3DAmcLNQRUtZXPbblQ5yAULW1MhJfNRyTk56LOIydx3fgZ%26v%3D1%26x%3D3%26a%3DCAogn9BCYrs2M_fpl6w9Bv38UrIdOrCiFZi9aOVVUncD89MSbRC_89fJmDIYv4PTnaIyIgEAUgQ3LcQbWgRJcWJ_aiYneD73-1BK_NSNaf_CAoxGVrpMSsMqGxInMTiV4j6jrosWXTWvJHIm6bGfCgYBpeIz0_4eew7ylnmOGHgPNP-LgKhy6RNVnwOHT6u4vpg%26e%3D1727175901%26fl%3D%26r%3D780E629D-4003-4914-8E36-C0EC0157080C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeFHyolLjZmopjC2YN62pH7lwNbU&uk=v56jf2a1XMjGHpWN3z39Kw&f=Open%20BRAINWAVE%20App.shortcut&sz=26871">
+       <img src="./All%20Shortcuts/Productivity/Open%20BRAINWAVE%20App/Open%20BRAINWAVE%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right">Prep 🌙 End the Day Right</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcoUJNI5UBDlaIuzbcYVBt91VKZLATdDAvyTGLudA9R6Za9HdTUb1ybl%2F%24%7Bf%7D%3Fo%3DAkou9k3ULBrp50Prcc9hygYaWC8I9Eg6sp4x2_USYgOQ%26v%3D1%26x%3D3%26a%3DCAogcSH0QOC5rWOwA07pUTkdzpceBV22o348EwsvyHjWljcSbRCPl9jJmDIYj6fTnaIyIgEAUgR1VKZLWgQb1yblaia1uA9xZKMz2kgU-HONWjLxZzFf2S0z40wWR0OB07l8Sl9M0ePVXXImdbmUMJk2BnAvmj5Ry_vK4j4FrOboE8408_MEGqgne0-dqLIwk4s%26e%3D1727175906%26fl%3D%26r%3D1FCD4222-94B5-4B4B-8227-5754E7DA79E9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dd7MITaWA_EnndSiYSly6ibfKj9I&uk=0nhH_D6GYS5HjEu9WCbV_w&f=Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right.shortcut&sz=26703">
+       <img src="./All%20Shortcuts/Productivity/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right">Prep ☀️ Start the Day Right</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAamawEwebob_ulxEQsTFu0d4HTcXActqiT8dIzZO9vorRY3RbWe40mjf%2F%24%7Bf%7D%3Fo%3DAuCRhA88fr-_fX5wOMYgtzl-r-J3KcjhEmoylEj89qhX%26v%3D1%26x%3D3%26a%3DCAogxxow8ky4oIPcFVFENfJSbVsJGneSLL2uCCibgnXQE6kSbRCavNjJmDIYmszTnaIyIgEAUgR4HTcXWgS40mjfaib38orxuI1WD3fwvIMbff7S41QI3r8oQoXJ229nDrngoIu0IpQaE3ImPXuTXqMpbi-l9oEOax4O9D0eS0Go7OUHv8Yf9fcqo-T7Ejh18Eo%26e%3D1727175910%26fl%3D%26r%3DE7BBF611-60FC-4952-A408-3CB2403668F5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRSF8m40THF-2i9439AdUYaHLvC4&uk=Dual_Ay9GxIIHq4VV-bC8g&f=Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.shortcut&sz=26701">
+       <img src="./All%20Shortcuts/Productivity/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Boot%20Up%20Sequence">Boot Up Sequence</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaXUsSJ-vO4ErYwyuUMY_Lo3eGA4AYaUtIWIK0bpROUKlLqelOARFdlF%2F%24%7Bf%7D%3Fo%3DAu50cyZT8Y0xhpM0vKdb8WoL1a4Pg_1_AKTAYZXxG7d1%26v%3D1%26x%3D3%26a%3DCAog2ok3kHd1Gx1ZfP_fyRn0yOmYUqhQZkeMUl3d5IcwO54SbRC849jJmDIYvPPTnaIyIgEAUgQ3eGA4WgQRFdlFaiY76ftxIzWz-bsFO2c3WN6bzFyzwSZ0_A5sJtKslb1SRkDTh_xtR3Im-zyjlpMWW5-NA687fMXiEtAwPs9UrQWGmT0PWcdxYlGla1XXE_4%26e%3D1727175915%26fl%3D%26r%3D4ADB2C7D-D205-4F2E-82A2-6818FF11599C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrteedTMdKB0PWIWGa-1wIVrgens&uk=iSf1paV2Gb1XgH9PaprewA&f=Boot%20Up%20Sequence.shortcut&sz=27963">
+       <img src="./All%20Shortcuts/Productivity/Boot%20Up%20Sequence/Boot%20Up%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Shut%20Down%20Sequence">Shut Down Sequence</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ6pTHFlYj-53TSHjBDYOC7tmkmuAQY4pZ2klM2_524s2sg9zTaiCl-G%2F%24%7Bf%7D%3Fo%3DAgf-5FMpehRt5JOQfUs5jP8bJyoVR8SHHwve553xTGPH%26v%3D1%26x%3D3%26a%3DCAogG_1UJ4MJfERK6PEd1h-mV4Kqkr2eLhT-zRcin5wYjj4SbRCeiNnJmDIYnpjUnaIyIgEAUgTtmkmuWgSiCl-GaialZPyyR6Wt7NI73TXdNjXk8BmL2opc9m96CWJf635AaINeXf9Fg3ImAXjZHXNtUlaGeURdcgX9F75b5uSjCiwehOhhQuqaPBUnY8Ha0Rc%26e%3D1727175920%26fl%3D%26r%3DF658A81E-7A9F-4FFF-A02C-0F11E769571F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgfVlu5n5s-iJctHuqmJRTvwVdHM&uk=CZHOMmgleNKpgC3DDz67Lg&f=Shut%20Down%20Sequence.shortcut&sz=27383">
+       <img src="./All%20Shortcuts/Productivity/Shut%20Down%20Sequence/Shut%20Down%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Power%20Down%20Sequence">Power Down Sequence</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARokiv9oDXrHYfWyJdlmGZErgCg7AXlUagsegvsPyRsCkoPVBUU1jI2W%2F%24%7Bf%7D%3Fo%3DAiwZR2e60iW18_knhFiChxwikR1y-kd9SOjPsy4Ztlxh%26v%3D1%26x%3D3%26a%3DCAogpMHTWQI_-MgOHPdIe5XVa6DVWEPSC5PgwsK5LdG133ASbRCoqtnJmDIYqLrUnaIyIgEAUgQrgCg7WgQ1jI2Waibf_BeNbeZ0cuL2nx0W_3IC1ze_jDlPVHU53AtGfLdwrTA4YXGGLXImUi7ATth2ZzaYGYUYIP8H1gePX6YA8i8CjLElPeQu6jQ4sdSHI88%26e%3D1727175925%26fl%3D%26r%3D13654F22-F782-4DE1-AA7F-9317E2645368-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dm3-oYk7KKgvh2RMn-2YWAfDsQOE&uk=t4QXo-57htYIeB5-kuUzUA&f=Power%20Down%20Sequence.shortcut&sz=28045">
+       <img src="./All%20Shortcuts/Productivity/Power%20Down%20Sequence/Power%20Down%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Change%20Tapo%20Smart%20Bulb%20Properties">Change Tapo Smart Bulb Properties</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf5tu0w0QWBSGiUImp5HEoZqQ8NmAUwDDSxi_yi97BR7faPelcI4iWDR%2F%24%7Bf%7D%3Fo%3DAhHS8W1EhrmimRFSrzDyJssLNXMneqZNyx1W9yESOneX%26v%3D1%26x%3D3%26a%3DCAogwtMvUiBPcJkrSrQ9cBbwT6Kgm-kX5pqSiSgUlxWn4bQSbRDFztnJmDIYxd7UnaIyIgEAUgRqQ8NmWgQ4iWDRaiYnI04YRBdj-_0FMuaLgfkHT3TLuy7Ycc9JmMQHaTgXCFNeakQBYHImnouC4oyehJ0jMrtLEmCtLCqJ9tJAit1MKKiKUK-fvKrgOwwHDLk%26e%3D1727175929%26fl%3D%26r%3D8C4CD11A-F7FD-478E-AC1F-3771C3E77B31-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dyi1sGSkp7TkHsqQaWa2EgBtm0GI&uk=mao7FwQ6J3cW5xrtXSWDhQ&f=Change%20Tapo%20Smart%20Bulb%20Properties.shortcut&sz=30269">
+       <img src="./All%20Shortcuts/Productivity/Change%20Tapo%20Smart%20Bulb%20Properties/Change%20Tapo%20Smart%20Bulb%20Properties.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Rerun%20Focus%20Mode%20Starter">Rerun Focus Mode Starter</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdE06UJkEc3fXctqKG7vCUCUOrmsAfREb0IME92nOGXV57YsDJomvaeH%2F%24%7Bf%7D%3Fo%3DAuq-7X4IbEzpfm4CHthMkGx0xrQ28F6pms0JQQwlIHWj%26v%3D1%26x%3D3%26a%3DCAogmfP7wd692X6rdbMknJweWr6jXnn2uP7IJquncGIjAZ0SbRDY8tnJmDIY2ILVnaIyIgEAUgSUOrmsWgQmvaeHaiaS8JxShF1eAQirDsNdp65CNdNr83sXF7Lyk8kzhBXBX8-UXer-2HImbKr_HyEkNFaifmePEG5J8TwQXqknjVejkeTU3DnmLUdVupSimrE%26e%3D1727175934%26fl%3D%26r%3DC5894CBF-F3B6-4CD3-885C-2B6F1F2D47BE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnNo6XuDN0MBMmYpsbYzfb_IaCAc&uk=Kr6IV6zZP17BeQ1Of8J26A&f=Rerun%20Focus%20Mode%20Starter.shortcut&sz=27170">
+       <img src="./All%20Shortcuts/Productivity/Rerun%20Focus%20Mode%20Starter/Rerun%20Focus%20Mode%20Starter.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Set%20Day%20Range">Set Day Range</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXa6dRaw1w67iMhkP2hvnHMJqbe9ARFC-9bRhmLVxK_sE4viP8E__ecv%2F%24%7Bf%7D%3Fo%3DAv0yqCPtDAaD2arF7HRhl9psuBNrlJtLimFC_ug8_VCd%26v%3D1%26x%3D3%26a%3DCAogMuPFcN9LaC1ysrX5raG5Q_g0v_Xzi9CyGxwE_l03PuESbRCTmNrJmDIYk6jVnaIyIgEAUgQJqbe9WgQ__ecvaiaLWBdANHgt88DO_DDsnC3t3D3cwC5HTtSK7wct_eZk4pMYpoJfr3ImCFmUskTbbYrmZ2gvAp43KQylm4zDBFlCHS11wP1RrbOAriAIIjc%26e%3D1727175939%26fl%3D%26r%3D29192020-DC55-4CBC-9CFB-5DA47F160AD7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dsi6WToSi8wSyYRv3iVaJDKAepF0&uk=L1Jn-OEcEtHtRvM5UOIViw&f=Set%20Day%20Range.shortcut&sz=27019">
+       <img src="./All%20Shortcuts/Productivity/Set%20Day%20Range/Set%20Day%20Range.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Set%20Day%20Range%20-%20Kernel">Set Day Range - Kernel</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUKe7VSLUllz5KIv5jopCiG6o2iwAeY-aNqq_-zUQRfqaTwANiiFvVXp%2F%24%7Bf%7D%3Fo%3DAuNHsPkVYuaRVjXaXA9HjonI7NZbiM7_-sz6WcXhRmkh%26v%3D1%26x%3D3%26a%3DCAogXRo5-zTdw_4xeiDass21qTv5SQizooAoErbNQ5-MseMSbRClutrJmDIYpcrVnaIyIgEAUgS6o2iwWgSFvVXpaia0BOP7OXGxWgmttMX2k4lJEdKhGXHkL9EAVX7xdW8Vnz7RGvsVnnImkeZMz_PdjuyIPSDRj9u5z0q0-PVhVaQi9Yxl8CK0vzjlu08wu1E%26e%3D1727175943%26fl%3D%26r%3D879BC72A-403D-4576-9DAC-C74C5783C57B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkMW9sreVVyCzM5RwUmJNc1LnPuQ&uk=xoBAopEWMVA7HWNURkLG3A&f=Set%20Day%20Range%20-%20Kernel.shortcut&sz=26996">
+       <img src="./All%20Shortcuts/Productivity/Set%20Day%20Range%20-%20Kernel/Set%20Day%20Range%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Show%20Day%20Progress">Show Day Progress</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYhILRIv0tnJjZoEFWdZkSOZqM24AU2mNCbMQkpvgpUvRYkLmzE_zWPE%2F%24%7Bf%7D%3Fo%3DAqZb-btBwVAWfgdGUZ8v820pI_WBWCCKLpCt0RjAyWaI%26v%3D1%26x%3D3%26a%3DCAognBswb8C9JPshvYnWbxRArzgy-1aBAWbQAXzdLk_IyhQSbRDB29rJmDIYwevVnaIyIgEAUgSZqM24WgQ_zWPEaia4Wt4LIPVuwGjjljPBzziHv5pe1og0LK0wrMzVV7tJyqrWoMT58XImYhXhTe7vFrMHjZTTfbsHNQe9LrCHqv2bny4IRHTSrn3nC_PLDNA%26e%3D1727175947%26fl%3D%26r%3D3360C46F-CFBE-4C7B-9DB3-64A09976D596-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQdDqtVzO7ykK6Ax-Q-TALQ6fhWo&uk=ylRvUnNCJxEzdzyp9TD57Q&f=Show%20Day%20Progress.shortcut&sz=29272">
+       <img src="./All%20Shortcuts/Productivity/Show%20Day%20Progress/Show%20Day%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Productivity/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS">Show Notification for Brain Dumping on macOS</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATWsz7wQXX9K-ymcv5JfFdLNV3BXAZUsekmxh7bAzWo1Kys-4a_t4Zjv%2F%24%7Bf%7D%3Fo%3DApq0FrbFjUz_qwCgfuZaOyfsYKuscrlk6_5S-NC-uaQP%26v%3D1%26x%3D3%26a%3DCAog54k2_lNXgJg2s3nKV-WgRspmkBq5sQ6zrJBLE3WIh8wSbRD__trJmDIY_47WnaIyIgEAUgTNV3BXWgTt4ZjvaiacXtztDxfyXxS44S3qG6t7ObZEA_qD9LsFLYDHUmS25w2FS9asAXImajFWarZQh0Hb90TCZJlwTX5J2NZTDNdB8ybFcYKNjFvEJ7iI7qo%26e%3D1727175952%26fl%3D%26r%3DEBC5DD58-9E7E-4801-B01B-B386CF28D9F0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3ZU6GGk_Yo173Ef8YNlzysdOA1w&uk=cAf98MRDq6_wBKGoqKPr7w&f=Show%20Notification%20for%20Brain%20Dumping%20on%20macOS.shortcut&sz=27380">
+       <img src="./All%20Shortcuts/Productivity/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3349,7 +3651,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Brighten%20Screen">Brighten Screen</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfCSK7wvGs7pPxdQyEXXLOd02BJUARNhZ8BmyMgFVTCu0hGlzfSWNLcT%2F%24%7Bf%7D%3Fo%3DAkb30Kd504AUC7pSsAzlj8pn_1T1TaqA7PT41bRrCfyW%26v%3D1%26x%3D3%26a%3DCAogSto3owdbeJeJSxnFCkrezdKk_64RKxzyBH7ZgpZ5exgSbRCD97WoljIYg4ex_J8yIgEAUgR02BJUWgSWNLcTaiZ5pLxbFSLUH5TwP9iV6LUEuDZXsyWWaflyyXwxe0rZjQ53JbeWO3ImBPO25cXRQX3XRQoFM6ZX5bZN-wkUqn6iP2CtQqMQma3uiXfrooI%26e%3D1726569268%26fl%3D%26r%3D5591566F-E61F-44DA-BCCC-55BE883F38F4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dykg3JNjwB6pKcA5pAmquBltiD9o&uk=OkXfA9qfdRbgKUmM8_B1Dw&f=Brighten%20Screen.shortcut&sz=28456">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe_mOHR6x7rzZvGt9wJW7pj5RFLGAZdzMiE55sEjlhyNeeg1lSTvl8QG%2F%24%7Bf%7D%3Fo%3DAqJ1HvTYPAhsEBAE98QpYHuGcmfxPqVrrvmz5IheZEq0%26v%3D1%26x%3D3%26a%3DCAogenYmWl1_dvOYb56zuvK8LAPK86hzLbzx_onBdIA0ON8SbRCjpJXKmDIYo7SQnqIyIgEAUgT5RFLGWgTvl8QGaiZ3w1uypuXlHB0qHpEQ5KQ09xWTOgjVszcni-xcJX66sZRrqyxpS3Im9i01ql6kaSonR6uq4x6ylEh8BgThvHQ4uf4vNGqBZempjFme94k%26e%3D1727176907%26fl%3D%26r%3D74641886-F89E-4062-BCD5-D30B5E9462DA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLItAODdPbqiRXyRMt9Av6sB2bQw&uk=iUkC9c8vjnEsCnPAuTKiwQ&f=Brighten%20Screen.shortcut&sz=28451">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Brighten%20Screen/Brighten%20Screen.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3358,7 +3660,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Dim%20Screen">Dim Screen</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXyf7hmJ_nnr3n9ZX2tl4KrZ6eumAVYG5p4an2HVQzL_Vb_BHgf0rCcv%2F%24%7Bf%7D%3Fo%3DAoHfEeVX3SMgZdVINLPej8_eP09VKBiXM4sDHm_b86Aw%26v%3D1%26x%3D3%26a%3DCAog61S8OnXTewtm0C4gRAv4kyyhMsERfTTAKMyn8NstcwsSbRC4gbaoljIYuJGx_J8yIgEAUgTZ6eumWgT0rCcvaiYo3RqyBEWaEBh80xzifQynWrJNYG1IPNOWHjbQyCYMokjAfOpKwXIm5cWlwAV0Oj7wARdKmtp-4fq4GpDSwh-qEWjZcZwmzUvlNVYkN_8%26e%3D1726569269%26fl%3D%26r%3D696E2DFC-8F2D-4765-88EC-EBBBB6EE3FBA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwvVLaLWTKErOwuC883wlSUnWc3c&uk=nZarRYJKqM81v9dWuYwObA&f=Dim%20Screen.shortcut&sz=27610">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVkEcB0UtVAWLP_Tbbd1Rwh0gByVAaQyRtt4zPqsx_0zV6GjXRG85Fuh%2F%24%7Bf%7D%3Fo%3DAuoHrAhQEwUOY2nzJ-OhejNlDu061zYeFUmVfKLnfwcO%26v%3D1%26x%3D3%26a%3DCAogNt1D0pJ6sjektXrviKBTjxK4jpLpwh0Jh0FwFRrtmpESbRDrqJfKmDIY67iSnqIyIgEAUgR0gByVWgS85FuhaiZAgNYpcNFmwg3RU1gKdNHJNsks5i28Oz8a85ww-34ZRVCS4E_OwnImNufz4X_r4hZfnBe43-AyJvsX1gq0QqY08cx0uwO0gB1u3JGDrmM%26e%3D1727176940%26fl%3D%26r%3DE13E2075-D5B7-4916-9E2E-552703560958-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSzLTtF6YfRLuwMDiJwZcCHBL4v0&uk=R2bWHC8QhZlgED7Yppyg6A&f=Dim%20Screen.shortcut&sz=27609">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Dim%20Screen/Dim%20Screen.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3367,7 +3669,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Minimum%20Brightness">Set Minimum Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb12xgv-EZ9kOoIndfrPFPxtJfzvAYAj8Tqj0ArLT7yVumlCgaJA-Qyp%2F%24%7Bf%7D%3Fo%3DAmEyXI-Ek8UHKarlsaJyTBNEoc88aOdlGeZuLwUgVxET%26v%3D1%26x%3D3%26a%3DCAog89FTC2ycHcwg8VmLAqnXyA46H5rGleVSohYce7eIWXUSbRCWjLaoljIYlpyx_J8yIgEAUgRtJfzvWgRA-Qypaiac2XrMymcD2mFzRv3P_gvE1jIj858Wu6xb33pf7VGcYTSQDHlgzXImHmQ7z8HMyNpZesVigf_Ha-uVkI3nZ1xdNcy-C1t22rU4RTiFj9I%26e%3D1726569270%26fl%3D%26r%3D1DA2E7B8-540C-467F-B0B8-77DED69F35B5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFu4HcXDxJ0hM8XJF1lk-MHCt7wM&uk=zYLp0ya9Wwbq5cUMD25WRQ&f=Set%20Minimum%20Brightness.shortcut&sz=26614">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXBUUDmVTwFT-q4V0lk6lOGvFGagAXEpfdJztFyiSccbKdTEZ9WO2E4j%2F%24%7Bf%7D%3Fo%3DAgsbR7y8BNychwVlbexnE6VoAYuAwkzQy8WG5nyKsSDE%26v%3D1%26x%3D3%26a%3DCAogUJ1VZDVHkr1chVQ_p11RkGQhJujnC3U7wAZ-Ys3cvuoSbRD4rZnKmDIY-L2UnqIyIgEAUgSvFGagWgSO2E4jaibYBIub1o3Kcg0usx43jxyQqAZdsBLE7PobrmP5j1136EEzVlly6nImWNKsP84O-fR3fAZtCombBAX5ka9QBZjHNppa6HQpyF1fsW2UAiQ%26e%3D1727176974%26fl%3D%26r%3DE3D27BAE-D7BC-4185-A974-F8FEB46A494E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU7nIPw3SUX_Re1qitaATypUSHos&uk=7e5zqb3diHDum1cysNdIug&f=Set%20Minimum%20Brightness.shortcut&sz=26613">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Minimum%20Brightness/Set%20Minimum%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3376,7 +3678,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Zero%20Brightness">Set Zero Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAREa5_nQG55dXZ1XXwJ4lqeNW_yqAYovAEtnfd8g8oNN-UbuWi2VCvKL%2F%24%7Bf%7D%3Fo%3DAtxEP7kXCqr1z8GwinO1c70cYCO6WoIg2OzWjlqsAIlR%26v%3D1%26x%3D3%26a%3DCAogGr1x4GU1iC22477wIuWAQed9ML0eQj9FmJ9u1My-ijYSbRDVlraoljIY1aax_J8yIgEAUgSNW_yqWgSVCvKLaiYgVHv2U69KIg4quuOOe6-6jzz9P0S6LPJkIQPQ5EIvAgw8TuvIEHImnE1Ekk90Zzm4rsLAMHatTu5ijCW0N1cBLQhVJ4BxN4lWP2npRVw%26e%3D1726569272%26fl%3D%26r%3D10EE3D7F-8171-4E6C-8803-18A14C76A925-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxuFwauR1jfDiT7LXN9E-HrC3_cQ&uk=PtCfAXyzh-lmRlez6vZj2w&f=Set%20Zero%20Brightness.shortcut&sz=26629">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdoVAL5YEdjMH5FEELq3XSxUd4jVARjs-Td3womAHkL41GOH-ZbOpWJX%2F%24%7Bf%7D%3Fo%3DAvKdGKIgk6-6yQu0Q8xm0vzyvsDT7uN4js2hXqGieKWy%26v%3D1%26x%3D3%26a%3DCAogoZnWd4qJL4wp2vIRig01A-enmmPu81QeJucErbhyBq8SbRDCs5vKmDIYwsOWnqIyIgEAUgRUd4jVWgTOpWJXaiYRfCfeKG_sGX3BhaR6Fl74kQZz136cBufkI2egwvP4rkiY9egNWnImeVcBqHvUjgfuurLpaAm6GrI8w5uUIX7URRn43iE7jwls7Qu8W-E%26e%3D1727177007%26fl%3D%26r%3DB7CDCDD9-E74B-4A1C-AB0C-181E89C5FCAA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGM3AwWCq16Hsljzbqy6UgoOnH3k&uk=pFSmB8jtuFNL8z29wGplWA&f=Set%20Zero%20Brightness.shortcut&sz=26628">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Zero%20Brightness/Set%20Zero%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3385,7 +3687,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Ultra%20Low%20Brightness">Set Ultra Low Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfzvCuiHp0_YufgpqZqTq_DO5c3nAUr8IEg5lc0eRyKwxoUm0JSK3mER%2F%24%7Bf%7D%3Fo%3DAs9ISrdU6sp9r-MLU0p7AtV8bgWCngPAYJbq77ZLqSE7%26v%3D1%26x%3D3%26a%3DCAoggO_113FEXdDwsu4LZGrDbEpUUF1NFL0XZE9b7Xc0y70SbRDSoLaoljIY0rCx_J8yIgEAUgTO5c3nWgSK3mERaiZFnjadc9IqV5peFrY4Zot4PsAhUfGhBJM9EFf6pY5VNzrnqh12PHImebg4Q3mpaaAV6Aqni9ERMc_A2ub3lXf6oCMQQtgdbWGQbDstBLE%26e%3D1726569273%26fl%3D%26r%3D5E996349-CB5F-4732-86AA-4FC85B3A24FD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgWaE9eOcE5CMqvdzFJYRv2SRzYg&uk=llj8Br4MroB428mIYjY1Bw&f=Set%20Ultra%20Low%20Brightness.shortcut&sz=26635">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU7WdAbjgkak8uJNm-j6eNtTzgawARKzqZFS69fm5XYUkzeZ4IEbkGsN%2F%24%7Bf%7D%3Fo%3DAtfTQOzTpmUKtU5MLxQLl1s7MYA-RRp7TdKJXXvNSE7V%26v%3D1%26x%3D3%26a%3DCAogk3sdG2FmqqTmLLcSae14KUS_Phpkfmtt6CgQNZoVcOISbRCRjZ3KmDIYkZ2YnqIyIgEAUgRTzgawWgQbkGsNaiaCAe7RvgL8jzYk-bWDyXywsXlgq-gQ_dylJf98YekIKkdqPMxRbHImrod5qmsvdxXJ-kYnsXQ_0q_zCeZ_QG974nDGxsq1kQ_MqsOrOxY%26e%3D1727177035%26fl%3D%26r%3DADC77EA3-32FB-4D18-BBBD-CA04F0B4969C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4MZXK0uuxKU5juwrBq_ZsTzu_PA&uk=UtnVqbZBRX5WQU-P3yyxkA&f=Set%20Ultra%20Low%20Brightness.shortcut&sz=26634">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Ultra%20Low%20Brightness/Set%20Ultra%20Low%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3394,7 +3696,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Low%20Brightness">Set Low Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW_RdZAbG-BLjoa9LKebGXcf9R4vAdL1EJNH0yYIWekTWzLt85I37E6T%2F%24%7Bf%7D%3Fo%3DAizxD3tvRCMnBk5of4odH-61sDp_80X75LDRkoiXiYG_%26v%3D1%26x%3D3%26a%3DCAogAt5clcPDds7v0AOPSIIgsUuUMkpLS5l6NHqYZYBctIcSbRD5qraoljIY-bqx_J8yIgEAUgQf9R4vWgQ37E6TaibiTJ4yAFngP5jdBFYOI5ydg9bvlCrQVbjSWe3HAVf18Mii7LuS0HIm2W9wKn6C2CxbB47WXmTU6D7pN--LQtvvOVtkxs8lfgQ6pcHVwJ0%26e%3D1726569274%26fl%3D%26r%3D460780D4-F266-4CFA-A0F0-B3CAE97A16E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZpBBnK_Dq7zU3HRIGKo-EVdG_ks&uk=O-Fn9E6GzfLGVe8L-7SjXQ&f=Set%20Low%20Brightness.shortcut&sz=26635">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASZg0p30Ro3DpcmDgKD7Zb_uKhxSAYIGIEh_m2lev5CxPgQSm-9p_Odm%2F%24%7Bf%7D%3Fo%3DApnrreWIXxBJAFIMvT8RSir2P_L1rWF2-MqmFVGN6ttI%26v%3D1%26x%3D3%26a%3DCAoglpyFVFVmVZv4Wd8P0jE_na0BFlcNhZv7ufipD_0E6hYSbRDnkp_KmDIY56KanqIyIgEAUgTuKhxSWgRp_OdmaiZlDv9ntI4DtLi2vbVSWjwtD2Qn_Y4JuOCEyAyn2NvkVEXhjptQO3ImTTi-PrZb7U5ir-AVy4iL0dqmhvcMw13X3EVDrWJFBP4ECPx8gFg%26e%3D1727177068%26fl%3D%26r%3DD0F5E7F2-C3AF-48E6-A730-ED6C1F52C8CA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DA-qz2NmEroCWhXkt9i7tdNuDD_c&uk=nID9KK5Ghh6EguMSmViVhA&f=Set%20Low%20Brightness.shortcut&sz=26634">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Low%20Brightness/Set%20Low%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3403,7 +3705,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Average%20Brightness">Set Average Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX9NDCWXlWon6E98rRS2xoHgAGXPAVe0J7DyXcOE_-Q9YvaRJoYT1NYe%2F%24%7Bf%7D%3Fo%3DAojE0s2aJX5Ucse2ngWxD3r329kmr2P8yRoUKwV2QbC_%26v%3D1%26x%3D3%26a%3DCAog0O8OXvJ_dB_pka68ffzdUp01TiDIb7sCZPCr68hlj8cSbRD3tLaoljIY98Sx_J8yIgEAUgTgAGXPWgQT1NYeaib93-On3baaxOTC79VYmBQEMvsiZwsK-eqOaoE5vEXf5AV1mIrcRnImDScvExxe5hZtrNTMo3ZUAPaXMMjrKkPCpXfnU_4heFi8eDdnQ1s%26e%3D1726569276%26fl%3D%26r%3D3FC6B455-8E20-4C90-A0C7-FC2DEE430329-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgB72qcx2Otttr3biQybM_bovRBA&uk=Gifk625E3GzrPIJQ8pGM4A&f=Set%20Average%20Brightness.shortcut&sz=26631">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbznzRptE31tuVoxhBp-T0OaZ9q2ASm6xh4hFJlAUjW6FsqFFmKJM09o%2F%24%7Bf%7D%3Fo%3DAjTrvMCDgI3Q64031Fzw-dj8pwgafoPNxQFpKRjz_ng_%26v%3D1%26x%3D3%26a%3DCAogfvlpsHMIN9CWLJ9hCWdTqWYDPySkTZlg2KFihkkLzr8SbRDdmaHKmDIY3amcnqIyIgEAUgSaZ9q2WgSJM09oaiZnqqgbHAPuqa3k2tLHifbIFrX10n39fY3EnF7o112gI_QAKDT9lHIm8lVcrDY9fPWzeF94J1oV4RZ9H27r68iYpfESvE-CIVa6sWop_kY%26e%3D1727177102%26fl%3D%26r%3D606DE523-6844-4ED4-A7AD-F0AA59B995AB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DP20qZIE0QyUjOjX13wUhF40_4Iw&uk=Ao36PqleVTmRsJD1-qazxA&f=Set%20Average%20Brightness.shortcut&sz=26630">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Average%20Brightness/Set%20Average%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3412,7 +3714,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Medium%20Brightness">Set Medium Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVjLNyWiVVFva-4-VBJiJQCOwuZCAR5tF3jFxhZMxGzkhyxJuVA3k21W%2F%24%7Bf%7D%3Fo%3DAkP0YGEa3vDBukW53d0bSQA00kuENAcSOmo5yYsxmRl5%26v%3D1%26x%3D3%26a%3DCAogxh3mC9CCBhTZHpydkhDpKyqNKYl6xe2nClWhmr4MX-ASbRCAv7aoljIYgM-x_J8yIgEAUgSOwuZCWgQ3k21Waia3L_7PE6fDNITmShlvgLk7kMIs2ErthpfwYA60GCkFNfWXzrHg53ImkEAF_mr1uQ9VVS3anRLqKYQFj_E2nkZJIuEDu2QSIr0YEHr5O70%26e%3D1726569277%26fl%3D%26r%3D7F2F6B44-EAC5-411A-8915-D2E4E1260CAE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DF4WE7FPBaCXEJOdwm6GIHtBGZQA&uk=oukneROCRTIkFqjjTTZcnA&f=Set%20Medium%20Brightness.shortcut&sz=26639">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfo-AiDxgQrFe3P4iekvRbP0oKlBASS2s3EzVx3sx1CymXD073YHuRyC%2F%24%7Bf%7D%3Fo%3DAv0-f7_udg6DqEsAnajLTUZ7VG_TXLzB39DM-dTUXBaq%26v%3D1%26x%3D3%26a%3DCAogVHCuaeyXhHZogw61hNi0y3HCp6sUkZqN0Vid5P-6Py4SbRDUoqPKmDIY1LKenqIyIgEAUgT0oKlBWgQHuRyCaiZaMeZtMTmQmbRhK79izLbJzzC1XABuLPnI9ya48GfKDR-dOxNgInImcqwwqqb1-3ktRaSkbF4gjU6pcrV7kFi7PzFDSZFwZ4hI9FPaMdo%26e%3D1727177136%26fl%3D%26r%3DF050C085-B3E2-4D24-8E69-5F4A9F951D6F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJO9u3Kz4_DUz7GwDECAPtdbdSzs&uk=CMn_6R9L3LL4fXrggP8jFg&f=Set%20Medium%20Brightness.shortcut&sz=26639">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Medium%20Brightness/Set%20Medium%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3421,7 +3723,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20High%20Brightness">Set High Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVrM8iYtzCvZocfJwMbtOaJoO9RKAQ__RYJVxqK9vPL4vSB7JjeIUNaS%2F%24%7Bf%7D%3Fo%3DAjPDzhFNqqhp-XQ2-RoXzRl8RsBZR5Mi__vhPHLBAyXV%26v%3D1%26x%3D3%26a%3DCAogFHId0R4am5Yfvex49zxQPbui-6_Ovbe3_pF4MPHKyi8SbRDLybaoljIYy9mx_J8yIgEAUgRoO9RKWgSIUNaSaib9t9U3RQbYawxkclR3YOXK35I7IKFM5rusTJCaz-wNdE-NIR_ioXImjUZnx7c6rybJ5TDBr9oaDQ8eygPqGtDwBYAHC9fO8Jb87Te_Ngw%26e%3D1726569278%26fl%3D%26r%3D2B37EDA1-5729-45FC-A39B-194450A456AA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbWECzoZvEk5rDq6p7ABY_GUe2rw&uk=3AbiSyHniIwr9KUh-GW1gg&f=Set%20High%20Brightness.shortcut&sz=26635">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYFy0KogKK2nR6DO7o9y1B7DAcvmAVTWgd3a4CMETkqQMGzi98-K4v1j%2F%24%7Bf%7D%3Fo%3DAvUfaKyOsAo3PcjKHysdnDlCJZcxhbqA58nrSeOVskYT%26v%3D1%26x%3D3%26a%3DCAogWvivM73sg0K_pkxesZI6no2w40Li654zTTiHjQKc-xwSbRDQj6TKmDIY0J-fnqIyIgEAUgTDAcvmWgSK4v1jaiYRjYOWTL1IAKcnHijpkPtcdo780UOtlrlTz3dlqSHI72TrjyqDcXImiUjJWJmMHQ6QbbFTatYay6mKAv4NDakwKgnho01U_GZ_0EpdCvU%26e%3D1727177150%26fl%3D%26r%3DAAEFA6C8-A9E4-474E-9FF8-3338A7CCC1FF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6Bq_YEp0TSMyb6Q8KfZZgWaZiJM&uk=i2jNtoAfEoachh0fQTa4tA&f=Set%20High%20Brightness.shortcut&sz=26635">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20High%20Brightness/Set%20High%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3430,7 +3732,7 @@
        <summary>
        <a href="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Maximum%20Brightness">Set Maximum Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZvJshzLB9QY694qMNGuGW922SPjAYf13wGTmXfyJHq5N-uObcUUYHt7%2F%24%7Bf%7D%3Fo%3DAkKwDOcKC04Wj9GaOcOm3oXufXN-u7KGM3qN8OSUCvwh%26v%3D1%26x%3D3%26a%3DCAogRRKG_odcIp6NiRxY4ga_ZGwaYWACQsXYBvKRHwPKLMYSbRD007aoljIY9OOx_J8yIgEAUgR22SPjWgQUYHt7aiYViwZgWiwBMttuSLmEnPVXqs7dQrhj2YutgJU-0e6UOFxsTbs2e3ImRG7RoimacKnqmWom7gEJ2qN_p4gMfJ3Ao1VRHre0uf70Al-gWMU%26e%3D1726569279%26fl%3D%26r%3D60A9C6F7-BA9F-4EB2-AE3D-4B81B14E2645-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPgrR13fqzCv63DYuyp4rssn4H0E&uk=52BWi8BTbNVeUFPsUouSjg&f=Set%20Maximum%20Brightness.shortcut&sz=26631">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW2uEzE1xGpoQFe6luxppuAq_AUNAWRMS4dT_0uuxN11VkupnD1ZM2Ab%2F%24%7Bf%7D%3Fo%3DAnThJZcPvIU_L5rBFFgtmMue5totglxAwAzEzCkqOSAn%26v%3D1%26x%3D3%26a%3DCAogFg_SRt-dVb-JmqljsVFBFtvOrc9fwFGk8uIt_qK6b7sSbRD1labKmDIY9aWhnqIyIgEAUgQq_AUNWgRZM2AbaiZ3kelfG_NVmk0k4ybgiTIYEcimRI0OuU7Owgl7k6dZAKOCKO4uNXImS81ZlB27R0AXXexRIhfvtFKPMkwVxeW__my1lb6IOr5zxbv3siU%26e%3D1727177183%26fl%3D%26r%3D575FFD03-F010-4934-B1EB-183EB137A5EF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Db_flRuvk1Pf4yrHQXdBIPs7Yu3c&uk=PboohLUCl2P5Ny77v_Dgpg&f=Set%20Maximum%20Brightness.shortcut&sz=26630">
        <img src="./All%20Shortcuts/Set%20Device%20Brightness/Set%20Maximum%20Brightness/Set%20Maximum%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3439,7 +3741,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts">Shortcuts of Shortcuts (28)</a>
+        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts">Shortcuts of Shortcuts (27)</a>
       </strong>
     </summary>
 
@@ -3447,7 +3749,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library">💾 Backup My Shortcuts Library</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYXjBoEDepTWRh_O6OP694fFW-gJAeADMEkKvErrV2jBo5i6snjGB08b%2F%24%7Bf%7D%3Fo%3DAr2vM3Fh8ZalKMM1vhz4nfqcssg7Lh9et-2YDzo8lZSR%26v%3D1%26x%3D3%26a%3DCAogIQ4kMSRiTz2pPIbI-PY_jnbIZ4ZcpCCcft7BmbPQenwSbRCDtpeoljIYg8aS_J8yIgEAUgTFW-gJWgTGB08baiYOO4KWHQveWDcaslo5LGILlMOADcCp7XYIbqk6QOlFxMU_r_mqIHImGBvsfeW3mDZGMHbQajFK36bzPHFcIQcCHuJ1gproF4ftebVd6co%26e%3D1726568768%26fl%3D%26r%3D97D46B12-6F84-4E9D-8484-2EC99FE930BA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbBE7PEq0Ngb1JcHBy0rfGr4tQhw&uk=gbVV394QnDhk3FFtGW4L1Q&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library.shortcut&sz=27070">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASKYESXPIuPRdHjXtgc8uNkTVZ-QAVBZN5mieOdvbEAJBHb8BGxKHyAz%2F%24%7Bf%7D%3Fo%3DAu0sQOjZbyrKA_KVd_SqBp3z9x2SIvn5cjJ3mwaCaGcu%26v%3D1%26x%3D3%26a%3DCAogH0GSyoCGBQv0k_J9arBj0WSLF5WrzxYCM_7FVkzcJswSbRCs_7PJmDIYrI-vnaIyIgEAUgQTVZ-QWgRKHyAzaib7f4Fg5sXlvKT-WCf5n0YKHBgluYVA9XeQ-4voRrymzP9VW0RXdXImfrHfhhFUPtdKTgvWh3TKpasntpvWFbGdaOAug3qT71DpbDvYS7Y%26e%3D1727175313%26fl%3D%26r%3DA58011FE-DFBD-46B0-A614-7F3049B368E6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-cnjWa0fDj4oa6nKJjsh8tfd4oA&uk=SSvZMIA0TPW_0PeKRiBX_Q&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library.shortcut&sz=27069">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3456,7 +3758,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel">💾 Backup My Shortcuts Library - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FActg8FYkU4hV_dhcyzfzE0UMCUWuAf7dQV9fPs1BOSWT-hZssm-7up5J%2F%24%7Bf%7D%3Fo%3DArYjOmDoUkkxzt_lTTL5JVVVcJpGMNtGBpE9ElCvYygC%26v%3D1%26x%3D3%26a%3DCAogwH92Cr-PLFrKhnV_L7q-Gvzq4FR6RQyGSIS_cd4pM1oSbRD5v5eoljIY-c-S_J8yIgEAUgQMCUWuWgS7up5JaiZbQ61GrrSZ88RxU6ifjNIcmuC4mWFhWl2yZUONh26rDuHkGXjoSHImb1CKtOJmEkhg3AEvsn51f41FVq60qqIoCNVcXwo5FQEiNUL59z0%26e%3D1726568769%26fl%3D%26r%3D96FE8B8B-52E0-4907-BEF8-9703EE8B9214-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6RdnC8pCFT_V0WQyuX5pyiAIGz0&uk=g8SlRyF8BSZqJyxQ82CO-A&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel.shortcut&sz=27399">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQPyEm7NgXugm1s07EZH1FZTUwYMAWN4-wyONx2B9OOz2CsoeiSQww7O%2F%24%7Bf%7D%3Fo%3DAsZGj2afwmP7fNJLfUxCnOOJTx3McHy73A4-k0U5DYK2%26v%3D1%26x%3D3%26a%3DCAogdnXn5HmVNTbTQjJqAs3OSbOWst75o7-KzHwSYchhx6sSbRDTn7TJmDIY06-vnaIyIgEAUgRTUwYMWgSQww7OaibkZ0RtDKQsroYRiTKITaWzIhpzeycTy2fF4u2BjwF3KQGUi0ryv3ImeO8W1rCA2NXVS7zHJUtNYygQu-STMc2a7KTMVd1xLe08LCkJcyc%26e%3D1727175317%26fl%3D%26r%3DE71D2727-0F01-4210-AE90-468AB9845D02-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVhM-w6OIc1b8MRoQztAV8gwhILs&uk=ZVdZJgrIiSzI_LBBMOEjzw&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel.shortcut&sz=27398">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3465,7 +3767,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Filter%20Shortcuts%20By%20Folder">💾 Filter Shortcuts By Folder</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdOlRLNm1ASbbcbxXVUUdiJFd_pkAanGpUpdBnA_NHWiZ3ZPDQGGK7M_%2F%24%7Bf%7D%3Fo%3DAgj0bCkOneMr05Plj1uIhAIu0wlbsnh3L0hTIiE5YYV5%26v%3D1%26x%3D3%26a%3DCAogofxUEC4GnV7dkHiSSysKn7_Me78dc-NHOBeuBrkR-bESbRCJypeoljIYidqS_J8yIgEAUgRFd_pkWgSGK7M_aiZZ9TEA2yDoJ0ySFlBP6xta6CpSS8Vcmxxsza2W2nXs5WfLdcYn7nImm_9ZKVIZMwZ5qqDmR85zbU4kb0ktQYSf2ycSoAlTXqUTxBQqaPo%26e%3D1726568770%26fl%3D%26r%3D311CD067-9DB9-49A5-AF3C-20437B37C542-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DewGJb1YO2QX2nKIJ3oit3L_nYxE&uk=gl9vvY_22jTWM5Wczkhwqw&f=%F0%9F%92%BE%20Filter%20Shortcuts%20By%20Folder.shortcut&sz=28243">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATTzxD5DHL3_GznPMUCRzH1RXAFyARU-bo8W250B8QyFgDUn3tZpBU9v%2F%24%7Bf%7D%3Fo%3DArD_7UhT1Kkysrdim_6swax1SRXuaa7Yx0XfgfRWlm8j%26v%3D1%26x%3D3%26a%3DCAogOYnWwN4_t9g22tlLuiTCllMW6FwvdVFq9Uj_OeAIry0SbRCdubTJmDIYncmvnaIyIgEAUgRRXAFyWgRpBU9vaibTQHUIbaYX5QTQTazY3jeAE_Zv1KnZRomrvhuYHansisrut8DqCXImqT5lXzhOvbZoyPcbdBQUzNvDyeVn-exafC9iLLi3-W3MXc4STpQ%26e%3D1727175320%26fl%3D%26r%3DBBDCA4AA-5678-40D6-91BC-E418C2E62EAC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Di6ZyV5sATVctRCh6hMXbr-8TrIw&uk=8gK8UqxTs1PCKq8zOuJU3A&f=%F0%9F%92%BE%20Filter%20Shortcuts%20By%20Folder.shortcut&sz=28451">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Filter%20Shortcuts%20By%20Folder/%F0%9F%92%BE%20Filter%20Shortcuts%20By%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3474,7 +3776,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Prep">💾 Backup My Shortcuts Library - Prep</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQal2z91hZGhLTxQ2PfBil22fgQFARJWwGLZ8RDb7rCXYxxNjbYnvkdi%2F%24%7Bf%7D%3Fo%3DAk3rp4DobykfpSuVgpXMeKghXbLfVCUP5w5eZoKcoCp2%26v%3D1%26x%3D3%26a%3DCAogsRZqoqZSi8gsTC3lXZ-rCDbM9EJQ59HlgMM5zu2_Fb0SbRCV1JeoljIYleSS_J8yIgEAUgS2fgQFWgQnvkdiaiZzD4NcoockKeRj_JQ8kAfcv25Ig_Q_Bm-kiERBl2WuzB4Wvy_bsXImH9a0a89IfvOp4T20yNJkwp4u7Ct9IRIc-L3jBvzE-LKsgjB2t3I%26e%3D1726568772%26fl%3D%26r%3D422BB53B-7F40-4137-940C-1782C60C4DA4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhI6hufSiC0-IlpxKIm7rPHdS0BU&uk=z7TtTANdQsTAwQcwy7-8xQ&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Prep.shortcut&sz=27733">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYQgoB0JgmT5lz_qkfDCnMa7hexYAQKmA5gsX0A1O-1u51wg1wgbd3tb%2F%24%7Bf%7D%3Fo%3DAqVszn_A8cjEpINuLYYLEJ8kKRqOrmYX6488awzZvqNR%26v%3D1%26x%3D3%26a%3DCAogD9XEm0wgqZYxjRvTHI7iIiusgrvPeR5u0VuKcy_A0ukSbRCb0bTJmDIYm-GvnaIyIgEAUgS7hexYWgQbd3tbaiaL6i7daiINvSLNebea7E7rZtN5MBNGG0imbwBfG8Lrtm6q2z8Xo3ImTTc5zqTbn4p1Z2MduBqsk7fndnOHqJA3E8Ijc3heJQf0ktNNeWg%26e%3D1727175323%26fl%3D%26r%3D4823EF99-489B-46D9-87F4-D0D13667647D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqnmcNHJO3iXLU8OTjbrtIU_EjA0&uk=M0IWZvPgd8BSlLcxMFhCBA&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Prep.shortcut&sz=27741">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Prep/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Prep.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3483,7 +3785,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20I">💾 Backup My Shortcuts Library - Part I</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUbYX-ZQfzyrC1MTV5ktxw7N2OdzARjfJLWsjLjugJyIHMSW_1M7Eox8%2F%24%7Bf%7D%3Fo%3DAlpZbcUwAlAXyNard7FPGlYwAVWZsZ7nl2YYowgQDSox%26v%3D1%26x%3D3%26a%3DCAogo9Gubf3zJZdHPRbgt-CnAN_plUJ4aYFl9lvcWZ_5YFoSbRDk3peoljIY5O6S_J8yIgEAUgTN2OdzWgQ7Eox8aibJlbuesOCfnuZrxsGuJaZaZ_NatrnzA8-2BbrBxWkNvsMoVoXnfXImNFsXX8h_8IaFQ8ed5hd4knCDt8VEHy4D7hkXzBFJLdsbgCrHnF4%26e%3D1726568773%26fl%3D%26r%3D7B3D4419-EF00-4E8A-BF01-D16EBC02FA25-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8UvEg0GoNDIBEJNdOkkk2qbnAuM&uk=gZAap4YeTt9zdca9-MqzbQ&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20I.shortcut&sz=28491">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd5axs3r5pPc5aa7Vs5MfUIba0vwAcse0xYnIjFiSX1PuCLr6gq-ikXg%2F%24%7Bf%7D%3Fo%3DAll2sEthzPGaCz2MqbVPNbzB5B-GEofkjMV09Nh93Pbf%26v%3D1%26x%3D3%26a%3DCAog9zQ3RaOF4ibSfUUk74TAGKF4l42xhai6S797outA9E0SbRD86LTJmDIY_PivnaIyIgEAUgQba0vwWgS-ikXgaiY4vZL46VtWkEsUSwGGh4Fft7fNqMVFS-8x6fXQU3KFJ_1ZjwBC2XImyiFXW_QpwC0pwkXyiJom2TcmQgK_qL_eulope0T9fQnraHjcsGg%26e%3D1727175326%26fl%3D%26r%3D4150FC3A-1E9A-48F7-9EEE-B9074FCF57FC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dw0EdlErspJ8lkoEFGe6T8xdahp8&uk=f3nCI4JS0vhRXM85mCjKiw&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20I.shortcut&sz=28490">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20I/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20I.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3492,7 +3794,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20II">💾 Backup My Shortcuts Library - Part II</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfp0-Vx1H_k3Br1V5wzAg-uxI1beAYdp3yFu2vbK4brMP-M3mzPiEo19%2F%24%7Bf%7D%3Fo%3DAoAMJfvl8vR9Sb688B0vN_OTt1zOWRcKXIME2j_txJpM%26v%3D1%26x%3D3%26a%3DCAogScimjBZvcMYk6ZVt0ps8Y_ThJKruzkL7KN3Xv0VjNJ0SbRCw6ZeoljIYsPmS_J8yIgEAUgSxI1beWgTiEo19aibSYLQq0y1x03Cr34tKp-NzZwI4DcPUbhPBK1yjGh2_QN4M3WwQn3ImvsVsReKigtDbxqjK4DG14ou9h1occvTAmcmrwJa82_GyRAK_UcI%26e%3D1726568774%26fl%3D%26r%3DD0B4D0DE-E841-4189-9177-D4D5769472C1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQ0zd3IevDRHuCUvW9msogU-5r6I&uk=cAmOxxT3M5RRFcaYKi2tFg&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20II.shortcut&sz=27900">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcAuswHECg46lNs_sqOmgbJfseRiAWY5kyngDqnmuR7k1QJ8uG5L52tb%2F%24%7Bf%7D%3Fo%3DAmfrVTYLaMx2Ag-teq2qmkrI-p0olr9QAewRZND1otk4%26v%3D1%26x%3D3%26a%3DCAogUQFJ3OK-388VLJ3fVU_1p4RCx7jLwXFk9ay7_CLReDsSbRC1gLXJmDIYtZCwnaIyIgEAUgRfseRiWgRL52tbaiYz7Do9vpGmUC68Lmc1ikYxM9qGMMHCuQ5-l92yQ13Uxyx_fuQeZHImV4JeYBi_cTNe6xTzzxFu-vIr64uwZEysg4eDIblX3FGs5x5zFC0%26e%3D1727175329%26fl%3D%26r%3D7350BDAB-02C1-4DA4-8D9C-5208C8E86123-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dgq5cpxVhjmpCJt8LWvh4BXhv09I&uk=ULwhmkdsQUP3dUi1mI1KzQ&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20II.shortcut&sz=27899">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20II/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20II.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3501,7 +3803,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20III">💾 Backup My Shortcuts Library - Part III</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfIa0V_yAbZJJWAem3ckkcFbCkWhAWAQwr0E-PsWZ6GRhB30MR4fG355%2F%24%7Bf%7D%3Fo%3DApD9SoF0tIYpfiWnkq8_grXVUqnSq0nk2bc5G1mFnpPD%26v%3D1%26x%3D3%26a%3DCAogb9fbIidwNB9N-KQCV_e2qbKF9htD7-AfFcmP_vjXEqQSbRDl85eoljIY5YOT_J8yIgEAUgRbCkWhWgQfG355aibYnmhr1q7gnacrE5woM8dkUYKB7uNLKrbnCOjtW-odYTKUDmWOdXImRVFNE41ISv4l0ezgraiygmHY9CQ3iOS_iZB2ojVgzqXAhtISbEQ%26e%3D1726568776%26fl%3D%26r%3D47CF4880-04E3-4E04-BBE3-81074373700F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlQ-gyeytBsS_jbSUHBRKQS58qHA&uk=IlIwKqB0IWF16B2SAtaJlQ&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20III.shortcut&sz=27335">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUhBFs_q1Ss2XiDXMjOLJvp2XzR-AVlMeSMddF8tAA4_nji_Bwt8ZXMw%2F%24%7Bf%7D%3Fo%3DAm8UFEtk8HUZJ7XAVRrzEffN1gV4I3pZC-DOAdIanYRA%26v%3D1%26x%3D3%26a%3DCAog4yvw6fLyyKc_hWMArtZCxcYxgqjVox52bUIhkyIOYF0SbRCImLXJmDIYiKiwnaIyIgEAUgR2XzR-WgR8ZXMwaiY63ESBm1xpZ9k_73ciHQBfn8q7Wd9zZ_IVers8CgDBHYCaD2WSUnImNrMe5zcmDPGqJ-gDsqlGaidZlufD8ZvvV9qoHGHWykdWyJijYvg%26e%3D1727175332%26fl%3D%26r%3DEB115B63-096F-4281-923A-757B0E19F7A1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dp77CRSHtNZHZHr8jgnVhqFx4Dc4&uk=k1atiP9Imc1nWUruMYrc-A&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20III.shortcut&sz=27334">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20III/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20III.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3510,7 +3812,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20IV">💾 Backup My Shortcuts Library - Part IV</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASSDF0J3AoDiR7xaORqeVUSwgUSMAZUIoGMM2D0k8GIv3C2Or6yG3nQe%2F%24%7Bf%7D%3Fo%3DAr_V6kNmHBSf-W2OGbZW9yqBNLY8ZvND-yWQ52Owhqkz%26v%3D1%26x%3D3%26a%3DCAogDAF4eQbhEtlmsHpi5QTcVa3HN7CdKAkIfg60mXI75p0SbRDi_ZeoljIY4o2T_J8yIgEAUgSwgUSMWgSG3nQeaiaILhfYdWdBXGiCrYF_1r2tlr0Ro0Oru27VknUT7VKXgrQglngd5XImfZzSDMpHFGk9hxfk71TIbRQRi7wWdT3x4jyWZyoM1VLrN9WOCNQ%26e%3D1726568777%26fl%3D%26r%3D70C4F0E2-320B-44D2-BAC5-F721982BDE80-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAbjHgGsMEUCo3YjGYvMstxtKfCU&uk=pbuMYpGOdIAd-vB3fzvRKw&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20IV.shortcut&sz=30007">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVDP3HCD-xVONq-Yvm5RO8eLcVgdAXIglvzVCgj-UD9PG-ad3Adq8PGd%2F%24%7Bf%7D%3Fo%3DAhtS8WxzwDsuc5igOfW58k0pN4WyTalzEA_xXTLYXUd3%26v%3D1%26x%3D3%26a%3DCAogZeEIKqfAWQl0iXjxC922xhtAr0bqNOESu2Vv5WUsgoISbRD0rrXJmDIY9L6wnaIyIgEAUgSLcVgdWgRq8PGdaiYfoEjxyGXYy7Nwq9cUqCEHcV1ZnS1BAcrSb-q1jNiZPUMpQH0H0nImHerHeXr-FFKIJ-cvwgqIojkFoRtVXdH7KEm2kBxmIB_2YzeVpV0%26e%3D1727175335%26fl%3D%26r%3D3E1D8AAA-008B-4155-A6BF-C065E978740D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTvwq6v6HZH62wp8LcoSiQB7ZF_A&uk=vs_YsFkt1NLUdZaKFzc-KQ&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20IV.shortcut&sz=30925">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20IV/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20IV.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3519,7 +3821,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20V">💾 Backup My Shortcuts Library - Part V</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASpwAZaiuQqEsUQfDs_lN1shs83jAXRWazrkDfwODnnnOoma1GgvJOVA%2F%24%7Bf%7D%3Fo%3DAmJG0fr8zXUNav4EF_co36nRf1q7txgCuKeXw0jvn2wU%26v%3D1%26x%3D3%26a%3DCAogfWEFNIzstQULolNBh0n5bgukvsv5vcCAoucOynKlfN8SbRDjiZioljIY45mT_J8yIgEAUgQhs83jWgQvJOVAaiYie7CaVHGbS2drA2zOTCw6embxe1NT5vJHe7fvcepHsjoP3KKKGnImR5N9IGqZXtWtt_hMfCMVeaNbQe40JfWYZVgbDmHEGAkzligd260%26e%3D1726568778%26fl%3D%26r%3DAA260988-D58E-49BF-90CD-A3175A593FD8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXbkVZf_QYRUDr-K9s0lbrZWxkCQ&uk=FQZRfommCyZE1nUDIykVyQ&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20V.shortcut&sz=28865">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZimnuelxBK2kYj_S-Y90oFSJv1UAaSklSH9AZhl23SrqsjNWNVzK_n9%2F%24%7Bf%7D%3Fo%3DAmdb64wzh49blDvm-Fas4BYKMPuMcfVX3UDbimpYLoO4%26v%3D1%26x%3D3%26a%3DCAogyRENfyalDvMM34oCuD8Jx_DLl0YYl_vUopEel49S40ISbRDWxrXJmDIY1tawnaIyIgEAUgRSJv1UWgRzK_n9aiZKdvbKboVdu0CUWnRnVM9LaY49-fiGgzmRCuA6Ksv5XXB_FC74c3Im972YDPXdP4fH4l_FkyiQ3NRJSDvwuJYa1G4rjyB3KN3aDXGiVhk%26e%3D1727175338%26fl%3D%26r%3D389BBD1D-1E23-43D7-879D-AD34A7DD8834-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDUXU15xoUex4DG7dLYRv1j5BxL8&uk=At_IA795WxQEGkylH5WJ2g&f=%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20V.shortcut&sz=29083">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20V/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20V.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3528,44 +3830,8 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup">Create README Markdown Content for Shortcut Backup</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbFHpz47_E0X_CRO_WSdhH9MvRVeAZlc1TAjJrfPNaOfHhrHhsOWwWGS%2F%24%7Bf%7D%3Fo%3DAlxKUfIzcEiueB-SpG1u1wAAPSMMxKPSTN6fXkunbcpt%26v%3D1%26x%3D3%26a%3DCAog4w23mtu5kqPc_-V6gFyaHxUYFIzs1yTNnG7O_1xOA7YSbRC8lJioljIYvKST_J8yIgEAUgRMvRVeWgSWwWGSaiYpBe9JKsd1Vb_u0pm_Hh6exlDaQo6ZMAnf3oBsXYe6AhCygi7aZ3ImpqzBq6ltf0O3DlklCN8Y5jfMMigay6EEk5QjWr_qidpXyiKxXgE%26e%3D1726568780%26fl%3D%26r%3D482C4541-7D2A-449F-AA20-6C7608EB3A25-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhqwvHUvbouyqihuYTYgop9xvL18&uk=tRr4ml2FRung5F3N6Et1Vg&f=Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup.shortcut&sz=29458">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZJqgAvJJlCZ6r0zVnbm2DLBOmzjAe_SzgXpCkFC_-XspmTaXLf5q8b6%2F%24%7Bf%7D%3Fo%3DAipqiQ60_-FYQu5jkh_XQ5vRgGOPPkxqoLvNi-dzoymC%26v%3D1%26x%3D3%26a%3DCAog_BLfmYNvUT3Niap6-GodCcrUqFz2wAZ9jPVQTepvjisSbRC-3rXJmDIYvu6wnaIyIgEAUgTBOmzjWgT5q8b6aiYHBamXuJnDnZd7UpSOWUe7P5ulwF9ZID1Mn0RWOD_bXoRRFN6UOHImicTH5XU9DUm6U9tKaHXeCtn3tN7iH960a-mm3XmHWseurcd7kpI%26e%3D1727175341%26fl%3D%26r%3DD403416F-5488-4C81-86BB-9FDE6DD948E8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEi5WcA-eDt_lQkf5NtIMeTakYfg&uk=uWrTwHrPSJ2zNVGKQksUxA&f=Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup.shortcut&sz=29776">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats">Generate Shortcuts Library Stats</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbzlK6Y41jZWrIeRczItewtiWwAqASzThXdDgfVFCgEDISvo6DqVYNxl%2F%24%7Bf%7D%3Fo%3DAm_wlLaR7fWY13UJ8I1Ly5ihDrjjXFheb9cKMdI9Bn-v%26v%3D1%26x%3D3%26a%3DCAogfEzkXufH0xk5RMbM-QSZUax1KKtD-blWl6Wikepw_K0SbRDtnpioljIY7a6T_J8yIgEAUgRiWwAqWgSVYNxlaibCBHopOb-xvxQxOzVO9m9lZJLRUTa40LDRzNrSwwi7g6nUmJ3BEXImEl4XcbJVoXLKaLJ3bFksLEFji9MIwa3kUaKunCaYYH8UFPeldqA%26e%3D1726568781%26fl%3D%26r%3D63C268A8-FD06-474F-9A7F-25C61678ACC2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DE9EvMTGQh-_2ggmeiVQRGTnhDJw&uk=sVpLpdgJEHQcmqmrsx-ELg&f=Generate%20Shortcuts%20Library%20Stats.shortcut&sz=31511">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats/Generate%20Shortcuts%20Library%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats%201">Generate Shortcuts Library Stats 1</a>
-       </summary>
-       <a href="">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats%201/Generate%20Shortcuts%20Library%20Stats%201.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Plot%20Shortcuts%20Library%20Stats%20Chart">Plot Shortcuts Library Stats Chart</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdqaxm-yMEVlsvAoQuBSbDmuo8O0ATTvT_Ux1bn2Up1VtACLnKl4yKTi%2F%24%7Bf%7D%3Fo%3DAiNcqfVdClxOxiSrMw1IrI38TICdEHrAkwaqwUaHvlTm%26v%3D1%26x%3D3%26a%3DCAogZaywzvQBTbe6IP6GQjuUnpn0eOjJ7potJWPFQm_amKsSbRCVqZioljIYlbmT_J8yIgEAUgSuo8O0WgR4yKTiaiawue_ZWI_ALe4kwkrK1UbQ_MGbnvZRblB_eIj5KauDohIN0CzLNHImEg5JjrVliAD9jkIIZQmq9Tuf2AyTEwKIverH4j2W1JugwNPNqBo%26e%3D1726568782%26fl%3D%26r%3DFE4E69C5-97D9-42FC-AA86-61658E95FCB0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGe9x1z-x06NaszdVCd8T9wVlISw&uk=o50JxA2fGS8JRBF92vaPxQ&f=Plot%20Shortcuts%20Library%20Stats%20Chart.shortcut&sz=30118">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Plot%20Shortcuts%20Library%20Stats%20Chart/Plot%20Shortcuts%20Library%20Stats%20Chart.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure">Generate Shortcuts Library Folder Structure</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAScaKrIrwBJcUceKcRVjyD8n5Z4WASAHzD27kbM3RdcjcBlEbOIcSNFS%2F%24%7Bf%7D%3Fo%3DAnywfGl1NNMS2KzCNRRqPTd8_0Lny1ewzfiEKYEO-VSe%26v%3D1%26x%3D3%26a%3DCAogZ5q-HqziqXmKpGj_8stVGXUN9VtJrGjYwH989xOIgKsSbRDps5ioljIY6cOT_J8yIgEAUgQn5Z4WWgQcSNFSaiYgXNQtGrKsaOZmIJN-oo1hjdsRYjxAcBtY0fIQZClfjJofgFfyK3ImmgEBaqjyY56n_SBeWSSnHbUd9mZaLO6tt5ADNb_RNOrmLth3mfY%26e%3D1726568784%26fl%3D%26r%3D81CD329F-2F6F-4690-AD25-68C3D06F79A1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJgC1e0jTJT31aAqKnYsEFBcpCuE&uk=_hd8rVVFnq_vhrPehGXQ7Q&f=Generate%20Shortcuts%20Library%20Folder%20Structure.shortcut&sz=30121">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure/Generate%20Shortcuts%20Library%20Folder%20Structure.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3573,8 +3839,35 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20Release%20Notes%20for%20Shortcut%20Backup">Create Release Notes for Shortcut Backup</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe5aPcT97yP6fFXzrh2C-RMJih8TAbJ7th7ymxemG6ksqC1Ei8jjpXYv%2F%24%7Bf%7D%3Fo%3DAvpGb2SLRtBsm2DG8AcEKGC-iWIgUUnUoMvJM_Lmc0iU%26v%3D1%26x%3D3%26a%3DCAogsEz26TNlFMGywo9VmpT1k1wmQRuTf17R7QdzTz68cvESbRCDvpioljIYg86T_J8yIgEAUgQJih8TWgTjpXYvaiYQHiw24j4kVFuTpT3Ko2cNjsrO7rGF6q4XjlSkXtd0lrnngM7xqHImB9RXHmeEIRbIbvaiAzw04RflrSWlsSkPIS7wb6ZwU4SrvWuptxo%26e%3D1726568785%26fl%3D%26r%3DB83EB784-F194-4C58-8FF2-D0348E99A03A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvYwAymaOl48HGNtupfmcypK7N1A&uk=uJlIOuL1uRgxm_xwctWDRw&f=Create%20Release%20Notes%20for%20Shortcut%20Backup.shortcut&sz=29250">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY4eusbBChvsUFissJtMmPZbrVJJAbaG1gYdyS5u--hkGbu2KXnj1fQY%2F%24%7Bf%7D%3Fo%3DAhUIn7rWBvcl2NgX5641cAhBzc7kxepqSEkyQbRqKx__%26v%3D1%26x%3D3%26a%3DCAogwIS4XLGaF5zVG1VCUmRcaObFjXCLvZfXgKtuwWZLADMSbRDI9rXJmDIYyIaxnaIyIgEAUgRbrVJJWgTj1fQYaiZG8eTTfglnrSihgUgwQ8W7IeWASMDYb9BmcTmevLixiEYzl_3rM3ImOrwqTn3ocDrFvnJE9BWBNObg8dKT6s0VeUTMXdvLm_zz7jeRva4%26e%3D1727175344%26fl%3D%26r%3D837A73F4-3047-4B90-ADB1-03BE17A3A364-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DV8T6AHhEEMP_tooXkcrDr_fWP6Q&uk=DBurVMA3OX6XzkrRVtnnVA&f=Create%20Release%20Notes%20for%20Shortcut%20Backup.shortcut&sz=29584">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20Release%20Notes%20for%20Shortcut%20Backup/Create%20Release%20Notes%20for%20Shortcut%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Plot%20Shortcuts%20Library%20Stats%20Chart">Plot Shortcuts Library Stats Chart</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZW8_5kWtIJZCt_ANRkK5QyNkkx1AcKTfshgAJzGbQxVaCQKoWbeHMvR%2F%24%7Bf%7D%3Fo%3DAoCEHB7dmjGRw9O0bZWjWGL6uget6Q7jXI7ObBt6ck4X%26v%3D1%26x%3D3%26a%3DCAoggpOxNCUtUORj4uRVBC37xSoSYAXVeAkzI487edoXu3ASbRDOjrbJmDIYzp6xnaIyIgEAUgSNkkx1WgTeHMvRaianm8RDDvDTH7_yN2P2Y2gZAilloaoNlkhIbe8B-YExBy72f8yttHImC5-dg_I9K8xMLvPsQemfB19dHG_1SCb3O9CkU1mhdPC1mQZ8sbg%26e%3D1727175348%26fl%3D%26r%3DD3AFA459-9928-4D9A-8BD0-1732E88EA285-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIzWFyU9zXK0rdxM6nLdQMNCX86Q&uk=23fEUPDqERYq0-bQ-cSM8g&f=Plot%20Shortcuts%20Library%20Stats%20Chart.shortcut&sz=30160">
+       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Plot%20Shortcuts%20Library%20Stats%20Chart/Plot%20Shortcuts%20Library%20Stats%20Chart.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats">Generate Shortcuts Library Stats</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZF7C2cWdkNjJja1lj0BoouXrPd3AStKOy6Nmz6u98fMoDZXCp2iFAZf%2F%24%7Bf%7D%3Fo%3DAgikjg0yIkDgHKM9c18eQ0Rqwtv82yLaFtPyR_FED-6S%26v%3D1%26x%3D3%26a%3DCAogg24azVoFTB5RLU9c86lQ9-hoMBeqjJR6-wclqzMyN70SbRDWpbbJmDIY1rWxnaIyIgEAUgSXrPd3WgSiFAZfaibVC2ZQr8ceQdjGm1QknrADV5LrU6U6grE6qWahKo8bUx5rsuWhiHImufTfpvoA5uIBkjQLh_8FnxIFi6i5GY6Ba6gl-yJYy0yQDZkHj-U%26e%3D1727175350%26fl%3D%26r%3D1CF24FC9-7491-4A3F-9F67-8A5FF45773B2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4rxoDot3tJZEy6Kv1h7wzNBF_qg&uk=Is6l3rBja8Wpp_aN4iXsUw&f=Generate%20Shortcuts%20Library%20Stats.shortcut&sz=31506">
+       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats/Generate%20Shortcuts%20Library%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure">Generate Shortcuts Library Folder Structure</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ9pB01Gq6dnTeUTNyQ5JoWS0p-xAdWYCATJRLu16MdznAEy_2YDgoLZ%2F%24%7Bf%7D%3Fo%3DAjsGBHeI7WPUu6NDjNn-alrFayovJD37E5Ylwv0idKFV%26v%3D1%26x%3D3%26a%3DCAogyLUD6HlqLwAA1hazv9RSQ9fgjAYGNoSz7fjD37NSwNkSbRDhvLbJmDIY4cyxnaIyIgEAUgSS0p-xWgQDgoLZaiYrsbIn3o8WB3t4dFoQRVFJTjMcji-VpMqJZDrsOA7KoaJqwa9H0nImF0_icKfni6PmK86vh3bK2Yx39hnpO1V7DQvsRYC1xNdgTd2SY8E%26e%3D1727175353%26fl%3D%26r%3D17EF57A4-962F-43CB-A0F2-EF48AA586139-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6NNuxG_tOPerVJFQWe8zgTsm4v0&uk=MvH41_oH_BXN8eCVsXdxWw&f=Generate%20Shortcuts%20Library%20Folder%20Structure.shortcut&sz=30410">
+       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure/Generate%20Shortcuts%20Library%20Folder%20Structure.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3582,7 +3875,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)">Archive All Shortcuts (with Folders)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfLbBTu8NoAc7joF1no-_gG1N7xIAW6jrCSex0UBSFxQVqTlzm6vRJUb%2F%24%7Bf%7D%3Fo%3DAqzy8A_mliTUoxFn1Di4JyTnfRd2DVzdcL-zbbwgUlUg%26v%3D1%26x%3D3%26a%3DCAogGbVeZ7m3fG4bgUunpjdiqwoD62f73bWBnnvIG0cWoTwSbRD0yJioljIY9NiT_J8yIgEAUgS1N7xIWgSvRJUbaiasFopRvq_ZV_Fn68GhFswHRvG1icyEocOp2vrnD00HLeaJkJmdinImyZghoE6dJ8rs5LDZeZYx7Zaw1NWudniY_1D4kVXQvSg1NWBU4X8%26e%3D1726568787%26fl%3D%26r%3D333EF094-1EE5-4F31-8383-96CD13528A4C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3NwcdKYGhUjImJQ-0es9IncTcKo&uk=eDKgjEvR0fcSOlS1eOEuPQ&f=Archive%20All%20Shortcuts%20%28with%20Folders%29.shortcut&sz=27904">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdbzPoI1SgRx89lcrNgJ8r-jhcrWATDPWsSkcu_pWJYSE-eIoxSTRic3%2F%24%7Bf%7D%3Fo%3DAsqk5omBHRP0SApkHNdgzJBM8d7ixoj4pCAU4BAy7TRU%26v%3D1%26x%3D3%26a%3DCAogfu3n8wsHa3Cf2skLpxv7gn7wDNIo2EaY2_XG4PFvy8sSbRCS1LbJmDIYkuSxnaIyIgEAUgSjhcrWWgSTRic3aiY2bUDvGqc-BcOTbJ_qHQwQUNqNjzkTW7LVTuM08Q-XPYlxKZoCkHImjaajonmvbJG8wKR9mUVRMdp_R3WDGGtAAXVZHR78Ce3hu-K59TE%26e%3D1727175356%26fl%3D%26r%3D58D5E8FA-5DED-47CD-B580-0A81729ECE19-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzwOwU4DSr4Qi6YDo-Gv9ohzsEV8&uk=zJ0iqyyCVtkjvl4vI43PeA&f=Archive%20All%20Shortcuts%20%28with%20Folders%29.shortcut&sz=27903">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)/Archive%20All%20Shortcuts%20(with%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3591,7 +3884,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)">Archive All Shortcuts (without Folders)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAck49QMOC4WXYqIIGvt6iveT9mNVATKXqB5q_T_euh3QhF3yXzZ940N-%2F%24%7Bf%7D%3Fo%3DAqCTZjOshlNQMfptekvzDSw-qCdHPztDNHTwVWjaIoTD%26v%3D1%26x%3D3%26a%3DCAogkWKkhbc_IgwUKN0siF4NmbM30I0JaP4FDweGygH5R2QSbRDG05ioljIYxuOT_J8yIgEAUgST9mNVWgR940N-aiYEfGyAbSJku_CJripNuzYbcfgq3yjIMyq-E8k3OVLPLOgvdVPK0HImc6pqHaBvo8RAduv9j7J3dTzaR-Epp-7xRh5QKmsEF3z-rAuBpkQ%26e%3D1726568788%26fl%3D%26r%3DCA335DF5-CF9F-4057-A294-30E48703307D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5l1j00aTepoXqxKiWIsFdhkkb-s&uk=hpZSgVUGq0fOIQX5rK-jwg&f=Archive%20All%20Shortcuts%20%28without%20Folders%29.shortcut&sz=27322">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe3xkPduCWpsrNKumn0ty3FeT9vBAS7zyOHpR5418XS9bfM9jVux-kvS%2F%24%7Bf%7D%3Fo%3DAtcbAjirggtnwHdBE2_SXxY7ygIsDWcSc0Ta2PWVm5yn%26v%3D1%26x%3D3%26a%3DCAogKBzdoiduCCNRlXHts1-e_LiKe_vKHdeXZ_hCQUtYMusSbRCc67bJmDIYnPuxnaIyIgEAUgReT9vBWgSx-kvSaiZVyhsEYqnXHRRXtesxfHPFumX7ooslxbNqejk7q5vrLbITzNWgO3ImBW8jDlUSeaMVcgap3_1iciv-HH7wNXePh69G7EZt2hO1A4IDAMg%26e%3D1727175359%26fl%3D%26r%3D1C9B6F8E-4784-4029-B183-C6003EA69C4C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkESrk1imCk8Kw39u1OtkwkMmIKk&uk=LOz7Z78KZIWYbSx0aD5AQQ&f=Archive%20All%20Shortcuts%20%28without%20Folders%29.shortcut&sz=27321">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)/Archive%20All%20Shortcuts%20(without%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3600,7 +3893,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Batch%20Run%20Shortcuts%20(Continuous)">Batch Run Shortcuts (Continuous)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcD95azE_fgQTa0DKAlfXeSbKpc8AedjUbheblWXxl48Gj_Q_1UAo2vQ%2F%24%7Bf%7D%3Fo%3DAq_4sQWt6PtPJ-6Avpl-tovz-HnWh9ak9U8-tBD6xH_l%26v%3D1%26x%3D3%26a%3DCAoglBiL7CUHXeyQC_2185UJTsgtMIMpOqmH-QJyCGgf0p8SbRDO3ZioljIYzu2T_J8yIgEAUgSbKpc8WgQAo2vQaiaEGUA_ekkSr5jay4ZM3u5izBEjlFPdRkzcDXBnzn4Pj3IMD_4M8nImiib-Qs0zGn8aLRFdxCZvaGry-JtFKMALp_gwi4FaJ8gILoYZo5A%26e%3D1726568789%26fl%3D%26r%3DA6F43785-8693-4858-BA09-CAF2B5F784D6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMg6hXH1lChwG9-SM2f6ANhGsCBg&uk=B8PV4vtbETv7cgIWtXTNQA&f=Batch%20Run%20Shortcuts%20%28Continuous%29.shortcut&sz=27541">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUYDmis74a4gwKJ9oBnJt_rp2zDTAQrGbz686naKd0MJ62HFn9xvmH7e%2F%24%7Bf%7D%3Fo%3DAsY-xE6G3AI40XzCv5h0AQDB-DWazvCU1lzZY5MfF-yQ%26v%3D1%26x%3D3%26a%3DCAogaamLZIbrO6BF-79txkwp9XNc7n3FkuqMpDSudTHjR_kSbRDEhLfJmDIYxJSynaIyIgEAUgTp2zDTWgRvmH7eaiZM3hOOgXRxjGo4Z4loDRqI59_tk0hc1ZmA9fRU3fS1y55jYlVfBnIm26-n7GUYeX7y7Sy-kc5E6HkeH_9zTp6FHxRSjlAApFIWSIxhKdk%26e%3D1727175363%26fl%3D%26r%3DF7F9F2F1-E508-4CBA-B62B-DB56E6EED4C5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEK6DguQBQ8mpjz3iH_16soaA2N8&uk=awF5OUoaSTSh4H9KGi8sjg&f=Batch%20Run%20Shortcuts%20%28Continuous%29.shortcut&sz=27540">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Batch%20Run%20Shortcuts%20(Continuous)/Batch%20Run%20Shortcuts%20(Continuous).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3609,7 +3902,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Batch%20Run%20Shortcuts%20(Discrete)">Batch Run Shortcuts (Discrete)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZa01eesdiQk6Av0BG3Lg4IKmcA1AXUYWhC6udIUpXgI9qzKaC5AekJ3%2F%24%7Bf%7D%3Fo%3DAgCXH7FH7coP-9jkBRdCEmJ91dOPHT5Ifk14iAVpHkT0%26v%3D1%26x%3D3%26a%3DCAogfAhaGkrGdf_OTAlyzGz4_CFzogKJr1im46whbFE5ZOsSbRD355ioljIY9_eT_J8yIgEAUgQKmcA1WgRAekJ3aibZLgwn1YYU9dt41cU4QnT6xMYmH3bYTM19Xs1xxTyXEPTvA7taQ3Imaw4EPYWtQZ_eaz6x7SOy0WJXsa3tbjZZdjXgYjAROE9KU4KL3HM%26e%3D1726568791%26fl%3D%26r%3DAD90E0C2-ED98-4DFD-B445-ABB45CC9E16B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJlaYea0psc3nSxF7-CpSRfrgnJE&uk=CBcH_LkjAl0PF912Ra1Dgg&f=Batch%20Run%20Shortcuts%20%28Discrete%29.shortcut&sz=28750">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcm4BTpdqMgfKFQIHtuFSFzPAQqlAUm7UGELt2VxqVNSp2nRVYnErqcG%2F%24%7Bf%7D%3Fo%3DAtNHODariMCmnWQnmtuUHsOkifyKrHZFmnUTmTlumKm5%26v%3D1%26x%3D3%26a%3DCAogbfWOcdGiGRvM7BCK8sRMXQl-2tK6kZ_Q0Ue8_h3f7XkSbRDNnLfJmDIYzayynaIyIgEAUgTPAQqlWgTErqcGaiaRSSYWiD_IAyPE1aqPrCtZrFycf6r_4IGwdfDV9NivwlAAFUGWgXImyFMkW59TPhncFJcRQH0mvKZ41FPSakHoBnKAy2re6ZLufxch_dE%26e%3D1727175366%26fl%3D%26r%3DC546D96F-AAEE-48E4-84B5-ADA1A4322BEE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJgWQg3AHagSXzuEwwVpltKlIU8o&uk=EfUXQIEvego1rPNSg5Op-Q&f=Batch%20Run%20Shortcuts%20%28Discrete%29.shortcut&sz=28309">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Batch%20Run%20Shortcuts%20(Discrete)/Batch%20Run%20Shortcuts%20(Discrete).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3618,7 +3911,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Run%20Folder%20Shortcuts">Run Folder Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATSdBYBVfcSnfYOCMiP8_CDLzd_IAZj9g4aL4_UF3vh7Ohd3msCX8AYn%2F%24%7Bf%7D%3Fo%3DAvmRXK2Hb7wh8f3E2lvFrY3QWZc5WaiVrZNdPHyMlk4G%26v%3D1%26x%3D3%26a%3DCAogho-nSmEoiuL63HRvftjbod8KCrM44NuTTB_OxYqXpx4SbRD68ZioljIY-oGU_J8yIgEAUgTLzd_IWgSX8AYnaiYn0sNKGvZOf5zmvRtcr7YXieVG5jAloOk4MiNSGTUYG3uL2YcYgnImBlukNdZHK9nH6LoM2qWAvZJDJxS5Fe1pwdLnBhalck4TA7uAyys%26e%3D1726568792%26fl%3D%26r%3DFA96B896-2306-4E8A-A84D-A4DB2BD03F7E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnfNz9__1duChaXxmiCZ9ORgiTJM&uk=aWxJ5mCgO9xDiO2dL_8BRg&f=Run%20Folder%20Shortcuts.shortcut&sz=27279">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQSXMFfP4ezHtwT-J7B6yARfxdZAAYK_uASkcWIW8oTd71U8RF0M0NmZ%2F%24%7Bf%7D%3Fo%3DAtEAuUpxdrUOo-zzXg_-RK_HBQKqZOt6WEH7WA6B5Qtn%26v%3D1%26x%3D3%26a%3DCAogjZKhLCBp_aKAXhKf_3Myg_YESPC7uoQiD4_yUMGcpfkSbRCQtLfJmDIYkMSynaIyIgEAUgRfxdZAWgQM0NmZaiYVVjaJ84-c11qEehTLqcVOuVKZ0_iSbeIE3i9ejjbXyidLQxwKAHImiuM8kG9yzzBgES5CZUAp8HrDyW9QcUNTTR962tBBezg9nXQ00yk%26e%3D1727175369%26fl%3D%26r%3D68463D71-3F2C-4A8A-8C99-0E9C49F77505-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUjJL8ZqlNmcHPMEcg3houHmwpxA&uk=JtnxO-eD34aVhJdQmjf77w&f=Run%20Folder%20Shortcuts.shortcut&sz=27129">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Run%20Folder%20Shortcuts/Run%20Folder%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3627,7 +3920,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Run%20Shortcut(s)%20Later">Run Shortcut(s) Later</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAT4YA7mVshHwDtMVsnl-Emw8HYfkAUjyyuOtULWd1_s8chQoWQUBUD-w%2F%24%7Bf%7D%3Fo%3DAp62qYaKFRbFSEQLzllELTqEU2KzshIibeTJjuiSRZdK%26v%3D1%26x%3D3%26a%3DCAog4youwgZ1V9YJZeEkqNe6UMqF-fmNUN-z-Cupx7K0D5gSbRC1_JioljIYtYyU_J8yIgEAUgQ8HYfkWgQBUD-waiag71w-24XumK6xgRun3fZI2PbUq1gAU5robLO4_4fRZM7Mzt5zjHIm3LCt-LzMdHGj7IIloRFy_XjwMUZ5mfo2D72jfSoERhENSNXJx-Q%26e%3D1726568793%26fl%3D%26r%3D62CC8E71-0466-4BD3-AB18-87FAA49889BC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYTugot9RRJHpq5CGZbr-jfNZ2IM&uk=tGy2Mfn1vphagyAIFr_Yqw&f=Run%20Shortcut%28s%29%20Later.shortcut&sz=28604">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd38yf1PewUbQ1PiL_fgAL3B2R8aAUlC7EqZiyPjNXkrG5A0kEmvKHJm%2F%24%7Bf%7D%3Fo%3DAkBYtWBjZy6EsnmWT3RV0rrmXYZh5dt1s57jTM-B55uj%26v%3D1%26x%3D3%26a%3DCAoguFjBK1JNOIS_S8EWOtDpAnKc3_Rv0izvJ0HpDTUmSlsSbRD-17fJmDIY_ueynaIyIgEAUgTB2R8aWgSvKHJmaiY_GnouQX3Um-CfZvQ6pq5BaUhn2naum1Ox29Hi3ANbFd9O4hHos3Imus-v6QRCSxd85WMVWPzIJj7AAfpTQnjohPba-_vBt6J8JRgGBOc%26e%3D1727175373%26fl%3D%26r%3D78C7667A-7CE0-419F-8ACD-821172EB8009-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHZ-FkYSdlGOMvIw68E7K5tRVvT0&uk=wh4NZq91kqS2IbdKHFcDLw&f=Run%20Shortcut%28s%29%20Later.shortcut&sz=28459">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Run%20Shortcut(s)%20Later/Run%20Shortcut(s)%20Later.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3636,7 +3929,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Build%20Run%20Shortcut%20URL">Build Run Shortcut URL</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQUyCXicYxxeFKdQGlHLeZQKniQrAbARaV2uyE3M77Oa9Mnib4HlNN1f%2F%24%7Bf%7D%3Fo%3DAuJ7RU7rSJC1p0BehDutYNLur4mZhm9MT87tV0PYIEl-%26v%3D1%26x%3D3%26a%3DCAogGgOfi055psTw__2shqN_wurngBcaECQ8JGXDKezVmiwSbRDWhpmoljIY1paU_J8yIgEAUgQKniQrWgTlNN1faiYNUypf-C5s6LQ-TrnzllgMQLDXLj_nbVnwiRZg3kyDm20sNAtlnnImNFutqbqu9_sCUTtuoVah3mgZRxuQQZbmhRXZ6kQyH4gOikMaMkU%26e%3D1726568794%26fl%3D%26r%3DAFAF2165-A6EA-421E-B5A8-1EB46F29698B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DtXL2g3V8D36T_U3i0eBx3X1SoZA&uk=fFxdlFOItCe4i3AXfCGXJQ&f=Build%20Run%20Shortcut%20URL.shortcut&sz=31327">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAblOztvaK_9rrvvAnwuM2nN27ZMCAeikol-Qr_sfihd9BBYpBiA6GHa8%2F%24%7Bf%7D%3Fo%3DAnNSt-PXKJ314snKLhahtim6ZMmaVCSHLTcg2B6gdTbD%26v%3D1%26x%3D3%26a%3DCAogFAfMIsY3fiGGXm0MTbi67HJB1Dvsr7P_EG6LQpgkQTUSbRDv8bfJmDIY74GznaIyIgEAUgR27ZMCWgQ6GHa8aib_9LOSSCx907jiJsvZtlYWZ8sAwelE3HkqPhF0aCCN01dS2QKokXIm8ZUFgRyCDAGOGKtHaEMaIigk8jjzsKarFGU_D6QFTe0cccE7TdM%26e%3D1727175377%26fl%3D%26r%3D9FB5D831-A18A-48F8-B983-186A4F00E096-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQcDvYFbEkKW7Agspef8Eema5Ark&uk=IeCJ5cTXEolSATRzk4yrgQ&f=Build%20Run%20Shortcut%20URL.shortcut&sz=31462">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Build%20Run%20Shortcut%20URL/Build%20Run%20Shortcut%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3645,7 +3938,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Transform%20Type%20of%20Shortcut%20Input">Transform Type of Shortcut Input</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY8ADfOxILvELLhVBUjiLnPJ7D3sATR8HGt52dFD83myp0sp8CK2aOOa%2F%24%7Bf%7D%3Fo%3DApl3vegTgCb_mU2cc_eyLxhjpAUxkmCwccdOzsXuhyw6%26v%3D1%26x%3D3%26a%3DCAog7VOB-EVWmxMQEh0wi_JBydSgH2PLhVwAUXrTKuD3v1ISbRCekZmoljIYnqGU_J8yIgEAUgTJ7D3sWgS2aOOaaiacMUzzXrOk1rGoNhIqwGrBjzOX0olBm2oKn6RubPQXJYKIdFQR5nIm1Nz_DwTClwUKSM4Yxon5CnMONRpgbhdIPXjrrnpXE8XaeenQDqU%26e%3D1726568796%26fl%3D%26r%3D510B70A8-3113-4F0A-9558-C301976490D3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Drzf5Dy1rS9fLbyaR3FDq-8oM0E0&uk=I9EukCdAoJF5oPFnJYBZkg&f=Transform%20Type%20of%20Shortcut%20Input.shortcut&sz=27890">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAduLbYGjfNc-65I-2b-DD-SBb3dOAbYmiat_Zxwc_iJ_2m4vH5kMwBdb%2F%24%7Bf%7D%3Fo%3DAh-YdK-XFb3yHF8ewVe9gZo9zGMNV1p-nz7oa0BdrLA5%26v%3D1%26x%3D3%26a%3DCAogghmg2wg07IoDuH2dM__TUrvahDqwwCYLJKO3jsuVxrsSbRC6lLjJmDIYuqSznaIyIgEAUgSBb3dOWgQMwBdbaiaDanQ8ldXLGq-9Wlrm1AHgBJbx6YEhNnz5g4Pt1G44ij0A_JvbbXIm5p0ykTP-Bmxa7HLErc5FaNl7FXSsG0w8-Y31ZPvQKN2oG2-bBTg%26e%3D1727175381%26fl%3D%26r%3D6ADFBB9F-14E8-4DC7-BA92-BC2D9810E200-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D206nXmiDY-EF9Ef5FTnRqXo3pBY&uk=pziSFWOSSVISQ568NBKW_Q&f=Transform%20Type%20of%20Shortcut%20Input.shortcut&sz=27889">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Transform%20Type%20of%20Shortcut%20Input/Transform%20Type%20of%20Shortcut%20Input.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3654,7 +3947,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Run%20Shortcut%20Again%3F">Run Shortcut Again?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdqbMxfoBVjwseUvW83Fp8aSGRoYAf8LqigEUyE0mUJxoNdUwZ60g8_O%2F%24%7Bf%7D%3Fo%3DAjrbfCrR1Drm6gn7nvPmWBFSYnoDjAjnFUSbQtMTbXE1%26v%3D1%26x%3D3%26a%3DCAogLSrv1RglJvD6MImper_bd4qRGaEF_JISSg6VQnuPGbwSbRC1m5moljIYtauU_J8yIgEAUgSSGRoYWgS0g8_OaiZXFKCpANmRTrQDroAoqCEaczn-vQxzPxWEDrh8Zh0MV4lSrIQ_InImrA0SzzpfpDQjoZdBNHFYOxAXS1K93lodx3rIREBoA_NJv8eqNm8%26e%3D1726568797%26fl%3D%26r%3D7F9068A4-DA92-4F42-A876-8440B7CF0309-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5UBq_KHV5S9x4Wrf5garirW-jcs&uk=b9yKcHRO5Ri_A9X4XLwNeQ&f=Run%20Shortcut%20Again%3F.shortcut&sz=27762">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQN1L56M0xhraTC5zDJ38Yw-e2IQAe5BNba539iVE1owgcUAbzfTSJWj%2F%24%7Bf%7D%3Fo%3DAu1PdQngX0MBIxHzKah9kRKrXj8HYtVXm99sB11GWyUL%26v%3D1%26x%3D3%26a%3DCAogWzzRW45gxJe40QSzGxWpkz9CHL3viH3k6S09Pxt67D4SbRDpr7jJmDIY6b-znaIyIgEAUgQ-e2IQWgTTSJWjaiY7Dld7z58x2CzWr5BdLWZgfgsnhxfMStbPzQjqCmjvCnclsyj62nImx--x4LZDQbnFNMu1gAE9O5ir_ek-AcHZusvfU2e_gAQCOjHIM80%26e%3D1727175385%26fl%3D%26r%3DB1726345-290F-484A-9AAF-6783291688F7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCkn2sK1j1NfdyC43TqC2oM5RdRI&uk=8FNA8LoRuxsA6LqrApDwAA&f=Run%20Shortcut%20Again%3F.shortcut&sz=27761">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Run%20Shortcut%20Again%3F/Run%20Shortcut%20Again%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3663,7 +3956,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders">Get Shortcuts Library Custom Folders</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASMnEZ1TThfBqU-f0HzMrGXAJG0KAXs_Qgz9DniJhiygC70ccX_iXQdC%2F%24%7Bf%7D%3Fo%3DAnbJRhy7lTFSNyA02ixLpay-vO2KTNSUwe_n0Z_p2UtH%26v%3D1%26x%3D3%26a%3DCAog9TLgZnea5e6KCwDYcgUKq0iV4HrEipwTkZ6vgLTPwR4SbRDkpZmoljIY5LWU_J8yIgEAUgTAJG0KWgTiXQdCaiak97hHFHTEOZGzjL2mOYSEVR2U_hB-un56cixPwGeqcPE8RW8LGXImRYhhjNP5u6uuvxOXIJlNv8q7CALyyhvZLXG__Q8FWSEN6RlFKjs%26e%3D1726568798%26fl%3D%26r%3D71FF78EE-4B0E-4BF7-8579-9D11DFA3D774-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoxcyydLwg78F-KwhM2-ACDquSTs&uk=D2RsTRWVlxgKLEh8uW5v8w&f=Get%20Shortcuts%20Library%20Custom%20Folders.shortcut&sz=27277">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATTbA5c7XlgPFCaDJlox0QsxOnBWAfm-8pwYnKDPbXE3ItMUnc7ZcFo0%2F%24%7Bf%7D%3Fo%3DAkMZVw0M6umCyX3g9Ane1at5hUXtrhypgNhTJSy7E12q%26v%3D1%26x%3D3%26a%3DCAogWCjHL-EKFVolvwaqPxptG8TVkEJjOOJJbyYfcQKhQPcSbRDHybjJmDIYx9mznaIyIgEAUgQxOnBWWgTZcFo0aiZe0AHrIvm9zRE0QzZ9SxGzsnlvTvlsGAx-j-Fxm6soHulMxRe8fHImyAcjFxi2-e8vIAX9QHy28xAOmQG_l2yoHQvPMuriRNqUvknviRc%26e%3D1727175388%26fl%3D%26r%3D81C29C73-D4F1-488E-9AAD-520389B77F0A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dq0tJ4-T0bh8EXdDHGpsI-tocVlo&uk=3Wcmh5E_p3bRxNYwZNHyqQ&f=Get%20Shortcuts%20Library%20Custom%20Folders.shortcut&sz=27276">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders/Get%20Shortcuts%20Library%20Custom%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3672,7 +3965,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shortcuts">Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU9Yf0ZrWPK2d1w7y9TBYBNvX9r4AVyxgAgvu_gPpfieQL59uKh_NoPU%2F%24%7Bf%7D%3Fo%3DAiQUg_2BcE-gU_Fq3CC41LqCJvN2G-Twgm-McBiK50VZ%26v%3D1%26x%3D3%26a%3DCAog13YiboVx-bTTx28qV2VRIfPrJOU_Bje_fLuzOGJAjoMSbRC1sJmoljIYtcCU_J8yIgEAUgRvX9r4WgR_NoPUaiYgMgniNgfmK9DSSY5HaT3F1HTbuIJkJyg_A8r7Ha05Ei4mGz1urHImHxglKdVU_BaK1Kci1uoBJrkbAGmfpnVTAFwnl2GS0I-W629c-aI%26e%3D1726568800%26fl%3D%26r%3D24FBE9B7-23DB-4158-A986-51C50324B639-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXdn2HwqNw5UiiuTXlQ4oabi4VDE&uk=GjrPz8bjHuMQYqSshewWZw&f=Shortcuts.shortcut&sz=29707">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAS00H5qsxnvYC35DowuNB8ftyMu2AU782fmSLtjfAa7usoe0wUO9-FAj%2F%24%7Bf%7D%3Fo%3DAiXaBK1Y8pYjczHRX6dRAazcUBbz5wGPzdm-sxHLu7tz%26v%3D1%26x%3D3%26a%3DCAogcx-Sx-VUtxYxWreM3QbdEqPavHxfKnZU4R1Pfo7saAQSbRCF6rjJmDIYhfqznaIyIgEAUgTtyMu2WgS9-FAjaibdWjsJdyruvU__Cher9pkVI6Szif6GY9lpce_qGwPAvo-pYlaGCXImb7bbAGBP5WTcumGqOrc0Fd4bO0H3Np4q5z_VDELQ1uyB0FWQuVo%26e%3D1727175392%26fl%3D%26r%3D83DDB708-6C49-4B58-9EF7-EB4EFB4A0B50-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DP57xLmUhlaMLliCOG1a_hUhd-6U&uk=UCLRGHmzc9bBJEeQiyWtQA&f=Shortcuts.shortcut&sz=29707">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shortcuts/Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3681,7 +3974,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Filter%20Shortcuts%20By%20Keyword">Filter Shortcuts By Keyword</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASzqD39fbBDH0P649Hk4Sapt-Bs2Ad9U44SNSMJUKlwYbzQ0rpKYcVoK%2F%24%7Bf%7D%3Fo%3DAodq0uHVC1tSDDK6QIocui9XwdFh6aEulV274tBTGWuw%26v%3D1%26x%3D3%26a%3DCAog--1aKLeSUFakBvUCHZ1aZN0-_Ifbw4CIywwJPT9b4J0SbRCAu5moljIYgMuU_J8yIgEAUgRt-Bs2WgSYcVoKaiY-nYyGUmnx5KmRP3Y-zzehcmPDtquPVO6sFcYEsl3DLJRzX8FejHImHZ5xXbjKU_8jTUwnWivCOPToiHgGpuWyWI45__p9m0qDCacvnKw%26e%3D1726568801%26fl%3D%26r%3D031FDB07-42A1-46C8-948A-A0EA1E357D10-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCVo_hnHrqiaih-8xJ8fp5hTJOak&uk=qIL1NUx-TN-Gafujkassiw&f=Filter%20Shortcuts%20By%20Keyword.shortcut&sz=27602">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR6drc0ua5NiOCbwvjdZmPHDn_xeAW6dKW_Y39_z0KMiA-39tKVcgDWN%2F%24%7Bf%7D%3Fo%3DAoMHMbU9r8ucR6HSEnlvpdbi1o-cfJtBPMZEjO915E9K%26v%3D1%26x%3D3%26a%3DCAogs2iDCGSPIuW5a9n1U2UIJY_AriPmRYOevf8WjkpUHG4SbRCvgrnJmDIYr5K0naIyIgEAUgTDn_xeWgRcgDWNaiYNjngzECEKTe6I9M_OzC3qrPqaLWiMwT7RZtX4OE-pRwNeazWdz3ImSHnRQlhn9AYTpUaQQmrA3opHAcOBqLHr6iZgmPXEYC7IWxQ3xTE%26e%3D1727175395%26fl%3D%26r%3D4A0CFCDE-55AB-476A-8A7A-5940316E2A82-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNE8tDPkknN8n8uSOSM7BQjzY5t4&uk=wx26hlVZAFWIszDbaPEJiQ&f=Filter%20Shortcuts%20By%20Keyword.shortcut&sz=27601">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Filter%20Shortcuts%20By%20Keyword/Filter%20Shortcuts%20By%20Keyword.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3690,7 +3983,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Import%20Shortcut">Import Shortcut</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASYEAxegefO7WiEY_sVH64U709wHAXUrOpGYAeJoS3Nd_eGEm-0R3w_C%2F%24%7Bf%7D%3Fo%3DAt5_QX4JYoShkiToWWpaQH9oZyvmvyarX-9T7yvXpAHG%26v%3D1%26x%3D3%26a%3DCAogfU2ao-6fjVNe2TDT_l_fJK40kqHC-OcjghkZDPnAH1gSbRCAxZmoljIYgNWU_J8yIgEAUgQ709wHWgQR3w_CaiZhxvTUZlneLQzKdv9rGNM8_3-5c_q-BUqJDRkOlQ8fyqtcgY33A3Im_Yd0VnMoWttLZlJ5xqFKuEP3AZ6snO3uAs8RehsLwwO0HgUdBHE%26e%3D1726568802%26fl%3D%26r%3D934A68E9-E5B1-45BA-B37A-1018A76B65C2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Def6ZBTG1N99sq6w-fOhdG6FqPnY&uk=LVkA40EtRiPgJ5qz_iPa4Q&f=Import%20Shortcut.shortcut&sz=27562">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdsFo_M8R6suyF5kxZRF0bA69VT9ASSsrjz10VSq5_FIVPvFc5GYkeuf%2F%24%7Bf%7D%3Fo%3DAi8Vbhfv7aRuWSP1aISd0swyNKU9HMm6Gf21emK0FmZN%26v%3D1%26x%3D3%26a%3DCAog2WTKmwYnMA64RfJv9d9aJ6dnIfnvqjMXDhV5ZekGZ9ASbRCOsrnJmDIYjsK0naIyIgEAUgQ69VT9WgSYkeufaiYo3U76h5Vmo7DM_kURqk5oRRpM6Kuj18fXokkC3xLoS_uyD_PWJ3ImqdLVI_szpH2-v_cftKG40rXcv0g_5DKrIc_d_Cd1f4SPoNRFOn0%26e%3D1727175401%26fl%3D%26r%3D9D24C078-B64E-47D1-8CA7-4BB06CB8BC91-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DC2ipsxcMSVlA1j74jdN1WlAOJjY&uk=AaN21Z92OMBdXGECeJs9TQ&f=Import%20Shortcut.shortcut&sz=27559">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Import%20Shortcut/Import%20Shortcut.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3707,7 +4000,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Test%20Markdown2RichText">Test Markdown2RichText</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUsxNuZL1YZHt_fPq6OBhorLsWgQAYWhvplvZ5OsXaVSkMfxdgDuvkUQ%2F%24%7Bf%7D%3Fo%3DAp7Z9laCicAVj_Zmr3QJwSWv8uOBdbpQK_YRUavxyLAP%26v%3D1%26x%3D3%26a%3DCAogSPNx3FhCciLwsOHV6bIb6vCvkcEGwfwh1XgTE-36FqMSbRDx5JaoljIY8fSR_J8yIgEAUgTLsWgQWgTuvkUQaiYjPfymBQnpWxdgw1TcVD7OAlQakFYE61qqIG3qmKnMWviK4ywKwXImnUd7q47TaRCe13H5G4iQbB3_KASyvXcWg7lCkAFh0vj1dVUylOc%26e%3D1726568757%26fl%3D%26r%3D66016A8A-3B51-49AA-9BE4-7BE0471613CE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhS9rdqrbXS7Pb3VHMJ4lXBTlcYA&uk=bT2e2PkujM_lVe997BCTgg&f=Test%20Markdown2RichText.shortcut&sz=26991">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAetxlXW74C1uTmAor4NvSrpUxanFAZ9LBpLO93c7aY1ttL6vvEvikBss%2F%24%7Bf%7D%3Fo%3DAvrZSqKCDVTsEDRvPuZdaa_HI7AT54LApqen_v5wl3qe%26v%3D1%26x%3D3%26a%3DCAogKK1dd1QmTqr4u44k2QVJlVwqYnaEYseCefhnV39ZHfcSbRDY_7HJmDIY2I-tnaIyIgEAUgRUxanFWgTikBssaiacZYVvAOsfgvw9Sb0UhU22o_4xT-HQNzcaq7jd89XecxTQCywit3Im7mCE7-YWz38UWka96fGJlLwSVEd3Q9yTmbmOZ9UAjH--H3xCGmo%26e%3D1727175280%26fl%3D%26r%3D7EE64429-4268-42A2-9275-C14AEDEF0D05-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIxIHWsv35DMYZq67FfruVVrUdRE&uk=NRn3AETTMdiv_dxhPBKsfQ&f=Test%20Markdown2RichText.shortcut&sz=26990">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Test%20Markdown2RichText/Test%20Markdown2RichText.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3716,7 +4009,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Generate%20%26%20Play%20Audio%20File(s)">Generate & Play Audio File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATMPRcH4x-ugSz3yGErNJpBgARnQAR-OS9TFhnVK1t-4yMuE6ykksq7F%2F%24%7Bf%7D%3Fo%3DAkKOGFuhw5dqcH2soziyF0lLmF7311nfSZas8Vxvlil3%26v%3D1%26x%3D3%26a%3DCAogUTV291dCp9NkAtY_WN3R64gKrxUZrbTXAMyvBkNtzUkSbRCg75aoljIYoP-R_J8yIgEAUgRgARnQWgQksq7FaiYRc7VQdWD-NwJdSOeWhsbSV53GoInInmjpxdtBWibLljQJrdtfPHIm9ApW65aQLLdPxyCxfmy0jMeOaU24Xfz4cwJnjSFyS3ApcAfpcjY%26e%3D1726568759%26fl%3D%26r%3D5B87AA0E-FDDF-401A-8595-E41946F25BB9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVHzia_aGOgKZpeywB_0eAaQksMM&uk=Zh-GHElb9J-920peszDGzw&f=Generate%20%26%20Play%20Audio%20File%28s%29.shortcut&sz=28060">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQZJke1dpthZu8L-yVBHtZzm1GkBAfXzaSeIOTfwvAMbmmFR-xMn2re2%2F%24%7Bf%7D%3Fo%3DAtdsMolbsW6A2LEU0DabiwvlxveydoPU31VamukRCmjI%26v%3D1%26x%3D3%26a%3DCAoguT8-YcSSXhEWsJupRo7eslel7yVWuG15VZBCw-qym3MSbRC-qrLJmDIYvrqtnaIyIgEAUgTm1GkBWgQn2re2aibAHJXHj6SEmmliWQvZD5PmSyffkYBJhAcCMTBueM__tJDtPzd5q3Im2H5Q_m2YOjYG31JM_VPN32DHlfuPhotHxfFs7Y8dEDdV3YAKCOs%26e%3D1727175286%26fl%3D%26r%3DD4A15FC3-9026-4611-AA4F-D4A34547FDB4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnRtvpWzGArgpyxUtm2nU0sjlOn0&uk=Ejty3MuPbcZxFzxd3OFdrA&f=Generate%20%26%20Play%20Audio%20File%28s%29.shortcut&sz=28052">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Generate%20%26%20Play%20Audio%20File(s)/Generate%20%26%20Play%20Audio%20File(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3725,7 +4018,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Tab">Tab</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaYsAOL4aBmAHOLZ85JPUMH9fawOAYk2YxzYcNRb3azKtZnNlu2cXN8e%2F%24%7Bf%7D%3Fo%3DApWrZYGfB3lS8DvwpKo0r-nWMFf5UebnnpdC_E988_ot%26v%3D1%26x%3D3%26a%3DCAogcL4qs1foXwx88SMl1cTi8vj3s0Q_wQiSKmuyGBhnIbISbRCe-ZaoljIYnomS_J8yIgEAUgT9fawOWgScXN8eaiZiOL-8qaQJDCACpG3qIxpTtSR9_3LEIlsAYBQwcpfhQJvbRASNGnImBe_NnhkVoD_rbVd1UiwMLxJuuiBKaiwLcugvUNYJuTqpwvWzgzc%26e%3D1726568760%26fl%3D%26r%3D1CD3EE57-29D0-406D-B2D2-8323FE433683-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dw1dzFcfjQsn-ihLTOv617mXzv4w&uk=Po0P8NazKI6XKmTt3-vj2A&f=Tab.shortcut&sz=27003">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ0rKEN_AU9SQupIoQwMmAg2_-mtAZkt_AM35L2tpwnk1hZqbT748d0x%2F%24%7Bf%7D%3Fo%3DAgDek0kXmQ1Fuy3OcgffCelmLmMvEydD7tVYDenHyccB%26v%3D1%26x%3D3%26a%3DCAogQNkUHLJX8z5SH2M_q5_CeAvXuNvL95-lXBzGY_YhyEISbRCezbLJmDIYnt2tnaIyIgEAUgQ2_-mtWgT48d0xaibx1_JHhMZlBbWVsY9GA6JVf-6Q8cTFHodMTMAGZ4DI7qxZgZsXTnIml1e_S9fdGz1IEultkiUAGbZTdqsF_J6kjLmHVvhPX_boC-yCURA%26e%3D1727175290%26fl%3D%26r%3D80D5271A-3A61-493F-B523-88448ABEB30E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpDn_q7Ivx32Iz2xyzC7YyVQIrbY&uk=ihuL_9PJhXT1IaYE8uv7ZA&f=Tab.shortcut&sz=27004">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Tab/Tab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3734,7 +4027,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Append%20To%20Dictionary">Append To Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUMpOPgihyRtxb-o5xgkOlafHI8PAR6v1kZSdpnkB6S2b1gaGrA_j0Ex%2F%24%7Bf%7D%3Fo%3DAiFRNM4k4lErO5rO8YTK2R6YJ0U_TgQu42DbGUdRiLd1%26v%3D1%26x%3D3%26a%3DCAogbdAigb5yCv9ddN7xMHZtvz9wFg035vq__KQliQdXVTESbRCIg5eoljIYiJOS_J8yIgEAUgSfHI8PWgQ_j0ExaiZX9I4Dm80uu0WqMLa_BNuv87XTUda9fXeuxbcMKfzqeSso7S1o9XImhx-suJlqsqoZiDlUpuj9eVKXD2d6NVcyvT_1KMCcSwgdUpKnVD0%26e%3D1726568761%26fl%3D%26r%3D290F77EB-9BCA-467C-AF00-8A8E034B3B25-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqTfvUPWaff83mrik5mL5RT1cFoc&uk=cAJKJdxjrTR7_0BLSDVA3Q&f=Append%20To%20Dictionary.shortcut&sz=27519">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY-JW61wxHInN_K-ifP090Jfuq3NAcGKlqLvppm8SR3EGdVkek3oCFUE%2F%24%7Bf%7D%3Fo%3DAgKkOtLZ2_5QT1kOEGaCb8Ftzud7tf1eAnYxO5BvaOaT%26v%3D1%26x%3D3%26a%3DCAogAWaSF_illZeXp3WIFbpPAEgUPQ-VN7D6CZyxOXVGpbwSbRDS67LJmDIY0vutnaIyIgEAUgRfuq3NWgToCFUEaia5sZRf7OfbRDLqrkpS4dKaQSSEI1-u0AOSIIV2TNl3iBBaKulSFXImgJwb8-BtsuyJv73-7ipFGjObRQxZKqQVkmFqO9lP9p5p9VU7xEs%26e%3D1727175294%26fl%3D%26r%3D3B7CB8F4-4FD4-4349-891C-5E29230C306B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVoURNeCYwBZD1kul47R_-5kaBRc&uk=8J6LXtuLHl9oPNDesv0cOw&f=Append%20To%20Dictionary.shortcut&sz=27518">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Append%20To%20Dictionary/Append%20To%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3743,7 +4036,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Dictionary%20of%20Dictionary">Dictionary of Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASFk_HQ9tUS_nqR8fq_hsaNBix7QAa8XmqaiPy8nRyOtZ3wge0GB-gFB%2F%24%7Bf%7D%3Fo%3DAiqmKeM1ztMSL8wppGr0ATniububwpxTpA6mXgkEMNTx%26v%3D1%26x%3D3%26a%3DCAogTHbFfRYOXHBmyiHasbTa7OS5IF7CCTFT9zwY9KlztvcSbRCQjZeoljIYkJ2S_J8yIgEAUgRBix7QWgSB-gFBaiYDoghTIs6Wc_BMefxp4FW-L0yQ_KMdFOo5Gq0_y1DbmzoV51_qonImOkA5xDj6ycrg6FWHgIur0nZc2ww8B1hWiBMq-0qNe9myX-9D02Q%26e%3D1726568763%26fl%3D%26r%3DF6FA7752-6F26-4966-904A-B4BA0FB3E446-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqtCcqb7w5dgiFMS36NRpjqsqBNA&uk=ZS1WHAvS_OBNEXwrKzapnA&f=Dictionary%20of%20Dictionary.shortcut&sz=27118">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATcs8aCGsd3XHQIheDXqnk2GaZfFAdN7e_cdesdMjWgxRdvpdiOEKG8z%2F%24%7Bf%7D%3Fo%3DAqarOEuRAwydRiVh3lyOotT_mvPqdEehTREarCHyMbbh%26v%3D1%26x%3D3%26a%3DCAoguOezY0IMPjVDwzrrPXSe5QqKQ_QEZRHHgYd9beJeSIkSbRC7h7PJmDIYu5eunaIyIgEAUgSGaZfFWgSEKG8zaibK_cwkMLIPE-EIyiArb7G_CQVnjkLS_0iAKs3ywZ6vh3Op7SVfaXImKN7OdiPHDKQaUt5-4izYgeN17ROiDIkoaC5WEGImqNhSB9Cxdco%26e%3D1727175297%26fl%3D%26r%3DB6441D6E-71B8-49BD-A587-50D3B6EB2DE8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaWUO4os_u1kSkpWfqHnQ3UnuTyI&uk=QLUCi5R8vPeEDWiy4fUw6w&f=Dictionary%20of%20Dictionary.shortcut&sz=27117">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Dictionary%20of%20Dictionary/Dictionary%20of%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3752,7 +4045,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20txt">Adding To A Dictionary - txt</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATQBwmWPSrFh8aIMO6kz5nm2z7V_AXUezl9jk8prbaJEpk1AOjWBhYwI%2F%24%7Bf%7D%3Fo%3DAiUs17g0LCMjl7wXzMXlPs9FzXpb_vezxl4Gf6_1kahm%26v%3D1%26x%3D3%26a%3DCAogdQQkmrsonmtNueXAVyHW_GvCvYwO_w-ieETDXYtUPKYSbRC9l5eoljIYvaeS_J8yIgEAUgS2z7V_WgSBhYwIaiZ9hC1_1Utz_Ux-8fhENwSU8US3osQKK8nDmPvQonWxsZwvu-8rlHIm7LYeVKhJHfHfLd-02imlfQqvgzyFxKYHuWQxTJzsJELOuuZY5PI%26e%3D1726568764%26fl%3D%26r%3D218DE55F-238A-4F95-A35D-5097C5120D8F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5YYVqhOjE5EEVwJTjpq1Y0ZWR74&uk=gc1XegKM2N0ssgZKT85N4A&f=Adding%20To%20A%20Dictionary%20-%20txt.shortcut&sz=29741">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW07KECzEg9kXTDKzrGEdn39theZAdwZiMPYIiO0bNU_mr8pNlQjl-7Z%2F%24%7Bf%7D%3Fo%3DApnN6fd2mOBXAkn4kAxCTrOQRbF65wv0n-6ms_JHdO3T%26v%3D1%26x%3D3%26a%3DCAogRccb6yw8P9-URcZ9hdrkoCLUbQzdL5XL082ZqqtCHrISbRCGp7PJmDIYhreunaIyIgEAUgT9theZWgQjl-7ZaiZ67Vms3chu8tKxuLTRDbb3MkODY305k0zmSRKSIcU6GN8bRX5_A3ImvW37cJYtmPSV6b0uEtgtomcdcZqZ9TY4VquARAzug48Bzec5f8Q%26e%3D1727175302%26fl%3D%26r%3D9E286B67-BA92-49A0-B2CC-F43CFC248E26-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5owHUMfcMNATxCR_Gny62bC8zOI&uk=lEHgn87ETcwMtS7AMoOB4g&f=Adding%20To%20A%20Dictionary%20-%20txt.shortcut&sz=29738">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20txt/Adding%20To%20A%20Dictionary%20-%20txt.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3761,7 +4054,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20json">Adding To A Dictionary - json</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX33UUL_-C-SkT26MPPhylIghWjfAUhu6NGWHx6b_V4-H0wD5qICNhf6%2F%24%7Bf%7D%3Fo%3DAu4PSKCjp0Gqgvz1pycjDQAVMSHQt1s6rjj86EKAKuEp%26v%3D1%26x%3D3%26a%3DCAogqWbrCChXqNZDmA_4fMC08RcBLbeED1ruxmoWozNMYIQSbRDSoZeoljIY0rGS_J8yIgEAUgQghWjfWgQCNhf6aiZUJbakHccpHb2wBhqJZQR1JzZVyXHikLnsmONodF67TakKc74C4XImFgdXwjGfg2xR7AvQerdgd1gesMF792nek57xeqVp3mhsk3ZcDnY%26e%3D1726568765%26fl%3D%26r%3D0682A176-E4DA-47A2-A64E-1B369913DB3C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkbpaDznMncBXi68AS9d-AAfQQFQ&uk=TuZc2vePsbWwBaxlEFwdbg&f=Adding%20To%20A%20Dictionary%20-%20json.shortcut&sz=29758">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXJVZumOonDKlTBjem0VJ8U5hYr2AUQIlzJJipuxsX8ZUrIF0Dx_m5ct%2F%24%7Bf%7D%3Fo%3DAjnSoWbWb4SypzJJJWv93gPIzKpmxkm2dxWoo1Xn9TM6%26v%3D1%26x%3D3%26a%3DCAogm-3RwoUhvK_NDdEs2zNTY6hWKvvmsfXVIiuUYykFz9sSbRCqxrPJmDIYqtaunaIyIgEAUgQ5hYr2WgR_m5ctaia8e1y8R5D1uBlC1b5gWDSikm5iTZcrni8o_8CMwVDTtZt-BWy5RXImNYw2qdvQJFvXj9Daj_7xiu43HUBFIQqKzWZp_COxWhlDUODiLZg%26e%3D1727175306%26fl%3D%26r%3D00659940-2882-4D58-9FEC-F04B60CFBF70-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZkEJGs2EzhaUvk1PhL4WhODabV4&uk=tQ8LJUcdgtBczgURMOImxg&f=Adding%20To%20A%20Dictionary%20-%20json.shortcut&sz=29751">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20json/Adding%20To%20A%20Dictionary%20-%20json.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3770,7 +4063,7 @@
        <summary>
        <a href="./All%20Shortcuts/Shortcuts%20Tutorials/Get%20Index%20of%20List%20Item">Get Index of List Item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXKuPqB2m1gcidmwVFc_4y6OhszgAdjqRuLlNvjwl34u8jEzgBBWmpuw%2F%24%7Bf%7D%3Fo%3DAmUrHgJ_zgYPzQl13oHEJOocunCZ7VtuUbdvJ6BKy2xo%26v%3D1%26x%3D3%26a%3DCAog6_rZxJuIg0z7wGD5QZKMBtby-BIimUE7XN9Tqqa-szwSbRCIrJeoljIYiLyS_J8yIgEAUgSOhszgWgRWmpuwaibRB6M5C5WT-b0WySSqVbP8GxoZkA7Amu21AzN7nEFAf8iuQigCTHImO-Lt67dI8q8kHc0mctCUdXFB4TdvBYgn_qx_h8i2-5kVnVK5uqw%26e%3D1726568766%26fl%3D%26r%3DCA1E79B2-E5D9-47A1-819E-E9211B01CD06-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_SiBzQyvZKFYQ--Ast5OfnY2AeI&uk=W44f7pBm1G_2hyY3ZnurAQ&f=Get%20Index%20of%20List%20Item.shortcut&sz=27643">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARkjm-kt8kuQjhDSHeMQRyfx_UiuAetwe-fy2f31hopRHlR0W0vwvqRw%2F%24%7Bf%7D%3Fo%3DAupqkb-mO5fuyR2NW-2dbiJBf-hw70nW0E1tY3LhBwfK%26v%3D1%26x%3D3%26a%3DCAogZDNd9-yaE23AENLhHPGdsvS1uVy7bOfoEVpTqZAr8BESbRCm47PJmDIYpvOunaIyIgEAUgTx_UiuWgTwvqRwaiZfrAY6O-lBj75Uk7Eo_YQJkyQAC6vS6JAF_JQxHlj2ylc5ed6dJXImniPbYhn28XJ6vWOP6YZxJKbLv40VdsRfmfos6Q6dDi_p2NzHEAA%26e%3D1727175309%26fl%3D%26r%3DDA0437F3-5F30-47D1-99AF-08AC150EAE42-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DiXgEhZk6K2d5RQuTkPliHzaErWw&uk=MS2vaY-r6VWbgFCyPztHrQ&f=Get%20Index%20of%20List%20Item.shortcut&sz=27642">
        <img src="./All%20Shortcuts/Shortcuts%20Tutorials/Get%20Index%20of%20List%20Item/Get%20Index%20of%20List%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3779,7 +4072,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Siri">Siri (17)</a>
+        <a href="./All%20Shortcuts/Siri">Siri (18)</a>
       </strong>
     </summary>
 
@@ -3787,7 +4080,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/Good%20Morning">Good Morning</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY4E1W5xoH2mRXyAZVluk3cdZwlXAYtDvU80pqh8jedHhtW_9Jxkrsyn%2F%24%7Bf%7D%3Fo%3DAhdR7_wiOWQbXL32pnIGFkegVIv8unh2ebfLAGJNxOQ2%26v%3D1%26x%3D3%26a%3DCAogJlXyg9qFDIQy-vfY7FJ_vmG03BHUtl8XGM6RaQA3gRQSbRDmqaeoljIY5rmi_J8yIgEAUgQdZwlXWgRkrsynaiZ_ZFWuDbxUkP3XEE0K3tZtLjlsvEYDTn8VJXmYl1lXW3uCfvQjFnImYDsPCwd2cEoh2Bg9F0GzWq2nb8RJvI0DiqW0th6x0Q_AcH8pMVA%26e%3D1726569028%26fl%3D%26r%3D16BB55F5-5DFD-4EA5-9570-89FF6D4A25F2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1LvLjWVfutkAQeeN72a7GIFFVF0&uk=l4knBkTZEdku40eQQeKKYw&f=Good%20Morning.shortcut&sz=26700">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATNnSL5sXaJbzeHrsgFIdlae3wtGAdYP3kjLXcm76xDaxA1A6CZYIac-%2F%24%7Bf%7D%3Fo%3DAhzsfcWL_i9EHdMRmM9ateQP9FXYl-xa0iL6nSH7IzMZ%26v%3D1%26x%3D3%26a%3DCAogFiUx__f9Ckaajiz36D_FH2plhi8Gjg0AydZszIM6O-ISbRDB_-PJmDIYwY_fnaIyIgEAUgSe3wtGWgRYIac-aibxuz9YJfh1D8GYFgtNK1X__5ba2GJTOMwW2IfXRMKy0yj8A7EVlXImx6xnGnHAVQo8m0-6mSeNNCcly2nasPKY6C5cU7T-XpiFOw3VRrY%26e%3D1727176099%26fl%3D%26r%3DF7186FA5-CA8E-4D96-B4C7-85EFEC0AB4D4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkwQUW-DiUGFLIAN88HmRc-ay-XI&uk=qMoRfuH-JMea52-9HO71mg&f=Good%20Morning.shortcut&sz=26699">
        <img src="./All%20Shortcuts/Siri/Good%20Morning/Good%20Morning.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3796,7 +4089,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/Good%20Evening">Good Evening</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATTSOvNqG0HcFnnUpSiepDGuMIssAYoFAP2A81hpm9-5DaGccd3nZAkm%2F%24%7Bf%7D%3Fo%3DApDcn1wTPepgQhphsrUeq3OhttO17ykcDUrTiyfTZYDt%26v%3D1%26x%3D3%26a%3DCAog3qiL2ZyoIsfGFWmXnnjl9MmJbCSwIGps2ZdbZoJ_3u0SbRD6s6eoljIY-sOi_J8yIgEAUgSuMIssWgTnZAkmaiaiEzXp1zmi_M33eXYJhmenaxI0MAlxB-QPaEG_qUgs9FfrHiT2dnImxZGkZKykAe14Wdw2DXdEY4sEnuoAiv1pdL71KvWxahf7SkbL4RI%26e%3D1726569030%26fl%3D%26r%3DA9043835-612D-44F3-8D99-58C643F277AA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAi0gTSl0x-S5n4WD9xc6EreUuIU&uk=JGCeeTJvts6OdNb1BowyBg&f=Good%20Evening.shortcut&sz=26697">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVNhpS8LmlPnGJh9olGguGw61qc6AT4HquZ_wkGSXREfCapF-RSdHPE5%2F%24%7Bf%7D%3Fo%3DAt7l9y6RGUKmL82SVeFyk60T2Lt4HoJiq4iuSHTJfTnm%26v%3D1%26x%3D3%26a%3DCAognywGUVg05AdprYCwEwq9D-lDkp565mTOXVfhF20JgD0SbRDspeTJmDIY7LXfnaIyIgEAUgQ61qc6WgSdHPE5aiYRtZkBg0pThBcB4IqheDs5-snHmIAVepqzhyjs6iTYkTxi7UY5AnIm6Y6okZJMyZ4K5DkT_5Sv1yMOAAIcw75IKj1vZBa-zEcg_yFTRXk%26e%3D1727176104%26fl%3D%26r%3D0AF70F69-FCDA-4811-9DB1-263FED63FC35-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DM6lfrKuj1iZZrgJWa4JIMsitGaU&uk=3Ma1MS3gJGFiIAVGcprJCg&f=Good%20Evening.shortcut&sz=26698">
        <img src="./All%20Shortcuts/Siri/Good%20Evening/Good%20Evening.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3805,7 +4098,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F">重新開機</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASub1f4L3uXtXdcSdGYuoKILDuLuAQB6OA91WHTERrkLeVId7vCK3NT3%2F%24%7Bf%7D%3Fo%3DAj-dZKBMwOcq6-V2lzLAWV3dwBSeNev1QFY1EfjGCWO1%26v%3D1%26x%3D3%26a%3DCAog0B3cOlsG5d4bhY0yQK0JfXkvhqzw3NgcvUch3G3_b60SbRChvqeoljIYoc6i_J8yIgEAUgQLDuLuWgSK3NT3aiZcTKQcUYl2uJnK0cR7VjrfN8S74A9F01ZzDtqekVTHngD0vfnU73Imsy-k6Z6drVKcC5Y9OMJbDIaADf3vcJmUz_PqoXjlX9IU5Om4LXw%26e%3D1726569031%26fl%3D%26r%3D8982C706-3DC6-470D-A07F-9E0ED8336E8D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dn7lByuts03P3eNkLEtO19n8zQJA&uk=XIRG7s5oFAS_eThSveeLdA&f=%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F.shortcut&sz=26512">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZgz7fAkitoOE2VzpC98ci0HYRVDASpkhY7uPMEkm4eGaF1hJDDpCyCZ%2F%24%7Bf%7D%3Fo%3DAhl6VwwspkGghDZpA5gEqlp8veYquIMWpBTYPBRHJpjk%26v%3D1%26x%3D3%26a%3DCAogbbVywakEHXGX9oCvpOtQqhkSnOAuPe9RY-iDaa8CRakSbRCjzOTJmDIYo9zfnaIyIgEAUgQHYRVDWgTpCyCZaiakPq5ZUxiBAFxsO-cTcWKdMumCdub2vVp7fXxQdYX9A6VFvJV-ZnImgDw3Hsb7653JseuZ2tEqNFf9cU1ETx-4xNEQm8kOdkReU70ZCxA%26e%3D1727176109%26fl%3D%26r%3DC0C4797B-D426-4BB7-A524-2A1BDDD76090-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZuv6Kyaj_p_E82flIx5EQtkP5dI&uk=o5hG5w-grQ2odRtzoyyVgA&f=%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F.shortcut&sz=26511">
        <img src="./All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3814,7 +4107,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI">諮詢AI</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARRoWvMxvTqnBrhM4o9Nb_mn8HqbAW1WlBPE2mnodlptIrGTM0DVth8G%2F%24%7Bf%7D%3Fo%3DAjzvowngNEtRXllnsISME82hOWwu69yS95ooJnbVuIqC%26v%3D1%26x%3D3%26a%3DCAogOJAviXGyRBpoh4rA-TNBGagRnv2G81KaAwgR7mebON4SbRCuyaeoljIYrtmi_J8yIgEAUgSn8HqbWgTVth8Gaibe-NN1koS7jlF7KfXgEfkTRlxOpm9iB_kghkqCqaN4DzaH4aDu6XIma934ab7GepTcMdYZ2du7xezmmTzrS_kN2petbNr6UvRjt5KlBO4%26e%3D1726569032%26fl%3D%26r%3DA0C7BED1-53F1-4583-B359-7900FF55D92C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DI3MSJCkE0qxzAT-GzCQPlsQcXR4&uk=z8zG8wrXJx8xzbsqt-nsNQ&f=%E8%AB%AE%E8%A9%A2AI.shortcut&sz=27384">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZJujLLvSZsoRqd3qeMXABZBjrSUAR5Ioh-HZkxn6c9xGKFQ3pekesTO%2F%24%7Bf%7D%3Fo%3DAtDikfrV-D3b1rFhLCC4sYPKkKZ1CF0outo4RzOOFfT1%26v%3D1%26x%3D3%26a%3DCAog3--EzGo24h4-FhiIFvzY8bmGbhVFt68CeOf4G1oJemUSbRDK8eTJmDIYyoHgnaIyIgEAUgRBjrSUWgSkesTOaiaJkONVbpFM7Tp0e1sfhuHCRDbj6wNfAep7fTD8-1WWexwn4zcDKnImraaAF7JivSEGXq8I7qvLrZ_zob3wPU9LIh-gyO0TCeg44FIq_Ak%26e%3D1727176114%26fl%3D%26r%3DE06BD6AC-3375-4742-8B48-97A1DEADB490-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHgTKs3hEBZU2U3j9XDD8x3ysmSc&uk=cOHTheUgatHSMPX8BzUBAw&f=%E8%AB%AE%E8%A9%A2AI.shortcut&sz=27382">
        <img src="./All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI/%E8%AB%AE%E8%A9%A2AI.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3823,7 +4116,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%96%8B%E5%A4%A7%E7%87%88">開大燈</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU6evhMV3dVJ5q4CnwCX8PELVvwGAZfTt28c_GeJnNfhXHzhRuqvbRvc%2F%24%7Bf%7D%3Fo%3DApI4kdKP__Js5LxCDsXnZu33LaANhn8BwzaA5bYIdkB2%26v%3D1%26x%3D3%26a%3DCAogJC7p4FPcBJHqpxdNCsFVahusimjUWxDqHotJwCs2GWUSbRDa06eoljIY2uOi_J8yIgEAUgQLVvwGWgSvbRvcaiZSQH6To4-OkdMTY84DFxEReEbKzpfZFSbX5GnoarhUkyCdExtV5XImbfW2Ii7HJQdcqyN809Wk8pjob6bFpSi7jzlUwpifN-1jledkLL0%26e%3D1726569034%26fl%3D%26r%3D963A5BF8-42B1-42BF-B4E7-A92D19604E3E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_-qmDVlhlBCBCPJuE_9lPnFr_fQ&uk=X6KGgKHDsATTb0koKAB4LQ&f=%E9%96%8B%E5%A4%A7%E7%87%88.shortcut&sz=27495">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATvhtcab7cXfYKyJQk8XFey-rQcBAVBaoZd7RJAI_vx6MS-h80nQgOnM%2F%24%7Bf%7D%3Fo%3DAptt_m-H5BM1sPUc62Hmy8tB4LXdxzln-8A09dqoqCSL%26v%3D1%26x%3D3%26a%3DCAogNdAZ9piHZmyhe96tFS3rqzN7G8GpUsfNhQytVUNJ9u4SbRDileXJmDIY4qXgnaIyIgEAUgS-rQcBWgTQgOnMaib1e082D79oqHvN7Wj9N5efg6OSweGJbbsp81a5Z2skIKEh9ov7cHImugpkTKtK44aR1A_mn2nSt14AB-H7nAK-vE6w_9to9EG1kVyiRc4%26e%3D1727176119%26fl%3D%26r%3DE47C6E3B-75BA-4687-99B4-44114E2CDAAB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3isf0mIVDMg4F5v5ilMg46lz0QM&uk=wvXvBX8Ew6hB6ViDUfsp-g&f=%E9%96%8B%E5%A4%A7%E7%87%88.shortcut&sz=26712">
        <img src="./All%20Shortcuts/Siri/%E9%96%8B%E5%A4%A7%E7%87%88/%E9%96%8B%E5%A4%A7%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3832,7 +4125,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88">關大燈</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARPDbhMt1BbAhOqOi-jLhgpS0FFoAYwZIelGy4GbufaDFJa7cdngHnKd%2F%24%7Bf%7D%3Fo%3DAmFgamZ1YYgu3KB5QDSnP2CK59QYINb5sLJoD8VIGTHD%26v%3D1%26x%3D3%26a%3DCAogGXoQlaV-95zFt99FaiyB5qrhsHBNpRjo8twgYOtyh9sSbRDh3aeoljIY4e2i_J8yIgEAUgRS0FFoWgTgHnKdaiZJ93DhMlwr7e-HFvRnCBYlpz9R8yz6UhXcq-g261xdmMG5IcZKynImK7XmisTjFbGjB3LGm8EOYdDcpll4DElMPoH2ouH_7OsrkwMaTwk%26e%3D1726569035%26fl%3D%26r%3DAB30C83B-9AEB-4862-B06B-D0F9641E4E3C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DwBETAXfbOrdwHieKhs6phgPI_dw&uk=UHRGtny3RA39dp6BLnbwwA&f=%E9%97%9C%E5%A4%A7%E7%87%88.shortcut&sz=26729">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfEG9-xz2r2ZbwFGax-8ZQaZ_qmyAVINuaaSuuEEsod0KLPucPoOc2Jd%2F%24%7Bf%7D%3Fo%3DAshUf290AZjnpuEpAI8XcQZVXFn1ECw57tOgeFpnxrXu%26v%3D1%26x%3D3%26a%3DCAogkfRzjx84oZBdi3mixeTaabwhFnuBw6RfYEAD28xMU8cSbRCmuOXJmDIYpsjgnaIyIgEAUgSZ_qmyWgQOc2JdaiZzjjtO0Iap7u4KVt_q0nQsRkhla6dQwZHXl1LzPAAu7TYnrxqk93ImQ625paTBlo201M5dd1M1aMQAf8E_AZCo07Hl7knVPqsVe7fzjjE%26e%3D1727176123%26fl%3D%26r%3DB66F853F-E628-413F-8166-810E8F435094-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhIboCfx_uaDrPkZ3_AvngrwPGGg&uk=5SJpjNae5lQpXhPKJpIL0A&f=%E9%97%9C%E5%A4%A7%E7%87%88.shortcut&sz=26728">
        <img src="./All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88/%E9%97%9C%E5%A4%A7%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3841,7 +4134,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%96%8B%E5%B0%8F%E7%87%88">開小燈</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARnC6NH_6bsLby_legBz8nwIIKzTAViBDF7xJn5f8_3unzCy5pDeYMgo%2F%24%7Bf%7D%3Fo%3DAucm_NmcAMFq9DoBi_H_1foOYrV9y0PyRwYlI5T90mAC%26v%3D1%26x%3D3%26a%3DCAogAmnPe_N6nBSYWYrlOTMDIosqszmLxcHDscZ53xrfQCUSbRCR6KeoljIYkfii_J8yIgEAUgQIIKzTWgTeYMgoaiZMMbGToARLMycBXWGUTC2aajy_EsNzZ3D0HMJ1QOmsO98p24b_MHImpWrFJDw94dH4kUXlxBNhODUw24xnGalUagPaxSyU1mDs6xPdN9s%26e%3D1726569036%26fl%3D%26r%3DB21B5B6F-A3E5-43B3-AD23-391F18B893B6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D2ZVlgvVDfU7KmsZnxuFKJKmlI44&uk=_A_I3iXz92mxCofwlVV6CA&f=%E9%96%8B%E5%B0%8F%E7%87%88.shortcut&sz=27495">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXrtz8LpJ5JsggWIvoLhGqSsoKXhAfA5znZvSX057U2_5LEmZdbAhnT_%2F%24%7Bf%7D%3Fo%3DAg8kVNgGJ9EPfQMNh0-YbXK1gB07ATxlHX7Zei19VKEX%26v%3D1%26x%3D3%26a%3DCAogzlTryXxhJuN_cypjDpkxYoxNN55kyO_40jYy9j0HAD0SbRCu2-XJmDIYruvgnaIyIgEAUgSsoKXhWgTAhnT_aibc9NRPSD7UpUUd57WqEqKPymL7BLi0bE9x4kOkSU6EoedjarGZsHIm6TWj9PDxv-RmirxU7JrZwehov26V3lrUY2n3F3Chv6RQxHyhbDY%26e%3D1727176127%26fl%3D%26r%3D045E0979-13DC-4286-8488-BDC30ABD3B40-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuKqkTsNB5cPrnx_caGCM53gXvgQ&uk=KRwoHjUeH2XuY7l1wqCo-Q&f=%E9%96%8B%E5%B0%8F%E7%87%88.shortcut&sz=26713">
        <img src="./All%20Shortcuts/Siri/%E9%96%8B%E5%B0%8F%E7%87%88/%E9%96%8B%E5%B0%8F%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3850,7 +4143,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%97%9C%E5%B0%8F%E7%87%88">關小燈</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAavQRmvKA7C8vQ5v6Q_5UfBKd58lAXdCDX9Seb-FW8a73AqiZKF96dhT%2F%24%7Bf%7D%3Fo%3DAonKukIbicpQmYyz3cdntT1iC9lYZG4TfFZg5V2e0b5P%26v%3D1%26x%3D3%26a%3DCAogA1bOiPUWwAtldCBOZTd3n_yOWfKajD9FhAsgWAnssNMSbRDe8qeoljIY3oKj_J8yIgEAUgRKd58lWgR96dhTaibaqLtfrpY69h1wzYMYBUay7LDLde603FZEtNAviNhge2t1_rj3-3ImYDSJuurxjcLXbI-cazFG4pZwRKFwVwqpPZCPuDGEpDoyXPdparc%26e%3D1726569038%26fl%3D%26r%3D5A84365B-2E91-4A58-A72F-F3511ACAE852-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7nTxhJIPY9qceMr-mlf53kTI-uI&uk=h-mBMWFWPCLOMCi82kDDxg&f=%E9%97%9C%E5%B0%8F%E7%87%88.shortcut&sz=26730">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR78bPBQgL5Bs0cMbOtYaIyz6rKbARUbim2o6qOm115iCPc9TpbQ3fY5%2F%24%7Bf%7D%3Fo%3DAuOqjTBKJ0CGDqe7kjeEkEksH5zDsH7lYPoug5uc1A9N%26v%3D1%26x%3D3%26a%3DCAogsyrc6LJ8Gx6vUDS6wgTZpsgk14VKyV5TYKWknqqS4gMSbRCjgubJmDIYo5LhnaIyIgEAUgSz6rKbWgTQ3fY5aib7NO9KhO2GaJJ9w5mZUvb639sJMBTg89luZgjV8yM1pj3gtMv7HnImrNjlmy1NX9I6m9OLNu_iNoOa42z0JE145QTewQqFb9AGglbINx0%26e%3D1727176132%26fl%3D%26r%3D973FA32A-D209-40F9-9ABD-07323B2D359B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOs9uVsaZomliglboQIdSYCSyaxo&uk=Y4_Dl-dsnebHE7UVgbhdUQ&f=%E9%97%9C%E5%B0%8F%E7%87%88.shortcut&sz=26729">
        <img src="./All%20Shortcuts/Siri/%E9%97%9C%E5%B0%8F%E7%87%88/%E9%97%9C%E5%B0%8F%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3859,7 +4152,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E5%8D%88%E4%BC%91">午休</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXgEUM3ZOrINA1rJVkx7FKJOEFdCAQ-kLL-S6dCOeU0OVajOsZ5E5_jf%2F%24%7Bf%7D%3Fo%3DAo5THURHc4Ut6iXbA5AN3VjdNGLjoJP4QqQZHt5f3Koi%26v%3D1%26x%3D3%26a%3DCAogOHaeaCfneVFB-wzqXpymZHMuuuOCkE3Z2D1Yq4ERJqYSbRD1_KeoljIY9Yyj_J8yIgEAUgROEFdCWgRE5_jfaiYBT5P8ClB0NLyWvTZueNRhdYiR1YClCtprs8-qd0e6WZgPIO9NfXImHfxeUzXyYhh-rXsq8wHO78iwB6toFtmJdUQzU9sGfeMIsPqkWr8%26e%3D1726569039%26fl%3D%26r%3D769A6844-BF74-478E-ADE1-90C3DA043476-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRBiVE90ceHGunFhroukf88lEOww&uk=rqGMBNLRGBBJjjMwzXydjw&f=%E5%8D%88%E4%BC%91.shortcut&sz=26655">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATRiw7SdnfpG6y8sVQRwZb64Hi6RAQUgGKd_9xn31kGdr_4mmseNMQse%2F%24%7Bf%7D%3Fo%3DAhuZML_x4trxdEx8PRAD8Zy1UsIzbjbT-MRsI9FNnKiB%26v%3D1%26x%3D3%26a%3DCAogzr3WywX5YCvh0Wgo5iS5MNFm09PM1MTY9GoCtpg1s3USbRDnpebJmDIY57XhnaIyIgEAUgS4Hi6RWgSNMQseaiasgayCDTo32FpedBaRb0qYRlU9lQJ-f57Ly8IpLl-U5DA4ZmiTx3Imp-K67jrUw1SaKoQXRFjqq-dirurZrJ4pqTNDQ8yCrgAfuj9cpvI%26e%3D1727176137%26fl%3D%26r%3DE0C965E1-1C51-4C8E-B218-8F131E7F80A2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DthaBHTW22-OFNr_IqcixsvM_Ivk&uk=nQYIs3IObCSNF0wPoyP21w&f=%E5%8D%88%E4%BC%91.shortcut&sz=26654">
        <img src="./All%20Shortcuts/Siri/%E5%8D%88%E4%BC%91/%E5%8D%88%E4%BC%91.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3868,7 +4161,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%96%B1%E8%AE%80">閱讀</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa4MZuSyFQbGW8d9_m-4yaoUn0_XAREashp58VwXTZSvfQ0WCj51wewQ%2F%24%7Bf%7D%3Fo%3DAkGW9q_GtVq6Ok5yZOdD65ZmsdMWs9bDsxx657W0Fxqt%26v%3D1%26x%3D3%26a%3DCAoglGdp7BdKwVf6ZrYkwNb4YtssM-_G7VD4PTvgJkqkZpESbRCYh6ioljIYmJej_J8yIgEAUgQUn0_XWgR1wewQaiYwdPnPR7x_Um_w_5S-Q8EO9WKBJ_L9N1mMR7ieLRKp_b2PalAPQXImD_6nJk8I3dfM2wgy5N9br85Glz1z2ekMvDKQ54sfne8t_ysxUds%26e%3D1726569040%26fl%3D%26r%3D8C215D53-B200-4855-94AC-8A789B500D4E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEgdeyw6MwLuuMhRKdeGmoZVoyK4&uk=vpfj4QnhUr875_TUT4r0qA&f=%E9%96%B1%E8%AE%80.shortcut&sz=26646">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQOnvErl5mSdOnNSJlPXTxXVYbd-AUp_iD6WLZTTmsQx2aBopt8c5N6r%2F%24%7Bf%7D%3Fo%3DAnbVjNt76KOiy7BdsZnu3AtuYr6RjHKGeM9xYl67hd59%26v%3D1%26x%3D3%26a%3DCAogqI3w_ySgcu_GR34S5aWOwUR6TkwtZgJPwAYy43B1rboSbRDPyObJmDIYz9jhnaIyIgEAUgTVYbd-WgQc5N6raiZNj0RyudUxUalXnMFSjYxG7Tdh9I5unsfP1v6xEpRwr0CGiiv9eHImx615zf8bFtm9FQtM5UXzem7hxp0ai-4LxiORT35zitxmQyilaOk%26e%3D1727176141%26fl%3D%26r%3DD8AE7F83-3F63-4134-B71C-5D64D968AFD7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DtnKQHYzvme8MuNsh86GFXYKwg10&uk=c0SvSG_1v4O2ZfOxpx-R_Q&f=%E9%96%B1%E8%AE%80.shortcut&sz=26645">
        <img src="./All%20Shortcuts/Siri/%E9%96%B1%E8%AE%80/%E9%96%B1%E8%AE%80.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3877,7 +4170,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB">安排訓練計畫</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQsNZCS9Nc7Nf21sWZ_sUCoqi80PAW4bJkgEKQOuycOrOfuOByqXg2ei%2F%24%7Bf%7D%3Fo%3DAjG3_ML4MoqUMF-yLaUMQEnlrF6GcKUpqpZjM5MmJc9V%26v%3D1%26x%3D3%26a%3DCAogqkubD6v661b8cKHgiCy5qmbzS3RNzD4QlpPQD5spqt4SbRDykaioljIY8qGj_J8yIgEAUgQqi80PWgSXg2eiaiazIaSDmhsB5JiyNMDZ1cKA5Pw9NxktfeP4OU_bn28f4HWJj1FM7XImqTA9JmXMFGSOTxFPvZRlOr5DhMbXoPfI1WjbmonRLHY3d5Sk9JM%26e%3D1726569042%26fl%3D%26r%3D63F82445-9084-47D1-894C-2A7311760DBD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIksba-XndYwThJ6SdLuMlpCrsG4&uk=liRMB9mNPEKYUgd5WrFBrw&f=%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB.shortcut&sz=26658">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZR4fn9F6Uzijdgj9-4SPfN_NIXTAY5n7SPw3sC82s6REEndrjnuRgoi%2F%24%7Bf%7D%3Fo%3DAsDXEMMrzSQZMdv1PkwGcJZKR6m6qmz9P1Fp7s2-8_Z5%26v%3D1%26x%3D3%26a%3DCAogcbxTj5F8dtqRJ6O6451oUX0sOm5_Qox8cdnW_Q2NykkSbRDv6-bJmDIY7_vhnaIyIgEAUgR_NIXTWgTuRgoiaiZ5q9OVHf0V4A3SZ8DPmGm8hZdAy3XC6qHBkk8gnb1te008LmOyB3ImqFVmfgD27Gwi7rYhAM8UrarRscW7Ejbns3_L33_5kmkZ1Jt6Ajo%26e%3D1727176146%26fl%3D%26r%3DFADF1039-BD9D-4698-8580-053F6F54A311-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DACpSGpr3K3_H_PvjZ2cWA8Kmg6Q&uk=DHFnWKk1BKa0EZwNVVzNkw&f=%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB.shortcut&sz=26657">
        <img src="./All%20Shortcuts/Siri/%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB/%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3886,7 +4179,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D">量體重</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeo41lTdOItMBZqb4n1Of89KMEotAdVVLtInVywIKXAkPlYKrK-cn2fJ%2F%24%7Bf%7D%3Fo%3DAieq8Tsfh7LKaP5AHHQjdi6urvKrnfHyxYUfZ67ShXQ6%26v%3D1%26x%3D3%26a%3DCAog0I3ywVZ0A47xEGTUPP8TooAkmXKUQF0CLY3mKpDVA6QSbRCinKioljIYoqyj_J8yIgEAUgRKMEotWgScn2fJaiZwnu_vTScQ62FKb31lNN8tmnNcZYDhxcH0YT7rFG7ECCqILHmQd3ImRJh39aYSh5LiM7eCOE1febXpVEzsg9xW8ebJI7slwKuPrbhM-Bw%26e%3D1726569043%26fl%3D%26r%3D0FDED138-933C-4D45-A6C0-4A920DE4E47A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6Zu189cbtVcTqBVvqgMyyVBF6A0&uk=Rw2ldvouTsBa0kSwuhKpPw&f=%E9%87%8F%E9%AB%94%E9%87%8D.shortcut&sz=26679">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc1hbqFcRSN83CVxlHhX2pR70aUWAdUY-sKUdYOvszbyNPEUZcClcEeM%2F%24%7Bf%7D%3Fo%3DApAjijsyMQ7n8ElssGcdeEQlH6QuJuEuqWrsbE8WA_Zm%26v%3D1%26x%3D3%26a%3DCAogzExWwNyqFtShIvrkKHSAb6ayEqry8BkKZxxUg9MFXNYSbRC_kOfJmDIYv6DinaIyIgEAUgR70aUWWgSlcEeMaiZChu3pWT0WEjR8VE1aVqqv0Mn8Ed_yCpEeqjToBKaEh_Uh14KKQXImL_gWJjLBnEyhGCTyvY_6D6nCdHT9WGE7H9lPkSi-Dx5LtXY4aUE%26e%3D1727176151%26fl%3D%26r%3D4D98100C-8320-48A9-819F-087C134EE6FA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3zZGheKIG5ae1LtzRao6OeOdopw&uk=bVP7eqxggCo_2W6agiCYCg&f=%E9%87%8F%E9%AB%94%E9%87%8D.shortcut&sz=26680">
        <img src="./All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D/%E9%87%8F%E9%AB%94%E9%87%8D.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3895,7 +4188,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E5%86%A5%E6%83%B3">冥想</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd1exBdGPgy1sJKrfxgRCVjT--O5ARs3Wskj-uW9fMETu9cpkJVOvHOc%2F%24%7Bf%7D%3Fo%3DAgDCkS1uWSC8IrC6V2iS_wq-ajrq38pX4QdOsUKtghCT%26v%3D1%26x%3D3%26a%3DCAogcH-_WY-2k8ZMzx-tMP73q_Po713OmxV88j_AHGmh9usSbRDZpqioljIY2baj_J8yIgEAUgTT--O5WgROvHOcaiY_w4vTK2eo7-KSinuAaKo1WNjFymzC1LiIMaodBQZyK4rHL15hqXImCEhY5f3k5LqghyNDZIsuaVFG29n4ZLWkMkHqZnlb2kYhr6xI_IY%26e%3D1726569044%26fl%3D%26r%3D5863B63E-3691-42F4-8656-09F659F41521-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOLITNPlfFsjOtwcIKaHg1pQtkgw&uk=n0gDpuxXakT8oAuSEeQeXQ&f=%E5%86%A5%E6%83%B3.shortcut&sz=26672">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeAhu4JY8XIfS43W3m3SNNWU0VqtAR-33uEWb66C7Tv1m502dQYML87b%2F%24%7Bf%7D%3Fo%3DAkbh6OE3HVNZUYuWFWzmI4siG0rg3NLH6epRdLtaVeXw%26v%3D1%26x%3D3%26a%3DCAog2Mg4BuDqEPN6tENSGvZcv9GPNV4R1FxAXLolzfyTnNoSbRDQt-fJmDIY0MfinaIyIgEAUgSU0VqtWgQML87baiZq4XZ0Gxrt5qdjwc2Bmn6soQ1QaWoMPEeKnAILr_Ox1RrGuZ2VoHIml_NaUQz0owjm12OU9LmMvUKHtZJ8yFoak_gKqPE42hdGOz0xFGY%26e%3D1727176156%26fl%3D%26r%3D3F53E1D4-5CC6-4C63-905D-6A14FE2ECEAA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpixfB4RsIi8340jpuMpeHmTK9OA&uk=vX4qquuxwIM9hHlnc90BFw&f=%E5%86%A5%E6%83%B3.shortcut&sz=26671">
        <img src="./All%20Shortcuts/Siri/%E5%86%A5%E6%83%B3/%E5%86%A5%E6%83%B3.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3904,7 +4197,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E6%B3%A1%E6%BE%A1">泡澡</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb3HbXBgWnB7FsculaivVnD0ZVM2ATV0APepsmXON6QDwmODQf4dmhct%2F%24%7Bf%7D%3Fo%3DAtcJBhncSfeV0SLwJphK_egBsAeXlTaxiFj1BSUovvDQ%26v%3D1%26x%3D3%26a%3DCAog3NDB0eUgS2fbnXwm9Okx75XqGuYHlbYhWJSG8OA7dX4SbRD6sKioljIY-sCj_J8yIgEAUgT0ZVM2WgQdmhctaia46nuNauNbUzbscjeRg1PAsFFkSHcUgBUPvm1v15fiLyoMM_uoXHImMvkjcMyZHEzKmQQkDnJOTEt-l0EoyQlTIfyM7KmvbdpT0oWVZpc%26e%3D1726569046%26fl%3D%26r%3D0FB1DEB9-CA48-47B2-B207-1C0E1CD0F5D8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzaX5yjAEyntPPhCKAGvxqEbsBgA&uk=2DKBGqi7tpDznq2UGzprIw&f=%E6%B3%A1%E6%BE%A1.shortcut&sz=26690">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARIDGxQyftBWhRuuXM4HSatjogl0AeTtukYtIJDUswJeQK4IYasnBLg6%2F%24%7Bf%7D%3Fo%3DAv67eQWS5GzPAYSHyZaNyiXZs-qyWq6MKKaOTvkbla2E%26v%3D1%26x%3D3%26a%3DCAogHEuRSP7enrI3vbMFV5SSnk2z72vlq452SzulJUaWueISbRDaz-fJmDIY2t_inaIyIgEAUgRjogl0WgQnBLg6aia4NT4_wY7OSx7OZu6zsu4RJ39w0X-YlHu2Q6tEQZholUaOsfdyI3Imdm40eT36KjpFU0P4-33O5W4cgBJcXeNefr0C8yRIYQeb_bz-yNU%26e%3D1727176159%26fl%3D%26r%3D30DFD287-B897-426E-8F92-12C4E3770C82-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7E97zdF-amnjrta0ryc_thx8Isw&uk=M9curAmreQtecDYxPXecqA&f=%E6%B3%A1%E6%BE%A1.shortcut&sz=26689">
        <img src="./All%20Shortcuts/Siri/%E6%B3%A1%E6%BE%A1/%E6%B3%A1%E6%BE%A1.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3913,7 +4206,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E8%B5%B0%E8%B7%AF">走路</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbchMTObQ4sxoPA82_iyw2rn6qX0AevCGygeDgsICcdJDZMHZ_Nsm_0V%2F%24%7Bf%7D%3Fo%3DApyLEC_BBA2cMpPdpk3OeREGRlOTNp96Z6M3RWYTxQNp%26v%3D1%26x%3D3%26a%3DCAog8n5vzJHXcyVNSslYxd_ata8KBMnz06q5hmay2AG0GekSbRCiu6ioljIYosuj_J8yIgEAUgTn6qX0WgRsm_0VaiadEXYcacv7c-Mv0R1kaQ-tMWHZhIurJXthCKwKgzREU3-h1zMPIHImwGUxTsnfcV5ppgIdZIzk_XJpuV5o_tMerjL4_ai2xpxOqpavLgE%26e%3D1726569047%26fl%3D%26r%3D80286792-1677-489E-8EC7-6E1D9118F514-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DSnKSeRgYSnjAzCLRa3rksc6mobU&uk=2yZ6RRGCXkK4T39xeo_Qkw&f=%E8%B5%B0%E8%B7%AF.shortcut&sz=26663">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWKQIlQZ3Z7dZz252NE4eLl43eEhAYFh0LyybLYaYFpKRYEpUH36u2U0%2F%24%7Bf%7D%3Fo%3DAreoxA4YcSGaYPeZpXeEM6EiLCpPz_YGGqiWLhakSzCK%26v%3D1%26x%3D3%26a%3DCAogUpfZV0GUf6oFYWyH2rRmzQIH8gyFD6FJGIENfvT-_c8SbRC15ufJmDIYtfbinaIyIgEAUgR43eEhWgT6u2U0aiaeQVqGP-YTCsdVakBKoTH-KMiwiHXwT1ipX8XWr-uNsY8TV6rvGXIm8DqAHWq_FjDM_hAWnT0bhj-wZJpQW6eXHZanE4TZSXTWMn6j9_8%26e%3D1727176162%26fl%3D%26r%3D804424E3-3994-485D-BFE6-472C713891DF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dmf9kPEGQAECfAdhL3d4RzplU2RE&uk=ucLZNAMomI-k4EC4CsVktA&f=%E8%B5%B0%E8%B7%AF.shortcut&sz=26662">
        <img src="./All%20Shortcuts/Siri/%E8%B5%B0%E8%B7%AF/%E8%B5%B0%E8%B7%AF.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3922,7 +4215,7 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E4%BC%B8%E5%B1%95%E9%81%8B%E5%8B%95">伸展運動</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXEt51Zv-uxS1TBjB8nf9KiDuHKfAZ9tJWq98mn9nJu_63qMdLoPRkzl%2F%24%7Bf%7D%3Fo%3DArW_sGwHG7ChUpu-9QZG1DxDUEmW9qKQT2yf6ht8tFn1%26v%3D1%26x%3D3%26a%3DCAogiMujEqZRc7a6-KfCPD28HMGrLLA0sP17upog5KHiMWQSbRC5xaioljIYudWj_J8yIgEAUgSDuHKfWgQPRkzlaiZrW724eB8ygZEigdhR97W1BJCVV3X7LcL2KteRpSKsVDYhqiiXYXIm8X6N9HjutEkGEwkc-0LXqq7fZyOd1-S-36104oSGo1nN8qG47f0%26e%3D1726569048%26fl%3D%26r%3D5E755000-DFBE-4603-A99E-4FDD846E68A5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DidB3GCs4VFTRWsXOMh4LUWqiWt8&uk=Vu7dIDdrMz3un_kc5t3Y-A&f=%E4%BC%B8%E5%B1%95%E9%81%8B%E5%8B%95.shortcut&sz=26667">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAex0rRmToXJfSWV7Y-SL2qDy3Cn4ASwtArXLLC0VAy26eZPEKrkFes2g%2F%24%7Bf%7D%3Fo%3DAh0BkUrihVmF2k3qa3Z1r_v1EqrPldea2ZHXFLyzCTT-%26v%3D1%26x%3D3%26a%3DCAog5Xf5lxHyTzeNJcbAGjk5PFJSGBsWzVzgA8FTa_esE30SbRDp_OfJmDIY6YzjnaIyIgEAUgTy3Cn4WgQFes2gaiZ5xmXP75ByPjJh3NuhEuJDm-ZQE1o78R_HP-83woeysh3GOAtNXHImEVKL7kuoN4QfmrfhTMMR9qfPGbcPwvjaNy7gKesL1DdZCWDl5RI%26e%3D1727176164%26fl%3D%26r%3D443D8AE4-4AA9-42EE-AE38-28673A5D0C16-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJpLvzWrYu9onsY6Sqo3i1dXfv1s&uk=ctZMm1rONsFAZIIbe4NoiA&f=%E4%BC%B8%E5%B1%95%E9%81%8B%E5%8B%95.shortcut&sz=26666">
        <img src="./All%20Shortcuts/Siri/%E4%BC%B8%E5%B1%95%E9%81%8B%E5%8B%95/%E4%BC%B8%E5%B1%95%E9%81%8B%E5%8B%95.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3931,8 +4224,17 @@
        <summary>
        <a href="./All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">連接我的耳機</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb9TH58RrjmfyQNAJXR13zNnFDy6AYIb-LsFKfne-59dH2FZSeN3CX6F%2F%24%7Bf%7D%3Fo%3DAsqaFkv9h2D74IWVLlGAXvDgGR5pvETLDVWzmwPeiGdz%26v%3D1%26x%3D3%26a%3DCAogFf-PQZs30jGNR8GYTWeWTk4MwBpmNy5DcXKsMcUjIMMSbRDKz6ioljIYyt-j_J8yIgEAUgRnFDy6WgR3CX6FaiYzuhjSJnv69OEqfClbGW4AHUXpEgT_7zfzH1xP1_u5MxB7gmQk63Im3YQjQZrQ8wvN7GQ-_Xev6DBG33kkCWFkDMcchTJb7XFlUqHXP0U%26e%3D1726569050%26fl%3D%26r%3D101E2E1B-E97B-41AE-A1D4-4D2BBC7AD656-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dj59z-WBrLHGBHKNmixhYU2yS_z8&uk=vDE8wxhK_74oa1ubuRvgAw&f=%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.shortcut&sz=26680">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAay5LpRhGYXSv8QBZqdg_9VBiFBBAdBtD75QblwSGq2qdOa643k-rbmC%2F%24%7Bf%7D%3Fo%3DAtbR4aAzNdwBhEP-5p6QZ3cKEpXavM65eW7K9HpjjgWc%26v%3D1%26x%3D3%26a%3DCAogkZWdxzqOtnKpVl9CXJ8ptIsbXHpMPDrv3s6vMJNZQGsSbRDOlOjJmDIYzqTjnaIyIgEAUgRBiFBBWgQ-rbmCaiYQEJEbgOUEPov6562nAXIOfAcEFL9kMpNnssFo2YyuQy5WB1hk3HImsHHpVjPAR9Y79nNLey2erXSBiH1zfqIhBZRDh3M1Aor5zdjWPNI%26e%3D1727176168%26fl%3D%26r%3D510B60A3-AB6D-4F26-B02D-6C4D44F05EAD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaeukhxmLrHGg5-2IqdxydngVDjY&uk=OmkgsgEzx1inyErFOZM_CA&f=%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.shortcut&sz=26679">
        <img src="./All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Siri/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C">深度工作</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaHNMmQep0Lf9EtKxTi88CZW5SUCAaL6mbGwJ8A-XZtP4ouDawU-EDro%2F%24%7Bf%7D%3Fo%3DAk8MBcGDI-1fykUGZg5vvY9InFrAvV5rbzfgzuDVB2B2%26v%3D1%26x%3D3%26a%3DCAogaFc5vLqSIojxlt-HUFW_37Oc8BCthQWZCezq5UjYkIUSbRCArejJmDIYgL3jnaIyIgEAUgRW5SUCWgQ-EDroaiZrrL1LXMORZhWfx4rmHuTaf-47sD1hKEnPpK9Azdh9dqlr8XtY7nImfoY5e73rxN6sxaYN_j2Y_dafGVPxOfrbmTdmJtcbsuuQ0pvvXeg%26e%3D1727176171%26fl%3D%26r%3DC671E02B-C426-4BD6-94FF-FB14F280A9D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlqVJwjnyqYBS9sLRWHt1HMku47I&uk=hFOxF6KqwTI3R9Xz6G1PrA&f=%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C.shortcut&sz=26676">
+       <img src="./All%20Shortcuts/Siri/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3940,7 +4242,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Sound%20Files">Sound Files (6)</a>
+        <a href="./All%20Shortcuts/Sound%20Files">Sound Files (7)</a>
       </strong>
     </summary>
 
@@ -3948,8 +4250,17 @@
        <summary>
        <a href="./All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone">iPhone Alarm Ringtone</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXU9C9-_jjCeppzVqDCxLf2wr8BoAea7f716_v4mxs2WRofJC1WI1QT1%2F%24%7Bf%7D%3Fo%3DAh_3sYRc0oIS9UetgyPxB03kVMJkwH_vG05Z_kkbp9BI%26v%3D1%26x%3D3%26a%3DCAogKSacFBif17_QezrELd8zfkdFOI1byXGiWIn6n0WYAh0SbRCa3raoljIYmu6x_J8yIgEAUgSwr8BoWgSI1QT1aiYUwGvKXauZLj1gWhx9pXYKEO6xaRrqWHtk7xH1ARr4KE1JpQ8VyHIm4GObn1IheUd1vq9nRlVq34ejb1mwr-a2wwcd4cJao1XoJzJ_yxA%26e%3D1726569281%26fl%3D%26r%3D9CD85DEA-6D58-4FC7-8A5C-0035CD567419-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxzaLjIqnuY8qCqiGf5f9tpjzZNo&uk=OBCmGjRzku0q9e0CLCrXxA&f=iPhone%20Alarm%20Ringtone.shortcut&sz=422903">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYEg5gSNXNtmW1HfwkhAMk71_NtwAZ7mLr8EHOae4bc58z2T5WsTKrvG%2F%24%7Bf%7D%3Fo%3DAqes4JGy29dUsHdUmG2913ZCJM2BD79-0zLE1BhzVKcu%26v%3D1%26x%3D3%26a%3DCAogMOp1o0Mo9o35WeQiIBbnnd4p3AMID8p9uNdDgdzuzLkSbRCV26fKmDIYleuinqIyIgEAUgT1_NtwWgQTKrvGaia--VvNSXlNwcu50A0ngUjvxOc2Yi6xIZqmwWMZyX6fD1KkoHSdznImjw1vaF8giA961u4dgmoTeJnKfh6CYD8EXaRLW73C-Rn5FzStFcU%26e%3D1727177209%26fl%3D%26r%3D014D04F2-148D-4304-9D37-12B4770354E9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dyncn5ZF9tdGflORaXkPIvnFPgNU&uk=HXd0anlukRcBzaqK4dd7Xg&f=iPhone%20Alarm%20Ringtone.shortcut&sz=422904">
        <img src="./All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone/iPhone%20Alarm%20Ringtone.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Sound%20Files/Vocal%20Countdown%20Timer">Vocal Countdown Timer</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbek3DqM6c1Oz4N8B1eHPPTr4cu6AdepTqKSV4JHtOCph2mUI7qm-XZw%2F%24%7Bf%7D%3Fo%3DAuJztVptJHx9a4waw_CaiMQWSON5QpN-nV__a5fLQd5W%26v%3D1%26x%3D3%26a%3DCAogQ540pVVsdH2BfkTUEK9R2b-2yvx5goIppOa6xl8Je-ESbRCR6anKmDIYkfmknqIyIgEAUgTr4cu6WgSm-XZwaiZ7j7XuSEA4UmwUd-YBOXMeumbrZCYUUOE7bdfc1-NYlIeWTEzPlHImnPl5lNpkmP7beDNBTFqn9UTBBRo-M-vUddJk-tuJwhJnVcYWbyw%26e%3D1727177243%26fl%3D%26r%3D829D0F4F-9D61-479A-B9B3-FB6FC593156E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzqTscK-9gxHih4R-ZVnWmfySLL4&uk=rPJ-pqe36cHP3Uqo9TEkmg&f=Vocal%20Countdown%20Timer.shortcut&sz=27852">
+       <img src="./All%20Shortcuts/Sound%20Files/Vocal%20Countdown%20Timer/Vocal%20Countdown%20Timer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3957,17 +4268,17 @@
        <summary>
        <a href="./All%20Shortcuts/Sound%20Files/Time's%20Up!">Time's Up!</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYZmTn7x6IQJICIIM4KgyNPPTXBpAXVGo-Q4jz0IACm0QrFMGdeDZHMd%2F%24%7Bf%7D%3Fo%3DAoRJE_m7fPwZb1g9y0N6TjXN1s85p-PJpTBnimRhxv6H%26v%3D1%26x%3D3%26a%3DCAogTYlnqfo9JsJu-cTCPo4YOcrCEzNAtNSMYSF353X61jQSbRCp7raoljIYqf6x_J8yIgEAUgTPTXBpWgSDZHMdaiafqYR7ZGT8HE6r1KA6sxHMugXs4NUIwnbWlsR65pw_2DEFT6eH5HImdT1EnOWTgQJKn1dTSEY3usJBInguA19vtXc-87gZ9cudzMZ_CKU%26e%3D1726569283%26fl%3D%26r%3D2491F288-9089-499A-A800-F5E57466670E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcfLeZkIy5GF3BubMATCgGNrUbBo&uk=-2knoaHEgEgLwiB71C10JQ&f=Time%27s%20Up%21.shortcut&sz=124700">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeH-BuRtgQaSHe1PblJTZhKrOLTEAQ8k5dsh4hM4Dl4icQGNp8GIl45Z%2F%24%7Bf%7D%3Fo%3DAktGyUDynyc1UHk2_PWI3chFJgOi6EafnttGtEVYiisE%26v%3D1%26x%3D3%26a%3DCAogL2R_hvDwIlUYCYMFm9d6gj072k6By6aYmcdaMUndhRoSbRCY8avKmDIYmIGnnqIyIgEAUgSrOLTEWgSIl45ZaiZXtPw8UF0mAQCp8qGxNOeamSZPj1FhjZrdbjTPm9X757ZjgkCdFXImOhW74Rw-Vt3cWz-Htgk5l_H9aCW887Yc-bmHCmpHr9Nt7K9unkM%26e%3D1727177277%26fl%3D%26r%3D96919D7E-FD80-47D8-BCCB-0E69201667F8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dq_dRF-ZzGvioP8qARzuG77tJBjw&uk=m3ds1ay3r_usbM3w5TU2wg&f=Time%27s%20Up%21.shortcut&sz=124690">
        <img src="./All%20Shortcuts/Sound%20Files/Time's%20Up!/Time's%20Up!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Sound%20Files/%F0%9F%8D%85%2030-Min%2040-Hz%20Binaural%20Beats">🍅 30-Min 40-Hz Binaural Beats</a>
+       <a href="./All%20Shortcuts/Sound%20Files/%E2%9A%9B%EF%B8%8F%2030-Min%2040-Hz%20Binaural%20Beats">⚛️ 30-Min 40-Hz Binaural Beats</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATMf1IWiVfYM4GBKQ7kGMZWV2JzAAWNSYq-pe-AZXEA8bAtwVF85408K%2F%24%7Bf%7D%3Fo%3DAnYjBAxwQV1mQkopEjA_Wh4wmu11rXaMlhf0TucgkyXq%26v%3D1%26x%3D3%26a%3DCAogy6fF7pSn8kJPTnE-OOqRt0xHuQP2_xsYmNcRc2z5F-ESbRCq-raoljIYqoqy_J8yIgEAUgSV2JzAWgQ5408KaibZEafw2QaXBRwlhVKF2FyKuYX8e1Nkd-ZFdYtnULhmlHrem_nce3ImyUjpFU9bfgLklLv7CpOg_KCtlNfaB_ZvZ8hikf3o9UuOZYSEuGE%26e%3D1726569284%26fl%3D%26r%3D5398B25E-D15F-4974-93F8-203752148CA3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DO8NuouRAy8iwbSZuLzGVbllPf3M&uk=-SeuPsDi7wkYAIj2QN3kxA&f=%F0%9F%8D%85%2030-Min%2040-Hz%20Binaural%20Beats.shortcut&sz=28412">
-       <img src="./All%20Shortcuts/Sound%20Files/%F0%9F%8D%85%2030-Min%2040-Hz%20Binaural%20Beats/%F0%9F%8D%85%2030-Min%2040-Hz%20Binaural%20Beats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf8SiizlDKxkYyJPZraxXctOa5dJAXBopQ_DOaIXUGurMpRDl9Du--k2%2F%24%7Bf%7D%3Fo%3DAkcHDZOeL2zCyxn9KGvztlSAoilf5KQKxfBJ7_bMCqoR%26v%3D1%26x%3D3%26a%3DCAog9W86NIWq27kKwGao1zhb9KO8llVSSnKrwoAzkQbTcCISbRDZga7KmDIY2ZGpnqIyIgEAUgROa5dJWgTu--k2aiZgJwJ6gca6LFyIDdkfogTIQFWsJxuU-LSRmiSfD0OCpwrPKK8yV3ImeBnM1Sexv3LjPZVQRPvbpGtG7X4GvtRdVuNdwkfwEaO7w7aXjog%26e%3D1727177312%26fl%3D%26r%3DB10B8AE4-B749-493E-AE7E-F0775485A2A3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D41Iaof27q2I5XuhlZOp-gEcOS5M&uk=Bv4M2OOQR2bvPGTc2-DpAA&f=%E2%9A%9B%EF%B8%8F%2030-Min%2040-Hz%20Binaural%20Beats.shortcut&sz=28200">
+       <img src="./All%20Shortcuts/Sound%20Files/%E2%9A%9B%EF%B8%8F%2030-Min%2040-Hz%20Binaural%20Beats/%E2%9A%9B%EF%B8%8F%2030-Min%2040-Hz%20Binaural%20Beats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3975,7 +4286,7 @@
        <summary>
        <a href="./All%20Shortcuts/Sound%20Files/%F0%9F%AB%81%205-Min%20Breathwork">🫁 5-Min Breathwork</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU5W9FO9DdrJLtcshkgXHzfWjuxrAbZsHKQRgTBWKw4A7mKhUPs3H3Nn%2F%24%7Bf%7D%3Fo%3DAsaB5HCxEBvQY2aGP9db_KlejTIpzAdtz_ygGTWap3s6%26v%3D1%26x%3D3%26a%3DCAog2brUoMRsV8GLA5bHP0HebCHDdtENjONH7A4-aUl7puESbRDwhLeoljIY8JSy_J8yIgEAUgTWjuxrWgQ3H3NnaiZO20n_lORUljvrQHNIFPp5ManROAgjoQ7fbrrDzvwsUJxDUic2GXImd1HUIIWgDCePxHgW4_0j2pqh52XjK9GdZRGhGGrDgj8rePiuTds%26e%3D1726569286%26fl%3D%26r%3D233D7701-6B05-4D2B-B0B6-6228F583C792-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DP87C_GSbT2Rs6U8xZSl7_kybAhE&uk=X5hGjg3S1Q9SNWELoyQ0HQ&f=%F0%9F%AB%81%205-Min%20Breathwork.shortcut&sz=27336">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXsUTgTnMxjwHswvIIBm58XlgagyAXU63H-yhYdTspKOD9zj7NhLFxM2%2F%24%7Bf%7D%3Fo%3DAu-Pb1M1GpxDHADlwKSJDwCmTlNewOZU3UKYOoiIIIQ5%26v%3D1%26x%3D3%26a%3DCAogCTcV4n6mQl4WT8yanceOKWwmFSu5VQ6fpacaG8b62u4SbRCiibDKmDIYopmrnqIyIgEAUgTlgagyWgRLFxM2aiavsPftyDgjctL-1hfeI8AdgVrqmJ_vlOQfCAAbwFQeZQcBZlcIBHImt24YUagYYIU8vk3RiMoCaTVeB2aaJQ1mFyLXSqryA22qPpL5KTg%26e%3D1727177346%26fl%3D%26r%3DCE2F288B-6AA4-43EC-928D-46A86B702441-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dd0zjcHOPP749drCNbRuIrLKAdJA&uk=TZZgKj-1J7iIvDTfgoiEPA&f=%F0%9F%AB%81%205-Min%20Breathwork.shortcut&sz=27333">
        <img src="./All%20Shortcuts/Sound%20Files/%F0%9F%AB%81%205-Min%20Breathwork/%F0%9F%AB%81%205-Min%20Breathwork.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3984,7 +4295,7 @@
        <summary>
        <a href="./All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-10mins">💤 NSDR-10mins</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdolKtAW1KlmJRfMHcVJAjqTmY8HAbA0ztRSgVS2lAl_2Iv7eFJAxWXX%2F%24%7Bf%7D%3Fo%3DAp6h3TwT-yDIJNpz6HKj4E3k6T6HibhqMtYXxo7GX4zx%26v%3D1%26x%3D3%26a%3DCAogfHMG6MuIraFqgo-qpstCr69iyp3OK2-8DkEYAZM86v0SbRCJj7eoljIYiZ-y_J8yIgEAUgSTmY8HWgRAxWXXaibyb9_SYK5Aif7QGXMeD9bwGAOhdk9oMGH1iFINJXyfQ_fRqGgyp3ImBm4RZXP-FZUoOJyWTGnG_Jwtjqk9QkxGHNJEOTwt0i65RKXZyNA%26e%3D1726569287%26fl%3D%26r%3DA011A5E4-C3DB-4C92-A8C9-0BEDF676797B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFHTLIzwNECtU_22NQyZGHVsu7QY&uk=3mYq2Wmcjc8kytu-pFariQ&f=%F0%9F%92%A4%20NSDR-10mins.shortcut&sz=27159">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZe2ocMowvHYqhWv1HN7Rj0ka3AuAUBrYiTsIhhhNjuc8Jv97LaPXG5G%2F%24%7Bf%7D%3Fo%3DAoLKUogAgJ5j-MJAAg2id6T20FwtW16iRkbbdwENmJ_P%26v%3D1%26x%3D3%26a%3DCAogA3rBLKteeJ5SWdSUTem2T2Q4ORG9LLbHb9rE5a57ErYSbRCwk7LKmDIYsKOtnqIyIgEAUgQka3AuWgSPXG5GaiauaZUofZyycBGmdyfk3j5G0A6qg7mgip61FOpSImdJwEXra7RqAHIm-n8R9qn2wMSs2IqZZYGiMQ2c7dngZnDxbCTijgLoLbmhpzoRops%26e%3D1727177380%26fl%3D%26r%3D1763B837-11E7-489C-AF48-4DEEC55B5894-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DO93aHt6O7gKtgY4hM0_mwcKdnCA&uk=ObcyXcB56VEQ6aG0jLmSmg&f=%F0%9F%92%A4%20NSDR-10mins.shortcut&sz=27158">
        <img src="./All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-10mins/%F0%9F%92%A4%20NSDR-10mins.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3993,7 +4304,7 @@
        <summary>
        <a href="./All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-20mins">💤 NSDR-20mins</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATzASwL5xv-22AbMJVlQWsAKlTE2AYxzvcx6cy5L0axoCE-WBPOMTC8y%2F%24%7Bf%7D%3Fo%3DAtco1H2IPOQjZ6SNeonickkOMlgcyH6CDA9fzeZo94Jw%26v%3D1%26x%3D3%26a%3DCAogq7-0Xp4rYHJTqjHStjPCHajEMjSaox0pK-64Po38R3sSbRD-mbeoljIY_qmy_J8yIgEAUgQKlTE2WgSMTC8yaiYPOyGbvdIBjFS7hW91PMY8OQ9X3He3Kv51-CvMmVR_ZEhoM2oYg3Imo6OPLpxUV6F-jET-abUWeytL65iFFFRnqnBMZfIb65a6ybWy3sA%26e%3D1726569288%26fl%3D%26r%3DAE922940-66A6-4F9B-B86F-7BD4F8C4EB5C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7puNaEe5TXlGubFgEmvM88yUGww&uk=XWSyEpMHs7dC8sXjY0X4tA&f=%F0%9F%92%A4%20NSDR-20mins.shortcut&sz=27159">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdmwTXVvWSgN5s81DO4LY1-_g_CZAUGG8Djx5hCaiB3Tz1pUW7u7uA2T%2F%24%7Bf%7D%3Fo%3DAoiDqn1pbLkp9vOlrtdiritEaKiKi0MzaCsFCllpYQIW%26v%3D1%26x%3D3%26a%3DCAog4ZL_z1ohM1hf4oqE2so-aZFGbYdqwOOGWbDMqY4kAukSbRCjl7TKmDIYo6evnqIyIgEAUgS_g_CZWgS7uA2TaibkiWQQ9IdnEfbgHEsP5ar0zYaURb7iL0EfFWUtAPWuDam91teCa3Im2lla-S-c476es9DNGnXU5Ttk-ua84YIfJP9iVC7y6zIBEJAukkM%26e%3D1727177413%26fl%3D%26r%3D1560AA74-CD5C-414A-AA35-39D13CFDAE54-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DsHNt77W4mBq8zJrSp7swxTRrJxY&uk=Eb8TYLWQLKptzBMLgnCMqQ&f=%F0%9F%92%A4%20NSDR-20mins.shortcut&sz=27158">
        <img src="./All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-20mins/%F0%9F%92%A4%20NSDR-20mins.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4010,7 +4321,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify/%E2%96%B6%EF%B8%8F%20Choose%20My%20Spotify%20Topic">▶️ Choose My Spotify Topic</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATa16wwtidHy-CbWlFgHLJLUbUWBAckia0Ovt7COZ_nHXqXhmyA3OMY_%2F%24%7Bf%7D%3Fo%3DApkKXwBwu_Vl7j0itxV0xTtVecp3fUfQMhOg8C7fBxh3%26v%3D1%26x%3D3%26a%3DCAognTwRuQabeDphZtACHNu6VKUX7ew_MEWmqOdq0ea2g8QSbRDI0M2oljIYyODI_J8yIgEAUgTUbUWBWgQ3OMY_aia0ZAdaVx-Xn6Rob1FzJiFW_tO9BU6Lo--BiafApF20DKrtJlvOtnImU_NlMobauJ3CX5JXXv1ts1nQDok3jnJ00u8q9mezojRf9MrigK8%26e%3D1726569656%26fl%3D%26r%3DF1F71958-2510-43CF-9A17-2A840312D04F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dg0x0uBXSscuvN0dUVtTKgzJXV9o&uk=xF2XOGHHE4sdt4B0Qi0Ylg&f=%E2%96%B6%EF%B8%8F%20Choose%20My%20Spotify%20Topic.shortcut&sz=27998">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQwCO0GP_DvxSLHVXAKfoLVDmDhiAT8EoLftfsb__BwZ8lUE0OZDeckL%2F%24%7Bf%7D%3Fo%3DAk9TB_-ARKWQPEN9pilm5P-8fCW7bh2u8UuqhAwtcSbD%26v%3D1%26x%3D3%26a%3DCAogDLy9gJQqx3hcYaLH4acyoA_9Mj7zF04H8jU3U6g4wroSbRDF_dLKmDIYxY3OnqIyIgEAUgRDmDhiWgRDeckLaibxD2VtSqPXGtj0H5e-I8Vd4-Etd0f_FKdJU_H2GRIRWFLKSAd43XImvq7-9x9lfhIv_8zVKdpANJe-W1OlQHt8bMVBqEC_uV-fcdI0OJI%26e%3D1727177918%26fl%3D%26r%3D97FE1E57-376E-4922-B931-A52B96D20F19-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZVmfrWxS8EZ-UdRN8iwIJgZ5-ZI&uk=6yQmtJYQ7kfqDx30J9iEBA&f=%E2%96%B6%EF%B8%8F%20Choose%20My%20Spotify%20Topic.shortcut&sz=27997">
        <img src="./All%20Shortcuts/Spotify/%E2%96%B6%EF%B8%8F%20Choose%20My%20Spotify%20Topic/%E2%96%B6%EF%B8%8F%20Choose%20My%20Spotify%20Topic.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4019,7 +4330,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify/%E2%9B%BD%EF%B8%8F%20Mental%20Booster">⛽️ Mental Booster</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX9vec8mXfMNM_4ht1LA_PkwWhgZAaKppm6Uz3IRYpRoGGXcNWHi9WXe%2F%24%7Bf%7D%3Fo%3DAmIwSuTk8fx9v8vD_gmMyS3PYYrljnttx6P0HNFu2uFI%26v%3D1%26x%3D3%26a%3DCAogrgo_pJfZv26qag8iges3bMYZjz-CV_BkIWmYZaFJbmwSbRD5xs-oljIY-dbK_J8yIgEAUgQwWhgZWgTi9WXeaiYHr1MS-MMmS3IrJauHybcQMQMKtL8x4BDy63-yOW6g2UIzteG8MHImgECHxngky2V28lhfxE69FgstWLbGo15kL3uMu8iD8IZrkg8uKoo%26e%3D1726569687%26fl%3D%26r%3DFE7C0FBD-1D55-4387-849D-22EF1E119BB3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DopKgepdVwzvLLe7bQbWZ2JxVXnA&uk=ais5Y7pV-qMmt-huWC9LZg&f=%E2%9B%BD%EF%B8%8F%20Mental%20Booster.shortcut&sz=30681">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV3I8STyWeFnfQFthMnywHUeRUJ9AZKxyh1sMuSELNrRylxfm6tUVuOQ%2F%24%7Bf%7D%3Fo%3DAs41oehs_7JdD3EgdIt5uw1_CJ76fnZJkNApbm_XIXBF%26v%3D1%26x%3D3%26a%3DCAogMvA1EnKCmq6hcOAI6ofpPOdY-mfOMqtoMPfvCLwON7ISbRDmhdXKmDIY5pXQnqIyIgEAUgQeRUJ9WgRUVuOQaiaZkJR1Crq4psxS21qjkzJpFiBcodjk5n22H5mUUfM_p1PDeekK5XIm8tt1N7rTcR-FWf93TpmUwYppbLUOvDiNCgujo4UGVxkTGGck7QA%26e%3D1727177951%26fl%3D%26r%3DDB11A12B-E546-45F9-9085-D9DE36A11E22-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxMH7VCWq_yJsuqsdwcztTWig6wg&uk=a_l0rIHctf0ic8DIXXxQgA&f=%E2%9B%BD%EF%B8%8F%20Mental%20Booster.shortcut&sz=30679">
        <img src="./All%20Shortcuts/Spotify/%E2%9B%BD%EF%B8%8F%20Mental%20Booster/%E2%9B%BD%EF%B8%8F%20Mental%20Booster.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4028,7 +4339,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify/%F0%9F%94%8E%20Search%20Spotify">🔎 Search Spotify</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUQtfj2RlAqTECz19T3XePEkzwUcAWMpcdFs85UlEf3a9TW_Va0UNmuG%2F%24%7Bf%7D%3Fo%3DAq0wVYNKJlW3FjFGQEdbBZfpq_PYz1-F0BH-pe6Ur5RB%26v%3D1%26x%3D3%26a%3DCAogX7kCmfZKitg02lYh-ejk14W96BD1s14BmtpYFviL3-ESbRClvdGoljIYpc3M_J8yIgEAUgQkzwUcWgQUNmuGaibiQlzkcj72qc9PvkmhmSn4KM-tUwkzYCIZh2O22qOWZAbta5YGunImK_rkE40rFv9wJXWTaPkroxi5Be0VyusjwiYmXqgz5DSqkC695-M%26e%3D1726569719%26fl%3D%26r%3D698258DD-708E-4576-B4E3-EBE4C4911956-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQVj6qbgy2ew2cvaP6MN7iv5ybYk&uk=27kWc04iY5Ye3NKC-lEeLw&f=%F0%9F%94%8E%20Search%20Spotify.shortcut&sz=27824">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVfVhJ7sZtb9zhh0HBdvAvQ3CAkWAUR8YHDUKgtIqOXf7NLmhSR3UFS4%2F%24%7Bf%7D%3Fo%3DAm_kYGOTNFuZEnsCDAdbwMPxs7DD83pQ1_14GjRVCCJO%26v%3D1%26x%3D3%26a%3DCAogowhjUNn83Z0s3ukkHEXy95PH3sFATQoaMQdh4frNByoSbRDRi9fKmDIY0ZvSnqIyIgEAUgQ3CAkWWgR3UFS4aiZm1t_qRUFgR_Bnr9AflIULtFewHJJjVLNfERf2HCPcdzBpkiK8xnImPmrpqbjF93UL3PIhF8R35K0CTti-HiesDf9_0Pk2UFTB17AhrnI%26e%3D1727177985%26fl%3D%26r%3D6C5DE505-A768-46CB-B97C-3FCA84641BF0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNYqbOz5AzasRqy1kqStfbEgcVKQ&uk=RAYXnIVJ_f2E9hl58Af18A&f=%F0%9F%94%8E%20Search%20Spotify.shortcut&sz=27823">
        <img src="./All%20Shortcuts/Spotify/%F0%9F%94%8E%20Search%20Spotify/%F0%9F%94%8E%20Search%20Spotify.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4037,7 +4348,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify/%F0%9F%92%BF%20Open%20Spotify%20Library">💿 Open Spotify Library</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATZwCqZ13hwK8yZ5X2DFC_TcdXnjAbFxUrqZtI_KHjXJKvRgedm1XJKE%2F%24%7Bf%7D%3Fo%3DAgbMLYkM24IoLIWQEHLLLFKYRfAycVlUvpq9opHNHjWk%26v%3D1%26x%3D3%26a%3DCAogoRd8o199nAuRACsluWq_CPtYzoUV99zMf4LFIc5c0QgSbRDls9OoljIY5cPO_J8yIgEAUgTcdXnjWgS1XJKEaiYRxitq1hqh3EyFzMohmEx3dK3_nhkcON9foijERW3SUz17BAeUGnImtdfv7BOZoSlHFc2RknAyr3gc0LW_yZdTOKBzzdZDc52mXamfBIo%26e%3D1726569751%26fl%3D%26r%3D20B58526-DA97-4F5A-A3FD-D796C5E18EF4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcEymMGUEM9vlFROTOW-QZKRywa8&uk=s7wkc1LuAphCFSBo3vjeKg&f=%F0%9F%92%BF%20Open%20Spotify%20Library.shortcut&sz=27116">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe9XDD0AnXFNUdwpQgmomawrsgI6ASE9KAe9zF_VHy38zulQS94gJPdJ%2F%24%7Bf%7D%3Fo%3DAu3yCGcFHxqP4DOjQcqjWNGYET1G8D5eraQca6z_9kJJ%26v%3D1%26x%3D3%26a%3DCAogHb6JEf0iZ6xiPJNJW30Zluuxv5cdpEddBs7zlasQkjoSbRCIkdnKmDIYiKHUnqIyIgEAUgQrsgI6WgQgJPdJaiam90LE77A7PCugOKdwWI-RKV3BXrYiQ_uZ47GrwwI7lRtMapuuzHIm_GuiaBm5Z4D5udRUuFzvLgYxW6-9LDs8lwbfa57Ud1jYDWuTK4A%26e%3D1727178018%26fl%3D%26r%3D0EA0B8AF-D4C5-4136-9747-81AA180A2F43-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6IJrgeJr6q8FSQe7u8Poswbg4CI&uk=y0-aTWcpUNlqMlJWF1UwHA&f=%F0%9F%92%BF%20Open%20Spotify%20Library.shortcut&sz=27115">
        <img src="./All%20Shortcuts/Spotify/%F0%9F%92%BF%20Open%20Spotify%20Library/%F0%9F%92%BF%20Open%20Spotify%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4054,7 +4365,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Kevin%20Kern">Kevin Kern</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbxeOC0QdHmDCGh_C2Xz2w20LWMdAbMmniv28rOSZzu0d0jCB86mTl_e%2F%24%7Bf%7D%3Fo%3DAt4isyeIXgprYsqQ94jYxmn_-bmIzJPnp-xoDLHRMshD%26v%3D1%26x%3D3%26a%3DCAogifVf3EzAhObRQxqlBPfdGlTxoora-KD42_IHDbBjqHQSbRC1qdWoljIYtbnQ_J8yIgEAUgS0LWMdWgSmTl_eaiZnLjCFFStSI-x2DB7d4vQKKB8ZdVvjwApEab3U4V6gQSdPkMgFDXIm8nEY7lBH_2kdfA1nobxzf76n8RjmW7p2q1laID-9JZ9IB1x_iaM%26e%3D1726569782%26fl%3D%26r%3D5E25CBC1-479F-446A-9F3C-55DF8754F3F8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1pcHUvA9_fAe4FLNbPJpqNinj0c&uk=ADGpI21pryMEPAH1jDxGrg&f=Kevin%20Kern.shortcut&sz=30435">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATxELSR5fKhF9DreKgZUXRBV1uF1AUh2YKlg8f3uclM66F6jFxIGoM-7%2F%24%7Bf%7D%3Fo%3DAo1xftiasXTEC4BJ2K0O4reFntilOOqEowAunU6qZIsF%26v%3D1%26x%3D3%26a%3DCAogtuX1wnBm9Y09g1mj5pIRlYDtc_RXJ8hc5cifPI5jkiYSbRC2ltvKmDIYtqbWnqIyIgEAUgRV1uF1WgQGoM-7aiZBPf0lAz17meTbc5wUrBmF_7XAfaAMKC7yP2mLKx871e0ahnN6nXImPA7pbZTudoBz-vordttYRomZ2V6TrSRQgHAp6v4NepftGosd8j0%26e%3D1727178052%26fl%3D%26r%3D218DB2DF-B647-48E2-B10E-62066BC7CDFB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DO5SlmEZmR549QCK1MQDv04jlwjY&uk=8XRrbgu20_L3F6wnxsYWqQ&f=Kevin%20Kern.shortcut&sz=30433">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Kevin%20Kern/Kevin%20Kern.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4063,7 +4374,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Fr%C3%A9d%C3%A9ric%20Chopin">Frédéric Chopin</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcnQbD6sZESBheFNf_1Vg1H78K6NAXZdRcEanEcdwL0PNwOqy8VaLStM%2F%24%7Bf%7D%3Fo%3DAv0k_hZDSCnsUOFnUakw-rTfThP9TBtZqypfSd95YaDe%26v%3D1%26x%3D3%26a%3DCAogIGobOcCPFGkXl5LczeGx-XoUuztFIq4F304uZGgDf4QSbRDjn9eoljIY46_S_J8yIgEAUgT78K6NWgRaLStMaiZeSHzNopwYQcbAXObzHdkSv6X98skcbD54T7IGGpMS63TkKIVw_3ImB3ew_AYdjg8oPwh3u04RgwM5X37lhDvNtXEldAy2dmcNjWONx2A%26e%3D1726569813%26fl%3D%26r%3DDD213B97-6E70-4AC8-AB60-9501D455822F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNv9ggfHVDJIGVNBVQZjEWSuGwF0&uk=K8p8i6S_4Bp8rJKyeQ2tFA&f=Fre%CC%81de%CC%81ric%20Chopin.shortcut&sz=30393">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWSP4Dx_GL7MlqYXMUuNQkI0Nu12AfhzZ64fuRKNAGS7tErsro1jrhA5%2F%24%7Bf%7D%3Fo%3DAv1voFLvLKS4fmtODIUhtLd--3Aj4bx9bNM51Ekfz-S9%26v%3D1%26x%3D3%26a%3DCAog_VXLbU-CtIlQWu-4i6R3-dXsVAd6zYqwsQKADwk8n1wSbRCGoN3KmDIYhrDYnqIyIgEAUgQ0Nu12WgRjrhA5aiZjn2P2vZyfzmyBzvbxURGIqjQxZEAP0lf5yjsX6BVc2wLRpAOpeHImAFJf3jebGV9tgNmzjNIWdM9SMHkqcGXlLkXYGXyMtqitIIiNhX4%26e%3D1727178086%26fl%3D%26r%3D684B3F92-6F9E-4AD1-ACE5-A4C02248CF74-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU6ZIYEsb3cI_YasQyYZTdU6QCIY&uk=MrckP7cygjPo5yjjVlIKSQ&f=Fre%CC%81de%CC%81ric%20Chopin.shortcut&sz=30391">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Fr%C3%A9d%C3%A9ric%20Chopin/Fr%C3%A9d%C3%A9ric%20Chopin.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4072,7 +4383,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Hans%20Zimmer">Hans Zimmer</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAY7Irm61pfShde-Z0tqJrqVTNo1MAaRBDxo28BXNYh8hdynOniXjMl5G%2F%24%7Bf%7D%3Fo%3DAr4FXpyZcqJwSBfpvryz9dH0KDwO250DoWz8svbNsxQA%26v%3D1%26x%3D3%26a%3DCAogjfhLC4xQdzdZSsYg7n1p8s6vvOkdDZiMKKn6n8wjUq4SbRDhldmoljIY4aXU_J8yIgEAUgRTNo1MWgTjMl5GaiaZ0ZPGl3a2kJxtiuzrZ2QPXpz0ZaLcKkWGaK3bFsc2GLECk_SEBHIm9UgLRY4KQaNCWoDTGRdXzpWmTUbtC7l-vdbejOztQKBAuM42PJg%26e%3D1726569845%26fl%3D%26r%3DB21E8A8D-85DE-465E-B8ED-EB3F06D6E86D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGavgYKu1nfm9v9GnY5lThTp2VVI&uk=e4q5WRMlyiDqIFZ7bfsmZQ&f=Hans%20Zimmer.shortcut&sz=30371">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARAo0bUq5FbrMoBArSbFZzn-CLzNAclltQaLpZGJMbmteaIl9icaHlQt%2F%24%7Bf%7D%3Fo%3DAqr4AsXb_7fYqzUa33qatBxL3LWVxT3zfkXGUZ3_haM7%26v%3D1%26x%3D3%26a%3DCAogcbWgRs4EfspkpKK0JnJHmEDo92lDCm0n5NssG6po8RwSbRDXpd_KmDIY17XanqIyIgEAUgT-CLzNWgQaHlQtaiZ-Sjn0LxoLbsWkqQkfLxXhKmKsD4hghAJTKxEFpsgHO339osBKy3ImDgB-FSF4r7la6dnyk8UEskG7HdrHNsngB1ehAYPWwH3Nxl2lDKk%26e%3D1727178119%26fl%3D%26r%3D1B40C8C5-4F94-4CF3-83B9-ACEBE2A14FD9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHF1AIPVJXsGC_qnP_Tzq-DusGtk&uk=d3BxIHoHD3-l-zozcvelHw&f=Hans%20Zimmer.shortcut&sz=30368">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Hans%20Zimmer/Hans%20Zimmer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4081,7 +4392,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Wolfgang%20Amadeus%20Mozart">Wolfgang Amadeus Mozart</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVz_n-iISl5JFsjSiwFMazcWkjD3ASI_ZzoJCb_HGRJzfY3zafzve9P5%2F%24%7Bf%7D%3Fo%3DAtE7TfJKR7BBzVSqe_SYh5PA1rKxa-N8ApkyiRP6z8RD%26v%3D1%26x%3D3%26a%3DCAogY0v9OAmAyrfTel2RhgbOmchnB6g10z1QjdvzuHxFwSISbRDMi9uoljIYzJvW_J8yIgEAUgQWkjD3WgTve9P5aiZlD6oCBQBn17I2kfgtZECl9r6WI4te2_j1NcYnpWI-8qaAk8e373ImSmdrr2j2DN3BCq80vrJ1w15sJEXbmvZAot6F7km-U-0-nJ0uj-0%26e%3D1726569876%26fl%3D%26r%3DE8A1D9A5-886D-4E49-AB7B-C5F1D3A70CD2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMPsKI5RdTQKN5UiO2kT71qqukSk&uk=tNZwVcyBj5diSpYAmr4aLA&f=Wolfgang%20Amadeus%20Mozart.shortcut&sz=30397">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZfHlzHrlY1gNxxoAKmrM1PptLxPAceI99dsxjmIAMwA4GB6YJJ1kRdE%2F%24%7Bf%7D%3Fo%3DAkPqJxWBUbqD91Yl7-kDIiADzTxw_e8VoXkHyrVdEg3H%26v%3D1%26x%3D3%26a%3DCAogGFt8TLu0MHPDQWpxbzeaX0wtZJ4l2XEUChxE5xiXL7ISbRDxqOHKmDIY8bjcnqIyIgEAUgTptLxPWgR1kRdEaibKV1le51DDLkIR8PFVQP4gHVpkrDXpC_7QRNh4LCP61q_Qn37we3ImssKWh_7RWEm6eUTouAklis8058IKiEMwIPtKpVqXIcrOjgTgbnI%26e%3D1727178153%26fl%3D%26r%3D028FD6C4-3E62-467B-B8C2-A00A9CAE3FB7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Do4glqt8Ey7tzSJeVbCLNt94EyS8&uk=PsULYqB8PfmCAm3ly8CNGg&f=Wolfgang%20Amadeus%20Mozart.shortcut&sz=30397">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Wolfgang%20Amadeus%20Mozart/Wolfgang%20Amadeus%20Mozart.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4090,7 +4401,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Franz%20Schubert">Franz Schubert</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbl9j-NDCpJUSSBXvtybbf1bWlJ8AQ5XQzK5jyK9YUcKFUZR-p1ewgZ4%2F%24%7Bf%7D%3Fo%3DAmstjelulvgBmTmgqP00flkSNzUtuaUjzXjiXGGgNTOP%26v%3D1%26x%3D3%26a%3DCAogdgJfAYOS9FuqCiW2q2v8DK1DEppe7X2_4iXJLudPr4cSbRC3gd2oljIYt5HY_J8yIgEAUgRbWlJ8WgRewgZ4aiYS5B1lHTAzZtFzOJOOTBUvjeTdnuE3ez7ifVOq0EbtDlkVtwU-gnImwU0n4J7oFR1LgMnwRlBBLI7-nP64g1swqXDmZqTBfH-B_W_J1is%26e%3D1726569908%26fl%3D%26r%3DB2954AB9-DA5C-484B-B0A0-E7C7BB3D983C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMldihyjg-6b519R5DtSNQaUpiIY&uk=4O6mLnNPabWlWxYYn4BkJw&f=Franz%20Schubert.shortcut&sz=30408">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYxYmp8OGToEJ3du53zfks8PiP8MASvg_iUIDAi30bEFhf1Uc5XNgfqF%2F%24%7Bf%7D%3Fo%3DAsZcYJeexYskIw6IdyX_2n_gUSpC7mBiiTCZ3y8Tcy8O%26v%3D1%26x%3D3%26a%3DCAogFv5nn3pZVLynYIDnV4IgcpCZ86CdjlNpaixhYv_P1WwSbRC6sOPKmDIYusDenqIyIgEAUgQPiP8MWgTNgfqFaibF79hhYeGKPPaXMfhX59MXj4bkbQbVhy24MSKwcd9-JbXOO78yHHImZ635Cz_8MWsSLKpgNW3YsfZ5spcmvDVUJHjWjfzer1yH7aBAKXc%26e%3D1727178186%26fl%3D%26r%3D5807B6B5-1792-4106-9C67-732C2A1E623B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJC06NArY2z-PVrprfr8fw-4tGKM&uk=M9HFweYK0CZScjbV12OhwQ&f=Franz%20Schubert.shortcut&sz=30405">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Franz%20Schubert/Franz%20Schubert.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4099,7 +4410,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Ludwig%20van%20Beethoven">Ludwig van Beethoven</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASimwHCyFuH0FdsCpo5DQCw-LYfIAWsV2m92FKMvP5M6kqDq-q6uGUS5%2F%24%7Bf%7D%3Fo%3DAuqYImo6LVKl9dnKtcPdOm96sLrCRFf2LvkaNiZqK1cs%26v%3D1%26x%3D3%26a%3DCAogN_NCrnDTTVOgfZTwdkvG1TvplRNgiH-k6WZtHlYtcHgSbRCp996oljIYqYfa_J8yIgEAUgQ-LYfIWgSuGUS5aiZCe5bv0fqrr2oMdn_W1wrW627dHgBcnwUdAJliGUBf7fzKjRFWCnIm_0ds8IFq9dmAU6at_dFaoVY__J3wrvu2Q_52oe3iS2YmHV1UKS4%26e%3D1726569939%26fl%3D%26r%3DED7661A9-050B-4FE4-B5B2-F2F5B648CEA7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DKvWJETDF3J0cQt8Xz7U1NVdbB8Q&uk=AvGv1h5MV6RKF5h0jfE_Tw&f=Ludwig%20van%20Beethoven.shortcut&sz=30405">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeLPu-J2iKBOZVa95RWJx24N4gPPAWIJACtStY-m3psKBnTRIkQQQ7xf%2F%24%7Bf%7D%3Fo%3DAowDok0Jaq_ns37fKMirTUodWO0jOABDbquEa18HNku9%26v%3D1%26x%3D3%26a%3DCAogwR2rYrJx4-L57Qu2tPRsq5Y_hZLye_UhbnSGgVmjdqUSbRCateXKmDIYmsXgnqIyIgEAUgQN4gPPWgQQQ7xfaib7zjP60TLhySkEvM8LBfifEJ_iL22odxrYpF7oT8RubShr25iNgnImVRwU-YGc3sz7QUPk4yCbz8D-ZxYl0g8rihgQpx-8a7TZheTLRpM%26e%3D1727178220%26fl%3D%26r%3DECC45B85-0111-4C55-A1AD-D6EC51934820-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdMk2uKHOHNck1vGj6PiK8PdRcHQ&uk=CjSdgAVVcSE8XBCDPasQAw&f=Ludwig%20van%20Beethoven.shortcut&sz=30403">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Ludwig%20van%20Beethoven/Ludwig%20van%20Beethoven.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4108,7 +4419,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Claude%20Debussy">Claude Debussy</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWR8MBuPxs1cYu7R2n3Cpk4EZbgEATOsDCRHfWCm2O0Jp3wD_EkT43oj%2F%24%7Bf%7D%3Fo%3DAhCv9MFI_KarfChz0A5CXijqfi3QCiy_3mWw5_Pdqs5Y%26v%3D1%26x%3D3%26a%3DCAogsVQnWwPtvEsABW5cqBZsubHc8GXEMMGXf8S0tgeyPJUSbRC57eColjIYuf3b_J8yIgEAUgQEZbgEWgQT43ojaiZpIKfKV_KYr0LsxpdFaoKCsXNn6cvnw6xkge0ruewfsaZuAJuClnImoU9ctdBxc16h49oPe2ecPQxzrMUTxhM1iS85TD_ejUdGoep__kk%26e%3D1726569971%26fl%3D%26r%3D20CC753D-7F97-4432-B361-E38CBD955D2F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5PA6TGx_3Ax6-yAY1pdu0ob7ReQ&uk=x6qELkI8vY8f2apJHalA7Q&f=Claude%20Debussy.shortcut&sz=30378">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATDJRAD1o4EI-oLZWNV5CEg79oOvAUNXEQm5W3M99PD-qtW2qJJJ-v6E%2F%24%7Bf%7D%3Fo%3DAuCSeieJRGcz1YdSsGdCkyJxVPjTrHWb0oqQJEMqcJGC%26v%3D1%26x%3D3%26a%3DCAogB6j9xr12e8PyAlFIX88p0xNXK9kRYK0re-9yTLJSAw8SbRChuefKmDIYocninqIyIgEAUgQ79oOvWgRJ-v6EaiZPyN-tpXDxyq_97eIPZC2b44tkNUY9FZP-OpHkim1b9gkWc81qunImpRpQmy8do9v-J3SIyoq6rv1R6pXUsCpGS7g1FLIvnGGcKMMOCYg%26e%3D1727178253%26fl%3D%26r%3D21E55EB8-3B0E-45AA-88F7-7463CFE6BEED-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhiLRNGyIKNgpg5r6SdoV8oLlZlk&uk=NrVbz6grWiPsUuW2wlQ0gg&f=Claude%20Debussy.shortcut&sz=30374">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Claude%20Debussy/Claude%20Debussy.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4117,7 +4428,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Johann%20Sebastian%20Bach">Johann Sebastian Bach</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe-QtnHpqhu13cWJEZXNT12jQy6BAVmG0TcXvZHsc3w4OILClG95srwW%2F%24%7Bf%7D%3Fo%3DAr8mnX8QffVn1G7qqP4x_h2643T210YAN7EX3NY4R3Xj%26v%3D1%26x%3D3%26a%3DCAoggs_fvIGKcNKAvnhZhGriS6EAerkgmW4JWkrdc1Gim3ESbRDP4-KoljIYz_Pd_J8yIgEAUgSjQy6BWgR5srwWaiaF3T5eczg8Ve0MRo3RKD6fi6UUsGHj4Exi2WDum727aDvsrLfCuXImpZ9rx3VwrFEw7HWK7w8HuiBdCicnFq8T-7Zk4b_wOYcrS8fa2nI%26e%3D1726570002%26fl%3D%26r%3D89B4FB98-09A6-4362-B1A2-09A19CE5B3C6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOi_HpdaPnT6wqyN_FTAFwNCBN0M&uk=c3fGWka7XV1hKGdkRc_z2w&f=Johann%20Sebastian%20Bach.shortcut&sz=30466">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc0BCDVdfxPw-YHb0X6uPmHz8uROAaH0N0sQzPn1ChagjR9NnutD2YWw%2F%24%7Bf%7D%3Fo%3DAhVbmiWGvjbRMZHrdKarsT20k1BFPVfaMcZGr5cf1Giy%26v%3D1%26x%3D3%26a%3DCAogAMaeV5nG3MUOZp1l06fTC1zvYYWAHECrCx4wJal7tQESbRDMvenKmDIYzM3knqIyIgEAUgTz8uROWgRD2YWwaiZCqL8aPYGUGgGrJelEXf8eFDKjU_7hgn7h5QVYwKseRFTigTVP2nIm7wTqK7PhZHKh8zT1KeZ1PhtKTAEC_2NrkioKd27AHuDQnYqLJbw%26e%3D1727178286%26fl%3D%26r%3D088A275E-5C16-465C-9AFD-C79F1367D9C6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3IO15LdKModAu0nuPdokFwstjn0&uk=0OTr5mjWbnBWguFlVPN2bg&f=Johann%20Sebastian%20Bach.shortcut&sz=30466">
        <img src="./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Johann%20Sebastian%20Bach/Johann%20Sebastian%20Bach.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4134,7 +4445,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Meditation/Guided%20Meditation">Guided Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeRCbS6vmftMv8l09EakqjEAz-6uAbpvFOv6p_A6CiobryaOCo5f8OYk%2F%24%7Bf%7D%3Fo%3DArz-dM7qtVvsv9QECucjwHW570-2kBJJaBMdcxqsr3zN%26v%3D1%26x%3D3%26a%3DCAog3GvPhN9YSnzf9mcLD6TCf7wpICe9xjev-pMrf9edV-MSbRCJlIGpljIYiaT8_J8yIgEAUgQAz-6uWgRf8OYkaiY0amCxZ1oV4BvYVwUj1Dd2JE0iSXKNiswvdtaflsC2G-R6wYHshXImz-IPIG4Ri7-P7uciniYIHVsylccOXjtpmskdetDjGX_VvQLHIro%26e%3D1726570500%26fl%3D%26r%3DD694F1B4-BF3A-45C6-8414-427F73827951-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DYPTqzlE-UTv4yQlgkqdpJC2CESk&uk=FbFXVGQNDvfnunZYro8D5g&f=Guided%20Meditation.shortcut&sz=30392">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQXvy0xv6kA2V2WkpR6T_RuRf0BJASMBWO3_OmyAm2uAHMjvRqQchh2z%2F%24%7Bf%7D%3Fo%3DAigW2PlWvoC2lrq9GGnFGFACHVwKC-I0MrJJ71pXJoxu%26v%3D1%26x%3D3%26a%3DCAogr-aelPGyWvqKjUO-C6iELaDGPg18y-CifwTqmLAnR4kSbRCwjYrLmDIYsJ2Fn6IyIgEAUgSRf0BJWgQchh2zaiaQ9veU7BCtQgHy8sn_n4s9WzTicsvBwIDGWzUfJvYpsJND0JMlTnImxNJQszP7q1SXNuRFqSuCafy1W-e4KcK2Ha5sr3xSXue6qybNoFU%26e%3D1727178821%26fl%3D%26r%3D00E39652-49E0-4A30-9882-6ED6E32708D1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Db6Yqm0fnbnhsK78G4CASkgOJ4D8&uk=goIwxQoRHzDSY8Azr-ZFTg&f=Guided%20Meditation.shortcut&sz=30390">
        <img src="./All%20Shortcuts/Spotify%20-%20Meditation/Guided%20Meditation/Guided%20Meditation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4143,7 +4454,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Meditation/Peaceful%20Meditation">Peaceful Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAatbJc26P1zhVzrbUsYwPfBGowbhATZbkr9I2lPOLBWTTuSqd4a-5rGO%2F%24%7Bf%7D%3Fo%3DAsguTv_VMPZ4rVWRZRr_wbXmGLzhLsHKyBc8ErUZYub3%26v%3D1%26x%3D3%26a%3DCAog6dG4H3--beOZSvpLMaHNsGGMpsqngDzq-E7Kg_LN730SbRCGioOpljIYhpr-_J8yIgEAUgRGowbhWgS-5rGOaiaURmHjjF-c0llx0uYJtaHK8srX6nxc5f5Kwk48p5RRs9ZuADYJoXImRY6_3GAklVI539WFN1U01YJsnGW982qf-KTl32XLgYq6gPfh5WI%26e%3D1726570532%26fl%3D%26r%3D19DAAED6-E07B-4E07-B1A6-1B4C46FC92CF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dj3VyifeOgel7oquicrmlfL87iV4&uk=t2tsck_3nj8HH6S_JTsV2w&f=Peaceful%20Meditation.shortcut&sz=30454">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaDC6ofkGsvDlndUuEEg6nkBXtT-AUtwimmuNjQ8QM4C_8KQKHdM6tI_%2F%24%7Bf%7D%3Fo%3DAjTQVmIoGiJrng40au0eqn5cWKttgXOLqcJS4wBC-UCB%26v%3D1%26x%3D3%26a%3DCAogklXhcFEPfho5CGoK1_4liDE7BqiMV17Sa_RxPVuElfkSbRDIkozLmDIYyKKHn6IyIgEAUgQBXtT-WgRM6tI_aibRHpX9-toSq3w-lW1JXbZhVjuHv3oAxSKc0hbJSafBg_LKmxG_z3ImgVWWIqa_8n6sbMEZVqw7c8LIvm6IK4LmahFY5uMuk6tuAoEQHt8%26e%3D1727178854%26fl%3D%26r%3DEA0F7579-F10D-4DC2-92F5-A0D6AA871111-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpUG4YXSgiLQ-KcS2eB8QsG4he1M&uk=xOJo-bpvIbgfh4Hy1jfWyg&f=Peaceful%20Meditation.shortcut&sz=30450">
        <img src="./All%20Shortcuts/Spotify%20-%20Meditation/Peaceful%20Meditation/Peaceful%20Meditation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4152,7 +4463,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Meditation/Walking%20Meditation">Walking Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAce2f5eQ5iD9RptIdWl9_7zbAf2nAcmECFIgKw6TyhjeR-bSWxtfMQPZ%2F%24%7Bf%7D%3Fo%3DAvs0fMS2BL1_POgQTP75d3iD7LI6Md8d7V7J5m-Wta0z%26v%3D1%26x%3D3%26a%3DCAogFNzhV2eHccW4HCIdthvXWiozLYFP_DhVcTmIrMBF33gSbRDj_4SpljIY44-A_Z8yIgEAUgTbAf2nWgRfMQPZaiZ9B_BtiRlq4Ga9gXonG0RW--s2WFnX_3yWLHxLXzvTqbQgjpwibXImq9QMm-uvkj23pd0v0r0AlDMqia_t95KLhj0Dm2Wsb_dcVE7ZVLg%26e%3D1726570563%26fl%3D%26r%3DD44F1C92-7C9F-499B-B0FB-4F59F8C5ACEF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMlEnyOYJEhkytFhLUcym_L8F6To&uk=rfObYK21TKPZGZir4cBGbw&f=Walking%20Meditation.shortcut&sz=30702">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAT9kHY0LyaGKyyaRWXtMQovg8t5hATU8KNrTdMpZEy24vXBvYvyFFGO_%2F%24%7Bf%7D%3Fo%3DAiUNjAwA0srHxxpCLcNdVODa5q5e4WmQUWXEAQ_w3Cxy%26v%3D1%26x%3D3%26a%3DCAog9GfBcYS8V0fwhTsmBrpmyypbL-7J2Wj266ELff0itKUSbRCgl47LmDIYoKeJn6IyIgEAUgTg8t5hWgSFFGO_aibEJtPhnWU7R3xTP5sedPUjCtcuf4CwFtSLvofuvSHnhHhWZLGjLnImFqKmWQQl4LpBa1W4f6QGz6Zo3nHwAPsIqyTNZmVvHO-YGfniZRc%26e%3D1727178888%26fl%3D%26r%3D3B91208B-3E62-4359-A249-984B51581700-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAaqgWeLa-UFmLntZhD8rlH-Izs8&uk=aUIimbpY0ssTTjY62g3V6g&f=Walking%20Meditation.shortcut&sz=30701">
        <img src="./All%20Shortcuts/Spotify%20-%20Meditation/Walking%20Meditation/Walking%20Meditation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4169,7 +4480,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Your%20Favorite%20Coffeehouse">Your Favorite Coffeehouse</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV6U5kx8uOXLNynWm0Co691eDiGqARGLq20VQJGrJWpbDoSeO7Pg_MJe%2F%24%7Bf%7D%3Fo%3DAiLohWjlflwtibRKPT-Alkva7alc1nJlVk8JxlC1xCJN%26v%3D1%26x%3D3%26a%3DCAog4Wu2sxcyZCWue_t8rPIzNySOEXxeZ3DWlwrx9y_EPQoSbRDV2eSoljIY1enf_J8yIgEAUgReDiGqWgTg_MJeaiaUBGzDEqbBx7hrv8k-7E_ni8_ctWPbNmgf9UWZ0PlxsSZqK4-MLXImGxc0vC7dK3Vf13Hlv9zEVnRmJ29RCEisAqphZEGkjIFzh-ETokA%26e%3D1726570034%26fl%3D%26r%3D024F7C55-B2B8-4CFF-8F58-012503E5B55E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZq2NxDzme1HLaFh33yMVeV8hutk&uk=1lqdcpo2yOFvnNnOS5WBBw&f=Your%20Favorite%20Coffeehouse.shortcut&sz=30424">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeeI3UUd9bfyHkJKGNCd97wfWQwWAXFv9XgHg_-_VdtJjW_ic2_AU09w%2F%24%7Bf%7D%3Fo%3DAmRsYDQgC1i8UGWNEZUTfcBT71oe9Xi0TI3PlWLiIBNR%26v%3D1%26x%3D3%26a%3DCAog3lxMQ83HYOe5QoV2EEwea5c1YcgxnbXV2Ku-0Wry8QYSbRCcw-vKmDIYnNPmnqIyIgEAUgQfWQwWWgTAU09waiaOHecAn-qx2-KIsoZ9r7KMxwVTlqMKzQPbRFEX5HKdgHZUqSQp_3ImfKzv0aD7NazHKbcQ0JlGn719h1dgKMeCIjkJIqEeCOYfvnUkZRw%26e%3D1727178320%26fl%3D%26r%3DF4044A5A-27FA-40BF-BDB5-9CDC573EAB88-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeGyrgTZhq8xWSO6EoGVvw89X_-8&uk=4a2Zzn6M17jzcbEuXcM6ig&f=Your%20Favorite%20Coffeehouse.shortcut&sz=30429">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Your%20Favorite%20Coffeehouse/Your%20Favorite%20Coffeehouse.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4178,7 +4489,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Yoga%20%26%20Meditation">Yoga & Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeSqR-YPuV9IRFfDD0EiaJVTOHAfAfrVZb19WxGF-v_6dB3iLt_-ep2K%2F%24%7Bf%7D%3Fo%3DArPfKbjoKUBpjuDKOY4QgS-lZEsQYe1dt795papfab5k%26v%3D1%26x%3D3%26a%3DCAogMSE81qG5Ylf2PyWph9FIdfFvcDrXgrNw5IzEAfgzOx4SbRCL0OaoljIYi-Dh_J8yIgEAUgRTOHAfWgT-ep2KaibtgYvReIcFRkjXDBstEWSjb9l1gwH5Bz2ON-2VHyqxOilCn-y9pnImmgmFOO1Xo8ScYv_cy_xmSmCRFt4-ycGz6UuA4oRfgTW823GOUvE%26e%3D1726570065%26fl%3D%26r%3DD7A7779B-F78A-4A77-969F-C657C165A333-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DUBr1Q5M7AwlfordIC1iyxjH7jqY&uk=dvKmh0J7MB1jNCUnXCzs0A&f=Yoga%20%26%20Meditation.shortcut&sz=30389">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW6GpIF3Mpva6qh4XZBQkmYJIlPMAT1UHFRC1wOfqrc5nKR4fBwMeIhs%2F%24%7Bf%7D%3Fo%3DAuWOEqavWrs8Y-7FFVvCCtJ_x2E-AJrCtjZVmY_D6WaT%26v%3D1%26x%3D3%26a%3DCAogvzZs949VcuH6KGsmqQk-qhxdXBnGeWqSc89CBVPvRXMSbRDYy-3KmDIY2NvonqIyIgEAUgQJIlPMWgQMeIhsaiY1VL-GSe3_KGIto86Yh5NPFSMuXYrXdegVMT9Zmh24valSkgFMUHImLAullpbpbv0oOWr0hcvwDmLLkr7osn-EaWwJhdRb1gwSNcfCdho%26e%3D1727178354%26fl%3D%26r%3D538A52E6-AC6D-4516-B73B-05658746A2B6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRV1668IFZMFTrdxj0heecDGpQJc&uk=biZaEboxHpu3bkRLfzgXrg&f=Yoga%20%26%20Meditation.shortcut&sz=30385">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Yoga%20%26%20Meditation/Yoga%20%26%20Meditation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4187,7 +4498,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Marconi%20Union%20-%20Weightless">Marconi Union - Weightless</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARSHJYhQ4lpt9_i-_uq7Mgu1BNy7AbwbJnUvUgpmjK9jKvogWG3wN_8q%2F%24%7Bf%7D%3Fo%3DAjZ0QiiSs_R5I8URKdQ3dXmjotmklBt8hgqrV81H649u%26v%3D1%26x%3D3%26a%3DCAoguruMJuEQDZsb0gYIGQs1VLXsQAxJiwi5jwYlB6vl_bMSbRCqxuioljIYqtbj_J8yIgEAUgS1BNy7WgTwN_8qaiYkdrxRg3tU0E-UmuEBH1rk_tAg-JrMi5NloHEML2qunDGDTrTaUHImJgK-apdVRSLuBABnH-Cuf2UUYwVfwAUXvTyplXmCvSzCTozFeVM%26e%3D1726570097%26fl%3D%26r%3D10B8750B-1639-431F-BD9B-DEBA947572E4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeTrS-ceRKCTKnhVjaiFyxwHuyYI&uk=NbJguEjX6zZuLeSkVYdAsg&f=Marconi%20Union%20-%20Weightless.shortcut&sz=30454">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUvBz5x-K2_xRIlU5e2PccBVBat2AXonLocF1dmGfm9WdBGy5REtvz8b%2F%24%7Bf%7D%3Fo%3DAjbzQ85--Xe2dkvsEX3w8ZPaIPLG4qktMVwzQm4k7d7M%26v%3D1%26x%3D3%26a%3DCAog2QvzDGwAyvbHHvUUctDtE_j0Fr939k1vC7GOkxl0yCISbRCt0e_KmDIYreHqnqIyIgEAUgRVBat2WgQtvz8baiaRwGUsstMtIPKeA_w7W_1hdyrDPpkPn_m7c0P-AaHeZcKnkkelBnImQURR6KgyNMo7wLO7AL1vyLVgxsohTBsfNR6F_ePh_kAipsA3R9M%26e%3D1727178387%26fl%3D%26r%3D3C6B7C33-0F25-43AA-9B37-DFC18856EA18-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNn-Eo_OCHt9lmHMRBUIELZMx3t0&uk=U815Z5dZgk7ZSRGnGmnuaQ&f=Marconi%20Union%20-%20Weightless.shortcut&sz=30454">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Marconi%20Union%20-%20Weightless/Marconi%20Union%20-%20Weightless.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4196,7 +4507,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Stretching">Stretching</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUnEOsBogqvEXZHTTgxPFYGepXLnATnj_b64DBjscDjykb-rVbvSrZyc%2F%24%7Bf%7D%3Fo%3DAveUQcdVUvm5EAwhAcTXGXvJG1RmEc91gEE-Y8Sx0UP3%26v%3D1%26x%3D3%26a%3DCAogq-dDvuGvAxoBBWqzZl8cAnZQ9HCYoyDcHDwaAO7eRhYSbRDzu-qoljIY88vl_J8yIgEAUgSepXLnWgTSrZycaiZ5w5gDgfjMAWJ_L360e0z3hHLelZBeeZQtT0_RhG7WqZKbMNrbFXImN85wKkvDWH2tp403wRAVG8JBLHZFavKonQnccdpmodMV8-1BVVc%26e%3D1726570128%26fl%3D%26r%3D52242056-AC8D-496D-8667-9A6D66761D0B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DxUpZuyNt1TDFWlHhrewv0Ee407I&uk=f50NbkfdeXuAGCOxN7Pxlg&f=Stretching.shortcut&sz=30417">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcmVydm1l79bnHwYH8fgYhF6CwDUAaE9456nBBXwlinMl5j57WmrXl76%2F%24%7Bf%7D%3Fo%3DAqptpWmgX0oPhd69l9irC3yhPaXeJkiuY_HRR_7ELweD%26v%3D1%26x%3D3%26a%3DCAogfedWsRO_j8ESN3nHDWOhEB2i_3Q96Oez2HHeQYQOo8kSbRDz1_HKmDIY8-fsnqIyIgEAUgR6CwDUWgSrXl76aiYRGLMFXC6s2WruJXVralBaBwKOgWUFHMs4PcmkAb8BEA_k_rPzq3ImBmKCfNKk52mW-uf7I1kkJytE75jnn28XUMWj5oJQz8Gn3Bu2IqY%26e%3D1727178421%26fl%3D%26r%3D52785AC4-6500-483C-A2B3-FBE4D8C4C972-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3xeFz3vQSh-SbHQWIu0GjId4Acc&uk=Sgzzw80O_Jcuq9ai2vntAw&f=Stretching.shortcut&sz=30421">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Stretching/Stretching.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4205,7 +4516,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Relaxing%20Massage">Relaxing Massage</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVQX_nHFHpefjzansfcBrspqnhUMAWW-N7Frr_vtpupHGesBR2IGvoEL%2F%24%7Bf%7D%3Fo%3DAu0YIuHgLA5_HAeVEjC3QC7ifNCBtsC9PAmDHE1cKh9g%26v%3D1%26x%3D3%26a%3DCAoghTtqL5nJx8TSrCk4iv5IsWLwpUFrDls_PHwLkqfHp2oSbRCEsuyoljIYhMLn_J8yIgEAUgRqnhUMWgQGvoELaiY_r17-pdEqjvUdpCysRS9-tnjFFKnExDUlMYm8Z1lYtySydUraL3ImYiYSc7MahBsF-2CXgT_wEso5dO9KK4Y60w36zX9EztpqzWqk_Dk%26e%3D1726570160%26fl%3D%26r%3D26BBF771-BFB3-4B38-9150-4CB068C6EBAD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZMPA270wohKPPiv26FIEyRowZ70&uk=GFlQhRKy7ZkZPbaRg9fNZw&f=Relaxing%20Massage.shortcut&sz=30440">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQgVFmm3MFGlqOmsJdCdtB8RTE7CAaUISmQEYoSJK85X3yi1Q4uul-rj%2F%24%7Bf%7D%3Fo%3DAstKW4ldqQ1aElA0REjOiFF2yAAeR8HZAhe3MGZz-K1S%26v%3D1%26x%3D3%26a%3DCAog8DJ_a5F0oKGq2ASGMBlj-Z6-6lyO0jNudYZWbxr0-ToSbRCa3PPKmDIYmuzunqIyIgEAUgQRTE7CWgSul-rjaiYuWjLNYrdwqwTlPAOGBKQcZCnPGQEk-WxIsBZUlaj-NpOeLdFNx3Im0CJc0BiL4qtOcL03v14FLK_tfLX_wI0uql8FCSncQW48ulHMiDw%26e%3D1727178454%26fl%3D%26r%3D8EAEF7DC-2515-4FD4-8A81-DD4CFF7A0D84-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DO9zKFv5cHimgTMtlhry1hRKYAJE&uk=UFZT-_dwrnZr8oRndTHU8Q&f=Relaxing%20Massage.shortcut&sz=30439">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Relaxing%20Massage/Relaxing%20Massage.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4214,7 +4525,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Sunrise%20Yoga">Sunrise Yoga</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXtc2bu0vzzWGS-Va5jxer_pwD-BAUML0J6OhSmUYEx30XEfkQh_UDJE%2F%24%7Bf%7D%3Fo%3DAvnYQVWG3FLcJGclS3_Iae4CnSo0sk-IM4-GlzBsN_N4%26v%3D1%26x%3D3%26a%3DCAogW-7noCeZ7kiG86k-Q2Yoj_FbOhi5Jog_BvHmt-4XpP0SbRC4qO6oljIYuLjp_J8yIgEAUgTpwD-BWgR_UDJEaiarHILdy_Un_2JqMkyq0jLFYm_lUDGilR2CLOV6aYBhXG182eoeX3ImrmR8IJQJBo-CAZRLyKM6qsbqTMwQ6ehVzUa9LOmj2w2EWZaErUY%26e%3D1726570191%26fl%3D%26r%3D85AA6784-717A-4FA3-AA76-41880C268A38-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOqRaogoT39nAElBPh22vcr5kVU4&uk=vYKnTZDquKgUxvGTrT5KoQ&f=Sunrise%20Yoga.shortcut&sz=30457">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWuL3y3QNnY-oNBcY59Aj6JR3RLVAef7PwFn84EOWzxUrU6PmWGP9qQW%2F%24%7Bf%7D%3Fo%3DAoHh3m09m7Jmwcb9vdKqItdXoggvAsSwrPcCK-Zd3IE1%26v%3D1%26x%3D3%26a%3DCAogcVmLFw8EXhQIR4fEYJ9z2b4GZGdxDwUCAInHsh3Qw20SbRCN4PXKmDIYjfDwnqIyIgEAUgRR3RLVWgSP9qQWaibwYTs9JJ1IGw2uwVvhCob8U-j31vnqqZAAeaO_-jKYX0h_OzwpNXImTCnEyFzw5jcEAKt8QmAyIYVBZvNgCnFKYSiCkAxEY8SpyDqg2wM%26e%3D1727178487%26fl%3D%26r%3D43167A51-0997-4535-AE27-DCDD40E57FAE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAqD8puBtN1Z28dhU0JfXa-1Ul08&uk=lGfcuibJG1jCBl9bZ_tvSQ&f=Sunrise%20Yoga.shortcut&sz=30448">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Sunrise%20Yoga/Sunrise%20Yoga.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4223,7 +4534,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Peaceful%20Guitar">Peaceful Guitar</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR4GLOAS4knbcMq1k9pNfztcmHuGAR4I-sxT089mkEAEKpMxSMoMZ28F%2F%24%7Bf%7D%3Fo%3DAtvScFrMXIlGUOT0ImrL3Kzp_QAjaibeH-MtytNUtUOE%26v%3D1%26x%3D3%26a%3DCAogowDMOAgSDSkDupy6JBNYt8bNDoxIviC1r6ukjyOcLhsSbRDenvColjIY3q7r_J8yIgEAUgRcmHuGWgQMZ28Faiatiw3RaA4wwlEsz3Xzrby8h-BX_WqPUUNfHPR1p0J-HyqKlhj7rnIm3mV58JldSGCLMiIzF5CS9tgcQjvlSVh9V6HVP3q2rlvwFA40eAQ%26e%3D1726570223%26fl%3D%26r%3D9207A2E5-233C-4B1C-8ACB-FFC1AB78C820-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrxODDacNxiwAAyywLR-Xcy-qo0A&uk=HkrcbYlLC7bOC7QA8k1vcA&f=Peaceful%20Guitar.shortcut&sz=30433">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATYoqnnM2Os1Wrvign1XE7sm95eOAdWKLe8UzdruVlrhfgF1NxdTpLxy%2F%24%7Bf%7D%3Fo%3DAgO6LvBVwOMuOBxZ425mnbyIAr7QZsuSLpcEldKMi3fK%26v%3D1%26x%3D3%26a%3DCAogYAL76WQ2JP6zQfm6VjDeu0GjCOZ_gfu94rb81DEpBm4SbRDn4_fKmDIY5_PynqIyIgEAUgQm95eOWgRTpLxyaiaF10LvhKmQLwNnwa-kh5Fwt-e0evB0fdWq0xXx1DCmZQytfHhNxnIm8mwQF-Jv22OXLnc4jH_uQon_LwueVubxDdtErWjvO3OfnCDtb-I%26e%3D1727178521%26fl%3D%26r%3DB14946AB-1098-42EE-ADE1-A4BAF0B66298-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMZPj02Zr-EgHwwr-sldskJCIAkY&uk=jAVniWwDpRKT_WZZmbZh3A&f=Peaceful%20Guitar.shortcut&sz=30433">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Peaceful%20Guitar/Peaceful%20Guitar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4232,7 +4543,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Peaceful%20Piano">Peaceful Piano</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXBURBC08WBm4KUGSmJ6VN6e3X7lASaAYDMc3hpanliP2Vay9n8_10Ud%2F%24%7Bf%7D%3Fo%3DAt_abumjPCayUlvuoPB18Z1L5aiEp5zY0xHRE8TQzTx5%26v%3D1%26x%3D3%26a%3DCAogzHeWrdbBSC2-V-oqz3NEjMsvIad_W5gvpffRQslXCIMSbRDu4_GoljIY7vPs_J8yIgEAUgSe3X7lWgQ_10UdaiZfkucBuVEzZ0EZX1BDwS6mZ2UP1CfHOHIia8UWVA2O-V-3yBA_5nIm5AFOHVlV45NfNpPMN33u2Ay0H0lBhEnPQfKyt2lwQWNNJI_jnJk%26e%3D1726570248%26fl%3D%26r%3D08CE1E76-A4D1-4FC7-8C5A-3E5E76FC2F3C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Di3rDACLgpYO5m2AjrTz8ivk1O8c&uk=VmsJCxSlEsVSAP70J69itQ&f=Peaceful%20Piano.shortcut&sz=30379">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASi9MtnIXnm2UM7NDIsAY-c2SU2jAbGorq7Im5l8lgHaTDIpnRX9TvU5%2F%24%7Bf%7D%3Fo%3DAt_D4-q8lBWFoSMa6Ln85nt9tCKXIkBp18Ngw8uCB0Jo%26v%3D1%26x%3D3%26a%3DCAogZnWmdgy1w3EBJjSjP0Jk_gEYoVqgQMHYfrSb6lyy_XgSbRCq6PnKmDIYqvj0nqIyIgEAUgQ2SU2jWgT9TvU5aiZ7WaMZbkem2ryKMdxlGoM8GE4q-YjHG7CELo6n-uC1xvxtQOHl-XImORK9wien0Pl0JCHusyzIz0tkOoFK5l72Ajw7QLPeuinKyWpNeEs%26e%3D1727178554%26fl%3D%26r%3DBAC4A3DA-1E4F-484D-868B-DEF54958BEAA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5zNezq_rGtFeBtFHa1dlUBY_sA0&uk=YDQbsFht7-OrDTCxTaTgQw&f=Peaceful%20Piano.shortcut&sz=30379">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Peaceful%20Piano/Peaceful%20Piano.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4241,7 +4552,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Calming%20Classical">Calming Classical</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATzwqtCqWUi0mk16_2pNnIO4JeTpAc1MtLEQDDdJv16PeWMY0Nc7PyPY%2F%24%7Bf%7D%3Fo%3DAj1aXOzm6YJmF-MjpT-gpaUby2iywpRtKJNQ8ZsZxif3%26v%3D1%26x%3D3%26a%3DCAogGgtHZkocAk2yyBEGRfzq3j94a9pSHYryfq0c1dMbpX8SbRDx2fOoljIY8enu_J8yIgEAUgS4JeTpWgQ7PyPYaiZFpjvQKkFk3vN2WfpO-or4laXRdEm6Ox2g_wTj0DqtTJu-414mZHImUaTskE0iVkwg1RgiiOwbhZIhWclzQmcvcTajc1PEiMjYwivZEW0%26e%3D1726570280%26fl%3D%26r%3D572FEA10-3625-4675-B39D-294DF2714C0F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDSAMWqFNdeA8tdQnztPAtU_SIbc&uk=Wc-uasnMaW7sXihhoCx9wQ&f=Calming%20Classical.shortcut&sz=30388">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbhEr4ic00lFHRmelcBJxOB09MMaAeINerht6A1FRNqwg6eYefJRRS9a%2F%24%7Bf%7D%3Fo%3DAvP1iYM-MRNYvym0vam85-BRmgDhOIVx_dT2bjuIeelE%26v%3D1%26x%3D3%26a%3DCAogA66-1mPHxtGqeWZKAluNAi0LFtbf7cSOFQglFI46w3QSbRDD7fvKmDIYw_32nqIyIgEAUgR09MMaWgRRRS9aaibNemOajqHcO6W9lrRpOpR5V2DAxRc_dl6hwG679AjvQdjHyfkTTnImCG04zcEzshN1-yLtbcaW6-9IwKwJLK2lYl-PNV1Uud3RC5cLOPU%26e%3D1727178587%26fl%3D%26r%3DE9775126-5A0F-41E8-BE46-B00C763AA115-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D05PvSGhXV9HasqHEq1au2f9xI-E&uk=u303EhuPuq5LifE2d7UxbQ&f=Calming%20Classical.shortcut&sz=30383">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Calming%20Classical/Calming%20Classical.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4250,7 +4561,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Dreamy%20Forest%20Music">Dreamy Forest Music</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ1bYQa4lHvoirF9zXwalWmp3sl5AQ-IMaSA-_mRPhryLzLlIn7G2a7F%2F%24%7Bf%7D%3Fo%3DAvjNXyHV_thGFMmqMtIJNz2Y7EX7Aksj0-OMlbtaV3vE%26v%3D1%26x%3D3%26a%3DCAogqB7qlavxVTuEsEi99C1lYAuZ-fVB8KDcspTjxzlHNrQSbRDZz_WoljIY2d_w_J8yIgEAUgSp3sl5WgTG2a7FaiZz7MZ0paaoONydMoesr2rCFGwBsCTC2Dg4RtN16hzb5yaXa6e1z3Im-A_FFE9YoURsTGfTPQcU44yo7v9Ibo1a2DoNUYj93LwNCikZSVA%26e%3D1726570311%26fl%3D%26r%3D64617A5D-5F1B-4D13-BF39-B9B587DE4EBC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTQrjrotmSot_Tv-uB5vLbOdmLfk&uk=4igGw2-jh8r7zROZjtYQ5Q&f=Dreamy%20Forest%20Music.shortcut&sz=30448">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaJyANpDqM75FZ3Zqq8cpg2T1mmOASVA89nHkKjmO-VqnJpTkQSbrvlM%2F%24%7Bf%7D%3Fo%3DApQWaVz7dXM-W0h8p4FCfuPzh5bt8Jv3rmOVQWsaCj58%26v%3D1%26x%3D3%26a%3DCAogGJkQ0V7xOdvW7gEqapvS6YL5DsgZ21oHfPnQIsQVQ8YSbRDZ8f3KmDIY2YH5nqIyIgEAUgST1mmOWgSbrvlMaiYKAHXuQ3s7p5uILu26ACCFp7wWaH7ffyF64esnmzkIqXEegW0zCnImn2Asc_5ecu_tE4nlHQys_rn2V7Wg3_s1bv6WajloKkc37T5KWao%26e%3D1727178621%26fl%3D%26r%3DD09854DE-98D4-4A85-BDC3-79ED22F71777-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkByL0yM6SHhW5obD9wrEl73su-c&uk=n2RVIHAatt519XPtBLYPbg&f=Dreamy%20Forest%20Music.shortcut&sz=30448">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Dreamy%20Forest%20Music/Dreamy%20Forest%20Music.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4259,7 +4570,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Stress%20Relief">Stress Relief</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd3rjNJrygSVjslFp1UoOZxjFv0kAf5uWOAIysnlwVJQlo7ACFJLE8iq%2F%24%7Bf%7D%3Fo%3DAmuRsrpcAWTHG2QE80U1BqrVZuvyUT7UZIaiRLgrjrT6%26v%3D1%26x%3D3%26a%3DCAogTFlgqAee2p2iF8LYUnuPb-dB3b3o6Y3n94cm3BRyPycSbRDSxfeoljIY0tXy_J8yIgEAUgRjFv0kWgRLE8iqaiaCsm56LaMKyoovFGO_pcI8suNtruAIvLm2NWcNGS6JpXlUqot8q3ImLiyq0Q7WqBD1ATnkAUDGxMGzi5ipDiVUcijJlyTlXRe60WFKCjE%26e%3D1726570343%26fl%3D%26r%3D855EE2BC-7CA1-4BEB-B1F5-2FDAEE906403-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcflpRkCeJCHrLlFJ-Fm_K8s6Dzc&uk=LbwTW1-ajEVmD1m8iPdeQg&f=Stress%20Relief.shortcut&sz=30429">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAacEzsMPzOPt7AWQzgRQ0bhRPS0pAbUni4e4_3hwHuhCuWgDSiaD7m_0%2F%24%7Bf%7D%3Fo%3DAhEL_iHF-W3574ck8BQRjMiMvUnxc2cbXyfgTq1Vszbq%26v%3D1%26x%3D3%26a%3DCAogH4U0aE37UW_IpvDkCMiMqgd56Mw2yXA7It89aA5DwfYSbRCe9f_KmDIYnoX7nqIyIgEAUgRRPS0pWgSD7m_0aiaTZ2LkofsL3B5vAN5IJBUVzL0RHvCP7E-RTryI7kQJR3Z2ftRGL3ImDSf9P81HPu452M-zKcGEefN4EZvO00QzJr7DsuPw6xbFT_8KU5s%26e%3D1727178654%26fl%3D%26r%3DF5A65851-4058-4D5E-9420-E47531BEE379-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzjeHvEfcW02sHQ0tTA2keBU7-2M&uk=g7VH50krkN-UjhMqr1YiZQ&f=Stress%20Relief.shortcut&sz=30427">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Stress%20Relief/Stress%20Relief.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4268,7 +4579,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Classical%20Essentials">Classical Essentials</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdKbGzjn6SfkZFt_N52Z7Ot6NmW_AZfXL8KU88KM8-pwRvHrTOA78RH7%2F%24%7Bf%7D%3Fo%3DAtkQS8s2dXe0GDfDDtwTpyLryKxkESCToq-g9kv_vsVH%26v%3D1%26x%3D3%26a%3DCAogq23QbNEidG57ktL_ZcVep_g2ahzaZ8jLPPPDGrh_Z30SbRCju_moljIYo8v0_J8yIgEAUgR6NmW_WgQ78RH7aia77CQd3UyrTodCkysuwIu5VSJMNOMRwX07Ic1gR8jZVkGOHtEY2nImTVR6ld_zlMzKKq_0Okl0G3hVEqhuoYSknTcXCIbdIqn0z-6Pb1I%26e%3D1726570374%26fl%3D%26r%3DBFD249B6-5D65-40AE-8FCC-EC9ACC4BBC31-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvVjESYRCavWpGzENAriQHrBrrqc&uk=tl07Ocdao1nwE87X4tL-LQ&f=Classical%20Essentials.shortcut&sz=30431">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXq_xlPJxv9kuzqFq7xeR88UQTy-AVL7MlwgheA4k3s4cUzyhHNe1J-h%2F%24%7Bf%7D%3Fo%3DAl4sgBWBf7zDtx0ScOY0dtrht_zUBXuYt2Wrh0f3j_l0%26v%3D1%26x%3D3%26a%3DCAogOKPzmZK1NYQgpo5eb6W7xWV6FvHjSbMDLaIMUVPMxZ4SbRDi-oHLmDIY4or9nqIyIgEAUgQUQTy-WgRe1J-haiY7KIeLwXiV3TQ8U85dd1mecGcQS1ZREVsJ80A6h0bL0IhdwSSARXImjSVyotn8o8kufe3hkOzT92EMKcyqqp3icZsXFjkCijn6a9tdoN0%26e%3D1727178687%26fl%3D%26r%3D53B1EB0C-B8D8-4EA4-AF1D-8B084B8D075F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrHW_gRfnPbHwQm8iAeRMWAoaJ7w&uk=WTBDWtZvQY8KF2nmpAO0wA&f=Classical%20Essentials.shortcut&sz=30429">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Classical%20Essentials/Classical%20Essentials.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4277,7 +4588,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Dinner%20with%20Friends">Dinner with Friends</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU_DkD52efeTMidF3FTEAtkf1iHGAYAgmMh_IZTiEPy11g4_UKXUWoHc%2F%24%7Bf%7D%3Fo%3DAm7BHazD-GTDpufXG3mjhATTTR5nXkrhHNf56H_VDCHb%26v%3D1%26x%3D3%26a%3DCAogWp334jH34GbmWMBcsS6rNMNfyr-vG-L_5-dglsgs56ASbRD8sfuoljIY_MH2_J8yIgEAUgQf1iHGWgTUWoHcaibpmS-JynhdrXzxizhmXQ6myOwkCrZdtolZIUFNh3GnuuaW9xZb23Im9wmIns9k_ZzXVBD81Hyf0QNpgz_cVm4uiO5GR-J7pphyFIkWPYs%26e%3D1726570406%26fl%3D%26r%3D314F9714-5391-422E-9AE5-4A00BBE13398-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5AvXY8OYWyonJgrytO4b7XoA4dc&uk=1UKYtAQEULU6zQW4EU2osw&f=Dinner%20with%20Friends.shortcut&sz=30452">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW6Y7wRwU-uAidi13aJ4y9RGuxrgAbS7KuZBploV_EVzwPex38VdxH0z%2F%24%7Bf%7D%3Fo%3DAldDEM2q-o6PcHYkCRrv-q4AkQne0XiGHft5NNw9nrLu%26v%3D1%26x%3D3%26a%3DCAog98vIydjl92qYu8Z8-zpibJde5uTbjYbrlc2RHsrjpiYSbRDK_oPLmDIYyo7_nqIyIgEAUgRGuxrgWgRdxH0zaiYI4HzzkjhBbk6uwUQdvn_fIicouOqfJo0eINnO16IDnBpeD3Xd1XImzb9Ym9rH4h-n7Qk1cZjRwNvah4ICrpyIEeLSRrxoZqeAlUOJb60%26e%3D1727178721%26fl%3D%26r%3D6969A135-80CF-4837-AFD8-81B68059D60A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfpsZMNP0qyeHj3J78nBkw9LcLUw&uk=Wmodd9AS9kHYwG7Ag7LnCg&f=Dinner%20with%20Friends.shortcut&sz=30445">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Dinner%20with%20Friends/Dinner%20with%20Friends.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4286,7 +4597,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Lo-fi%20Beats">Lo-fi Beats</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU5r0pLoeiv4Y1QQIW_R6HkJnhJZAU_z_JkC2bP5pwfCfgP09RjI_LtZ%2F%24%7Bf%7D%3Fo%3DAl66jlTXxuf9RqqHgExwku2G7nxdmpJyXKy9QE4L5HYA%26v%3D1%26x%3D3%26a%3DCAog6EXqJpbe9p4HgcXsIqPOw3n8TY7vCBXG9TKXWPBuMHgSbRCiqP2oljIYorj4_J8yIgEAUgQJnhJZWgTI_LtZaiaybSQicxNnCq9LqMWwkwQLdDOkomG5eeztI-2Wvq9GVLM_rqrlRHImiwjGGDN68pEZaAzEEuLd6uRr3M-saxq4HUJeAhc5KngWh5dG85Q%26e%3D1726570437%26fl%3D%26r%3D1E39EE85-792C-480F-B553-A11297146E6D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_2Jg6Zcby6SFiG7sm7VKSDzueB4&uk=nEBi-ztuhKUCbkNfLPxY8Q&f=Lo-fi%20Beats.shortcut&sz=30425">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQ9Izq6NaO2EbdVqr31cFOyOMDkoAdrTw3WoKrSFrUJH_fFbY5wyKwMF%2F%24%7Bf%7D%3Fo%3DAktE6J04TTobuWhpEv1sZMvZs8dEePS2Dxdoh7fhd0HW%26v%3D1%26x%3D3%26a%3DCAogGACZM2LkOFxWzDAQmC60JTGkeNiHG4to5TVbzZX2MmcSbRC3gobLmDIYt5KBn6IyIgEAUgSOMDkoWgQyKwMFaiZba9mbKjeSWc-hJ3KAnUhPl497K7qDGTiJUEUj6lFfBT4prVHcjXImZ-LeELFdXIICB9VQwvPqOPDUpy40roNf4cAJHqwOn1uEwNEVfJs%26e%3D1727178754%26fl%3D%26r%3D62B9C993-CDA1-440E-9FD2-BFB22FEA20D8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DknpjtvWnTGnPhWiyuVDOkWqtBOk&uk=83bpJBMbd6-DdIui3IBxkw&f=Lo-fi%20Beats.shortcut&sz=30421">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Lo-fi%20Beats/Lo-fi%20Beats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4295,7 +4606,7 @@
        <summary>
        <a href="./All%20Shortcuts/Spotify%20-%20Silence/Mozart:%20Sonata%20for%202%20Pianos,%20K.%20448">Mozart: Sonata for 2 Pianos, K. 448</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWXqOW0c9ZvbDq9APY_ArvX8j-XyAbs49NPxEMEzClWYydKlCYxuCRZE%2F%24%7Bf%7D%3Fo%3DAhWs9vrvDUcJB2ZWBHM_wHCz-9UielVmHpfS3GQTQywM%26v%3D1%26x%3D3%26a%3DCAogeGVVSJCPZMqDlwOYSY-lCbeIBv0DNGhelrsXCnr4F8sSbRDMnv-oljIYzK76_J8yIgEAUgT8j-XyWgRuCRZEaiYHOoxx-fYPJRU_jJyjqX9mTa0PpGA_6ROTU18OE4sFQoJ7-vWw6XImf6VKkEABCVH5o2JHm3-uDmRPLB0PRpsqSAa2RE0dVxq53lrV4HE%26e%3D1726570469%26fl%3D%26r%3D6F3F673F-1529-435F-88CD-EF565796B129-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOfKOOAFNXj7oQXPf-cKQS_Ed3zc&uk=msP4A8MOHFZ5UzdYRc3ocA&f=Mozart%3A%20Sonata%20for%202%20Pianos%2C%20K.%20448.shortcut&sz=30516">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc8tJxOAyJHSx6WLOjqU3EFYK6jWAVzA-bMGROcGzfh8qEAQqxVsWa3Z%2F%24%7Bf%7D%3Fo%3DAqlzgRlu25fxeBVHOS-bUE4FCnsn3NsG2cNeH7BBFud4%26v%3D1%26x%3D3%26a%3DCAogkRynlgEb1JqT4qRdy6QD6hO3P2jHCp80UADepmiM_u8SbRD0hojLmDIY9JaDn6IyIgEAUgRYK6jWWgRsWa3Zaia6tRwtF9aGfWa3swEDvqjbLARjeDNXEu5Vl2-OkArHIP__R60kk3ImYh3ndp5DJBVlbSvtPNU4FERtURjnfFDurmvW4IWfFKASmNHskIw%26e%3D1727178787%26fl%3D%26r%3D2E812831-D5F8-440E-975F-3A4EBB10A664-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJtGipjNr5NJfpN-r-q9h6duOU2k&uk=Se3-F4f9H6UZBcrEg2Oxow&f=Mozart%3A%20Sonata%20for%202%20Pianos%2C%20K.%20448.shortcut&sz=30516">
        <img src="./All%20Shortcuts/Spotify%20-%20Silence/Mozart:%20Sonata%20for%202%20Pianos,%20K.%20448/Mozart:%20Sonata%20for%202%20Pianos,%20K.%20448.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4310,19 +4621,19 @@
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Standalone%20Fun/Flip%20A%20Coin">Flip A Coin</a>
+       <a href="./All%20Shortcuts/Standalone%20Fun/Coin%20Flip">Coin Flip</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe9IfYM___oVtrUtDy1hPBsEob-LAYkQqYn5VMcGpXft-XRb5lmSXAx-%2F%24%7Bf%7D%3Fo%3DApWtLLQGEQp4-1I0v8PkzVkA4trf9FGrnDqx88Eci95Q%26v%3D1%26x%3D3%26a%3DCAogJxYLHSenK94v0dAmQyvDqq2l1CO0_nuKUKD15NYFbxsSbRCkhpaoljIYpJaR_J8yIgEAUgQEob-LWgSSXAx-aiZEPeoYjf8YyU08zQELOXpVUNgAMCV3aRYkYfGX0FxAx9Vu_eT7qXImX2vFY2A7aHOT9qtH1d55BIFmyuXY7NqmxfOdUkrRegzuNRQlPEg%26e%3D1726568745%26fl%3D%26r%3D9C26884F-5CAE-4CA9-BCE5-E7E633521825-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbIPnWunk0RPKoH0XGYkitRFygDw&uk=XBqqphMNtSZTrZtnOBNX2g&f=Flip%20A%20Coin.shortcut&sz=28033">
-       <img src="./All%20Shortcuts/Standalone%20Fun/Flip%20A%20Coin/Flip%20A%20Coin.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcyVtl-aJFTdGNomLxju0FmPtZelAaEFJQ_zLZkF6FNKbK9hazrJm4k0%2F%24%7Bf%7D%3Fo%3DAioGMhH_GMj80WC9X8lsO2pyLR-kW2XvY0a1v0NHjIZS%26v%3D1%26x%3D3%26a%3DCAog22Svh7M6QhkVUydCC_UZnQnEGzVNjufAcAMaDp5YLLQSbRDNrbDJmDIYzb2rnaIyIgEAUgSPtZelWgTJm4k0aiYclCJH8hYBqg5KkKkpvOXcFHi4xWioe8FmKslTuQO_Es7W6NdDFnIm5ATQeEYEp9GZypIEpSIfODx8d6H3MOhu1j884Iw-MnoMWsyapY8%26e%3D1727175253%26fl%3D%26r%3D373EE63A-3A76-4472-8E83-37F2B2D6577B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhXoeE_6v7W9VNH___NyM1E9BJtg&uk=zU9wIiQYBOE6fyAp8T-kzg&f=Coin%20Flip.shortcut&sz=28232">
+       <img src="./All%20Shortcuts/Standalone%20Fun/Coin%20Flip/Coin%20Flip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Standalone%20Fun/Pick%20Random%20Color%20Hex">Pick Random Color Hex</a>
+       <a href="./All%20Shortcuts/Standalone%20Fun/Pick%20Random%20Color">Pick Random Color</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcdLE_7jdVJ5WZwPaoMLneaSrIUSARfnDsoXM7xTRhpTdI6NLspexiGB%2F%24%7Bf%7D%3Fo%3DAqGbd3czFuZBYK-sDPCwhf1zc34kIIOBI4tTlY6aa5-R%26v%3D1%26x%3D3%26a%3DCAogSgXqYVsRUo5kSULNgG4CWXJZiwn7qSjo5p8AVM3gbvoSbRCAkZaoljIYgKGR_J8yIgEAUgSSrIUSWgRexiGBaiY5ZWdXzxjmRLNj_mzcWD8lCaSY4uE7j983K3aRDtEiHo5pBJ5S7XImkE11bIfKs9iv41xZNoq6jfMXHvzUF1UoFU0JwaHir_s-usMJwLM%26e%3D1726568747%26fl%3D%26r%3DB97B8DFE-C619-48FB-AE66-C6B6FAAAFB1B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DaM5w2cKMW9bzXAwrtiXrVc1bY8k&uk=7v7TFxkMDncjT39sWcWu0Q&f=Pick%20Random%20Color%20Hex.shortcut&sz=28242">
-       <img src="./All%20Shortcuts/Standalone%20Fun/Pick%20Random%20Color%20Hex/Pick%20Random%20Color%20Hex.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVB95dF1ZoFo56Aq85-T7CpDH-39Afr2suxHjEPxj_eHDu5FXBf6D4aS%2F%24%7Bf%7D%3Fo%3DAqTWG-nsCeaFQVvNtfdfNMPb6x71wlKsP8nv_8wbYnrm%26v%3D1%26x%3D3%26a%3DCAogKxibJwrRGGDX55zlODMBCw8kaB7w9JA5SjysG4WIPc8SbRCnyLDJmDIYp9irnaIyIgEAUgRDH-39WgT6D4aSaiamNZaPzWEFlMiVK1cIcmgH0X_D4INvn3s5Ig5M9cMFXHytu4jRmXImCvT8qKx8Beb2BdoGl6ZxIu5jw1y6KCWXBpYK3nK1U_NhDnTQINo%26e%3D1727175257%26fl%3D%26r%3D8C390242-93CB-49D8-8604-60756B684004-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZnffxnuqaRSeBtvNzeyvv3S5eus&uk=_QrTWlbqTv2rZs0e4MNeQQ&f=Pick%20Random%20Color.shortcut&sz=28239">
+       <img src="./All%20Shortcuts/Standalone%20Fun/Pick%20Random%20Color/Pick%20Random%20Color.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4330,7 +4641,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/Get%20Directions">Get Directions</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARInPttLjp_c9I68GSMdEwrUm_pMAS5qVjpqu7LoBledNuechFZCCFIO%2F%24%7Bf%7D%3Fo%3DAiv9Qy158Ks5mqBk9qW_okIoBcd8rcXs3DvX55uZHmAi%26v%3D1%26x%3D3%26a%3DCAogaMZidvA7C-obbNyv7vNUDK9W2IQx_KAdWFXurgOpVpASbRC3m5aoljIYt6uR_J8yIgEAUgTUm_pMWgRCCFIOaiajIb-YiO5QQXUVB21Qh50BrtuUEEME-0gQoOBkBuS3Tm-XoZNnonImbVASm8TwY_tKtvdFS_Oziu0vYjivtIpS3decW1cgpveh310KC-k%26e%3D1726568748%26fl%3D%26r%3D4B6028D8-34A1-4D92-8EBD-F00F435E4FD5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-jNSV0M4YIROOL8RV64WxMlzmbs&uk=5EqvPwQgBGVIOVU4A75-kQ&f=Get%20Directions.shortcut&sz=27989">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAevC3_3ks1Asd2s1fdjhaZPZuLOCAQHrST247NnOPEIs93ej-mBQbFEa%2F%24%7Bf%7D%3Fo%3DAkPS53gNtmcmdeNnzdsFjHN3kQmLt6huW1vsSTx39d6x%26v%3D1%26x%3D3%26a%3DCAogXd-KYHZ3XZKb44UdR6Vd2GvvcfsSzwjrh43KVmWSyPMSbRDI3rDJmDIYyO6rnaIyIgEAUgTZuLOCWgRQbFEaaiZWDbc5vFnbmKhKbJEPVfko5SJYSB0Qnu1DNk2RGTjjTnWHS1pQvHImnIILs7I9rkJkCuE-gEVYRnD_r6JU6mfERs10fHuBmyC_DSfmEmw%26e%3D1727175259%26fl%3D%26r%3D5FB1839C-D4A7-40BE-96C7-FB9D4E2E6144-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DrSLvu7AnH5zvobDgxdhzD_FaRlc&uk=iewWed-RX6E4L7bvb7pqJg&f=Get%20Directions.shortcut&sz=27988">
        <img src="./All%20Shortcuts/Standalone%20Fun/Get%20Directions/Get%20Directions.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4339,7 +4650,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/Share%20Wi-Fi">Share Wi-Fi</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXyFKw578q4ghbeQz9S6vuTokIqBAZiAebyHSddtHKXwIHCmZ7n1wWnL%2F%24%7Bf%7D%3Fo%3DAjEXI4zum8DQ0UYkKbXus6fN01nXGFWhUkiuajXfKvVw%26v%3D1%26x%3D3%26a%3DCAoghthJIc5oCzd8N6m6EvGfpVkR-Eg4F7Dc7QFg1oNvYZwSbRDqpZaoljIY6rWR_J8yIgEAUgTokIqBWgT1wWnLaiYFzwpbSNok6MlaiJp0rWTdiqmexx3h2sKNyanEgRAJymsFYHaMYHIm7qqZOwqIMTEPfLrkfQr3eoa0M_XaWfAfZuhkZK1ei-mNyqjOFQk%26e%3D1726568749%26fl%3D%26r%3DEA5C2211-EFFE-4586-B029-739C3944583B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DP419vqIChRZ1CRpARMArvPtNduA&uk=Ug7aFNjVMfzZkGQFtVLsfw&f=Share%20Wi-Fi.shortcut&sz=28327">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe2WpNI3RsI38lkBuBhGmGyNGBETARl3g1deaGnWUyL9sjGuMZA2zS-B%2F%24%7Bf%7D%3Fo%3DAlWF_VYdtivKDEiMJGLJ3gNIsHDmOU1Mblp3WyfmSYho%26v%3D1%26x%3D3%26a%3DCAog3d-PLLdg0VoCBH3OSj2fVIOomMc1GH8IwzuAXUf5E5kSbRCq9LDJmDIYqoSsnaIyIgEAUgSNGBETWgQ2zS-BaiYk9hpHgnx6FYNW1JXTUxYneAIKFpdFLvlOCwxmrI90FHMA9_tZ33Im9otrUGKePV8AGRK7KPvru7_bjg6_10IgWir2dTDUqNyuqMGkbx0%26e%3D1727175262%26fl%3D%26r%3D82CD4569-19DC-4574-A469-7952ACD3058C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DeFGYT3dMXW4vRjl9cTiCXiH10Rk&uk=NP0NvBWv7RuYe5SmrGDLgA&f=Share%20Wi-Fi.shortcut&sz=28324">
        <img src="./All%20Shortcuts/Standalone%20Fun/Share%20Wi-Fi/Share%20Wi-Fi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4348,7 +4659,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/WhatsApp%20Click-to-Chat">WhatsApp Click-to-Chat</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASqqLfuROZK7x_vMVE21AoyB_aTBATcR2z0ZpAfPfqNO1xljaYxvHE0J%2F%24%7Bf%7D%3Fo%3DAjWm4Anz-RkHwb8wUJN0C7PNIi6gcEk-hSoVamrHfI6X%26v%3D1%26x%3D3%26a%3DCAogX9TbJM-hZ9z2sf5Xz0iA_wE2OkDdHvN26nLGxJMF8bsSbRDtr5aoljIY7b-R_J8yIgEAUgSB_aTBWgRvHE0JaiYkQuoKWEZFkAoYwBwOa_1zqqSdNY3ivQHEqZv6oi_xC_DgbnFosXIm13foydKZ3_2i_avXp_-piG5psQzcl94rbu0vvBXdNlEJcpBKbW4%26e%3D1726568751%26fl%3D%26r%3D2C51F209-F3DB-41DC-9F91-3BF1FFA48176-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIiTRMZuWb52ycLjiC6f6Jai2OQs&uk=5X93AdEcgKAJtKhWc_Wg-w&f=WhatsApp%20Click-to-Chat.shortcut&sz=27263">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXc5KuqW9aAen38D_BpBDxfTt7gXAcNg8CwqRQhsf3HFI7Yzx2aPfhp5%2F%24%7Bf%7D%3Fo%3DAlIj-hBB3A1gNPpXrTbdRGHddrguKHMypQ9u8B6bc8QB%26v%3D1%26x%3D3%26a%3DCAogCQURMIiOCeJRoV7w0U8IAS3mpej-nyScgV45XiNxfuISbRD5ibHJmDIY-ZmsnaIyIgEAUgTTt7gXWgSPfhp5aiY_jdJvdUmyKW9louJij2c8jEM801pNcfh1QchXKjr3QPOY4wpeMnIm0GcQ40GB5BwGRMUsrmJ0H7UWC3_guGllCx7Rz082JpnMTmrZ-RQ%26e%3D1727175265%26fl%3D%26r%3D80AACBE0-D0A0-44DB-A6BA-6B57DE245FA9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0XLx0j-1GfVll-tqevil1kSPZNg&uk=GCiLoYwqr_LFg6f3xbHmfw&f=WhatsApp%20Click-to-Chat.shortcut&sz=27262">
        <img src="./All%20Shortcuts/Standalone%20Fun/WhatsApp%20Click-to-Chat/WhatsApp%20Click-to-Chat.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4357,7 +4668,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/Calculate%20Tip">Calculate Tip</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARjDSP000yvOsVX4xKAbWCI-rACDAVQoJZfNzSc9avtV87IE9e8E6tpL%2F%24%7Bf%7D%3Fo%3DAi1HTseVp2lZXn59s6v9B8LePAJTmvhf4QKAi1fAcK4j%26v%3D1%26x%3D3%26a%3DCAogNc4m9xTH9enq5jtHxqyu869prH6-vsL23lSYLhVqFcgSbRCiupaoljIYosqR_J8yIgEAUgQ-rACDWgQE6tpLaiZ-nd03QJ26ZroekO43KTcVs-OswgTia3dcXnWGkOeh0n9ti2MD03ImD-1fmU7Bbes62H4qW2D4a-nuRvnKjEX0HpXisBqb5-SUpaIsLO8%26e%3D1726568752%26fl%3D%26r%3DD4AF7712-3A22-4286-8C3E-734A22AA5EA3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPFWjakWN6_y-8U6QY1Q0YWc-6PA&uk=ERAAXQaARGkkGChMXnP3Fg&f=Calculate%20Tip.shortcut&sz=28003">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYqnu9fKd0scTSWeFiCHDeDnIbYSARAZG33Qwn6x9bj8vASu1QchNLv5%2F%24%7Bf%7D%3Fo%3DAq-PflCUEDnDKGYtIHcLnM6wMnNsLcZovsfFB9u9aN22%26v%3D1%26x%3D3%26a%3DCAogvRn_HkNZGHs9KUTqgnx2lxW5SKi2_4XAHd2IsGKYExASbRCgoLHJmDIYoLCsnaIyIgEAUgTnIbYSWgQhNLv5aiZa7vXLYCC0pmO68FIqsVpnnuxvV4BT-9xTmjcGCcG0vTGdqYsjuHIm_d-QfbQ-uv_iK3M7jmgzRmT6TgbMRUUPfSZ1tlzV86vUZrRGEVU%26e%3D1727175268%26fl%3D%26r%3DED27A480-C0A2-4596-9771-45E797710748-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DF8q7HIx2hRc2L_7bqu2KyDF-uFA&uk=WRMRyBEzZ8kICUx-7y1ZXQ&f=Calculate%20Tip.shortcut&sz=28001">
        <img src="./All%20Shortcuts/Standalone%20Fun/Calculate%20Tip/Calculate%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4366,7 +4677,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/Upload%20to%20Imgur">Upload to Imgur</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeX06yTL2yjTRDsB4bmvYcA-Y5OPATF39rBbH1ylBpF1OtiESiKzFJDE%2F%24%7Bf%7D%3Fo%3DApfpOybJ9C9kIFvnzd_AfpgPA3NBsitX6dKoRKN3l1nT%26v%3D1%26x%3D3%26a%3DCAogkHFwJG2DsVrHAenrB4BfQWmMq1mXOyNQG4H4_T5j0RMSbRCvxJaoljIYr9SR_J8yIgEAUgQ-Y5OPWgSzFJDEaiZ2wOZm4xdJ-k61PcLC6oTr997WJOZcQ8GJNQ6Dx6NtMwdpDtxWlHImokl_nDJrdk8Fr8sxvVleQYZfrhgoadESuMWwyA2wEk6Bdb5p6Sk%26e%3D1726568753%26fl%3D%26r%3DB72999D5-9AAB-49A0-BAEC-11844AEA7E5C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Daxfvv3n0H4D6kshYrSKKoixzO9Y&uk=_6ZrigjUK8jYurOzan4_Yg&f=Upload%20to%20Imgur.shortcut&sz=27281">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ6CuJLw6WnwCs0abqvuk7qAFf7KAVLo7mi4Jrt0XtKE5waJGOmuXSqQ%2F%24%7Bf%7D%3Fo%3DAvAfBzmb_fRtQMY9DjuHm-El7c5CbIQuBFdpYzdDJPSV%26v%3D1%26x%3D3%26a%3DCAogw99K9m1QZuNumOk_R63b-XhPpZLe3Yu6drp8if-q_l8SbRDMubHJmDIYzMmsnaIyIgEAUgSAFf7KWgSuXSqQaiYe_DT4OqmBkFzOmyovg5bL_G6bs6aQ3Lxloa9D_ofOb880JxdBsHImB6buwd-6rthrVdVvLK8abb72GbabWrrQeIvi9VbpMlyf-VGhwwA%26e%3D1727175271%26fl%3D%26r%3D0B30BAB5-BF09-47F8-86E8-22316068AF37-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4Y8aq8TFnvzizSuvSr4EUCrjLpc&uk=M-7B_V-oAPluPXF4zqlNuQ&f=Upload%20to%20Imgur.shortcut&sz=27281">
        <img src="./All%20Shortcuts/Standalone%20Fun/Upload%20to%20Imgur/Upload%20to%20Imgur.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4375,7 +4686,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/Water%20Eject">Water Eject</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAezAitLrv1KNpVeEfgEHe0VtlKlYAZ0x_-URZosaIjzGU3bKGeomloVy%2F%24%7Bf%7D%3Fo%3DAmfO7UjvDTzp_Z93cSgOB0Ol0_VnR4vynhGhW9c5mY8s%26v%3D1%26x%3D3%26a%3DCAogcKb_x7q1hTOk5GDsph6EAmIPG3FVF3DlvzvTduFzIB4SbRCMzpaoljIYjN6R_J8yIgEAUgRtlKlYWgQmloVyaiaNF8E6y0kjQC9Gsht9VWr3Ll6-DAfWcpP2kYVheBondYocpeRYEnImb9RBd1A0HXumW6IUSXrbAXxhprFIyF4LyElSYn9P5WAhu_VIDxc%26e%3D1726568754%26fl%3D%26r%3D07D74E56-C779-4C9E-A214-9BBBC4E02CE4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DEDdAAiTxmjgB9kMbsd1COXjTbQM&uk=Qq3CuqXcCOnsdw8smjow_g&f=Water%20Eject.shortcut&sz=192270">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASQJgPDymO-v5OtIQ1lvHAzkPJWMAWnE8JwTAg7ojM1X_dLu3dLq8d0b%2F%24%7Bf%7D%3Fo%3DAhsgWjzRsrtiJoYLGdMITu2UWx7A_pxzJGF-G6WiXoeh%26v%3D1%26x%3D3%26a%3DCAog8PtgmDLrGGZbJby4BMvrdNkOZVRFL4I6F3kIjqHs4sYSbRC10LHJmDIYteCsnaIyIgEAUgTkPJWMWgTq8d0baibIqKvidKkVI0h08ml9gw20fjdmvZ_UEme9M-wuKM1USXVxBwAQE3Imub_4_MKjX2GxJXr0UqwhuCcZm_gQSxaygwSMTyYlyqvQ1eC9Wwg%26e%3D1727175274%26fl%3D%26r%3D2C8801DF-DAC8-49F6-A2C5-29CD09CFA529-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOyiTi9JroGUT8bElwthJyEZYWr4&uk=fcZNO1uDHB2J2CW8EfLPCA&f=Water%20Eject.shortcut&sz=192305">
        <img src="./All%20Shortcuts/Standalone%20Fun/Water%20Eject/Water%20Eject.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4384,7 +4695,7 @@
        <summary>
        <a href="./All%20Shortcuts/Standalone%20Fun/Live%20Photo%20to%20GIF">Live Photo to GIF</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZrR84eXz2hwrrfrm77ya3U8kL1CAftjVCCoQW9vGUFDfCYfGoVbrZ17%2F%24%7Bf%7D%3Fo%3DAuXSxIjgnEIyO74QBT0yy1U0xxtU-woiR2SRe3LKQv7x%26v%3D1%26x%3D3%26a%3DCAogk5Xt9HmqktwBxT-Yloo4XRId-QaECo49YD9csyOhToESbRD12paoljIY9eqR_J8yIgEAUgQ8kL1CWgRbrZ17aiZQ6u9ID6HdWQ4pkWhXJf2kFxkUuodvmL3GEAIJAWpBMz-V3cfHJHIm5xHzN5vWUWw-C2L5AQIhSHlVV_smpRFdnAwhjjnEWnojQGHoyfc%26e%3D1726568756%26fl%3D%26r%3D6FB54798-708B-40F1-A7EA-0223C409BA92-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DPU6f-CvooGh8qOnhZWd5OfQhngk&uk=lxX1Sy0pQmEtHJSJpTszGg&f=Live%20Photo%20to%20GIF.shortcut&sz=27338">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeaRf7HJwbEQtTZvCLKLUzMa9n4OAeyUMaY590KCmHZktSnoV0YphVxb%2F%24%7Bf%7D%3Fo%3DAlJWuI1Hl2qJmBB7uf0X_YDANOy2Xf1zFpQopBPECoFI%26v%3D1%26x%3D3%26a%3DCAogqW_b5zmCtP84u0cWZIM6jxhIyl75OvIpOCL2ghweKjcSbRCe6bHJmDIYnvmsnaIyIgEAUgQa9n4OWgQphVxbaiahygl0rnbkOMd2aal9r8j2MaoDCs7HTRIlmBzY8ypg5gOW6U-ycHImjrYuiQ8MNB1kJbeb6HPP1dtnvVhHUHYDlXLjvvQG1dLMSYI9tnE%26e%3D1727175277%26fl%3D%26r%3DD27B0EF7-E314-4C60-B5E4-17EDC0B75E23-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAdH_QEsIvZ-EJry1kYaToXXZgJo&uk=GSEC0IJH3MqObmpd6s_21g&f=Live%20Photo%20to%20GIF.shortcut&sz=27337">
        <img src="./All%20Shortcuts/Standalone%20Fun/Live%20Photo%20to%20GIF/Live%20Photo%20to%20GIF.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4401,7 +4712,7 @@
        <summary>
        <a href="./All%20Shortcuts/Start%20the%20Day%20Right/Plan%20Today">Plan Today</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASZPbsxMhyW6FyCbSEno3mPiwm_AAaYmqlM0ZsypDVGcnwtpomxMO7PZ%2F%24%7Bf%7D%3Fo%3DAgi9KXE06LOcEuoCWOSU0ww0mcQOqJfSKrZLfV-BoBIp%26v%3D1%26x%3D3%26a%3DCAog4IXcvSG_s8YTPVbXqq9pU6PM8pp94P9Dl8kgcZU_YUASbRDLopuoljIYy7KW_J8yIgEAUgTiwm_AWgRMO7PZaiaY3nRKMGvjvraRM3e9mMs-XCdpcTo0L-nZHyQ8xqWdoCPgDexiEnIm8HYG8NEVOYkS6LMiF7qUj3BD6vIiwgZKTmRHl_oPCmim-X-xeKo%26e%3D1726568831%26fl%3D%26r%3DD6F922F9-511A-499D-9E85-1039C31F0B2F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcFvVojp7N8Cy9T0h4LBkdPy3EHo&uk=NUH-4LBbr2GjOpQ9CIjueA&f=Plan%20Today.shortcut&sz=26771">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAax02N7UwKGoWwz9Xg3L_wpKuZDMAdnwmawkFE_7rMPSk0OaXqqyAdId%2F%24%7Bf%7D%3Fo%3DAkMcFPaeTOEPaToN9c_VgsgVPmmKJB-HLefA_I-AA0yg%26v%3D1%26x%3D3%26a%3DCAogv2n9RSpcP7d1kxxuIHMLiGsbsWW3u58eEgKZqN7cakcSbRDI387JmDIYyO_JnaIyIgEAUgRKuZDMWgSyAdIdaibeMxWkPGyiuldKJ5jICyjsmLPbV8MgaxvKqujwdZ-FoDE6kzEYwnImomd_GLZTZII5f1ttPJWMqd8bJoF3VFlGBP6rrHiJ5C4yxHKUR6c%26e%3D1727175751%26fl%3D%26r%3D9B497877-0426-4DBC-B57D-FBF7B7845D9E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuULjWWwCFEf8b7qQbiglpTC8BXI&uk=5WVE8-tl_jtL_qtFGnhzSw&f=Plan%20Today.shortcut&sz=26786">
        <img src="./All%20Shortcuts/Start%20the%20Day%20Right/Plan%20Today/Plan%20Today.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4410,7 +4721,7 @@
        <summary>
        <a href="./All%20Shortcuts/Start%20the%20Day%20Right/Work%20Like%20A%20Lion">Work Like A Lion</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZnGuLLEI-lTKYtbwdNHslh9ohvCAZvnWlRB-_sotEKi-t2uAxoNwVMj%2F%24%7Bf%7D%3Fo%3DAonLz86jEal0rUMRZTH9kxA5UcAK81MXOUC8f3r1C73Y%26v%3D1%26x%3D3%26a%3DCAogqcamgiIT-2iiYvJNDKF3HpQ39LCS9EtE15XX_Abvw3YSbRDRrJuoljIY0byW_J8yIgEAUgR9ohvCWgQNwVMjaian1b5HeVnkFeuS65jqeWoAN0vEg8fQ5gvLekr8CjHXKlpv8M1brnImeRKgAtYWweRjNm46rZDghzOyZUNyx45sRPDSZmz1hZAAEuc1KEQ%26e%3D1726568832%26fl%3D%26r%3D13E34F51-FBDB-478E-B56B-FD9281FE1608-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTn382-On9BbR4SMXn_kxKVBCdE8&uk=RL0lxSAQuzRDnxYYYbE8xQ&f=Work%20Like%20A%20Lion.shortcut&sz=26827">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAavwNsPUKwWhNabMecq9G8UxWurWAT3eEUQ2XW3xxiSmmpXGWf92nVA5%2F%24%7Bf%7D%3Fo%3DAtI_B_M4pIp5pt0foRoF5KqMttRis-3sX6qpU8WbH9wb%26v%3D1%26x%3D3%26a%3DCAogFG_GQZXlhvW-aKf9dMcknAGKtAolMG4S0t5vWytfDykSbRDl9c7JmDIY5YXKnaIyIgEAUgQxWurWWgR2nVA5aiZ9c6gKsC1gnw6pyii9BdKIw59zUR-RNAcU4TzFLEsTvTdc3rM9SnImMeZlNCjH3tHOAEpaA99iYG4GV2Zap-AmWGOr_HFuSwgYM5nhNsc%26e%3D1727175754%26fl%3D%26r%3DA003F4BE-08ED-4043-9D07-AF1FD87B148F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5Es3zIN7oJ0uWRGaXT1BfLg6wV0&uk=73FzRqpyTWw6Z9eqtGVv8w&f=Work%20Like%20A%20Lion.shortcut&sz=26841">
        <img src="./All%20Shortcuts/Start%20the%20Day%20Right/Work%20Like%20A%20Lion/Work%20Like%20A%20Lion.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4419,7 +4730,7 @@
        <summary>
        <a href="./All%20Shortcuts/Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right">☀️ Start the Day Right</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQouK8xcctn9ujjZolE_Yc7AHWzVAZPqjyJpher6XTX8C0F2aRw7FgRc%2F%24%7Bf%7D%3Fo%3DAig6vBAC9mBjuOJvhORkJ8_EyIPOvrGmidBZFwTJlq1e%26v%3D1%26x%3D3%26a%3DCAogzgJkd9bCVKtpAdJedJH9wlnluyNV3FST3AnPTVg1VNwSbRDhtpuoljIY4caW_J8yIgEAUgTAHWzVWgQ7FgRcaiZTGo72CFZRc7GcgS_XhkBSuDbji6tTNAfyg0844R_GVqObXcnW_nImkbzUmNw6lRr0if6EQr-Of2PjtWuIl4azEiiJE0y4AHkvATzF-j8%26e%3D1726568833%26fl%3D%26r%3D2CE85AFB-8A20-4DE9-940A-2473D10E4BAA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyO6wnjUbK1SCJeL1uT6s34emCQI&uk=uR-25G2mGOk8WukpH9gT6w&f=%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.shortcut&sz=27296">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASZWPkHsANeMrMEu-Drkjwe9zRboATtoGsa3kD62GFmz3orC8Kr0F9vX%2F%24%7Bf%7D%3Fo%3DAsMLKiYz8VW8EWM7htygmonoYxmDR6x0xPICWIPn2dwn%26v%3D1%26x%3D3%26a%3DCAog-_8vRpviSk9_ZlXJy5LBE1cIWWiRLOBIW-JqjKxHydUSbRD7jc_JmDIY-53KnaIyIgEAUgS9zRboWgT0F9vXaiaesFkLGl6hqucsfV6P3fUb56PAppB8iXeMZzMFaWdIekhjV-4hz3Im7TkNX6cAa_wH3GqsR0nzvZgSkwZWz73tZM07wIOLSwQBBlIK6_g%26e%3D1727175757%26fl%3D%26r%3DF9D6C2A0-E012-409A-904D-348FB05E2A33-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpZF9vfuW_0tijyWqwn-UDOKmc78&uk=AIGPRF_y_4RJUzCmmV2GHA&f=%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.shortcut&sz=26996">
        <img src="./All%20Shortcuts/Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4428,25 +4739,25 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Strava%20API">Strava API (3)</a>
+        <a href="./All%20Shortcuts/Strava%20API">Strava API (6)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Strava%20API/Get%20Today's%20Strava%20Activities">Get Today's Strava Activities</a>
+       <a href="./All%20Shortcuts/Strava%20API/%F0%9F%92%A6%20Review%20Today's%20Training">💦 Review Today's Training</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAepyUOUQDAwmDlVnGO2LAS4VxlmmAbMxfElCKpet3mE95LSVptfDjJx7%2F%24%7Bf%7D%3Fo%3DAkP2LpzvzT6ae0iKOtVReRFZptUOEJfXnCth-X9tu10e%26v%3D1%26x%3D3%26a%3DCAogQKMG5wjFCkTxigMWWQLwW9vP6UZsg7spcf0oXUKTt1ASbRCskq2oljIYrKKo_J8yIgEAUgQVxlmmWgTDjJx7aibeUAgaL2MKFYUuz4pt4rAOIuykwgYJvehgmqpv3NI66aR6IRDmU3ImskWwuPnc0uVkeYiy01K3wzAXNJ3tuVjecRm5x8vhKQJWMPgCL34%26e%3D1726569124%26fl%3D%26r%3D80E05261-849E-42B0-BC46-EF82F957A408-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D9aPHcmoyCXKxipEy2kQIUiQmTdE&uk=iisElwNlxvPDUl2IP-AJaA&f=Get%20Today%27s%20Strava%20Activities.shortcut&sz=28184">
-       <img src="./All%20Shortcuts/Strava%20API/Get%20Today's%20Strava%20Activities/Get%20Today's%20Strava%20Activities.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbO6qRDM8Z2zTUZMx_P1mYYspn1nAcsjmQPP9d0Ms9UhmR3ba9m167qI%2F%24%7Bf%7D%3Fo%3DAiWNb-7-Mgdcd6MPpSCIyErh3n7SsAhpASbsDdKykveq%26v%3D1%26x%3D3%26a%3DCAogLa7uBEXGROZARXmPIgIaeVsQHcWJnZk14ckyKG6npoASbRDGzPLJmDIYxtztnaIyIgEAUgQspn1nWgS167qIaibReQuaL1bnRYgImnlWp9j_IXayYaDkiRvZWfKVu2-GQKvddbWwyXIm6hVWu3ONnKUHAHZ9VrloSNrp9lLGJ2Um39rqizwLlTffoFVCXEY%26e%3D1727176339%26fl%3D%26r%3D9C45EEBC-A1A1-47FC-9595-800D68814FD0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DG6DkKG1gXUOKS63WbgirYsNWZoI&uk=i-dIhDMsvKhCh_SwndEr3Q&f=%F0%9F%92%A6%20Review%20Today%27s%20Training.shortcut&sz=29911">
+       <img src="./All%20Shortcuts/Strava%20API/%F0%9F%92%A6%20Review%20Today's%20Training/%F0%9F%92%A6%20Review%20Today's%20Training.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Strava%20API/Get%20Strava%20Activity%20Stats">Get Strava Activity Stats</a>
+       <a href="./All%20Shortcuts/Strava%20API/%F0%9F%94%AD%20Review%20Workout%20On%20This%20Day">🔭 Review Workout On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAV6Wo0F7wQRCbLHDypxOlZgye2aEAb5tqPgKS9FXb76abRBn5w2c0Adq%2F%24%7Bf%7D%3Fo%3DAmtOvL7sRnac6d8VEAWdnYOstXjz0484z79dE_hreT9b%26v%3D1%26x%3D3%26a%3DCAogRbkfyF_gkbHPkGuiAP2sOpqygdZR86f5cwc4PJOXUlISbRDinK2oljIY4qyo_J8yIgEAUgQye2aEWgSc0AdqaiboLD6qT6hAcd3rt0iqunccejdm0wx_U3tOwXd2ZrvGmdNO-1bjlXImKpsWBHbwHJMhSwDyO6ULVXFZudMPJv-DHB22vyE69Gqfk3sBWQk%26e%3D1726569125%26fl%3D%26r%3DE9BF6429-6F1F-46BE-AD8C-14AFFB9F718C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dy_LI3Dhx7ka_67uTTjDUjXvdJkc&uk=lFuu39N5II8vRhaLEVk8oQ&f=Get%20Strava%20Activity%20Stats.shortcut&sz=27537">
-       <img src="./All%20Shortcuts/Strava%20API/Get%20Strava%20Activity%20Stats/Get%20Strava%20Activity%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZVkfWhCA-e3u5u8Wgps57IgA_xyAYP6q4ILiF0pjpz3Tsa8_XtJmP3_%2F%24%7Bf%7D%3Fo%3DAmqnWJSsniCLrW-JPwzuTHcmYrBl_vdmLhDxbUmbxC1K%26v%3D1%26x%3D3%26a%3DCAogehLjCuELYfqaHJ2c35wCqocKff1X_XMGVp16hg8PRJASbRDe5fLJmDIY3vXtnaIyIgEAUgQgA_xyWgRJmP3_aiZdZ0g90wG2JyqK4peEKA5MHpDh3EJJV5iyyIY11VwYxkSoBXdDn3ImrVfb2jcwduqRKje1tlf-rzoVanrvT2gzk7DEbh3ayNFDlpKqGeU%26e%3D1727176342%26fl%3D%26r%3DE5E4370C-1C7A-4AF3-B169-55E51E7B4CC2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dzrv5nChSb7Sq9PlT6WmSnidDIcw&uk=HLoBV-ZGchEu0rN7MxsVtA&f=%F0%9F%94%AD%20Review%20Workout%20On%20This%20Day.shortcut&sz=27944">
+       <img src="./All%20Shortcuts/Strava%20API/%F0%9F%94%AD%20Review%20Workout%20On%20This%20Day/%F0%9F%94%AD%20Review%20Workout%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4454,8 +4765,35 @@
        <summary>
        <a href="./All%20Shortcuts/Strava%20API/%F0%9F%93%8A%20Review%20Training%20Stats">📊 Review Training Stats</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWmIiT6LBNk11hhtMRwklYGHRTEOAeUHqabHiXC1c4qCCwmj77z70W3-%2F%24%7Bf%7D%3Fo%3DAksEKpRBcRcC9lQbEA2UeErT9NmcaAc4IEq2fd_P7t7n%26v%3D1%26x%3D3%26a%3DCAog4Hdn3GQZ9qz3nyKoPuep1FKOqDH6ROdnKH7GnkRtX80SbRDppq2oljIY6bao_J8yIgEAUgSHRTEOWgT70W3-aia-y97vJzDSmF6UQVk3FSXlpOblYmz7uUsjzxi8Aw2k8A4geZicjnImuXumSiVujSUx5oLXdu8Woz7GXlTc4KjFsFfeDQXgIb4vsD7qP5M%26e%3D1726569126%26fl%3D%26r%3DA9045DF5-842A-488F-A973-0ED50A81F30F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlqmkiB78B703iDGLMZcsk2cUXsM&uk=7k3hI3_SoQv7PQN-TMBgDQ&f=%F0%9F%93%8A%20Review%20Training%20Stats.shortcut&sz=28796">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb8J75uq1oEn0QsLpyX5Cj5Ld4FAAdF3BLJKGOOkbF48RN9lkNM3bwFi%2F%24%7Bf%7D%3Fo%3DAheRty7BURiFrYlAQMPdHcgzF1IY4_JZipS5UyjCTfmd%26v%3D1%26x%3D3%26a%3DCAogaD86GGqn0hVuzgJiR9oHYAaMOLTFpWya2hoNW0YVOaASbRDf_fLJmDIY343unaIyIgEAUgRLd4FAWgQ3bwFiaiZ8dO4Xz5_4zDzeGHQvKyA48Nl37NC1kRLEj2qvU4bnuY49yenbPHImHss56uTUNQ20jabYJRfW5YqeWaAPqT81vTQYCPlWnykKUl9Trxc%26e%3D1727176345%26fl%3D%26r%3DD1E27AF6-EE46-45EA-93D8-23C1CBA49BC2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqpsqLdPn5kyohU6Up9XfbAh9ToI&uk=A1053Q2o7GkQdecZvuW_eQ&f=%F0%9F%93%8A%20Review%20Training%20Stats.shortcut&sz=28675">
        <img src="./All%20Shortcuts/Strava%20API/%F0%9F%93%8A%20Review%20Training%20Stats/%F0%9F%93%8A%20Review%20Training%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Strava%20API/Get%20IDs%20Of%20Strava%20Activities%20With%20Media%20On%20This%20Day">Get IDs Of Strava Activities With Media On This Day</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARfA-T1Lc8hvqtBdGXnp4vQvnXSAAayuGrI6tKtiUiT40W35C5u6cL2I%2F%24%7Bf%7D%3Fo%3DAk48YriXSXkmOErPtDygUjXdfwrqT_hPcIK6TMLfRIFH%26v%3D1%26x%3D3%26a%3DCAogzfea2QlPOCdPQuQQtb0cz10elCWvF1fVj1gnHCVGvGQSbRDYlfPJmDIY2KXunaIyIgEAUgQvnXSAWgS6cL2IaibeiGVUVG5KW4DBLe5L8zLxqpGlc9ygDxN8RFPxm9RVj8D_BQy3_HImkQ3EgjP5nhiLgf4G0mQfPI-CWZoFlM_9vBCHqKfku5Nz8tNiKvI%26e%3D1727176348%26fl%3D%26r%3D3B3CB4F4-F8A6-4918-B7E8-11CAD4079968-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-1lxfvfZNrkovl147gpXyVBngss&uk=l42HKDZpsRmnBfAlwKJjsA&f=Get%20IDs%20Of%20Strava%20Activities%20With%20Media%20On%20This%20Day.shortcut&sz=28105">
+       <img src="./All%20Shortcuts/Strava%20API/Get%20IDs%20Of%20Strava%20Activities%20With%20Media%20On%20This%20Day/Get%20IDs%20Of%20Strava%20Activities%20With%20Media%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Strava%20API/List%20Strava%20Activities%20On%20Date">List Strava Activities On Date</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARfQEfGQcAjT_cfQCk-DcokF5UJoAew2kQjAsJTYSM5UFuarAe7gxkSU%2F%24%7Bf%7D%3Fo%3DAkTxcd-E8pyoFEfOmhUkFkFRO_lpCaehf8ZK1pZcFLDk%26v%3D1%26x%3D3%26a%3DCAogG5wk1J4hpUeuh2hJGCCFrl-eJpffpK8KKW26UwrIEp4SbRDsrfPJmDIY7L3unaIyIgEAUgQF5UJoWgTgxkSUaiaZUi3TFGnjQbYn3PpWe2y2_v5MctHIundte5lZsyQZOf28DVR9fHImoBVHkz9DQ8jTSxMXKqYQ2GBzm85xVtHca7rOJeg5faGRY5arBWY%26e%3D1727176351%26fl%3D%26r%3D8CE89AC3-F8F2-48DC-BE33-2CCF7061BE32-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D0ifRCEo0HxykWQpQNxUPZLU9iSE&uk=6JHkLinCUpXXpeL0oXvnbg&f=List%20Strava%20Activities%20On%20Date.shortcut&sz=29240">
+       <img src="./All%20Shortcuts/Strava%20API/List%20Strava%20Activities%20On%20Date/List%20Strava%20Activities%20On%20Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Strava%20API/Get%20Strava%20Activity%20Stats">Get Strava Activity Stats</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYr5_A0C8Kpmko3mRU3w-0EgR5H3AWoi85VLlzIEs0l9s-2_fzUGUn5l%2F%24%7Bf%7D%3Fo%3DAh_iHJxs1IEHhEogDjwpJYxsL6D-UqhBewPbrE4U8fE9%26v%3D1%26x%3D3%26a%3DCAogIXqzuUjRg_Br35Shx25K2Ww8TlRtsXhi_aWbAbDwEGoSbRCY4_PJmDIYmPPunaIyIgEAUgQgR5H3WgQGUn5laiZ5iMF3zhcwTt0n86jxRReoV6LraVk9vQAmFqpUK9eAzDciXu8ffHImSi1VmLZ9YuIkowMGMybO73Fm4xAB2Cfz7dRwq39BMf3eftb9vkk%26e%3D1727176358%26fl%3D%26r%3D65767F94-3555-4DB1-97A3-A7C16027F844-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4tETNJFNWlPCJZTGdnwWpux7LMQ&uk=dYdekC3I_Wv7mGWlMjQm7A&f=Get%20Strava%20Activity%20Stats.shortcut&sz=27536">
+       <img src="./All%20Shortcuts/Strava%20API/Get%20Strava%20Activity%20Stats/Get%20Strava%20Activity%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -4463,25 +4801,16 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Template%20Shortcuts">Template Shortcuts (3)</a>
+        <a href="./All%20Shortcuts/Template%20Shortcuts">Template Shortcuts (2)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header%20(Scriptable)">Template - Folder Shortcuts Header (Scriptable)</a>
+       <a href="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header">Template - Folder Shortcuts Header</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdqZ9woEDyXhmHHW9BfH-DOR2T7PAXWc5sDHJ4kWHNFOXska-81J5Ymh%2F%24%7Bf%7D%3Fo%3DAvVhIWo0IawKJMPJePLUtpDQj6nizrVRaf5CgbqqUG70%26v%3D1%26x%3D3%26a%3DCAog49YgeWA_nX7nz-wqWhhnuGlO9qnW8KLH7kbqUZwOQ8oSbRCc4aaoljIYnPGh_J8yIgEAUgSR2T7PWgRJ5Ymhaibf8oEO8xxtr-OAc3Xa6xg-fyLc6e0Om0OiqcqCVqGSvp5FzeOarXImlr6jCQ-6p2dJcTDfRUQweeux5lj7MIggiazC4E3MhnkAamYK2kw%26e%3D1726569019%26fl%3D%26r%3DD9B4E6F5-89DF-48B9-B67C-73E409F726F5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyyrQIwGr5Hu_71dELoks_27nKjI&uk=2fLdpc5oBiid5l2bGrYsTw&f=Template%20-%20Folder%20Shortcuts%20Header%20%28Scriptable%29.shortcut&sz=26645">
-       <img src="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header%20(Scriptable)/Template%20-%20Folder%20Shortcuts%20Header%20(Scriptable).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header%20(Shortcuts)">Template - Folder Shortcuts Header (Shortcuts)</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAegGDFQmTqEj4mfBYdQ_pPVKjMIfAXXUycXFrnUWodMe_kVB0o0cJx6G%2F%24%7Bf%7D%3Fo%3DAvwXPSV3VQzUuUj7jnzcFwJH1hVPZCqQv3gupSWmzr6b%26v%3D1%26x%3D3%26a%3DCAogwdmRX3mb4yAtMRVRy_OSHPON9ggIFN0vEi_LOkmIJ_ASbRCv66aoljIYr_uh_J8yIgEAUgRKjMIfWgQcJx6GaiZ6g7Z0UWx8EmZhWgy3pfowRRXxAoCSniDALbtUmRzU0a1V0OpPuHImrpITpJR30zG7KnI4ccUOYqDJbdSLXW0b5pHis6brbNjvAsZKB9U%26e%3D1726569020%26fl%3D%26r%3D738F5550-D29E-4A5D-B8CB-2F5FE09B8A93-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7eKrgx-uUXZLeQS_FZio3G_qj08&uk=clia03_13fs0xjKClxm-eA&f=Template%20-%20Folder%20Shortcuts%20Header%20%28Shortcuts%29.shortcut&sz=26716">
-       <img src="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header%20(Shortcuts)/Template%20-%20Folder%20Shortcuts%20Header%20(Shortcuts).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUNrE0XSyXwWkc2aMwLaWX72GyW6AQVkZ5Cx85pgVIPBnWIvHLAeFoWN%2F%24%7Bf%7D%3Fo%3DAhCdUwRJwYXr60kbb5q4IrLnWNzyhyX9DuQyNpJqr-_D%26v%3D1%26x%3D3%26a%3DCAogp6nWthG5T5K-ZyF44MQRtjnfwGD7Z6_WMV2sCvcLCZ8SbRDAlOLJmDIYwKTdnaIyIgEAUgT2GyW6WgQeFoWNaiYR6BYZt7Iy-srlhaWI1b3jNILj7T6Vxnm75TmaQC9eVJWTvRlponIm_brTLVenG8CxTW5dZnsRf8XuDlVazMOzohlvIw8pzdYK9u45jwc%26e%3D1727176069%26fl%3D%26r%3D707BA636-66AF-4496-B076-EF8BD3B5F0FB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DR70yhiT18d8vhEqoECZFgRbgogo&uk=uhbKit-Y-w7DgdEwBEF-DQ&f=Template%20-%20Folder%20Shortcuts%20Header.shortcut&sz=26715">
+       <img src="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header/Template%20-%20Folder%20Shortcuts%20Header.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4489,7 +4818,7 @@
        <summary>
        <a href="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep">Template - Morning and Evening Routine Prep</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASG5UF8ojuMlLOejS9dYezXsZJ0bAdJDS--YAHMsDVchIgmGczLRKMIm%2F%24%7Bf%7D%3Fo%3DAh_PDlrBJ91Y9NWAuJzEMJzNKXtFjZ_6wwlURgCWsKy1%26v%3D1%26x%3D3%26a%3DCAogQnv0NQavbAFCD86yVB7eXOU1Fi-QXgfsxc5ZZZEt_3QSbRDk9aaoljIY5IWi_J8yIgEAUgTsZJ0bWgTRKMImaibzZ7nINgXiBOOrlWGq7DXskYRu91q7J2uikSWu-eprwb6l2qtr5XImcaBBhANBvopoZA39cMR6ApXHjLlIMJYPWf7Si_fpGwhF9PrhZg8%26e%3D1726569022%26fl%3D%26r%3DDCAE503C-0DD9-4C04-8744-61EB4CA4E7F2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D5OLNJpLrsirqNvJN3VBIAUJQ82Q&uk=ZrFk6s5fhdwTLyusrEdJZA&f=Template%20-%20Morning%20and%20Evening%20Routine%20Prep.shortcut&sz=28189">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAe79rImk5UFzkO6yM_nap0Gau7CMAT0xP5TfEUe44KlV2nwkHZa4xU7y%2F%24%7Bf%7D%3Fo%3DAtQLaEsR5OdYMWJszhLSBNAsjH3REL7lLolsSXwQ-3kE%26v%3D1%26x%3D3%26a%3DCAoghPfssiPSKph4wTmhxwgIBX2VF_XKiWRrnBpglMjgz8ISbRCnu-LJmDIYp8vdnaIyIgEAUgSau7CMWgS4xU7yaiZP5CebHMBliRahwimmJbH80PE4I_JdnfPsv39TuuLu0UCLS3DOuXImgOYCUkNBCIbX_WqIWdfOiEPam2KDPsXTE2yPu4qbmAeMnr5w-4A%26e%3D1727176074%26fl%3D%26r%3D618D4CA6-6B57-4662-923D-CF93BE48F29C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D7yYW5Zj1Pu0rHbsQxk8Uvv_GKwk&uk=FuOF8sCbpg0GnTPTWmnTRQ&f=Template%20-%20Morning%20and%20Evening%20Routine%20Prep.shortcut&sz=28010">
        <img src="./All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep/Template%20-%20Morning%20and%20Evening%20Routine%20Prep.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4498,33 +4827,15 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Utility%20Helper%20Functions">Utility Helper Functions (54)</a>
+        <a href="./All%20Shortcuts/Utility%20Helper%20Functions">Utility Helper Functions (30)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/EvergreenList2GoogleSheets">EvergreenList2GoogleSheets</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXFxg3mf5I7qBB6POpEIrkNIHReOAV49N33vQkqqZ5bwCmV_l7yJYn18%2F%24%7Bf%7D%3Fo%3DAsYPODgV-1bwMYCfg3DUhr3i02N9UpJsRhHn7tEcRObY%26v%3D1%26x%3D3%26a%3DCAogTw2-QUT2Bcvjku0_KEBG4kwm83x9LpqqUp1WRhQ5GB0SbRC1sqKoljIYtcKd_J8yIgEAUgRIHReOWgSJYn18aibMEoVMOmdUSbNvjqT1_X8pI0XyQtR2bDUrj6LFZE8F_8uWqcmm7HImjYE6btbFqHeHb9d2EuE3qaravlfcrfXBk-j14DQXY95vLM0GcxM%26e%3D1726568948%26fl%3D%26r%3D1473B1B5-4C2F-4531-933D-F5E67F443CB2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdsH9DkSLt3YTkSQl9NNO71v2suQ&uk=H-clLWAE7H814vgDc8EGOw&f=EvergreenList2GoogleSheets.shortcut&sz=34300">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/EvergreenList2GoogleSheets/EvergreenList2GoogleSheets.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/EvergreenList2MarkdownTables">EvergreenList2MarkdownTables</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASXWPER3CDa0pzT3t4GO1GTjOzd7AZd-wkX9CRjkIH9B-HsZ0FRM8gRE%2F%24%7Bf%7D%3Fo%3DAmaMUOuJ-mpXIKRyztKM2bKkPG8UrxTOh0aZatiYRWSF%26v%3D1%26x%3D3%26a%3DCAogGhKVFUd4Ly7QtDNtwGvLbrUShmSpm61ImGwE-rLuJ-0SbRDgvKKoljIY4Myd_J8yIgEAUgTjOzd7WgRM8gREaiZ6cwMPsqyJW-70OScTBDDMBLcecTiMa9p-BQmKNNGDnfhbCiTw4HImX68t5n67WaD600Z8rCUyWuNxajYJrqIXr_Xe_CP9A40ufbBGbJQ%26e%3D1726568949%26fl%3D%26r%3D98D9E5B4-A312-4168-B6B0-1B79F9EB4839-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DpeAx3NNNVxZfJl7GiQWRT5T6lLg&uk=SpikpaHwtCzcR-skqhrQfg&f=EvergreenList2MarkdownTables.shortcut&sz=31495">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/EvergreenList2MarkdownTables/EvergreenList2MarkdownTables.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Plain%20Text%20from%20Markdown">Get Plain Text from Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfa2VL2FsAVQilsyN6zL6fmqiqDfAfvHF3wAcbxookkOj-osNa2gRC3g%2F%24%7Bf%7D%3Fo%3DAuqYaAKdKqEhPhgjBde8cFT3uMzf7g0x1aBCSK37Uz87%26v%3D1%26x%3D3%26a%3DCAog2wYj3aW2CzVQlTZVAJSuoQ9xg0IIBqOLkBNkwRkB2OYSbRDwxqKoljIY8Nad_J8yIgEAUgSqiqDfWgSgRC3gaiY1kT210tnWmNQFVgmrQuDedASdLgJzqnV91mc7KF_KTP40DwaT_HImzV4opx49-2nDknFG_UlBuTqM89NBb6Qg-iSC09m6umi-OwpX6jA%26e%3D1726568950%26fl%3D%26r%3DB860858F-5E5D-4995-BC9E-060B94DADCA7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dfze0qC1yMOLWmVdfyp5MBKPswpw&uk=1z-5_Og4xjvJcJ_T9-kbwA&f=Get%20Plain%20Text%20from%20Markdown.shortcut&sz=28002">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfQCf6oE-fDFagrE5w0_t5g1XM43AXdthDiHVvpUCOYlDS0i7YrDdVGw%2F%24%7Bf%7D%3Fo%3DAt8eUzGIW4nYRu2hQBclLr0b2ORpZBrDIdlkhKpTicqX%26v%3D1%26x%3D3%26a%3DCAoguZUEVx7NrZE1apMpVqprHA-FYWJ64HQ6k6Iz4SQGvuUSbRDdpdvJmDIY3bXWnaIyIgEAUgQ1XM43WgTDdVGwaiaV61YwMTv-_AQM_re5O_Odoly3gf_pE7rBHy-eiTFUiC5jvLnHkHImDG8D6zFxGNmfX8Ei5v7_ZGTNYYkeXcyCxFkkKH_mJYibwTRSnlM%26e%3D1727175957%26fl%3D%26r%3D6DE929CE-E4AF-4962-A22B-B2BDA891EAB8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-lYh7dzFYAilfJZL1z9Q4gNCfuQ&uk=gMAY3TVNpIzj45V8eHOkIQ&f=Get%20Plain%20Text%20from%20Markdown.shortcut&sz=28001">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Plain%20Text%20from%20Markdown/Get%20Plain%20Text%20from%20Markdown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4533,7 +4844,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Sanity%20Check%20Markdown%20Content">Sanity Check Markdown Content</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAexW6g-VxwrfHcoDOuiq9clN7CujAel0-IPV721MCbJjXPhRxMGJUctV%2F%24%7Bf%7D%3Fo%3DAiicx9V67DT1Jt8z_7WcFl37-HFVxdoxp-jsZMhP74CH%26v%3D1%26x%3D3%26a%3DCAogNc1YxtTKqnUCnA8jAj4q7eZ9_aEpcpBoyOc_84PI11ESbRCO0aKoljIYjuGd_J8yIgEAUgRN7CujWgSJUctVaibL84qGpuP3IG7ssH-nbOQcYpGVY2ir399I8Hxyl8On99dkdahUt3Im4ofQh_TmfFbu3EVd2brq-clg3tmsmkICWqRmPhzyR3JCbFcc8Uk%26e%3D1726568951%26fl%3D%26r%3DB3A7D8BF-E578-4432-93F4-B0FD12A77661-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DG1neGCMX6F7E5hYMh1Gp-87uqM8&uk=VhgTPqKGBmtH4nNtVdq-Ow&f=Sanity%20Check%20Markdown%20Content.shortcut&sz=27637">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARpu96olCEt1p8aZtyHzy4k3GLWiAX-xi-wyUf4M_6FvcRTeI6qaSlig%2F%24%7Bf%7D%3Fo%3DAgEoC1BVniDc2c-Kexx7mKpp_a-f7ckNX3vVqgbyFV_U%26v%3D1%26x%3D3%26a%3DCAogPQLPHyDjzPeSbE8fWdm_KsnFEGNLeSkTpTZYwin8zRcSbRCM0tvJmDIYjOLWnaIyIgEAUgQ3GLWiWgSaSligaiYsenHeozF69r2igwyojXWy-UF0wm3oLD2eaPQ6r1YFbBWv0RrSgHImDOeaEhkASFESr55t-YiGxjv7icU-7hsOh5TQOzn_XR9fO93KLCo%26e%3D1727175962%26fl%3D%26r%3DF762FB16-FD7B-4604-A03B-50496AE612DB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzGlw88Mc74Om5A0qDiVdglnWLUY&uk=68A9x1HQR5Y9DI7WwcfmDA&f=Sanity%20Check%20Markdown%20Content.shortcut&sz=27638">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Sanity%20Check%20Markdown%20Content/Sanity%20Check%20Markdown%20Content.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4542,35 +4853,8 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Sanity%20Check%20JSON%20String">Sanity Check JSON String</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZXDyElm4hgq0yWzt7bx_UuN-JZqARvTyu4p_QCJ8VO5pYj8ukG6aVJB%2F%24%7Bf%7D%3Fo%3DAsgthFtvJE5t2GGSpwo-P5-W4HhHjICHsRWZ4Vg4oV-4%26v%3D1%26x%3D3%26a%3DCAog7GIWD4mLvPg2zfCtgCTgKussEmpnluztfzS7Tg7YfTwSbRDm26KoljIY5uud_J8yIgEAUgSN-JZqWgS6aVJBaiZYdm8ajd4uE5GrO0HALhmXDLL1CLpgjhG4nQ84QcpbjiyWDd6I5HImEkApzv3UpXpVyobnbJUKLOQ-mZFX8cJDKR3UA2fE_BqvTBVAFQ0%26e%3D1726568953%26fl%3D%26r%3DC168C715-4409-472A-B9DB-01F8753FC1DF-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6O8Nb4C2xp7oKnf1RXT-MQT69Ds&uk=hhzxVWTBhgUIkdIBMiO1ig&f=Sanity%20Check%20JSON%20String.shortcut&sz=28002">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbzfAwJDqNjScx10UCJrVN000rUfAbra54YkjvC8-C6-j1jTrxTWXpYl%2F%24%7Bf%7D%3Fo%3DAsQAkOblT5HVM7ww-W1riLmjFGAHiAj32ixnA67D-39j%26v%3D1%26x%3D3%26a%3DCAogCCE5oxhA64_zqZ2l34_DH3KJvXTv6V90RQZTFMZ9WYoSbRDk9NvJmDIY5ITXnaIyIgEAUgQ00rUfWgTWXpYlaiYnIMDEnlpM1uaRhf8kWDfB0RRX0qObc3uhPOR0_5SntKr1xbsgunIm4aL7GEEzvxZhVDr6duWwxAzJGJC0Rmvt5_McR_qXcAwc_2blYtc%26e%3D1727175967%26fl%3D%26r%3DE50E2B7C-2BAD-4DC4-9249-2F5EC338BDAE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlPvb3sY3-5eot1IaT8GXPIzaNjg&uk=358wJyaTokVIdtkSickK2g&f=Sanity%20Check%20JSON%20String.shortcut&sz=28002">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Sanity%20Check%20JSON%20String/Sanity%20Check%20JSON%20String.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Copy%20Watch%20Later%20List%20to%20AReminders">Copy Watch Later List to AReminders</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWdlbfWXPd94vOFQf06pSgCgqVcmAfpNNXSlYgoc89rymnvUNL8TH1i1%2F%24%7Bf%7D%3Fo%3DAoJ6_5caoXHH4lg_COCVEGSK2_Yf-No2hrOYBRnSjZCv%26v%3D1%26x%3D3%26a%3DCAoglRGgkBD9fkcmJZinWqDEjlPiiq6Cfu1ChfrEzLSccWwSbRD75aKoljIY-_Wd_J8yIgEAUgSgqVcmWgQTH1i1aiYMQhztTcC7rZYxCPaIdw1IjUhdvVUIQg0FqWShJj4nra5--nk0XXImFW14FkBMMZ0HHoGFbPkykOy4xHxr4afSRANL5TdA0rolyM2g8n4%26e%3D1726568954%26fl%3D%26r%3D14852279-E1FF-454B-BD53-E82DB5AEA3A8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DP4akJkeG8rKaFwJ1rUn8M2wzw-8&uk=DrxnHUhydy6d-bhtU9Fkeg&f=Copy%20Watch%20Later%20List%20to%20AReminders.shortcut&sz=30049">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Copy%20Watch%20Later%20List%20to%20AReminders/Copy%20Watch%20Later%20List%20to%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Copy%20Reading%20List%20to%20AReminders">Copy Reading List to AReminders</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYrmX8WIYGUjiFfb-Vr5XdpKNMINAZ9-kl1-lQO4hqajSxABRJYVSbV7%2F%24%7Bf%7D%3Fo%3DAiSbTBY4B2YT9zt211Ys07JqoyvlIHUSm62ouFly3BCy%26v%3D1%26x%3D3%26a%3DCAogyrcSR-W1LdnNzjnKkypiLdIvtg8qpAvXquqn3YskTbcSbRCD8aKoljIYg4Ge_J8yIgEAUgRKNMINWgQVSbV7aiYUDOHuaC1a0dDw3Gr_F0MzDwlfeU6LZoYSAEGeXtPnMTSdu9jI-XImXXxCclPL1dc-dsY4SNnuXYdtX04CAtbfMBHqNDRLSgeM9doEsng%26e%3D1726568956%26fl%3D%26r%3DF8E9ECC6-1411-4A91-8F03-FE10B3862EA4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNSfCQ6qXxMayjQyOTRlxHbd03O4&uk=GehdjtkuScmvPJYoGYavJQ&f=Copy%20Reading%20List%20to%20AReminders.shortcut&sz=28397">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Copy%20Reading%20List%20to%20AReminders/Copy%20Reading%20List%20to%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS">Show Notification for Brain Dumping on macOS</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZmc1B9arYWWgjFK3xuS6tvdSFYFAZfxbpsFhAB7Y23bCBSzPZvHqYUe%2F%24%7Bf%7D%3Fo%3DAo2Ot3hGTxFKdj6nV-aN-5njra4GqrNxGuBENYOmDu28%26v%3D1%26x%3D3%26a%3DCAogGzDRBcj80-6pIFwjgID08IsFsL4kTKonxXdrGCfjuC0SbRCj-6KoljIYo4ue_J8yIgEAUgTdSFYFWgTHqYUeaiY2zoQYbWyLWXQyNYRrMBgQN8CEryL-dKzAQk1EpuZpfcMbB82RonImyWzPhZoj3jFt-gTrnoUzrA2_H6fIR7sODMJnBZ3hengWbmQsDgo%26e%3D1726568957%26fl%3D%26r%3D5786DC5C-6182-488F-8CC5-9B19FD97A96D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DZwXvJoXBFSMJRHa7vKbiVwozjGM&uk=Qq1yBYOyt3X5ITyv-Uw6sA&f=Show%20Notification%20for%20Brain%20Dumping%20on%20macOS.shortcut&sz=27381">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4578,7 +4862,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Run%20JavaScript%20Code">Run JavaScript Code</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXgOmPaNSfEdzN_smBGa5F2mnsMTAfiPMn6Ic3cFxQmHB5WE9mWxQAxD%2F%24%7Bf%7D%3Fo%3DAp7tUZ7SMAius6bH_hrm089vKXVao2QhCYgM7bS-F0qG%26v%3D1%26x%3D3%26a%3DCAog6CYC2WZjORg10ismA2JxVq4tEVQ1yIGuguMdXQyIrvASbRDlhaOoljIY5ZWe_J8yIgEAUgSmnsMTWgSxQAxDaiYD_zh9AzAEG7OdG6aH-V-Yd_cDPgh3SKKli9ZqjZMz2smJbF_jGnImpq_N1oxcnh-z-aGhndemtk6WO3A1i2_NBOY6G2Lh05UDGXPRVY4%26e%3D1726568958%26fl%3D%26r%3D292ABC13-D3F3-4826-9D30-BD27206D2705-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DoYLN0sVzk-fiWFqhldYjCHxd4q0&uk=8ebh9Qd3wcyvOc_DP1GrvQ&f=Run%20JavaScript%20Code.shortcut&sz=27499">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZpVRydMESZA7PtdEKDMhDZghsb8AVOtdNySKIFRqo_FhWIbDfQncLe8%2F%24%7Bf%7D%3Fo%3DAobSX82MYrEVAqlNGT0aGVBd2WTKHlBCB3bkuOX6LED4%26v%3D1%26x%3D3%26a%3DCAog2iJhQsxU0pn4ZTJWwBMamcnkb6zEEnyk4q4SaQlHCzgSbRDTjdzJmDIY053XnaIyIgEAUgRghsb8WgQncLe8aiZ2QMhb0Ccf-qRtUKKDbqkBnXmeE90kPDwEy7P7sEWVkgD_kiHXq3Im9vXEgwl3xgY2Lls4I1ROpauAKauOlpv4GcLXIBWqZdNYq-b3F4o%26e%3D1727175970%26fl%3D%26r%3D2C1AE417-C4F5-40BF-B2B5-A49538B09D20-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqP5jDWrjxyc0tt7hgVi5XJJWC4g&uk=lt0t5gP5WQBTJuIMdiqgiw&f=Run%20JavaScript%20Code.shortcut&sz=27498">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Run%20JavaScript%20Code/Run%20JavaScript%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4587,7 +4871,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Random%20Number%20Generator">Random Number Generator</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAexwf3rWqkP5p4QXdO5EJFBVIAaCAWsATlX_MN-bthkCFmG-XitmeHBK%2F%24%7Bf%7D%3Fo%3DAvHRpHEj3a98kIlR0NNAtHzUBRgXAcy8SR6mkjdYLwje%26v%3D1%26x%3D3%26a%3DCAogT7AlLgPMUeVw1j_o_XrDC6_nBAW2ZrtVpKiSsGYGAyMSbRCJkKOoljIYiaCe_J8yIgEAUgRVIAaCWgRmeHBKaiboxgwGeLqgIlZkiipSM6zUrpjwGKatjjoFsvhhqEm6_cFZXPrkpXIm-XP8xIcLRfnRYIJTNkkaxZkLjU2RTluKodgwIVYSpJnG3gqHENc%26e%3D1726568960%26fl%3D%26r%3DE17FB5E9-87BA-4A4A-8E9B-E8259F4B547B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8uIEkPynQLPQ_K_MXivWI5aIqeY&uk=dq_z3hI0vrXwSQPYHWhGKQ&f=Random%20Number%20Generator.shortcut&sz=28761">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZlWyk5km6NLNWwrfMk_rdvFLhDgAevD49rZ8pKOQ_-2_gI4w4RfaVnO%2F%24%7Bf%7D%3Fo%3DAuFXEbFDFcA4RSp_-dI3pjyeSR1wippvpSiqsq3Lr6QB%26v%3D1%26x%3D3%26a%3DCAog90PQ_FyxTdvsudmOBbcZ0V8mD6WZEluVjRfs8uVG-58SbRCWo9zJmDIYlrPXnaIyIgEAUgTFLhDgWgRfaVnOaiZfkG5KFL_zipfo0P9WVGqav9bJuNRGdap-FFp52314-CHd-HjRH3ImCjbzHpeD7Kn1DoMwB5VlwWL1uco32t6RkD-YQm7gqFb1jrO6jXg%26e%3D1727175973%26fl%3D%26r%3DFE87E8A4-E3C9-4F50-A0A6-D3F70611DF1A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DU3TB5Nai8i8kdrgmuXMvZ8WS7WM&uk=BnYzwVVaJuhBC3zd-IlvZQ&f=Random%20Number%20Generator.shortcut&sz=28816">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Random%20Number%20Generator/Random%20Number%20Generator.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4596,7 +4880,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/ISO8601Duration2Seconds">ISO8601Duration2Seconds</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARkusMcUdJJCNdgFtjtp1lCqnZsbAfK0OfUvhEFC2eEEoUSqrklp1WBY%2F%24%7Bf%7D%3Fo%3DAuILQOd16QaVTxGEFBP6m79ehg5kGsF1HI41ZrDfPiWS%26v%3D1%26x%3D3%26a%3DCAoglXn8JVPD7Xgt6gL-tvFE8f51EKqLM0mfxtQy_HiESc8SbRDKmqOoljIYyqqe_J8yIgEAUgSqnZsbWgRp1WBYaiasgEIOwroq4KsW298AywM3MwXJB83ykVX8jZEsIxO_l2k1LTwpYHImJI7ba_fgNUKHDMI0Yx2UMFOhR1ZEO2jW0fCgyUPpI4nAMBT_UQc%26e%3D1726568961%26fl%3D%26r%3DF7087680-A988-4965-A43D-CBD3F74EA317-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Du2tl5h6lLJi5_o6ZXnpsChw9Zjc&uk=fsfjLUED4emcmg7Aa3JSBg&f=ISO8601Duration2Seconds.shortcut&sz=28017">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWUHr2x7PyGrtnW7a2ufb404lgD3AQtbbS9SO6H_FXjHyC6NR5d09SCX%2F%24%7Bf%7D%3Fo%3DAmMtxs0JJW-gqK8Ka3RzYe8y-JxGbyrHOKCKc97HqlNT%26v%3D1%26x%3D3%26a%3DCAogqk6bS7_qf8MPnqhyrFvTspGipB1Rt1VECADOcK9Pw9cSbRDCu9zJmDIYwsvXnaIyIgEAUgQ4lgD3WgR09SCXaibdIgtNiy-QfTv9T5rGOBdde8OfxiTkmJwfNGLeqNGjSESGdduBP3Im_u8wx82lBdqXnbrKTTxqGX3MkqBXp8x0aSBKxafvaAh5Z13LvaQ%26e%3D1727175976%26fl%3D%26r%3DDEFB79E4-B7B3-40DC-92F3-674DD30141E1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJEuSAjiihxqPxnD98NJYPACgQFY&uk=wSg1YcMUrZ_wj9kWK7DQ2g&f=ISO8601Duration2Seconds.shortcut&sz=28018">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/ISO8601Duration2Seconds/ISO8601Duration2Seconds.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4605,7 +4889,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Format%20Duration%20To%20Seconds">Format Duration To Seconds</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXoI0QTpN_IgW0y90M-q2TbdT-kBAaNn22d_KWvneXHbto3KUEeG6X_j%2F%24%7Bf%7D%3Fo%3DAuWMNy60zEJOGg3AOoNSF_oNLQkvjDuSdboK7neRA0mc%26v%3D1%26x%3D3%26a%3DCAogof-rmHUtVM0Qj2ty-wN2Yi4IEIws9iGdG_mgZGPAaZgSbRDdpKOoljIY3bSe_J8yIgEAUgTdT-kBWgSG6X_jaia_NRhr-pWcaBUkAvLcdcNNvX1jvq4rwMfxTL9BTpkqgQudPcu913Imb11zbjUVLjVv9NEMTawC0m3fcCBM3PG0AxiiLftrbCKFn3TDmGU%26e%3D1726568962%26fl%3D%26r%3DF4C474AF-7103-445B-9E73-51391BD37E86-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dq_6L0z2XnVj-rBMqlwXzmUdSkDU&uk=68iLuzL7rTLPZLJQsWZXnA&f=Format%20Duration%20To%20Seconds.shortcut&sz=27685">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAf-cGOY5icy66iXu2dQiGltH83hMAQR1sfrsYGlDKGhyvnmScS6gk_m0%2F%24%7Bf%7D%3Fo%3DAq8LVuTMch-PwhWrz4F2WECRKHPugPglC6iHT4c0VzO2%26v%3D1%26x%3D3%26a%3DCAogcDaTkqRWer_QRHKH4UfLUpn1-2IQ8Kw2pzUcOf6Oz-ASbRDB0dzJmDIYweHXnaIyIgEAUgRH83hMWgSgk_m0aibNTGuPnJHqLe9THJQUbEGL4BPvg-yT8nbQsIFgs-fT2NF4vOTOVnIm8-V94i_DNYp8LApt2_AGaiJFqOo_jjzZsCRUaiWJkqzj3HS5npQ%26e%3D1727175979%26fl%3D%26r%3D46ECA7A1-FB1D-484C-8690-B2980B0DFD3E-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DO-yVwvqvhBvPMdoE1AMzQ6WhlpY&uk=DGm1LOHV2PLLUsFNX-3OfA&f=Format%20Duration%20To%20Seconds.shortcut&sz=27684">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Format%20Duration%20To%20Seconds/Format%20Duration%20To%20Seconds.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4614,26 +4898,8 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Create%20Query%20Item%20from%20Dictionary">Create Query Item from Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUJOlLtqbs2NpS_nqgcGJQUGcckQAZu8EgiT6HNGVsn-UzCxBSmKVikZ%2F%24%7Bf%7D%3Fo%3DAi23DDrJE9rnuFllTtLQ5LtUOEsNsONh2ZIM7ueDFUEK%26v%3D1%26x%3D3%26a%3DCAogCoGJcEYoGiCVcTzoN3ohwc8iBcqfrHg8Q7uKiEcHNXcSbRD2rqOoljIY9r6e_J8yIgEAUgQGcckQWgSKVikZaiY82lDZWTW9hoEIZ_TkxSHg1HZrj7_2c7r88_X-rlVtZtt5Fg9f-HIm4M925Fl5_Wc57oiOk9SX70rWxRobRIBllw_nrvoCOEYRzqosK6Y%26e%3D1726568963%26fl%3D%26r%3D7529F297-E418-4825-9C1C-93007EE60C32-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjdF343VIf86-UKb23tJqYEUq7F0&uk=aeK-gzT_s8HL_70I41SJaA&f=Create%20Query%20Item%20from%20Dictionary.shortcut&sz=27317">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU9bucqpUNhn6A-IjJAAWsfcJOA1AZF33lvzETY8mDhbHGmXH3vfOG9q%2F%24%7Bf%7D%3Fo%3DAu1hesRVApcIFqnw0pdcGSUwqsiIIEv7ffLdkXBDPveO%26v%3D1%26x%3D3%26a%3DCAog04iUJ8RGaUlZIuV2R12Cbckhn9FTYBmy7lnNUBwc5dYSbRCq6dzJmDIYqvnXnaIyIgEAUgTcJOA1WgTfOG9qaiZPaYlzpOo0TjJaW6QCFhRZKvr3zthN2Ldsd3QW-08iCmAGFdxD4XIme_suWius8xjGJIC4fYSO4RjbRPGLvDQHq4STNtu9oIzGv_cXRfo%26e%3D1727175982%26fl%3D%26r%3D8F0F5B45-6EF0-4E69-B4A6-110F8A58FCC8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCHWzKfO2SqrFvNGYuvPBG75Vb2w&uk=3NnbTGCetl_fA6zELervnw&f=Create%20Query%20Item%20from%20Dictionary.shortcut&sz=27316">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Create%20Query%20Item%20from%20Dictionary/Create%20Query%20Item%20from%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20iMessage%20Chat%20Window%20for%20Contacts">Open iMessage Chat Window for Contacts</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATDZheBWFBo1IijpSRi24DqXHPhFATCpIhOhvvfQafz2pR4NAS6TrCzs%2F%24%7Bf%7D%3Fo%3DAqoDlkAnGqqbtWh9gBqxSTWeXzd8eA_8unsaANYKmZTP%26v%3D1%26x%3D3%26a%3DCAogvuasWblpjbea5OLwq7R_RPE9sm9uv55lfLVTaS979RQSbRDvuKOoljIY78ie_J8yIgEAUgSXHPhFWgSTrCzsaiZcwcDdkLIH491hlJBCtgaz8sFjyBs9wPx4bXujsOzA1kQfjLx7GnImsVUQgd4Ro_bAhvIm1AA3XZNOCRlFrrSnVd3PKQawWULJcqrQdkc%26e%3D1726568965%26fl%3D%26r%3DF6399775-A282-4864-87D7-6F7573E56957-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOvk0fZSc61zY-pWuXRzKdKxBq3M&uk=Sc0-taIwaa9m262lx9gR5w&f=Open%20iMessage%20Chat%20Window%20for%20Contacts.shortcut&sz=26782">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20iMessage%20Chat%20Window%20for%20Contacts/Open%20iMessage%20Chat%20Window%20for%20Contacts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Organize%20My%20Photos">Organize My Photos</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASrRvwjEJ3vgGMeVXO1MJZq-x84FAQuenrgrspmr_xLsr0zVqFeoxBtJ%2F%24%7Bf%7D%3Fo%3DAk3rXamYswqDurc0WKEgz5-S-2bIZdW19ZbLKn2CPnHz%26v%3D1%26x%3D3%26a%3DCAogAK9-iX22b1dnG-fzCrEo_h18N9cZeGvqutTJjCci64gSbRDowqOoljIY6NKe_J8yIgEAUgS-x84FWgSoxBtJaiaCIqd4Yri4SHmc3pbTookp_sENfRocLYFeeX2CUbysECBlTDbhonImfi2U2iwc5Eah-L4xusDNI7HU4G2vs4DFbwx0llorPPbNOLzm9Gw%26e%3D1726568966%26fl%3D%26r%3DE52F21BA-CFB1-4A0E-BB47-763C1E763503-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6BqVGlE1Gi-N90DhVNu8--wrceE&uk=1261CSGYVUJPNc34svpb3w&f=Organize%20My%20Photos.shortcut&sz=28422">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Organize%20My%20Photos/Organize%20My%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4641,7 +4907,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/isOnline%3F">isOnline?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASvB3yMuPnSksJIrIBWtO1SNzR-8AeTYrq3QrCLDHloPSs6NndLsETYX%2F%24%7Bf%7D%3Fo%3DArDxbzLV5zTH4wWC3yCc0ybDMwx-PQO7uPxEeuag4iQJ%26v%3D1%26x%3D3%26a%3DCAogU788JaGpiN6EwzEcvEcL04J2uXwhRK2JNHtr71pm6X8SbRDpzKOoljIY6dye_J8yIgEAUgSNzR-8WgTsETYXaiY48Z24MbaTroM_AinV8_b1VOt13BbS1ImC1CgqsxD3qfkhirT723Im9FO60tedbWWbSsuOFqwUjX2QNMhZs2tb9fELVfvzXj7DOTlSdRE%26e%3D1726568967%26fl%3D%26r%3DB26D7CA1-EFB1-4897-80F0-5C33523D39C7-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DD5O691eZwFhCLcMeBCpF7RsiZHk&uk=1Z2DQO1C7SpFGhGPUgncog&f=isOnline%3F.shortcut&sz=27422">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZvcc6-C--VrhW75Epdf5RpOSv3aATX6TSVK4jUbNRp_SV2ApBWY52Pa%2F%24%7Bf%7D%3Fo%3DAmTO4_KL-cDqcMcqWcoaaWV1uLRiKgbbNX6wltnmoH2O%26v%3D1%26x%3D3%26a%3DCAogNLgHChdukZjfJEI5VJaii9NA1zro6y1S6fAIDEA0lwgSbRD5gN3JmDIY-ZDYnaIyIgEAUgROSv3aWgSY52PaaiZqktHnrDw8UFIfg98H8PsyEzjBDFRVeDULvmOt7WQuQ2sqRdI7FXIm-dHg068nw-k3k1asBjjHWrazyQUNs8w5hhAGh3uykjVporYPKT8%26e%3D1727175985%26fl%3D%26r%3D5064D3AC-579C-468C-8978-B5AD42CCEB18-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-vA4G8Fummi7UHChn4RzAf5M4m4&uk=66rFXkqZTwJ_CKNtaRWr5Q&f=isOnline%3F.shortcut&sz=27421">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/isOnline%3F/isOnline%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4650,7 +4916,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/De-Duplicate%20List">De-Duplicate List</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARDovmqExhuuHViGmpXGo374VIy9AdJjTCzpbIc4jjeMkx9mc8fN4n3j%2F%24%7Bf%7D%3Fo%3DAn5KdDnWnj3UsSI5_iuCLSuJWjFP7v9Ox53J_K2tzPlu%26v%3D1%26x%3D3%26a%3DCAogIrSBxhg7txfgA53gDUAtRX4Egury5EMvDutz8bL6kBQSbRCI16OoljIYiOee_J8yIgEAUgT4VIy9WgTN4n3jaibUBZw49dCR0CC5DuTL-yg_I9CzIy2lD0eTdQzMNYteb_7giXFCpnImXZUY2A28PBckjnCNPZrcTi-eVEW4gZkctIXHyj4lP_vTXbFcrzA%26e%3D1726568969%26fl%3D%26r%3D393B6205-9E6C-48F2-9E6F-E36ED02747EB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DfEX_k0IN-ZOZKIvsDtgyx5Rsfzk&uk=q7mZwL7bgpGTZEmUCyOIgg&f=De-Duplicate%20List.shortcut&sz=27210">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAedzJ1O7_fmMiXRIXB6D22UY7CVqAVng_TtQZfpXgtiMYfkOvcY2x-WM%2F%24%7Bf%7D%3Fo%3DAoznrKTwmccF_8wEBJZ1ZVPnAJdEgTU-Q-KetRkeion2%26v%3D1%26x%3D3%26a%3DCAogsj8xAfCHJ4Ndz6kNh2mLHZbFbogSlXJvrIX1J8rTRAESbRD1lt3JmDIY9abYnaIyIgEAUgQY7CVqWgQ2x-WMaiYEy7iRHF_PVN8UXpbU2FiKgcam3sXQ7VGGGpzX2k278TwBrNeBW3ImRYoBycZlcT-LiI0YORBO7eAsNlJSAArxyIhbSC7BtwMqo_xZvFc%26e%3D1727175988%26fl%3D%26r%3D06F73B70-D32C-4ABA-82F8-5764ABD3DDB9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3Tb44Gaz9wm0_G4muAJR2s8TI88&uk=MssNR-kJya4GydBjV7a3wA&f=De-Duplicate%20List.shortcut&sz=27209">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/De-Duplicate%20List/De-Duplicate%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4659,7 +4925,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved)">Remove Duplicate Lines (Fast, Order Not Preserved)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYbc8HR0D1xGVLb2TNoS4F5fZgJoAdhgt4X7Zu1IP8lZB3oYt4VQtpsb%2F%24%7Bf%7D%3Fo%3DAieHrHPL_ORF0b6qxi6Td4LdshUCHQXhRLUNsADNLz87%26v%3D1%26x%3D3%26a%3DCAogI9B2zWMNcv94w-bw_Pbw1ob5KxCCSJbM_8HU5Nup9ckSbRCO4aOoljIYjvGe_J8yIgEAUgRfZgJoWgRQtpsbaiZhy4UcpOeRjE_Xat-whNurXpz-ZQyDV3sJ1jayEs4wkgBvj0rwRHImoFi5LECmthYXqZrviWmsNI50IYFhwaHRDoFewbq7KZKlz04KxCo%26e%3D1726568970%26fl%3D%26r%3DCE2BDEDB-D29F-46CA-92D7-34CE449605AE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DS1Znq83EedEJx22eaIm_4u5lJDQ&uk=eNnCFF5feDRcFlKB0Zp0YA&f=Remove%20Duplicate%20Lines%20%28Fast%2C%20Order%20Not%20Preserved%29.shortcut&sz=27023">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXlSVIKrGWpbcrl1fD5Yx3dU551ZARm_KaOC-06-pFPVqF6UoPm2XBtB%2F%24%7Bf%7D%3Fo%3DAt3yCkf_7bvAJh587Sw7xNe9hYYi9fMFm7oUduOYRhXI%26v%3D1%26x%3D3%26a%3DCAogafS_1Verm0h9j4NCWXKQRSm7EnNN8RX75HgYKRm9h7ISbRCErd3JmDIYhL3YnaIyIgEAUgRU551ZWgS2XBtBaibRg7Qx5W5b_eUH4B0SjlLjtwk00OORlQeZzyIewpCMX53tI19wsnImhHDncp937S55kucnWRqAEBDcJQgE66GVQCnWkVx6lq2jB99OjEc%26e%3D1727175990%26fl%3D%26r%3DC4EBF1C5-AAEC-4764-8DED-981893EE4F82-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DyfPkps85_xzfZjF6Tkyx8vhbU1E&uk=0UZeUrhdJ9W4rg0Bf89V9Q&f=Remove%20Duplicate%20Lines%20%28Fast%2C%20Order%20Not%20Preserved%29.shortcut&sz=27022">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved)/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4668,7 +4934,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved)">Remove Duplicate Lines (Slow, Order Preserved)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAa9sV955emxV9_PykVwXzkwUmfqLAWWXiPOYMt3y0Usb9MnAfZPoCpkM%2F%24%7Bf%7D%3Fo%3DAmtyxvqKSu0y5d0Ci1u_ngVU6fSDGpFBp4uV340uUol7%26v%3D1%26x%3D3%26a%3DCAogjPw0iTyIVo5MLOUpGENYgg3CTo52YAojriXErZBX4ggSbRDQ66OoljIY0Pue_J8yIgEAUgQUmfqLWgToCpkMaia7tqRSgwLat3VIyeJ3yLwGepQzofC0H72yaeuADvHXcsGf-dN3rnImnlqtcdoeVyOysTRkg7Uvlks-Mob_1s37ptvluUrDcU9ztKDPGY8%26e%3D1726568971%26fl%3D%26r%3DFAE9B150-2B8B-47FD-9988-0859E9130F6B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DmioYTMjDwXWo1UobZN_IwhCw8uM&uk=7wcKUIHpoiORQEvJqnNYVQ&f=Remove%20Duplicate%20Lines%20%28Slow%2C%20Order%20Preserved%29.shortcut&sz=27293">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYa5kgFrHMkbtLPpn0-Hy-PXyomkAcjjKBRK7kCqPmsbaofRnx8_g0YS%2F%24%7Bf%7D%3Fo%3DApaJteHE3RKUhCujenscT6BVHpVa-ZihO92uk4Azy0n1%26v%3D1%26x%3D3%26a%3DCAoghB1qw3-i2vWXca9OzaJWuwbcqW14YBw6vk52rjryhfQSbRDRxN3JmDIY0dTYnaIyIgEAUgTXyomkWgQ_g0YSaiYkaGkK1l2KERrJsfjUjAMHyIzWtTUXcLZ2ZiUub1G85bSQO2X8MHImb-09bJEoKMIYWmA5lXr2bKh0qSmPZN_WL2y-sjFjUCNU2tSDSXs%26e%3D1727175993%26fl%3D%26r%3D290C6F58-44E3-446B-B87F-4DB0F18EF0EC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dl0SshQdSUW_fA0WReQRXqrYD8Tw&uk=GYpGPbMWNicnAW63R6Zfpg&f=Remove%20Duplicate%20Lines%20%28Slow%2C%20Order%20Preserved%29.shortcut&sz=27292">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved)/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4677,7 +4943,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Remove%20Empty%20Lines">Remove Empty Lines</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQYVVbXqoTJXKdqX3BA5p6MIaNPCAUP4YrZjTa-duTZKIZIoFYcg_aeE%2F%24%7Bf%7D%3Fo%3DAt6e-IL7hBqMFVhtQxeki0fut5T6JmyDJhIh44U75ZN2%26v%3D1%26x%3D3%26a%3DCAogTLURACmKqMntqH0kL81_3bW26VRU6kzekuKCnGmrKskSbRD09aOoljIY9IWf_J8yIgEAUgQIaNPCWgQg_aeEaibWANxF6VcO46Zyh8jqwMgZCBXf68ZiZ5OvkgfANwsI9-w7Y6SIuHImZwP8RemdW_sP0xsoVn_uV7XNNnAvFqYJXo6Nd3fhRKysGwFVVrY%26e%3D1726568973%26fl%3D%26r%3DBC642BBE-DBC0-4F5B-B560-A9BD2E4AE883-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dn6R64TMBNAAXNRLwiDic9u4AKT8&uk=nQ-ZpITH5jlg56JLb3xpPQ&f=Remove%20Empty%20Lines.shortcut&sz=26709">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfzVo-Ey6PXC0jINgPz7KAe8ExaCAaryFBavK30fKOlO38XP6oRTQDFR%2F%24%7Bf%7D%3Fo%3DAgV_OFChwUKXzamDpBpr-AsDLOeoC5QGbCoZ9vQOfgyu%26v%3D1%26x%3D3%26a%3DCAogeLI2ywFGzH0JAyytNt8RM1DXfrX1hHu5R3vYXtv89mMSbRDq3N3JmDIY6uzYnaIyIgEAUgS8ExaCWgRTQDFRaib4L5ULf--Q-1LTAlKAnC3vtB37nabnZTMYp7QElSdy8gZhFKt0fnImY1JMK9x-i9UshMr1aXvJFXACSFBKEAHs5Bvs-Gt389Pgo1sfiwc%26e%3D1727175997%26fl%3D%26r%3DDBB5CF09-FD51-4916-8E8D-83533980F437-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjpHbBB3q_3_jJLApFSjDNz_L30k&uk=0kkMbalkH7qvBZTmdrfALw&f=Remove%20Empty%20Lines.shortcut&sz=26708">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Remove%20Empty%20Lines/Remove%20Empty%20Lines.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4686,7 +4952,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Trim%20Leading%20and%20Trailing%20Whitespace">Trim Leading and Trailing Whitespace</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU4RfoiHniBpddhwEHtQ9WC5b9NUARTKkbp_gd1iBuB2ldP4j9hfTPPX%2F%24%7Bf%7D%3Fo%3DAue3_cW2yHgOea5UZFg-S9BY-w8oQsbArkTnOjsjnzrL%26v%3D1%26x%3D3%26a%3DCAoggtoThVViQwDGFJtITc0NHAibVAtKXHPmOyhiZ0h7F4YSbRDj_6OoljIY44-f_J8yIgEAUgS5b9NUWgRfTPPXaib4E1RLk3yS19W0tvnIdIaE_5DqmBxdW9oPmmUQZfSzGcsWTrjDRHImSsOG3gxDeXI4i2_Rr7c5_vem78b6DSn5ZtD-Lf7ayDpJws2ScQU%26e%3D1726568974%26fl%3D%26r%3D2081D4BD-E9C7-42BB-BC59-48B4DF995AA2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DF19t6LNAyi5eb_U_C4el4dHp9Bs&uk=qb_myOjT3-y3CjhiW3aJkQ&f=Trim%20Leading%20and%20Trailing%20Whitespace.shortcut&sz=26636">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARAH5gPugUYItz6t0jISg8Myf8WJAVDmdKC4KGMRF8R2ZzCaZHGpTqDB%2F%24%7Bf%7D%3Fo%3DAqjaOC-QvjW9bEivT6OSpqYYkYqpIjIW-3khMkrlaMtk%26v%3D1%26x%3D3%26a%3DCAogiXQFU1NZPrfIlTo_4YrW8r2JHz4hAHimp_TEgbNYyoQSbRC88t3JmDIYvILZnaIyIgEAUgQyf8WJWgSpTqDBaiZxVgTIAfW-ECjSv4hGHXH3cMzPVgRvV0EApzfgQzTtxqM4qEEevHImHCca7Z6pHK0FFBU-FMRRdh2R_GfhVtJ_uI2sTC-KdLnxrWlY2aw%26e%3D1727175999%26fl%3D%26r%3D743BF63E-F6C0-4AE8-B800-3105C335DCE1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_JlMN4J3EBM7c39Zo4CpARZ8eeU&uk=5s7uc0QQHlPSu2JOq2Ging&f=Trim%20Leading%20and%20Trailing%20Whitespace.shortcut&sz=26635">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Trim%20Leading%20and%20Trailing%20Whitespace/Trim%20Leading%20and%20Trailing%20Whitespace.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4695,7 +4961,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros">Format Numbers to X Digits by Adding Leading Zeros</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQPIQ-rtB__OBvZRycuMb-Im3TOzAYb8nvM1ImTRGsyo0FDPqFBlwQve%2F%24%7Bf%7D%3Fo%3DAiVQ0QZvxwxvXeiHFCJQCPumXRMxUcG4A0J59aP9ibFO%26v%3D1%26x%3D3%26a%3DCAogrsdLuGJWQ09SXQ3EOTCd6ZRGGThlmRjbEnYmfL0KzLISbRCeiqSoljIYnpqf_J8yIgEAUgQm3TOzWgRlwQveaiYQA79dTJIA4CXxoUMADbDSQFxDVL7vy9hGNxxEqj5fxt6a4RfiFXImijtoomOl5kzki6qGSNhQlQWJ1ePXkDg5gYsh94hrWVrd4v_yvj4%26e%3D1726568975%26fl%3D%26r%3D6FE513EC-0868-46C6-B5CF-085C54ACC45D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzJ3p3kZouFq3ADzbE3pTJxvH6VY&uk=zVQDo0lIqJmOh2dMtyZVpQ&f=Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros.shortcut&sz=27389">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUb0O-ELEd8Uk-v1FMdVJPQMrN4CAZ4CKmnTc2CXvxhaJhtCnCd6ncSb%2F%24%7Bf%7D%3Fo%3DAqZlGPsAmRoHYmYlbtwIgSpE2Wzg4GKRXOnJApuy_ATv%26v%3D1%26x%3D3%26a%3DCAog7jy4dtES4FPuGpEII9WGyAbjHIqydfTAOGm1Pbh3c1USbRCIit7JmDIYiJrZnaIyIgEAUgQMrN4CWgR6ncSbaib2fo2NwRRMWqGgR1gXfxBihEWoaXXNhXK0ZDQ_w9f1g34XefbbOnImPp7a9fNUKg5DaLHznBryfZ-KzfwZygyebKoefpAjUVuzlbp1a1o%26e%3D1727176002%26fl%3D%26r%3D12D20470-9828-44FB-A7AA-29778192E92C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3KXbGIRFC_DWUn3j5cMD4AZMAWI&uk=R7VNe6GDKzJC_wZhNSvZ1g&f=Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros.shortcut&sz=27388">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros/Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4704,7 +4970,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Extract%20All%20Digits%20From%20String">Extract All Digits From String</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAR2QXT2xGjujOv7Vev-alxXR30xoAe5qRbir6fpaRSKmRgcNDU9dpLvr%2F%24%7Bf%7D%3Fo%3DAsAgQbuMIu6G8c8aFLl9mlIzISnXrqvKIhJAnoWI1EeY%26v%3D1%26x%3D3%26a%3DCAogteVNsnPVQU8K-YiLN3nwZKy0FdLNYn-Dq0oSpi1XkiUSbRCAlaSoljIYgKWf_J8yIgEAUgTR30xoWgRdpLvraibfkPsGuZaEFS5TRqW7KKyH_KzcWukagUTOJ748hDOfdqWWTD6BrHImnehrXrvRgl7s98WlOsqHdj8jHmFNM9Ump6uatcyXEQb_LKHbQgk%26e%3D1726568977%26fl%3D%26r%3D5B918C6B-F7EC-4FB9-B261-BFEA68D84391-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Di2KZTZrjz14COHuJHI3OE5RYdoM&uk=_JQgOjNmc6KSoLcnx5H9Ag&f=Extract%20All%20Digits%20From%20String.shortcut&sz=26870">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYEVwLB1gwlq9sCXcOzbS4xQ96rOAYy61PKi7lM60OaNF7hhKFB0VV8f%2F%24%7Bf%7D%3Fo%3DAvZ-d2W4Os4eFYIitOVXuo00tXt7MkDWXalBVqXB3qpy%26v%3D1%26x%3D3%26a%3DCAogFEmyoh3IYKjR5yvxNTDmQMH0T3nXinrs9jLgTV5yMmwSbRDfod7JmDIY37HZnaIyIgEAUgRQ96rOWgR0VV8faiYPocWMiNE2iLGsGb9122fN24gJEBfQYqDQ0RRFz4cT9HLcDnaHDHImDg86hpDW-eW7eyyeiqyHH_Ole3XfEPcIp0fL-1rjz5sMkAOlfSM%26e%3D1727176005%26fl%3D%26r%3DF434E9C7-C948-473C-A335-148DC73A0C74-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbNI_W1NsW7pTiTGFBGJ3Acdlag0&uk=JhOmp5RfLZfNlwnDlrLO0w&f=Extract%20All%20Digits%20From%20String.shortcut&sz=26871">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Extract%20All%20Digits%20From%20String/Extract%20All%20Digits%20From%20String.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4713,7 +4979,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Decimals%20%E2%86%92%20Percentage">Decimals → Percentage</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAexk17e91Pr52HXfNsc7USMPKQ2yAZRPgD-1MrtXbrCBFKeYcN5_hu2-%2F%24%7Bf%7D%3Fo%3DAimI-QsytmqrhQzMYqDJz0GY8vrGDMRHKBD-t55ABauR%26v%3D1%26x%3D3%26a%3DCAog1orKf72EUQLJOZliNLETuE7O4rAz_tmFisjlNGvZVuASbRCin6SoljIYoq-f_J8yIgEAUgQPKQ2yWgR_hu2-aiZromxRbna6xzXHKIzQJQOyM6VWG9mMG1TGnxkRtJ7xYXI8rhoEMHImwR8bLhESpw7YoMz2teyxALauQP5Q2zxJwJK2NNSYEztymVLKGDQ%26e%3D1726568978%26fl%3D%26r%3DDB8EDA73-974B-432F-8C02-2D97C4F79B70-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Drj23eQF9Lq4R5JOQKsKg29B4XV0&uk=fm0rUKk-p1ECvteM0A9IbQ&f=Decimals%20%E2%86%92%20Percentage.shortcut&sz=26741">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeApo_Ohyaa2buibMqGZttVoyQ7oAYOvZoCo2MvNEFK1dopA74fR6yWu%2F%24%7Bf%7D%3Fo%3DAoMX2X50OFd5-KUfNeyyusxr9wamjjdpw_rSqeaOtoKc%26v%3D1%26x%3D3%26a%3DCAog3G3Pr_TamyJ39JB-QYEcTIWtluPNQWkO4MPHKDO2BU0SbRCsut7JmDIYrMrZnaIyIgEAUgRoyQ7oWgTR6yWuaiacYZOgR6ID0iXuCNv4QCZcBXJZU2VB0BmtZ6bwOGuC9LR3X38pHHImkunmyLjmh7vE0AFg57O8IgfcRMt0gp7EUh_E4XoA8OfYs4QPn1Y%26e%3D1727176009%26fl%3D%26r%3D2DE89CE6-E7A9-42AD-B6AE-ADE7E4D59BB9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dl6c5pXOv3r7ddQboqCjlD8L037E&uk=Yro2AI47Cbahsmxo6uXxyA&f=Decimals%20%E2%86%92%20Percentage.shortcut&sz=26740">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Decimals%20%E2%86%92%20Percentage/Decimals%20%E2%86%92%20Percentage.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4722,7 +4988,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Percentage%20%E2%86%92%20Decimals">Percentage → Decimals</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARP9OLRSoRfFZPYtxqjoFyIIsVCnAaGyLBe-1jPg6lzku5DYJ_m0C2Lv%2F%24%7Bf%7D%3Fo%3DAukC7-3KBcgOBEtDf5I5ilwwkLbyyzhLGARKaFpzJnbN%26v%3D1%26x%3D3%26a%3DCAogAY8go8BJdrusa6rMgXvW4Yllj_HXvRoDi3z_DHs2tQASbRCeq6SoljIYnruf_J8yIgEAUgQIsVCnWgS0C2LvaiaGiYveigwCyJUx68OTOn7lcxfbv7V3F7FPkE4SCp8jgZCqs0Ij8XIm2muIR2MdJG3u17HIEStTDEssRpWrFVYL7nFM658v9ktCnHXCnu8%26e%3D1726568979%26fl%3D%26r%3D6DFD8B79-AE1F-4E54-8121-E0BC4C708A7F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DlzuWqNKZ4IqGlzXZA-zR7plgfPc&uk=QAulBnMEzrVK18Q1CvKAzw&f=Percentage%20%E2%86%92%20Decimals.shortcut&sz=26741">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVSDZTMYU9VMEdjVhxePJO2mr0NyAfUqkOGrrGEW2M9ScbT8PHHyJXaa%2F%24%7Bf%7D%3Fo%3DAvEpsLXyMEMxoyn40Z7LyzsMYxz9VgqXWqsMkaDFmbsE%26v%3D1%26x%3D3%26a%3DCAogV28b4x9MGODC7ydHjiuqT_CsVMlLrHN09B5uMt2U7pMSbRD70t7JmDIY--LZnaIyIgEAUgSmr0NyWgTyJXaaaiY9wmfVecZ-wNxhJ3qDYViJngpCsv3a8E4vGQ3CsU6Z7gjYQBYTXHImQw99FOPDJ6ZN8Rw9q5KwJyRpwIthG_1NzZsxaIdayuWIRKJV7YA%26e%3D1727176012%26fl%3D%26r%3DCD9FD277-C7F7-4A49-9545-3A455105B75C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQ1ZSpV9DQtHBaF19pOLIcm5BP_c&uk=465OHoD3s49-39HGJ700lg&f=Percentage%20%E2%86%92%20Decimals.shortcut&sz=26740">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Percentage%20%E2%86%92%20Decimals/Percentage%20%E2%86%92%20Decimals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4731,7 +4997,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Question%20Text">Get Question Text</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARpx2ttKRErCECnKKaPLjPi5-iw_AYhb324UMfLr74Q3yLDPLsCpjDkS%2F%24%7Bf%7D%3Fo%3DAvjD8RXXtgGtxrBABt8yUs0M6F03rNMiPj9N1W0ErpMd%26v%3D1%26x%3D3%26a%3DCAogGRapPxFpIeNIyc_XrM2mveuFqB_OZBLXkOKWodWlwXcSbRDVtaSoljIY1cWf_J8yIgEAUgS5-iw_WgSpjDkSaiZNLB_nD6sOhMaI-El1NKFoSdHdtjsIrKdx4eWrBWtdnIXrv2cwRXImp7o1kDui4FT5SWND-p_3zDah0pbOwPOWjRRbuj2kIhZyTXY-zW0%26e%3D1726568981%26fl%3D%26r%3D7D5819C8-7E68-4DC5-8053-4A63AE818ACE-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DGltSwev3IAIEGtZ43TD7iqI86g0&uk=wzUrVn8c_gCJr20Y9P_Ziw&f=Get%20Question%20Text.shortcut&sz=26851">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfZebAbin3PyK9Wyqe4z1JF5KEddAcVnbP8zEM1QPqh04ydmF8BRU_-s%2F%24%7Bf%7D%3Fo%3DAoA-LRmiVdPnVcIYcG2ExsB7OHmPSS-O-awK_NbZ9NIW%26v%3D1%26x%3D3%26a%3DCAog0BkfjXPEdUg60XEYxyb3_nqvrsPMR4unG-8dBZ61mMUSbRDW697JmDIY1vvZnaIyIgEAUgR5KEddWgRRU_-saiY5tZz5pIbfd5DGtbdiPLflBHyVkvlM9kvb6BPuMb1wSFw8vj259XImA4XqEZchWEOmWeal59HtZXyqTtfSomUFg3_1WfW5t4wlI9WHrvc%26e%3D1727176015%26fl%3D%26r%3DA551F629-C5F0-40D0-96BF-4C48BD46B3FA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJoj11eXk2mT5po8-UINCBlzT1T8&uk=WOU72_mvFCboutzs5L8rTw&f=Get%20Question%20Text.shortcut&sz=26852">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Question%20Text/Get%20Question%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4740,7 +5006,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Strip%20Leading%20Symbol">Strip Leading Symbol</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd6f6fIV-nEJ4BctN-YBojv2eiruATC475Lk9sYqenxrxafhjUMbyvYw%2F%24%7Bf%7D%3Fo%3DArtERCrYuSiB-bWNcQVY7WjRqCL7PAj-HvELLGrC_IQ-%26v%3D1%26x%3D3%26a%3DCAogfh0FxFJ0NQkBOPJXy3abAaYDwh_QEEJ2n1CrQOPZKUQSbRDxv6SoljIY8c-f_J8yIgEAUgT2eiruWgQbyvYwaiZIxdwEOC4y5f-chPUGqxdmGp86hLiuqymXTpSotqTyWhrUmoFeknImjWHiKJipibREDM0x5k34XHbGR1WGEk-EbXWjJI3X4CiCiiFZL0w%26e%3D1726568982%26fl%3D%26r%3D7F282710-2505-4DE9-8E87-73FA6D0891D0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuUAt0jlYFZuGm7Twa5VQRNsiv0o&uk=1MMa7jsTgLaCeNse2MxQhg&f=Strip%20Leading%20Symbol.shortcut&sz=27592">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW9XnjvCgcI3ltVH3m0QuNYNBl7VAdKtvD9Nvv85DPW7a7tgaCwmddu_%2F%24%7Bf%7D%3Fo%3DAnKJkB4sJOhOIKy1mtNmtWpzumh8eeC-GRIaq638yhig%26v%3D1%26x%3D3%26a%3DCAogtzGqdYZGMAi_mGsx2JgVSQT3iyMmmvurdPZNzRMgvOQSbRC-gd_JmDIYvpHanaIyIgEAUgQNBl7VWgQmddu_aiZ8WsKtZZtGHM-gsKMvZHnvT0CVkghpZ0Hs1kmVrHFlmRYqOl03TnImo3j5E_v8wBlR18bj1iLYMeJespswzbeI4RLnY7TBsBsYcNIQc-c%26e%3D1727176018%26fl%3D%26r%3D6F1A7C7F-C7BF-40B1-B9BB-4405FF7E88A0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DgGU6gExW0CakRE28-Gl8JRd9wQs&uk=4t4-zpSXUAzQr3lrXcwGdQ&f=Strip%20Leading%20Symbol.shortcut&sz=27591">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Strip%20Leading%20Symbol/Strip%20Leading%20Symbol.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4749,7 +5015,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Text%20(%26%20Vocal)%20Banner">Show Text (& Vocal) Banner</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX5F57Ye33_MuBZhpBw6EQ3EMDdYAZ2FiRmwRZeHOp_rKsCZ4DDUK0RY%2F%24%7Bf%7D%3Fo%3DAgCOGswrN4r9KdkhkVMM-4_21kgAE4S_Dot_gFy_s2Sb%26v%3D1%26x%3D3%26a%3DCAogj3yfH1wWD4O9guGoL2NDG-y9iwn6H16hpKlHn0wDLGkSbRCJyqSoljIYidqf_J8yIgEAUgTEMDdYWgTUK0RYaiaN6q5ehYenb06cqY_hG-Y_5Jmx3NLcIabdEJ7oMT2PXj5FubFEQXImNPB-ftx_23kfU0X4mYo0JcjBwIn1CB07zsKGtwLcVst85RZjUUw%26e%3D1726568983%26fl%3D%26r%3D2F494C9C-367D-44C6-972E-33886D4AE5CC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DMP6rGV_8kElWb-yzTeGqRuEPXKY&uk=Nej8z8WUoqcps8_bXKIuHA&f=Show%20Text%20%28%26%20Vocal%29%20Banner.shortcut&sz=28533">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbALMibcNiwbxTpkeyXhCIk4aNYeAYt5ahZtuBaU11gbBnRN-RJq2cKK%2F%24%7Bf%7D%3Fo%3DAhFRVg876Hqls8ORpavuD1JnZNmHeYjpYs5WJEBaaVYS%26v%3D1%26x%3D3%26a%3DCAog1ydT_a4LXBlHJhjQtOstH6nV2t0DVS6NGxlF4aMCBD8SbRDfl9_JmDIY36fanaIyIgEAUgQ4aNYeWgRq2cKKaiZqMcNHSv2CtLhM94MXtHltgRVyiunBysopmh_uvb5hbua-r8w7aHImJs4_HrIjLSsg1_VcxCaJiz1hSb1ckTgEAQcP24avRKLaYfYCIow%26e%3D1727176020%26fl%3D%26r%3DCA2F42E8-E5AD-4312-8E91-F705000CFDBB-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXp2rVa01zzErNZt1lUoi6w6FvwM&uk=XcMwpls_8s52WPnQk5WuIA&f=Show%20Text%20%28%26%20Vocal%29%20Banner.shortcut&sz=28728">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Text%20(%26%20Vocal)%20Banner/Show%20Text%20(%26%20Vocal)%20Banner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4758,7 +5024,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Closing%20Text%20Banner">Show Closing Text Banner</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZhPsP6MR5jMp9R0QKml-RmpXhjZAZYoNfDSvdrluQNX0GFyE3fiwa9j%2F%24%7Bf%7D%3Fo%3DAq259c8oilV06Qo-x2JJxFCaavHi5XmtmjZ4vSvvN4-c%26v%3D1%26x%3D3%26a%3DCAog1L_yM9oZmM4Lr54K3N5vofqb_NTa71XZGD7_EVQ9OwASbRCX1KSoljIYl-Sf_J8yIgEAUgSpXhjZWgTiwa9jaiZnmw4FXFaiQfl0C1OR2-uVE0BxBYuIxoWhv8Jn5cWgWo5xxu7EInImdXzCPCq5iO7U8mb8bhcS10mXdoXR5c1D5rLZaSnLLgCCUEEIaUo%26e%3D1726568985%26fl%3D%26r%3DE7F3F33B-1449-46F7-8417-8D2325F17DA8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3De-oCcOqvrS3JNFcAMJWc-ksEDLk&uk=y2k2_ddBIhBSR63KUBtXkA&f=Show%20Closing%20Text%20Banner.shortcut&sz=27453">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZo7MpQkipKaxpcF53FTSri0vPdpAVi-bv-JScZZa1Zp9nallYqY1xZm%2F%24%7Bf%7D%3Fo%3DApOSHdpgZwDqW5RFBZ6abnLv9EpNOhLlhghbxvJxkmtQ%26v%3D1%26x%3D3%26a%3DCAogfVaZbRVd5kdZAlA-NtWSl61Gz3XT26wl4bbDk2zv_XcSbRDZwt_JmDIY2dLanaIyIgEAUgS0vPdpWgSY1xZmaiZyB6rRYFzAZfmCX4gVA-NB4NXQRRfmNzD8a8WOF7GUWBlm9DNti3Im-JQE8KdGwYIrSpWjVl09C6Nos-1kUs5NTZDriW1rsAh6PrIve08%26e%3D1727176026%26fl%3D%26r%3DB97F33C0-2181-43E5-B322-A9E7EF755BDC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqYwlLpcsN3U2c9HZ5_ORPlfyE-U&uk=vmJqASz82vK9DJEFKHO9CA&f=Show%20Closing%20Text%20Banner.shortcut&sz=27452">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Closing%20Text%20Banner/Show%20Closing%20Text%20Banner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4767,7 +5033,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Format%20Text%20with%20Text%20Divider%20Pair">Format Text with Text Divider Pair</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASg8p89MONBpOkmIrfcEKPEz7sF_AXFPc7TjrCS5-WLpalbc3ghfTFjQ%2F%24%7Bf%7D%3Fo%3DAlEnlRAwst_t3GzvoCz0Exk6WW4HUieZYrHY6DYswW_8%26v%3D1%26x%3D3%26a%3DCAogJF2Hyw2f0cwu1QO_qF6_Mas4h7Cp4OErGp4lD_uiqpMSbRCu3qSoljIYru6f_J8yIgEAUgQz7sF_WgRfTFjQaiZEnMMKEecJnMDoheVsClY6Wjdo3anslopmJYPbu-AZP2hM4O07dXImVryD86n_O-xGzK1h0Joa_srfqX0ZOuzdoIwjyUQD1Ste1okDweU%26e%3D1726568986%26fl%3D%26r%3DC54C5C29-2846-492A-87AC-98D6D05E8B0C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DI-EvVjfj5qlaB6ETHPe7VB4ssQM&uk=LlBf0LzQXSh2pkqXedilDg&f=Format%20Text%20with%20Text%20Divider%20Pair.shortcut&sz=26894">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUD2kmPbCUdla2q0YAvTIQkOOxp3AUaaUPgP3ggAGGAV7unxngqOE1dV%2F%24%7Bf%7D%3Fo%3DAuQ7g3ePehm8NfXfqg7pqMDmmeTM0Yl9dfAqrSHHNEHq%26v%3D1%26x%3D3%26a%3DCAogU04_io3Sk-zpd4yJ8eraZWmFDoaTY7dxS_aeCJeM72USbRDz6d_JmDIY8_nanaIyIgEAUgQOOxp3WgSOE1dVaiaowMk5Z5Hl52Wawzg4th579A6fZ0Cz_U8MDj8EmOYDi6heAynw-HImXCPxxp7mA8StLQLv9Wjli-qVow3vHabSJ9J0KXLi3vmi9lTHVLQ%26e%3D1727176031%26fl%3D%26r%3D8DD05D28-0A38-4E4D-917B-A3BB671377D8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DJb8YRotRq--Z1zm3YTf8iS8OOE4&uk=4UtDzt3IluaDFtPzfOhD8g&f=Format%20Text%20with%20Text%20Divider%20Pair.shortcut&sz=26893">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Format%20Text%20with%20Text%20Divider%20Pair/Format%20Text%20with%20Text%20Divider%20Pair.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4776,26 +5042,8 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Dict%20Value%20for%20Device%20Name">Get Dict Value for Device Name</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQtRbfnFNJNNcGUHRHZ0KLaX-TH_AQ3chT2UfWvZZfB_sN7DxXpHulR9%2F%24%7Bf%7D%3Fo%3DAtHexiUTxDqa-ILhtHVAyEUslBXzI26TvMi_h59oeTul%26v%3D1%26x%3D3%26a%3DCAogTDSKHGzlnai_V4VSAeVxSbhH2Lx5HRXAUcQc5Ycd2l8SbRCo6KSoljIYqPif_J8yIgEAUgSX-TH_WgRHulR9aiarA8lzYshAFadLTbwqqJMagEpVVJ35jtKKiQIEf39w6J-1QnOXz3ImNaCzU_sOZ7fHLiLUEsrRJm07LadouCKAzKp_SFyvnbzF2Ehy0rI%26e%3D1726568987%26fl%3D%26r%3D35498D38-CFB6-4749-87BB-4F3794B64165-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjhveutTROmq1saaHwBouYd8MIZc&uk=bEJ_JdfxkN-F-T6tG6uPrg&f=Get%20Dict%20Value%20for%20Device%20Name.shortcut&sz=27242">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUWWJsw3f-EXal_8JNFhAq2wmm4EAbA9E6i4AeMpNLGTzOLRU9Y1B_Um%2F%24%7Bf%7D%3Fo%3DAp-G4mfFt8cHyvEifW9BMBfOK1Dpb0iOEWicF92u0r-8%26v%3D1%26x%3D3%26a%3DCAog9XE3nDy4aQDtv-LWlf7y_K-euw8riy0Btjm-iVcZ5JASbRDqkODJmDIY6qDbnaIyIgEAUgSwmm4EWgQ1B_UmaiZ69Ed1r3gKdho9Y0TyHIIV8HRvebu9rVGmTi95JSWGIGkiEQtKl3ImsVkRbNgM0ggaXf80z29l3orjz9y-Jb_NpC_ueUovucMmmRJyNT4%26e%3D1727176036%26fl%3D%26r%3D64BBDDE6-2C48-4DCA-9EB3-35E3FEA1577F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DIKDxG1AmcxtH85vRBIfEYsJTkY4&uk=SENyl9yJ92gU69a-Otx7cA&f=Get%20Dict%20Value%20for%20Device%20Name.shortcut&sz=27241">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Dict%20Value%20for%20Device%20Name/Get%20Dict%20Value%20for%20Device%20Name.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right">Prep ☀️ Start the Day Right</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWipahpyQuqm4-oODuFd6cxbvlJCAT7Uxi8q-7d2GJaxFaOTgzio-eWo%2F%24%7Bf%7D%3Fo%3DAmJesEknTHKKNxD454JKL9yv3IfQqzoNvP2SeLi03zzP%26v%3D1%26x%3D3%26a%3DCAogvuVYdLqq2qOEaf8C8D84UtnfrrppvMY0_Ax8f2RB_H8SbRCh86SoljIYoYOg_J8yIgEAUgRbvlJCWgSo-eWoaiZiAuPF_6DAtb9Q0Kr7hgsyoE9kY9vLGjsU59wU4_wdPO_960qS7nImf3p9SuKFSyjgbYyOsrz2-60IrUZdYBu6G307QKHh8_XqKQXpfM4%26e%3D1726568989%26fl%3D%26r%3D0739B5ED-6FA4-4F5B-8DB8-3E6D6E879AD8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DKRjaUq0CbaYQRfjF3khrTF46D9A&uk=UUWG0T02k00Pz4iyoMqsVg&f=Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.shortcut&sz=26702">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right">Prep 🌙 End the Day Right</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYE2T5rAZflvaI7uHRhiZhZnEokRAfMq1POt0vPEhh1-8U8GlOO8PZtY%2F%24%7Bf%7D%3Fo%3DAin1qf-mvqA_2WTo13_LnIDJr2qxLJoJkCF7C1CJYXSS%26v%3D1%26x%3D3%26a%3DCAogGyWft45HizN6cMviXncuBosWKk7srIWjl89fiEmWhTwSbRCz_aSoljIYs42g_J8yIgEAUgRnEokRWgS8PZtYaiaXCBVqsAtmaiw1iAPhWO6pZTEVLj6tZjajJiDns8-11JZHQuHla3ImjDrTApShfgpYHSAiY2NN2sKlRvfP6z7K1XmcUSTop4DVgRmXRO4%26e%3D1726568990%26fl%3D%26r%3DCDD0C650-E211-47B1-B7EA-943E386CC8ED-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DsoSisHSjiCW1ngXcCxrDZqf6tNU&uk=GHZMWsPHEsJZyUZLyKQbLg&f=Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right.shortcut&sz=26704">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4803,161 +5051,8 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Round%20Time%20to%20Nearest%20Xmin">Round Time to Nearest Xmin</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeIpibAigs0IiIWTv1p-Kfl1Jo1DAZpjBYv4BgQk6feLeOpFkTS-vEyz%2F%24%7Bf%7D%3Fo%3DAoesGU03RYxL7Whktov7taucE2N3MyuuAd6GQxC2NPT6%26v%3D1%26x%3D3%26a%3DCAogy328sZi54WEfLaRMorYsAUoxL2_7-r2DyFoy1j7hv2MSbRDNh6WoljIYzZeg_J8yIgEAUgR1Jo1DWgS-vEyzaibN6Tzt-pal46r6-UQBMkGgcySn8xdjSjbV-HcSWpIzV0uKjGERNnImoWYuFL_Ae6_TvVqsUNL44xEECq1gtPq9z8WKPon02oqd5W2l668%26e%3D1726568991%26fl%3D%26r%3D1373FEE3-5473-4C55-8180-1DEACD772A1D-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D3G08bc-6qzJJBwiyZmdvFgOs2Bk&uk=qbM2KplGZuhKV1brsv8p7A&f=Round%20Time%20to%20Nearest%20Xmin.shortcut&sz=27620">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdBo1HjGiCXN27zEmeA0Q5GnLRRzAcnAf9hAfvuGSKgeNAsV-WXy8Fa6%2F%24%7Bf%7D%3Fo%3DArT2UkoSA3orGysDiicgvaudo3y1OCrIpc0kl-wBnk_X%26v%3D1%26x%3D3%26a%3DCAogXLPR-7FEZFS58PARBEeN051b92lMla8oEyBqF3-CHp8SbRCZt-DJmDIYmcfbnaIyIgEAUgSnLRRzWgTy8Fa6aiZbSN-mrbVNezqh9sVJAapXbJfZ_eBPhCiYNP0NjXRFcNiQbzNicnImaWi__26a7UZi1ycwBKo5wtUwFVgvT6kGRFyi7QaTs6u8xm4qLuQ%26e%3D1727176041%26fl%3D%26r%3D8354F46B-5ABB-44F4-BCF8-15A19B6437F3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDFiL6REudgfZMoUmmBt0LbyYCqE&uk=eSbMuNPlBcil2ijFA0n3Qw&f=Round%20Time%20to%20Nearest%20Xmin.shortcut&sz=27619">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Round%20Time%20to%20Nearest%20Xmin/Round%20Time%20to%20Nearest%20Xmin.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Random%20Life%20Pro%20Tip">Get Random Life Pro Tip</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAW2w-xxiNFk9RLVoK3qNetujFyq8AWOelychVT0TwCKBEWUpCgvPXW5J%2F%24%7Bf%7D%3Fo%3DAsPs_UgAKcdaTA6wtmtGbog1hcQS08Twg886ecZHC7LA%26v%3D1%26x%3D3%26a%3DCAog0cJC4IA7UUCTFSW8h9gzNBdFWyR8IvVBpAOrvio27UISbRD4kaWoljIY-KGg_J8yIgEAUgSjFyq8WgTPXW5JaiZqWSt9cH5bFA3EVPG9SiE5FYD8m17njjN15OfzEcNUvI5N1j6J-3Imqkd3JyPjWVYgQXmGRf2a2NOo3jdrvAVbI6OqI0IBH0sGjGNJwDg%26e%3D1726568993%26fl%3D%26r%3D2D54FC1F-D3B6-42EF-9A46-9CFAD03359C9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQq66sE1kXIdp-PGH4PpAPisL-cI&uk=Vz9gjU1ERq-_MhFr4BG_YA&f=Get%20Random%20Life%20Pro%20Tip.shortcut&sz=28280">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Random%20Life%20Pro%20Tip/Get%20Random%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Refresh%20Quote%20Widget">Refresh Quote Widget</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATZpZr6MwB11tubfwug5T018fIbNAbNpiHrSt8FEZY8L59aZkffGozIW%2F%24%7Bf%7D%3Fo%3DAnwCEm1Z-pU9iU52yydrtUZb_sheQUXItZirIbLP3qM8%26v%3D1%26x%3D3%26a%3DCAog5oBGiCcOw2FZ2pps1A2ZOupFCK_boR6DWHOdW-G6u0oSbRCWnKWoljIYlqyg_J8yIgEAUgR8fIbNWgTGozIWaiY3YJJ_kwBBRKiIXETzMGowJtR8hNfrssB4WMLRwCZuBgF1KG4rPXImZR6Pgsw_jPi3fds6xwDf-kZy-WHl_qbe3tNHp49eorCwaqO7qjY%26e%3D1726568994%26fl%3D%26r%3DAAE3451B-BC33-4EE5-9512-C8FF43AC65D1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DBQwTVjG2SKZv9Ze9jnGT3dhHrHA&uk=twUxwNfD5mp3PnxSUj6GrQ&f=Refresh%20Quote%20Widget.shortcut&sz=26639">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Refresh%20Quote%20Widget/Refresh%20Quote%20Widget.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Refresh%20Journal%20Prompt%20Widget">Refresh Journal Prompt Widget</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARPqt9Na8dsXXmRXEICm7jGkYfJtAWo-KqEgNih8rmext9NHAwI2KGBs%2F%24%7Bf%7D%3Fo%3DAtdECzkSg3tjGKgiGvfeDKql2oucR0fCwXfE7vblYtll%26v%3D1%26x%3D3%26a%3DCAogG4o8621VVT2Kt_gXd9crmuX4LYv-D3Y7p74Vg5S-NSYSbRCapqWoljIYmrag_J8yIgEAUgSkYfJtWgQ2KGBsaia84VRJqPj5dyaWwtEsUH8yTpqAyfjlGAnzUUUpD9ZN5SL_MB7bFHImaovznJd_eiJsr1HA1TY7UOVAH4coFxWSyuL8qSDnOzXCXyYqS9s%26e%3D1726568995%26fl%3D%26r%3DB2E791D9-16C4-4EC4-9A05-6C4569B30EA3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dm7ELOM17ohqtL1jTlzTGzXLua-I&uk=9D_qad97NpzjpU1nuB8XVA&f=Refresh%20Journal%20Prompt%20Widget.shortcut&sz=26815">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Refresh%20Journal%20Prompt%20Widget/Refresh%20Journal%20Prompt%20Widget.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Update%20Journal%20Prompt%20Widget%20Text">Update Journal Prompt Widget Text</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZLHiQPfnQZysbI0PHiuQ0XBh49aAdgcR0M8dqVIdzYadkyihexHfGRt%2F%24%7Bf%7D%3Fo%3DAmmeqiyBaNjVZVrwuDb-2LJT91WxGbMlufxdSq_6rZDE%26v%3D1%26x%3D3%26a%3DCAogFYoKUvcF_TJp8TDJr-MFb8jnROlBLZVeOWvz4sYi6gASbRDDsKWoljIYw8Cg_J8yIgEAUgTBh49aWgRHfGRtaia7p_VbWx0StngX7NhLogkJDGT6-fIrVe582KM01Hai3RtWArU8enImihiOrxGkv9o3Jqy35p4RqGGWaZeUkBz5YBtRENjVTGjJ5oz9wVE%26e%3D1726568996%26fl%3D%26r%3DF5C69D2F-B483-403A-A719-1BAC64BFB7C5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Doi1EArJy7V5BbfAMw8T-I4OyIkQ&uk=-fyjWWvm8lN9zql5XUQowg&f=Update%20Journal%20Prompt%20Widget%20Text.shortcut&sz=28013">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Update%20Journal%20Prompt%20Widget%20Text/Update%20Journal%20Prompt%20Widget%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Random%20Journal%20Prompt%20Item(s)">Get Random Journal Prompt Item(s)</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb5flTeDVaRnjWZei9AcEaSPqwKyAa2gHtKvV4d9m6pBOJzmhahzb_a2%2F%24%7Bf%7D%3Fo%3DApfGCqIJOQqHvodCDAhbgTMWI4Y1f21y-PRQIi5MY47r%26v%3D1%26x%3D3%26a%3DCAogZETIf_OBe5GYgRkAocQIcS6USI0Kio-nJlLQBs2aywMSbRDpuqWoljIY6cqg_J8yIgEAUgSPqwKyWgRzb_a2aiaLCLEgz080dUhEFx1w58bpjQhYFmIAq5vx-vCZWF8vOso5htyK3HImiQqisowouS7ZdEaobLEANDgTLrV_CS6rDpdwzXVawYBAjjK8hvc%26e%3D1726568998%26fl%3D%26r%3D9A19544C-8F8F-45AF-AC48-F8CCDF9D2EF1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLEvW_AxGIq9bsBWt-e_t_x7TrrQ&uk=V-HxD9PovULe2d9to3yIaw&f=Get%20Random%20Journal%20Prompt%20Item%28s%29.shortcut&sz=29413">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Get%20Random%20Journal%20Prompt%20Item(s)/Get%20Random%20Journal%20Prompt%20Item(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Speak%20Journal%20Prompt%20Question(s)">Speak Journal Prompt Question(s)</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVomAek1m_sCsc-xRa0w9J4HPhqEAeLPkL7tcfiBjAgppsMK3ILTISQT%2F%24%7Bf%7D%3Fo%3DAqfd-oWbazb4qHL97q159RUwg03uJSRurrmrwKXs27DP%26v%3D1%26x%3D3%26a%3DCAogxMT906nW-4tSrtPeF7foj30S11AjyPgVqSI4P3TaRloSbRD-xKWoljIY_tSg_J8yIgEAUgQHPhqEWgTTISQTaiaYG8q_18xUzybWXeK63YvJtQxgrGpCXHvxXIm3dpzbxGHVitRVOHIm2jC1BvmBy4W20enJIHnnrJmRABCaxSByh32-AyUJpYvfgmEbC-o%26e%3D1726568999%26fl%3D%26r%3DF6092D47-9F89-466D-99C8-1018CA61ADF3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D4yNzWWHLg4YBLfQIbw6cEnNBZmU&uk=EGh6SDdWhY-MUD7SRcP2bA&f=Speak%20Journal%20Prompt%20Question%28s%29.shortcut&sz=27805">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Speak%20Journal%20Prompt%20Question(s)/Speak%20Journal%20Prompt%20Question(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Build%20Journal%20Prompt%20Question(s)%20Opener">Build Journal Prompt Question(s) Opener</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FATmFBqmjrKBviZpNtBxEaRJYOWHQAUR-3F3jOH297w0Nb3Us7NZmw51M%2F%24%7Bf%7D%3Fo%3DAiq5iQLalMQlbJgylhXXSmqL5mhM4jNEjEZTH-s6LKcO%26v%3D1%26x%3D3%26a%3DCAogej2QFONCmpYbRgE_dzTKC8IMS87M5usvMZjuXV9kP0YSbRCZz6WoljIYmd-g_J8yIgEAUgRYOWHQWgRmw51MaiZNvagup-iNxg1t3P3nfvkqBkTLgMA5QMDiuKRYIevu7-1J4iE4YnImGyZodiLnwxrvISpd0CwiqzwK6qaeXaxpKFkXvWstEYs3LHWAaTg%26e%3D1726569000%26fl%3D%26r%3D8F4D461B-4F21-4ACF-828C-540C1A738540-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DBLHQsOdBXs03U_APC1gR28aM5qg&uk=PdXV_bE3qX4SIL2wCkPKjA&f=Build%20Journal%20Prompt%20Question%28s%29%20Opener.shortcut&sz=27780">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Build%20Journal%20Prompt%20Question(s)%20Opener/Build%20Journal%20Prompt%20Question(s)%20Opener.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Last%20Run%20Time">Check Last Run Time</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWtIuI9SrZPxHC59dZuw3Y19GMAYAci-VkIhBU9066wcFCcnJegGcTZW%2F%24%7Bf%7D%3Fo%3DAoTesb8548ypqMi2d4N1TqI61YC3zTSyTw0lyBkGM5N8%26v%3D1%26x%3D3%26a%3DCAogKQtAdKVI4A47GHjchd3HZaYxcP3zXe1fIrr28fPf1goSbRDY2aWoljIY2Omg_J8yIgEAUgR9GMAYWgQGcTZWaiZuimm2VFVQgbgKrsuQQF-yG9_7z8sKJ5QICANCFtKTmBd6GL5DQnIm9qSd6YAnyczs148TH7f-h7wggBdeNS21pVZXUdpTDJzoBp0Mu94%26e%3D1726569002%26fl%3D%26r%3D18EADC02-3A23-421F-AA8C-F87BDE1DBBB9-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8q2UROVVrjDEepUPmBWPdMVGTjQ&uk=K-l1oZsHhr10Y7wTkMelxA&f=Check%20Last%20Run%20Time.shortcut&sz=31737">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Last%20Run%20Time/Check%20Last%20Run%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/You%20Are%20All%20Set">You Are All Set</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQhulWVEPfb_kos2coxp61Nwt_0jAedjc7IoqJfBguNcBfoi-9p-o5y-%2F%24%7Bf%7D%3Fo%3DAiFUXrkd4kqiE_Ba5MItvUG1O5HQsrQIW1uxt45vzlr2%26v%3D1%26x%3D3%26a%3DCAogSubDpkr8eYTCpwaJjbHr0vYICrb_mlEXXDKTDXtiz04SbRD546WoljIY-fOg_J8yIgEAUgRwt_0jWgR-o5y-aiatYi6qOdWNF4msJXgBc0g2XmA4MTkSnkTynQ3wWKmsPVYL7OABaXImNZ3qMsC6PjDRHsoUgioo0dD0b-WJ7_p4OP3WY1TW8VW-NciFAgs%26e%3D1726569003%26fl%3D%26r%3D72EC7005-CA8B-4378-9D09-8144446926C2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqoUsFKBSV54SfCHCD4QPnPACNL4&uk=xO3OJDBAE_msgogaeSJSVw&f=You%20Are%20All%20Set.shortcut&sz=26879">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/You%20Are%20All%20Set/You%20Are%20All%20Set.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Wait%20to%20return">Wait to return</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZwxrKpLLssn59V_1YeyG3X9z71WARSHgYowOMMbk6plVbQdEx2soO-B%2F%24%7Bf%7D%3Fo%3DAp4qWKEgHu8-uH6RG6hbirc78QWldgsuUpJWI3XSKU2L%26v%3D1%26x%3D3%26a%3DCAogydDD88R6fg4rMTRGkEy84y5XRQmljTn-yaA-RnX2vNsSbRDG7qWoljIYxv6g_J8yIgEAUgT9z71WWgSsoO-BaiaYGaSO8lxUUzhM9LYl3WfZ4MhStXEaSK5cWITmim4t7d1_RlxVpHImtvy8vpje8wNXKy3KshKXyPMKOM9Uze35Ei91tF6iXd6OM14TG1g%26e%3D1726569004%26fl%3D%26r%3DCA9289E2-529F-4E9D-80F3-59C7D755D6E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Do6GkhW7fdRT1C4fIpycoz6Q7uoA&uk=jaA-o9K6FIl7wqyAFmhdrA&f=Wait%20to%20return.shortcut&sz=27950">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Wait%20to%20return/Wait%20to%20return.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Create%20Aesthetic%20Menu">Create Aesthetic Menu</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAd-SozPZ4hhmuZKlAAoqLwTiw08SAR5ULmjHOzL8VLbNcgVmQALUBJcj%2F%24%7Bf%7D%3Fo%3DAhz5NjGYOYQvj1_BmSpBbZBWpVOOEgzUT7VdNwFSX1lc%26v%3D1%26x%3D3%26a%3DCAogtWuZ22S0jKxTVvM-qR5Ae75Rtl1WupvXRwp8ZSIM3CMSbRC4-KWoljIYuIih_J8yIgEAUgTiw08SWgTUBJcjaiZcr-l2ugpXEV1cMlWd-NzYvh5-ary8sCYQ-4kv2pelQEeiz23HLnImQyEihNKV7H3VXs3IDr0gBtdQOg7GfxFjQOOF0zY9qcIVGhl2P0s%26e%3D1726569006%26fl%3D%26r%3DC8A30ACD-34E9-42E8-B15C-4EF0E34BACE8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DhmExQJvynQitlXsjDoOGMFD53kQ&uk=cgBRfWMdXhOeTZroCikMLg&f=Create%20Aesthetic%20Menu.shortcut&sz=28823">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Create%20Aesthetic%20Menu/Create%20Aesthetic%20Menu.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20AReminder%20with%20UUID">Open AReminder with UUID</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb9qZrUvmzT0XPxIDHhe3bvWttuEAS8BIXdxO06kzhGspOiV2fySEr-F%2F%24%7Bf%7D%3Fo%3DAm8GnFLWCX34gi6KFaQMpOwY7eFFxEdX9G-7ePvFBz5S%26v%3D1%26x%3D3%26a%3DCAogoMw-n3gFKR64JVIaA9Tqp5z6Qt1LMZmZJGU1gvWMZUASbRCWg6aoljIYlpOh_J8yIgEAUgTWttuEWgSSEr-FaiZxajv2xG6qOE-tXg28mTZmTZqNKBiD__ojtrWkv9SRepKmQYC69XImkt-QY8N0W9iSbP5D1ayC8kTHkEtpkt6LwwPqIBD9lMdzjXRrgQI%26e%3D1726569007%26fl%3D%26r%3DE7F5BADD-68F6-4E42-9C8C-0A8DA9C23231-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVqWrIqEkgt_UbuxjZsvNDBjsL2s&uk=0fCgO_LblwII9J6_lp5A1Q&f=Open%20AReminder%20with%20UUID.shortcut&sz=27238">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20AReminder%20with%20UUID/Open%20AReminder%20with%20UUID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Filter%20Reminder%20Lists">Filter Reminder Lists</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FARFH59vywUC_PGYe9_RfsG9Ot4zEAbPBsZEmfpRpF1LL3sz0W91jNyMx%2F%24%7Bf%7D%3Fo%3DAqalHQKIQqD3qSYZK5wAizNnd3AjZk6RK7M4HbAdxXv1%26v%3D1%26x%3D3%26a%3DCAogKkWBeD9H-JiTCoAz3NzVNIhg-EYY7eX1HGqGLMbL-8YSbRCmjaaoljIYpp2h_J8yIgEAUgROt4zEWgRjNyMxaiasom_6Wge1HcUUcxdQa0adbe9b4HggAEJHzSorrpkzfvu-pTmIZHIme2c6JvBG36SORP2tgVKGru0UH8z3xwL3eWkDB2OlmM8SKWxuwmQ%26e%3D1726569008%26fl%3D%26r%3D849D82B0-515D-4C17-B5B0-163C676C8DB5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcHWKzlOHiFsYjE4n0ZEjE0PZCDU&uk=Xh6cp4orQFgkhaXckxHn8g&f=Filter%20Reminder%20Lists.shortcut&sz=27638">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Filter%20Reminder%20Lists/Filter%20Reminder%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Play%20Music%3F">Play Music?</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWyhbKfL45eFsMQwL_yb-nuFhWCDASladNAXgFLXUO5e42xIwFFUSflg%2F%24%7Bf%7D%3Fo%3DAtzzUfQbg0tJ8ZLTe4rDhTxZ0aDX77Q8g9pqMJ-V-HRc%26v%3D1%26x%3D3%26a%3DCAogqKYqF9dPeuxOUPjnoMeXIR1MIr8R3r6sO1guaFCRrFMSbRDDl6aoljIYw6eh_J8yIgEAUgSFhWCDWgRUSflgaiaRWlyE8iOOFWTV44owVb6wgY4M9USLW02r5bhE-LfZJqzOaY6kQnIm4UTafEEryDXZQShLpueqdLfdPQLdb_uB2_Jm_0Uyxx8wp6gKl_M%26e%3D1726569010%26fl%3D%26r%3D0790AB8F-47EC-4C95-8746-F89384BDB516-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6tnwyTEjwwgBLs3d_OW_vWcQlfQ&uk=HlZQcgdvU4X2BMZsz4_koQ&f=Play%20Music%3F.shortcut&sz=27672">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Play%20Music%3F/Play%20Music%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Play%20Music%20(with%20Timer)">Play Music (with Timer)</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAela49r-g9GdrVPD_7Wym8o628LwAWi9CGhWJT-rxW3wKvqJggK2MCh_%2F%24%7Bf%7D%3Fo%3DAgys_cpB5shna8xwGLZeoYgSZnRcPmwnar2GOsiqtw9Z%26v%3D1%26x%3D3%26a%3DCAogXxZ1iiB1FzRIGo5dfOHsYdP2CMyhj1hwyzEODUeUg7cSbRDOoaaoljIYzrGh_J8yIgEAUgQ628LwWgS2MCh_aiZtTPZsCamGuTcIA2fJx0Y7b4AiQZbKzrI7O6hh2Q7QChgTv8pcoHImFJxg9ZhEQ0-o-8epezDjFqcHe1wncBBciBVzVSckut51CO0P8HA%26e%3D1726569011%26fl%3D%26r%3D86B4AD52-4890-4E23-823D-E2BBD8A35647-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DqbqUNFqB3URr7KLg0P2sswCwfbc&uk=STg_H8YF-c7DiL4bb0N4Wg&f=Play%20Music%20%28with%20Timer%29.shortcut&sz=28054">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Play%20Music%20(with%20Timer)/Play%20Music%20(with%20Timer).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Choose%20Calendar%20Event%20Time">Choose Calendar Event Time</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZpAmz2vyi6M5skabCiaJzLyfT1NAeP_bGHKycFBJ20vAqTeNRJQuYRR%2F%24%7Bf%7D%3Fo%3DAvVz9iMFEPRXBN4cUQTXQ8HgU21mcU6Puym9g0vFkwpL%26v%3D1%26x%3D3%26a%3DCAogShBd3hsu09II68BAlzgs1fZd7MpWr38J7C4hcnpOI6ISbRCErKaoljIYhLyh_J8yIgEAUgTyfT1NWgRQuYRRaiaYiPtcZ8qiXNLj3ENBl8600ZSrZKlBjgqv9YfnhORNWExKQzzRf3Im3iSyE9UQMiQhx1UN5xtRkrk0NFZtOHXgOuppOSVtUW9UyVsmwW0%26e%3D1726569012%26fl%3D%26r%3D3E5879F7-2077-4CF6-BB68-227FE1BB5C3F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DDKm_TC5tC5DxoA9wiNx56mqQ0hc&uk=HBD0VH8wE3EBhxpZHX6tAw&f=Choose%20Calendar%20Event%20Time.shortcut&sz=33332">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Choose%20Calendar%20Event%20Time/Choose%20Calendar%20Event%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20BRAINWAVE%20App">Open BRAINWAVE App</a>
-       </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdvvjQnwrHJk2uBStbEbxycjTwdrARMpTa7FOEr6br653ogY-6KT4wMx%2F%24%7Bf%7D%3Fo%3DAkr-M_NV7T5niY8z4wee7rQ0s67JUD4GGSy20crdsfkP%26v%3D1%26x%3D3%26a%3DCAogFqUkWc9vmlkDMyDCFjBix1KEt8jqfNNa2MzMIGdZBioSbRCBt6aoljIYgceh_J8yIgEAUgQjTwdrWgST4wMxaiZzW9oLNvwHnhoopgyKhUSrp3RZ3a8SscUJD9h5t4t905v3BjVClXImg6jDrGvOhkN1JbMxgKKCbybdePFDQ12h2CsVQSAmdloi3Mb1bQA%26e%3D1726569014%26fl%3D%26r%3DD6DE35B7-7E56-4220-A35A-D541B30C7D38-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DcuDXQA6nYTaRZbeImsEMRtFqSdA&uk=n35Dgb39FlXqfVarYQAbnw&f=Open%20BRAINWAVE%20App.shortcut&sz=26872">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20BRAINWAVE%20App/Open%20BRAINWAVE%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4965,7 +5060,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20App">Open App</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeQfecRTMHRunHJPa9HizDPrJPQSAYTwzZpNeMeWySwViy6Dr0l33tiJ%2F%24%7Bf%7D%3Fo%3DAusHJb4atitK4HTcYqF0OiW9AYX_a12yqS3YG_iuULqC%26v%3D1%26x%3D3%26a%3DCAoggprmuscBZH8YLQe695iyMMFykshhjg0dxXT78n27T30SbRDhwaaoljIY4dGh_J8yIgEAUgTrJPQSWgR33tiJaibMj4beWDppSLcleyh9OYueNgSnVatunNClJqhbxn6yhdyGhnHn83Im348z0nmNckvNkFBCEwxufZnpZluCDYJLZD6ZjPuO_Fa9GLksYFY%26e%3D1726569015%26fl%3D%26r%3D2FB48C8A-0968-402B-AD98-5B3DD2F62B89-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRFjqozkSqTKkxunAsPMAFT9fpvo&uk=1Z-cv7XqesEnP98n5H2UEg&f=Open%20App.shortcut&sz=27458">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAVii75jGZvgXDDLLtRVwEJ8P138JAZ3ydKLD8H2ae2O7nG3Ym2HSvrZ6%2F%24%7Bf%7D%3Fo%3DAhJOFlMcXjF2Ds4x_71q8YJPoMuWG7c1qWnEhlMzOVXi%26v%3D1%26x%3D3%26a%3DCAogzORDzfbh7I2vckaJ-ymw_q4VUl6mrhJB-5Px5S_q-DkSbRDh2-DJmDIY4evbnaIyIgEAUgQP138JWgTSvrZ6aiZ7j0KoaGKfw8kyFmP_qxIgpoNI51loqkAnM13JrHwIv5UQIyb16HImkDDBRSYfAdn9I-DRWOnJDxjPBGfju340HfA13qEEQj8p3Gw1OBQ%26e%3D1727176046%26fl%3D%26r%3DF3543F14-6FDF-469B-ACD2-6C438056B367-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DM20-K3T6E2skvOJB2EiqczHe0hA&uk=9oCdCTVJUJBn5a4jBtLzxA&f=Open%20App.shortcut&sz=27457">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20App/Open%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4974,7 +5069,7 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/(Batch)%20Open%20App(s)">(Batch) Open App(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcj2xOnXNO4JlnQO1eBCF_zhxv2ZAW3M39O5doviKNNtuVc-YT5tVphB%2F%24%7Bf%7D%3Fo%3DAuS4dlnJZOaOT79eaNI04FVrR8TJIR8FRMg4UF7ahm3f%26v%3D1%26x%3D3%26a%3DCAogcWapGfn5Z6vH5WniVUleEGU8Ho6uIvendhuM7pFXxKMSbRCezKaoljIYntyh_J8yIgEAUgThxv2ZWgRtVphBaiaJ-7NEIpYi7YxdfE4jn4r7D30Q3psmg-2daLTpSfwDll2f2bdM2XImbmdAcbuhJbqkx5gysk2WhluZW3hY2Gaq4MScTeY-1h0rgRaRWus%26e%3D1726569016%26fl%3D%26r%3D3FFF3202-2D2E-4F19-8A50-2FB7B57F9724-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DnwKbYyBGKCOn9Wid778lDb55-Lg&uk=Am4qH2kuoYviSuorPvj0Tw&f=%28Batch%29%20Open%20App%28s%29.shortcut&sz=28316">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASQcAHYqZeMOK9PeA1wMRTz3zO11AZKnaBZruQ5-5d4OWpyUnS7vL6ay%2F%24%7Bf%7D%3Fo%3DAp8yEvBEl8yXAWbsyhSuwwOCVLDmxesY6p9URZy2aAjG%26v%3D1%26x%3D3%26a%3DCAogFKYCCnS5T6DYXq-XNyskQdopJVJWdb2T9l9Xo8jdRj0SbRD3_-DJmDIY94_cnaIyIgEAUgT3zO11WgTvL6ayaiZ8T9FMRIz8MGMlt25Vk_2amnPlT49pNJoAYc8qiMwiUETmEMI7yXImxr_8rkGWI8LzBfZhq33juGA4MPG-jYtwRMjm8vg7bwBrKOhxhFs%26e%3D1727176050%26fl%3D%26r%3DB6605D4F-8B1D-4CD7-B219-61E013452EDA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjpM47zMHNZNTqqpECIWrSGlCb88&uk=qLwbRuEoP5icXjt3ILxePA&f=%28Batch%29%20Open%20App%28s%29.shortcut&sz=28315">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/(Batch)%20Open%20App(s)/(Batch)%20Open%20App(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4983,8 +5078,61 @@
        <summary>
        <a href="./All%20Shortcuts/Utility%20Helper%20Functions/(Batch)%20Open%20URL(s)">(Batch) Open URL(s)</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXw29uUVucRelwISdxj5MDVCDd3PAemET50nYBxhzVzvFOcfo4UDrTow%2F%24%7Bf%7D%3Fo%3DAidcVq421I16bBfVD3NU4lbb_qa8ZibROuiiYTDY8KF1%26v%3D1%26x%3D3%26a%3DCAogR0e7_B14bqXlHO3yvqlz1HrQa2y5l8AOfbHdebtLJVYSbRDz1qaoljIY8-ah_J8yIgEAUgRCDd3PWgQDrTowaiag1Dm06kFM45csX4cUvSeSd4s9KBF2mQxzan-sNDVfIYSFWIPUvHImoXQI-eLrEGtJYWPwKROw4N7HI2QCXiT7y2XOb7UMFonp93UHUhE%26e%3D1726569018%26fl%3D%26r%3D59439E46-DFDE-46D3-8EDB-3472056D85FD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DXSKOrmkjeqv3U5BQ9_YsBQStL5Q&uk=BLJ8rgreCSH-dqLpQNlQvw&f=%28Batch%29%20Open%20URL%28s%29.shortcut&sz=28170">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAePHUydTKvCbX_e30KBDQcYZMKaOAcmHyIKWlUQF5BdOaLcy4mvCbw7j%2F%24%7Bf%7D%3Fo%3DAjAbIUl7lKx9uJQtDW6mP6-HNC6cAcdmUo4Tt6G6kYCC%26v%3D1%26x%3D3%26a%3DCAogaMKu8zLo1wAW8a5iuJwWx1hr7zvb_6Xb0u2kACs0D8wSbRCdp-HJmDIYnbfcnaIyIgEAUgQZMKaOWgTCbw7jaiZ6GvK46YRQwuWtYLgca7oCzeJeDUrGfCskhHwOEKKSOTWxYA0il3Imx_eoXOhfP5usnDDK2GBJmde5ZwNYX_NHIp2yoneJy9yjc_j7-j4%26e%3D1727176055%26fl%3D%26r%3D7FE3F217-0A7B-49D6-BE60-08B4E6933327-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DNNWiH6H87rdYEWj3OFb5IDfIkGo&uk=LqdFTEUNjAnb2K62F0IvXQ&f=%28Batch%29%20Open%20URL%28s%29.shortcut&sz=28169">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/(Batch)%20Open%20URL(s)/(Batch)%20Open%20URL(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Generate%20Random%20Color%20Hex%20Code">Generate Random Color Hex Code</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAelYvPPauFzJZ_7oqLNhycGpbcVyAY9TyMgc62ePGgRs4PD9DdfiRTde%2F%24%7Bf%7D%3Fo%3DAjAkYCSzDPfrmqqCe2t7ePR3dU8Ntpr8sOfJoFBeF2bT%26v%3D1%26x%3D3%26a%3DCAogbeCXvZKnGsddTis8Kumb6lo8h5mcXHS2nDagP1pNxlgSbRDszOHJmDIY7NzcnaIyIgEAUgSpbcVyWgTiRTdeaibEChroba5gZCpoQ1-L04eCWjYWKMhN1W_IQTttDT2FnymCpowvZ3ImTgBcA1tm4lmswinYQUP04H0J_Ro6GhU6o62egfQED1nOyKgnP7I%26e%3D1727176060%26fl%3D%26r%3D721613ED-4EF9-4FD8-89CE-8EE47D406861-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DdulMxqit8fWPNIXwtH9E4v5VDq8&uk=YYAzHkRfSv11I1aVwmZStQ&f=Generate%20Random%20Color%20Hex%20Code.shortcut&sz=27354">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Generate%20Random%20Color%20Hex%20Code/Generate%20Random%20Color%20Hex%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Build%20QR%20Code">Build QR Code</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbkcJgJwunVGkdvd6D4Nl_ZsvK6dASOG_YnwPLz-lAWYbqgUl5qRMZvq%2F%24%7Bf%7D%3Fo%3DAtRVc8Rjtl5vhtlBMIdLAwLlh_CKi0gf_KPHr90HW8k2%26v%3D1%26x%3D3%26a%3DCAogO1yN-E1L-0kpfU20s779EFuLWXQKbCQ_0hX40aQHWFYSbRDx8OHJmDIY8YDdnaIyIgEAUgRsvK6dWgSRMZvqaiYcBS-CPuLYWqw-2UB7ss9TaSZQvCnCXmf6O-dUj-uD7C3ibRTTNXImgAfYmbYU3hkoLezgheTGRMoihC8kPTDyccUH_n0qw9oJ96t67TE%26e%3D1727176065%26fl%3D%26r%3D15F4524B-A0AD-4DDA-8BB6-84AAE79D4B66-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dm7tLyxN59IysVP9EMsWsb_WGRb8&uk=L-sqgpuVMVzKqWKjc1MOFg&f=Build%20QR%20Code.shortcut&sz=26985">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Build%20QR%20Code/Build%20QR%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
+        <a href="./All%20Shortcuts/Voice%20Assistant">Voice Assistant (3)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Voice%20Assistant/%F0%9F%A4%A0%20Start%20My%20Day">🤠 Start My Day</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZ_LJEbXDQGmshWJ8v5bANXRo2uOAXamA4-UHcS6oXm2gXs7eChcg5M3%2F%24%7Bf%7D%3Fo%3DAkb1C1qYLMRWHyMiZqUfhKspDifQzsj_cun0M-IqwI0Q%26v%3D1%26x%3D3%26a%3DCAogoaeChRI4doIpG43MnDC_WfphloNsgK87LTTSoPDv_qsSbRDJwdLJmDIYydHNnaIyIgEAUgTRo2uOWgRcg5M3aiY-K43o44P6fv2P0P8-K3_056ledvVB52ffBabswblhrHFr6E3LmXImahzQsJLFF-PYEhiUYJDCqm3Gp2kI40_GRrA87m4uZVh3keJNCDo%26e%3D1727175813%26fl%3D%26r%3DCB360B23-EDF5-481E-9C89-FFD3644E3DD5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D178IBE3Kk6J4RQW4vrRDtPt0ofY&uk=hO6d8EQt-MAE5yhUfRb62w&f=%F0%9F%A4%A0%20Start%20My%20Day.shortcut&sz=26664">
+       <img src="./All%20Shortcuts/Voice%20Assistant/%F0%9F%A4%A0%20Start%20My%20Day/%F0%9F%A4%A0%20Start%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Voice%20Assistant/%F0%9F%98%B4%20End%20My%20Day">😴 End My Day</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAQzLVV5NFNX-UqCyCFnz4HZrDN1zAU00ZXV4XV9U1hXb8Pi5w2C2oGQe%2F%24%7Bf%7D%3Fo%3DAh_yWOG1Bz3z_VofAVlhoPeq0dEiHgA29TIoyzKpL06y%26v%3D1%26x%3D3%26a%3DCAog27RseBTv_ZjeNYpqs1dcATg_6Mrj-OHv6AETRnGLK5sSbRDp2tLJmDIY6erNnaIyIgEAUgRrDN1zWgS2oGQeaiae-0vSpVf9UuEnKvP_a9Cc9aGndifk19JZ_S7gKADqZGRDfhJ0_HImpDBOCM3yMjLSUN_e69K5dzwRQanN69O1AJRmM-HDevUq_LgCBkw%26e%3D1727175816%26fl%3D%26r%3D8F59CE56-68E7-4361-8D1F-C39AC4C81CC6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dv7K-TJF8zcu8mqRGS8-Y_4_XgZI&uk=MlMH2egwNgj_9Qr8bKPqVg&f=%F0%9F%98%B4%20End%20My%20Day.shortcut&sz=26664">
+       <img src="./All%20Shortcuts/Voice%20Assistant/%F0%9F%98%B4%20End%20My%20Day/%F0%9F%98%B4%20End%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Voice%20Assistant/Voice%20Assistant">Voice Assistant</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAUKdJlj5NU6NvvU46gedtHNTqnjsAZw-4hLn-OHhRc4AK2XpvklBu1l-%2F%24%7Bf%7D%3Fo%3DAmtTVDbzW3qqsbLKfNskOsTNuxqaUTT8uLVo2VVXI9D4%26v%3D1%26x%3D3%26a%3DCAogTUdpelK92ggWgCcPpyuhOJCr79BmaijTwKb5vaaG0okSbRCy9NLJmDIYsoTOnaIyIgEAUgRTqnjsWgRBu1l-aib0x7sriQrJouCK-cP8aBYyiUdhIP1XBQ4oMpVc0mX-Suar1ouJB3ImLzka2xKYCempy80mQ2ujVx7muu3h8lNIs2orsmoyT3hl1mUiXEM%26e%3D1727175819%26fl%3D%26r%3D59040343-DA0F-4BA7-9DDE-F79F0FB5B4F2-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLR3ctbQkfY6Cj3vl9i89YSFyDf0&uk=TJ1b3FJtI4OZm5ZMMPmggQ&f=Voice%20Assistant.shortcut&sz=27349">
+       <img src="./All%20Shortcuts/Voice%20Assistant/Voice%20Assistant/Voice%20Assistant.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -5000,7 +5148,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Forecast">Get Today's Hourly Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASTdA1v5u3MytIefCAn7-Ua1wLQeATYirNXsO3m9YjK6oIUVxFRVGz-c%2F%24%7Bf%7D%3Fo%3DAm86oFUkUndPPGspvwUDCys-Dj-_0NpdeUs9RDzXf-Dj%26v%3D1%26x%3D3%26a%3DCAogepW4wkqGRRkRnsM2kYuRtLZ7jQ5H2OpFXmvQPV4vc8wSbRD7grKoljIY-5Kt_J8yIgEAUgS1wLQeWgRVGz-caiY53P6jBNcqLPrW22zCF_6fHTcJrr6KolPfEjvQtEjyTumb1cZTFnImYFmUZ2sm08DoxB1h0HfxlV_-Kh7F15dOQg25HGqWhaSnEm2vZt0%26e%3D1726569204%26fl%3D%26r%3D1C8895BC-58FC-42D8-8A6E-9345D9B43939-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DN_Dz_QPdH1z5EA0neQizxRn15PI&uk=pVMW67Eo1SRrELP4fsyuyw&f=Get%20Today%27s%20Hourly%20Weather%20Forecast.shortcut&sz=27903">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbX_9xaMIY_oQtHV8MJZHGwQS6BgAf_upONmI7fsdOORG3ACI7ekeKyT%2F%24%7Bf%7D%3Fo%3DAjuNxbJuXt6tfqgagOB5KvSuB1T51sdt8aqCmOUpL4WT%26v%3D1%26x%3D3%26a%3DCAog7sPEd8c6LGVfHiDm59UBcfFUAQEBQ1BggW8EdR0-qhASbRCL2oPKmDIYi-r-naIyIgEAUgQQS6BgWgSkeKyTaiZb8c2s7NyULsrOc-pqPEx0-GVAKIWNhDINOJ8Ya2f0O62eH1ioVnImLVDTIqKse9D47ufXLGqtXTmsTqtW2uIGZIEwl7Mhkwyard207hA%26e%3D1727176619%26fl%3D%26r%3D218D7935-0F96-4F65-BC2E-ED801F0ECF7F-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D-DxVsb5i2SSN2OnBqRvMDIIT4yE&uk=UnqRaRX1pTHRT6gYES0cJw&f=Get%20Today%27s%20Hourly%20Weather%20Forecast.shortcut&sz=27903">
        <img src="./All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Forecast/Get%20Today's%20Hourly%20Weather%20Forecast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5009,7 +5157,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Data">Get Today's Hourly Weather Data</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXamIiDOP0SFktVevpWtcekGTIGOAQ40df0wmg3dKD0njhpGJGTfk0bs%2F%24%7Bf%7D%3Fo%3DAv_4JL9cejDUVXdCrTpOwS7rO-frDmE3jwJ_UcUEolBz%26v%3D1%26x%3D3%26a%3DCAogHHRNPVNPBmhfY3tjDSsrBbEUgCio4PmSlx4r9FIQZhsSbRC4jbKoljIYuJ2t_J8yIgEAUgQGTIGOWgTfk0bsaiYPResqP-e_rdFgoXxDQbfxgB4wG0VpxhGR4w3w3wHLd15U2qOWanImZHI6268_wzl3LDA6BZdbge6cgpluQpQP3zA1eUPKds18Y6UEmzc%26e%3D1726569205%26fl%3D%26r%3D2EEF5A7D-0714-4C90-A0A0-A3F3100AFB0C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DAwF7WKPT0bx9FIfBTZAEtXZX2VI&uk=8ORn_YwKt4F3Lw8mAvM-ng&f=Get%20Today%27s%20Hourly%20Weather%20Data.shortcut&sz=28104">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfUsieLAfNmzZJ-S2FfUMr8267u_AVrYmBx2Yc0OZenx_TjH7lXovFwk%2F%24%7Bf%7D%3Fo%3DAniBGk-BMCMrd2yIJun_BfiNJiLrsPSIB4yv0c4v2Yqk%26v%3D1%26x%3D3%26a%3DCAogxDH3L7dCkxcd1121dGObNjNVbww6TqhvZ09MM93mfE4SbRDeg4TKmDIY3pP_naIyIgEAUgQ267u_WgTovFwkaia74zat71lHKaBN72I_355JAECJn-Th5e4HfKsBUgkHTbFUQnYJiXImX5Mw6S6QRbdHYoAkh6AsbP16yImYivD1zRu5y4vEyEUxAZLH9Kk%26e%3D1727176624%26fl%3D%26r%3D6C726769-10B9-4460-8312-97C801DAFA57-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dc58AgFQONSR_CWIkBiaqgHJmTpk&uk=qHD6fXTTLjE7g_qGAs99xg&f=Get%20Today%27s%20Hourly%20Weather%20Data.shortcut&sz=28103">
        <img src="./All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Data/Get%20Today's%20Hourly%20Weather%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5018,7 +5166,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Get%20Daily%20Weather%20Forecast">Get Daily Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfLj82qB0DsVbpNSy7xBx21RnZIcAb9nYOX_KB8wz0JXQokEqz2N2Cin%2F%24%7Bf%7D%3Fo%3DAsFeP2gW-Y60BJctbz259kTTUShpClB6Xw5gGdSvcbkm%26v%3D1%26x%3D3%26a%3DCAoggI6MuRLKtSLFZBkXNLovV7B8TRiAyQjF7S4159aGkccSbRDtl7KoljIY7aet_J8yIgEAUgRRnZIcWgSN2CinaiaX-UU6v2qYT0oXnQEHWPPT8ONrY01sihOF6OxlvBL4bahrcygeg3Imq8hXh7kBK85ndQgpiUwKFLkexR4EB5V5uNleVSBJblVedezsEdA%26e%3D1726569206%26fl%3D%26r%3DCE848B1F-2C45-42EE-A55B-9AA504DE43C8-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DTa72QfzcyaRqthoMaF06EJt5kOE&uk=FOW_5rJVnnQDY1R8LbnI_g&f=Get%20Daily%20Weather%20Forecast.shortcut&sz=27567">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAWzFLs2D3VOwd679cfTqHUxn3BLpAc6vovZYBOWZn5zO_QlE9xsA1Xzi%2F%24%7Bf%7D%3Fo%3DAqUcm-eHActSfy0yZxz1hv25nDNgmhSEl3F3wIfs-TD0%26v%3D1%26x%3D3%26a%3DCAogiAeMQM4irr6r2DN4KjUXarIC4iVEOHDNreA07Vf2W1ASbRD1rITKmDIY9bz_naIyIgEAUgRn3BLpWgQA1XziaiY9Zj_ll5j5OW0A1yZaJMajzJl-d8ebKSnYIgtQcvcbnp3Jo_beX3ImGthqxg7062MB1gVV_3dZdTNsZv1VQ0N6ya6JhGgLv8-6m0t1yhk%26e%3D1727176629%26fl%3D%26r%3D4658715A-B5AD-42EA-90CA-5C8131264664-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dr7TN1bqxTiym2MXxEuw0RdRNgCE&uk=BOAOgIqKkCHchyPpybrY1Q&f=Get%20Daily%20Weather%20Forecast.shortcut&sz=27566">
        <img src="./All%20Shortcuts/Weather/Get%20Daily%20Weather%20Forecast/Get%20Daily%20Weather%20Forecast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5027,7 +5175,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Get%20Daily%20Overall%20PoP%20%25">Get Daily Overall PoP %</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYlZcmhdBmNcVIlobFTXLre9EwcBAb9z8N04drWUvNp3a8yC6HOKMoz6%2F%24%7Bf%7D%3Fo%3DAtZrAnBIhZniO9bDTYovmncJOK-KTcgL7rTw5mqjyxHa%26v%3D1%26x%3D3%26a%3DCAogEyH9Zsb4iVfHJJ8A4d3n88qQtgmM8LI48TSjKUxnNSESbRCzorKoljIYs7Kt_J8yIgEAUgS9EwcBWgSKMoz6aiZGW7fk7lWGL8gG2QtiV4hv6bmYierjui90eAtOKpRoEN9h--VI3XImzI6Macc7RMs53CoDKkFxVogqdyaQ0IrVldb5x3Tkjm0XgfPiKSw%26e%3D1726569208%26fl%3D%26r%3D1E8BAB6C-D17D-4CF8-BB92-CBF80F58E70B-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DHXNHMRKq6TTpN6o4VpGn5rMS9yI&uk=ttQ_j3LiUlLCuUR9NAoQ7A&f=Get%20Daily%20Overall%20PoP%20%25.shortcut&sz=27290">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAdyvqGSxpgRH0j0bTxjtGOqBQz7aAeJwLXCv1WXENysEwbk70Qv0IRiw%2F%24%7Bf%7D%3Fo%3DAj3UItt3IwPobHYDaJbNC7ytuZ9dkq6a_laGBETRZpvD%26v%3D1%26x%3D3%26a%3DCAogn96ONJpvWxlCUE-2GngakyM5DixvRDdtatOeYw-fOtUSbRCQ04TKmDIYkOP_naIyIgEAUgSBQz7aWgT0IRiwaiaH7qp7uChxPhn3vlvI2aI5YxJToXvC2lnYfhCQudMzyBbzaofHMHIm6F8KEALWOCW6eeDoeU_jCfBuf5cmYWAi4HG86b78bgrThYu5ujE%26e%3D1727176634%26fl%3D%26r%3D36397AB6-6B6B-424A-BEA9-458EE8F99A15-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DQKQ_2XVhE-gu62JDysbc9h0RA1c&uk=P9TtzISSd4zLAOfhdn-oIw&f=Get%20Daily%20Overall%20PoP%20%25.shortcut&sz=27289">
        <img src="./All%20Shortcuts/Weather/Get%20Daily%20Overall%20PoP%20%25/Get%20Daily%20Overall%20PoP%20%25.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5036,7 +5184,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary">Generate Banner for Daily Weather Brief Summary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZsznxP73j64F2o4ngHBBR1bZ8UwAQnWbE3aLTdgWjbqoQqLYK6bCuBp%2F%24%7Bf%7D%3Fo%3DAgDVtkZhpuw70WAo7fXW-aqZMmNLvLS02msPRXRPrHw4%26v%3D1%26x%3D3%26a%3DCAogyWtWYllc6CVLXU2wAHOynOlWSqhZv0t_Jm27tq0jqgQSbRDHrLKoljIYx7yt_J8yIgEAUgRbZ8UwWgSbCuBpaiYHRIA3ZRQ6V3le1lo62QGnygsxjVe6Pn7lpYp6aqq4ZlGnmVAehnImQYq38r0JlngFjtvvI_n7e8rRPE66cw0rK6ekSaeKM6k3errILFc%26e%3D1726569209%26fl%3D%26r%3DD99FFD61-345D-47C5-A352-0E5F4AA1A3D6-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DFjbhH2HMYMz9dHG-cAcjRebI-X4&uk=4hIwnDOSngCFq0FZoNQLgg&f=Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary.shortcut&sz=27869">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZnIy6TrpU7yo7o40VKJSiC_OIX6AecMu7mcZ1O4aDo2klFqAOcZO9JZ%2F%24%7Bf%7D%3Fo%3DAkhRz5US076uLXp46LbsKlOiWeWZnJEN79Zzxm0e21hn%26v%3D1%26x%3D3%26a%3DCAog_AWlUEuQ8KB__3yL2KI_U36EpLNKgpklyZ116ecEfYASbRCn-oTKmDIYp4qAnqIyIgEAUgS_OIX6WgQZO9JZaiZWJk5SlAKjfLx8tb8yuoPKBW6_SlOUBsHoVwoDm2iKQ32dMq-wPXIm9rV7m9pOasxdhq82icaRijcfFfYXzhsLUzQKI8q9Nx1WsxayBwc%26e%3D1727176639%26fl%3D%26r%3DBA9A5170-4D23-4D56-8E29-2C0AB4758ACD-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLGcYx0dCghi3nR2wKQG9lh4Eyzk&uk=AsMU0fYj8Q4TcWbod-uYwg&f=Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary.shortcut&sz=27972">
        <img src="./All%20Shortcuts/Weather/Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary/Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5045,7 +5193,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Generate%20Daily%20Weather%20Brief%20Summary">Generate Daily Weather Brief Summary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAcRciOdQc0-oqLa6ixcGE1v76b8jAX-aUSwWRyl6sjDZTLqo9YSy0f28%2F%24%7Bf%7D%3Fo%3DAskAtamJRekdHQUMGxuXCnpOSwXu_kSGcoIZc-smJPnl%26v%3D1%26x%3D3%26a%3DCAogoKhYkX7wp6qux5N3XAE7xWTIqh-39Qgum9Rp0LbEfx8SbRDgtrKoljIY4Mat_J8yIgEAUgT76b8jWgSy0f28aiYFkCyc0bZqnQ-TWT0q55xcM25Z2Fk71zzaXI8kNLeUgbLAJIueOnImiElN2Ic0f8iFs2ZJYcC6v4YhitVXVg1eXZ8C07xvJRDESlVsqRw%26e%3D1726569210%26fl%3D%26r%3D853D0FED-2603-4503-BD7D-85AD3CB10205-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DVODerksI5StYRIepvomVPTTKTpg&uk=_lDc0u_2ZeMwyDs0Hx5HJQ&f=Generate%20Daily%20Weather%20Brief%20Summary.shortcut&sz=29959">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAbsAA5v_8cGdHpCSkjFByMkOf-eXAZ0Zs9Kfaz479MegHkPjCn-7xokH%2F%24%7Bf%7D%3Fo%3DAjhz3Z1S6fD_UyzEJ4n0z9NnuGEfCy6rHJjJ-AilOpEO%26v%3D1%26x%3D3%26a%3DCAogWIUvw8qZ9JwjseBmKPOMarv1PPMJ8Txr6ooLuQWVrhESbRCcoYXKmDIYnLGAnqIyIgEAUgQOf-eXWgS7xokHaiYwaeYk0vZZAQ2TvmatYkl8FCJaKsloVmbJ16EbcORhhKY3X6tYiHIm4FuCFa6riw9nVvyImFJlIOQR3y6r_ruZyb9jj7xTxrJsM4j0u8g%26e%3D1727176644%26fl%3D%26r%3DB3F84544-F9C0-4618-BD02-11039284AB07-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DCk-goBV_Pg9VrSf5DcXAyXk_EdM&uk=kKRu6WBpnm2vW9ihvuqunQ&f=Generate%20Daily%20Weather%20Brief%20Summary.shortcut&sz=29955">
        <img src="./All%20Shortcuts/Weather/Generate%20Daily%20Weather%20Brief%20Summary/Generate%20Daily%20Weather%20Brief%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5054,7 +5202,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Show%20Daily%20Weather%20Brief%20Summary">Show Daily Weather Brief Summary</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeDoAWRa7JaWWizOUE7tk2Ohg3Z8Abkjxfow_aOccHKGA__ogPEVR-1G%2F%24%7Bf%7D%3Fo%3DAuv11XSa_CpjZg2cW8ExU3Potu9O_oBh0D2ErDWJE8Rd%26v%3D1%26x%3D3%26a%3DCAogA4Ay7rOxGPJsD6433fxWTZ-H2H6qygrItfC6P7OKi4oSbRD-wLKoljIY_tCt_J8yIgEAUgShg3Z8WgQVR-1GaiZF_HXcReh9IMHzIZOL6ImrD8tsMgrR5Mr7E7QvjqyYbG1oDwpBwXImEpFGHB45pEe5QMpNohojoqqEF7kCTa3d2ZoaKrPp0BM1zvWVbDw%26e%3D1726569212%26fl%3D%26r%3DB209C689-978B-43F6-8D40-909E85DA8563-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DctdrYxjpB6h9eQE2_r_Us4Z2sBQ&uk=RnWqMiws7XaVfYyGeq2Cww&f=Show%20Daily%20Weather%20Brief%20Summary.shortcut&sz=27456">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAXy8r7d-0Hxe6IDFyp86t_GZAjJvAZwKs42_jlchQOQBRfRsfqXlJTn9%2F%24%7Bf%7D%3Fo%3DAgJ9Bnm9vouKWokkNgE4OXe2PsBqYXDhDHXJXEsvbwTs%26v%3D1%26x%3D3%26a%3DCAogTmNnG6RBvZFIL_IW7eAe-1WrD1HDRgv8UD3pjqxsNt8SbRCQzIXKmDIYkNyAnqIyIgEAUgSZAjJvWgTlJTn9aiaWWVYLIqrx8C1QVkZBnMsz-dQFn1NNdt0XhhMFEZvZlqSvQT0ji3Im96qaxgrX02lxNvOUcwod2U_HqBopPY97ZmBknSLuZJo419sCynY%26e%3D1727176650%26fl%3D%26r%3DFEC4F6AA-0084-49DC-B1A0-7CC659592F02-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dwj6cA0ZH3TdpfaoJSTK49H9SOuQ&uk=yRDrWRwFHe5lFzmqQY-ZMw&f=Show%20Daily%20Weather%20Brief%20Summary.shortcut&sz=27455">
        <img src="./All%20Shortcuts/Weather/Show%20Daily%20Weather%20Brief%20Summary/Show%20Daily%20Weather%20Brief%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5063,7 +5211,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Fetch%20Today's%20Weather%20Info">Fetch Today's Weather Info</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAali7zEUGdK7nupkCHnR4g8PnpfvAcTcFEDRlozgyj1vV1Vt50vUKPOa%2F%24%7Bf%7D%3Fo%3DAmpJa0pco325P-Hpbo5IO_ciAZohj-iltdnsVkBMmXPX%26v%3D1%26x%3D3%26a%3DCAog8Y4I-zJ2imjf2duofAtfn_gECOghEZB542RxQUSpLKQSbRCdy7KoljIYndut_J8yIgEAUgQPnpfvWgTUKPOaaiaHV16qsTcpd8aE7xMb6zZ4MSWqMRlYzWcq_whaPDgz0NFXJz7CdHIm3UZtl740h1NXfYnWPv3Y2H416-isUokrWgd5ccbRZ4036s-XSdA%26e%3D1726569213%26fl%3D%26r%3D94ECCC19-139B-4D30-BC35-544CD7050F3A-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D8iqAA3oZX-7MOr774TJgfkV3bX0&uk=3nJzPfYXhVBqqZTelJ814g&f=Fetch%20Today%27s%20Weather%20Info.shortcut&sz=31869">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfaUA2JOeqGkzsVzOxo-gr57I7vaAelTSYeK2PUVWyO829ukwiHJ8ctZ%2F%24%7Bf%7D%3Fo%3DAvI8mgPZXD6-g26f7GFEJmvmFsh463t2rCdSUtzHSDhz%26v%3D1%26x%3D3%26a%3DCAoghbAVC106kVd1JS1XIK4BJ_XGSjp7WB3eJwfERlKFjBgSbRCL6YXKmDIYi_mAnqIyIgEAUgR7I7vaWgTJ8ctZaia3z3EWMPasfHO5BsLaIsL3i3oYKw6Czf4UglsB9mvUg2h0Vh6M8nImz8mcsKI_f6kSoqLNeCBoQ5VrNTxq3ljpl81_j-b6OXYP5w34nWA%26e%3D1727176653%26fl%3D%26r%3D5A452EC3-1E83-41FB-87A0-5126148D72C1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DLqtDpfUledTK_XbIUv-qiSson3s&uk=qlMXpGqYgEhb35tfkDx4iQ&f=Fetch%20Today%27s%20Weather%20Info.shortcut&sz=31871">
        <img src="./All%20Shortcuts/Weather/Fetch%20Today's%20Weather%20Info/Fetch%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5072,7 +5220,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data">Get Key-Value Pair for Max Hourly Weather Data</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfQPde1GU4Hts6bKotz7FpUlX8fzAeu-wyOPmFLTQRn96ae03CsWy7LY%2F%24%7Bf%7D%3Fo%3DAt2dXpsm07e-GllxMN4Do4GzWNDIABdQAEu_WWjBZ7Ce%26v%3D1%26x%3D3%26a%3DCAog9tjbmUWMqOnj-tsnb45dhXdoZtCupGzmBzaAimafkpUSbRCX1rKoljIYl-at_J8yIgEAUgQlX8fzWgQWy7LYaiZN63rJkD61djYWIXoGY34u85pgYcuIeO3XbfYtrsTql36H0LiwhHImpKspLGMFxV1FHrbi5UpeUi5-93STjhgD6PlUMeHErDbJlY5f9fY%26e%3D1726569214%26fl%3D%26r%3DF988B37B-1D28-42BD-B061-D3043281E03C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D6qrtYspQzMnZvbwJ2Jxl-kywLSM&uk=e0jolf2BKKOGKo5wcaZFzw&f=Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data.shortcut&sz=27969">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAb523ZtJDd31PMg_dU0l8zy90K4RAVwVdm359RMoFoq_adjlOIJm1tR4%2F%24%7Bf%7D%3Fo%3DAh00D6tasv5pMk1kw-qbj3iupPXKplzJW59BscUU2DhK%26v%3D1%26x%3D3%26a%3DCAogUrCBI6BFZo7z8nfFhjVQTqb7cy0IYVOH0Zr8JtdGeKQSbRDrg4bKmDIY65OBnqIyIgEAUgS90K4RWgRm1tR4aib8-eyfYZNio0ryhMvEyhbQ1Di0Az3iMQ7GrEVNVLdMFE21Vdg7BXImoDahU9CVa-8gfmN8o8UDZsol-jiqFY0Ellx2IkNGEXPCwAT4KjY%26e%3D1727176657%26fl%3D%26r%3D98155305-B650-43A2-A91E-357D31142217-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D1MOcm3vpYExKwI7ZwXpS9r0CiZg&uk=tR5SqE_VmHc1fQ4fettFNw&f=Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data.shortcut&sz=27968">
        <img src="./All%20Shortcuts/Weather/Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data/Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5081,7 +5229,7 @@
        <summary>
        <a href="./All%20Shortcuts/Weather/isSunUp%3F">isSunUp?</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASy5PpzveoeMwQtk4rQVxN1chC2vASuypEdLzfjv5QRskq7k-8_SzWTY%2F%24%7Bf%7D%3Fo%3DAnHirk-X5moOQudBojcp9j31oMFN7E_L5_hm40qAIkmZ%26v%3D1%26x%3D3%26a%3DCAogSFmbB-D4P2FDaOeAkBihoz2im5x1HR1qSV15IK0NVLESbRCU4LKoljIYlPCt_J8yIgEAUgRchC2vWgTSzWTYaiYVP6yRXoz74HajPKe25kr4I66Cv6TPQ8LkWSXFGNab06ciTcWY0XImbV5JYHJGzkmCfZM0BwYry6EOpFKATgq43veaC4gF6k3SXJIL-J0%26e%3D1726569216%26fl%3D%26r%3DA8B06920-4907-4AC0-9B9F-22240A4EC7EC-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DOK5y04QZoRZ6Vlt0-_4C9xBniGM&uk=VKtCiCobx1-0vOXoVUtTew&f=isSunUp%3F.shortcut&sz=27304">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FART0Sj-c0cnhqprQHR0NpUQnvIfBAbQtO6veZAXWDRVq_D5kjHRgIFMs%2F%24%7Bf%7D%3Fo%3DApID2Ef-BNPAFEb_mTH-fyQOrO6kNj-AUz488Z2WaDZE%26v%3D1%26x%3D3%26a%3DCAogvrJK4JOivov_ECjfuJGUbiij7rEATNoHNJxGS6hWWk0SbRDJnYbKmDIYya2BnqIyIgEAUgQnvIfBWgRgIFMsaiYGsfgR0aVDlW_GCFZINjrsjzzd_G5TcJQTGKiI_EGKBB9hhPiRq3ImvQYfvApAHQ5WOV_Rj2Czl7AQm09_QEe711wJoeocOXIXmce853I%26e%3D1727176660%26fl%3D%26r%3DB31528E0-BAE1-4C90-804A-9E3325FC9AAA-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dbvdawrdi5itpXRnGY5WAbUvLaZE&uk=vidTd5L33NGohHfKvbMOAw&f=isSunUp%3F.shortcut&sz=27303">
        <img src="./All%20Shortcuts/Weather/isSunUp%3F/isSunUp%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5090,7 +5238,51 @@
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/YouTube%20API">YouTube API (3)</a>
+        <a href="./All%20Shortcuts/Week%20In%20Life">Week In Life (4)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Week%20In%20Life/Backup%20Weekly%20Memories">Backup Weekly Memories</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYkidO1FPQJ0WyCXZgw5VnZZIKxKAaN-eFEm1RK38Cr91SJEJzM8Is86%2F%24%7Bf%7D%3Fo%3DAqWZWiqpMoKddwoe2fTBf7lXxnT9MGEUCLLCoIPlqJWn%26v%3D1%26x%3D3%26a%3DCAogYNHnHdWQIsWuPSuBqRkbtNvkhIjgP_XDi2CxMHpoJ48SbRDi3dHJmDIY4u3MnaIyIgEAUgRZIKxKWgQ8Is86aiZVWQmRxtdDcAyfuZ6eEFY8KwVJePXtQCTOUvVhlxMLWU7D9jP2rXImk0dhfElsv8av02SZvY8xQYgMD05IUsqp03MHuchiulN99dzsWvk%26e%3D1727175800%26fl%3D%26r%3D18885130-5C37-4467-B90D-A8BBDDF7B1E0-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dkw_onNVP7-CFwBdpjBXvEcZqagE&uk=2OBDrpSJso_7AHY7QMFCvg&f=Backup%20Weekly%20Memories.shortcut&sz=28571">
+       <img src="./All%20Shortcuts/Week%20In%20Life/Backup%20Weekly%20Memories/Backup%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Week%20In%20Life/Review%20Weekly%20Memories">Review Weekly Memories</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAU5IHaWyU7NufxS7ANTRgKbI4d6KAZ7YYO-3870Bqe9339MPChixmrms%2F%24%7Bf%7D%3Fo%3DAmuWpTOTN_hD1YaqouUAsYA--GRD8UGfRH47mMW1pjDk%26v%3D1%26x%3D3%26a%3DCAogEXxJMsDnT_wNSdiAKzOwyMVdJNe0hpU01o8w5iZuck0SbRCw-NHJmDIYsIjNnaIyIgEAUgTI4d6KWgSxmrmsaibL6YEok5v5SDzHbXDNdqLaEmuTgmKXvNsDwKKua4lz2oqg_J0DR3ImTwmPAU9lT1VEALBK2-l7RyhfQHXxK4bt408lhNZHnGk8_Ply18Y%26e%3D1727175803%26fl%3D%26r%3D38ACAC0C-B374-4F4E-8ED7-E4C29D944012-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DkN1NrDSCneSythLJuOw_q9nygQU&uk=6xAvdyBnn-DfUXnFkvh2lw&f=Review%20Weekly%20Memories.shortcut&sz=28492">
+       <img src="./All%20Shortcuts/Week%20In%20Life/Review%20Weekly%20Memories/Review%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Week%20In%20Life/Done%20with%20Weekly%20Memories">Done with Weekly Memories</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZSagE2MeQElkDRewckhTS2A99MLAYyG7iUl6525axjpafGIfsHeMbdZ%2F%24%7Bf%7D%3Fo%3DAvtw8taYH8qVW1WC-oimQJVEvZ_gwkI0dCv940IMXnvx%26v%3D1%26x%3D3%26a%3DCAogRcH9jQn4KIwzR0sSX9qQRnembCgHsw7wi4wsAiYqzUESbRD_kNLJmDIY_6DNnaIyIgEAUgSA99MLWgTeMbdZaiYDc1dib5eLVE0SifHYw0fqJBgWkTayHmLOMdyjSn0ZZDM6NbTrJnIm017X6XyKr68RqKHfFVt5oy5jVOxgp5rKrAwm4p8VvQ18ALcO1JY%26e%3D1727175807%26fl%3D%26r%3DAA26E246-8BB3-4E74-9FBB-C95D0C3CED62-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbyNg_KsyFRb4CebrrQORjAY-F2s&uk=07P7qi9x5NsHHm3wT86zhw&f=Done%20with%20Weekly%20Memories.shortcut&sz=27626">
+       <img src="./All%20Shortcuts/Week%20In%20Life/Done%20with%20Weekly%20Memories/Done%20with%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Week%20In%20Life/%F0%9F%8C%BC%20Week%20In%20Life">🌼 Week In Life</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAaDqPLoeLm69cx5FUmcE3uUHeupzAY-Dr-PKZz7vgdLa8P4nf4u9grkQ%2F%24%7Bf%7D%3Fo%3DAqAGf7PhYAzk8pCFJhqDECmXm5dpne5aoFKdPpfS_0zj%26v%3D1%26x%3D3%26a%3DCAog0EOy0prfT5Gd6ryyBH0moaSVM0t9bBLd8fNm6oFFKs0SbRCuqtLJmDIYrrrNnaIyIgEAUgQHeupzWgS9grkQaiZeGrmlMo8P27vjhDcn3wZ3pd1aJek11Qp2U086TUsGnWI1j5K1R3Imrjwt1xtB1TkDwNZxT2cn-B62nmIhe-FUTnAG3kVvi3ySOfj2F3M%26e%3D1727175810%26fl%3D%26r%3D91AD37C6-58C5-40A0-830F-BDAF1992D9E4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbzAMTSxrdoAs0eKRrF7euboFFns&uk=kVjXygwgELlyrnFmIP_p8Q&f=%F0%9F%8C%BC%20Week%20In%20Life.shortcut&sz=26795">
+       <img src="./All%20Shortcuts/Week%20In%20Life/%F0%9F%8C%BC%20Week%20In%20Life/%F0%9F%8C%BC%20Week%20In%20Life.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
+        <a href="./All%20Shortcuts/YouTube%20API">YouTube API (6)</a>
       </strong>
     </summary>
 
@@ -5098,8 +5290,26 @@
        <summary>
        <a href="./All%20Shortcuts/YouTube%20API/Get%20Playlist%20Items">Get Playlist Items</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAT140zn7C4860FMl3RgImgtPT78nAZCQp8wgQQ68E3VJ07HxMjL4EZf3%2F%24%7Bf%7D%3Fo%3DAmI-rqW-CdRzKxuDpBmMpq3q8TrIfiHudJekRwaXfSXX%26v%3D1%26x%3D3%26a%3DCAog6J1Pihy1WwdxRCjBAx4fa79pr6c6JDVK2qSvVGifhWMSbRCusa2oljIYrsGo_J8yIgEAUgRPT78nWgT4EZf3aibEteU1rAehLVQ41Qu2x5hBC_F4kmGp5HIFM4pnI6Y_vl9Vy93K6XIma27NTXG6I9-qdvuXbbh-qTUZR9Z7CMR48I6m0SFIg4kVB4kG0VM%26e%3D1726569128%26fl%3D%26r%3D3CF8979D-690D-41A7-8B8A-720447387082-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DvnuaKaAwBqujIaY45I-li2Meh80&uk=_QAdJ_jxn-kizSdX41Qiyw&f=Get%20Playlist%20Items.shortcut&sz=32304">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAYgY-yOwcBvVGjNt5TRgNla1q8CMAV7jl-E3kvFA2TyIBluJM3dPUjaf%2F%24%7Bf%7D%3Fo%3DAghsHxVcIQfRvXCog8twqw8b9bgpTgUzogUS2FVEpejY%26v%3D1%26x%3D3%26a%3DCAogKck4evCxU7OfqT4WlqX_J83ddPXhMXBBIK4eX9Kyr9kSbRDdifTJmDIY3ZnvnaIyIgEAUgS1q8CMWgRPUjafaiZz4A4ZY357gieImTicad-b18xt8M58y6BLzvvCMn1AkalC5BSdRXIm2U5Y3xIo8UQJ1o0SlkL6IZOfFXI3li54izgQ7ItUS1nfV7XWe7s%26e%3D1727176363%26fl%3D%26r%3DA479C254-78FC-4CD4-9FDD-CCE7921A7F83-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DzACl2H4_8YZjdYeFNooDvh5KLZI&uk=3loxr5HLQWlxMC1bVoDBvw&f=Get%20Playlist%20Items.shortcut&sz=32290">
        <img src="./All%20Shortcuts/YouTube%20API/Get%20Playlist%20Items/Get%20Playlist%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/YouTube%20API/Get%20playlistItemID%20from%20videoID">Get playlistItemID from videoID</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX0MgajPapWBMMypL3G77mQrXuPCAbUScC5R0Bhzw684YkRTWecrLId4%2F%24%7Bf%7D%3Fo%3DAgvjZa8Z5_jaISbo6bPEfjwPM1PCA-eBx3d0kUhZnu-x%26v%3D1%26x%3D3%26a%3DCAogQZL1u5eq2yEKsVtelsYIoXxJEBCQZBVYb8eTKqv_NlESbRC7pPTJmDIYu7TvnaIyIgEAUgQrXuPCWgQrLId4aiYQX1tNqs5KloICzMyh1NyRhdXVc8oaNCwObo1md9l5jQNcUwALHXImrReMQPP0m6ej2PM-jhKUvV4zoEIeN2C-g0FexIDqXlHCit0XeR0%26e%3D1727176366%26fl%3D%26r%3DD70A33C5-9C60-4F6E-9616-8059F2ABCB87-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DuLRERh-2WNuLSC8tHbpU3xhaDLg&uk=ihjHZ1_8v6pTjjLqx8z_6A&f=Get%20playlistItemID%20from%20videoID.shortcut&sz=28139">
+       <img src="./All%20Shortcuts/YouTube%20API/Get%20playlistItemID%20from%20videoID/Get%20playlistItemID%20from%20videoID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/YouTube%20API/Check%20If%20Video%20Exists%20in%20Playlist">Check If Video Exists in Playlist</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAZb3tubemFpENa92goxaUMsOgBATAYO8GGZ5ElwPJm_cBVBM5z3vLSSk%2F%24%7Bf%7D%3Fo%3DArESVF3aRUZh8YLTFdwjGwkEkQdP9D3W-ioMP1VyFWCy%26v%3D1%26x%3D3%26a%3DCAogEnf0SPbg7gvlE-s87aPGQJBH4d3_jyJ43ISfdnkodgUSbRDszvTJmDIY7N7vnaIyIgEAUgQOgBATWgTvLSSkaiZAU1gXGfGQLYLp9WpmgNj1yYxeqv9kfyb7RYqzYVqHYCH6rGvx9nImuAfdz2m0VH3kCBDW9uvpOlnuZhGDn3Bfb8SXMp2aa0V4GxXq6oQ%26e%3D1727176372%26fl%3D%26r%3D391E62AC-6DC0-41BF-9251-92AA13A0EAD5-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3Dh_5YySJ1mCrWIkcCtAAxaXW9VNE&uk=4Bhq4Y-lmBnQDK912r_DQQ&f=Check%20If%20Video%20Exists%20in%20Playlist.shortcut&sz=28552">
+       <img src="./All%20Shortcuts/YouTube%20API/Check%20If%20Video%20Exists%20in%20Playlist/Check%20If%20Video%20Exists%20in%20Playlist.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5107,7 +5317,7 @@
        <summary>
        <a href="./All%20Shortcuts/YouTube%20API/Get%20Video%20Properties">Get Video Properties</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAc23RpTb6VUDzyVKYYKoaKropvpiASYTEN0zbteJhjfLAfzP1PWqRteX%2F%24%7Bf%7D%3Fo%3DAlf2kF0nemUUd8sqfrlbYyIn0SCZacDHGOll-ekhuWyP%26v%3D1%26x%3D3%26a%3DCAog1dsHejBZfUqas1qzbb3igZyjsN-XKAT0dprpuymraNMSbRCcvK2oljIYnMyo_J8yIgEAUgTopvpiWgSqRteXaibQs73PBN8gfhJdb6DGTtBYE0P2OosITZtQLaoxWy4KKHSbJBa1c3ImIUVqG1bj6XaT4PUtXvW5Njdne8jQQ2LhmFpGra6MK_ixrPgsLpw%26e%3D1726569129%26fl%3D%26r%3DACA58908-CBDF-4A99-9705-32CBCBD7AFC4-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D11urcun7lsxwlq5La2gpUaHsvn8&uk=D4VN_OOPDpxZ3MQ6DsIHfA&f=Get%20Video%20Properties.shortcut&sz=27967">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FASFoXaVw99WsgYLgETtEjaNajivOAW4Pe3IchST-C5WJDbCDp4z6NU-6%2F%24%7Bf%7D%3Fo%3DAts8nKMHS_vLxSDLl3djoh4OEa4D-LMygD6G1lLwN9Ua%26v%3D1%26x%3D3%26a%3DCAog9h-nT0ydsZrohsXcRD6ShBZmikAhbGSKL3JTYlp0oJoSbRDN_fTJmDIYzY3wnaIyIgEAUgRajivOWgT6NU-6aiYd-4-HBnrhJEdeI1xxwZArQse0fTirC9ZvGAyNUz0UavKmuHiXW3ImYQyk40munikQqE4L-khT9cML06gssm5gLu2Sz8qaKyjtIepU4s4%26e%3D1727176378%26fl%3D%26r%3D6AD0D13D-245C-45B3-8FE4-B16769B0D338-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DjEBSLk7zzLZiEbg_HpEIMBdheAs&uk=VGwaS0mvc3y0TEt8stVtPA&f=Get%20Video%20Properties.shortcut&sz=27964">
        <img src="./All%20Shortcuts/YouTube%20API/Get%20Video%20Properties/Get%20Video%20Properties.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5116,8 +5326,17 @@
        <summary>
        <a href="./All%20Shortcuts/YouTube%20API/Insert%20Playlist%20Item">Insert Playlist Item</a>
        </summary>
-       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAeIvp11f1sKvI5hhLnHGpNi0rpGOAXLAvd2pdKa2q8wjkSjQtrZNmH5v%2F%24%7Bf%7D%3Fo%3DApginlSYuKNvg9M9O3syKe6A3yZRzL0K5fiQEkK59xi_%26v%3D1%26x%3D3%26a%3DCAogv9HzCO-JjMevQuF3zhzgXN4iOs1tsxdvHEnCGNMn-xESbRDCxq2oljIYwtao_J8yIgEAUgS0rpGOWgRNmH5vaiZUK0RUPFXm9xdTg7M6JtbM-ApxBxWVAOyn2FaaqGFxSFsPws0mj3Imyb-aXYt-ewLdvrd984FVf0HwSLjt5xkpnvEwEDPN0Skz9SLQh8M%26e%3D1726569130%26fl%3D%26r%3D1D202D29-6939-44A7-AD5E-A740D7AEA53C-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DRuxsbqsD0GX5_5-_NiqvMXqBMJA&uk=wd_5Toe8GD9aQVtWN8U-SQ&f=Insert%20Playlist%20Item.shortcut&sz=27743">
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAX6wvnuB8CnOUjlbY3p1pc7Rs8fuAcs4TGa5BOvgmn7y4C1uUNGuvc7c%2F%24%7Bf%7D%3Fo%3DAuZ2gGd7b_nA_Br6jtQJ8wFryHLpUsXHU5ydqmVqBnb5%26v%3D1%26x%3D3%26a%3DCAogMXJpoRxEvIvnRpzjBqTo8n4bQ3hGtB0mO7ap4jIRLqgSbRCRpvXJmDIYkbbwnaIyIgEAUgTRs8fuWgSuvc7caiaPvVtAIEmBHmlWy9J4tW7OjLpenPC2o1VW3L7ISpn_qVfTTyJUGnIm86gDjF5i4UJxdnSoYW6EK8kn7-hgpz5_6CcBojG-P4MkNSwe3jQ%26e%3D1727176383%26fl%3D%26r%3D9596BF1A-B5D6-412F-B28D-DAFE5D7DBEA1-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3D_xdukczyUZqkQ2ipC5lamkkNrQ4&uk=Mnym6N3ycnY4gquGLuvDVw&f=Insert%20Playlist%20Item.shortcut&sz=27742">
        <img src="./All%20Shortcuts/YouTube%20API/Insert%20Playlist%20Item/Insert%20Playlist%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/YouTube%20API/Delete%20Playlist%20Item">Delete Playlist Item</a>
+       </summary>
+       <a href="https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com%2FB%2FAfEuuIvz3l42Oa4Jj9yFj_97spYTAXwA6zzhbYEkaEnPJzA2sdJGT4I-%2F%24%7Bf%7D%3Fo%3DAty7yxmVBboKIfxW1gmB3pPIs8yj_ftpSRcQ-__tCCEs%26v%3D1%26x%3D3%26a%3DCAogrsU0kJOtXgYJswzn4wBwBCmc1RzXevgejCYqbVRsT4YSbRD6xfXJmDIY-tXwnaIyIgEAUgR7spYTWgRGT4I-aiZM8n6QLsGUZ95Q3V3aiel2P2ycQqF6pZvkvMXP_FQcdhOB8hIPLHImzoplY4lBsGZ9OjssYqFvVAFDA-CV1mjTSDgizqS9zDGji3f3ZJQ%26e%3D1727176387%26fl%3D%26r%3D13745AB9-D31E-4377-BFCA-92F221937645-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D108%26s%3DbPwT7M9xBQMHNBK-iMMZPuLTqTQ&uk=TdGdNlD0UUFKcBlzd5SxSA&f=Delete%20Playlist%20Item.shortcut&sz=27491">
+       <img src="./All%20Shortcuts/YouTube%20API/Delete%20Playlist%20Item/Delete%20Playlist%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5125,15 +5344,9 @@
 
 </details>
 
-## 🙏 Acknowledgment
-
-This library wouldn't be possible without the Shortcuts utility apps listed below:
-- [Data Jar](https://datajar.app)
-- [Actions](https://sindresorhus.com/actions)
-- [Toolbox Pro](https://toolboxpro.app)
-
 ---
 
 <sub>1. This section is generated by [this Shortcut](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats).</sub>  
-<sub>2. This chart is generated by [Charty](https://chartyios.app).</sub>  
-<sub>3. TThis section is generated by [this Shortcut](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure).</sub>  
+<sub>2. This chart is created by [Charty](https://chartyios.app).</sub>  
+<sub>3. This section is generated by [this Shortcut](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure).</sub>  
+<sub>4. The QR codes are built by [QR Pop](https://www.fromshawn.dev/qrpop).</sub>  
