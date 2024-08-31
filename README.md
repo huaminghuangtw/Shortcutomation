@@ -1,7 +1,8 @@
 # Welcome to my  Apple's Shortcuts Gallery!
 
 <p align="left">
-<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery"><img src="https://badges.frapsoft.com/os/v3/open-source.svg?v=103" alt="Open Source Love"></a><br/>
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery"><img src="https://badges.frapsoft.com/os/v3/open-source.svg" alt="Open Source Love"></a><br/>
+<img src="https://img.shields.io/badge/Contribution_Welcome-blue?style=plastic" alt="Contribution Welcome"></a><br/>
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/releases"><img src="https://img.shields.io/github/v/release/huaminghuangtw/Apple-Shortcuts-Gallery.svg?display_name=tag&style=plastic&color=lightgrey"></a>
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tags"><img src="https://img.shields.io/github/v/tag/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=plastic&color=lightgrey"></a><br/> 
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/stargazers"><img src="https://img.shields.io/github/stars/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social"></a>
@@ -11,8 +12,8 @@
 </p>
 
 > **Last Update:** 2024-08-25  
-> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)
-> [Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable _notifications_ and _widgets_ created with [Scriptable](https://scriptable.app).
+> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)  
+> [Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable _notifications_ and _widgets_ created with [Scriptable](https://scriptable.app)!
 
 ## 🙏 Acknowledgments
 
