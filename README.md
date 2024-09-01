@@ -3,8 +3,13 @@
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?quote=The%20people%20who%20are%20crazy%20enough%20to%20think%20they%20can%20change%20the%20world%20are%20the%20ones%20who%20do.&author=Steve%20Jobs&type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
 
 <p align="left">
+<<<<<<< Updated upstream
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery"><img src="https://badges.frapsoft.com/os/v3/open-source.svg" alt="Open Source Love"></a><br/>
 <img src="https://img.shields.io/badge/Contribution_Welcome-blue?style=plastic" alt="Contribution Welcome"></a><br/>
+=======
+<a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery"><img src="https://badges.frapsoft.com/os/v3/open-source.svg?v=103" alt="Open Source Love"></a><br/>
+[](https://img.shields.io/badge/Contribution_Welcome-blue?style=flat-square)
+>>>>>>> Stashed changes
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/releases"><img src="https://img.shields.io/github/v/release/huaminghuangtw/Apple-Shortcuts-Gallery.svg?display_name=tag&style=plastic&color=lightgrey"></a>
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tags"><img src="https://img.shields.io/github/v/tag/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=plastic&color=lightgrey"></a><br/> 
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/stargazers"><img src="https://img.shields.io/github/stars/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social"></a>
