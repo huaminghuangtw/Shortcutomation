@@ -1,32 +1,20 @@
-## 🎉 Weekly Update (2024 // Week 36)
+## 🎉 Weekly Update (2024 // Week 38)
 
-> **Date:** 2024-09-08  
+> **Date:** 2024-09-16  
 
-### ✨ 23 New Shortcuts This Week!
+### ✨ 11 New Shortcuts This Week!
 
-+ [💾 Backup My Shortcuts Library - Last Week Snapshot](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Last%20Week%20Snapshot)
-+ [💾 Backup My Shortcuts Library - Cleanup Backup Folder](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Cleanup%20Backup%20Folder)
-+ [📖 Audible PDF](./All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF)
-+ [When audible PDF is completed](./All%20Shortcuts/Utility%20Helper%20Functions/When%20audible%20PDF%20is%20completed)
-+ [pdf2audio](./All%20Shortcuts/Audio/pdf2audio)
-+ [🎬 Movie Night](./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%8E%AC%20Movie%20Night)
-+ [🪄 System Housekeeping](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%AA%84%20System%20Housekeeping)
-+ [⚡️ Quick Capture](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%E2%9A%A1%EF%B8%8F%20Quick%20Capture)
-+ [⚪️ Open Watch Later List](./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%9A%AA%EF%B8%8F%20Open%20Watch%20Later%20List)
++ [💾 Backup Evergreen Lists](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%BE%20Backup%20Evergreen%20Lists)
 + [Frédéric Chopin](./All%20Shortcuts/Spotify%20-%20Classic%20Musicians/Fr%C3%A9d%C3%A9ric%20Chopin)
-+ [🤌 The Enoughist's Pick](./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A4%8C%20The%20Enoughist's%20Pick)
-+ [Gmail](./All%20Shortcuts/Productivity/Gmail)
-+ [斷開我的耳機](./All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F)
-+ [🏷️ EvergreenList2MarkdownTables](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%8F%B7%EF%B8%8F%20EvergreenList2MarkdownTables)
-+ [◻️ Reading List → AReminders](./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%97%BB%EF%B8%8F%20Reading%20List%20%E2%86%92%20AReminders)
-+ [Get Random Visual](./All%20Shortcuts/My%20LifeOS%20Toolkits/Get%20Random%20Visual)
-+ [◻️ Watch Later List → AReminders](./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%97%BB%EF%B8%8F%20Watch%20Later%20List%20%E2%86%92%20AReminders)
-+ [Turn on Tapo Smart Bulb](./All%20Shortcuts/Productivity/Turn%20on%20Tapo%20Smart%20Bulb)
-+ [🏷️ EvergreenList2GoogleSheets](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%8F%B7%EF%B8%8F%20EvergreenList2GoogleSheets)
-+ [🤍 One Visual A Day](./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20One%20Visual%20A%20Day)
-+ [💾 Backup My Shortcuts Library - Filter Shortcuts By Folder](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Filter%20Shortcuts%20By%20Folder)
-+ [⚪️ Open Reading List](./All%20Shortcuts/My%20LifeOS%20Toolkits/%E2%9A%AA%EF%B8%8F%20Open%20Reading%20List)
-+ [🤡 All You Can Eat](./All%20Shortcuts/My%20LifeOS%20Toolkits/%F0%9F%A4%A1%20All%20You%20Can%20Eat)
++ [Record Audio](./All%20Shortcuts/Standalone%20Fun/Record%20Audio)
++ [🤳 Process Extracted Text from Image](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%A4%B3%20Process%20Extracted%20Text%20from%20Image)
++ [🤳 Extract Text from Image](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%A4%B3%20Extract%20Text%20from%20Image)
++ [💾 Backup Evergreen Lists - Kernel](./All%20Shortcuts/My%20PPS%20%26%20PKMS/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel)
++ [💾 Backup My Shortcuts Library - Part IV 1](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%20IV%201)
++ [# Delete Temp Vars in Data Jar](./All%20Shortcuts/Automation%20-%20Daily/%23%20Delete%20Temp%20Vars%20in%20Data%20Jar)
++ [📇 Review Last Week's Journals - Kernel](./All%20Shortcuts/Notion%20API/%F0%9F%93%87%20Review%20Last%20Week's%20Journals%20-%20Kernel)
++ [Open "One Visual A Day" Image](./All%20Shortcuts/Utility%20Helper%20Functions/Open%20%22One%20Visual%20A%20Day%22%20Image)
++ [# Saturday | Weekly Brain Food Delivery](./All%20Shortcuts/Automation%20-%20Weekly/%23%20Saturday%20%7C%20Weekly%20Brain%20Food%20Delivery)
 
 <p align="center">
     <a href="https://chartyios.app">
