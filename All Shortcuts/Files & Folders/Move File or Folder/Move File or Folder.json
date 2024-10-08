@@ -1,0 +1,130 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "2605.0.5",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "🤖 Let's select source file/folder!"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.select",
+            "WFWorkflowActionParameters": {
+                "WFPickingMode": {
+                    "Value": {
+                        "Prompt": "🤖 Which type?",
+                        "Type": "Ask"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "source",
+                "UUID": "F9B0A532-58E2-4EAD-B3EB-7C472938A783"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "🤖 Let's select destination folder!"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.select",
+            "WFWorkflowActionParameters": {
+                "WFPickingMode": "Folders",
+                "CustomOutputName": "destination",
+                "UUID": "4B9C3F65-6F2E-4581-8072-216CBB1B1B71"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.move",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "4B9C3F65-6F2E-4581-8072-216CBB1B1B71",
+                        "Type": "ActionOutput",
+                        "OutputName": "destination"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFFile": {
+                    "Value": {
+                        "OutputUUID": "F9B0A532-58E2-4EAD-B3EB-7C472938A783",
+                        "Type": "ActionOutput",
+                        "OutputName": "source"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "6B9750F5-3ACD-4D94-8736-2AC100B5927A",
+                "WFReplaceExisting": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "───\n Notes\n───\nThe original file will still exist in the source folder after \"Move File\", hence the \"Delete File\" to achieve real \"Move File\""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.delete",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F9B0A532-58E2-4EAD-B3EB-7C472938A783",
+                        "Type": "ActionOutput",
+                        "OutputName": "source"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDeleteImmediatelyDelete": true,
+                "UUID": "384D4C58-D01A-461C-8AE7-256AA451881D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "DCBCC72D-2982-4BDA-9A2A-FDA8332008C1",
+                    "workflowName": "You Are All Set",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "You Are All Set",
+                "UUID": "9414C651-C771-4A5C-86EA-33FBC2F5DDF2"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}
