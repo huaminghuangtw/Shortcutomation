@@ -1,0 +1,949 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Today",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "C17FFD3C-3DC4-4D2D-9492-0BC0F6C4C7AC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.weather.currentconditions",
+            "WFWorkflowActionParameters": {
+                "UUID": "9D443DAD-93D4-4000-AFD0-6CACEF5334F1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.weather.conditions",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9D443DAD-93D4-4000-AFD0-6CACEF5334F1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Weather Conditions"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Sunrise Time",
+                "UUID": "E4E64F11-9B2F-48FF-8131-1918D57D82BC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E4E64F11-9B2F-48FF-8131-1918D57D82BC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Sunrise Time"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateFormatStyle": "None",
+                "UUID": "44E65781-4E0F-473F-AE15-370F35EA6CA7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "44E65781-4E0F-473F-AE15-370F35EA6CA7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "Sunrise Time",
+                "UUID": "97A5984A-327C-4A03-AB4B-22A69A49CA0A",
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.weather.conditions",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9D443DAD-93D4-4000-AFD0-6CACEF5334F1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Weather Conditions"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Sunset Time",
+                "UUID": "35B360AA-5AA1-4206-A250-8765708DB62E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "35B360AA-5AA1-4206-A250-8765708DB62E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Sunset Time"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateFormatStyle": "None",
+                "UUID": "FE5ED55E-43DF-480B-BFCE-D7957DCE3417"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FE5ED55E-43DF-480B-BFCE-D7957DCE3417",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "Sunset Time",
+                "UUID": "75C6B917-49A2-4415-8387-DC1C4BBDA6BB",
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Temperature",
+                "UUID": "CAAC7673-1AAB-4E4D-86DB-CB7E2A0DC2D3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CAAC7673-1AAB-4E4D-86DB-CB7E2A0DC2D3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "DD545149-7258-45B6-9396-5F9C9DA79543",
+                    "workflowName": "Get Today's Hourly Temperature Data",
+                    "isSelf": false
+                },
+                "UUID": "6790FD6F-8DEC-4F77-B8DA-32D1E498A37E",
+                "WFWorkflowName": "Get Today's Hourly Temperature Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6790FD6F-8DEC-4F77-B8DA-32D1E498A37E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "0B662FA9-7EAD-4701-A884-BF9EB0F47A76",
+                    "workflowName": "Get Key-Value Pair for Max Hourly Weather Data",
+                    "isSelf": false
+                },
+                "UUID": "E80F9AFB-F65A-4EC1-8494-596C0E4DAE75",
+                "WFWorkflowName": "Get Key-Value Pair for Max Hourly Weather Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "HH",
+                "UUID": "C094045A-ABAB-4E2C-91A5-4295BE0CA386",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "E80F9AFB-F65A-4EC1-8494-596C0E4DAE75",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Keys"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C094045A-ABAB-4E2C-91A5-4295BE0CA386",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "0EE45C61-F47C-4AC1-A377-C27CC0E64031",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "E80F9AFB-F65A-4EC1-8494-596C0E4DAE75",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Keys"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "42D66B5C-B2D8-45BF-A95B-A7387B102E3C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "HH",
+                "UUID": "53FCF8BF-25AA-4EB3-ADDF-76AE6E4F5B3F",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "42D66B5C-B2D8-45BF-A95B-A7387B102E3C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "53FCF8BF-25AA-4EB3-ADDF-76AE6E4F5B3F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "E417A688-E15F-4ED6-B43E-28F7ECEBDCF4",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C17FFD3C-3DC4-4D2D-9492-0BC0F6C4C7AC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "BE55CFD2-74B1-49F6-8225-12E50BCDB2E1",
+                    "workflowName": "Get Daily Overall PoP %",
+                    "isSelf": false
+                },
+                "UUID": "2A85EC77-80DD-45E4-ADD9-F22946E833ED",
+                "WFWorkflowName": "Get Daily Overall PoP %"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "今天的日出時間為￼，日落時間為￼\n\n今日￼點至￼點有最高溫約￼\n\n今日總體降雨機率是￼%",
+                        "attachmentsByRange": {
+                            "{30, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "E80F9AFB-F65A-4EC1-8494-596C0E4DAE75",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Values"
+                                    }
+                                ]
+                            },
+                            "{42, 1}": {
+                                "OutputUUID": "2A85EC77-80DD-45E4-ADD9-F22946E833ED",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{23, 1}": {
+                                "OutputUUID": "E417A688-E15F-4ED6-B43E-28F7ECEBDCF4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{8, 1}": {
+                                "OutputUUID": "97A5984A-327C-4A03-AB4B-22A69A49CA0A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Sunrise Time"
+                            },
+                            "{15, 1}": {
+                                "OutputUUID": "75C6B917-49A2-4415-8387-DC1C4BBDA6BB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Sunset Time"
+                            },
+                            "{20, 1}": {
+                                "OutputUUID": "0EE45C61-F47C-4AC1-A377-C27CC0E64031",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F4D7DE78-B6EF-498B-A03B-79E34188583A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "619DDFB3-70B2-4DDF-8D61-8666F1C06774",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "2A85EC77-80DD-45E4-ADD9-F22946E833ED",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Yes",
+                "WFNumberValue": "0",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Precipitation Amount",
+                "UUID": "F4A4638D-0049-4571-9E48-29EE2C9B9DC4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F4A4638D-0049-4571-9E48-29EE2C9B9DC4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "DD545149-7258-45B6-9396-5F9C9DA79543",
+                    "workflowName": "Get Today's Hourly Weather Data",
+                    "isSelf": false
+                },
+                "UUID": "0B191ADC-C5F2-4E53-B842-63A9ADCB3C4D",
+                "WFWorkflowName": "Get Today's Hourly Weather Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0B191ADC-C5F2-4E53-B842-63A9ADCB3C4D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "0B662FA9-7EAD-4701-A884-BF9EB0F47A76",
+                    "workflowName": "Get Key-Value Pair for Max Hourly Weather Data",
+                    "isSelf": false
+                },
+                "UUID": "D976CC91-5714-4073-B546-74B69B8026AB",
+                "WFWorkflowName": "Get Key-Value Pair for Max Hourly Weather Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "HH",
+                "UUID": "2CCFA99E-EA7D-42AB-B059-079E15664C6D",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "D976CC91-5714-4073-B546-74B69B8026AB",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Keys"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2CCFA99E-EA7D-42AB-B059-079E15664C6D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "7C7217BE-15F6-4F12-9D9A-FA9954956BF1",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "D976CC91-5714-4073-B546-74B69B8026AB",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Keys"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "98AD2AB0-CD9D-4DCE-BC1F-4AB2C31F0C5C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "HH",
+                "UUID": "3C45B082-EF3E-4CBB-B119-B1C7124DC1AE",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "98AD2AB0-CD9D-4DCE-BC1F-4AB2C31F0C5C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3C45B082-EF3E-4CBB-B119-B1C7124DC1AE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "7D58C474-590A-4774-A301-9102705966B7",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "D976CC91-5714-4073-B546-74B69B8026AB",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Values"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "1000",
+                "UUID": "F939CB20-2181-4182-8F86-26C5BB27D76D",
+                "WFMathOperation": "×"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Precipitation Chance",
+                "UUID": "B233FC78-EF7E-43BB-A0E3-ED000918135A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B233FC78-EF7E-43BB-A0E3-ED000918135A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "DD545149-7258-45B6-9396-5F9C9DA79543",
+                    "workflowName": "Get Today's Hourly Weather Data",
+                    "isSelf": false
+                },
+                "UUID": "5E3E04B2-22F0-4116-A428-1EACB113A558",
+                "WFWorkflowName": "Get Today's Hourly Weather Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5E3E04B2-22F0-4116-A428-1EACB113A558",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "0B662FA9-7EAD-4701-A884-BF9EB0F47A76",
+                    "workflowName": "Get Key-Value Pair for Max Hourly Weather Data",
+                    "isSelf": false
+                },
+                "UUID": "82D4D9A4-FE50-4BEF-B45E-B0031E06682F",
+                "WFWorkflowName": "Get Key-Value Pair for Max Hourly Weather Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "HH",
+                "UUID": "3079D5EC-71F5-4752-BC68-5E7642EA29B3",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "82D4D9A4-FE50-4BEF-B45E-B0031E06682F",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Keys"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3079D5EC-71F5-4752-BC68-5E7642EA29B3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "F13AA421-DD29-4F0A-A96C-6521D5F0AE22",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "82D4D9A4-FE50-4BEF-B45E-B0031E06682F",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Keys"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "D3E13529-CE46-479E-8689-AD0DAADD110A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "HH",
+                "UUID": "2860B34C-8BB0-43C7-B5B4-45E3921A7F8F",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D3E13529-CE46-479E-8689-AD0DAADD110A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2860B34C-8BB0-43C7-B5B4-45E3921A7F8F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "82E4BDFE-C90D-424E-B496-2450F32CD0EA",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n\n今日￼點至￼點有最大降水量約￼mm\n\n今日￼點至￼點有最高降雨機率約￼%\n\n有出門的話記得攜帶雨傘唷！",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "7C7217BE-15F6-4F12-9D9A-FA9954956BF1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{8, 1}": {
+                                "OutputUUID": "7D58C474-590A-4774-A301-9102705966B7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{27, 1}": {
+                                "OutputUUID": "82E4BDFE-C90D-424E-B496-2450F32CD0EA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "F4D7DE78-B6EF-498B-A03B-79E34188583A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{17, 1}": {
+                                "OutputUUID": "F939CB20-2181-4182-8F86-26C5BB27D76D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Calculation Result"
+                            },
+                            "{37, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "82D4D9A4-FE50-4BEF-B45E-B0031E06682F",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Values"
+                                    }
+                                ]
+                            },
+                            "{24, 1}": {
+                                "OutputUUID": "F13AA421-DD29-4F0A-A96C-6521D5F0AE22",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8EE2DEF4-E9F9-429B-804E-C7DC523C5B03"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "619DDFB3-70B2-4DDF-8D61-8666F1C06774",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F4D7DE78-B6EF-498B-A03B-79E34188583A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "6FE46183-FA72-4EBA-AD45-0A1C1DEE4008"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "619DDFB3-70B2-4DDF-8D61-8666F1C06774",
+                "UUID": "7A593EBF-9163-4041-ADC4-AB57D4B60561"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "910FF383-CF3F-4060-8608-AA3340E6D61A",
+                "keyPath": "My Text Files.dailyWeatherInfo",
+                "valueConversionMode": "text",
+                "values": {
+                    "Value": {
+                        "OutputUUID": "7A593EBF-9163-4041-ADC4-AB57D4B60561",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "7A593EBF-9163-4041-ADC4-AB57D4B60561",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "Category": "Parameter",
+            "ParameterKey": "WFTextActionText",
+            "ActionIndex": 0,
+            "Text": "What is your first name?",
+            "DefaultValue": ""
+        }
+    ],
+    "WFWorkflowTypes": [
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

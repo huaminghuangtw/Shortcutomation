@@ -1,0 +1,112 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "B2C59F39-78AE-463D-A775-7CC320B1B99F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "B2C59F39-78AE-463D-A775-7CC320B1B99F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemSortProperty": "Name",
+                "WFContentItemSortOrder": "A to Z",
+                "UUID": "C0FCF172-0FE8-42ED-9E8D-5D2E394048B8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "OutputUUID": "C0FCF172-0FE8-42ED-9E8D-5D2E394048B8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E633716D-00CE-46FE-A9A5-902A5DF45DEB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://stackoverflow.com/a/1573425"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E633716D-00CE-46FE-A9A5-902A5DF45DEB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Combined Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "5C8669ED-3854-4BFF-B18D-EA0B80A3B0E3",
+                "WFReplaceTextReplace": "$1",
+                "WFReplaceTextFind": "(?m)^(.*)(\\r?\\n\\1)+$"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "5C8669ED-3854-4BFF-B18D-EA0B80A3B0E3",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

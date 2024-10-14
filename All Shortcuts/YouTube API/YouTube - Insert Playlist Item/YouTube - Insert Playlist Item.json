@@ -1,0 +1,184 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFGenericFileContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://developers.google.com/youtube/v3/docs/playlistItems/insert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Google",
+                "UUID": "14CA7081-3FA6-4A57-B36B-E991A37BA0B7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "14CA7081-3FA6-4A57-B36B-E991A37BA0B7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "accessToken",
+                "UUID": "B29BD95C-C098-4C30-84FD-7CA87C6C700D",
+                "WFWorkflow": {
+                    "workflowIdentifier": "2F0DF206-94E7-4B0B-932C-9218D668A5DD",
+                    "workflowName": "Refresh Strava API Access Token",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Refresh Strava API Access Token"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "294D362B-D0AE-471A-A50C-29C71CCAC16B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "{\n  \"snippet\": {\n    \"playlistId\": \"￼\",\n    \"resourceId\": {\n      \"kind\": \"youtube#video\",\n      \"videoId\": \"￼\"\n    }\n  }\n}",
+                        "attachmentsByRange": {
+                            "{109, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "294D362B-D0AE-471A-A50C-29C71CCAC16B",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "videoId"
+                                    }
+                                ]
+                            },
+                            "{36, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "294D362B-D0AE-471A-A50C-29C71CCAC16B",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "playlistId"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E3956EA7-9A5A-4B69-91F0-A44634516721"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFRequestVariable": {
+                    "Value": {
+                        "OutputUUID": "E3956EA7-9A5A-4B69-91F0-A44634516721",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFHTTPHeaders": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Authorization"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Bearer ￼",
+                                        "attachmentsByRange": {
+                                            "{7, 1}": {
+                                                "OutputUUID": "B29BD95C-C098-4C30-84FD-7CA87C6C700D",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "accessToken"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Content-Type"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "application/json"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "F66B7ED2-0972-4C70-ABDF-3C26B2859372",
+                "ShowHeaders": true,
+                "WFURL": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+                "WFHTTPMethod": "POST",
+                "WFHTTPBodyType": "File"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F66B7ED2-0972-4C70-ABDF-3C26B2859372",
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

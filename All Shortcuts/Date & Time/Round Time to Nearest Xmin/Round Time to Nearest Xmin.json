@@ -1,0 +1,231 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAdjustOperation": "Get Start of Hour",
+                "UUID": "F28D6CB5-421B-4599-9F3A-800564448139"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Long"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F28D6CB5-421B-4599-9F3A-800564448139",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "2AEE81CC-7582-4153-BF0A-B728EC9B5263",
+                "WFTimeUntilUnit": "Seconds"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "60",
+                "UUID": "AFEFCE5A-7CF9-4654-A1CD-85B6136F573D",
+                "WFMathOperation": "×"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AFEFCE5A-7CF9-4654-A1CD-85B6136F573D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "myVar1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AFEFCE5A-7CF9-4654-A1CD-85B6136F573D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "2",
+                "UUID": "8AA7A26E-B912-475D-B9C0-45AE10E17EEB",
+                "WFMathOperation": "÷"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AFEFCE5A-7CF9-4654-A1CD-85B6136F573D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "myVar2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "(￼+￼)%￼-￼",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "VariableName": "myVar1",
+                                "Type": "Variable"
+                            },
+                            "{1, 1}": {
+                                "OutputUUID": "2AEE81CC-7582-4153-BF0A-B728EC9B5263",
+                                "Type": "ActionOutput",
+                                "OutputName": "Time Between Dates"
+                            },
+                            "{3, 1}": {
+                                "VariableName": "myVar2",
+                                "Type": "Variable"
+                            },
+                            "{8, 1}": {
+                                "VariableName": "myVar2",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "436855BB-0232-442E-B6F6-326F1C14B122"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "sec",
+                        "Magnitude": {
+                            "OutputUUID": "436855BB-0232-442E-B6F6-326F1C14B122",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "A3429DA6-8F16-430E-88BF-16E6A1494285",
+                "WFAdjustOperation": "Subtract",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Long"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "A3429DA6-8F16-430E-88BF-16E6A1494285",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

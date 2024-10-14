@@ -1,0 +1,166 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.HomeIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "78122041-EFE0-49A6-B851-09A6402CE5CC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.link",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "iCloud URL",
+                "UUID": "FAE5F456-DFE3-4CEE-AF6B-AC1F23C6E82E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "FAE5F456-DFE3-4CEE-AF6B-AC1F23C6E82E",
+                                "Type": "ActionOutput",
+                                "OutputName": "iCloud URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "7A0257DD-6C16-41BB-B275-47D32E7E5B44",
+                "WFReplaceTextReplace": "shortcuts://",
+                "WFReplaceTextFind": "^.+icloud.com/"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7A0257DD-6C16-41BB-B275-47D32E7E5B44",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1EB7690B-382D-4D3A-80FF-0CC3E9D28214"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "6F528966-B7C4-473E-A3AA-42DC43B6C4D9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n🤖 Open Imported Shortcut?\n￼\n✅ Yes : \"OK\"\n❌ No : \"Cancel\"",
+                        "attachmentsByRange": {
+                            "{29, 1}": {
+                                "OutputUUID": "6F528966-B7C4-473E-A3AA-42DC43B6C4D9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6F528966-B7C4-473E-A3AA-42DC43B6C4D9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B4087B2D-7F10-4035-B779-F1E2F839D086"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionMessage": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B4087B2D-7F10-4035-B779-F1E2F839D086",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertActionTitle": "After clicking \"Add Shortcut\"..."
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+            "WFWorkflowActionParameters": {
+                "UUID": "6D0E6BFA-6467-41C8-956C-42816F1CD379"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6D0E6BFA-6467-41C8-956C-42816F1CD379",
+                        "Type": "ActionOutput",
+                        "OutputName": "My Shortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "BAD4BCF8-396E-46A0-B600-EEE4CFA7DF97"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "Value": {
+                        "OutputUUID": "BAD4BCF8-396E-46A0-B600-EEE4CFA7DF97",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "QuickActions",
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

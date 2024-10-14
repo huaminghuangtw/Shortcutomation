@@ -1,0 +1,218 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.shortcuts",
+                    "Name": "Shortcuts",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFAppIdentifier": "com.apple.shortcuts",
+                "UUID": "030FB78C-BE3D-42C1-BC8A-85754C502120"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1681B490-0A24-4F50-9240-BBC60930EB04"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary",
+                        "OutputUUID": "1681B490-0A24-4F50-9240-BBC60930EB04",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "AppName"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "01E5AC85-1412-407D-A80F-D0959FE9516C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "01E5AC85-1412-407D-A80F-D0959FE9516C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "5463CDDC-65EC-452C-99E0-5575AC634C95",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Dictionary",
+                            "OutputUUID": "1681B490-0A24-4F50-9240-BBC60930EB04",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFDictionaryValueVariableAggrandizement",
+                                    "DictionaryKey": "AlertMsg"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "A7193BBE-749E-453E-99AC-2EAB5E7C61D4",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "1. Press \"OK\" in this alert\n2. ￼\n3. Swipe right 👉👉👉",
+                        "attachmentsByRange": {
+                            "{31, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "1681B490-0A24-4F50-9240-BBC60930EB04",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "AlertMsg"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "838BB131-0C5B-4D73-9E4C-BF037BA7C732"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "A7193BBE-749E-453E-99AC-2EAB5E7C61D4",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "1. Press \"OK\" in this alert\n2. Swipe right 👉👉👉",
+                "UUID": "F5E6C021-30C1-475F-B356-9934E345731F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "A7193BBE-749E-453E-99AC-2EAB5E7C61D4",
+                "UUID": "1937F204-1670-49B0-9100-F33EA2275022"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "E27C1DB7-9075-4E31-AFF9-04FC29FD466C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "⏸️ Wait to return\n￼",
+                        "attachmentsByRange": {
+                            "{18, 1}": {
+                                "OutputUUID": "E27C1DB7-9075-4E31-AFF9-04FC29FD466C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "DF5AB658-290F-4C97-B48E-6E4DC40D22B7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1937F204-1670-49B0-9100-F33EA2275022",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertActionTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DF5AB658-290F-4C97-B48E-6E4DC40D22B7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

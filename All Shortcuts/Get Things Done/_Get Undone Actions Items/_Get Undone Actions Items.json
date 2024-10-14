@@ -1,0 +1,183 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFReminderContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Reminders.withDueDate",
+                "UUID": "3F49EFFD-60C2-493C-BA03-C9144C93D76B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3F49EFFD-60C2-493C-BA03-C9144C93D76B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "51A51D7D-F81D-496D-9074-3B3D2F68CE9E",
+                    "workflowName": "Filter Reminder Lists",
+                    "isSelf": false
+                },
+                "UUID": "C3315E46-0D6F-4F55-872F-8244B74F657F",
+                "WFWorkflowName": "Filter Reminder Lists"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C3315E46-0D6F-4F55-872F-8244B74F657F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "4B7490F7-FEFD-4285-ACAA-2CDEE430665D",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼ 23:59",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date",
+                "UUID": "A7AF63E7-AABB-438B-A240-D02A6C3CA458"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 0,
+                                "Values": {
+                                    "Date": {
+                                        "Value": {
+                                            "OutputUUID": "A7AF63E7-AABB-438B-A240-D02A6C3CA458",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "Date"
+                                        },
+                                        "WFSerializationType": "WFTextTokenAttachment"
+                                    },
+                                    "AnotherDate": {
+                                        "Value": {
+                                            "OutputUUID": "A7AF63E7-AABB-438B-A240-D02A6C3CA458",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "Date"
+                                        },
+                                        "WFSerializationType": "WFTextTokenAttachment"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Due Date"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": {
+                                            "Value": {
+                                                "VariableName": "Repeat Item",
+                                                "Type": "Variable"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "UUID": "EDA0EA42-4F65-4C3D-A869-055DB34075E5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4B7490F7-FEFD-4285-ACAA-2CDEE430665D",
+                "UUID": "812D1C58-617D-4431-9187-9261E951CD3B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "812D1C58-617D-4431-9187-9261E951CD3B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Repeat Results"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

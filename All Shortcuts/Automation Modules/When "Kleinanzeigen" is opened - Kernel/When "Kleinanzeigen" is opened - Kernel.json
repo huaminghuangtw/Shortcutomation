@@ -1,0 +1,132 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Kleinanzeigen",
+                "UUID": "A3060A5F-4614-4947-AC7A-8F88291E681E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Value",
+                        "OutputUUID": "A3060A5F-4614-4947-AC7A-8F88291E681E",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "51FE9A2F-718D-4BDD-ADD6-AD8B6C774771"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A3060A5F-4614-4947-AC7A-8F88291E681E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "51FE9A2F-718D-4BDD-ADD6-AD8B6C774771",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chosen Item"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "58903B53-D8D8-4B2B-93F9-B4E541B2103A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "58903B53-D8D8-4B2B-93F9-B4E541B2103A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "3A16E1A6-4095-458E-A77A-5A05963F4C33"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3A16E1A6-4095-458E-A77A-5A05963F4C33",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "6F90C947-A84E-47F6-80D9-7C994C96A8C9",
+                    "workflowName": "Copy to Clipboard",
+                    "isSelf": false
+                },
+                "UUID": "6ECD1DA7-540C-45C1-8F96-63E9ABD63B23",
+                "WFWorkflowName": "Copy to Clipboard"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3A16E1A6-4095-458E-A77A-5A05963F4C33",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "4F01DBEE-6F75-4D25-A918-41F41C3A2A72",
+                    "workflowName": "Notify \"Copied to Clipboard!\"",
+                    "isSelf": false
+                },
+                "UUID": "104BD500-DA12-42BC-BB99-ED8A89E1E0AD",
+                "WFWorkflowName": "Notify \"Copied to Clipboard!\""
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

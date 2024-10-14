@@ -1,0 +1,537 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.calendarevents",
+            "WFWorkflowActionParameters": {
+                "WFContentItemLimitEnabled": true,
+                "UUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Property": "Start Date",
+                                "Operator": 1000,
+                                "Values": {
+                                    "AnotherDate": {
+                                        "Value": {
+                                            "OutputUUID": "6ADD9EAF-4E71-4864-AC87-607A8FCAE31F",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "Adjusted Date"
+                                        },
+                                        "WFSerializationType": "WFTextTokenAttachment"
+                                    },
+                                    "Unit": 16,
+                                    "Date": {
+                                        "Value": {
+                                            "OutputUUID": "1BE1368E-C2D1-469E-AF45-BB88100CAEF6",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "Adjusted Date"
+                                        },
+                                        "WFSerializationType": "WFTextTokenAttachment"
+                                    },
+                                    "Number": "14"
+                                },
+                                "Removable": false,
+                                "Bounded": true
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "REWE Liefertermine",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Calendar"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": "REWE Lieferservice Zustellung"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calendar Events"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "65525C46-2B98-4B4E-9070-98812F9E0225",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🚚 Next delivery ￼",
+                        "attachmentsByRange": {
+                            "{17, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Calendar Events",
+                                "OutputUUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Start Date"
+                                    },
+                                    {
+                                        "WFTimeFormatStyle": "Relative",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "659C82B3-4A58-43BF-8107-EC6BA04E8488"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ (￼) ￼~￼",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Calendar Events",
+                                "OutputUUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Start Date"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "None",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Short"
+                                    }
+                                ]
+                            },
+                            "{8, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Calendar Events",
+                                "OutputUUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "End Date"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "None",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Short"
+                                    }
+                                ]
+                            },
+                            "{3, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Calendar Events",
+                                "OutputUUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Start Date"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "EEE",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Calendar Events",
+                                "OutputUUID": "BABFF8FC-027B-40E6-9062-89F68CF0C4C8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Start Date"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Short",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "CBBF8CDA-D9DA-4CF5-85D1-33DA164787D2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+            "WFWorkflowActionParameters": {
+                "WFNotificationActionBody": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "CBBF8CDA-D9DA-4CF5-85D1-33DA164787D2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "353B3FDD-8396-4EBF-B215-DFA504738396",
+                "WFNotificationActionSound": false,
+                "WFNotificationActionTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "659C82B3-4A58-43BF-8107-EC6BA04E8488",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "65525C46-2B98-4B4E-9070-98812F9E0225",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Open App"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "REWE"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E4950EDB-E461-42C9-A8EF-946256BFD718",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AA677D1E-5DC5-4378-A0C5-73A7CB9AAEB5",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "79500A5C-46B5-42F1-BF1A-4553723F92F8",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "🥗 訂 REWE 食材",
+                "WFFlag": false,
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/783C0BAB-70D0-4651-A209-F641E9B21431>",
+                    "Title": "👩‍❤️‍👨 我們的家",
+                    "IsAllCalendar": false
+                },
+                "UUID": "222F6BE4-BC28-431C-881C-9B941EE04C61",
+                "WFCalendarItemCalendar": "👩‍❤️‍👨 我們的家",
+                "WFAlertCustomTime": "17:30",
+                "WFAlertEnabled": "Alert",
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "79500A5C-46B5-42F1-BF1A-4553723F92F8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "🧭 選擇 REWE 宅配時間",
+                "WFFlag": false,
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/783C0BAB-70D0-4651-A209-F641E9B21431>",
+                    "Title": "👩‍❤️‍👨 我們的家",
+                    "IsAllCalendar": false
+                },
+                "UUID": "6EB18E89-5552-4637-9CA9-82C5780A36DC",
+                "WFCalendarItemCalendar": "👩‍❤️‍👨 我們的家",
+                "WFAlertCustomTime": "17:30",
+                "WFAlertEnabled": "Alert",
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "79500A5C-46B5-42F1-BF1A-4553723F92F8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "💸 REWE: Request a Refund",
+                "WFFlag": false,
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/783C0BAB-70D0-4651-A209-F641E9B21431>",
+                    "Title": "👩‍❤️‍👨 我們的家",
+                    "IsAllCalendar": false
+                },
+                "UUID": "D4AF7E3F-B3BC-4962-9F27-21310E5A83CF",
+                "WFCalendarItemCalendar": "👩‍❤️‍👨 我們的家",
+                "WFAlertCustomTime": "17:30",
+                "WFAlertEnabled": "Alert",
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "79500A5C-46B5-42F1-BF1A-4553723F92F8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "65525C46-2B98-4B4E-9070-98812F9E0225",
+                "UUID": "25598023-E200-49D6-9ED7-8FA1445EAFD3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "615A89CD-AE1E-4E46-8381-3072F4537589",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "E5EE0BCE-D0EB-4A1F-8115-F5DDE9E4206F",
+                    "workflowName": "isTodayInTheFirstWeekOfTheMonth",
+                    "isSelf": false
+                },
+                "UUID": "40B4826C-F081-4E80-97DA-95D6B7F25522",
+                "WFWorkflowName": "isTodayInTheFirstWeekOfTheMonth"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "40B4826C-F081-4E80-97DA-95D6B7F25522",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Yes",
+                "GroupingIdentifier": "1A373861-934C-4A2D-889F-4F6C328E7120",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Split Monthly Grocery Shopping Bills",
+                "UUID": "FEEFB291-5B02-4C29-997A-272F7462B8A1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FEEFB291-5B02-4C29-997A-272F7462B8A1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AA677D1E-5DC5-4378-A0C5-73A7CB9AAEB5",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "2C05FC43-CAC8-4DBF-A7EB-A8DD911A7098",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "💲 結算 REWE Liferservice",
+                "WFFlag": false,
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/783C0BAB-70D0-4651-A209-F641E9B21431>",
+                    "Title": "👩‍❤️‍👨 我們的家",
+                    "IsAllCalendar": false
+                },
+                "UUID": "377EB643-9D0C-4819-9E18-9C74E4422975",
+                "WFCalendarItemCalendar": "👩‍❤️‍👨 我們的家",
+                "WFAlertCustomTime": "17:30",
+                "WFAlertEnabled": "Alert",
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2C05FC43-CAC8-4DBF-A7EB-A8DD911A7098",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1A373861-934C-4A2D-889F-4F6C328E7120",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

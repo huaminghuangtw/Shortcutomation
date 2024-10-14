@@ -1,0 +1,146 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 59516
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.photos",
+            "WFWorkflowActionParameters": {
+                "WFContentItemSortProperty": "Date Taken",
+                "WFContentItemSortOrder": "Latest First",
+                "UUID": "AF1E5D51-4FB6-463D-BE65-E6787CC08428",
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "Enumeration": {
+                                        "Value": "Live Photo",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Photo Type"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AF1E5D51-4FB6-463D-BE65-E6787CC08428",
+                        "Type": "ActionOutput",
+                        "OutputName": "Photos"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "68911905-7B8B-482D-9E19-9950B752BE21"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.makegif",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "68911905-7B8B-482D-9E19-9950B752BE21",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMakeGIFActionAutoSize": true,
+                "UUID": "10F4AB5A-8B68-47ED-90F4-AB5A8B6887ED",
+                "WFMakeGIFActionDelayTime": "0.1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "10F4AB5A-8B68-47ED-90F4-AB5A8B6887ED",
+                        "Type": "ActionOutput",
+                        "OutputName": "GIF"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Save to Photos?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "9AA3BDDD-2EA2-479A-A264-725326AC08E8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "9AA3BDDD-2EA2-479A-A264-725326AC08E8",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.savetocameraroll",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "10F4AB5A-8B68-47ED-90F4-AB5A8B6887ED",
+                        "Type": "ActionOutput",
+                        "OutputName": "GIF"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "5F85F26B-4212-49A3-8DEB-B15FE015D33E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "9AA3BDDD-2EA2-479A-A264-725326AC08E8",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9AA3BDDD-2EA2-479A-A264-725326AC08E8",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFImageContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

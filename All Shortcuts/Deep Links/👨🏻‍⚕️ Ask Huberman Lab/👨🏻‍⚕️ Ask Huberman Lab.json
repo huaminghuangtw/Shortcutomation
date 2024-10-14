@@ -1,0 +1,189 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B96500FB-1A51-4419-91D0-120C2281CB80",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "5DE1EF5C-E1DD-4362-8EFD-A5A288B76EEA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B96500FB-1A51-4419-91D0-120C2281CB80",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "WFAskActionPrompt": "🔍 What are you looking for?",
+                "UUID": "5C30ED54-6DB4-4C6E-9230-BE07F0DAFC79"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B96500FB-1A51-4419-91D0-120C2281CB80",
+                "UUID": "6D035AD4-848F-46A2-84A4-3ECCAFE43BE2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "baseURL",
+                "WFURLActionURL": "https://www.hubermanlab.com/search-results",
+                "UUID": "67754FFD-471B-4CFF-93E1-634FFF1F9E04"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "6D035AD4-848F-46A2-84A4-3ECCAFE43BE2",
+                            "Type": "ActionOutput",
+                            "OutputName": "If Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "50772ECD-6696-449B-8B00-74A0F197B126",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": "hubermandev[query]",
+                "WFEncodeMode": "Encode",
+                "UUID": "A2B5236A-3D2F-4CDD-BD42-69B4A7FB2E09"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6D035AD4-848F-46A2-84A4-3ECCAFE43BE2",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFEncodeMode": "Encode",
+                "UUID": "0B47996A-E12A-426C-8B85-4264349A161F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼?￼=￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "A2B5236A-3D2F-4CDD-BD42-69B4A7FB2E09",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "0B47996A-E12A-426C-8B85-4264349A161F",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "67754FFD-471B-4CFF-93E1-634FFF1F9E04",
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9A0F83A1-2918-49BD-B9E6-9E2BB1BB988B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "50772ECD-6696-449B-8B00-74A0F197B126",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "67754FFD-471B-4CFF-93E1-634FFF1F9E04",
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "58542AF9-93A5-4CF9-9931-109A0EE26F14"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "50772ECD-6696-449B-8B00-74A0F197B126",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

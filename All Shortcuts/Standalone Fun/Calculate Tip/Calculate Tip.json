@@ -1,0 +1,229 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 59405
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAskActionDefaultAnswerNumber": "",
+                "WFAskActionAllowsNegativeNumbers": false,
+                "CustomOutputName": "BillAmount",
+                "UUID": "91661FFF-07E5-4553-8AE9-D2C1FE2FB3E7",
+                "WFInputType": "Number",
+                "WFAskActionPrompt": "🤖 How much is the bill?"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "5%",
+                    "7%",
+                    "10%",
+                    "12%",
+                    "15%",
+                    "18%",
+                    "20%"
+                ],
+                "UUID": "689D0908-6A37-46E6-9035-F74FB1D9A206"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 How much would you like to tip?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "689D0908-6A37-46E6-9035-F74FB1D9A206",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E79D1DCA-5126-4E07-B9A5-1D98C6B92239"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E79D1DCA-5126-4E07-B9A5-1D98C6B92239",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "5F136247-9BA3-412B-9878-0F1413F040FB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼*(1/100)",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "5F136247-9BA3-412B-9878-0F1413F040FB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Numbers"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "PercentTipping",
+                "UUID": "8EA27F55-803B-4530-889E-36FA2838DF82"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "91661FFF-07E5-4553-8AE9-D2C1FE2FB3E7",
+                        "Type": "ActionOutput",
+                        "OutputName": "BillAmount"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": {
+                    "Value": {
+                        "OutputUUID": "8EA27F55-803B-4530-889E-36FA2838DF82",
+                        "Type": "ActionOutput",
+                        "OutputName": "PercentTipping"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "88F70EC5-CB20-4BE2-88F7-0EC5CB200BE2",
+                "WFMathOperation": "×"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberFormatDecimalPlaces": 2,
+                "WFMathOperand": {
+                    "Value": {
+                        "VariableName": "Amount",
+                        "Type": "Variable",
+                        "VariableUUID": "6F2FB627-F638-4A28-AA75-2D35FEEE6DFD"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "TipAmount",
+                "UUID": "C4AF37DD-3269-4B10-AED1-073F22A88540",
+                "WFNumber": {
+                    "Value": {
+                        "OutputUUID": "88F70EC5-CB20-4BE2-88F7-0EC5CB200BE2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C4AF37DD-3269-4B10-AED1-073F22A88540",
+                        "Type": "ActionOutput",
+                        "OutputName": "TipAmount"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": {
+                    "Value": {
+                        "OutputUUID": "91661FFF-07E5-4553-8AE9-D2C1FE2FB3E7",
+                        "Type": "ActionOutput",
+                        "OutputName": "BillAmount"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "634C94EE-6D77-49C4-BF30-12E6B1E88756"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberFormatDecimalPlaces": 2,
+                "CustomOutputName": "TotalPrice",
+                "UUID": "CE798124-2B12-4D57-B725-5E114F0D05B7",
+                "WFNumber": {
+                    "Value": {
+                        "OutputUUID": "634C94EE-6D77-49C4-BF30-12E6B1E88756",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "💰 ￼ (Bill)\n\n +\n\n💰 ￼ (Tip)\n\n = 💰 ￼ (Total)",
+                        "attachmentsByRange": {
+                            "{20, 1}": {
+                                "OutputUUID": "C4AF37DD-3269-4B10-AED1-073F22A88540",
+                                "Type": "ActionOutput",
+                                "OutputName": "TipAmount"
+                            },
+                            "{35, 1}": {
+                                "OutputUUID": "CE798124-2B12-4D57-B725-5E114F0D05B7",
+                                "Type": "ActionOutput",
+                                "OutputName": "TotalPrice"
+                            },
+                            "{3, 1}": {
+                                "OutputUUID": "91661FFF-07E5-4553-8AE9-D2C1FE2FB3E7",
+                                "Type": "ActionOutput",
+                                "OutputName": "BillAmount"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B6129307-4E12-428A-81AD-5E3529390AAD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B6129307-4E12-428A-81AD-5E3529390AAD",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertActionTitle": ""
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

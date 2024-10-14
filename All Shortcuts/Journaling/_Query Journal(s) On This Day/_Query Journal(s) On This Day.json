@@ -1,0 +1,309 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "CustomOutputName": "This Year",
+                "UUID": "9BBF1E12-1470-4416-A33A-EE8CB2CCF6FB",
+                "WFDateFormat": "yyyy",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "Daily-Bullet-Journal",
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/C6B95D9A-866F-4DC8-B3DC-A35E1C24830D/2e2405e141a8d8e005fd02a6fa3c6db2c9babe0c"
+                    },
+                    "filename": "Daily-Bullet-Journal",
+                    "displayName": "Daily-Bullet-Journal"
+                },
+                "UUID": "05228058-1E69-41B5-925E-FC0C9250F26D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "05228058-1E69-41B5-925E-FC0C9250F26D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Daily-Bullet-Journal"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "listOfYears",
+                "WFMatchTextPattern": {
+                    "Value": {
+                        "string": "(?!￼)\\d{4}",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "OutputUUID": "9BBF1E12-1470-4416-A33A-EE8CB2CCF6FB",
+                                "Type": "ActionOutput",
+                                "OutputName": "This Year"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "08E745B3-65FD-4395-9740-E0646103BB41",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36",
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of Folder"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "08E745B3-65FD-4395-9740-E0646103BB41",
+                        "Type": "ActionOutput",
+                        "OutputName": "listOfYears"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemSortProperty": "Name",
+                "UUID": "03D921F0-E3EB-4BFD-929B-DE1F1B74D9A4",
+                "WFContentItemSortOrder": "A to Z",
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": []
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "03D921F0-E3EB-4BFD-929B-DE1F1B74D9A4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "894A0AE1-3F28-4159-93D5-2A20006A12DC",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": {
+                    "Value": {
+                        "string": "MM-MMMM/￼_MM_dd",
+                        "attachmentsByRange": {
+                            "{8, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0216A64E-C181-4939-9C46-174927D98EB4",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼/￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "0216A64E-C181-4939-9C46-174927D98EB4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            },
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "filepath",
+                "UUID": "1D68B8A8-1268-410E-9A9C-E65C19113AB5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFFileErrorIfNotFound": false,
+                "WFFile": {
+                    "Value": {
+                        "OutputUUID": "05228058-1E69-41B5-925E-FC0C9250F26D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Daily-Bullet-Journal"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFGetFilePath": {
+                    "Value": {
+                        "string": "￼.md",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1D68B8A8-1268-410E-9A9C-E65C19113AB5",
+                                "Type": "ActionOutput",
+                                "OutputName": "filepath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "154E4B97-EC0E-420E-8240-9216D9BB8F96"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "154E4B97-EC0E-420E-8240-9216D9BB8F96",
+                            "Type": "ActionOutput",
+                            "OutputName": "File"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F16B741E-0D6B-4985-8CA0-3B64CE7412F6",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1D68B8A8-1268-410E-9A9C-E65C19113AB5",
+                        "Type": "ActionOutput",
+                        "OutputName": "filepath"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "journal(s)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "F16B741E-0D6B-4985-8CA0-3B64CE7412F6",
+                "UUID": "0C093671-AEC7-4C8F-B3C7-3E1ADA5C66F1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "894A0AE1-3F28-4159-93D5-2A20006A12DC",
+                "UUID": "AAB39980-89EC-48A0-AAD8-89228726F312"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "journal(s)",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 3,
+            "Text": "Notion API Key"
+        },
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 5,
+            "Text": "Database ID"
+        }
+    ],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

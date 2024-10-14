@@ -1,0 +1,147 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Last Monday",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "69A020B3-5F91-488C-A9B9-A9F8C0932B68"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "24B0571C-7364-4862-8EE5-4F39725A9705",
+                "WFRepeatCount": 7,
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Index",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "1",
+                "UUID": "4C278B11-7189-452C-A4B5-6F6508B4FE7A",
+                "WFMathOperation": "-"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "days",
+                        "Magnitude": {
+                            "OutputUUID": "4C278B11-7189-452C-A4B5-6F6508B4FE7A",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "9D5AB6B6-B33B-4E18-9B70-5106D188FDBC",
+                "WFAdjustOperation": "Add",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "69A020B3-5F91-488C-A9B9-A9F8C0932B68",
+                                "Type": "ActionOutput",
+                                "OutputName": "Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "yyyy/MM-MMMM/yyyy_MM_dd",
+                "UUID": "8E4D647D-86C2-4A6B-955F-840A58647407",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "9D5AB6B6-B33B-4E18-9B70-5106D188FDBC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "UUID": "2C11EAC3-7B1D-4F37-87D0-8C1BDC7965B5",
+                "CustomOutputName": "journals",
+                "GroupingIdentifier": "24B0571C-7364-4862-8EE5-4F39725A9705"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2C11EAC3-7B1D-4F37-87D0-8C1BDC7965B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "journals"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 3,
+            "Text": "Notion API Key"
+        },
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 5,
+            "Text": "Database ID"
+        }
+    ],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

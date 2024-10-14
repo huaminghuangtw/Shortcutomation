@@ -1,0 +1,104 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 59681
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Unix time is a date and time representation widely used in computing. It measures time by the number of non-leap seconds that have elapsed since 00:00:00 UTC on 1st January 1970, the Unix epoch.\n\nReferences\n• https://en.wikipedia.org/wiki/Unix_time\n• https://www.epochconverter.com"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "Epoch Start Time",
+                "UUID": "1D04B040-0643-4B0A-88D6-8E0ADEF29920",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": "Jan 1 1970 00:00 UTC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "sec",
+                        "Magnitude": {
+                            "Type": "ExtensionInput"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "WFAdjustOffsetPicker": {
+                    "Value": {
+                        "Unit": "Second",
+                        "Value": {
+                            "OutputUUID": "2F6CB262-2B0F-47A6-8790-186411A9E448",
+                            "Type": "ActionOutput",
+                            "OutputName": "Ask for Input"
+                        },
+                        "Operation": "Add"
+                    },
+                    "WFSerializationType": "WFTimeOffsetValue"
+                },
+                "UUID": "FEA3ED24-243B-4C29-85A9-3F896AF9B20A",
+                "WFAdjustOperation": "Add",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1D04B040-0643-4B0A-88D6-8E0ADEF29920",
+                                "Type": "ActionOutput",
+                                "OutputName": "Epoch Start Time"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "FEA3ED24-243B-4C29-85A9-3F896AF9B20A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}
