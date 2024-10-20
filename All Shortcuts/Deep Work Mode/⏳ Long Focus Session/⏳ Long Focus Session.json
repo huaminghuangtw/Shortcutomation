@@ -22,33 +22,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "⚛️ How many focus sessions?",
-                "UUID": "2EFC55B8-9738-4DB8-BBC9-0A37D1160C44"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAskActionDefaultAnswerNumber": "3",
-                "WFAskActionAllowsNegativeNumbers": false,
+                "CustomOutputName": "numFocusSessions",
+                "WFAskActionPrompt": "⚛️ How many focus sessions?",
                 "UUID": "A4F15634-A67B-413D-9295-6B4297801D51",
-                "WFInputType": "Number",
                 "WFAskActionAllowsDecimalNumbers": false,
-                "WFAskActionPrompt": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "2EFC55B8-9738-4DB8-BBC9-0A37D1160C44",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                "WFInputType": "Number",
+                "WFAskActionDefaultAnswerNumber": "3",
+                "WFAskActionAllowsNegativeNumbers": false
             }
         },
         {
@@ -71,7 +53,7 @@
                     "Value": {
                         "OutputUUID": "A4F15634-A67B-413D-9295-6B4297801D51",
                         "Type": "ActionOutput",
-                        "OutputName": "Provided Input"
+                        "OutputName": "numFocusSessions"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -115,7 +97,7 @@
                     "Value": {
                         "OutputUUID": "A4F15634-A67B-413D-9295-6B4297801D51",
                         "Type": "ActionOutput",
-                        "OutputName": "Provided Input"
+                        "OutputName": "numFocusSessions"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -130,10 +112,6 @@
                 "WFSpeakTextWait": false,
                 "WFText": "Great job! Take a long break!"
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
@@ -186,7 +164,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.math",
             "WFWorkflowActionParameters": {
                 "WFInput": "1",
-                "WFMathOperand": "60",
+                "WFMathOperand": "55",
                 "UUID": "ED44244B-CB69-48A9-B9BC-E6CE658905EE",
                 "WFMathOperation": "×"
             }
@@ -205,6 +183,33 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "5",
+                "UUID": "177153C6-FF80-4AAB-B650-A014E66CF438"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "177153C6-FF80-4AAB-B650-A014E66CF438",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "33949C11-4961-48B4-AF8F-91D746F6139D",
+                    "workflowName": "Countdown Timer",
+                    "isSelf": false
+                },
+                "UUID": "EE53280F-5AB8-47AC-9A6C-A67021ABEB9E",
+                "WFWorkflowName": "Countdown Timer"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.speaktext",
             "WFWorkflowActionParameters": {
                 "WFSpeakTextPitch": 1.058295950293541,
@@ -219,6 +224,106 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "8331CB05-4475-4303-8D56-9661DFCFD295",
                 "UUID": "6BE7C9BF-38FA-4327-BBDA-C9190606CF83"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "topic"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Productivity"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "3D1DD98C-A53E-478C-9984-F2B24CBE32C6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3D1DD98C-A53E-478C-9984-F2B24CBE32C6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "B9AD53B7-9843-4075-9386-FC80989F9C27",
+                    "workflowName": "Get Random Journal Prompt Item(s)",
+                    "isSelf": false
+                },
+                "UUID": "FCABF301-48A6-43C2-B0E5-DEBE56D7D647",
+                "WFWorkflowName": "Get Random Journal Prompt Item(s)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "C7698E35-43B1-40ED-8BCF-B9BFAE08E6CB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "body": {
+                    "Value": {
+                        "string": "❝ ￼ ❞",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "EE53280F-5AB8-47AC-9A6C-A67021ABEB9E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "soundType": "none",
+                "UUID": "5C0573CC-E2D9-4D3B-88CB-F883221498E7",
+                "subtitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C7698E35-43B1-40ED-8BCF-B9BFAE08E6CB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "title": {
+                    "Value": {
+                        "string": "￼ 🍅 completed!",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {

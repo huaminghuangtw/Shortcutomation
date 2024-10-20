@@ -201,26 +201,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.TextCaseIntent",
-            "WFWorkflowActionParameters": {
-                "ShowWhenRun": false,
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "3C5A7D90-6EF1-4B24-8E8D-B6C2F446584D",
-                "format": "boldSerif"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.properties.calendarevents",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -263,9 +243,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "3C5A7D90-6EF1-4B24-8E8D-B6C2F446584D",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Text"
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -300,9 +279,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "📅 ￼有￼個特別活動",
+                        "string": "📅 ￼有 ￼ 個特別活動",
                         "attachmentsByRange": {
-                            "{5, 1}": {
+                            "{6, 1}": {
                                 "OutputUUID": "BF9435E7-1EA0-4192-B81D-0E79F265DE47",
                                 "Type": "ActionOutput",
                                 "OutputName": "Count"
@@ -318,10 +297,6 @@
                 },
                 "UUID": "1389FB5A-3B9B-4ACF-8BFF-F7087D4466BB"
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
@@ -348,6 +323,54 @@
                 },
                 "UUID": "221A32D4-F7BC-477C-95E0-F58103DA5227",
                 "WFChooseFromListActionSelectMultiple": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Selected Item",
+                        "OutputUUID": "221A32D4-F7BC-477C-95E0-F58103DA5227",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "WFItemName",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "24B914B1-A82B-400A-9932-844151D4BE52",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "✍️ Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "289573D0-2182-4A54-A59F-51BCABB4EC22",
+                "WFWorkflowName": "✍️ Log Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "24B914B1-A82B-400A-9932-844151D4BE52",
+                "WFControlFlowMode": 2
             }
         },
         {

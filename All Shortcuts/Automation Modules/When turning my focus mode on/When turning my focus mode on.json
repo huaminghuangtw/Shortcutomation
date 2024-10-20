@@ -32,28 +32,50 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "✔ Check Life Automation",
+                    "🪽 Life Progress Bar"
+                ],
+                "UUID": "4984DF15-EECB-4775-824A-53BF700295A7"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "id"
-                                }
-                            ]
+                            "OutputUUID": "4984DF15-EECB-4775-824A-53BF700295A7",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "✔ Check Life Automation",
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "id"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "GroupingIdentifier": "41590864-5E88-4994-8115-113A983A499F",
-                "WFCondition": 5
+                "WFCondition": 999
             }
         },
         {
@@ -154,7 +176,32 @@
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "My Focus Mode",
+                "CustomOutputName": "My Focus Mode",
                 "UUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "My Focus Mode",
+                        "OutputUUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C6F06BF7-8805-42EF-B431-ACA4A93CBBD0"
             }
         },
         {
@@ -164,7 +211,7 @@
                     "Value": {
                         "OutputUUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67",
                         "Type": "ActionOutput",
-                        "OutputName": "Value"
+                        "OutputName": "My Focus Mode"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -421,6 +468,18 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "2F1D7A7B-4899-4A35-8A4A-FA7A6E044B33",
+                    "workflowName": "🌟 My North Star",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🌟 My North Star",
+                "UUID": "E93F75DC-1213-4814-A86F-67C7976A15E2"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
@@ -583,8 +642,9 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "typeCase": "title",
-                "UUID": "7B539A77-6293-47E0-BB87-B00E1F4E24DB"
+                "output": "word",
+                "UUID": "7B539A77-6293-47E0-BB87-B00E1F4E24DB",
+                "typeCase": "title"
             }
         },
         {
@@ -691,18 +751,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "FE76201B-464D-4B04-B0E6-593BE75249BC",
-                    "workflowName": "🤓 Weekly Mindware Update",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "🤓 Weekly Mindware Update",
-                "UUID": "6CD80CCF-B0DA-47C9-A664-9DDECD3A79FF"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.number",
             "WFWorkflowActionParameters": {
                 "WFNumberActionNumber": "5",
@@ -740,7 +788,7 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "Last Run Time.shortcut.🌻 My Life On This Day",
+                "keyPath": "Timestamp.shortcutLastRunTime.🌻 My Life On This Day",
                 "UUID": "F0B10F02-0525-4DEB-98E9-7B4D5E4BFCE9"
             }
         },
@@ -827,19 +875,67 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
-                    "workflowIdentifier": "DDA35764-6FD7-4A4A-BA95-9EEB9EBA9325",
-                    "workflowName": "👑 Life Pro Tips",
+                    "workflowIdentifier": "CED6B78A-702D-4A4F-9814-8EF007DBCD9C",
+                    "workflowName": "👑 Life Pro Tip",
                     "isSelf": false
                 },
-                "WFWorkflowName": "👑 Life Pro Tips",
+                "WFWorkflowName": "👑 Life Pro Tip",
                 "UUID": "E514B884-A4ED-462D-B1B5-71EFD3CC0C37"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "82A5545E-A614-4465-BB94-2EE1912AAB76",
-                "WFControlFlowMode": 2
+                "UUID": "78E73150-EA0D-4816-B417-8C1F61F752D0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2C12A3F8-E1F6-4A8A-A144-204539E0B66C",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "8F32E364-0E21-45B0-AA89-24B3427A0457",
+                            "Type": "ActionOutput",
+                            "OutputName": "phase"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": {
+                    "Value": {
+                        "OutputUUID": "C6F06BF7-8805-42EF-B431-ACA4A93CBBD0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "F12A9172-DD6B-4EFB-89FF-3E27DAF6D9DD",
+                    "workflowName": "🪽 Life Progress Bar",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🪽 Life Progress Bar",
+                "UUID": "E097ED69-72ED-4606-BD67-A58E89D65B4B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "2C12A3F8-E1F6-4A8A-A144-204539E0B66C",
+                "UUID": "BAB8401B-AE47-45F1-BE92-63F91ADE837D"
             }
         },
         {

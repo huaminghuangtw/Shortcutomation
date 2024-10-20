@@ -1,0 +1,293 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "54919881-7DC1-4A82-A5E9-8DC0078BB389"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Proportional Scaling\n──────────────\nA proportion represents two equal ratios, written as a/b = c/d or a:b = c:d"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "28",
+                "CustomOutputName": "threshold",
+                "UUID": "B4D052CA-D193-420F-A83E-604247F0CF6A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "(￼ * ￼) / ￼",
+                        "attachmentsByRange": {
+                            "{10, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "54919881-7DC1-4A82-A5E9-8DC0078BB389",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "total"
+                                    }
+                                ]
+                            },
+                            "{1, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "54919881-7DC1-4A82-A5E9-8DC0078BB389",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "current"
+                                    }
+                                ]
+                            },
+                            "{5, 1}": {
+                                "OutputUUID": "B4D052CA-D193-420F-A83E-604247F0CF6A",
+                                "Type": "ActionOutput",
+                                "OutputName": "threshold"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "current",
+                "UUID": "AFEB34DC-936D-45A5-B665-A1FD16391607"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AFEB34DC-936D-45A5-B665-A1FD16391607",
+                        "Type": "ActionOutput",
+                        "OutputName": "current"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundMode": "Always Round Up",
+                "UUID": "455DAE83-A06F-49AE-BC37-B56CC6B880E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "87D8F02C-608F-4221-A3F0-1C247CBE9851",
+                "WFRepeatCount": {
+                    "Value": {
+                        "OutputUUID": "455DAE83-A06F-49AE-BC37-B56CC6B880E7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rounded Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "🁢",
+                "UUID": "A1CE4A82-E212-48EB-B4CE-4C6816F76A1B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "UUID": "166BE150-8AE9-487A-B931-1C8995A1BAED",
+                "CustomOutputName": "currernt",
+                "GroupingIdentifier": "87D8F02C-608F-4221-A3F0-1C247CBE9851"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "current",
+                "UUID": "95ED24D5-F53B-4B50-85CC-19A6A436D13A",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "166BE150-8AE9-487A-B931-1C8995A1BAED",
+                        "Type": "ActionOutput",
+                        "OutputName": "currernt"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "((￼ - ￼) * ￼) / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "54919881-7DC1-4A82-A5E9-8DC0078BB389",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "total"
+                                    }
+                                ]
+                            },
+                            "{11, 1}": {
+                                "OutputUUID": "B4D052CA-D193-420F-A83E-604247F0CF6A",
+                                "Type": "ActionOutput",
+                                "OutputName": "threshold"
+                            },
+                            "{6, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "54919881-7DC1-4A82-A5E9-8DC0078BB389",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "current"
+                                    }
+                                ]
+                            },
+                            "{16, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "54919881-7DC1-4A82-A5E9-8DC0078BB389",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "total"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "left",
+                "UUID": "20C4744A-F5B4-4C95-9C6E-C423F111EDB3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "20C4744A-F5B4-4C95-9C6E-C423F111EDB3",
+                        "Type": "ActionOutput",
+                        "OutputName": "left"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundMode": "Always Round Down",
+                "UUID": "16D412FD-B77B-4ED9-B30D-BB46B3B2F429"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B8F4AEBD-1E0E-4313-9E9C-16B440C141A3",
+                "WFRepeatCount": {
+                    "Value": {
+                        "OutputUUID": "16D412FD-B77B-4ED9-B30D-BB46B3B2F429",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rounded Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "🁣",
+                "UUID": "A02911B3-7908-4295-8866-A9FA8B0608B2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "UUID": "3B203F32-63B5-4314-81C1-EB26803B89E5",
+                "CustomOutputName": "left",
+                "GroupingIdentifier": "B8F4AEBD-1E0E-4313-9E9C-16B440C141A3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "left",
+                "UUID": "4C9FDD3A-F835-4F19-997C-4226277601FF",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "3B203F32-63B5-4314-81C1-EB26803B89E5",
+                        "Type": "ActionOutput",
+                        "OutputName": "left"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼￼",
+                        "attachmentsByRange": {
+                            "{1, 1}": {
+                                "OutputUUID": "4C9FDD3A-F835-4F19-997C-4226277601FF",
+                                "Type": "ActionOutput",
+                                "OutputName": "left"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "95ED24D5-F53B-4B50-85CC-19A6A436D13A",
+                                "Type": "ActionOutput",
+                                "OutputName": "current"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

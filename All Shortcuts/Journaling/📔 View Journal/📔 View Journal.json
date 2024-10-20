@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -8,24 +8,27 @@
     "WFWorkflowClientVersion": "3036.0.4.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
-    "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "CEBC2954-C4EE-4052-B359-5ACCA992791D",
-                "WFCondition": 100
+                "WFDateActionMode": "Specified Date"
             }
-        },
+        }
+    },
+    "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
@@ -63,56 +66,15 @@
                 "UUID": "DC9699DF-BC81-4AE4-8393-EB42A4D5CB36",
                 "WFWorkflowName": "Open Journal(s)"
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "CEBC2954-C4EE-4052-B359-5ACCA992791D",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "📝 Journaling",
-                "UUID": "F03091D0-3558-4A68-8168-277A83C35029"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "F03091D0-3558-4A68-8168-277A83C35029",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "231963F2-C559-4ACE-B3DE-15508CBC1F21",
-                    "workflowName": "🏡 Go to LifeOS Homepage",
-                    "isSelf": false
-                },
-                "UUID": "AACAC388-C59D-4474-94FD-F38B99BDC875",
-                "WFWorkflowName": "🏡 Go to LifeOS Homepage"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "CEBC2954-C4EE-4052-B359-5ACCA992791D",
-                "WFControlFlowMode": 2
-            }
         }
     ],
     "WFWorkflowInputContentItemClasses": [
         "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch"
     ],
-    "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

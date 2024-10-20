@@ -12,19 +12,47 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
             "WFWorkflowActionParameters": {
-                "WFDateActionDate": "Yesterday 23:59",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "02C89FF7-AAA2-40CB-ADA7-8090147903A8"
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAdjustOperation": "Get Start of Week",
+                "UUID": "22698CC3-AD37-491D-BD19-F8E8F1529238"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
             "WFWorkflowActionParameters": {
-                "WFDateActionDate": "Today 23:59",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "91238716-139A-4842-AB7E-0F42F0A03AA5"
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "22698CC3-AD37-491D-BD19-F8E8F1529238",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "days",
+                        "Magnitude": "7"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "B0758642-A3C1-41D2-93B9-2581F37E6A25"
             }
         },
         {
@@ -44,18 +72,18 @@
                                 "Values": {
                                     "AnotherDate": {
                                         "Value": {
-                                            "OutputUUID": "91238716-139A-4842-AB7E-0F42F0A03AA5",
+                                            "OutputUUID": "B0758642-A3C1-41D2-93B9-2581F37E6A25",
                                             "Type": "ActionOutput",
-                                            "OutputName": "Date"
+                                            "OutputName": "Adjusted Date"
                                         },
                                         "WFSerializationType": "WFTextTokenAttachment"
                                     },
                                     "Unit": 16,
                                     "Date": {
                                         "Value": {
-                                            "OutputUUID": "02C89FF7-AAA2-40CB-ADA7-8090147903A8",
+                                            "OutputUUID": "22698CC3-AD37-491D-BD19-F8E8F1529238",
                                             "Type": "ActionOutput",
-                                            "OutputName": "Date"
+                                            "OutputName": "Adjusted Date"
                                         },
                                         "WFSerializationType": "WFTextTokenAttachment"
                                     },
@@ -120,13 +148,25 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "◻️ ￼ - ￼ : ￼",
+                        "string": "◻️ ￼ (￼ - ￼): ￼",
                         "attachmentsByRange": {
-                            "{11, 1}": {
+                            "{6, 1}": {
                                 "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Start Date"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "None",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Short"
+                                    }
+                                ]
                             },
-                            "{7, 1}": {
+                            "{10, 1}": {
                                 "VariableName": "Repeat Item",
                                 "Type": "Variable",
                                 "Aggrandizements": [
@@ -151,12 +191,16 @@
                                         "PropertyName": "Start Date"
                                     },
                                     {
-                                        "WFDateFormatStyle": "None",
-                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFTimeFormatStyle": "Short"
+                                        "WFDateFormat": "EEEE",
+                                        "WFISO8601IncludeTime": false
                                     }
                                 ]
+                            },
+                            "{14, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -192,9 +236,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "📅 今天我們有 ￼ 個共同日曆事項:\n\n￼",
+                        "string": "📅 本周我們有 ￼ 個活動:\n\n￼",
                         "attachmentsByRange": {
-                            "{21, 1}": {
+                            "{17, 1}": {
                                 "OutputUUID": "6EC7B220-9E73-4B3D-A054-124D3A68A367",
                                 "Type": "ActionOutput",
                                 "OutputName": "Repeat Results"

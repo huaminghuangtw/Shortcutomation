@@ -13,7 +13,7 @@
 <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/pulls"><img src="https://img.shields.io/github/issues-pr/huaminghuangtw/Apple-Shortcuts-Gallery.svg?style=social&logo=github"></a>
 </p>
 
-> **Last Update:** 2024-10-14  
+> **Last Update:** 2024-10-20  
 > Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)  
 
 _[Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable _notifications_ and _widgets_ created with [Scriptable](https://scriptable.app)!_
@@ -31,17 +31,18 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - [Day Progress](https://sindresorhus.com/day-progress)
 - [Working Copy](https://workingcopy.app/)
 - [Flow](https://www.flow.app/)
+- [Caffeinated](https://caffeinated.app/)
 - [Text Case](https://textcase.app)
 
 ## 📊 Shortcuts Library Stats ²
 
-* In total, there are **542** Shortcuts with **5917** actions in **62** folders
+* In total, there are **552** Shortcuts with **6041** actions in **64** folders
 * The pure average comes out to about **11** actions per Shortcut
 * The typical Shortcut has around **7+** actions
 * 🏅 Top 5 Most Complex Shortcuts:
     1. [📖 Audible PDF](./All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF) - 72 actions
-    2. [Check Last Run Time](./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Last%20Run%20Time) - 69 actions
-    3. [Turn on Tapo Smart Bulb](./All%20Shortcuts/Utility%20Helper%20Functions/Turn%20on%20Tapo%20Smart%20Bulb) - 65 actions
+    2. [Check Shortcut Last Run Time](./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Shortcut%20Last%20Run%20Time) - 70 actions
+    3. [Turn on Tapo Smart Bulb](./All%20Shortcuts/Utility%20Helper%20Functions/Turn%20on%20Tapo%20Smart%20Bulb) - 67 actions
     4. [🌐 Search Web](./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%90%20Search%20Web) - 63 actions
     5. [Build Run Shortcut URL](./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Build%20Run%20Shortcut%20URL) - 60 actions
 * 🎖️ Top 5 Largest Shortcuts:
@@ -66,7 +67,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
 <summary>
    <strong>
-      <a href="./All%20Shortcuts">All Shortcuts (542)</a>
+      <a href="./All%20Shortcuts">All Shortcuts (552)</a>
    </strong>
 </summary>
 
@@ -132,6 +133,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="Apple%20Calendar">_Get Calendar Events</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events">
+       <img src="./All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events/_Get%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Apple%20Calendar">_Quick Look Calendar Events</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/_Quick%20Look%20Calendar%20Events">
+       <img src="./All%20Shortcuts/Apple%20Calendar/_Quick%20Look%20Calendar%20Events/_Quick%20Look%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="Apple%20Calendar">Show All Day Events</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Show%20All%20Day%20Events">
@@ -154,24 +173,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Speak%20Scheduled%20Calendar%20Events">
        <img src="./All%20Shortcuts/Apple%20Calendar/Speak%20Scheduled%20Calendar%20Events/Speak%20Scheduled%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Apple%20Calendar">_Get Calendar Events</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events">
-       <img src="./All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events/_Get%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Apple%20Calendar">_Quick Look Calendar Events</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/_Quick%20Look%20Calendar%20Events">
-       <img src="./All%20Shortcuts/Apple%20Calendar/_Quick%20Look%20Calendar%20Events/_Quick%20Look%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -400,7 +401,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20-%20Daily"> Automation - Daily (9)</a>
+        <a href="./All%20Shortcuts/Automation%20-%20Daily"> Automation - Daily (8)</a>
       </strong>
     </summary>
 
@@ -475,23 +476,23 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20My%20Apple%20Reminders/%23%20Backup%20My%20Apple%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
-
-    - <details>
-       <summary>
-       <a href="Automation%20-%20Daily"># My Dear Yi</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20My%20Dear%20Yi">
-       <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20My%20Dear%20Yi/%23%20My%20Dear%20Yi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
   </details>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20-%20Weekly"> Automation - Weekly (2)</a>
+        <a href="./All%20Shortcuts/Automation%20-%20Weekly"> Automation - Weekly (3)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="Automation%20-%20Weekly"># Friday | My Dear Yi</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/%23%20Friday%20%7C%20My%20Dear%20Yi">
+       <img src="./All%20Shortcuts/Automation%20-%20Weekly/%23%20Friday%20%7C%20My%20Dear%20Yi/%23%20Friday%20%7C%20My%20Dear%20Yi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -739,6 +740,95 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
+        <a href="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library"> Backup My Shortcuts Library (9)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Cleanup Backup Folder</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Cleanup%20Backup%20Folder">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Cleanup%20Backup%20Folder/Cleanup%20Backup%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Last Week Snapshot</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Last%20Week%20Snapshot">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Last%20Week%20Snapshot/Last%20Week%20Snapshot.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Filter Shortcuts By Folder</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Filter%20Shortcuts%20By%20Folder">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Filter%20Shortcuts%20By%20Folder/Filter%20Shortcuts%20By%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Backup Shortcut Files</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Files">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Files/Backup%20Shortcut%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Archive Shortcuts with Folders</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Archive%20Shortcuts%20with%20Folders">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Archive%20Shortcuts%20with%20Folders/Archive%20Shortcuts%20with%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Archive Shortcuts without Folders</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Archive%20Shortcuts%20without%20Folders">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Archive%20Shortcuts%20without%20Folders/Archive%20Shortcuts%20without%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Create README.md</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Create%20README.md">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Create%20README.md/Create%20README.md.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Create CHANGELOG.md</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Create%20CHANGELOG.md">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Create%20CHANGELOG.md/Create%20CHANGELOG.md.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Backup%20My%20Shortcuts%20Library">Finish Shortcuts Backup</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Finish%20Shortcuts%20Backup">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Finish%20Shortcuts%20Backup/Finish%20Shortcuts%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
         <a href="./All%20Shortcuts/BLE%20Speaker"> BLE Speaker (2)</a>
       </strong>
     </summary>
@@ -853,27 +943,9 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Data%20Jar"> Data Jar (4)</a>
+        <a href="./All%20Shortcuts/Data%20Jar"> Data Jar (3)</a>
       </strong>
     </summary>
-
-    - <details>
-       <summary>
-       <a href="Data%20Jar">View Value at Key Path in Data Jar</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/View%20Value%20at%20Key%20Path%20in%20Data%20Jar">
-       <img src="./All%20Shortcuts/Data%20Jar/View%20Value%20at%20Key%20Path%20in%20Data%20Jar/View%20Value%20at%20Key%20Path%20in%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Data%20Jar">Set Key Path to Value in Data Jar</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar">
-       <img src="./All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
 
     - <details>
        <summary>
@@ -892,12 +964,21 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        <img src="./All%20Shortcuts/Data%20Jar/Export%20Data%20Jar/Export%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
+
+    - <details>
+       <summary>
+       <a href="Data%20Jar">Set Key Path to Value in Data Jar</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar">
+       <img src="./All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
   </details>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Date%20%26%20Time"> Date & Time (27)</a>
+        <a href="./All%20Shortcuts/Date%20%26%20Time"> Date & Time (26)</a>
       </strong>
     </summary>
 
@@ -1134,15 +1215,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        <img src="./All%20Shortcuts/Date%20%26%20Time/getFirstAndLastDayOfMonthAgo/getFirstAndLastDayOfMonthAgo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
-
-    - <details>
-       <summary>
-       <a href="Date%20%26%20Time">Prefix Chinese AM or PM</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/Prefix%20Chinese%20AM%20or%20PM">
-       <img src="./All%20Shortcuts/Date%20%26%20Time/Prefix%20Chinese%20AM%20or%20PM/Prefix%20Chinese%20AM%20or%20PM.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
   </details>
 
 - <details>
@@ -1297,7 +1369,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/End%20the%20Day%20Right"> End the Day Right (8)</a>
+        <a href="./All%20Shortcuts/End%20the%20Day%20Right"> End the Day Right (7)</a>
       </strong>
     </summary>
 
@@ -1352,15 +1424,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Write%20Today's%20Journal">
        <img src="./All%20Shortcuts/End%20the%20Day%20Right/Write%20Today's%20Journal/Write%20Today's%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="End%20the%20Day%20Right">Plan Tomorrow</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Plan%20Tomorrow">
-       <img src="./All%20Shortcuts/End%20the%20Day%20Right/Plan%20Tomorrow/Plan%20Tomorrow.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1573,151 +1636,250 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Get%20Things%20Done"> Get Things Done (16)</a>
+        <a href="./All%20Shortcuts/Getting%20Things%20Done"> Getting Things Done (27)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">☑️ Add New TODO(s)</a>
+       <a href="Getting%20Things%20Done">💾 Backup Evergreen Lists</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists/%F0%9F%92%BE%20Backup%20Evergreen%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">❗️Remind Me</a>
+       <a href="Getting%20Things%20Done">💾 Backup Evergreen Lists - Kernel</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%E2%9D%97%EF%B8%8FRemind%20Me">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%E2%9D%97%EF%B8%8FRemind%20Me/%E2%9D%97%EF%B8%8FRemind%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">🗓️ Plan My Day</a>
+       <a href="Getting%20Things%20Done">💾 Backup My Shortcuts Library</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">📆 Daily Planner</a>
+       <a href="Getting%20Things%20Done">☑️ Add New TODO(s)</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%93%86%20Daily%20Planner">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%93%86%20Daily%20Planner/%F0%9F%93%86%20Daily%20Planner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">🎞️ Organize My Photos</a>
+       <a href="Getting%20Things%20Done">❗️Remind Me</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%9D%97%EF%B8%8FRemind%20Me">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%E2%9D%97%EF%B8%8FRemind%20Me/%E2%9D%97%EF%B8%8FRemind%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">📨 Gmail</a>
+       <a href="Getting%20Things%20Done">🗓️ Plan My Day</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%93%A8%20Gmail">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%93%A8%20Gmail/%F0%9F%93%A8%20Gmail.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">🪄 System Housekeeping</a>
+       <a href="Getting%20Things%20Done">📆 Daily Planner</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping/%F0%9F%AA%84%20System%20Housekeeping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%86%20Daily%20Planner">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%86%20Daily%20Planner/%F0%9F%93%86%20Daily%20Planner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">📦 Reorganize My Vault For Consistency</a>
+       <a href="Getting%20Things%20Done">🪄 System Housekeeping</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%93%A6%20Reorganize%20My%20Vault%20For%20Consistency">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%93%A6%20Reorganize%20My%20Vault%20For%20Consistency/%F0%9F%93%A6%20Reorganize%20My%20Vault%20For%20Consistency.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping/%F0%9F%AA%84%20System%20Housekeeping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">🍅 Deep Work Machine</a>
+       <a href="Getting%20Things%20Done">💉 Sanity Check My Vault</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine/%F0%9F%8D%85%20Deep%20Work%20Machine.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%89%20Sanity%20Check%20My%20Vault">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%89%20Sanity%20Check%20My%20Vault/%F0%9F%92%89%20Sanity%20Check%20My%20Vault.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">Boot Up Sequence</a>
+       <a href="Getting%20Things%20Done">📦 Reorganize My Vault For Consistency</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/Boot%20Up%20Sequence">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/Boot%20Up%20Sequence/Boot%20Up%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A6%20Reorganize%20My%20Vault%20For%20Consistency">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A6%20Reorganize%20My%20Vault%20For%20Consistency/%F0%9F%93%A6%20Reorganize%20My%20Vault%20For%20Consistency.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">Shut Down Sequence</a>
+       <a href="Getting%20Things%20Done">📨 Gmail</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/Shut%20Down%20Sequence">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/Shut%20Down%20Sequence/Shut%20Down%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A8%20Gmail">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A8%20Gmail/%F0%9F%93%A8%20Gmail.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">Power Down Sequence</a>
+       <a href="Getting%20Things%20Done">🍅 Deep Work Machine</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/Power%20Down%20Sequence">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/Power%20Down%20Sequence/Power%20Down%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine/%F0%9F%8D%85%20Deep%20Work%20Machine.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">Set Day Range</a>
+       <a href="Getting%20Things%20Done">Boot Up Sequence</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/Set%20Day%20Range">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/Set%20Day%20Range/Set%20Day%20Range.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Boot%20Up%20Sequence">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Boot%20Up%20Sequence/Boot%20Up%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">Set Day Range - Kernel</a>
+       <a href="Getting%20Things%20Done">Shut Down Sequence</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/Set%20Day%20Range%20-%20Kernel">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/Set%20Day%20Range%20-%20Kernel/Set%20Day%20Range%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Shut%20Down%20Sequence">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Shut%20Down%20Sequence/Shut%20Down%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">Show Day Progress</a>
+       <a href="Getting%20Things%20Done">Set Day Range</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/Show%20Day%20Progress">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/Show%20Day%20Progress/Show%20Day%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Range">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Range/Set%20Day%20Range.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Get%20Things%20Done">_Get Undone Actions Items</a>
+       <a href="Getting%20Things%20Done">Set Day Range - Kernel</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Get%20Things%20Done/_Get%20Undone%20Actions%20Items">
-       <img src="./All%20Shortcuts/Get%20Things%20Done/_Get%20Undone%20Actions%20Items/_Get%20Undone%20Actions%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Range%20-%20Kernel">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Range%20-%20Kernel/Set%20Day%20Range%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Show Day Progress</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Show%20Day%20Progress">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Show%20Day%20Progress/Show%20Day%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Show Year Progress</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Show%20Year%20Progress">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Show%20Year%20Progress/Show%20Year%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">_Get Undone Actions Items</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Actions%20Items">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Actions%20Items/_Get%20Undone%20Actions%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">_EvergreenList2MarkdownTables</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2MarkdownTables">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2MarkdownTables/_EvergreenList2MarkdownTables.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">_EvergreenList2JSON</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2JSON">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2JSON/_EvergreenList2JSON.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">_EvergreenList2GoogleSheets</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2GoogleSheets">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2GoogleSheets/_EvergreenList2GoogleSheets.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Generate Shortcuts Library Stats</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Stats">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Stats/Generate%20Shortcuts%20Library%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Create README Markdown Content for Shortcut Backup</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Generate Shortcuts Library Folder Structure</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Folder%20Structure">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Folder%20Structure/Generate%20Shortcuts%20Library%20Folder%20Structure.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Create Release Notes for Shortcut Backup</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Create%20Release%20Notes%20for%20Shortcut%20Backup">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Create%20Release%20Notes%20for%20Shortcut%20Backup/Create%20Release%20Notes%20for%20Shortcut%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Getting%20Things%20Done">Plot Shortcuts Library Stats Chart</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Plot%20Shortcuts%20Library%20Stats%20Chart">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Plot%20Shortcuts%20Library%20Stats%20Chart/Plot%20Shortcuts%20Library%20Stats%20Chart.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -1823,6 +1985,32 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Good%20Morning/Set%20Intention%20for%20the%20Day">
        <img src="./All%20Shortcuts/Good%20Morning/Set%20Intention%20for%20the%20Day/Set%20Intention%20for%20the%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
+        <a href="./All%20Shortcuts/Google%20Books%20API"> Google Books API (2)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="Google%20Books%20API">📓 Lookup ISBN Identifier</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Google%20Books%20API/%F0%9F%93%93%20Lookup%20ISBN%20Identifier">
+       <img src="./All%20Shortcuts/Google%20Books%20API/%F0%9F%93%93%20Lookup%20ISBN%20Identifier/%F0%9F%93%93%20Lookup%20ISBN%20Identifier.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Google%20Books%20API">GBooks - Perform Book Search</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Google%20Books%20API/GBooks%20-%20Perform%20Book%20Search">
+       <img src="./All%20Shortcuts/Google%20Books%20API/GBooks%20-%20Perform%20Book%20Search/GBooks%20-%20Perform%20Book%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -2007,7 +2195,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/iPhone%20Settings"> iPhone Settings (25)</a>
+        <a href="./All%20Shortcuts/iPhone%20Settings"> iPhone Settings (23)</a>
       </strong>
     </summary>
 
@@ -2103,42 +2291,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="iPhone%20Settings">Ultra Low Power Saver</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver">
-       <img src="./All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver/Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="iPhone%20Settings">Recover from Ultra Low Power Saver</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver">
-       <img src="./All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver/Recover%20from%20Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="iPhone%20Settings">Turn on Color Filters</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters">
-       <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters/Turn%20on%20Color%20Filters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="iPhone%20Settings">Turn off Color Filters</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters">
-       <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters/Turn%20off%20Color%20Filters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="iPhone%20Settings">Turn on Smart Invert</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20on%20Smart%20Invert">
@@ -2152,24 +2304,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20off%20Smart%20Invert">
        <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Smart%20Invert/Turn%20off%20Smart%20Invert.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="iPhone%20Settings">Back Tap (Double)</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Double)">
-       <img src="./All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Double)/Back%20Tap%20(Double).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="iPhone%20Settings">Back Tap (Triple)</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Triple)">
-       <img src="./All%20Shortcuts/iPhone%20Settings/Back%20Tap%20(Triple)/Back%20Tap%20(Triple).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2233,6 +2367,42 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Write%20Battery%20Info">
        <img src="./All%20Shortcuts/iPhone%20Settings/Write%20Battery%20Info/Write%20Battery%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="iPhone%20Settings">Ultra Low Power Saver</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver">
+       <img src="./All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver/Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="iPhone%20Settings">Recover from Ultra Low Power Saver</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver">
+       <img src="./All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver/Recover%20from%20Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="iPhone%20Settings">Turn on Color Filters</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters">
+       <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters/Turn%20on%20Color%20Filters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="iPhone%20Settings">Turn off Color Filters</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters">
+       <img src="./All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters/Turn%20off%20Color%20Filters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -2365,27 +2535,9 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/LifeOS%20Toolkits"> LifeOS Toolkits (39)</a>
+        <a href="./All%20Shortcuts/LifeOS%20Toolkits"> LifeOS Toolkits (42)</a>
       </strong>
     </summary>
-
-    - <details>
-       <summary>
-       <a href="LifeOS%20Toolkits">Prep 🌙 End the Day Right</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right/Prep%20%F0%9F%8C%99%20End%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="LifeOS%20Toolkits">Prep ☀️ Start the Day Right</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right/Prep%20%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
 
     - <details>
        <summary>
@@ -2402,6 +2554,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel">
        <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="LifeOS%20Toolkits">🌟 My North Star</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20My%20North%20Star">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20My%20North%20Star/%F0%9F%8C%9F%20My%20North%20Star.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="LifeOS%20Toolkits">Helper for 🌟 My North Star</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2425,19 +2595,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">👑 Life Pro Tips</a>
+       <a href="LifeOS%20Toolkits">👑 Life Pro Tip</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%91%20Life%20Pro%20Tips">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%91%20Life%20Pro%20Tips/%F0%9F%91%91%20Life%20Pro%20Tips.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%91%20Life%20Pro%20Tip">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%91%20Life%20Pro%20Tip/%F0%9F%91%91%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">Helper for 👑 Life Pro Tips</a>
+       <a href="LifeOS%20Toolkits">Helper for 👑 Life Pro Tip</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tips.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tip">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tip/Helper%20for%20%F0%9F%91%91%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2461,19 +2631,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">🥱 Pre-Sleep Cooldown</a>
+       <a href="LifeOS%20Toolkits">☄️ Pre-Work Warmup</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">☄️ Pre-Work Warmup</a>
+       <a href="LifeOS%20Toolkits">🥱 Pre-Sleep Cooldown</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup/%E2%98%84%EF%B8%8F%20Pre-Work%20Warmup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown/%F0%9F%A5%B1%20Pre-Sleep%20Cooldown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2551,6 +2721,15 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="LifeOS%20Toolkits">🎞️ Organize My Photos</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="LifeOS%20Toolkits">🐝 View My Album</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%90%9D%20View%20My%20Album">
@@ -2560,19 +2739,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">🚛 REWE 雜貨宅配</a>
+       <a href="LifeOS%20Toolkits">🔢 Record Body Weight</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Record%20Body%20Weight">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Record%20Body%20Weight/%F0%9F%94%A2%20Record%20Body%20Weight.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">🔢 Record Body Weight</a>
+       <a href="LifeOS%20Toolkits">🪽 Life Progress Bar</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Record%20Body%20Weight">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Record%20Body%20Weight/%F0%9F%94%A2%20Record%20Body%20Weight.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%BD%20Life%20Progress%20Bar">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%BD%20Life%20Progress%20Bar/%F0%9F%AA%BD%20Life%20Progress%20Bar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2591,6 +2770,15 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%A9%20The%204%20Quarters%20Rule">
        <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%A9%20The%204%20Quarters%20Rule/%F0%9F%A7%A9%20The%204%20Quarters%20Rule.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="LifeOS%20Toolkits">🚛 REWE 雜貨宅配</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D/%F0%9F%9A%9B%20REWE%20%E9%9B%9C%E8%B2%A8%E5%AE%85%E9%85%8D.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2686,15 +2874,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="LifeOS%20Toolkits">Get Random Life Pro Tip</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Life%20Pro%20Tip">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Life%20Pro%20Tip/Get%20Random%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="LifeOS%20Toolkits">Speak Journal Prompt Question(s)</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt%20Question(s)">
@@ -2708,6 +2887,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Update%20Journal%20Prompt%20Widget%20Text">
        <img src="./All%20Shortcuts/LifeOS%20Toolkits/Update%20Journal%20Prompt%20Widget%20Text/Update%20Journal%20Prompt%20Widget%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="LifeOS%20Toolkits">Get Random Paragraph from My Polaris</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Paragraph%20from%20My%20Polaris">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Paragraph%20from%20My%20Polaris/Get%20Random%20Paragraph%20from%20My%20Polaris.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="LifeOS%20Toolkits">Get Random Life Pro Tip</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Life%20Pro%20Tip">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Life%20Pro%20Tip/Get%20Random%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2902,7 +3099,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Motivate%20Me"> Motivate Me (2)</a>
+        <a href="./All%20Shortcuts/Motivate%20Me"> Motivate Me (3)</a>
       </strong>
     </summary>
 
@@ -2923,12 +3120,21 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        <img src="./All%20Shortcuts/Motivate%20Me/%F0%9F%A6%93%20The%20Mamba%20Mentality/%F0%9F%A6%93%20The%20Mamba%20Mentality.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
+
+    - <details>
+       <summary>
+       <a href="Motivate%20Me">🌄 At Dawn</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Motivate%20Me/%F0%9F%8C%84%20At%20Dawn">
+       <img src="./All%20Shortcuts/Motivate%20Me/%F0%9F%8C%84%20At%20Dawn/%F0%9F%8C%84%20At%20Dawn.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
   </details>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20AReminders%20Automation"> My AReminders Automation (3)</a>
+        <a href="./All%20Shortcuts/My%20AReminders%20Automation"> My AReminders Automation (4)</a>
       </strong>
     </summary>
 
@@ -2958,30 +3164,30 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        <img src="./All%20Shortcuts/My%20AReminders%20Automation/%F0%9F%91%80%20Sanity%20Check%20Cheat%20Sheets/%F0%9F%91%80%20Sanity%20Check%20Cheat%20Sheets.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
+
+    - <details>
+       <summary>
+       <a href="My%20AReminders%20Automation">❕Set Default Priority in Someday</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20AReminders%20Automation/%E2%9D%95Set%20Default%20Priority%20in%20Someday">
+       <img src="./All%20Shortcuts/My%20AReminders%20Automation/%E2%9D%95Set%20Default%20Priority%20in%20Someday/%E2%9D%95Set%20Default%20Priority%20in%20Someday.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
   </details>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20Dear%20Yi"> My Dear Yi (10)</a>
+        <a href="./All%20Shortcuts/My%20Dear%20Yi"> My Dear Yi (7)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="My%20Dear%20Yi">🤍 Send Yesterday's Photos</a>
+       <a href="My%20Dear%20Yi">🤍 Send Photos</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Send%20Yesterday's%20Photos">
-       <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Send%20Yesterday's%20Photos/%F0%9F%A4%8D%20Send%20Yesterday's%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="My%20Dear%20Yi">🤍 Today's Weather Summary</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Today's%20Weather%20Summary">
-       <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Today's%20Weather%20Summary/%F0%9F%A4%8D%20Today's%20Weather%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Send%20Photos">
+       <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Send%20Photos/%F0%9F%A4%8D%20Send%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3009,24 +3215,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Life%20Pro%20Tip">
        <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Life%20Pro%20Tip/%F0%9F%A4%8D%20Life%20Pro%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="My%20Dear%20Yi">🤍 NASA's Mars Rover Photo</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20Mars%20Rover%20Photo">
-       <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20Mars%20Rover%20Photo/%F0%9F%A4%8D%20NASA's%20Mars%20Rover%20Photo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="My%20Dear%20Yi">🤍 NASA's APOD</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20APOD">
-       <img src="./All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20NASA's%20APOD/%F0%9F%A4%8D%20NASA's%20APOD.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3061,7 +3249,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20Life%20Automation"> My Life Automation (5)</a>
+        <a href="./All%20Shortcuts/My%20Life%20Automation"> My Life Automation (6)</a>
       </strong>
     </summary>
 
@@ -3094,10 +3282,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="My%20Life%20Automation">_Get Life Automation Shortcuts</a>
+       <a href="My%20Life%20Automation">When My Life Automation is conpleted</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/_Get%20Life%20Automation%20Shortcuts">
-       <img src="./All%20Shortcuts/My%20Life%20Automation/_Get%20Life%20Automation%20Shortcuts/_Get%20Life%20Automation%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/When%20My%20Life%20Automation%20is%20conpleted">
+       <img src="./All%20Shortcuts/My%20Life%20Automation/When%20My%20Life%20Automation%20is%20conpleted/When%20My%20Life%20Automation%20is%20conpleted.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="My%20Life%20Automation">_Get Today's Life Automation Shortcuts</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/_Get%20Today's%20Life%20Automation%20Shortcuts">
+       <img src="./All%20Shortcuts/My%20Life%20Automation/_Get%20Today's%20Life%20Automation%20Shortcuts/_Get%20Today's%20Life%20Automation%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3114,7 +3311,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/NASA%20API"> NASA API (3)</a>
+        <a href="./All%20Shortcuts/NASA%20API"> NASA API (5)</a>
       </strong>
     </summary>
 
@@ -3142,6 +3339,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/NASA%20API/%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo">
        <img src="./All%20Shortcuts/NASA%20API/%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo/%F0%9F%AA%90%20Get%20Mars%20Rover%20Photo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="NASA%20API">Get NASA's Mars Rover Image</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/NASA%20API/Get%20NASA's%20Mars%20Rover%20Image">
+       <img src="./All%20Shortcuts/NASA%20API/Get%20NASA's%20Mars%20Rover%20Image/Get%20NASA's%20Mars%20Rover%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="NASA%20API">Get NASA's APOD Image</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/NASA%20API/Get%20NASA's%20APOD%20Image">
+       <img src="./All%20Shortcuts/NASA%20API/Get%20NASA's%20APOD%20Image/Get%20NASA's%20APOD%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3226,19 +3441,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="Obsidian%20Tools">Obsidian - Disable Community Plugins on Mobile</a>
+       <a href="Obsidian%20Tools">Obsidian - Toggle Community Plugins on Mobile</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Disable%20Community%20Plugins%20on%20Mobile">
-       <img src="./All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Disable%20Community%20Plugins%20on%20Mobile/Obsidian%20-%20Disable%20Community%20Plugins%20on%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile">
+       <img src="./All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="Obsidian%20Tools">Obsidian - Set App Setting Value for Mobile</a>
+       <a href="Obsidian%20Tools">Obsidian - Set Specific Setting for Mobile</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20App%20Setting%20Value%20for%20Mobile">
-       <img src="./All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20App%20Setting%20Value%20for%20Mobile/Obsidian%20-%20Set%20App%20Setting%20Value%20for%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile">
+       <img src="./All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3246,7 +3461,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Obsidian%20URI"> Obsidian URI (13)</a>
+        <a href="./All%20Shortcuts/Obsidian%20URI"> Obsidian URI (16)</a>
       </strong>
     </summary>
 
@@ -3301,6 +3516,15 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab">
        <img src="./All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Obsidian%20URI">Obsidian - Find Empty Files</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Find%20Empty%20Files">
+       <img src="./All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Find%20Empty%20Files/Obsidian%20-%20Find%20Empty%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3364,6 +3588,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths">
        <img src="./All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Obsidian%20URI">Obsidian - Reload App</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App">
+       <img src="./All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App/Obsidian%20-%20Reload%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Obsidian%20URI">Obsidian - Reload App - Kernel</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App%20-%20Kernel">
+       <img src="./All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App%20-%20Kernel/Obsidian%20-%20Reload%20App%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3459,7 +3701,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Second%20Brain"> Second Brain (19)</a>
+        <a href="./All%20Shortcuts/Second%20Brain"> Second Brain (14)</a>
       </strong>
     </summary>
 
@@ -3474,10 +3716,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="Second%20Brain">🗒️ Append to Note</a>
+       <a href="Second%20Brain">🗒️ Prepend to Note</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Append%20to%20Note">
-       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Append%20to%20Note/%F0%9F%97%92%EF%B8%8F%20Append%20to%20Note.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Prepend%20to%20Note">
+       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Prepend%20to%20Note/%F0%9F%97%92%EF%B8%8F%20Prepend%20to%20Note.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3528,6 +3770,15 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="Second%20Brain">⚡️ Quick Capture</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%E2%9A%A1%EF%B8%8F%20Quick%20Capture">
+       <img src="./All%20Shortcuts/Second%20Brain/%E2%9A%A1%EF%B8%8F%20Quick%20Capture/%E2%9A%A1%EF%B8%8F%20Quick%20Capture.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="Second%20Brain">🗂️ Organize Today's Captures</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Captures">
@@ -3573,64 +3824,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="Second%20Brain">🌱 View Fleeting Notes</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%8C%B1%20View%20Fleeting%20Notes">
-       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%8C%B1%20View%20Fleeting%20Notes/%F0%9F%8C%B1%20View%20Fleeting%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="Second%20Brain">🏡 Go to LifeOS Homepage</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%8F%A1%20Go%20to%20LifeOS%20Homepage">
        <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%8F%A1%20Go%20to%20LifeOS%20Homepage/%F0%9F%8F%A1%20Go%20to%20LifeOS%20Homepage.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Second%20Brain">💾 Backup Evergreen Lists</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%92%BE%20Backup%20Evergreen%20Lists">
-       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%92%BE%20Backup%20Evergreen%20Lists/%F0%9F%92%BE%20Backup%20Evergreen%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Second%20Brain">💾 Backup Evergreen Lists - Kernel</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel">
-       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Second%20Brain">_EvergreenList2GoogleSheets</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/_EvergreenList2GoogleSheets">
-       <img src="./All%20Shortcuts/Second%20Brain/_EvergreenList2GoogleSheets/_EvergreenList2GoogleSheets.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Second%20Brain">_EvergreenList2MarkdownTables</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/_EvergreenList2MarkdownTables">
-       <img src="./All%20Shortcuts/Second%20Brain/_EvergreenList2MarkdownTables/_EvergreenList2MarkdownTables.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Second%20Brain">_EvergreenList2JSON</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/_EvergreenList2JSON">
-       <img src="./All%20Shortcuts/Second%20Brain/_EvergreenList2JSON/_EvergreenList2JSON.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3736,162 +3933,9 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts"> Shortcuts of Shortcuts (28)</a>
+        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts"> Shortcuts of Shortcuts (13)</a>
       </strong>
     </summary>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Kernel</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Start</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Start">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Start/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Start.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Last Week Snapshot</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Last%20Week%20Snapshot">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Last%20Week%20Snapshot/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Last%20Week%20Snapshot.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Filter Shortcuts By Folder</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Filter%20Shortcuts%20By%20Folder">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Filter%20Shortcuts%20By%20Folder/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Filter%20Shortcuts%20By%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Part 1</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%201">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%201/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%201.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Part 2</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%202">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%202/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%202.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Part 3</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%203">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%203/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%203.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - Part 4</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%204">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%204/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20Part%204.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">💾 Backup My Shortcuts Library - End</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20End">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20End/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library%20-%20End.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Create README Markdown Content for Shortcut Backup</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup/Create%20README%20Markdown%20Content%20for%20Shortcut%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Create Release Notes for Shortcut Backup</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20Release%20Notes%20for%20Shortcut%20Backup">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Create%20Release%20Notes%20for%20Shortcut%20Backup/Create%20Release%20Notes%20for%20Shortcut%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Plot Shortcuts Library Stats Chart</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Plot%20Shortcuts%20Library%20Stats%20Chart">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Plot%20Shortcuts%20Library%20Stats%20Chart/Plot%20Shortcuts%20Library%20Stats%20Chart.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Generate Shortcuts Library Stats</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Stats/Generate%20Shortcuts%20Library%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Generate Shortcuts Library Folder Structure</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Generate%20Shortcuts%20Library%20Folder%20Structure/Generate%20Shortcuts%20Library%20Folder%20Structure.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Archive All Shortcuts (with Folders)</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)/Archive%20All%20Shortcuts%20(with%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Shortcuts%20of%20Shortcuts">Archive All Shortcuts (without Folders)</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)">
-       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)/Archive%20All%20Shortcuts%20(without%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
 
     - <details>
        <summary>
@@ -3917,6 +3961,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders">
        <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders/Get%20Shortcuts%20Library%20Custom%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Shortcuts%20of%20Shortcuts">Archive All Shortcuts (with Folders)</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)">
+       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)/Archive%20All%20Shortcuts%20(with%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Shortcuts%20of%20Shortcuts">Archive All Shortcuts (without Folders)</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)">
+       <img src="./All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)/Archive%20All%20Shortcuts%20(without%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4085,7 +4147,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Siri"> Siri (14)</a>
+        <a href="./All%20Shortcuts/Siri"> Siri (16)</a>
       </strong>
     </summary>
 
@@ -4109,24 +4171,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="Siri">重新開機</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F">
-       <img src="./All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Siri">諮詢AI</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI">
-       <img src="./All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI/%E8%AB%AE%E8%A9%A2AI.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="Siri">開大燈</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%96%8B%E5%A4%A7%E7%87%88">
@@ -4140,6 +4184,42 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88">
        <img src="./All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88/%E9%97%9C%E5%A4%A7%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Siri">連接我的耳機</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">
+       <img src="./All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Siri">斷開我的耳機</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">
+       <img src="./All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Siri">重新開機</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F">
+       <img src="./All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Siri">諮詢AI</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI">
+       <img src="./All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI/%E8%AB%AE%E8%A9%A2AI.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4181,24 +4261,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="Siri">連接我的耳機</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">
-       <img src="./All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="Siri">斷開我的耳機</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">
-       <img src="./All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="Siri">深度工作</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C">
@@ -4208,10 +4270,28 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="Siri">社群軟體</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E7%A4%BE%E7%BE%A4%E8%BB%9F%E9%AB%94">
+       <img src="./All%20Shortcuts/Siri/%E7%A4%BE%E7%BE%A4%E8%BB%9F%E9%AB%94/%E7%A4%BE%E7%BE%A4%E8%BB%9F%E9%AB%94.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="Siri">打電話給重要的人</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA">
        <img src="./All%20Shortcuts/Siri/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Siri">截取文字</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%88%AA%E5%8F%96%E6%96%87%E5%AD%97">
+       <img src="./All%20Shortcuts/Siri/%E6%88%AA%E5%8F%96%E6%96%87%E5%AD%97/%E6%88%AA%E5%8F%96%E6%96%87%E5%AD%97.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -4690,18 +4770,9 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Start%20the%20Day%20Right"> Start the Day Right (3)</a>
+        <a href="./All%20Shortcuts/Start%20the%20Day%20Right"> Start the Day Right (2)</a>
       </strong>
     </summary>
-
-    - <details>
-       <summary>
-       <a href="Start%20the%20Day%20Right">Plan Today</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Start%20the%20Day%20Right/Plan%20Today">
-       <img src="./All%20Shortcuts/Start%20the%20Day%20Right/Plan%20Today/Plan%20Today.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
 
     - <details>
        <summary>
@@ -4947,9 +5018,27 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Utility%20Helper%20Functions"> Utility Helper Functions (33)</a>
+        <a href="./All%20Shortcuts/Utility%20Helper%20Functions"> Utility Helper Functions (35)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="Utility%20Helper%20Functions">Progress Bar Maker (with Text)</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Progress%20Bar%20Maker%20(with%20Text)">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Progress%20Bar%20Maker%20(with%20Text)/Progress%20Bar%20Maker%20(with%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Utility%20Helper%20Functions">Progress Bar Maker (without Text)</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Progress%20Bar%20Maker%20(without%20Text)">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Progress%20Bar%20Maker%20(without%20Text)/Progress%20Bar%20Maker%20(without%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -4962,10 +5051,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="Utility%20Helper%20Functions">Check Last Run Time</a>
+       <a href="Utility%20Helper%20Functions">Check Shortcut Last Run Time</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Check%20Last%20Run%20Time">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Last%20Run%20Time/Check%20Last%20Run%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Check%20Shortcut%20Last%20Run%20Time">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Check%20Shortcut%20Last%20Run%20Time/Check%20Shortcut%20Last%20Run%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5252,7 +5341,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Weather"> Weather (10)</a>
+        <a href="./All%20Shortcuts/Weather"> Weather (12)</a>
       </strong>
     </summary>
 
@@ -5343,6 +5432,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/_Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data">
        <img src="./All%20Shortcuts/Weather/_Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data/_Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Weather">_AMPM2時辰</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/_AMPM2%E6%99%82%E8%BE%B0">
+       <img src="./All%20Shortcuts/Weather/_AMPM2%E6%99%82%E8%BE%B0/_AMPM2%E6%99%82%E8%BE%B0.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="Weather">_今日 X 點至 X + 1 點</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E">
+       <img src="./All%20Shortcuts/Weather/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
