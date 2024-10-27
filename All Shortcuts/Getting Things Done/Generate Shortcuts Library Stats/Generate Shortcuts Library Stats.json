@@ -12,6 +12,12 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "🙏 Original by: https://www.reddit.com/user/mvan231/"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "My Apple Shortcuts",
@@ -20,9 +26,134 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFCommentActionText": "🙏 Original by: https://www.reddit.com/user/mvan231/"
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.data",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
+                                "Type": "ActionOutput",
+                                "OutputName": "My Apple Shortcuts"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+                    "workflowName": "getCurentWeekNumber1",
+                    "isSelf": false
+                },
+                "CustomOutputName": "WeekNumber",
+                "UUID": "F92AA6B4-86EB-42D0-8F4D-2528FFCAC290",
+                "WFWorkflowName": "getCurentWeekNumber1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Value",
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "396DCDB2-343C-4282-BB28-B58893937C6D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.statistics",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Value",
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "actionCount"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFStatisticsOperation": "Sum",
+                "UUID": "224BBCA1-DB2D-4773-81EE-8F1776755F81"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼,￼,￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "396DCDB2-343C-4282-BB28-B58893937C6D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "224BBCA1-DB2D-4773-81EE-8F1776755F81",
+                                "Type": "ActionOutput",
+                                "OutputName": "Sum"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "F92AA6B4-86EB-42D0-8F4D-2528FFCAC290",
+                                "Type": "ActionOutput",
+                                "OutputName": "WeekNumber"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "newData",
+                "UUID": "AEFBEDC2-0D5C-426F-BF57-42D19EE30A2A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.stats",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
+                                "Type": "ActionOutput",
+                                "OutputName": "My Apple Shortcuts"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "stats",
+                "UUID": "B8CA7ED5-110A-4138-AD55-CEC9C0C8FF8E"
             }
         },
         {
@@ -46,35 +177,120 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
-                    "workflowName": "getCurentWeekNumber1",
-                    "isSelf": false
-                },
-                "CustomOutputName": "WeekNumber",
-                "UUID": "F92AA6B4-86EB-42D0-8F4D-2528FFCAC290",
-                "WFWorkflowName": "getCurentWeekNumber1"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
-            "WFWorkflowActionParameters": {
-                "values": {
+                "WFInput": {
                     "Value": {
-                        "OutputUUID": "F92AA6B4-86EB-42D0-8F4D-2528FFCAC290",
+                        "OutputUUID": "B8CA7ED5-110A-4138-AD55-CEC9C0C8FF8E",
                         "Type": "ActionOutput",
-                        "OutputName": "WeekNumber"
+                        "OutputName": "stats"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "valueConversionMode": "automatic",
+                "CustomOutputName": "CSV",
+                "UUID": "CFE2A618-FC61-4652-B435-62329ECDAE35",
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
+                                "Type": "ActionOutput",
+                                "OutputName": "Year"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "CFE2A618-FC61-4652-B435-62329ECDAE35",
+                            "Type": "ActionOutput",
+                            "OutputName": "CSV"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "AA5E6CDF-477E-4435-AD51-239080FDF884",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "AEFBEDC2-0D5C-426F-BF57-42D19EE30A2A",
+                                "Type": "ActionOutput",
+                                "OutputName": "newData"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "CFE2A618-FC61-4652-B435-62329ECDAE35",
+                                "Type": "ActionOutput",
+                                "OutputName": "CSV"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0358EA12-13F3-40A7-8BF8-9EA1323EAE1D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AA5E6CDF-477E-4435-AD51-239080FDF884",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Week Number,Total Shortcuts,Total Actions\n￼",
+                        "attachmentsByRange": {
+                            "{42, 1}": {
+                                "OutputUUID": "AEFBEDC2-0D5C-426F-BF57-42D19EE30A2A",
+                                "Type": "ActionOutput",
+                                "OutputName": "newData"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "171B13F5-0678-44B5-9CA8-6D69DE4889BB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "AA5E6CDF-477E-4435-AD51-239080FDF884",
+                "UUID": "774E6A2C-E182-441E-84B3-6D4F974E31F7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "274091E6-B406-49DF-841C-3B9F94C74A9F",
                 "keyPath": {
                     "Value": {
-                        "string": "￼.stats.￼.xValues",
+                        "string": "￼.￼",
                         "attachmentsByRange": {
-                            "{8, 1}": {
+                            "{2, 1}": {
                                 "OutputUUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
                                 "Type": "ActionOutput",
                                 "OutputName": "Year"
@@ -88,165 +304,31 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "0117AF9C-0E5F-4499-A877-646AFA3A205F",
-                "insertionPoint": "end"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": {
+                "valueConversionMode": "text",
+                "values": {
                     "Value": {
-                        "string": "￼.data.name",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts"
-                            }
-                        }
+                        "OutputUUID": "774E6A2C-E182-441E-84B3-6D4F974E31F7",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
                     },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "CustomOutputName": "shortcutName",
-                "UUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7"
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
-                "Input": {
+                "WFInput": {
                     "Value": {
                         "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
                         "Type": "ActionOutput",
-                        "OutputName": "shortcutName"
+                        "OutputName": "Value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "396DCDB2-343C-4282-BB28-B58893937C6D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
-            "WFWorkflowActionParameters": {
-                "values": {
-                    "Value": {
-                        "OutputUUID": "396DCDB2-343C-4282-BB28-B58893937C6D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Count"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "valueConversionMode": "automatic",
-                "keyPath": {
-                    "Value": {
-                        "string": "￼.stats.￼.yValues.Total Shortcuts",
-                        "attachmentsByRange": {
-                            "{8, 1}": {
-                                "OutputUUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
-                                "Type": "ActionOutput",
-                                "OutputName": "Year"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "F28AA540-4DEC-48E1-A9ED-EBADB350CFAF",
-                "insertionPoint": "end"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": {
-                    "Value": {
-                        "string": "￼.data.actionCount",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "CustomOutputName": "actionCount",
-                "UUID": "E07763B7-CAA8-43D0-B892-74CEF235A1D4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.statistics",
-            "WFWorkflowActionParameters": {
-                "Input": {
-                    "Value": {
-                        "OutputUUID": "E07763B7-CAA8-43D0-B892-74CEF235A1D4",
-                        "Type": "ActionOutput",
-                        "OutputName": "actionCount"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFStatisticsOperation": "Sum",
-                "UUID": "224BBCA1-DB2D-4773-81EE-8F1776755F81"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
-            "WFWorkflowActionParameters": {
-                "values": {
-                    "Value": {
-                        "OutputUUID": "224BBCA1-DB2D-4773-81EE-8F1776755F81",
-                        "Type": "ActionOutput",
-                        "OutputName": "Sum"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "valueConversionMode": "automatic",
-                "keyPath": {
-                    "Value": {
-                        "string": "￼.stats.￼.yValues.Total Actions",
-                        "attachmentsByRange": {
-                            "{8, 1}": {
-                                "OutputUUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
-                                "Type": "ActionOutput",
-                                "OutputName": "Year"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "45B6F68F-437B-46CB-93CD-1C82D59F2584",
-                "insertionPoint": "end"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": {
-                    "Value": {
-                        "string": "￼.data.folder",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "CustomOutputName": "shortcutFolder",
-                "UUID": "DFD2B2A5-297E-4982-81EE-1F104C834B9B"
+                "CustomOutputName": "shortcutFolders",
+                "UUID": "3C287243-F1D1-46AD-BB1C-145A4AF47469",
+                "WFDictionaryKey": "folder"
             }
         },
         {
@@ -254,9 +336,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "DFD2B2A5-297E-4982-81EE-1F104C834B9B",
+                        "OutputUUID": "3C287243-F1D1-46AD-BB1C-145A4AF47469",
                         "Type": "ActionOutput",
-                        "OutputName": "shortcutFolder"
+                        "OutputName": "shortcutFolders"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -288,9 +370,19 @@
             "WFWorkflowActionParameters": {
                 "Input": {
                     "Value": {
-                        "OutputUUID": "E07763B7-CAA8-43D0-B892-74CEF235A1D4",
                         "Type": "ActionOutput",
-                        "OutputName": "actionCount"
+                        "OutputName": "Value",
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "actionCount"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -319,9 +411,19 @@
             "WFWorkflowActionParameters": {
                 "Input": {
                     "Value": {
-                        "OutputUUID": "E07763B7-CAA8-43D0-B892-74CEF235A1D4",
                         "Type": "ActionOutput",
-                        "OutputName": "actionCount"
+                        "OutputName": "Value",
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "actionCount"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -410,26 +512,29 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
-                "keyPath": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼.data.￼",
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{7, 1}": {
+                            "{0, 1}": {
                                 "VariableName": "Repeat Item",
                                 "Type": "Variable"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "C3A229C1-08FF-4DC9-853C-B004BB5EDA01",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "91C09AA2-5CF4-41DD-8E7B-F712D5DFD24D"
+                "UUID": "40A66B39-EEEB-4559-8126-238A773CE2EB"
             }
         },
         {
@@ -437,9 +542,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "91C09AA2-5CF4-41DD-8E7B-F712D5DFD24D",
+                        "OutputUUID": "40A66B39-EEEB-4559-8126-238A773CE2EB",
                         "Type": "ActionOutput",
-                        "OutputName": "Value"
+                        "OutputName": "Dictionary Value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -524,9 +629,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "DFD2B2A5-297E-4982-81EE-1F104C834B9B",
+                        "OutputUUID": "3C287243-F1D1-46AD-BB1C-145A4AF47469",
                         "Type": "ActionOutput",
-                        "OutputName": "shortcutFolder"
+                        "OutputName": "shortcutFolders"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -537,7 +642,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "Folder",
+                "CustomOutputName": "shortcutFolder",
                 "UUID": "720FBE98-649E-456D-B049-A1B4B185CEFB",
                 "WFItemSpecifier": "Item At Index"
             }
@@ -547,9 +652,19 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
                         "Type": "ActionOutput",
-                        "OutputName": "shortcutName"
+                        "OutputName": "Value",
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "name"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -560,7 +675,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "Shortcut",
+                "CustomOutputName": "shortcutName",
                 "UUID": "F78C8D82-33CD-442B-8402-AE84F25EF123",
                 "WFItemSpecifier": "Item At Index"
             }
@@ -575,12 +690,12 @@
                             "{16, 1}": {
                                 "OutputUUID": "720FBE98-649E-456D-B049-A1B4B185CEFB",
                                 "Type": "ActionOutput",
-                                "OutputName": "Folder"
+                                "OutputName": "shortcutFolder"
                             },
                             "{18, 1}": {
                                 "OutputUUID": "F78C8D82-33CD-442B-8402-AE84F25EF123",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut"
+                                "OutputName": "shortcutName"
                             }
                         }
                     },
@@ -657,7 +772,7 @@
                             "{8, 1}": {
                                 "OutputUUID": "F78C8D82-33CD-442B-8402-AE84F25EF123",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut"
+                                "OutputName": "shortcutName"
                             }
                         }
                     },

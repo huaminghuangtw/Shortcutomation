@@ -10,6 +10,165 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Morning",
+                "GroupingIdentifier": "43FBC0D3-2EF1-4367-A5A0-64BBD585A5FA",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": "insight://quotes",
+                "UUID": "CB214584-AF57-4B57-BD22-AE5809317D34"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "AppName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Insight Timer"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "3159E946-AED6-42B2-AC2F-6A45748E05ED"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "43FBC0D3-2EF1-4367-A5A0-64BBD585A5FA",
+                "UUID": "C518C7E2-6471-4091-981D-371D51104B34"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Evening",
+                "GroupingIdentifier": "B25CA492-4131-4B71-8753-21B602D26A05",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "4FB02A30-1FE7-45AB-9794-37BD197F7DC4",
+                    "workflowName": "Go to Screen Time",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Go to Screen Time",
+                "UUID": "FCB08E8E-0BBE-4245-AD8C-24187907F313"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "AppName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Settings"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "FFFF4C73-0147-454F-B7DC-779A922F86A5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B25CA492-4131-4B71-8753-21B602D26A05",
+                "UUID": "3247CF4D-EEF2-4CB0-9EEF-7B9E279ACDA1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3247CF4D-EEF2-4CB0-9EEF-7B9E279ACDA1",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5742A0EC-3719-45B3-8492-557ADC417341",
+                    "workflowName": "Wait to return",
+                    "isSelf": false
+                },
+                "UUID": "934E0ED7-9EF9-415E-8A7F-6CC36A195A64",
+                "WFWorkflowName": "Wait to return"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
             "WFWorkflowActionParameters": {}
         },
@@ -35,13 +194,28 @@
                                                     "WFItemType": 0,
                                                     "WFKey": {
                                                         "Value": {
+                                                            "string": "emoji"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    },
+                                                    "WFValue": {
+                                                        "Value": {
+                                                            "string": "☀️"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    }
+                                                },
+                                                {
+                                                    "WFItemType": 0,
+                                                    "WFKey": {
+                                                        "Value": {
                                                             "string": "question"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     },
                                                     "WFValue": {
                                                         "Value": {
-                                                            "string": "☀️ What good shall I do today?"
+                                                            "string": "What good shall I do today?"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     }
@@ -80,13 +254,28 @@
                                                     "WFItemType": 0,
                                                     "WFKey": {
                                                         "Value": {
-                                                            "string": "voiceAssistant"
+                                                            "string": "greetings"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     },
                                                     "WFValue": {
                                                         "Value": {
                                                             "string": "Good Morning"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    }
+                                                },
+                                                {
+                                                    "WFItemType": 0,
+                                                    "WFKey": {
+                                                        "Value": {
+                                                            "string": "opener"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    },
+                                                    "WFValue": {
+                                                        "Value": {
+                                                            "string": "1"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     }
@@ -114,13 +303,28 @@
                                                     "WFItemType": 0,
                                                     "WFKey": {
                                                         "Value": {
+                                                            "string": "emoji"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    },
+                                                    "WFValue": {
+                                                        "Value": {
+                                                            "string": "🌙"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    }
+                                                },
+                                                {
+                                                    "WFItemType": 0,
+                                                    "WFKey": {
+                                                        "Value": {
                                                             "string": "question"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     },
                                                     "WFValue": {
                                                         "Value": {
-                                                            "string": "🌙 What good have I done today?"
+                                                            "string": "What good have I done today?"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     }
@@ -159,13 +363,28 @@
                                                     "WFItemType": 0,
                                                     "WFKey": {
                                                         "Value": {
-                                                            "string": "voiceAssistant"
+                                                            "string": "greetings"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     },
                                                     "WFValue": {
                                                         "Value": {
                                                             "string": "Good Evening"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    }
+                                                },
+                                                {
+                                                    "WFItemType": 0,
+                                                    "WFKey": {
+                                                        "Value": {
+                                                            "string": "opener"
+                                                        },
+                                                        "WFSerializationType": "WFTextTokenString"
+                                                    },
+                                                    "WFValue": {
+                                                        "Value": {
+                                                            "string": "2"
                                                         },
                                                         "WFSerializationType": "WFTextTokenString"
                                                     }
@@ -234,49 +453,30 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetAudioIntent",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "5C4FAC3B-84A4-4320-ABAA-C94C61768134",
-                    "workflowName": "Show Year Progress",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Show Year Progress",
-                "UUID": "9780F2AB-3130-4066-BB3D-8A07D30B7604"
+                "systemSounds": "shake",
+                "UUID": "E3955BF3-15A1-4A7C-B8ED-F2283741FD75"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
             "WFWorkflowActionParameters": {
-                "WFDelayTime": 1
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E3955BF3-15A1-4A7C-B8ED-F2283741FD75",
+                        "Type": "ActionOutput",
+                        "OutputName": "Sound"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFMenuPrompt": "🤖 Play Voice Assistant?",
-                "WFControlFlowMode": 0,
-                "WFMenuItems": [
-                    "✅ Yes",
-                    "❌ No"
-                ],
-                "GroupingIdentifier": "E38C48EA-7311-45E3-B599-F536EBA5A0B1"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "✅ Yes",
-                "GroupingIdentifier": "E38C48EA-7311-45E3-B599-F536EBA5A0B1",
-                "WFControlFlowMode": 1
+                "keyPath": "Text Divider",
+                "UUID": "5E845E10-57BD-4452-964A-E35391306E03"
             }
         },
         {
@@ -290,11 +490,11 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "voiceAssistant",
+                "CustomOutputName": "greetings",
                 "UUID": "9FC8105A-5682-4A22-AE49-3A910737493D",
                 "WFDictionaryKey": {
                     "Value": {
-                        "string": "￼.voiceAssistant",
+                        "string": "￼.greetings",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "Type": "ExtensionInput"
@@ -306,47 +506,29 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
+                "WFInput": {
                     "Value": {
-                        "OutputUUID": "9FC8105A-5682-4A22-AE49-3A910737493D",
+                        "OutputUUID": "B1B2EF68-EA6D-4760-BB86-354727793E37",
                         "Type": "ActionOutput",
-                        "OutputName": "voiceAssistant"
+                        "OutputName": "mappingDict"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": {
+                "CustomOutputName": "emoji",
+                "UUID": "4E45D906-55B6-4B4C-970D-10C9ACDAD008",
+                "WFDictionaryKey": {
                     "Value": {
-                        "OutputUUID": "9FC8105A-5682-4A22-AE49-3A910737493D",
-                        "Type": "ActionOutput",
-                        "OutputName": "voiceAssistant"
+                        "string": "￼.emoji",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "27636FBD-CB60-440B-9D2E-838BAE17B630"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "❌ No",
-                "GroupingIdentifier": "E38C48EA-7311-45E3-B599-F536EBA5A0B1",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E38C48EA-7311-45E3-B599-F536EBA5A0B1",
-                "UUID": "69F8470E-1D9C-4123-91B2-40A7E1183B3D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
-            "WFWorkflowActionParameters": {
-                "WFDelayTime": 3
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
@@ -392,8 +574,32 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "8D4A5620-D5CC-493B-AB8B-96CDB15BB88F",
-                "format": "italicBoldSans"
+                "UUID": "A7617C13-1213-416E-BCA3-94348B14C67C",
+                "format": "italic"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "A7617C13-1213-416E-BCA3-94348B14C67C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Text"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "4E45D906-55B6-4B4C-970D-10C9ACDAD008",
+                                "Type": "ActionOutput",
+                                "OutputName": "emoji"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "3B3E911F-757D-414E-8FFE-E2F0B6149BBC"
             }
         },
         {
@@ -401,9 +607,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "8D4A5620-D5CC-493B-AB8B-96CDB15BB88F",
+                        "OutputUUID": "3B3E911F-757D-414E-8FFE-E2F0B6149BBC",
                         "Type": "ActionOutput",
-                        "OutputName": "Formatted Text"
+                        "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -412,7 +618,7 @@
                     "workflowName": "Format Text with Text Divider Pair",
                     "isSelf": false
                 },
-                "UUID": "8CF79F6E-AE88-4CBE-BCCD-C7E6BAC49503",
+                "UUID": "7050E08B-D2CF-4C05-81F5-F2D82475862C",
                 "WFWorkflowName": "Format Text with Text Divider Pair"
             }
         },
@@ -426,6 +632,28 @@
                                 "WFItemType": 0,
                                 "WFKey": {
                                     "Value": {
+                                        "string": "title"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼! ☺️",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "9FC8105A-5682-4A22-AE49-3A910737493D",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "greetings"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
                                         "string": "text"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
@@ -435,7 +663,7 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "8CF79F6E-AE88-4CBE-BCCD-C7E6BAC49503",
+                                                "OutputUUID": "7050E08B-D2CF-4C05-81F5-F2D82475862C",
                                                 "Type": "ActionOutput",
                                                 "OutputName": "Shortcut Result"
                                             }
@@ -487,6 +715,38 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9FC8105A-5682-4A22-AE49-3A910737493D",
+                        "Type": "ActionOutput",
+                        "OutputName": "greetings"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "09BC05A1-61B9-40E9-B53C-19C90A2AC8EF",
+                    "workflowName": "Template - Voice Assistant",
+                    "isSelf": false
+                },
+                "UUID": "27636FBD-CB60-440B-9D2E-838BAE17B630",
+                "WFWorkflowName": "Template - Voice Assistant"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -533,8 +793,167 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1BBDE324-69BD-4C2E-BEEF-0F15813E0232",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "036B4298-AE69-42C3-B8CB-2D445D173939",
+                    "workflowName": "Speak All Calendar Events",
+                    "isSelf": false
+                },
+                "UUID": "E689139A-F100-4B68-B822-E7DBB67FB72C",
+                "WFWorkflowName": "Speak All Calendar Events"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B1B2EF68-EA6D-4760-BB86-354727793E37",
+                        "Type": "ActionOutput",
+                        "OutputName": "mappingDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "opener",
+                "UUID": "96BB02B4-0BA1-40B0-A9A3-927D24AC070E",
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼.opener",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "topic"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "Type": "ExtensionInput"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "opener"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "96BB02B4-0BA1-40B0-A9A3-927D24AC070E",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "opener"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "9E4374CF-E999-46C1-9F30-17AFA29BA334"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9E4374CF-E999-46C1-9F30-17AFA29BA334",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EB7AA479-3F00-4D7C-95B0-B1FDDA68A3AD",
+                    "workflowName": "Speak Journal Prompt(s) (with opener)",
+                    "isSelf": false
+                },
+                "UUID": "34E31A22-A88E-4391-9D09-BD6D4A00A5B6",
+                "WFWorkflowName": "Speak Journal Prompt(s) (with opener)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "773AAE63-7A8F-4D23-BB1C-DE291F12C5F8",
+                    "workflowName": "Time's Up!",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Time's Up!",
+                "UUID": "ADABC57B-E87F-45C1-8B52-397644B58505"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "5C4FAC3B-84A4-4320-ABAA-C94C61768134",
+                    "workflowName": "Show Year Progress",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Show Year Progress",
+                "UUID": "9780F2AB-3130-4066-BB3D-8A07D30B7604"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 2
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -559,12 +978,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
-                "WFDelayTime": 1
+                "WFDelayTime": 2
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -589,12 +1004,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
-                "WFDelayTime": 1
+                "WFDelayTime": 2
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -619,21 +1030,17 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
-                "WFDelayTime": 1
+                "WFDelayTime": 2
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFMenuPrompt": {
                     "Value": {
-                        "string": "🤖 Plan ￼?",
+                        "string": "🗓️ Plan ￼?",
                         "attachmentsByRange": {
-                            "{8, 1}": {
+                            "{9, 1}": {
                                 "OutputUUID": "E490ED2E-4438-45C0-A7B6-04B7B974FA1E",
                                 "Type": "ActionOutput",
                                 "OutputName": "date"
@@ -687,28 +1094,31 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1BBDE324-69BD-4C2E-BEEF-0F15813E0232",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "1E2755DC-5836-4B9E-964E-D0065687339F",
+                    "workflowName": "Open Apple Calendar on Specific Date",
+                    "isSelf": false
+                },
+                "UUID": "558A9E05-3E18-4894-ABCD-BC58F198775C",
+                "WFWorkflowName": "Open Apple Calendar on Specific Date"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "72BA9E43-7487-4FE8-A5BB-A0E907BFED18",
                 "UUID": "3D2B288C-EF28-468E-B3DA-284DF541BB0F"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
-            "WFWorkflowActionParameters": {
-                "WFDelayTime": 3
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
-            "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
-            "WFWorkflowActionParameters": {
-                "WFInput": "insight://quotes",
-                "UUID": "CB214584-AF57-4B57-BD22-AE5809317D34"
             }
         }
     ],
