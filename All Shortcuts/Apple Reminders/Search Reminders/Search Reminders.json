@@ -6,10 +6,7 @@
         "WFWorkflowIconGlyphNumber": 61440
     },
     "WFWorkflowClientVersion": "3036.0.4.2",
-    "WFWorkflowOutputContentItemClasses": [
-        "WFContentItem",
-        "WFCustomIntentOutputContentItem_MBUBBh_ReminderType"
-    ],
+    "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
@@ -345,16 +342,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
-            "WFWorkflowActionParameters": {
-                "WFItems": [
-                    "✅ Yes",
-                    "❌ No"
-                ],
-                "UUID": "3A39BF95-C982-4D4A-B1B4-A1030248A255"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "Text Divider",
@@ -391,9 +378,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": {
+                "WFMenuPrompt": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
@@ -406,35 +393,20 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "3A39BF95-C982-4D4A-B1B4-A1030248A255",
-                        "Type": "ActionOutput",
-                        "OutputName": "List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "77F33073-B86D-43EA-A8BA-334BA788BAFC"
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "E959EF0C-41E5-4ADA-8754-F72C9375A777"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "77F33073-B86D-43EA-A8BA-334BA788BAFC",
-                            "Type": "ActionOutput",
-                            "OutputName": "Chosen Item"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Yes",
-                "GroupingIdentifier": "172A8A02-6CF6-4AE6-BEC8-C592A46491C4",
-                "WFCondition": 99
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "E959EF0C-41E5-4ADA-8754-F72C9375A777",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -514,9 +486,28 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "172A8A02-6CF6-4AE6-BEC8-C592A46491C4",
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "E959EF0C-41E5-4ADA-8754-F72C9375A777",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFAppIdentifier": "com.apple.reminders",
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.reminders",
+                    "Name": "Reminders",
+                    "TeamIdentifier": "0000000000"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E959EF0C-41E5-4ADA-8754-F72C9375A777",
                 "WFControlFlowMode": 2
             }
         },
@@ -529,22 +520,8 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
-            "WFWorkflowActionParameters": {
-                "WFOutput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "F4C65AF5-0889-40A2-BF25-BBACC15D63E7",
-                                "Type": "ActionOutput",
-                                "OutputName": "If Result"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

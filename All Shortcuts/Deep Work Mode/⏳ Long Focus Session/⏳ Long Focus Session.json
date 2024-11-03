@@ -34,15 +34,59 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "FB6D6CD0-AC0F-4AF6-AE46-172F878E633C",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9890C814-E005-4146-9CD1-EE611D7A3318"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "FB6D6CD0-AC0F-4AF6-AE46-172F878E633C",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "numFocusSessions",
-                "WFAskActionPrompt": "⚛️ How many focus sessions?",
-                "UUID": "A4F15634-A67B-413D-9295-6B4297801D51",
-                "WFAskActionAllowsDecimalNumbers": false,
-                "WFInputType": "Number",
                 "WFAskActionDefaultAnswerNumber": "2",
-                "WFAskActionAllowsNegativeNumbers": false
+                "WFAskActionAllowsNegativeNumbers": false,
+                "UUID": "A4F15634-A67B-413D-9295-6B4297801D51",
+                "WFInputType": "Number",
+                "WFAskActionAllowsDecimalNumbers": false,
+                "WFAskActionPrompt": "⚛️ How many focus sessions?"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "UUID": "0DFC3DE6-8E95-41E6-81BD-D0F2951052A6",
+                "CustomOutputName": "numFocusSessions",
+                "GroupingIdentifier": "FB6D6CD0-AC0F-4AF6-AE46-172F878E633C"
             }
         },
         {
@@ -51,7 +95,7 @@
                 "GroupingIdentifier": "E47786AD-8512-475B-B4C2-CABC6D25037A",
                 "WFRepeatCount": {
                     "Value": {
-                        "OutputUUID": "A4F15634-A67B-413D-9295-6B4297801D51",
+                        "OutputUUID": "0DFC3DE6-8E95-41E6-81BD-D0F2951052A6",
                         "Type": "ActionOutput",
                         "OutputName": "numFocusSessions"
                     },
@@ -70,6 +114,26 @@
                 },
                 "WFWorkflowName": "Binaural Beats",
                 "UUID": "CAB5A84B-92C6-4A40-BB87-CC0B779F5365"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "CA7D1F16-11C6-479E-A026-A6A6344686FD",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "0DFC3DE6-8E95-41E6-81BD-D0F2951052A6",
+                            "Type": "ActionOutput",
+                            "OutputName": "numFocusSessions"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
             }
         },
         {
@@ -95,7 +159,7 @@
                 "WFControlFlowMode": 0,
                 "WFNumberValue": {
                     "Value": {
-                        "OutputUUID": "A4F15634-A67B-413D-9295-6B4297801D51",
+                        "OutputUUID": "0DFC3DE6-8E95-41E6-81BD-D0F2951052A6",
                         "Type": "ActionOutput",
                         "OutputName": "numFocusSessions"
                     },
@@ -158,12 +222,13 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "_Text2Speech",
                 "WFWorkflow": {
                     "workflowIdentifier": "9E67FDF1-AE7E-4051-8D46-DDFD104CB87C",
                     "workflowName": "_Text2Speech",
                     "isSelf": false
-                }
+                },
+                "UUID": "89A62651-8338-460B-8093-83E3684EE3D7",
+                "WFWorkflowName": "_Text2Speech"
             }
         },
         {
@@ -174,9 +239,33 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "5",
+                "UUID": "A17181EA-D6E6-4A5C-A431-34D81CB73A83"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
             "WFWorkflowActionParameters": {
-                "Input": "5 * 60 - 5",
+                "Input": {
+                    "Value": {
+                        "string": "￼ * 60 - ￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "OutputUUID": "A17181EA-D6E6-4A5C-A431-34D81CB73A83",
+                                "Type": "ActionOutput",
+                                "OutputName": "Number"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "A17181EA-D6E6-4A5C-A431-34D81CB73A83",
+                                "Type": "ActionOutput",
+                                "OutputName": "Number"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "UUID": "FD8FA104-E5D0-462D-A0A5-8459EC1FD739"
             }
         },
@@ -194,18 +283,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
-            "WFWorkflowActionParameters": {
-                "WFNumberActionNumber": "5",
-                "UUID": "177153C6-FF80-4AAB-B650-A014E66CF438"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "177153C6-FF80-4AAB-B650-A014E66CF438",
+                        "OutputUUID": "A17181EA-D6E6-4A5C-A431-34D81CB73A83",
                         "Type": "ActionOutput",
                         "OutputName": "Number"
                     },
@@ -292,6 +374,14 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CA7D1F16-11C6-479E-A026-A6A6344686FD",
+                "UUID": "523C4D0B-15D7-416C-B1A2-1108EF94E8A5"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -319,27 +409,10 @@
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFAppStoreAppContentItem",
-        "WFArticleContentItem",
-        "WFContactContentItem",
-        "WFDateContentItem",
-        "WFEmailAddressContentItem",
-        "WFFolderContentItem",
-        "WFGenericFileContentItem",
-        "WFImageContentItem",
-        "WFiTunesProductContentItem",
-        "WFLocationContentItem",
-        "WFDCMapsLinkContentItem",
-        "WFAVAssetContentItem",
-        "WFPDFContentItem",
-        "WFPhoneNumberContentItem",
-        "WFRichTextContentItem",
-        "WFSafariWebPageContentItem",
-        "WFStringContentItem",
-        "WFURLContentItem"
+        "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": false
+    "WFWorkflowHasShortcutInputVariables": true
 }

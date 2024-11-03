@@ -12,6 +12,14 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
+                "WFTextActionText": "◻️ YouTube Video",
+                "CustomOutputName": "◻️ YouTube Video",
+                "UUID": "B61E167A-6E72-44C1-9EF4-D46EDDECE742"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
                 "WFTextActionText": "My YouTube CMS.myWatchLaterList",
                 "CustomOutputName": "My YouTube CMS.myWatchLaterList",
                 "UUID": "617A198A-FECE-4031-9B44-6702F9642E59"
@@ -65,7 +73,7 @@
                                 }
                             },
                             {
-                                "WFItemType": 3,
+                                "WFItemType": 0,
                                 "WFKey": {
                                     "Value": {
                                         "string": "maxResults"
@@ -111,6 +119,21 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
+                        "OutputUUID": "5AD07586-C3E0-4DEB-B40D-91ED164F9A83",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "376B5CEF-B3CC-4DEE-A6C8-35282C25F57E",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
                         "Type": "ActionOutput",
                         "OutputName": "Shortcut Result",
                         "OutputUUID": "5AD07586-C3E0-4DEB-B40D-91ED164F9A83",
@@ -121,87 +144,237 @@
                             },
                             {
                                 "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "videoDurationSec"
+                                "DictionaryKey": "videoCategory"
                             }
                         ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "GroupingIdentifier": "F50694C0-9229-4111-BAF1-2FAA59E36EA8",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFItemIndex": {
                     "Value": {
                         "VariableName": "Repeat Index",
                         "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFName": {
+                "CustomOutputName": "videoCategory",
+                "UUID": "E347AD9A-A274-4957-A6F9-021ABC53BFD3",
+                "WFItemSpecifier": "Item At Index"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
                     "Value": {
-                        "string": "￼",
+                        "string": "👉 ￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                            "{3, 1}": {
+                                "OutputUUID": "E347AD9A-A274-4957-A6F9-021ABC53BFD3",
+                                "Type": "ActionOutput",
+                                "OutputName": "videoCategory"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "7EE3C1C3-F92E-4451-BD78-38CD3B6F6BBC"
+                "CustomOutputName": "parentReminderTitle",
+                "UUID": "21B4B1FA-C759-4865-93F6-333AEBC2269C"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "F50694C0-9229-4111-BAF1-2FAA59E36EA8",
-                "UUID": "8B822BA6-851C-4FDB-A3F8-39E7C06D51DA"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
-            "WFWorkflowActionParameters": {
-                "WFContentItemInputParameter": {
-                    "Value": {
-                        "OutputUUID": "8B822BA6-851C-4FDB-A3F8-39E7C06D51DA",
-                        "Type": "ActionOutput",
-                        "OutputName": "Repeat Results"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemLimitEnabled": false,
-                "WFContentItemSortProperty": "Name",
-                "UUID": "6D44FAF3-657A-4BEE-A307-D81E984024B6",
-                "WFContentItemSortOrder": "A to Z",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "342F57BA-757E-43FB-A42B-0C8DCAD5B6B2",
+                "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
                     "Value": {
                         "WFActionParameterFilterPrefix": 1,
                         "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": []
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": {
+                                            "Value": {
+                                                "OutputUUID": "B61E167A-6E72-44C1-9EF4-D46EDDECE742",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "◻️ YouTube Video"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "21B4B1FA-C759-4865-93F6-333AEBC2269C",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "parentReminderTitle"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Flagged"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFContentPredicateTableTemplate"
                 }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "342F57BA-757E-43FB-A42B-0C8DCAD5B6B2",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "5CAD6850-EFF6-457B-914B-7FAD7CD502E3",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/409B1D8B-113D-44B0-BE41-7F1B25127832>",
+                    "Title": "◻️ YouTube Video",
+                    "IsAllCalendar": false
+                },
+                "UUID": "D5637E2C-9258-4502-95E2-BE4CCC4C0CD3",
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "21B4B1FA-C759-4865-93F6-333AEBC2269C",
+                                "Type": "ActionOutput",
+                                "OutputName": "parentReminderTitle"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemCalendar": "◻️ YouTube Video"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "5CAD6850-EFF6-457B-914B-7FAD7CD502E3",
+                "UUID": "1D184D64-51B1-4231-AA0D-8BE98864F90A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "6D44FAF3-657A-4BEE-A307-D81E984024B6",
                         "Type": "ActionOutput",
-                        "OutputName": "Files"
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "5AD07586-C3E0-4DEB-B40D-91ED164F9A83",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "channelTitle"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "GroupingIdentifier": "376B5CEF-B3CC-4DEE-A6C8-35282C25F57E",
-                "WFControlFlowMode": 0
+                "WFItemIndex": {
+                    "Value": {
+                        "VariableName": "Repeat Index",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "channelTitle",
+                "UUID": "98B9C11A-D801-4468-BA9A-836F18DE0926",
+                "WFItemSpecifier": "Item At Index"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "5AD07586-C3E0-4DEB-B40D-91ED164F9A83",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "videoDurationISO8601"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemIndex": {
+                    "Value": {
+                        "VariableName": "Repeat Index",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "videoDuration",
+                "UUID": "A5CEE51C-47F2-48C4-8E9C-95DDE6981FB8",
+                "WFItemSpecifier": "Item At Index"
             }
         },
         {
@@ -227,7 +400,7 @@
                 },
                 "WFItemIndex": {
                     "Value": {
-                        "VariableName": "Repeat Item",
+                        "VariableName": "Repeat Index",
                         "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
@@ -235,6 +408,117 @@
                 "CustomOutputName": "videoTitle",
                 "UUID": "41282FD2-EBD4-4F39-AA4A-AA34DD39B92C",
                 "WFItemSpecifier": "Item At Index"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ | ￼ | ￼",
+                        "attachmentsByRange": {
+                            "{8, 1}": {
+                                "OutputUUID": "41282FD2-EBD4-4F39-AA4A-AA34DD39B92C",
+                                "Type": "ActionOutput",
+                                "OutputName": "videoTitle"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "A5CEE51C-47F2-48C4-8E9C-95DDE6981FB8",
+                                "Type": "ActionOutput",
+                                "OutputName": "videoDuration"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "98B9C11A-D801-4468-BA9A-836F18DE0926",
+                                "Type": "ActionOutput",
+                                "OutputName": "channelTitle"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "reminderTitle",
+                "UUID": "8ECE69D4-11C3-4A9A-BE7A-30B724EFF73A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "parentReminder",
+                        "OutputUUID": "1D184D64-51B1-4231-AA0D-8BE98864F90A",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Subtasks"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "UUID": "A29BB97A-739A-40C5-A2FD-9D9E94847447",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "8ECE69D4-11C3-4A9A-BE7A-30B724EFF73A",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "reminderTitle"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "A29BB97A-739A-40C5-A2FD-9D9E94847447",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C4D83954-37F4-4532-BBDB-B7DA93841B31",
+                "WFCondition": 101
             }
         },
         {
@@ -260,7 +544,7 @@
                 },
                 "WFItemIndex": {
                     "Value": {
-                        "VariableName": "Repeat Item",
+                        "VariableName": "Repeat Index",
                         "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
@@ -271,92 +555,55 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
-            "WFWorkflowActionParameters": {
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Enumeration": {
-                                        "Value": "◻️ YouTube Video",
-                                        "WFSerializationType": "WFStringSubstitutableState"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "List"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "String": {
-                                        "Value": {
-                                            "string": "￼",
-                                            "attachmentsByRange": {
-                                                "{0, 1}": {
-                                                    "OutputUUID": "41282FD2-EBD4-4F39-AA4A-AA34DD39B92C",
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "videoTitle"
-                                                }
-                                            }
-                                        },
-                                        "WFSerializationType": "WFTextTokenString"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Flagged"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                },
-                "UUID": "A29BB97A-739A-40C5-A2FD-9D9E94847447"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "A29BB97A-739A-40C5-A2FD-9D9E94847447",
-                            "Type": "ActionOutput",
-                            "OutputName": "Reminders"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "C4D83954-37F4-4532-BBDB-B7DA93841B31",
-                "WFCondition": 101
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
                     "Value": {
                         "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "reminderList"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "B61E167A-6E72-44C1-9EF4-D46EDDECE742",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "◻️ YouTube Video"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "parentReminderTitle"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "1D184D64-51B1-4231-AA0D-8BE98864F90A",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "parentReminder"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
                             {
                                 "WFItemType": 0,
                                 "WFKey": {
@@ -501,7 +748,7 @@
                 },
                 "WFItemIndex": {
                     "Value": {
-                        "VariableName": "Repeat Item",
+                        "VariableName": "Repeat Index",
                         "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
@@ -559,7 +806,7 @@
                             },
                             {
                                 "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "videoDurationISO8601"
+                                "DictionaryKey": "videoDescription"
                             }
                         ]
                     },
@@ -567,51 +814,32 @@
                 },
                 "WFItemIndex": {
                     "Value": {
-                        "VariableName": "Repeat Item",
+                        "VariableName": "Repeat Index",
                         "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "videoDuration",
-                "UUID": "A5CEE51C-47F2-48C4-8E9C-95DDE6981FB8",
+                "CustomOutputName": "videoDescription",
+                "UUID": "43168B56-19F1-402E-A05C-E826E065FAAC",
                 "WFItemSpecifier": "Item At Index"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
             "WFWorkflowActionParameters": {
-                "WFCalendarItemTitle": {
+                "WFCalendarItemNotes": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "41282FD2-EBD4-4F39-AA4A-AA34DD39B92C",
+                                "OutputUUID": "43168B56-19F1-402E-A05C-E826E065FAAC",
                                 "Type": "ActionOutput",
-                                "OutputName": "videoTitle"
+                                "OutputName": "videoDescription"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemNotes": {
-                    "Value": {
-                        "string": "• Duration = ￼",
-                        "attachmentsByRange": {
-                            "{13, 1}": {
-                                "OutputUUID": "A5CEE51C-47F2-48C4-8E9C-95DDE6981FB8",
-                                "Type": "ActionOutput",
-                                "OutputName": "videoDuration"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFCalendarDescriptor": {
-                    "Identifier": "<x-apple-reminderkit://REMCDList/409B1D8B-113D-44B0-BE41-7F1B25127832>",
-                    "Title": "◻️ YouTube Video",
-                    "IsAllCalendar": false
-                },
-                "UUID": "165A22CB-9560-45F6-BD0A-268EB258CB81",
                 "WFImages": {
                     "Value": {
                         "OutputUUID": "04C9C8ED-C514-45E2-AED5-F1E8530877A3",
@@ -620,6 +848,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "UUID": "165A22CB-9560-45F6-BD0A-268EB258CB81",
                 "WFURL": {
                     "Value": {
                         "string": "￼",
@@ -633,7 +862,51 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemCalendar": "◻️ YouTube Video"
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8ECE69D4-11C3-4A9A-BE7A-30B724EFF73A",
+                                "Type": "ActionOutput",
+                                "OutputName": "reminderTitle"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarDescriptor": {
+                    "Value": {
+                        "OutputUUID": "B61E167A-6E72-44C1-9EF4-D46EDDECE742",
+                        "Type": "ActionOutput",
+                        "OutputName": "◻️ YouTube Video"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "165A22CB-9560-45F6-BD0A-268EB258CB81",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Parent Reminder",
+                "Mode": "Set",
+                "UUID": "E7B66BBC-C090-4BEE-B138-1571A7B0AED5",
+                "WFReminderContentItemParentReminder": {
+                    "Value": {
+                        "OutputUUID": "1D184D64-51B1-4231-AA0D-8BE98864F90A",
+                        "Type": "ActionOutput",
+                        "OutputName": "parentReminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {

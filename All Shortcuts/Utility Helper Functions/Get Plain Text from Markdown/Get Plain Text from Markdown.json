@@ -7,8 +7,6 @@
     },
     "WFWorkflowClientVersion": "3036.0.4.2",
     "WFWorkflowOutputContentItemClasses": [
-        "WFStringContentItem",
-        "WFRichTextContentItem",
         "WFContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
@@ -195,12 +193,88 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "myPlainText",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "WFReplaceTextCaseSensitive": false,
+                "UUID": "3DB26FF5-423E-433C-8116-D2BE687D5126",
+                "WFReplaceTextReplace": " ",
+                "WFReplaceTextFind": "\\t"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "3DB26FF5-423E-433C-8116-D2BE687D5126",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "WFReplaceTextCaseSensitive": false,
+                "UUID": "702064AF-39BD-4657-A0CA-376DE47BE46B",
+                "WFReplaceTextReplace": "\\\\n$1",
+                "WFReplaceTextFind": "\\n\\s+([0-9]|•)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "\\n",
+                "UUID": "29515657-C885-4E22-BBD3-12FEE781CDD7",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "702064AF-39BD-4657-A0CA-376DE47BE46B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "OutputUUID": "29515657-C885-4E22-BBD3-12FEE781CDD7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C0826021-E5B6-464B-B718-75B649288ECE"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "myPlainText",
-                        "Type": "Variable"
+                        "OutputUUID": "C0826021-E5B6-464B-B718-75B649288ECE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -214,20 +288,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "4360A226-B86F-41CD-A935-68E2504806EF",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "myPlainText"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.output",
             "WFWorkflowActionParameters": {
                 "WFOutput": {
@@ -235,8 +295,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "myPlainText",
-                                "Type": "Variable"
+                                "OutputUUID": "4360A226-B86F-41CD-A935-68E2504806EF",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },

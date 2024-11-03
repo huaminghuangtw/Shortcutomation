@@ -460,29 +460,22 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "0590EE54-AFD0-4858-8C9C-4B96DA50A1C7",
                 "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Index 3",
-                            "Type": "Variable"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFNumberValue": {
                     "Value": {
-                        "OutputUUID": "516E9601-4AE7-44B3-97AF-EB5697BA5CDB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Count"
+                        "VariableName": "Repeat Item 3",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFCondition": 4
+                "WFWorkflow": {
+                    "workflowIdentifier": "8FC46502-BE99-4573-AE81-F7EBE87C0935",
+                    "workflowName": "Strip Leading Symbol",
+                    "isSelf": false
+                },
+                "UUID": "57AA40E4-5C84-4C70-A568-4CCB7C3694F2",
+                "WFWorkflowName": "Strip Leading Symbol"
             }
         },
         {
@@ -490,48 +483,17 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼",
+                        "string": "<li>￼</li>",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item 3",
-                                "Type": "Variable"
+                            "{4, 1}": {
+                                "OutputUUID": "57AA40E4-5C84-4C70-A568-4CCB7C3694F2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "0590EE54-AFD0-4858-8C9C-4B96DA50A1C7",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼ <br>",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item 3",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "0590EE54-AFD0-4858-8C9C-4B96DA50A1C7",
-                "UUID": "2414BF0E-B9E5-4235-8945-E285BFC82591"
             }
         },
         {
@@ -545,6 +507,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
             "WFWorkflowActionParameters": {
+                "WFTextSeparator": "Custom",
                 "text": {
                     "Value": {
                         "OutputUUID": "5098DAAA-57A2-4538-A1AC-447C7F2F0B69",
@@ -557,13 +520,63 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFMatchTextPattern": "^[1-9]",
+                "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
+                                "VariableName": "Repeat Item 2",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Notes"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "DF47FB7F-6749-48A2-8D5D-FC88F690A124"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "DF47FB7F-6749-48A2-8D5D-FC88F690A124",
+                            "Type": "ActionOutput",
+                            "OutputName": "Matches"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "029196D1-52FB-45A5-A49C-C67258DD8432",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Ordered Lists: https://www.w3schools.com/html/html_lists_ordered.asp"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "<ol>￼</ol>",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
                                 "OutputUUID": "02398BE8-D539-42CD-ACEC-65E4510206A9",
                                 "Type": "ActionOutput",
                                 "OutputName": "Combined Text"
@@ -571,11 +584,45 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                },
-                "WFReplaceTextRegularExpression": true,
-                "UUID": "26052779-5FFB-44AD-AA35-B532D278A497",
-                "WFReplaceTextReplace": "",
-                "WFReplaceTextFind": "\\n"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "029196D1-52FB-45A5-A49C-C67258DD8432",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Ordered Lists: https://www.w3schools.com/html/html_lists_unordered.asp"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "<ul>￼</ul>",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "OutputUUID": "02398BE8-D539-42CD-ACEC-65E4510206A9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Combined Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "029196D1-52FB-45A5-A49C-C67258DD8432",
+                "WFControlFlowMode": 2
             }
         },
         {

@@ -26,76 +26,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼\n👉 ￼\n￼\n→ 🤖 Which one?",
-                        "attachmentsByRange": {
-                            "{5, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Dictionary",
-                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "brainFoodTitle"
-                                    }
-                                ]
-                            },
-                            "{7, 1}": {
-                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "17E9E99F-F264-480A-8B22-97614D9CF2BC"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuPrompt": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "17E9E99F-F264-480A-8B22-97614D9CF2BC",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFControlFlowMode": 0,
-                "WFMenuItems": [
-                    "✅ Mark as Completed",
-                    "❤️ Add to Favorites"
-                ],
-                "GroupingIdentifier": "1E289FCE-C60F-4167-9A05-66C73E0CEA63"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
                 "WFContentItemLimitEnabled": true,
-                "CustomOutputName": "Brain Food",
+                "CustomOutputName": "parentReminder",
                 "UUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
                 "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
@@ -105,6 +39,109 @@
                         "WFActionParameterFilterTemplates": [
                             {
                                 "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": {
+                                            "Value": {
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Dictionary",
+                                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                                        "DictionaryKey": "reminderList"
+                                                    }
+                                                ]
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    },
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Dictionary"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Dictionary",
+                                                    "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                                    "Aggrandizements": [
+                                                        {
+                                                            "Type": "WFDictionaryValueVariableAggrandizement",
+                                                            "DictionaryKey": "parentReminderTitle"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "parentReminder",
+                        "OutputUUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Subtasks"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "CustomOutputName": "Brain Food",
+                "UUID": "301881C8-4F91-4F13-87A8-4DB0028BACB7",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 99,
                                 "Values": {
                                     "Enumeration": {
                                         "Value": "◻️ Essay",
@@ -148,6 +185,91 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n«￼»\n￼",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "brainFoodTitle"
+                                    }
+                                ]
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "DF62B2F8-5A1F-4621-BA76-F7A7F54A0431"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n→ 🤖 Which one?",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DF62B2F8-5A1F-4621-BA76-F7A7F54A0431",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "17E9E99F-F264-480A-8B22-97614D9CF2BC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "17E9E99F-F264-480A-8B22-97614D9CF2BC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Mark as Completed",
+                    "❤️ Add to Favorites"
+                ],
+                "GroupingIdentifier": "1E289FCE-C60F-4167-9A05-66C73E0CEA63"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFMenuItemTitle": "✅ Mark as Completed",
@@ -161,7 +283,7 @@
                 "WFReminderContentItemIsCompleted": 1,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                        "OutputUUID": "301881C8-4F91-4F13-87A8-4DB0028BACB7",
                         "Type": "ActionOutput",
                         "OutputName": "Brain Food"
                     },
@@ -218,7 +340,19 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "WFChooseFromListActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "17E9E99F-F264-480A-8B22-97614D9CF2BC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "CustomOutputName": "Reminder List",
                 "UUID": "C6684B53-6691-4B2E-B20F-A1B6EE14105F"
             }
@@ -235,6 +369,7 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFContentItemLimitEnabled": true,
+                "CustomOutputName": "❤️ Favorites",
                 "UUID": "B4639638-74E8-4B8E-A8F8-D06FE4D2B8BB",
                 "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
@@ -276,6 +411,14 @@
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": true
+                                },
+                                "Removable": true,
+                                "Property": "Is Flagged"
                             }
                         ]
                     },
@@ -289,7 +432,7 @@
                 "WFReminderContentItemIsCompleted": 1,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                        "OutputUUID": "301881C8-4F91-4F13-87A8-4DB0028BACB7",
                         "Type": "ActionOutput",
                         "OutputName": "Brain Food"
                     },
@@ -302,7 +445,7 @@
                     "Value": {
                         "OutputUUID": "B4639638-74E8-4B8E-A8F8-D06FE4D2B8BB",
                         "Type": "ActionOutput",
-                        "OutputName": "Reminders"
+                        "OutputName": "❤️ Favorites"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
@@ -311,10 +454,54 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
             "WFWorkflowActionParameters": {
-                "WFReminderContentItemIsCompleted": 1,
+                "Mode": "Set",
+                "WFReminderContentItemParentReminder": {
+                    "Value": {
+                        "OutputUUID": "B4639638-74E8-4B8E-A8F8-D06FE4D2B8BB",
+                        "Type": "ActionOutput",
+                        "OutputName": "❤️ Favorites"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFReminderContentItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "brainFoodTitle"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFContentItemPropertyName": "Title",
+                "UUID": "06360223-3969-4BF0-A914-C8009E81386D",
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "E84B6B0D-C58B-4ADE-A175-3E306CCA34CD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Edited Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFReminderContentItemIsCompleted": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFReminderContentItemIsCompleted": 1,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "06360223-3969-4BF0-A914-C8009E81386D",
                         "Type": "ActionOutput",
                         "OutputName": "Edited Reminder"
                     },
@@ -331,50 +518,6 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
-            "WFWorkflowActionParameters": {
-                "Mode": "Set",
-                "WFReminderContentItemParentReminder": {
-                    "Value": {
-                        "OutputUUID": "00273C27-83A9-411E-98DC-1E163E644AD9",
-                        "Type": "ActionOutput",
-                        "OutputName": "Reminders"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemPropertyName": "URL",
-                "UUID": "968612A4-BF52-48FB-A317-38F5E285C0E8",
-                "WFReminderContentItemURL": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Dictionary",
-                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "brainFoodURL"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "0B58F359-8040-42A0-BDBC-F24F22DDCE3D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Edited Reminder"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFReminderContentItemIsCompleted": 1
             }
         },
         {
@@ -412,7 +555,51 @@
                 },
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "968612A4-BF52-48FB-A317-38F5E285C0E8",
+                        "OutputUUID": "0B58F359-8040-42A0-BDBC-F24F22DDCE3D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Edited Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFReminderContentItemIsCompleted": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "Mode": "Set",
+                "WFReminderContentItemParentReminder": {
+                    "Value": {
+                        "OutputUUID": "00273C27-83A9-411E-98DC-1E163E644AD9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "URL",
+                "UUID": "968612A4-BF52-48FB-A317-38F5E285C0E8",
+                "WFReminderContentItemURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary",
+                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "brainFoodURL"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B7BB65DE-604B-4090-9FEA-3CF43E5F18A4",
                         "Type": "ActionOutput",
                         "OutputName": "Edited Reminder"
                     },
@@ -439,7 +626,7 @@
                         "Value": {
                             "Type": "ActionOutput",
                             "OutputName": "Brain Food",
-                            "OutputUUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                            "OutputUUID": "301881C8-4F91-4F13-87A8-4DB0028BACB7",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFPropertyVariableAggrandizement",
@@ -488,53 +675,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "👇Remove from Reading List👇\n￼",
-                        "attachmentsByRange": {
-                            "{29, 1}": {
-                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "51C69D34-E1D9-4978-A4CF-8078F7716D3A"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
                 "WFAlertActionCancelButtonShown": false,
-                "WFAlertActionMessage": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Dictionary",
-                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "brainFoodTitle"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFAlertActionMessage": "👇Remove from Reading List👇",
                 "WFAlertActionTitle": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "51C69D34-E1D9-4978-A4CF-8078F7716D3A",
+                                "OutputUUID": "DF62B2F8-5A1F-4621-BA76-F7A7F54A0431",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
                             }
@@ -562,7 +712,7 @@
                         "Value": {
                             "Type": "ActionOutput",
                             "OutputName": "Brain Food",
-                            "OutputUUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                            "OutputUUID": "301881C8-4F91-4F13-87A8-4DB0028BACB7",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFPropertyVariableAggrandizement",
@@ -697,12 +847,12 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "12D1A133-5DF3-47DC-8388-3F9784B8F996",
-                    "workflowName": "Get playlistItemID from videoID",
+                    "workflowIdentifier": "9E42A855-38FC-47F6-826B-D7B1FF15DD44",
+                    "workflowName": "YouTube - Get playlistItemID from videoID",
                     "isSelf": false
                 },
                 "UUID": "04334881-C238-4DCB-BF34-82CEF27A6ACA",
-                "WFWorkflowName": "Get playlistItemID from videoID"
+                "WFWorkflowName": "YouTube - Get playlistItemID from videoID"
             }
         },
         {
