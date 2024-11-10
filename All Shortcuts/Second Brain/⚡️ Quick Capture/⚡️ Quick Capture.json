@@ -5,48 +5,63 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
-                "WFMenuPrompt": "🤖 Which capturing method?",
-                "WFControlFlowMode": 0,
-                "WFMenuItems": [
-                    "📋 From Clipboard",
+                "WFItems": [
                     "📱 From Screenshot ",
                     "📸 From Camera"
                 ],
-                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1"
+                "UUID": "3C50D306-21D3-4FB1-9427-C344DFD3ED6D"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "📋 From Clipboard",
-                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getclipboard",
-            "WFWorkflowActionParameters": {
-                "UUID": "453741A6-6B4D-4C26-AF06-C1327AF9E063"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "📱 From Screenshot ",
-                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
-                "WFControlFlowMode": 1
+                "WFChooseFromListActionPrompt": "🤖 Which capturing method?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3C50D306-21D3-4FB1-9427-C344DFD3ED6D",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "20E270D8-ACA1-41FB-A282-C85071E958FA"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "20E270D8-ACA1-41FB-A282-C85071E958FA",
+                            "Type": "ActionOutput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "📱 From Screenshot ",
+                "GroupingIdentifier": "837B18B7-A23F-461F-B038-1022991B585B",
+                "WFCondition": 4
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.takescreenshot",
@@ -55,13 +70,79 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "837B18B7-A23F-461F-B038-1022991B585B",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "20E270D8-ACA1-41FB-A282-C85071E958FA",
+                            "Type": "ActionOutput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "📸 From Camera",
+                "GroupingIdentifier": "1D2065F4-FBB9-4933-9E94-6FF497BFAA76",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.takephoto",
+            "WFWorkflowActionParameters": {
+                "UUID": "E4D735E3-3357-4730-AABD-571964BA67C5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1D2065F4-FBB9-4933-9E94-6FF497BFAA76",
+                "UUID": "352E5A63-8D22-451E-BC58-DB3524E6D3BF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Do you want to extract text now?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "A6C875E0-1951-4739-954E-8638A29DE09D",
+                        "OutputUUID": "352E5A63-8D22-451E-BC58-DB3524E6D3BF",
                         "Type": "ActionOutput",
-                        "OutputName": "Screenshot"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -95,75 +176,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "📸 From Camera",
-                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.takephoto",
-            "WFWorkflowActionParameters": {
-                "UUID": "E4D735E3-3357-4730-AABD-571964BA67C5"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "E4D735E3-3357-4730-AABD-571964BA67C5",
-                        "Type": "ActionOutput",
-                        "OutputName": "Photo"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "55CEA7A1-FCB8-44DC-A4D1-2E4A5D633664",
-                    "workflowName": "Extract Text from Screenshot",
-                    "isSelf": false
-                },
-                "UUID": "45FEE4CF-5233-4ADE-B6CF-A50167C03FE3",
-                "WFWorkflowName": "Extract Text from Screenshot"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "45FEE4CF-5233-4ADE-B6CF-A50167C03FE3",
+                        "OutputUUID": "CE6D268F-0DA1-4BA3-B777-0E4810E77EE2",
                         "Type": "ActionOutput",
                         "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "BA414822-2658-46E8-A73E-20471863F9B3",
-                    "workflowName": "📸 Process Extracted Text from Screenshot",
-                    "isSelf": false
-                },
-                "UUID": "E3D69E14-5E08-46B0-9F9E-404750EAAE35",
-                "WFWorkflowName": "📸 Process Extracted Text from Screenshot"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
-                "UUID": "261B29DE-E365-4F84-AAB2-31BB02EA2B55"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "261B29DE-E365-4F84-AAB2-31BB02EA2B55",
-                        "Type": "ActionOutput",
-                        "OutputName": "Menu Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -174,6 +193,37 @@
                 },
                 "UUID": "0A1FF3A1-7367-4BA0-AC47-89C7834FE9B6",
                 "WFWorkflowName": "📥 Add to Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.savetocameraroll",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "352E5A63-8D22-451E-BC58-DB3524E6D3BF",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCameraRollSelectedGroup": "Unsorted",
+                "UUID": "3269C884-8336-4A48-A27D-050540C6F1F2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DB562574-1770-42D1-9C95-86702BB4CDB1",
+                "UUID": "261B29DE-E365-4F84-AAB2-31BB02EA2B55"
             }
         },
         {

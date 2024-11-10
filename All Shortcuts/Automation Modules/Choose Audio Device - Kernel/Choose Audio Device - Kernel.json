@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -141,7 +141,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
                 "WFItems": [
-                    "🎧 Headphone",
+                    "🎧 BLE Headphone",
                     "🔊 BLE Speaker"
                 ],
                 "UUID": "7385A563-4C21-4EF9-9472-7B39E48C1FA0"
@@ -250,7 +250,28 @@
                         "OutputName": "My Shortcuts"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "UUID": "A159742B-4E7D-48F0-BC30-CDE8CDCD8604"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "42B0686C-113D-418F-9BFE-5090BBC6B90A",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "A159742B-4E7D-48F0-BC30-CDE8CDCD8604",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
             }
         },
         {
@@ -276,33 +297,61 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "42B0686C-113D-418F-9BFE-5090BBC6B90A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "73264E14-E123-476C-84BE-80F80160A603",
                         "Type": "ActionOutput",
-                        "OutputName": "Chosen Item"
+                        "OutputName": "My Shortcuts",
+                        "OutputUUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "WFItemName",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Name"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "UUID": "F911742D-93FA-423D-A37E-05AD6DEDBA68"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "42B0686C-113D-418F-9BFE-5090BBC6B90A",
+                "UUID": "2E71909C-4105-460E-BC5F-6C13FB3ED433"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
                 "WFWorkflow": {
                     "Value": {
-                        "OutputUUID": "73264E14-E123-476C-84BE-80F80160A603",
+                        "OutputUUID": "2E71909C-4105-460E-BC5F-6C13FB3ED433",
                         "Type": "ActionOutput",
-                        "OutputName": "Chosen Item"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "AF17E630-1902-4948-8D2A-3319888F90DA",
                 "WFWorkflowName": {
                     "Value": {
-                        "OutputUUID": "73264E14-E123-476C-84BE-80F80160A603",
+                        "OutputUUID": "2E71909C-4105-460E-BC5F-6C13FB3ED433",
                         "Type": "ActionOutput",
-                        "OutputName": "Chosen Item"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "UUID": "AF17E630-1902-4948-8D2A-3319888F90DA"
             }
         },
         {

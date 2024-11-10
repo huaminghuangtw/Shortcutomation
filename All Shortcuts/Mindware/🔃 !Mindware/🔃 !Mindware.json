@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -18,6 +18,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "CustomOutputName": "inputDict",
                 "UUID": "717BB6A0-C6B5-41C1-BDFF-D9C893232FE3"
             }
         },
@@ -35,7 +36,7 @@
                     "Value": {
                         "OutputUUID": "717BB6A0-C6B5-41C1-BDFF-D9C893232FE3",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "inputDict"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -145,79 +146,53 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
-            "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "Mindware Update"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "#"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "Mindware Upgrade"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "◻️"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "BC018226-DDF6-43B2-89FE-E55FA148FB74"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "BC018226-DDF6-43B2-89FE-E55FA148FB74",
+                        "OutputUUID": "717BB6A0-C6B5-41C1-BDFF-D9C893232FE3",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "inputDict"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFDictionaryKey": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Dictionary",
-                                "OutputUUID": "717BB6A0-C6B5-41C1-BDFF-D9C893232FE3",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "listGroupName"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
+                "CustomOutputName": "listGroupName",
+                "UUID": "BF428C54-A3FD-474C-B4D6-C1658E28C704",
+                "WFDictionaryKey": "listGroupName"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "listGroupName",
+                            "OutputUUID": "BF428C54-A3FD-474C-B4D6-C1658E28C704",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
                 },
-                "UUID": "20A612DD-9C38-4344-B8CC-A735C2E3C80E"
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Update",
+                "GroupingIdentifier": "67667831-A013-488E-A1BC-7327AE33955D",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "#",
+                "UUID": "E66708F0-DDDF-4F07-9075-8A11563A74BB"
             }
         },
         {
@@ -225,9 +200,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "20A612DD-9C38-4344-B8CC-A735C2E3C80E",
+                        "OutputUUID": "E66708F0-DDDF-4F07-9075-8A11563A74BB",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
+                        "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -241,13 +216,63 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "67667831-A013-488E-A1BC-7327AE33955D",
+                "UUID": "6FCEED48-5ED6-41D7-AC96-A91A5323C3C7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "listGroupName",
+                            "OutputUUID": "BF428C54-A3FD-474C-B4D6-C1658E28C704",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Upgrade",
+                "GroupingIdentifier": "CA45A305-61AF-47FB-827D-A102B347E446",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetKeysIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Reminders.brainFoodLists.internal",
+                "UUID": "6B6F3EC4-BC37-4D33-9559-DB93EED80083"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CA45A305-61AF-47FB-827D-A102B347E446",
+                "UUID": "3E951326-0260-4EE1-A12B-88694DAC4491"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "0D4A825B-7FF5-4C4E-9E79-F07B45250F1D",
+                        "OutputUUID": "3E951326-0260-4EE1-A12B-88694DAC4491",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

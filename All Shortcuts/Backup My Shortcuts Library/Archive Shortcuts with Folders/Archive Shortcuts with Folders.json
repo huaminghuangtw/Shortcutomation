@@ -5,35 +5,20 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Apple Shortcuts.backup.data.folder",
-                "UUID": "E42CD9C2-E54D-488E-9D29-D4E572C9F1CB"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "E42CD9C2-E54D-488E-9D29-D4E572C9F1CB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFWorkflow": {
-                    "workflowIdentifier": "2BEB60F5-2DD0-4C37-A8E4-704369EA0F50",
-                    "workflowName": "De-Duplicate List",
+                    "workflowIdentifier": "FE0BC520-92F0-4867-9291-1CF31F6AD95D",
+                    "workflowName": "Get Shortcuts Library Custom Folders",
                     "isSelf": false
                 },
-                "UUID": "7D090513-FAB6-4E0C-B914-2829FFB3838A",
-                "WFWorkflowName": "De-Duplicate List"
+                "WFWorkflowName": "Get Shortcuts Library Custom Folders",
+                "UUID": "7D090513-FAB6-4E0C-B914-2829FFB3838A"
             }
         },
         {
@@ -52,10 +37,55 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Apple Shortcuts.ignoredFolders",
+                "UUID": "454BFCE4-D699-4340-888D-9E8827F0DEBD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value",
+                            "OutputUUID": "454BFCE4-D699-4340-888D-9E8827F0DEBD",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "5C6EE4C3-E545-4FEA-87AE-83EDFFB4303E",
+                "WFCondition": 999
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
             "WFWorkflowActionParameters": {
                 "UUID": "9952F4CA-3CCB-45E3-B712-FFE1D9A8BFB0",
-                "CustomOutputName": "Folder shortcuts",
+                "CustomOutputName": "folderShortcuts",
                 "Folder": {
                     "Value": {
                         "VariableName": "Repeat Item",
@@ -72,7 +102,7 @@
                     "Value": {
                         "OutputUUID": "9952F4CA-3CCB-45E3-B712-FFE1D9A8BFB0",
                         "Type": "ActionOutput",
-                        "OutputName": "Folder shortcuts"
+                        "OutputName": "folderShortcuts"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -93,6 +123,28 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C43CB2DD-D4D3-4CAC-ABC7-800973C062FE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Archive"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "folderShortcuts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "5C6EE4C3-E545-4FEA-87AE-83EDFFB4303E",
+                "UUID": "CB2C19F8-1D23-446C-B9C0-1DFAEABB196B"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
@@ -101,39 +153,33 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "Shortcuts_Backup_with_Folders",
-                "CustomOutputName": "Shortcuts_Backup_with_Folders",
-                "UUID": "18AC56B3-6D18-4B8F-B1D8-F5DBAE1F2D89"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.makezip",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "EABB61AB-1E65-47EE-8EEF-74333BCDCCFC",
-                        "Type": "ActionOutput",
-                        "OutputName": "Repeat Results"
+                        "VariableName": "folderShortcuts",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFArchiveFormat": "zip",
                 "UUID": "5524575C-3167-4F29-ADC2-9993FF2985E6",
-                "WFZIPName": {
+                "WFZIPName": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "18AC56B3-6D18-4B8F-B1D8-F5DBAE1F2D89",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcuts_Backup_with_Folders"
-                            }
-                        }
+                        "OutputUUID": "5524575C-3167-4F29-ADC2-9993FF2985E6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Archive"
                     },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFName": "Shortcuts_Backup_with_Folders",
+                "UUID": "4FD23FC4-CE6A-487C-9EAE-F7796D67EFCB"
             }
         },
         {
@@ -168,9 +214,9 @@
                 "WFAskWhereToSave": false,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "5524575C-3167-4F29-ADC2-9993FF2985E6",
+                        "OutputUUID": "4FD23FC4-CE6A-487C-9EAE-F7796D67EFCB",
                         "Type": "ActionOutput",
-                        "OutputName": "Archive"
+                        "OutputName": "Renamed Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

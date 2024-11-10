@@ -5,30 +5,10 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetAudioIntent",
-            "WFWorkflowActionParameters": {
-                "systemSounds": "tock",
-                "UUID": "430D3597-467F-4D1A-BE92-229AEC775EF3"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "430D3597-467F-4D1A-BE92-229AEC775EF3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Sound"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
@@ -58,6 +38,50 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B96AD6E1-66E6-4310-B198-AD094E3D8C92",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetAudioIntent",
+            "WFWorkflowActionParameters": {
+                "systemSounds": "tock",
+                "UUID": "430D3597-467F-4D1A-BE92-229AEC775EF3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "430D3597-467F-4D1A-BE92-229AEC775EF3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Sound"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -75,6 +99,64 @@
                 },
                 "UUID": "70C584A7-C222-47E5-8E72-5B16B746FFE7",
                 "WFWorkflowName": "Show Text Banner"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B96AD6E1-66E6-4310-B198-AD094E3D8C92",
+                "UUID": "BB898F62-8E67-4197-BB49-D8B0B6A73E7D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "ED8506DF-599D-49A1-9D54-75CD2B663F15",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E3C1CD6F-2126-4069-A213-6CC393B450AF",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EFCFD1B6-66B1-4611-B864-F80E1BA49D8E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "ED8506DF-599D-49A1-9D54-75CD2B663F15",
+                "WFControlFlowMode": 2
             }
         }
     ],

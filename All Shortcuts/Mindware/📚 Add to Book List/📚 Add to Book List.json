@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -48,7 +48,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "🤖 Book title?",
+                "WFAskActionPrompt": "🤖 Book title|author?",
                 "WFInputType": "Text",
                 "UUID": "51B3B84B-E4C5-40BF-99AD-A0D485ED1F63"
             }
@@ -88,24 +88,6 @@
                 },
                 "GroupingIdentifier": "CB4E178B-9C7F-4BC5-ADA5-E48188492C1C",
                 "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "0F43ED5E-FFA3-437D-9C08-D8E681753DFA",
-                "WFCondition": 100
             }
         },
         {
@@ -168,23 +150,242 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C90BEA8E-4922-4959-A45D-31B38C268BD3",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "98AA2D09-6DBA-4F7D-80AE-0780DB86B481",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": " | ",
+                "UUID": "3188C0FC-08BC-4AF6-9DD0-5141301F5F4F",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3188C0FC-08BC-4AF6-9DD0-5141301F5F4F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "author",
+                "UUID": "53B2AC3F-AB49-452C-9441-504D3B5E3531"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3188C0FC-08BC-4AF6-9DD0-5141301F5F4F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "CustomOutputName": "title",
+                "UUID": "F1C3FD34-D9FA-4AF8-B21F-100710CD5A42"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼+￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "53B2AC3F-AB49-452C-9441-504D3B5E3531",
+                                "Type": "ActionOutput",
+                                "OutputName": "author"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "F1C3FD34-D9FA-4AF8-B21F-100710CD5A42",
+                                "Type": "ActionOutput",
+                                "OutputName": "title"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "12D42507-BC0E-4C63-BE88-CDBE20BC7EBA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detectlanguage",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "647EF1E7-B674-41C6-9FC6-F391DFE729C8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "647EF1E7-B674-41C6-9FC6-F391DFE729C8",
+                            "Type": "ActionOutput",
+                            "OutputName": "Language"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Chinese",
+                "GroupingIdentifier": "D05BB97F-340F-4D6D-932B-4423883A8CF7",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "https://search.books.com.tw/search/query/key/￼",
+                        "attachmentsByRange": {
+                            "{45, 1}": {
+                                "OutputUUID": "12D42507-BC0E-4C63-BE88-CDBE20BC7EBA",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AB60DDCD-6705-4E94-9B4D-272138A33636"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D05BB97F-340F-4D6D-932B-4423883A8CF7",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "https://www.amazon.com/s?k=￼",
+                        "attachmentsByRange": {
+                            "{27, 1}": {
+                                "OutputUUID": "12D42507-BC0E-4C63-BE88-CDBE20BC7EBA",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B8B27542-FCB4-45E5-9111-89575E0DB469"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "D05BB97F-340F-4D6D-932B-4423883A8CF7",
+                "UUID": "E5B383D1-DED7-4884-B40A-D7E8DFCDFC05"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFFlag": true,
+                "UUID": "1D1EE6DF-FE92-4725-8CFA-2193FC9F1917",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/00E32C6A-A3E0-49B8-9D2E-C06CD6F4A09F>",
+                    "Title": "◻️ Book",
+                    "IsAllCalendar": false
+                },
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E5B383D1-DED7-4884-B40A-D7E8DFCDFC05",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemCalendar": "◻️ Book"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "98AA2D09-6DBA-4F7D-80AE-0780DB86B481",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "2653929E-3FC5-4BBC-A5C3-A97C680B6639",
                 "UUID": "C4B6C160-7697-4659-B771-DC19E8A5F4A2"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "0F43ED5E-FFA3-437D-9C08-D8E681753DFA",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "CB4E178B-9C7F-4BC5-ADA5-E48188492C1C",
-                "WFControlFlowMode": 2
+                "UUID": "F67BF651-F169-49C5-9310-7D9DEDE0A8E6"
             }
         }
     ],
@@ -194,9 +395,7 @@
         "WFRichTextContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [
-        "QuickActions"
-    ],
+    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

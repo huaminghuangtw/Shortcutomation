@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -31,6 +31,12 @@
                 "WFControlFlowMode": 0,
                 "WFEnumeration": "macOS",
                 "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
+            "WFWorkflowActionParameters": {
+                "WFPlayPauseBehavior": "Pause"
             }
         },
         {
@@ -232,7 +238,12 @@
                             },
                             {
                                 "Operator": 4,
-                                "Values": {},
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
                                 "Removable": true,
                                 "Property": "Is Completed"
                             }
@@ -384,8 +395,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "384DAE25-4F36-4C87-A482-CD82C75B0315",
-                "WFControlFlowMode": 2
+                "UUID": "B65B77CF-DB53-4494-A882-CE0F0B83827F"
             }
         },
         {
@@ -394,6 +406,91 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "6F2360A0-F107-4203-BD70-32708B4696D9",
                 "UUID": "164983FD-7814-417D-8859-2603DB4D71C9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetAudioOutputsIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "85B9F049-4B83-4830-A6CB-F222E8445104"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Connections",
+                            "OutputUUID": "85B9F049-4B83-4830-A6CB-F222E8445104",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "type"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "builtInSpeaker",
+                "GroupingIdentifier": "FAD8542A-F462-412B-A6D1-1F29A701999D",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🎧 Do you want to connect to BLE headphones?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "2E6BB889-4552-4043-B396-7E989CFC702A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "2E6BB889-4552-4043-B396-7E989CFC702A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflowName": "🎧 Connect to Headphone",
+                "WFWorkflow": {
+                    "workflowIdentifier": "B9388065-431B-4984-913A-28A2AC524202",
+                    "workflowName": "🎧 Connect to Headphone",
+                    "isSelf": false
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "2E6BB889-4552-4043-B396-7E989CFC702A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2E6BB889-4552-4043-B396-7E989CFC702A",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "FAD8542A-F462-412B-A6D1-1F29A701999D",
+                "WFControlFlowMode": 2
             }
         },
         {

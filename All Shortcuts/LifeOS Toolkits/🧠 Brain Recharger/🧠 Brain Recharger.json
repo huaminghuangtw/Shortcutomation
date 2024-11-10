@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3036.0.4.2",
+    "WFWorkflowClientVersion": "3107.0.8.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -152,30 +152,88 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "BRAINWAVE",
+                    "Meditation"
+                ],
+                "UUID": "D96F3A78-6A9F-4A00-A646-2943AAE69D35"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "|",
+                "UUID": "AC2F1170-1A38-4D0E-B6CF-DECFC7A63085",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "D96F3A78-6A9F-4A00-A646-2943AAE69D35",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "AC2F1170-1A38-4D0E-B6CF-DECFC7A63085",
+                                "Type": "ActionOutput",
+                                "OutputName": "Combined Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Chosen Item",
+                                "OutputUUID": "CE9314E5-8667-4FD1-ACD0-25B425BF0175",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "WFItemName",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Name"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "57761848-8E7D-432E-B050-118863BDC59B"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "57761848-8E7D-432E-B050-118863BDC59B",
                             "Type": "ActionOutput",
-                            "OutputName": "Chosen Item",
-                            "OutputUUID": "CE9314E5-8667-4FD1-ACD0-25B425BF0175",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
+                            "OutputName": "Matches"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "BRAINWAVE",
+                "WFConditionalActionString": "",
                 "GroupingIdentifier": "EB318B92-0BF4-4B07-B986-0A5008AD2A50",
-                "WFCondition": 999
+                "WFCondition": 101
             }
         },
         {
@@ -502,7 +560,7 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "Spotify - Meditation"
+                                        "string": "🧘🏽 Meditation"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }

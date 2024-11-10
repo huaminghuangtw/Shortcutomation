@@ -1,0 +1,119 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://www.flickr.com/groups/api/discuss/72157616713786392/"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "photoId"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "Type": "ExtensionInput"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "4972815F-CC72-45F6-A2EF-82F8ABCFF011"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "let dict = ￼\n\nlet photoId = dict.photoId\n\nlet base58Alphabet = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ'\nlet len = base58Alphabet.length\n\nlet encodedPhotoId = ''\n\nwhile (photoId >= len) {\n  let div = Math.floor(photoId / len)\n  let mod = photoId % len\n  encodedPhotoId = base58Alphabet[mod] + encodedPhotoId\n  photoId = div\n}\n\nencodedPhotoId = base58Alphabet[photoId] + encodedPhotoId\n\ndocument.write(encodedPhotoId)",
+                        "attachmentsByRange": {
+                            "{11, 1}": {
+                                "OutputUUID": "4972815F-CC72-45F6-A2EF-82F8ABCFF011",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EEF969BF-C05B-4228-B0C2-01C28EA7E86D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "EEF969BF-C05B-4228-B0C2-01C28EA7E86D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "encodedPhotoId",
+                "UUID": "10BC24E1-FFB6-4A48-80A6-541B4158C4A7",
+                "WFWorkflow": {
+                    "workflowIdentifier": "E2CEB2A0-A1D2-4040-B3D2-804B9C84CAE8",
+                    "workflowName": "Run JavaScript Code",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Run JavaScript Code"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "10BC24E1-FFB6-4A48-80A6-541B4158C4A7",
+                                "Type": "ActionOutput",
+                                "OutputName": "encodedPhotoId"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}
