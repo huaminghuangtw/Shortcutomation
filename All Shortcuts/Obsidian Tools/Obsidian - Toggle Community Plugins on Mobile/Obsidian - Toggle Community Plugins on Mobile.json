@@ -155,27 +155,108 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+            "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.GetFilesIntent",
             "WFWorkflowActionParameters": {
-                "command": [
-                    "jump obsidian-icloud",
-                    "cd Second-Brain",
-                    {
-                        "Value": {
-                            "string": "ls ￼",
-                            "attachmentsByRange": {
-                                "{3, 1}": {
-                                    "VariableName": "PLUGINS_DIR",
-                                    "Type": "Variable"
-                                }
+                "path": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "PLUGINS_DIR",
+                                "Type": "Variable"
                             }
-                        },
-                        "WFSerializationType": "WFTextTokenString"
-                    }
-                ],
-                "UUID": "E5B02AEC-4A92-4429-88FA-392865528855",
-                "openWindow": "close",
-                "ShowWhenRun": false
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "4U9NSKBV63",
+                    "BundleIdentifier": "com.appliedphasor.working-copy",
+                    "Name": "Working Copy",
+                    "AppIntentIdentifier": "GetFilesIntent"
+                },
+                "UUID": "681A0BAB-A92C-4011-98CE-2DF6575A8743",
+                "repo": {
+                    "subtitle": {
+                        "key": "Second-Brain"
+                    },
+                    "title": {
+                        "key": "Second-Brain"
+                    },
+                    "value": "Second-Brain"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.FileDetailsIntent",
+            "WFWorkflowActionParameters": {
+                "files": {
+                    "Value": {
+                        "OutputUUID": "681A0BAB-A92C-4011-98CE-2DF6575A8743",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repository Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "7E95CD8F-8E2F-4E5D-ABF2-F724CF7C6539"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": "reference-files"
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Details",
+                        "OutputUUID": "7E95CD8F-8E2F-4E5D-ABF2-F724CF7C6539",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "directory"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "59AAF019-68E1-4B45-B378-479102765804"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "59AAF019-68E1-4B45-B378-479102765804",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "2FB7A087-90E8-4FFB-B9C2-D0C528870994",
+                    "workflowName": "Remove Duplicate Lines (Fast, Order Not Preserved)",
+                    "isSelf": false
+                },
+                "UUID": "00130D90-5AE7-4813-AE05-1B059190E34D",
+                "WFWorkflowName": "Remove Duplicate Lines (Fast, Order Not Preserved)"
             }
         },
         {

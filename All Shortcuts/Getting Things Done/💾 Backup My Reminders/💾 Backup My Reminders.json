@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1106",
-    "WFWorkflowMinimumClientVersion": 1106,
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -10,102 +10,46 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "MyFiles",
-                "WFFile": {
-                    "fileLocation": {
-                        "relativeSubpath": "com~apple~CloudDocs/MyFiles",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8CD4A3FB-3479-45CB-829A-CE2FA3119626",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/ACE8113D-789C-4614-A1EA-1EA4F0A6DA68/9355e871942bdca7011f42dcdefecd210114c36c",
-                        "WFFileLocationType": "iCloud"
-                    },
-                    "filename": "MyFiles",
-                    "displayName": "MyFiles"
-                },
-                "UUID": "A49F6583-B41C-4A9D-85D6-39E5F1427B62"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
-            "WFWorkflowActionParameters": {
-                "WFFilePath": "MyRemindersBackup",
-                "WFFolder": {
+                "WFItems": {
                     "Value": {
-                        "OutputUUID": "A49F6583-B41C-4A9D-85D6-39E5F1427B62",
-                        "Type": "ActionOutput",
-                        "OutputName": "MyFiles"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "1EEE1390-1E2E-44B2-ACA2-F00B06A36196"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetReminderListsIntent",
-            "WFWorkflowActionParameters": {
-                "getType": {
-                    "Value": {
-                        "OutputUUID": "1EEE1390-1E2E-44B2-ACA2-F00B06A36196",
-                        "Type": "ActionOutput",
-                        "OutputName": "Created Folder"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "E4AFBE3D-46F4-488D-908F-A535FD20EEF6"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "E4AFBE3D-46F4-488D-908F-A535FD20EEF6",
-                        "Type": "ActionOutput",
-                        "OutputName": "Reminder Lists"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "D03B54BE-2C0B-4426-B4F5-E8E25A9B9956",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetKeysIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Reminders.evergreenLists",
-                "UUID": "996801D9-1C06-4A36-9A00-58EF0C80AEF8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "996801D9-1C06-4A36-9A00-58EF0C80AEF8",
-                            "Type": "ActionOutput",
-                            "OutputName": "Keys"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "💾 Backup My Reminders"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "checkInterval"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "3 hours"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
                             }
-                        }
+                        ]
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "GroupingIdentifier": "2A1FCDF7-1A47-4FBB-9968-B834B1FF41E7",
-                "WFCondition": 999
+                "UUID": "24771FD8-0E44-4B93-BAFF-A4BD7F3A890C"
             }
         },
         {
@@ -113,105 +57,44 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
+                        "OutputUUID": "24771FD8-0E44-4B93-BAFF-A4BD7F3A890C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "jsonFile",
-                "UUID": "A6A5575F-F8AF-4EAA-A39F-48BA2065B445",
                 "WFWorkflow": {
-                    "workflowIdentifier": "C4DCFD9E-D080-4E50-83FD-E4F76202513B",
-                    "workflowName": "Reminders2JSON",
+                    "workflowIdentifier": "A86201D2-8F83-4F02-A0E5-AB49C788A218",
+                    "workflowName": "Check Last Run Time",
                     "isSelf": false
                 },
-                "WFWorkflowName": "Reminders2JSON"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
-            "WFWorkflowActionParameters": {
-                "WFName": {
-                    "Value": {
-                        "string": "￼.json",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFDontIncludeFileExtension": true,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "A6A5575F-F8AF-4EAA-A39F-48BA2065B445",
-                        "Type": "ActionOutput",
-                        "OutputName": "jsonFile"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "E7C3BDD2-9087-4D74-93F0-EB4668E341AC"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
-            "WFWorkflowActionParameters": {
-                "WFFolder": {
-                    "Value": {
-                        "OutputUUID": "1EEE1390-1E2E-44B2-ACA2-F00B06A36196",
-                        "Type": "ActionOutput",
-                        "OutputName": "Created Folder"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFAskWhereToSave": false,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "E7C3BDD2-9087-4D74-93F0-EB4668E341AC",
-                        "Type": "ActionOutput",
-                        "OutputName": "Renamed Item"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "62613D8C-3CA3-4E08-8C21-1AABD3D4B2C6",
-                "WFSaveFileOverwrite": true
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "2A1FCDF7-1A47-4FBB-9968-B834B1FF41E7",
-                "UUID": "F63C1678-147A-485F-B8C6-43B029C69D84"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "D03B54BE-2C0B-4426-B4F5-E8E25A9B9956",
-                "UUID": "360164A2-929E-43A2-864E-92E9FD008283"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
-            "WFWorkflowActionParameters": {
-                "WFNotificationActionBody": "✅ Completed!",
-                "UUID": "CBE94805-56DF-4277-841C-8D7B7B80EDDE",
-                "WFNotificationActionSound": false,
-                "WFNotificationActionTitle": ""
+                "UUID": "BF2504D7-00A5-4664-84F3-842D688E95E9",
+                "WFWorkflowName": "Check Last Run Time"
             }
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFStringContentItem"
+        "WFImageContentItem",
+        "WFAVAssetContentItem",
+        "WFGenericFileContentItem",
+        "WFFolderContentItem",
+        "WFPDFContentItem",
+        "WFStringContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFURLContentItem",
+        "WFArticleContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFLocationContentItem",
+        "WFContactContentItem",
+        "WFEmailAddressContentItem",
+        "WFPhoneNumberContentItem",
+        "WFDateContentItem",
+        "WFAppStoreAppContentItem",
+        "WFiTunesProductContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [
-        "Watch"
-    ],
+    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

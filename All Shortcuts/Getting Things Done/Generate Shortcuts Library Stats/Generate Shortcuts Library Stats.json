@@ -208,59 +208,48 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Apple Shortcuts.stats",
-                "CustomOutputName": "stats",
-                "UUID": "B8CA7ED5-110A-4138-AD55-CEC9C0C8FF8E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "Year",
-                "UUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
-                "WFDateFormat": "yyyy",
-                "WFDate": {
+                "WFTextActionText": {
                     "Value": {
-                        "string": "￼",
+                        "string": "My Apple Shortcuts.stats.￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate"
+                            "{25, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "yyyy",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "B8CA7ED5-110A-4138-AD55-CEC9C0C8FF8E",
-                        "Type": "ActionOutput",
-                        "OutputName": "stats"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "CSV",
-                "UUID": "CFE2A618-FC61-4652-B435-62329ECDAE35",
-                "WFDictionaryKey": {
+                "CustomOutputName": "keyPath",
+                "UUID": "D28E2114-CA00-4BBB-80CA-FD7D6C3D09F0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
+                                "OutputUUID": "D28E2114-CA00-4BBB-80CA-FD7D6C3D09F0",
                                 "Type": "ActionOutput",
-                                "OutputName": "Year"
+                                "OutputName": "keyPath"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "F813E394-BF2A-4707-A7DF-6E83B35AEDAE"
             }
         },
         {
@@ -270,16 +259,41 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "CFE2A618-FC61-4652-B435-62329ECDAE35",
                             "Type": "ActionOutput",
-                            "OutputName": "CSV"
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "F813E394-BF2A-4707-A7DF-6E83B35AEDAE",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "AA5E6CDF-477E-4435-AD51-239080FDF884",
-                "WFCondition": 100
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D28E2114-CA00-4BBB-80CA-FD7D6C3D09F0",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "51D9505C-E9D1-40B3-97E0-EB59C1CF1971"
             }
         },
         {
@@ -295,9 +309,9 @@
                                 "OutputName": "newData"
                             },
                             "{0, 1}": {
-                                "OutputUUID": "CFE2A618-FC61-4652-B435-62329ECDAE35",
+                                "OutputUUID": "51D9505C-E9D1-40B3-97E0-EB59C1CF1971",
                                 "Type": "ActionOutput",
-                                "OutputName": "CSV"
+                                "OutputName": "Value"
                             }
                         }
                     },
@@ -347,12 +361,12 @@
                 "UUID": "274091E6-B406-49DF-841C-3B9F94C74A9F",
                 "keyPath": {
                     "Value": {
-                        "string": "My Apple Shortcuts.stats.￼",
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{25, 1}": {
-                                "OutputUUID": "75383842-74B6-40D9-95CF-C0B3ADAC2E46",
+                            "{0, 1}": {
+                                "OutputUUID": "D28E2114-CA00-4BBB-80CA-FD7D6C3D09F0",
                                 "Type": "ActionOutput",
-                                "OutputName": "Year"
+                                "OutputName": "keyPath"
                             }
                         }
                     },

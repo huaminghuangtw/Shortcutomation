@@ -1,32 +1,30 @@
-## 🎉 Weekly Update (Week 45, 2024)
+## 🎉 Weekly Update (Week 46, 2024)
 
-> **Date:** 2024-11-10  
+> **Date:** 2024-11-17  
 
-### ✨ 23 New Shortcuts This Week!
+### ✨ 21 New Shortcuts This Week!
 
-+ [Backup Shortcut Filess](./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Filess)
-+ [⤴️ Export Safari Reading List](./All%20Shortcuts/Mindware/%E2%A4%B4%EF%B8%8F%20Export%20Safari%20Reading%20List)
-+ [🔄 Reading List × AReminders](./All%20Shortcuts/Mindware/%F0%9F%94%84%20Reading%20List%20%C3%97%20AReminders)
-+ [⤴️ Export YouTube Watch Later List](./All%20Shortcuts/Mindware/%E2%A4%B4%EF%B8%8F%20Export%20YouTube%20Watch%20Later%20List)
-+ [🔄 Watch Later List × AReminders](./All%20Shortcuts/Mindware/%F0%9F%94%84%20Watch%20Later%20List%20%C3%97%20AReminders)
-+ [🚛 Monthly Brain Food Delivery](./All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Monthly%20Brain%20Food%20Delivery)
-+ [_Add to Movie & TV List](./All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List)
-+ [_Add to Podcast List](./All%20Shortcuts/Mindware/_Add%20to%20Podcast%20List)
-+ [Library of Congress - Perform Item Search](./All%20Shortcuts/API%20-%20Library%20of%20Congress/Library%20of%20Congress%20-%20Perform%20Item%20Search)
-+ [Spotify - Search for Item](./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Search%20for%20Item)
-+ [Spotify - Get Episode By ID](./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Episode%20By%20ID)
-+ [Spotify - Get Available Devices](./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Available%20Devices)
-+ [Spotify - Toggle Playback Shuffle  ](./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle%20%20)
-+ [Spotify - Start or Resume Playback](./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Start%20or%20Resume%20Playback)
-+ [Spotify - Pause Playback](./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Pause%20Playback)
-+ [▶️ Play Spotify Music By Topic](./All%20Shortcuts/Spotify/%E2%96%B6%EF%B8%8F%20Play%20Spotify%20Music%20By%20Topic)
-+ [🎸 Open Spotify](./All%20Shortcuts/Spotify/%F0%9F%8E%B8%20Open%20Spotify)
-+ [_SpotifyURL2SpotifyURI](./All%20Shortcuts/Spotify/_SpotifyURL2SpotifyURI)
-+ [_Play Spotify Content](./All%20Shortcuts/Spotify/_Play%20Spotify%20Content)
-+ [🧘🏽 Meditation](./All%20Shortcuts/Sound%20Files/%F0%9F%A7%98%F0%9F%8F%BD%20Meditation)
-+ [Add Mutilines to Reminders](./All%20Shortcuts/Apple%20Reminders/Add%20Mutilines%20to%20Reminders)
-+ [# Saturday | My Dear Yi](./All%20Shortcuts/Automation%20-%20Weekly/%23%20Saturday%20%7C%20My%20Dear%20Yi)
-+ [# 15 | Export Reading & Watch Later List](./All%20Shortcuts/Automation%20-%20Monthly/%23%2015%20%7C%20Export%20Reading%20%26%20Watch%20Later%20List)
++ [💾 Backup Evergreen Lists - Kernel](./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel)
++ [💾 Backup My Reminders - Kernel](./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel)
++ [Show Number of Completed Flows](./All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Completed%20Flows)
++ [Plot Number of Completed Flows](./All%20Shortcuts/Getting%20Things%20Done/Plot%20Number%20of%20Completed%20Flows)
++ [👨🏽‍💼 AppRem](./All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem)
++ [🌟 Dear Today Me](./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me)
++ [Helper for 🌟 Dear Today Me](./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20Dear%20Today%20Me)
++ [🤓 Visual Of The Day](./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20Visual%20Of%20The%20Day)
++ [🤸🏽‍♀️ Exercise Of The Day](./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day)
++ [Open Visual Of The Day](./All%20Shortcuts/LifeOS%20Toolkits/Open%20Visual%20Of%20The%20Day)
++ [View Exercise Of The Day on Darebee](./All%20Shortcuts/LifeOS%20Toolkits/View%20Exercise%20Of%20The%20Day%20on%20Darebee)
++ [Feedback for Brain Dumping](./All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping)
++ [Feedback for Brain Dumping](./All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping)
++ [新增待辦事項](./All%20Shortcuts/Siri/%E6%96%B0%E5%A2%9E%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85)
++ [🎨 Search Sketchplanation](./All%20Shortcuts/Deep%20Links/%F0%9F%8E%A8%20Search%20Sketchplanation)
++ [Plot Daily Word Counts in Obsidian](./All%20Shortcuts/Obsidian%20Tools/Plot%20Daily%20Word%20Counts%20in%20Obsidian)
++ [🧭 Dear Today Me](./All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me)
++ [Recover from Reminders Backup](./All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup)
++ [When "Obsidian" is closed](./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed)
++ [When "Obsidian" is closed - Kernel](./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel)
++ [# Backup Data Jar Store](./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Store)
 
 <p align="center">
     <a href="https://chartyios.app">

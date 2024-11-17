@@ -7,31 +7,16 @@
 <img src="https://img.shields.io/badge/Contribution_Welcome-blue?style=plastic" alt="Contribution Welcome"></a><br/>
 </p>
 
-> **Last Update:** 2024-11-10  
+> [!NOTE]  
+> **Last Update:** 2024-11-17  
+>
 > Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)  
-
-_[Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable _notifications_ and _widgets_ created with [Scriptable](https://scriptable.app)!_
-
-## 🙏 Acknowledgments
-
-This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r/shortcuts) and the following incredible Shortcuts-enhancing apps:
-
-- [Data Jar](https://datajar.app)
-- [Scriptable](https://scriptable.app)
-- [Actions](https://sindresorhus.com/actions)
-- [Toolbox Pro](https://toolboxpro.app)
-- [Pushcut](https://www.pushcut.io)
-- [Charty](https://chartyios.app)
-- [Day Progress](https://sindresorhus.com/day-progress)
-- [Any Text](https://sindresorhus.com/any-text)
-- [Working Copy](https://workingcopy.app)
-- [Flow](https://www.flow.app)
-- [Caffeinated](https://caffeinated.app)
-- [Text Case](https://textcase.app)
+>
+> _[Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable _notifications_ and _widgets_ created with [Scriptable](https://scriptable.app)!_  
 
 ## 📊 Shortcuts Library Stats ²
 
-* In total, there are **549** Shortcuts with **6609** actions in **68** folders
+* In total, there are **558** Shortcuts with **6706** actions in **68** folders
 * The pure average comes out to about **12** actions per Shortcut
 * The typical Shortcut has around **8+** actions
 * 🏅 Top 5 Most Complex Shortcuts:
@@ -62,14 +47,14 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
 <summary>
    <strong>
-      <a href="./All%20Shortcuts">All Shortcuts (549)</a>
+      <a href="./All%20Shortcuts">All Shortcuts (558)</a>
    </strong>
 </summary>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Standalone%20Fun">Standalone Fun  (0)</a>
+        <a href="./All%20Shortcuts/Standalone%20Fun">Standalone Fun (10)</a>
       </strong>
     </summary>
 
@@ -167,7 +152,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Shortcuts%20Tutorials">Shortcuts Tutorials  (0)</a>
+        <a href="./All%20Shortcuts/Shortcuts%20Tutorials">Shortcuts Tutorials (9)</a>
       </strong>
     </summary>
 
@@ -256,7 +241,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts">Shortcuts of Shortcuts  (0)</a>
+        <a href="./All%20Shortcuts/Shortcuts%20of%20Shortcuts">Shortcuts of Shortcuts (13)</a>
       </strong>
     </summary>
 
@@ -381,7 +366,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library">Backup My Shortcuts Library  (0)</a>
+        <a href="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library">Backup My Shortcuts Library (9)</a>
       </strong>
     </summary>
 
@@ -414,10 +399,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Filess">Backup Shortcut Filess</a>
+       <a href="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Files">Backup Shortcut Files</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Filess">
-       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Filess/Backup%20Shortcut%20Filess.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Files">
+       <img src="./All%20Shortcuts/Backup%20My%20Shortcuts%20Library/Backup%20Shortcut%20Files/Backup%20Shortcut%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -470,7 +455,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Getting%20Things%20Done">Getting Things Done  (0)</a>
+        <a href="./All%20Shortcuts/Getting%20Things%20Done">Getting Things Done (30)</a>
       </strong>
     </summary>
 
@@ -485,10 +470,28 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel">💾 Backup Evergreen Lists - Kernel</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel/%F0%9F%92%BE%20Backup%20Evergreen%20Lists%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders">💾 Backup My Reminders</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders">
        <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders/%F0%9F%92%BE%20Backup%20My%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel">💾 Backup My Reminders - Kernel</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -503,10 +506,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)">☑️ Add New TODO(s)</a>
+       <a href="./All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO">☑️ Add New TODO</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)">
-       <img src="./All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s)/%E2%98%91%EF%B8%8F%20Add%20New%20TODO(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20Add%20New%20TODO/%E2%98%91%EF%B8%8F%20Add%20New%20TODO.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -534,15 +537,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%9D%97%EF%B8%8FRemind%20Me">
        <img src="./All%20Shortcuts/Getting%20Things%20Done/%E2%9D%97%EF%B8%8FRemind%20Me/%E2%9D%97%EF%B8%8FRemind%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping">🪄 System Housekeeping</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping">
-       <img src="./All%20Shortcuts/Getting%20Things%20Done/%F0%9F%AA%84%20System%20Housekeeping/%F0%9F%AA%84%20System%20Housekeeping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -629,10 +623,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Daily%20Completed%20Flows">Show Number of Daily Completed Flows</a>
+       <a href="./All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Completed%20Flows">Show Number of Completed Flows</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Daily%20Completed%20Flows">
-       <img src="./All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Daily%20Completed%20Flows/Show%20Number%20of%20Daily%20Completed%20Flows.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Completed%20Flows">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Show%20Number%20of%20Completed%20Flows/Show%20Number%20of%20Completed%20Flows.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Getting%20Things%20Done/Plot%20Number%20of%20Completed%20Flows">Plot Number of Completed Flows</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Plot%20Number%20of%20Completed%20Flows">
+       <img src="./All%20Shortcuts/Getting%20Things%20Done/Plot%20Number%20of%20Completed%20Flows/Plot%20Number%20of%20Completed%20Flows.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -730,7 +733,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Deep%20Work%20Mode">Deep Work Mode  (0)</a>
+        <a href="./All%20Shortcuts/Deep%20Work%20Mode">Deep Work Mode (2)</a>
       </strong>
     </summary>
 
@@ -756,7 +759,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Journaling">Journaling  (0)</a>
+        <a href="./All%20Shortcuts/Journaling">Journaling (13)</a>
       </strong>
     </summary>
 
@@ -881,7 +884,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Mindware">Mindware  (0)</a>
+        <a href="./All%20Shortcuts/Mindware">Mindware (24)</a>
       </strong>
     </summary>
 
@@ -1105,7 +1108,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Second%20Brain">Second Brain  (0)</a>
+        <a href="./All%20Shortcuts/Second%20Brain">Second Brain (13)</a>
       </strong>
     </summary>
 
@@ -1165,10 +1168,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Second%20Brain/%F0%9F%8D%A9%20AppRem">🍩 AppRem</a>
+       <a href="./All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem">👨🏽‍💼 AppRem</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%8D%A9%20AppRem">
-       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%8D%A9%20AppRem/%F0%9F%8D%A9%20AppRem.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem">
+       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1187,15 +1190,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Captures">
        <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Captures/%F0%9F%97%82%EF%B8%8F%20Organize%20Today's%20Captures.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Second%20Brain/%F0%9F%92%A1%20Go%20to%20Inbox">💡 Go to Inbox</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%92%A1%20Go%20to%20Inbox">
-       <img src="./All%20Shortcuts/Second%20Brain/%F0%9F%92%A1%20Go%20to%20Inbox/%F0%9F%92%A1%20Go%20to%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1239,7 +1233,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits  (0)</a>
+        <a href="./All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (39)</a>
       </strong>
     </summary>
 
@@ -1263,19 +1257,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20My%20North%20Star">🌟 My North Star</a>
+       <a href="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me">🌟 Dear Today Me</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20My%20North%20Star">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20My%20North%20Star/%F0%9F%8C%9F%20My%20North%20Star.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me/%F0%9F%8C%9F%20Dear%20Today%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star">Helper for 🌟 My North Star</a>
+       <a href="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20Dear%20Today%20Me">Helper for 🌟 Dear Today Me</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star/Helper%20for%20%F0%9F%8C%9F%20My%20North%20Star.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20Dear%20Today%20Me">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Helper%20for%20%F0%9F%8C%9F%20Dear%20Today%20Me/Helper%20for%20%F0%9F%8C%9F%20Dear%20Today%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1380,10 +1374,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20One%20Visual%20A%20Day">🤓 One Visual A Day</a>
+       <a href="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20Visual%20Of%20The%20Day">🤓 Visual Of The Day</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20One%20Visual%20A%20Day">
-       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20One%20Visual%20A%20Day/%F0%9F%A4%93%20One%20Visual%20A%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20Visual%20Of%20The%20Day">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20Visual%20Of%20The%20Day/%F0%9F%A4%93%20Visual%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day">🤸🏽‍♀️ Exercise Of The Day</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -1566,12 +1569,30 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        <img src="./All%20Shortcuts/LifeOS%20Toolkits/Life%20Progress%20Calculator/Life%20Progress%20Calculator.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/LifeOS%20Toolkits/Open%20Visual%20Of%20The%20Day">Open Visual Of The Day</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Open%20Visual%20Of%20The%20Day">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/Open%20Visual%20Of%20The%20Day/Open%20Visual%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/LifeOS%20Toolkits/View%20Exercise%20Of%20The%20Day%20on%20Darebee">View Exercise Of The Day on Darebee</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/View%20Exercise%20Of%20The%20Day%20on%20Darebee">
+       <img src="./All%20Shortcuts/LifeOS%20Toolkits/View%20Exercise%20Of%20The%20Day%20on%20Darebee/View%20Exercise%20Of%20The%20Day%20on%20Darebee.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
   </details>
 
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Fitness%20Training">Fitness Training  (0)</a>
+        <a href="./All%20Shortcuts/Fitness%20Training">Fitness Training (15)</a>
       </strong>
     </summary>
 
@@ -1714,7 +1735,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Grocery%20Shopping">Grocery Shopping  (0)</a>
+        <a href="./All%20Shortcuts/Grocery%20Shopping">Grocery Shopping (4)</a>
       </strong>
     </summary>
 
@@ -1758,7 +1779,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Start%20the%20Day%20Right">Start the Day Right  (0)</a>
+        <a href="./All%20Shortcuts/Start%20the%20Day%20Right">Start the Day Right (2)</a>
       </strong>
     </summary>
 
@@ -1784,7 +1805,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/End%20the%20Day%20Right">End the Day Right  (0)</a>
+        <a href="./All%20Shortcuts/End%20the%20Day%20Right">End the Day Right (7)</a>
       </strong>
     </summary>
 
@@ -1855,7 +1876,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Day%20In%20Life">Day In Life  (0)</a>
+        <a href="./All%20Shortcuts/Day%20In%20Life">Day In Life (3)</a>
       </strong>
     </summary>
 
@@ -1890,7 +1911,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Week%20In%20Life">Week In Life  (0)</a>
+        <a href="./All%20Shortcuts/Week%20In%20Life">Week In Life (3)</a>
       </strong>
     </summary>
 
@@ -1925,7 +1946,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Good%20Morning">Good Morning  (0)</a>
+        <a href="./All%20Shortcuts/Good%20Morning">Good Morning (2)</a>
       </strong>
     </summary>
 
@@ -1951,7 +1972,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Good%20Evening">Good Evening  (0)</a>
+        <a href="./All%20Shortcuts/Good%20Evening">Good Evening (2)</a>
       </strong>
     </summary>
 
@@ -1977,7 +1998,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Template%20Shortcuts">Template Shortcuts  (0)</a>
+        <a href="./All%20Shortcuts/Template%20Shortcuts">Template Shortcuts (4)</a>
       </strong>
     </summary>
 
@@ -2021,7 +2042,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Utility%20Helper%20Functions">Utility Helper Functions  (0)</a>
+        <a href="./All%20Shortcuts/Utility%20Helper%20Functions">Utility Helper Functions (35)</a>
       </strong>
     </summary>
 
@@ -2135,10 +2156,19 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS">Show Notification for Brain Dumping on macOS</a>
+       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping">Feedback for Brain Dumping</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS/Show%20Notification%20for%20Brain%20Dumping%20on%20macOS.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping/Feedback%20for%20Brain%20Dumping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping">Feedback for Brain Dumping</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping">
+       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Feedback%20for%20Brain%20Dumping/Feedback%20for%20Brain%20Dumping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2148,15 +2178,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Open%20iMessage%20Chat%20Window%20for%20Contacts">
        <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20iMessage%20Chat%20Window%20for%20Contacts/Open%20iMessage%20Chat%20Window%20for%20Contacts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20%22One%20Visual%20A%20Day%22%20Image">Open "One Visual A Day" Image</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utility%20Helper%20Functions/Open%20%22One%20Visual%20A%20Day%22%20Image">
-       <img src="./All%20Shortcuts/Utility%20Helper%20Functions/Open%20%22One%20Visual%20A%20Day%22%20Image/Open%20%22One%20Visual%20A%20Day%22%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2344,7 +2365,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Text%20Manipulation">Text Manipulation  (0)</a>
+        <a href="./All%20Shortcuts/Text%20Manipulation">Text Manipulation (12)</a>
       </strong>
     </summary>
 
@@ -2460,7 +2481,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Siri">Siri  (0)</a>
+        <a href="./All%20Shortcuts/Siri">Siri (18)</a>
       </strong>
     </summary>
 
@@ -2565,6 +2586,15 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="./All%20Shortcuts/Siri/%E6%96%B0%E5%A2%9E%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85">新增待辦事項</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%96%B0%E5%A2%9E%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85">
+       <img src="./All%20Shortcuts/Siri/%E6%96%B0%E5%A2%9E%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85/%E6%96%B0%E5%A2%9E%E5%BE%85%E8%BE%A6%E4%BA%8B%E9%A0%85.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="./All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D">量體重</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D">
@@ -2621,7 +2651,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Deep%20Links">Deep Links  (0)</a>
+        <a href="./All%20Shortcuts/Deep%20Links">Deep Links (6)</a>
       </strong>
     </summary>
 
@@ -2631,6 +2661,15 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab">
        <img src="./All%20Shortcuts/Deep%20Links/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F%20Ask%20Huberman%20Lab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Deep%20Links/%F0%9F%8E%A8%20Search%20Sketchplanation">🎨 Search Sketchplanation</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/%F0%9F%8E%A8%20Search%20Sketchplanation">
+       <img src="./All%20Shortcuts/Deep%20Links/%F0%9F%8E%A8%20Search%20Sketchplanation/%F0%9F%8E%A8%20Search%20Sketchplanation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2674,7 +2713,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Build%20URLs">Build URLs  (0)</a>
+        <a href="./All%20Shortcuts/Build%20URLs">Build URLs (3)</a>
       </strong>
     </summary>
 
@@ -2709,7 +2748,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Obsidian%20URI">Obsidian URI  (0)</a>
+        <a href="./All%20Shortcuts/Obsidian%20URI">Obsidian URI (20)</a>
       </strong>
     </summary>
 
@@ -2897,9 +2936,18 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Obsidian%20Tools">Obsidian Tools  (0)</a>
+        <a href="./All%20Shortcuts/Obsidian%20Tools">Obsidian Tools (5)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Obsidian%20Tools/Plot%20Daily%20Word%20Counts%20in%20Obsidian">Plot Daily Word Counts in Obsidian</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Plot%20Daily%20Word%20Counts%20in%20Obsidian">
+       <img src="./All%20Shortcuts/Obsidian%20Tools/Plot%20Daily%20Word%20Counts%20in%20Obsidian/Plot%20Daily%20Word%20Counts%20in%20Obsidian.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -2907,15 +2955,6 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile">
        <img src="./All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile/Configure%20Obsidian%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="./All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile%20-%20Kernel">Configure Obsidian Mobile - Kernel</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile%20-%20Kernel">
-       <img src="./All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile%20-%20Kernel/Configure%20Obsidian%20Mobile%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2950,7 +2989,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20OAuth%20Dancing">API OAuth Dancing  (0)</a>
+        <a href="./All%20Shortcuts/API%20OAuth%20Dancing">API OAuth Dancing (3)</a>
       </strong>
     </summary>
 
@@ -2985,7 +3024,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Notion">API - Notion  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Notion">API - Notion (7)</a>
       </strong>
     </summary>
 
@@ -3056,7 +3095,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Strava">API - Strava  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Strava">API - Strava (6)</a>
       </strong>
     </summary>
 
@@ -3118,7 +3157,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20YouTube">API - YouTube  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20YouTube">API - YouTube (7)</a>
       </strong>
     </summary>
 
@@ -3189,7 +3228,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Gmail">API - Gmail  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Gmail">API - Gmail (1)</a>
       </strong>
     </summary>
 
@@ -3206,7 +3245,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Google%20Sheets">API - Google Sheets  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Google%20Sheets">API - Google Sheets (9)</a>
       </strong>
     </summary>
 
@@ -3295,7 +3334,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Google%20Books">API - Google Books  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Google%20Books">API - Google Books (2)</a>
       </strong>
     </summary>
 
@@ -3321,7 +3360,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Open%20Library">API - Open Library  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Open%20Library">API - Open Library (1)</a>
       </strong>
     </summary>
 
@@ -3338,7 +3377,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Library%20of%20Congress">API - Library of Congress  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Library%20of%20Congress">API - Library of Congress (1)</a>
       </strong>
     </summary>
 
@@ -3355,7 +3394,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Spotify">API - Spotify  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Spotify">API - Spotify (6)</a>
       </strong>
     </summary>
 
@@ -3388,10 +3427,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle%20%20">Spotify - Toggle Playback Shuffle  </a>
+       <a href="./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle">Spotify - Toggle Playback Shuffle</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle%20%20">
-       <img src="./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle%20%20/Spotify%20-%20Toggle%20Playback%20Shuffle%20%20.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle">
+       <img src="./All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle/Spotify%20-%20Toggle%20Playback%20Shuffle.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -3417,7 +3456,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20TMDb">API - TMDb  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20TMDb">API - TMDb (2)</a>
       </strong>
     </summary>
 
@@ -3443,7 +3482,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20NASA">API - NASA  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20NASA">API - NASA (5)</a>
       </strong>
     </summary>
 
@@ -3496,7 +3535,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Flickr">API - Flickr  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Flickr">API - Flickr (3)</a>
       </strong>
     </summary>
 
@@ -3531,7 +3570,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Unsplash">API - Unsplash  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Unsplash">API - Unsplash (2)</a>
       </strong>
     </summary>
 
@@ -3557,7 +3596,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/API%20-%20Others">API - Others  (0)</a>
+        <a href="./All%20Shortcuts/API%20-%20Others">API - Others (5)</a>
       </strong>
     </summary>
 
@@ -3610,7 +3649,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/List">List  (0)</a>
+        <a href="./All%20Shortcuts/List">List (7)</a>
       </strong>
     </summary>
 
@@ -3681,7 +3720,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Dictionary">Dictionary  (0)</a>
+        <a href="./All%20Shortcuts/Dictionary">Dictionary (3)</a>
       </strong>
     </summary>
 
@@ -3716,7 +3755,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Date%20%26%20Time">Date & Time  (0)</a>
+        <a href="./All%20Shortcuts/Date%20%26%20Time">Date & Time (26)</a>
       </strong>
     </summary>
 
@@ -3958,7 +3997,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Weather">Weather  (0)</a>
+        <a href="./All%20Shortcuts/Weather">Weather (12)</a>
       </strong>
     </summary>
 
@@ -4074,7 +4113,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Files%20%26%20Folders">Files & Folders  (0)</a>
+        <a href="./All%20Shortcuts/Files%20%26%20Folders">Files & Folders (5)</a>
       </strong>
     </summary>
 
@@ -4127,7 +4166,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Clipboard">Clipboard  (0)</a>
+        <a href="./All%20Shortcuts/Clipboard">Clipboard (4)</a>
       </strong>
     </summary>
 
@@ -4171,7 +4210,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Audio">Audio  (0)</a>
+        <a href="./All%20Shortcuts/Audio">Audio (9)</a>
       </strong>
     </summary>
 
@@ -4260,7 +4299,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/iPhone%20Settings">iPhone Settings  (0)</a>
+        <a href="./All%20Shortcuts/iPhone%20Settings">iPhone Settings (21)</a>
       </strong>
     </summary>
 
@@ -4457,7 +4496,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Set%20Device%20Brightness">Set Device Brightness  (0)</a>
+        <a href="./All%20Shortcuts/Set%20Device%20Brightness">Set Device Brightness (10)</a>
       </strong>
     </summary>
 
@@ -4555,7 +4594,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Spotify">Spotify  (0)</a>
+        <a href="./All%20Shortcuts/Spotify">Spotify (5)</a>
       </strong>
     </summary>
 
@@ -4608,7 +4647,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Sound%20Files">Sound Files  (0)</a>
+        <a href="./All%20Shortcuts/Sound%20Files">Sound Files (8)</a>
       </strong>
     </summary>
 
@@ -4688,16 +4727,16 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Motivate%20Me">Motivate Me  (0)</a>
+        <a href="./All%20Shortcuts/Motivate%20Me">Motivate Me (3)</a>
       </strong>
     </summary>
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20My%20True%20North">🧭 My True North</a>
+       <a href="./All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me">🧭 Dear Today Me</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20My%20True%20North">
-       <img src="./All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20My%20True%20North/%F0%9F%A7%AD%20My%20True%20North.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me">
+       <img src="./All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4723,7 +4762,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/BLE%20Headphone">BLE Headphone  (0)</a>
+        <a href="./All%20Shortcuts/BLE%20Headphone">BLE Headphone (3)</a>
       </strong>
     </summary>
 
@@ -4758,7 +4797,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/BLE%20Speaker">BLE Speaker  (0)</a>
+        <a href="./All%20Shortcuts/BLE%20Speaker">BLE Speaker (1)</a>
       </strong>
     </summary>
 
@@ -4775,7 +4814,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Audiobooks">Audiobooks  (0)</a>
+        <a href="./All%20Shortcuts/Audiobooks">Audiobooks (3)</a>
       </strong>
     </summary>
 
@@ -4810,7 +4849,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Podcasts">Podcasts  (0)</a>
+        <a href="./All%20Shortcuts/Podcasts">Podcasts (2)</a>
       </strong>
     </summary>
 
@@ -4836,7 +4875,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Data%20Jar">Data Jar  (0)</a>
+        <a href="./All%20Shortcuts/Data%20Jar">Data Jar (3)</a>
       </strong>
     </summary>
 
@@ -4871,7 +4910,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Apple%20Notes">Apple Notes  (0)</a>
+        <a href="./All%20Shortcuts/Apple%20Notes">Apple Notes (4)</a>
       </strong>
     </summary>
 
@@ -4915,7 +4954,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Apple%20Calendar">Apple Calendar  (0)</a>
+        <a href="./All%20Shortcuts/Apple%20Calendar">Apple Calendar (7)</a>
       </strong>
     </summary>
 
@@ -4986,9 +5025,18 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Apple%20Reminders">Apple Reminders  (0)</a>
+        <a href="./All%20Shortcuts/Apple%20Reminders">Apple Reminders (8)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup">Recover from Reminders Backup</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup">
+       <img src="./All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup/Recover%20from%20Reminders%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -5057,7 +5105,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20Modules">Automation Modules  (0)</a>
+        <a href="./All%20Shortcuts/Automation%20Modules">Automation Modules (24)</a>
       </strong>
     </summary>
 
@@ -5243,6 +5291,24 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
+       <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed">When "Obsidian" is closed</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed">
+       <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed/When%20%22Obsidian%22%20is%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel">When "Obsidian" is closed - Kernel</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel">
+       <img src="./All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel/When%20%22Obsidian%22%20is%20closed%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="./All%20Shortcuts/Automation%20Modules/When%20%22Photos%22%20is%20opened%20or%20closed">When "Photos" is opened or closed</a>
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Photos%22%20is%20opened%20or%20closed">
@@ -5263,7 +5329,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20AReminders%20Automation">My AReminders Automation  (0)</a>
+        <a href="./All%20Shortcuts/My%20AReminders%20Automation">My AReminders Automation (4)</a>
       </strong>
     </summary>
 
@@ -5307,7 +5373,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20Life%20Automation">My Life Automation  (0)</a>
+        <a href="./All%20Shortcuts/My%20Life%20Automation">My Life Automation (6)</a>
       </strong>
     </summary>
 
@@ -5369,7 +5435,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/My%20Dear%20Yi">My Dear Yi  (0)</a>
+        <a href="./All%20Shortcuts/My%20Dear%20Yi">My Dear Yi (6)</a>
       </strong>
     </summary>
 
@@ -5431,7 +5497,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20-%20Daily">Automation - Daily  (0)</a>
+        <a href="./All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (8)</a>
       </strong>
     </summary>
 
@@ -5464,10 +5530,10 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 
     - <details>
        <summary>
-       <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data"># Backup Data Jar Data</a>
+       <a href="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Store"># Backup Data Jar Store</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data">
-       <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Data/%23%20Backup%20Data%20Jar%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Store">
+       <img src="./All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar%20Store/%23%20Backup%20Data%20Jar%20Store.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5511,7 +5577,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20-%20Weekly">Automation - Weekly  (0)</a>
+        <a href="./All%20Shortcuts/Automation%20-%20Weekly">Automation - Weekly (2)</a>
       </strong>
     </summary>
 
@@ -5537,7 +5603,7 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
 - <details>
     <summary>
       <strong>
-        <a href="./All%20Shortcuts/Automation%20-%20Monthly">Automation - Monthly  (0)</a>
+        <a href="./All%20Shortcuts/Automation%20-%20Monthly">Automation - Monthly (1)</a>
       </strong>
     </summary>
 
@@ -5553,6 +5619,23 @@ This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r
   </details>
 
 </details>
+
+## 🙏 Acknowledgments
+
+This library wouldn't be possible without [r/shortcuts](https://www.reddit.com/r/shortcuts) and the following incredible Shortcuts-enhancing apps:
+
+- [Data Jar](https://datajar.app)
+- [Scriptable](https://scriptable.app)
+- [Actions](https://sindresorhus.com/actions)
+- [Toolbox Pro](https://toolboxpro.app)
+- [Pushcut](https://www.pushcut.io)
+- [Charty](https://chartyios.app)
+- [Day Progress](https://sindresorhus.com/day-progress)
+- [Any Text](https://sindresorhus.com/any-text)
+- [Working Copy](https://workingcopy.app)
+- [Flow](https://www.flow.app)
+- [Caffeinated](https://caffeinated.app)
+- [Text Case](https://textcase.app)
 
 ---
 
