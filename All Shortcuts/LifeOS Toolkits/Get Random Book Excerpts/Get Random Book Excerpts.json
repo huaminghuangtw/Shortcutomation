@@ -1,0 +1,321 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "AudiblePDFs",
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "com~apple~CloudDocs/MyFiles/AudiblePDFs",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/5A57A500-259E-4391-9772-7AF418A7A028/e2414e35976c4c0363d2850bf682c3e7fa7f895d",
+                        "WFFileLocationType": "iCloud"
+                    },
+                    "filename": "AudiblePDFs",
+                    "displayName": "AudiblePDFs"
+                },
+                "UUID": "6DCEB9C7-D913-4955-B7CE-A06511989597"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "6DCEB9C7-D913-4955-B7CE-A06511989597",
+                        "Type": "ActionOutput",
+                        "OutputName": "AudiblePDFs"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "08B452F9-1C1E-480F-9E84-27435008E496",
+                "Recursive": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "08B452F9-1C1E-480F-9E84-27435008E496",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemSortProperty": "Name",
+                "UUID": "6006C561-B444-40E8-AE8B-153E955020FB",
+                "WFContentItemSortOrder": "A to Z",
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 0,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": "pdf"
+                                },
+                                "Removable": true,
+                                "Property": "File Extension"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": "PDF"
+                                },
+                                "Removable": true,
+                                "Property": "File Extension"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "6006C561-B444-40E8-AE8B-153E955020FB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "CustomOutputName": "PDF",
+                "UUID": "80BFDD38-8644-4ABB-B16F-1760F1A68FDC",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 0,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "Type": "ExtensionInput"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.splitpdf",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "80BFDD38-8644-4ABB-B16F-1760F1A68FDC",
+                        "Type": "ActionOutput",
+                        "OutputName": "PDF"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "458D8C9D-222B-478D-8A57-4547EDF4C3D7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "458D8C9D-222B-478D-8A57-4547EDF4C3D7",
+                        "Type": "ActionOutput",
+                        "OutputName": "PDF Pages"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "E625C6C1-A183-473F-82BB-06827A38FB78",
+                    "workflowName": "_Get Random Item From List",
+                    "isSelf": false
+                },
+                "UUID": "9AC7AAAF-85E0-4CF3-8AAC-E7EA967AA7CC",
+                "WFWorkflowName": "_Get Random Item From List"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettextfrompdf",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9AC7AAAF-85E0-4CF3-8AAC-E7EA967AA7CC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1063F524-8956-47F2-A77D-557E5A80B53E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GetParagraphsFromTextIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "C108CEBA-1A6C-40FD-8516-A392A607D95F",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1063F524-8956-47F2-A77D-557E5A80B53E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GetParagraphsFromTextIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C108CEBA-1A6C-40FD-8516-A392A607D95F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Paragraphs"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "11B97B51-6239-4B95-9E39-9DFE2B86D5F0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "book_excerpts.txt",
+                "CustomOutputName": "book_excerpts.txt",
+                "UUID": "959ED117-B6BA-477A-9D70-7BFE59F1435D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFName": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "959ED117-B6BA-477A-9D70-7BFE59F1435D",
+                                "Type": "ActionOutput",
+                                "OutputName": "book_excerpts.txt"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDontIncludeFileExtension": true,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "11B97B51-6239-4B95-9E39-9DFE2B86D5F0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "53E87497-282A-489E-A53A-39F48797C494"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "6DCEB9C7-D913-4955-B7CE-A06511989597",
+                        "Type": "ActionOutput",
+                        "OutputName": "AudiblePDFs"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "53E87497-282A-489E-A53A-39F48797C494",
+                        "Type": "ActionOutput",
+                        "OutputName": "Renamed Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "22F96C14-6726-4243-9FD8-BFAD6864B9AD",
+                "WFSaveFileOverwrite": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.CreateFileBookmarkIntent",
+            "WFWorkflowActionParameters": {
+                "name": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "959ED117-B6BA-477A-9D70-7BFE59F1435D",
+                                "Type": "ActionOutput",
+                                "OutputName": "book_excerpts.txt"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "location": {
+                    "Value": {
+                        "OutputUUID": "22F96C14-6726-4243-9FD8-BFAD6864B9AD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Saved File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "3C5CE36B-748C-4C2B-9BE3-36B6A4565A08"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

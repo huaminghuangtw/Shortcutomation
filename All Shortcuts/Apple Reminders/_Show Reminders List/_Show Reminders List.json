@@ -383,6 +383,80 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "High"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "!!!"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Medium"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "!!"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Low"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "!"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "None"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "!?"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "CustomOutputName": "mappingDict",
+                "UUID": "5954CBA3-9AF6-4AC4-ABDE-62B966050E8B"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.properties.reminders",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -392,67 +466,35 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFContentItemPropertyName": "Due Date",
+                "WFContentItemPropertyName": "Priority",
                 "UUID": "11514DAA-E536-44B2-BF8E-DC4B88A06DC1"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Relative",
-                "WFTimeFormatStyle": "None",
-                "UUID": "D680D404-3092-42B2-84AF-3B9139BF6EFE",
-                "WFRelativeDateFormatStyle": "Short",
-                "WFDate": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5954CBA3-9AF6-4AC4-ABDE-62B966050E8B",
+                        "Type": "ActionOutput",
+                        "OutputName": "mappingDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "11514DAA-E536-44B2-BF8E-DC4B88A06DC1",
                                 "Type": "ActionOutput",
-                                "OutputName": "Due Date"
+                                "OutputName": "Priority"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "Today 00:00",
-                "UUID": "113F4960-5072-4AAC-85B9-EA44E236CC2E",
-                "WFDateActionMode": "Specified Date",
-                "WFDateActionDate": "Today 00:00"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFDate": {
-                    "Value": {
-                        "OutputUUID": "113F4960-5072-4AAC-85B9-EA44E236CC2E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Today 00:00"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "11514DAA-E536-44B2-BF8E-DC4B88A06DC1",
-                            "Type": "ActionOutput",
-                            "OutputName": "Due Date"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "/",
-                "GroupingIdentifier": "591BA6A7-9857-45F2-868B-C0510CF0C4C8",
-                "WFCondition": 0
+                "UUID": "0BE59951-0BA1-4CEE-B957-BBD0B3D5E055"
             }
         },
         {
@@ -460,44 +502,21 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "❗️￼❗️",
+                        "string": "￼ ￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
-                                "OutputUUID": "D680D404-3092-42B2-84AF-3B9139BF6EFE",
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "0BE59951-0BA1-4CEE-B957-BBD0B3D5E055",
                                 "Type": "ActionOutput",
-                                "OutputName": "Formatted Date"
+                                "OutputName": "Dictionary Value"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "591BA6A7-9857-45F2-868B-C0510CF0C4C8",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "D680D404-3092-42B2-84AF-3B9139BF6EFE",
-                        "Type": "ActionOutput",
-                        "OutputName": "Formatted Date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "591BA6A7-9857-45F2-868B-C0510CF0C4C8",
-                "WFControlFlowMode": 2
             }
         },
         {
@@ -508,9 +527,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
             "WFWorkflowActionParameters": {
-                "UUID": "4FEBB45E-931B-45A3-B498-7454E1AF5A11"
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "B4196A27-38F9-4FBA-A8AE-D960F93E0F59"
             }
         },
         {
@@ -529,9 +555,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "270FA7CC-9CBA-4E41-879A-C0CFAEA78F99",
-                                "Type": "ActionOutput",
-                                "OutputName": "If Result"
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -550,8 +575,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "OutputUUID": "270FA7CC-9CBA-4E41-879A-C0CFAEA78F99",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
                             }
                         }
                     },
@@ -582,12 +608,34 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "VariableName": "dict",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemSortProperty": "Name",
+                "WFContentItemSortOrder": "Z to A",
+                "UUID": "7B3FF1C3-C232-48F6-A179-B2B5297F814C"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "dict",
-                        "Type": "Variable"
+                        "OutputUUID": "7B3FF1C3-C232-48F6-A179-B2B5297F814C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -632,6 +680,31 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "dict",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "D8CE4D80-5999-49FE-86A3-4BD3964BDDFF"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
             "WFWorkflowActionParameters": {
                 "WFContentItemInputParameter": {
@@ -652,17 +725,14 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Unit": {
-                                        "Value": 4,
-                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
-                                    },
                                     "String": {
                                         "Value": {
                                             "string": "￼",
                                             "attachmentsByRange": {
                                                 "{0, 1}": {
-                                                    "VariableName": "Repeat Item",
-                                                    "Type": "Variable"
+                                                    "OutputUUID": "D8CE4D80-5999-49FE-86A3-4BD3964BDDFF",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Dictionary Value"
                                                 }
                                             }
                                         },

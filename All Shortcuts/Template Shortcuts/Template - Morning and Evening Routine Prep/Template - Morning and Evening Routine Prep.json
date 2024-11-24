@@ -94,15 +94,76 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "APOD",
+                    "EPIC"
+                ],
+                "UUID": "EED9F071-DF41-44BF-9CE0-0656B9C3B670"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "EED9F071-DF41-44BF-9CE0-0656B9C3B670",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "BF85A689-71DA-488A-A781-219AE5DFB828",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "NASA - Get ￼ Image",
+                        "attachmentsByRange": {
+                            "{11, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0FF2385C-850C-47FF-9635-4ED9FF7F0982"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
-                    "workflowIdentifier": "07EBF89A-F9E3-452E-A06E-A8EF3DB2A78F",
-                    "workflowName": "NASA - Get Image from EPIC",
-                    "isSelf": false
+                    "Value": {
+                        "OutputUUID": "0FF2385C-850C-47FF-9635-4ED9FF7F0982",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "NASA - Get Image from EPIC",
+                "WFWorkflowName": {
+                    "Value": {
+                        "OutputUUID": "0FF2385C-850C-47FF-9635-4ED9FF7F0982",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "UUID": "A70BCBA2-B59A-42BA-93D1-6502B5CB6032"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BF85A689-71DA-488A-A781-219AE5DFB828",
+                "UUID": "7EB9180C-894A-4FB6-B3AC-5C215BBAC07B"
             }
         },
         {
@@ -110,7 +171,7 @@
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "UUID": "6529BF04-8DAE-47F0-9ABC-A4ECB8246879",
-                "CustomOutputName": "Image URL",
+                "CustomOutputName": "Image URL(s)",
                 "GroupingIdentifier": "A1375C7B-F027-4397-A1A3-E9D040C1FA35"
             }
         },
@@ -124,7 +185,7 @@
                             "{0, 1}": {
                                 "OutputUUID": "6529BF04-8DAE-47F0-9ABC-A4ECB8246879",
                                 "Type": "ActionOutput",
-                                "OutputName": "Image URL"
+                                "OutputName": "Image URL(s)"
                             }
                         }
                     },
@@ -148,46 +209,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "74CD8992-52EA-4B8F-B845-AEC663FB66F7",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "Images",
-                            "OutputUUID": "2C02F7A0-E291-44B2-918D-037B7A40F3AE",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Width"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFNumberValue": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Images",
-                        "OutputUUID": "2C02F7A0-E291-44B2-918D-037B7A40F3AE",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Height"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFCondition": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.image.rotate",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.resize",
             "WFWorkflowActionParameters": {
                 "WFImage": {
                     "Value": {
@@ -197,15 +219,39 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "B623104A-E3FB-426B-97DD-45B9823621FB"
+                "WFImageResizeKey": "Size",
+                "UUID": "02EFE58F-015F-4974-AD9C-4E8D47EE254E"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.combine",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "74CD8992-52EA-4B8F-B845-AEC663FB66F7",
-                "UUID": "D3E82EAD-2577-440E-9EE2-4CE9A319096C"
+                "WFImageCombineMode": "Vertically",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "02EFE58F-015F-4974-AD9C-4E8D47EE254E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Resized Image"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "CB2DD1F0-136F-4CEF-B55D-9566692D1857",
+                "WFImageCombineSpacing": "10"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.savetocameraroll",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CB2DD1F0-136F-4CEF-B55D-9566692D1857",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Image"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCameraRollSelectedGroup": "Unsorted",
+                "UUID": "C9FB0F40-FA72-4910-9E3F-0A9E36AB7CCB"
             }
         },
         {
@@ -213,9 +259,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "D3E82EAD-2577-440E-9EE2-4CE9A319096C",
+                        "OutputUUID": "CB2DD1F0-136F-4CEF-B55D-9566692D1857",
                         "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "OutputName": "Combined Image"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

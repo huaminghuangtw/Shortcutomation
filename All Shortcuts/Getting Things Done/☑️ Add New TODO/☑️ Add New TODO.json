@@ -90,8 +90,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
+                        "OutputUUID": "903100E7-C0CF-4B02-A3E2-76769F33F2BF",
+                        "Type": "ActionOutput",
+                        "OutputName": "newTODO"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -102,73 +103,6 @@
                 },
                 "UUID": "24D50D59-CA5D-4F67-9BBA-96CB0D32F291",
                 "WFWorkflowName": "Strip Leading Symbol"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
-            "WFWorkflowActionParameters": {
-                "WFContentItemLimitEnabled": true,
-                "UUID": "3A28A1F9-A88A-45A8-9D36-FCE121F3CF32",
-                "WFContentItemLimitNumber": 1,
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Enumeration": {
-                                        "Value": "⚡ Quick Task",
-                                        "WFSerializationType": "WFStringSubstitutableState"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "List"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "String": {
-                                        "Value": {
-                                            "string": "￼",
-                                            "attachmentsByRange": {
-                                                "{0, 1}": {
-                                                    "OutputUUID": "24D50D59-CA5D-4F67-9BBA-96CB0D32F291",
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "Shortcut Result"
-                                                }
-                                            }
-                                        },
-                                        "WFSerializationType": "WFTextTokenString"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "3A28A1F9-A88A-45A8-9D36-FCE121F3CF32",
-                            "Type": "ActionOutput",
-                            "OutputName": "Reminders"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "50A1C366-EB1D-4F17-8641-53786D124307",
-                "WFCondition": 101
             }
         },
         {
@@ -188,7 +122,7 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "WFCalendarDescriptor": {
-                    "Identifier": "<x-apple-reminderkit://REMCDList/895C29CA-2117-49E3-9D91-DAED6B313E28>",
+                    "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
                     "Title": "⚡ Quick Task",
                     "IsAllCalendar": false
                 },
@@ -197,14 +131,6 @@
                 "WFAlertCustomTime": "Tomorrow",
                 "WFAlertEnabled": "Alert",
                 "WFPriority": "High"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "50A1C366-EB1D-4F17-8641-53786D124307",
-                "UUID": "A5C13961-D10B-4181-8564-B741448867B2"
             }
         },
         {
@@ -545,7 +471,8 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "C48867B5-F260-429F-840F-8D4B304A8B39"
             }
         },
         {
@@ -746,15 +673,16 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "OutputUUID": "903100E7-C0CF-4B02-A3E2-76769F33F2BF",
+                                "Type": "ActionOutput",
+                                "OutputName": "newTODO"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "WFCalendarDescriptor": {
-                    "Identifier": "<x-apple-reminderkit://REMCDList/895C29CA-2117-49E3-9D91-DAED6B313E28>",
+                    "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
                     "Title": "⚡ Quick Task",
                     "IsAllCalendar": false
                 },
@@ -783,6 +711,29 @@
                 "WFMenuItemTitle": "❌ No",
                 "GroupingIdentifier": "FAC9D311-3872-4500-B8EC-FC1E16F005D1",
                 "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFTimeFormatStyle": "None",
+                "CustomOutputName": "YYYY",
+                "UUID": "AF08BDEA-824D-4173-8134-1DA153E3FA08",
+                "WFDateFormat": "YYYY",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F6294869-3926-4462-A2E7-178484A08463",
+                                "Type": "ActionOutput",
+                                "OutputName": "Do Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
@@ -839,15 +790,16 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "OutputUUID": "903100E7-C0CF-4B02-A3E2-76769F33F2BF",
+                                "Type": "ActionOutput",
+                                "OutputName": "newTODO"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "WFCalendarDescriptor": {
-                    "Identifier": "<x-apple-reminderkit://REMCDList/895C29CA-2117-49E3-9D91-DAED6B313E28>",
+                    "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
                     "Title": "⚡ Quick Task",
                     "IsAllCalendar": false
                 },
@@ -855,12 +807,17 @@
                 "WFCalendarItemCalendar": "⚡ Quick Task",
                 "WFAlertCustomTime": {
                     "Value": {
-                        "string": "￼￼",
+                        "string": "￼￼, ￼",
                         "attachmentsByRange": {
                             "{1, 1}": {
                                 "OutputUUID": "FE14B06A-927F-4E0D-8A5F-4DF2AF22A767",
                                 "Type": "ActionOutput",
                                 "OutputName": "d"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "AF08BDEA-824D-4173-8134-1DA153E3FA08",
+                                "Type": "ActionOutput",
+                                "OutputName": "YYYY"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "3FFA16AC-4C64-4555-95A9-A1DAE55E381A",
@@ -899,8 +856,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "OutputUUID": "903100E7-C0CF-4B02-A3E2-76769F33F2BF",
+                                "Type": "ActionOutput",
+                                "OutputName": "newTODO"
                             }
                         }
                     },
@@ -908,7 +866,7 @@
                 },
                 "WFFlag": false,
                 "WFCalendarDescriptor": {
-                    "Identifier": "<x-apple-reminderkit://REMCDList/5578945E-1650-473E-A296-71492D4A2855>",
+                    "Identifier": "<x-apple-reminderkit://REMCDList/49E805F2-7A38-4057-BD40-DBFAFEE129E1>",
                     "Title": "❓ Someday",
                     "IsAllCalendar": false
                 },
@@ -996,12 +954,13 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "Show Notification for Brain Dumping on MacBook",
                 "WFWorkflow": {
-                    "workflowIdentifier": "7613252C-2DD9-4415-AEF3-4DEC22C6272B",
-                    "workflowName": "Show Notification for Brain Dumping on MacBook",
+                    "workflowIdentifier": "A431180D-71BB-4AD8-8F8D-073B568D7CCC",
+                    "workflowName": "Feedback for Brain Dumping",
                     "isSelf": false
-                }
+                },
+                "UUID": "68229553-13FD-4A14-B6F7-1AAE4AC89EA5",
+                "WFWorkflowName": "Feedback for Brain Dumping"
             }
         },
         {
