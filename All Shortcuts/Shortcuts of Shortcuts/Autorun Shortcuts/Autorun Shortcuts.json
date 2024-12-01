@@ -1,0 +1,324 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "🙏 Original by: https://www.reddit.com/user/Cost_Internal/"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Silent Alarm",
+                "CustomOutputName": "label",
+                "UUID": "1CEF761B-77DE-47CC-B535-9D7A20989D39"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents.MTGetAlarmsIntent",
+            "WFWorkflowActionParameters": {
+                "WFContentItemLimitEnabled": true,
+                "AppIntentDescriptor": {
+                    "ActionRequiresAppInstallation": true,
+                    "BundleIdentifier": "com.apple.clock",
+                    "AppIntentIdentifier": "AlarmEntity",
+                    "Name": "Clock",
+                    "TeamIdentifier": "0000000000"
+                },
+                "UUID": "C349907A-4677-4DF3-89BF-006FA4462180",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "1CEF761B-77DE-47CC-B535-9D7A20989D39",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "label"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "label"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C349907A-4677-4DF3-89BF-006FA4462180",
+                            "Type": "ActionOutput",
+                            "OutputName": "Alarms"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "1A831CC8-1961-4B82-B7EE-7A2B95271573",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C349907A-4677-4DF3-89BF-006FA4462180",
+                                "Type": "ActionOutput",
+                                "OutputName": "Alarms"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A012415B-04BC-4F23-B45B-6E1A2D944EA2",
+                "WFTimeUntilUnit": "Seconds"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "33CDEA0B-222A-4FDC-8AF3-FABE121D8D1B",
+                "WFAnotherNumber": "5",
+                "WFControlFlowMode": 0,
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "A012415B-04BC-4F23-B45B-6E1A2D944EA2",
+                            "Type": "ActionOutput",
+                            "OutputName": "Time Between Dates"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFNumberValue": "-5",
+                "WFCondition": 1003
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.clock.DeleteAlarmIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "E7828FCE-F2B7-4E6F-A27D-AEF19D7CB1AF",
+                "entities": {
+                    "Value": {
+                        "OutputUUID": "C349907A-4677-4DF3-89BF-006FA4462180",
+                        "Type": "ActionOutput",
+                        "OutputName": "Alarms"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobiletimer",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "DeleteAlarmIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "78EC8253-D9DC-4C55-A58C-6AED46447E7E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents.MTCreateAlarmIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "63CF4DDF-DC47-4249-BDC2-53F10D8328B7",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobiletimer",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "CreateAlarmIntent"
+                },
+                "dateComponents": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "78EC8253-D9DC-4C55-A58C-6AED46447E7E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "name": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1CEF761B-77DE-47CC-B535-9D7A20989D39",
+                                "Type": "ActionOutput",
+                                "OutputName": "label"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "repeats": [],
+                "allowsSnooze": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "9C48945F-7E22-4EFA-9334-61777791A46C",
+                    "workflowName": "isOnline?",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "isOnline?",
+                "UUID": "58A506AE-0B28-4A92-84AA-E9398F95C1BD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "58A506AE-0B28-4A92-84AA-E9398F95C1BD",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "0FB21A35-A5DD-4BBF-9A17-C58451F61EF0",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "F136A252-D406-4BDC-82F3-E769B1663E00",
+                    "workflowName": "🗽 Quote Of The Day",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🗽 Quote Of The Day",
+                "UUID": "8D959156-2D37-46ED-A1CE-BCA2F6024DBF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "0FB21A35-A5DD-4BBF-9A17-C58451F61EF0",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "33CDEA0B-222A-4FDC-8AF3-FABE121D8D1B",
+                "UUID": "3289AFD8-4C73-4BBC-BABB-2EE18097F567"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1A831CC8-1961-4B82-B7EE-7A2B95271573",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

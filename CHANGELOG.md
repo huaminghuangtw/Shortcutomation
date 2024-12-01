@@ -1,8 +1,25 @@
-## 🎉 Weekly Update (Week 47, 2024)
+## 🎉 Weekly Update (Week 48, 2024)
 
-> **Date:** 2024-11-24  
+> **Date:** 2024-12-01  
 
-### ✨ 28 New Shortcuts This Week!
+### ✨ 11 New Shortcuts This Week!
+
+<details>
+    <summary>
+      <strong>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts">Shortcuts of Shortcuts (1)</a>
+      </strong>
+    </summary>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Autorun%20Shortcuts">Autorun Shortcuts</a>
+     </summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Autorun%20Shortcuts">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Autorun%20Shortcuts/Autorun%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+</details>
 
 <details>
     <summary>
@@ -13,45 +30,19 @@
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%A7%97%F0%9F%8F%BCCrush%20Them!">🧗🏼Crush Them!</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Silent%20Alarm">Set Silent Alarm</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%A7%97%F0%9F%8F%BCCrush%20Them!">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%A7%97%F0%9F%8F%BCCrush%20Them!/%F0%9F%A7%97%F0%9F%8F%BCCrush%20Them!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Silent%20Alarm">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Silent%20Alarm/Set%20Silent%20Alarm.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Action%20Items">_Get Undone Action Items</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/My%20URL%20Shortener">My URL Shortener</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Action%20Items">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Action%20Items/_Get%20Undone%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware">Mindware (2)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery">🚛 Brain Food Delivery</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery/%F0%9F%9A%9B%20Brain%20Food%20Delivery.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery%20-%20Kernel">🚛 Brain Food Delivery - Kernel</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery%20-%20Kernel">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery%20-%20Kernel/%F0%9F%9A%9B%20Brain%20Food%20Delivery%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/My%20URL%20Shortener">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Getting%20Things%20Done/My%20URL%20Shortener/My%20URL%20Shortener.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -59,97 +50,42 @@
 <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (10)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (2)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%AD%20Tell%20Me%20More!">🪭 Tell Me More!</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20Quote%20Of%20The%20Day">🗽 Quote Of The Day</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%AD%20Tell%20Me%20More!">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%AD%20Tell%20Me%20More!/%F0%9F%AA%AD%20Tell%20Me%20More!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20Quote%20Of%20The%20Day">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20Quote%20Of%20The%20Day/%F0%9F%97%BD%20Quote%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%99%20Recipe%20Of%20The%20Day">🥙 Recipe Of The Day</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%8F%AB%20Today's%20Fun%20Fact">👨🏻‍🏫 Today's Fun Fact</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%99%20Recipe%20Of%20The%20Day">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%99%20Recipe%20Of%20The%20Day/%F0%9F%A5%99%20Recipe%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%8F%AB%20Today's%20Fun%20Fact">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%8F%AB%20Today's%20Fun%20Fact/%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%8F%AB%20Today's%20Fun%20Fact.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
+</details>
+
+<details>
+    <summary>
+      <strong>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs">Build URLs (1)</a>
+      </strong>
+    </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Number%20Of%20The%20Day">🔢 Number Of The Day</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">Build Startpage Search URL</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Number%20Of%20The%20Day">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Number%20Of%20The%20Day/%F0%9F%94%A2%20Number%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%8D%20Word%20Of%20The%20Day">🌍 Word Of The Day</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%8D%20Word%20Of%20The%20Day">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%8D%20Word%20Of%20The%20Day/%F0%9F%8C%8D%20Word%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A0%20Today%20In%20History">🎠 Today In History</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A0%20Today%20In%20History">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A0%20Today%20In%20History/%F0%9F%8E%A0%20Today%20In%20History.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%AD%20Today's%20Fun%20Fact">🎭 Today's Fun Fact</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%AD%20Today's%20Fun%20Fact">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%AD%20Today's%20Fun%20Fact/%F0%9F%8E%AD%20Today's%20Fun%20Fact.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F">🙋🏽 Did You Know?</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%90%B8%20Eat%20The%20Frog!">🐸 Eat The Frog!</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%90%B8%20Eat%20The%20Frog!">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%90%B8%20Eat%20The%20Frog!/%F0%9F%90%B8%20Eat%20The%20Frog!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9A%96%EF%B8%8F%20Record%20Body%20Weight">⚖️ Record Body Weight</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9A%96%EF%B8%8F%20Record%20Body%20Weight">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9A%96%EF%B8%8F%20Record%20Body%20Weight/%E2%9A%96%EF%B8%8F%20Record%20Body%20Weight.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Book%20Excerpts">Get Random Book Excerpts</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Book%20Excerpts">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Book%20Excerpts/Get%20Random%20Book%20Excerpts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL/Build%20Startpage%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -163,174 +99,10 @@
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App">Obsidian - Reload App</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20all%20other%20tabs">Obsidian - Close all other tabs</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App/Obsidian%20-%20Reload%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools">Obsidian Tools (1)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile%20-%20Kernel">Configure Obsidian Mobile - Kernel</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile%20-%20Kernel">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile%20-%20Kernel/Configure%20Obsidian%20Mobile%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Images">API - Google Images (1)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Images/Google%20Images%20-%20Perform%20Image%20Search">Google Images - Perform Image Search</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Images/Google%20Images%20-%20Perform%20Image%20Search">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Images/Google%20Images%20-%20Perform%20Image%20Search/Google%20Images%20-%20Perform%20Image%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20LOC">API - LOC (1)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20LOC/LOC%20-%20Perform%20Item%20Search">LOC - Perform Item Search</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20LOC/LOC%20-%20Perform%20Item%20Search">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20LOC/LOC%20-%20Perform%20Item%20Search/LOC%20-%20Perform%20Item%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify">API - Spotify (2)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Current%20Device%20ID">Spotify - Get Current Device ID</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Current%20Device%20ID">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Current%20Device%20ID/Spotify%20-%20Get%20Current%20Device%20ID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Transfer%20Playback">Spotify - Transfer Playback</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Transfer%20Playback">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Transfer%20Playback/Spotify%20-%20Transfer%20Playback.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular">API - Spoonacular (2)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Get%20Random%20Recipes">Spoonacular - Get Random Recipes</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Get%20Random%20Recipes">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Get%20Random%20Recipes/Spoonacular%20-%20Get%20Random%20Recipes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Create%20Recipe%20Card">Spoonacular - Create Recipe Card</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Create%20Recipe%20Card">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Create%20Recipe%20Card/Spoonacular%20-%20Create%20Recipe%20Card.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA">API - NASA (3)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Object">NASA - Get APOD Object</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Object">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Object/NASA%20-%20Get%20APOD%20Object.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Image">NASA - Get APOD Image</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Image">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Image/NASA%20-%20Get%20APOD%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20EPIC%20Image">NASA - Get EPIC Image</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20EPIC%20Image">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20EPIC%20Image/NASA%20-%20Get%20EPIC%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others">API - Others (2)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Number%20Of%20The%20Day">Get Number Of The Day</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Number%20Of%20The%20Day">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Number%20Of%20The%20Day/Get%20Number%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Facts%20About%20Numbers">Get Facts About Numbers</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Facts%20About%20Numbers">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Facts%20About%20Numbers/Get%20Facts%20About%20Numbers.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20all%20other%20tabs">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20all%20other%20tabs/Obsidian%20-%20Close%20all%20other%20tabs.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -344,10 +116,53 @@
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel">When "Obsidian" is opened - Kernel</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Anki%22%20is%20opened">When "Anki" is opened</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel">
-     <img src="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel/When%20%22Obsidian%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Anki%22%20is%20opened">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20Modules/When%20%22Anki%22%20is%20opened/When%20%22Anki%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+</details>
+
+<details>
+    <summary>
+      <strong>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly">Automation - Weekly (2)</a>
+      </strong>
+    </summary>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/Saturday::My%20Dear%20Yi">Saturday::My Dear Yi</a>
+     </summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/Saturday::My%20Dear%20Yi">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20-%20Weekly/Saturday::My%20Dear%20Yi/Saturday::My%20Dear%20Yi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/Sunday::Run%20Weekly%20Mindware%20Update">Sunday::Run Weekly Mindware Update</a>
+     </summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/Sunday::Run%20Weekly%20Mindware%20Update">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20-%20Weekly/Sunday::Run%20Weekly%20Mindware%20Update/Sunday::Run%20Weekly%20Mindware%20Update.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+</details>
+
+<details>
+    <summary>
+      <strong>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Monthly">Automation - Monthly (1)</a>
+      </strong>
+    </summary>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Monthly/15::Export%20Reading%20%26%20Watch%20Later%20List">15::Export Reading & Watch Later List</a>
+     </summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Monthly/15::Export%20Reading%20%26%20Watch%20Later%20List">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20-%20Monthly/15::Export%20Reading%20%26%20Watch%20Later%20List/15::Export%20Reading%20%26%20Watch%20Later%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 

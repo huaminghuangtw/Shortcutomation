@@ -10,45 +10,9 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
-            "WFWorkflowActionParameters": {
-                "WFItems": [
-                    "contentLeverage",
-                    "codeLeverage"
-                ],
-                "UUID": "FD59E61E-F90D-4CFD-BF4D-0D7CF3B969B4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "FD59E61E-F90D-4CFD-BF4D-0D7CF3B969B4",
-                        "Type": "ActionOutput",
-                        "OutputName": "List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "8793FD62-F5F3-48AC-B83C-37E1F4ED4BC1",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": {
-                    "Value": {
-                        "string": "My Vault Repos.￼",
-                        "attachmentsByRange": {
-                            "{15, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "keyPath": "My Vault Repos",
                 "UUID": "8579682E-E976-422E-AB85-AAF6FC1C343E"
             }
         },
@@ -60,6 +24,57 @@
                         "Type": "ActionOutput",
                         "OutputName": "Value",
                         "OutputUUID": "8579682E-E976-422E-AB85-AAF6FC1C343E",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "8793FD62-F5F3-48AC-B83C-37E1F4ED4BC1",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8579682E-E976-422E-AB85-AAF6FC1C343E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6FB8F011-AD86-4C3F-9AFC-B93DF396ED60"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "6FB8F011-AD86-4C3F-9AFC-B93DF396ED60",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -108,15 +123,15 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "8579682E-E976-422E-AB85-AAF6FC1C343E",
+                        "OutputUUID": "6FB8F011-AD86-4C3F-9AFC-B93DF396ED60",
                         "Type": "ActionOutput",
-                        "OutputName": "Value"
+                        "OutputName": "Dictionary Value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFDictionaryKey": {
                     "Value": {
-                        "string": "￼.absolutePath",
+                        "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "VariableName": "Repeat Item 2",
@@ -163,9 +178,19 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "46B5A53C-7398-4329-8462-EC946AB0EFEC",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Dictionary Value"
+                                                "OutputName": "Dictionary Value",
+                                                "OutputUUID": "46B5A53C-7398-4329-8462-EC946AB0EFEC",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "Type": "WFCoercionVariableAggrandizement",
+                                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                                    },
+                                                    {
+                                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                                        "DictionaryKey": "absolutePath"
+                                                    }
+                                                ]
                                             }
                                         }
                                     },

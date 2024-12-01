@@ -1,0 +1,299 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Silent Alarm",
+                "CustomOutputName": "label",
+                "UUID": "42D770BA-D37D-4572-AB94-E12982031B50"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents.MTGetAlarmsIntent",
+            "WFWorkflowActionParameters": {
+                "WFContentItemLimitEnabled": true,
+                "AppIntentDescriptor": {
+                    "ActionRequiresAppInstallation": true,
+                    "BundleIdentifier": "com.apple.clock",
+                    "AppIntentIdentifier": "AlarmEntity",
+                    "Name": "Clock",
+                    "TeamIdentifier": "0000000000"
+                },
+                "UUID": "D71DDDC5-9F3B-4691-BBCA-A54C539A0D25",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "42D770BA-D37D-4572-AB94-E12982031B50",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "label"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "label"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "D71DDDC5-9F3B-4691-BBCA-A54C539A0D25",
+                            "Type": "ActionOutput",
+                            "OutputName": "Alarms"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "8DF9D160-2B35-480D-A715-5ECD07C77A39",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Alarms",
+                            "OutputUUID": "D71DDDC5-9F3B-4691-BBCA-A54C539A0D25",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "enabled",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "enabled"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "7917B67E-EB4F-4938-B325-C14B0F9A0211",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7917B67E-EB4F-4938-B325-C14B0F9A0211",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobiletimer.DeleteAlarmIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "310C3195-5C5C-4177-B618-A42922E3F127",
+                "entities": {
+                    "Value": {
+                        "OutputUUID": "D71DDDC5-9F3B-4691-BBCA-A54C539A0D25",
+                        "Type": "ActionOutput",
+                        "OutputName": "Alarms"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.clock",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "DeleteAlarmIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "setAlarm?"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7917B67E-EB4F-4938-B325-C14B0F9A0211",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8DF9D160-2B35-480D-A715-5ECD07C77A39",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "setAlarm?"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "8DF9D160-2B35-480D-A715-5ECD07C77A39",
+                "UUID": "011F7FED-BDD7-49BD-8D98-C09C80A79425"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "setAlarm?",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C7369D10-C2A9-4730-A15B-4A6351D4E1FF",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "setAlarm?",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "5296B782-E06E-4B96-A3A5-47A414D02C93"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents.MTCreateAlarmIntent",
+            "WFWorkflowActionParameters": {
+                "allowsSnooze": false,
+                "UUID": "0D93EC1D-992C-4924-BE4B-33CA73532D9B",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.clock",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "CreateAlarmIntent"
+                },
+                "dateComponents": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "5296B782-E06E-4B96-A3A5-47A414D02C93",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "name": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "42D770BA-D37D-4572-AB94-E12982031B50",
+                                "Type": "ActionOutput",
+                                "OutputName": "label"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C7369D10-C2A9-4730-A15B-4A6351D4E1FF",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

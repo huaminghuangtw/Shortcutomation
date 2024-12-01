@@ -6,7 +6,11 @@
         "WFWorkflowIconGlyphNumber": 61440
     },
     "WFWorkflowClientVersion": "3107.0.8.2",
-    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem",
+        "WFContentItem",
+        "WFURLContentItem"
+    ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
@@ -84,20 +88,35 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.searchweb",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFInputText": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ExtensionInput"
-                            }
-                        }
+                        "Type": "ExtensionInput"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "A302AB94-804B-4174-BF37-9DA99193572A"
+                "WFWorkflow": {
+                    "workflowIdentifier": "25D1951D-8A64-4F22-9DEB-E0D8EBE3D0C5",
+                    "workflowName": "Build Ecosia Search URL",
+                    "isSelf": false
+                },
+                "UUID": "16336C4C-859C-428F-9A2A-386B592FA067",
+                "WFWorkflowName": "Build Ecosia Search URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "16336C4C-859C-428F-9A2A-386B592FA067",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1645AE84-9927-4083-83F9-CBBED9FA0533"
             }
         },
         {
@@ -340,7 +359,7 @@
                 "WFMenuItems": [
                     "🐥 Arc",
                     "👾 ChatGPT",
-                    "🌏 Google",
+                    "🌏 Startpage",
                     "💎 Reddit",
                     "👻 PTT",
                     "🎨 Sketchplanations",
@@ -450,29 +469,43 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "🌏 Google",
+                "WFMenuItemTitle": "🌏 Startpage",
                 "GroupingIdentifier": "E3692C4F-05BD-4CF2-ABC3-580B8064D986",
                 "WFControlFlowMode": 1
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.searchweb",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFInputText": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "A04FFBE2-9000-4A2D-868F-BE9EEF315B2B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Provided Input"
-                            }
-                        }
+                        "OutputUUID": "A04FFBE2-9000-4A2D-868F-BE9EEF315B2B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFSearchWebDestination": "Google",
-                "UUID": "CCC87BCA-1956-473E-8D26-21C4DD7E80A1"
+                "WFWorkflow": {
+                    "workflowIdentifier": "25D1951D-8A64-4F22-9DEB-E0D8EBE3D0C5",
+                    "workflowName": "Build Ecosia Search URL",
+                    "isSelf": false
+                },
+                "UUID": "7AAF20BF-8837-49DB-86FA-35FB011CCFDD",
+                "WFWorkflowName": "Build Ecosia Search URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7AAF20BF-8837-49DB-86FA-35FB011CCFDD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "0D69881D-913D-49C8-BA53-67C70FCAC2ED"
             }
         },
         {
@@ -907,8 +940,27 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "BCE7B52F-A000-400B-92C7-FB5DDE06F8F8",
-                "WFControlFlowMode": 2
+                "UUID": "31FE4142-8B7F-491B-A508-8F769C6DF3F6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "31FE4142-8B7F-491B-A508-8F769C6DF3F6",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         }
     ],
@@ -919,7 +971,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "QuickActions"
+        "QuickActions",
+        "Watch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true

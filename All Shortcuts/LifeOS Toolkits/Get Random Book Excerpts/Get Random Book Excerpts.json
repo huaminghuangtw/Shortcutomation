@@ -181,9 +181,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GetParagraphsFromTextIntent",
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GetSentencesFromTextIntent",
             "WFWorkflowActionParameters": {
-                "UUID": "C108CEBA-1A6C-40FD-8516-A392A607D95F",
+                "UUID": "0486987C-D58E-43A7-AE5D-7BC6C74DBC29",
                 "text": {
                     "Value": {
                         "string": "￼",
@@ -201,8 +201,90 @@
                     "TeamIdentifier": "YG56YK5RN5",
                     "BundleIdentifier": "com.sindresorhus.Actions",
                     "Name": "Actions",
-                    "AppIntentIdentifier": "GetParagraphsFromTextIntent"
+                    "AppIntentIdentifier": "GetSentencesFromTextIntent"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "0486987C-D58E-43A7-AE5D-7BC6C74DBC29",
+                        "Type": "ActionOutput",
+                        "OutputName": "Sentences"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCountType": "Items",
+                "UUID": "2A50FA99-8BBD-430A-A27B-66FCB6ADDD46"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "3",
+                "UUID": "99839FBB-7381-4152-92F3-9FAAEEBAD6E4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2A50FA99-8BBD-430A-A27B-66FCB6ADDD46",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": {
+                    "Value": {
+                        "OutputUUID": "99839FBB-7381-4152-92F3-9FAAEEBAD6E4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "D05D59FB-9937-48A2-9677-63BB7DD82DB7",
+                "WFMathOperation": "-"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number.random",
+            "WFWorkflowActionParameters": {
+                "WFRandomNumberMaximum": {
+                    "Value": {
+                        "OutputUUID": "D05D59FB-9937-48A2-9677-63BB7DD82DB7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRandomNumberMinimum": "1",
+                "UUID": "977A2B17-9063-40D6-A035-BCE19D277B58"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "977A2B17-9063-40D6-A035-BCE19D277B58",
+                        "Type": "ActionOutput",
+                        "OutputName": "Random Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": {
+                    "Value": {
+                        "OutputUUID": "99839FBB-7381-4152-92F3-9FAAEEBAD6E4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "3EC1C63C-80D7-435B-8690-17B1FE13354D"
             }
         },
         {
@@ -210,13 +292,45 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "C108CEBA-1A6C-40FD-8516-A392A607D95F",
+                        "OutputUUID": "0486987C-D58E-43A7-AE5D-7BC6C74DBC29",
                         "Type": "ActionOutput",
-                        "OutputName": "Paragraphs"
+                        "OutputName": "Sentences"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "11B97B51-6239-4B95-9E39-9DFE2B86D5F0"
+                "WFItemSpecifier": "Items in Range",
+                "WFItemRangeEnd": {
+                    "Value": {
+                        "OutputUUID": "3EC1C63C-80D7-435B-8690-17B1FE13354D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "11B97B51-6239-4B95-9E39-9DFE2B86D5F0",
+                "WFItemRangeStart": {
+                    "Value": {
+                        "OutputUUID": "977A2B17-9063-40D6-A035-BCE19D277B58",
+                        "Type": "ActionOutput",
+                        "OutputName": "Random Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextSeparator": "Spaces",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "11B97B51-6239-4B95-9E39-9DFE2B86D5F0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "31C13827-B410-46C2-9436-202FE59DCABC"
             }
         },
         {
@@ -246,9 +360,9 @@
                 "WFDontIncludeFileExtension": true,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "11B97B51-6239-4B95-9E39-9DFE2B86D5F0",
+                        "OutputUUID": "31C13827-B410-46C2-9436-202FE59DCABC",
                         "Type": "ActionOutput",
-                        "OutputName": "Item from List"
+                        "OutputName": "Combined Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
