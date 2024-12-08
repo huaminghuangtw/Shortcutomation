@@ -10,74 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "F9682EFB-C46D-4E4C-8CD6-BEB72216D74D",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "macOS",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
-            "WFWorkflowActionParameters": {
-                "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.mobilenotes",
-                    "Name": "Notes",
-                    "TeamIdentifier": "0000000000"
-                },
-                "WFAppIdentifier": "com.apple.Notes",
-                "UUID": "A5E38A9E-6DAF-4437-82F4-51A47FAD4A81"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "F9682EFB-C46D-4E4C-8CD6-BEB72216D74D",
-                "UUID": "4332DC72-BC9F-48B1-8B6C-10007A93DC8A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "B11E2619-41AB-4C90-A156-986679285874",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "iOS",
-                "WFCondition": 4
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "Text Divider",
@@ -146,6 +78,13 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.notes",
             "WFWorkflowActionParameters": {
                 "WFContentItemLimitEnabled": true,
+                "AppIntentDescriptor": {
+                    "ActionRequiresAppInstallation": true,
+                    "BundleIdentifier": "com.apple.Notes",
+                    "AppIntentIdentifier": "NoteEntity",
+                    "Name": "Notes",
+                    "TeamIdentifier": "0000000000"
+                },
                 "UUID": "5B2A65A3-86B6-4C6C-9F41-AF0AF937B388",
                 "WFContentItemLimitNumber": 10,
                 "WFContentItemFilter": {
@@ -156,7 +95,10 @@
                             {
                                 "Operator": 99,
                                 "Values": {
-                                    "Unit": 4,
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -516,7 +458,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.apple.mobilenotes.OpenTagLinkAction",
+            "WFWorkflowActionIdentifier": "com.apple.Notes.OpenTagLinkAction",
             "WFWorkflowActionParameters": {
                 "target": {
                     "Value": {
@@ -650,14 +592,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "B11E2619-41AB-4C90-A156-986679285874",
-                "UUID": "920EA08C-A26B-436A-8B7B-A46308A30C97"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditBookmarkedFileIntent",
             "WFWorkflowActionParameters": {
                 "UUID": "0D61CF96-1FFC-4D63-AD15-D15981E2FDAC"
@@ -667,7 +601,6 @@
     "WFWorkflowInputContentItemClasses": [],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "QuickActions",
         "Watch"
     ],
     "WFQuickActionSurfaces": [],
