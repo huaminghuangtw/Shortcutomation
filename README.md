@@ -6,7 +6,7 @@
 </p>
 
 > [!NOTE]  
-> **Last Update:** 2024-12-08  
+> **Last Update:** 2024-12-15  
 >
 > Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)  
 >
@@ -14,28 +14,28 @@
 
 ## 📊 Shortcuts Library Stats ²
 
-* In total, there are **568** Shortcuts with **7038** actions in **70** folders
+* In total, there are **567** Shortcuts with **7008** actions in **70** folders
 * The pure average comes out to about **12** actions per Shortcut
 * The typical Shortcut has around **8+** actions
 * 🏅 Top 5 Most Complex Shortcuts
 
   | Rank | Shortcut | Number of Actions |
   | :---: | :---: | :---: |
-  | 1 | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 79 |
-  | 1 | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
-  | 1 | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
-  | 1 | [📖 Audible PDF](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF) | 72 |
-  | 1 | [Template - Morning and Evening Routine Prep](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep) | 72 |
+  | :five hundred forty-one: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts1/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 79 |
+  | :one hundred eight: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts2/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
+  | :two hundred nineteen: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts3/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
+  | :two hundred fifteen: | [Template - Morning and Evening Routine Prep](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts4/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep) | 72 |
+  | :four hundred ninety-three: | [📖 Audible PDF](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts5/Audiobooks/%F0%9F%93%96%20Audible%20PDF) | 72 |
 
 * 🎖️ Top 5 Largest Shortcuts
 
   | Rank | Shortcut | File Size (KB) |
   | :---: | :---: | :---: |
-  | 2 | [iPhone Alarm Ringtone](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone) | 423 |
-  | 2 | [Water Eject](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Water%20Eject) | 192 |
-  | 2 | [Time's Up!](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/Time's%20Up!) | 125 |
-  | 2 | [📑 ANotes](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20ANotes) | 51 |
-  | 2 | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 35 |
+  | :four hundred eighty-four: | [iPhone Alarm Ringtone](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts1/Sound%20Files/iPhone%20Alarm%20Ringtone) | 423 |
+  | :nine: | [Water Eject](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts2/Standalone%20Fun/Water%20Eject) | 192 |
+  | :four hundred eighty-five: | [Time's Up!](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts3/Sound%20Files/Time's%20Up!) | 125 |
+  | :one hundred nineteen: | [📑 ANotes](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts4/Second%20Brain/%F0%9F%93%91%20ANotes) | 51 |
+  | :five hundred forty-one: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts5/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 35 |
 
 
 <br>
@@ -55,7 +55,7 @@
 
 <summary>
    <strong>
-      <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts">All Shortcuts (568)</a>
+      <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts">All Shortcuts (567)</a>
    </strong>
 </summary>
 
@@ -1277,7 +1277,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (47)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (46)</a>
       </strong>
     </summary>
 
@@ -1341,15 +1341,6 @@
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love">
        <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love">💌 Send SMS to People I Love</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love/%F0%9F%92%8C%20Send%20SMS%20to%20People%20I%20Love.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -4473,10 +4464,10 @@
 
     - <details>
        <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time">Go to Screen Time</a>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time%20Summary">Go to Screen Time Summary</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time/Go%20to%20Screen%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time%20Summary">
+       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time%20Summary/Go%20to%20Screen%20Time%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
