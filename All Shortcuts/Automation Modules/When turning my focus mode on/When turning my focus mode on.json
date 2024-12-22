@@ -104,18 +104,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "7C8BA808-DF01-4BF5-9022-FA8282222CFC",
-                    "workflowName": "🪽 Show Life Progress",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "🪽 Show Life Progress",
-                "UUID": "E097ED69-72ED-4606-BD67-A58E89D65B4B"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "💭 Journal Prompt",
@@ -150,15 +138,112 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "9C09DF93-5225-4301-AF6F-4823F64B1D52",
-                    "workflowName": "Show Day Progress",
-                    "isSelf": false
+                "keyPath": "My Focus Mode",
+                "CustomOutputName": "My Focus Mode",
+                "UUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67",
+                        "Type": "ActionOutput",
+                        "OutputName": "My Focus Mode"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "Show Day Progress",
-                "UUID": "0736BD67-8F55-4E35-9982-691C1DAE5069"
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼.endTime",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Focus"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A5176371-3939-4A7F-A7D5-B4063A29C0AE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A5176371-3939-4A7F-A7D5-B4063A29C0AE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A653EAD2-143C-401F-A3C0-C5FA304A5915"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "A653EAD2-143C-401F-A3C0-C5FA304A5915",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dates"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "BAC77D40-6E5C-4F21-B724-F910110EAAF9",
+                "WFTimeUntilUnit": "Seconds"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
+            "WFWorkflowActionParameters": {
+                "IntentAppDefinition": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.clock",
+                    "Name": "Clock",
+                    "ExtensionBundleIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobiletimer",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "INCreateTimerIntent"
+                },
+                "UUID": "908EBAD5-D0BA-445D-BC3A-174E1DEFF2CE",
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "sec",
+                        "Magnitude": {
+                            "OutputUUID": "BAC77D40-6E5C-4F21-B724-F910110EAAF9",
+                            "Type": "ActionOutput",
+                            "OutputName": "Time Between Dates"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                }
             }
         },
         {
@@ -178,14 +263,6 @@
             "WFWorkflowActionParameters": {
                 "mode": "RemoveDelivered",
                 "UUID": "23A8A108-D88B-4596-AFD3-991787D2EEC6"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Focus Mode",
-                "CustomOutputName": "My Focus Mode",
-                "UUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67"
             }
         },
         {
@@ -290,6 +367,23 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PluraliseIntent",
+            "WFWorkflowActionParameters": {
+                "word": "Unread Article",
+                "count": {
+                    "Value": {
+                        "OutputUUID": "0161835A-D9FD-451C-A7DA-15DC8C6387EA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "output": "numberDigit",
+                "UUID": "7B539A77-6293-47E0-BB87-B00E1F4E24DB",
+                "typeCase": "title"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "Text Divider",
@@ -325,78 +419,120 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PluraliseIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "word": "Unread Article",
-                "count": {
+                "WFItems": {
                     "Value": {
-                        "OutputUUID": "0161835A-D9FD-451C-A7DA-15DC8C6387EA",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "title"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "D355EB06-7126-4A6A-9BC3-D2419EBDC6A3",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "📧 Email Newsletter"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "subtitle"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "D21C3A34-2848-436C-8D66-B7FEDF70076E",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Value"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "body"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "💁‍♂️ ￼",
+                                        "attachmentsByRange": {
+                                            "{6, 1}": {
+                                                "OutputUUID": "7B539A77-6293-47E0-BB87-B00E1F4E24DB",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Pluralised Result"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "openURL"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "DDE0B9C1-A280-4466-A1DF-5639BF61BB0B",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Shortcut Result"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "output": "numberDigit",
-                "UUID": "7B539A77-6293-47E0-BB87-B00E1F4E24DB",
-                "typeCase": "title"
+                "UUID": "22AC0232-04DB-440F-8DA4-123DC1CD059D"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
             "WFWorkflowActionParameters": {
-                "body": {
+                "fileName": "Create Notification",
+                "UUID": "7AFD0207-59D8-452F-AAFC-DEE868F577A7",
+                "parameter": {
                     "Value": {
-                        "string": "💁‍♂️ ￼",
-                        "attachmentsByRange": {
-                            "{6, 1}": {
-                                "OutputUUID": "7B539A77-6293-47E0-BB87-B00E1F4E24DB",
-                                "Type": "ActionOutput",
-                                "OutputName": "Pluralised Result"
-                            }
-                        }
+                        "OutputUUID": "22AC0232-04DB-440F-8DA4-123DC1CD059D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "title": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "D355EB06-7126-4A6A-9BC3-D2419EBDC6A3",
-                                "Type": "ActionOutput",
-                                "OutputName": "📧 Email Newsletter"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "E9B13789-5F17-4D65-AF2A-4807FBBF0895",
-                "subtitle": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "D21C3A34-2848-436C-8D66-B7FEDF70076E",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "onTap": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "DDE0B9C1-A280-4466-A1DF-5639BF61BB0B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                "ShowWhenRun": false
             }
         },
         {
@@ -1091,6 +1227,18 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "9C09DF93-5225-4301-AF6F-4823F64B1D52",
+                    "workflowName": "Show Day Progress",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Show Day Progress",
+                "UUID": "0736BD67-8F55-4E35-9982-691C1DAE5069"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
@@ -1135,33 +1283,6 @@
                 },
                 "WFWorkflowName": "Set Silent Alarm",
                 "UUID": "B3C6C0BD-06FA-411D-A193-EBEEB326CED3"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "Meditations",
-                "UUID": "97653617-441F-41BE-A742-99B029424C03"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "97653617-441F-41BE-A742-99B029424C03",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "29F59FD6-85E7-4590-A864-24194F7E7719",
-                    "workflowName": "Get Random Excerpts from PDF",
-                    "isSelf": false
-                },
-                "UUID": "92ECE50E-66FB-4976-924B-1FBB3FE0A1C3",
-                "WFWorkflowName": "Get Random Excerpts from PDF"
             }
         },
         {

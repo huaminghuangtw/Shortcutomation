@@ -10,63 +10,19 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "E85F4F61-32A6-486E-8656-3D425E75DA34",
-                "WFCondition": 101
+                "WFCommentActionText": "https://developers.google.com/maps/documentation/urls/get-started#directions-action"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
                 "WFAllowsMultilineText": false,
+                "CustomOutputName": "Destination",
                 "UUID": "9CA546BE-40CB-4B35-9F18-6616424F488E",
                 "WFInputType": "Text",
                 "WFAskActionPrompt": "🤖 Where are you going?"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "E85F4F61-32A6-486E-8656-3D425E75DA34",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "E155EF4D-B830-4B95-8180-EDB84247902A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "UUID": "5D6AC0D1-7905-42FA-A840-402DFC750F9C",
-                "CustomOutputName": "Destination",
-                "GroupingIdentifier": "E85F4F61-32A6-486E-8656-3D425E75DA34"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
-            "WFWorkflowActionParameters": {
-                "WFCommentActionText": "Google Maps Universal (Cross-Platform) URLs:\n\nhttps://developers.google.com/maps/documentation/urls/get-started"
             }
         },
         {
@@ -77,7 +33,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "5D6AC0D1-7905-42FA-A840-402DFC750F9C",
+                                "OutputUUID": "9CA546BE-40CB-4B35-9F18-6616424F488E",
                                 "Type": "ActionOutput",
                                 "OutputName": "Destination"
                             }
@@ -113,7 +69,7 @@
                 "WFGetDirectionsActionMode": "Transit",
                 "WFDestination": {
                     "Value": {
-                        "OutputUUID": "5D6AC0D1-7905-42FA-A840-402DFC750F9C",
+                        "OutputUUID": "9CA546BE-40CB-4B35-9F18-6616424F488E",
                         "Type": "ActionOutput",
                         "OutputName": "Destination"
                     },
@@ -147,7 +103,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "🤖 It'll take you ￼ to arrive at 📍 ￼ — you should arrive around ￼ if you leave now. :-)",
+                        "string": "🤖 It'll take you ￼ to arrive at 📍 ￼",
                         "attachmentsByRange": {
                             "{18, 1}": {
                                 "OutputUUID": "F542DE77-5A42-4972-80F4-CEC6FA0F61BD",
@@ -155,14 +111,9 @@
                                 "OutputName": "Travel Time"
                             },
                             "{36, 1}": {
-                                "OutputUUID": "5D6AC0D1-7905-42FA-A840-402DFC750F9C",
+                                "OutputUUID": "9CA546BE-40CB-4B35-9F18-6616424F488E",
                                 "Type": "ActionOutput",
                                 "OutputName": "Destination"
-                            },
-                            "{65, 1}": {
-                                "OutputUUID": "4919D68B-6222-425B-8A9A-F0A09DC82FF5",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Date"
                             }
                         }
                     },
@@ -172,10 +123,42 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "──────────────\nYou should arrive around ￼ if you leave now. :-)",
+                        "attachmentsByRange": {
+                            "{40, 1}": {
+                                "OutputUUID": "4919D68B-6222-425B-8A9A-F0A09DC82FF5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6786E1FE-B7A8-4031-BACC-90BEBD6098EB"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
                 "WFAlertActionCancelButtonShown": false,
                 "WFAlertActionMessage": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6786E1FE-B7A8-4031-BACC-90BEBD6098EB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertActionTitle": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
@@ -204,5 +187,5 @@
     ],
     "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": true
+    "WFWorkflowHasShortcutInputVariables": false
 }

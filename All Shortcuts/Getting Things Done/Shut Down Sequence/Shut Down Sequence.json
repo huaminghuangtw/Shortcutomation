@@ -10,30 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "EF87FD14-5D7B-4A5A-85DC-88D70131732D",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "macOS",
-                "WFCondition": 4
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
             "WFWorkflowActionParameters": {}
         },
@@ -70,15 +46,16 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Shortcuts\nData Jar\nReminders\nObsidian\nNotes\nZotero\nEdge\nChatGPT\nTerminal\nVisual Studio Code\nDeepL\nShortery\nOneNote"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
             "WFWorkflowActionParameters": {
                 "WFQuitAppMode": "All Apps",
                 "WFAppsExcept": [
-                    {
-                        "BundleIdentifier": "com.apple.reminders",
-                        "Name": "Reminders",
-                        "TeamIdentifier": "0000000000"
-                    },
                     {
                         "BundleIdentifier": "com.apple.shortcuts",
                         "Name": "Shortcuts",
@@ -90,14 +67,9 @@
                         "TeamIdentifier": "8NQFWJHC63"
                     },
                     {
-                        "BundleIdentifier": "com.microsoft.VSCode",
-                        "Name": "Visual Studio Code",
-                        "TeamIdentifier": "UBF8T346G9"
-                    },
-                    {
-                        "BundleIdentifier": "com.microsoft.edgemac",
-                        "Name": "Microsoft Edge",
-                        "TeamIdentifier": "UBF8T346G9"
+                        "BundleIdentifier": "com.apple.reminders",
+                        "Name": "Reminders",
+                        "TeamIdentifier": "0000000000"
                     },
                     {
                         "BundleIdentifier": "md.obsidian",
@@ -105,9 +77,24 @@
                         "TeamIdentifier": "6JSW4SJWN9"
                     },
                     {
+                        "BundleIdentifier": "com.apple.Notes",
+                        "Name": "Notes",
+                        "TeamIdentifier": "0000000000"
+                    },
+                    {
+                        "BundleIdentifier": "com.microsoft.onenote.mac",
+                        "Name": "Microsoft OneNote",
+                        "TeamIdentifier": "UBF8T346G9"
+                    },
+                    {
                         "BundleIdentifier": "org.zotero.zotero",
                         "Name": "Zotero",
                         "TeamIdentifier": "8LAYR367YV"
+                    },
+                    {
+                        "BundleIdentifier": "com.microsoft.edgemac",
+                        "Name": "Microsoft Edge",
+                        "TeamIdentifier": "UBF8T346G9"
                     },
                     {
                         "BundleIdentifier": "com.openai.chat",
@@ -120,9 +107,9 @@
                         "TeamIdentifier": "0000000000"
                     },
                     {
-                        "BundleIdentifier": "com.apple.Notes",
-                        "Name": "Notes",
-                        "TeamIdentifier": "0000000000"
+                        "BundleIdentifier": "com.shortery-app.Shortery",
+                        "Name": "Shortery",
+                        "TeamIdentifier": "HR22V4547K"
                     },
                     {
                         "BundleIdentifier": "com.linguee.DeepLCopyTranslator",
@@ -130,11 +117,62 @@
                         "TeamIdentifier": "4N8BGCG336"
                     },
                     {
-                        "BundleIdentifier": "com.shortery-app.Shortery",
-                        "Name": "Shortery",
-                        "TeamIdentifier": "HR22V4547K"
+                        "BundleIdentifier": "com.microsoft.VSCode",
+                        "Name": "Visual Studio Code",
+                        "TeamIdentifier": "UBF8T346G9"
                     }
-                ]
+                ],
+                "WFAskToSaveChanges": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Apple Shortcuts.mustRun",
+                "UUID": "BE98D350-20BB-498A-9097-3A1205CB8401"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BE98D350-20BB-498A-9097-3A1205CB8401",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "E72DBD6C-B85E-4BCD-8795-2DB853B6917F",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflowName": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "F507B733-8E06-417F-9020-C8C08A76BB9E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E72DBD6C-B85E-4BCD-8795-2DB853B6917F",
+                "UUID": "B72CF9AB-2C49-4F8A-8161-AA9AC095A64E"
             }
         },
         {
@@ -192,18 +230,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "5841B8C6-BF10-4109-BE4C-BCEA0FC028FF",
-                    "workflowName": "Obsidian - Update All Community Plugins",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Obsidian - Update All Community Plugins",
-                "UUID": "C91F3C7A-2196-43FE-8A7B-6D37C985729E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
                 "WFWorkflowName": "Obsidian - Check Vault Consistency",
                 "WFWorkflow": {
                     "workflowIdentifier": "ABE68F59-815E-44C4-9777-BEB4C1AA7F7E",
@@ -218,69 +244,6 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "605D4323-11B8-478B-ADD3-E2D465DF19C8",
                 "UUID": "DEB529A7-D903-46D5-A7BD-103141BFBFBA"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Apple Shortcuts.mustRun",
-                "UUID": "BE98D350-20BB-498A-9097-3A1205CB8401"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "BE98D350-20BB-498A-9097-3A1205CB8401",
-                        "Type": "ActionOutput",
-                        "OutputName": "Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "E72DBD6C-B85E-4BCD-8795-2DB853B6917F",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflowName": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "F507B733-8E06-417F-9020-C8C08A76BB9E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E72DBD6C-B85E-4BCD-8795-2DB853B6917F",
-                "UUID": "B72CF9AB-2C49-4F8A-8161-AA9AC095A64E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
-            "WFWorkflowActionParameters": {
-                "WFHideAppMode": "All Apps"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "EF87FD14-5D7B-4A5A-85DC-88D70131732D",
-                "WFControlFlowMode": 2
             }
         }
     ],

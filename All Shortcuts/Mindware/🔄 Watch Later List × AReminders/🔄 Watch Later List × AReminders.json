@@ -106,9 +106,29 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "WFDictionaryKey": "contentDetails.duration",
+                "UUID": "D6A3DD6A-9FBC-46BC-B56D-5F5C1A1185E9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D6A3DD6A-9FBC-46BC-B56D-5F5C1A1185E9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "CustomOutputName": "videoDurationISO8601",
-                "UUID": "D6A3DD6A-9FBC-46BC-B56D-5F5C1A1185E9",
-                "WFDictionaryKey": "contentDetails.duration"
+                "UUID": "7EA0A796-B5F9-4E9C-9B5A-E6E77719A5B0",
+                "WFWorkflow": {
+                    "workflowIdentifier": "FFAB1F18-FFD2-4AB9-ADF4-22AD55781AB1",
+                    "workflowName": "ISO8601Duration2Numbers",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "ISO8601Duration2Numbers"
             }
         },
         {
@@ -132,22 +152,32 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼ | ￼ | ￼",
+                        "string": "￼ mins | ￼ | ￼",
                         "attachmentsByRange": {
-                            "{8, 1}": {
+                            "{13, 1}": {
                                 "OutputUUID": "AD739AA9-681F-4BDE-BD60-CCA204AC2E34",
                                 "Type": "ActionOutput",
                                 "OutputName": "videoTitle"
                             },
-                            "{4, 1}": {
-                                "OutputUUID": "D6A3DD6A-9FBC-46BC-B56D-5F5C1A1185E9",
-                                "Type": "ActionOutput",
-                                "OutputName": "videoDurationISO8601"
-                            },
-                            "{0, 1}": {
+                            "{9, 1}": {
                                 "OutputUUID": "B39F387B-B0C1-48D8-A2B2-B5E27560773D",
                                 "Type": "ActionOutput",
                                 "OutputName": "channelTitle"
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "videoDurationISO8601",
+                                "OutputUUID": "7EA0A796-B5F9-4E9C-9B5A-E6E77719A5B0",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "durationInMinutes"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -394,13 +424,23 @@
                             },
                             {
                                 "Operator": 4,
-                                "Values": {},
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
                                 "Removable": true,
                                 "Property": "Is Completed"
                             },
                             {
                                 "Operator": 4,
-                                "Values": {},
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
                                 "Removable": true,
                                 "Property": "Is Flagged"
                             }
@@ -511,7 +551,12 @@
                             },
                             {
                                 "Operator": 4,
-                                "Values": {},
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
                                 "Removable": true,
                                 "Property": "Is Completed"
                             }
@@ -546,9 +591,9 @@
                 "CustomOutputName": "videoURL",
                 "WFURLActionURL": {
                     "Value": {
-                        "string": "https://www.youtube.com/watch?v=￼",
+                        "string": "https://youtu.be/￼",
                         "attachmentsByRange": {
-                            "{32, 1}": {
+                            "{17, 1}": {
                                 "OutputUUID": "F4AC71F1-4D31-45DA-A190-7E884247AED9",
                                 "Type": "ActionOutput",
                                 "OutputName": "videoId"
@@ -781,19 +826,78 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F4AC71F1-4D31-45DA-A190-7E884247AED9",
+                        "Type": "ActionOutput",
+                        "OutputName": "videoId"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "F2ABD12D-28A0-4420-850D-698FC2416716",
+                    "workflowName": "YouTube - Get commentThreads from videoID",
+                    "isSelf": false
+                },
+                "UUID": "CCF63F24-7272-4C55-9A94-307AB34DD2FF",
+                "WFWorkflowName": "YouTube - Get commentThreads from videoID"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CCF63F24-7272-4C55-9A94-307AB34DD2FF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "DE022476-1C90-4496-A4D4-4EE3AE75BEB8",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "2B474EC0-C92B-4292-93D0-1A2F6B85F49A",
-                        "Type": "ActionOutput",
-                        "OutputName": "videoProperties"
+                        "VariableName": "Repeat Item 2",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "videoDescription",
-                "UUID": "41572753-E2AF-44B3-9DA8-E974EDF781C0",
-                "WFDictionaryKey": "snippet.description"
+                "WFDictionaryKey": "snippet.topLevelComment.snippet.textOriginal",
+                "UUID": "21314E6A-23E9-4FB7-80EB-F72B557F0EDF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "* ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "21314E6A-23E9-4FB7-80EB-F72B557F0EDF",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DE022476-1C90-4496-A4D4-4EE3AE75BEB8",
+                "UUID": "4EB59F04-62A8-40A4-831A-3B33C45D946D"
             }
         },
         {
@@ -804,9 +908,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "41572753-E2AF-44B3-9DA8-E974EDF781C0",
+                                "OutputUUID": "4EB59F04-62A8-40A4-831A-3B33C45D946D",
                                 "Type": "ActionOutput",
-                                "OutputName": "videoDescription"
+                                "OutputName": "Repeat Results"
                             }
                         }
                     },

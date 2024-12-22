@@ -14,6 +14,202 @@
             "WFWorkflowActionParameters": {}
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Evening",
+                "GroupingIdentifier": "CC2E33FF-83DB-4576-9C6F-BDC33986EE8C",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.IsAudioPlayingIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "DB06FF2A-5934-495B-86FF-D3AC36CA2561",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "IsAudioPlayingIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Is Audio Playing",
+                            "OutputUUID": "DB06FF2A-5934-495B-86FF-D3AC36CA2561",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "No",
+                "GroupingIdentifier": "AEAB266A-EFD1-4A17-8191-4F55D00F213E",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "UUID": "2A88BF7F-32BE-46F4-A9C6-017C127117B9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Listen to music?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2A88BF7F-32BE-46F4-A9C6-017C127117B9",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "337D0A88-E876-407A-B167-F6662BA865F8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "337D0A88-E876-407A-B167-F6662BA865F8",
+                            "Type": "ActionOutput",
+                            "OutputName": "Selected Item"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Yes",
+                "GroupingIdentifier": "E2480864-ADE4-403E-B4CA-8F34216BF0B2",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "D61A5E8D-FB4B-4944-AF1A-72FCE4804F77",
+                    "workflowName": "Choose Audio Device",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Choose Audio Device",
+                "UUID": "8B4F9709-B9C3-4F35-82C8-AE96B7EC48EE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "Silence",
+                    "Classic",
+                    "Artists"
+                ],
+                "UUID": "F7935548-3A92-4AC1-8D8A-7B46E8C0664C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F7935548-3A92-4AC1-8D8A-7B46E8C0664C",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Random Item",
+                "WFItemRangeEnd": "2",
+                "UUID": "ECF5D7E1-209B-47F5-8274-F7FC25CBB8FC",
+                "WFItemRangeStart": "1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "ECF5D7E1-209B-47F5-8274-F7FC25CBB8FC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "9B8C3053-A3BD-4CDF-91D3-753DC957EB9D",
+                    "workflowName": "▶️ Choose My Spotify Topic",
+                    "isSelf": false
+                },
+                "UUID": "BB45C96A-3CE7-47FF-9F2B-CEA709C68DE8",
+                "WFWorkflowName": "▶️ Choose My Spotify Topic"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
+            "WFWorkflowActionParameters": {
+                "WFVolume": 0.3505050241947174
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E2480864-ADE4-403E-B4CA-8F34216BF0B2",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AEAB266A-EFD1-4A17-8191-4F55D00F213E",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CC2E33FF-83DB-4576-9C6F-BDC33986EE8C",
+                "UUID": "73718821-ECE4-4026-8DCB-3389497DBBC8"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -45,7 +241,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "Morning",
-                "GroupingIdentifier": "CC2E33FF-83DB-4576-9C6F-BDC33986EE8C",
+                "GroupingIdentifier": "A1375C7B-F027-4397-A1A3-E9D040C1FA35",
                 "WFCondition": 4
             }
         },
@@ -64,33 +260,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "CC2E33FF-83DB-4576-9C6F-BDC33986EE8C",
-                "UUID": "73718821-ECE4-4026-8DCB-3389497DBBC8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Evening",
                 "GroupingIdentifier": "A1375C7B-F027-4397-A1A3-E9D040C1FA35",
-                "WFCondition": 4
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -301,7 +472,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "Morning",
-                "GroupingIdentifier": "43FBC0D3-2EF1-4367-A5A0-64BBD585A5FA",
+                "GroupingIdentifier": "B25CA492-4131-4B71-8753-21B602D26A05",
                 "WFCondition": 4
             }
         },
@@ -343,33 +514,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "43FBC0D3-2EF1-4367-A5A0-64BBD585A5FA",
-                "UUID": "C518C7E2-6471-4091-981D-371D51104B34"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Evening",
                 "GroupingIdentifier": "B25CA492-4131-4B71-8753-21B602D26A05",
-                "WFCondition": 4
+                "WFControlFlowMode": 1
             }
         },
         {

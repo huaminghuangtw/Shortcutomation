@@ -688,6 +688,28 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "61334770-01E6-4F13-99AA-AC41AE00F1F8",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "9A73C7A0-6230-43D1-A586-FFB55BD1B97D",
+                "WFReplaceTextReplace": " ",
+                "WFReplaceTextFind": "\\n+"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
             "WFWorkflowActionParameters": {
                 "ShowWhenRun": false,
@@ -696,9 +718,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "61334770-01E6-4F13-99AA-AC41AE00F1F8",
+                                "OutputUUID": "9A73C7A0-6230-43D1-A586-FFB55BD1B97D",
                                 "Type": "ActionOutput",
-                                "OutputName": "If Result"
+                                "OutputName": "Updated Text"
                             }
                         }
                     },
@@ -756,6 +778,81 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "1130F568-C9BE-48A6-97FD-E91FA8169E40"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "📥 Add to Inbox"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "[￼](￼)",
+                                        "attachmentsByRange": {
+                                            "{1, 1}": {
+                                                "OutputUUID": "9A73C7A0-6230-43D1-A586-FFB55BD1B97D",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Updated Text"
+                                            },
+                                            "{4, 1}": {
+                                                "OutputUUID": "1130F568-C9BE-48A6-97FD-E91FA8169E40",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "URL"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "B1F45209-DE01-4EDB-9302-0C02770CE6EE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B1F45209-DE01-4EDB-9302-0C02770CE6EE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "568CCC79-0F01-4A7F-8C56-F36A8689CE0D",
+                "WFWorkflowName": "Build Run Shortcut URL"
             }
         },
         {
@@ -836,9 +933,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "1130F568-C9BE-48A6-97FD-E91FA8169E40",
+                                                "OutputUUID": "568CCC79-0F01-4A7F-8C56-F36A8689CE0D",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "URL"
+                                                "OutputName": "Shortcut Result"
                                             }
                                         }
                                     },

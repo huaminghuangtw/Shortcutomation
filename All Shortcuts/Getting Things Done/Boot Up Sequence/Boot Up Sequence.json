@@ -10,33 +10,62 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "26EC7738-CE6F-47EE-A3C5-B2D07945023A",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
+                "WFWorkflow": {
+                    "workflowIdentifier": "9C09DF93-5225-4301-AF6F-4823F64B1D52",
+                    "workflowName": "Show Day Progress",
+                    "isSelf": false
                 },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "macOS",
-                "WFCondition": 4
+                "WFWorkflowName": "Show Day Progress",
+                "UUID": "5C9E4F36-9A0D-478E-8905-C5494A35A7E1"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFPlayPauseBehavior": "Pause"
+                "WFMenuPrompt": "🛋️ Turn on Lamp?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "6851A550-8935-4F29-8CBA-C2C4E11D4DED"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "6851A550-8935-4F29-8CBA-C2C4E11D4DED",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "5134B1B2-A35C-444A-B305-7184932C3F02",
+                    "workflowName": "開大燈",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "開大燈",
+                "UUID": "E3AD7D7B-431B-46FB-B421-0FE6A79B2F23"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "6851A550-8935-4F29-8CBA-C2C4E11D4DED",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "6851A550-8935-4F29-8CBA-C2C4E11D4DED",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -74,7 +103,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFMenuPrompt": "🎧 Do you want to connect to BLE headphones?",
+                "WFMenuPrompt": "🎧 Connect to BLE headphones?",
                 "WFControlFlowMode": 0,
                 "WFMenuItems": [
                     "✅ Yes",
@@ -92,14 +121,19 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.bluetooth.set",
+            "WFWorkflowActionParameters": {}
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
             "WFWorkflowActionParameters": {
-                "WFAppIdentifier": "com.apple.systempreferences",
                 "WFSelectedApp": {
                     "BundleIdentifier": "com.apple.systempreferences",
                     "Name": "System Settings",
                     "TeamIdentifier": "0000000000"
-                }
+                },
+                "WFAppIdentifier": "com.apple.systempreferences",
+                "UUID": "DA6655DD-E950-4F59-8868-A0FF9C2617FA"
             }
         },
         {
@@ -142,18 +176,24 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
             "WFWorkflowActionParameters": {
                 "WFSelectedApp": {
+                    "BundleIdentifier": "com.shortery-app.Shortery",
+                    "Name": "Shortery",
+                    "TeamIdentifier": "HR22V4547K"
+                },
+                "WFAppIdentifier": "com.shortery-app.Shortery",
+                "UUID": "42395B9F-11F7-4691-9B00-439E3E64E7F6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
                     "BundleIdentifier": "com.alexhay.ToolboxProForShortcuts",
                     "Name": "Toolbox Pro",
                     "TeamIdentifier": "QRVYSKD5TN"
                 },
                 "WFAppIdentifier": "com.alexhay.ToolboxProForShortcuts",
                 "UUID": "FE6F3119-B4C9-4DF1-A72B-7281BAE31A37"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
-            "WFWorkflowActionParameters": {
-                "WFHideAppMode": "All Apps"
             }
         },
         {
@@ -272,28 +312,15 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "66798EDE-5C59-48DA-92E1-5F935D4E88CF",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "9C09DF93-5225-4301-AF6F-4823F64B1D52",
-                    "workflowName": "Show Day Progress",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Show Day Progress",
-                "UUID": "53C25D81-C787-4A72-B746-5A4A80AE601A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "66798EDE-5C59-48DA-92E1-5F935D4E88CF",
                 "UUID": "C2BBE72A-B904-4949-9C9B-66AC9B6DBDEA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFHideAppMode": "All Apps"
             }
         },
         {
@@ -415,13 +442,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
-            "WFWorkflowActionParameters": {
-                "mode": "RemoveDelivered",
-                "UUID": "1C72E2A1-506B-4379-8AC5-537523D5A3BD"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFMenuPrompt": "🫣 Admin Party?",
@@ -466,13 +486,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
-            "WFWorkflowActionParameters": {
-                "WFInput": "https://github.com/notifications?query=is%3Aunread",
-                "UUID": "D339A13F-1D10-4F54-8120-9E65A113F224"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -482,6 +495,20 @@
                 },
                 "WFWorkflowName": "Gmail",
                 "UUID": "22D98075-7418-449F-ACE1-08FBB52C3CFB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": "https://www.amazon.de/contact-us",
+                "UUID": "ACC4F64E-D200-4934-B4A5-DB0DDF877ADF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": "https://github.com/notifications?query=is%3Aunread",
+                "UUID": "D339A13F-1D10-4F54-8120-9E65A113F224"
             }
         },
         {
@@ -506,14 +533,6 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "6F2360A0-F107-4203-BD70-32708B4696D9",
                 "UUID": "164983FD-7814-417D-8859-2603DB4D71C9"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "26EC7738-CE6F-47EE-A3C5-B2D07945023A",
-                "UUID": "5397418E-852A-4C14-A592-92DF92A8FE01"
             }
         }
     ],

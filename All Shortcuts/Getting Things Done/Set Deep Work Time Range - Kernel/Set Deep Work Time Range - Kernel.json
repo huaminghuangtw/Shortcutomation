@@ -12,7 +12,7 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Focus Mode.#MakerMode.until",
+                "keyPath": "My Focus Mode.#MakerMode",
                 "UUID": "D6A14446-FB50-4504-ADCA-EE3941A9978A"
             }
         },
@@ -24,9 +24,19 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D6A14446-FB50-4504-ADCA-EE3941A9978A",
                                 "Type": "ActionOutput",
-                                "OutputName": "Value"
+                                "OutputName": "Value",
+                                "OutputUUID": "D6A14446-FB50-4504-ADCA-EE3941A9978A",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "endTime"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -34,6 +44,31 @@
                 },
                 "WFDateActionMode": "Specified Date",
                 "UUID": "00CFFCA0-E20E-480B-B3EE-127AE2693422"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "00CFFCA0-E20E-480B-B3EE-127AE2693422",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentDate"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "DF100842-E3A7-4F32-81E7-E6E731A336E5",
+                "WFCondition": 0
             }
         },
         {
@@ -91,6 +126,13 @@
                     "Name": "Day Progress",
                     "AppIntentIdentifier": "SetDayRangeIntent"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "DF100842-E3A7-4F32-81E7-E6E731A336E5",
+                "WFControlFlowMode": 2
             }
         }
     ],
