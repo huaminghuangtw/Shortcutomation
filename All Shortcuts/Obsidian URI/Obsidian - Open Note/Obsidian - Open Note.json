@@ -32,13 +32,91 @@
             "WFWorkflowActionParameters": {}
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCountType": "Items",
+                "UUID": "C6BDABF1-32F0-42C4-92FF-48F6942AC9F3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "644C1E83-2E3F-456B-B974-D432ED768FCB",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C6BDABF1-32F0-42C4-92FF-48F6942AC9F3",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "D80DED7D-CE24-4B0A-BCD7-CE27B208A39B",
+                    "workflowName": "Obsidian - Close all other tabs",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Obsidian - Close all other tabs",
+                "UUID": "EC43E022-FD6D-43F0-8BBC-7C3D9C206D34"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "ED380F6A-D4A4-4B84-ABD6-79018E9D55AB",
+                    "workflowName": "Obsidian - Toggle Stacked Tabs",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Obsidian - Toggle Stacked Tabs",
+                "UUID": "9081E99E-E1AF-4CE8-BCB8-86B619F25B9E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "644C1E83-2E3F-456B-B974-D432ED768FCB",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "81A48B39-92A6-460B-894A-1EBB52D89D79",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ExtensionInput",
+                            "VariableName": "Repeat Item",
+                            "Type": "Variable",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
@@ -63,7 +141,8 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -97,7 +176,8 @@
                         "string": "￼.md",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ExtensionInput",
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -157,7 +237,8 @@
                 "UUID": "4C293E55-9534-4D47-A7D8-3D9C52739180",
                 "WFDictionary": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -173,15 +254,61 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Dictionary",
+                            "OutputUUID": "93BAC78C-D202-4E81-A766-942664402E88",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFDictionaryValueVariableAggrandizement",
+                                    "DictionaryKey": "viewmode"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "FE86237B-2E36-4090-9BC8-CBB3A4450615",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "93BAC78C-D202-4E81-A766-942664402E88",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8513B621-6205-4293-86BF-7D99BD3EE36B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "FE86237B-2E36-4090-9BC8-CBB3A4450615",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
             "WFWorkflowActionParameters": {
-                "WFDictionaryValue": "live",
+                "WFDictionaryValue": "source",
                 "UUID": "68B3C7C4-0F2D-41C2-81B1-86A3E711A757",
                 "WFDictionary": {
                     "Value": {
                         "OutputUUID": "93BAC78C-D202-4E81-A766-942664402E88",
                         "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -189,19 +316,131 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "FE86237B-2E36-4090-9BC8-CBB3A4450615",
+                "UUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Dictionary",
+                            "OutputUUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFDictionaryValueVariableAggrandizement",
+                                    "DictionaryKey": "openmode"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "4E189826-CF08-4A55-91B3-476539E37BFB",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1F92C749-E428-47B5-8AC9-0EB5F9073293"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4E189826-CF08-4A55-91B3-476539E37BFB",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F76CB527-59A7-4855-8815-73216DE23359",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C6BDABF1-32F0-42C4-92FF-48F6942AC9F3",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
             "WFWorkflowActionParameters": {
-                "WFDictionaryValue": "false",
-                "UUID": "2297E0FC-0B23-4BD0-8B42-74EC3A5048E0",
+                "WFDictionaryValue": "true",
+                "UUID": "2F99F49C-0B64-4934-B756-548641EFAAC0",
                 "WFDictionary": {
                     "Value": {
-                        "OutputUUID": "68B3C7C4-0F2D-41C2-81B1-86A3E711A757",
+                        "OutputUUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D",
                         "Type": "ActionOutput",
                         "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFDictionaryKey": "openmode"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F76CB527-59A7-4855-8815-73216DE23359",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFDictionaryValue": "false",
+                "UUID": "6BFFE853-FE2E-4007-B990-E8A0B7A81530",
+                "WFDictionary": {
+                    "Value": {
+                        "OutputUUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "openmode"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F76CB527-59A7-4855-8815-73216DE23359",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4E189826-CF08-4A55-91B3-476539E37BFB",
+                "UUID": "6159009B-1EE7-44C1-B811-F141546F06E5"
             }
         },
         {
@@ -212,7 +451,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "2297E0FC-0B23-4BD0-8B42-74EC3A5048E0",
+                                "OutputUUID": "6159009B-1EE7-44C1-B811-F141546F06E5",
                                 "Type": "ActionOutput",
                                 "OutputName": "Dictionary"
                             }
@@ -253,6 +492,13 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "682C0ACE-D22C-4CEC-9F02-C8E71DD73587"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "81A48B39-92A6-460B-894A-1EBB52D89D79",
+                "WFControlFlowMode": 2
             }
         },
         {

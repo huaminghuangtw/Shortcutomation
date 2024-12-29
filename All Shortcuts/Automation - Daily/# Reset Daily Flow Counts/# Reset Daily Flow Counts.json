@@ -1,0 +1,451 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Date",
+                "CustomOutputName": "Date",
+                "UUID": "B6E5D7DC-C36A-411F-A142-B1211B0E7BB2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Number of Flows",
+                "CustomOutputName": "Number of Flows",
+                "UUID": "54BA076A-6F20-4DE9-9D0A-40CEE72D9FC7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Deep Work Machine",
+                "UUID": "7B39CAB2-0746-43F0-8BBF-2E3B23F770CB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7B39CAB2-0746-43F0-8BBF-2E3B23F770CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "54BA076A-6F20-4DE9-9D0A-40CEE72D9FC7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Number of Flows"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "68B80618-BBB2-4AEA-A302-5AD3C119CCB4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "68B80618-BBB2-4AEA-A302-5AD3C119CCB4",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "data"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1D1388FB-1167-41F8-BE73-7CC0160446A1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "Yesterday",
+                "UUID": "4571818E-4155-486D-AD3A-01C54F01A448",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": "Yesterday"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼,￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "1D1388FB-1167-41F8-BE73-7CC0160446A1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Yesterday",
+                                "OutputUUID": "4571818E-4155-486D-AD3A-01C54F01A448",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "newData",
+                "UUID": "7E59E49C-6AC9-4EAB-A8F6-804D11420015"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "CustomOutputName": "yyyy.MM",
+                "UUID": "758A0E41-8946-4812-A4B9-ABFFF5E84C31",
+                "WFDateFormat": "yyyy.MM",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "4571818E-4155-486D-AD3A-01C54F01A448",
+                                "Type": "ActionOutput",
+                                "OutputName": "Yesterday"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Deep Work Machine.￼",
+                        "attachmentsByRange": {
+                            "{18, 1}": {
+                                "OutputUUID": "54BA076A-6F20-4DE9-9D0A-40CEE72D9FC7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Number of Flows"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "keyPath",
+                "UUID": "6CFB8C21-9057-42F9-BEFC-58EACD773F53"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.history.￼",
+                        "attachmentsByRange": {
+                            "{10, 1}": {
+                                "OutputUUID": "758A0E41-8946-4812-A4B9-ABFFF5E84C31",
+                                "Type": "ActionOutput",
+                                "OutputName": "yyyy.MM"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6CFB8C21-9057-42F9-BEFC-58EACD773F53",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F879C0E3-AAEC-42A4-85E8-FDFD6C693D07"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "F879C0E3-AAEC-42A4-85E8-FDFD6C693D07",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "A2F177E2-5200-4F4A-AB53-276931D99D09",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.history.￼",
+                        "attachmentsByRange": {
+                            "{10, 1}": {
+                                "OutputUUID": "758A0E41-8946-4812-A4B9-ABFFF5E84C31",
+                                "Type": "ActionOutput",
+                                "OutputName": "yyyy.MM"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6CFB8C21-9057-42F9-BEFC-58EACD773F53",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "FB8EE79C-9E75-43B2-A474-1F3DB23289EA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value",
+                            "OutputUUID": "FB8EE79C-9E75-43B2-A474-1F3DB23289EA",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼,",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Yesterday",
+                                "OutputUUID": "4571818E-4155-486D-AD3A-01C54F01A448",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "CC478AB4-334C-4EF7-8DED-69ADA282DA78",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "7E59E49C-6AC9-4EAB-A8F6-804D11420015",
+                                "Type": "ActionOutput",
+                                "OutputName": "newData"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "FB8EE79C-9E75-43B2-A474-1F3DB23289EA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "99B3FD50-5328-4822-A264-1E8788857626"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CC478AB4-334C-4EF7-8DED-69ADA282DA78",
+                "UUID": "0B02142E-F338-4DDA-A4C4-1323C339F0E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "A2F177E2-5200-4F4A-AB53-276931D99D09",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼,￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "54BA076A-6F20-4DE9-9D0A-40CEE72D9FC7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Number of Flows"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "7E59E49C-6AC9-4EAB-A8F6-804D11420015",
+                                "Type": "ActionOutput",
+                                "OutputName": "newData"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "B6E5D7DC-C36A-411F-A142-B1211B0E7BB2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "05942CE8-E888-406E-BA5B-41862FD6E131"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "UUID": "F07FD649-4DE0-4356-98B6-1051BE91AF58",
+                "CustomOutputName": "CSV",
+                "GroupingIdentifier": "A2F177E2-5200-4F4A-AB53-276931D99D09"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "B52228D8-8710-4BB6-A34F-1374854C6F9B",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.history.￼",
+                        "attachmentsByRange": {
+                            "{10, 1}": {
+                                "OutputUUID": "758A0E41-8946-4812-A4B9-ABFFF5E84C31",
+                                "Type": "ActionOutput",
+                                "OutputName": "yyyy.MM"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6CFB8C21-9057-42F9-BEFC-58EACD773F53",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "valueConversionMode": "text",
+                "values": {
+                    "Value": {
+                        "OutputUUID": "F07FD649-4DE0-4356-98B6-1051BE91AF58",
+                        "Type": "ActionOutput",
+                        "OutputName": "CSV"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BE7E661D-CE15-4B6A-BF92-DF9D483815D5",
+                "WFRepeatCount": {
+                    "Value": {
+                        "OutputUUID": "1D1388FB-1167-41F8-BE73-7CC0160446A1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.DeleteValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.data.￼",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6CFB8C21-9057-42F9-BEFC-58EACD773F53",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "deleteStrategy": "alwaysAllow",
+                "UUID": "22612401-1E21-4ACA-808B-DF95C7781891"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BE7E661D-CE15-4B6A-BF92-DF9D483815D5",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

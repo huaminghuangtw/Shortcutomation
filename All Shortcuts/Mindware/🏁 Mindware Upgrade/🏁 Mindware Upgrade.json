@@ -135,7 +135,9 @@
                             },
                             {
                                 "Operator": 4,
-                                "Values": {},
+                                "Values": {
+                                    "Bool": false
+                                },
                                 "Removable": true,
                                 "Property": "Is Completed"
                             }
@@ -204,10 +206,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -226,11 +225,50 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detectlanguage",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EA6535BF-AB7C-442A-8A09-8E58D18477AC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "EA6535BF-AB7C-442A-8A09-8E58D18477AC",
+                            "Type": "ActionOutput",
+                            "OutputName": "Language"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Chinese",
+                "GroupingIdentifier": "F0E5B6F3-F26A-4213-82C3-5807EEB1CF13",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n«￼»\n￼",
+                        "string": " 《 ￼ 》",
                         "attachmentsByRange": {
                             "{3, 1}": {
                                 "Type": "ActionOutput",
@@ -242,16 +280,6 @@
                                         "DictionaryKey": "brainFoodTitle"
                                     }
                                 ]
-                            },
-                            "{6, 1}": {
-                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
                             }
                         }
                     },
@@ -261,16 +289,66 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F0E5B6F3-F26A-4213-82C3-5807EEB1CF13",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n→ 🤖 Which one?",
+                        "string": "« ￼ »",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "DF62B2F8-5A1F-4621-BA76-F7A7F54A0431",
+                            "{2, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "inputDict",
+                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "brainFoodTitle"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "39E77CF7-EE6C-4995-B6FF-4CA7DF512C60"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "F0E5B6F3-F26A-4213-82C3-5807EEB1CF13",
+                "UUID": "F276E793-C389-4C88-9B93-9011AF5A4BDB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼\n￼\n→ 🤖 Which one?",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "F276E793-C389-4C88-9B93-9011AF5A4BDB",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "5AA307C7-D3E9-499A-B92E-0C145554F0BA",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
                             }
                         }
                     },
@@ -384,10 +462,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -549,7 +624,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
             "WFWorkflowActionParameters": {
                 "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.Safari",
+                    "BundleIdentifier": "com.apple.mobilesafari",
                     "Name": "Safari",
                     "TeamIdentifier": "0000000000"
                 },
@@ -612,10 +687,23 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "538BFE6F-3BAF-4084-B4D4-5C7787B97A0F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextCaseSensitive": false,
-                "WFMatchTextPattern": "[^/]+$",
+                "WFMatchTextPattern": "v=([^&]+)",
                 "UUID": "23E6BC09-A354-4C50-8B40-F368E28AA1A5",
                 "text": {
                     "Value": {
@@ -636,6 +724,21 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "23E6BC09-A354-4C50-8B40-F368E28AA1A5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "videoId",
+                "UUID": "8C954C2D-4166-4900-8B61-F266452F6B4E"
             }
         },
         {
@@ -689,9 +792,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "23E6BC09-A354-4C50-8B40-F368E28AA1A5",
+                                                "OutputUUID": "8C954C2D-4166-4900-8B61-F266452F6B4E",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Matches"
+                                                "OutputName": "videoId"
                                             }
                                         }
                                     },

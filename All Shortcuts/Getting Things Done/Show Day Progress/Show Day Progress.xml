@@ -628,13 +628,166 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>dk.simonbs.DataJar.GetValueIntent</string>
+			<string>is.workflow.actions.format.date</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>BEA1215A-B7FD-4783-A657-EAD40AC1902F</string>
-				<key>keyPath</key>
-				<string>Text Divider</string>
+				<string>98CAD98C-94A7-46FD-9E07-747DF9D0C41E</string>
+				<key>WFDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>CurrentDate</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFDateFormat</key>
+				<string>D</string>
+				<key>WFDateFormatStyle</key>
+				<string>Custom</string>
+				<key>WFISO8601IncludeTime</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.adjustdate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>yearStart</string>
+				<key>UUID</key>
+				<string>87B81096-21C1-4604-9519-E29C4FEA9E46</string>
+				<key>WFAdjustOperation</key>
+				<string>Get Start of Year</string>
+				<key>WFDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>CurrentDate</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.adjustdate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>yearEnd</string>
+				<key>UUID</key>
+				<string>8402F0C6-36B3-4752-90FE-A3F4AE73AF50</string>
+				<key>WFDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>yearStart</string>
+								<key>OutputUUID</key>
+								<string>87B81096-21C1-4604-9519-E29C4FEA9E46</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFDuration</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Magnitude</key>
+						<string>1</string>
+						<key>Unit</key>
+						<string>years</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFQuantityFieldValue</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettimebetweendates</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>58ECFF9A-C7CC-4467-B789-613AE0D8183D</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>yearEnd</string>
+								<key>OutputUUID</key>
+								<string>8402F0C6-36B3-4752-90FE-A3F4AE73AF50</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFTimeUntilFromDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>yearStart</string>
+								<key>OutputUUID</key>
+								<string>87B81096-21C1-4604-9519-E29C4FEA9E46</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFTimeUntilUnit</key>
+				<string>Days</string>
 			</dict>
 		</dict>
 		<dict>
@@ -652,7 +805,25 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{11, 1}</key>
+							<key>{2, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Formatted Date</string>
+								<key>OutputUUID</key>
+								<string>98CAD98C-94A7-46FD-9E07-747DF9D0C41E</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{4, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Time Between Dates</string>
+								<key>OutputUUID</key>
+								<string>58ECFF9A-C7CC-4467-B789-613AE0D8183D</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{9, 1}</key>
 							<dict>
 								<key>OutputName</key>
 								<string>Rounded Number</string>
@@ -663,7 +834,7 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>⏳ Today is ￼% complete!</string>
+						<string>⏳ ￼/￼ is ￼% complete!</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -687,7 +858,7 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{0, 1}</key>
+							<key>{3, 1}</key>
 							<dict>
 								<key>OutputName</key>
 								<string>Current Focus</string>
@@ -698,11 +869,22 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>￼</string>
+						<string>⚛️ ￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>dk.simonbs.DataJar.GetValueIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>BEA1215A-B7FD-4783-A657-EAD40AC1902F</string>
+				<key>keyPath</key>
+				<string>Text Divider</string>
 			</dict>
 		</dict>
 		<dict>

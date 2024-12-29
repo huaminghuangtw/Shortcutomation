@@ -28,6 +28,56 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "825392AE-A86E-42CD-A621-C37CB43B8A0E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "calType",
+                "UUID": "23D301E9-5417-4797-83D0-91367215CD0A",
+                "WFDictionaryKey": "calType"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "My Calendar.￼",
+                        "attachmentsByRange": {
+                            "{12, 1}": {
+                                "OutputUUID": "23D301E9-5417-4797-83D0-91367215CD0A",
+                                "Type": "ActionOutput",
+                                "OutputName": "calType"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8F0AF285-31C9-48D1-95C2-C092F49FCEA6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8F0AF285-31C9-48D1-95C2-C092F49FCEA6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "1ABE32C0-6E46-4E17-9FAF-8E03FBD69194",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
             "WFWorkflowActionParameters": {
                 "WFDuration": {
@@ -37,6 +87,7 @@
                     },
                     "WFSerializationType": "WFQuantityFieldValue"
                 },
+                "CustomOutputName": "dayStart",
                 "UUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
                 "WFAdjustOperation": "Get Start of Day",
                 "WFDate": {
@@ -63,19 +114,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
             "WFWorkflowActionParameters": {
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
-                                "Type": "ActionOutput",
-                                "OutputName": "Adjusted Date"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
                 "WFDuration": {
                     "Value": {
                         "Unit": "hr",
@@ -83,42 +121,48 @@
                     },
                     "WFSerializationType": "WFQuantityFieldValue"
                 },
-                "UUID": "84A010CD-76BA-444C-ABB5-B9E3E48AC6E1"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
-            "WFWorkflowActionParameters": {
-                "text": {
+                "CustomOutputName": "dayEnd",
+                "UUID": "84A010CD-76BA-444C-ABB5-B9E3E48AC6E1",
+                "WFDate": {
                     "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary",
-                        "OutputUUID": "825392AE-A86E-42CD-A621-C37CB43B8A0E",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "calendar(s)"
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
+                                "Type": "ActionOutput",
+                                "OutputName": "dayStart"
                             }
-                        ]
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "4D025595-5322-45B1-8323-FA0C6748CA7E"
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
-                    "Value": {
-                        "OutputUUID": "4D025595-5322-45B1-8323-FA0C6748CA7E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Split Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "calType",
+                            "OutputUUID": "23D301E9-5417-4797-83D0-91367215CD0A",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
                 },
-                "GroupingIdentifier": "1ABE32C0-6E46-4E17-9FAF-8E03FBD69194",
-                "WFControlFlowMode": 0
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "all-day",
+                "GroupingIdentifier": "316801D0-1006-4A4D-B256-7D6280EBBF77",
+                "WFCondition": 4
             }
         },
         {
@@ -137,7 +181,7 @@
                                         "Value": {
                                             "OutputUUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
                                             "Type": "ActionOutput",
-                                            "OutputName": "Adjusted Date"
+                                            "OutputName": "dayStart"
                                         },
                                         "WFSerializationType": "WFTextTokenAttachment"
                                     },
@@ -145,7 +189,7 @@
                                         "Value": {
                                             "OutputUUID": "84A010CD-76BA-444C-ABB5-B9E3E48AC6E1",
                                             "Type": "ActionOutput",
-                                            "OutputName": "Adjusted Date"
+                                            "OutputName": "dayEnd"
                                         },
                                         "WFSerializationType": "WFTextTokenAttachment"
                                     }
@@ -169,12 +213,100 @@
                                 },
                                 "Removable": true,
                                 "Property": "Calendar"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": true
+                                },
+                                "Removable": true,
+                                "Property": "Is All Day"
                             }
                         ]
                     },
                     "WFSerializationType": "WFContentPredicateTableTemplate"
                 },
                 "UUID": "2480832C-5380-42A3-AA56-7EEDB2A6218A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "316801D0-1006-4A4D-B256-7D6280EBBF77",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.calendarevents",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Property": "Start Date",
+                                "Operator": 1003,
+                                "Values": {
+                                    "Date": {
+                                        "Value": {
+                                            "OutputUUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "dayStart"
+                                        },
+                                        "WFSerializationType": "WFTextTokenAttachment"
+                                    },
+                                    "AnotherDate": {
+                                        "Value": {
+                                            "OutputUUID": "84A010CD-76BA-444C-ABB5-B9E3E48AC6E1",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "dayEnd"
+                                        },
+                                        "WFSerializationType": "WFTextTokenAttachment"
+                                    }
+                                },
+                                "Removable": false,
+                                "Bounded": true
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": {
+                                            "Value": {
+                                                "VariableName": "Repeat Item",
+                                                "Type": "Variable"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Calendar"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is All Day"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemInputParameter": "Library",
+                "UUID": "9D613503-D7A3-4822-9931-59341BCA8DC3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "316801D0-1006-4A4D-B256-7D6280EBBF77",
+                "UUID": "137FFDBE-C591-4367-B06D-3D080B2B05CB"
             }
         },
         {
@@ -199,51 +331,6 @@
                 },
                 "GroupingIdentifier": "1BB83D61-09C8-46FB-BDAB-8CC632B8250B",
                 "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Is All Day"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "6599CADF-CC0E-4FE1-98F1-C8600091871E",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.calendarevents",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemPropertyName": "Calendar",
-                "UUID": "6DEE19EC-DDDE-42FE-8914-0D376E398CB8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "6599CADF-CC0E-4FE1-98F1-C8600091871E",
-                "WFControlFlowMode": 1
             }
         },
         {
@@ -278,14 +365,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "6599CADF-CC0E-4FE1-98F1-C8600091871E",
-                "UUID": "9B5AF5B5-FC65-43E9-8D2F-85CCD9A9FDBC"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -300,9 +379,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "9B5AF5B5-FC65-43E9-8D2F-85CCD9A9FDBC",
+                                "OutputUUID": "6C03B730-F157-493D-A6BB-BDD2829A1B36",
                                 "Type": "ActionOutput",
-                                "OutputName": "If Result"
+                                "OutputName": "Formatted Date"
                             }
                         }
                     },
@@ -401,8 +480,7 @@
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFStringContentItem",
-        "WFDateContentItem"
+        "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [
         {

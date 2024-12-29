@@ -88,13 +88,65 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.split</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>523A0555-95BA-43DC-B8D2-515DB039903C</string>
+				<key>WFTextCustomSeparator</key>
+				<string>BuyMeACoffee</string>
+				<key>WFTextSeparator</key>
+				<string>Custom</string>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>HTML from Rich Text</string>
+						<key>OutputUUID</key>
+						<string>6117FA20-DA4D-4889-B080-5172AE158972</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemfromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>1D34D0EB-ECC5-4446-9251-E041B53EAEF8</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Split Text</string>
+						<key>OutputUUID</key>
+						<string>523A0555-95BA-43DC-B8D2-515DB039903C</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.text.match</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
 				<string>93377CCB-73BC-4B43-B27E-DF6163A0BC12</string>
+				<key>WFMatchTextCaseSensitive</key>
+				<false/>
 				<key>WFMatchTextPattern</key>
-				<string>&lt;a href="/categories\S+&gt;(.*?)&lt;!-- --&gt;</string>
+				<string>&lt;a href="/categories/(.*?)"&gt;</string>
 				<key>text</key>
 				<dict>
 					<key>Value</key>
@@ -104,9 +156,9 @@
 							<key>{0, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>HTML from Rich Text</string>
+								<string>Item from List</string>
 								<key>OutputUUID</key>
-								<string>6117FA20-DA4D-4889-B080-5172AE158972</string>
+								<string>1D34D0EB-ECC5-4446-9251-E041B53EAEF8</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -194,40 +246,6 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.runworkflow</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>AAD8B26B-62D6-4FF0-A792-ACE291F4380D</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Rich Text from HTML</string>
-						<key>OutputUUID</key>
-						<string>6D1FD4B1-ED8E-4379-8B2E-767D8423E587</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-				<key>WFWorkflow</key>
-				<dict>
-					<key>isSelf</key>
-					<false/>
-					<key>workflowIdentifier</key>
-					<string>6D49EA2A-0E94-4DFA-9FE5-DD6ABA97B368</string>
-					<key>workflowName</key>
-					<string>Get Mardown Heading Anchor Text</string>
-				</dict>
-				<key>WFWorkflowName</key>
-				<string>Get Mardown Heading Anchor Text</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.downloadurl</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -251,9 +269,9 @@
 							<key>{13, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Shortcut Result</string>
+								<string>Rich Text from HTML</string>
 								<key>OutputUUID</key>
-								<string>AAD8B26B-62D6-4FF0-A792-ACE291F4380D</string>
+								<string>6D1FD4B1-ED8E-4379-8B2E-767D8423E587</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>

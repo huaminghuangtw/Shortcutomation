@@ -387,10 +387,102 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
             "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "BEA1215A-B7FD-4783-A657-EAD40AC1902F"
+                "WFDateFormatStyle": "Custom",
+                "WFISO8601IncludeTime": false,
+                "WFDateFormat": "D",
+                "UUID": "98CAD98C-94A7-46FD-9E07-747DF9D0C41E",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "yearStart",
+                "UUID": "87B81096-21C1-4604-9519-E29C4FEA9E46",
+                "WFAdjustOperation": "Get Start of Year",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "years",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "CustomOutputName": "yearEnd",
+                "UUID": "8402F0C6-36B3-4752-90FE-A3F4AE73AF50",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "87B81096-21C1-4604-9519-E29C4FEA9E46",
+                                "Type": "ActionOutput",
+                                "OutputName": "yearStart"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8402F0C6-36B3-4752-90FE-A3F4AE73AF50",
+                                "Type": "ActionOutput",
+                                "OutputName": "yearEnd"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "87B81096-21C1-4604-9519-E29C4FEA9E46",
+                                "Type": "ActionOutput",
+                                "OutputName": "yearStart"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "58ECFF9A-C7CC-4467-B789-613AE0D8183D",
+                "WFTimeUntilUnit": "Days"
             }
         },
         {
@@ -398,9 +490,19 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "⏳ Today is ￼% complete!",
+                        "string": "⏳ ￼/￼ is ￼% complete!",
                         "attachmentsByRange": {
-                            "{11, 1}": {
+                            "{2, 1}": {
+                                "OutputUUID": "98CAD98C-94A7-46FD-9E07-747DF9D0C41E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "58ECFF9A-C7CC-4467-B789-613AE0D8183D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Time Between Dates"
+                            },
+                            "{9, 1}": {
                                 "OutputUUID": "A03D071C-70E0-492D-8A16-1748D0AFCE4C",
                                 "Type": "ActionOutput",
                                 "OutputName": "Rounded Number"
@@ -419,9 +521,9 @@
                 "ShowWhenRun": false,
                 "text": {
                     "Value": {
-                        "string": "￼",
+                        "string": "⚛️ ￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
+                            "{3, 1}": {
                                 "OutputUUID": "67D73E60-AE65-4F60-BB71-569B5356B6A6",
                                 "Type": "ActionOutput",
                                 "OutputName": "Current Focus"
@@ -432,6 +534,13 @@
                 },
                 "UUID": "57252418-866F-4357-9B3B-CCB34D9BCAC5",
                 "format": "smallCaps"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "BEA1215A-B7FD-4783-A657-EAD40AC1902F"
             }
         },
         {

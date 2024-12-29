@@ -59,23 +59,54 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "BuyMeACoffee",
+                "UUID": "523A0555-95BA-43DC-B8D2-515DB039903C",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "6117FA20-DA4D-4889-B080-5172AE158972",
+                        "Type": "ActionOutput",
+                        "OutputName": "HTML from Rich Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "523A0555-95BA-43DC-B8D2-515DB039903C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1D34D0EB-ECC5-4446-9251-E041B53EAEF8"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "<a href=\"/categories\\S+>(.*?)<!-- -->",
+                "WFMatchTextCaseSensitive": false,
+                "WFMatchTextPattern": "<a href=\"/categories/(.*?)\">",
+                "UUID": "93377CCB-73BC-4B43-B27E-DF6163A0BC12",
                 "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "6117FA20-DA4D-4889-B080-5172AE158972",
+                                "OutputUUID": "1D34D0EB-ECC5-4446-9251-E041B53EAEF8",
                                 "Type": "ActionOutput",
-                                "OutputName": "HTML from Rich Text"
+                                "OutputName": "Item from List"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "93377CCB-73BC-4B43-B27E-DF6163A0BC12"
+                }
             }
         },
         {
@@ -123,26 +154,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "6D1FD4B1-ED8E-4379-8B2E-767D8423E587",
-                        "Type": "ActionOutput",
-                        "OutputName": "Rich Text from HTML"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "6D49EA2A-0E94-4DFA-9FE5-DD6ABA97B368",
-                    "workflowName": "Get Mardown Heading Anchor Text",
-                    "isSelf": false
-                },
-                "UUID": "AAD8B26B-62D6-4FF0-A792-ACE291F4380D",
-                "WFWorkflowName": "Get Mardown Heading Anchor Text"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
             "WFWorkflowActionParameters": {
                 "WFURL": {
@@ -150,9 +161,9 @@
                         "string": "￼/categories/￼",
                         "attachmentsByRange": {
                             "{13, 1}": {
-                                "OutputUUID": "AAD8B26B-62D6-4FF0-A792-ACE291F4380D",
+                                "OutputUUID": "6D1FD4B1-ED8E-4379-8B2E-767D8423E587",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "Rich Text from HTML"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "44E5ABCF-F6C5-4A59-BA90-799C545537B0",

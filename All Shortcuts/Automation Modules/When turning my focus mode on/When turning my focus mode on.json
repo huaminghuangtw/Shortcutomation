@@ -14,6 +14,25 @@
             "WFWorkflowActionParameters": {}
         },
         {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "RemoveDelivered",
+                "UUID": "23A8A108-D88B-4596-AFD3-991787D2EEC6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "B04516DF-4ED2-4833-A84A-401A5FC06AFC",
+                    "workflowName": "Set Silent Alarm",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Set Silent Alarm",
+                "UUID": "B3C6C0BD-06FA-411D-A193-EBEEB326CED3"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -57,6 +76,14 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode",
+                "CustomOutputName": "My Focus Mode",
+                "UUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "44556DEC-E83F-41C1-A694-A8A8A804E2BB",
@@ -65,13 +92,16 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Current Focus",
-                            "OutputUUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42",
+                            "OutputName": "My Focus Mode",
+                            "OutputUUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67",
                             "Aggrandizements": [
                                 {
-                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFDictionaryContentItem"
+                                },
+                                {
                                     "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
+                                    "PropertyName": "Keys"
                                 }
                             ]
                         },
@@ -79,7 +109,19 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Sleep",
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Focus"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "WFNumberValue": {
                     "Value": {
                         "OutputUUID": "7DFB0639-824A-4490-B785-46E4C3BD4553",
@@ -88,7 +130,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFCondition": 4
+                "WFCondition": 999
             }
         },
         {
@@ -138,112 +180,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Focus Mode",
-                "CustomOutputName": "My Focus Mode",
-                "UUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "34D2924D-5CD5-49A5-A9AF-9912BFD88E67",
-                        "Type": "ActionOutput",
-                        "OutputName": "My Focus Mode"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                "WFWorkflow": {
+                    "workflowIdentifier": "039D7FF5-832B-40D1-9AF9-1ABADE9F178F",
+                    "workflowName": "Set Day Progress Timer",
+                    "isSelf": false
                 },
-                "WFDictionaryKey": {
-                    "Value": {
-                        "string": "￼.endTime",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42",
-                                "Type": "ActionOutput",
-                                "OutputName": "Current Focus"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "A5176371-3939-4A7F-A7D5-B4063A29C0AE"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "A5176371-3939-4A7F-A7D5-B4063A29C0AE",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "A653EAD2-143C-401F-A3C0-C5FA304A5915"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "A653EAD2-143C-401F-A3C0-C5FA304A5915",
-                                "Type": "ActionOutput",
-                                "OutputName": "Dates"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFTimeUntilFromDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "BAC77D40-6E5C-4F21-B724-F910110EAAF9",
-                "WFTimeUntilUnit": "Seconds"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
-            "WFWorkflowActionParameters": {
-                "IntentAppDefinition": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.clock",
-                    "Name": "Clock",
-                    "ExtensionBundleIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents"
-                },
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.mobiletimer",
-                    "Name": "Clock",
-                    "AppIntentIdentifier": "INCreateTimerIntent"
-                },
-                "UUID": "908EBAD5-D0BA-445D-BC3A-174E1DEFF2CE",
-                "WFDuration": {
-                    "Value": {
-                        "Unit": "sec",
-                        "Magnitude": {
-                            "OutputUUID": "BAC77D40-6E5C-4F21-B724-F910110EAAF9",
-                            "Type": "ActionOutput",
-                            "OutputName": "Time Between Dates"
-                        }
-                    },
-                    "WFSerializationType": "WFQuantityFieldValue"
-                }
+                "WFWorkflowName": "Set Day Progress Timer",
+                "UUID": "E9246F18-DEB0-46A9-B460-276FAA4481C0"
             }
         },
         {
@@ -256,13 +201,6 @@
                 },
                 "WFWorkflowName": "Set Average Brightness",
                 "UUID": "DC3E9FE6-7C60-4603-9E6D-91A267E3340A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
-            "WFWorkflowActionParameters": {
-                "mode": "RemoveDelivered",
-                "UUID": "23A8A108-D88B-4596-AFD3-991787D2EEC6"
             }
         },
         {
@@ -635,18 +573,6 @@
                 },
                 "UUID": "55ED0EA0-EFC5-421B-8A8E-C265048C4C86",
                 "WFWorkflowName": "Open My iPhone Shortcut(s)"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "EB66D420-EFEC-4FDE-9DDD-DFCB1CCB1616",
-                    "workflowName": "🐸 Eat the Frog!",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "🐸 Eat the Frog!",
-                "UUID": "55D2511D-B269-4605-8E6D-E11AB526FC9F"
             }
         },
         {
@@ -1271,18 +1197,6 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "BF12A3A9-BD8C-4E9D-A726-7C6082BF57BF",
                 "UUID": "AA4512B9-0F15-455C-9A29-CED6E92D1C1C"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "B04516DF-4ED2-4833-A84A-401A5FC06AFC",
-                    "workflowName": "Set Silent Alarm",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Set Silent Alarm",
-                "UUID": "B3C6C0BD-06FA-411D-A193-EBEEB326CED3"
             }
         },
         {

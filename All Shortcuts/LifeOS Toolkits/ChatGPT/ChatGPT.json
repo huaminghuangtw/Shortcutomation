@@ -1,0 +1,152 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C3751AF4-B347-479B-A462-E086D7AD0153",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Improve: ￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "2C203DF9-4602-414E-86B3-C13F3963687F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAskActionDefaultAnswer": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2C203DF9-4602-414E-86B3-C13F3963687F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAskActionPrompt": "👀",
+                "UUID": "695FF697-2742-4D9C-A6F2-BD5F48D37E5D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.openai.chat.AskIntent",
+            "WFWorkflowActionParameters": {
+                "prompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "695FF697-2742-4D9C-A6F2-BD5F48D37E5D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Provided Input"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "continuous": false,
+                "newChat": true,
+                "UUID": "82C6027C-05DE-4D7C-BE45-B66F2D680C00",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "2DC432GLL2",
+                    "BundleIdentifier": "com.openai.chat",
+                    "Name": "ChatGPT",
+                    "AppIntentIdentifier": "AskIntent"
+                },
+                "model": {
+                    "subtitle": {
+                        "key": "Auto"
+                    },
+                    "title": {
+                        "key": "Auto"
+                    },
+                    "identifier": "auto"
+                },
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C3751AF4-B347-479B-A462-E086D7AD0153",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.openai.chat.OpenNewChatInAppIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "A260E631-DA39-46F2-8A9D-028C31DE100C",
+                "useSearchGPT": false,
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "2DC432GLL2",
+                    "BundleIdentifier": "com.openai.chat",
+                    "Name": "ChatGPT",
+                    "AppIntentIdentifier": "OpenNewChatInAppIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C3751AF4-B347-479B-A462-E086D7AD0153",
+                "UUID": "87E4DBC4-CF68-45BC-8468-184B224DD454"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFAppIdentifier": "com.openai.chat",
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.openai.chat",
+                    "Name": "ChatGPT",
+                    "TeamIdentifier": "2DC432GLL2"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "QuickActions"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}
