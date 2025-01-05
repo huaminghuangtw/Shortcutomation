@@ -13,7 +13,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "🥙 Recipe Of The Day",
-                "CustomOutputName": "title",
+                "CustomOutputName": "🥙 Recipe Of The Day",
                 "UUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1"
             }
         },
@@ -28,6 +28,21 @@
                 "CustomOutputName": "recipe",
                 "UUID": "3F590929-B8AC-4B36-B791-9FD559064E27",
                 "WFWorkflowName": "Spoonacular - Get Random Recipes"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3F590929-B8AC-4B36-B791-9FD559064E27",
+                        "Type": "ActionOutput",
+                        "OutputName": "recipe"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "title",
+                "UUID": "BB84152E-6244-4689-9004-65DB4209E167"
             }
         },
         {
@@ -539,74 +554,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "3F590929-B8AC-4B36-B791-9FD559064E27",
-                        "Type": "ActionOutput",
-                        "OutputName": "recipe"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFDictionaryKey": "title",
-                "UUID": "BB84152E-6244-4689-9004-65DB4209E167"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "BB84152E-6244-4689-9004-65DB4209E167",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "45D6C535-4181-40EF-844D-B87D958AE163",
-                    "workflowName": "Google Images - Perform Image Search",
-                    "isSelf": false
-                },
-                "UUID": "CBD7BD61-9395-456C-9507-7C429BC74925",
-                "WFWorkflowName": "Google Images - Perform Image Search"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
-            "WFWorkflowActionParameters": {
-                "WFURL": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "CBD7BD61-9395-456C-9507-7C429BC74925",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "75BF3B39-2F81-4037-BEDC-178C9BB0809B"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.images",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "75BF3B39-2F81-4037-BEDC-178C9BB0809B",
-                        "Type": "ActionOutput",
-                        "OutputName": "Contents of URL"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "3CC77B8A-47A0-47C7-B68E-A14C33E50E41"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -627,7 +574,7 @@
                                             "{0, 1}": {
                                                 "OutputUUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "title"
+                                                "OutputName": "🥙 Recipe Of The Day"
                                             }
                                         }
                                     },
@@ -697,12 +644,47 @@
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "5818B41A-37BD-4E0D-86F8-33FC03F787E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "title"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "🥙 Recipe Of The Day"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
                             },
                             {
                                 "WFItemType": 0,
                                 "WFKey": {
                                     "Value": {
-                                        "string": "recipeCardURL"
+                                        "string": "imageSource"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 },
@@ -719,78 +701,55 @@
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "actionShortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "5818B41A-37BD-4E0D-86F8-33FC03F787E7",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Dictionary"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
                             }
                         ]
                     },
                     "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "UUID": "5818B41A-37BD-4E0D-86F8-33FC03F787E7"
+                "UUID": "EE5BB5CC-8FA0-4935-B491-79673B955783"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "io.pushcut.Pushcut.ShowNotificationIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "text": {
+                "WFInput": {
                     "Value": {
-                        "string": "────────────\n￼",
-                        "attachmentsByRange": {
-                            "{13, 1}": {
-                                "OutputUUID": "221005ED-B81A-4645-8146-4C5E0DFFD6A4",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "title": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1",
-                                "Type": "ActionOutput",
-                                "OutputName": "title"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "3C9049DB-B13F-4E0D-94EF-92E12D1E9A16",
-                "input": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "5818B41A-37BD-4E0D-86F8-33FC03F787E7",
-                                "Type": "ActionOutput",
-                                "OutputName": "Dictionary"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "notification": {
-                    "Value": {
-                        "OutputUUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1",
+                        "OutputUUID": "EE5BB5CC-8FA0-4935-B491-79673B955783",
                         "Type": "ActionOutput",
-                        "OutputName": "title"
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "image": {
-                    "Value": {
-                        "OutputUUID": "3CC77B8A-47A0-47C7-B68E-A14C33E50E41",
-                        "Type": "ActionOutput",
-                        "OutputName": "Images"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
+                "WFWorkflow": {
+                    "workflowIdentifier": "2852E533-A8D3-461A-901C-0A4532842788",
+                    "workflowName": "_Build Rich Notification",
+                    "isSelf": false
+                },
+                "UUID": "2F50A74C-0AD7-42AF-B1F3-90D48441C492",
+                "WFWorkflowName": "_Build Rich Notification"
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
-            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

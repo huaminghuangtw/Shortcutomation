@@ -10,40 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "When turning my focus mode on",
-                "UUID": "6C722541-64C4-4134-86F1-3A025C9B41DF"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "6C722541-64C4-4134-86F1-3A025C9B41DF",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
-                    "workflowName": "Build Run Shortcut URL",
-                    "isSelf": false
-                },
-                "UUID": "699E1AA6-03EC-483F-85CF-80B089601C17",
-                "WFWorkflowName": "Build Run Shortcut URL"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "C2109E91-987E-4E8D-982F-0B4A41C5CA18"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
             "WFWorkflowActionParameters": {
                 "UUID": "C6FEBF56-70F8-4BFC-A320-24C4FBCB8200"
@@ -54,6 +20,48 @@
             "WFWorkflowActionParameters": {
                 "keyPath": "My Focus Mode",
                 "UUID": "6489BC28-8E46-4B39-983E-137F920C2D27"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value",
+                            "OutputUUID": "6489BC28-8E46-4B39-983E-137F920C2D27",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFDictionaryContentItem"
+                                },
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Keys"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C6FEBF56-70F8-4BFC-A320-24C4FBCB8200",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Focus"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "F9BD3ECF-6D27-4AA7-B668-44F0967C0074",
+                "WFCondition": 99
             }
         },
         {
@@ -85,103 +93,37 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "1"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "1️⃣"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "2"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "2️⃣"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "3"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "3️⃣"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "4"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "4️⃣"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "62C88F9F-3ED8-4A6F-A84A-9468A09766B9"
+                "keyPath": "Text Divider",
+                "UUID": "C2109E91-987E-4E8D-982F-0B4A41C5CA18"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "When turning my focus mode on",
+                "UUID": "6C722541-64C4-4134-86F1-3A025C9B41DF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "62C88F9F-3ED8-4A6F-A84A-9468A09766B9",
+                        "OutputUUID": "6C722541-64C4-4134-86F1-3A025C9B41DF",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFDictionaryKey": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "C7957180-E601-477D-A5D2-4F67BB28C623",
-                                "Type": "ActionOutput",
-                                "OutputName": "phase"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
                 },
-                "UUID": "5CA3379D-8F9D-4B95-804C-5B931EC19C15"
+                "UUID": "699E1AA6-03EC-483F-85CF-80B089601C17",
+                "WFWorkflowName": "Build Run Shortcut URL"
             }
         },
         {
@@ -202,12 +144,12 @@
                 },
                 "title": {
                     "Value": {
-                        "string": "👇 Quarter ￼ 👇",
+                        "string": "⏱️ Quarter ￼ / 4",
                         "attachmentsByRange": {
                             "{11, 1}": {
-                                "OutputUUID": "5CA3379D-8F9D-4B95-804C-5B931EC19C15",
+                                "OutputUUID": "C7957180-E601-477D-A5D2-4F67BB28C623",
                                 "Type": "ActionOutput",
-                                "OutputName": "Dictionary Value"
+                                "OutputName": "phase"
                             }
                         }
                     },
@@ -239,7 +181,33 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
+                },
+                "threadID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Medium"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F9BD3ECF-6D27-4AA7-B668-44F0967C0074",
+                "WFControlFlowMode": 2
             }
         }
     ],

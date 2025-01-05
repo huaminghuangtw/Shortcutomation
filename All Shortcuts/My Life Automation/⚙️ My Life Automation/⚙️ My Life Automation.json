@@ -10,46 +10,60 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "shortcutName"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "⚙️ My Life Automation"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "checkInterval"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "today"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
+                "WFWorkflow": {
+                    "workflowIdentifier": "DB53B8EE-E9F7-44E2-B523-098556EF3A38",
+                    "workflowName": "Connect to Internet",
+                    "isSelf": false
                 },
-                "UUID": "5968A44F-8FE8-4312-812D-02498E0B09CF"
+                "WFWorkflowName": "Connect to Internet",
+                "UUID": "04A5C949-EB8D-45ED-BDD1-09A3D03A82CC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "⚙️ My Life Automation",
+                "CustomOutputName": "⚙️ My Life Automation",
+                "UUID": "DD2CBDBD-2FBA-4891-9779-E6B88B942FEF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "9DD059B1-5A54-411A-B6C6-4E3ABDC8539C",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "TeamIdentifier": "QRVYSKD5TN"
+                },
+                "WFAppIdentifier": "com.alexhay.Console",
+                "UUID": "E93D6EDE-EB18-48D2-BDB5-60DAA0958894"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "✔ Check Life Automation",
+                "CustomOutputName": "✔ Check Life Automation",
+                "UUID": "230F8BAA-D676-4A98-92EA-1049FF71499F"
             }
         },
         {
@@ -57,19 +71,157 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "5968A44F-8FE8-4312-812D-02498E0B09CF",
+                        "OutputUUID": "230F8BAA-D676-4A98-92EA-1049FF71499F",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "✔ Check Life Automation"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "A86201D2-8F83-4F02-A0E5-AB49C788A218",
-                    "workflowName": "Check Last Run Time",
+                    "workflowIdentifier": "AA677D1E-5DC5-4378-A0C5-73A7CB9AAEB5",
+                    "workflowName": "Build Run Shortcut URL",
                     "isSelf": false
                 },
-                "UUID": "1BBC21B7-A376-4837-B7BB-A80AFAFE0BE1",
-                "WFWorkflowName": "Check Last Run Time"
+                "UUID": "7CD839D6-3D20-46EB-94B8-9786286EA1F2",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "subtitle": "",
+                "onTap": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "7CD839D6-3D20-46EB-94B8-9786286EA1F2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "threadID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Medium"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "230F8BAA-D676-4A98-92EA-1049FF71499F",
+                                "Type": "ActionOutput",
+                                "OutputName": "✔ Check Life Automation"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "showNotification": "InMinutes",
+                "inMinutes": "30",
+                "UUID": "56CE9342-E830-4CA7-822F-3AC9773B0DF6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9DD059B1-5A54-411A-B6C6-4E3ABDC8539C",
+                "UUID": "51C2D1E4-A898-4F3F-ABD5-6A78003F3DB2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "6BE56D62-E104-4BF4-81EB-DABA263F1872",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9693F9BA-0FA0-4621-AD6F-E4BD9B7E7457"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "6BE56D62-E104-4BF4-81EB-DABA263F1872",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "466F6366-387F-4236-A774-BC4214C1B594",
+                    "workflowName": "My Shortcuts for Life Automation",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "My Shortcuts for Life Automation",
+                "UUID": "E3A0E317-DC3B-42A9-8EC3-ADCA02914F5F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "6BE56D62-E104-4BF4-81EB-DABA263F1872",
+                "UUID": "F80CADDB-FFAA-453D-9038-675E2E740767"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F80CADDB-FFAA-453D-9038-675E2E740767",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "05C7EE63-704E-4499-90D6-B49F0045C649",
+                    "workflowName": "Batch Run Shortcuts for Automation",
+                    "isSelf": false
+                },
+                "UUID": "83C7695E-5F58-4EFF-97EC-4EC4FD388ACC",
+                "WFWorkflowName": "Batch Run Shortcuts for Automation"
             }
         }
     ],
@@ -77,7 +229,9 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": false
+    "WFWorkflowHasShortcutInputVariables": true
 }
