@@ -10,6 +10,14 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "🌍 Word Of The Day",
+                "CustomOutputName": "🌍 Word Of The Day",
+                "UUID": "1FC4E95E-124E-4F48-9855-59AFDBC58049"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
                 "WFURLActionURL": "https://www.merriam-webster.com/word-of-the-day",
@@ -151,6 +159,41 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "wordPfTheDayURL",
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "￼/￼-￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "wordOfTheDay"
+                            },
+                            "{4, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "27907921-5F28-475E-9AE5-47418DD0F3B2",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "3DB72667-CE14-43FD-9614-7EE4668B4891"
             }
         },
         {
@@ -309,6 +352,60 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "[￼ - **￼**](￼)\n￼",
+                        "attachmentsByRange": {
+                            "{12, 1}": {
+                                "OutputUUID": "3DB72667-CE14-43FD-9614-7EE4668B4891",
+                                "Type": "ActionOutput",
+                                "OutputName": "wordPfTheDayURL"
+                            },
+                            "{1, 1}": {
+                                "OutputUUID": "1FC4E95E-124E-4F48-9855-59AFDBC58049",
+                                "Type": "ActionOutput",
+                                "OutputName": "🌍 Word Of The Day"
+                            },
+                            "{15, 1}": {
+                                "OutputUUID": "9B2D4F43-A99E-4475-9622-5C682946BE0F",
+                                "Type": "ActionOutput",
+                                "OutputName": "definition"
+                            },
+                            "{7, 1}": {
+                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "wordOfTheDay"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1EB09891-059D-459A-A453-773A99B6173D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1EB09891-059D-459A-A453-773A99B6173D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "✍️ Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "80230574-4E8E-4704-A99C-4CF51E905DEE",
+                "WFWorkflowName": "✍️ Log Journal"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -324,7 +421,14 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "🌍 Word Of The Day"
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "1FC4E95E-124E-4F48-9855-59AFDBC58049",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "🌍 Word Of The Day"
+                                            }
+                                        }
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
@@ -383,27 +487,12 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "￼/￼-￼",
+                                        "string": "￼",
                                         "attachmentsByRange": {
-                                            "{2, 1}": {
-                                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "wordOfTheDay"
-                                            },
-                                            "{4, 1}": {
-                                                "Type": "CurrentDate",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFDateFormatVariableAggrandizement",
-                                                        "WFISO8601IncludeTime": false,
-                                                        "WFDateFormatStyle": "ISO 8601"
-                                                    }
-                                                ]
-                                            },
                                             "{0, 1}": {
-                                                "OutputUUID": "27907921-5F28-475E-9AE5-47418DD0F3B2",
+                                                "OutputUUID": "3DB72667-CE14-43FD-9614-7EE4668B4891",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "URL"
+                                                "OutputName": "wordPfTheDayURL"
                                             }
                                         }
                                     },

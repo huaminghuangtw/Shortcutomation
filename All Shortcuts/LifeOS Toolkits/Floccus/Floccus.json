@@ -173,13 +173,59 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFTextCustomSeparator": "$=•=$",
+                "UUID": "44601DC9-D999-436D-B933-92A801A95D7F",
+                "WFTextSeparator": "Custom",
+                "text": {
                     "Value": {
                         "OutputUUID": "DEBECF43-0CCD-4395-8B0D-6FF41ADEE3E2",
                         "Type": "ActionOutput",
                         "OutputName": "titles"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
+            "WFWorkflowActionParameters": {
+                "WFHTML": {
+                    "Value": {
+                        "OutputUUID": "44601DC9-D999-436D-B933-92A801A95D7F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C6F15BDA-7126-4383-B611-57880DB731EF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "$=•=$",
+                "UUID": "717BDA7D-CFE1-4C06-9FB0-7FAB5E854302",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "C6F15BDA-7126-4383-B611-57880DB731EF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rich Text from HTML"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "717BDA7D-CFE1-4C06-9FB0-7FAB5E854302",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -259,19 +305,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
-            "WFWorkflowActionParameters": {
-                "WFHTML": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "BDC8A35E-8691-4A8B-BF32-CA16D7EE5C3B"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFDictionaryValue": {
@@ -300,9 +333,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "BDC8A35E-8691-4A8B-BF32-CA16D7EE5C3B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Rich Text from HTML"
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -337,9 +369,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "DEBECF43-0CCD-4395-8B0D-6FF41ADEE3E2",
+                        "OutputUUID": "717BDA7D-CFE1-4C06-9FB0-7FAB5E854302",
                         "Type": "ActionOutput",
-                        "OutputName": "titles"
+                        "OutputName": "Split Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

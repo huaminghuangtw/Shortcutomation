@@ -8,14 +8,146 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.format.date</string>
+			<string>is.workflow.actions.file</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
-				<string>Year</string>
+				<string>Weekly-Mindware-Update</string>
 				<key>UUID</key>
-				<string>11B66F9E-426F-497C-8E59-054F3EDE707D</string>
-				<key>WFDate</key>
+				<string>D32B75CC-343A-4DF0-B225-8E7A4BC58490</string>
+				<key>WFFile</key>
+				<dict>
+					<key>displayName</key>
+					<string>Weekly-Mindware-Update</string>
+					<key>fileLocation</key>
+					<dict>
+						<key>WFFileLocationType</key>
+						<string>iCloud</string>
+						<key>appContainerBundleIdentifier</key>
+						<string>md.obsidian</string>
+						<key>crossDeviceItemID</key>
+						<string>docs.icloud.com:com.apple.CloudDocs/3438C552-7900-4D1C-BDC5-E1CF43886E3B/29d958dbcf2f63cc9e41b5db4fd1bc1dde45d4ec</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185</string>
+						<key>relativeSubpath</key>
+						<string>iCloud~md~obsidian/Documents/Second-Brain/Weekly-Mindware-Update</string>
+					</dict>
+					<key>filename</key>
+					<string>Weekly-Mindware-Update</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.file.getfoldercontents</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Recursive</key>
+				<true/>
+				<key>UUID</key>
+				<string>AAFF8625-6E9C-4C9F-A14F-B43FFA6A01D6</string>
+				<key>WFFolder</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Weekly-Mindware-Update</string>
+						<key>OutputUUID</key>
+						<string>D32B75CC-343A-4DF0-B225-8E7A4BC58490</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.filter.files</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>3AE78937-81CC-4BD9-A43C-D0565A10C037</string>
+				<key>WFContentItemFilter</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFActionParameterFilterPrefix</key>
+						<integer>1</integer>
+						<key>WFActionParameterFilterTemplates</key>
+						<array>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>File Extension</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>String</key>
+									<string>md</string>
+									<key>Unit</key>
+									<integer>4</integer>
+								</dict>
+							</dict>
+							<dict>
+								<key>Operator</key>
+								<integer>5</integer>
+								<key>Property</key>
+								<string>Name</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>String</key>
+									<string>README</string>
+									<key>Unit</key>
+									<integer>4</integer>
+								</dict>
+							</dict>
+						</array>
+						<key>WFContentPredicateBoundedDate</key>
+						<false/>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContentPredicateTableTemplate</string>
+				</dict>
+				<key>WFContentItemInputParameter</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Contents of Folder</string>
+						<key>OutputUUID</key>
+						<string>AAFF8625-6E9C-4C9F-A14F-B43FFA6A01D6</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFContentItemLimitEnabled</key>
+				<true/>
+				<key>WFContentItemLimitNumber</key>
+				<real>1</real>
+				<key>WFContentItemSortOrder</key>
+				<string>Latest First</string>
+				<key>WFContentItemSortProperty</key>
+				<string>Creation Date</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.match</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>FF8F8A2C-B8ED-49BF-9958-D6A5D8AAA714</string>
+				<key>WFMatchTextPattern</key>
+				<string>Weekly-Mindware-Update(.+)</string>
+				<key>text</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -23,8 +155,23 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>File Path</string>
+										<key>PropertyUserInfo</key>
+										<dict/>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Files</string>
+								<key>OutputUUID</key>
+								<string>3AE78937-81CC-4BD9-A43C-D0565A10C037</string>
 								<key>Type</key>
-								<string>CurrentDate</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -33,109 +180,28 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
-				<key>WFDateFormat</key>
-				<string>yyyy</string>
-				<key>WFDateFormatStyle</key>
-				<string>Custom</string>
-				<key>WFTimeFormatStyle</key>
-				<string>None</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.runworkflow</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>WeekNumber</string>
-				<key>UUID</key>
-				<string>CAAF3B9E-3485-4675-B0D5-C3C66261D6C2</string>
-				<key>WFWorkflow</key>
-				<dict>
-					<key>isSelf</key>
-					<false/>
-					<key>workflowIdentifier</key>
-					<string>0328B4D2-16E7-4A53-96F1-1F7336D18BC7</string>
-					<key>workflowName</key>
-					<string>getCurentWeekNumber2</string>
-				</dict>
-				<key>WFWorkflowName</key>
-				<string>getCurentWeekNumber2</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.math</string>
+			<string>is.workflow.actions.text.match.getgroup</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>1299B6D0-9420-46EC-82C4-7ABE74B7ECBB</string>
-				<key>WFInput</key>
+				<string>751BDA19-B96E-4967-B952-02A1DEE49310</string>
+				<key>matches</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>WeekNumber</string>
+						<string>Matches</string>
 						<key>OutputUUID</key>
-						<string>CAAF3B9E-3485-4675-B0D5-C3C66261D6C2</string>
+						<string>FF8F8A2C-B8ED-49BF-9958-D6A5D8AAA714</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
-				</dict>
-				<key>WFMathOperand</key>
-				<string>1</string>
-				<key>WFMathOperation</key>
-				<string>-</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>6FF5B9EC-F787-4031-8E7A-513BC0D2ABBA</string>
-				<key>WFTextActionText</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Year</string>
-								<key>OutputUUID</key>
-								<string>11B66F9E-426F-497C-8E59-054F3EDE707D</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-							<key>{2, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Year</string>
-								<key>OutputUUID</key>
-								<string>11B66F9E-426F-497C-8E59-054F3EDE707D</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-							<key>{9, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Calculation Result</string>
-								<key>OutputUUID</key>
-								<string>1299B6D0-9420-46EC-82C4-7ABE74B7ECBB</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼/￼_Week_￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
 				</dict>
 			</dict>
 		</dict>
@@ -153,7 +219,7 @@
 						<key>OutputName</key>
 						<string>Text</string>
 						<key>OutputUUID</key>
-						<string>6FF5B9EC-F787-4031-8E7A-513BC0D2ABBA</string>
+						<string>751BDA19-B96E-4967-B952-02A1DEE49310</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>

@@ -10,82 +10,122 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
             "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "WFTimeFormatStyle": "None",
-                "CustomOutputName": "Year",
-                "UUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
-                "WFDateFormat": "yyyy",
-                "WFDate": {
+                "CustomOutputName": "Weekly-Mindware-Update",
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Weekly-Mindware-Update",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/3438C552-7900-4D1C-BDC5-E1CF43886E3B/29d958dbcf2f63cc9e41b5db4fd1bc1dde45d4ec"
+                    },
+                    "filename": "Weekly-Mindware-Update",
+                    "displayName": "Weekly-Mindware-Update"
+                },
+                "UUID": "D32B75CC-343A-4DF0-B225-8E7A4BC58490"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "D32B75CC-343A-4DF0-B225-8E7A4BC58490",
+                        "Type": "ActionOutput",
+                        "OutputName": "Weekly-Mindware-Update"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "AAFF8625-6E9C-4C9F-A14F-B43FFA6A01D6",
+                "Recursive": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": "md"
+                                },
+                                "Removable": true,
+                                "Property": "File Extension"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": "README"
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemSortOrder": "Latest First",
+                "UUID": "3AE78937-81CC-4BD9-A43C-D0565A10C037",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "AAFF8625-6E9C-4C9F-A14F-B43FFA6A01D6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "WFContentItemSortProperty": "Creation Date"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "Weekly-Mindware-Update(.+)",
+                "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "Type": "ActionOutput",
+                                "OutputName": "Files",
+                                "OutputUUID": "3AE78937-81CC-4BD9-A43C-D0565A10C037",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": {},
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "File Path"
+                                    }
+                                ]
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "0328B4D2-16E7-4A53-96F1-1F7336D18BC7",
-                    "workflowName": "getCurentWeekNumber2",
-                    "isSelf": false
                 },
-                "CustomOutputName": "WeekNumber",
-                "UUID": "CAAF3B9E-3485-4675-B0D5-C3C66261D6C2",
-                "WFWorkflowName": "getCurentWeekNumber2"
+                "UUID": "FF8F8A2C-B8ED-49BF-9958-D6A5D8AAA714"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "matches": {
                     "Value": {
-                        "OutputUUID": "CAAF3B9E-3485-4675-B0D5-C3C66261D6C2",
+                        "OutputUUID": "FF8F8A2C-B8ED-49BF-9958-D6A5D8AAA714",
                         "Type": "ActionOutput",
-                        "OutputName": "WeekNumber"
+                        "OutputName": "Matches"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFMathOperand": "1",
-                "UUID": "1299B6D0-9420-46EC-82C4-7ABE74B7ECBB",
-                "WFMathOperation": "-"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼/￼_Week_￼",
-                        "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
-                                "Type": "ActionOutput",
-                                "OutputName": "Year"
-                            },
-                            "{9, 1}": {
-                                "OutputUUID": "1299B6D0-9420-46EC-82C4-7ABE74B7ECBB",
-                                "Type": "ActionOutput",
-                                "OutputName": "Calculation Result"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
-                                "Type": "ActionOutput",
-                                "OutputName": "Year"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "6FF5B9EC-F787-4031-8E7A-513BC0D2ABBA"
+                "UUID": "751BDA19-B96E-4967-B952-02A1DEE49310"
             }
         },
         {
@@ -93,7 +133,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "6FF5B9EC-F787-4031-8E7A-513BC0D2ABBA",
+                        "OutputUUID": "751BDA19-B96E-4967-B952-02A1DEE49310",
                         "Type": "ActionOutput",
                         "OutputName": "Text"
                     },

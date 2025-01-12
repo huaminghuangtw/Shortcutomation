@@ -10,106 +10,175 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "WFDateFormat": "MMMM d",
-                "UUID": "8EC1E1FA-676B-4739-9CC1-109B06FFA1C0",
-                "WFDate": {
+                "keyPath": "My CMS.Reddit.subreddit",
+                "UUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate"
+                        "Type": "ActionOutput",
+                        "OutputName": "Value",
+                        "OutputUUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "Did You Know?"
                             }
-                        }
+                        ]
                     },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Random Item",
+                "UUID": "8D2C3C75-C8B7-4CAC-8B35-7E847B8502C2"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFURL": "https://www.onthisday.com",
-                "UUID": "6451EEB2-7906-42E1-8FD1-4EC531AB0C21"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": {
+                "WFInput": {
                     "Value": {
-                        "string": "Did You Know\\?\\n([\\s\\S]*?)\\n(￼, \\d{4})",
+                        "OutputUUID": "8D2C3C75-C8B7-4CAC-8B35-7E847B8502C2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "364A0FC9-F036-4634-8B16-C89F8FE011A9",
+                    "workflowName": "Reddit - Get Random Top Post of A Subreddit",
+                    "isSelf": false
+                },
+                "UUID": "73CA8080-9EC5-4DE7-940E-168010D1C86F",
+                "WFWorkflowName": "Reddit - Get Random Top Post of A Subreddit"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "73CA8080-9EC5-4DE7-940E-168010D1C86F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "subreddit",
+                "UUID": "D9DDFB07-4343-4D6B-B652-E63FDD388381",
+                "WFDictionaryKey": "subreddit_name_prefixed"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "73CA8080-9EC5-4DE7-940E-168010D1C86F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "title",
+                "UUID": "06EA52A3-5EE3-414E-9539-B5C2CB749625",
+                "WFDictionaryKey": "title"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "73CA8080-9EC5-4DE7-940E-168010D1C86F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "selftext",
+                "UUID": "4EE95120-D8EC-4299-AED9-5DB7313F7822",
+                "WFDictionaryKey": "selftext"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "73CA8080-9EC5-4DE7-940E-168010D1C86F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "url",
+                "UUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
+                "WFDictionaryKey": "url"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "[￼](￼)\n￼",
                         "attachmentsByRange": {
-                            "{29, 1}": {
-                                "OutputUUID": "8EC1E1FA-676B-4739-9CC1-109B06FFA1C0",
+                            "{7, 1}": {
+                                "OutputUUID": "4EE95120-D8EC-4299-AED9-5DB7313F7822",
                                 "Type": "ActionOutput",
-                                "OutputName": "Formatted Date"
+                                "OutputName": "selftext"
+                            },
+                            "{1, 1}": {
+                                "OutputUUID": "06EA52A3-5EE3-414E-9539-B5C2CB749625",
+                                "Type": "ActionOutput",
+                                "OutputName": "title"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
+                                "Type": "ActionOutput",
+                                "OutputName": "url"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "text": {
+                "UUID": "684C8D29-1046-49DC-8183-386624646586"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Contents of URL",
-                                "OutputUUID": "6451EEB2-7906-42E1-8FD1-4EC531AB0C21",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFStringContentItem"
-                                    }
-                                ]
-                            }
-                        }
+                        "OutputUUID": "684C8D29-1046-49DC-8183-386624646586",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "3D11F5C6-46DF-4A2D-8190-A7B23226B1BD"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
-            "WFWorkflowActionParameters": {
-                "WFGetGroupType": "Group At Index",
-                "UUID": "4527708A-823D-4C57-AB77-8C9E1C015398",
-                "WFGroupIndex": "1",
-                "matches": {
-                    "Value": {
-                        "OutputUUID": "3D11F5C6-46DF-4A2D-8190-A7B23226B1BD",
-                        "Type": "ActionOutput",
-                        "OutputName": "Matches"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
-            "WFWorkflowActionParameters": {
-                "WFGetGroupType": "Group At Index",
-                "UUID": "919B1283-AE1F-4338-A868-98F864AF4187",
-                "WFGroupIndex": "2",
-                "matches": {
-                    "Value": {
-                        "OutputUUID": "3D11F5C6-46DF-4A2D-8190-A7B23226B1BD",
-                        "Type": "ActionOutput",
-                        "OutputName": "Matches"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "✍️ Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "479D0BC0-09C2-4C3A-936A-960D1EAE6DC2",
+                "WFWorkflowName": "✍️ Log Journal"
             }
         },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "Text Divider",
-                "UUID": "16CA29AB-1458-4A0F-AC3F-220EF945E731"
+                "UUID": "C69B5C4F-AA5E-4E68-B717-E03BE2E94BE6"
             }
         },
         {
@@ -120,17 +189,17 @@
                         "string": "￼\n￼\n￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
-                                "OutputUUID": "919B1283-AE1F-4338-A868-98F864AF4187",
+                                "OutputUUID": "D9DDFB07-4343-4D6B-B652-E63FDD388381",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "subreddit"
                             },
                             "{4, 1}": {
-                                "OutputUUID": "16CA29AB-1458-4A0F-AC3F-220EF945E731",
+                                "OutputUUID": "C69B5C4F-AA5E-4E68-B717-E03BE2E94BE6",
                                 "Type": "ActionOutput",
                                 "OutputName": "Value"
                             },
                             "{0, 1}": {
-                                "OutputUUID": "16CA29AB-1458-4A0F-AC3F-220EF945E731",
+                                "OutputUUID": "C69B5C4F-AA5E-4E68-B717-E03BE2E94BE6",
                                 "Type": "ActionOutput",
                                 "OutputName": "Value"
                             }
@@ -138,28 +207,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "CustomOutputName": "subtitle",
-                "UUID": "DE056067-3FF6-4131-A5EE-E7AFD88DA6C9"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "4527708A-823D-4C57-AB77-8C9E1C015398",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
-                    "workflowName": "Build Google Search URL",
-                    "isSelf": false
-                },
-                "UUID": "80BA7537-FBCD-4479-B0DF-6A7636316B52",
-                "WFWorkflowName": "Build Google Search URL"
+                "UUID": "6F77D68B-0BB7-484F-A89C-8C5B6CCB8C12"
             }
         },
         {
@@ -196,9 +244,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "DE056067-3FF6-4131-A5EE-E7AFD88DA6C9",
+                                                "OutputUUID": "6F77D68B-0BB7-484F-A89C-8C5B6CCB8C12",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "subtitle"
+                                                "OutputName": "Text"
                                             }
                                         }
                                     },
@@ -218,9 +266,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "4527708A-823D-4C57-AB77-8C9E1C015398",
+                                                "OutputUUID": "06EA52A3-5EE3-414E-9539-B5C2CB749625",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Text"
+                                                "OutputName": "title"
                                             }
                                         }
                                     },
@@ -240,9 +288,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "80BA7537-FBCD-4479-B0DF-6A7636316B52",
+                                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Shortcut Result"
+                                                "OutputName": "url"
                                             }
                                         }
                                     },
@@ -253,17 +301,17 @@
                     },
                     "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "UUID": "90416F1B-9425-4F4B-B8E1-3632AE3E3336"
+                "UUID": "FA67D068-65E6-4615-AA86-7BF006F896FB"
             }
         },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
             "WFWorkflowActionParameters": {
                 "fileName": "Create Notification",
-                "UUID": "1CC1A36B-78C9-4126-9D45-69623A3DFDCB",
+                "UUID": "B3DF1E8B-5355-4F20-9CB6-BA27C3BF6F2F",
                 "parameter": {
                     "Value": {
-                        "OutputUUID": "90416F1B-9425-4F4B-B8E1-3632AE3E3336",
+                        "OutputUUID": "FA67D068-65E6-4615-AA86-7BF006F896FB",
                         "Type": "ActionOutput",
                         "OutputName": "Dictionary"
                     },

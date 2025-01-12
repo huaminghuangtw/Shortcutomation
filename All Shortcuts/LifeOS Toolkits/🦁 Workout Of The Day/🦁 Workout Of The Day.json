@@ -119,50 +119,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "[￼](￼)",
-                        "attachmentsByRange": {
-                            "{1, 1}": {
-                                "OutputUUID": "30B5EFD7-4384-4F29-80DF-58ED0403638F",
-                                "Type": "ActionOutput",
-                                "OutputName": "🦁 Workout Of The Day"
-                            },
-                            "{4, 1}": {
-                                "OutputUUID": "484EF8C7-DA45-468C-A6DC-E7BA6A5FC04D",
-                                "Type": "ActionOutput",
-                                "OutputName": "workoutOfTheDayURL"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "AB02CDA7-2FBF-4EA8-A103-29E872AE7441"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "AB02CDA7-2FBF-4EA8-A103-29E872AE7441",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
-                    "workflowName": "✍️ Log Journal",
-                    "isSelf": false
-                },
-                "UUID": "81F25109-BE4C-4EA7-AA4D-37DC7A2695F2",
-                "WFWorkflowName": "✍️ Log Journal"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
             "WFWorkflowActionParameters": {
                 "WFURL": {
@@ -230,6 +186,21 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
+            "WFWorkflowActionParameters": {
+                "WFHTML": {
+                    "Value": {
+                        "OutputUUID": "B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "workoutName",
+                "UUID": "C6F91E86-2799-4EE9-A029-336A2DB531A5"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
             "WFWorkflowActionParameters": {
                 "WFCaseType": "Capitalize with Title Case",
@@ -237,9 +208,9 @@
                 "UUID": "544FFC03-96F5-4BBC-886E-13C5345725EA",
                 "text": {
                     "Value": {
-                        "OutputUUID": "B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B",
+                        "OutputUUID": "C6F91E86-2799-4EE9-A029-336A2DB531A5",
                         "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "OutputName": "workoutName"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
@@ -248,7 +219,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "<div class=\"infotext\">([\\s\\S]*?)<",
+                "WFMatchTextPattern": "<div class=\"infotext\">([\\s\\S]*?)</div>",
                 "text": {
                     "Value": {
                         "string": "￼",
@@ -280,13 +251,27 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFHTML": {
                     "Value": {
                         "OutputUUID": "C98E8F4E-6CBA-4FC2-BB49-4A43694D2260",
                         "Type": "ActionOutput",
                         "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8E9A08F9-6B28-447F-AA45-D5096B80BFC4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8E9A08F9-6B28-447F-AA45-D5096B80BFC4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rich Text from HTML"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -302,7 +287,7 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
+                "keyPath": "Text Divider Thick",
                 "UUID": "28752C3D-0D64-4ED9-B06C-3FC99BAB59E1"
             }
         },
@@ -371,9 +356,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
-                "WFURL": {
+                "WFURLActionURL": {
                     "Value": {
                         "string": "￼￼",
                         "attachmentsByRange": {
@@ -391,7 +376,26 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "11FDB2CB-F5ED-436E-88BD-CBB5FA2FF995"
+                "UUID": "CE8B7D79-B2E8-4988-9684-A56AC9CD4DB8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "CE8B7D79-B2E8-4988-9684-A56AC9CD4DB8",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0B3A6246-F36A-49E5-83BC-AF290D5BAC6F"
             }
         },
         {
@@ -399,13 +403,13 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "11FDB2CB-F5ED-436E-88BD-CBB5FA2FF995",
+                        "OutputUUID": "0B3A6246-F36A-49E5-83BC-AF290D5BAC6F",
                         "Type": "ActionOutput",
                         "OutputName": "Contents of URL"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "171C3205-BDF0-4A07-94E4-C9B6584ACC6C"
+                "UUID": "F7BD156E-1DEA-481A-A58B-41862764A77C"
             }
         },
         {
@@ -413,60 +417,13 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "171C3205-BDF0-4A07-94E4-C9B6584ACC6C",
+                        "OutputUUID": "F7BD156E-1DEA-481A-A58B-41862764A77C",
                         "Type": "ActionOutput",
                         "OutputName": "Images"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFName": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "5EB8A5C7-CFCD-40D0-9FEF-5EDB0200CE26"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
-            "WFWorkflowActionParameters": {
-                "WFFolder": {
-                    "fileLocation": {
-                        "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals/Fitness & Exercise/untitled folder/WorkoutOfTheDay",
-                        "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/E4304320-8215-444F-85C2-B756665DBC6A/8b6c72f8cc40b2edf1dd6258e90e57fafb874347"
-                    },
-                    "filename": "WorkoutOfTheDay",
-                    "displayName": "WorkoutOfTheDay"
-                },
-                "WFAskWhereToSave": false,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "5EB8A5C7-CFCD-40D0-9FEF-5EDB0200CE26",
-                        "Type": "ActionOutput",
-                        "OutputName": "Renamed Item"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "8B328546-CE38-48E9-A735-0C4BBA164EB3",
-                "WFSaveFileOverwrite": true
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.TextCaseIntent",
-            "WFWorkflowActionParameters": {
-                "ShowWhenRun": false,
-                "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
@@ -479,54 +436,54 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "1CE1BDDD-8B49-48A6-82BC-34C7C5BDCCBD",
-                "format": "boldSans"
+                "UUID": "C675F3B6-F74C-49C5-8CB2-DE55A3A18B86"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.CreateNotificationActionIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
             "WFWorkflowActionParameters": {
-                "icon": "figure.highintensity.intervaltraining",
-                "UUID": "41907476-0CD8-4F3B-B2CE-9C822C42307B",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "CreateNotificationActionIntent"
-                },
-                "title": "View on Darebee",
-                "url": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "B4124BF1-9CFE-44EE-93D8-3F44F2D23701",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            }
-                        }
+                "WFFolder": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals/Fitness/Darebee/WorkoutOfTheDay",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/E4304320-8215-444F-85C2-B756665DBC6A/8b6c72f8cc40b2edf1dd6258e90e57fafb874347"
                     },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.ShowNotificationIntent",
-            "WFWorkflowActionParameters": {
-                "timing": "now",
-                "attachment": {
+                    "filename": "WorkoutOfTheDay",
+                    "displayName": "WorkoutOfTheDay"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
                     "Value": {
-                        "OutputUUID": "171C3205-BDF0-4A07-94E4-C9B6584ACC6C",
+                        "OutputUUID": "C675F3B6-F74C-49C5-8CB2-DE55A3A18B86",
                         "Type": "ActionOutput",
-                        "OutputName": "Images"
+                        "OutputName": "Renamed Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "openURL": {
+                "UUID": "7E042D35-1BF9-4AE0-8D18-07ACE0C63769",
+                "WFSaveFileOverwrite": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
                     "Value": {
-                        "string": "￼",
+                        "string": "#BuJo/🦾MoveMyBody [￼ - _￼_](￼)",
                         "attachmentsByRange": {
-                            "{0, 1}": {
+                            "{20, 1}": {
+                                "OutputUUID": "30B5EFD7-4384-4F29-80DF-58ED0403638F",
+                                "Type": "ActionOutput",
+                                "OutputName": "🦁 Workout Of The Day"
+                            },
+                            "{25, 1}": {
+                                "OutputUUID": "544FFC03-96F5-4BBC-886E-13C5345725EA",
+                                "Type": "ActionOutput",
+                                "OutputName": "workoutName"
+                            },
+                            "{29, 1}": {
                                 "OutputUUID": "484EF8C7-DA45-468C-A6DC-E7BA6A5FC04D",
                                 "Type": "ActionOutput",
                                 "OutputName": "workoutOfTheDayURL"
@@ -535,79 +492,365 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "subtitle": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "9E2539B7-435F-4DE7-847E-C828F09147E9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "threadIdentifier": "",
-                "UUID": "54431009-36EF-452B-99CB-9EF0A80DCC4D",
-                "title": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "30B5EFD7-4384-4F29-80DF-58ED0403638F",
-                                "Type": "ActionOutput",
-                                "OutputName": "🦁 Workout Of The Day"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "ShowNotificationIntent"
-                },
-                "body": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "1CE1BDDD-8B49-48A6-82BC-34C7C5BDCCBD",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "actions": {
-                    "Value": {
-                        "OutputUUID": "41907476-0CD8-4F3B-B2CE-9C822C42307B",
-                        "Type": "ActionOutput",
-                        "OutputName": "Notification Action"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "notificationIdentifier": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "30B5EFD7-4384-4F29-80DF-58ED0403638F",
-                                "Type": "ActionOutput",
-                                "OutputName": "🦁 Workout Of The Day"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                "UUID": "AB02CDA7-2FBF-4EA8-A103-29E872AE7441"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AB02CDA7-2FBF-4EA8-A103-29E872AE7441",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "✍️ Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "81F25109-BE4C-4EA7-AA4D-37DC7A2695F2",
+                "WFWorkflowName": "✍️ Log Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Play Spotify Music By Topic",
+                "UUID": "9598AA74-6B87-40C7-A876-3E2AB3D3FA7B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9598AA74-6B87-40C7-A876-3E2AB3D3FA7B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "5A548F48-B2FA-40F0-ACCD-080FB5817BBB",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    {
+                        "WFItemType": 0,
+                        "WFValue": {
+                            "Value": {
+                                "string": "￼",
+                                "attachmentsByRange": {
+                                    "{0, 1}": {
+                                        "OutputUUID": "5A548F48-B2FA-40F0-ACCD-080FB5817BBB",
+                                        "Type": "ActionOutput",
+                                        "OutputName": "Shortcut Result"
+                                    }
+                                }
+                            },
+                            "WFSerializationType": "WFTextTokenString"
+                        }
+                    },
+                    {
+                        "WFItemType": 0,
+                        "WFValue": {
+                            "Value": {
+                                "string": "￼",
+                                "attachmentsByRange": {
+                                    "{0, 1}": {
+                                        "OutputUUID": "484EF8C7-DA45-468C-A6DC-E7BA6A5FC04D",
+                                        "Type": "ActionOutput",
+                                        "OutputName": "workoutOfTheDayURL"
+                                    }
+                                }
+                            },
+                            "WFSerializationType": "WFTextTokenString"
+                        }
+                    }
+                ],
+                "UUID": "654D52DC-FD82-4087-BCEC-8A86BF14D794"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "(Batch) Open URL(s)"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "654D52DC-FD82-4087-BCEC-8A86BF14D794",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "List"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "0750D8D6-158A-45F4-917F-9110812A1313"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0750D8D6-158A-45F4-917F-9110812A1313",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "AE009362-463C-4852-BB3A-1C1EB73D41C3",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "type"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "30B5EFD7-4384-4F29-80DF-58ED0403638F",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "🦁 Workout Of The Day"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "url"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "AE009362-463C-4852-BB3A-1C1EB73D41C3",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Shortcut Result"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "6DFA9D3F-0578-4E4F-921F-DEDD9E795153"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "title"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "30B5EFD7-4384-4F29-80DF-58ED0403638F",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "🦁 Workout Of The Day"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "subtitle"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "9E2539B7-435F-4DE7-847E-C828F09147E9",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "body"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "544FFC03-96F5-4BBC-886E-13C5345725EA",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "workoutName"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "imageSource"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "CE8B7D79-B2E8-4988-9684-A56AC9CD4DB8",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "URL"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "actionShortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "6DFA9D3F-0578-4E4F-921F-DEDD9E795153",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Dictionary"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "B9006508-D220-4818-AE7B-4C850D997143"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B9006508-D220-4818-AE7B-4C850D997143",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "2852E533-A8D3-461A-901C-0A4532842788",
+                    "workflowName": "_Build Rich Notification",
+                    "isSelf": false
+                },
+                "UUID": "758CA0CF-00AC-47CB-83AD-A7F90652E7FC",
+                "WFWorkflowName": "_Build Rich Notification"
+            }
         }
     ],
     "WFWorkflowInputContentItemClasses": [

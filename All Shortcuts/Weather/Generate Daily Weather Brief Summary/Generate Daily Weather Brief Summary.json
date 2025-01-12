@@ -72,7 +72,7 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Text Files.dailyWeatherInfo",
+                "keyPath": "My Text Files",
                 "UUID": "2D7E1F7F-B707-4D6A-A3B7-71089499D429"
             }
         },
@@ -81,9 +81,19 @@
             "WFWorkflowActionParameters": {
                 "text": {
                     "Value": {
-                        "OutputUUID": "2D7E1F7F-B707-4D6A-A3B7-71089499D429",
                         "Type": "ActionOutput",
-                        "OutputName": "Value"
+                        "OutputName": "Value",
+                        "OutputUUID": "2D7E1F7F-B707-4D6A-A3B7-71089499D429",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "dailyWeatherInfo"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -161,45 +171,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "WFMatchTextCaseSensitive": false,
-                "WFMatchTextPattern": "最高溫|降雨機率|降水量",
-                "UUID": "B23CB36C-CE31-4B33-873E-A4AE58405051",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "B23CB36C-CE31-4B33-873E-A4AE58405051",
-                            "Type": "ActionOutput",
-                            "OutputName": "Matches"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "00596086-D6F6-4BFC-AC28-4A75964C56D2",
-                "WFCondition": 100
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -235,14 +206,6 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "FE5C7B58-295A-4D5C-A070-38638CC9DC34"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "00596086-D6F6-4BFC-AC28-4A75964C56D2",
-                "UUID": "D980E5EC-7236-49F5-B47C-649D361BCFC2"
             }
         },
         {
@@ -327,27 +290,6 @@
                 },
                 "WFContentItemPropertyName": "Condition",
                 "UUID": "F655F6E4-C487-4A43-A194-638BABD6C38D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "F655F6E4-C487-4A43-A194-638BABD6C38D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Condition"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "emoji",
-                "UUID": "7E633B2B-CD31-4785-AFFA-39F68DBB5940",
-                "WFWorkflow": {
-                    "workflowIdentifier": "3BE935AE-3303-4FDA-88B9-3C495F947399",
-                    "workflowName": "Search Emoji",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Search Emoji"
             }
         },
         {
@@ -453,37 +395,32 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "• ￼ ￼\n• 最高溫: ￼\n• 最低溫: ￼\n• 降雨機率: ￼%\n• 降水量: ￼",
+                        "string": "• ￼\n• 最高溫: ￼\n• 最低溫: ￼\n• 降雨機率: ￼%\n• 降水量: ￼",
                         "attachmentsByRange": {
-                            "{13, 1}": {
-                                "OutputUUID": "D9613F85-5344-41B4-B648-8C26338890D2",
-                                "Type": "ActionOutput",
-                                "OutputName": "High"
-                            },
                             "{2, 1}": {
                                 "OutputUUID": "F655F6E4-C487-4A43-A194-638BABD6C38D",
                                 "Type": "ActionOutput",
                                 "OutputName": "Condition"
                             },
-                            "{4, 1}": {
-                                "OutputUUID": "7E633B2B-CD31-4785-AFFA-39F68DBB5940",
+                            "{30, 1}": {
+                                "OutputUUID": "DB2DA2BD-8824-444B-8797-A03C14C1906D",
                                 "Type": "ActionOutput",
-                                "OutputName": "emoji"
+                                "OutputName": "Shortcut Result"
                             },
-                            "{22, 1}": {
-                                "OutputUUID": "F005F8AC-F176-44CD-9CBA-E87FA277CAB7",
+                            "{11, 1}": {
+                                "OutputUUID": "D9613F85-5344-41B4-B648-8C26338890D2",
                                 "Type": "ActionOutput",
-                                "OutputName": "Low"
+                                "OutputName": "High"
                             },
-                            "{42, 1}": {
+                            "{40, 1}": {
                                 "OutputUUID": "B14B5FCD-D6C8-46B9-BF69-7486CBB7CF47",
                                 "Type": "ActionOutput",
                                 "OutputName": "Converted Measurement"
                             },
-                            "{32, 1}": {
-                                "OutputUUID": "DB2DA2BD-8824-444B-8797-A03C14C1906D",
+                            "{20, 1}": {
+                                "OutputUUID": "F005F8AC-F176-44CD-9CBA-E87FA277CAB7",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "Low"
                             }
                         }
                     },
