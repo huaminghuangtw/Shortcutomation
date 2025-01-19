@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1106",
-    "WFWorkflowMinimumClientVersion": 1106,
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -20,7 +20,19 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My CMS.Reddit.subreddit",
+                "keyPath": {
+                    "Value": {
+                        "string": "My CMS.Reddit.subreddit.￼",
+                        "attachmentsByRange": {
+                            "{24, 1}": {
+                                "OutputUUID": "4491F989-F50E-4418-AF77-6D428EA30D17",
+                                "Type": "ActionOutput",
+                                "OutputName": "🖼️ Visual > Words"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "UUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD"
             }
         },
@@ -29,19 +41,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Value",
                         "OutputUUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "Visual"
-                            }
-                        ]
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -102,6 +104,20 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
+            "WFWorkflowActionParameters": {
+                "WFHTML": {
+                    "Value": {
+                        "OutputUUID": "06EA52A3-5EE3-414E-9539-B5C2CB749625",
+                        "Type": "ActionOutput",
+                        "OutputName": "title"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C686BEFB-34F0-4CDF-A79A-C925032B1D1C"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -112,9 +128,47 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "url",
+                "CustomOutputName": "permalink",
                 "UUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
-                "WFDictionaryKey": "url"
+                "WFDictionaryKey": "permalink"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "https://www.reddit.com￼",
+                        "attachmentsByRange": {
+                            "{22, 1}": {
+                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
+                                "Type": "ActionOutput",
+                                "OutputName": "permalink"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "615B6487-BA4C-4233-8531-F0DE943F1DAF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "reddit://￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
+                                "Type": "ActionOutput",
+                                "OutputName": "permalink"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E7840B44-917A-4987-88EE-3838ADABDC5D"
             }
         },
         {
@@ -125,9 +179,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
+                                "OutputUUID": "615B6487-BA4C-4233-8531-F0DE943F1DAF",
                                 "Type": "ActionOutput",
-                                "OutputName": "url"
+                                "OutputName": "URL"
                             }
                         }
                     },
@@ -151,20 +205,8 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.savetocameraroll",
             "WFWorkflowActionParameters": {
-                "WFFolder": {
-                    "fileLocation": {
-                        "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals/Reddit",
-                        "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/1632638F-AE50-4767-B8EE-C5D75B180886/c09da67f97f1487314e5c2c9ddf72bf1dc0ef470"
-                    },
-                    "filename": "Reddit",
-                    "displayName": "Reddit"
-                },
-                "WFAskWhereToSave": false,
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "679256A4-DBC2-43D1-A8F9-10A8A8B50045",
@@ -173,44 +215,30 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "0B48CBF3-0E31-48F0-8082-1688B3770473",
-                "WFSaveFileOverwrite": true
+                "UUID": "995B9237-4D61-436A-BF61-71C278388C83"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
             "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "C69B5C4F-AA5E-4E68-B717-E03BE2E94BE6"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
+                "WFCalendarItemTitle": {
                     "Value": {
-                        "string": "￼\n￼\n￼",
+                        "string": "[￼](￼)",
                         "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "D9DDFB07-4343-4D6B-B652-E63FDD388381",
+                            "{1, 1}": {
+                                "OutputUUID": "C686BEFB-34F0-4CDF-A79A-C925032B1D1C",
                                 "Type": "ActionOutput",
-                                "OutputName": "subreddit"
+                                "OutputName": "Rich Text from HTML"
                             },
                             "{4, 1}": {
-                                "OutputUUID": "C69B5C4F-AA5E-4E68-B717-E03BE2E94BE6",
+                                "OutputUUID": "615B6487-BA4C-4233-8531-F0DE943F1DAF",
                                 "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "C69B5C4F-AA5E-4E68-B717-E03BE2E94BE6",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
+                                "OutputName": "URL"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "6F77D68B-0BB7-484F-A89C-8C5B6CCB8C12"
+                }
             }
         },
         {
@@ -254,9 +282,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
+                                                "OutputUUID": "E7840B44-917A-4987-88EE-3838ADABDC5D",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "url"
+                                                "OutputName": "URL"
                                             }
                                         }
                                     },
@@ -268,6 +296,78 @@
                     "WFSerializationType": "WFDictionaryFieldValue"
                 },
                 "UUID": "FA67D068-65E6-4615-AA86-7BF006F896FB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "679256A4-DBC2-43D1-A8F9-10A8A8B50045",
+                            "Type": "ActionOutput",
+                            "OutputName": "Images"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "2C2B52BB-433C-451D-A504-742CB9A65503",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "615B6487-BA4C-4233-8531-F0DE943F1DAF",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "imageSource"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2C2B52BB-433C-451D-A504-742CB9A65503",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "73CA8080-9EC5-4DE7-940E-168010D1C86F",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "thumbnail"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "imageSource"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "2C2B52BB-433C-451D-A504-742CB9A65503",
+                "UUID": "87C967B4-3E8A-4126-8AF6-EE39E1127EAA"
             }
         },
         {
@@ -311,9 +411,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "6F77D68B-0BB7-484F-A89C-8C5B6CCB8C12",
+                                                "OutputUUID": "D9DDFB07-4343-4D6B-B652-E63FDD388381",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Text"
+                                                "OutputName": "subreddit"
                                             }
                                         }
                                     },
@@ -333,9 +433,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "06EA52A3-5EE3-414E-9539-B5C2CB749625",
+                                                "OutputUUID": "C686BEFB-34F0-4CDF-A79A-C925032B1D1C",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "title"
+                                                "OutputName": "Rich Text from HTML"
                                             }
                                         }
                                     },
@@ -355,9 +455,8 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "84F5DDB5-689A-476C-AD18-B64735EB1EA8",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "url"
+                                                "VariableName": "imageSource",
+                                                "Type": "Variable"
                                             }
                                         }
                                     },

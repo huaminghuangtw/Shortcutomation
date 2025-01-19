@@ -332,7 +332,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
             "WFWorkflowActionParameters": {
                 "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.clock",
+                    "BundleIdentifier": "com.apple.mobiletimer",
                     "Name": "Clock",
                     "TeamIdentifier": "0000000000"
                 },
@@ -388,7 +388,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
             "WFWorkflowActionParameters": {
                 "WFApp": {
-                    "BundleIdentifier": "com.apple.clock",
+                    "BundleIdentifier": "com.apple.mobiletimer",
                     "Name": "Clock",
                     "TeamIdentifier": "0000000000"
                 }
@@ -397,8 +397,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "BE34A2D9-CEE3-48C0-B65E-F7678EBAC21B",
-                "WFControlFlowMode": 2
+                "UUID": "A2925131-8677-48AC-8C6B-108997E96863"
             }
         },
         {
@@ -410,7 +411,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "Well done! Take a short break and reflect on what you’ve done!",
+                "WFTextActionText": "Well done! Take a short break, reflect on what you’ve done, and document your work in the journal!",
                 "UUID": "67D26C00-3406-4FF2-90FA-E432A7594A5F"
             }
         },
@@ -505,6 +506,139 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "dict",
+                "UUID": "65D30DEB-D3C9-4ED1-BB65-3635F99ACF82",
+                "WFWorkflow": {
+                    "workflowIdentifier": "18147F90-431D-4A64-AB66-918A88186549",
+                    "workflowName": "_Get Flow & Word Counts",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "_Get Flow & Word Counts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "幹得好樺明！這是今天第 ￼ 個蕃茄鐘，你已經寫了 ￼ 字了！",
+                        "attachmentsByRange": {
+                            "{12, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "dict",
+                                "OutputUUID": "65D30DEB-D3C9-4ED1-BB65-3635F99ACF82",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "numberOfFlows"
+                                    }
+                                ]
+                            },
+                            "{25, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "dict",
+                                "OutputUUID": "65D30DEB-D3C9-4ED1-BB65-3635F99ACF82",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "numberOfWords"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9FAE5491-F0DF-4800-8976-5C67C6053E5F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "text"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "9FAE5491-F0DF-4800-8976-5C67C6053E5F",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "language"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "ZH"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "E5D46600-0265-4DC7-86C6-B886E011C09D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E5D46600-0265-4DC7-86C6-B886E011C09D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "9E67FDF1-AE7E-4051-8D46-DDFD104CB87C",
+                    "workflowName": "_Text2Speech",
+                    "isSelf": false
+                },
+                "UUID": "78BF5561-1C8B-48FE-BF29-2837F243CC30",
+                "WFWorkflowName": "_Text2Speech"
             }
         },
         {

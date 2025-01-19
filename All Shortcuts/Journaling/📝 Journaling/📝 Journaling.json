@@ -19,7 +19,8 @@
                     "👉 Open Journal",
                     "👉 Search Journal",
                     "👉 Journals On This Day",
-                    "👉 Go to Journal Backlog"
+                    "👉 Go to Journal Backlog",
+                    "👉 View Journal Metadata"
                 ],
                 "GroupingIdentifier": "257FF1EC-6605-4B85-9B05-B34566CBAE8C"
             }
@@ -216,6 +217,53 @@
                 },
                 "UUID": "FC04E48A-2B66-44F8-9F9B-E07588701C57",
                 "WFWorkflowName": "Obsidian - Open Note"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "👉 View Journal Metadata",
+                "GroupingIdentifier": "257FF1EC-6605-4B85-9B05-B34566CBAE8C",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAskActionPrompt": "🤖 Which date?",
+                "UUID": "7F954A81-82A9-4DEB-8E5F-94DE23C8447D",
+                "WFInputType": "Date",
+                "WFAskActionDefaultAnswerDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7F954A81-82A9-4DEB-8E5F-94DE23C8447D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "77A908EF-9A99-4783-9750-D3A79E80DF6D",
+                    "workflowName": "_Show Journal Metadata",
+                    "isSelf": false
+                },
+                "UUID": "E883684E-71B0-4D78-A0DF-35A74A3BF2E3",
+                "WFWorkflowName": "_Show Journal Metadata"
             }
         },
         {

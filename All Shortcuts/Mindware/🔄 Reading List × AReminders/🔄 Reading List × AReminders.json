@@ -65,22 +65,8 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "C2B430F1-99AC-45C2-B670-74A49AA394B3"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "C2B430F1-99AC-45C2-B670-74A49AA394B3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Contents of URL"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "CustomOutputName": "Article",
-                "UUID": "1E01B1A3-FC98-4812-A669-7E754606DFE9"
+                "UUID": "CB1D177E-5721-432E-994C-8459A0B54E09"
             }
         },
         {
@@ -88,9 +74,15 @@
             "WFWorkflowActionParameters": {
                 "Input": {
                     "Value": {
-                        "OutputUUID": "1E01B1A3-FC98-4812-A669-7E754606DFE9",
                         "Type": "ActionOutput",
-                        "OutputName": "Article"
+                        "OutputName": "Article",
+                        "OutputUUID": "CB1D177E-5721-432E-994C-8459A0B54E09",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFStringContentItem"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -155,7 +147,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.number",
             "WFWorkflowActionParameters": {
-                "WFNumberActionNumber": "500",
+                "WFNumberActionNumber": "1000",
+                "CustomOutputName": "threshold",
                 "UUID": "9329D014-34F0-49CB-AB4B-C956482776CC"
             }
         },
@@ -169,7 +162,7 @@
                             "{4, 1}": {
                                 "OutputUUID": "9329D014-34F0-49CB-AB4B-C956482776CC",
                                 "Type": "ActionOutput",
-                                "OutputName": "Number"
+                                "OutputName": "threshold"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "6C297913-CA8B-48D9-9073-48840E909224",
@@ -200,26 +193,81 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "Input": {
                     "Value": {
-                        "OutputUUID": "BE204436-6211-4DF7-B2DE-5B73CFFFB592",
+                        "string": "￼ * (￼ - 1)",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "BE204436-6211-4DF7-B2DE-5B73CFFFB592",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "9329D014-34F0-49CB-AB4B-C956482776CC",
+                                "Type": "ActionOutput",
+                                "OutputName": "threshold"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A1DD3BF0-37BE-48FD-8577-6A4595F7FD2B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.number",
+            "WFWorkflowActionParameters": {
+                "WFNumber": {
+                    "Value": {
+                        "OutputUUID": "A1DD3BF0-37BE-48FD-8577-6A4595F7FD2B",
                         "Type": "ActionOutput",
-                        "OutputName": "Rounded Number"
+                        "OutputName": "Calculation Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFMathOperand": {
+                "WFNumberFormatDecimalPlaces": 0,
+                "UUID": "E0D8ACD5-F021-4E82-95F0-2EFB136D9787"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
                     "Value": {
-                        "OutputUUID": "9329D014-34F0-49CB-AB4B-C956482776CC",
+                        "string": "￼ * ￼",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "OutputUUID": "BE204436-6211-4DF7-B2DE-5B73CFFFB592",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "9329D014-34F0-49CB-AB4B-C956482776CC",
+                                "Type": "ActionOutput",
+                                "OutputName": "threshold"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1F9BCF70-DB8F-45B5-9DB1-50DE6DF875DE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.number",
+            "WFWorkflowActionParameters": {
+                "WFNumber": {
+                    "Value": {
+                        "OutputUUID": "1F9BCF70-DB8F-45B5-9DB1-50DE6DF875DE",
                         "Type": "ActionOutput",
-                        "OutputName": "Number"
+                        "OutputName": "Calculation Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "25DE12F5-E46D-46D7-8FC8-1143B8186E50",
-                "WFMathOperation": "×"
+                "WFNumberFormatDecimalPlaces": 0,
+                "UUID": "F3698425-2E60-441E-A146-54D37B7C0326"
             }
         },
         {
@@ -227,12 +275,17 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "👉 < ￼ words",
+                        "string": "👉 ￼–￼ words",
                         "attachmentsByRange": {
                             "{5, 1}": {
-                                "OutputUUID": "25DE12F5-E46D-46D7-8FC8-1143B8186E50",
+                                "OutputUUID": "F3698425-2E60-441E-A146-54D37B7C0326",
                                 "Type": "ActionOutput",
-                                "OutputName": "Calculation Result"
+                                "OutputName": "Formatted Number"
+                            },
+                            "{3, 1}": {
+                                "OutputUUID": "E0D8ACD5-F021-4E82-95F0-2EFB136D9787",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Number"
                             }
                         }
                     },
@@ -308,7 +361,7 @@
                                     }
                                 },
                                 "Removable": true,
-                                "Property": "Is Flagged"
+                                "Property": "Is Completed"
                             },
                             {
                                 "Operator": 4,
@@ -319,7 +372,7 @@
                                     }
                                 },
                                 "Removable": true,
-                                "Property": "Is Completed"
+                                "Property": "Is Flagged"
                             }
                         ]
                     },
@@ -450,16 +503,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
+                        "OutputUUID": "CB1D177E-5721-432E-994C-8459A0B54E09",
                         "Type": "ActionOutput",
-                        "OutputName": "Contents of URL",
-                        "OutputUUID": "C2B430F1-99AC-45C2-B670-74A49AA394B3",
-                        "Aggrandizements": [
-                            {
-                                "PropertyUserInfo": "WFItemName",
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Name"
-                            }
-                        ]
+                        "OutputName": "Article"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }

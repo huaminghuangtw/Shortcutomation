@@ -76,8 +76,10 @@
 			<string>is.workflow.actions.downloadurl</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>Article</string>
 				<key>UUID</key>
-				<string>C2B430F1-99AC-45C2-B670-74A49AA394B3</string>
+				<string>CB1D177E-5721-432E-994C-8459A0B54E09</string>
 				<key>WFURL</key>
 				<dict>
 					<key>Value</key>
@@ -104,31 +106,6 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.text</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>Article</string>
-				<key>UUID</key>
-				<string>1E01B1A3-FC98-4812-A669-7E754606DFE9</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Contents of URL</string>
-						<key>OutputUUID</key>
-						<string>C2B430F1-99AC-45C2-B670-74A49AA394B3</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.count</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -136,10 +113,19 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFStringContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
 						<key>OutputName</key>
 						<string>Article</string>
 						<key>OutputUUID</key>
-						<string>1E01B1A3-FC98-4812-A669-7E754606DFE9</string>
+						<string>CB1D177E-5721-432E-994C-8459A0B54E09</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -245,10 +231,12 @@
 			<string>is.workflow.actions.number</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>threshold</string>
 				<key>UUID</key>
 				<string>9329D014-34F0-49CB-AB4B-C956482776CC</string>
 				<key>WFNumberActionNumber</key>
-				<string>500</string>
+				<string>1000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -274,7 +262,7 @@
 							<key>{4, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Number</string>
+								<string>threshold</string>
 								<key>OutputUUID</key>
 								<string>9329D014-34F0-49CB-AB4B-C956482776CC</string>
 								<key>Type</key>
@@ -320,41 +308,132 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.math</string>
+			<string>is.workflow.actions.calculateexpression</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Input</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>threshold</string>
+								<key>OutputUUID</key>
+								<string>9329D014-34F0-49CB-AB4B-C956482776CC</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{5, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Rounded Number</string>
+								<key>OutputUUID</key>
+								<string>BE204436-6211-4DF7-B2DE-5B73CFFFB592</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼ * (￼ - 1)</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>UUID</key>
+				<string>A1DD3BF0-37BE-48FD-8577-6A4595F7FD2B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.format.number</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>25DE12F5-E46D-46D7-8FC8-1143B8186E50</string>
-				<key>WFInput</key>
+				<string>E0D8ACD5-F021-4E82-95F0-2EFB136D9787</string>
+				<key>WFNumber</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Rounded Number</string>
+						<string>Calculation Result</string>
 						<key>OutputUUID</key>
-						<string>BE204436-6211-4DF7-B2DE-5B73CFFFB592</string>
+						<string>A1DD3BF0-37BE-48FD-8577-6A4595F7FD2B</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFMathOperand</key>
+				<key>WFNumberFormatDecimalPlaces</key>
+				<real>0.0</real>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.calculateexpression</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Input</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>threshold</string>
+								<key>OutputUUID</key>
+								<string>9329D014-34F0-49CB-AB4B-C956482776CC</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{4, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Rounded Number</string>
+								<key>OutputUUID</key>
+								<string>BE204436-6211-4DF7-B2DE-5B73CFFFB592</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼ * ￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>UUID</key>
+				<string>1F9BCF70-DB8F-45B5-9DB1-50DE6DF875DE</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.format.number</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>F3698425-2E60-441E-A146-54D37B7C0326</string>
+				<key>WFNumber</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Number</string>
+						<string>Calculation Result</string>
 						<key>OutputUUID</key>
-						<string>9329D014-34F0-49CB-AB4B-C956482776CC</string>
+						<string>1F9BCF70-DB8F-45B5-9DB1-50DE6DF875DE</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFMathOperation</key>
-				<string>×</string>
+				<key>WFNumberFormatDecimalPlaces</key>
+				<real>0.0</real>
 			</dict>
 		</dict>
 		<dict>
@@ -372,18 +451,27 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
+							<key>{3, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Formatted Number</string>
+								<key>OutputUUID</key>
+								<string>E0D8ACD5-F021-4E82-95F0-2EFB136D9787</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
 							<key>{5, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Calculation Result</string>
+								<string>Formatted Number</string>
 								<key>OutputUUID</key>
-								<string>25DE12F5-E46D-46D7-8FC8-1143B8186E50</string>
+								<string>F3698425-2E60-441E-A146-54D37B7C0326</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>👉 &lt; ￼ words</string>
+						<string>👉 ￼–￼ words</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -485,7 +573,7 @@
 								<key>Operator</key>
 								<integer>4</integer>
 								<key>Property</key>
-								<string>Is Flagged</string>
+								<string>Is Completed</string>
 								<key>Removable</key>
 								<true/>
 								<key>Values</key>
@@ -503,7 +591,7 @@
 								<key>Operator</key>
 								<integer>4</integer>
 								<key>Property</key>
-								<string>Is Completed</string>
+								<string>Is Flagged</string>
 								<key>Removable</key>
 								<true/>
 								<key>Values</key>
@@ -735,21 +823,10 @@
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>Aggrandizements</key>
-						<array>
-							<dict>
-								<key>PropertyName</key>
-								<string>Name</string>
-								<key>PropertyUserInfo</key>
-								<string>WFItemName</string>
-								<key>Type</key>
-								<string>WFPropertyVariableAggrandizement</string>
-							</dict>
-						</array>
 						<key>OutputName</key>
-						<string>Contents of URL</string>
+						<string>Article</string>
 						<key>OutputUUID</key>
-						<string>C2B430F1-99AC-45C2-B670-74A49AA394B3</string>
+						<string>CB1D177E-5721-432E-994C-8459A0B54E09</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>

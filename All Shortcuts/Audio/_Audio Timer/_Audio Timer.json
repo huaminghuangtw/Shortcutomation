@@ -9,22 +9,21 @@
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorAskForInput",
-        "Parameters": {
-            "ItemClass": "WFStringContentItem"
-        }
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "C9E98328-F7E4-4625-A9B7-C5678F274FAC",
-                    "workflowName": "Dim Screen",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Dim Screen",
-                "UUID": "283571B5-47C7-4C81-BB7B-BD65854E44F5"
+                "WFDeviceDetail": "Current Brightness",
+                "UUID": "BEFC4102-2CA5-4E77-96C8-0FBB08B2F519"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": 0
             }
         },
         {
@@ -112,15 +111,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "C3771EC7-4647-4C64-8383-3A7C1F7B016E",
-                    "workflowName": "Brighten Screen",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Brighten Screen",
-                "UUID": "ED929729-8A84-4F9B-AD19-42F81F667F71"
+                "WFBrightness": {
+                    "Value": {
+                        "OutputUUID": "BEFC4102-2CA5-4E77-96C8-0FBB08B2F519",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         }
     ],

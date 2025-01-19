@@ -10,6 +10,30 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "18C17C4E-1CC8-4C54-B40F-5CD0469F7A07",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
             "WFWorkflowActionParameters": {}
         },
@@ -91,63 +115,32 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
-                "WFMenuPrompt": "🤖 Which one?",
-                "WFControlFlowMode": 0,
-                "WFMenuItems": [
-                    "❤️‍🔥 Zwift",
-                    "📊 TrainerDay",
-                    "🍭 Free Ride :-)"
+                "WFItems": [
+                    "🦻 Listen to Something",
+                    "🌀 TrainerDay"
                 ],
-                "GroupingIdentifier": "365087B6-BCF3-4EA0-BDAE-41B5066E3B60"
+                "UUID": "A30A75BC-7514-4A05-B378-E399A9E50421"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "❤️‍🔥 Zwift",
-                "GroupingIdentifier": "365087B6-BCF3-4EA0-BDAE-41B5066E3B60",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "13DE2C21-BB56-435D-8BDE-1F6D93D50CEF",
-                    "workflowName": "Zwift",
-                    "isSelf": false
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A30A75BC-7514-4A05-B378-E399A9E50421",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "Zwift",
-                "UUID": "65DE9B67-24D2-4A7C-8BCD-D60DBA14CA48"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "📊 TrainerDay",
-                "GroupingIdentifier": "365087B6-BCF3-4EA0-BDAE-41B5066E3B60",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "AF55398D-2936-4DC1-B81F-8A1CDEAF31DF",
-                    "workflowName": "Add TrainerDay Workout",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Add TrainerDay Workout",
-                "UUID": "97C8DE27-F24F-4FF0-81EA-A6120C37C903"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
-            "WFWorkflowActionParameters": {
-                "WFNumberActionNumber": "3",
-                "UUID": "E096AB0F-CA48-4289-84F6-204C94849A25"
+                "GroupingIdentifier": "2A936C2E-BDDF-47E0-9416-F2CE9B3DEF0A",
+                "WFControlFlowMode": 0
             }
         },
         {
@@ -155,67 +148,187 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "E096AB0F-CA48-4289-84F6-204C94849A25",
-                        "Type": "ActionOutput",
-                        "OutputName": "Number"
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
-                    "workflowName": "Open My iPhone Shortcut(s)",
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
                     "isSelf": false
                 },
                 "UUID": "85B9B1AA-6F1E-4EE3-89A7-B6E9979545C0",
-                "WFWorkflowName": "Open My iPhone Shortcut(s)"
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "notificationID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "99A2A7C8-B7C3-47C7-B7D9-F63C97147D2F",
+                "onTap": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "85B9B1AA-6F1E-4EE3-89A7-B6E9979545C0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "threadID": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "2A936C2E-BDDF-47E0-9416-F2CE9B3DEF0A",
+                "UUID": "BA4F635A-B0C8-4D6D-90E2-9FDC40747324"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "18C17C4E-1CC8-4C54-B40F-5CD0469F7A07",
+                "UUID": "42710A69-884F-48B9-9A39-B7AD4649AE07"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "94C1CB16-7C28-4F5F-967E-AF374880DF96",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.zwift.ZwiftLauncher",
+                    "Name": "Zwift",
+                    "TeamIdentifier": "C2GM8Y9VFM"
+                },
+                "WFAppIdentifier": "com.zwift.ZwiftLauncher",
+                "UUID": "2068F795-4655-4BB9-A428-503B5B0ECA45"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "🍭 Free Ride :-)",
-                "GroupingIdentifier": "365087B6-BCF3-4EA0-BDAE-41B5066E3B60",
+                "WFMenuPrompt": "🎧 Listen to music?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "59646881-74A9-484E-8219-3446078268C9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "59646881-74A9-484E-8219-3446078268C9",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "🚀 Booster",
+                "UUID": "8A334296-62EA-42A5-B453-46F6449660F0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8A334296-62EA-42A5-B453-46F6449660F0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "9B8C3053-A3BD-4CDF-91D3-753DC957EB9D",
+                    "workflowName": "Play Spotify Music By Topic",
+                    "isSelf": false
+                },
+                "UUID": "4775ED64-4E13-4BEF-947A-3EF29D5039CC",
+                "WFWorkflowName": "Play Spotify Music By Topic"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "59646881-74A9-484E-8219-3446078268C9",
                 "WFControlFlowMode": 1
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
-            "WFWorkflowActionParameters": {
-                "UUID": "0C56F167-7576-49C5-ACF2-BCDF13DDC6F7"
-            }
+            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "365087B6-BCF3-4EA0-BDAE-41B5066E3B60",
-                "UUID": "DF29CAD2-0983-4F5C-8B3B-7009B44910AE"
+                "GroupingIdentifier": "59646881-74A9-484E-8219-3446078268C9",
+                "WFControlFlowMode": 2
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFNumberActionNumber": "1",
-                "UUID": "64AE73F4-CC5E-4B6F-A8FD-9FBE32D48EE7"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "64AE73F4-CC5E-4B6F-A8FD-9FBE32D48EE7",
-                        "Type": "ActionOutput",
-                        "OutputName": "Number"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflowName": "Open My iPhone Shortcut(s)",
-                "WFWorkflow": {
-                    "workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
-                    "workflowName": "Open My iPhone Shortcut(s)",
-                    "isSelf": false
-                }
+                "GroupingIdentifier": "94C1CB16-7C28-4F5F-967E-AF374880DF96",
+                "WFControlFlowMode": 2
             }
         }
     ],

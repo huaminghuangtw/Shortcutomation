@@ -225,14 +225,17 @@
                 "WFItems": [
                     "🐥 Arc",
                     "👾 ChatGPT",
-                    "🌏 Startpage",
-                    "🌐 Safari",
-                    "🏋🏽‍♀️ Darebee",
+                    "🤡 Google",
+                    "🐭 Startpage",
+                    "🐨 Safari",
+                    "🐯 Edge",
+                    "😺 Reddit",
+                    "🐶 PTT",
+                    "🎥 YouTube",
+                    "🎧 Spotify",
                     "👨🏻‍⚕️ Huberman Lab",
                     "🪐 NASA Media Library",
-                    "🎧 Spotify",
-                    "🤡 PTT",
-                    "😺 Reddit"
+                    "🛍️ Amazon"
                 ],
                 "UUID": "46B4810E-049C-4F9A-9E07-2EA166C5CD30"
             }
@@ -240,7 +243,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Which search engine?",
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "46B4810E-049C-4F9A-9E07-2EA166C5CD30",
@@ -278,6 +281,7 @@
             "WFWorkflowActionParameters": {
                 "WFItems": [
                     "Arc",
+                    "Google",
                     "Startpage",
                     "Spotify"
                 ],
@@ -393,6 +397,67 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Google",
+                "GroupingIdentifier": "197063BE-1CF6-4712-8D8F-6507A912B378",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A04FFBE2-9000-4A2D-868F-BE9EEF315B2B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
+                    "workflowName": "Build Google Search URL",
+                    "isSelf": false
+                },
+                "UUID": "BBD72706-2118-4F06-AD78-0BA8BC38113A",
+                "WFWorkflowName": "Build Google Search URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BBD72706-2118-4F06-AD78-0BA8BC38113A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "DB48C39A-FADB-40BA-BB82-426EAED471F8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "197063BE-1CF6-4712-8D8F-6507A912B378",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "ED1E1162-F5C0-459E-A96A-6A79AEE47DED",
+                            "Type": "ActionOutput",
+                            "OutputName": "searchEngine"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
                 "WFConditionalActionString": "Startpage",
                 "GroupingIdentifier": "E893725C-B5DD-4B41-88EB-37A2A09A5322",
                 "WFCondition": 4
@@ -483,137 +548,15 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "241ABE0D-95A5-47B2-A3DC-628989877B6E",
-                "WFControlFlowMode": 2
+                "UUID": "1CB90101-4176-462E-87CC-84AD40F971D1"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "B6F6156B-3D3C-44A9-9F2E-027C7D9FA0F9",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "ED1E1162-F5C0-459E-A96A-6A79AEE47DED",
-                            "Type": "ActionOutput",
-                            "OutputName": "searchEngine"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Safari",
-                "GroupingIdentifier": "E3B575BD-18CA-42BF-A7A2-D36EE7CE4874",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
-            "WFWorkflowActionParameters": {
-                "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.mobilesafari",
-                    "Name": "Safari",
-                    "TeamIdentifier": "0000000000"
-                },
-                "WFAppIdentifier": "com.apple.mobilesafari",
-                "UUID": "BA7B5AA3-7E6C-496E-9A8F-1E9CCF50FA6D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.TabEntity",
-            "WFWorkflowActionParameters": {
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 99,
-                                "Values": {
-                                    "String": "New Tab"
-                                },
-                                "Removable": true,
-                                "Property": "title"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                },
-                "UUID": "67DC5991-40C4-4851-9B4D-AEDC9A21559D",
-                "AppIntentDescriptor": {
-                    "ActionRequiresAppInstallation": true,
-                    "BundleIdentifier": "com.apple.Safari",
-                    "AppIntentIdentifier": "TabEntity",
-                    "Name": "Safari",
-                    "TeamIdentifier": "0000000000"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "67DC5991-40C4-4851-9B4D-AEDC9A21559D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Tabs"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "E44BF378-BB3F-4483-8049-99C8B66EC053",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.CloseTab",
-            "WFWorkflowActionParameters": {
-                "target": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "E39AFD10-D174-43B5-A47C-91C7D30C08F3",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.mobilesafari",
-                    "Name": "Safari",
-                    "AppIntentIdentifier": "CloseTab"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E44BF378-BB3F-4483-8049-99C8B66EC053",
-                "UUID": "80D7F293-3B94-42BB-AE20-48E3D44BCE3B"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.CreateNewTab",
-            "WFWorkflowActionParameters": {
-                "UUID": "4915905A-C6CB-4C49-9818-FB767BA3E6C6",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.mobilesafari",
-                    "Name": "Safari",
-                    "AppIntentIdentifier": "CreateNewTab"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "E3B575BD-18CA-42BF-A7A2-D36EE7CE4874",
                 "WFControlFlowMode": 1
             }
         },
@@ -642,15 +585,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "E3B575BD-18CA-42BF-A7A2-D36EE7CE4874",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "BCE7B52F-A000-400B-92C7-FB5DDE06F8F8",
+                "GroupingIdentifier": "B6F6156B-3D3C-44A9-9F2E-027C7D9FA0F9",
                 "UUID": "AE07706A-3144-4FE2-B1CC-7EE1CF2DA04B"
             }
         },
@@ -658,16 +594,21 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "B6F6156B-3D3C-44A9-9F2E-027C7D9FA0F9",
+                "GroupingIdentifier": "BCE7B52F-A000-400B-92C7-FB5DDE06F8F8",
                 "UUID": "31FE4142-8B7F-491B-A508-8F769C6DF3F6"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "4D7AF213-EEC1-447F-B321-7F0A3AEABA7B",
-                "WFControlFlowMode": 2
+                "UUID": "F94C8E19-8BF2-445C-9791-FE81E5208E6D"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
@@ -677,8 +618,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch",
-        "QuickActions"
+        "QuickActions",
+        "Watch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true

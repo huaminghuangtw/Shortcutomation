@@ -1,0 +1,116 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.mobilesafari",
+                    "Name": "Safari",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFAppIdentifier": "com.apple.mobilesafari",
+                "UUID": "BA7B5AA3-7E6C-496E-9A8F-1E9CCF50FA6D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.TabEntity",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 99,
+                                "Values": {
+                                    "String": "New Tab"
+                                },
+                                "Removable": true,
+                                "Property": "title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "UUID": "67DC5991-40C4-4851-9B4D-AEDC9A21559D",
+                "AppIntentDescriptor": {
+                    "ActionRequiresAppInstallation": true,
+                    "BundleIdentifier": "com.apple.Safari",
+                    "AppIntentIdentifier": "TabEntity",
+                    "Name": "Safari",
+                    "TeamIdentifier": "0000000000"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "67DC5991-40C4-4851-9B4D-AEDC9A21559D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Tabs"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "E44BF378-BB3F-4483-8049-99C8B66EC053",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.CloseTab",
+            "WFWorkflowActionParameters": {
+                "target": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E39AFD10-D174-43B5-A47C-91C7D30C08F3",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobilesafari",
+                    "Name": "Safari",
+                    "AppIntentIdentifier": "CloseTab"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E44BF378-BB3F-4483-8049-99C8B66EC053",
+                "UUID": "80D7F293-3B94-42BB-AE20-48E3D44BCE3B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.CreateNewTab",
+            "WFWorkflowActionParameters": {
+                "UUID": "4915905A-C6CB-4C49-9818-FB767BA3E6C6",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobilesafari",
+                    "Name": "Safari",
+                    "AppIntentIdentifier": "CreateNewTab"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

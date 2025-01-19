@@ -107,6 +107,18 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
+                    "workflowIdentifier": "1E761429-72A5-4469-95A5-223A22B0C352",
+                    "workflowName": "💬 Extract Insight Timer Quote",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "💬 Extract Insight Timer Quote",
+                "UUID": "CA8CE4C7-E007-4554-B0BE-C0BC71D23D56"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
                     "workflowIdentifier": "EB66D420-EFEC-4FDE-9DDD-DFCB1CCB1616",
                     "workflowName": "🧐 Morning Manifesto",
                     "isSelf": false
@@ -150,8 +162,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "🌾 Review Latest Release",
-                "CustomOutputName": "🌾 Review Latest Release",
+                "WFTextActionText": "🌾 Celebrate Big Wins!",
+                "CustomOutputName": "🌾 Celebrate Big Wins!",
                 "UUID": "85162A46-5398-4C7E-999A-257FAFE98D71"
             }
         },
@@ -224,7 +236,7 @@
                             "{0, 1}": {
                                 "OutputUUID": "85162A46-5398-4C7E-999A-257FAFE98D71",
                                 "Type": "ActionOutput",
-                                "OutputName": "🌾 Review Latest Release"
+                                "OutputName": "🌾 Celebrate Big Wins!"
                             }
                         }
                     },
@@ -238,7 +250,7 @@
                             "{0, 1}": {
                                 "OutputUUID": "85162A46-5398-4C7E-999A-257FAFE98D71",
                                 "Type": "ActionOutput",
-                                "OutputName": "🌾 Review Latest Release"
+                                "OutputName": "🌾 Celebrate Big Wins!"
                             }
                         }
                     },
@@ -249,8 +261,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "0A904A41-3B70-4C7B-A60A-9259448CFFB1",
-                "WFControlFlowMode": 2
+                "UUID": "45A4B812-74DC-483A-8DCB-9179ECB283C6"
             }
         },
         {
@@ -304,6 +317,7 @@
         {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
             "WFWorkflowActionParameters": {
+                "atTime": "Today at 19:00",
                 "onTap": {
                     "Value": {
                         "string": "￼",
@@ -319,7 +333,7 @@
                 },
                 "threadID": "",
                 "UUID": "0A272243-8903-41FE-9146-F99499182169",
-                "showNotification": "InHours",
+                "showNotification": "AtTime",
                 "inMinutes": "30",
                 "title": {
                     "Value": {
@@ -359,6 +373,13 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "3DF8B503-6485-4479-9EE2-22C5D2AE3C7F"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -394,13 +415,6 @@
                 "WFControlFlowMode": 0,
                 "WFNumberValue": "0",
                 "WFCondition": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "3DF8B503-6485-4479-9EE2-22C5D2AE3C7F"
             }
         },
         {
@@ -526,21 +540,270 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "4891AEFF-C308-4FB5-8B02-270CA4F2E5FD",
-                "UUID": "A5887C6B-939D-454D-A602-79DC2B85B198"
+                "WFControlFlowMode": 1
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "699C0741-B7CA-4DCC-B2EB-9AFF95F88657",
-                    "workflowName": "🛏️ Log Wake Up & Bed Time",
-                    "isSelf": false
+                "WFContentItemLimitEnabled": true,
+                "WFContentItemSortProperty": "Title",
+                "UUID": "4B8F30B3-586B-4DD5-8997-145C4840B45F",
+                "WFContentItemLimitNumber": 3,
+                "WFContentItemSortOrder": "A to Z",
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "◻️ Essay",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Flagged"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": true
+                                },
+                                "Removable": true,
+                                "Property": "Has Subtasks"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders",
+                        "OutputUUID": "4B8F30B3-586B-4DD5-8997-145C4840B45F",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Subtasks"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "🛏️ Log Wake Up & Bed Time",
-                "UUID": "23987D4F-94CA-4CA2-968A-65F8ADA06105"
+                "WFItemSpecifier": "Random Item",
+                "UUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detectlanguage",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "688F4EBB-C9CD-445B-98DE-C83C4B93E3DB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "688F4EBB-C9CD-445B-98DE-C83C4B93E3DB",
+                            "Type": "ActionOutput",
+                            "OutputName": "Language"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Chinese",
+                "GroupingIdentifier": "9C30F523-EA1A-4386-AC10-0DA68741BC13",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "《 ￼ 》",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "727C00A3-D447-4EB7-BBE0-C9A0B8D0BF7E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9C30F523-EA1A-4386-AC10-0DA68741BC13",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "« ￼ »",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "2996C793-0ED9-41D3-9F61-3524B8A7CA9E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9C30F523-EA1A-4386-AC10-0DA68741BC13",
+                "UUID": "3ED73B80-4B99-4155-83F2-82B95CE1D972"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "subtitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "3DF8B503-6485-4479-9EE2-22C5D2AE3C7F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "onTap": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List",
+                                "OutputUUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "URL"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "threadID": "",
+                "UUID": "5BC3AA63-C263-4B5F-8E61-9AA75BFB442E",
+                "showNotification": "InHours",
+                "inMinutes": "30",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List",
+                                "OutputUUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Parent Reminder"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "repeatTrigger": false,
+                "body": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "3ED73B80-4B99-4155-83F2-82B95CE1D972",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "notificationID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "3ED73B80-4B99-4155-83F2-82B95CE1D972",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4891AEFF-C308-4FB5-8B02-270CA4F2E5FD",
+                "UUID": "A5887C6B-939D-454D-A602-79DC2B85B198"
             }
         },
         {
@@ -568,6 +831,33 @@
                 },
                 "UUID": "D141073C-6009-4AF7-9954-0BFDD8949CB3",
                 "WFWorkflowName": "Run Folder Shortcuts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Morning",
+                "UUID": "4442DECF-2830-4434-A0D2-01F81656C40B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4442DECF-2830-4434-A0D2-01F81656C40B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "21036136-4025-4232-B796-2D0A28007557",
+                    "workflowName": "Template - Morning and Evening Routine Prep",
+                    "isSelf": false
+                },
+                "UUID": "F12E7DCE-D29C-4FBB-B388-4A76C3FD5958",
+                "WFWorkflowName": "Template - Morning and Evening Routine Prep"
             }
         },
         {

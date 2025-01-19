@@ -52,6 +52,19 @@
 									<false/>
 								</dict>
 							</dict>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Has Subtasks</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>Bool</key>
+									<true/>
+								</dict>
+							</dict>
 						</array>
 						<key>WFContentPredicateBoundedDate</key>
 						<false/>
@@ -74,15 +87,6 @@
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>Aggrandizements</key>
-						<array>
-							<dict>
-								<key>PropertyName</key>
-								<string>Subtasks</string>
-								<key>Type</key>
-								<string>WFPropertyVariableAggrandizement</string>
-							</dict>
-						</array>
 						<key>OutputName</key>
 						<string>Reminders</string>
 						<key>OutputUUID</key>
@@ -97,65 +101,84 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
+			<string>is.workflow.actions.filter.reminders</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>GroupingIdentifier</key>
-				<string>8D768159-02B3-4823-8AAE-40380FC4943F</string>
-				<key>WFCondition</key>
-				<integer>4</integer>
-				<key>WFControlFlowMode</key>
-				<integer>0</integer>
-				<key>WFDate</key>
+				<key>UUID</key>
+				<string>F78D8F3E-1BA2-4095-85AD-0B4F4F18C46B</string>
+				<key>WFContentItemFilter</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFActionParameterFilterPrefix</key>
+						<integer>1</integer>
+						<key>WFActionParameterFilterTemplates</key>
+						<array>
+							<dict>
+								<key>Operator</key>
+								<integer>999</integer>
+								<key>Property</key>
+								<string>Title</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>String</key>
+									<string>`</string>
+								</dict>
+							</dict>
+						</array>
+						<key>WFContentPredicateBoundedDate</key>
+						<false/>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContentPredicateTableTemplate</string>
+				</dict>
+				<key>WFContentItemInputParameter</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>Aggrandizements</key>
 						<array>
 							<dict>
+								<key>PropertyName</key>
+								<string>Subtasks</string>
 								<key>Type</key>
-								<string>WFDateFormatVariableAggrandizement</string>
-								<key>WFDateFormatStyle</key>
-								<string>Medium</string>
-								<key>WFISO8601IncludeTime</key>
-								<false/>
-								<key>WFTimeFormatStyle</key>
-								<string>None</string>
+								<string>WFPropertyVariableAggrandizement</string>
 							</dict>
 						</array>
 						<key>Type</key>
-						<string>CurrentDate</string>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.each</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>FE10EA13-A640-4893-860F-EE4198FB290B</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
 				<key>WFInput</key>
 				<dict>
-					<key>Type</key>
-					<string>Variable</string>
-					<key>Variable</key>
+					<key>Value</key>
 					<dict>
-						<key>Value</key>
-						<dict>
-							<key>Aggrandizements</key>
-							<array>
-								<dict>
-									<key>PropertyName</key>
-									<string>Creation Date</string>
-									<key>PropertyUserInfo</key>
-									<string>WFFileCreationDate</string>
-									<key>Type</key>
-									<string>WFPropertyVariableAggrandizement</string>
-								</dict>
-							</array>
-							<key>Type</key>
-							<string>Variable</string>
-							<key>VariableName</key>
-							<string>Repeat Item</string>
-						</dict>
-						<key>WFSerializationType</key>
-						<string>WFTextTokenAttachment</string>
+						<key>OutputName</key>
+						<string>Reminders</string>
+						<key>OutputUUID</key>
+						<string>F78D8F3E-1BA2-4095-85AD-0B4F4F18C46B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
 					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -177,7 +200,7 @@
 						<key>Type</key>
 						<string>Variable</string>
 						<key>VariableName</key>
-						<string>Repeat Item</string>
+						<string>Repeat Item 2</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -223,7 +246,7 @@
 						<key>Type</key>
 						<string>Variable</string>
 						<key>VariableName</key>
-						<string>Repeat Item 2</string>
+						<string>Repeat Item 3</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -529,7 +552,7 @@
 						<key>Type</key>
 						<string>Variable</string>
 						<key>VariableName</key>
-						<string>Repeat Item</string>
+						<string>Repeat Item 2</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -560,13 +583,11 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
+			<string>is.workflow.actions.repeat.each</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>GroupingIdentifier</key>
-				<string>8D768159-02B3-4823-8AAE-40380FC4943F</string>
-				<key>UUID</key>
-				<string>BF622DD2-85B0-4E9B-B01A-4EF2D3BFDD75</string>
+				<string>FE10EA13-A640-4893-860F-EE4198FB290B</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>

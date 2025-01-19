@@ -6,7 +6,9 @@
         "WFWorkflowIconGlyphNumber": 61440
     },
     "WFWorkflowClientVersion": "3107.0.8.2",
-    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowOutputContentItemClasses": [
+        "WFContentItem"
+    ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
@@ -54,6 +56,19 @@
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "E64AC261-86CE-4FDD-9E3C-CB8E9098095F",
                 "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
+            "WFWorkflowActionParameters": {
+                "WFDeviceDetail": "Current Brightness",
+                "UUID": "CCEA5CD1-BEBD-4641-BAA0-92184578D492"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": 0
             }
         },
         {
@@ -559,6 +574,18 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
+                    "workflowIdentifier": "C3771EC7-4647-4C64-8383-3A7C1F7B016E",
+                    "workflowName": "Brighten Screen",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Brighten Screen",
+                "UUID": "BD5386C7-E369-486B-A79F-405DB87FA6DD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
                     "workflowIdentifier": "DCBCC72D-2982-4BDA-9A2A-FDA8332008C1",
                     "workflowName": "You Are All Set",
                     "isSelf": false
@@ -904,6 +931,19 @@
             "WFWorkflowActionParameters": {}
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": {
+                    "Value": {
+                        "OutputUUID": "CCEA5CD1-BEBD-4641-BAA0-92184578D492",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "E64AC261-86CE-4FDD-9E3C-CB8E9098095F",
@@ -936,8 +976,27 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "E64AC261-86CE-4FDD-9E3C-CB8E9098095F",
-                "WFControlFlowMode": 2
+                "UUID": "C5E5D818-6B2F-4231-91F8-516400EA1AF4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C5E5D818-6B2F-4231-91F8-516400EA1AF4",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         }
     ],

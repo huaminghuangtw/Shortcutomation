@@ -14,6 +14,24 @@
             "WFWorkflowActionParameters": {}
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateFormatStyle": "ISO 8601",
+                "UUID": "D120E46F-0550-4C01-99E5-D6F495A8421C"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
                 "WFContentItemFilter": {
@@ -31,6 +49,26 @@
                                 },
                                 "Removable": true,
                                 "Property": "List"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "D120E46F-0550-4C01-99E5-D6F495A8421C",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Formatted Date"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
                             },
                             {
                                 "Operator": 4,
@@ -421,9 +459,84 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "UUID": "918CEEF8-AFD4-4565-86D8-4CD223527F45"
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "5E8281C2-D60A-4F2B-8402-858B36F13FEB",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": true,
+                                    "Enumeration": {
+                                        "Value": "📥 Inbox",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "D120E46F-0550-4C01-99E5-D6F495A8421C",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Formatted Date"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Parent Reminder",
+                "Mode": "Set",
+                "UUID": "AE8FAF11-1327-40F9-B6CA-E4EF4D1CDB93",
+                "WFReminderContentItemParentReminder": {
+                    "Value": {
+                        "OutputUUID": "5E8281C2-D60A-4F2B-8402-858B36F13FEB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {
@@ -482,14 +595,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
             "WFWorkflowActionParameters": {
-                "WFWorkflowName": "Dim Screen",
-                "WFWorkflow": {
-                    "workflowIdentifier": "C9E98328-F7E4-4625-A9B7-C5678F274FAC",
-                    "workflowName": "Dim Screen",
-                    "isSelf": false
-                }
+                "WFDeviceDetail": "Current Brightness",
+                "UUID": "701751D0-3144-411F-8C67-AC4A99F287EC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": 0
             }
         },
         {
@@ -505,13 +620,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
             "WFWorkflowActionParameters": {
-                "WFWorkflowName": "Brighten Screen",
-                "WFWorkflow": {
-                    "workflowIdentifier": "C3771EC7-4647-4C64-8383-3A7C1F7B016E",
-                    "workflowName": "Brighten Screen",
-                    "isSelf": false
+                "WFBrightness": {
+                    "Value": {
+                        "OutputUUID": "701751D0-3144-411F-8C67-AC4A99F287EC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 }
             }
         },

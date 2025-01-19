@@ -17,7 +17,7 @@
                 "WFMenuItems": [
                     "🔖 Open Reminder List",
                     "🔎 Search Reminders",
-                    "🧳 Go to Inbox"
+                    "✅ View Completed Items"
                 ],
                 "GroupingIdentifier": "8A9F549C-AC78-4827-B52D-F4D9906C2128"
             }
@@ -87,14 +87,37 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "🧳 Go to Inbox",
+                "WFMenuItemTitle": "✅ View Completed Items",
                 "GroupingIdentifier": "8A9F549C-AC78-4827-B52D-F4D9906C2128",
                 "WFControlFlowMode": 1
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.reminders.showlist",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "com.apple.reminders.TTROpenSmartListAppIntent",
+            "WFWorkflowActionParameters": {
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.reminders",
+                    "Name": "Reminders",
+                    "AppIntentIdentifier": "TTROpenSmartListAppIntent"
+                },
+                "UUID": "04380B38-1419-45C2-BC92-DB4026547AAE",
+                "targetEntity": {
+                    "title": {
+                        "key": "Completed"
+                    },
+                    "image": {
+                        "type": "URL",
+                        "uri": "intents-remote-image-proxy:?proxyIdentifier=EEC94DBB-7F69-9F96-00D8-D4B97F9FF598.png&storageServiceIdentifier=com.apple.Intents.INImageServiceConnection",
+                        "storageServiceIdentifier": "com.apple.Intents.INImageServiceConnection"
+                    },
+                    "subtitle": {
+                        "key": "Completed"
+                    },
+                    "identifier": "com.apple.reminders.smartlist.completed"
+                },
+                "target": "completed"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
@@ -128,8 +151,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch",
-        "QuickActions"
+        "QuickActions",
+        "Watch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false

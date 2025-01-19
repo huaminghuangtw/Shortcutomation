@@ -10,21 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "57BF91D2-D738-4AE1-8BBD-BF3E6934BC0D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "💭 Journal Prompt",
-                "CustomOutputName": "💭 Journal Prompt",
-                "UUID": "6BEFC591-2D52-45E9-8019-9ABC308C15E6"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -43,35 +28,9 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "6BEFC591-2D52-45E9-8019-9ABC308C15E6",
-                                "Type": "ActionOutput",
-                                "OutputName": "💭 Journal Prompt"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFConditionalActionString": "💭 Journal Prompt",
                 "GroupingIdentifier": "E7D9955A-3C85-465D-8C86-595D3F45A4AF",
                 "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "57BF91D2-D738-4AE1-8BBD-BF3E6934BC0D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "subtitle"
             }
         },
         {
@@ -122,6 +81,70 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "If you were me, how would you answer this question?",
+                "UUID": "EC0E5838-1652-4069-A2FD-C9119EDEB569"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "prompt"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "EC0E5838-1652-4069-A2FD-C9119EDEB569",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "content"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "\"￼\"",
+                                        "attachmentsByRange": {
+                                            "{1, 1}": {
+                                                "OutputUUID": "35D34830-893B-4E61-BBAB-C7EEE438A673",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Shortcut Result"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "9D854EDE-4817-45AE-AE8E-BDDFF7611DA4"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -137,7 +160,7 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "Show Random Item from Evergreen List"
+                                        "string": "ChatGPT"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
@@ -155,9 +178,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "6BEFC591-2D52-45E9-8019-9ABC308C15E6",
+                                                "OutputUUID": "9D854EDE-4817-45AE-AE8E-BDDFF7611DA4",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "💭 Journal Prompt"
+                                                "OutputName": "Dictionary"
                                             }
                                         }
                                     },
@@ -231,13 +254,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "EE3AC8C1-93D8-416C-B12D-5B6483402D6F"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.TextCaseIntent",
             "WFWorkflowActionParameters": {
                 "ShowWhenRun": false,
@@ -269,43 +285,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼\n￼\n￼",
-                        "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "AEA88205-27E1-485C-A342-85B22CBD2753",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Text"
-                            },
-                            "{4, 1}": {
-                                "OutputUUID": "EE3AC8C1-93D8-416C-B12D-5B6483402D6F",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "EE3AC8C1-93D8-416C-B12D-5B6483402D6F",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "CustomOutputName": "subtitle",
-                "UUID": "B1A96951-FC17-430F-91C0-D998A790EA01"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "B1A96951-FC17-430F-91C0-D998A790EA01",
+                        "OutputUUID": "AEA88205-27E1-485C-A342-85B22CBD2753",
                         "Type": "ActionOutput",
-                        "OutputName": "subtitle"
+                        "OutputName": "Formatted Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
