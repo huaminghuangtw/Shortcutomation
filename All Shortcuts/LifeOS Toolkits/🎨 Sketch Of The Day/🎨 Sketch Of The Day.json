@@ -228,6 +228,42 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextCaseSensitive": true,
+                "WFMatchTextPattern": "SketchplanationCard_root.*?href=\"(/[^\"]+)\"",
+                "UUID": "D6C9CECD-DAB4-4777-8BFF-FF6F09800CAA",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "80736AC5-DC7E-48CD-B25F-B759800ABA59",
+                                "Type": "ActionOutput",
+                                "OutputName": "HTML from Rich Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "D6C9CECD-DAB4-4777-8BFF-FF6F09800CAA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "sketchURLs",
+                "UUID": "DD8E12AD-19CF-4420-8773-0D2C89E43D4D"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
                 "CustomOutputName": "https://images.prismic.io/sketchplanations",
@@ -416,23 +452,26 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "79649E5F-ECD5-4A83-9A20-DF0CC56B2C5C",
+                        "OutputUUID": "DD8E12AD-19CF-4420-8773-0D2C89E43D4D",
                         "Type": "ActionOutput",
-                        "OutputName": "sketchTitle"
+                        "OutputName": "sketchURLs"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflow": {
-                    "workflowIdentifier": "6D49EA2A-0E94-4DFA-9FE5-DD6ABA97B368",
-                    "workflowName": "Get Mardown Heading Anchor Text",
-                    "isSelf": false
+                "WFItemIndex": {
+                    "Value": {
+                        "OutputUUID": "F0FF41D3-60F2-46F6-BB27-DBA96C965095",
+                        "Type": "ActionOutput",
+                        "OutputName": "Random Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "BF02E6B0-9613-4CAF-A9DA-90865DC6E931",
-                "WFWorkflowName": "Get Mardown Heading Anchor Text"
+                "UUID": "E040A06A-B662-4CC9-83AE-51CCEACB92B9",
+                "WFItemSpecifier": "Item At Index"
             }
         },
         {
@@ -444,9 +483,9 @@
                         "string": "￼/￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
-                                "OutputUUID": "BF02E6B0-9613-4CAF-A9DA-90865DC6E931",
+                                "OutputUUID": "E040A06A-B662-4CC9-83AE-51CCEACB92B9",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "Item from List"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "44E5ABCF-F6C5-4A59-BA90-799C545537B0",

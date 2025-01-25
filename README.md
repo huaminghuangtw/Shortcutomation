@@ -6,15 +6,15 @@
 </p>
 
 > [!NOTE]  
-> **Last Update:** 2025-01-19  
+> **Last Update:** 2025-01-25  
 >
-> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ](https://www.google.com/maps/place/L%C3%BCneburg,%20Germany)  
+> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Wᴀɴʜᴜᴀ Dɪsᴛʀɪᴄᴛ, Tᴀɪᴡᴀɴ](https://www.google.com/maps/place/Wanhua%20District,%20Taiwan)  
 >
 > _[Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable notifications and widgets created with [Scriptable](https://scriptable.app)!_  
 
 ## 📊 Shortcuts Library Stats ²
 
-* In total, there are **587** Shortcuts with **7429** actions in **72** folders
+* In total, there are **583** Shortcuts with **7408** actions in **72** folders
 * The pure average comes out to about **13** actions per Shortcut
 * The typical Shortcut has around **8+** actions
 * 🏅 Top 5 Most Complex Shortcuts
@@ -22,8 +22,8 @@
   | Rank | Shortcut Name | Number of Actions |
   | :---: | :---: | :---: |
   | :one: | [Template - Morning and Evening Routine Prep](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep) | 90 |
-  | :two: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
-  | :three: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
+  | :two: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
+  | :three: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
   | :four: | [📖 Audible PDF](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF) | 72 |
   | :five: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 72 |
 
@@ -55,7 +55,7 @@
 
 <summary>
    <strong>
-      <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts">All Shortcuts (587)</a>
+      <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts">All Shortcuts (583)</a>
    </strong>
 </summary>
 
@@ -803,7 +803,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling">Journaling (15)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling">Journaling (14)</a>
       </strong>
     </summary>
 
@@ -903,15 +903,6 @@
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Read%20Journal%20Metadata">
        <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Journaling/_Read%20Journal%20Metadata/_Read%20Journal%20Metadata.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Open%20Journal">_Open Journal</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Open%20Journal">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Journaling/_Open%20Journal/_Open%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -2240,9 +2231,18 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities">Utilities (38)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities">Utilities (39)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper">_Smart Quote Wrapper</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper">
+       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper/_Smart%20Quote%20Wrapper.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -2955,7 +2955,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI">Obsidian URI (17)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI">Obsidian URI (13)</a>
       </strong>
     </summary>
 
@@ -3064,42 +3064,6 @@
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Collect%20All%20Attachments">
        <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Collect%20All%20Attachments/Obsidian%20-%20Collect%20All%20Attachments.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links">Obsidian - Replace All Wiki Links with Markdown Links</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths">Obsidian - Convert All Link Paths to Relative Paths</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds">Obsidian - Replace All Wiki Embeds with Markdown Embeds</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths">Obsidian - Convert All Embed Paths to Relative Paths</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5167,7 +5131,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar">Data Jar (3)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar">Data Jar (2)</a>
       </strong>
     </summary>
 
@@ -5186,15 +5150,6 @@
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Export%20Data%20Jar">
        <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Data%20Jar/Export%20Data%20Jar/Export%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar">Set Key Path to Value in Data Jar</a>
-       </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar/Set%20Key%20Path%20to%20Value%20in%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -5780,7 +5735,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (9)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (10)</a>
       </strong>
     </summary>
 
@@ -5826,6 +5781,15 @@
        </summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Fetch%20Today's%20Weather%20Info">
        <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Fetch%20Today's%20Weather%20Info/%23%20Fetch%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar"># Backup Data Jar</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar">
+       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar/%23%20Backup%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
