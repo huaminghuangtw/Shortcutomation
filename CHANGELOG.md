@@ -1,8 +1,8 @@
-## 🎉 Weekly Update (Week 4, 2025)
+## 🎉 Weekly Update (Week 5, 2025)
 
-> **Date:** 2025-01-25  
+> **Date:** 2025-02-02  
 
-### ✨ 3 New Shortcuts This Week!
+### ✨ 2 New Shortcuts This Week!
 
 <details>
     <summary>
@@ -30,27 +30,10 @@
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper">_Smart Quote Wrapper</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Detect%20System%20Language">Detect System Language</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper/_Smart%20Quote%20Wrapper.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (1)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar"># Backup Data Jar</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar/%23%20Backup%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Detect%20System%20Language">
+     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Utilities/Detect%20System%20Language/Detect%20System%20Language.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 

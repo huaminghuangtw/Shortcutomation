@@ -6,15 +6,15 @@
 </p>
 
 > [!NOTE]  
-> **Last Update:** 2025-01-25  
+> **Last Update:** 2025-02-02  
 >
-> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Wᴀɴʜᴜᴀ Dɪsᴛʀɪᴄᴛ, Tᴀɪᴡᴀɴ](https://www.google.com/maps/place/Wanhua%20District,%20Taiwan)  
+> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Tᴀɪʙᴀᴏ Cɪᴛʏ, Tᴀɪᴡᴀɴ](https://www.google.com/maps/place/Taibao%20City,%20Taiwan)  
 >
 > _[Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable notifications and widgets created with [Scriptable](https://scriptable.app)!_  
 
 ## 📊 Shortcuts Library Stats ²
 
-* In total, there are **583** Shortcuts with **7408** actions in **72** folders
+* In total, there are **584** Shortcuts with **7416** actions in **72** folders
 * The pure average comes out to about **13** actions per Shortcut
 * The typical Shortcut has around **8+** actions
 * 🏅 Top 5 Most Complex Shortcuts
@@ -22,8 +22,8 @@
   | Rank | Shortcut Name | Number of Actions |
   | :---: | :---: | :---: |
   | :one: | [Template - Morning and Evening Routine Prep](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep) | 90 |
-  | :two: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
-  | :three: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
+  | :two: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
+  | :three: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
   | :four: | [📖 Audible PDF](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF) | 72 |
   | :five: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 72 |
 
@@ -55,7 +55,7 @@
 
 <summary>
    <strong>
-      <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts">All Shortcuts (583)</a>
+      <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts">All Shortcuts (584)</a>
    </strong>
 </summary>
 
@@ -2231,9 +2231,18 @@
 - <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities">Utilities (39)</a>
+        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities">Utilities (40)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Detect%20System%20Language">Detect System Language</a>
+       </summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Detect%20System%20Language">
+       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Utilities/Detect%20System%20Language/Detect%20System%20Language.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -2935,19 +2944,19 @@
 
     - <details>
        <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">Build Startpage Search URL</a>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL">Build Google Maps Search URL</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL/Build%20Startpage%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL">
+       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL/Build%20Google%20Maps%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL">Build Google Maps Search URL</a>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">Build Startpage Search URL</a>
        </summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL">
-       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL/Build%20Google%20Maps%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">
+       <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL/Build%20Startpage%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
