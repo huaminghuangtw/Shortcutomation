@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3107.0.8.2",
+    "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -572,13 +572,19 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "📒 Read Blog Post",
+                "CustomOutputName": "📒 Read Blog Post",
+                "UUID": "0F0FAD23-8B10-4362-B166-3D28F8E031A9"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
                 "WFContentItemLimitEnabled": true,
-                "WFContentItemSortProperty": "Title",
-                "UUID": "4B8F30B3-586B-4DD5-8997-145C4840B45F",
+                "UUID": "5EC5274F-50CD-4283-90E5-8511BDC394F7",
                 "WFContentItemLimitNumber": 1,
-                "WFContentItemSortOrder": "A to Z",
                 "WFContentItemFilter": {
                     "Value": {
                         "WFActionParameterFilterPrefix": 1,
@@ -596,12 +602,13 @@
                                 "Property": "List"
                             },
                             {
-                                "Operator": 4,
+                                "Operator": 99,
                                 "Values": {
-                                    "Bool": false
+                                    "Bool": false,
+                                    "String": " 0–1.000 words"
                                 },
                                 "Removable": true,
-                                "Property": "Is Completed"
+                                "Property": "Title"
                             },
                             {
                                 "Operator": 4,
@@ -609,7 +616,7 @@
                                     "Bool": false
                                 },
                                 "Removable": true,
-                                "Property": "Is Flagged"
+                                "Property": "Is Completed"
                             }
                         ]
                     },
@@ -618,19 +625,72 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFContentItemInputParameter": {
                     "Value": {
                         "Type": "ActionOutput",
                         "OutputName": "Reminders",
-                        "OutputUUID": "4B8F30B3-586B-4DD5-8997-145C4840B45F",
+                        "OutputUUID": "5EC5274F-50CD-4283-90E5-8511BDC394F7",
                         "Aggrandizements": [
                             {
                                 "Type": "WFPropertyVariableAggrandizement",
                                 "PropertyName": "Subtasks"
                             }
                         ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": false,
+                "CustomOutputName": "Articles",
+                "UUID": "BEC03663-24E5-436F-A274-E6FD9C3B71B7",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BEC03663-24E5-436F-A274-E6FD9C3B71B7",
+                            "Type": "ActionOutput",
+                            "OutputName": "Articles"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D0A2645B-AB62-4EF3-BE27-4DFC89BF2447",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BEC03663-24E5-436F-A274-E6FD9C3B71B7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Articles"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -697,7 +757,19 @@
                 "UUID": "5BC3AA63-C263-4B5F-8E61-9AA75BFB442E",
                 "showNotification": "InHours",
                 "inMinutes": "30",
-                "title": "📒 Read Blog Post",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0F0FAD23-8B10-4362-B166-3D28F8E031A9",
+                                "Type": "ActionOutput",
+                                "OutputName": "📒 Read Blog Post"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "repeatTrigger": false,
                 "body": {
                     "Value": {
@@ -717,20 +789,142 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
+                                "OutputUUID": "0F0FAD23-8B10-4362-B166-3D28F8E031A9",
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List",
-                                "OutputUUID": "D15DD120-6D91-4A22-95FE-37970C8B03E8",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "Parent Reminder"
-                                    }
-                                ]
+                                "OutputName": "📒 Read Blog Post"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D0A2645B-AB62-4EF3-BE27-4DFC89BF2447",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Open App"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "NetNewsWire"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "1270C56C-9215-4E55-A03A-88E4804B8DD7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1270C56C-9215-4E55-A03A-88E4804B8DD7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "7DA756C6-F3EA-4ACC-9F3D-716D4F9D970A",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "subtitle": "",
+                "onTap": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "7DA756C6-F3EA-4ACC-9F3D-716D4F9D970A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "threadID": "",
+                "UUID": "0E9BB3F0-7CC3-4AE9-9188-20CA83204CC1",
+                "showNotification": "InHours",
+                "inMinutes": "30",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0F0FAD23-8B10-4362-B166-3D28F8E031A9",
+                                "Type": "ActionOutput",
+                                "OutputName": "📒 Read Blog Post"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "repeatTrigger": false,
+                "body": "",
+                "notificationID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0F0FAD23-8B10-4362-B166-3D28F8E031A9",
+                                "Type": "ActionOutput",
+                                "OutputName": "📒 Read Blog Post"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D0A2645B-AB62-4EF3-BE27-4DFC89BF2447",
+                "WFControlFlowMode": 2
             }
         },
         {

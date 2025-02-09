@@ -130,7 +130,12 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<false/>
+									<dict>
+										<key>Value</key>
+										<false/>
+										<key>WFSerializationType</key>
+										<string>WFBooleanSubstitutableState</string>
+									</dict>
 								</dict>
 							</dict>
 						</array>
@@ -224,7 +229,12 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<false/>
+									<dict>
+										<key>Value</key>
+										<false/>
+										<key>WFSerializationType</key>
+										<string>WFBooleanSubstitutableState</string>
+									</dict>
 								</dict>
 							</dict>
 						</array>
@@ -556,6 +566,8 @@
 			<dict>
 				<key>GroupingIdentifier</key>
 				<string>22021BC9-108C-4745-A796-EF28D1F37A8A</string>
+				<key>UUID</key>
+				<string>6C9C9B19-9133-44E1-9FC2-70A87A90F05D</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -622,6 +634,150 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.filter.reminders</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>Today</string>
+				<key>UUID</key>
+				<string>60AE9E1B-C914-4EB6-9FF0-B7E8698DD33E</string>
+				<key>WFContentItemFilter</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFActionParameterFilterPrefix</key>
+						<integer>1</integer>
+						<key>WFActionParameterFilterTemplates</key>
+						<array>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>List</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>Enumeration</key>
+									<dict>
+										<key>Value</key>
+										<string>📥 Inbox</string>
+										<key>WFSerializationType</key>
+										<string>WFStringSubstitutableState</string>
+									</dict>
+								</dict>
+							</dict>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Title</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>String</key>
+									<dict>
+										<key>Value</key>
+										<dict>
+											<key>attachmentsByRange</key>
+											<dict>
+												<key>{0, 1}</key>
+												<dict>
+													<key>Aggrandizements</key>
+													<array>
+														<dict>
+															<key>Type</key>
+															<string>WFDateFormatVariableAggrandizement</string>
+															<key>WFDateFormatStyle</key>
+															<string>ISO 8601</string>
+															<key>WFISO8601IncludeTime</key>
+															<false/>
+														</dict>
+													</array>
+													<key>OutputName</key>
+													<string>Today</string>
+													<key>OutputUUID</key>
+													<string>349A7856-01A6-4FE8-A0B1-8C40BD48CDA7</string>
+													<key>Type</key>
+													<string>ActionOutput</string>
+												</dict>
+											</dict>
+											<key>string</key>
+											<string>￼</string>
+										</dict>
+										<key>WFSerializationType</key>
+										<string>WFTextTokenString</string>
+									</dict>
+								</dict>
+							</dict>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Is Completed</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>Bool</key>
+									<dict>
+										<key>Value</key>
+										<false/>
+										<key>WFSerializationType</key>
+										<string>WFBooleanSubstitutableState</string>
+									</dict>
+								</dict>
+							</dict>
+						</array>
+						<key>WFContentPredicateBoundedDate</key>
+						<false/>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContentPredicateTableTemplate</string>
+				</dict>
+				<key>WFContentItemInputParameter</key>
+				<string>Library</string>
+				<key>WFContentItemLimitEnabled</key>
+				<true/>
+				<key>WFContentItemLimitNumber</key>
+				<real>1</real>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3CD26A85-2B19-47A0-AF5D-0C1B08FF97C2</string>
+				<key>WFCondition</key>
+				<integer>101</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Today</string>
+							<key>OutputUUID</key>
+							<string>60AE9E1B-C914-4EB6-9FF0-B7E8698DD33E</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.addnewreminder</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -675,9 +831,20 @@
 				<false/>
 			</dict>
 		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3CD26A85-2B19-47A0-AF5D-0C1B08FF97C2</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>3107.0.8.2</string>
+	<string>3303.0.4</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
