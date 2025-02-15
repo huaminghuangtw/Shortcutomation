@@ -10,15 +10,33 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "com.microsoft.msedge.OpenNewIncognitoTabIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "UUID": "DC4F7BA8-3ACD-4C56-B3D4-2FC2367E3B85"
+                "GroupingIdentifier": "11702ACB-B62F-4944-803F-3D5A09E0F57E",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
+            "WFWorkflowActionIdentifier": "com.microsoft.msedge.OpenNewIncognitoTabIntent",
             "WFWorkflowActionParameters": {
-                "WFVolume": 0.1989898681640625
+                "UUID": "DC4F7BA8-3ACD-4C56-B3D4-2FC2367E3B85"
             }
         },
         {
@@ -31,6 +49,20 @@
                 },
                 "WFWorkflowName": "Turn off Grayscale",
                 "UUID": "800B23BC-7AD1-4B83-BFAD-854DE6519319"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "11702ACB-B62F-4944-803F-3D5A09E0F57E",
+                "UUID": "4A670CAC-2017-47FB-9531-BE7DE7C1F58D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
+            "WFWorkflowActionParameters": {
+                "WFVolume": 0.1989898681640625
             }
         },
         {
@@ -114,6 +146,49 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "￼/",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "915E248E-46EA-421D-B088-80B766A4B7F8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Matches"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F09DDCC7-7D9A-4742-BB9F-7068019B38CB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1AAB00E3-15AF-449A-A9E6-C23013333604",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.microsoft.msedge.OpenInChromeIncognitoIntent",
             "WFWorkflowActionParameters": {
                 "url": {
@@ -125,6 +200,59 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "D0E7D384-0E3D-4129-B2D2-94163EA24958"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1AAB00E3-15AF-449A-A9E6-C23013333604",
+                "UUID": "EE0D29C9-1216-4A58-A966-5CC4956D51D3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "99C7229B-55E1-4CD6-BEAB-125E39B1EC4C",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F09DDCC7-7D9A-4742-BB9F-7068019B38CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "DDE1893C-62D1-4EBB-AAC2-79A353462FA8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "99C7229B-55E1-4CD6-BEAB-125E39B1EC4C",
+                "WFControlFlowMode": 2
             }
         }
     ],
@@ -150,7 +278,9 @@
         "WFURLContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

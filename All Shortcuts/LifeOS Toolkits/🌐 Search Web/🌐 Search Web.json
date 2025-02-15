@@ -10,6 +10,49 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1CC669D4-7217-4EB9-BF7A-E3A037C19897",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "DB53B8EE-E9F7-44E2-B523-098556EF3A38",
+                    "workflowName": "Connect to Internet",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Connect to Internet",
+                "UUID": "0DFE4ED4-6737-4365-9045-56A292280723"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1CC669D4-7217-4EB9-BF7A-E3A037C19897",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.IsOnlineIntent",
             "WFWorkflowActionParameters": {
                 "UUID": "866429D1-60AB-4CBA-B501-F7752038F720",
@@ -619,8 +662,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "QuickActions",
-        "Watch"
+        "Watch",
+        "QuickActions"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true

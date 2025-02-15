@@ -1,22 +1,49 @@
-## 🎉 Weekly Update (Week 6, 2025)
+## 🎉 Weekly Update (Week 7, 2025)
 
-> **Date:** 2025-02-09  
+> **Date:** 2025-02-15  
 
-### ✨ 10 New Shortcuts This Week!
+### ✨ 6 New Shortcuts This Week!
 
 <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done">Getting Things Done (1)</a>
+        <a href="All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (4)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor">🖇️ Hypertext Constructor</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote">🌈 BinaryQuote</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/cd35a21ede15435cb6c11bf55fe8c811">
+     <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote/%F0%9F%8C%88%20BinaryQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote">🗽 GoodreadsQuote</a>
+     </summary>
+     <a href="https://www.icloud.com/shortcuts/922982be702b4df69fe935082016a4f7">
+     <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote/%F0%9F%97%BD%20GoodreadsQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote">Get Random Quote from BinaryQuote</a>
+     </summary>
+     <a href="https://www.icloud.com/shortcuts/e1fe5ad80b2349ea8ea0ec2125fd67de">
+     <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote/Get%20Random%20Quote%20from%20BinaryQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     </a>
+     </details>
+
+  - <details>
+     <summary>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads">Get Random Quote from Goodreads</a>
+     </summary>
+     <a href="https://www.icloud.com/shortcuts/3b72aae0c6a641d280d8804769a936be">
+     <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads/Get%20Random%20Quote%20from%20Goodreads.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -24,34 +51,16 @@
 <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (3)</a>
+        <a href="All%20Shortcuts/API%20-%20Others">API - Others (1)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch">🇩🇪 Taegliches Deutsch</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes">Get Random Quote from ZenQuotes</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B0%20Britannica">📰 Britannica</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B0%20Britannica">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B0%20Britannica/%F0%9F%93%B0%20Britannica.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C">👨🏽‍🔬 科學人雜誌</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/2b610c63cf7b4961b52b5f7ffe242b8f">
+     <img src="All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes/Get%20Random%20Quote%20from%20ZenQuotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -59,69 +68,16 @@
 <details>
     <summary>
       <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links">Deep Links (1)</a>
+        <a href="All%20Shortcuts/iPhone%20Settings">iPhone Settings (1)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Dcard">Dcard</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver">Smart Data Saver</a>
      </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Dcard">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Deep%20Links/Dcard/Dcard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-</details>
-
-<details>
-    <summary>
-      <strong>
-        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI">Obsidian URI (5)</a>
-      </strong>
-    </summary>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Set%20Unique%20Attachments%20Names">Obsidian - Set Unique Attachments Names</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Set%20Unique%20Attachments%20Names">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Set%20Unique%20Attachments%20Names/Obsidian%20-%20Set%20Unique%20Attachments%20Names.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links">Obsidian - Replace All Wiki Links with Markdown Links</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds">Obsidian - Replace All Wiki Embeds with Markdown Embeds</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths">Obsidian - Convert All Link Paths to Relative Paths</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths">Obsidian - Convert All Embed Paths to Relative Paths</a>
-     </summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths">
-     <img src="https://raw.githubusercontent.com/huaminghuangtw/Apple-Shortcuts-Gallery/refs/heads/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/960b736c804143129cc4501fa48f92ad">
+     <img src="All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver/Smart%20Data%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 
