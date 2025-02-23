@@ -6,15 +6,15 @@
 </p>
 
 > [!NOTE]  
-> **Last Update:** 2025-02-15  
+> **Last Update:** 2025-02-23  
 >
-> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Yᴜᴀɴʟɪɴ Cɪᴛʏ, Tᴀɪᴡᴀɴ](https://www.google.com/maps/place/Yuanlin%20City,%20Taiwan)  
+> Created by [Hua-Ming Huang](https://github.com/huaminghuangtw) with ❤️ in [Tᴀɪʙᴀᴏ Cɪᴛʏ, Tᴀɪᴡᴀɴ](https://www.google.com/maps/place/Taibao%20City,%20Taiwan)  
 >
 > _[Check out](https://github.com/huaminghuangtw/Scriptable) my other repository for customizable notifications and widgets created with [Scriptable](https://scriptable.app)!_  
 
 ## 📊 Shortcuts Library Stats ²
 
-* In total, there are **592** Shortcuts with **7590** actions in **72** folders
+* In total, there are **595** Shortcuts with **7628** actions in **73** folders
 * The pure average comes out to about **13** actions per Shortcut
 * The typical Shortcut has around **8+** actions
 * 🏅 Top 5 Most Complex Shortcuts
@@ -22,20 +22,20 @@
   | Rank | Shortcut Name | Number of Actions |
   | :---: | :---: | :---: |
   | :one: | [Template - Morning and Evening Routine Prep](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep) | 90 |
-  | :one: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 87 |
-  | :one: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
-  | :one: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
-  | :one: | [📖 Audible PDF](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF) | 72 |
+  | :two: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 87 |
+  | :three: | [_Add to Movie & TV List](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List) | 75 |
+  | :four: | [Check Shortcut Last Run Time](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time) | 75 |
+  | :five: | [📖 Audible PDF](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF) | 72 |
 
 * 🎖️ Top 5 Largest Shortcuts
 
   | Rank | Shortcut Name | File Size (KB) |
   | :---: | :---: | :---: |
-  | :two: | [iPhone Alarm Ringtone](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone) | 423 |
+  | :one: | [iPhone Alarm Ringtone](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone) | 423 |
   | :two: | [Water Eject](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Water%20Eject) | 192 |
-  | :two: | [Time's Up!](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/Time's%20Up!) | 125 |
-  | :two: | [📑 ANotes](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20ANotes) | 54 |
-  | :two: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 36 |
+  | :three: | [Time's Up!](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/Time's%20Up!) | 125 |
+  | :four: | [📑 ANotes](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20ANotes) | 54 |
+  | :five: | [When turning my focus mode on](https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on) | 36 |
 
 
 <br>
@@ -55,7 +55,7 @@
 
 <summary>
    <strong>
-      <a href="All%20Shortcuts">All Shortcuts (592)</a>
+      <a href="All%20Shortcuts">All Shortcuts (595)</a>
    </strong>
 </summary>
 
@@ -70,7 +70,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Coin%20Flip">Coin Flip</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/40625c1b35504052a5836cc57461a504">
+       <a href="https://www.icloud.com/shortcuts/2e1a615cfb344d8c94fa3d0f9a494d12">
        <img src="All%20Shortcuts/Standalone%20Fun/Coin%20Flip/Coin%20Flip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -79,7 +79,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Pick%20Random%20Color">Pick Random Color</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7979dd861578433a9d0a759c3f43df05">
+       <a href="https://www.icloud.com/shortcuts/8876247a23c646bdb807aab293a47cd8">
        <img src="All%20Shortcuts/Standalone%20Fun/Pick%20Random%20Color/Pick%20Random%20Color.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -88,7 +88,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Get%20Directions">Get Directions</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/24aa763f7d6e400881c80cb61c864d36">
+       <a href="https://www.icloud.com/shortcuts/3977f133648a4df28cd67694c06ed44a">
        <img src="All%20Shortcuts/Standalone%20Fun/Get%20Directions/Get%20Directions.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -97,7 +97,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Share%20Wi-Fi">Share Wi-Fi</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/02eaf892e6654c1bb0a3280b65c85a04">
+       <a href="https://www.icloud.com/shortcuts/1df5b46f9927415db168429edf12418d">
        <img src="All%20Shortcuts/Standalone%20Fun/Share%20Wi-Fi/Share%20Wi-Fi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -106,7 +106,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Record%20Audio">Record Audio</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ffe4114f23d84f959c83f94b9b454225">
+       <a href="https://www.icloud.com/shortcuts/4a1c0be9839d4912bafc8c007ca0772a">
        <img src="All%20Shortcuts/Standalone%20Fun/Record%20Audio/Record%20Audio.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -115,7 +115,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/WhatsApp%20Click-to-Chat">WhatsApp Click-to-Chat</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cb6026838a1940949aba672f5703f03c">
+       <a href="https://www.icloud.com/shortcuts/f70640e64b014c7d82a7724acb2d6404">
        <img src="All%20Shortcuts/Standalone%20Fun/WhatsApp%20Click-to-Chat/WhatsApp%20Click-to-Chat.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -124,7 +124,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Calculate%20Tip">Calculate Tip</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0c50428446c348c78fd45e270cf8c2c7">
+       <a href="https://www.icloud.com/shortcuts/057bab95ad3945bb8c2bee5cffd6fe88">
        <img src="All%20Shortcuts/Standalone%20Fun/Calculate%20Tip/Calculate%20Tip.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -133,7 +133,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Upload%20to%20Imgur">Upload to Imgur</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6c5a66a17f0945f5b91977fc8f9ccf72">
+       <a href="https://www.icloud.com/shortcuts/02a7038d502448a2a3f2dd900fca6d9f">
        <img src="All%20Shortcuts/Standalone%20Fun/Upload%20to%20Imgur/Upload%20to%20Imgur.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -142,7 +142,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Water%20Eject">Water Eject</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/630dda654b0b48d99d9a79d3becc9744">
+       <a href="https://www.icloud.com/shortcuts/433a5576b13449e0ae1b94eb19287f34">
        <img src="All%20Shortcuts/Standalone%20Fun/Water%20Eject/Water%20Eject.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -151,7 +151,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Standalone%20Fun/Live%20Photo%20to%20GIF">Live Photo to GIF</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a7f8c08af4674ecfa3f26344778d54d9">
+       <a href="https://www.icloud.com/shortcuts/9227c7d7f90d4a198dd8ff7f3e6ebd4c">
        <img src="All%20Shortcuts/Standalone%20Fun/Live%20Photo%20to%20GIF/Live%20Photo%20to%20GIF.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -168,7 +168,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Test%20Markdown2RichText">Test Markdown2RichText</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/698f7a81108e4d66afe4a6d95357b66f">
+       <a href="https://www.icloud.com/shortcuts/557d41c01b7c46a9baa49488b6e6d9bf">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Test%20Markdown2RichText/Test%20Markdown2RichText.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -177,7 +177,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Generate%20%26%20Play%20Audio%20File(s)">Generate & Play Audio File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/55cf1e5742ae4580a4864b65e28a4148">
+       <a href="https://www.icloud.com/shortcuts/5584ac0106764af19ab64c570f4bc5f8">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Generate%20%26%20Play%20Audio%20File(s)/Generate%20%26%20Play%20Audio%20File(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -186,7 +186,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Tab">Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5884580cb9f6414dbbba330f12d89ee7">
+       <a href="https://www.icloud.com/shortcuts/e4382d510cdc4f7692f23de4d1d53855">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Tab/Tab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -195,7 +195,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Set%20Boolean%20Value%20to%20Dictionary">Set Boolean Value to Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2860d3b7e7d3429492f039daaebb0624">
+       <a href="https://www.icloud.com/shortcuts/9a6b78f3effe40f8900a1b42c52c8d63">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Set%20Boolean%20Value%20to%20Dictionary/Set%20Boolean%20Value%20to%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -204,7 +204,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Append%20To%20Dictionary">Append To Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a87b63aa086b442291dad3c8f6675bea">
+       <a href="https://www.icloud.com/shortcuts/7040528472f9459695fdc02d9633eb59">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Append%20To%20Dictionary/Append%20To%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -213,7 +213,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Dictionary%20of%20Dictionary">Dictionary of Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/abac723806f94429a33e5854a9dea20b">
+       <a href="https://www.icloud.com/shortcuts/1f571467e21440c4928ca3205c796e32">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Dictionary%20of%20Dictionary/Dictionary%20of%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -222,7 +222,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20txt">Adding To A Dictionary - txt</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c43516c99c144cafb07590c7f51ed52e">
+       <a href="https://www.icloud.com/shortcuts/2a659ff316744d81b0037e89ca11f479">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20txt/Adding%20To%20A%20Dictionary%20-%20txt.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -231,7 +231,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20json">Adding To A Dictionary - json</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cec059aa4a034c8fa8da9be55b181d19">
+       <a href="https://www.icloud.com/shortcuts/bf925ab167ce4b45984b0ec5aca0ef55">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20json/Adding%20To%20A%20Dictionary%20-%20json.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -240,7 +240,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20Tutorials/Get%20Index%20of%20List%20Item">Get Index of List Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/de10f1356c7e44609274f598e3830f17">
+       <a href="https://www.icloud.com/shortcuts/f22140d323f6440ca775d997344818c5">
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Get%20Index%20of%20List%20Item/Get%20Index%20of%20List%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -257,7 +257,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Build%20Run%20Shortcut%20URL">Build Run Shortcut URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7124d82fa2b34b6e993651c1aa7b1808">
+       <a href="https://www.icloud.com/shortcuts/874bd31a53ec45e0ad3eb19dd333259c">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Build%20Run%20Shortcut%20URL/Build%20Run%20Shortcut%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -266,7 +266,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shortcuts">Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9e5fbd19e7774ba08c2632d8a354688c">
+       <a href="https://www.icloud.com/shortcuts/904581a924d14fec934634895ba3b4e3">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shortcuts/Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -275,7 +275,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders">Get Shortcuts Library Custom Folders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/dfe1615c50c348979d9c788454bc91ec">
+       <a href="https://www.icloud.com/shortcuts/26bf66da671a4223819eff985299a378">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders/Get%20Shortcuts%20Library%20Custom%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -284,7 +284,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)">Archive All Shortcuts (with Folders)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6f09b0f93b65472ba834038439871cd6">
+       <a href="https://www.icloud.com/shortcuts/325c81364be94fb2adf63fce0079e6c4">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)/Archive%20All%20Shortcuts%20(with%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -293,7 +293,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)">Archive All Shortcuts (without Folders)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f199caed5f5a46198faa5f599f44efc4">
+       <a href="https://www.icloud.com/shortcuts/caa923e204fc47fb86984c528c01c8ab">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)/Archive%20All%20Shortcuts%20(without%20Folders).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -302,7 +302,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Batch%20Run%20Shortcuts%20(Continuous)">_Batch Run Shortcuts (Continuous)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d0231396aae840a5bdb1815114d28ac9">
+       <a href="https://www.icloud.com/shortcuts/35964b630b554e2e93bdb20c7e125a92">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Batch%20Run%20Shortcuts%20(Continuous)/_Batch%20Run%20Shortcuts%20(Continuous).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -311,7 +311,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Batch%20Run%20Shortcuts%20(Discrete)">_Batch Run Shortcuts (Discrete)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a395b5d4bf3d4a11adf53c9a640d35c7">
+       <a href="https://www.icloud.com/shortcuts/b72edbc072d74a1791b151b49e93171a">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Batch%20Run%20Shortcuts%20(Discrete)/_Batch%20Run%20Shortcuts%20(Discrete).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -320,7 +320,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Run%20Folder%20Shortcuts">_Run Folder Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/29f423ce9e5d47f49725a531effe2e06">
+       <a href="https://www.icloud.com/shortcuts/1a01a1b1baa04b0695cc7e0d974a4dbf">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Run%20Folder%20Shortcuts/_Run%20Folder%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -329,7 +329,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Transform%20Type%20of%20Shortcut%20Input">_Transform Type of Shortcut Input</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b96e785873384638b6b9f79934b9a026">
+       <a href="https://www.icloud.com/shortcuts/2763fe8036ca476bbc0047957585b3e8">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Transform%20Type%20of%20Shortcut%20Input/_Transform%20Type%20of%20Shortcut%20Input.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -338,7 +338,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Run%20Shortcut%20Again%3F">_Run Shortcut Again?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7e52e2be85f5450e9d338c4e79828d83">
+       <a href="https://www.icloud.com/shortcuts/e5f2bf8e45af4dd88787d8895105e28e">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Run%20Shortcut%20Again%3F/_Run%20Shortcut%20Again%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -347,7 +347,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Import%20Shortcut">_Import Shortcut</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2efe0ab1128b42a9b24cfeb9e625e128">
+       <a href="https://www.icloud.com/shortcuts/cc7da5e7426245259d1b0905577f22aa">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Import%20Shortcut/_Import%20Shortcut.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -356,7 +356,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Filter%20Shortcuts">_Filter Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fcf176ba1ce24694a582b6638c2fe871">
+       <a href="https://www.icloud.com/shortcuts/295a28d2b6fe48c9a18b518c89825d1e">
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Filter%20Shortcuts/_Filter%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -365,7 +365,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="All%20Shortcuts/Backup%20Shortcuts">Backup Shortcuts (11)</a>
+        <a href="All%20Shortcuts/Backup%20Shortcuts">Backup Shortcuts (9)</a>
       </strong>
     </summary>
 
@@ -373,7 +373,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Prepare%20Backup%20Folder">Prepare Backup Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/059cf7e3c56f451cba404944abd36bcc">
+       <a href="https://www.icloud.com/shortcuts/9a5615541e99434fadcff4bfc061af57">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Prepare%20Backup%20Folder/Prepare%20Backup%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -382,7 +382,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Last%20Week%20Snapshot">Last Week Snapshot</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d379a40780ed454ca4dea568b0a3664e">
+       <a href="https://www.icloud.com/shortcuts/fff5b5928a6541b68b303398af53d75e">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Last%20Week%20Snapshot/Last%20Week%20Snapshot.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -391,7 +391,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Filter%20Shortcuts%20By%20Folder">Filter Shortcuts By Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c657846e1d7e40038f5cd31891cbcb09">
+       <a href="https://www.icloud.com/shortcuts/e7f9f470007742fdb35f250c3fbaa5d4">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Filter%20Shortcuts%20By%20Folder/Filter%20Shortcuts%20By%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -400,7 +400,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Backup%20Shortcut%20Files">Backup Shortcut Files</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f414e428558f4650a523841275981cdf">
+       <a href="https://www.icloud.com/shortcuts/b51ef3eb7b074686b6667f6592390161">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Backup%20Shortcut%20Files/Backup%20Shortcut%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -409,7 +409,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Archive%20Shortcuts%20with%20Folders">Archive Shortcuts with Folders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b7e5d3336b98438c8b9bfd6a164d9d26">
+       <a href="https://www.icloud.com/shortcuts/cb599fb1a3db484fa26473c814e8cbf4">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Archive%20Shortcuts%20with%20Folders/Archive%20Shortcuts%20with%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -418,7 +418,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Archive%20Shortcuts%20without%20Folders">Archive Shortcuts without Folders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2372266e047f40fea51c5f5aba81ef3c">
+       <a href="https://www.icloud.com/shortcuts/02cc678cf0224cebad54dc2164f721b6">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Archive%20Shortcuts%20without%20Folders/Archive%20Shortcuts%20without%20Folders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -427,7 +427,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Create%20README.md">Create README.md</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b4e78583eed14da9bcfd5e1bd1e67f48">
+       <a href="https://www.icloud.com/shortcuts/8921f676e28b4ee3a421f575e6ed339d">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Create%20README.md/Create%20README.md.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -436,7 +436,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Create%20CHANGELOG.md">Create CHANGELOG.md</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c9af6a75dd7e4b0b9124cf65b7d35cd8">
+       <a href="https://www.icloud.com/shortcuts/5e559978ae024f76a6ff27149b3a9749">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Create%20CHANGELOG.md/Create%20CHANGELOG.md.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -445,7 +445,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Backup%20Shortcuts/Finalize%20Backup">Finalize Backup</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/463a6efdc4a54a41b7741fe080da04f4">
+       <a href="https://www.icloud.com/shortcuts/7b8acee355f44c7397c2a09de392a11f">
        <img src="All%20Shortcuts/Backup%20Shortcuts/Finalize%20Backup/Finalize%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -462,7 +462,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders">💾 Backup My Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/67543791ca5c449eb433240ea2513ef5">
+       <a href="https://www.icloud.com/shortcuts/89b5f40717cc4adba3e4fbfe40923936">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders/%F0%9F%92%BE%20Backup%20My%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -471,7 +471,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel">💾 Backup My Reminders - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/10c5c6626c904c9797125080f4ed561a">
+       <a href="https://www.icloud.com/shortcuts/caf39f21dc7f479dba6c0d0dd8293894">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -480,7 +480,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library">💾 Backup My Shortcuts Library</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/048a39083e0d4d91be4329e5f4687755">
+       <a href="https://www.icloud.com/shortcuts/bd21b556d1914fdab77002c5052f8305">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -489,7 +489,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists">💾 Backup Evergreen Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/353b480212e543a183a1c17fbc0f0bfa">
+       <a href="https://www.icloud.com/shortcuts/4cf2ee16566f4666a542ca6be1d19dba">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20Evergreen%20Lists/%F0%9F%92%BE%20Backup%20Evergreen%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -498,7 +498,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Vault%20Repos">💾 Backup My Vault Repos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d60b1fb2bf2740df9f806c3090f9e21a">
+       <a href="https://www.icloud.com/shortcuts/2fef397f7edd46b98abe99bad7829913">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Vault%20Repos/%F0%9F%92%BE%20Backup%20My%20Vault%20Repos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -507,7 +507,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day">🗓️ Plan My Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/918f1fdbc758410aa192cb0a54e02f80">
+       <a href="https://www.icloud.com/shortcuts/b04a60256d7c40e0a2f3a52962eb113f">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -516,7 +516,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%86%20Daily%20Planner">📆 Daily Planner</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5b406a1e8f9e4166aaa5b70264283b55">
+       <a href="https://www.icloud.com/shortcuts/00e5e9d787e241e0afa3115f80adfc6b">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%86%20Daily%20Planner/%F0%9F%93%86%20Daily%20Planner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -525,7 +525,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%94%97%20My%20URL%20Shortener">🔗 My URL Shortener</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9303f2a4346a425f8162a6e3d8a88b91">
+       <a href="https://www.icloud.com/shortcuts/4a684284e9f64f459b7e391dfc589dfb">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%94%97%20My%20URL%20Shortener/%F0%9F%94%97%20My%20URL%20Shortener.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -534,7 +534,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor">🖇️ Hypertext Constructor</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1c793cfd97a948dbbf269439125a20ad">
+       <a href="https://www.icloud.com/shortcuts/cefb604d57624d0b8ad5c3110fadf927">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -543,7 +543,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A8%20Gmail">📨 Gmail</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/63991711842142d2a2cc731c7a7455b7">
+       <a href="https://www.icloud.com/shortcuts/ac996501020049218a7e82ab6859f81d">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A8%20Gmail/%F0%9F%93%A8%20Gmail.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -552,7 +552,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine">🍅 Deep Work Machine</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c33c3b113f8644d79ef54bcfd73cca9f">
+       <a href="https://www.icloud.com/shortcuts/9d75373985e74800a00f8a47aa1fb2c6">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine/%F0%9F%8D%85%20Deep%20Work%20Machine.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -561,7 +561,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%9A%9B%EF%B8%8F%20Deep%20Work%20Session">⚛️ Deep Work Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/14beddbbd9d44557965cb65714f0673e">
+       <a href="https://www.icloud.com/shortcuts/1f4540e37949482a9fbcd9de6c527156">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%9A%9B%EF%B8%8F%20Deep%20Work%20Session/%E2%9A%9B%EF%B8%8F%20Deep%20Work%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -570,7 +570,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%A4%B4%EF%B8%8F%20Boot%20Up%20Sequence">⤴️ Boot Up Sequence</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d330f3ef71b1436fa690543bf9a8e06f">
+       <a href="https://www.icloud.com/shortcuts/457234370d504e068aa2f2486c66a76f">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%A4%B4%EF%B8%8F%20Boot%20Up%20Sequence/%E2%A4%B4%EF%B8%8F%20Boot%20Up%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -579,7 +579,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%E2%A4%B5%EF%B8%8F%20Shut%20Down%20Sequence">⤵️ Shut Down Sequence</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/655d7a8101074c0ba79b871dc71cc384">
+       <a href="https://www.icloud.com/shortcuts/8726561a42de4e2e9f810009ae8aab75">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%A4%B5%EF%B8%8F%20Shut%20Down%20Sequence/%E2%A4%B5%EF%B8%8F%20Shut%20Down%20Sequence.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -588,7 +588,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%BB%20Show%20Flow%20%26%20Word%20Counts">🍻 Show Flow & Word Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ff2395dfbc094c068b05dd70e61ffed5">
+       <a href="https://www.icloud.com/shortcuts/f9d0a73c09c345c9b4685e8f53245ae8">
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%BB%20Show%20Flow%20%26%20Word%20Counts/%F0%9F%8D%BB%20Show%20Flow%20%26%20Word%20Counts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -597,7 +597,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Deep%20Work%20Time%20Range">Set Deep Work Time Range</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/477d843ea9a3440abb9de9cfe34ec51d">
+       <a href="https://www.icloud.com/shortcuts/10aa97bdc73248c9809170362d587847">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Set%20Deep%20Work%20Time%20Range/Set%20Deep%20Work%20Time%20Range.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -606,7 +606,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Deep%20Work%20Time%20Range%20-%20Kernel">Set Deep Work Time Range - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9c7d806dee58492ea032cb0194c58131">
+       <a href="https://www.icloud.com/shortcuts/f48d4094c7774cb6a54c3a52afa1750b">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Set%20Deep%20Work%20Time%20Range%20-%20Kernel/Set%20Deep%20Work%20Time%20Range%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -615,7 +615,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Display%20Deep%20Work%20Remaining%20Time">Display Deep Work Remaining Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/364f885dcba14710bbb582050109d276">
+       <a href="https://www.icloud.com/shortcuts/0eeb92b96afc4203b900a59928ce4669">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Display%20Deep%20Work%20Remaining%20Time/Display%20Deep%20Work%20Remaining%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -624,7 +624,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Progress%20Timer">Set Day Progress Timer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1dee848e92774b0ab4f86190336834e5">
+       <a href="https://www.icloud.com/shortcuts/751a17f8e17d4720a4dcef472ab24a70">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Progress%20Timer/Set%20Day%20Progress%20Timer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -633,7 +633,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Show%20Day%20Progress">Show Day Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b407379b91643eb90e6e4d8121c50f5">
+       <a href="https://www.icloud.com/shortcuts/d34d21819bb94c828b16e564737d802b">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Show%20Day%20Progress/Show%20Day%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -642,7 +642,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Show%20Year%20Progress">Show Year Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7ccf1b56411444548e53c0325c79e36e">
+       <a href="https://www.icloud.com/shortcuts/2ab3ca33177742b4bc770c39f7f76aea">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Show%20Year%20Progress/Show%20Year%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -651,7 +651,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Plot%20Daily%20Word%20Counts">Plot Daily Word Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cb9e851dcdcf4375b28f9861eea89e98">
+       <a href="https://www.icloud.com/shortcuts/70a3a35d92f14eaa9c35dd2e9f66d7a3">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Plot%20Daily%20Word%20Counts/Plot%20Daily%20Word%20Counts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -660,7 +660,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Plot%20Daily%20Flow%20Counts">Plot Daily Flow Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5d38121b527a4d04a57a9d26e84d91a2">
+       <a href="https://www.icloud.com/shortcuts/f55da3c2750d486c8de223ed2b46fc80">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Plot%20Daily%20Flow%20Counts/Plot%20Daily%20Flow%20Counts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -669,7 +669,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Get%20Flow%20%26%20Word%20Counts">_Get Flow & Word Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/589c284edf5f4fdb9c2ce5df4852de92">
+       <a href="https://www.icloud.com/shortcuts/6ed1040f2a5f428fbbac4067d7a8488f">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Get%20Flow%20%26%20Word%20Counts/_Get%20Flow%20%26%20Word%20Counts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -678,7 +678,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Action%20Items">_Get Undone Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fd3a4368b82c4ef0867b45edded0b5f3">
+       <a href="https://www.icloud.com/shortcuts/bcda505082aa481c9997365f95cfdd2b">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Action%20Items/_Get%20Undone%20Action%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -687,7 +687,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2MarkdownTables">_EvergreenList2MarkdownTables</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1c8591707900475d840b08e1d536fc83">
+       <a href="https://www.icloud.com/shortcuts/2a1aee4f52aa47cdbf6c62ac3aec8e3d">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2MarkdownTables/_EvergreenList2MarkdownTables.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -696,7 +696,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2JSON">_EvergreenList2JSON</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/47ef8e91738b4e96820e8d16733e40e8">
+       <a href="https://www.icloud.com/shortcuts/e8dfd3ee26a9422682e1f7bb1460b499">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2JSON/_EvergreenList2JSON.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -705,7 +705,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2GoogleSheets">_EvergreenList2GoogleSheets</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4620a842dbdf4934838a0e470e61a812">
+       <a href="https://www.icloud.com/shortcuts/c8e9a2e2c16441459b82d6751d7581db">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_EvergreenList2GoogleSheets/_EvergreenList2GoogleSheets.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -714,7 +714,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Stats">Generate Shortcuts Library Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8185036804dd440e913a887ab4b5df7e">
+       <a href="https://www.icloud.com/shortcuts/6e2c88b5b3044f499d4b9f66792d6d90">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Stats/Generate%20Shortcuts%20Library%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -723,7 +723,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Folder%20Structure">Generate Shortcuts Library Folder Structure</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/58dacda5471446809d4228ec16d5bc46">
+       <a href="https://www.icloud.com/shortcuts/51c4a7eb3af34b0db9a070292a6d6857">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Generate%20Shortcuts%20Library%20Folder%20Structure/Generate%20Shortcuts%20Library%20Folder%20Structure.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -732,7 +732,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Plot%20Shortcuts%20Library%20Stats%20Chart">Plot Shortcuts Library Stats Chart</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/483a1b8163234cf78728f60580e9368a">
+       <a href="https://www.icloud.com/shortcuts/841851a21e9a4135ad998a54b8b6d082">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Plot%20Shortcuts%20Library%20Stats%20Chart/Plot%20Shortcuts%20Library%20Stats%20Chart.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -741,7 +741,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Set%20Silent%20Alarm">Set Silent Alarm</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/273993ef9e0d48158d7cdae4ae8913d9">
+       <a href="https://www.icloud.com/shortcuts/f28cc230297c44b4868058c61115ebf6">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Set%20Silent%20Alarm/Set%20Silent%20Alarm.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -750,7 +750,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/Autorun%20Shortcuts">Autorun Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c3cf60a05eff4dd4a7cbfc85da70d843">
+       <a href="https://www.icloud.com/shortcuts/390fa7fd5c6c43569a0028c0be511317">
        <img src="All%20Shortcuts/Getting%20Things%20Done/Autorun%20Shortcuts/Autorun%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -759,7 +759,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Extract%20YouTube%20VideoID%20from%20URL">_Extract YouTube VideoID from URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/33e7d09a1e98448fbfba7d3f79800fc2">
+       <a href="https://www.icloud.com/shortcuts/79326f0f984d42f1816ed88c307c84d9">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Extract%20YouTube%20VideoID%20from%20URL/_Extract%20YouTube%20VideoID%20from%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -768,7 +768,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Getting%20Things%20Done/_Watch%20YouTube%20Video%20without%20Ads">_Watch YouTube Video without Ads</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/daf04540a2d74e0aa17644e3121220dd">
+       <a href="https://www.icloud.com/shortcuts/007ac467af2649409fee3d9508342125">
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Watch%20YouTube%20Video%20without%20Ads/_Watch%20YouTube%20Video%20without%20Ads.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -785,7 +785,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session">⏳ Short Focus Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4d7d2494c6b544ca9725958c0bb03da3">
+       <a href="https://www.icloud.com/shortcuts/5edd6993f9a8478e97c8865c2d4e0f70">
        <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session/%E2%8F%B3%20Short%20Focus%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -794,7 +794,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session">⏳ Long Focus Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eb3685157def4e06a8b281ab52e26c3c">
+       <a href="https://www.icloud.com/shortcuts/75127bf19fc24a6982eb420de16504af">
        <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session/%E2%8F%B3%20Long%20Focus%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -811,7 +811,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%E2%9C%8F%EF%B8%8F%20Create%20New%20Journal">✏️ Create New Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a2c2cac771a746489fa1f6f3dd59a93c">
+       <a href="https://www.icloud.com/shortcuts/90eccce783134af8a1e3d019bbef8a85">
        <img src="All%20Shortcuts/Journaling/%E2%9C%8F%EF%B8%8F%20Create%20New%20Journal/%E2%9C%8F%EF%B8%8F%20Create%20New%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -820,7 +820,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%93%9D%20Journaling">📝 Journaling</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/be330362ce284487b8e110d940ab1231">
+       <a href="https://www.icloud.com/shortcuts/46c9f061aff5402b9d291d290b382233">
        <img src="All%20Shortcuts/Journaling/%F0%9F%93%9D%20Journaling/%F0%9F%93%9D%20Journaling.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -829,7 +829,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%94%8E%20Search%20Journals">🔎 Search Journals</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5222cae76d484acb9882176f817c4a1e">
+       <a href="https://www.icloud.com/shortcuts/7dd93471d5154bd9aa143b46b15897b7">
        <img src="All%20Shortcuts/Journaling/%F0%9F%94%8E%20Search%20Journals/%F0%9F%94%8E%20Search%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -838,7 +838,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%93%94%20View%20Journal">📔 View Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1412c91ea36e4b29b6037750009655e2">
+       <a href="https://www.icloud.com/shortcuts/531e9005f3074f3f8ed33cc638e0279c">
        <img src="All%20Shortcuts/Journaling/%F0%9F%93%94%20View%20Journal/%F0%9F%93%94%20View%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -847,7 +847,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%E2%9C%8D%EF%B8%8F%20Log%20Journal">✍️ Log Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c0e94fc9e6c04faaa528a8fccc95e235">
+       <a href="https://www.icloud.com/shortcuts/b2eef3ade8c44029937f5d7a418fe060">
        <img src="All%20Shortcuts/Journaling/%E2%9C%8D%EF%B8%8F%20Log%20Journal/%E2%9C%8D%EF%B8%8F%20Log%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -856,7 +856,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%A7%B8%20Add%20to%20Journal%20Backlog">🧸 Add to Journal Backlog</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b03fb53f231543cfaaadbddbbd09222f">
+       <a href="https://www.icloud.com/shortcuts/bcecbf26afe94c4991e9ddeb74a2d9cd">
        <img src="All%20Shortcuts/Journaling/%F0%9F%A7%B8%20Add%20to%20Journal%20Backlog/%F0%9F%A7%B8%20Add%20to%20Journal%20Backlog.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -865,7 +865,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%8C%A0%20Attach%20Image(s)%20to%20Journal">🌠 Attach Image(s) to Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2e0fb969027b49d28033f5fb8860ed2d">
+       <a href="https://www.icloud.com/shortcuts/e96d77053fff4b81b1271df364afa3e0">
        <img src="All%20Shortcuts/Journaling/%F0%9F%8C%A0%20Attach%20Image(s)%20to%20Journal/%F0%9F%8C%A0%20Attach%20Image(s)%20to%20Journal.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -874,7 +874,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%93%87%20Review%20Last%20Week's%20Journals">📇 Review Last Week's Journals</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e517fb96bcdd4552b5e479b67f1972d0">
+       <a href="https://www.icloud.com/shortcuts/6938b8163dba41ffb05ceb7a71c88f3a">
        <img src="All%20Shortcuts/Journaling/%F0%9F%93%87%20Review%20Last%20Week's%20Journals/%F0%9F%93%87%20Review%20Last%20Week's%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -883,7 +883,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/%F0%9F%8D%84%20Journals%20On%20This%20Day">🍄 Journals On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/043fa9762d3840b68eeac723d3451fd1">
+       <a href="https://www.icloud.com/shortcuts/73a7448c039a4ce783ca666dfb90180d">
        <img src="All%20Shortcuts/Journaling/%F0%9F%8D%84%20Journals%20On%20This%20Day/%F0%9F%8D%84%20Journals%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -892,7 +892,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Show%20Journal%20Metadata">_Show Journal Metadata</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ec5e1190dcfb4382adc347e6891ddd9d">
+       <a href="https://www.icloud.com/shortcuts/bcd3ee0975ff40808a6aeace751a6023">
        <img src="All%20Shortcuts/Journaling/_Show%20Journal%20Metadata/_Show%20Journal%20Metadata.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -901,7 +901,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Read%20Journal%20Metadata">_Read Journal Metadata</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2ef1ab86560548fe90f0a85fd96b14dc">
+       <a href="https://www.icloud.com/shortcuts/681f648deed14c2db15780724695f5ac">
        <img src="All%20Shortcuts/Journaling/_Read%20Journal%20Metadata/_Read%20Journal%20Metadata.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -910,7 +910,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Query%20Journal%20On%20Specific%20Date">_Query Journal On Specific Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fd74d3795074409c9ce43b964b032f51">
+       <a href="https://www.icloud.com/shortcuts/db57132cbd904c3ab28a82c1e057b86f">
        <img src="All%20Shortcuts/Journaling/_Query%20Journal%20On%20Specific%20Date/_Query%20Journal%20On%20Specific%20Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -919,7 +919,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Query%20Last%20Week's%20Journals">_Query Last Week's Journals</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b67f46e9e8340329c82f208329b456a">
+       <a href="https://www.icloud.com/shortcuts/258152c50f994d7dbe44392bd46cc2e9">
        <img src="All%20Shortcuts/Journaling/_Query%20Last%20Week's%20Journals/_Query%20Last%20Week's%20Journals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -928,7 +928,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Journaling/_Query%20Journal(s)%20On%20This%20Day">_Query Journal(s) On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c313f5432f8243369ee73e9818c1154b">
+       <a href="https://www.icloud.com/shortcuts/6b940455bc3448e8b29f6a4436901263">
        <img src="All%20Shortcuts/Journaling/_Query%20Journal(s)%20On%20This%20Day/_Query%20Journal(s)%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -945,7 +945,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%A4%93%20Weekly%20Mindware%20Update">🤓 Weekly Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9bd5ebbb315d4536ac5e8ae84c487294">
+       <a href="https://www.icloud.com/shortcuts/3fc1e31466534c9cb71f4322c0482f0f">
        <img src="All%20Shortcuts/Mindware/%F0%9F%A4%93%20Weekly%20Mindware%20Update/%F0%9F%A4%93%20Weekly%20Mindware%20Update.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -954,7 +954,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%93%96%20Read%20Latest%20WMU">📖 Read Latest WMU</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/120e8677a13b429fa0f67187847b676c">
+       <a href="https://www.icloud.com/shortcuts/00f27c8f16764ba180dc4df57aab9f97">
        <img src="All%20Shortcuts/Mindware/%F0%9F%93%96%20Read%20Latest%20WMU/%F0%9F%93%96%20Read%20Latest%20WMU.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -963,7 +963,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%E2%A4%B4%EF%B8%8F%20Export%20Safari%20Reading%20List">⤴️ Export Safari Reading List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/519ed40edd5d40deac90e3a88f5aa8bf">
+       <a href="https://www.icloud.com/shortcuts/8aead94dafd94ddd88047aaac5bfbd78">
        <img src="All%20Shortcuts/Mindware/%E2%A4%B4%EF%B8%8F%20Export%20Safari%20Reading%20List/%E2%A4%B4%EF%B8%8F%20Export%20Safari%20Reading%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -972,7 +972,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%94%84%20Reading%20List%20%C3%97%20AReminders">🔄 Reading List × AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bf3cebc969e640eaa2f9012513182bfe">
+       <a href="https://www.icloud.com/shortcuts/ecbee76ede7c49389d18801251251d36">
        <img src="All%20Shortcuts/Mindware/%F0%9F%94%84%20Reading%20List%20%C3%97%20AReminders/%F0%9F%94%84%20Reading%20List%20%C3%97%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -981,7 +981,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%E2%A4%B4%EF%B8%8F%20Export%20YouTube%20Watch%20Later%20List">⤴️ Export YouTube Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ce19a2ee96064209b04bb141a2c6def6">
+       <a href="https://www.icloud.com/shortcuts/5cc20d1a2255463b8aea219217b4bc3d">
        <img src="All%20Shortcuts/Mindware/%E2%A4%B4%EF%B8%8F%20Export%20YouTube%20Watch%20Later%20List/%E2%A4%B4%EF%B8%8F%20Export%20YouTube%20Watch%20Later%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -990,7 +990,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%94%84%20Watch%20Later%20List%20%C3%97%20AReminders">🔄 Watch Later List × AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7895a775932948e39b675793bf5be596">
+       <a href="https://www.icloud.com/shortcuts/c748e25ee72b4142bd93bbaba2d9aeb9">
        <img src="All%20Shortcuts/Mindware/%F0%9F%94%84%20Watch%20Later%20List%20%C3%97%20AReminders/%F0%9F%94%84%20Watch%20Later%20List%20%C3%97%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -999,7 +999,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery">🚛 Brain Food Delivery</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/569d847e666747d7ba0ad8ccb65f4d60">
+       <a href="https://www.icloud.com/shortcuts/bc306f6f010348438e63193dedf1bec1">
        <img src="All%20Shortcuts/Mindware/%F0%9F%9A%9B%20Brain%20Food%20Delivery/%F0%9F%9A%9B%20Brain%20Food%20Delivery.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1008,7 +1008,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List">📽️ Add to Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ae05233f8f79424d8cbc385e437ab662">
+       <a href="https://www.icloud.com/shortcuts/024f86ef95f74377b92998ade1695314">
        <img src="All%20Shortcuts/Mindware/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1017,7 +1017,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%93%97%20Add%20to%20Reading%20List">📗 Add to Reading List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2304b5fbdcdc4f989ad12783ad0ebc5e">
+       <a href="https://www.icloud.com/shortcuts/c1349054d1dd452083a45af0e55bd0a4">
        <img src="All%20Shortcuts/Mindware/%F0%9F%93%97%20Add%20to%20Reading%20List/%F0%9F%93%97%20Add%20to%20Reading%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1026,7 +1026,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%93%9A%20Add%20to%20Book%20List">📚 Add to Book List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/06f4ef4343eb485c9512d3ba1dc48595">
+       <a href="https://www.icloud.com/shortcuts/1b528609182649acb16aa26ccbc9983a">
        <img src="All%20Shortcuts/Mindware/%F0%9F%93%9A%20Add%20to%20Book%20List/%F0%9F%93%9A%20Add%20to%20Book%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1035,7 +1035,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%8E%AC%20Add%20to%20Movie%20%26%20TV%20List">🎬 Add to Movie & TV List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/295c234f7d664ecf8ca55b0a172c7221">
+       <a href="https://www.icloud.com/shortcuts/a65b4575049943e1a4bb305e61d72d9e">
        <img src="All%20Shortcuts/Mindware/%F0%9F%8E%AC%20Add%20to%20Movie%20%26%20TV%20List/%F0%9F%8E%AC%20Add%20to%20Movie%20%26%20TV%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1044,7 +1044,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%8E%A4%20Add%20to%20Podcast%20List">🎤 Add to Podcast List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/35ab4433b9d34aeb873a7c2671f40b5c">
+       <a href="https://www.icloud.com/shortcuts/668150b7868b43c8839d6475ea456257">
        <img src="All%20Shortcuts/Mindware/%F0%9F%8E%A4%20Add%20to%20Podcast%20List/%F0%9F%8E%A4%20Add%20to%20Podcast%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1053,7 +1053,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food">😉 Enjoy Quality Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/46a7b9ef936d42c1aae7e189b5f3e0d6">
+       <a href="https://www.icloud.com/shortcuts/dc5aff4d4664468d9c76529930d80c8f">
        <img src="All%20Shortcuts/Mindware/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1062,7 +1062,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%A4%8C%20The%20Enoughist's%20Pick">🤌 The Enoughist's Pick</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d20c4e6fbc2946d98cc5f97d415c379a">
+       <a href="https://www.icloud.com/shortcuts/5e71b51033114c71b67969ca9d5744fb">
        <img src="All%20Shortcuts/Mindware/%F0%9F%A4%8C%20The%20Enoughist's%20Pick/%F0%9F%A4%8C%20The%20Enoughist's%20Pick.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1071,7 +1071,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%8D%81%20Read%20Random%20Saved%20Article">🍁 Read Random Saved Article</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fcb8ad95cb214a2297ffe058b428cd3d">
+       <a href="https://www.icloud.com/shortcuts/cffd760a087e4b3db0183b6a26e45354">
        <img src="All%20Shortcuts/Mindware/%F0%9F%8D%81%20Read%20Random%20Saved%20Article/%F0%9F%8D%81%20Read%20Random%20Saved%20Article.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1080,7 +1080,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%8F%81%20Mindware%20Upgrade">🏁 Mindware Upgrade</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c24c2b6e6dd04774b664083df7e65261">
+       <a href="https://www.icloud.com/shortcuts/aea25c898eb346af81744719d75e9880">
        <img src="All%20Shortcuts/Mindware/%F0%9F%8F%81%20Mindware%20Upgrade/%F0%9F%8F%81%20Mindware%20Upgrade.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1089,7 +1089,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/%F0%9F%90%90%20Mindware%20Update">🐐 Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a39888aba7864d3a9991eb63fde4d866">
+       <a href="https://www.icloud.com/shortcuts/1dede1c682764d71bfe5497f6e8753a7">
        <img src="All%20Shortcuts/Mindware/%F0%9F%90%90%20Mindware%20Update/%F0%9F%90%90%20Mindware%20Update.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1098,7 +1098,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Book%20List%20via%20Google%20Books">_Add to Book List via Google Books</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d2a774657ada4eaf9ec2ddddc0fd47be">
+       <a href="https://www.icloud.com/shortcuts/f2705707e9a8440284d9c6cffaeb276c">
        <img src="All%20Shortcuts/Mindware/_Add%20to%20Book%20List%20via%20Google%20Books/_Add%20to%20Book%20List%20via%20Google%20Books.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1107,7 +1107,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Book%20List%20via%20Open%20Library">_Add to Book List via Open Library</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3632eeaa083f4ed98be9b403e9e1fd1e">
+       <a href="https://www.icloud.com/shortcuts/1a10820abe7541d08001ddc9ad3e9be1">
        <img src="All%20Shortcuts/Mindware/_Add%20to%20Book%20List%20via%20Open%20Library/_Add%20to%20Book%20List%20via%20Open%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1116,7 +1116,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List">_Add to Movie & TV List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/04cbc16606fd4772a8f5af414507f648">
+       <a href="https://www.icloud.com/shortcuts/e7d8fe3d9de3485c8eb682aba8f7724d">
        <img src="All%20Shortcuts/Mindware/_Add%20to%20Movie%20%26%20TV%20List/_Add%20to%20Movie%20%26%20TV%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1125,7 +1125,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Add%20to%20Podcast%20List">_Add to Podcast List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ee05253b9c8c4e9298c126fab3de637d">
+       <a href="https://www.icloud.com/shortcuts/e488317130624b0dbed6286b4033dbff">
        <img src="All%20Shortcuts/Mindware/_Add%20to%20Podcast%20List/_Add%20to%20Podcast%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1134,7 +1134,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Get%20Random%20Item%20from%20WMU">_Get Random Item from WMU</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f7f70704784643959aea26886cccd3fd">
+       <a href="https://www.icloud.com/shortcuts/e31802444ca8483081a425fad738ecac">
        <img src="All%20Shortcuts/Mindware/_Get%20Random%20Item%20from%20WMU/_Get%20Random%20Item%20from%20WMU.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1143,7 +1143,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Mindware/_Open%20WMU">_Open WMU</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9bb941ba18f1468d94fde525c3d71050">
+       <a href="https://www.icloud.com/shortcuts/6c6938b9ba1048f79b55dff48a14f9cb">
        <img src="All%20Shortcuts/Mindware/_Open%20WMU/_Open%20WMU.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1160,7 +1160,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Create%20New%20Note">🗒️ Create New Note</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0425441f4bc54ab5a5525493a4abe6ca">
+       <a href="https://www.icloud.com/shortcuts/b32b862c5f8441a3a0f94ddb3d602465">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Create%20New%20Note/%F0%9F%97%92%EF%B8%8F%20Create%20New%20Note.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1169,7 +1169,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Prepend%20or%20Append%20to%20Note">🗒️ Prepend or Append to Note</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d40fc2b5bd154f0eb8306664f3c543f4">
+       <a href="https://www.icloud.com/shortcuts/3c0c0a8fbfeb44d29ec7640594f5992e">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Prepend%20or%20Append%20to%20Note/%F0%9F%97%92%EF%B8%8F%20Prepend%20or%20Append%20to%20Note.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1178,7 +1178,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20ANotes">📑 ANotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2128e872e9544cc2ba46e259fd250027">
+       <a href="https://www.icloud.com/shortcuts/db502f499f734f9ca690a9f920c08cec">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20ANotes/%F0%9F%93%91%20ANotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1187,7 +1187,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20Obsidian">📑 Obsidian</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fc37e7761bb84f6997ff93ca0282a621">
+       <a href="https://www.icloud.com/shortcuts/35e395f4bc9249dc900a400a368710a0">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20Obsidian/%F0%9F%93%91%20Obsidian.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1196,7 +1196,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem">👨🏽‍💼 AppRem</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1c905f99a4504bfbac02ee41c88e017e">
+       <a href="https://www.icloud.com/shortcuts/f521cc8f1d904eadbf6c84f6e0dd5d4a">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1205,7 +1205,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%E2%9A%A1%EF%B8%8F%20Quick%20Capture">⚡️ Quick Capture</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6fef5b519e8c48b38e2908c4addf2d5e">
+       <a href="https://www.icloud.com/shortcuts/bbb818a7a6e64fa3a52ad15071c5161e">
        <img src="All%20Shortcuts/Second%20Brain/%E2%9A%A1%EF%B8%8F%20Quick%20Capture/%E2%9A%A1%EF%B8%8F%20Quick%20Capture.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1214,7 +1214,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%8F%A1%20Go%20to%20LifeOS%20Homepage">🏡 Go to LifeOS Homepage</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8ce2e4ce91a44d399e41d183abd9b757">
+       <a href="https://www.icloud.com/shortcuts/8d5156a2225748c09c4699c9e0087198">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%8F%A1%20Go%20to%20LifeOS%20Homepage/%F0%9F%8F%A1%20Go%20to%20LifeOS%20Homepage.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1223,7 +1223,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%97%82%EF%B8%8F%20Organize%20Inbox">🗂️ Organize Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9526faae05bd4481be16688d69edbc37">
+       <a href="https://www.icloud.com/shortcuts/7d9a4b9d7eed4d368fc140e6452fbce2">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%97%82%EF%B8%8F%20Organize%20Inbox/%F0%9F%97%82%EF%B8%8F%20Organize%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1232,7 +1232,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/%F0%9F%93%A5%20Add%20to%20Inbox">📥 Add to Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6e01eca76ffe4359ab0f1825b634bec5">
+       <a href="https://www.icloud.com/shortcuts/a50bde668545481ebe7021bf93cd6ee4">
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%A5%20Add%20to%20Inbox/%F0%9F%93%A5%20Add%20to%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1241,7 +1241,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/_Add%20to%20AReminders">_Add to AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0c56a701c5d5435abc6b1d22044e1817">
+       <a href="https://www.icloud.com/shortcuts/ce5c5bf5552d4539bb400e2ce01cf19f">
        <img src="All%20Shortcuts/Second%20Brain/_Add%20to%20AReminders/_Add%20to%20AReminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1250,7 +1250,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Second%20Brain/_Add%20to%20Fleeting%20Notes">_Add to Fleeting Notes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/efd6f9c36cf749c9bad07140083034e1">
+       <a href="https://www.icloud.com/shortcuts/0e1cc9a2114545128b438a0d571fc1ef">
        <img src="All%20Shortcuts/Second%20Brain/_Add%20to%20Fleeting%20Notes/_Add%20to%20Fleeting%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1267,7 +1267,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day">🌻 My Life On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/74229d99bce849d2ae03d26b6831f000">
+       <a href="https://www.icloud.com/shortcuts/bb200899a46a4ef0954a8a421a2786ac">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1276,7 +1276,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel">🌻 My Life On This Day - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f93e2625bea84934892954cd52d96509">
+       <a href="https://www.icloud.com/shortcuts/5dd9e489172d475da33320a394cbe59d">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1285,7 +1285,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Recharger">🧠 Brain Recharger</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2323aa8131584d9d99d4195c50136378">
+       <a href="https://www.icloud.com/shortcuts/4b7c670624bc47e4b4eb8cbdeced7b42">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Recharger/%F0%9F%A7%A0%20Brain%20Recharger.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1294,7 +1294,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Food">🧠 Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/18f3d781b4f0453cbf35c8463b2b4c58">
+       <a href="https://www.icloud.com/shortcuts/a096ec9efcf64962a476b538c35dc6f5">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%A0%20Brain%20Food/%F0%9F%A7%A0%20Brain%20Food.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1303,7 +1303,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me">🌟 Dear Today Me</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eadcaf53fd724895960c0bccdbce7ea5">
+       <a href="https://www.icloud.com/shortcuts/1e8493074fcd42c6908a16bde1a819e4">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me/%F0%9F%8C%9F%20Dear%20Today%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1312,7 +1312,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love">❤️ Call People I Love</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/16ad2600f0b041c1911a8d6c0db2e23b">
+       <a href="https://www.icloud.com/shortcuts/47e499b86e6443d0ad1da93a0854d7c5">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1321,7 +1321,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%90%20Search%20Web">🌐 Search Web</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/80ba48493fc34bf0803e3921e43fc2cb">
+       <a href="https://www.icloud.com/shortcuts/131c42e75a574dfeb1b058881be1e26e">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%90%20Search%20Web/%F0%9F%8C%90%20Search%20Web.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1330,7 +1330,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9C%8B%20Don't%20Forget%20Siri">✋ Don't Forget Siri</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c98c7f3d84c04237a1eb8d2e5a4401b3">
+       <a href="https://www.icloud.com/shortcuts/ce1e7b60f77a4e359567b4208e91cef5">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%9C%8B%20Don't%20Forget%20Siri/%E2%9C%8B%20Don't%20Forget%20Siri.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1339,7 +1339,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A7%20Connect%20to%20Headphone">🎧 Connect to Headphone</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2c2f9da026524464bee68674f2538268">
+       <a href="https://www.icloud.com/shortcuts/e6a1f9d16a1d4a0486906079da4dae38">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A7%20Connect%20to%20Headphone/%F0%9F%8E%A7%20Connect%20to%20Headphone.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1348,7 +1348,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A6%BB%20Listen%20to%20Something">🦻 Listen to Something</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/18cecf05df034933a69fc1e61739fe0b">
+       <a href="https://www.icloud.com/shortcuts/35a1cd3323d74bd58a3aebcc14ce4df8">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A6%BB%20Listen%20to%20Something/%F0%9F%A6%BB%20Listen%20to%20Something.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1357,7 +1357,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote">🌈 BinaryQuote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cd35a21ede15435cb6c11bf55fe8c811">
+       <a href="https://www.icloud.com/shortcuts/deaa62d3e265427989c43d2e51fe2717">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote/%F0%9F%8C%88%20BinaryQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1366,7 +1366,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote">🗽 GoodreadsQuote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/922982be702b4df69fe935082016a4f7">
+       <a href="https://www.icloud.com/shortcuts/15679922af1144efa4a71fcd6a023eea">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote/%F0%9F%97%BD%20GoodreadsQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1375,7 +1375,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A8%20Sketch%20Of%20The%20Day">🎨 Sketch Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ff9597addc8749e984b5d40760d9502c">
+       <a href="https://www.icloud.com/shortcuts/14b4caf562ed45479c2e9e9c5243b906">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A8%20Sketch%20Of%20The%20Day/%F0%9F%8E%A8%20Sketch%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1384,7 +1384,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20Visual%20Of%20The%20Day">🤓 Visual Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6a24f64f72634f4a98d00a6a2e32f92f">
+       <a href="https://www.icloud.com/shortcuts/ec787b2480744e4f866f658aad0b1933">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%93%20Visual%20Of%20The%20Day/%F0%9F%A4%93%20Visual%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1393,7 +1393,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%99%20Recipe%20Of%20The%20Day">🥙 Recipe Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/26c52f35bdf14279b41264bf7e0989e9">
+       <a href="https://www.icloud.com/shortcuts/950a9158236e49379fcbf3cdce031848">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%99%20Recipe%20Of%20The%20Day/%F0%9F%A5%99%20Recipe%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1402,7 +1402,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Number%20Of%20The%20Day">🔢 Number Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5b8ffc47a6934cae994497f0d724b240">
+       <a href="https://www.icloud.com/shortcuts/a56277d760ba494798273b1a3ad23bae">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Number%20Of%20The%20Day/%F0%9F%94%A2%20Number%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1411,7 +1411,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day">🤸🏽‍♀️ Exercise Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/315c53ec69e74541a11fd06d6c0b1e0d">
+       <a href="https://www.icloud.com/shortcuts/573d11b1a86c42089b39039ee27b67bb">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1420,7 +1420,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A6%81%20Workout%20Of%20The%20Day">🦁 Workout Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/137d2c042f9542f1bcb1cdcef613b0e4">
+       <a href="https://www.icloud.com/shortcuts/a822f03e75ba4a7986e5c3d2096b2648">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A6%81%20Workout%20Of%20The%20Day/%F0%9F%A6%81%20Workout%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1429,7 +1429,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%91%F0%9F%8F%BD%E2%80%8D%F0%9F%8F%AB%20Word%20Of%20The%20Day">🧑🏽‍🏫 Word Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/337b806226cc4dc89d5219448f22e03c">
+       <a href="https://www.icloud.com/shortcuts/4b099470d70944079dd786de7b861aa7">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%91%F0%9F%8F%BD%E2%80%8D%F0%9F%8F%AB%20Word%20Of%20The%20Day/%F0%9F%A7%91%F0%9F%8F%BD%E2%80%8D%F0%9F%8F%AB%20Word%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1438,7 +1438,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch">🇩🇪 Taegliches Deutsch</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c03ac8044b8c46b8b5cb537d4fdf0de1">
+       <a href="https://www.icloud.com/shortcuts/735d38f33e6e4afd97a67a0cd64f28a8">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1447,7 +1447,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B0%20Britannica">📰 Britannica</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9994ab7cdbd341a38ac9a1f1a9f10d14">
+       <a href="https://www.icloud.com/shortcuts/ad0ce88deda14f3eb469bbd9f17198aa">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B0%20Britannica/%F0%9F%93%B0%20Britannica.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1456,7 +1456,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C">👨🏽‍🔬 科學人雜誌</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/634d0e1ae51a43129338a2732bdfcfec">
+       <a href="https://www.icloud.com/shortcuts/9566d13ee5ca4f8fa1006e4cfcb70ca2">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1465,7 +1465,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%8F%20The%20World%20In%20Brief">🌏 The World In Brief</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/95f513fe7254435bbe9a4440992e07f5">
+       <a href="https://www.icloud.com/shortcuts/0d646ac47bac4e249bde7cf7e6973557">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%8F%20The%20World%20In%20Brief/%F0%9F%8C%8F%20The%20World%20In%20Brief.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1474,7 +1474,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%AD%20Today's%20Fun%20Fact">🎭 Today's Fun Fact</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8c5ce61ddb2e4c10b8ba789476062827">
+       <a href="https://www.icloud.com/shortcuts/0433bdd368434f25b31b9ad0e4e00c60">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%AD%20Today's%20Fun%20Fact/%F0%9F%8E%AD%20Today's%20Fun%20Fact.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1483,7 +1483,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8D%84%20Today's%20Good%20Fact">🍄 Today's Good Fact</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/be3f63420eb6456d80db143e22790b6f">
+       <a href="https://www.icloud.com/shortcuts/3ab04ba284f6426b8ca882d92b1e8635">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8D%84%20Today's%20Good%20Fact/%F0%9F%8D%84%20Today's%20Good%20Fact.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1492,7 +1492,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9B%A1%EF%B8%8F%20Reddit%20Top%20Post">🛡️ Reddit Top Post</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/313bf8b037674652ac017af630a17e81">
+       <a href="https://www.icloud.com/shortcuts/b698863e1bb1415d88e95ce8a4e40c68">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9B%A1%EF%B8%8F%20Reddit%20Top%20Post/%F0%9F%9B%A1%EF%B8%8F%20Reddit%20Top%20Post.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1501,7 +1501,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%80%20HN%20Top%20Post">🚀 HN Top Post</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1afff20af36c4aed97cdf5783bfc0922">
+       <a href="https://www.icloud.com/shortcuts/4c0dd301e74b4212b0f4427218d5d887">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%80%20HN%20Top%20Post/%F0%9F%9A%80%20HN%20Top%20Post.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1510,7 +1510,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F">🙋🏽 Did You Know?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/06e5e9cfb8f24c75ab595db1ead96dae">
+       <a href="https://www.icloud.com/shortcuts/f0f0299366f34bf5b78ddfb1b6e5403e">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F/%F0%9F%99%8B%F0%9F%8F%BD%20Did%20You%20Know%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1519,7 +1519,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%A1%20Make%20Life%20Easier">💡 Make Life Easier</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1d1c788b55b443efa9c7114400379d8d">
+       <a href="https://www.icloud.com/shortcuts/2631fd3e475a4d479766eea10cc6cbe3">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%A1%20Make%20Life%20Easier/%F0%9F%92%A1%20Make%20Life%20Easier.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1528,7 +1528,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%96%BC%EF%B8%8F%20Visual%20%3E%20Words">🖼️ Visual > Words</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cd69fe8354d1488694a57ab46801d917">
+       <a href="https://www.icloud.com/shortcuts/014be487415f49898bf7023ff49e5569">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%96%BC%EF%B8%8F%20Visual%20%3E%20Words/%F0%9F%96%BC%EF%B8%8F%20Visual%20%3E%20Words.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1537,7 +1537,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%AD%20Tell%20Me%20More!">🪭 Tell Me More!</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b0ebde35376464ebe8175903b13ae00">
+       <a href="https://www.icloud.com/shortcuts/c927d35571d944cd834ae4671bd68192">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%AD%20Tell%20Me%20More!/%F0%9F%AA%AD%20Tell%20Me%20More!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1546,7 +1546,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%90%20Morning%20Manifesto">🧐 Morning Manifesto</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eff3d87a299a4497aad9e2cd67c12e11">
+       <a href="https://www.icloud.com/shortcuts/2160a908ab664ff89e38bd04ddfbecc2">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%90%20Morning%20Manifesto/%F0%9F%A7%90%20Morning%20Manifesto.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1555,7 +1555,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos">🎞️ Organize My Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e760300140964e1eb7ddc51ca55aaaeb">
+       <a href="https://www.icloud.com/shortcuts/1b1f606528b847289092b14a940c6538">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1564,7 +1564,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%98%98%EF%B8%8F%20Memories%20On%20This%20Day">☘️ Memories On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/22c8865f2a0b4a44890e9b84eacee7be">
+       <a href="https://www.icloud.com/shortcuts/f5b1182601db47578337c22ef155aa3d">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%98%98%EF%B8%8F%20Memories%20On%20This%20Day/%E2%98%98%EF%B8%8F%20Memories%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1573,7 +1573,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%B3%20Pay%20the%20Bills">💳 Pay the Bills</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0ca2292d0c594e4c99ca649a57001be1">
+       <a href="https://www.icloud.com/shortcuts/46404d3183f24d45a0bc71e3307a3c11">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%B3%20Pay%20the%20Bills/%F0%9F%92%B3%20Pay%20the%20Bills.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1582,7 +1582,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%A7%20Email%20Newsletter">📧 Email Newsletter</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8c912084df514600a3e8c0edb36d8556">
+       <a href="https://www.icloud.com/shortcuts/85a2e7250f7e43109bbecd120f4aeda6">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%A7%20Email%20Newsletter/%F0%9F%93%A7%20Email%20Newsletter.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1591,7 +1591,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%92%20Relationships%20Reflection">💒 Relationships Reflection</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/63fe4a9244ad4419a2b6af6f10250237">
+       <a href="https://www.icloud.com/shortcuts/551e6df2c9f34b409e2f38572e9ec9f1">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%92%20Relationships%20Reflection/%F0%9F%92%92%20Relationships%20Reflection.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1600,7 +1600,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8D%AD%20You%20Deserve%20It">🍭 You Deserve It</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/15b49842dc9447cab9f28dbaa95cc63b">
+       <a href="https://www.icloud.com/shortcuts/db24dab911b749a1a58e226fb34b2f51">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8D%AD%20You%20Deserve%20It/%F0%9F%8D%AD%20You%20Deserve%20It.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1609,7 +1609,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%A9%B9%20Log%20Health%20Data%20from%20CSV">❤️‍🩹 Log Health Data from CSV</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/00cda318c09b408b8d2a4cd762dcfd74">
+       <a href="https://www.icloud.com/shortcuts/c4753a3d346d45699c3b0cd616b25a37">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%A9%B9%20Log%20Health%20Data%20from%20CSV/%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%A9%B9%20Log%20Health%20Data%20from%20CSV.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1618,7 +1618,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%98%B4%20Log%20Wake%20Up%20%26%20Bed%20Time">😴 Log Wake Up & Bed Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a97466d3c4b34359a94accb1f0e6defa">
+       <a href="https://www.icloud.com/shortcuts/15e3240ea4e84d918eea6846966c9dea">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%98%B4%20Log%20Wake%20Up%20%26%20Bed%20Time/%F0%9F%98%B4%20Log%20Wake%20Up%20%26%20Bed%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1627,7 +1627,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B1%20Log%20Phone%20Screen%20Time">📱 Log Phone Screen Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/54eeb4a0c8f442ecb394812805cae142">
+       <a href="https://www.icloud.com/shortcuts/e39627056c8e45df9c37e1ce9d6ac4f7">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B1%20Log%20Phone%20Screen%20Time/%F0%9F%93%B1%20Log%20Phone%20Screen%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1636,7 +1636,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%AC%20Extract%20Insight%20Timer%20Quote">💬 Extract Insight Timer Quote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fc571bed0e7148d396314566ac8f6365">
+       <a href="https://www.icloud.com/shortcuts/01206f44b010473bb3aab92f8e18e377">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%AC%20Extract%20Insight%20Timer%20Quote/%F0%9F%92%AC%20Extract%20Insight%20Timer%20Quote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1645,7 +1645,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%E2%9A%B0%EF%B8%8F%20Log%20Life%20Progress">⚰️ Log Life Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/982bf854233546758d2fb08e2030a813">
+       <a href="https://www.icloud.com/shortcuts/52144aaf3fd04a06947bd5334bd7ebb8">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%9A%B0%EF%B8%8F%20Log%20Life%20Progress/%E2%9A%B0%EF%B8%8F%20Log%20Life%20Progress.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1654,7 +1654,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%97%20Grocery%20Shopping">🥗 Grocery Shopping</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f3906f8600244f81896afe416820d6fe">
+       <a href="https://www.icloud.com/shortcuts/18618318a0524ead8270fdcd1055460b">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%97%20Grocery%20Shopping/%F0%9F%A5%97%20Grocery%20Shopping.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1663,7 +1663,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Open%20Today%20Reminder%20List">Open Today Reminder List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/98a9fbd8729d4527993ee04f8409e266">
+       <a href="https://www.icloud.com/shortcuts/3f71accd48114c579b11607210cdf01e">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Open%20Today%20Reminder%20List/Open%20Today%20Reminder%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1672,7 +1672,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote">Get Random Quote from BinaryQuote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e1fe5ad80b2349ea8ea0ec2125fd67de">
+       <a href="https://www.icloud.com/shortcuts/70f27949c4e24ab4a63885607742b2a7">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote/Get%20Random%20Quote%20from%20BinaryQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1681,7 +1681,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads">Get Random Quote from Goodreads</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b72aae0c6a641d280d8804769a936be">
+       <a href="https://www.icloud.com/shortcuts/3c27ed2e858c4dfaa204040e981c9d2c">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads/Get%20Random%20Quote%20from%20Goodreads.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1690,7 +1690,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Memories%20On%20This%20Day">Memories On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/903cee5253af4046b6717a8ad0839af2">
+       <a href="https://www.icloud.com/shortcuts/1dc4b9344e544e39a7ba180e4c4c6bab">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Memories%20On%20This%20Day/Memories%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1699,7 +1699,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Book%20Excerpts">Get Random Book Excerpts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cc772d9149934ac5b17e4b07da8f16a6">
+       <a href="https://www.icloud.com/shortcuts/1e75e8298e1641aab7c15ea2762d15f1">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Book%20Excerpts/Get%20Random%20Book%20Excerpts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1708,7 +1708,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Visual">Get Random Visual</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3ddf61052aa2442a9fbdbf2bc9ade483">
+       <a href="https://www.icloud.com/shortcuts/fb76bbdd065140c5a3392191a9912b09">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Visual/Get%20Random%20Visual.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1717,7 +1717,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt(s)">Speak Journal Prompt(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/359f792b8c7446cb8b199f161e911de4">
+       <a href="https://www.icloud.com/shortcuts/37d7ac742d654ac59feda6ffdc258861">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt(s)/Speak%20Journal%20Prompt(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1726,7 +1726,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt%20Opener">Speak Journal Prompt Opener</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a1bc233a7c4949c1af2ecca9bd184137">
+       <a href="https://www.icloud.com/shortcuts/1396d3fa54934d6782c054bd1db33a2e">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt%20Opener/Speak%20Journal%20Prompt%20Opener.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1735,7 +1735,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt(s)%20(with%20opener)">Speak Journal Prompt(s) (with opener)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b252c155b11426ca58edb7760d963a1">
+       <a href="https://www.icloud.com/shortcuts/d43072477a044ba8a9b3d24eb3cd4a03">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt(s)%20(with%20opener)/Speak%20Journal%20Prompt(s)%20(with%20opener).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1744,7 +1744,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Journal%20Prompt(s)">Get Random Journal Prompt(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/11d21df46d3747b7b692a578a805ea01">
+       <a href="https://www.icloud.com/shortcuts/58ef024ef043437389fff800c888259f">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Journal%20Prompt(s)/Get%20Random%20Journal%20Prompt(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1753,7 +1753,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Paragraph%20from%20My%20Polaris">Get Random Paragraph from My Polaris</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b38ce98c2ca4d1c8b0a3ac552afad17">
+       <a href="https://www.icloud.com/shortcuts/811481aa72c044cb9791ca704fb98ceb">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Paragraph%20from%20My%20Polaris/Get%20Random%20Paragraph%20from%20My%20Polaris.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1762,7 +1762,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Item%20from%20Evergreen%20List">Get Random Item from Evergreen List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/281280feb9354949ab68aeb29122fa58">
+       <a href="https://www.icloud.com/shortcuts/6a896768eab24ae88854a25a385f01ef">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Item%20from%20Evergreen%20List/Get%20Random%20Item%20from%20Evergreen%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1771,7 +1771,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Show%20Random%20Item%20from%20Evergreen%20List">Show Random Item from Evergreen List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cf3661c76ad54e2290e44370ec78993a">
+       <a href="https://www.icloud.com/shortcuts/a8e72a94ae98443daa573ea9416dcba6">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Show%20Random%20Item%20from%20Evergreen%20List/Show%20Random%20Item%20from%20Evergreen%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1780,7 +1780,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Life%20Progress%20Calculator">Life Progress Calculator</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/55fa7158574141e2aae51764e9301f95">
+       <a href="https://www.icloud.com/shortcuts/abf8e1f1bed6423e84654f051a41a163">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Life%20Progress%20Calculator/Life%20Progress%20Calculator.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1789,7 +1789,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Generate%20Life%20Progress%20Text">Generate Life Progress Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ee1184f8dffe42c99a18c2c3f139a8c7">
+       <a href="https://www.icloud.com/shortcuts/52a3043ac5e14e3e820aa3666012390e">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Generate%20Life%20Progress%20Text/Generate%20Life%20Progress%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1798,7 +1798,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Show%20Death%20Clock">Show Death Clock</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c93648e1efd244b0a3b10ce019bb9247">
+       <a href="https://www.icloud.com/shortcuts/e29a1f80c3ac41fea99241216f97da08">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Show%20Death%20Clock/Show%20Death%20Clock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1807,7 +1807,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Floccus">Floccus</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c307233687de489f91142514639bb801">
+       <a href="https://www.icloud.com/shortcuts/1458d8fe3d8949e4a0b688a7b4b6bb4a">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Floccus/Floccus.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1816,7 +1816,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Safari">Safari</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cf912870aa574605b50c9149a54ee1a5">
+       <a href="https://www.icloud.com/shortcuts/57177ee80d994fb08ab1d6f7ce943763">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Safari/Safari.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1825,7 +1825,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Edge">Edge</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/36f69ad787c642aca74da92a8ce31e5e">
+       <a href="https://www.icloud.com/shortcuts/a02bbc84e01f47eaa2744db65eac47bf">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Edge/Edge.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1834,7 +1834,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/ChatGPT">ChatGPT</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/879ceefa82bf477bb91678c11a400895">
+       <a href="https://www.icloud.com/shortcuts/bb29c69dcc4c4d7aaeaeddf5a7009589">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/ChatGPT/ChatGPT.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1843,7 +1843,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Photos">Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/76e6b70a11d84025878cf027d7cce60b">
+       <a href="https://www.icloud.com/shortcuts/1f7cfbfcad7643229d1de85002259f19">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Photos/Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1852,7 +1852,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/_Build%20Rich%20Notification">_Build Rich Notification</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1b4810cd058e491eb11979fadc9dc81a">
+       <a href="https://www.icloud.com/shortcuts/b748cd23c7dd4dbd96a0b3260cc97ac8">
        <img src="All%20Shortcuts/LifeOS%20Toolkits/_Build%20Rich%20Notification/_Build%20Rich%20Notification.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1869,7 +1869,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training">💪 Schedule My Training</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b53614073d69498eacdc4e77282c0b34">
+       <a href="https://www.icloud.com/shortcuts/4e18aa5495f14ebf8d5a75089c010b8c">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training/%F0%9F%92%AA%20Schedule%20My%20Training.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1878,7 +1878,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel">💪 Schedule My Training - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3d9f96bf1171469cbdca9d36ba97b6d4">
+       <a href="https://www.icloud.com/shortcuts/c0bf11fcda354930b303915287cfbc23">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1887,7 +1887,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%9A%B4%20Indoor%20Cycling">🚴 Indoor Cycling</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/117b038909164cd2bc0766bf2e7617e3">
+       <a href="https://www.icloud.com/shortcuts/ec2e02936ff64a089e093a15209db55c">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%9A%B4%20Indoor%20Cycling/%F0%9F%9A%B4%20Indoor%20Cycling.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1896,7 +1896,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%9A%B4%20Outdoor%20Cycling">🚴 Outdoor Cycling</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3f7d5a0d17574e04b5aa11f955f261c5">
+       <a href="https://www.icloud.com/shortcuts/4a904693a5f6421f9f6933a20758b60f">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%9A%B4%20Outdoor%20Cycling/%F0%9F%9A%B4%20Outdoor%20Cycling.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1905,7 +1905,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session">🏋️ Gym Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3c84c95efca248dfbf20addd1642f3db">
+       <a href="https://www.icloud.com/shortcuts/470578b5f9f9439896db1cf6e101e9e9">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1914,7 +1914,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%8F%83%20Running">🏃 Running</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eb37e33e04e24549933abae947d8f055">
+       <a href="https://www.icloud.com/shortcuts/11a8fd693e5c4fe0a92f40848aab783d">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%8F%83%20Running/%F0%9F%8F%83%20Running.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1923,7 +1923,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/_Outdoor%20Training%20Preparation">_Outdoor Training Preparation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eb9872407179499f860a699fbfd1b6b4">
+       <a href="https://www.icloud.com/shortcuts/c6117c45a92d4a1393ec6d468b8c7491">
        <img src="All%20Shortcuts/Fitness%20Training/_Outdoor%20Training%20Preparation/_Outdoor%20Training%20Preparation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1932,7 +1932,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/_Open%20Fitness%20App">_Open Fitness App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7abfb0d9484c45c4808222e7f6e3cf35">
+       <a href="https://www.icloud.com/shortcuts/bd4a6fb68efb4b1691b5b40dbd205992">
        <img src="All%20Shortcuts/Fitness%20Training/_Open%20Fitness%20App/_Open%20Fitness%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1941,7 +1941,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside">⚠️ Before Going Outside</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/caa51b3492fe4769b77d64d3d0edc887">
+       <a href="https://www.icloud.com/shortcuts/6fea39b3ece6401382de13c7106359d1">
        <img src="All%20Shortcuts/Fitness%20Training/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1950,7 +1950,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%A4%B3%20Outdoor%20iPhone%20Settings">🤳 Outdoor iPhone Settings</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e8bd4dcdb37e4d6584011b34cd8ff030">
+       <a href="https://www.icloud.com/shortcuts/7abd13f743ba422d966aa56bca487fb8">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%A4%B3%20Outdoor%20iPhone%20Settings/%F0%9F%A4%B3%20Outdoor%20iPhone%20Settings.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1959,7 +1959,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%E2%98%81%20Upload%20Workout">☁ Upload Workout</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9201be63e375449795c71e2cca54625a">
+       <a href="https://www.icloud.com/shortcuts/d9d9f8e055c743949e10136ecf52d280">
        <img src="All%20Shortcuts/Fitness%20Training/%E2%98%81%20Upload%20Workout/%E2%98%81%20Upload%20Workout.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1968,7 +1968,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/%F0%9F%8C%80%20TrainerDay">🌀 TrainerDay</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/16daad0380154159b001c6cc45447652">
+       <a href="https://www.icloud.com/shortcuts/267ffdcf9a7148e7840d550c9451d1c8">
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%8C%80%20TrainerDay/%F0%9F%8C%80%20TrainerDay.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1977,7 +1977,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Fitness%20Training/Set%20Sport%20eDevice%20Charging%20Reminders">Set Sport eDevice Charging Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7892e8e641ef447aa7792145886cf4a9">
+       <a href="https://www.icloud.com/shortcuts/22f7891693084a04b07e3a36c04077ef">
        <img src="All%20Shortcuts/Fitness%20Training/Set%20Sport%20eDevice%20Charging%20Reminders/Set%20Sport%20eDevice%20Charging%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -1994,7 +1994,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Start%20the%20Day%20Right/Check%20Life%20Automation">Check Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/14b8af224543450bb757e1ed2b36a7b3">
+       <a href="https://www.icloud.com/shortcuts/23eef324979d4c58810e425adcc58e5b">
        <img src="All%20Shortcuts/Start%20the%20Day%20Right/Check%20Life%20Automation/Check%20Life%20Automation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2003,7 +2003,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Start%20the%20Day%20Right/Log%20Yesterday's%20Metadata">Log Yesterday's Metadata</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/34fd0ca3f7324fa7aad782868d5821fa">
+       <a href="https://www.icloud.com/shortcuts/59dfe3bcfbc848e09266a8d402d7284b">
        <img src="All%20Shortcuts/Start%20the%20Day%20Right/Log%20Yesterday's%20Metadata/Log%20Yesterday's%20Metadata.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2012,7 +2012,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right">☀️ Start the Day Right</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c4fb84311f6d472ea2da4ddeb31749a8">
+       <a href="https://www.icloud.com/shortcuts/2f67737e8e114803800a31874de72c61">
        <img src="All%20Shortcuts/Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2029,7 +2029,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Captures">Review Today's Captures</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f86de3ce2d2b4e4b85774ce5e0fbcfb2">
+       <a href="https://www.icloud.com/shortcuts/df13759606a946dda0e532c78ef681d4">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Captures/Review%20Today's%20Captures.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2038,7 +2038,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Celebrate%20Small%20Wins!">Celebrate Small Wins!</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a317cd01f919496ba3b66c3e681ba324">
+       <a href="https://www.icloud.com/shortcuts/002a5b27cc2d485aa782c5cf8fdb6498">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Celebrate%20Small%20Wins!/Celebrate%20Small%20Wins!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2047,7 +2047,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Memories">Review Today's Memories</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0510f1d496f24498885f0d611bb67aa6">
+       <a href="https://www.icloud.com/shortcuts/2e2bc3d319714123b3d2d187f361af3d">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Review%20Today's%20Memories/Review%20Today's%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2056,7 +2056,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Reflect%20Your%20Day">Reflect Your Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9d1dc5b54e86441e9d6b2633a348d69f">
+       <a href="https://www.icloud.com/shortcuts/e2979e2f365840b7a6ba5207454f2748">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Reflect%20Your%20Day/Reflect%20Your%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2065,7 +2065,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Review%20Strava%20Activities">Review Strava Activities</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b025fd5437414a1c8025f69adc840a34">
+       <a href="https://www.icloud.com/shortcuts/e054949ea6e14e71959050484cc13f39">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Review%20Strava%20Activities/Review%20Strava%20Activities.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2074,7 +2074,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/Review%20Podcast%20Shownotes">Review Podcast Shownotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d8926b5c244d4bb2b92254ba7cb01eed">
+       <a href="https://www.icloud.com/shortcuts/36e642676e304c38aa4a2594e5516cc1">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Review%20Podcast%20Shownotes/Review%20Podcast%20Shownotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2083,7 +2083,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right">🌙 End the Day Right</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8d185793c67843ffa303c90edc94f037">
+       <a href="https://www.icloud.com/shortcuts/5ee09d695039457783190badc73a5ca9">
        <img src="All%20Shortcuts/End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2100,7 +2100,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Day%20In%20Life/Review%20Daily%20Memories">Review Daily Memories</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a5c115bfab8e4e3da4b668e46fc95a6a">
+       <a href="https://www.icloud.com/shortcuts/369c6a861e7d431a91001fcce09bb4c1">
        <img src="All%20Shortcuts/Day%20In%20Life/Review%20Daily%20Memories/Review%20Daily%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2109,7 +2109,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Day%20In%20Life/Done%20with%20Daily%20Memories">Done with Daily Memories</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/405fdacdc932450f83bbd7464c96a359">
+       <a href="https://www.icloud.com/shortcuts/26c91ff9d1aa429cb3d0e534074d1b03">
        <img src="All%20Shortcuts/Day%20In%20Life/Done%20with%20Daily%20Memories/Done%20with%20Daily%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2118,7 +2118,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Day%20In%20Life/%F0%9F%8C%B8%20Day%20In%20Life">🌸 Day In Life</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fbf38cbc69c8417aab927f17a10b775d">
+       <a href="https://www.icloud.com/shortcuts/c824e8ff899e4e63ba6643faca9f9797">
        <img src="All%20Shortcuts/Day%20In%20Life/%F0%9F%8C%B8%20Day%20In%20Life/%F0%9F%8C%B8%20Day%20In%20Life.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2135,7 +2135,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Week%20In%20Life/Review%20Weekly%20Memories">Review Weekly Memories</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/38c11df85a684e48b13807c81a97c216">
+       <a href="https://www.icloud.com/shortcuts/980ca6a7083a48f9bd48f4b75702a25a">
        <img src="All%20Shortcuts/Week%20In%20Life/Review%20Weekly%20Memories/Review%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2144,7 +2144,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Week%20In%20Life/Done%20with%20Weekly%20Memories">Done with Weekly Memories</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7c3ecc821a3e4f089e428a1e35d9030e">
+       <a href="https://www.icloud.com/shortcuts/eab76b2d8783486b9be7bfe7aa56316f">
        <img src="All%20Shortcuts/Week%20In%20Life/Done%20with%20Weekly%20Memories/Done%20with%20Weekly%20Memories.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2153,7 +2153,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Week%20In%20Life/%F0%9F%8C%BC%20Week%20In%20Life">🌼 Week In Life</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/792cfdc6f10940afa6b970f76931c952">
+       <a href="https://www.icloud.com/shortcuts/34a8d09e1e6e43adba841d569758b4f3">
        <img src="All%20Shortcuts/Week%20In%20Life/%F0%9F%8C%BC%20Week%20In%20Life/%F0%9F%8C%BC%20Week%20In%20Life.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2170,7 +2170,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Good%20Morning/Morning%20Greetings">Morning Greetings</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/928f067e1da24d388379e83a4a426014">
+       <a href="https://www.icloud.com/shortcuts/31a1a6bbae464f079876be69cd414c37">
        <img src="All%20Shortcuts/Good%20Morning/Morning%20Greetings/Morning%20Greetings.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2179,7 +2179,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Good%20Morning/Speak%20Today's%20Weather%20Info">Speak Today's Weather Info</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0cae6e3a6bd44b77924c8d045abba150">
+       <a href="https://www.icloud.com/shortcuts/4e357dcb25194587ad1a6c70df58ef6f">
        <img src="All%20Shortcuts/Good%20Morning/Speak%20Today's%20Weather%20Info/Speak%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2196,7 +2196,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Good%20Evening/Evening%20Greetings">Evening Greetings</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bf82d593fac4484ab11c3e90229afbe5">
+       <a href="https://www.icloud.com/shortcuts/019becbc62684825ba8891327c5bac85">
        <img src="All%20Shortcuts/Good%20Evening/Evening%20Greetings/Evening%20Greetings.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2205,7 +2205,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Good%20Evening/Speak%20Death%20Clock">Speak Death Clock</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/06ce916f77da4e73865aa062c939b5ea">
+       <a href="https://www.icloud.com/shortcuts/472f97ab12864abc99ed28e85c3fb364">
        <img src="All%20Shortcuts/Good%20Evening/Speak%20Death%20Clock/Speak%20Death%20Clock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2222,7 +2222,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Auto%20Git%20Pull%20or%20Push">Template - Auto Git Pull or Push</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/75f19a1fdc6c4a98a3bd11f70179ca89">
+       <a href="https://www.icloud.com/shortcuts/acd349a3d9c548149f59fce928d899ac">
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Auto%20Git%20Pull%20or%20Push/Template%20-%20Auto%20Git%20Pull%20or%20Push.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2231,7 +2231,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header">Template - Folder Shortcuts Header</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/99f2b3e5d2514e5186cbff310f2061a6">
+       <a href="https://www.icloud.com/shortcuts/6277ea00cb8c467b8c52d72b6ce28d04">
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header/Template%20-%20Folder%20Shortcuts%20Header.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2240,7 +2240,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Voice%20Assistant">Template - Voice Assistant</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ce35b751a97a4d6abcb3f75e18a3e2b6">
+       <a href="https://www.icloud.com/shortcuts/95c32ca0a14c485bb44e1222f9a15454">
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Voice%20Assistant/Template%20-%20Voice%20Assistant.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2249,7 +2249,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep">Template - Morning and Evening Routine Prep</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a02e256f96764f71bae58fe8cec9a042">
+       <a href="https://www.icloud.com/shortcuts/b23c5c2fb5c848ebb6ced051b6332950">
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep/Template%20-%20Morning%20and%20Evening%20Routine%20Prep.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2266,7 +2266,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Detect%20System%20Language">Detect System Language</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1690c644357f4bcc8651b49ed004d864">
+       <a href="https://www.icloud.com/shortcuts/541c892d421c49bf9e6cc187ea3500f5">
        <img src="All%20Shortcuts/Utilities/Detect%20System%20Language/Detect%20System%20Language.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2275,7 +2275,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper">_Smart Quote Wrapper</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8b82979498ba43399b76f8b06c397f29">
+       <a href="https://www.icloud.com/shortcuts/da2e0e68a80545f38a117944962359ab">
        <img src="All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper/_Smart%20Quote%20Wrapper.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2284,7 +2284,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/%F0%9F%A4%B3%20Process%20Extracted%20Text%20from%20Image">🤳 Process Extracted Text from Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/59aff1b99da64020a5d9a8c74252015a">
+       <a href="https://www.icloud.com/shortcuts/b4ff7f30cee94120a67d272ebbd6d6fa">
        <img src="All%20Shortcuts/Utilities/%F0%9F%A4%B3%20Process%20Extracted%20Text%20from%20Image/%F0%9F%A4%B3%20Process%20Extracted%20Text%20from%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2293,7 +2293,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Generate%20Random%20Color%20Hex%20Code">Generate Random Color Hex Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/834beefbf82d4fea8a759dc17f15a6c2">
+       <a href="https://www.icloud.com/shortcuts/438320c3cdf84c3b871b3e8cfc294e21">
        <img src="All%20Shortcuts/Utilities/Generate%20Random%20Color%20Hex%20Code/Generate%20Random%20Color%20Hex%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2302,7 +2302,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Extract%20Text%20from%20Screenshot">Extract Text from Screenshot</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6a27e8e510fe4df1ab477c31f7e3f62e">
+       <a href="https://www.icloud.com/shortcuts/441d9e27841942d5afc6f8001001fbe2">
        <img src="All%20Shortcuts/Utilities/Extract%20Text%20from%20Screenshot/Extract%20Text%20from%20Screenshot.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2311,7 +2311,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Get%20Leading%20Symbols%20Dictionary">Get Leading Symbols Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f40ed73b78344eb39695609e921dbc70">
+       <a href="https://www.icloud.com/shortcuts/218234f372814e9791244f45bdeb69de">
        <img src="All%20Shortcuts/Utilities/Get%20Leading%20Symbols%20Dictionary/Get%20Leading%20Symbols%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2320,7 +2320,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Progress%20Bar%20Maker%20(with%20Text)">Progress Bar Maker (with Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/de65949470cb4e5d862f16da5870964e">
+       <a href="https://www.icloud.com/shortcuts/64bf33feae5e4b20a7c26ca31ba2b88b">
        <img src="All%20Shortcuts/Utilities/Progress%20Bar%20Maker%20(with%20Text)/Progress%20Bar%20Maker%20(with%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2329,7 +2329,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Progress%20Bar%20Maker%20(without%20Text)">Progress Bar Maker (without Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ec5e1daf713f4eed8d40ba3041f0f487">
+       <a href="https://www.icloud.com/shortcuts/4020718d73e64bd3b81ac32e01cbc81a">
        <img src="All%20Shortcuts/Utilities/Progress%20Bar%20Maker%20(without%20Text)/Progress%20Bar%20Maker%20(without%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2338,7 +2338,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Filter%20By%20Keyword">Filter By Keyword</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6a170b8d0b944f60aef0d4be0d37f557">
+       <a href="https://www.icloud.com/shortcuts/b386e4cbb7c0408aba3d91e7fdafb98b">
        <img src="All%20Shortcuts/Utilities/Filter%20By%20Keyword/Filter%20By%20Keyword.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2347,7 +2347,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time">Check Shortcut Last Run Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d5c767df21804e0f8080c7b541d0f91c">
+       <a href="https://www.icloud.com/shortcuts/e1e39c288bdd4afc98064f7b4b1035c4">
        <img src="All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time/Check%20Shortcut%20Last%20Run%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2356,7 +2356,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/You%20Are%20All%20Set">You Are All Set</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3adb5f42c8b6482187eb161b1bfe2a4d">
+       <a href="https://www.icloud.com/shortcuts/a2f27dfe4ecc4d2ba004ab52343b3162">
        <img src="All%20Shortcuts/Utilities/You%20Are%20All%20Set/You%20Are%20All%20Set.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2365,7 +2365,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/_Return%20to%20an%20app%20until%20right%20swipe">_Return to an app until right swipe</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/766c294451bf4591a947d0bfa8eed506">
+       <a href="https://www.icloud.com/shortcuts/f60e6902621d4a5aa67fad510ed85a83">
        <img src="All%20Shortcuts/Utilities/_Return%20to%20an%20app%20until%20right%20swipe/_Return%20to%20an%20app%20until%20right%20swipe.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2374,7 +2374,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Play%20Music%3F">Play Music?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e8958556bd384c71abf08305b1c87dbb">
+       <a href="https://www.icloud.com/shortcuts/7bcd282936f64718994b869897471517">
        <img src="All%20Shortcuts/Utilities/Play%20Music%3F/Play%20Music%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2383,7 +2383,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Play%20Music%20(with%20Timer)">Play Music (with Timer)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/952c61b4cfba40549c444a4c5eee1bfc">
+       <a href="https://www.icloud.com/shortcuts/6b1eeb9e29c946c4be5de7cda13964ab">
        <img src="All%20Shortcuts/Utilities/Play%20Music%20(with%20Timer)/Play%20Music%20(with%20Timer).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2392,7 +2392,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Choose%20Calendar%20Event%20Time">Choose Calendar Event Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cdcf9beb9b7f419d8f13900d709a090d">
+       <a href="https://www.icloud.com/shortcuts/f3964119702240589bcaf5667040735a">
        <img src="All%20Shortcuts/Utilities/Choose%20Calendar%20Event%20Time/Choose%20Calendar%20Event%20Time.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2401,7 +2401,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Open%20BRAINWAVE%20App">Open BRAINWAVE App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f1c446213cc143869322a62f3370d0db">
+       <a href="https://www.icloud.com/shortcuts/ebc342eaceb243a4b5986c20b2b72ef1">
        <img src="All%20Shortcuts/Utilities/Open%20BRAINWAVE%20App/Open%20BRAINWAVE%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2410,7 +2410,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Turn%20on%20Tapo%20Smart%20Bulb">Turn on Tapo Smart Bulb</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a0354b1ec4994e4a89d3d80db3447621">
+       <a href="https://www.icloud.com/shortcuts/28fb6075f6114abc8ac7ccb8a4154835">
        <img src="All%20Shortcuts/Utilities/Turn%20on%20Tapo%20Smart%20Bulb/Turn%20on%20Tapo%20Smart%20Bulb.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2419,7 +2419,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Rerun%20Focus%20Mode%20Starter">Rerun Focus Mode Starter</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1dbb30c96b144d3ba3c274b22e2dfad4">
+       <a href="https://www.icloud.com/shortcuts/75793904fda543d5a53f09372282c489">
        <img src="All%20Shortcuts/Utilities/Rerun%20Focus%20Mode%20Starter/Rerun%20Focus%20Mode%20Starter.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2428,7 +2428,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/%F0%9F%99%8C%20Brain%20Dump">🙌 Brain Dump</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a8f1af04e91b49b0a87cedd93a6d9a3b">
+       <a href="https://www.icloud.com/shortcuts/aa71805ae1bd459dbfd71635968499f0">
        <img src="All%20Shortcuts/Utilities/%F0%9F%99%8C%20Brain%20Dump/%F0%9F%99%8C%20Brain%20Dump.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2437,7 +2437,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Open%20iMessage%20Chat%20Window%20for%20Contacts">Open iMessage Chat Window for Contacts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4184e5d1a3f140049e14f923749171b0">
+       <a href="https://www.icloud.com/shortcuts/5f31b3e26e1d4559bd531f583fadf75f">
        <img src="All%20Shortcuts/Utilities/Open%20iMessage%20Chat%20Window%20for%20Contacts/Open%20iMessage%20Chat%20Window%20for%20Contacts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2446,7 +2446,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/When%20audible%20PDF%20is%20completed">When audible PDF is completed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1b00b31fda9d46f18de86ec0501af71f">
+       <a href="https://www.icloud.com/shortcuts/32e91a578320476386ca12b9f29cae90">
        <img src="All%20Shortcuts/Utilities/When%20audible%20PDF%20is%20completed/When%20audible%20PDF%20is%20completed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2455,7 +2455,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Get%20Plain%20Text%20from%20Markdown">Get Plain Text from Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cdc404ee82314ca68d7f7f8b84d79145">
+       <a href="https://www.icloud.com/shortcuts/d1b879adbe2a47d49a05218f0a7a33cf">
        <img src="All%20Shortcuts/Utilities/Get%20Plain%20Text%20from%20Markdown/Get%20Plain%20Text%20from%20Markdown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2464,7 +2464,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Escape%20Characters%20in%20Markdown%20Content">Escape Characters in Markdown Content</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3ed7e56e6fb04cfea1a51f0e26002410">
+       <a href="https://www.icloud.com/shortcuts/d22a0b4a793546f4b75e032d8b70d113">
        <img src="All%20Shortcuts/Utilities/Escape%20Characters%20in%20Markdown%20Content/Escape%20Characters%20in%20Markdown%20Content.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2473,7 +2473,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Sanity%20Check%20JSON%20String">Sanity Check JSON String</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/65838e3b65494fa1a9ce2aba9b858e7c">
+       <a href="https://www.icloud.com/shortcuts/190d8cab5aa84a2eabf3040d46917791">
        <img src="All%20Shortcuts/Utilities/Sanity%20Check%20JSON%20String/Sanity%20Check%20JSON%20String.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2482,7 +2482,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Run%20JavaScript%20Code">Run JavaScript Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/dfd7e376d5894e3db4ea114342548040">
+       <a href="https://www.icloud.com/shortcuts/8db1fcd5779b425d998e720d9f8ebd9a">
        <img src="All%20Shortcuts/Utilities/Run%20JavaScript%20Code/Run%20JavaScript%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2491,7 +2491,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Random%20Number%20Generator">Random Number Generator</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b15d645d25ef4e928f4bf47a93028571">
+       <a href="https://www.icloud.com/shortcuts/bf1b2d6d801d406fa6e438c5a007d8a0">
        <img src="All%20Shortcuts/Utilities/Random%20Number%20Generator/Random%20Number%20Generator.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2500,7 +2500,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Create%20Query%20Item%20from%20Dictionary%20(No%20Encoding)">Create Query Item from Dictionary (No Encoding)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/236359c8385642ab8f675dea4d3d87e5">
+       <a href="https://www.icloud.com/shortcuts/2290a276a819458eabf0aed4eb1968e9">
        <img src="All%20Shortcuts/Utilities/Create%20Query%20Item%20from%20Dictionary%20(No%20Encoding)/Create%20Query%20Item%20from%20Dictionary%20(No%20Encoding).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2509,7 +2509,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/isHome%3F">isHome?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a10d937b910a41b295ca4e4b797b4893">
+       <a href="https://www.icloud.com/shortcuts/ec4e3be0539a422caf68aeb6ae180236">
        <img src="All%20Shortcuts/Utilities/isHome%3F/isHome%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2518,7 +2518,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/isOnline%3F">isOnline?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4e0289e8c8054a19ad0f67e4f38bafdc">
+       <a href="https://www.icloud.com/shortcuts/bc243e6346ba492eaf45eae4ca58bd05">
        <img src="All%20Shortcuts/Utilities/isOnline%3F/isOnline%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2527,7 +2527,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/De-Duplicate%20List">De-Duplicate List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4056ea7c2bc6457d9d9afdd07e6f0b45">
+       <a href="https://www.icloud.com/shortcuts/2fde3fcd23bc4156a69acb65c0ef00ee">
        <img src="All%20Shortcuts/Utilities/De-Duplicate%20List/De-Duplicate%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2536,7 +2536,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Decimals%20%E2%86%92%20Percentage">Decimals → Percentage</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4b22c47863814c4ea91eac21d4a39981">
+       <a href="https://www.icloud.com/shortcuts/f0573b260dad415da12a01c6b27e7443">
        <img src="All%20Shortcuts/Utilities/Decimals%20%E2%86%92%20Percentage/Decimals%20%E2%86%92%20Percentage.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2545,7 +2545,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Percentage%20%E2%86%92%20Decimals">Percentage → Decimals</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/497be5aa3c8a4adeb3aaa867c0876d66">
+       <a href="https://www.icloud.com/shortcuts/566ff06caf3a42528dbce13d4c798483">
        <img src="All%20Shortcuts/Utilities/Percentage%20%E2%86%92%20Decimals/Percentage%20%E2%86%92%20Decimals.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2554,7 +2554,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Show%20Text%20(%26%20Vocal)%20Banner">Show Text (& Vocal) Banner</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4268c5c5f62547babbf95351da658b83">
+       <a href="https://www.icloud.com/shortcuts/940d8307ad4445e8afad91917c929805">
        <img src="All%20Shortcuts/Utilities/Show%20Text%20(%26%20Vocal)%20Banner/Show%20Text%20(%26%20Vocal)%20Banner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2563,7 +2563,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Show%20Closing%20Text%20Banner">Show Closing Text Banner</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9e0dfd3b1b2d4704bc53973da708112e">
+       <a href="https://www.icloud.com/shortcuts/cc60e597ea914eafae889d45806ba3e4">
        <img src="All%20Shortcuts/Utilities/Show%20Closing%20Text%20Banner/Show%20Closing%20Text%20Banner.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2572,7 +2572,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Format%20Text%20with%20Text%20Divider%20Pair">Format Text with Text Divider Pair</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4fce2fdefa26436790b58e967a445b5b">
+       <a href="https://www.icloud.com/shortcuts/6b59b2c0fa404a9f90dba461fa126820">
        <img src="All%20Shortcuts/Utilities/Format%20Text%20with%20Text%20Divider%20Pair/Format%20Text%20with%20Text%20Divider%20Pair.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2581,7 +2581,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Get%20Dict%20Value%20for%20Device%20Name">Get Dict Value for Device Name</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/da91ff43a5b747eeba028620bdbfd460">
+       <a href="https://www.icloud.com/shortcuts/e82d861d5bc448b88d140916bb348ad6">
        <img src="All%20Shortcuts/Utilities/Get%20Dict%20Value%20for%20Device%20Name/Get%20Dict%20Value%20for%20Device%20Name.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2590,7 +2590,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Open%20App">Open App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c9d11c01ee2c4f6bb6c945efdd8f8c09">
+       <a href="https://www.icloud.com/shortcuts/ea607d20eaeb408788c6215cefd7185c">
        <img src="All%20Shortcuts/Utilities/Open%20App/Open%20App.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2599,7 +2599,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/(Batch)%20Open%20App(s)">(Batch) Open App(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/50abdd039adf4c84b47b153155258d22">
+       <a href="https://www.icloud.com/shortcuts/016f7d265d2a4e04ad23bde4686820ce">
        <img src="All%20Shortcuts/Utilities/(Batch)%20Open%20App(s)/(Batch)%20Open%20App(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2608,7 +2608,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/(Batch)%20Open%20URL(s)">(Batch) Open URL(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0b4bb028875f41c7815df4f843bcff72">
+       <a href="https://www.icloud.com/shortcuts/dc522404e5e24fcbbad24544ce8bcc32">
        <img src="All%20Shortcuts/Utilities/(Batch)%20Open%20URL(s)/(Batch)%20Open%20URL(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2617,7 +2617,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Utilities/Create%20A%20Dictionary">Create A Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3ce0628b9c51479dace29117e6eae355">
+       <a href="https://www.icloud.com/shortcuts/b381b550355d4c70a305e19fcf4c812d">
        <img src="All%20Shortcuts/Utilities/Create%20A%20Dictionary/Create%20A%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2634,7 +2634,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Remove%20Emojis">Remove Emojis</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d4d7b201b33f4e61990a789d164ae099">
+       <a href="https://www.icloud.com/shortcuts/ab2c49f52765496eb8c85b116a5a5a0a">
        <img src="All%20Shortcuts/Text%20Manipulation/Remove%20Emojis/Remove%20Emojis.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2643,7 +2643,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Strip%20Leading%20Symbol">Strip Leading Symbol</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/564bb8a955fc4502a99255b563050a95">
+       <a href="https://www.icloud.com/shortcuts/6cf5ad08129b4a57ac5289c922e63d95">
        <img src="All%20Shortcuts/Text%20Manipulation/Strip%20Leading%20Symbol/Strip%20Leading%20Symbol.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2652,7 +2652,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Trim%20Leading%20and%20Trailing%20Whitespace">Trim Leading and Trailing Whitespace</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1ccf1475f02345098204d947a0415d6e">
+       <a href="https://www.icloud.com/shortcuts/bacd37f3e29c4da6b681b82f1a8f1742">
        <img src="All%20Shortcuts/Text%20Manipulation/Trim%20Leading%20and%20Trailing%20Whitespace/Trim%20Leading%20and%20Trailing%20Whitespace.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2661,7 +2661,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Remove%20Empty%20Lines">Remove Empty Lines</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f1131707cc7f4dfc8aaad557a0c3f8c1">
+       <a href="https://www.icloud.com/shortcuts/3092bf3c4f7b4cb8a2f627fdae5747a4">
        <img src="All%20Shortcuts/Text%20Manipulation/Remove%20Empty%20Lines/Remove%20Empty%20Lines.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2670,7 +2670,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved)">Remove Duplicate Lines (Fast, Order Not Preserved)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/91f18c926b0a4dad984ee11ba60b0a04">
+       <a href="https://www.icloud.com/shortcuts/475353ae63884db6b70616698bd5ade8">
        <img src="All%20Shortcuts/Text%20Manipulation/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved)/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2679,7 +2679,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved)">Remove Duplicate Lines (Slow, Order Preserved)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/de58182c06d94e62aa1fc84609894693">
+       <a href="https://www.icloud.com/shortcuts/e7167233ce4645e69a63616e3aaf935b">
        <img src="All%20Shortcuts/Text%20Manipulation/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved)/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2688,7 +2688,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros">Format Numbers to X Digits by Adding Leading Zeros</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5f99a345e6bc44b3961351f159ed2d4a">
+       <a href="https://www.icloud.com/shortcuts/548c9fc2e35147748c1144cf24aaf0f0">
        <img src="All%20Shortcuts/Text%20Manipulation/Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros/Format%20Numbers%20to%20X%20Digits%20by%20Adding%20Leading%20Zeros.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2697,7 +2697,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Extract%20All%20Digits%20From%20String">Extract All Digits From String</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a8bb4f7d1e14fb984787a1b6b327559">
+       <a href="https://www.icloud.com/shortcuts/ceefdf7082fc47768b59d06dac226baa">
        <img src="All%20Shortcuts/Text%20Manipulation/Extract%20All%20Digits%20From%20String/Extract%20All%20Digits%20From%20String.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2706,7 +2706,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/ISO8601Duration2Numbers">ISO8601Duration2Numbers</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d807478d68ab40b1ba636aa3d5f94723">
+       <a href="https://www.icloud.com/shortcuts/753f5e0fee50425ebe7fef62d4395fa2">
        <img src="All%20Shortcuts/Text%20Manipulation/ISO8601Duration2Numbers/ISO8601Duration2Numbers.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2715,7 +2715,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Truncate%20Text">Truncate Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7246f376124341b5b405b6b6fdeac8c2">
+       <a href="https://www.icloud.com/shortcuts/ae223b626aee42b2ad648e98487cf092">
        <img src="All%20Shortcuts/Text%20Manipulation/Truncate%20Text/Truncate%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2724,7 +2724,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Get%20Truncated%20Text%20for%20Display">Get Truncated Text for Display</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b3ec450f1824b05bb5f06febe0b64e8">
+       <a href="https://www.icloud.com/shortcuts/29965337aa4b40ec8ad77cf23d6f95eb">
        <img src="All%20Shortcuts/Text%20Manipulation/Get%20Truncated%20Text%20for%20Display/Get%20Truncated%20Text%20for%20Display.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2733,7 +2733,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Get%20Mardkown%20Heading%20Anchor%20Text">Get Mardkown Heading Anchor Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/25d1d446520f4afb8fd3f2a19b5c450a">
+       <a href="https://www.icloud.com/shortcuts/0bdd035fda6c4d569dae2b951d9cd59f">
        <img src="All%20Shortcuts/Text%20Manipulation/Get%20Mardkown%20Heading%20Anchor%20Text/Get%20Mardkown%20Heading%20Anchor%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2742,7 +2742,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Text%20Manipulation/Get%20Question%20Text">Get Question Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5c2cdcce08a740758f6a7959cb1938ee">
+       <a href="https://www.icloud.com/shortcuts/b6d6fff7f29a4f6eae3d5794edf5db3b">
        <img src="All%20Shortcuts/Text%20Manipulation/Get%20Question%20Text/Get%20Question%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2759,7 +2759,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/Good%20Morning">Good Morning</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/38c92f6121374a2392a00f5fc998edd1">
+       <a href="https://www.icloud.com/shortcuts/0a3f5ff68d27437b96800d92feced9e4">
        <img src="All%20Shortcuts/Siri/Good%20Morning/Good%20Morning.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2768,7 +2768,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/Good%20Evening">Good Evening</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/10f7c244e39a476ba4814c49f25c924a">
+       <a href="https://www.icloud.com/shortcuts/498ed0b0769e4dffa1a71d9940574420">
        <img src="All%20Shortcuts/Siri/Good%20Evening/Good%20Evening.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2777,7 +2777,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%96%8B%E5%A4%A7%E7%87%88">開大燈</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f067e22f05e442899d2f20a0b7cd8505">
+       <a href="https://www.icloud.com/shortcuts/09208e1253f0465aba678bd34f31b951">
        <img src="All%20Shortcuts/Siri/%E9%96%8B%E5%A4%A7%E7%87%88/%E9%96%8B%E5%A4%A7%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2786,7 +2786,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88">關大燈</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/204472e997c848408a1f5fea8b783c49">
+       <a href="https://www.icloud.com/shortcuts/d3ecbbe1d8054777be20ea20848a8f18">
        <img src="All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88/%E9%97%9C%E5%A4%A7%E7%87%88.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2795,7 +2795,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">連接我的耳機</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/053f42ed581c487ea9a7e67137bb4005">
+       <a href="https://www.icloud.com/shortcuts/96979c053310409fa5fee2afc963b7cc">
        <img src="All%20Shortcuts/Siri/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E9%80%A3%E6%8E%A5%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2804,7 +2804,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F">斷開我的耳機</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/38605007ee174fe3b7380442f2ccd0de">
+       <a href="https://www.icloud.com/shortcuts/2007446c37d94d2babaddcb3bbc867af">
        <img src="All%20Shortcuts/Siri/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F/%E6%96%B7%E9%96%8B%E6%88%91%E7%9A%84%E8%80%B3%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2813,7 +2813,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F">重新開機</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4c03c85b86f94c91b90ba3928fcefecf">
+       <a href="https://www.icloud.com/shortcuts/19be206ec8b74a3aa8a094da38f1cb6b">
        <img src="All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2822,7 +2822,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI">諮詢AI</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a2129af040b49eeb7444cb40e050f79">
+       <a href="https://www.icloud.com/shortcuts/8b0719f45d534ddd85824a08e51cd897">
        <img src="All%20Shortcuts/Siri/%E8%AB%AE%E8%A9%A2AI/%E8%AB%AE%E8%A9%A2AI.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2831,7 +2831,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB">安排訓練計畫</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e60ffff8586f468ab9c261a9e35c59b5">
+       <a href="https://www.icloud.com/shortcuts/527caf98273a4d1192e4aa17fa3834af">
        <img src="All%20Shortcuts/Siri/%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB/%E5%AE%89%E6%8E%92%E8%A8%93%E7%B7%B4%E8%A8%88%E7%95%AB.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2840,7 +2840,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D">量體重</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/22663f9b1e624ca28d15759e122c708f">
+       <a href="https://www.icloud.com/shortcuts/8657651017b44687ae884864466bfd7e">
        <img src="All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D/%E9%87%8F%E9%AB%94%E9%87%8D.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2849,7 +2849,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E7%A4%BE%E7%BE%A4%E5%AA%92%E9%AB%94">社群媒體</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/422ca58d205f42e08f48fbba617907e1">
+       <a href="https://www.icloud.com/shortcuts/baad00351e654cf0a8585b05b2103af9">
        <img src="All%20Shortcuts/Siri/%E7%A4%BE%E7%BE%A4%E5%AA%92%E9%AB%94/%E7%A4%BE%E7%BE%A4%E5%AA%92%E9%AB%94.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2858,7 +2858,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA">打電話給重要的人</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2730ce8aa9bd457b9f451ec4e29b496b">
+       <a href="https://www.icloud.com/shortcuts/94c6ace503a644c48961eae7916f807c">
        <img src="All%20Shortcuts/Siri/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2867,7 +2867,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Siri/%E6%88%AA%E5%8F%96%E6%96%87%E5%AD%97">截取文字</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b5f2d7f2094248228a424716b6dd1b98">
+       <a href="https://www.icloud.com/shortcuts/b43afd3774574a33bdf3b2262c7510ad">
        <img src="All%20Shortcuts/Siri/%E6%88%AA%E5%8F%96%E6%96%87%E5%AD%97/%E6%88%AA%E5%8F%96%E6%96%87%E5%AD%97.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2884,7 +2884,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/NASA%20Media%20Library">NASA Media Library</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/dc0f95c3d3344ba5bc8ded864ced9292">
+       <a href="https://www.icloud.com/shortcuts/57821ce7319d44f2bbc329369d01b344">
        <img src="All%20Shortcuts/Deep%20Links/NASA%20Media%20Library/NASA%20Media%20Library.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2893,7 +2893,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Huberman%20Lab">Huberman Lab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0140f77aa6954a2685c2d93c3af4524d">
+       <a href="https://www.icloud.com/shortcuts/de904038e21049aba3c917ed93ec29e1">
        <img src="All%20Shortcuts/Deep%20Links/Huberman%20Lab/Huberman%20Lab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2902,7 +2902,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Sketchplanations">Sketchplanations</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a5ae79ca38ca46b7a936d776b32be48b">
+       <a href="https://www.icloud.com/shortcuts/d4bd0facba2541bb8b0fa8ce028ffa20">
        <img src="All%20Shortcuts/Deep%20Links/Sketchplanations/Sketchplanations.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2911,7 +2911,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/PTT">PTT</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4ccd208b45b8407da89cbebf2e1c3026">
+       <a href="https://www.icloud.com/shortcuts/0570d096aa294cdbb10bea9168454189">
        <img src="All%20Shortcuts/Deep%20Links/PTT/PTT.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2920,7 +2920,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Dcard">Dcard</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c1ab6a45a3c34266b2e5601c75e14b92">
+       <a href="https://www.icloud.com/shortcuts/65128f30616e43d09576561fab2d123a">
        <img src="All%20Shortcuts/Deep%20Links/Dcard/Dcard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2929,7 +2929,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Reddit">Reddit</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/60de860773ba4232b7c816c730808769">
+       <a href="https://www.icloud.com/shortcuts/ff3c4f82fa214e90a005708e4eb2e615">
        <img src="All%20Shortcuts/Deep%20Links/Reddit/Reddit.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2938,7 +2938,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Goodreads">Goodreads</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b395b15297614ae4b706a2dabf355160">
+       <a href="https://www.icloud.com/shortcuts/9ac6497fb5be46d4ac2b1998e9c0d5d0">
        <img src="All%20Shortcuts/Deep%20Links/Goodreads/Goodreads.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2947,7 +2947,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/YouTube">YouTube</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a8edf8b6052480fa91e618bbba86de2">
+       <a href="https://www.icloud.com/shortcuts/cf0bbcd7f1b64bc79199608066dc43fd">
        <img src="All%20Shortcuts/Deep%20Links/YouTube/YouTube.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2956,7 +2956,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Deep%20Links/Amazon">Amazon</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9476308d346c4a9cb6c3af30e30ab49f">
+       <a href="https://www.icloud.com/shortcuts/20dce8e57fe745afaf66f87a2acba4f9">
        <img src="All%20Shortcuts/Deep%20Links/Amazon/Amazon.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2973,7 +2973,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Search%20URL">Build Google Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b3a6fce24e4b49f0bfbdf7c21fac49f4">
+       <a href="https://www.icloud.com/shortcuts/c496612baca441fca4c24acaaaa93454">
        <img src="All%20Shortcuts/Build%20URLs/Build%20Google%20Search%20URL/Build%20Google%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2982,7 +2982,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL">Build Google Maps Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69683b6074be462b9e635b137dc48297">
+       <a href="https://www.icloud.com/shortcuts/ff36af84159f4bd889d4757f0b98ef2c">
        <img src="All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL/Build%20Google%20Maps%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -2991,7 +2991,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL">Build Startpage Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/19aeb2369bac41a3b386eee1ccfed290">
+       <a href="https://www.icloud.com/shortcuts/a3e10abdd31c4652920d0379ec0c12b7">
        <img src="All%20Shortcuts/Build%20URLs/Build%20Startpage%20Search%20URL/Build%20Startpage%20Search%20URL.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3008,7 +3008,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/%F0%9F%92%89%20Maintain%20Obsidian%20Vault">💉 Maintain Obsidian Vault</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a076d37fb72f499f852f7489ae50ef8f">
+       <a href="https://www.icloud.com/shortcuts/a060a0a5d5744e59aa3882c6ae373104">
        <img src="All%20Shortcuts/Obsidian%20URI/%F0%9F%92%89%20Maintain%20Obsidian%20Vault/%F0%9F%92%89%20Maintain%20Obsidian%20Vault.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3017,7 +3017,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Search%20Vault">Obsidian - Search Vault</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/62822e3b35b34657b70a2d10e7aa70a4">
+       <a href="https://www.icloud.com/shortcuts/b7f5cecdd6474a24acf30ac5997d5e69">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Search%20Vault/Obsidian%20-%20Search%20Vault.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3026,7 +3026,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20Note">Obsidian - Open Note</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b3086ca01f1420c9de56687970c8090">
+       <a href="https://www.icloud.com/shortcuts/5e07cbbe0a2e4c3fbffbbc5629bfa8d5">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20Note/Obsidian%20-%20Open%20Note.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3035,7 +3035,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20Current%20Tab">Obsidian - Close Current Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f1ff4a5da6a04938a4e943b27f462ee5">
+       <a href="https://www.icloud.com/shortcuts/748d6ee5580b45fc91e78632cb3a58fb">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20Current%20Tab/Obsidian%20-%20Close%20Current%20Tab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3044,7 +3044,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20All%20Other%20Tabs">Obsidian - Close All Other Tabs</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/15da9551953b4edf972d49bc30372cd9">
+       <a href="https://www.icloud.com/shortcuts/cfaa2768eabd4e09a6ee485623dca42a">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20All%20Other%20Tabs/Obsidian%20-%20Close%20All%20Other%20Tabs.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3053,7 +3053,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Expand%20Search%20View">Obsidian - Expand Search View</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e8bff5046437426f945bc835bd074348">
+       <a href="https://www.icloud.com/shortcuts/0ee4396dee1b45f883498f5c26c651ab">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Expand%20Search%20View/Obsidian%20-%20Expand%20Search%20View.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3062,7 +3062,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Collapse%20File%20Explorer">Obsidian - Collapse File Explorer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bc5a00f8b7804fe9a457e6f23eaf140e">
+       <a href="https://www.icloud.com/shortcuts/f97129711c234888af33c9583a35adb4">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Collapse%20File%20Explorer/Obsidian%20-%20Collapse%20File%20Explorer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3071,7 +3071,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Unfold%20All%20Headings%20and%20Lists">Obsidian - Unfold All Headings and Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b78df9a969dc4cba93aa6f04c3f1b93b">
+       <a href="https://www.icloud.com/shortcuts/3cfa81b4c6004e4cb73e9aad1d104378">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Unfold%20All%20Headings%20and%20Lists/Obsidian%20-%20Unfold%20All%20Headings%20and%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3080,7 +3080,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Toggle%20Stacked%20Tabs">Obsidian - Toggle Stacked Tabs</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6e51e3d90e68406dbcb3b844d14a7e54">
+       <a href="https://www.icloud.com/shortcuts/deae96395a39451e8c524bf5e5ec944c">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Toggle%20Stacked%20Tabs/Obsidian%20-%20Toggle%20Stacked%20Tabs.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3089,7 +3089,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Hotkeys%22%20Settings%20Tab">Obsidian - Open "Hotkeys" Settings Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/de1935e01ab841f187a151c0396b4fa6">
+       <a href="https://www.icloud.com/shortcuts/7048bc4a34a1458fa73d5afdd092e7c7">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Hotkeys%22%20Settings%20Tab/Obsidian%20-%20Open%20%22Hotkeys%22%20Settings%20Tab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3098,7 +3098,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab">Obsidian - Open "Community Plugins" Settings Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9466b80845b3498c9b60a85a49f2803f">
+       <a href="https://www.icloud.com/shortcuts/32f79a63d9ad4cc3b2c8991d8699ad5d">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3107,7 +3107,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Collect%20All%20Attachments">Obsidian - Collect All Attachments</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5e58e18033c74361b2d303fd0c3ebaad">
+       <a href="https://www.icloud.com/shortcuts/6ae70b0d37574d6da32b15e59f51533c">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Collect%20All%20Attachments/Obsidian%20-%20Collect%20All%20Attachments.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3116,7 +3116,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Set%20Unique%20Attachments%20Names">Obsidian - Set Unique Attachments Names</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b3e4f11ef15544a191e08ff750863a48">
+       <a href="https://www.icloud.com/shortcuts/9eeaa911363a4b02ab030856858239fa">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Set%20Unique%20Attachments%20Names/Obsidian%20-%20Set%20Unique%20Attachments%20Names.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3125,7 +3125,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links">Obsidian - Replace All Wiki Links with Markdown Links</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a3a415c302e8471186817f9623999719">
+       <a href="https://www.icloud.com/shortcuts/81fbf87e845444c69668a5b45730c4af">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links/Obsidian%20-%20Replace%20All%20Wiki%20Links%20with%20Markdown%20Links.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3134,7 +3134,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds">Obsidian - Replace All Wiki Embeds with Markdown Embeds</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9f1e3a249296441caff7795901d6655c">
+       <a href="https://www.icloud.com/shortcuts/4c8c0a3da208436c93df7127e581d4a9">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds/Obsidian%20-%20Replace%20All%20Wiki%20Embeds%20with%20Markdown%20Embeds.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3143,7 +3143,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths">Obsidian - Convert All Link Paths to Relative Paths</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b9d6f4f23dd474e8105672ffd901a7d">
+       <a href="https://www.icloud.com/shortcuts/39f4e919efb8498ea6db752bf3e16eea">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3152,7 +3152,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths">Obsidian - Convert All Embed Paths to Relative Paths</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/dc44fcd444c949739b85abaf98886480">
+       <a href="https://www.icloud.com/shortcuts/fad8cb3825874f61aa2a45e51d012d89">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3161,7 +3161,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Lint%20All%20Vault%20Files">Obsidian - Lint All Vault Files</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1593224871f7453fabe47202f7f1d765">
+       <a href="https://www.icloud.com/shortcuts/7ac9c67becb64a4ab0d6bc13a4f35be4">
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Lint%20All%20Vault%20Files/Obsidian%20-%20Lint%20All%20Vault%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3178,7 +3178,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile">Configure Obsidian Mobile</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/66d924a4f1994192a581e1548b6c9404">
+       <a href="https://www.icloud.com/shortcuts/e55163412e0e4850b5bd6aeae3350c97">
        <img src="All%20Shortcuts/Obsidian%20Tools/Configure%20Obsidian%20Mobile/Configure%20Obsidian%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3187,7 +3187,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile">Obsidian - Toggle Community Plugins on Mobile</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/98546734440b4c9198ca9014ff848e35">
+       <a href="https://www.icloud.com/shortcuts/aa6ca554fafc4b78a8c94d8efc6fc192">
        <img src="All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3196,7 +3196,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile">Obsidian - Set Specific Setting for Mobile</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/32a0b0c966a04db89e4ff381b9003812">
+       <a href="https://www.icloud.com/shortcuts/eb19bb6a9ab84c03a7fddec1f6c15b41">
        <img src="All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3213,7 +3213,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20OAuth%20Dancing/_Get%20Authorization%20Code">_Get Authorization Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ff904b2ccfa8498e84d1ea8e6b19baf3">
+       <a href="https://www.icloud.com/shortcuts/ccbde2cf583c4f5bbddd6ff457270f71">
        <img src="All%20Shortcuts/API%20OAuth%20Dancing/_Get%20Authorization%20Code/_Get%20Authorization%20Code.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3222,7 +3222,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20OAuth%20Dancing/Exchange%20for%20Access%20%26%20Refresh%20Tokens">Exchange for Access & Refresh Tokens</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/82f30c08fcaa45648c9b09024d140214">
+       <a href="https://www.icloud.com/shortcuts/2da7b8a846de4926b1729770ba65bb6e">
        <img src="All%20Shortcuts/API%20OAuth%20Dancing/Exchange%20for%20Access%20%26%20Refresh%20Tokens/Exchange%20for%20Access%20%26%20Refresh%20Tokens.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3231,7 +3231,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20OAuth%20Dancing/Refresh%20Access%20Token">Refresh Access Token</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c23381646c4d4e4187696bc7d8c4f0d9">
+       <a href="https://www.icloud.com/shortcuts/6c953de9cdf945ac85e997711b74e92d">
        <img src="All%20Shortcuts/API%20OAuth%20Dancing/Refresh%20Access%20Token/Refresh%20Access%20Token.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3248,7 +3248,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/Notion%20-%20Create%20a%20database">Notion - Create a database</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6c8c77c2e03542f393ba0c77eb9e878d">
+       <a href="https://www.icloud.com/shortcuts/95075d41b81f49f0884832929b4fd320">
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Create%20a%20database/Notion%20-%20Create%20a%20database.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3257,7 +3257,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/Notion%20-%20Query%20a%20database">Notion - Query a database</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/27dc738405e54676946b4be207d11fd8">
+       <a href="https://www.icloud.com/shortcuts/8d29e30128c1470bad1065f968e98a2d">
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Query%20a%20database/Notion%20-%20Query%20a%20database.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3266,7 +3266,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/Notion%20-%20Retrieve%20a%20page%20property%20item">Notion - Retrieve a page property item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/62acfd2e65e343918324bde2dfe46903">
+       <a href="https://www.icloud.com/shortcuts/c99e327efcbe4030990af427265e1ddb">
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Retrieve%20a%20page%20property%20item/Notion%20-%20Retrieve%20a%20page%20property%20item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3275,7 +3275,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/Notion%20-%20Update%20page%20properties">Notion - Update page properties</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d852bbbf7666474ea90a8760437a78e1">
+       <a href="https://www.icloud.com/shortcuts/49b00ce714e64ed1a8608234524befa1">
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Update%20page%20properties/Notion%20-%20Update%20page%20properties.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3284,7 +3284,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/_Retrieve%20plain%20text">_Retrieve plain text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/195c842cbd3b473eba2b8b7729624475">
+       <a href="https://www.icloud.com/shortcuts/3275fe3d07ef462b96ca5875b2474d3b">
        <img src="All%20Shortcuts/API%20-%20Notion/_Retrieve%20plain%20text/_Retrieve%20plain%20text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3293,7 +3293,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/_Overwrite%20plain%20text">_Overwrite plain text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e516be9223cd42e3b72fbe02a6b653c6">
+       <a href="https://www.icloud.com/shortcuts/ebd53242ac834f65b81ec8a88b787f6c">
        <img src="All%20Shortcuts/API%20-%20Notion/_Overwrite%20plain%20text/_Overwrite%20plain%20text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3302,8 +3302,34 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Notion/_Append%20plain%20text">_Append plain text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b81e0b4afec4797ac515ba2b3e16c17">
+       <a href="https://www.icloud.com/shortcuts/6db15edb834c4a5da8905518c2d8bb42">
        <img src="All%20Shortcuts/API%20-%20Notion/_Append%20plain%20text/_Append%20plain%20text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
+        <a href="All%20Shortcuts/API%20-%20GitHub">API - GitHub (2)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20List%20commits">GitHub - List commits</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/b952f8eb76b544e28c5f771258c49cf4">
+       <img src="All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20List%20commits/GitHub%20-%20List%20commits.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20Get%20repository%20content">GitHub - Get repository content</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/820ba48dfc7c4814be793c44f0844d11">
+       <img src="All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20Get%20repository%20content/GitHub%20-%20Get%20repository%20content.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
   </details>
@@ -3319,7 +3345,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Strava/%F0%9F%92%A6%20Review%20Today's%20Training">💦 Review Today's Training</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ac8ae2d2909c416ea70d8bcad52ed780">
+       <a href="https://www.icloud.com/shortcuts/bbd16b0a01794c059cb7be51a15e02d1">
        <img src="All%20Shortcuts/API%20-%20Strava/%F0%9F%92%A6%20Review%20Today's%20Training/%F0%9F%92%A6%20Review%20Today's%20Training.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3328,7 +3354,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Strava/%F0%9F%94%AD%20Workouts%20On%20This%20Day">🔭 Workouts On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0354fc728fd846b3b669e7dd32bad66b">
+       <a href="https://www.icloud.com/shortcuts/689ed29d25f24f72aac14df647053e6b">
        <img src="All%20Shortcuts/API%20-%20Strava/%F0%9F%94%AD%20Workouts%20On%20This%20Day/%F0%9F%94%AD%20Workouts%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3337,7 +3363,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Strava/%F0%9F%93%8A%20Review%20Training%20Stats">📊 Review Training Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5f87f3a8a8c2412dbae188a01f188c3c">
+       <a href="https://www.icloud.com/shortcuts/26710c267e8d4c42a635579ae11eaa40">
        <img src="All%20Shortcuts/API%20-%20Strava/%F0%9F%93%8A%20Review%20Training%20Stats/%F0%9F%93%8A%20Review%20Training%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3346,7 +3372,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Strava/Strava%20-%20Get%20Activity%20IDs%20On%20This%20Day">Strava - Get Activity IDs On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/be785f47e5f540968848850948ec65d1">
+       <a href="https://www.icloud.com/shortcuts/ecbfe2be2b174e4c895c131a1e7fc68b">
        <img src="All%20Shortcuts/API%20-%20Strava/Strava%20-%20Get%20Activity%20IDs%20On%20This%20Day/Strava%20-%20Get%20Activity%20IDs%20On%20This%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3355,7 +3381,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Strava/Strava%20-%20List%20Activities%20On%20Specific%20Date">Strava - List Activities On Specific Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bd9110d1f417459cbfb13239278da7f5">
+       <a href="https://www.icloud.com/shortcuts/52a52905d8234fa98cbd9243e8f4d072">
        <img src="All%20Shortcuts/API%20-%20Strava/Strava%20-%20List%20Activities%20On%20Specific%20Date/Strava%20-%20List%20Activities%20On%20Specific%20Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3364,7 +3390,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Strava/Strava%20-%20Get%20Activity%20Stats">Strava - Get Activity Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/77f1279844834ca9b331f3d1ca67fe59">
+       <a href="https://www.icloud.com/shortcuts/ecc88097ca5d4284bbf643c4a5381a95">
        <img src="All%20Shortcuts/API%20-%20Strava/Strava%20-%20Get%20Activity%20Stats/Strava%20-%20Get%20Activity%20Stats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3381,7 +3407,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20(All)%20Playlist%20Items">YouTube - Get (All) Playlist Items</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69d54161eb554a3ab9782ed76216e250">
+       <a href="https://www.icloud.com/shortcuts/04f07df87a064358896e7110c976602e">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20(All)%20Playlist%20Items/YouTube%20-%20Get%20(All)%20Playlist%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3390,7 +3416,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20commentThreads%20from%20videoID">YouTube - Get commentThreads from videoID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e0cdaa30226549bbb8d498ef538d11a1">
+       <a href="https://www.icloud.com/shortcuts/89dbe4a3ad024de0b547b8c531ec8615">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20commentThreads%20from%20videoID/YouTube%20-%20Get%20commentThreads%20from%20videoID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3399,7 +3425,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20playlistItemID%20from%20videoID">YouTube - Get playlistItemID from videoID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b04ffc2cb9a64b45b2f2e6afb10d8a5f">
+       <a href="https://www.icloud.com/shortcuts/555b838082df4ce389f1fece7d48f6c0">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20playlistItemID%20from%20videoID/YouTube%20-%20Get%20playlistItemID%20from%20videoID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3408,7 +3434,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Video%20Category%20from%20categoryId">YouTube - Get Video Category from categoryId</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/56f4754306e64c41a8124d63a3a6c78c">
+       <a href="https://www.icloud.com/shortcuts/a601a22df6e0480596823a1cd75323b5">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Video%20Category%20from%20categoryId/YouTube%20-%20Get%20Video%20Category%20from%20categoryId.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3417,7 +3443,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Check%20If%20Video%20Exists%20In%20Playlist">YouTube - Check If Video Exists In Playlist</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/364509b3a6004c718dbbbc5f85e03494">
+       <a href="https://www.icloud.com/shortcuts/4940a53d3731457f84bbc682b4828714">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Check%20If%20Video%20Exists%20In%20Playlist/YouTube%20-%20Check%20If%20Video%20Exists%20In%20Playlist.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3426,7 +3452,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Video%20Properties">YouTube - Get Video Properties</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/850c2a581cc24d4e9e3082a1b88d45ae">
+       <a href="https://www.icloud.com/shortcuts/f433b884f31e4e63b7d620eb4f3fc184">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Video%20Properties/YouTube%20-%20Get%20Video%20Properties.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3435,7 +3461,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Insert%20Playlist%20Item">YouTube - Insert Playlist Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f706dde063344ef593815074c534f729">
+       <a href="https://www.icloud.com/shortcuts/eda9cdf4c32345988ec87d80a2c91f9a">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Insert%20Playlist%20Item/YouTube%20-%20Insert%20Playlist%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3444,7 +3470,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Delete%20Playlist%20Item">YouTube - Delete Playlist Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2059a2518fd945f4892d4885055d9ca9">
+       <a href="https://www.icloud.com/shortcuts/6b189d2bc75c49508177bdbb467a8954">
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Delete%20Playlist%20Item/YouTube%20-%20Delete%20Playlist%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3461,7 +3487,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Gmail/Gmail%20-%20Get%20Number%20of%20Unread%20Newsletters">Gmail - Get Number of Unread Newsletters</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/346179c86900417abce1abc85fdc93ad">
+       <a href="https://www.icloud.com/shortcuts/622784c71e22483bb25c4d6394112d29">
        <img src="All%20Shortcuts/API%20-%20Gmail/Gmail%20-%20Get%20Number%20of%20Unread%20Newsletters/Gmail%20-%20Get%20Number%20of%20Unread%20Newsletters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3478,7 +3504,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Batch%20Update%20Cells">GSheets - Batch Update Cells</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ae946d15cb964d2b96b61804e58ca8cb">
+       <a href="https://www.icloud.com/shortcuts/cdc79897ea88473ab15a4cbf21fb52c2">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Batch%20Update%20Cells/GSheets%20-%20Batch%20Update%20Cells.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3487,7 +3513,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Add%20Sheet">GSheets - Add Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/68a800f5256a45ee828b0b62e143afd4">
+       <a href="https://www.icloud.com/shortcuts/15a15ff1ffc4479ca4ed2d47b5b48421">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Add%20Sheet/GSheets%20-%20Add%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3496,7 +3522,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Delete%20Sheet">GSheets - Delete Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/02393a68e70342878caac338f2ebad55">
+       <a href="https://www.icloud.com/shortcuts/dfcde3cc64df4627b65e733df40454a3">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Delete%20Sheet/GSheets%20-%20Delete%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3505,7 +3531,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Hide%20Sheet">GSheets - Hide Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fbf28b87f46c40a888493f3403b3c8e6">
+       <a href="https://www.icloud.com/shortcuts/3004234673954cf9b7ed3f92e3b22c18">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Hide%20Sheet/GSheets%20-%20Hide%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3514,7 +3540,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Unhide%20Sheet">GSheets - Unhide Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a12dc0d4daf14d81beb8c60c53048ec7">
+       <a href="https://www.icloud.com/shortcuts/f67bbbf0f5cf488c8ef61c6d3a2581e0">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Unhide%20Sheet/GSheets%20-%20Unhide%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3523,7 +3549,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Clear%20Sheet">GSheets - Clear Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4f91f6269c6745088b2832dc624064ed">
+       <a href="https://www.icloud.com/shortcuts/56fddba79ab644c2bc7960c8fcf073a7">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Clear%20Sheet/GSheets%20-%20Clear%20Sheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3532,7 +3558,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Get%20Spreadsheet">GSheets - Get Spreadsheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/43ea075a73f240fdaf25087412cbeae5">
+       <a href="https://www.icloud.com/shortcuts/d6f916cef061498c85ef493840b59d36">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Get%20Spreadsheet/GSheets%20-%20Get%20Spreadsheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3541,7 +3567,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Set%20Spreadsheet%20Title">GSheets - Set Spreadsheet Title</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a28edda77fe4bd7a8f39ea00f309e06">
+       <a href="https://www.icloud.com/shortcuts/1122f1d982f844bdb12a949c1d278996">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Set%20Spreadsheet%20Title/GSheets%20-%20Set%20Spreadsheet%20Title.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3550,7 +3576,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Cleanup%20Spreadsheet">GSheets - Cleanup Spreadsheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b17a61f430434a1f93f4f467b38cf0ed">
+       <a href="https://www.icloud.com/shortcuts/51003e9c5d264d0ea387edcd77e1edec">
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Cleanup%20Spreadsheet/GSheets%20-%20Cleanup%20Spreadsheet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3567,7 +3593,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Books/GBooks%20-%20Perform%20Book%20Search">GBooks - Perform Book Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69de7bce29ae4db7ae5c89d71324464b">
+       <a href="https://www.icloud.com/shortcuts/a25208696d57456083991d14026b02f3">
        <img src="All%20Shortcuts/API%20-%20Google%20Books/GBooks%20-%20Perform%20Book%20Search/GBooks%20-%20Perform%20Book%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3584,7 +3610,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Google%20Images/Google%20Images%20-%20Perform%20Image%20Search">Google Images - Perform Image Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e1486873138a4bdfb82f8ad2c3ecbfc2">
+       <a href="https://www.icloud.com/shortcuts/e9349614de424b54ae96638e351c90c5">
        <img src="All%20Shortcuts/API%20-%20Google%20Images/Google%20Images%20-%20Perform%20Image%20Search/Google%20Images%20-%20Perform%20Image%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3601,7 +3627,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20DeepL/DeepL%20-%20Translate%20Text">DeepL - Translate Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ee45897a095b4922af3d3d1a8c69e717">
+       <a href="https://www.icloud.com/shortcuts/1abb00b4e4344e54b3cd328790b29182">
        <img src="All%20Shortcuts/API%20-%20DeepL/DeepL%20-%20Translate%20Text/DeepL%20-%20Translate%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3618,7 +3644,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Open%20Library/Open%20Library%20-%20Perform%20Book%20Search">Open Library - Perform Book Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/17e8539f8c0246538f48b34bbf2a088a">
+       <a href="https://www.icloud.com/shortcuts/ce5ddc96f13849919c5552bb4361f274">
        <img src="All%20Shortcuts/API%20-%20Open%20Library/Open%20Library%20-%20Perform%20Book%20Search/Open%20Library%20-%20Perform%20Book%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3635,7 +3661,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20LOC/LOC%20-%20Perform%20Item%20Search">LOC - Perform Item Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d487d560b312440d9fe8d59d1b44bcf4">
+       <a href="https://www.icloud.com/shortcuts/c96a5c5b7785405e9de3b88ab226d5d4">
        <img src="All%20Shortcuts/API%20-%20LOC/LOC%20-%20Perform%20Item%20Search/LOC%20-%20Perform%20Item%20Search.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3652,7 +3678,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Search%20for%20Item">Spotify - Search for Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ab34644500df49e39468513f51850f42">
+       <a href="https://www.icloud.com/shortcuts/417993d0516d46608dde778d0d5f7d63">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Search%20for%20Item/Spotify%20-%20Search%20for%20Item.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3661,7 +3687,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Episode%20By%20ID">Spotify - Get Episode By ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/caded67a54a54bf2bd18d11ee65e22f6">
+       <a href="https://www.icloud.com/shortcuts/fd11614413144673b1d9f865a93c85b7">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Episode%20By%20ID/Spotify%20-%20Get%20Episode%20By%20ID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3670,7 +3696,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Current%20Device%20ID">Spotify - Get Current Device ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4177ec9930ac4fa98e7e7c8113bfc582">
+       <a href="https://www.icloud.com/shortcuts/6b313441745748dc920e4b8726ac2177">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Current%20Device%20ID/Spotify%20-%20Get%20Current%20Device%20ID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3679,7 +3705,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Transfer%20Playback">Spotify - Transfer Playback</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8b0c148788ce42d1988c9398d8b8c080">
+       <a href="https://www.icloud.com/shortcuts/2fb876ab6a3b4078abc59f8388eb733c">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Transfer%20Playback/Spotify%20-%20Transfer%20Playback.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3688,7 +3714,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle">Spotify - Toggle Playback Shuffle</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8d3eb810bbed418781c46f50bc3f5f92">
+       <a href="https://www.icloud.com/shortcuts/ab18a6a4b6e94ed1b7ea681a47397a18">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle/Spotify%20-%20Toggle%20Playback%20Shuffle.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3697,7 +3723,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Start%20or%20Resume%20Playback">Spotify - Start or Resume Playback</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8585ae1c77b54729a5d600b909891235">
+       <a href="https://www.icloud.com/shortcuts/ff92a66178e24b3e8a225b1d6825e08f">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Start%20or%20Resume%20Playback/Spotify%20-%20Start%20or%20Resume%20Playback.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3706,7 +3732,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Pause%20Playback">Spotify - Pause Playback</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4a8307a8ee7e4d4ca6498e51464c9136">
+       <a href="https://www.icloud.com/shortcuts/7d34574a54914d12a989ad9241057564">
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Pause%20Playback/Spotify%20-%20Pause%20Playback.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3723,7 +3749,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20TMDb/TMDb%20-%20Find%20By%20External%20ID">TMDb - Find By External ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6da3bbf56a4340889d0da170a8f834f0">
+       <a href="https://www.icloud.com/shortcuts/49fbe00c2d384358bc1f4fdece06684b">
        <img src="All%20Shortcuts/API%20-%20TMDb/TMDb%20-%20Find%20By%20External%20ID/TMDb%20-%20Find%20By%20External%20ID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3732,7 +3758,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20TMDb/TMDb%20-%20Get%20Media%20Details%20By%20ID">TMDb - Get Media Details By ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8551771610dc42ee91bb8f2e72bc143d">
+       <a href="https://www.icloud.com/shortcuts/4cc1d7d447e14c799f5b04f54e3754e6">
        <img src="All%20Shortcuts/API%20-%20TMDb/TMDb%20-%20Get%20Media%20Details%20By%20ID/TMDb%20-%20Get%20Media%20Details%20By%20ID.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3749,7 +3775,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Get%20Random%20Recipes">Spoonacular - Get Random Recipes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4505d000ed6c42f19a191dd0dbef3b59">
+       <a href="https://www.icloud.com/shortcuts/edefade8650d4a0ab587e7bf13ba96b0">
        <img src="All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Get%20Random%20Recipes/Spoonacular%20-%20Get%20Random%20Recipes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3758,7 +3784,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Create%20Recipe%20Card">Spoonacular - Create Recipe Card</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cdc8f2e09c64473e8ab7a01c0eaee9b4">
+       <a href="https://www.icloud.com/shortcuts/639326e1c6514e46b75c0d37ede210c1">
        <img src="All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Create%20Recipe%20Card/Spoonacular%20-%20Create%20Recipe%20Card.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3775,7 +3801,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/%F0%9F%9B%B0%EF%B8%8F%20Generate%20NASA's%20APOD%20Report">🛰️ Generate NASA's APOD Report</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/79dcf69e8425445c93d50b27d90865e3">
+       <a href="https://www.icloud.com/shortcuts/2b1b91cff1094bfab3bdf348ca7647dd">
        <img src="All%20Shortcuts/API%20-%20NASA/%F0%9F%9B%B0%EF%B8%8F%20Generate%20NASA's%20APOD%20Report/%F0%9F%9B%B0%EF%B8%8F%20Generate%20NASA's%20APOD%20Report.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3784,7 +3810,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Object">NASA - Get APOD Object</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/962bfa1562f6468ab85b77c11b1b1704">
+       <a href="https://www.icloud.com/shortcuts/e9e7b0d4ea99476daf062ee6d3c1b495">
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Object/NASA%20-%20Get%20APOD%20Object.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3793,7 +3819,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Image">NASA - Get APOD Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/82ad222678e74b40a11576e684320ea1">
+       <a href="https://www.icloud.com/shortcuts/c0d7f036a3bc45d69ba6abe6e1b06bae">
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Image/NASA%20-%20Get%20APOD%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3802,7 +3828,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20Mars%20Rover%20Photo">NASA - Get Mars Rover Photo</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f855f42927a84ca8a732f3a4ea3118f2">
+       <a href="https://www.icloud.com/shortcuts/65bf1903699b4917a908d6bcfcadb51c">
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20Mars%20Rover%20Photo/NASA%20-%20Get%20Mars%20Rover%20Photo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3811,7 +3837,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20EPIC%20Image">NASA - Get EPIC Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8bfa1fd8e60749e1a200400297002288">
+       <a href="https://www.icloud.com/shortcuts/12262aab68d84d24a5e57e9428d64c9f">
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20EPIC%20Image/NASA%20-%20Get%20EPIC%20Image.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3828,7 +3854,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Flickr/Flickr%20-%20Search%20Photos">Flickr - Search Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/765bc97e4e6545b29f8f2a77699e14ba">
+       <a href="https://www.icloud.com/shortcuts/6906600b7efb43dba144a5c800cc59fd">
        <img src="All%20Shortcuts/API%20-%20Flickr/Flickr%20-%20Search%20Photos/Flickr%20-%20Search%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3837,7 +3863,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Flickr/Flickr%20-%20Get%20Popular%20Photos">Flickr - Get Popular Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ce0860ab56b946d28bbb6b073c536909">
+       <a href="https://www.icloud.com/shortcuts/1fc0222507ec47c4b49399daf7bf4dff">
        <img src="All%20Shortcuts/API%20-%20Flickr/Flickr%20-%20Get%20Popular%20Photos/Flickr%20-%20Get%20Popular%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3846,7 +3872,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Flickr/_Base58%20Enconding%20for%20photoId">_Base58 Enconding for photoId</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e93883a1254d40a28b596f1fd512a46e">
+       <a href="https://www.icloud.com/shortcuts/4f44a963dec7431fa0c177bffcb7eb79">
        <img src="All%20Shortcuts/API%20-%20Flickr/_Base58%20Enconding%20for%20photoId/_Base58%20Enconding%20for%20photoId.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3863,7 +3889,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Unsplash/Unsplash%20-%20Search%20Photos">Unsplash - Search Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8957f803a467440e9b88a817971b02f4">
+       <a href="https://www.icloud.com/shortcuts/8943344f663d475d802fb9a4ea869674">
        <img src="All%20Shortcuts/API%20-%20Unsplash/Unsplash%20-%20Search%20Photos/Unsplash%20-%20Search%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3872,7 +3898,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Unsplash/Unsplash%20-%20Get%20Popular%20Photos">Unsplash - Get Popular Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/42c403c5c9e64a0eaad574de443880c6">
+       <a href="https://www.icloud.com/shortcuts/87ad3bb35d6f487b81655ed6fbd6fb4d">
        <img src="All%20Shortcuts/API%20-%20Unsplash/Unsplash%20-%20Get%20Popular%20Photos/Unsplash%20-%20Get%20Popular%20Photos.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3889,7 +3915,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Reddit/Reddit%20-%20Get%20Random%20Top%20Post%20of%20A%20Subreddit">Reddit - Get Random Top Post of A Subreddit</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/695cc9cbc4634c3db62c58526341faa0">
+       <a href="https://www.icloud.com/shortcuts/76ff103072194950909fdcdcb10749d6">
        <img src="All%20Shortcuts/API%20-%20Reddit/Reddit%20-%20Get%20Random%20Top%20Post%20of%20A%20Subreddit/Reddit%20-%20Get%20Random%20Top%20Post%20of%20A%20Subreddit.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3906,7 +3932,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Hacker%20News/Hacker%20News%20-%20Get%20Random%20Top%20Story">Hacker News - Get Random Top Story</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ca15cb81499e4814a6ee0248ea5c6793">
+       <a href="https://www.icloud.com/shortcuts/a69409cb6ccc4e7b8de30e24af22e6f3">
        <img src="All%20Shortcuts/API%20-%20Hacker%20News/Hacker%20News%20-%20Get%20Random%20Top%20Story/Hacker%20News%20-%20Get%20Random%20Top%20Story.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3923,7 +3949,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Playing%20Card%20Shuffler">Playing Card Shuffler</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bc9d9018d62d4430bef4e6a2c40052bf">
+       <a href="https://www.icloud.com/shortcuts/7ea5f2ba5b3a4c4bbe1df41d1505d277">
        <img src="All%20Shortcuts/API%20-%20Others/Playing%20Card%20Shuffler/Playing%20Card%20Shuffler.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3932,7 +3958,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Find%20Emoji">Find Emoji</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ddf0131d96e64a5cb8461484b2f9f1b9">
+       <a href="https://www.icloud.com/shortcuts/7b40e40cab144c0987352c9d13ae88d0">
        <img src="All%20Shortcuts/API%20-%20Others/Find%20Emoji/Find%20Emoji.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3941,7 +3967,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Number%20Of%20The%20Day">Get Number Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9a5d4b584f344f4b9a524d00b884c3da">
+       <a href="https://www.icloud.com/shortcuts/7775d982612a41b0a62103ce92e3f271">
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Number%20Of%20The%20Day/Get%20Number%20Of%20The%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3950,7 +3976,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Facts%20About%20Numbers">Get Facts About Numbers</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4b30a95d2ef949029dcac22ff97b2d71">
+       <a href="https://www.icloud.com/shortcuts/05795711c2dd407795558f7a6c2fc6a5">
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Facts%20About%20Numbers/Get%20Facts%20About%20Numbers.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3959,7 +3985,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes">Get Random Quote from ZenQuotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b610c63cf7b4961b52b5f7ffe242b8f">
+       <a href="https://www.icloud.com/shortcuts/a5d4af832d334881885c2c0e2f925734">
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes/Get%20Random%20Quote%20from%20ZenQuotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3968,7 +3994,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Random%20Joke">Get Random Joke</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6161ac09936049eaa1761316001eb551">
+       <a href="https://www.icloud.com/shortcuts/a2157b0db9654fb7909f43bda6bebef6">
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Random%20Joke/Get%20Random%20Joke.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3985,7 +4011,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/Format%20Positional%20Duration%20To%20Seconds">Format Positional Duration To Seconds</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/41585612d5c34d30a3a4c9c856c95a4f">
+       <a href="https://www.icloud.com/shortcuts/7eaf58a1109e4f02adc4bd2ae29248af">
        <img src="All%20Shortcuts/Date%20%26%20Time/Format%20Positional%20Duration%20To%20Seconds/Format%20Positional%20Duration%20To%20Seconds.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -3994,7 +4020,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/Round%20Time%20to%20Nearest%20Xmin">Round Time to Nearest Xmin</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/92090d35a1d645299433186466bd7ade">
+       <a href="https://www.icloud.com/shortcuts/16d0f76850704a41917d1296b402f983">
        <img src="All%20Shortcuts/Date%20%26%20Time/Round%20Time%20to%20Nearest%20Xmin/Round%20Time%20to%20Nearest%20Xmin.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4003,7 +4029,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/Date2UnixTimestamp">Date2UnixTimestamp</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/67553c8122574f869b25c32057720ded">
+       <a href="https://www.icloud.com/shortcuts/5e074a7d70ae4cab89571b26fc9cc864">
        <img src="All%20Shortcuts/Date%20%26%20Time/Date2UnixTimestamp/Date2UnixTimestamp.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4012,7 +4038,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/UnixTimestamp2Date">UnixTimestamp2Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e95d232f9ed14ee99b4aff9e56df5d99">
+       <a href="https://www.icloud.com/shortcuts/31fe9895aa4847c686df8055a3dbed0b">
        <img src="All%20Shortcuts/Date%20%26%20Time/UnixTimestamp2Date/UnixTimestamp2Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4021,7 +4047,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayInTheFirstWeekOfTheMonth%3F">isTodayInTheFirstWeekOfTheMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8eef31792d9d4bfa9cbee68b935c95fd">
+       <a href="https://www.icloud.com/shortcuts/dbb322b5b3424cc482e8d6494b397d98">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayInTheFirstWeekOfTheMonth%3F/isTodayInTheFirstWeekOfTheMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4030,7 +4056,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayInTheLastWeekOfTheMonth%3F">isTodayInTheLastWeekOfTheMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/607e5f4dba9c42d38142c1b461e7da1c">
+       <a href="https://www.icloud.com/shortcuts/f8194337684f44cb8f6c361ef3d05baf">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayInTheLastWeekOfTheMonth%3F/isTodayInTheLastWeekOfTheMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4039,7 +4065,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayWorkday%3F">isTodayWorkday?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c96ec7a3dde54115a6cde03b42a3f2e5">
+       <a href="https://www.icloud.com/shortcuts/c4996f888d7a46978816d1a37183c808">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayWorkday%3F/isTodayWorkday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4048,7 +4074,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTomorrowWorkday%3F">isTomorrowWorkday?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3e7c2c14aa164da39a6f03e3840609bd">
+       <a href="https://www.icloud.com/shortcuts/9920bbd5625c469e96d5e79a933a660b">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTomorrowWorkday%3F/isTomorrowWorkday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4057,7 +4083,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayPublicHoliday%3F">isTodayPublicHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/50cea92a153345efb1228b2f65af6720">
+       <a href="https://www.icloud.com/shortcuts/ada1fff28f9243e5859645cf87bb2f51">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayPublicHoliday%3F/isTodayPublicHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4066,7 +4092,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTomorrowPublicHoliday%3F">isTomorrowPublicHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/984d3b0ebf0f44a8b4aae3067be41de2">
+       <a href="https://www.icloud.com/shortcuts/79086799919e4230b6d844e5200304d4">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTomorrowPublicHoliday%3F/isTomorrowPublicHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4075,7 +4101,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayMyHoliday%3F">isTodayMyHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/965644d8f21d4366958d38fa6ae58fe7">
+       <a href="https://www.icloud.com/shortcuts/e6477406407f40a38bb1323923b64f10">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayMyHoliday%3F/isTodayMyHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4084,7 +4110,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTomorrowMyHoliday%3F">isTomorrowMyHoliday?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0d1d2bde2eaf496490e2d95f5e9c9bd2">
+       <a href="https://www.icloud.com/shortcuts/d63a94389ddc4fee8aa7bdf322bbb1dd">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTomorrowMyHoliday%3F/isTomorrowMyHoliday%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4093,7 +4119,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayWeekend%3F">isTodayWeekend?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ec9bd3338baf46c89436d4ef110825f1">
+       <a href="https://www.icloud.com/shortcuts/077245120e454d7f969e47237c6c4e3a">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayWeekend%3F/isTodayWeekend%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4102,7 +4128,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTomorrowWeekend%3F">isTomorrowWeekend?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7f67502655774568b93ada1483a47ddf">
+       <a href="https://www.icloud.com/shortcuts/047ef42958534b7784fb45e1ec6d07cf">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTomorrowWeekend%3F/isTomorrowWeekend%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4111,7 +4137,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayStartOfMonth%3F">isTodayStartOfMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/39d4b3b989c74b38a98da59d1e0af409">
+       <a href="https://www.icloud.com/shortcuts/ce078fd774b34fd6866362c556410bc8">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayStartOfMonth%3F/isTodayStartOfMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4120,7 +4146,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayEndOfMonth%3F">isTodayEndOfMonth?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5688274a006b4afea9e5b9cde20c6964">
+       <a href="https://www.icloud.com/shortcuts/4d4d1718eb3342d08cb7659ca731e295">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayEndOfMonth%3F/isTodayEndOfMonth%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4129,7 +4155,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayEndOfQuarter%3F">isTodayEndOfQuarter?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6c9fed7dcc2e48be87539e79504d6bec">
+       <a href="https://www.icloud.com/shortcuts/949ca222a2c446b8839e5a3d072ef3f1">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayEndOfQuarter%3F/isTodayEndOfQuarter%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4138,7 +4164,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayNewYear'sDay%3F">isTodayNewYear'sDay?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b6716a0d3c354a70a1559bb7907d83fe">
+       <a href="https://www.icloud.com/shortcuts/f831911391874342b8d80ec90ae97362">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayNewYear'sDay%3F/isTodayNewYear'sDay%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4147,7 +4173,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTodayWFH%3F">isTodayWFH?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d9317523e98a40e3a25c756e507879ee">
+       <a href="https://www.icloud.com/shortcuts/db3e7ad639d440ada4e4a952cb70fe1f">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTodayWFH%3F/isTodayWFH%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4156,7 +4182,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/isTomorrowWFH%3F">isTomorrowWFH?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/356e22eb66ad4484a9ff49914bfe1620">
+       <a href="https://www.icloud.com/shortcuts/ef49eb9e37a2422387ccf00629beded4">
        <img src="All%20Shortcuts/Date%20%26%20Time/isTomorrowWFH%3F/isTomorrowWFH%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4165,7 +4191,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/getWeekNumber1">getWeekNumber1</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/baa4de170c2a410b84c42883522cc2ac">
+       <a href="https://www.icloud.com/shortcuts/aa8820feddb34824a97840c0f78bd8c0">
        <img src="All%20Shortcuts/Date%20%26%20Time/getWeekNumber1/getWeekNumber1.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4174,7 +4200,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/getWeekNumber2">getWeekNumber2</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5f401ff5330d4bb7805230e221307d42">
+       <a href="https://www.icloud.com/shortcuts/bf2a5dc6fa5446308f1ff25868757a02">
        <img src="All%20Shortcuts/Date%20%26%20Time/getWeekNumber2/getWeekNumber2.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4183,7 +4209,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/getDayOfWeek">getDayOfWeek</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1d6884b2d0df4e1c9d653c8bf3732422">
+       <a href="https://www.icloud.com/shortcuts/05a7138caf004e6b95db38772eed84c6">
        <img src="All%20Shortcuts/Date%20%26%20Time/getDayOfWeek/getDayOfWeek.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4192,7 +4218,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/getDayOfMonth">getDayOfMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b9c3d42f6fa4637b3a1231444991811">
+       <a href="https://www.icloud.com/shortcuts/9b54d5c58de24f73aad31a9c8d31229b">
        <img src="All%20Shortcuts/Date%20%26%20Time/getDayOfMonth/getDayOfMonth.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4201,7 +4227,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/getQuarterNumber">getQuarterNumber</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3f443986677844b2ade9599c095ee6e0">
+       <a href="https://www.icloud.com/shortcuts/d32373b2e27e4743bd8de9aea10a19fa">
        <img src="All%20Shortcuts/Date%20%26%20Time/getQuarterNumber/getQuarterNumber.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4210,7 +4236,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/Get%20Relative%20Date%20Text">Get Relative Date Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a64e330776e34ce89d30e088fb16e065">
+       <a href="https://www.icloud.com/shortcuts/26b64ef85aba4e14baffe42ea5a71688">
        <img src="All%20Shortcuts/Date%20%26%20Time/Get%20Relative%20Date%20Text/Get%20Relative%20Date%20Text.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4219,7 +4245,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Date%20%26%20Time/getFirstAndLastDayOfMonthAgo">getFirstAndLastDayOfMonthAgo</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b3fdcada05cf4620a6e194558a6fab21">
+       <a href="https://www.icloud.com/shortcuts/a39fb4a7fb8e4e9a872c1e2906d23cea">
        <img src="All%20Shortcuts/Date%20%26%20Time/getFirstAndLastDayOfMonthAgo/getFirstAndLastDayOfMonthAgo.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4236,7 +4262,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%82%20File%20Explorer">📂 File Explorer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/56fa364a22024038b7a23fbf82f2e1a7">
+       <a href="https://www.icloud.com/shortcuts/4d1dbc4b34f64ee08e271703b99068ee">
        <img src="All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%82%20File%20Explorer/%F0%9F%93%82%20File%20Explorer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4245,7 +4271,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%81%20Save%20Files">📁 Save Files</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c92f270eb91b414e8ab3d8670045d09f">
+       <a href="https://www.icloud.com/shortcuts/7beb516a323a445682439f7c78bad041">
        <img src="All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%81%20Save%20Files/%F0%9F%93%81%20Save%20Files.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4254,7 +4280,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Files%20%26%20Folders/Share%20File(s)">Share File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a9792449c8fd4b7b818fcd51cee65c59">
+       <a href="https://www.icloud.com/shortcuts/fad09f4fb1ad4e54ae1ec045726e70a6">
        <img src="All%20Shortcuts/Files%20%26%20Folders/Share%20File(s)/Share%20File(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4263,7 +4289,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Files%20%26%20Folders/Cleanup%20Folder">Cleanup Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/36c477feea10413c8dc2082336b71c26">
+       <a href="https://www.icloud.com/shortcuts/67be3202193442ccbfb34dc979644b92">
        <img src="All%20Shortcuts/Files%20%26%20Folders/Cleanup%20Folder/Cleanup%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4272,7 +4298,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Files%20%26%20Folders/Create%20Empty%20File%20or%20Clear%20File">Create Empty File or Clear File</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1ef7e9ba976e40a695dd3d0d1814bc2b">
+       <a href="https://www.icloud.com/shortcuts/b9e0c4fe0dbf449cbec34fa708234fb8">
        <img src="All%20Shortcuts/Files%20%26%20Folders/Create%20Empty%20File%20or%20Clear%20File/Create%20Empty%20File%20or%20Clear%20File.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4281,7 +4307,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Files%20%26%20Folders/Move%20File%20or%20Folder">Move File or Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a7b196a0decd4e57ad623ca53ba28e8b">
+       <a href="https://www.icloud.com/shortcuts/5f9b149f7154488892b961071081a43c">
        <img src="All%20Shortcuts/Files%20%26%20Folders/Move%20File%20or%20Folder/Move%20File%20or%20Folder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4298,7 +4324,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/Get%20List%20from%20Input">Get List from Input</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f8c38df6872f42efa7461eee95ed91c9">
+       <a href="https://www.icloud.com/shortcuts/53e7d2193ced499791f183efa0eb0097">
        <img src="All%20Shortcuts/List/Get%20List%20from%20Input/Get%20List%20from%20Input.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4307,7 +4333,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/Transform%20to%20List%20String">Transform to List String</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b3d87be3cf9d420bbe7a594c746f2a41">
+       <a href="https://www.icloud.com/shortcuts/0afd86c7848c4ead97b18be9d0da7549">
        <img src="All%20Shortcuts/List/Transform%20to%20List%20String/Transform%20to%20List%20String.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4316,7 +4342,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/isList%3F">isList?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2968057490cc45269442c181c3b59da5">
+       <a href="https://www.icloud.com/shortcuts/f95bfea5139145b19a11b9334ca34b66">
        <img src="All%20Shortcuts/List/isList%3F/isList%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4325,7 +4351,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/Merge%20Lists">Merge Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b60ebf4b8844fec811fc6a078dc8847">
+       <a href="https://www.icloud.com/shortcuts/469b2476effe490b8a74966508b606e6">
        <img src="All%20Shortcuts/List/Merge%20Lists/Merge%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4334,7 +4360,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/Count%20Occurrence%20Of%20Unique%20List%20Items">Count Occurrence Of Unique List Items</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/41917c40ddd142d3a3b13e0267e3d6ab">
+       <a href="https://www.icloud.com/shortcuts/5275515594e546cf90c2b4a4cd1ba918">
        <img src="All%20Shortcuts/List/Count%20Occurrence%20Of%20Unique%20List%20Items/Count%20Occurrence%20Of%20Unique%20List%20Items.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4343,7 +4369,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/_Get%20Random%20Index%20From%20List">_Get Random Index From List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/711e22d9e09841a88a42274535290d7d">
+       <a href="https://www.icloud.com/shortcuts/6309efdbe5e444419b6e40e36a8799ef">
        <img src="All%20Shortcuts/List/_Get%20Random%20Index%20From%20List/_Get%20Random%20Index%20From%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4352,7 +4378,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/List/_Get%20Random%20Item%20From%20List">_Get Random Item From List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6d510bfc12a54d3e95a1daf48ca3a89e">
+       <a href="https://www.icloud.com/shortcuts/65bb3714f4384bffad6d58c214397512">
        <img src="All%20Shortcuts/List/_Get%20Random%20Item%20From%20List/_Get%20Random%20Item%20From%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4369,7 +4395,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Dictionary/isDictionary%3F">isDictionary?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e01aaf76be0743c7bcd763a36ec20a74">
+       <a href="https://www.icloud.com/shortcuts/4ec36d46f5e74ddcbc27a454eadcf201">
        <img src="All%20Shortcuts/Dictionary/isDictionary%3F/isDictionary%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4378,7 +4404,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Dictionary/Merge%20Dictionaries">Merge Dictionaries</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/be1fc05ff2f340b9bd940d8f7dd74e27">
+       <a href="https://www.icloud.com/shortcuts/309cf0e86d3f4fbbaa1592fcc88893a3">
        <img src="All%20Shortcuts/Dictionary/Merge%20Dictionaries/Merge%20Dictionaries.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4387,7 +4413,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Dictionary/Pretty%20Print%20Dictionary">Pretty Print Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f6e16e9d3f3c4e1790337450c4945151">
+       <a href="https://www.icloud.com/shortcuts/81ef48e61d074f3bbf9ef4eb76805068">
        <img src="All%20Shortcuts/Dictionary/Pretty%20Print%20Dictionary/Pretty%20Print%20Dictionary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4404,7 +4430,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Forecast">Get Today's Hourly Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/215e912b5a6a4cad984f38af6216af38">
+       <a href="https://www.icloud.com/shortcuts/fd1d7c3e60854d02af2c5a97dd0b7807">
        <img src="All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Forecast/Get%20Today's%20Hourly%20Weather%20Forecast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4413,7 +4439,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Data">Get Today's Hourly Weather Data</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e8b954d4f67b4894b0e81da3be60a30c">
+       <a href="https://www.icloud.com/shortcuts/08849d29e2b742dcb87ab5648d947686">
        <img src="All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Data/Get%20Today's%20Hourly%20Weather%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4422,7 +4448,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Get%20Daily%20Weather%20Forecast">Get Daily Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e30c5ba767b149b4a38f48b741ef9995">
+       <a href="https://www.icloud.com/shortcuts/040c2220705543c3b01c6087ff3afd65">
        <img src="All%20Shortcuts/Weather/Get%20Daily%20Weather%20Forecast/Get%20Daily%20Weather%20Forecast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4431,7 +4457,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Get%20Daily%20Overall%20PoP%20%25">Get Daily Overall PoP %</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8cfbe35b18bc4109958470229960cd75">
+       <a href="https://www.icloud.com/shortcuts/d79a6ae5dc164c0bb9546d025ee65878">
        <img src="All%20Shortcuts/Weather/Get%20Daily%20Overall%20PoP%20%25/Get%20Daily%20Overall%20PoP%20%25.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4440,7 +4466,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary">Generate Banner for Daily Weather Brief Summary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/117546ce00d940a68f3dfba471d357c4">
+       <a href="https://www.icloud.com/shortcuts/07bd967cda2d45a681d3e7e4bb1a919c">
        <img src="All%20Shortcuts/Weather/Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary/Generate%20Banner%20for%20Daily%20Weather%20Brief%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4449,7 +4475,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Generate%20Daily%20Weather%20Brief%20Summary">Generate Daily Weather Brief Summary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cf4a08f51d0d48ec8a6bbe960238495d">
+       <a href="https://www.icloud.com/shortcuts/84bd44c013734ce4894be88b5531c97c">
        <img src="All%20Shortcuts/Weather/Generate%20Daily%20Weather%20Brief%20Summary/Generate%20Daily%20Weather%20Brief%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4458,7 +4484,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Show%20Daily%20Weather%20Brief%20Summary">Show Daily Weather Brief Summary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ff5ee32cf1a44ddd9a16259358d75a58">
+       <a href="https://www.icloud.com/shortcuts/077fe0159043449d849a88e823542c29">
        <img src="All%20Shortcuts/Weather/Show%20Daily%20Weather%20Brief%20Summary/Show%20Daily%20Weather%20Brief%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4467,7 +4493,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/Fetch%20Today's%20Weather%20Info">Fetch Today's Weather Info</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1300f353f5164123b359700187cc62f1">
+       <a href="https://www.icloud.com/shortcuts/461bd48fdd4d4aaab81ae847c05de65f">
        <img src="All%20Shortcuts/Weather/Fetch%20Today's%20Weather%20Info/Fetch%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4476,7 +4502,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/isSunUp%3F">isSunUp?</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9f609bbc2df44df7a2de20fb3e758684">
+       <a href="https://www.icloud.com/shortcuts/2f20580f715746e5b6f6bc430e17a439">
        <img src="All%20Shortcuts/Weather/isSunUp%3F/isSunUp%3F.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4485,7 +4511,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/_Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data">_Get Key-Value Pair for Max Hourly Weather Data</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/763bff486fe349f0a30dda38e8697546">
+       <a href="https://www.icloud.com/shortcuts/0d1ecfa566fd42b58fcb737bb60aa158">
        <img src="All%20Shortcuts/Weather/_Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data/_Get%20Key-Value%20Pair%20for%20Max%20Hourly%20Weather%20Data.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4494,7 +4520,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/_AMPM2%E6%99%82%E8%BE%B0">_AMPM2時辰</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ec666c0c04fb4a668e5456ba9b0c4137">
+       <a href="https://www.icloud.com/shortcuts/f7bb85a6e9c74a2bbe29674f8c6b0f90">
        <img src="All%20Shortcuts/Weather/_AMPM2%E6%99%82%E8%BE%B0/_AMPM2%E6%99%82%E8%BE%B0.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4503,7 +4529,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Weather/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E">_今日 X 點至 X + 1 點</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e15180d7b4f14705968ee66e7059ee3e">
+       <a href="https://www.icloud.com/shortcuts/48abb5be24594889a8672845b23e5201">
        <img src="All%20Shortcuts/Weather/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4520,7 +4546,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Clipboard/Show%20Clipboard">Show Clipboard</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9604373c6af6422f888c80308007fcad">
+       <a href="https://www.icloud.com/shortcuts/00950716aaa74c29b54f17e391abe788">
        <img src="All%20Shortcuts/Clipboard/Show%20Clipboard/Show%20Clipboard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4529,7 +4555,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Clipboard/Clear%20Clipboard">Clear Clipboard</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/23b6106cab7c4ef09cea435ae36949c6">
+       <a href="https://www.icloud.com/shortcuts/7ed41cc9cad2450295a4c62e70e7da91">
        <img src="All%20Shortcuts/Clipboard/Clear%20Clipboard/Clear%20Clipboard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4538,7 +4564,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Clipboard/Copy%20to%20Clipboard">Copy to Clipboard</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e5d5833f58f444fdb69453e8a439fb6f">
+       <a href="https://www.icloud.com/shortcuts/dad2ada6eaa040b6a375ac97058e7d73">
        <img src="All%20Shortcuts/Clipboard/Copy%20to%20Clipboard/Copy%20to%20Clipboard.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4547,7 +4573,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Clipboard/Notify%20%22Copied%20to%20Clipboard!%22">Notify "Copied to Clipboard!"</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cc801ec54dbb4eb89ac8e0037fe3dc6a">
+       <a href="https://www.icloud.com/shortcuts/aaae0304fbf04df39cd241c3dc690dd8">
        <img src="All%20Shortcuts/Clipboard/Notify%20%22Copied%20to%20Clipboard!%22/Notify%20%22Copied%20to%20Clipboard!%22.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4564,7 +4590,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/pdf2audio">pdf2audio</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8c052f43bb8649e89cbacfbc2a7cda92">
+       <a href="https://www.icloud.com/shortcuts/24832af258fc4af896b2eebe57083feb">
        <img src="All%20Shortcuts/Audio/pdf2audio/pdf2audio.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4573,7 +4599,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/Play%20Background%20Sound">Play Background Sound</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ec6d4d0b66304aaaaa9527a404f0fb5a">
+       <a href="https://www.icloud.com/shortcuts/65913653e01d4176ae81bdfb4040d022">
        <img src="All%20Shortcuts/Audio/Play%20Background%20Sound/Play%20Background%20Sound.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4582,7 +4608,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/Convert%20Sound%20File%20to%20Base64">Convert Sound File to Base64</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/91d9ed7c79244272868122e7961e5507">
+       <a href="https://www.icloud.com/shortcuts/a3b3f241ba454cc7890aad688901337e">
        <img src="All%20Shortcuts/Audio/Convert%20Sound%20File%20to%20Base64/Convert%20Sound%20File%20to%20Base64.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4591,7 +4617,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/Pause%20Audio">Pause Audio</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/14a453a767614d8a8a8a3c3e8366049f">
+       <a href="https://www.icloud.com/shortcuts/51f2745e2fcd42f292d98993b5c9f884">
        <img src="All%20Shortcuts/Audio/Pause%20Audio/Pause%20Audio.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4600,7 +4626,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/_Audio%20Timer">_Audio Timer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e9862c3fd472460ba5b240cb514ff1f5">
+       <a href="https://www.icloud.com/shortcuts/dc9bf802b04142629433dd9945965360">
        <img src="All%20Shortcuts/Audio/_Audio%20Timer/_Audio%20Timer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4609,7 +4635,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/_Play%20Audio%20File(s)">_Play Audio File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f329642835b0436d969c7b1075e805f3">
+       <a href="https://www.icloud.com/shortcuts/2eea80e95fae4c54a57531799b29211a">
        <img src="All%20Shortcuts/Audio/_Play%20Audio%20File(s)/_Play%20Audio%20File(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4618,7 +4644,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/_MakeTTSSpokenAudio">_MakeTTSSpokenAudio</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cb732a8403c241d6adbd2181c8cc5399">
+       <a href="https://www.icloud.com/shortcuts/d4aeef0ec3be40bbb74460761ece09f0">
        <img src="All%20Shortcuts/Audio/_MakeTTSSpokenAudio/_MakeTTSSpokenAudio.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4627,7 +4653,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/_Text2Speech">_Text2Speech</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2508b9bacc4b466eba060b36ff6d2d3a">
+       <a href="https://www.icloud.com/shortcuts/19a9dfeeb00f430f8028ac5a210ef5cb">
        <img src="All%20Shortcuts/Audio/_Text2Speech/_Text2Speech.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4636,7 +4662,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audio/_Text2SpeechAudioFile(s)">_Text2SpeechAudioFile(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e9b8716610f047ed98b5fe2acffdcc2c">
+       <a href="https://www.icloud.com/shortcuts/8ab717afb6464dd989063657f922f9b6">
        <img src="All%20Shortcuts/Audio/_Text2SpeechAudioFile(s)/_Text2SpeechAudioFile(s).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4653,7 +4679,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Enable%20Auto-Lock">Enable Auto-Lock</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c16de8a21a614950a3c44852d6e8d6b2">
+       <a href="https://www.icloud.com/shortcuts/eafaa61038694c26bf15961a792f461b">
        <img src="All%20Shortcuts/iPhone%20Settings/Enable%20Auto-Lock/Enable%20Auto-Lock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4662,7 +4688,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Disable%20Auto-Lock">Disable Auto-Lock</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/97e5a158983b4cb1ab219ae5fc70d97f">
+       <a href="https://www.icloud.com/shortcuts/6c5c0d30f9c74e4b9cd29ac863c24a96">
        <img src="All%20Shortcuts/iPhone%20Settings/Disable%20Auto-Lock/Disable%20Auto-Lock.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4671,7 +4697,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Auto-Lock%20Setting">Go to Auto-Lock Setting</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/acdf21e7e77f4e46a8e7e2cffda16e5f">
+       <a href="https://www.icloud.com/shortcuts/b6c3f1b6312246b5af7328cfa87066d3">
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20Auto-Lock%20Setting/Go%20to%20Auto-Lock%20Setting.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4680,7 +4706,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time%20Summary">Go to Screen Time Summary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/935261e4e9094e6e884a5324ae272a8a">
+       <a href="https://www.icloud.com/shortcuts/f85bccc69ff04d57b0f58e5d9101ff8b">
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time%20Summary/Go%20to%20Screen%20Time%20Summary.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4689,7 +4715,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20Bluetooth%20Setting">Go to Bluetooth Setting</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6d9d6dac11564a41a6af733f8099d903">
+       <a href="https://www.icloud.com/shortcuts/3accf60cd06b41298d9674e028b6ffdf">
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20Bluetooth%20Setting/Go%20to%20Bluetooth%20Setting.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4698,7 +4724,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Go%20to%20WiFi%20Setting">Go to WiFi Setting</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/892d90c5834b45bd809cda3e673343fc">
+       <a href="https://www.icloud.com/shortcuts/64b4c25dc71244c181318aebd850fbe5">
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20WiFi%20Setting/Go%20to%20WiFi%20Setting.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4707,7 +4733,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Join%20WiFi">Join WiFi</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/687fe102337e4b1a9fc4f3e34b0b7216">
+       <a href="https://www.icloud.com/shortcuts/1b5c7d5ec58a4978b6f919ccf195ae1c">
        <img src="All%20Shortcuts/iPhone%20Settings/Join%20WiFi/Join%20WiFi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4716,7 +4742,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Toggle%20AssistiveTouch">Toggle AssistiveTouch</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6a8e409caf0e4253adb3fb1f305ef305">
+       <a href="https://www.icloud.com/shortcuts/7f2dcfc5747a4dd4ba9a14f11d26ff57">
        <img src="All%20Shortcuts/iPhone%20Settings/Toggle%20AssistiveTouch/Toggle%20AssistiveTouch.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4725,7 +4751,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Check%20App%20Subscriptions">Check App Subscriptions</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/697f2a816c6a4cc0b10a9ec67cd7507c">
+       <a href="https://www.icloud.com/shortcuts/d5ad686332be45cdbfbc33a574ba86ac">
        <img src="All%20Shortcuts/iPhone%20Settings/Check%20App%20Subscriptions/Check%20App%20Subscriptions.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4734,7 +4760,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Search%20App%20Store">Search App Store</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7c25b3c3940745fc822985678dc8fc56">
+       <a href="https://www.icloud.com/shortcuts/4c61c92cf11c40bcbcd0ad156ab0f08f">
        <img src="All%20Shortcuts/iPhone%20Settings/Search%20App%20Store/Search%20App%20Store.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4743,7 +4769,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20on%20Smart%20Invert">Turn on Smart Invert</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/003ab1b4f2764ff4ac1d9c64e75d7d08">
+       <a href="https://www.icloud.com/shortcuts/11b129ec2dd9475581a360ed5f968073">
        <img src="All%20Shortcuts/iPhone%20Settings/Turn%20on%20Smart%20Invert/Turn%20on%20Smart%20Invert.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4752,7 +4778,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20off%20Smart%20Invert">Turn off Smart Invert</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e947efeedf0f459588d9880135cf75a7">
+       <a href="https://www.icloud.com/shortcuts/1d193aa0d2984dc7b43f06876ad2a005">
        <img src="All%20Shortcuts/iPhone%20Settings/Turn%20off%20Smart%20Invert/Turn%20off%20Smart%20Invert.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4761,7 +4787,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Connect%20to%20Internet">Connect to Internet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a008060849549b9be51874629ddb5be">
+       <a href="https://www.icloud.com/shortcuts/b6a8531dffd64711bbc8c074521bbf2f">
        <img src="All%20Shortcuts/iPhone%20Settings/Connect%20to%20Internet/Connect%20to%20Internet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4770,7 +4796,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Disconnect%20from%20Internet">Disconnect from Internet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/37d5e4cc294349b690a3a8bf47750837">
+       <a href="https://www.icloud.com/shortcuts/00c7486df1c0462b8f2a9d86ed80e682">
        <img src="All%20Shortcuts/iPhone%20Settings/Disconnect%20from%20Internet/Disconnect%20from%20Internet.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4779,7 +4805,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver">Ultra Low Power Saver</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c390b5ef4f8a4b44b432635b5d23af70">
+       <a href="https://www.icloud.com/shortcuts/dae68cc2d6ab45a6abc12756294cae2f">
        <img src="All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver/Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4788,7 +4814,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver">Recover from Ultra Low Power Saver</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/16b95fe9a58a4c2a8130969c456136d1">
+       <a href="https://www.icloud.com/shortcuts/102758c1b08f4201aa886e4ae1509fa2">
        <img src="All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver/Recover%20from%20Ultra%20Low%20Power%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4797,7 +4823,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters">Turn on Color Filters</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/639c9fa239fd4ed497a72922a7f43e6a">
+       <a href="https://www.icloud.com/shortcuts/19b0ebe095924262bed5ccfb4b0fd31a">
        <img src="All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters/Turn%20on%20Color%20Filters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4806,7 +4832,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters">Turn off Color Filters</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/67a4b41d9b3f48338fa90dc2ba6767f5">
+       <a href="https://www.icloud.com/shortcuts/4565403e5df9485c86af9b20e5bfcee4">
        <img src="All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters/Turn%20off%20Color%20Filters.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4815,7 +4841,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level">Toggle Low Power Mode Based on Battery Level</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/de9367177bfa41669826e00e3b8b5c8b">
+       <a href="https://www.icloud.com/shortcuts/5ab66500cc3649fe9f50b6a041a10645">
        <img src="All%20Shortcuts/iPhone%20Settings/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4824,7 +4850,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Battery%20Charging%20Reminder">Battery Charging Reminder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ed5b26f8359745d4a3e5b63aebb18eba">
+       <a href="https://www.icloud.com/shortcuts/15a5b96156b54570a4ab03ae0932dc61">
        <img src="All%20Shortcuts/iPhone%20Settings/Battery%20Charging%20Reminder/Battery%20Charging%20Reminder.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4833,7 +4859,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver">Smart Data Saver</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/960b736c804143129cc4501fa48f92ad">
+       <a href="https://www.icloud.com/shortcuts/a6cbf51e602f44f28086da8bcb070529">
        <img src="All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver/Smart%20Data%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4850,7 +4876,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Brighten%20Screen">Brighten Screen</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cfa97d4eb80c40ffa44fbbd5281896a9">
+       <a href="https://www.icloud.com/shortcuts/31bfc32018614e878f89ef7f3725fb2a">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Brighten%20Screen/Brighten%20Screen.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4859,7 +4885,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Dim%20Screen">Dim Screen</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bcc8b363212d4658ac9b5698a248a7f9">
+       <a href="https://www.icloud.com/shortcuts/bdeeaedd2fc4486c95fb7cccf6eca2f4">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Dim%20Screen/Dim%20Screen.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4868,7 +4894,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Minimum%20Brightness">Set Minimum Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d7524e04cbb0419dbf0754c090f439a9">
+       <a href="https://www.icloud.com/shortcuts/796f70eebfc04b39acd7431b68a431eb">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Minimum%20Brightness/Set%20Minimum%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4877,7 +4903,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Zero%20Brightness">Set Zero Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1a9e769c243a46dea1eb26329729a632">
+       <a href="https://www.icloud.com/shortcuts/3c17d0d8f1bb449499157fb1bd82f1f2">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Zero%20Brightness/Set%20Zero%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4886,7 +4912,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Ultra%20Low%20Brightness">Set Ultra Low Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8f03fe9957904e8ea9c9ccea89a4918c">
+       <a href="https://www.icloud.com/shortcuts/f86ac6343ee14895a512019945b9a2d4">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Ultra%20Low%20Brightness/Set%20Ultra%20Low%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4895,7 +4921,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Low%20Brightness">Set Low Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/86cbd9e5963543fc9d11b4bafa25bc85">
+       <a href="https://www.icloud.com/shortcuts/2fbf250ef3084f048474b9fb1e72a14e">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Low%20Brightness/Set%20Low%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4904,7 +4930,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Average%20Brightness">Set Average Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/febaeb016a9146719ce037117a4c956b">
+       <a href="https://www.icloud.com/shortcuts/1bca401a984c48cfabf2a6089f61c75d">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Average%20Brightness/Set%20Average%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4913,7 +4939,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Medium%20Brightness">Set Medium Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e408564ef8e046549d08f01352096a05">
+       <a href="https://www.icloud.com/shortcuts/3bb59b2ac6a8496e9f7459cf83f059f6">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Medium%20Brightness/Set%20Medium%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4922,7 +4948,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20High%20Brightness">Set High Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eeccc6d751164365b9b6093f6e343129">
+       <a href="https://www.icloud.com/shortcuts/eb955c90d20a42af8e2bb24cd04ac73e">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20High%20Brightness/Set%20High%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4931,7 +4957,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Set%20Device%20Brightness/Set%20Maximum%20Brightness">Set Maximum Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/efce33eeaf61428aaf3428a36f9352fc">
+       <a href="https://www.icloud.com/shortcuts/56c898ad5c174ec2b12472b0f430f8b1">
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Maximum%20Brightness/Set%20Maximum%20Brightness.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4948,7 +4974,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Spotify/Play%20Spotify%20Music%20By%20Topic">Play Spotify Music By Topic</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a8c1f2dc28ad4c558f59a18eb2e251f5">
+       <a href="https://www.icloud.com/shortcuts/c5dae75cad8249ffb6c2520b3cd8e150">
        <img src="All%20Shortcuts/Spotify/Play%20Spotify%20Music%20By%20Topic/Play%20Spotify%20Music%20By%20Topic.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4957,7 +4983,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Spotify/Spotify">Spotify</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1c070a4b372d4047b91c2f416a96b843">
+       <a href="https://www.icloud.com/shortcuts/abf6d334f0ba4512be02a48eb8d70b1b">
        <img src="All%20Shortcuts/Spotify/Spotify/Spotify.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4966,7 +4992,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Spotify/_SpotifyURL2SpotifyURI">_SpotifyURL2SpotifyURI</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0ffcb69075674edf961a2d5cd5a7d314">
+       <a href="https://www.icloud.com/shortcuts/fde71c3b5f1e4069a105b5bce2b3fb2e">
        <img src="All%20Shortcuts/Spotify/_SpotifyURL2SpotifyURI/_SpotifyURL2SpotifyURI.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4975,7 +5001,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Spotify/_Play%20Spotify%20Content">_Play Spotify Content</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7308e1f0c7cb4c28aeb0de4e1b6d39c6">
+       <a href="https://www.icloud.com/shortcuts/26d26148832f4bfba520bf3ea1a34ade">
        <img src="All%20Shortcuts/Spotify/_Play%20Spotify%20Content/_Play%20Spotify%20Content.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -4992,7 +5018,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-10mins">💤 NSDR-10mins</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5b5133ff1b574bd090786b203e952512">
+       <a href="https://www.icloud.com/shortcuts/94e157bd038445ae8a366e89aae7d704">
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-10mins/%F0%9F%92%A4%20NSDR-10mins.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5001,7 +5027,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-20mins">💤 NSDR-20mins</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a82139c91b9e4ec6a25d6de32d6b625c">
+       <a href="https://www.icloud.com/shortcuts/bca0a2df107f465abf4a03372f3e46bb">
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-20mins/%F0%9F%92%A4%20NSDR-20mins.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5010,7 +5036,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/%F0%9F%AB%81%205-Min%20Breathwork">🫁 5-Min Breathwork</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2c320222243041a7a69693a9a2d7de0f">
+       <a href="https://www.icloud.com/shortcuts/8a948ecfe09342e39092c103ae6dd16a">
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%AB%81%205-Min%20Breathwork/%F0%9F%AB%81%205-Min%20Breathwork.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5019,7 +5045,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/%F0%9F%A7%98%F0%9F%8F%BD%20Meditation">🧘🏽 Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a5255f33de4b4fafac9165aef44ba10d">
+       <a href="https://www.icloud.com/shortcuts/e8958546c76b4731939d311f840a1bac">
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%A7%98%F0%9F%8F%BD%20Meditation/%F0%9F%A7%98%F0%9F%8F%BD%20Meditation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5028,7 +5054,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/%20%E2%8F%88%2030-Min%2040-Hz%20Binaural%20Beats"> ⏈ 30-Min 40-Hz Binaural Beats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69428372ff004edb9170b9f980b9e2d7">
+       <a href="https://www.icloud.com/shortcuts/af8b7732c30b47a7976a4e6b2c7d0232">
        <img src="All%20Shortcuts/Sound%20Files/%20%E2%8F%88%2030-Min%2040-Hz%20Binaural%20Beats/%20%E2%8F%88%2030-Min%2040-Hz%20Binaural%20Beats.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5037,7 +5063,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/Vocal%20Countdown%20Timer">Vocal Countdown Timer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3c3fb0a4959d43b889a17bde8dfdd872">
+       <a href="https://www.icloud.com/shortcuts/24356215947b462eb88dab70a345be4d">
        <img src="All%20Shortcuts/Sound%20Files/Vocal%20Countdown%20Timer/Vocal%20Countdown%20Timer.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5046,7 +5072,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone">iPhone Alarm Ringtone</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/35abcc55014e464aba0fe30e43c0cbe8">
+       <a href="https://www.icloud.com/shortcuts/a4decf8c143242eaa1a7264fd562ebc1">
        <img src="All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone/iPhone%20Alarm%20Ringtone.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5055,7 +5081,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Sound%20Files/Time's%20Up!">Time's Up!</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eeca3f5f43f245b0a3683f3342a60f56">
+       <a href="https://www.icloud.com/shortcuts/7936561331ca4fa6b97ae93aa06e0a1b">
        <img src="All%20Shortcuts/Sound%20Files/Time's%20Up!/Time's%20Up!.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5072,7 +5098,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me">🧭 Dear Today Me</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/348141dc54254e16a021029de0bf1728">
+       <a href="https://www.icloud.com/shortcuts/be73c8239ab74dbeba36cc961e689009">
        <img src="All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5081,7 +5107,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Motivate%20Me/%F0%9F%A6%93%20The%20Mamba%20Mentality">🦓 The Mamba Mentality</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/85a2486a5b5a40c5bd220d6fc8cb7240">
+       <a href="https://www.icloud.com/shortcuts/1a1add3b01d84a16bb9775070c8d32ba">
        <img src="All%20Shortcuts/Motivate%20Me/%F0%9F%A6%93%20The%20Mamba%20Mentality/%F0%9F%A6%93%20The%20Mamba%20Mentality.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5090,7 +5116,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Motivate%20Me/%F0%9F%8C%84%20At%20Dawn">🌄 At Dawn</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/83b3036d88b24ab1a135f36435dc27c8">
+       <a href="https://www.icloud.com/shortcuts/32d2677d43584390b376491af08cce72">
        <img src="All%20Shortcuts/Motivate%20Me/%F0%9F%8C%84%20At%20Dawn/%F0%9F%8C%84%20At%20Dawn.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5107,7 +5133,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/BLE%20Headphone/%F0%9F%8E%A7%20Soundcore::Navy%20Blue">🎧 Soundcore::Navy Blue</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/86afaad977e547179642e7872c8011d6">
+       <a href="https://www.icloud.com/shortcuts/609924594d5f4e71a4a2acc2a37ecb28">
        <img src="All%20Shortcuts/BLE%20Headphone/%F0%9F%8E%A7%20Soundcore::Navy%20Blue/%F0%9F%8E%A7%20Soundcore::Navy%20Blue.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5116,7 +5142,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/BLE%20Headphone/%F0%9F%8E%A7%20TOZO::T10">🎧 TOZO::T10</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5d99b23ce06b4b1dbdeee09207070eed">
+       <a href="https://www.icloud.com/shortcuts/b15a91f0bfd24167bced55ca0fd75b79">
        <img src="All%20Shortcuts/BLE%20Headphone/%F0%9F%8E%A7%20TOZO::T10/%F0%9F%8E%A7%20TOZO::T10.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5125,7 +5151,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/BLE%20Headphone/%F0%9F%8E%A7%20JBL::UA%20Train">🎧 JBL::UA Train</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0b4625001a2249e29ec4146a891665e7">
+       <a href="https://www.icloud.com/shortcuts/846d6afcb5ed49098255d08118bda4a8">
        <img src="All%20Shortcuts/BLE%20Headphone/%F0%9F%8E%A7%20JBL::UA%20Train/%F0%9F%8E%A7%20JBL::UA%20Train.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5142,7 +5168,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20SoundCore::Sport">🔊 SoundCore::Sport</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5fd0d4abee90402db104989adc433fe9">
+       <a href="https://www.icloud.com/shortcuts/1963723b6f5b417582345ccbb8649212">
        <img src="All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20SoundCore::Sport/%F0%9F%94%8A%20SoundCore::Sport.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5151,7 +5177,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20Walking%20Pad">🔊 Walking Pad</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4cb2156b29054af389434183f909cb9e">
+       <a href="https://www.icloud.com/shortcuts/84bb9f803fdd4e80a15d23b0bb41cb76">
        <img src="All%20Shortcuts/BLE%20Speaker/%F0%9F%94%8A%20Walking%20Pad/%F0%9F%94%8A%20Walking%20Pad.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5168,7 +5194,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF">📖 Audible PDF</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4fb352fb3d9b464881d0e53f2d8e7532">
+       <a href="https://www.icloud.com/shortcuts/a5ca9efc9c2c4f1abede179a428664cb">
        <img src="All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible%20PDF/%F0%9F%93%96%20Audible%20PDF.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5177,7 +5203,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible">📖 Audible</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a87cf17bee43407095e7df1f9bdef024">
+       <a href="https://www.icloud.com/shortcuts/ae83f09169464d99959d9a267403f86e">
        <img src="All%20Shortcuts/Audiobooks/%F0%9F%93%96%20Audible/%F0%9F%93%96%20Audible.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5194,7 +5220,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast">🎙️ Snipd Podcast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b52e596527ca41919fd41abb0dc45279">
+       <a href="https://www.icloud.com/shortcuts/266d08072ac142288de7ff70bbe01b34">
        <img src="All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast/%F0%9F%8E%99%EF%B8%8F%20Snipd%20Podcast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5203,7 +5229,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast">🎙️ Apple Podcast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/12dcf93504a447279bcd691adfb3eba2">
+       <a href="https://www.icloud.com/shortcuts/57fcf9654710495292fe59ac4600ef76">
        <img src="All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast/%F0%9F%8E%99%EF%B8%8F%20Apple%20Podcast.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5220,7 +5246,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Import%20Data%20Jar">Import Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c102f63d68d848869410fcbd7257088f">
+       <a href="https://www.icloud.com/shortcuts/5121de5a1c074a639eef8fb133af509e">
        <img src="All%20Shortcuts/Data%20Jar/Import%20Data%20Jar/Import%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5229,7 +5255,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Data%20Jar/Export%20Data%20Jar">Export Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e41b24e95c004d58b78b27e3be2578f5">
+       <a href="https://www.icloud.com/shortcuts/9abdd9d76ad847ec8a363b2167019205">
        <img src="All%20Shortcuts/Data%20Jar/Export%20Data%20Jar/Export%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5246,7 +5272,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Notes/Get%20Title%20of%20Apple%20Notes">Get Title of Apple Notes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c6dcbc4173034a07be7963107e7c65d6">
+       <a href="https://www.icloud.com/shortcuts/6935f4e709534d2293e9d00e5d8f0360">
        <img src="All%20Shortcuts/Apple%20Notes/Get%20Title%20of%20Apple%20Notes/Get%20Title%20of%20Apple%20Notes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5255,7 +5281,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text)">Get Body of Apple Notes (Plain Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/279f7d3265404a43b17abdf698c2bc1e">
+       <a href="https://www.icloud.com/shortcuts/1e381c01cad34cb1a2c47ff685dc6879">
        <img src="All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text)/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5264,7 +5290,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text)">Get Body of Apple Notes (Rich Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a943fb7290a84d58bb4602af836debd1">
+       <a href="https://www.icloud.com/shortcuts/d73d944707e64ee5819c580f673f60c9">
        <img src="All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text)/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text).png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5281,7 +5307,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Open%20Apple%20Calendar%20on%20Specific%20Date">Open Apple Calendar on Specific Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f87694779f8e40a4b5d45d12fadd8247">
+       <a href="https://www.icloud.com/shortcuts/a810c843cd2b4c699bd535b705e2fea8">
        <img src="All%20Shortcuts/Apple%20Calendar/Open%20Apple%20Calendar%20on%20Specific%20Date/Open%20Apple%20Calendar%20on%20Specific%20Date.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5290,7 +5316,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Quick%20Look%20Scheduled%20Calendar%20Events">Quick Look Scheduled Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c9f989be158c4777957443ccd6f1615b">
+       <a href="https://www.icloud.com/shortcuts/965a917047994578a9532b420f6de995">
        <img src="All%20Shortcuts/Apple%20Calendar/Quick%20Look%20Scheduled%20Calendar%20Events/Quick%20Look%20Scheduled%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5299,7 +5325,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events">_Get Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e3d407afacae4c5bb48f8b6b4bda59c9">
+       <a href="https://www.icloud.com/shortcuts/22409ef585464d34b2e9e3a4585a9bf2">
        <img src="All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events/_Get%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5308,7 +5334,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/_Quick%20Look%20Calendar%20Events">_Quick Look Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/48fd1d38d1cf4afd9b900aef1b264745">
+       <a href="https://www.icloud.com/shortcuts/f892be3b4c1f416aaefec92fbc0d5dfa">
        <img src="All%20Shortcuts/Apple%20Calendar/_Quick%20Look%20Calendar%20Events/_Quick%20Look%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5317,7 +5343,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Show%20All%20Day%20Events">Show All Day Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8538b14a150046208f620081ea888597">
+       <a href="https://www.icloud.com/shortcuts/e13bffd5886248b692895f7df3ad299d">
        <img src="All%20Shortcuts/Apple%20Calendar/Show%20All%20Day%20Events/Show%20All%20Day%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5326,7 +5352,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Show%20Scheduled%20Calendar%20Events">Show Scheduled Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d7115fef4c6345c7ba594f546cb5900e">
+       <a href="https://www.icloud.com/shortcuts/f9511c59091c4f4295e2d4f0f4bb4cfe">
        <img src="All%20Shortcuts/Apple%20Calendar/Show%20Scheduled%20Calendar%20Events/Show%20Scheduled%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5335,7 +5361,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Calendar/Speak%20Scheduled%20Calendar%20Events">Speak Scheduled Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b86026ab3a4642be9edb9da553cc53d6">
+       <a href="https://www.icloud.com/shortcuts/0754df0f35174e438ab0c2944de125c3">
        <img src="All%20Shortcuts/Apple%20Calendar/Speak%20Scheduled%20Calendar%20Events/Speak%20Scheduled%20Calendar%20Events.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5352,7 +5378,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup">Recover from Reminders Backup</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/56a1b19414504465ae1b42e282728804">
+       <a href="https://www.icloud.com/shortcuts/8e19b7eafb6148d1b3f3856d1ccd5634">
        <img src="All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup/Recover%20from%20Reminders%20Backup.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5361,7 +5387,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/Batch%20Add%20Reminders">Batch Add Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/62b47c73e08c43b7adc79a5cfe8adbe9">
+       <a href="https://www.icloud.com/shortcuts/03f40ac11bda43cb896c79539e60dedc">
        <img src="All%20Shortcuts/Apple%20Reminders/Batch%20Add%20Reminders/Batch%20Add%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5370,7 +5396,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/Search%20Reminders">Search Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/52cf24b996a3424a977d35737fc4601f">
+       <a href="https://www.icloud.com/shortcuts/a7605a2aa438496589549c8ee260da60">
        <img src="All%20Shortcuts/Apple%20Reminders/Search%20Reminders/Search%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5379,7 +5405,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/_Show%20Reminders%20List">_Show Reminders List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a1df7d6dcaf544afa5d6473a1da80713">
+       <a href="https://www.icloud.com/shortcuts/8404a5f5bfc44b2c88a169a41b83cfc3">
        <img src="All%20Shortcuts/Apple%20Reminders/_Show%20Reminders%20List/_Show%20Reminders%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5388,7 +5414,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/_Reminder2Markdown">_Reminder2Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/577538cc0afb4886aecacbc9e0f4d161">
+       <a href="https://www.icloud.com/shortcuts/1f82f133c30047dc9c9c077efe65f060">
        <img src="All%20Shortcuts/Apple%20Reminders/_Reminder2Markdown/_Reminder2Markdown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5397,7 +5423,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/_ReminderList2Markdown">_ReminderList2Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2b3561e735ae4750b0ca43efe9546f51">
+       <a href="https://www.icloud.com/shortcuts/1b402d6244654622a1ad727eb6d40f8b">
        <img src="All%20Shortcuts/Apple%20Reminders/_ReminderList2Markdown/_ReminderList2Markdown.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5406,7 +5432,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/_ReminderList2JSON">_ReminderList2JSON</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5c6dbbae4bdf498d8329046c4741d3cc">
+       <a href="https://www.icloud.com/shortcuts/19d10fa6e59e41188a2a3601ff4d68f7">
        <img src="All%20Shortcuts/Apple%20Reminders/_ReminderList2JSON/_ReminderList2JSON.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5415,7 +5441,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Apple%20Reminders/_Filter%20Reminder%20Lists">_Filter Reminder Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/54e75b1a644441f9a87c675b6d64946f">
+       <a href="https://www.icloud.com/shortcuts/26134c5ae6d34a819752481260605fe6">
        <img src="All%20Shortcuts/Apple%20Reminders/_Filter%20Reminder%20Lists/_Filter%20Reminder%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5432,7 +5458,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home">When I Arrive Home</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b38e5c69bb7d4bd2a81327e3f380dc92">
+       <a href="https://www.icloud.com/shortcuts/f2c76be3523e479db144534a3dd2134d">
        <img src="All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home/When%20I%20Arrive%20Home.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5441,7 +5467,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20I%20Leave%20Home">When I Leave Home</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/400429bad2c7449983cb5fc0f4171a2d">
+       <a href="https://www.icloud.com/shortcuts/b3f601e0025d4a99aea121b889d429e8">
        <img src="All%20Shortcuts/Automation%20Modules/When%20I%20Leave%20Home/When%20I%20Leave%20Home.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5450,7 +5476,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device">Choose Audio Device</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/909d5ec13fdf4e448cf8dbd577e2a3e6">
+       <a href="https://www.icloud.com/shortcuts/5d4ffa921c024d98add84618395309c1">
        <img src="All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device/Choose%20Audio%20Device.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5459,7 +5485,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device%20-%20Kernel">Choose Audio Device - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0ca9fb42f21e464f8f3f562076414d86">
+       <a href="https://www.icloud.com/shortcuts/4712d895f00f46c5abd3b1d0c79011d3">
        <img src="All%20Shortcuts/Automation%20Modules/Choose%20Audio%20Device%20-%20Kernel/Choose%20Audio%20Device%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5468,7 +5494,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened">When "Komoot" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b2ca81e0ed44deba8a9518238bb9634">
+       <a href="https://www.icloud.com/shortcuts/60026cc014e44ae09b8fe480cd4cd42f">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened/When%20%22Komoot%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5477,7 +5503,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened%20-%20Kernel">When "Komoot" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a2fb5727135e417a9f5863c617cbad59">
+       <a href="https://www.icloud.com/shortcuts/3a5b564a4fcf49e28119ea29173dfe25">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened%20-%20Kernel/When%20%22Komoot%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5486,7 +5512,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened">When "Friendly" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/03eaa28316fc43d2bf945aa36b66a5b6">
+       <a href="https://www.icloud.com/shortcuts/f03495f5a4074d318367ca11829a217d">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened/When%20%22Friendly%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5495,7 +5521,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened%20-%20Kernel">When "Friendly" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ea7724e9213e4a25928b3c8c60ec5f6b">
+       <a href="https://www.icloud.com/shortcuts/8119953625094d3fa5ccfada9c99114f">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened%20-%20Kernel/When%20%22Friendly%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5504,7 +5530,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20connected%20to%20power">When my Apple device is connected to power</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c00375abc3374af4b6331526b9091cec">
+       <a href="https://www.icloud.com/shortcuts/559e07f0ebb3499a855c262f8983312a">
        <img src="All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20connected%20to%20power/When%20my%20Apple%20device%20is%20connected%20to%20power.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5513,7 +5539,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20disconnected%20from%20power">When my Apple device is disconnected from power</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e862adc5adb74b40b1df5e7583277c72">
+       <a href="https://www.icloud.com/shortcuts/355e10c9e0d241c88d81ac173dc8286b">
        <img src="All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20disconnected%20from%20power/When%20my%20Apple%20device%20is%20disconnected%20from%20power.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5522,7 +5548,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20closed">When "Reminders" is closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/751b68fbeb7244b4b9fadbe8bf3460a6">
+       <a href="https://www.icloud.com/shortcuts/44a79e7a49194e988da0c2fd3aa27503">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20closed/When%20%22Reminders%22%20is%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5531,7 +5557,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20closed%20-%20Kernel">When "Reminders" is closed - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6ee03be6470a4f87be94bb1140079170">
+       <a href="https://www.icloud.com/shortcuts/aa02124f378a480e953336a9004773de">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20closed%20-%20Kernel/When%20%22Reminders%22%20is%20closed%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5540,7 +5566,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened">When "Podcasts" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/81a7aceccc9f4570a28a71b52e0d8e0a">
+       <a href="https://www.icloud.com/shortcuts/acba1db4963f429295524ffaaf6b9437">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened/When%20%22Podcasts%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5549,7 +5575,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened%20-%20Kernel">When "Podcasts" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3d57296f92714482aa606e2b41073487">
+       <a href="https://www.icloud.com/shortcuts/dce2a9c0fa884a91925afb4e17415e9b">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Podcasts%22%20is%20opened%20-%20Kernel/When%20%22Podcasts%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5558,7 +5584,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Kleinanzeigen%22%20is%20opened">When "Kleinanzeigen" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f1dc0ffe61d9429582867d3bb86403f1">
+       <a href="https://www.icloud.com/shortcuts/6035afd7357d4a07b2ee57910176fc14">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Kleinanzeigen%22%20is%20opened/When%20%22Kleinanzeigen%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5567,7 +5593,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Kleinanzeigen%22%20is%20opened%20-%20Kernel">When "Kleinanzeigen" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3eee5d3525e149f088e8da0d46d9b061">
+       <a href="https://www.icloud.com/shortcuts/3dded729a9204dd3b735289b3821b8da">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Kleinanzeigen%22%20is%20opened%20-%20Kernel/When%20%22Kleinanzeigen%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5576,7 +5602,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Calendar%22%20is%20opened%20or%20closed">When "Calendar" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b242a523eaaf427e9af717f16e39dbd0">
+       <a href="https://www.icloud.com/shortcuts/917864bdb32e4ea09255fdf977e0bac5">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Calendar%22%20is%20opened%20or%20closed/When%20%22Calendar%22%20is%20opened%20or%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5585,7 +5611,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Notes%22%20is%20opened%20or%20closed">When "Notes" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a41e77f1566c4181b3a03fc4efc0b814">
+       <a href="https://www.icloud.com/shortcuts/2ef7aa96a17f44c7a9418468a5dc4d88">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Notes%22%20is%20opened%20or%20closed/When%20%22Notes%22%20is%20opened%20or%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5594,7 +5620,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Anki%22%20is%20opened">When "Anki" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e26f1ef916b14118a295afcf78dc7c93">
+       <a href="https://www.icloud.com/shortcuts/73eea154427a4c35928b2fb2177b3e2c">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Anki%22%20is%20opened/When%20%22Anki%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5603,7 +5629,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened">When "Obsidian" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69fa96377f77408ab9e055c71da7000a">
+       <a href="https://www.icloud.com/shortcuts/0fd4ac07ed9d412cb24e884a5de96e5c">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened/When%20%22Obsidian%22%20is%20opened.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5612,7 +5638,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel">When "Obsidian" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0841178bb4ba47dd90baf638498ff705">
+       <a href="https://www.icloud.com/shortcuts/ccac783784c94abfb5b9f7960f3dac01">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20opened%20-%20Kernel/When%20%22Obsidian%22%20is%20opened%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5621,7 +5647,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed">When "Obsidian" is closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/75eac5c934eb4f5ea1652b9b3abe09eb">
+       <a href="https://www.icloud.com/shortcuts/788dd87c92d84e3f86d7436d0c7a7c5e">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed/When%20%22Obsidian%22%20is%20closed.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5630,7 +5656,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel">When "Obsidian" is closed - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/30f238f05bfd497aae97215125378a05">
+       <a href="https://www.icloud.com/shortcuts/018600c35a354620828c02f78864fe35">
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Obsidian%22%20is%20closed%20-%20Kernel/When%20%22Obsidian%22%20is%20closed%20-%20Kernel.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5639,7 +5665,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on">When turning my focus mode on</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/99b023d227094d02871160a707586407">
+       <a href="https://www.icloud.com/shortcuts/be86393806114f618da9ddcd95dbdb76">
        <img src="All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on/When%20turning%20my%20focus%20mode%20on.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5648,7 +5674,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20Modules/_Log%20Device%20Info">_Log Device Info</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6d82d2d5bf194388befdd177e85524d1">
+       <a href="https://www.icloud.com/shortcuts/857f20bfd82649c7a7ae26a3ddecdb3e">
        <img src="All%20Shortcuts/Automation%20Modules/_Log%20Device%20Info/_Log%20Device%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5665,7 +5691,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%A2%20Transfer%20Quick%20Notes%20to%20Inbox">🚢 Transfer Quick Notes to Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f17fb3b28f1a41c2830a27646fe8f955">
+       <a href="https://www.icloud.com/shortcuts/d6f0c335a57b454ebcd2dbde7e0a9db4">
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%A2%20Transfer%20Quick%20Notes%20to%20Inbox/%F0%9F%9A%A2%20Transfer%20Quick%20Notes%20to%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5674,7 +5700,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox">🧺 Organize Idea Capture Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/51128c1be8e246d2aa9f8bdcbd005bfa">
+       <a href="https://www.icloud.com/shortcuts/f91ed282f15549f8907efc17a049f733">
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5683,17 +5709,17 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%8D%AB%20Organize%20Brain%20Food%20Lists">🍫 Organize Brain Food Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/de9e5549e5f04c2a9df4126f11cd7557">
+       <a href="https://www.icloud.com/shortcuts/2c139c8e535346b287d86826a6bc2044">
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%8D%AB%20Organize%20Brain%20Food%20Lists/%F0%9F%8D%AB%20Organize%20Brain%20Food%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%A6%B8%E2%80%8D%E2%99%82%EF%B8%8F%20Organize%20Fitness%20Lists">🦸‍♂️ Organize Fitness Lists</a>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists">🚜 Organize Evergreen Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f0fbcef71f5d473abb01591ec94ca6c0">
-       <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%A6%B8%E2%80%8D%E2%99%82%EF%B8%8F%20Organize%20Fitness%20Lists/%F0%9F%A6%B8%E2%80%8D%E2%99%82%EF%B8%8F%20Organize%20Fitness%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <a href="https://www.icloud.com/shortcuts/f7b82f9dcee84bccae53bfa3ac70b088">
+       <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5701,7 +5727,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkey">👀 Sanity Check Keyboard Hotkey</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1b2a7ffb33ad4d96a3c4f17c4def320c">
+       <a href="https://www.icloud.com/shortcuts/94192d817c5e4439bb2169a7933f529b">
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkey/%F0%9F%91%80%20Sanity%20Check%20Keyboard%20Hotkey.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5710,7 +5736,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%E2%9D%95Set%20Default%20Priority%20for%20Tasks">❕Set Default Priority for Tasks</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/45d256cc53f349ada63fdd8f17a0c681">
+       <a href="https://www.icloud.com/shortcuts/4ef925a65faa41d4a8e39effa951df5b">
        <img src="All%20Shortcuts/Reminders%20Automation/%E2%9D%95Set%20Default%20Priority%20for%20Tasks/%E2%9D%95Set%20Default%20Priority%20for%20Tasks.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5727,7 +5753,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation">⚙️ My Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3c61fb08900641a0bd9b5d652c79e013">
+       <a href="https://www.icloud.com/shortcuts/0e423507e9ff4285b4a28ac3241ca4c5">
        <img src="All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5736,7 +5762,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation">✔ Check Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/80907181cd404a79b19f81f7153228fb">
+       <a href="https://www.icloud.com/shortcuts/438a133728064733a89192635f11d9cc">
        <img src="All%20Shortcuts/My%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5745,7 +5771,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/Get%20Today's%20Life%20Automation%20Shortcuts">Get Today's Life Automation Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c30753995d0a485b9c283a7071b8e70f">
+       <a href="https://www.icloud.com/shortcuts/d51d2fea232740a4b88361f96b28036d">
        <img src="All%20Shortcuts/My%20Life%20Automation/Get%20Today's%20Life%20Automation%20Shortcuts/Get%20Today's%20Life%20Automation%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5754,7 +5780,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Life%20Automation/_Batch%20Run%20Life%20Automation%20Shortcuts">_Batch Run Life Automation Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2be13fb115fa4f5cbcd2b9004339631e">
+       <a href="https://www.icloud.com/shortcuts/7454c0f95b904f80a2e9cd7b1ff4b5f5">
        <img src="All%20Shortcuts/My%20Life%20Automation/_Batch%20Run%20Life%20Automation%20Shortcuts/_Batch%20Run%20Life%20Automation%20Shortcuts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5771,7 +5797,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Journal%20Prompt%20Question">🤍 Journal Prompt Question</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c65638bea740495381e6d11a61595c4d">
+       <a href="https://www.icloud.com/shortcuts/9903b64d96bf40a5b2d38075d0314a6d">
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Journal%20Prompt%20Question/%F0%9F%A4%8D%20Journal%20Prompt%20Question.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5780,7 +5806,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Quote">🤍 Random Quote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/08ae03c2c13a48229e6487486d2686e4">
+       <a href="https://www.icloud.com/shortcuts/9b1cfd9e6d0e4442a556259ba7eb9995">
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Quote/%F0%9F%A4%8D%20Random%20Quote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5789,7 +5815,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20One%20Visual%20A%20Day">🤍 One Visual A Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/579ea582ce454ea191d44af9a3b2a5a7">
+       <a href="https://www.icloud.com/shortcuts/e3cd6a5d2a5444e5a8ff57b7995287bc">
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20One%20Visual%20A%20Day/%F0%9F%A4%8D%20One%20Visual%20A%20Day.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5798,7 +5824,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You">🤍 I Love You</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fd95e19e8f8b4e6eaa6be87dff44c7bd">
+       <a href="https://www.icloud.com/shortcuts/5343aeaf5eee43b7b7deae896eeef2e6">
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You/%F0%9F%A4%8D%20I%20Love%20You.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5807,7 +5833,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar">🤍 Memory Dividends Calendar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b0d6b1c9b7fb4c6fa019a6fb617d2a2f">
+       <a href="https://www.icloud.com/shortcuts/29f99ebd5a1c48608a8dca0cfeceb38d">
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5816,7 +5842,7 @@
 - <details>
     <summary>
       <strong>
-        <a href="All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (10)</a>
+        <a href="All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (11)</a>
       </strong>
     </summary>
 
@@ -5824,7 +5850,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Create%20Today's%20Journal%20Entry"># Create Today's Journal Entry</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0410dbb3ccab4488a5ad48396a43a75a">
+       <a href="https://www.icloud.com/shortcuts/29223ad9f3d242b58e0ef620b3bd4590">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Create%20Today's%20Journal%20Entry/%23%20Create%20Today's%20Journal%20Entry.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5833,7 +5859,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Cleanup%20Album"># Cleanup Album</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/87ae0558e0064db3a72ff2c73bf0be5d">
+       <a href="https://www.icloud.com/shortcuts/44f36e73c9c04871afe165de672ef248">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Cleanup%20Album/%23%20Cleanup%20Album.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5842,7 +5868,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Reset%20Daily%20Flow%20Counts"># Reset Daily Flow Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cd69ea28d8fe4f5794ca65ad90ab089c">
+       <a href="https://www.icloud.com/shortcuts/87e412d16be24b9d87ba35c29ad600dd">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Reset%20Daily%20Flow%20Counts/%23%20Reset%20Daily%20Flow%20Counts.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5851,8 +5877,17 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Inbox%20Zero"># Inbox Zero</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/561fc14751814102b7a3df0d27384588">
+       <a href="https://www.icloud.com/shortcuts/7e92758f5407466d93f18bcef1a84278">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Inbox%20Zero/%23%20Inbox%20Zero.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Check%20GitHub%20Auto%20Backup%20Status"># Check GitHub Auto Backup Status</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/4d7b71fbb261479fa500022a0d3953cf">
+       <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Check%20GitHub%20Auto%20Backup%20Status/%23%20Check%20GitHub%20Auto%20Backup%20Status.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
 
@@ -5860,7 +5895,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Fetch%20Today's%20Weather%20Info"># Fetch Today's Weather Info</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/73af7d80c84648fe8c2a8e70d150352a">
+       <a href="https://www.icloud.com/shortcuts/4dda064e03684812b1aa33126ecdcf72">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Fetch%20Today's%20Weather%20Info/%23%20Fetch%20Today's%20Weather%20Info.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5869,7 +5904,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar"># Backup Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8b500a7b4f4a4794b9a4c882d0dc4a45">
+       <a href="https://www.icloud.com/shortcuts/e2e417e79be54f42b7e72c1a085aee3c">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Backup%20Data%20Jar/%23%20Backup%20Data%20Jar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5878,7 +5913,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20I%20Love%20You"># I Love You</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c437729202484e3f909210327f77988c">
+       <a href="https://www.icloud.com/shortcuts/b04b5e58d1594ec08f4590c8decb0d12">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20I%20Love%20You/%23%20I%20Love%20You.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5887,7 +5922,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Add%20Anniversary%20to%20Calendar"># Add Anniversary to Calendar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d100258834f942989732dc104b7835a1">
+       <a href="https://www.icloud.com/shortcuts/6f6ff0a6cbcf4b85944f3867fe0d1826">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Add%20Anniversary%20to%20Calendar/%23%20Add%20Anniversary%20to%20Calendar.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5896,7 +5931,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Sync%20Abfuhrkalendar%20to%20Reminders"># Sync Abfuhrkalendar to Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a343db87d7d440b88571b03f11a02265">
+       <a href="https://www.icloud.com/shortcuts/ddef93f518434803bfc85b9ce834e6a4">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Sync%20Abfuhrkalendar%20to%20Reminders/%23%20Sync%20Abfuhrkalendar%20to%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5905,7 +5940,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Set%20Sport%20eDevice%20Charging%20Reminders"># Set Sport eDevice Charging Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c3b4ce82b01a4d5185f9514c1f2a1740">
+       <a href="https://www.icloud.com/shortcuts/5b262095336e49348197d23f6f3ab0a2">
        <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Set%20Sport%20eDevice%20Charging%20Reminders/%23%20Set%20Sport%20eDevice%20Charging%20Reminders.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5922,7 +5957,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/Saturday::My%20Dear%20Yi">Saturday::My Dear Yi</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ef2ca56a6ad94bcf868c6f5aef0cfd99">
+       <a href="https://www.icloud.com/shortcuts/2f80ada629a64408975af2b0de222aef">
        <img src="All%20Shortcuts/Automation%20-%20Weekly/Saturday::My%20Dear%20Yi/Saturday::My%20Dear%20Yi.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5931,7 +5966,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Weekly/Sunday::Run%20Weekly%20Mindware%20Update">Sunday::Run Weekly Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/aa448b41873548ec8845737c185d6597">
+       <a href="https://www.icloud.com/shortcuts/1071c37651b0418abb548268ab7d9f6b">
        <img src="All%20Shortcuts/Automation%20-%20Weekly/Sunday::Run%20Weekly%20Mindware%20Update/Sunday::Run%20Weekly%20Mindware%20Update.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5948,7 +5983,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Monthly/1::Cleanup%20My%20Calendars">1::Cleanup My Calendars</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5c4de3e812594a9eb7ee511f93b2e204">
+       <a href="https://www.icloud.com/shortcuts/155a54a747a540d39e2bfed0c26d0726">
        <img src="All%20Shortcuts/Automation%20-%20Monthly/1::Cleanup%20My%20Calendars/1::Cleanup%20My%20Calendars.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>
@@ -5957,7 +5992,7 @@
        <summary>
        <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Monthly/15::Export%20Reading%20%26%20Watch%20Later%20List">15::Export Reading & Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/85b1e1749dc047848a9b4a91cb404a62">
+       <a href="https://www.icloud.com/shortcuts/975300e28f3e4cd5823f38890c9be85d">
        <img src="All%20Shortcuts/Automation%20-%20Monthly/15::Export%20Reading%20%26%20Watch%20Later%20List/15::Export%20Reading%20%26%20Watch%20Later%20List.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </a>
        </details>

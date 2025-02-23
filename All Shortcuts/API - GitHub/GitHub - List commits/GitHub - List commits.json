@@ -1,0 +1,270 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFGenericFileContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28#list-commits"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "API Credentials.GitHub",
+                "UUID": "FF5D2D9A-1DF3-4F7B-A33B-B33B74B67665"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "pathParams"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "pathParams",
+                "UUID": "A2D118D3-0F34-4438-90EB-3844098E9432"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "queryParams"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "queryParams",
+                "UUID": "F721F823-C8D5-45CE-8096-D49D0214B344"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.CreateQueryItemIntent",
+            "WFWorkflowActionParameters": {
+                "dictionary": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F721F823-C8D5-45CE-8096-D49D0214B344",
+                                "Type": "ActionOutput",
+                                "OutputName": "queryParams"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "inputType": "dictionary",
+                "UUID": "3FAE8CBE-77BB-47A7-BB7F-ED6D2FCD9C8C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.BuildURLIntent",
+            "WFWorkflowActionParameters": {
+                "path": {
+                    "Value": {
+                        "string": "/repos/￼/￼/commits",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "pathParams",
+                                "OutputUUID": "A2D118D3-0F34-4438-90EB-3844098E9432",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "owner"
+                                    }
+                                ]
+                            },
+                            "{9, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "pathParams",
+                                "OutputUUID": "A2D118D3-0F34-4438-90EB-3844098E9432",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "repo"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "host": "api.github.com",
+                "UUID": "21D05424-D674-48D4-A7BF-4CE1268E25DF",
+                "queryItems": {
+                    "Value": {
+                        "OutputUUID": "3FAE8CBE-77BB-47A7-BB7F-ED6D2FCD9C8C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Query Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFHTTPBodyType": "File",
+                "ShowHeaders": true,
+                "UUID": "1E7D2808-15BF-4D70-A6ED-54E1C4F55697",
+                "WFHTTPHeaders": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Accept"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "application/vnd.github+json"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Authorization"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Bearer ￼",
+                                        "attachmentsByRange": {
+                                            "{7, 1}": {
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Value",
+                                                "OutputUUID": "FF5D2D9A-1DF3-4F7B-A33B-B33B74B67665",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "Type": "WFCoercionVariableAggrandizement",
+                                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                                    },
+                                                    {
+                                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                                        "DictionaryKey": "apiToken"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "X-GitHub-Api-Version"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "2022-11-28"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "21D05424-D674-48D4-A7BF-4CE1268E25DF",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFHTTPMethod": "GET"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1E7D2808-15BF-4D70-A6ED-54E1C4F55697",
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 3,
+            "Text": "Notion API Key"
+        },
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 5,
+            "Text": "Database ID"
+        }
+    ],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

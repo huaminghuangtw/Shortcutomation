@@ -1,49 +1,31 @@
-## 🎉 Weekly Update (Week 7, 2025)
+## 🎉 Weekly Update (Week 8, 2025)
 
-> **Date:** 2025-02-15  
+> **Date:** 2025-02-23  
 
-### ✨ 6 New Shortcuts This Week!
+### ✨ 4 New Shortcuts This Week!
 
 <details>
     <summary>
       <strong>
-        <a href="All%20Shortcuts/LifeOS%20Toolkits">LifeOS Toolkits (4)</a>
+        <a href="All%20Shortcuts/API%20-%20GitHub">API - GitHub (2)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote">🌈 BinaryQuote</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20List%20commits">GitHub - List commits</a>
      </summary>
-     <a href="https://www.icloud.com/shortcuts/cd35a21ede15435cb6c11bf55fe8c811">
-     <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote/%F0%9F%8C%88%20BinaryQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/b952f8eb76b544e28c5f771258c49cf4">
+     <img src="All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20List%20commits/GitHub%20-%20List%20commits.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote">🗽 GoodreadsQuote</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20Get%20repository%20content">GitHub - Get repository content</a>
      </summary>
-     <a href="https://www.icloud.com/shortcuts/922982be702b4df69fe935082016a4f7">
-     <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote/%F0%9F%97%BD%20GoodreadsQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote">Get Random Quote from BinaryQuote</a>
-     </summary>
-     <a href="https://www.icloud.com/shortcuts/e1fe5ad80b2349ea8ea0ec2125fd67de">
-     <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote/Get%20Random%20Quote%20from%20BinaryQuote.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-     </a>
-     </details>
-
-  - <details>
-     <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads">Get Random Quote from Goodreads</a>
-     </summary>
-     <a href="https://www.icloud.com/shortcuts/3b72aae0c6a641d280d8804769a936be">
-     <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads/Get%20Random%20Quote%20from%20Goodreads.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/820ba48dfc7c4814be793c44f0844d11">
+     <img src="All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20Get%20repository%20content/GitHub%20-%20Get%20repository%20content.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -51,16 +33,16 @@
 <details>
     <summary>
       <strong>
-        <a href="All%20Shortcuts/API%20-%20Others">API - Others (1)</a>
+        <a href="All%20Shortcuts/Reminders%20Automation">Reminders Automation (1)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes">Get Random Quote from ZenQuotes</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists">🚜 Organize Evergreen Lists</a>
      </summary>
-     <a href="https://www.icloud.com/shortcuts/2b610c63cf7b4961b52b5f7ffe242b8f">
-     <img src="All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes/Get%20Random%20Quote%20from%20ZenQuotes.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/f7b82f9dcee84bccae53bfa3ac70b088">
+     <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 </details>
@@ -68,16 +50,16 @@
 <details>
     <summary>
       <strong>
-        <a href="All%20Shortcuts/iPhone%20Settings">iPhone Settings (1)</a>
+        <a href="All%20Shortcuts/Automation%20-%20Daily">Automation - Daily (1)</a>
       </strong>
     </summary>
 
   - <details>
      <summary>
-     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver">Smart Data Saver</a>
+     <a href="https://github.com/huaminghuangtw/Apple-Shortcuts-Gallery/tree/main/All%20Shortcuts/Automation%20-%20Daily/%23%20Check%20GitHub%20Auto%20Backup%20Status"># Check GitHub Auto Backup Status</a>
      </summary>
-     <a href="https://www.icloud.com/shortcuts/960b736c804143129cc4501fa48f92ad">
-     <img src="All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver/Smart%20Data%20Saver.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+     <a href="https://www.icloud.com/shortcuts/4d7b71fbb261479fa500022a0d3953cf">
+     <img src="All%20Shortcuts/Automation%20-%20Daily/%23%20Check%20GitHub%20Auto%20Backup%20Status/%23%20Check%20GitHub%20Auto%20Backup%20Status.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
      </a>
      </details>
 

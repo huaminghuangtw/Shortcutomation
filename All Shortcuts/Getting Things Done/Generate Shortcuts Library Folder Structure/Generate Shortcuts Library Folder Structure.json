@@ -12,40 +12,38 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Vault Repos.Apple-Shortcuts-Gallery",
-                "UUID": "6A1507BC-DB26-45AD-A14B-48846BE169E4"
+                "CustomOutputName": "Backup Folder",
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "Shortcuts",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8CD4A3FB-3479-45CB-829A-CE2FA3119626",
+                        "relativeSubpath": "Backup",
+                        "appContainerBundleIdentifier": "com.apple.shortcuts",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/6136C63D-6C16-4E02-8B81-2C1DC7B8E122/8a4afb8001b63f5891da8af15101fb7eadd46f81"
+                    },
+                    "filename": "Backup",
+                    "displayName": "Backup"
+                },
+                "UUID": "65671BF7-C143-46E1-A670-4B3A09F9235A"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": {
+                "WFFile": {
                     "Value": {
-                        "string": "￼/tree/main/All Shortcuts",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Value",
-                                "OutputUUID": "6A1507BC-DB26-45AD-A14B-48846BE169E4",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "repoURL"
-                                    }
-                                ]
-                            }
-                        }
+                        "OutputUUID": "65671BF7-C143-46E1-A670-4B3A09F9235A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Backup Folder"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "baseURL",
-                "UUID": "AC421F97-0251-481D-B7D7-3D3033824889"
+                "WFFileErrorIfNotFound": false,
+                "WFGetFilePath": "All Shortcuts",
+                "CustomOutputName": "All Shortcuts",
+                "UUID": "7C9FACF7-A165-4EB9-BED4-3F42CC3C5F76"
             }
         },
         {
@@ -253,9 +251,9 @@
                                 ]
                             },
                             "{0, 1}": {
-                                "OutputUUID": "AC421F97-0251-481D-B7D7-3D3033824889",
+                                "OutputUUID": "7C9FACF7-A165-4EB9-BED4-3F42CC3C5F76",
                                 "Type": "ActionOutput",
-                                "OutputName": "baseURL"
+                                "OutputName": "All Shortcuts"
                             }
                         }
                     },
@@ -362,11 +360,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFTextActionText": {
                     "Value": {
-                        "string": "￼/￼/￼/manifest.json",
+                        "string": "￼/￼/￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
                                 "VariableName": "Repeat Item",
@@ -397,9 +395,28 @@
                                 ]
                             },
                             "{0, 1}": {
-                                "OutputUUID": "AC421F97-0251-481D-B7D7-3D3033824889",
+                                "OutputUUID": "7C9FACF7-A165-4EB9-BED4-3F42CC3C5F76",
                                 "Type": "ActionOutput",
-                                "OutputName": "baseURL"
+                                "OutputName": "All Shortcuts"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EAA066CF-6555-47BF-BA4C-BA4E94E7FEC0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼/manifest.json",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "EAA066CF-6555-47BF-BA4C-BA4E94E7FEC0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
                             }
                         }
                     },
@@ -409,13 +426,40 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": {
+                    "Value": {
+                        "string": "￼/manifest.json",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "EAA066CF-6555-47BF-BA4C-BA4E94E7FEC0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFFile": {
+                    "Value": {
+                        "OutputUUID": "65671BF7-C143-46E1-A670-4B3A09F9235A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Backup Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "560D73EA-F009-4919-A3DE-4CE67F7AE685"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "0CCCF976-A9B5-4481-AF80-82870915490F",
+                        "OutputUUID": "560D73EA-F009-4919-A3DE-4CE67F7AE685",
                         "Type": "ActionOutput",
-                        "OutputName": "URL Encoded Text"
+                        "OutputName": "File"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -429,9 +473,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "0CCCF976-A9B5-4481-AF80-82870915490F",
+                        "OutputUUID": "560D73EA-F009-4919-A3DE-4CE67F7AE685",
                         "Type": "ActionOutput",
-                        "OutputName": "URL Encoded Text"
+                        "OutputName": "File"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -445,7 +489,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "string": "￼/￼/￼/￼.png",
+                        "string": "￼/￼.png",
                         "attachmentsByRange": {
                             "{2, 1}": {
                                 "VariableName": "Repeat Item",
@@ -457,90 +501,20 @@
                                     },
                                     {
                                         "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "folder"
-                                    }
-                                ]
-                            },
-                            "{4, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "name"
-                                    }
-                                ]
-                            },
-                            "{6, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
                                         "DictionaryKey": "name"
                                     }
                                 ]
                             },
                             "{0, 1}": {
-                                "OutputUUID": "AC421F97-0251-481D-B7D7-3D3033824889",
+                                "OutputUUID": "EAA066CF-6555-47BF-BA4C-BA4E94E7FEC0",
                                 "Type": "ActionOutput",
-                                "OutputName": "baseURL"
+                                "OutputName": "Text"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "BC375233-CB30-415E-884E-FD2BF61083B3"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "BC375233-CB30-415E-884E-FD2BF61083B3",
-                                "Type": "ActionOutput",
-                                "OutputName": "URL Encoded Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFReplaceTextReplace": "raw.githubusercontent.com",
-                "UUID": "D1A74ADB-0435-4C53-A314-C157917D12BE",
-                "WFReplaceTextFind": "github.com"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "D1A74ADB-0435-4C53-A314-C157917D12BE",
-                                "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFReplaceTextReplace": "/refs/heads/main",
-                "UUID": "5CA5D3B9-E586-4821-B0D8-D8CA8EFC493D",
-                "WFReplaceTextFind": "/tree/main"
             }
         },
         {
@@ -570,9 +544,9 @@
                                 ]
                             },
                             "{113, 1}": {
-                                "OutputUUID": "5CA5D3B9-E586-4821-B0D8-D8CA8EFC493D",
+                                "OutputUUID": "BC375233-CB30-415E-884E-FD2BF61083B3",
                                 "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
+                                "OutputName": "URL Encoded Text"
                             },
                             "{92, 1}": {
                                 "OutputUUID": "430DDE25-258C-422E-AEBA-09285E88BD5E",
@@ -711,9 +685,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "AC421F97-0251-481D-B7D7-3D3033824889",
+                                "OutputUUID": "7C9FACF7-A165-4EB9-BED4-3F42CC3C5F76",
                                 "Type": "ActionOutput",
-                                "OutputName": "baseURL"
+                                "OutputName": "All Shortcuts"
                             }
                         }
                     },

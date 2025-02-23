@@ -101,7 +101,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Which one?",
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "3EDE4531-9B6E-498F-92E0-82A9E2EC1481",
@@ -110,7 +109,24 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "4025C7EB-08B1-4A94-B25A-4D51FE855728"
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "UUID": "4025C7EB-08B1-4A94-B25A-4D51FE855728",
+                "WFChooseFromListActionSelectMultiple": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4025C7EB-08B1-4A94-B25A-4D51FE855728",
+                        "Type": "ActionOutput",
+                        "OutputName": "Selected Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "07A75835-C971-40C4-B42E-8B5D8660E5AA",
+                "WFControlFlowMode": 0
             }
         },
         {
@@ -121,9 +137,8 @@
                         "string": ".*￼.*",
                         "attachmentsByRange": {
                             "{2, 1}": {
-                                "OutputUUID": "4025C7EB-08B1-4A94-B25A-4D51FE855728",
-                                "Type": "ActionOutput",
-                                "OutputName": "Chosen Item"
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -251,7 +266,15 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "99C7229B-55E1-4CD6-BEAB-125E39B1EC4C",
+                "UUID": "0ADFDF92-C896-4ACB-B146-C273B9453C54"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "07A75835-C971-40C4-B42E-8B5D8660E5AA",
                 "WFControlFlowMode": 2
             }
         }
