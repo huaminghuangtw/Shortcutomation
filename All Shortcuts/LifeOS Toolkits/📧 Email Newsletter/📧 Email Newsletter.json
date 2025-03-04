@@ -1,0 +1,181 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "📧 Newsletter",
+                "CustomOutputName": "📧 Newsletter",
+                "UUID": "B0941FD5-D864-499B-8D27-BC7B9572EEF7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "94F0CE84-BC1C-4D4E-8F3B-EEDF0E8FA7D7",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "https://mail.google.com/mail/u/0/#label/￼",
+                        "attachmentsByRange": {
+                            "{40, 1}": {
+                                "OutputUUID": "B0941FD5-D864-499B-8D27-BC7B9572EEF7",
+                                "Type": "ActionOutput",
+                                "OutputName": "📧 Newsletter"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "53CE4891-6FC6-41E1-B012-D1A26148D344"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.OpenURLsWithApp",
+            "WFWorkflowActionParameters": {
+                "app": {
+                    "title": {
+                        "key": "Safari"
+                    },
+                    "image": {
+                        "type": "URL",
+                        "uri": "intents-remote-image-proxy:?proxyIdentifier=70EBD9CD-156C-4712-0012-32CD20F1EC4C.png&storageServiceIdentifier=com.apple.Intents.INImageServiceConnection",
+                        "storageServiceIdentifier": "com.apple.Intents.INImageServiceConnection"
+                    },
+                    "subtitle": {
+                        "key": "Safari"
+                    },
+                    "identifier": "file:///System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "OpenURLsWithApp"
+                },
+                "UUID": "38E9EE80-994A-427E-9C52-F29372D36407",
+                "urls": {
+                    "Value": {
+                        "OutputUUID": "53CE4891-6FC6-41E1-B012-D1A26148D344",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "94F0CE84-BC1C-4D4E-8F3B-EEDF0E8FA7D7",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "10DC0FC7-5F31-4CDE-BCA7-2F64A7A62512",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilemail.OpenMailboxEntityAction",
+            "WFWorkflowActionParameters": {
+                "target": {
+                    "Value": {
+                        "OutputUUID": "B0941FD5-D864-499B-8D27-BC7B9572EEF7",
+                        "Type": "ActionOutput",
+                        "OutputName": "📧 Newsletter"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "D3B75EE3-D971-4AA2-AE0E-52158B39CA05",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobilemail",
+                    "Name": "Mail",
+                    "AppIntentIdentifier": "OpenMailboxEntityAction"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "10DC0FC7-5F31-4CDE-BCA7-2F64A7A62512",
+                "WFControlFlowMode": 2
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

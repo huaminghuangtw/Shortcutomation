@@ -1,0 +1,134 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
+            "WFWorkflowActionParameters": {
+                "WFDeviceDetail": "Current Brightness",
+                "UUID": "BEFC4102-2CA5-4E77-96C8-0FBB08B2F519"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "60",
+                "UUID": "E5558CA6-F98B-4AA1-9FFD-4603E3F828AA",
+                "WFMathOperation": "×"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
+            "WFWorkflowActionParameters": {
+                "IntentAppDefinition": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.clock",
+                    "Name": "Clock",
+                    "ExtensionBundleIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobiletimer",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "INCreateTimerIntent"
+                },
+                "UUID": "ACE402A1-90A9-40E2-86D3-79826C22BA5B",
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "sec",
+                        "Magnitude": {
+                            "OutputUUID": "E5558CA6-F98B-4AA1-9FFD-4603E3F828AA",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": {
+                    "Value": {
+                        "OutputUUID": "E5558CA6-F98B-4AA1-9FFD-4603E3F828AA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "38076F1B-7774-4E0D-A6E3-7B8DB026DE6C",
+                    "workflowName": "Pause Audio",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Pause Audio",
+                "UUID": "DA222B2F-8617-4A3D-A3EF-6D87BB1DF040"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "773AAE63-7A8F-4D23-BB1C-DE291F12C5F8",
+                    "workflowName": "Time's Up!",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Time's Up!",
+                "UUID": "5BA34F48-BFC7-49AE-B08E-1A18B781E46A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": {
+                    "Value": {
+                        "OutputUUID": "BEFC4102-2CA5-4E77-96C8-0FBB08B2F519",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

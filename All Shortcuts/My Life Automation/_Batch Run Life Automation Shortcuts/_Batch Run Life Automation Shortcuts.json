@@ -1,0 +1,234 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": ",",
+                "UUID": "59D0FC0E-E6F5-4ADE-B7B9-BCABB77D0F21",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "59D0FC0E-E6F5-4ADE-B7B9-BCABB77D0F21",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "myLifeAutomationShortcuts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "VariableName": "myLifeAutomationShortcuts",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "F44FA4FA-3FCA-43EC-9641-6503B321D680"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "⚙️ My Life Automation",
+                "CustomOutputName": "⚙️ My Life Automation",
+                "UUID": "2D9844E8-EDB3-4292-BFFE-2820BE7D099F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "A8EC0937-1369-431D-9FC5-16CD75E16A88",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.shortcutsToBeChecked",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2D9844E8-EDB3-4292-BFFE-2820BE7D099F",
+                                "Type": "ActionOutput",
+                                "OutputName": "⚙️ My Life Automation"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "valueConversionMode": "automatic",
+                "values": {
+                    "Value": {
+                        "VariableName": "myLifeAutomationShortcuts",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.ClearMessagesIntent",
+            "WFWorkflowActionParameters": {
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "ClearMessagesIntent"
+                },
+                "UUID": "B3CE59DF-B3AF-49FF-B64B-D51D78D834F3",
+                "tag": {
+                    "Value": {
+                        "OutputUUID": "DD2CBDBD-2FBA-4891-9779-E6B88B942FEF",
+                        "Type": "ActionOutput",
+                        "OutputName": "⚙️ My Life Automation"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "0421803F-FC23-4CC5-AAA4-69429E08B3FF",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "StartLoggingIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "myLifeAutomationShortcuts",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "87E72785-43E4-442D-A73E-10D097A232B8",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflowName": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "51DBAE87-2FCE-4667-B8D1-9CE283708896"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "9A77BA47-8839-4ADD-B7D1-6BB557B52B7D",
+                "title": {
+                    "Value": {
+                        "string": "✅ ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "F44FA4FA-3FCA-43EC-9641-6503B321D680",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "success",
+                "tag": {
+                    "Value": {
+                        "OutputUUID": "2D9844E8-EDB3-4292-BFFE-2820BE7D099F",
+                        "Type": "ActionOutput",
+                        "OutputName": "⚙️ My Life Automation"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "87E72785-43E4-442D-A73E-10D097A232B8",
+                "UUID": "050B3854-EF71-4BA1-BF74-D95E55331927"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "stop",
+                "UUID": "B410CD76-84F9-4832-888A-FDC67EF6891B",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "StartLoggingIntent"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}
