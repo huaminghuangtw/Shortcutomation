@@ -1,0 +1,333 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "Tuesday",
+                    "Friday"
+                ],
+                "UUID": "A804E295-9D4B-4E69-A4DF-14EF77180C32"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A804E295-9D4B-4E69-A4DF-14EF77180C32",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+                    "workflowName": "getDayOfWeek",
+                    "isSelf": false
+                },
+                "UUID": "28C9461A-C837-494E-BD9E-6DCDE30558F9",
+                "WFWorkflowName": "getDayOfWeek"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "A804E295-9D4B-4E69-A4DF-14EF77180C32",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "28C9461A-C837-494E-BD9E-6DCDE30558F9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "5A8BDE63-8584-482B-AE1E-74ADF2E56849",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "q"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "in:inbox AND is:unread"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "CE06E660-6E9D-47AA-86B6-FC3D932657A6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CE06E660-6E9D-47AA-86B6-FC3D932657A6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "258A157C-BD29-43B9-8C2B-F374139A169A",
+                    "workflowName": "Gmail - List messages",
+                    "isSelf": false
+                },
+                "UUID": "04B8904F-5560-427F-BB5F-C6880E08B653",
+                "WFWorkflowName": "Gmail - List messages"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "45854C70-5EA7-4C04-8600-64E3628567FE",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "04B8904F-5560-427F-BB5F-C6880E08B653",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "0",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PluraliseIntent",
+            "WFWorkflowActionParameters": {
+                "word": "New Email",
+                "count": {
+                    "Value": {
+                        "OutputUUID": "04B8904F-5560-427F-BB5F-C6880E08B653",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "output": "numberDigit",
+                "UUID": "CD4E227F-1443-44A0-85FE-09DE1BD4C249",
+                "typeCase": "title"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "📨 Gmail",
+                "CustomOutputName": "📨 Gmail",
+                "UUID": "68B009C0-5C84-4AD1-9229-198A816D8D36"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "68B009C0-5C84-4AD1-9229-198A816D8D36",
+                        "Type": "ActionOutput",
+                        "OutputName": "📨 Gmail"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "CDC80331-E3A7-457F-B2AF-0C9211145241",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "8B4D9F01-D9D0-445C-A167-EEA702247D1B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode.#MonkMode.startTime",
+                "UUID": "BA31499A-ED6E-4AA9-8CB6-EDA8D695F976"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "atTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "BA31499A-ED6E-4AA9-8CB6-EDA8D695F976",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "subtitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8B4D9F01-D9D0-445C-A167-EEA702247D1B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "onTap": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "CDC80331-E3A7-457F-B2AF-0C9211145241",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "threadID": "",
+                "UUID": "85AEF5AD-1B14-4382-9392-0EE1F0395D03",
+                "showNotification": "AtTime",
+                "inMinutes": "30",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "68B009C0-5C84-4AD1-9229-198A816D8D36",
+                                "Type": "ActionOutput",
+                                "OutputName": "📨 Gmail"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "repeatTrigger": false,
+                "body": {
+                    "Value": {
+                        "string": "💁‍♂️ ￼",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "OutputUUID": "CD4E227F-1443-44A0-85FE-09DE1BD4C249",
+                                "Type": "ActionOutput",
+                                "OutputName": "Pluralised Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "notificationID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "68B009C0-5C84-4AD1-9229-198A816D8D36",
+                                "Type": "ActionOutput",
+                                "OutputName": "📨 Gmail"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "45854C70-5EA7-4C04-8600-64E3628567FE",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "5A8BDE63-8584-482B-AE1E-74ADF2E56849",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

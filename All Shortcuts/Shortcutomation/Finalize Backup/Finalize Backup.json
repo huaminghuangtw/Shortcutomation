@@ -1,0 +1,169 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "CustomOutputName": "Year",
+                "UUID": "E35A950E-0EE9-4F5E-AADE-C91C54457BA5",
+                "WFDateFormat": "yyyy",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+                    "workflowName": "getCurentWeekNumber1",
+                    "isSelf": false
+                },
+                "CustomOutputName": "WeekNumber",
+                "UUID": "827901D0-AD94-44A2-960E-20895ADAB7C8",
+                "WFWorkflowName": "getCurentWeekNumber1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Weekly Update (Week ￼, ￼)",
+                        "attachmentsByRange": {
+                            "{20, 1}": {
+                                "OutputUUID": "827901D0-AD94-44A2-960E-20895ADAB7C8",
+                                "Type": "ActionOutput",
+                                "OutputName": "WeekNumber"
+                            },
+                            "{23, 1}": {
+                                "OutputUUID": "E35A950E-0EE9-4F5E-AADE-C91C54457BA5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Year"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runshellscript",
+            "WFWorkflowActionParameters": {
+                "Script": {
+                    "Value": {
+                        "string": "cd \"/Users/huaminghuang/Websites/shortcutomation.com/Shortcutomation\"\ngit add .\ngit commit -m \"￼\"\ngit tag --annotate \"￼.Week.￼\" -m \"￼\"\ngit push origin main --force\ngit push origin --tags --force",
+                        "attachmentsByRange": {
+                            "{95, 1}": {
+                                "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{118, 1}": {
+                                "OutputUUID": "E35A950E-0EE9-4F5E-AADE-C91C54457BA5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Year"
+                            },
+                            "{125, 1}": {
+                                "OutputUUID": "827901D0-AD94-44A2-960E-20895ADAB7C8",
+                                "Type": "ActionOutput",
+                                "OutputName": "WeekNumber"
+                            },
+                            "{132, 1}": {
+                                "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AA81005C-AF80-4FCB-9C57-D40FE4090236"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.DeleteValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Apple Shortcuts.backup",
+                "deleteStrategy": "alwaysAllow",
+                "UUID": "5A25E722-1642-4F75-A4CC-2194B0A67694"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": "https://github.com/huaminghuangtw/Shortcutomation/releases/latest",
+                "UUID": "C40767B1-42BC-4D2F-91D0-0FB267947C82"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFAlertCondition": "At Time",
+                "WFCalendarItemTitle": "🌾 Shortcutomation 又長大了！",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
+                    "Title": "🗓️ Scheduled",
+                    "IsAllCalendar": false
+                },
+                "WFAlertEnabled": "Alert",
+                "UUID": "7597460E-AC20-4AB0-9BD0-9B88F35A5C23",
+                "WFAlertCustomTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C40767B1-42BC-4D2F-91D0-0FB267947C82",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemCalendar": "🗓️ Scheduled",
+                "WFPriority": "High"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

@@ -1,0 +1,240 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFDateContentItem",
+        "WFDictionaryContentItem",
+        "WFStringContentItem",
+        "WFNumberContentItem",
+        "WFBooleanContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://ai.google.dev/api/generate-content"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "prompt"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "prompt",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "01C66C6E-825F-4ABF-90D6-56541924A04C",
+                    "workflowName": "Sanity Check JSON String",
+                    "isSelf": false
+                },
+                "UUID": "F2D9C04B-14ED-4980-AEF6-F3BF9CAF3876",
+                "WFWorkflowName": "Sanity Check JSON String"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "{\n  \"contents\": [{\n    \"parts\":[{\"text\": \"￼\"}]\n    }]\n}",
+                        "attachmentsByRange": {
+                            "{42, 1}": {
+                                "OutputUUID": "F2D9C04B-14ED-4980-AEF6-F3BF9CAF3876",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "7414F2A7-887E-4A8B-B660-03019B7211FA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "API Credentials.Google",
+                "UUID": "42C3ACFD-C8CB-49CE-B55F-5522EE4C5F8C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.CreateQueryItemIntent",
+            "WFWorkflowActionParameters": {
+                "inputType": "text",
+                "value": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Value",
+                                "OutputUUID": "42C3ACFD-C8CB-49CE-B55F-5522EE4C5F8C",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "apiKeyGemini"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E04AECCC-25DE-49ED-A8DC-7F33DA43114F",
+                "dictionary": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E3F68E24-6220-443A-AD10-572C60CED9F9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "name": "key"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.BuildURLIntent",
+            "WFWorkflowActionParameters": {
+                "path": "/v1beta/models/gemini-2.0-flash:generateContent",
+                "host": "generativelanguage.googleapis.com",
+                "UUID": "3098AA9D-1F80-4354-A96A-01ED73A0536D",
+                "queryItems": {
+                    "Value": {
+                        "OutputUUID": "E04AECCC-25DE-49ED-A8DC-7F33DA43114F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Query Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFRequestVariable": {
+                    "Value": {
+                        "OutputUUID": "7414F2A7-887E-4A8B-B660-03019B7211FA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFHTTPHeaders": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Content-Type"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "application/json"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "8C7B1788-825A-4AF4-A877-BAC79121DA00",
+                "ShowHeaders": true,
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "3098AA9D-1F80-4354-A96A-01ED73A0536D",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFHTTPMethod": "POST",
+                "WFHTTPBodyType": "File"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8C7B1788-825A-4AF4-A877-BAC79121DA00",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "candidates.1.content.parts.1.text",
+                "UUID": "EBBCFF35-B30F-4B72-BDB7-1E32CCDDE4AE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "EBBCFF35-B30F-4B72-BDB7-1E32CCDDE4AE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

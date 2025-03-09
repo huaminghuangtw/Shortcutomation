@@ -1,0 +1,232 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1106",
+    "WFWorkflowMinimumClientVersion": 1106,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": "Shortcuts_Backup_with_Folders.zip",
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "Websites/shortcutomation.com/public/Shortcutomation",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "Shortcutomation",
+                    "displayName": "Shortcutomation"
+                },
+                "UUID": "39CCD7D9-1F48-49FF-B760-3ADEC9A2CC91"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.unzip",
+            "WFWorkflowActionParameters": {
+                "WFArchive": {
+                    "Value": {
+                        "OutputUUID": "39CCD7D9-1F48-49FF-B760-3ADEC9A2CC91",
+                        "Type": "ActionOutput",
+                        "OutputName": "File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "59810556-7B6F-453B-93BB-9C38508E78EA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
+            "WFWorkflowActionParameters": {
+                "WFFilePath": "Shortcuts_Backup_with_Folders",
+                "WFFolder": {
+                    "fileLocation": {
+                        "relativeSubpath": "Websites/shortcutomation.com/public/Shortcutomation",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "Shortcutomation",
+                    "displayName": "Shortcutomation"
+                },
+                "UUID": "A261B3EE-CF6B-470E-8F92-2018EDB6687A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "A261B3EE-CF6B-470E-8F92-2018EDB6687A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "59810556-7B6F-453B-93BB-9C38508E78EA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "40B60E1D-62E8-4E51-A37C-349AF12B09C3",
+                "WFSaveFileOverwrite": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "A261B3EE-CF6B-470E-8F92-2018EDB6687A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "36483D11-6E6D-4B4A-98A4-4BCDC4756675",
+                "Recursive": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "36483D11-6E6D-4B4A-98A4-4BCDC4756675",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "50F19C83-F396-40D4-B0E0-732BB1F9B4C8",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.unzip",
+            "WFWorkflowActionParameters": {
+                "WFArchive": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A82E739C-0C11-4228-B9CE-6546B6EFED6E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "50F19C83-F396-40D4-B0E0-732BB1F9B4C8",
+                "UUID": "A63A90C6-550C-4D76-AD58-E53F60C5B714"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.makezip",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A63A90C6-550C-4D76-AD58-E53F60C5B714",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFArchiveFormat": "zip",
+                "UUID": "2CDBF032-C8D1-4EFC-AFEB-0C9CF49DDEDA",
+                "WFZIPName": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2CDBF032-C8D1-4EFC-AFEB-0C9CF49DDEDA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Archive"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFName": "Shortcuts_Backup_without_Folders",
+                "UUID": "F20353FD-BFAA-48AE-831F-849EE6757012"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "fileLocation": {
+                        "relativeSubpath": "Websites/shortcutomation.com/public/Shortcutomation",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "Shortcutomation",
+                    "displayName": "Shortcutomation"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F20353FD-BFAA-48AE-831F-849EE6757012",
+                        "Type": "ActionOutput",
+                        "OutputName": "Renamed Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "zipFile",
+                "UUID": "F5D482F4-E49E-44E2-8D96-BDEC769A2E71",
+                "WFSaveFileOverwrite": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.delete",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A261B3EE-CF6B-470E-8F92-2018EDB6687A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "BA5140F8-BF1F-4436-916B-2E5A865653E0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

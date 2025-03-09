@@ -1,0 +1,198 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Remove Duplicate Lines (Fast, Order Not Preserved)</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gApple { background-color: #f6f6ff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dotted { border-left-style: dotted; }
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gApple { background-color: #2c2842; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="nonbutton gParams">
+  <a href="https://shortcutomation.com/gallery/Text%20Manipulation/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved)" target="_blank" style="text-decoration: none; color: inherit;" title="💁🏽 Back to shortcut page">
+    <b>Remove Duplicate Lines (Fast, Order Not Preserved)</b>
+  </a> 
+  (6 actions, 4 KB)
+</button>
+<button class="gYellow" id="m0">
+0 Split Text <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> by New Lines　»</button>
+<hr><button class="button " id="m1">
+1 Filter Files <span class="box"><span class="var"><b>[0 Split Text]</b></span></span>　»</button><div class="content">
+<div class="row"><div class="col1">ContentItemSortProperty</div><span style="display:none">: </span><div class="col2">Name</div></div>
+<div class="row"><div class="col1">ContentItemSortOrder</div><span style="display:none">: </span><div class="col2">A to Z</div></div></div>
+<hr><button class="gYellow" id="m2">
+2 Combine Text <span class="box"><span class="var"><b>[1 Files]</b></span></span> with New Lines　» <span class="magic" onclick="magictap(4)">4</span></button><div></div>
+<button class="button gYellow" id="m3">
+3 Comment</button><div class="content commentcontent">
+<div class="col2">https://stackoverflow.com/a/1573425</div></div>
+<button class="button gYellow" id="m4">
+4 Replace Text <span class="box">(?m)^(.*)(\r?\n\1)+$</span> with <span class="box">$1</span> in <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 Combined Text]</b></span></span>　»</button><div class="content">
+<div class="row"><div class="col1">ReplaceTextRegularExpression</div><span style="display:none">: </span><div class="col2">true</div></div></div>
+<hr><button class="gGray" id="m5">
+5 Stop and Output <span class="box"><span class="var"><b>[4 Updated Text]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

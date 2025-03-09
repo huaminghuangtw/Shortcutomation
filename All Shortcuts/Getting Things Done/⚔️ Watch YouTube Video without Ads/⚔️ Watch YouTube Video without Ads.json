@@ -1,0 +1,288 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D501819B-A78E-492F-9443-4AF8DB51E19B",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "videoId",
+                "UUID": "8FE0EAB7-B863-4FFD-85A3-02417403EBF3",
+                "WFWorkflow": {
+                    "workflowIdentifier": "D3BF3993-27F9-414E-BB76-491ACE8A7F12",
+                    "workflowName": "Extract YouTube VideoId from URL",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Extract YouTube VideoId from URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "8FE0EAB7-B863-4FFD-85A3-02417403EBF3",
+                            "Type": "ActionOutput",
+                            "OutputName": "videoId"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "75F5DC18-9539-41FB-B598-D93EB931DB7C",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "https://www.youtube.com/embed/￼",
+                        "attachmentsByRange": {
+                            "{30, 1}": {
+                                "OutputUUID": "8FE0EAB7-B863-4FFD-85A3-02417403EBF3",
+                                "Type": "ActionOutput",
+                                "OutputName": "videoId"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8E8475F9-45D0-4EF0-8AFD-1E2BB2089B9A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "75F5DC18-9539-41FB-B598-D93EB931DB7C",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.link",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EE4EA25F-C6CA-4A22-BFAC-CD59F01C7075"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "75F5DC18-9539-41FB-B598-D93EB931DB7C",
+                "UUID": "DF969272-0935-4BFE-A869-C122F4E8C7CB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D501819B-A78E-492F-9443-4AF8DB51E19B",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAskActionPrompt": "🤖 YouTube video link?",
+                "WFInputType": "URL",
+                "UUID": "04C6F4CE-2678-4B66-9C43-E98F761B287C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "D501819B-A78E-492F-9443-4AF8DB51E19B",
+                "UUID": "6016BA6F-5235-4A2F-B955-73492869CC9B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1CFCFA7D-F48B-434C-A3C3-5C8E6FEDF664",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6016BA6F-5235-4A2F-B955-73492869CC9B",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "42614BF2-23BC-40B7-A95B-9D9DA33D6C44"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1CFCFA7D-F48B-434C-A3C3-5C8E6FEDF664",
+                "UUID": "50882D29-1874-42FC-BB14-A4EEBFFCE491"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4081AF52-11F3-4C69-8351-FDA2FAB4BFD4",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.brave.ios.browser",
+                    "Name": "Brave",
+                    "TeamIdentifier": "KL8N8XSYF4"
+                },
+                "WFAppIdentifier": "com.brave.ios.browser",
+                "UUID": "894E37C2-CCCC-4054-A7B3-F339D87F9545"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6016BA6F-5235-4A2F-B955-73492869CC9B",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "6F90C947-A84E-47F6-80D9-7C994C96A8C9",
+                    "workflowName": "Copy to Clipboard",
+                    "isSelf": false
+                },
+                "UUID": "3A9C324D-4680-4C8F-8781-AC99B1A7343C",
+                "WFWorkflowName": "Copy to Clipboard"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6016BA6F-5235-4A2F-B955-73492869CC9B",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "4F01DBEE-6F75-4D25-A918-41F41C3A2A72",
+                    "workflowName": "Notify \"Copied to Clipboard!\"",
+                    "isSelf": false
+                },
+                "UUID": "D0F40272-5DBA-4EDC-AA7F-723FF55E7737",
+                "WFWorkflowName": "Notify \"Copied to Clipboard!\""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4081AF52-11F3-4C69-8351-FDA2FAB4BFD4",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
+            "WFWorkflowActionParameters": {
+                "WFVolume": 0.6535353064537048
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "ActionExtension",
+        "Watch",
+        "QuickActions"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

@@ -12,20 +12,57 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "/Visuals",
+                    "/EvergreenNotes/_attachments"
+                ],
+                "UUID": "E2E97DDB-5959-4200-A975-F486CA01F9DA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E2E97DDB-5959-4200-A975-F486CA01F9DA",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "523AF8B3-4535-4242-BF4E-16E845938E93",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "WFFile": {
                     "fileLocation": {
                         "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/FCB1C390-2B1D-417F-97E7-684FBE5F6063",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
                         "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/24208356-A7F2-4CEA-8E4D-4BFD3F850B74/bf47839512a0e865eb2fe630e4662098a3427020"
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
                     },
-                    "filename": "Visuals",
-                    "displayName": "Visuals"
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
                 },
-                "UUID": "DFF6F595-7DC3-41E6-A29F-7AE5FE708033"
+                "UUID": "6DAA4373-0477-4AE8-BB6A-5DF54A5F2432"
             }
         },
         {
@@ -33,7 +70,7 @@
             "WFWorkflowActionParameters": {
                 "WFFolder": {
                     "Value": {
-                        "OutputUUID": "DFF6F595-7DC3-41E6-A29F-7AE5FE708033",
+                        "OutputUUID": "6DAA4373-0477-4AE8-BB6A-5DF54A5F2432",
                         "Type": "ActionOutput",
                         "OutputName": "File"
                     },
@@ -65,7 +102,10 @@
                             {
                                 "Operator": 999,
                                 "Values": {
-                                    "Number": 300,
+                                    "Number": {
+                                        "Value": 300,
+                                        "WFSerializationType": "WFNumberStringSubstitutableState"
+                                    },
                                     "String": "Darebee"
                                 },
                                 "Removable": true,
@@ -87,13 +127,21 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "523AF8B3-4535-4242-BF4E-16E845938E93",
+                "UUID": "AF2085A6-B3F9-4230-AAF8-74FF1361B5B5"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "BA29B1E9-C3B0-465B-BFEE-24F32B9FC806",
+                        "OutputUUID": "AF2085A6-B3F9-4230-AAF8-74FF1361B5B5",
                         "Type": "ActionOutput",
-                        "OutputName": "Images"
+                        "OutputName": "Repeat Results"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

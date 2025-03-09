@@ -78,7 +78,12 @@
                             },
                             {
                                 "Operator": 4,
-                                "Values": {},
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
                                 "Removable": true,
                                 "Property": "Is Completed"
                             }
@@ -125,9 +130,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFCalendarItemTitle": {
+                "WFTextActionText": {
                     "Value": {
                         "string": "Restock: ￼",
                         "attachmentsByRange": {
@@ -139,29 +144,152 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
+                "UUID": "59FE9B3A-04F6-4590-BB0C-D26244B191B5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "🗓️ Scheduled",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "59FE9B3A-04F6-4590-BB0C-D26244B191B5",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Text"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemInputParameter": "Library",
+                "UUID": "DAE14291-386F-4862-AA5C-5CCCA66D989F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "DAE14291-386F-4862-AA5C-5CCCA66D989F",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "E07372B3-0C39-4862-A66C-ED7F920B30A9",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode.#MonkMode.startTime",
+                "UUID": "D391D12C-EC67-4FF7-A661-C603D4C9208E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "59FE9B3A-04F6-4590-BB0C-D26244B191B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "WFAlertEnabled": "Alert",
+                "WFCalendarItemNotes": {
+                    "Value": {
+                        "string": "❗️Only ￼ left ❗️",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "OutputUUID": "FBC5BC58-3AAF-43BA-BAAA-CB893629D647",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "WFCalendarDescriptor": {
                     "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
                     "Title": "🗓️ Scheduled",
                     "IsAllCalendar": false
                 },
                 "UUID": "EC3AF436-11C7-4899-8460-A222E7B7B88E",
-                "WFAlertCustomTime": "12:30",
-                "WFURL": {
+                "WFAlertCustomTime": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "2E0492DD-53D0-44FF-ACE6-12E7D32D16DD",
+                                "OutputUUID": "D391D12C-EC67-4FF7-A661-C603D4C9208E",
                                 "Type": "ActionOutput",
-                                "OutputName": "repoURL"
+                                "OutputName": "Value"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
+                "WFURL": "",
                 "WFCalendarItemCalendar": "🗓️ Scheduled",
                 "WFPriority": "High"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E07372B3-0C39-4862-A66C-ED7F920B30A9",
+                "WFControlFlowMode": 2
             }
         },
         {

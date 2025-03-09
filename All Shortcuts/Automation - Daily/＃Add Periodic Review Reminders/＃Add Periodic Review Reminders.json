@@ -1,0 +1,921 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode.#MaintainerMode.startTime",
+                "UUID": "F7B57EE9-FF74-4E16-93B3-8078680723F4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+                    "workflowName": "getDayOfWeek",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "getDayOfWeek",
+                "UUID": "2F2F2F6A-6726-4718-9861-417B24F1F6AD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2F2F2F6A-6726-4718-9861-417B24F1F6AD",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sunday",
+                "GroupingIdentifier": "75801E0A-EA79-4422-A6F2-1618628AF331",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Tomorrow",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "B8573BCD-9529-46C3-9005-6D828CBAA560"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B8573BCD-9529-46C3-9005-6D828CBAA560",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+                    "workflowName": "getWeekNumber1",
+                    "isSelf": false
+                },
+                "UUID": "61A05565-D898-49B6-A5C4-EF2ECCAF14FE",
+                "WFWorkflowName": "getWeekNumber1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "🏆 Weekly Win Card (#￼)",
+                        "attachmentsByRange": {
+                            "{21, 1}": {
+                                "OutputUUID": "61A05565-D898-49B6-A5C4-EF2ECCAF14FE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemNotes": "• Define what a \"win\" looks like for the week ahead with 3-5 big picture goals\n• If any items didn’t get done by the end of the week, roll them over to the next weekly note or drop/delete them.\n• You might add more items to it during the week.\n• [The Energy Investment Portfolio](https://aliabdaal.com/newsletter/the-energy-investment-portfolio/)\n    • Dream Investments: Things that you want to do at some point, but probably not right now; can be as long as you like\n    • Active Investments: Things that you want to work on right now (e.g., this week); should be limited (~5) based on how much time and energy you’ve got to invest in them",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "B48E043E-EA5D-4D1C-B54C-C9935AF0DA22",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F7B57EE9-FF74-4E16-93B3-8078680723F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertEnabled": "Alert",
+                "WFPriority": "High"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "75801E0A-EA79-4422-A6F2-1618628AF331",
+                "UUID": "A646B5D7-97F1-445A-A157-79C3E2A604F1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2F2F2F6A-6726-4718-9861-417B24F1F6AD",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Monday",
+                "GroupingIdentifier": "BA75E9DF-234F-4ED2-9CE5-0B05222A3E8E",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Yesterday",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "3F5E3F52-C377-4403-8810-428BE381C5DC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3F5E3F52-C377-4403-8810-428BE381C5DC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+                    "workflowName": "getWeekNumber1",
+                    "isSelf": false
+                },
+                "UUID": "17411D2B-BEB1-4DAE-9063-1CB299BF1C6F",
+                "WFWorkflowName": "getWeekNumber1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "📇 Review Last Week's Journals",
+                "UUID": "59B48652-CFF9-44D5-AB3B-D09CD19F3DF2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "59B48652-CFF9-44D5-AB3B-D09CD19F3DF2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "7FDBC2B4-8081-4C5F-BB39-FB015C0DD5EF",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "📈 Weekly Kaizen Card (#￼)",
+                        "attachmentsByRange": {
+                            "{24, 1}": {
+                                "OutputUUID": "17411D2B-BEB1-4DAE-9063-1CB299BF1C6F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertEnabled": "Alert",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "6CA57434-5443-4917-9CE8-DFFA0B26CE60",
+                "WFAlertCustomTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F7B57EE9-FF74-4E16-93B3-8078680723F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "7FDBC2B4-8081-4C5F-BB39-FB015C0DD5EF",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFPriority": "High"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BA75E9DF-234F-4ED2-9CE5-0B05222A3E8E",
+                "UUID": "7DE096AB-6E1B-4470-BD51-DF4C5A5D20DD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "B1AC6655-0C00-4A17-B24D-F5177C9349DD",
+                    "workflowName": "isTodayEndOfMonth",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "isTodayEndOfMonth",
+                "UUID": "E7C44732-2B07-46A4-8710-A7E65B866E53"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "E7C44732-2B07-46A4-8710-A7E65B866E53",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D6F8BC64-90D6-48FA-90BF-6434A3B5CE0D",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "M",
+                "UUID": "1188B196-8229-4781-BE7A-7BD7D803405C",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "🎯 Monthly Milestone Checkpoint (#￼)",
+                        "attachmentsByRange": {
+                            "{34, 1}": {
+                                "OutputUUID": "1188B196-8229-4781-BE7A-7BD7D803405C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemNotes": "✔️ How to measure your life? How wealthy are you? Take the \"[Wealth Score Quiz](https://www.wealthscorequiz.com/)\"!\n• Time\n• Social\n• Physical\n• Mental\n• Financial",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "1963AC3D-BA71-48CE-A766-65D5B4419E2E",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F7B57EE9-FF74-4E16-93B3-8078680723F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertEnabled": "Alert",
+                "WFPriority": "High"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "D6F8BC64-90D6-48FA-90BF-6434A3B5CE0D",
+                "UUID": "896946B6-16CB-40F6-A61C-4B8D5E1F6649"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "2051B450-B57D-4713-AAD0-ACAA86D39326",
+                    "workflowName": "isTodayEndOfQuarter",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "isTodayEndOfQuarter",
+                "UUID": "24317B38-49DE-42EF-8F66-2730C2FBC76B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "24317B38-49DE-42EF-8F66-2730C2FBC76B",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B2AA201D-D1D0-4F3A-9F64-D342D7C629CB",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "161B2A05-701D-4426-97D0-E568334553B5",
+                    "workflowName": "getQuarterNumber",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "getQuarterNumber",
+                "UUID": "F43FB221-F2EE-40AF-896C-FCD08BC51640"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "🗺️ Quarterly Questline Chronicles (#￼)",
+                        "attachmentsByRange": {
+                            "{37, 1}": {
+                                "OutputUUID": "F43FB221-F2EE-40AF-896C-FCD08BC51640",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemNotes": "✔️ Fear Setting",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "4D21F211-050D-4E89-B48D-582D2993B497",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F7B57EE9-FF74-4E16-93B3-8078680723F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertEnabled": "Alert",
+                "WFPriority": "High"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B2AA201D-D1D0-4F3A-9F64-D342D7C629CB",
+                "UUID": "788EC666-C168-4380-A0CC-05303856A8EA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "M",
+                "UUID": "0FDE3EC1-0D7C-4E18-B91F-0D9781244E40",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "0FDE3EC1-0D7C-4E18-B91F-0D9781244E40",
+                            "Type": "ActionOutput",
+                            "OutputName": "Formatted Date"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "12",
+                "GroupingIdentifier": "8A7DAF4B-9740-436A-BB1E-6BC33C18EC58",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "6F815F11-0DB0-4C0F-BD15-B75DF8F2D159",
+                    "workflowName": "isTodayInTheLastWeekOfTheMonth",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "isTodayInTheLastWeekOfTheMonth",
+                "UUID": "87A7DDBF-B951-4CD3-8792-09FE7E55F2C4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "87A7DDBF-B951-4CD3-8792-09FE7E55F2C4",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "791F134D-413D-44CF-B667-E7DCB30BEF61",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "yy",
+                "UUID": "D716E7B7-1E45-411F-9288-AA73B7A70831",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D716E7B7-1E45-411F-9288-AA73B7A70831",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "1",
+                "UUID": "3B54D686-11DD-4A2B-87C5-A119F1832EF3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "👋 Bye, ￼' Hi, ￼'",
+                        "attachmentsByRange": {
+                            "{15, 1}": {
+                                "OutputUUID": "3B54D686-11DD-4A2B-87C5-A119F1832EF3",
+                                "Type": "ActionOutput",
+                                "OutputName": "Calculation Result"
+                            },
+                            "{8, 1}": {
+                                "OutputUUID": "D716E7B7-1E45-411F-9288-AA73B7A70831",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "16022A60-8559-4CF7-9840-7F5FEECE49D6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemLimitEnabled": true,
+                "UUID": "789FB7FA-B54E-4C67-904A-8859135006F7",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "🏛️ LifeOS Maintenance",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "16022A60-8559-4CF7-9840-7F5FEECE49D6",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Text"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "789FB7FA-B54E-4C67-904A-8859135006F7",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "2A9F31B5-2B9B-4BF4-B07F-52C2D3A4C6F9",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "16022A60-8559-4CF7-9840-7F5FEECE49D6",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemNotes": "• My \"🧐 Past Year Review + 😉 Annual Planning\" process naturally shifted from focusing on _what I wanted to accomplish_ to emphasizing _how I wanted to be_.",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F7B57EE9-FF74-4E16-93B3-8078680723F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertEnabled": "Alert",
+                "WFPriority": "High"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "✔️ Review journals (tags)",
+                "WFPriority": "High",
+                "WFCalendarItemNotes": "",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "ACA5F16C-2FDC-467E-AB79-55C84C133A35",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": "",
+                "WFParentTask": {
+                    "Value": {
+                        "OutputUUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAlertEnabled": "No Alert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "✔️ Review periodic review notebook",
+                "WFPriority": "High",
+                "WFCalendarItemNotes": "",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "E9830511-CFB7-4FA2-86DD-4E2F47D3F3E1",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": "",
+                "WFParentTask": {
+                    "Value": {
+                        "OutputUUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAlertEnabled": "No Alert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "✔️ Review memories in photos",
+                "WFPriority": "High",
+                "WFCalendarItemNotes": "",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "7E3171FC-996A-4D2B-96B1-359991C355A6",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": "",
+                "WFParentTask": {
+                    "Value": {
+                        "OutputUUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAlertEnabled": "No Alert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "✔️ Review calendar",
+                "WFPriority": "High",
+                "WFCalendarItemNotes": "",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "4383C3CC-8F82-4E13-B6CF-C7E8C7604E1C",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": "",
+                "WFParentTask": {
+                    "Value": {
+                        "OutputUUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAlertEnabled": "No Alert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "✔️ Write down \"❌ Anti To-Do List\" ¹ & \" ✅ Double Down List\" ²",
+                "WFPriority": "High",
+                "WFCalendarItemNotes": "1. Stop X → Start Y, Things I want to minimize, What do I wish I'd done less of?\n2. Go All-In, Things I want to maximize, What do I wish I'd done more of?",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "995C99BF-AD3B-43B0-B336-241794E97483",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": "",
+                "WFParentTask": {
+                    "Value": {
+                        "OutputUUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAlertEnabled": "No Alert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": "✔️ Ask myself questions from the \"💭 Journal Prompt\" list",
+                "WFPriority": "High",
+                "WFCalendarItemNotes": "",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS Maintenance",
+                    "IsAllCalendar": false
+                },
+                "UUID": "209783A6-33E6-4061-8591-E4ABDF0D35E3",
+                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
+                "WFAlertCustomTime": "",
+                "WFParentTask": {
+                    "Value": {
+                        "OutputUUID": "89B23543-305A-4AF8-BE15-F717CEA352CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "New Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAlertEnabled": "No Alert"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2A9F31B5-2B9B-4BF4-B07F-52C2D3A4C6F9",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "791F134D-413D-44CF-B667-E7DCB30BEF61",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8A7DAF4B-9740-436A-BB1E-6BC33C18EC58",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppContentItem",
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}
