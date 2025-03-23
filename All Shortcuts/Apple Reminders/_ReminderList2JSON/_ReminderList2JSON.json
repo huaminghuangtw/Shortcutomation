@@ -54,10 +54,24 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": false
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": true,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Has Subtasks"
                             }
                         ]
                     },
@@ -330,33 +344,29 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Has Subtasks"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
                 },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "4D519EEF-44B4-40FC-975C-50CB4B367333",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFContentItemInputParameter": {
                     "Value": {
                         "VariableName": "Repeat Item",
                         "Type": "Variable",
@@ -366,6 +376,39 @@
                                 "PropertyName": "Subtasks"
                             }
                         ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "BC1334AF-4C1B-408F-A46C-3F2C325A6714"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BC1334AF-4C1B-408F-A46C-3F2C325A6714",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "E543ADB6-58F3-49FC-8A8B-2B261791550E",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BC1334AF-4C1B-408F-A46C-3F2C325A6714",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -666,7 +709,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "4D519EEF-44B4-40FC-975C-50CB4B367333",
+                "GroupingIdentifier": "E543ADB6-58F3-49FC-8A8B-2B261791550E",
                 "WFControlFlowMode": 1
             }
         },
@@ -708,9 +751,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "4D519EEF-44B4-40FC-975C-50CB4B367333",
-                "UUID": "E0D4CB56-9AAE-45C1-91F1-838EA2591644"
+                "GroupingIdentifier": "E543ADB6-58F3-49FC-8A8B-2B261791550E",
+                "WFControlFlowMode": 2
             }
         },
         {

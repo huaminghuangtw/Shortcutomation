@@ -235,6 +235,30 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "1814467F-23D7-4AF2-89FD-25B2C16C78F0",
+                    "workflowName": "Plot Daily Flow Counts",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Plot Daily Flow Counts",
+                "UUID": "F8CA5C43-6CC8-41E3-BBE2-D11A5E166C84"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "4945ACBC-2C31-4A20-AD1A-EE2ACA1147B7",
+                    "workflowName": "Plot Daily Word Counts",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Plot Daily Word Counts",
+                "UUID": "DAA48435-05CB-468B-9FF7-51B8C8664DC9"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.TextCaseIntent",
             "WFWorkflowActionParameters": {
                 "ShowWhenRun": false,
@@ -252,62 +276,55 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "4C35C741-0191-4647-A3D6-921AA92468EE",
-                "format": "italicBoldSans"
+                "format": "italic"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "868B5BF8-8F1C-4471-AE00-B789F6C9B917",
-                    "workflowName": "NASA - Get APOD Object",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "NASA - Get APOD Object",
-                "UUID": "FD84B428-1065-43B0-B64D-D7A5687EF9F0"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
-            "WFWorkflowActionParameters": {
-                "WFURL": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result",
-                                "OutputUUID": "FD84B428-1065-43B0-B64D-D7A5687EF9F0",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "imageURL"
-                                    }
-                                ]
-                            }
-                        }
+                "CustomOutputName": "Plots",
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8CD4A3FB-3479-45CB-829A-CE2FA3119626",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Plots",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/FF587C3D-0E0C-4035-A403-CB665A77B6DA/fdaccb5de75e6bee207631382bb8f7bfb0cca12d"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "filename": "Plots",
+                    "displayName": "Plots"
                 },
-                "UUID": "E7F0A8A6-E7B1-42BD-99F1-FF9A57E765BC"
+                "UUID": "8E172FF1-6DA7-4D1A-BC2A-401C70DF956E"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.images",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFFolder": {
                     "Value": {
-                        "OutputUUID": "E7F0A8A6-E7B1-42BD-99F1-FF9A57E765BC",
+                        "OutputUUID": "8E172FF1-6DA7-4D1A-BC2A-401C70DF956E",
                         "Type": "ActionOutput",
-                        "OutputName": "Contents of URL"
+                        "OutputName": "Plots"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "3397C0F2-8522-4C89-806C-8C0F5AA7E17C"
+                "UUID": "6485F416-2BCE-4C33-9E5B-39FC496CD520"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.combine",
+            "WFWorkflowActionParameters": {
+                "WFImageCombineMode": "Horizontally",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6485F416-2BCE-4C33-9E5B-39FC496CD520",
+                        "Type": "ActionOutput",
+                        "OutputName": "Get Contents of Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "5D3A91C9-F518-40B2-9183-47269B743B3D",
+                "WFImageCombineSpacing": "0.5"
             }
         },
         {
@@ -326,29 +343,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "onTap": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result",
-                                "OutputUUID": "FD84B428-1065-43B0-B64D-D7A5687EF9F0",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "url"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "onTap": "",
                 "threadID": "",
                 "soundType": "none",
                 "UUID": "C6909B69-17D6-4E4A-AF60-32CBE14B8C8D",
@@ -381,9 +376,9 @@
                 "notificationID": "🍻 Show Flow & Word Counts",
                 "attachment": {
                     "Value": {
-                        "OutputUUID": "3397C0F2-8522-4C89-806C-8C0F5AA7E17C",
+                        "OutputUUID": "5D3A91C9-F518-40B2-9183-47269B743B3D",
                         "Type": "ActionOutput",
-                        "OutputName": "Images"
+                        "OutputName": "Combined Image"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }

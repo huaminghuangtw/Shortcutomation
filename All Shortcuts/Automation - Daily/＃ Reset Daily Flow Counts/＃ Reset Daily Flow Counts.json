@@ -26,6 +26,14 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Accumulated",
+                "CustomOutputName": "Accumulated",
+                "UUID": "4E148C03-0F4B-4523-A590-4C3226DABADE"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "Deep Work Machine",
@@ -317,7 +325,8 @@
                         "OutputName": "Value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "UUID": "98CAA4B1-3B62-463A-8DD1-B7DAC4C2EDC3"
             }
         },
         {
@@ -328,16 +337,74 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": ",",
+                "UUID": "8FD24030-B397-4160-886C-D1D13765D2D2",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "F2B0E0C4-85BD-46AB-B717-96B1DCC901C4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8FD24030-B397-4160-886C-D1D13765D2D2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "E6483A14-BA58-426A-BEE5-C081578931FF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E6483A14-BA58-426A-BEE5-C081578931FF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": {
+                    "Value": {
+                        "OutputUUID": "1D1388FB-1167-41F8-BE73-7CC0160446A1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "07A3E7E1-9772-46C5-B38A-AFAD5E7DC76F"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n￼",
+                        "string": "￼\n￼,￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
                                 "OutputUUID": "7E59E49C-6AC9-4EAB-A8F6-804D11420015",
                                 "Type": "ActionOutput",
                                 "OutputName": "newData"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "07A3E7E1-9772-46C5-B38A-AFAD5E7DC76F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Calculation Result"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "FB8EE79C-9E75-43B2-A474-1F3DB23289EA",
@@ -371,7 +438,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼,￼\n￼",
+                        "string": "￼,￼,￼\n￼,￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
                                 "OutputUUID": "54BA076A-6F20-4DE9-9D0A-40CEE72D9FC7",
@@ -379,9 +446,19 @@
                                 "OutputName": "Number of Flows"
                             },
                             "{4, 1}": {
+                                "OutputUUID": "4E148C03-0F4B-4523-A590-4C3226DABADE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Accumulated"
+                            },
+                            "{6, 1}": {
                                 "OutputUUID": "7E59E49C-6AC9-4EAB-A8F6-804D11420015",
                                 "Type": "ActionOutput",
                                 "OutputName": "newData"
+                            },
+                            "{8, 1}": {
+                                "OutputUUID": "1D1388FB-1167-41F8-BE73-7CC0160446A1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "B6E5D7DC-C36A-411F-A142-B1211B0E7BB2",

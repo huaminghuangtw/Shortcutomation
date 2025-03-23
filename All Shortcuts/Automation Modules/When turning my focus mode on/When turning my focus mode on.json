@@ -24,20 +24,14 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "4C0180A6-2BD0-4831-9BDC-6E3535012F79",
-                "WFControlFlowMode": 2
+                "UUID": "949C3422-D9E2-419B-A1AF-BBB776BE8D79"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
             "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
-            "WFWorkflowActionParameters": {
-                "mode": "RemoveDelivered",
-                "UUID": "8BCF0D1E-20EC-4A99-BC31-7073CD007A99"
-            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -152,6 +146,31 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "RemoveDelivered",
+                "deliveredID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "id"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8BCF0D1E-20EC-4A99-BC31-7073CD007A99"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "io.pushcut.Pushcut.CancelNotificationIntent",
             "WFWorkflowActionParameters": {
                 "reminderIdentifier": "⏱️ Day Progress",
@@ -190,15 +209,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.IsOnlineIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "UUID": "E2585CDD-96C5-48D5-BE07-BC5DD5122C9A",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "IsOnlineIntent"
-                }
+                "WFWorkflow": {
+                    "workflowIdentifier": "9C48945F-7E22-4EFA-9334-61777791A46C",
+                    "workflowName": "isOnline",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "isOnline",
+                "UUID": "743A0984-72EE-4082-8FFC-D1A756A5A42F"
             }
         },
         {
@@ -208,9 +227,15 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "E2585CDD-96C5-48D5-BE07-BC5DD5122C9A",
                             "Type": "ActionOutput",
-                            "OutputName": "Is Online"
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "743A0984-72EE-4082-8FFC-D1A756A5A42F",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -855,6 +880,11 @@
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
                                     "CoercionItemClass": "WFDateContentItem"
+                                },
+                                {
+                                    "Type": "WFDateFormatVariableAggrandizement",
+                                    "WFISO8601IncludeTime": false,
+                                    "WFDateFormatStyle": "ISO 8601"
                                 }
                             ]
                         },
@@ -862,15 +892,26 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "GroupingIdentifier": "CD37365D-3400-47AF-AD9E-5453DD51174E",
-                "WFCondition": 1002
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "CD37365D-3400-47AF-AD9E-5453DD51174E",
-                "WFControlFlowMode": 1
+                "WFCondition": 5
             }
         },
         {
@@ -1019,8 +1060,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "9B1B0C2F-0AA2-4B9F-9067-845D02257CCE",
-                "WFControlFlowMode": 2
+                "UUID": "C82A7EC4-9565-4B37-97B9-A8F202D4193F"
             }
         },
         {
