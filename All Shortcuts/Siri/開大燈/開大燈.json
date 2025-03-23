@@ -51,12 +51,56 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E166901A-CDE6-4365-BCD6-A6CDAA14CD13",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.tplink.tapo",
+                    "Name": "Tapo",
+                    "TeamIdentifier": "5Q6S22W72F"
+                },
+                "WFAppIdentifier": "com.tplink.tapo",
+                "UUID": "301B51A2-09BD-47C8-BA61-048CAF69C0C0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E166901A-CDE6-4365-BCD6-A6CDAA14CD13",
+                "UUID": "17D2775A-D2AC-496E-83D8-72D965BE4D36"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.IsTheSunUpIntent",
             "WFWorkflowActionParameters": {
                 "location": {
                     "isCurrentLocation": true
                 },
-                "UUID": "D770B33B-5E5D-4580-B011-4B862A394756"
+                "UUID": "62AE3151-2762-4B03-BEAA-886DC0601E80"
             }
         },
         {
@@ -68,7 +112,7 @@
                         "Value": {
                             "Type": "ActionOutput",
                             "OutputName": "Is the sun up",
-                            "OutputUUID": "D770B33B-5E5D-4580-B011-4B862A394756",
+                            "OutputUUID": "62AE3151-2762-4B03-BEAA-886DC0601E80",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
@@ -80,23 +124,41 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "No",
-                "GroupingIdentifier": "ED5526DB-D80D-407A-A5DE-2C99F0D497F4",
+                "GroupingIdentifier": "7741C426-22A8-41FD-AA9D-1C0F56A27C00",
                 "WFCondition": 4
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "Random",
-                "UUID": "EDC26B76-B7AC-4C81-85CE-C87D5C3E6D5E"
+                "WFCommentActionText": "Default State"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.tplink.tapo.TapoDeviceToggleIntent",
+            "WFWorkflowActionParameters": {
+                "devices": {
+                    "identifier": "b8d9fccb6b0ba4f95b81d5ea1256a372",
+                    "displayString": "Smart Bulb (大工作室)"
+                },
+                "UUID": "390A035D-6A4D-495C-A674-CF62D6D656C2",
+                "state": "on",
+                "ShowWhenRun": false
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "ED5526DB-D80D-407A-A5DE-2C99F0D497F4",
+                "GroupingIdentifier": "7741C426-22A8-41FD-AA9D-1C0F56A27C00",
                 "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "90",
+                "CustomOutputName": "Brightness",
+                "UUID": "4F050B39-56AC-425E-9642-1F342C4750D6"
             }
         },
         {
@@ -141,10 +203,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "com.tplink.tapo.TapoBulbColorSetIntent",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "Warm White",
-                "UUID": "D530F11A-E060-4BFE-8711-F4D711FC5F2E"
+                "color": "temp_warm_white",
+                "brightness": {
+                    "Value": {
+                        "OutputUUID": "4F050B39-56AC-425E-9642-1F342C4750D6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "FEF6014B-C955-4AB7-811E-57EDF3803B80",
+                "devices": {
+                    "identifier": "b8d9fccb6b0ba4f95b81d5ea1256a372",
+                    "displayString": "Smart Bulb (大工作室)"
+                },
+                "ShowWhenRun": false
             }
         },
         {
@@ -155,10 +230,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "com.tplink.tapo.TapoBulbColorSetIntent",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "Red",
-                "UUID": "5D81B9B2-F8D4-4A65-B83F-9A13B3419869"
+                "color": "red",
+                "brightness": {
+                    "Value": {
+                        "OutputUUID": "4F050B39-56AC-425E-9642-1F342C4750D6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "21715ACF-6E2C-4B71-A760-FDAD7A6E3993",
+                "devices": {
+                    "identifier": "b8d9fccb6b0ba4f95b81d5ea1256a372",
+                    "displayString": "Smart Bulb (大工作室)"
+                },
+                "ShowWhenRun": false
             }
         },
         {
@@ -173,28 +261,49 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "ED5526DB-D80D-407A-A5DE-2C99F0D497F4",
-                "UUID": "AA8D1302-F564-4951-AE6E-9121313490C5"
+                "GroupingIdentifier": "7741C426-22A8-41FD-AA9D-1C0F56A27C00",
+                "UUID": "3B18A035-9800-4C49-BEE2-758CD4D223A7"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "EF82E7ED-CB88-4110-8609-6E9FE9BB0ECF",
                 "WFInput": {
-                    "Value": {
-                        "OutputUUID": "AA8D1302-F564-4951-AE6E-9121313490C5",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
                 },
-                "WFWorkflow": {
-                    "workflowIdentifier": "9658111E-817F-4F72-92DD-D63CCE70440F",
-                    "workflowName": "Turn on Tapo Smart Bulb",
-                    "isSelf": false
-                },
-                "UUID": "8EF486BB-0424-452A-A248-337295937B60",
-                "WFWorkflowName": "Turn on Tapo Smart Bulb"
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.tplink.tapo",
+                    "Name": "Tapo",
+                    "TeamIdentifier": "5Q6S22W72F"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "EF82E7ED-CB88-4110-8609-6E9FE9BB0ECF",
+                "WFControlFlowMode": 2
             }
         },
         {

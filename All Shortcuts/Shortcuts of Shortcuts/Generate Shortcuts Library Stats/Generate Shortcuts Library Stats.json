@@ -20,7 +20,8 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Apple Shortcuts.backup",
+                "keyPath": "My Apple Shortcuts.backup.data",
+                "CustomOutputName": "data",
                 "UUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7"
             }
         },
@@ -30,7 +31,7 @@
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "Value",
+                        "OutputName": "data",
                         "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
                         "Aggrandizements": [
                             {
@@ -38,8 +39,8 @@
                                 "CoercionItemClass": "WFDictionaryContentItem"
                             },
                             {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "data"
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
                             }
                         ]
                     },
@@ -50,12 +51,63 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Type": "ActionOutput",
+                        "OutputName": "data"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C8178D0C-8252-457F-9798-55E3442FD8DA"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "C8178D0C-8252-457F-9798-55E3442FD8DA",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "thisUpdateSnapshot"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "C8178D0C-8252-457F-9798-55E3442FD8DA",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -77,8 +129,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "C8178D0C-8252-457F-9798-55E3442FD8DA",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -86,7 +139,7 @@
                             },
                             {
                                 "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "folder"
+                                "DictionaryKey": "category"
                             }
                         ]
                     },
@@ -100,8 +153,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "C8178D0C-8252-457F-9798-55E3442FD8DA",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -145,7 +199,7 @@
                 "Input": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "Value",
+                        "OutputName": "data",
                         "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
                         "Aggrandizements": [
                             {
@@ -153,8 +207,8 @@
                                 "CoercionItemClass": "WFDictionaryContentItem"
                             },
                             {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "data"
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
                             }
                         ]
                     },
@@ -212,9 +266,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "My Apple Shortcuts.stats.￼",
+                        "string": "My Apple Shortcuts.backup.stats.￼",
                         "attachmentsByRange": {
-                            "{25, 1}": {
+                            "{32, 1}": {
                                 "Type": "CurrentDate",
                                 "Aggrandizements": [
                                     {
@@ -965,19 +1019,8 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Value",
-                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "data"
-                            }
-                        ]
+                        "VariableName": "thisUpdateSnapshot",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -988,8 +1031,35 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "720FBE98-649E-456D-B049-A1B4B185CEFB",
+                "UUID": "71A4D4DD-C54C-4494-A1ED-C4E46A93BE57",
                 "WFItemSpecifier": "Item At Index"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1DC25002-72AB-417C-8A7E-8BE16F063DE7",
+                        "Type": "ActionOutput",
+                        "OutputName": "data"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "71A4D4DD-C54C-4494-A1ED-C4E46A93BE57",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C7F9CE16-A62D-4A7E-88B8-2CFA42D0B6AF"
             }
         },
         {
@@ -1001,8 +1071,8 @@
                         "attachmentsByRange": {
                             "{36, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List",
-                                "OutputUUID": "720FBE98-649E-456D-B049-A1B4B185CEFB",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "C7F9CE16-A62D-4A7E-88B8-2CFA42D0B6AF",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -1016,8 +1086,8 @@
                             },
                             "{38, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List",
-                                "OutputUUID": "720FBE98-649E-456D-B049-A1B4B185CEFB",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "C7F9CE16-A62D-4A7E-88B8-2CFA42D0B6AF",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -1059,8 +1129,8 @@
                         "attachmentsByRange": {
                             "{9, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List",
-                                "OutputUUID": "720FBE98-649E-456D-B049-A1B4B185CEFB",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "C7F9CE16-A62D-4A7E-88B8-2CFA42D0B6AF",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -1197,37 +1267,37 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "* There are **￼** with a total of **￼** actions across **￼** categories.\n* On average, each Shortcut has **￼** actions.\n* A typical Shortcut contains around **￼** or more actions.\n￼",
+                        "string": "* There are **￼** Shortcuts with a total of **￼** actions across **￼** categories.\n* On average, each Shortcut has **￼** actions.\n* A typical Shortcut contains around **￼** or more actions.\n￼",
                         "attachmentsByRange": {
-                            "{14, 1}": {
-                                "OutputUUID": "396DCDB2-343C-4282-BB28-B58893937C6D",
-                                "Type": "ActionOutput",
-                                "OutputName": "Count"
-                            },
-                            "{36, 1}": {
-                                "OutputUUID": "224BBCA1-DB2D-4773-81EE-8F1776755F81",
-                                "Type": "ActionOutput",
-                                "OutputName": "Sum"
-                            },
-                            "{159, 1}": {
-                                "OutputUUID": "1B8AA96E-CE38-472E-BFB2-3E6D26922F37",
-                                "Type": "ActionOutput",
-                                "OutputName": "Rounded Average"
-                            },
-                            "{57, 1}": {
+                            "{67, 1}": {
                                 "OutputUUID": "913BDCB0-B072-4359-9A08-D7B7123E53C4",
                                 "Type": "ActionOutput",
                                 "OutputName": "Count"
                             },
-                            "{180, 1}": {
+                            "{169, 1}": {
+                                "OutputUUID": "1B8AA96E-CE38-472E-BFB2-3E6D26922F37",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Average"
+                            },
+                            "{46, 1}": {
+                                "OutputUUID": "224BBCA1-DB2D-4773-81EE-8F1776755F81",
+                                "Type": "ActionOutput",
+                                "OutputName": "Sum"
+                            },
+                            "{190, 1}": {
                                 "OutputUUID": "28AAB817-700B-4787-A0EB-455FD6672CFC",
                                 "Type": "ActionOutput",
                                 "OutputName": "Repeat Results"
                             },
-                            "{107, 1}": {
+                            "{117, 1}": {
                                 "OutputUUID": "DB063DEA-22C3-4889-9B25-37CE2FB3B0A1",
                                 "Type": "ActionOutput",
                                 "OutputName": "Rounded Average"
+                            },
+                            "{14, 1}": {
+                                "OutputUUID": "396DCDB2-343C-4282-BB28-B58893937C6D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
                             }
                         }
                     },

@@ -70,10 +70,118 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "My Text Files.dailyWeatherInfo_￼",
+                        "attachmentsByRange": {
+                            "{31, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "keyPath",
+                "UUID": "76664A96-B6F3-4C7A-9551-4E49B780C564"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "76664A96-B6F3-4C7A-9551-4E49B780C564",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C49BA671-EAC7-4399-995F-782F9D384213"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "C49BA671-EAC7-4399-995F-782F9D384213",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "CAE469E5-247A-4319-9FD8-B827CE8869A8",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Text Files",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "76664A96-B6F3-4C7A-9551-4E49B780C564",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "UUID": "2D7E1F7F-B707-4D6A-A3B7-71089499D429"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "CAE469E5-247A-4319-9FD8-B827CE8869A8",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "B740EF07-10BA-4819-A800-E3CFDE85FD2A",
+                    "workflowName": "Fetch Today's Weather Info",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Fetch Today's Weather Info",
+                "UUID": "6ADA5CDD-3066-4604-B30F-17C8AABEB906"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CAE469E5-247A-4319-9FD8-B827CE8869A8",
+                "UUID": "39DDD29D-C6EA-4C54-BEA6-83C44FB0A2CE"
             }
         },
         {
@@ -81,19 +189,9 @@
             "WFWorkflowActionParameters": {
                 "text": {
                     "Value": {
+                        "OutputUUID": "39DDD29D-C6EA-4C54-BEA6-83C44FB0A2CE",
                         "Type": "ActionOutput",
-                        "OutputName": "Value",
-                        "OutputUUID": "2D7E1F7F-B707-4D6A-A3B7-71089499D429",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "dailyWeatherInfo"
-                            }
-                        ]
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
