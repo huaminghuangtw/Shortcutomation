@@ -16,8 +16,10 @@
                 "WFControlFlowMode": 0,
                 "WFMenuItems": [
                     "🔖 Open Reminder List",
+                    "📥 Add to Reminder List",
                     "🔎 Search Reminders",
-                    "✅ View Completed Items"
+                    "✅ View Completed Items",
+                    "📋 View Today's Tasks"
                 ],
                 "GroupingIdentifier": "8A9F549C-AC78-4827-B52D-F4D9906C2128"
             }
@@ -62,6 +64,42 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "📥 Add to Reminder List",
+                "GroupingIdentifier": "8A9F549C-AC78-4827-B52D-F4D9906C2128",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "WFAskActionPrompt": "🤖 What do you want to add?",
+                "UUID": "4D6969FE-F943-4CA5-9F32-94AB202B4248"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4D6969FE-F943-4CA5-9F32-94AB202B4248",
+                        "Type": "ActionOutput",
+                        "OutputName": "Ask for Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "8C70B6D1-9040-482A-BE98-056B3BC29C6E",
+                    "workflowName": "_Add to AReminders",
+                    "isSelf": false
+                },
+                "UUID": "BB9242A1-6131-43A8-8DCD-B2E070FB040F",
+                "WFWorkflowName": "_Add to AReminders"
             }
         },
         {
@@ -117,6 +155,26 @@
                     "identifier": "com.apple.reminders.smartlist.completed"
                 },
                 "target": "completed"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "📋 View Today's Tasks",
+                "GroupingIdentifier": "8A9F549C-AC78-4827-B52D-F4D9906C2128",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "7D922792-77AB-44F6-AFFB-4361D1A39496",
+                    "workflowName": "View Today's Tasks",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "View Today's Tasks",
+                "UUID": "515721E2-CE12-4A68-897C-EFE6D7875E0A"
             }
         },
         {

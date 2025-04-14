@@ -141,6 +141,46 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "請將此英文單字翻譯成最常見的繁體中文詞彙，且不需任何解釋或格式（如粗體字），也不要有任何額外的空格或換行：￼",
+                        "attachmentsByRange": {
+                            "{53, 1}": {
+                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "wordOfTheDay"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EC83A6AC-8841-4830-A6F7-EC9B384EB0CD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "EC83A6AC-8841-4830-A6F7-EC9B384EB0CD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "translationByGemini",
+                "UUID": "F1C8100D-F48A-4C83-B85A-1E31B45EDDD6",
+                "WFWorkflow": {
+                    "workflowIdentifier": "B329576B-928F-42A5-8F4C-888A727A1D7D",
+                    "workflowName": "Gemini - Generate Content",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Gemini - Generate Content"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -217,6 +257,91 @@
                     "isSelf": false
                 },
                 "WFWorkflowName": "DeepL - Translate Text"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "D3815C55-6AA9-4B68-9D25-F140292AD362",
+                            "Type": "ActionOutput",
+                            "OutputName": "translationByDeepL"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F1C8100D-F48A-4C83-B85A-1E31B45EDDD6",
+                                "Type": "ActionOutput",
+                                "OutputName": "translationByGemini"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "EE097CEC-61A4-4D49-A752-0C000E3C4AA0",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D3815C55-6AA9-4B68-9D25-F140292AD362",
+                        "Type": "ActionOutput",
+                        "OutputName": "translationByDeepL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "25216FC9-404A-47A2-BDD8-783DB1AD94C2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "EE097CEC-61A4-4D49-A752-0C000E3C4AA0",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼；￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "F1C8100D-F48A-4C83-B85A-1E31B45EDDD6",
+                                "Type": "ActionOutput",
+                                "OutputName": "translationByGemini"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "D3815C55-6AA9-4B68-9D25-F140292AD362",
+                                "Type": "ActionOutput",
+                                "OutputName": "translationByDeepL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8900E470-56B8-4DE9-B29D-CCC6666256F9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "EE097CEC-61A4-4D49-A752-0C000E3C4AA0",
+                "UUID": "99CC98DE-53B8-42D9-B917-07073779AEC7"
             }
         },
         {
@@ -375,9 +500,9 @@
                         "string": "￼ ￼\n￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
-                                "OutputUUID": "D3815C55-6AA9-4B68-9D25-F140292AD362",
+                                "OutputUUID": "99CC98DE-53B8-42D9-B917-07073779AEC7",
                                 "Type": "ActionOutput",
-                                "OutputName": "translationByDeepL"
+                                "OutputName": "If Result"
                             },
                             "{4, 1}": {
                                 "OutputUUID": "4BE4DC48-A9B6-483F-80F1-5EDCF748430C",
@@ -406,31 +531,76 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": {
+                "WFInput": {
                     "Value": {
-                        "string": "#BuJo/💡TIL ￼ (￼) - [￼](￼)",
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{12, 1}": {
-                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                            "{0, 1}": {
+                                "OutputUUID": "9B2D4F43-A99E-4475-9622-5C682946BE0F",
                                 "Type": "ActionOutput",
-                                "OutputName": "wordOfTheDay"
-                            },
-                            "{24, 1}": {
+                                "OutputName": "definition"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextReplace": {
+                    "Value": {
+                        "string": "**[￼ ￼](￼)** (￼)",
+                        "attachmentsByRange": {
+                            "{8, 1}": {
                                 "OutputUUID": "3DB72667-CE14-43FD-9614-7EE4668B4891",
                                 "Type": "ActionOutput",
                                 "OutputName": "wordPfTheDayURL"
                             },
-                            "{21, 1}": {
-                                "OutputUUID": "9B2D4F43-A99E-4475-9622-5C682946BE0F",
+                            "{3, 1}": {
+                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
                                 "Type": "ActionOutput",
-                                "OutputName": "definition"
+                                "OutputName": "wordOfTheDay"
                             },
-                            "{15, 1}": {
-                                "OutputUUID": "D3815C55-6AA9-4B68-9D25-F140292AD362",
+                            "{5, 1}": {
+                                "OutputUUID": "99CC98DE-53B8-42D9-B917-07073779AEC7",
                                 "Type": "ActionOutput",
-                                "OutputName": "translationByDeepL"
+                                "OutputName": "If Result"
+                            },
+                            "{14, 1}": {
+                                "OutputUUID": "280FA446-9051-438F-96C6-CC68906573F1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
+                "WFReplaceTextFind": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                                "Type": "ActionOutput",
+                                "OutputName": "wordOfTheDay"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "#BuJo/💡TIL  ￼",
+                        "attachmentsByRange": {
+                            "{13, 1}": {
+                                "OutputUUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
                             }
                         }
                     },

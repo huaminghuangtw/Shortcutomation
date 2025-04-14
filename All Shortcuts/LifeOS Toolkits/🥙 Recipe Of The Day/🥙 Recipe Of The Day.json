@@ -46,6 +46,56 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "請將此食譜名稱翻譯成最常見的繁體中文詞彙（尤其是食材的部分），且不需任何解釋或格式（如粗體字），也不要有任何額外的空格或換行：￼",
+                        "attachmentsByRange": {
+                            "{63, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "recipe",
+                                "OutputUUID": "3F590929-B8AC-4B36-B791-9FD559064E27",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "title"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "5E72D1D7-684C-4323-9DB3-73FC952EBA87"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5E72D1D7-684C-4323-9DB3-73FC952EBA87",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "translationByGemini",
+                "UUID": "EE79FB88-F924-4407-97D9-E9CC0A6018F8",
+                "WFWorkflow": {
+                    "workflowIdentifier": "B329576B-928F-42A5-8F4C-888A727A1D7D",
+                    "workflowName": "Gemini - Generate Content",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Gemini - Generate Content"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -672,6 +722,28 @@
                                                 "OutputUUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1",
                                                 "Type": "ActionOutput",
                                                 "OutputName": "🥙 Recipe Of The Day"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "subtitle"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "EE79FB88-F924-4407-97D9-E9CC0A6018F8",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "translationByGemini"
                                             }
                                         }
                                     },

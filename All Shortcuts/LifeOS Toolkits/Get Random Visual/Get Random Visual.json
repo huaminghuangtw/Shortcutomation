@@ -22,7 +22,94 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "d",
+                "UUID": "8D27EF6B-48A5-4A45-B6EE-894A5F386BFB",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date",
+                        "OutputUUID": "8D27EF6B-48A5-4A45-B6EE-894A5F386BFB",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFNumberContentItem"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperation": "…",
+                "UUID": "E769FB11-110B-4E46-8B2A-B20262529FEF",
+                "WFScientificMathOperand": "2",
+                "WFScientificMathOperation": "Modulus"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result",
+                            "OutputUUID": "E769FB11-110B-4E46-8B2A-B20262529FEF",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "83D5BC68-7072-4B54-BDCF-DB31EFBE5A8A",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E2E97DDB-5959-4200-A975-F486CA01F9DA",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "83D5BC68-7072-4B54-BDCF-DB31EFBE5A8A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
@@ -32,8 +119,16 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "GroupingIdentifier": "523AF8B3-4535-4242-BF4E-16E845938E93",
-                "WFControlFlowMode": 0
+                "WFItemSpecifier": "Last Item",
+                "UUID": "7DA31AA6-F258-4720-8106-E81B4F9D72B2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "83D5BC68-7072-4B54-BDCF-DB31EFBE5A8A",
+                "UUID": "26D6D822-47C9-4030-9CA0-41CE4657B00F"
             }
         },
         {
@@ -44,8 +139,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "OutputUUID": "26D6D822-47C9-4030-9CA0-41CE4657B00F",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
                             }
                         }
                     },
@@ -102,11 +198,17 @@
                             {
                                 "Operator": 999,
                                 "Values": {
-                                    "Number": {
-                                        "Value": 300,
-                                        "WFSerializationType": "WFNumberStringSubstitutableState"
-                                    },
+                                    "Number": 300,
                                     "String": "Darebee"
+                                },
+                                "Removable": true,
+                                "Property": "File Path"
+                            },
+                            {
+                                "Operator": 999,
+                                "Values": {
+                                    "Number": "300",
+                                    "String": "Chindogu"
                                 },
                                 "Removable": true,
                                 "Property": "File Path"
@@ -127,21 +229,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "523AF8B3-4535-4242-BF4E-16E845938E93",
-                "UUID": "AF2085A6-B3F9-4230-AAF8-74FF1361B5B5"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "AF2085A6-B3F9-4230-AAF8-74FF1361B5B5",
+                        "OutputUUID": "BA29B1E9-C3B0-465B-BFEE-24F32B9FC806",
                         "Type": "ActionOutput",
-                        "OutputName": "Repeat Results"
+                        "OutputName": "Images"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

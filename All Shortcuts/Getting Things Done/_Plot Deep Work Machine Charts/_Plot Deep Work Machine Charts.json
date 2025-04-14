@@ -1,0 +1,923 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFGenericFileContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "inputDict",
+                "UUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Date",
+                "CustomOutputName": "Date",
+                "UUID": "6C1C39E5-7D32-47DE-918A-0BB8297B9522"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Accumulated",
+                "CustomOutputName": "Accumulated",
+                "UUID": "B182EFC9-C74D-4926-B4D3-A218A936E05E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict",
+                        "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "date"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "43098ED7-3BF1-40B0-BA2C-2246B358036C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "Deep Work Machine.￼.￼",
+                        "attachmentsByRange": {
+                            "{18, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "metricName"
+                                    }
+                                ]
+                            },
+                            "{20, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dates",
+                                "OutputUUID": "43098ED7-3BF1-40B0-BA2C-2246B358036C",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "yyyy.MMMM",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "CSV",
+                "UUID": "DCA3D9E1-43D9-4596-8FF4-79D6E9087CE0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.ParseCSVIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "12FCA80D-7FEC-47EA-ABE1-1624188CFC6B",
+                "file": {
+                    "Value": {
+                        "OutputUUID": "DCA3D9E1-43D9-4596-8FF4-79D6E9087CE0",
+                        "Type": "ActionOutput",
+                        "OutputName": "CSV"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "ParseCSVIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "12FCA80D-7FEC-47EA-ABE1-1624188CFC6B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Parsed CSV"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "8F9B1C66-CB0E-4F33-89D4-E73C3959A8B2",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6C1C39E5-7D32-47DE-918A-0BB8297B9522",
+                                "Type": "ActionOutput",
+                                "OutputName": "Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "4EF73DF2-113B-4244-9D02-3DB41C6F504E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "d",
+                "UUID": "273EEEC2-7FAD-4FDB-86B7-4157902C5421",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "4EF73DF2-113B-4244-9D02-3DB41C6F504E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "273EEEC2-7FAD-4FDB-86B7-4157902C5421",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "arrDate"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "metricName"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "D8FDB877-339E-4383-BA91-0F1A9E797A07"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D8FDB877-339E-4383-BA91-0F1A9E797A07",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "arrMetricName"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B182EFC9-C74D-4926-B4D3-A218A936E05E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Accumulated"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "82F241AF-D9E6-4983-A0F7-EBB8D9DD8941"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "82F241AF-D9E6-4983-A0F7-EBB8D9DD8941",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "arrAccumulated"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "8F9B1C66-CB0E-4F33-89D4-E73C3959A8B2",
+                "UUID": "D872E757-64A0-4C65-ACF9-92CA85D46FFD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.NewChartIntent",
+            "WFWorkflowActionParameters": {
+                "id": "",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "chartTitle"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                "automaticId": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.AddSeriesToChartIntent",
+            "WFWorkflowActionParameters": {
+                "barYValues": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "arrMetricName",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "label": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "metricName"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EE4AC998-B96B-4624-9655-6774CCF384CB",
+                "barXValues": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "arrDate",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "type": "bar"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.AddSeriesToChartIntent",
+            "WFWorkflowActionParameters": {
+                "barXValues": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "arrDate",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "lineYValues": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "arrAccumulated",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "016FA8FA-B56A-4F20-AF69-1C2E031D0B83",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "label": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B182EFC9-C74D-4926-B4D3-A218A936E05E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Accumulated"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "type": "line",
+                "lineXValues": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "arrDate",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "arrDate",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A952A2E1-D2C9-4CDD-B29F-DF973FDC3854"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "arrDate",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "A85C8C00-E089-4D02-AB86-5A2452D72465"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "12FCA80D-7FEC-47EA-ABE1-1624188CFC6B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Parsed CSV"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "50F4E385-C191-49DA-8C85-E932B7502B60"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "ceil(￼ / 10)",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "50F4E385-C191-49DA-8C85-E932B7502B60",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "4D0EA972-228E-4B7A-852B-2248BC941B03"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.StyleAxisIntent",
+            "WFWorkflowActionParameters": {
+                "valueFormatter": "integer",
+                "granularityUnit": "days",
+                "granularity": {
+                    "Value": {
+                        "OutputUUID": "4D0EA972-228E-4B7A-852B-2248BC941B03",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "labels": [],
+                "maximum": {
+                    "Value": {
+                        "OutputUUID": "A85C8C00-E089-4D02-AB86-5A2452D72465",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dates",
+                                "OutputUUID": "43098ED7-3BF1-40B0-BA2C-2246B358036C",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "MMMM yyyy",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "minimum": {
+                    "Value": {
+                        "OutputUUID": "A952A2E1-D2C9-4CDD-B29F-DF973FDC3854",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "2308BDE8-5B9F-4373-9A18-030BC3DEBADC",
+                "customDateTimeFormat": "d‏‎ ‎",
+                "timeFormat": "none",
+                "correspValues": "‏‎ ‎",
+                "dateFormat": "custom"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "145AC78E-FFB9-4E43-A37E-5CFC8E29FB67",
+                    "workflowName": "Generate Random Color Hex Code",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Generate Random Color Hex Code",
+                "UUID": "92A81FAA-9013-4836-AEE2-7C7BCC87B392"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.StyleBarSeriesIntent",
+            "WFWorkflowActionParameters": {
+                "color": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "92A81FAA-9013-4836-AEE2-7C7BCC87B392",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "roundTopRight": true,
+                "roundTopLeft": true,
+                "UUID": "10DCF6E3-45F3-4859-8917-04C472541123",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2308BDE8-5B9F-4373-9A18-030BC3DEBADC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "roundBottomRight": true,
+                "label": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "metricName"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "roundBottomLeft": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.StyleAxisIntent",
+            "WFWorkflowActionParameters": {
+                "valueFormatter": "integer",
+                "granularityUnit": "days",
+                "granularity": "",
+                "labels": [],
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "axis": "leftAxis",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "metricName"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "361B1355-556F-4973-960C-9C524CBABD56",
+                "customDateTimeFormat": "‏‎ ‎",
+                "timeFormat": "none",
+                "minimum": "0",
+                "correspValues": "‏‎ ‎",
+                "dateFormat": "custom"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "145AC78E-FFB9-4E43-A37E-5CFC8E29FB67",
+                    "workflowName": "Generate Random Color Hex Code",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Generate Random Color Hex Code",
+                "UUID": "8E63B3BC-B920-4143-A85C-76FA5A8F8805"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.StyleLineSeriesIntent",
+            "WFWorkflowActionParameters": {
+                "color": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8E63B3BC-B920-4143-A85C-76FA5A8F8805",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "94A57B38-D761-429C-B13A-41FD1B263623",
+                "markerSize": "3",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "label": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B182EFC9-C74D-4926-B4D3-A218A936E05E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Accumulated"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "smoothLine": true,
+                "verticalAxis": true,
+                "lineWidth": "1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.StyleAxisIntent",
+            "WFWorkflowActionParameters": {
+                "customDateTimeFormat": "",
+                "valueFormatter": "integer",
+                "granularity": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict",
+                        "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "accumulatedGranularity"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "dateFormat": "none",
+                "UUID": "2D4A8ECD-0232-497E-BD49-FA9E2F98A3D6",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "50981B5C-BC9D-4330-92DE-F42F9B6CA659",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "axis": "rightAxis",
+                "title": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B182EFC9-C74D-4926-B4D3-A218A936E05E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Accumulated"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "timeFormat": "none",
+                "minimum": "0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.AddAverageIntent",
+            "WFWorkflowActionParameters": {
+                "series": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict",
+                        "OutputUUID": "48B3864B-C0D8-4EB8-A2CA-7BFBC9880EA6",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "metricName"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "lineWidth": "3",
+                "UUID": "B401AA9F-A43C-45CE-98C2-2B107E3E6E32",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "361B1355-556F-4973-960C-9C524CBABD56",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "lineStyle": "Solid",
+                "lineMarkerSize": "5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.StyleChartIntent",
+            "WFWorkflowActionParameters": {
+                "showBorder": true,
+                "legend": "bottom",
+                "UUID": "6C6C4111-8407-408A-965A-3A149C50BEC3",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2308BDE8-5B9F-4373-9A18-030BC3DEBADC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "concentricRings": false,
+                "showGrid": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.brogrammers.charty.ExportChartAsImageIntent",
+            "WFWorkflowActionParameters": {
+                "exportProfile": "Create new export profile",
+                "titleFontSize": "",
+                "transparent": true,
+                "UUID": "2BB6AFB8-7809-4B07-B132-4A12728C2517",
+                "appearance": "system",
+                "chartFontSize": "",
+                "chartId": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6C6C4111-8407-408A-965A-3A149C50BEC3",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Id"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2BB6AFB8-7809-4B07-B132-4A12728C2517",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chart Image"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

@@ -130,14 +130,21 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode.#MonkMode.startTime",
+                "UUID": "D391D12C-EC67-4FF7-A661-C603D4C9208E"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "Restock: ￼",
+                        "string": "🚨 Restock WMU §￼",
                         "attachmentsByRange": {
-                            "{9, 1}": {
-                                "VariableName": "Repeat Item",
+                            "{16, 1}": {
+                                "VariableName": "Repeat Index",
                                 "Type": "Variable"
                             }
                         }
@@ -221,14 +228,43 @@
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "E07372B3-0C39-4862-A66C-ED7F920B30A9",
-                "WFCondition": 101
+                "WFCondition": 100
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Focus Mode.#MonkMode.startTime",
-                "UUID": "D391D12C-EC67-4FF7-A661-C603D4C9208E"
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DAE14291-386F-4862-AA5C-5CCCA66D989F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Due Date",
+                "Mode": "Set",
+                "UUID": "F96485B9-EB0D-4E21-BD23-7F2F51EA5090",
+                "WFReminderContentItemDueDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D391D12C-EC67-4FF7-A661-C603D4C9208E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E07372B3-0C39-4862-A66C-ED7F920B30A9",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -250,12 +286,16 @@
                 "WFAlertEnabled": "Alert",
                 "WFCalendarItemNotes": {
                     "Value": {
-                        "string": "❗️Only ￼ left ❗️",
+                        "string": "￼\n‼️ Only ￼ left",
                         "attachmentsByRange": {
-                            "{7, 1}": {
+                            "{10, 1}": {
                                 "OutputUUID": "FBC5BC58-3AAF-43BA-BAAA-CB893629D647",
                                 "Type": "ActionOutput",
                                 "OutputName": "Count"
+                            },
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },

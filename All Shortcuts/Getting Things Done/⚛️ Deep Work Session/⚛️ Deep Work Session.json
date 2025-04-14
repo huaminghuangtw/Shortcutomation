@@ -138,6 +138,21 @@
                                 "WFItemType": 0,
                                 "WFKey": {
                                     "Value": {
+                                        "string": "opener"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "1"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
                                         "string": "topic"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
@@ -183,12 +198,12 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "EB7AA479-3F00-4D7C-95B0-B1FDDA68A3AD",
-                    "workflowName": "Speak Journal Prompt(s) (with opener)",
+                    "workflowIdentifier": "088F3F80-E3B5-459D-96CD-19682AAD4E73",
+                    "workflowName": "Speak Journal Prompt(s)",
                     "isSelf": false
                 },
                 "UUID": "67E45910-7B71-4F08-9DC2-D7DD79F67392",
-                "WFWorkflowName": "Speak Journal Prompt(s) (with opener)"
+                "WFWorkflowName": "Speak Journal Prompt(s)"
             }
         },
         {
@@ -202,7 +217,10 @@
             "WFWorkflowActionParameters": {
                 "WFItems": [
                     "You can achieve anything if you focus on one task at a time.",
-                    "Do one thing at a time, and do it extremely well."
+                    "Do one thing at a time, and do it {{PLACEHOLDER}} well.",
+                    "Concentrate on one goal, and give it your absolute best.",
+                    "Mastery comes from doing one thing with full attention.",
+                    "Great things happen when you give your all to a single pursuit."
                 ],
                 "UUID": "2DB02F1C-79C8-4431-B455-EDD732DEF760"
             }
@@ -223,6 +241,65 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "extremely",
+                    "exceptionally",
+                    "ridiculously"
+                ],
+                "UUID": "8BC28FA1-3DD7-425F-9681-DB168D8F7134"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8BC28FA1-3DD7-425F-9681-DB168D8F7134",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Random Item",
+                "UUID": "358C59A9-3B86-4802-8D94-B469D19487C5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0CBE1EE8-0CD8-4D59-95B2-15BD8F8C7A51",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextReplace": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "358C59A9-3B86-4802-8D94-B469D19487C5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "14209A2A-2CA3-49F0-AEF5-603E897F67E8",
+                "WFReplaceTextFind": "{{PLACEHOLDER}}"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -230,9 +307,9 @@
                         "string": "Remember: ￼",
                         "attachmentsByRange": {
                             "{10, 1}": {
-                                "OutputUUID": "0CBE1EE8-0CD8-4D59-95B2-15BD8F8C7A51",
+                                "OutputUUID": "14209A2A-2CA3-49F0-AEF5-603E897F67E8",
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List"
+                                "OutputName": "Updated Text"
                             }
                         }
                     },
@@ -354,6 +431,213 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
+            "WFWorkflowActionParameters": {
+                "UUID": "DF9555F4-3D83-4632-B492-859316E9DDCE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Current Focus",
+                            "OutputUUID": "DF9555F4-3D83-4632-B492-859316E9DDCE",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sleep",
+                "GroupingIdentifier": "E45FA782-8D14-494D-A1C9-048B3FE08D63",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DF9555F4-3D83-4632-B492-859316E9DDCE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Focus"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "playSpotify?"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E45FA782-8D14-494D-A1C9-048B3FE08D63",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "My Focus Mode.￼.phase",
+                        "attachmentsByRange": {
+                            "{14, 1}": {
+                                "OutputUUID": "DF9555F4-3D83-4632-B492-859316E9DDCE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Focus"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "phase",
+                "UUID": "9BFE8BD5-D4EB-48A2-A478-99DF65429976"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFNumberValue": "4",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "phase",
+                            "OutputUUID": "9BFE8BD5-D4EB-48A2-A478-99DF65429976",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "9BFE8BD5-D4EB-48A2-A478-99DF65429976",
+                        "Type": "ActionOutput",
+                        "OutputName": "phase"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "9FBFAF95-B59C-4895-AB3F-24BB291F7EB0",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DF9555F4-3D83-4632-B492-859316E9DDCE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Focus"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "playSpotify?"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9FBFAF95-B59C-4895-AB3F-24BB291F7EB0",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E45FA782-8D14-494D-A1C9-048B3FE08D63",
+                "UUID": "B72E7C02-A77C-4857-A154-78B8878CD363"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "playSpotify?",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "7B380173-1877-4C22-BCEA-70D65159B959",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "🎻 Classic",
+                    "🎸 Instruments"
+                ],
+                "UUID": "02ACFFB3-EA52-4183-BBE3-E877455992CB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "02ACFFB3-EA52-4183-BBE3-E877455992CB",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Random Item",
+                "UUID": "A7E5C345-00AA-43A7-BC8A-DDA59D5F05C3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A7E5C345-00AA-43A7-BC8A-DDA59D5F05C3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "9B8C3053-A3BD-4CDF-91D3-753DC957EB9D",
+                    "workflowName": "Play Spotify Music By Topic",
+                    "isSelf": false
+                },
+                "UUID": "200B5C7F-E368-4461-B2FF-BC453EEDFECC",
+                "WFWorkflowName": "Play Spotify Music By Topic"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7B380173-1877-4C22-BCEA-70D65159B959",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "7A4607E7-E36C-4F58-B8AD-7689E9B54179",
@@ -378,21 +662,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
-            "WFWorkflowActionParameters": {
-                "WFHideAppMode": "All Apps",
-                "WFAppsExcept": {
-                    "BundleIdentifier": "md.obsidian",
-                    "Name": "Obsidian",
-                    "TeamIdentifier": "6JSW4SJWN9"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
             "WFWorkflowActionParameters": {
                 "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.clock",
+                    "BundleIdentifier": "com.apple.mobiletimer",
                     "Name": "Clock",
                     "TeamIdentifier": "0000000000"
                 },
@@ -401,11 +674,139 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.windows",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "42C4BA62-D1DF-4DA7-B5B5-9BD463A63743",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": "Clock"
+                                },
+                                "Removable": true,
+                                "Property": "App Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.movewindow",
+            "WFWorkflowActionParameters": {
+                "WFWindow": {
+                    "Value": {
+                        "OutputUUID": "42C4BA62-D1DF-4DA7-B5B5-9BD463A63743",
+                        "Type": "ActionOutput",
+                        "OutputName": "Windows"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "CF00E04A-5E84-4443-B2D5-6E1234408CF9"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "7A4607E7-E36C-4F58-B8AD-7689E9B54179",
                 "UUID": "FAD37814-751C-41D5-9FC4-F331FDD734F8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "9BFE8BD5-D4EB-48A2-A478-99DF65429976",
+                        "Type": "ActionOutput",
+                        "OutputName": "phase"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "playSpotify?",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D0E57073-FFF4-4349-B4A3-6A3425E89F64",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "5",
+                "UUID": "AE4FBE47-46EF-4661-84E5-52974BA3FDFE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AE4FBE47-46EF-4661-84E5-52974BA3FDFE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "33949C11-4961-48B4-AF8F-91D746F6139D",
+                    "workflowName": "Vocal Countdown Timer",
+                    "isSelf": false
+                },
+                "UUID": "E29F6FF4-7C06-4FDE-A432-0003145EFEE9",
+                "WFWorkflowName": "Vocal Countdown Timer"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "30",
+                "UUID": "AE0B2E51-A2BA-4235-9090-A1488CC237F4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AE0B2E51-A2BA-4235-9090-A1488CC237F4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "F4491D4E-B909-4C62-B2DB-6860423316D5",
+                    "workflowName": "_Audio Timer",
+                    "isSelf": false
+                },
+                "UUID": "D936AF5F-9B6E-47CE-AF07-848EFA4AE26C",
+                "WFWorkflowName": "_Audio Timer"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D0E57073-FFF4-4349-B4A3-6A3425E89F64",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -418,6 +819,13 @@
                 },
                 "WFWorkflowName": " ⏈ 30-Min 40-Hz Binaural Beats",
                 "UUID": "CA8A75B6-6D14-4525-82AF-DF92EE1AA2BB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D0E57073-FFF4-4349-B4A3-6A3425E89F64",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -448,7 +856,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
             "WFWorkflowActionParameters": {
                 "WFApp": {
-                    "BundleIdentifier": "com.apple.clock",
+                    "BundleIdentifier": "com.apple.mobiletimer",
                     "Name": "Clock",
                     "TeamIdentifier": "0000000000"
                 }
@@ -546,26 +954,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "Current Date",
-                "UUID": "221E65FB-FAF0-4523-9A96-A6B5E494F756"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
-            "WFWorkflowActionParameters": {
-                "UUID": "CBBA1771-911B-4B76-A8A3-18C224F290D1",
-                "keyPath": "Deep Work Machine.Number of Flows.data",
-                "insertionPoint": "end",
-                "values": {
-                    "Value": {
-                        "OutputUUID": "221E65FB-FAF0-4523-9A96-A6B5E494F756",
-                        "Type": "ActionOutput",
-                        "OutputName": "Current Date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
+                "WFWorkflow": {
+                    "workflowIdentifier": "CB87ED97-D62F-4391-9975-61E7365E58CE",
+                    "workflowName": "Append to Today's Flow Counts",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Append to Today's Flow Counts",
+                "UUID": "EDFE3264-60C2-4C10-AE72-75F5A74B53E0"
             }
         },
         {
@@ -712,6 +1109,10 @@
                 "WFWorkflowName": "🍻 Log Completed Pomodoro",
                 "UUID": "5FE03BFC-4F26-463D-AE08-E5B65406FADE"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [],

@@ -10,10 +10,142 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+                    "workflowName": "getWeekNumber1",
+                    "isSelf": false
+                },
+                "CustomOutputName": "weekNumber",
+                "UUID": "045AC954-3CCF-4018-807C-32475ECAA623",
+                "WFWorkflowName": "getWeekNumber1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "045AC954-3CCF-4018-807C-32475ECAA623",
+                        "Type": "ActionOutput",
+                        "OutputName": "weekNumber"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperation": "…",
+                "UUID": "7FF04BA8-C1C8-45F1-BA77-E267D3AFFC7D",
+                "WFScientificMathOperand": "2",
+                "WFScientificMathOperation": "Modulus"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "A50FC30F-B3C9-47EC-A527-0E778812DA75",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result",
+                            "OutputUUID": "7FF04BA8-C1C8-45F1-BA77-E267D3AFFC7D",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "0",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "💾 Backup My Shortcuts Library",
                 "UUID": "7926DBD1-38E1-4D02-ADE6-88456067B1E4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "🏛️ LifeOS Maintenance",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "7926DBD1-38E1-4D02-ADE6-88456067B1E4",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Text"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "UUID": "1C8C5138-75E4-4B5C-A64A-8A3E25C34089"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "1C8C5138-75E4-4B5C-A64A-8A3E25C34089",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C0475AE8-94C2-46D2-971F-AFEB56E15767",
+                "WFCondition": 101
             }
         },
         {
@@ -63,18 +195,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
-                    "workflowName": "getWeekNumber1",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "getWeekNumber1",
-                "UUID": "3E9930AD-BC4C-4F0A-A31E-F83BE62DD36E"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -82,9 +202,9 @@
                         "string": "\"￼.Week.￼\"",
                         "attachmentsByRange": {
                             "{8, 1}": {
-                                "OutputUUID": "3E9930AD-BC4C-4F0A-A31E-F83BE62DD36E",
+                                "OutputUUID": "045AC954-3CCF-4018-807C-32475ECAA623",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "weekNumber"
                             },
                             "{1, 1}": {
                                 "OutputUUID": "A7D04056-BD4D-4111-96CE-BC02A7DFBD06",
@@ -168,6 +288,24 @@
                 "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
                 "WFPriority": "High"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C0475AE8-94C2-46D2-971F-AFEB56E15767",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "A50FC30F-B3C9-47EC-A527-0E778812DA75",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

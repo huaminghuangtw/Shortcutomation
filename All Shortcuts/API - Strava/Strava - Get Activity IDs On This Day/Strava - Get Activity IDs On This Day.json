@@ -7,59 +7,19 @@
     },
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [
-        "WFNumberContentItem",
-        "WFBooleanContentItem",
-        "WFStringContentItem",
+        "WFDateContentItem",
         "WFDictionaryContentItem",
-        "WFDateContentItem"
+        "WFStringContentItem",
+        "WFNumberContentItem",
+        "WFBooleanContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "MMM dd",
-                "UUID": "0CA42982-FC77-4123-932C-11A0E50E533D",
-                "WFDateFormat": "MMM dd",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "Year",
-                "UUID": "82C59703-D1EA-4E06-AC6D-7A2684C1EDA0",
-                "WFDateFormat": "yyyy",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.number",
             "WFWorkflowActionParameters": {
-                "WFNumberActionNumber": "5",
-                "UUID": "0685252F-59B2-432E-953B-FE99DC8B8B74"
+                "WFNumberActionNumber": "3",
+                "UUID": "F3C1C00E-EDF9-4165-A5FA-1A9DC70A5FFE"
             }
         },
         {
@@ -68,7 +28,7 @@
                 "GroupingIdentifier": "910E3B0F-C9E6-4573-B831-1B67B3E163BB",
                 "WFRepeatCount": {
                     "Value": {
-                        "OutputUUID": "0685252F-59B2-432E-953B-FE99DC8B8B74",
+                        "OutputUUID": "F3C1C00E-EDF9-4165-A5FA-1A9DC70A5FFE",
                         "Type": "ActionOutput",
                         "OutputName": "Number"
                     },
@@ -78,50 +38,55 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "Input": {
                     "Value": {
-                        "OutputUUID": "82C59703-D1EA-4E06-AC6D-7A2684C1EDA0",
-                        "Type": "ActionOutput",
-                        "OutputName": "Year"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFMathOperand": {
-                    "Value": {
-                        "VariableName": "Repeat Index",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "8F6B72BA-B83C-47AC-BD56-C7DF4814D530",
-                "WFMathOperation": "-"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": {
-                    "Value": {
-                        "string": "￼,￼",
+                        "string": "￼ - ￼ + 1",
                         "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "8F6B72BA-B83C-47AC-BD56-C7DF4814D530",
-                                "Type": "ActionOutput",
-                                "OutputName": "Calculation Result"
+                            "{4, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
                             },
                             "{0, 1}": {
-                                "OutputUUID": "0CA42982-FC77-4123-932C-11A0E50E533D",
+                                "OutputUUID": "F3C1C00E-EDF9-4165-A5FA-1A9DC70A5FFE",
                                 "Type": "ActionOutput",
-                                "OutputName": "MMM dd"
+                                "OutputName": "Number"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFDateActionMode": "Specified Date",
-                "UUID": "D0BADFD1-9BDF-4A15-B7DA-BEACD317E940"
+                "UUID": "1F4DA8E7-34ED-44AD-8CB1-7E7088C78AFA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "years",
+                        "Magnitude": {
+                            "OutputUUID": "1F4DA8E7-34ED-44AD-8CB1-7E7088C78AFA",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "36B86B4F-7532-41AC-AEA6-1ECC2235612D",
+                "WFAdjustOperation": "Subtract",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
@@ -129,9 +94,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "D0BADFD1-9BDF-4A15-B7DA-BEACD317E940",
+                        "OutputUUID": "36B86B4F-7532-41AC-AEA6-1ECC2235612D",
                         "Type": "ActionOutput",
-                        "OutputName": "Date"
+                        "OutputName": "Adjusted Date"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -175,21 +140,22 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFDictionaryKey": "total_photo_count",
-                "UUID": "77D2945F-DA0D-4630-B8C6-8C2C5727EA12"
+                "CustomOutputName": "distance",
+                "UUID": "517B6678-AE7F-4A14-8511-000A60D95F23",
+                "WFDictionaryKey": "distance"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "7FA9DE20-8AD8-4E11-9052-F4E6A46289DB",
+                "GroupingIdentifier": "F8ECB60D-20F0-4D5C-BA54-394A14A966D1",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Dictionary Value",
-                            "OutputUUID": "77D2945F-DA0D-4630-B8C6-8C2C5727EA12",
+                            "OutputName": "distance",
+                            "OutputUUID": "517B6678-AE7F-4A14-8511-000A60D95F23",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
@@ -201,6 +167,7 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "WFConditionalActionString": "VirtualRide",
                 "WFNumberValue": "0",
                 "WFCondition": 2
             }
@@ -215,8 +182,9 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFDictionaryKey": "sport_type",
-                "UUID": "517B6678-AE7F-4A14-8511-000A60D95F23"
+                "CustomOutputName": "sport_type",
+                "UUID": "516ADD40-A608-4E6D-B689-9C352D37EA31",
+                "WFDictionaryKey": "sport_type"
             }
         },
         {
@@ -227,8 +195,8 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Dictionary Value",
-                            "OutputUUID": "517B6678-AE7F-4A14-8511-000A60D95F23",
+                            "OutputName": "sport_type",
+                            "OutputUUID": "516ADD40-A608-4E6D-B689-9C352D37EA31",
                             "Aggrandizements": [
                                 {
                                     "PropertyUserInfo": "WFItemName",
@@ -242,7 +210,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "VirtualRide",
-                "GroupingIdentifier": "F8ECB60D-20F0-4D5C-BA54-394A14A966D1",
+                "GroupingIdentifier": "9C96CF27-AE90-4744-AC8C-910F63AD54F1",
                 "WFCondition": 5
             }
         },
@@ -272,7 +240,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "F8ECB60D-20F0-4D5C-BA54-394A14A966D1",
+                "GroupingIdentifier": "9C96CF27-AE90-4744-AC8C-910F63AD54F1",
                 "WFControlFlowMode": 2
             }
         },
@@ -280,8 +248,8 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "7FA9DE20-8AD8-4E11-9052-F4E6A46289DB",
-                "UUID": "0F1D025E-12DB-4431-B9F7-F78B7A1EC011"
+                "GroupingIdentifier": "F8ECB60D-20F0-4D5C-BA54-394A14A966D1",
+                "UUID": "026F71AA-5E12-4F12-9C0D-EE46D4DAE369"
             }
         },
         {

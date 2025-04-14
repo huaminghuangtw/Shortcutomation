@@ -588,17 +588,17 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "  - <details>\n     <summary>\n     <a href=\"￼\">￼</a>\n     </summary>\n     <a href=\"￼\">\n     <img src=\"￼\" width=\"150\" title=\"💁‍♂️ Click or scan me to download the Shortcut!\"/>\n     </a>\n     </details>\n",
+                        "string": "  - <details>\n     <summary>\n     <a href=\"￼\">￼</a>\n     </summary>\n     <a href=\"￼\">\n     <kbd>\n     <img src=\"￼\" width=\"150\" title=\"💁‍♂️ Click or scan me to download the Shortcut!\"/>\n     </kbd>\n     </a>\n     </details>\n",
                         "attachmentsByRange": {
+                            "{43, 1}": {
+                                "OutputUUID": "9281ECF6-16E4-49E8-BF30-0C482222F37E",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            },
                             "{82, 1}": {
                                 "OutputUUID": "6F52EAB4-708C-477A-A9DC-7A151D796269",
                                 "Type": "ActionOutput",
                                 "OutputName": "icloudLink"
-                            },
-                            "{101, 1}": {
-                                "OutputUUID": "67560C97-EECF-48B2-8A0E-93CD1C34439D",
-                                "Type": "ActionOutput",
-                                "OutputName": "URL Encoded Text"
                             },
                             "{46, 1}": {
                                 "VariableName": "Repeat Item",
@@ -614,8 +614,8 @@
                                     }
                                 ]
                             },
-                            "{43, 1}": {
-                                "OutputUUID": "9281ECF6-16E4-49E8-BF30-0C482222F37E",
+                            "{112, 1}": {
+                                "OutputUUID": "67560C97-EECF-48B2-8A0E-93CD1C34439D",
                                 "Type": "ActionOutput",
                                 "OutputName": "URL Encoded Text"
                             }
@@ -730,6 +730,42 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "✨ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "E9983D46-0A41-41D6-A542-56E2CEA12BA9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Pluralised Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "5A0ABC12-5641-4B9D-ABEE-DF88E6EA93AC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "6599BF11-C360-4BEE-BEB7-6F560D99B0FD",
+                "keyPath": "My Apple Shortcuts.backup.newShortcuts",
+                "valueConversionMode": "automatic",
+                "values": {
+                    "Value": {
+                        "OutputUUID": "5A0ABC12-5641-4B9D-ABEE-DF88E6EA93AC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
                 "WFTextActionText": "</details>\n\n<details>\n",
                 "UUID": "CCE26BBB-B02D-44D6-8679-769436FB612E"
             }
@@ -762,36 +798,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
-                    "workflowName": "getWeekNumber1",
-                    "isSelf": false
-                },
-                "CustomOutputName": "WeekNumber",
-                "UUID": "78D9BB88-9685-41FE-87FF-22E3C13AEAA0",
-                "WFWorkflowName": "getWeekNumber1"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "## ✨ ￼\n\n> **Date:** ￼ (Week ￼)  \n\n<details>\n￼\n</details>\n",
+                        "string": "## ￼\n\n> **Date:** ￼  \n\n<details>\n￼\n</details>\n",
                         "attachmentsByRange": {
-                            "{5, 1}": {
-                                "OutputUUID": "E9983D46-0A41-41D6-A542-56E2CEA12BA9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Pluralised Result"
-                            },
-                            "{28, 1}": {
-                                "OutputUUID": "78D9BB88-9685-41FE-87FF-22E3C13AEAA0",
-                                "Type": "ActionOutput",
-                                "OutputName": "WeekNumber"
-                            },
-                            "{20, 1}": {
+                            "{18, 1}": {
                                 "Type": "CurrentDate",
                                 "Aggrandizements": [
                                     {
@@ -801,10 +814,15 @@
                                     }
                                 ]
                             },
-                            "{44, 1}": {
+                            "{33, 1}": {
                                 "OutputUUID": "40C14AD3-1A82-4E71-8072-79E65C92220A",
                                 "Type": "ActionOutput",
                                 "OutputName": "Combined Text"
+                            },
+                            "{3, 1}": {
+                                "OutputUUID": "5A0ABC12-5641-4B9D-ABEE-DF88E6EA93AC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
                             }
                         }
                     },
@@ -834,11 +852,14 @@
             "WFWorkflowActionParameters": {
                 "WFFolder": {
                     "fileLocation": {
-                        "relativeSubpath": "Websites/shortcutomation.com/public/Shortcutomation",
-                        "WFFileLocationType": "Home"
+                        "WFFileLocationType": "Shortcuts",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "Backup",
+                        "appContainerBundleIdentifier": "com.apple.systemactions",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/2DFBFD98-38BD-44DF-8BC3-3A2F01248165/809d9d393c0f012dba4e1c5a45ca041538c5e1ce"
                     },
-                    "filename": "Shortcutomation",
-                    "displayName": "Shortcutomation"
+                    "filename": "Backup",
+                    "displayName": "Backup"
                 },
                 "WFAskWhereToSave": false,
                 "WFInput": {
