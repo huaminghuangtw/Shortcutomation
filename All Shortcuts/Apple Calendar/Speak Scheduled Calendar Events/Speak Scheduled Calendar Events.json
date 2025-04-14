@@ -30,24 +30,6 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "A9060DBB-1939-49E3-AA63-7FE68348E04B",
-                    "workflowName": "Get Relative Date Text",
-                    "isSelf": false
-                },
-                "UUID": "0067E8E5-98F5-41B0-B810-02244BB0A559",
-                "WFWorkflowName": "Get Relative Date Text"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.translate",
             "WFWorkflowActionParameters": {
                 "WFSelectedFromLanguage": "en_US",
@@ -58,9 +40,20 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "0067E8E5-98F5-41B0-B810-02244BB0A559",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Relative",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None",
+                                        "WFRelativeDateFormatStyle": "Short"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -294,6 +287,26 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7BD08B88-9D65-4FD0-88A5-D959CAE78EAD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Start Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "_Prefix時辰2Time",
+                    "isSelf": false
+                },
+                "UUID": "9844FC94-7CFC-4A7A-87CC-870C64FD18C5",
+                "WFWorkflowName": "_Prefix時辰2Time"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.properties.calendarevents",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -308,37 +321,49 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "End Date",
+                        "OutputUUID": "723501AD-CFD3-4505-9CA0-DF83D4991BC8",
+                        "Aggrandizements": [
+                            {
+                                "WFDateFormatStyle": "None",
+                                "WFISO8601IncludeTime": false,
+                                "Type": "WFDateFormatVariableAggrandizement",
+                                "WFTimeFormatStyle": "Short"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "_Prefix時辰2Time",
+                    "isSelf": false
+                },
+                "UUID": "74190870-5FC1-4A11-B11B-498479565086",
+                "WFWorkflowName": "_Prefix時辰2Time"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼ 至 ￼",
+                        "string": "￼至￼",
                         "attachmentsByRange": {
-                            "{4, 1}": {
+                            "{2, 1}": {
+                                "OutputUUID": "74190870-5FC1-4A11-B11B-498479565086",
                                 "Type": "ActionOutput",
-                                "OutputName": "End Date",
-                                "OutputUUID": "723501AD-CFD3-4505-9CA0-DF83D4991BC8",
-                                "Aggrandizements": [
-                                    {
-                                        "WFDateFormatStyle": "None",
-                                        "WFISO8601IncludeTime": false,
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFTimeFormatStyle": "Short"
-                                    }
-                                ]
+                                "OutputName": "Shortcut Result"
                             },
                             "{0, 1}": {
+                                "OutputUUID": "9844FC94-7CFC-4A7A-87CC-870C64FD18C5",
                                 "Type": "ActionOutput",
-                                "OutputName": "Start Date",
-                                "OutputUUID": "7BD08B88-9D65-4FD0-88A5-D959CAE78EAD",
-                                "Aggrandizements": [
-                                    {
-                                        "WFDateFormatStyle": "None",
-                                        "WFISO8601IncludeTime": false,
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFTimeFormatStyle": "Short"
-                                    }
-                                ]
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },

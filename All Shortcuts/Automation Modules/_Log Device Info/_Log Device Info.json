@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1113",
-    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -8,17 +8,13 @@
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
-    "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorShowError",
-        "Parameters": {}
-    },
     "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "Apple Device Info.￼.￼",
+                        "string": "Apple Device Info.￼.￼.￼",
                         "attachmentsByRange": {
                             "{18, 1}": {
                                 "Type": "DeviceDetails",
@@ -32,6 +28,16 @@
                             },
                             "{20, 1}": {
                                 "Type": "ExtensionInput"
+                            },
+                            "{22, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -42,54 +48,93 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "UUID": "5E9CEF6F-764C-47A3-A548-8C49700357C2"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
-            "WFWorkflowActionParameters": {
-                "overwriteStrategy": "alwaysAllow",
-                "UUID": "42B004CE-39BF-463A-AC5F-C91F7351C464",
-                "keyPath": {
-                    "Value": {
-                        "string": "￼.Timestamp",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "709EE9FE-64C8-4787-9167-BE32B74CF36C",
-                                "Type": "ActionOutput",
-                                "OutputName": "keyPath"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "valueConversionMode": "automatic",
-                "values": {
-                    "Value": {
-                        "OutputUUID": "5E9CEF6F-764C-47A3-A548-8C49700357C2",
-                        "Type": "ActionOutput",
-                        "OutputName": "Date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getbatterylevel",
             "WFWorkflowActionParameters": {
                 "UUID": "7C81EAFB-B037-4B44-A5B3-A16E17F58AE1"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "overwriteStrategy": "alwaysAllow",
-                "UUID": "DF45D07D-69D5-4738-BFED-E0C801A81AB4",
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "BatteryLevel"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "7C81EAFB-B037-4B44-A5B3-A16E17F58AE1",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Battery State"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Timestamp"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "Type": "CurrentDate",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "Type": "WFPropertyVariableAggrandizement",
+                                                        "PropertyName": "Time"
+                                                    },
+                                                    {
+                                                        "WFDateFormatStyle": "None",
+                                                        "WFISO8601IncludeTime": false,
+                                                        "Type": "WFDateFormatVariableAggrandizement",
+                                                        "WFTimeFormatStyle": "Medium"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "E68EC26D-BEF6-4B65-9D46-1CD5B1753D9C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+            "WFWorkflowActionParameters": {
+                "values": {
+                    "Value": {
+                        "OutputUUID": "E68EC26D-BEF6-4B65-9D46-1CD5B1753D9C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "valueConversionMode": "text",
                 "keyPath": {
                     "Value": {
-                        "string": "￼.BatteryLevel",
+                        "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "709EE9FE-64C8-4787-9167-BE32B74CF36C",
@@ -100,15 +145,8 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "valueConversionMode": "automatic",
-                "values": {
-                    "Value": {
-                        "OutputUUID": "7C81EAFB-B037-4B44-A5B3-A16E17F58AE1",
-                        "Type": "ActionOutput",
-                        "OutputName": "Battery State"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
+                "UUID": "4BBE2867-B0B2-423B-88DE-740AEBF25638",
+                "insertionPoint": "end"
             }
         }
     ],
@@ -116,7 +154,7 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

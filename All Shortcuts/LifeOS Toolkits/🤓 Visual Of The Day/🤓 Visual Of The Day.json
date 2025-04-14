@@ -20,8 +20,80 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My CMS.Reddit.subreddit",
+                "keyPath": "My CMS.Reddit.subreddit.💫 Visuals",
                 "UUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9DEC707C-DB69-4B32-862C-CF887744E8BB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Set Locale to UK to use Monday as the first day of the week instead of Sunday"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "e",
+                "UUID": "83294D46-EAA6-4720-9101-C1E7DA7B92E0",
+                "WFLocale": "en_GB",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "EEE, dd MMM yyyy HH:mm:ss Z",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "(￼ mod ￼) + 1",
+                        "attachmentsByRange": {
+                            "{1, 1}": {
+                                "OutputUUID": "83294D46-EAA6-4720-9101-C1E7DA7B92E0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            },
+                            "{7, 1}": {
+                                "OutputUUID": "9DEC707C-DB69-4B32-862C-CF887744E8BB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6A00754E-3F35-412E-AC05-9AB3CC428C11"
             }
         },
         {
@@ -29,24 +101,22 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Value",
                         "OutputUUID": "BD43B47F-B0EC-44EA-92D5-455F6EFC76FD",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "💫 Visuals"
-                            }
-                        ]
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFItemSpecifier": "Random Item",
-                "UUID": "8D2C3C75-C8B7-4CAC-8B35-7E847B8502C2"
+                "WFItemIndex": {
+                    "Value": {
+                        "OutputUUID": "6A00754E-3F35-412E-AC05-9AB3CC428C11",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8D2C3C75-C8B7-4CAC-8B35-7E847B8502C2",
+                "WFItemSpecifier": "Item At Index"
             }
         },
         {

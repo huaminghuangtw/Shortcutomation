@@ -25,58 +25,6 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
-                    "workflowIdentifier": "ED06E5AE-1F90-4124-BF17-876BCBA4E22B",
-                    "workflowName": "Obsidian - Collapse File Explorer",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Obsidian - Collapse File Explorer",
-                "UUID": "CF8FA0B4-41F1-4A11-89B3-4BA92DB42D2F"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": "Today",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "D35EEF7E-C788-4AB8-BCBB-7D7F36CAEE92"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "D35EEF7E-C788-4AB8-BCBB-7D7F36CAEE92",
-                        "Type": "ActionOutput",
-                        "OutputName": "Date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "13C27FE0-3D0E-46E7-AC5F-A2DF98404C17",
-                    "workflowName": "📔 View Journal",
-                    "isSelf": false
-                },
-                "UUID": "8A3620B7-CB5D-4177-9909-6E4088D5CE85",
-                "WFWorkflowName": "📔 View Journal"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "9C09DF93-5225-4301-AF6F-4823F64B1D52",
-                    "workflowName": "Show Day Progress",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Show Day Progress",
-                "UUID": "5C9E4F36-9A0D-478E-8905-C5494A35A7E1"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
                     "workflowIdentifier": "039D7FF5-832B-40D1-9AF9-1ABADE9F178F",
                     "workflowName": "Set Day Progress Timer",
                     "isSelf": false
@@ -104,6 +52,189 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "12:00",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "184B0D01-0856-47DF-B665-2D136C54B363"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "18:00",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "6FF75C8A-1355-4C78-BA51-8E64A3B38DB3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "9C48945F-7E22-4EFA-9334-61777791A46C",
+                    "workflowName": "isOnline",
+                    "isSelf": false
+                },
+                "CustomOutputName": "isOnline",
+                "UUID": "2E82DD4D-609D-4420-9B73-289931086462",
+                "WFWorkflowName": "isOnline"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "isOnline",
+                            "OutputUUID": "2E82DD4D-609D-4420-9B73-289931086462",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "5D03E1DE-3400-4C7C-A5E8-474B37766DA3",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "184B0D01-0856-47DF-B665-2D136C54B363",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentDate"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFAnotherDate": {
+                    "Value": {
+                        "OutputUUID": "6FF75C8A-1355-4C78-BA51-8E64A3B38DB3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "9CCA87F2-DA20-4F79-8CCE-BDCE1CA85981",
+                "WFCondition": 1003
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.weather.currentconditions",
+            "WFWorkflowActionParameters": {
+                "UUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C9FA8EB8-FC1D-4140-8413-ABD91AAD52DA",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Weather Conditions",
+                            "OutputUUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Precipitation Chance"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "0",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "開大燈"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C9FA8EB8-FC1D-4140-8413-ABD91AAD52DA",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9CCA87F2-DA20-4F79-8CCE-BDCE1CA85981",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "開大燈"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9CCA87F2-DA20-4F79-8CCE-BDCE1CA85981",
+                "UUID": "07C24B1C-B175-4F51-AD19-44438AE8486D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "開大燈",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "79F363AC-A590-44BB-8DF0-3A0EC4BB35F8",
+                "WFCondition": 100
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -113,6 +244,20 @@
                 },
                 "WFWorkflowName": "開大燈",
                 "UUID": "E3AD7D7B-431B-46FB-B421-0FE6A79B2F23"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "79F363AC-A590-44BB-8DF0-3A0EC4BB35F8",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "5D03E1DE-3400-4C7C-A5E8-474B37766DA3",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -184,9 +329,53 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.windows",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "30AA1EDF-7B9F-4DD1-9E23-FEC7C25D51E2",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": "System Settings"
+                                },
+                                "Removable": true,
+                                "Property": "App Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.movewindow",
+            "WFWorkflowActionParameters": {
+                "WFWindow": {
+                    "Value": {
+                        "OutputUUID": "30AA1EDF-7B9F-4DD1-9E23-FEC7C25D51E2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Windows"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "14774708-5AFA-43E3-B58D-EE2EDCEDDBC0"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
-                "WFAlertActionMessage": "🤖 Do you want to continue?"
+                "WFAlertActionMessage": "🙆🏽 Press the OK button to continue"
             }
         },
         {
@@ -209,6 +398,10 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {}
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
@@ -228,12 +421,145 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
-                    "workflowIdentifier": "9C48945F-7E22-4EFA-9334-61777791A46C",
-                    "workflowName": "isOnline",
+                    "workflowIdentifier": "ED06E5AE-1F90-4124-BF17-876BCBA4E22B",
+                    "workflowName": "Obsidian - Collapse File Explorer",
                     "isSelf": false
                 },
-                "WFWorkflowName": "isOnline",
-                "UUID": "2E82DD4D-609D-4420-9B73-289931086462"
+                "WFWorkflowName": "Obsidian - Collapse File Explorer",
+                "UUID": "CF8FA0B4-41F1-4A11-89B3-4BA92DB42D2F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Today",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "D35EEF7E-C788-4AB8-BCBB-7D7F36CAEE92"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D35EEF7E-C788-4AB8-BCBB-7D7F36CAEE92",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "13C27FE0-3D0E-46E7-AC5F-A2DF98404C17",
+                    "workflowName": "📔 View Journal",
+                    "isSelf": false
+                },
+                "UUID": "8A3620B7-CB5D-4177-9909-6E4088D5CE85",
+                "WFWorkflowName": "📔 View Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
+            "WFWorkflowActionParameters": {
+                "UUID": "892A2BE4-2B3B-4FF8-82D0-BA105D0E3DD6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Day Range",
+                        "OutputUUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": {
+                                    "WFLinkEntityContentPropertyUserInfoPropertyIdentifier": "startTime"
+                                },
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "startTime"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAnotherDate": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Day Range",
+                        "OutputUUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": {
+                                    "WFLinkEntityContentPropertyUserInfoPropertyIdentifier": "endTime"
+                                },
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "endTime"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFConditionalActionString": "#MakerMode",
+                "GroupingIdentifier": "C01DD936-0022-4423-8C04-B1A28103C16A",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Current Focus",
+                            "OutputUUID": "892A2BE4-2B3B-4FF8-82D0-BA105D0E3DD6",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFCondition": 4,
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "5C4FAC3B-84A4-4320-ABAA-C94C61768134",
+                    "workflowName": "Show Year Progress",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Show Year Progress",
+                "UUID": "0F9A2267-DDE3-467A-824E-2FA8072AF821"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C01DD936-0022-4423-8C04-B1A28103C16A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "9C09DF93-5225-4301-AF6F-4823F64B1D52",
+                    "workflowName": "Show Day Progress",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Show Day Progress",
+                "UUID": "5C9E4F36-9A0D-478E-8905-C5494A35A7E1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C01DD936-0022-4423-8C04-B1A28103C16A",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -244,7 +570,7 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Shortcut Result",
+                            "OutputName": "isOnline",
                             "OutputUUID": "2E82DD4D-609D-4420-9B73-289931086462",
                             "Aggrandizements": [
                                 {
@@ -276,79 +602,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "EBB7CC54-E114-44CE-8AE7-C6CBFE571190",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "BAD75D1E-DD9E-499D-8A5F-C196235A9005",
-                    "workflowName": "Set Day Range",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Set Day Range",
-                "UUID": "A8FC1FAD-AFAE-44C7-9636-66A119ABF9A4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Day-Progress.GetDayRangeIntent",
-            "WFWorkflowActionParameters": {
-                "UUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Day-Progress",
-                    "Name": "Day Progress",
-                    "AppIntentIdentifier": "GetDayRangeIntent"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFDate": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Day Range",
-                        "OutputUUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
-                        "Aggrandizements": [
-                            {
-                                "PropertyUserInfo": "startTime",
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "startTime"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "CurrentDate"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFAnotherDate": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Day Range",
-                        "OutputUUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
-                        "Aggrandizements": [
-                            {
-                                "PropertyUserInfo": "endTime",
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "endTime"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "66798EDE-5C59-48DA-92E1-5F935D4E88CF",
-                "WFCondition": 1003
+                "UUID": "698E8FB6-62A6-49B4-AEC3-8231D18D6B4E"
             }
         },
         {
@@ -370,6 +626,63 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Day Range",
+                        "OutputUUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "startTime",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "startTime"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAnotherDate": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Day Range",
+                        "OutputUUID": "82FEF290-B331-4056-BAB6-E6A6EF099F11",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "endTime",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "endTime"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFConditionalActionString": "#MakerMode",
+                "GroupingIdentifier": "66798EDE-5C59-48DA-92E1-5F935D4E88CF",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Current Focus",
+                            "OutputUUID": "892A2BE4-2B3B-4FF8-82D0-BA105D0E3DD6",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFCondition": 4,
+                "WFControlFlowMode": 0
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -384,10 +697,39 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "66798EDE-5C59-48DA-92E1-5F935D4E88CF",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "1284B20D-B7D6-4CB1-9060-5467967BA104",
+                    "workflowName": "_Show Reminders List",
+                    "isSelf": false
+                },
+                "UUID": "6286F9C9-5EE3-47DD-B2D8-510562E1B9DD",
+                "WFWorkflowName": "_Show Reminders List"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "66798EDE-5C59-48DA-92E1-5F935D4E88CF",
                 "UUID": "C2BBE72A-B904-4949-9C9B-66AC9B6DBDEA"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [],

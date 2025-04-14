@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1106",
-    "WFWorkflowMinimumClientVersion": 1106,
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -8,6 +8,10 @@
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
     "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -215,6 +219,105 @@
                 "WFControlFlowMode": 0,
                 "WFEnumeration": "iOS",
                 "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Journal Metadata Fields",
+                "UUID": "014D63B6-876E-4C60-97D5-34DA4E691550"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "014D63B6-876E-4C60-97D5-34DA4E691550",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "26D77C85-2142-4798-A6A8-0911E48798CD",
+                "WFReplaceTextReplace": {
+                    "Value": {
+                        "string": "\"￼\":\"￼\"",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "frontmatterValue"
+                                    }
+                                ]
+                            },
+                            "{1, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "frontmatterKey"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextFind": {
+                    "Value": {
+                        "string": "\"￼\":\".*?\"",
+                        "attachmentsByRange": {
+                            "{1, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "frontmatterKey"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "9A895313-731A-412C-99DB-AEDD65AFDBE2",
+                "keyPath": "Journal Metadata Fields",
+                "valueConversionMode": "text",
+                "values": {
+                    "Value": {
+                        "OutputUUID": "26D77C85-2142-4798-A6A8-0911E48798CD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {
@@ -637,9 +740,9 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch"
     ],
-    "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

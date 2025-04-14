@@ -1,0 +1,93 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFGenericFileContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFBase64LineBreakMode": "None",
+                "WFEncodeMode": "Encode",
+                "UUID": "AB14AF46-A6C9-46EE-A765-D7C70FA18FA6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            border: 0;\n        }\n        html, body {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            background-color: black;\n            overflow: hidden;\n        }\n        img {\n            width: 100vw;\n            height: 100vh;\n            object-fit: contain;\n        }\n    </style>\n</head>\n<body>\n    <img src=\"data:image/png;base64,￼\">\n</body>\n</html>",
+                        "attachmentsByRange": {
+                            "{513, 1}": {
+                                "OutputUUID": "AB14AF46-A6C9-46EE-A765-D7C70FA18FA6",
+                                "Type": "ActionOutput",
+                                "OutputName": "Base64 Encoded"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F94069A8-D762-4A9D-9724-158CA0839366"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F94069A8-D762-4A9D-9724-158CA0839366",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFName": "temp.html",
+                "UUID": "2450B3EE-5896-496F-99FA-7483CFA34750"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.showwebpage",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2450B3EE-5896-496F-99FA-7483CFA34750",
+                                "Type": "ActionOutput",
+                                "OutputName": "Renamed Item"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1273EA2B-F61D-49DD-B3F6-1F3D72995E15"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFImageContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

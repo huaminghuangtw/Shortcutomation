@@ -1,0 +1,275 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Apple Shortcuts.shortcutLastRunTime.End the Day Right",
+                "UUID": "338969A4-F144-4C5D-AFB3-AB7D90E9AC1C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value",
+                            "OutputUUID": "338969A4-F144-4C5D-AFB3-AB7D90E9AC1C",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFDateContentItem"
+                                },
+                                {
+                                    "Type": "WFDateFormatVariableAggrandizement",
+                                    "WFISO8601IncludeTime": false,
+                                    "WFDateFormatStyle": "ISO 8601"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "FBAFBA62-4689-4073-836C-F61B74E81460",
+                "WFCondition": 5
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "App Time.name",
+                "CustomOutputName": "name",
+                "UUID": "DB976893-17E8-4A44-BC5C-30A509A28E0C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "App Time.timestamp",
+                "CustomOutputName": "timestamp",
+                "UUID": "021FA307-A9D8-4F1F-B36A-EAE2E50A4C16"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "Medium"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "021FA307-A9D8-4F1F-B36A-EAE2E50A4C16",
+                                "Type": "ActionOutput",
+                                "OutputName": "timestamp"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "4229EAE9-A3D3-41EC-8753-5F87D40A238E",
+                "WFTimeUntilUnit": "Seconds"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "App Time.￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "OutputUUID": "DB976893-17E8-4A44-BC5C-30A509A28E0C",
+                                "Type": "ActionOutput",
+                                "OutputName": "name"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "088FE4C6-BBFA-4C26-90E5-49175B61C052"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "088FE4C6-BBFA-4C26-90E5-49175B61C052",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F3ADB853-6169-4F41-9700-D949EBA10B79",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "App Time.￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "OutputUUID": "DB976893-17E8-4A44-BC5C-30A509A28E0C",
+                                "Type": "ActionOutput",
+                                "OutputName": "name"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "031C60B6-2A82-4F1B-A1BF-27F7E945B11A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F3ADB853-6169-4F41-9700-D949EBA10B79",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "0",
+                "UUID": "6DEEFFC0-7267-4A50-9441-85B1EF7A5C0F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "F3ADB853-6169-4F41-9700-D949EBA10B79",
+                "UUID": "C88EF287-EB97-4CF8-8A8B-3EA2F39D7837"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C88EF287-EB97-4CF8-8A8B-3EA2F39D7837",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": {
+                    "Value": {
+                        "OutputUUID": "4229EAE9-A3D3-41EC-8753-5F87D40A238E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Time Between Dates"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "37C85E7E-210C-44D1-9111-D056DEC75425"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "56AAC630-9DAE-4A2E-AF7F-07F59464A994",
+                "keyPath": {
+                    "Value": {
+                        "string": "App Time.￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "OutputUUID": "DB976893-17E8-4A44-BC5C-30A509A28E0C",
+                                "Type": "ActionOutput",
+                                "OutputName": "name"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "valueConversionMode": "automatic",
+                "values": {
+                    "Value": {
+                        "OutputUUID": "37C85E7E-210C-44D1-9111-D056DEC75425",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "FBAFBA62-4689-4073-836C-F61B74E81460",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

@@ -57,9 +57,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFContentItemLimitEnabled": true,
-                "CustomOutputName": "parentReminder",
-                "UUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                "WFContentItemLimitEnabled": false,
+                "CustomOutputName": "baseReminders",
+                "UUID": "FA90E432-59CE-4C5E-8422-8E3821D3C528",
                 "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
                     "Value": {
@@ -106,6 +106,40 @@
                             {
                                 "Operator": 4,
                                 "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "FA90E432-59CE-4C5E-8422-8E3821D3C528",
+                        "Type": "ActionOutput",
+                        "OutputName": "baseReminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "CustomOutputName": "parentReminder",
+                "UUID": "4694E954-85C2-4A5B-8CC2-56806DF26558",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -128,14 +162,6 @@
                                 },
                                 "Removable": true,
                                 "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
                             }
                         ]
                     },
@@ -192,14 +218,6 @@
                                 },
                                 "Removable": true,
                                 "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
                             }
                         ]
                     },
@@ -264,6 +282,10 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+            "WFWorkflowActionParameters": {}
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFMenuPrompt": {
@@ -323,7 +345,14 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFContentItemInputParameter": "Library",
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "FA90E432-59CE-4C5E-8422-8E3821D3C528",
+                        "Type": "ActionOutput",
+                        "OutputName": "baseReminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFContentItemLimitEnabled": true,
                 "CustomOutputName": "❤️ Favorites",
                 "UUID": "B4639638-74E8-4B8E-A8F8-D06FE4D2B8BB",
@@ -334,42 +363,12 @@
                         "WFContentPredicateBoundedDate": false,
                         "WFActionParameterFilterTemplates": [
                             {
-                                "Operator": 4,
-                                "Values": {
-                                    "Enumeration": {
-                                        "Value": {
-                                            "Value": {
-                                                "Type": "ActionOutput",
-                                                "OutputName": "inputDict",
-                                                "OutputUUID": "1248C037-A686-4B39-BBDF-6C010A4BE5E7",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "reminderList"
-                                                    }
-                                                ]
-                                            },
-                                            "WFSerializationType": "WFTextTokenAttachment"
-                                        },
-                                        "WFSerializationType": "WFStringSubstitutableState"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "List"
-                            },
-                            {
                                 "Operator": 99,
                                 "Values": {
                                     "String": "Favorites"
                                 },
                                 "Removable": true,
                                 "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {},
-                                "Removable": true,
-                                "Property": "Is Completed"
                             }
                         ]
                     },
@@ -414,6 +413,57 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "WFReminderContentItemTitle": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E534CD06-1D59-4FB0-A9A3-3FA464FBD3C2",
+                                "Type": "ActionOutput",
+                                "OutputName": "brainFoodTitle"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFContentItemPropertyName": "Title",
+                "UUID": "D510A290-8216-4B8B-8880-5F4FFB966E00",
+                "WFReminderContentItemURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E534CD06-1D59-4FB0-A9A3-3FA464FBD3C2",
+                                "Type": "ActionOutput",
+                                "OutputName": "brainFoodTitle"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E84B6B0D-C58B-4ADE-A175-3E306CCA34CD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Edited Reminder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFReminderContentItemIsCompleted": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "Mode": "Set",
+                "WFReminderContentItemParentReminder": {
+                    "Value": {
+                        "OutputUUID": "00273C27-83A9-411E-98DC-1E163E644AD9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFContentItemPropertyName": "URL",
                 "UUID": "968612A4-BF52-48FB-A317-38F5E285C0E8",
                 "WFReminderContentItemURL": {
@@ -431,7 +481,7 @@
                 },
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "E84B6B0D-C58B-4ADE-A175-3E306CCA34CD",
+                        "OutputUUID": "D510A290-8216-4B8B-8880-5F4FFB966E00",
                         "Type": "ActionOutput",
                         "OutputName": "Edited Reminder"
                     },
@@ -543,6 +593,10 @@
                 },
                 "UUID": "7AC231BB-8658-49CE-852F-F12748454D31"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
