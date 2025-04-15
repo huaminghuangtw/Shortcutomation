@@ -177,7 +177,7 @@ This library wouldn't be possible without the [r/shortcuts](https://www.reddit.c
 [contributors-shield]: https://img.shields.io/github/contributors/huaminghuangtw/Shortcutomation.svg?style=for-the-badge
 [contributors-url]: https://github.com/huaminghuangtw/Shortcutomation/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/huaminghuangtw/Shortcutomation.svg?style=for-the-badge
-[forks-url]: https://github.com/huaminghuangtw/Shortcutomatione/network/members
+[forks-url]: https://github.com/huaminghuangtw/Shortcutomation/network/members
 [stars-shield]: https://img.shields.io/github/stars/huaminghuangtw/Shortcutomation.svg?style=for-the-badge
 [stars-url]: https://github.com/huaminghuangtw/Shortcutomation/stargazers
 [issues-shield]: https://img.shields.io/github/issues/huaminghuangtw/Shortcutomation.svg?style=for-the-badge
