@@ -1,4 +1,4 @@
-hi<div align="center">
+<div align="center">
 
   <img src="assets/favicon.png" alt="logo" width="200" height="auto" />
 
