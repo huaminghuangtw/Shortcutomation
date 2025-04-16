@@ -27,13 +27,19 @@
   <p>
     <strong>Last Update:</strong> 2025-04-14
     <br>
-    Created by <a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a> with ❤️ in
+    Created by
+    <a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a>
+    with 🌶️ in
     <a href="https://www.google.com/maps/place/L%C3%BCneburg,%20Germany">Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ</a>
   </p>
 
   <br>
   
   <p>
+    <a href="https://github.com/huaminghuangtw/Shortcutomation/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-black.svg" alt="MIT License">
+    </a>
+    <br>
     <a href="https://github.com/huaminghuangtw/Shortcutomation">
       <img src="https://badges.frapsoft.com/os/v3/open-source.svg" alt="Open Source Love">
     </a>
@@ -41,9 +47,8 @@
     <a href="https://github.com/huaminghuangtw/Shortcutomation/issues">
       <img src="https://img.shields.io/badge/Contribution_Welcome-gray?style=plastic" alt="Contribution Welcome">
     </a>
-    <br>
   </p>
-
+  
   <h4>
     <a href="https://shortcutomation.com/blog">📖 Read Blog</a>
     <span> • </span>
@@ -68,7 +73,7 @@
 
 ## 🚀 Quickstart
 
-1. Visit the [Gallery.](https://shortcutomation.com/gallery)
+1. Visit the [Gallery](https://shortcutomation.com/gallery).
 
 2. Choose a category that interests you:
    - **Recommended:** Start with **[Standalone Fun](https://shortcutomation.com/standalone%20fun)** — these shortcuts run immediately without any setup.
@@ -135,11 +140,21 @@
 
 **Contributions are always welcome!**
 
+[![Suggest a Shortcut](https://img.shields.io/badge/💡_Suggest%20a%20Shortcut-purple?style=for-the-badge)](https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=enhancement&template=feature-request---.md)
+[![Report a Bug](https://img.shields.io/badge/🐞_Report%20a%20Bug-red?style=for-the-badge)](https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=bug&template=bug-report---.md)
+[![Ask a Question](https://img.shields.io/badge/❓_Ask%20a%20Question-yellow?style=for-the-badge)](https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=question&template=ask-question---.md)
+
 If you have any new shortcut or automation idea, feel free to [fork the repository](https://github.com/huaminghuangtw/Shortcutomation/fork) and [submit a pull request](https://github.com/huaminghuangtw/Shortcutomation/compare).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for full guidelines and helpful tips to get started.
 
 Alternatively, you can [open an issue](https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=enhancement&template=feature-request---.md) to suggest a shortcut or automation idea.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+All contributed shortcuts and content are shared freely under the terms of the MIT License. Use them however you like—just give credit.
 
 ## 👋 Contact
 
