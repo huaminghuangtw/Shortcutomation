@@ -1,4 +1,4 @@
-<div align="center">
+hi<div align="center">
 
   <img src="assets/favicon.png" alt="logo" width="200" height="auto" />
 
@@ -23,7 +23,7 @@
       <strong>💁🏽 Explore & Download FREE Shortcuts »</strong>
     </a>
   </h3>
-  <p>✨ ⸻ • ⸻ • ⸻ • ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
+  <p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
   <p>
     <strong>Last Update:</strong> 2025-04-14
     <br>
