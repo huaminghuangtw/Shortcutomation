@@ -74,13 +74,13 @@
 1. Visit the [Gallery](https://shortcutomation.com/gallery).
 
 2. Choose a category that interests you:
-   - **Recommended:** Start with **[Standalone Fun](https://shortcutomation.com/standalone%20fun)** — these shortcuts run immediately without any setup.
+   - **Recommended:** Start with **[Standalone Fun](https://shortcutomation.com/gallery/standalone%20fun)** — these shortcuts run immediately without any setup.
    - For other categories, check the **Dependencies** and **Required Apps** sections on each shortcut's page to get everything you need.
 
 3. On each shortcut page, you'll find three helpful buttons:
    - **Preview Shortcut**
    - **Download Shortcut**
-   -  **View Source Code** (on GitHub)
+   - **View Source Code** (on GitHub)
 
 4. Add to your device instantly — no account needed!
 
