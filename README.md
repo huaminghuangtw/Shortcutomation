@@ -23,7 +23,7 @@
       <strong>💁🏽 Explore & Download FREE Shortcuts »</strong>
     </a>
   </h3>
-
+  <p>✨ ⸻ • ⸻ • ⸻ • ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
   <p>
     <strong>Last Update:</strong> 2025-04-14
     <br>
@@ -32,8 +32,6 @@
     with 🌶️ in
     <a href="https://www.google.com/maps/place/L%C3%BCneburg,%20Germany">Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ</a>
   </p>
-
-  <br>
   
   <p>
     <a href="https://github.com/huaminghuangtw/Shortcutomation/blob/main/LICENSE">
