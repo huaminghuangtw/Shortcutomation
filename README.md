@@ -160,6 +160,16 @@ All contributed shortcuts and content are shared freely under the terms of the M
 📧 [huaming.huang.tw@gmail.com](mailto:huaming.huang.tw@gmail.com)  
 🐦 [@huaminghuangtw](https://x.com/huaminghuangtw)
 
+## 💖 Support
+
+If this project made your everyday life easier, consider supporting its development through one of the following options:
+
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/huaminghuangtw?style=social)](https://github.com/sponsors/huaminghuangtw)
+
+[![Paypal](https://img.shields.io/badge/paypal-huaminghuang-yellow?style=social&logo=paypal)](https://paypal.me/huaminghuang)
+
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/huaminghuang)
+
 ## 📦 Related
 
 _[🔗 Check out my other project →](https://github.com/huaminghuangtw/Scriptable) for customizable notifications and widgets built with [Scriptable](https://scriptable.app)!_
