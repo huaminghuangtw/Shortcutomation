@@ -12,6 +12,15 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "Current Date",
+                "UUID": "12780D1F-0079-4E8F-A81F-DDC12F0A6805",
+                "WFDateActionMode": "Current Date",
+                "WFDateActionDate": "Yesterday"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
             "WFWorkflowActionParameters": {
                 "WFDateFormatStyle": "Custom",
@@ -23,7 +32,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "OutputUUID": "12780D1F-0079-4E8F-A81F-DDC12F0A6805",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Date"
                             }
                         }
                     },
@@ -64,46 +75,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "listOfYears",
-                "WFMatchTextPattern": {
-                    "Value": {
-                        "string": "(?!￼)\\d{4}",
-                        "attachmentsByRange": {
-                            "{3, 1}": {
-                                "OutputUUID": "9BBF1E12-1470-4416-A33A-EE8CB2CCF6FB",
-                                "Type": "ActionOutput",
-                                "OutputName": "This Year"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "08E745B3-65FD-4395-9740-E0646103BB41",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36",
-                                "Type": "ActionOutput",
-                                "OutputName": "Contents of Folder"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
             "WFWorkflowActionParameters": {
                 "WFContentItemInputParameter": {
                     "Value": {
-                        "OutputUUID": "08E745B3-65FD-4395-9740-E0646103BB41",
+                        "OutputUUID": "D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36",
                         "Type": "ActionOutput",
-                        "OutputName": "listOfYears"
+                        "OutputName": "Get Contents of Folder"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -114,7 +92,62 @@
                     "Value": {
                         "WFActionParameterFilterPrefix": 1,
                         "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": []
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": "md"
+                                },
+                                "Removable": true,
+                                "Property": "File Extension"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": "_attachments"
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "Type": "CurrentDate",
+                                                    "Aggrandizements": [
+                                                        {
+                                                            "WFDateFormatStyle": "Custom",
+                                                            "Type": "WFDateFormatVariableAggrandizement",
+                                                            "WFDateFormat": "yyyy",
+                                                            "WFISO8601IncludeTime": false
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFContentPredicateTableTemplate"
                 }
@@ -157,7 +190,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "OutputUUID": "12780D1F-0079-4E8F-A81F-DDC12F0A6805",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Date"
                             }
                         }
                     },
