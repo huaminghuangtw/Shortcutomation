@@ -14,19 +14,6 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
-            "WFWorkflowActionParameters": {
-                "WFDeviceDetail": "Current Brightness",
-                "UUID": "BEFC4102-2CA5-4E77-96C8-0FBB08B2F519"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.math",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -83,15 +70,47 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "38076F1B-7774-4E0D-A6E3-7B8DB026DE6C",
-                    "workflowName": "Pause Audio",
-                    "isSelf": false
+                "WFPlayPauseBehavior": "Pause"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D72CCAEF-1E91-4F00-B9ED-27ACEF0A1673",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
                 },
-                "WFWorkflowName": "Pause Audio",
-                "UUID": "DA222B2F-8617-4A3D-A3EF-6D87BB1DF040"
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleBackgroundSoundsIntent",
+            "WFWorkflowActionParameters": {
+                "state": 0,
+                "UUID": "203BE8F6-858B-4090-8BBA-D1151759BE2D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D72CCAEF-1E91-4F00-B9ED-27ACEF0A1673",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -104,19 +123,6 @@
                 },
                 "WFWorkflowName": "Time's Up!",
                 "UUID": "5BA34F48-BFC7-49AE-B08E-1A18B781E46A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": {
-                    "Value": {
-                        "OutputUUID": "BEFC4102-2CA5-4E77-96C8-0FBB08B2F519",
-                        "Type": "ActionOutput",
-                        "OutputName": "Current Brightness"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
             }
         }
     ],
