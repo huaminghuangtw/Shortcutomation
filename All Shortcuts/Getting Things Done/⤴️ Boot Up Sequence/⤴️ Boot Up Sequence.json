@@ -16,6 +16,12 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFHideAppMode": "All Apps"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -25,12 +31,6 @@
                 },
                 "WFWorkflowName": "Set Day Progress Timer",
                 "UUID": "C4581772-F721-4055-A7BC-09B175DA5F28"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
-            "WFWorkflowActionParameters": {
-                "WFHideAppMode": "All Apps"
             }
         },
         {
@@ -56,16 +56,16 @@
             "WFWorkflowActionParameters": {
                 "WFFile": {
                     "fileLocation": {
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
-                        "relativeSubpath": "com~apple~CloudDocs",
-                        "WFFileLocationType": "iCloud"
+                        "fileProviderDomainID": "com.getdropbox.dropbox.fileprovider/148bd848-5048-4908-a8a2-455c576533ce",
+                        "relativeSubpath": "Dropbox",
+                        "WFFileLocationType": "FileProvider"
                     },
-                    "filename": "com~apple~CloudDocs",
-                    "displayName": "iCloud Drive"
+                    "filename": "Dropbox",
+                    "displayName": "Dropbox"
                 },
                 "WFGetFilePath": "Wallpapers",
                 "CustomOutputName": "Wallpapers",
-                "UUID": "A1D01C3A-99BD-4564-8456-20725463B217"
+                "UUID": "84ED47D4-30B4-4A70-9D07-5C037FA69F75"
             }
         },
         {
@@ -73,13 +73,14 @@
             "WFWorkflowActionParameters": {
                 "WFFolder": {
                     "Value": {
-                        "OutputUUID": "A1D01C3A-99BD-4564-8456-20725463B217",
+                        "OutputUUID": "84ED47D4-30B4-4A70-9D07-5C037FA69F75",
                         "Type": "ActionOutput",
                         "OutputName": "Wallpapers"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "DB69F917-1C51-4F7D-B669-0D3D284828AB"
+                "CustomOutputName": "Wallpapers",
+                "UUID": "7B6A8268-5B76-4445-95BC-A80DE1127945"
             }
         },
         {
@@ -87,9 +88,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "DB69F917-1C51-4F7D-B669-0D3D284828AB",
+                        "OutputUUID": "7B6A8268-5B76-4445-95BC-A80DE1127945",
                         "Type": "ActionOutput",
-                        "OutputName": "Get Contents of Folder"
+                        "OutputName": "Wallpapers"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -121,22 +122,6 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
                 "WFDelayTime": 5
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": "12:00",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "184B0D01-0856-47DF-B665-2D136C54B363"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": "18:00",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "6FF75C8A-1355-4C78-BA51-8E64A3B38DB3"
             }
         },
         {
@@ -178,13 +163,52 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.weather.currentconditions",
+            "WFWorkflowActionParameters": {
+                "UUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "3"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "CF6401E7-6107-4560-BCC6-19A7AC8B3E24",
+                "WFAdjustOperation": "Add",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Weather Conditions",
+                                "OutputUUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Sunrise Time"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFDate": {
                     "Value": {
-                        "OutputUUID": "184B0D01-0856-47DF-B665-2D136C54B363",
+                        "OutputUUID": "CF6401E7-6107-4560-BCC6-19A7AC8B3E24",
                         "Type": "ActionOutput",
-                        "OutputName": "Date"
+                        "OutputName": "Adjusted Date"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -207,39 +231,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "9CCA87F2-DA20-4F79-8CCE-BDCE1CA85981",
-                "WFCondition": 1003
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.weather.currentconditions",
-            "WFWorkflowActionParameters": {
-                "UUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "C9FA8EB8-FC1D-4140-8413-ABD91AAD52DA",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "Weather Conditions",
-                            "OutputUUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Precipitation Chance"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFNumberValue": "0",
-                "WFCondition": 2
+                "WFCondition": 0
             }
         },
         {
@@ -257,16 +249,66 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "C9FA8EB8-FC1D-4140-8413-ABD91AAD52DA",
-                "UUID": "F901E86E-9F41-4C62-B37C-F23E3F2571BF"
+                "GroupingIdentifier": "9CCA87F2-DA20-4F79-8CCE-BDCE1CA85981",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "5"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "DEB0E161-F295-4866-89CC-49BBD253139D",
+                "WFAdjustOperation": "Subtract",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Weather Conditions",
+                                "OutputUUID": "853E3F4A-15F8-4FB2-8A4C-8750D6D3BC58",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Sunset Time"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "9CCA87F2-DA20-4F79-8CCE-BDCE1CA85981",
-                "WFControlFlowMode": 1
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "DEB0E161-F295-4866-89CC-49BBD253139D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Adjusted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentDate"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F479AB58-DA5B-4E8D-946A-EEA2981256E6",
+                "WFCondition": 2
             }
         },
         {
@@ -279,6 +321,13 @@
                 },
                 "WFWorkflowName": "開大燈",
                 "UUID": "EB7D0D91-0234-403E-A9E1-29EA5F9CBF50"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F479AB58-DA5B-4E8D-946A-EEA2981256E6",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -472,7 +521,7 @@
             "WFWorkflowActionParameters": {
                 "WFDateActionDate": "Today",
                 "WFDateActionMode": "Specified Date",
-                "UUID": "D35EEF7E-C788-4AB8-BCBB-7D7F36CAEE92"
+                "UUID": "9F7AF0BD-166D-4987-9E40-0433204040AB"
             }
         },
         {
@@ -480,7 +529,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "D35EEF7E-C788-4AB8-BCBB-7D7F36CAEE92",
+                        "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
                         "Type": "ActionOutput",
                         "OutputName": "Date"
                     },
@@ -491,7 +540,7 @@
                     "workflowName": "📔 View Journal",
                     "isSelf": false
                 },
-                "UUID": "8A3620B7-CB5D-4177-9909-6E4088D5CE85",
+                "UUID": "FCB9F27A-DFC1-4B7B-942D-57EAC2ECD84E",
                 "WFWorkflowName": "📔 View Journal"
             }
         },
@@ -687,6 +736,55 @@
                 },
                 "GroupingIdentifier": "5AFDAFCD-CA50-4087-8EBF-6D8247A35740",
                 "WFCondition": 5
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Journal Metadata Fields",
+                "UUID": "58DCC18C-BB05-488D-85AD-D2E19BC490C6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "58DCC18C-BB05-488D-85AD-D2E19BC490C6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "269FE0D1-5512-416A-B940-1B5D43B4B7FB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Yesterday",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "71E9A40E-9D98-4038-A769-391058A8ED97"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "71E9A40E-9D98-4038-A769-391058A8ED97",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "13C27FE0-3D0E-46E7-AC5F-A2DF98404C17",
+                    "workflowName": "📔 View Journal",
+                    "isSelf": false
+                },
+                "UUID": "F4826970-DB5A-47AC-B87C-8F33B1B6E928",
+                "WFWorkflowName": "📔 View Journal"
             }
         },
         {
@@ -897,6 +995,30 @@
                 },
                 "WFWorkflowName": "Spotify - Pause Playback",
                 "UUID": "D6DD6CD5-EEF5-4A2A-876C-03947F8DE940"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "9F278CAA-DCA9-4675-82F5-C696523613DE",
+                    "workflowName": "Obsidian - Toggle Focus Mode",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Obsidian - Toggle Focus Mode",
+                "UUID": "656C69D4-FAA1-445B-898E-1220A8417C20"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "ED380F6A-D4A4-4B84-ABD6-79018E9D55AB",
+                    "workflowName": "Obsidian - Toggle Stacked Tabs",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Obsidian - Toggle Stacked Tabs",
+                "UUID": "6B6F8E08-7346-439D-90F1-95185E9725C1"
             }
         },
         {

@@ -469,6 +469,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFVariableName</key>
+				<string>diaryEntries</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>1BE07487-457B-4CEB-BF54-E90086D5E6C3</string>
+				<key>WFTextActionText</key>
+				<string>* </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.conditional</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -505,7 +525,7 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
-				<string>diaryEntries</string>
+				<string>diaryEntriesCal</string>
 				<key>UUID</key>
 				<string>9DF4FE21-D15E-415F-86AA-1D8F54C5F901</string>
 				<key>WFWorkflow</key>
@@ -541,7 +561,7 @@
 						<key>Value</key>
 						<dict>
 							<key>OutputName</key>
-							<string>diaryEntries</string>
+							<string>diaryEntriesCal</string>
 							<key>OutputUUID</key>
 							<string>9DF4FE21-D15E-415F-86AA-1D8F54C5F901</string>
 							<key>Type</key>
@@ -555,40 +575,170 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.appendvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>diaryEntriesCal</string>
+						<key>OutputUUID</key>
+						<string>9DF4FE21-D15E-415F-86AA-1D8F54C5F901</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>diaryEntries</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>FCE0D81B-07AB-460B-B810-2C038257645F</string>
+				<key>UUID</key>
+				<string>96853440-186D-4621-B0B1-1E5BE2B1B34F</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E9C700D8-7413-4BF2-9D24-2F5BBCF3C7F5</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>5/1</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>WFDateFormatVariableAggrandizement</string>
+									<key>WFDateFormat</key>
+									<string>M/d</string>
+									<key>WFDateFormatStyle</key>
+									<string>Custom</string>
+									<key>WFISO8601IncludeTime</key>
+									<false/>
+								</dict>
+							</array>
+							<key>Type</key>
+							<string>CurrentDate</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>2F1865CB-82E5-473C-AF73-BF47FE6DA74B</string>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>BCE8123E-A818-427A-97DE-23D26604A999</string>
+					<key>workflowName</key>
+					<string>Life Progress Calculator</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Life Progress Calculator</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.round</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>53FFD7D2-6902-45B6-88BB-E01304D19A51</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFDictionaryContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+							<dict>
+								<key>DictionaryKey</key>
+								<string>Age</string>
+								<key>Type</key>
+								<string>WFDictionaryValueVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Shortcut Result</string>
+						<key>OutputUUID</key>
+						<string>2F1865CB-82E5-473C-AF73-BF47FE6DA74B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFRoundMode</key>
+				<string>Normal</string>
+				<key>WFRoundTo</key>
+				<string>Ones Place</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>82382CF8-1331-4AE8-9DE2-7C172DC5A2F9</string>
+				<string>2E27B68D-4671-4F9C-ACFC-429052D02FEA</string>
 				<key>WFTextActionText</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{3, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item</string>
-							</dict>
-							<key>{6, 1}</key>
+							<key>{2, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>diaryEntries</string>
+								<string>Rounded Number</string>
 								<key>OutputUUID</key>
-								<string>9DF4FE21-D15E-415F-86AA-1D8F54C5F901</string>
+								<string>53FFD7D2-6902-45B6-88BB-E01304D19A51</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>## ￼
-
-￼
-* 
-</string>
+						<string>* ￼ 歲生日 🎂</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -597,45 +747,25 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
+			<string>is.workflow.actions.appendvariable</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>GroupingIdentifier</key>
-				<string>FCE0D81B-07AB-460B-B810-2C038257645F</string>
-				<key>WFControlFlowMode</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>67D2F65E-2282-4104-97B4-AC5AE9C87227</string>
-				<key>WFTextActionText</key>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{3, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>## ￼
-
-* 
-</string>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>2E27B68D-4671-4F9C-ACFC-429052D02FEA</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
+					<string>WFTextTokenAttachment</string>
 				</dict>
+				<key>WFVariableName</key>
+				<string>diaryEntries</string>
 			</dict>
 		</dict>
 		<dict>
@@ -644,9 +774,32 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>GroupingIdentifier</key>
-				<string>FCE0D81B-07AB-460B-B810-2C038257645F</string>
+				<string>E9C700D8-7413-4BF2-9D24-2F5BBCF3C7F5</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.appendvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>1BE07487-457B-4CEB-BF54-E90086D5E6C3</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>diaryEntries</string>
 			</dict>
 		</dict>
 		<dict>
@@ -658,6 +811,42 @@
 				<string>B96487C5-A2C6-44ED-8C4E-9F068A485247</string>
 				<key>WFControlFlowMode</key>
 				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.appendvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>1BE07487-457B-4CEB-BF54-E90086D5E6C3</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>diaryEntries</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>B96487C5-A2C6-44ED-8C4E-9F068A485247</string>
+				<key>UUID</key>
+				<string>563D6C3C-F01A-4DB9-A254-B9BAAF79B9B8</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -680,29 +869,23 @@
 								<key>VariableName</key>
 								<string>Repeat Item</string>
 							</dict>
+							<key>{6, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>diaryEntries</string>
+							</dict>
 						</dict>
 						<key>string</key>
 						<string>## ￼
 
-* 
+￼
 </string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>B96487C5-A2C6-44ED-8C4E-9F068A485247</string>
-				<key>UUID</key>
-				<string>563D6C3C-F01A-4DB9-A254-B9BAAF79B9B8</string>
-				<key>WFControlFlowMode</key>
-				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
