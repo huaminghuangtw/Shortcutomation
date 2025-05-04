@@ -42,18 +42,12 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "Enumeration": {
                                         "Value": "🌸 Weekly",
                                         "WFSerializationType": "WFStringSubstitutableState"
                                     },
-                                    "Unit": {
-                                        "Value": 4,
-                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
-                                    }
+                                    "Unit": 4
                                 },
                                 "Removable": true,
                                 "Property": "Album"
@@ -61,10 +55,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Unit": {
-                                        "Value": 4,
-                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
-                                    },
+                                    "Unit": 4,
                                     "Enumeration": {
                                         "Value": "Image",
                                         "WFSerializationType": "WFStringSubstitutableState"
@@ -151,17 +142,17 @@
             "WFWorkflowActionParameters": {
                 "WFFilePath": {
                     "Value": {
-                        "string": "🌊 Life Is Short/￼/Week_￼",
+                        "string": "/￼/Week_￼",
                         "attachmentsByRange": {
-                            "{17, 1}": {
-                                "OutputUUID": "DF196C86-C561-43A6-A23F-CAC463799576",
-                                "Type": "ActionOutput",
-                                "OutputName": "yyyy"
-                            },
-                            "{24, 1}": {
+                            "{8, 1}": {
                                 "OutputUUID": "8ADABA23-E865-460F-AEA1-3D3321497E21",
                                 "Type": "ActionOutput",
                                 "OutputName": "currentWeekNumber"
+                            },
+                            "{1, 1}": {
+                                "OutputUUID": "DF196C86-C561-43A6-A23F-CAC463799576",
+                                "Type": "ActionOutput",
+                                "OutputName": "yyyy"
                             }
                         }
                     },
@@ -169,20 +160,20 @@
                 },
                 "WFFolder": {
                     "fileLocation": {
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
-                        "relativeSubpath": "com~apple~CloudDocs",
-                        "WFFileLocationType": "iCloud"
+                        "relativeSubpath": "Personal/Life Is Short",
+                        "fileProviderDomainID": "com.getdropbox.Dropbox.FileProvider/626230584",
+                        "crossDeviceItemID": "deviceSpecific:D21B111A-C95A-4B87-ABF1-76CE268EA811:fp:/PXtuZSPFzSQBjKGROV+WmNNR0kSglKya5hrRegYHg38=/com.getdropbox.Dropbox.FileProvider/626230584/__fp/fs/fileID(120489449)",
+                        "WFFileLocationType": "FileProvider"
                     },
-                    "filename": "com~apple~CloudDocs",
-                    "displayName": "iCloud Drive"
+                    "filename": "Life Is Short",
+                    "displayName": "Life Is Short"
                 },
                 "UUID": "7E7BFF1A-A74A-42DE-81C2-86B8D4697886"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.image.convert",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
-                "WFImageCompressionQuality": 1,
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "F3CF68EE-D4B4-4F64-A24A-7D894D6E542C",
@@ -191,7 +182,62 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "A1FEAB34-5E17-49B7-AD63-E8050372F27A"
+                "GroupingIdentifier": "AE35CB22-FE03-42C4-925D-F549DC2E4631",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.convert",
+            "WFWorkflowActionParameters": {
+                "WFImageCompressionQuality": 1,
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A1FEAB34-5E17-49B7-AD63-E8050372F27A",
+                "WFImagePreserveMetadata": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFName": {
+                    "Value": {
+                        "string": "￼.jpeg",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Date Taken"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "yyyy_MM_dd_HH_mm_ss",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDontIncludeFileExtension": true,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A1FEAB34-5E17-49B7-AD63-E8050372F27A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Converted Image"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "09D343D7-D248-4DA7-A5E1-8133B54A6DD1"
             }
         },
         {
@@ -208,14 +254,21 @@
                 "WFAskWhereToSave": false,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "A1FEAB34-5E17-49B7-AD63-E8050372F27A",
+                        "OutputUUID": "09D343D7-D248-4DA7-A5E1-8133B54A6DD1",
                         "Type": "ActionOutput",
-                        "OutputName": "Converted Image"
+                        "OutputName": "Renamed Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "6D1E38B3-20B4-4B4F-9E99-530C96DE1B47",
-                "WFSaveFileOverwrite": true
+                "WFSaveFileOverwrite": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AE35CB22-FE03-42C4-925D-F549DC2E4631",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -232,14 +285,19 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+            "WFWorkflowActionParameters": {}
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
             "WFWorkflowActionParameters": {
-                "WFAppIdentifier": "com.apple.DocumentsApp",
                 "WFSelectedApp": {
                     "BundleIdentifier": "com.apple.DocumentsApp",
                     "Name": "Files",
                     "TeamIdentifier": "0000000000"
-                }
+                },
+                "WFAppIdentifier": "com.apple.DocumentsApp",
+                "UUID": "BF9C6196-F2E8-46E0-8D63-1FDF5723607B"
             }
         },
         {
@@ -260,6 +318,12 @@
                 },
                 "WFOpenInAppIdentifier": "com.apple.DocumentsApp",
                 "WFOpenInAskWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 10
             }
         },
         {

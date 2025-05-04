@@ -30,8 +30,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "DB53B8EE-E9F7-44E2-B523-098556EF3A38",
+                    "workflowName": "Connect to Internet",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Connect to Internet",
+                "UUID": "ECAB852D-E12A-4E0A-AB74-A8293C73AFE7"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -106,6 +114,59 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
+            "WFWorkflowActionParameters": {
+                "UUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "44556DEC-E83F-41C1-A694-A8A8A804E2BB",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Current Focus",
+                            "OutputUUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sleep",
+                "WFNumberValue": {
+                    "Value": {
+                        "OutputUUID": "7DFB0639-824A-4490-B785-46E4C3BD4553",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "2C182560-EBF3-4FB9-8133-4D88A2961F69",
+                    "workflowName": "Set Ultra Low Brightness",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Set Ultra Low Brightness",
+                "UUID": "19479E85-5C00-4514-BA66-88EFD85BE0F7"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -161,27 +222,17 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
-            "WFWorkflowActionParameters": {
-                "UUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "44556DEC-E83F-41C1-A694-A8A8A804E2BB",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "Current Focus",
-                            "OutputUUID": "90B3666F-D356-4895-8C46-F8D8FBD1CE42",
+                            "Type": "DeviceDetails",
                             "Aggrandizements": [
                                 {
-                                    "PropertyUserInfo": "WFItemName",
                                     "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
+                                    "PropertyName": "Is Locked"
                                 }
                             ]
                         },
@@ -189,28 +240,8 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Sleep",
-                "WFNumberValue": {
-                    "Value": {
-                        "OutputUUID": "7DFB0639-824A-4490-B785-46E4C3BD4553",
-                        "Type": "ActionOutput",
-                        "OutputName": "Count"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
+                "GroupingIdentifier": "4579E9D5-920B-40B7-BB1F-E19DCC8927D8",
                 "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "2C182560-EBF3-4FB9-8133-4D88A2961F69",
-                    "workflowName": "Set Ultra Low Brightness",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Set Ultra Low Brightness",
-                "UUID": "19479E85-5C00-4514-BA66-88EFD85BE0F7"
             }
         },
         {
@@ -264,6 +295,13 @@
             "WFWorkflowActionParameters": {
                 "reminderIdentifier": "⏱️ Day Progress",
                 "UUID": "6FC1D243-9748-485C-97C5-6C40FED3F3DA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4579E9D5-920B-40B7-BB1F-E19DCC8927D8",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -949,12 +987,12 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "43E73266-E62F-48E5-8D3E-363173C8FC89",
-                    "workflowName": "🎲 Mindware Update",
+                    "workflowIdentifier": "8EDDC02D-082D-40AA-96D3-77C4978C9EBA",
+                    "workflowName": "_Show Random Item from WMU Backlog",
                     "isSelf": false
                 },
                 "UUID": "EE2DE952-0428-409B-9AF0-30E55A0C1045",
-                "WFWorkflowName": "🎲 Mindware Update"
+                "WFWorkflowName": "_Show Random Item from WMU Backlog"
             }
         },
         {
@@ -963,18 +1001,6 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "82A5545E-A614-4465-BB94-2EE1912AAB76",
                 "UUID": "78E73150-EA0D-4816-B417-8C1F61F752D0"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "DB53B8EE-E9F7-44E2-B523-098556EF3A38",
-                    "workflowName": "Connect to Internet",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Connect to Internet",
-                "UUID": "ECAB852D-E12A-4E0A-AB74-A8293C73AFE7"
             }
         },
         {
@@ -1225,6 +1251,18 @@
                 },
                 "WFNumberValue": "2",
                 "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "1E0661B0-4B21-468E-BC3A-892C04E95974",
+                    "workflowName": "🦁 Workout Of The Day",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🦁 Workout Of The Day",
+                "UUID": "89EA7FF3-2FA8-44DE-9991-186CDD4C3991"
             }
         },
         {

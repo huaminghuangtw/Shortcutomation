@@ -1,0 +1,361 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 59772
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "🙏 Original by: [@veredictum](https://www.reddit.com/user/veredictum)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "1D358BDF-C9A5-4A7D-B549-C341D0E18D04",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.images",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "7C4345B0-E958-49E0-95D1-17D3115E3446"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1D358BDF-C9A5-4A7D-B549-C341D0E18D04",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Source Image?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "◽️ Photos",
+                    "◽️ Files"
+                ],
+                "GroupingIdentifier": "7CB3279B-7FF3-4ED3-9B9B-05CAC5CB51A6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "◽️ Photos",
+                "GroupingIdentifier": "7CB3279B-7FF3-4ED3-9B9B-05CAC5CB51A6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.selectphoto",
+            "WFWorkflowActionParameters": {
+                "UUID": "9D387EA8-550D-4F3B-8EB2-B9121C0861F6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "◽️ Files",
+                "GroupingIdentifier": "7CB3279B-7FF3-4ED3-9B9B-05CAC5CB51A6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.select",
+            "WFWorkflowActionParameters": {
+                "UUID": "335037BA-7AEE-43BD-AEFE-1F2DC1636436"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "7CB3279B-7FF3-4ED3-9B9B-05CAC5CB51A6",
+                "UUID": "CCB4871E-6A91-4067-B14A-3682CFE4E74E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1D358BDF-C9A5-4A7D-B549-C341D0E18D04",
+                "UUID": "98913E4F-51BF-4878-8A56-CB8DC05F88FB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.convert",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "98913E4F-51BF-4878-8A56-CB8DC05F88FB",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFImagePreserveMetadata": true,
+                "UUID": "3D375831-DE51-4FFD-9C91-D0019030D8CD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.resize",
+            "WFWorkflowActionParameters": {
+                "WFImageResizeKey": "Longest Edge",
+                "WFImage": {
+                    "Value": {
+                        "OutputUUID": "3D375831-DE51-4FFD-9C91-D0019030D8CD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Converted Image"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C525FECC-FCD1-4AC0-B187-F88DF564BC54",
+                "WFImageResizeLength": "640"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.imgur.upload",
+            "WFWorkflowActionParameters": {
+                "WFImgurDirectLink": true,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C525FECC-FCD1-4AC0-B187-F88DF564BC54",
+                        "Type": "ActionOutput",
+                        "OutputName": "Resized Image"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "DEBB698E-604F-43A5-AAF5-29C2CCCC12D4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DEBB698E-604F-43A5-AAF5-29C2CCCC12D4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Imgur URLs"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "47465A32-64C1-4485-B1C2-A9F4E4C8E1FA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "47465A32-64C1-4485-B1C2-A9F4E4C8E1FA",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextReplace": "%3A",
+                "UUID": "F78F6F2F-4BFA-4426-B152-2E4C7BE2C1CB",
+                "WFReplaceTextFind": ":"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F78F6F2F-4BFA-4426-B152-2E4C7BE2C1CB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextReplace": "%2F",
+                "UUID": "90657178-8817-4FF5-A0DB-B41ED6869363",
+                "WFReplaceTextFind": "/"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Search provider?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "◽️ Bing",
+                    "◽️ Google",
+                    "◽️ TinEye",
+                    "◽️ Yandex"
+                ],
+                "GroupingIdentifier": "66C699BD-0DEC-4696-BD67-843229B8ED0E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "◽️ Bing",
+                "GroupingIdentifier": "66C699BD-0DEC-4696-BD67-843229B8ED0E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "https://www.bing.com/images/search?view=detailv2&iss=sbi&form=SBIIRP&sbisrc=UrlPaste&q=imgurl:￼",
+                        "attachmentsByRange": {
+                            "{94, 1}": {
+                                "OutputUUID": "90657178-8817-4FF5-A0DB-B41ED6869363",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "328F46F4-8033-4280-A43F-EB1DCFF97306"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "◽️ Google",
+                "GroupingIdentifier": "66C699BD-0DEC-4696-BD67-843229B8ED0E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "https://lens.google.com/uploadbyurl?url=￼",
+                        "attachmentsByRange": {
+                            "{40, 1}": {
+                                "OutputUUID": "90657178-8817-4FF5-A0DB-B41ED6869363",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F18BAB22-4BF8-435A-9025-4F4AD9E6775B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "◽️ TinEye",
+                "GroupingIdentifier": "66C699BD-0DEC-4696-BD67-843229B8ED0E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "https://www.tineye.com/search?url=￼",
+                        "attachmentsByRange": {
+                            "{34, 1}": {
+                                "OutputUUID": "90657178-8817-4FF5-A0DB-B41ED6869363",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A0AC0D54-3556-4FC0-9B45-74096CF23F77"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "◽️ Yandex",
+                "GroupingIdentifier": "66C699BD-0DEC-4696-BD67-843229B8ED0E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "https://yandex.com/images/search?rpt=imageview&url=￼",
+                        "attachmentsByRange": {
+                            "{51, 1}": {
+                                "OutputUUID": "90657178-8817-4FF5-A0DB-B41ED6869363",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "3AE6627D-5A57-469D-A4F8-4FD9086FBA53"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "66C699BD-0DEC-4696-BD67-843229B8ED0E",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFImageContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "ActionExtension"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

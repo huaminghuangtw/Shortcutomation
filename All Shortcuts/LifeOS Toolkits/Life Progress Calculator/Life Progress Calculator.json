@@ -57,7 +57,15 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -68,9 +76,17 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "C641D888-A2A2-45E5-92BB-36898B59FF17",
                                 "Type": "ActionOutput",
-                                "OutputName": "Birthday"
+                                "OutputName": "Birthday",
+                                "OutputUUID": "C641D888-A2A2-45E5-92BB-36898B59FF17",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -81,19 +97,28 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFCommentActionText": "A “[tropical/solar year](https://www.google.com/search?q=tropical+year)” is ~365.2425 days* — slightly less than 365.25 days — and more accurate than just counting 365 or 366 days. It’s the time it takes the Earth to complete one cycle of seasons, meaning from one vernal equinox to the next. That’s why calendars add a leap day every four years (mostly) — to stay synced with Earth’s orbit and the seasons.\n\n* The Gregorian calendar (which most of the world uses) approximates the solar year as: 146097 days ÷ 400 years ≈ 365.2425 days/year"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
                     "Value": {
-                        "OutputUUID": "D6EF3F76-7DD6-42E3-9C03-C34F851E76DB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Time Between Dates"
+                        "string": "￼ / (146097 / 400)",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D6EF3F76-7DD6-42E3-9C03-C34F851E76DB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Time Between Dates"
+                            }
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "WFMathOperand": "365",
-                "UUID": "19E44F65-6EC9-4A76-945E-F083B47D34DA",
-                "WFMathOperation": "÷"
+                "UUID": "9FDF1250-FA0B-44E8-BB6E-078BB04FDF4B"
             }
         },
         {
@@ -101,7 +126,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "19E44F65-6EC9-4A76-945E-F083B47D34DA",
+                        "OutputUUID": "9FDF1250-FA0B-44E8-BB6E-078BB04FDF4B",
                         "Type": "ActionOutput",
                         "OutputName": "Calculation Result"
                     },
