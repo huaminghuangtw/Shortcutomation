@@ -1,67 +1,67 @@
 <div align="center">
 
-    <img src="assets/favicon.png" width="200" height="auto" />
+<img src="assets/favicon.png" width="200" height="auto" />
 
-    <h1><a href="https://shortcutomation.com">Shortcutomation</a></h1>
+<h1><a href="https://shortcutomation.com">Shortcutomation</a></h1>
   
-    <h3>
-        Automate the Boring Stuff with  Apple Shortcuts
-    </h3>
+<h3>
+Automate the Boring Stuff with  Apple Shortcuts
+</h3>
   
-    • • • • •
-      <br>
-     • • • •
-      <br>
-      • • •
-      <br>
-       • •
-      <br>
-        •
+• • • • •
+<br>
+• • • •
+<br>
+• • •
+<br>
+• •
+<br>
+•
 
-    <h3>
-        <a href="https://shortcutomation.com/gallery">
-            <strong>💁🏽 Explore & Download FREE Shortcuts »</strong>
-        </a>
-    </h3>
+<h3>
+<a href="https://shortcutomation.com/gallery">
+<strong>💁🏽 Explore & Download FREE Shortcuts »</strong>
+</a>
+</h3>
 
-    <p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
+<p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
 
-    <p>
-        <strong>Last Update:</strong> 2025-05-04
-        
-        <br>
-        
-        Created by
-        <a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a>
-        with 🌶️ in
-        <a href="https://www.google.com/maps/place/L%C3%BCneburg,%20Germany">Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ</a>
-    </p>
+<p>
+<strong>Last Update:</strong> 2025-05-04    
 
-    <p>
-        <a href="https://github.com/huaminghuangtw/Shortcutomation">
-            <img src="https://badges.frapsoft.com/os/v3/open-source-150x25.png?v=103">
-        </a>
-        
-        <br>
-        
-        <a href="https://github.com/huaminghuangtw/Shortcutomation/issues">
-            <img src="https://img.shields.io/badge/Contribution_Welcome-gray?style=flat">
-        </a>
+<br>
 
-        <br>
+Created by
+<a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a>
+with 🌶️ in
+<a href="https://www.google.com/maps/place/L%C3%BCneburg,%20Germany">Lᴜ̈ɴᴇʙᴜʀɢ, Gᴇʀᴍᴀɴʏ</a>
+</p>
 
-        <a href="https://github.com/huaminghuangtw/Shortcutomation/blob/main/LICENSE">
-            <img src="https://img.shields.io/badge/License-MIT-black.svg?style=flat">
-        </a>
-    </p>
+<p>
+<a href="https://github.com/huaminghuangtw/Shortcutomation">
+<img src="https://badges.frapsoft.com/os/v3/open-source-150x25.png?v=103">
+</a>
 
-    <h4>
-        <a href="https://shortcutomation.com/blog">📖 Read Blog</a>
-        <span> • </span>
-        <a href="https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=bug&template=bug-report---.md">🐛 Report Bug</a>
-        <span> • </span>
-        <a href="https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=enhancement&template=feature-request---.md">🌟 Request Shortcut</a>
-    </h4>
+<br>
+
+<a href="https://github.com/huaminghuangtw/Shortcutomation/issues">
+<img src="https://img.shields.io/badge/Contribution_Welcome-gray?style=flat">
+</a>
+
+<br>
+
+<a href="https://github.com/huaminghuangtw/Shortcutomation/blob/main/LICENSE">
+<img src="https://img.shields.io/badge/License-MIT-black.svg?style=flat">
+</a>
+</p>
+
+<h4>
+<a href="https://shortcutomation.com/blog">📖 Read Blog</a>
+<span> • </span>
+<a href="https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=bug&template=bug-report---.md">🐛 Report Bug</a>
+<span> • </span>
+<a href="https://github.com/huaminghuangtw/Shortcutomation/issues/new?labels=enhancement&template=feature-request---.md">🌟 Request Shortcut</a>
+</h4>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
