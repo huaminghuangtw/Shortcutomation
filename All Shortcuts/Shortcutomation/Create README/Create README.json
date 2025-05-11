@@ -190,108 +190,313 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "intro",
+                    "story",
+                    "mission"
+                ],
+                "UUID": "0C7241A8-6A56-4381-94EE-B00A5196DD68"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0C7241A8-6A56-4381-94EE-B00A5196DD68",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "CE6178EE-8756-45BE-BCB3-D41BC7E866EC",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": {
+                    "Value": {
+                        "string": "/assets/￼.md",
+                        "attachmentsByRange": {
+                            "{8, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "Shortcutomation",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "Shortcutomation",
+                    "displayName": "Shortcutomation"
+                },
+                "UUID": "24D869BF-E6D3-4217-88AF-558A0E2F585E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "(?m)^title:\\s(.*)$",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "24D869BF-E6D3-4217-88AF-558A0E2F585E",
+                                "Type": "ActionOutput",
+                                "OutputName": "File"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B5FAB3A7-7E36-426F-8D31-A12E8587740C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "B5FAB3A7-7E36-426F-8D31-A12E8587740C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "156D37A9-D48E-454C-BAF0-926B9797446C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "---",
+                "UUID": "15E5298B-5936-4A27-A1CA-CD298F57E5AF",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "24D869BF-E6D3-4217-88AF-558A0E2F585E",
+                        "Type": "ActionOutput",
+                        "OutputName": "File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "15E5298B-5936-4A27-A1CA-CD298F57E5AF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "C8393096-8B9D-4C8C-AFEB-5F0FF15D6D7C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.trimwhitespace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C8393096-8B9D-4C8C-AFEB-5F0FF15D6D7C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "48DF401E-9D80-43B1-86D0-6558B0E9E4A4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "Repeat Item",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "intro",
+                "GroupingIdentifier": "7FADC783-319E-46FD-8704-AAC7D033E816",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "<div align=\"center\">\n\n    <img src=\"assets/favicon.png\" width=\"200\" height=\"auto\" />\n\n    <h1><a href=\"￼\">Shortcutomation</a></h1>\n  \n    <h3>\n        Automate the Boring Stuff with  Apple Shortcuts\n    </h3>\n  \n    • • • • •\n      <br>\n     • • • •\n      <br>\n      • • •\n      <br>\n       • •\n      <br>\n        •\n\n    <h3>\n        <a href=\"￼/gallery\">\n            <strong>💁🏽 Explore & Download FREE Shortcuts »</strong>\n        </a>\n    </h3>\n\n    <p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>\n\n    <p>\n        <strong>Last Update:</strong> ￼\n        \n        <br>\n        \n        Created by\n        <a href=\"￼\">Hua-Ming Huang</a>\n        with 🌶️ in\n        <a href=\"￼\">￼</a>\n    </p>\n\n    <p>\n        <a href=\"￼\">\n            <img src=\"https://badges.frapsoft.com/os/v3/open-source-150x25.png?v=103\">\n        </a>\n        \n        <br>\n        \n        <a href=\"￼/issues\">\n            <img src=\"https://img.shields.io/badge/Contribution_Welcome-gray?style=flat\">\n        </a>\n\n        <br>\n\n        <a href=\"￼/blob/main/LICENSE\">\n            <img src=\"https://img.shields.io/badge/License-MIT-black.svg?style=flat\">\n        </a>\n    </p>\n\n    <h4>\n        <a href=\"￼/blog\">📖 Read Blog</a>\n        <span> • </span>\n        <a href=\"￼/issues/new?labels=bug&template=bug-report---.md\">🐛 Report Bug</a>\n        <span> • </span>\n        <a href=\"￼/issues/new?labels=enhancement&template=feature-request---.md\">🌟 Request Shortcut</a>\n    </h4>\n\n[![Contributors][contributors-shield]][contributors-url]\n[![Forks][forks-shield]][forks-url]\n[![Stargazers][stars-shield]][stars-url]\n[![Issues][issues-shield]][issues-url]\n\n</div>\n\n## ⚡ What is Shortcuts?\n\n<div align=\"center\">\n  <img src=\"assets/shortcuts-logo.png\" width=\"100\" height=\"auto\" />\n</div>\n\nShortcuts is a powerful app built into Apple devices (iPhone, iPad, Mac, etc.) that lets you create custom automations, with One Single Tap.\n\nAccording to [Apple’s official guide](https://support.apple.com/guide/shortcuts/welcome/ios), “A shortcut provides a quick way to get things done with your apps, with just a tap or by asking Siri. The Shortcuts app lets you create your own shortcuts with multiple steps.\"\n\nWhether you want to _open your favorite playlist_, _schedule Reminders_, _batch-edit photos_, _get directions to the next event on your Calendar_, or even _generate expense reports_―Shortcuts makes it possible. All from the device in your _pocket_.\n\nWith **Shortcuts**, the potential is pretty much **endless**!\n\n## 📚 The Story\n\nI first discovered  Apple Shortcuts in November 2022 while trying to streamline a few repetitive tasks on my iPhone.\n\nOver time, I realized how much these simple “applets” were transforming my daily life. What started as a curiosity quickly turned into a game changer—the more I built and used them, the more they help me to _save time_, _reduce friction_, and _reclaim control over how I use my phone_.\n\nIt made too big of a difference to keep to myself—so I decided to make it public and become a Shortcuts evangelist, committed to show people what was possible and how it could make their lives easier, just like it did for me.\n\n## 🛤️ Mission\n\n> “My central claim in this book is that these two trends—overprotection in the real world and underprotection in the virtual world—are the major reasons why children born after 1995 became the anxious generation.”\n― Jonathan Haidt, _The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness_\n\nWe live in a digital age where technology has reshaped nearly every aspect of our daily lives.\n\nWhile this technological revolution has brought countless benefits, it has also introduced significant challenges—particularly in how it affects focus, well-being, and the development of children and adolescents.\n\nThat’s where **[Shortcutomation](https://shortcutomation.com)** comes in: **help people take back their time**, by simplifying digital routines using  Apple Shortcuts.\n\nWe believe a world where your phone *serves* you, not *distracts* you.\n\nA world without cluttered apps.\n\nA world free of mindless doomscrolling.\n\nA world where people click less, scroll less, type less.\n\nA world where everyone lives a calmer, more present and intentional life—focused on what truly matters in the real world.\n\n## 🚀 Getting Started\n\n￼\n\n1. Visit the [Gallery](￼/gallery) on the website, or browse the shortcut folders above.\n\n2. Choose a category that interests you:\n   - **Recommended:** Start with **[Standalone Fun](￼/gallery/standalone%20fun)** — these shortcuts run immediately without any setup.\n   - For other categories, check the **Dependencies** and **Required Apps** sections on each shortcut's page to get everything you need.\n\n3. On each shortcut page, you'll find three buttons:\n   - **Preview Shortcut** (in a HTML page)\n   - **Download Shortcut** (via an iCloud shared link)\n   - **View Source Code** (on GitHub)\n\n4. Add shortcuts to your device\n\n## 📊 Gallery Fun Stats\n\n￼\n\n### 🔭 Overview of This Year\n\n<p align=\"center\">\n    <a href=\"https://chartyios.app\">\n        <kbd>\n            <img src=\"assets/history-chart.png\" width=\"500\" title=\"This chart was generated by Charty, an utility app to create charts from Shortcuts! :-)\"/>\n        </kbd>\n    </a>\n</p>\n\n## 🤝 Contributing\n\n<a href=\"￼/graphs/contributors\">\n    <img src=\"https://contrib.rocks/image?repo=￼\" />\n</a>\n\n**Contributions are always welcome!**\n\n[![Suggest a Shortcut](https://img.shields.io/badge/💡_Suggest%20a%20Shortcut-purple?style=for-the-badge)](￼/issues/new?labels=enhancement&template=feature-request---.md)\n[![Report a Bug](https://img.shields.io/badge/🐞_Report%20a%20Bug-red?style=for-the-badge)](￼/issues/new?labels=bug&template=bug-report---.md)\n[![Ask a Question](https://img.shields.io/badge/❓_Ask%20a%20Question-yellow?style=for-the-badge)](￼/issues/new?labels=question&template=ask-question---.md)\n\nIf you have any new shortcut or automation ideas, feel free to [fork the repository](￼/fork) and [submit a pull request](￼/compare).\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines and helpful tips to get started.\n\nAlternatively, you can [open an issue](￼/issues/new?labels=enhancement&template=feature-request---.md) to suggest a shortcut or automation idea.\n\n## 📄 License\n\n[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)\n\nThis project is licensed under the [MIT License](LICENSE).\n\nAll contributed shortcuts and content are shared freely under the terms of the MIT License. Use them however you like—just give credit.\n\n## 👋 Contact\n\n**Hua-Ming Huang**  \n📧 [huaming.huang.tw@gmail.com](mailto:huaming.huang.tw@gmail.com)  \n🐦 [@huaminghuangtw](https://x.com/huaminghuangtw)\n\n## 💖 Support\n\nIf this project made your everyday life easier, consider supporting its development through one of the following options:\n\n[![GitHub Sponsors](https://img.shields.io/github/sponsors/huaminghuangtw?style=social)](https://github.com/sponsors/huaminghuangtw)\n\n[![Paypal](https://img.shields.io/badge/paypal-huaminghuang-yellow?style=social&logo=paypal)](https://paypal.me/huaminghuang)\n\n[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/huaminghuang)\n\n<div align=\"center\">\n\n| If you found this project helpful, consider [giving it a star ⭐](￼) <br> and sharing it with your fellow Apple power users — thank you for the support! 🫶 <br> Happy shortcutomating! ⚡️|\n| :-: |\n\n</div>\n\n## 📦 Related\n\n_[🔗 Check out my other project →](￼/Scriptable) for customizable notifications and widgets built with [Scriptable](https://scriptable.app)!_\n\n## 🙏 Acknowledgements\n\nThis library wouldn't be possible without the [r/shortcuts](https://www.reddit.com/r/shortcuts) community (especially [@gluebyte](https://www.reddit.com/user/gluebyte) 😉) and the following complementary apps:\n\n￼\n\n[contributors-shield]: https://img.shields.io/github/contributors/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[contributors-url]: https://github.com/￼/graphs/contributors\n[forks-shield]: https://img.shields.io/github/forks/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[forks-url]: https://github.com/￼/network/members\n[stars-shield]: https://img.shields.io/github/stars/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[stars-url]: https://github.com/￼/stargazers\n[issues-shield]: https://img.shields.io/github/issues/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[issues-url]: https://github.com/￼/issues\n",
+                        "string": "## ￼\n\n<div align=\"center\">\n<img src=\"assets/shortcuts-logo.png\" width=\"100\" height=\"auto\" />\n</div>\n\n￼\n",
                         "attachmentsByRange": {
-                            "{103, 1}": {
-                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
+                            "{101, 1}": {
+                                "OutputUUID": "48DF401E-9D80-43B1-86D0-6558B0E9E4A4",
                                 "Type": "ActionOutput",
-                                "OutputName": "https://shortcutomation.com"
+                                "OutputName": "Updated Text"
                             },
-                            "{8075, 1}": {
-                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                            "{3, 1}": {
+                                "OutputUUID": "156D37A9-D48E-454C-BAF0-926B9797446C",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
-                            },
-                            "{5269, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7FADC783-319E-46FD-8704-AAC7D033E816",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "## ￼\n\n￼\n",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "OutputUUID": "48DF401E-9D80-43B1-86D0-6558B0E9E4A4",
                                 "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                                "OutputName": "Updated Text"
                             },
-                            "{7485, 1}": {
+                            "{3, 1}": {
+                                "OutputUUID": "156D37A9-D48E-454C-BAF0-926B9797446C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A13AC110-0E49-4320-8CBC-6967F404C3B7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "7FADC783-319E-46FD-8704-AAC7D033E816",
+                "UUID": "A71B121A-5369-4267-9BD5-DEC647162485"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CE6178EE-8756-45BE-BCB3-D41BC7E866EC",
+                "UUID": "C24C9E42-401E-4734-B200-DE7BEDC167D8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "<div align=\"center\">\n\n<img src=\"assets/favicon.png\" width=\"200\" height=\"auto\" />\n\n<h1><a href=\"￼\">Shortcutomation</a></h1>\n  \n<h3>\nAutomate the Boring Stuff with  Apple Shortcuts\n</h3>\n  \n• • • • •\n<br>\n• • • •\n<br>\n• • •\n<br>\n• •\n<br>\n•\n\n<h3>\n<a href=\"￼/gallery\">\n<strong>💁🏽 Explore & Download FREE Shortcuts »</strong>\n</a>\n</h3>\n\n<p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>\n\n<p>\n<strong>Last Update:</strong> ￼\n        \n<br>\n\nCrafted by\n<a href=\"￼\">Hua-Ming Huang</a>\nwith 🌶️ in\n<a href=\"￼\">￼</a>\n</p>\n\n<p>\n<a href=\"￼\">\n<img src=\"https://badges.frapsoft.com/os/v3/open-source-150x25.png?v=103\">\n</a>\n\n<br>\n\n<a href=\"￼/issues\">\n<img src=\"https://img.shields.io/badge/Contribution_Welcome-gray?style=flat\">\n</a>\n\n<br>\n\n<a href=\"￼/blob/main/LICENSE\">\n<img src=\"https://img.shields.io/badge/License-MIT-black.svg?style=flat\">\n</a>\n</p>\n\n<h4>\n<a href=\"￼/blog\">📖 Read Blog</a>\n<span> • </span>\n<a href=\"￼/issues/new?labels=bug&template=bug-report---.md\">🐛 Report Bug</a>\n<span> • </span>\n<a href=\"￼/issues/new?labels=enhancement&template=feature-request---.md\">🌟 Request Shortcut</a>\n</h4>\n\n[![Contributors][contributors-shield]][contributors-url]\n[![Forks][forks-shield]][forks-url]\n[![Stargazers][stars-shield]][stars-url]\n[![Issues][issues-shield]][issues-url]\n\n</div>\n\n￼\n\n## 🚀 Getting Started\n\n￼\n\n1. Visit the [Gallery](￼/gallery) on the website, or browse the shortcut folders above.\n\n2. Choose a category that interests you:\n   - **Recommended:** Start with **[Standalone Fun](￼/gallery/standalone%20fun)** — these shortcuts run immediately without any setup.\n   - For other categories, check the **Dependencies** and **Required Apps** sections on each shortcut's page to get everything you need.\n\n3. On each shortcut page, you'll find three buttons:\n   - **Preview Shortcut** (in a HTML page)\n   - **Download Shortcut** (via an iCloud shared link)\n   - **View Source Code** (on GitHub)\n\n4. Add shortcuts to your device\n\n## 📊 Gallery Fun Stats\n\n￼\n\n### 🔭 Overview of This Year\n\n<p align=\"center\">\n<a href=\"https://chartyios.app\">\n<kbd>\n<img src=\"assets/history-chart.png\" width=\"500\" title=\"This chart was generated by Charty, an utility app to create charts from Shortcuts! :-)\"/>\n</kbd>\n</a>\n</p>\n\n## 🤝 Contributing\n\n<a href=\"￼/graphs/contributors\">\n<img src=\"https://contrib.rocks/image?repo=￼\" />\n</a>\n\n**Contributions are always welcome!**\n\n[![Suggest a Shortcut](https://img.shields.io/badge/💡_Suggest%20a%20Shortcut-purple?style=for-the-badge)](￼/issues/new?labels=enhancement&template=feature-request---.md)\n[![Report a Bug](https://img.shields.io/badge/🐞_Report%20a%20Bug-red?style=for-the-badge)](￼/issues/new?labels=bug&template=bug-report---.md)\n[![Ask a Question](https://img.shields.io/badge/❓_Ask%20a%20Question-yellow?style=for-the-badge)](￼/issues/new?labels=question&template=ask-question---.md)\n\nIf you have any new shortcut or automation ideas, feel free to [fork the repository](￼/fork) and [submit a pull request](￼/compare).\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines and helpful tips to get started.\n\nAlternatively, you can [open an issue](￼/issues/new?labels=enhancement&template=feature-request---.md) to suggest a shortcut or automation idea.\n\n## 📄 License\n\n[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)\n\nThis project is licensed under the [MIT License](LICENSE).\n\nAll contributed shortcuts and content are shared freely under the terms of the MIT License. Use them however you like—just give credit.\n\n## 👋 Contact\n\n**Hua-Ming Huang**  \n📧 [huaming.huang.tw@gmail.com](mailto:huaming.huang.tw@gmail.com)  \n🐦 [@huaminghuangtw](https://x.com/huaminghuangtw)\n\n## 💖 Support\n\nIf this project made your everyday life easier, consider supporting its development through one of the following options:\n\n[![GitHub Sponsors](https://img.shields.io/github/sponsors/huaminghuangtw?style=social)](https://github.com/sponsors/huaminghuangtw)\n\n[![Paypal](https://img.shields.io/badge/paypal-huaminghuang-yellow?style=social&logo=paypal)](https://paypal.me/huaminghuang)\n\n[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/huaminghuang)\n\n<div align=\"center\">\n\n| If you found this project helpful, consider [giving it a star ⭐](￼) <br> and sharing it with your fellow Apple power users — thank you for the support! 🫶 <br> Happy shortcutomating! ⚡️|\n| :-: |\n\n</div>\n\n## 📦 Related\n\n_[🔗 Check out my other project →](￼/Scriptable) for customizable notifications and widgets built with [Scriptable](https://scriptable.app)!_\n\n## 🙏 Acknowledgements\n\nThis library wouldn't be possible without the [r/shortcuts](https://www.reddit.com/r/shortcuts) community (especially [@gluebyte](https://www.reddit.com/user/gluebyte) 😉) and the following complementary apps:\n\n￼\n\n[contributors-shield]: https://img.shields.io/github/contributors/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[contributors-url]: https://github.com/￼/graphs/contributors\n[forks-shield]: https://img.shields.io/github/forks/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[forks-url]: https://github.com/￼/network/members\n[stars-shield]: https://img.shields.io/github/stars/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[stars-url]: https://github.com/￼/stargazers\n[issues-shield]: https://img.shields.io/github/issues/￼.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge\n[issues-url]: https://github.com/￼/issues\n",
+                        "attachmentsByRange": {
+                            "{4434, 1}": {
                                 "OutputUUID": "D341FAF9-7B5E-4125-BBD9-FAACD3EA7EF0",
                                 "Type": "ActionOutput",
                                 "OutputName": "https://github.com/huaminghuangtw"
                             },
-                            "{8172, 1}": {
+                            "{5121, 1}": {
                                 "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
                             },
-                            "{8406, 1}": {
-                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            },
-                            "{7828, 1}": {
-                                "OutputUUID": "7C7D75AC-F2F2-4F69-A5FC-2E1B6F3B436E",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            },
-                            "{344, 1}": {
-                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://shortcutomation.com"
-                            },
-                            "{850, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{5803, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{6128, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{7296, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{1153, 1}": {
-                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://shortcutomation.com"
-                            },
-                            "{1331, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{5340, 1}": {
+                            "{2289, 1}": {
                                 "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
                                 "Type": "ActionOutput",
                                 "OutputName": "huaminghuangtw/Shortcutomation"
                             },
-                            "{8242, 1}": {
-                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            },
-                            "{4321, 1}": {
-                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://shortcutomation.com"
-                            },
-                            "{5983, 1}": {
+                            "{2222, 1}": {
                                 "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
                                 "Type": "ActionOutput",
                                 "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
                             },
-                            "{4295, 1}": {
-                                "OutputUUID": "6B828A5E-FE0E-4C77-8047-CE18CED1A304",
+                            "{5288, 1}": {
+                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{2896, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{1469, 1}": {
+                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://shortcutomation.com"
+                            },
+                            "{479, 1}": {
+                                "OutputUUID": "CE2EEA51-53B2-4547-B07B-1913D615D079",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Text"
+                            },
+                            "{4245, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{1258, 1}": {
+                                "OutputUUID": "C24C9E42-401E-4734-B200-DE7BEDC167D8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Repeat Results"
+                            },
+                            "{714, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{2932, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{95, 1}": {
+                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://shortcutomation.com"
+                            },
+                            "{5355, 1}": {
+                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{4777, 1}": {
+                                "OutputUUID": "7C7D75AC-F2F2-4F69-A5FC-2E1B6F3B436E",
                                 "Type": "ActionOutput",
                                 "OutputName": "Shortcut Result"
                             },
-                            "{526, 1}": {
+                            "{396, 1}": {
                                 "Type": "CurrentDate",
                                 "Aggrandizements": [
                                     {
@@ -301,80 +506,105 @@
                                     }
                                 ]
                             },
-                            "{654, 1}": {
-                                "OutputUUID": "E65DE540-8B49-4450-868D-F7B8CD44238D",
-                                "Type": "ActionOutput",
-                                "OutputName": "URL Encoded Text"
-                            },
-                            "{996, 1}": {
+                            "{2603, 1}": {
                                 "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
                                 "Type": "ActionOutput",
                                 "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
                             },
-                            "{5654, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{7897, 1}": {
+                            "{4846, 1}": {
                                 "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
                             },
-                            "{8504, 1}": {
-                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            },
-                            "{1220, 1}": {
+                            "{604, 1}": {
                                 "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
                                 "Type": "ActionOutput",
                                 "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
                             },
-                            "{5498, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{595, 1}": {
-                                "OutputUUID": "D341FAF9-7B5E-4125-BBD9-FAACD3EA7EF0",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw"
-                            },
-                            "{4949, 1}": {
-                                "OutputUUID": "A44CCCB3-323E-4C70-8837-47E055D73515",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            },
-                            "{8001, 1}": {
-                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            },
-                            "{698, 1}": {
-                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
-                            },
-                            "{8339, 1}": {
-                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            },
-                            "{4480, 1}": {
+                            "{835, 1}": {
                                 "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
                                 "Type": "ActionOutput",
                                 "OutputName": "https://shortcutomation.com"
                             },
-                            "{5947, 1}": {
+                            "{433, 1}": {
+                                "OutputUUID": "D341FAF9-7B5E-4125-BBD9-FAACD3EA7EF0",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw"
+                            },
+                            "{3077, 1}": {
                                 "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
                                 "Type": "ActionOutput",
                                 "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
                             },
-                            "{657, 1}": {
-                                "OutputUUID": "CE2EEA51-53B2-4547-B07B-1913D615D079",
+                            "{1284, 1}": {
+                                "OutputUUID": "6B828A5E-FE0E-4C77-8047-CE18CED1A304",
                                 "Type": "ActionOutput",
-                                "OutputName": "Formatted Text"
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{1310, 1}": {
+                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://shortcutomation.com"
+                            },
+                            "{2447, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{2752, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{981, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{886, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{254, 1}": {
+                                "OutputUUID": "AA198009-D5E2-45D9-9C83-08E730EEB66A",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://shortcutomation.com"
+                            },
+                            "{5191, 1}": {
+                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{476, 1}": {
+                                "OutputUUID": "E65DE540-8B49-4450-868D-F7B8CD44238D",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text"
+                            },
+                            "{504, 1}": {
+                                "OutputUUID": "CC7C4E17-D35E-42B2-85CF-45884D51B1B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://github.com/huaminghuangtw/Shortcutomation"
+                            },
+                            "{4950, 1}": {
+                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{1938, 1}": {
+                                "OutputUUID": "A44CCCB3-323E-4C70-8837-47E055D73515",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{5024, 1}": {
+                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{5453, 1}": {
+                                "OutputUUID": "A0BF8FD8-DDB8-42F0-861E-85F1DC6F4566",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
                             }
                         }
                     },

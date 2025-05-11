@@ -798,31 +798,123 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "thisUpdateSnapshot",
+                    "lastUpdateSnapshot"
+                ],
+                "UUID": "5953AF41-AF80-4B7C-9035-F070BEB2A3AA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5953AF41-AF80-4B7C-9035-F070BEB2A3AA",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "C69A319B-8978-42B2-8A05-50DCF5DB6D7A",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2A4AF5D2-4BBF-4593-A75A-393351545580",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E623BDCD-F250-4C61-9AF2-2AA6F5C62636"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": ",",
+                "UUID": "46BC215D-9C17-4682-AB7F-F39292C483A4",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "E623BDCD-F250-4C61-9AF2-2AA6F5C62636",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "## ￼\n\n> **Date:** ￼  \n\n<details>\n￼\n</details>\n",
+                        "string": "￼: [￼]",
                         "attachmentsByRange": {
-                            "{18, 1}": {
-                                "Type": "CurrentDate",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
-                                    }
-                                ]
+                            "{4, 1}": {
+                                "OutputUUID": "46BC215D-9C17-4682-AB7F-F39292C483A4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Combined Text"
                             },
-                            "{33, 1}": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C69A319B-8978-42B2-8A05-50DCF5DB6D7A",
+                "UUID": "4C4487DE-9863-4945-8373-A6DCB70C3E5C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "---\n￼\n---\n\n## ￼\n\n<details>\n￼</details>\n",
+                        "attachmentsByRange": {
+                            "{14, 1}": {
+                                "OutputUUID": "5A0ABC12-5641-4B9D-ABEE-DF88E6EA93AC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            },
+                            "{27, 1}": {
                                 "OutputUUID": "40C14AD3-1A82-4E71-8072-79E65C92220A",
                                 "Type": "ActionOutput",
                                 "OutputName": "Combined Text"
                             },
-                            "{3, 1}": {
-                                "OutputUUID": "5A0ABC12-5641-4B9D-ABEE-DF88E6EA93AC",
+                            "{4, 1}": {
+                                "OutputUUID": "4C4487DE-9863-4945-8373-A6DCB70C3E5C",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "Repeat Results"
                             }
                         }
                     },
@@ -852,11 +944,8 @@
             "WFWorkflowActionParameters": {
                 "WFFolder": {
                     "fileLocation": {
-                        "WFFileLocationType": "Shortcuts",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
                         "relativeSubpath": "Shortcutomation",
-                        "appContainerBundleIdentifier": "com.apple.systemactions",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/2DFBFD98-38BD-44DF-8BC3-3A2F01248165/809d9d393c0f012dba4e1c5a45ca041538c5e1ce"
+                        "WFFileLocationType": "Home"
                     },
                     "filename": "Shortcutomation",
                     "displayName": "Shortcutomation"

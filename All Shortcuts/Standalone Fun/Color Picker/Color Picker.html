@@ -1,0 +1,461 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Color Picker</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gApple { background-color: #f6f6ff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dotted { border-left-style: dotted; }
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gApple { background-color: #2c2842; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="nonbutton gParams">
+  <a href="https://shortcutomation.com/gallery/Standalone%20Fun/Color%20Picker" target="_blank" style="text-decoration: none; color: inherit;" title="💁🏽 Back to shortcut page">
+    <b>Color Picker</b>
+  </a> 
+  (18 actions, 24 KB)
+</button>
+<button class="button gYellow" id="m0">
+0 Comment</button><div class="content commentcontent">
+<div class="col2">◽️ Based on:
+──────────────
+• https://www.reddit.com/r/shortcuts/comments/v1712k/if_you_ever_need_a_quick_color_picker_for_your
+• https://www.reddit.com/r/shortcuts/comments/1aqn3c0/converting_hex_color_codes_to_names</div></div>
+<button class="button gYellow" id="m1">
+1 Text　»</button><div class="content">
+<div class="col2">&lt;html>
+&lt;head>
+  &lt;meta charset="UTF-8" />
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  &lt;meta name="color-scheme" content="light dark" />
+  &lt;style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    input[type="color"] {
+      width: 100px;
+      height: 100px;
+      margin: 1rem 0;
+      cursor: pointer;
+    }
+
+    ul {
+      text-align: left;
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    #hexWrapper {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    #hexDisplay {
+      font-family: monospace;
+      font-size: 1.25rem;
+      padding: 0.5rem 1rem;
+      background: #e0e0e0;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    #tooltip {
+      color: #555;
+      font-size: 0.9rem;
+      font-weight: 500;
+      white-space: nowrap;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    #tooltip.hide {
+      opacity: 0;
+    }
+  &lt;/style>
+&lt;/head>
+&lt;body>
+  &lt;div class="container">
+    &lt;h1>Color Picker&lt;/h1>
+    &lt;ul>
+      &lt;li>&lt;strong>Step 1:&lt;/strong> Pick a color — the hex code will appear below.&lt;/li>
+      &lt;li>&lt;strong>Step 2:&lt;/strong> Tap the hex code to copy it to your clipboard.&lt;/li>
+      &lt;li>&lt;strong>Step 3:&lt;/strong> Tap Done.&lt;/li>
+    &lt;/ul>
+    &lt;input type="color" id="colorInput">
+    &lt;div id="hexWrapper">
+      &lt;div id="hexDisplay" tabindex="0">#000000&lt;/div>
+      &lt;div id="tooltip">📋 Copy&lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;script>
+    const colorInput = document.getElementById('colorInput');
+    const hexDisplay = document.getElementById('hexDisplay');
+    const tooltip = document.getElementById('tooltip');
+
+    function showTemporaryMessage(message) {
+      tooltip.textContent = message;
+      tooltip.classList.remove('hide');
+
+      setTimeout(() => {
+        tooltip.classList.add('hide');
+        setTimeout(() => {
+          tooltip.textContent = '📋 Copy';
+          tooltip.classList.remove('hide');
+        }, 400);
+      }, 2000);
+    }
+
+    colorInput.addEventListener('input', () => {
+      const hex = colorInput.value.toUpperCase();
+      hexDisplay.textContent = hex;
+    });
+
+    hexDisplay.addEventListener('click', () => {
+      navigator.clipboard.writeText(hexDisplay.textContent).then(() => {
+        showTemporaryMessage('✔️ Copied');
+      });
+    });
+  &lt;/script>
+&lt;/body>
+&lt;/html></div></div>
+<hr><button class="gBlue" id="m2">
+2 Make Rich Text from HTML <span class="box"><span class="var"><b>[1 Text]</b></span></span>　»</button>
+<hr><button class="" id="m3">
+3 Show Web View at <span class="box"><span class="var"><b>[2 Rich Text from HTML]</b></span></span></button><div></div>
+<button class="gYellow" id="m4">
+4 Replace Text <span class="box">#</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[Clipboard]</b></span></span> <b>　➔ Color Hex Code</b>　» <i>5</i> <span class="magic" onclick="magictap(11)">11</span> <span class="magic" onclick="magictap(13)">13</span></button>
+<hr><button class="button gOrange" id="m5">
+5 Dictionary　»</button><div class="content">
+<div class="col2">{  "hex": "<span class="var"><b>[4 Color Hex Code]</b></span>" }</div></div>
+<hr><button class="button gYellow" id="m6">
+6 Text　»</button><div class="content">
+<div class="col2">let dict = <span class="var"><b>[5 Dictionary]</b></span>;
+let input = dict.hex;
+
+// -------- RGB --------
+var R = parseInt(input.substring(0, 2), 16);
+var G = parseInt(input.substring(2, 4), 16);
+var B = parseInt(input.substring(4, 6), 16);
+
+var rgb = `RGB(${R}, ${G}, ${B})`;
+
+// -------- CMYK --------
+var r = R / 255, g = G / 255, b = B / 255;
+
+var k = 1 - Math.max(r, g, b);
+var c = (1 - r - k) / (1 - k) || 0;
+var m = (1 - g - k) / (1 - k) || 0;
+var y = (1 - b - k) / (1 - k) || 0;
+
+var cmyk = `CMYK(${Math.round(c*100)}%, ${Math.round(m*100)}%, ${Math.round(y*100)}%, ${Math.round(k*100)}%)`;
+
+// -------- HSV --------
+var max = Math.max(r, g, b);
+var min = Math.min(r, g, b);
+var delta = max - min;
+var h_hsv = 0;
+
+if (delta === 0) {
+    h_hsv = 0;
+} else if (max === r) {
+    h_hsv = 60 * (((g - b) / delta) % 6);
+} else if (max === g) {
+    h_hsv = 60 * (((b - r) / delta) + 2);
+} else {
+    h_hsv = 60 * (((r - g) / delta) + 4);
+}
+if (h_hsv &lt; 0) h_hsv += 360;
+
+var s_hsv = max === 0 ? 0 : delta / max;
+var v = max;
+var hsv = `HSV(${Math.round(h_hsv)}, ${Math.round(s_hsv*100)}%, ${Math.round(v*100)}%)`;
+
+// -------- HSL --------
+var l = (max + min) / 2;
+var s_hsl = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+var hsl = `HSL(${Math.round(h_hsv)}, ${Math.round(s_hsl*100)}%, ${Math.round(l*100)}%)`;
+
+output = {
+  "rgb": rgb,
+  "cmyk": cmyk,
+  "hsv": hsv,
+  "hsl": hsl
+};
+
+document.write(encodeURIComponent(JSON.stringify(output)));</div></div>
+<hr><button class="button gYellow" id="m7">
+7 Replace Text <span class="box">\u0023</span> with <span class="box">\\u0023</span> in <span class="box"><span class="var"><b>[6 Text]</b></span></span> <b>　➔ JavaScript Code</b>　»</button><div class="content">
+<div class="row"><div class="col1">ReplaceTextRegularExpression</div><span style="display:none">: </span><div class="col2">true</div></div></div>
+<hr><button class="gBlue" id="m8">
+8 URL <span class="box">data:text/html;charset=utf-8,&lt;script>
+<span class="var"><b>[7 JavaScript Code]</b></span>
+&lt;/script></span> <b>　➔ URL as Rich Text</b>　»</button>
+<hr><button class="gBlue" id="m9">
+9 URL <span class="box">Decode</span> <span class="box"><span class="var"><b>[8 URL as Rich Text</b> as RichText<b>]</b></span></span>　» <span class="magic" onclick="magictap(13)">13</span></button><div></div>
+<button class="button gYellow" id="m10">
+10 Comment</button><div class="content commentcontent">
+<div class="col2">https://github.com/meodai/color-name-api</div></div>
+<button class="gGreen" id="m11">
+11 Get Contents of URL <span class="box">https://api.color.pizza/v1/?values=<span class="magic" onclick="magictap(4)"><b>[4 Color Hex Code]</b></span>&amp;list=bestOf&amp;noduplicates=true</span>　»</button>
+<hr><button class="gOrange" id="m12">
+12 Get Dictionary Value for <span class="box">colors.1.name</span> in <span class="box"><span class="var"><b>[11 Contents of URL]</b></span></span> <b>　➔ Color Name</b>　»</button>
+<hr><button class="button gYellow" id="m13">
+13 Text　»</button><div class="content">
+<div class="col2">&lt;html>
+&lt;head>
+  &lt;meta charset="UTF-8">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &lt;style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #<span class="magic" onclick="magictap(4)"><b>[4 Color Hex Code]</b></span>;
+      color: #ffffff;
+    }
+
+    .card {
+      width: 80%;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: 4.5rem;
+    }
+
+    .code {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+      font-family: monospace;
+    }
+  &lt;/style>
+&lt;/head>
+&lt;body>
+  &lt;div class="card">
+    &lt;h1><span class="var"><b>[12 Color Name]</b></span>&lt;/h1>
+    &lt;div class="code">#<span class="magic" onclick="magictap(4)"><b>[4 Color Hex Code]</b></span>&lt;/div>
+    &lt;div class="code"><span class="magic" onclick="magictap(9)"><b>[9 URL Encoded Text</b> as Dictionary.rgb<b>]</b></span>&lt;/div>
+    &lt;div class="code"><span class="magic" onclick="magictap(9)"><b>[9 URL Encoded Text</b> as Dictionary.cmyk<b>]</b></span>&lt;/div>
+    &lt;div class="code"><span class="magic" onclick="magictap(9)"><b>[9 URL Encoded Text</b> as Dictionary.hsv<b>]</b></span>&lt;/div>
+    &lt;div class="code"><span class="magic" onclick="magictap(9)"><b>[9 URL Encoded Text</b> as Dictionary.hsl<b>]</b></span>&lt;/div>
+  &lt;/div>
+&lt;/body>
+&lt;/html></div></div>
+<hr><button class="gBlue" id="m14">
+14 Make Rich Text from HTML <span class="box"><span class="var"><b>[13 Text]</b></span></span>　»</button>
+<hr><button class="gBlue" id="m15">
+15 Make Image from Rich Text <span class="box"><span class="var"><b>[14 Rich Text from HTML]</b></span></span>　»</button>
+<hr><button class="" id="m16">
+16 Set Name of <span class="box"><span class="var"><b>[15 Image]</b></span></span> to <span class="box">‏‎</span>　»</button>
+<hr><button class="gYellow" id="m17">
+17 Quick Look <span class="box"><span class="var"><b>[16 Renamed Item]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
