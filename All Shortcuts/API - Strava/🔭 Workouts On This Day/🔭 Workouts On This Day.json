@@ -23,6 +23,20 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "B2CF1611-0B32-4B32-A04B-776619169D10",
+                        "Type": "ActionOutput",
+                        "OutputName": "activityIDs"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1023729D-B07F-4222-AD44-699DC10C434E"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -38,15 +52,34 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFURLActionURL": {
                     "Value": {
                         "string": "https://www.strava.com/activities/￼",
                         "attachmentsByRange": {
                             "{34, 1}": {
                                 "VariableName": "Repeat Item",
                                 "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6BF0DF1F-5AC0-4B69-A217-1A788F81E1CF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6BF0DF1F-5AC0-4B69-A217-1A788F81E1CF",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
                             }
                         }
                     },
@@ -66,6 +99,54 @@
                     "Name": "Actions",
                     "AppIntentIdentifier": "WaitMilliseconds"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7655DA43-B174-439A-AEE2-A62E75ED5D74",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "Repeat Index",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": {
+                    "Value": {
+                        "OutputUUID": "1023729D-B07F-4222-AD44-699DC10C434E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6BF0DF1F-5AC0-4B69-A217-1A788F81E1CF",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "241BBF4D-4053-4C4F-938C-B1060C10DF82"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "7655DA43-B174-439A-AEE2-A62E75ED5D74",
+                "UUID": "DEECF4BA-432E-4D52-AA51-48DA4D1ADB72"
             }
         },
         {

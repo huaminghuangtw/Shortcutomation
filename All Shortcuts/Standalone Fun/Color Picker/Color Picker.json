@@ -1,0 +1,413 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 59716
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "◽️ Based on:\n──────────────\n• https://www.reddit.com/r/shortcuts/comments/v1712k/if_you_ever_need_a_quick_color_picker_for_your\n• https://www.reddit.com/r/shortcuts/comments/1aqn3c0/converting_hex_color_codes_to_names"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "<html>\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <meta name=\"color-scheme\" content=\"light dark\" />\n  <style>\n    body {\n      margin: 0;\n      padding: 0;\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      background-color: #f4f4f4;\n      color: #333;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 100vh;\n      text-align: center;\n    }\n\n    .container {\n      background: #fff;\n      padding: 2rem;\n      border-radius: 12px;\n      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);\n      width: 90%;\n      max-width: 400px;\n      position: relative;\n    }\n\n    h1 {\n      margin-bottom: 1rem;\n      font-size: 2rem;\n    }\n\n    input[type=\"color\"] {\n      width: 100px;\n      height: 100px;\n      margin: 1rem 0;\n      cursor: pointer;\n    }\n\n    ul {\n      text-align: left;\n      margin: 1rem 0;\n      padding-left: 1.5rem;\n    }\n\n    li {\n      font-size: 1rem;\n      color: #555;\n      line-height: 1.6;\n    }\n\n    #hexWrapper {\n      position: relative;\n      display: inline-flex;\n      align-items: center;\n      gap: 0.5rem;\n      margin-top: 0.5rem;\n    }\n\n    #hexDisplay {\n      font-family: monospace;\n      font-size: 1.25rem;\n      padding: 0.5rem 1rem;\n      background: #e0e0e0;\n      border-radius: 6px;\n      cursor: pointer;\n      display: inline-block;\n    }\n\n    #tooltip {\n      color: #555;\n      font-size: 0.9rem;\n      font-weight: 500;\n      white-space: nowrap;\n      opacity: 1;\n      transition: opacity 0.4s ease;\n      pointer-events: none;\n    }\n\n    #tooltip.hide {\n      opacity: 0;\n    }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <h1>Color Picker</h1>\n    <ul>\n      <li><strong>Step 1:</strong> Pick a color — the hex code will appear below.</li>\n      <li><strong>Step 2:</strong> Tap the hex code to copy it to your clipboard.</li>\n      <li><strong>Step 3:</strong> Tap Done.</li>\n    </ul>\n    <input type=\"color\" id=\"colorInput\">\n    <div id=\"hexWrapper\">\n      <div id=\"hexDisplay\" tabindex=\"0\">#000000</div>\n      <div id=\"tooltip\">📋 Copy</div>\n    </div>\n  </div>\n\n  <script>\n    const colorInput = document.getElementById('colorInput');\n    const hexDisplay = document.getElementById('hexDisplay');\n    const tooltip = document.getElementById('tooltip');\n\n    function showTemporaryMessage(message) {\n      tooltip.textContent = message;\n      tooltip.classList.remove('hide');\n\n      setTimeout(() => {\n        tooltip.classList.add('hide');\n        setTimeout(() => {\n          tooltip.textContent = '📋 Copy';\n          tooltip.classList.remove('hide');\n        }, 400);\n      }, 2000);\n    }\n\n    colorInput.addEventListener('input', () => {\n      const hex = colorInput.value.toUpperCase();\n      hexDisplay.textContent = hex;\n    });\n\n    hexDisplay.addEventListener('click', () => {\n      navigator.clipboard.writeText(hexDisplay.textContent).then(() => {\n        showTemporaryMessage('✔️ Copied');\n      });\n    });\n  </script>\n</body>\n</html>",
+                "UUID": "451C8867-C101-4A41-A5A0-9715162D8395"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
+            "WFWorkflowActionParameters": {
+                "WFHTML": {
+                    "Value": {
+                        "OutputUUID": "451C8867-C101-4A41-A5A0-9715162D8395",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "DC5DD2E1-0B42-4563-8AB5-3F7FA73A2E01"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.showwebpage",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DC5DD2E1-0B42-4563-8AB5-3F7FA73A2E01",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rich Text from HTML"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "775861F3-8246-45E9-9685-5ED8F32D2C4B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Clipboard"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "Color Hex Code",
+                "UUID": "62E0D559-301E-4AC7-B232-9645A912C1A1",
+                "WFReplaceTextFind": "#"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "hex"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "62E0D559-301E-4AC7-B232-9645A912C1A1",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Color Hex Code"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "6B9A4512-5BC2-41C6-B0E3-7629F89B8B28"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "let dict = ￼;\nlet input = dict.hex;\n\n// -------- RGB --------\nvar R = parseInt(input.substring(0, 2), 16);\nvar G = parseInt(input.substring(2, 4), 16);\nvar B = parseInt(input.substring(4, 6), 16);\n\nvar rgb = `RGB(${R}, ${G}, ${B})`;\n\n// -------- CMYK --------\nvar r = R / 255, g = G / 255, b = B / 255;\n\nvar k = 1 - Math.max(r, g, b);\nvar c = (1 - r - k) / (1 - k) || 0;\nvar m = (1 - g - k) / (1 - k) || 0;\nvar y = (1 - b - k) / (1 - k) || 0;\n\nvar cmyk = `CMYK(${Math.round(c*100)}%, ${Math.round(m*100)}%, ${Math.round(y*100)}%, ${Math.round(k*100)}%)`;\n\n// -------- HSV --------\nvar max = Math.max(r, g, b);\nvar min = Math.min(r, g, b);\nvar delta = max - min;\nvar h_hsv = 0;\n\nif (delta === 0) {\n    h_hsv = 0;\n} else if (max === r) {\n    h_hsv = 60 * (((g - b) / delta) % 6);\n} else if (max === g) {\n    h_hsv = 60 * (((b - r) / delta) + 2);\n} else {\n    h_hsv = 60 * (((r - g) / delta) + 4);\n}\nif (h_hsv < 0) h_hsv += 360;\n\nvar s_hsv = max === 0 ? 0 : delta / max;\nvar v = max;\nvar hsv = `HSV(${Math.round(h_hsv)}, ${Math.round(s_hsv*100)}%, ${Math.round(v*100)}%)`;\n\n// -------- HSL --------\nvar l = (max + min) / 2;\nvar s_hsl = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));\nvar hsl = `HSL(${Math.round(h_hsv)}, ${Math.round(s_hsl*100)}%, ${Math.round(l*100)}%)`;\n\noutput = {\n  \"rgb\": rgb,\n  \"cmyk\": cmyk,\n  \"hsv\": hsv,\n  \"hsl\": hsl\n};\n\ndocument.write(encodeURIComponent(JSON.stringify(output)));",
+                        "attachmentsByRange": {
+                            "{11, 1}": {
+                                "OutputUUID": "6B9A4512-5BC2-41C6-B0E3-7629F89B8B28",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8183287D-FFE8-404E-88A5-F8EF2BE0B747"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8183287D-FFE8-404E-88A5-F8EF2BE0B747",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "CustomOutputName": "JavaScript Code",
+                "UUID": "A618AEC7-EB68-4976-BE8B-00580343B60D",
+                "WFReplaceTextReplace": "\\\\u0023",
+                "WFReplaceTextFind": "\\u0023"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "URL as Rich Text",
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "data:text/html;charset=utf-8,<script>\n￼\n</script>",
+                        "attachmentsByRange": {
+                            "{38, 1}": {
+                                "OutputUUID": "A618AEC7-EB68-4976-BE8B-00580343B60D",
+                                "Type": "ActionOutput",
+                                "OutputName": "JavaScript Code"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A510E91B-B7AB-4E2A-ADB1-B338BCBD6AB8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "URL as Rich Text",
+                                "OutputUUID": "A510E91B-B7AB-4E2A-ADB1-B338BCBD6AB8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFRichTextContentItem"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFEncodeMode": "Decode",
+                "UUID": "F27AA82A-CF20-464E-9E7F-EA92FAAF772D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://github.com/meodai/color-name-api"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "https://api.color.pizza/v1/?values=￼&list=bestOf&noduplicates=true",
+                        "attachmentsByRange": {
+                            "{35, 1}": {
+                                "OutputUUID": "62E0D559-301E-4AC7-B232-9645A912C1A1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Color Hex Code"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "7EBB99C5-D5BB-4716-8EE7-D1E8BE8CD5A4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7EBB99C5-D5BB-4716-8EE7-D1E8BE8CD5A4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "Color Name",
+                "UUID": "E2766070-5B25-414F-9DF6-FD7767293DF4",
+                "WFDictionaryKey": "colors.1.name"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <style>\n    body {\n      margin: 0;\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 100vh;\n      background-color: #￼;\n      color: #ffffff;\n    }\n\n    .card {\n      width: 80%;\n      background: rgba(0, 0, 0, 0.3);\n      padding: 2rem;\n      border-radius: 16px;\n      text-align: center;\n      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);\n    }\n\n    h1 {\n      margin: 0 0 1rem;\n      font-size: 4.5rem;\n    }\n\n    .code {\n      font-size: 3rem;\n      margin: 0.5rem 0;\n      font-family: monospace;\n    }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <h1>￼</h1>\n    <div class=\"code\">#￼</div>\n    <div class=\"code\">￼</div>\n    <div class=\"code\">￼</div>\n    <div class=\"code\">￼</div>\n    <div class=\"code\">￼</div>\n  </div>\n</body>\n</html>",
+                        "attachmentsByRange": {
+                            "{908, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text",
+                                "OutputUUID": "F27AA82A-CF20-464E-9E7F-EA92FAAF772D",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "hsv"
+                                    }
+                                ]
+                            },
+                            "{818, 1}": {
+                                "OutputUUID": "62E0D559-301E-4AC7-B232-9645A912C1A1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Color Hex Code"
+                            },
+                            "{878, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text",
+                                "OutputUUID": "F27AA82A-CF20-464E-9E7F-EA92FAAF772D",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "cmyk"
+                                    }
+                                ]
+                            },
+                            "{938, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text",
+                                "OutputUUID": "F27AA82A-CF20-464E-9E7F-EA92FAAF772D",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "hsl"
+                                    }
+                                ]
+                            },
+                            "{343, 1}": {
+                                "OutputUUID": "62E0D559-301E-4AC7-B232-9645A912C1A1",
+                                "Type": "ActionOutput",
+                                "OutputName": "Color Hex Code"
+                            },
+                            "{788, 1}": {
+                                "OutputUUID": "E2766070-5B25-414F-9DF6-FD7767293DF4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Color Name"
+                            },
+                            "{848, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "URL Encoded Text",
+                                "OutputUUID": "F27AA82A-CF20-464E-9E7F-EA92FAAF772D",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "rgb"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "39E3A605-EBBC-44C9-823E-CC985B2EF6CA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
+            "WFWorkflowActionParameters": {
+                "WFHTML": {
+                    "Value": {
+                        "OutputUUID": "39E3A605-EBBC-44C9-823E-CC985B2EF6CA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E2B3C91D-BA26-4592-BFFF-6696C713B184"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.makeimagefromrichtext",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E2B3C91D-BA26-4592-BFFF-6696C713B184",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rich Text from HTML"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "4C608469-4E9C-4D0D-961A-4E1079C32DEB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4C608469-4E9C-4D0D-961A-4E1079C32DEB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Image"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFName": "‏‎",
+                "UUID": "95E873B8-DC78-429D-8C5A-28EDD62BB6AC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "95E873B8-DC78-429D-8C5A-28EDD62BB6AC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Renamed Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}
