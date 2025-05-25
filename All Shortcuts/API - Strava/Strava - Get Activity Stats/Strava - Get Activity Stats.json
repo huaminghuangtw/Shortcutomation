@@ -21,7 +21,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "Strava",
-                "UUID": "489FC4AC-7615-447E-AEF2-2D08A4FF7666"
+                "UUID": "9D4C9DD4-8377-416B-A944-477F359DF64C"
             }
         },
         {
@@ -29,27 +29,26 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "489FC4AC-7615-447E-AEF2-2D08A4FF7666",
+                        "OutputUUID": "9D4C9DD4-8377-416B-A944-477F359DF64C",
                         "Type": "ActionOutput",
                         "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "CustomOutputName": "accessToken",
-                "UUID": "F71BF65E-290A-442A-B3F1-6801A1BBB981",
+                "UUID": "AC36E063-698F-44EF-84E7-2825C54956FB",
                 "WFWorkflow": {
                     "workflowIdentifier": "2F0DF206-94E7-4B0B-932C-9218D668A5DD",
-                    "workflowName": "Refresh Strava API Access Token",
+                    "workflowName": "Refresh Access Token",
                     "isSelf": false
                 },
-                "WFWorkflowName": "Refresh Strava API Access Token"
+                "WFWorkflowName": "Refresh Access Token"
             }
         },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "API Credentials.Strava.athleteID",
-                "CustomOutputName": "athleteID",
                 "UUID": "7BB7E8CE-4AD7-446A-B29B-2F1761CD0DFA"
             }
         },
@@ -72,7 +71,7 @@
                                         "string": "Bearer ￼",
                                         "attachmentsByRange": {
                                             "{7, 1}": {
-                                                "OutputUUID": "F71BF65E-290A-442A-B3F1-6801A1BBB981",
+                                                "OutputUUID": "AC36E063-698F-44EF-84E7-2825C54956FB",
                                                 "Type": "ActionOutput",
                                                 "OutputName": "accessToken"
                                             }
@@ -85,16 +84,22 @@
                     },
                     "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "ShowHeaders": false,
+                "ShowHeaders": true,
                 "UUID": "B98C7913-DF8E-4D00-AD9C-EEC606816235",
                 "WFURL": {
                     "Value": {
                         "string": "https://www.strava.com/api/v3/athletes/￼/stats",
                         "attachmentsByRange": {
                             "{39, 1}": {
-                                "OutputUUID": "7BB7E8CE-4AD7-446A-B29B-2F1761CD0DFA",
                                 "Type": "ActionOutput",
-                                "OutputName": "athleteID"
+                                "OutputName": "Value",
+                                "OutputUUID": "7BB7E8CE-4AD7-446A-B29B-2F1761CD0DFA",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    }
+                                ]
                             }
                         }
                     },

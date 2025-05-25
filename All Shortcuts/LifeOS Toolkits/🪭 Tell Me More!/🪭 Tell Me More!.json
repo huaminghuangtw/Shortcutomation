@@ -296,7 +296,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.images",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
@@ -306,7 +306,83 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFName": "‏‎ ‎",
+                "UUID": "06C61D48-2E98-4A31-BACF-B132BE5AC0F4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9B802BF7-DF64-4A14-A6A2-BDDDC3F0CA2B",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Images",
+                            "OutputUUID": "06C61D48-2E98-4A31-BACF-B132BE5AC0F4",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Width"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Images",
+                        "OutputUUID": "06C61D48-2E98-4A31-BACF-B132BE5AC0F4",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Height"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.image.rotate",
+            "WFWorkflowActionParameters": {
+                "WFImage": {
+                    "Value": {
+                        "OutputUUID": "06C61D48-2E98-4A31-BACF-B132BE5AC0F4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Images"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFImageRotateAmount": "270",
+                "UUID": "B24F048E-6FA4-4030-94FA-9A967953BB3B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9B802BF7-DF64-4A14-A6A2-BDDDC3F0CA2B",
+                "UUID": "D4CCD5E1-6BEB-4807-AFE2-CEA94B0FC679"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D4CCD5E1-6BEB-4807-AFE2-CEA94B0FC679",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFName": "‏‎",
                 "UUID": "03969DF1-3966-4E5F-BEBF-B25DD546794D"
             }
         },
@@ -337,7 +413,7 @@
                 "WFItems": [
                     "Sketch",
                     "Chindogu",
-                    "Visual Of The Day"
+                    "Reddit"
                 ],
                 "UUID": "956B2857-30B6-4E75-9E59-56E6FF07358F"
             }
@@ -979,8 +1055,37 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "CF0A5993-6F1E-4BC0-862C-9FF5A2D48D78",
-                "WFControlFlowMode": 2
+                "UUID": "AC6B9694-2D2B-4EE3-889F-94ADA4D66CBC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "googleSearchURLs",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "7CAFDB09-1DC5-41DC-B14C-E0B3E5EC672D",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.reminders.showlist",
+            "WFWorkflowActionParameters": {
+                "WFList": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/83F6F1E1-0CF8-48DE-8C2F-338F52A6FC24>",
+                    "Title": "💪 Home Exercise",
+                    "IsAllCalendar": false
+                }
             }
         },
         {
@@ -994,6 +1099,13 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "3FA720A8-8C0A-4D11-9A82-84A73FAE0A5C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7CAFDB09-1DC5-41DC-B14C-E0B3E5EC672D",
+                "WFControlFlowMode": 2
             }
         },
         {

@@ -10,65 +10,75 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "Shortcuts",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "",
+                        "appContainerBundleIdentifier": "com.apple.systemactions",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/documents/200603e0658211bcdfc3e062063502b84084a266"
+                    },
+                    "filename": "Documents",
+                    "displayName": "Shortcuts"
+                },
+                "WFFileErrorIfNotFound": false,
+                "WFGetFilePath": "Shortcutomation",
+                "CustomOutputName": "Shortcutomation",
+                "UUID": "FE40D7A2-4A5F-44E0-AE8B-32161B1124E5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openin",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FE40D7A2-4A5F-44E0-AE8B-32161B1124E5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcutomation"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.Terminal",
-                    "Name": "Terminal",
+                    "BundleIdentifier": "com.apple.finder",
+                    "Name": "Finder",
                     "TeamIdentifier": "0000000000"
                 },
-                "WFAppIdentifier": "com.apple.Terminal",
-                "UUID": "002300E4-DC62-4097-BC28-40173647F228"
+                "WFOpenInAppIdentifier": "com.apple.finder"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.windows",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Unit": {
-                                        "Value": 4,
-                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
-                                    },
-                                    "String": "Terminal"
-                                },
-                                "Removable": true,
-                                "Property": "App Name"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                },
-                "WFContentItemInputParameter": {
-                    "Value": {
-                        "OutputUUID": "002300E4-DC62-4097-BC28-40173647F228",
-                        "Type": "ActionOutput",
-                        "OutputName": "App"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "30ED17AC-B3EA-4D6F-8474-8A1D66788B20"
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "💁‍♂️ Move to $HOME"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.movewindow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFPosition": "Center",
-                "WFWindow": {
+                "WFTextActionText": "Terminal",
+                "UUID": "01F27406-8E84-4820-8DE7-BEACDE76E526"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
                     "Value": {
-                        "OutputUUID": "30ED17AC-B3EA-4D6F-8474-8A1D66788B20",
+                        "OutputUUID": "01F27406-8E84-4820-8DE7-BEACDE76E526",
                         "Type": "ActionOutput",
-                        "OutputName": "Windows"
+                        "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "E55EE13E-0B12-4442-9C71-A762733BE36E"
+                "WFWorkflowName": "Open App",
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                }
             }
         },
         {
@@ -116,32 +126,70 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼ (￼.Week.￼)",
+                        "string": "￼.Week.￼",
                         "attachmentsByRange": {
-                            "{10, 1}": {
+                            "{7, 1}": {
                                 "OutputUUID": "827901D0-AD94-44A2-960E-20895ADAB7C8",
                                 "Type": "ActionOutput",
                                 "OutputName": "WeekNumber"
                             },
-                            "{3, 1}": {
+                            "{0, 1}": {
                                 "OutputUUID": "E35A950E-0EE9-4F5E-AADE-C91C54457BA5",
                                 "Type": "ActionOutput",
                                 "OutputName": "Year"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "tagName",
+                "UUID": "E2198A7C-938E-4043-AB95-69310F1CDBF9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PluraliseIntent",
+            "WFWorkflowActionParameters": {
+                "word": "New Shortcut",
+                "countType": "items",
+                "items": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Value",
+                        "OutputUUID": "48115722-C7DD-485E-94BC-CFBF41940F11",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
                             },
-                            "{0, 1}": {
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "newShortcuts"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8DB7BACE-30AC-4AED-9F52-79B01E910D7D",
+                "output": "numberDigit",
+                "typeCase": "title"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "✨ ￼ (￼)",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "8DB7BACE-30AC-4AED-9F52-79B01E910D7D",
                                 "Type": "ActionOutput",
-                                "OutputName": "Value",
-                                "OutputUUID": "48115722-C7DD-485E-94BC-CFBF41940F11",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "newShortcuts"
-                                    }
-                                ]
+                                "OutputName": "Pluralised Result"
+                            },
+                            "{5, 1}": {
+                                "OutputUUID": "E2198A7C-938E-4043-AB95-69310F1CDBF9",
+                                "Type": "ActionOutput",
+                                "OutputName": "tagName"
                             }
                         }
                     },
@@ -155,24 +203,19 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "mv \"/Users/huaminghuang/Library/Mobile Documents/iCloud~is~workflow~my~workflows/Documents/Shortcutomation\" \"/Users/huaminghuang/Shortcutomation\"\ncd \"/Users/huaminghuang/Shortcutomation\" \ngit add .\ngit commit -m \"￼\"\ngit tag --annotate \"￼.Week.￼\" -m \"￼\"\ngit push origin main --force\ngit push origin --tags --force\nfind . -mindepth 1 \\( -name 'assets' -o -name '.*' \\) -prune -o -exec mv {} ~/.Trash/ \\;",
+                        "string": "cd \"/Users/huaminghuang/Shortcutomation\"\ngit add .\ngit commit -m \"￼\"\ngit tag --annotate \"￼\" -m \"￼\"\ngit push origin main --force\ngit push origin --tags --force\nfind . -mindepth 1 \\( -name 'assets' -o -name '.*' \\) -prune -o -exec trash {} +",
                         "attachmentsByRange": {
-                            "{236, 1}": {
-                                "OutputUUID": "E35A950E-0EE9-4F5E-AADE-C91C54457BA5",
-                                "Type": "ActionOutput",
-                                "OutputName": "Year"
-                            },
-                            "{243, 1}": {
-                                "OutputUUID": "827901D0-AD94-44A2-960E-20895ADAB7C8",
-                                "Type": "ActionOutput",
-                                "OutputName": "WeekNumber"
-                            },
-                            "{250, 1}": {
+                            "{66, 1}": {
                                 "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
                             },
-                            "{213, 1}": {
+                            "{89, 1}": {
+                                "OutputUUID": "E2198A7C-938E-4043-AB95-69310F1CDBF9",
+                                "Type": "ActionOutput",
+                                "OutputName": "tagName"
+                            },
+                            "{96, 1}": {
                                 "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"

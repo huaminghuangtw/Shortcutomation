@@ -64,7 +64,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextCaseSensitive": false,
-                "WFMatchTextPattern": "Second-Brain(.+)",
+                "WFMatchTextPattern": "Second-Brain/(.+)",
                 "UUID": "A67EF32F-0FB9-4F37-BF45-7149B195200E",
                 "text": {
                     "Value": {
@@ -177,6 +177,92 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "/",
+                "UUID": "7F8686F9-B8B7-48A0-9CAF-507F918F9BDC",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "877CA729-1AF3-45CE-A5AC-F42C6AF500F2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "7F8686F9-B8B7-48A0-9CAF-507F918F9BDC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "122F403E-4D64-43E9-A273-95F7F067AA03"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "122F403E-4D64-43E9-A273-95F7F067AA03",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "1",
+                "UUID": "D3DDB8BA-7A42-4FB9-ACAD-6D3E4BF89411",
+                "WFMathOperation": "-"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7F8686F9-B8B7-48A0-9CAF-507F918F9BDC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Items in Range",
+                "WFItemRangeEnd": {
+                    "Value": {
+                        "OutputUUID": "D3DDB8BA-7A42-4FB9-ACAD-6D3E4BF89411",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9480FDDF-CB0B-493D-858B-40ED599EDF9B",
+                "WFItemRangeStart": "1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": " › ",
+                "UUID": "FFE95F85-33B9-438A-A934-D2F04FE2517A",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "9480FDDF-CB0B-493D-858B-40ED599EDF9B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -217,9 +303,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "877CA729-1AF3-45CE-A5AC-F42C6AF500F2",
+                                                "OutputUUID": "FFE95F85-33B9-438A-A934-D2F04FE2517A",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Text"
+                                                "OutputName": "Combined Text"
                                             }
                                         }
                                     },

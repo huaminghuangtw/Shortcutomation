@@ -37,11 +37,100 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "07734B4F-D95A-4C78-88D4-6E9F05D685FC",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode.#MuserMode.startTime",
+                "UUID": "01A6627F-E5FB-4A2D-AC2F-43F893A36B8C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "01A6627F-E5FB-4A2D-AC2F-43F893A36B8C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentDate"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "51052F32-39C9-4D13-84BD-8E25E9921A0C",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Tomorrow",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "75CE5F50-0855-4454-B52A-F667C0AB3A07"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "51052F32-39C9-4D13-84BD-8E25E9921A0C",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Today",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "073DE51B-AF61-4D3F-A5F8-9E858838B5A0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "51052F32-39C9-4D13-84BD-8E25E9921A0C",
+                "UUID": "EA72ECAC-8493-45EC-AC16-21B46B8CF456"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "CurrentDate"
+                        "OutputUUID": "EA72ECAC-8493-45EC-AC16-21B46B8CF456",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -52,6 +141,13 @@
                 },
                 "UUID": "4F10D35A-8CFC-43DC-BE70-A296389AB321",
                 "WFWorkflowName": "Show Scheduled Calendar Events"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "07734B4F-D95A-4C78-88D4-6E9F05D685FC",
+                "WFControlFlowMode": 2
             }
         },
         {

@@ -10,6 +10,68 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "4",
+                    "8",
+                    "12"
+                ],
+                "UUID": "4046FB6F-E228-4578-B045-41F15C81057F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "M",
+                "UUID": "84087E53-C531-4DFF-AAC9-198395A08D28",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "4046FB6F-E228-4578-B045-41F15C81057F",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "84087E53-C531-4DFF-AAC9-198395A08D28",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "8479A281-C96A-451C-BB37-CEE121DCC0F2",
+                "WFCondition": 99
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -121,13 +183,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Focus Mode.#MonkMode.startTime",
-                "UUID": "D0DBB05F-5683-4C4C-8563-58416357F23B"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -170,19 +225,7 @@
                     "IsAllCalendar": false
                 },
                 "UUID": "99E5B77E-8F31-44AE-B51F-D46440E01A56",
-                "WFAlertCustomTime": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "D0DBB05F-5683-4C4C-8563-58416357F23B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFAlertCustomTime": "Today",
                 "WFURL": {
                     "Value": {
                         "string": "￼",
@@ -204,6 +247,13 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "37BFB51D-4208-4A46-B179-70FFBF8733AB",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8479A281-C96A-451C-BB37-CEE121DCC0F2",
                 "WFControlFlowMode": 2
             }
         },
