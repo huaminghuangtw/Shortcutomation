@@ -7268,6 +7268,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 </kbd>
 </a>
 </p>
+
 ## 🤝 Contributing
 
 <a href="https://github.com/huaminghuangtw/Shortcutomation/graphs/contributors">
