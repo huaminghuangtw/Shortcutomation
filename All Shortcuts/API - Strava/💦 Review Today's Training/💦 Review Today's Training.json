@@ -10,19 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
-            "WFWorkflowActionParameters": {
-                "WFDeviceDetail": "Current Brightness",
-                "UUID": "374C2200-A91E-43C9-BF3C-9F9C462B1CC8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.date",
             "WFWorkflowActionParameters": {
                 "WFDateActionDate": "Today",
@@ -48,6 +35,25 @@
                 },
                 "UUID": "4946DBC6-4339-44CB-A995-6CF6A876FEA1",
                 "WFWorkflowName": "List Strava Activities on Date"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "4946DBC6-4339-44CB-A995-6CF6A876FEA1",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D581D5B2-AD3F-4A58-8526-EBADCCAB081F",
+                "WFCondition": 100
             }
         },
         {
@@ -328,19 +334,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": {
-                    "Value": {
-                        "OutputUUID": "374C2200-A91E-43C9-BF3C-9F9C462B1CC8",
-                        "Type": "ActionOutput",
-                        "OutputName": "Current Brightness"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
             "WFWorkflowActionParameters": {}
         },
@@ -375,6 +368,17 @@
                     "WFSerializationType": "WFTextTokenString"
                 }
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D581D5B2-AD3F-4A58-8526-EBADCCAB081F",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

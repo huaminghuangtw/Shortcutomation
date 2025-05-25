@@ -28,25 +28,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "None",
-                "WFTimeFormatStyle": "Short",
-                "UUID": "23FB4173-593A-43CF-945E-A16B40B8413B",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "data.json",
@@ -84,18 +65,38 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+            "WFWorkflowActionParameters": {
+                "format": "minifyJSON",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "9FD3DA7B-25E4-46AD-9FFC-126CF6165225",
+                                "Type": "ActionOutput",
+                                "OutputName": "data.json"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0F15730F-7619-49ED-8EFF-098DF596F79D",
+                "CustomOutputName": "minifiedJSON",
+                "ShowWhenRun": false
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "9FD3DA7B-25E4-46AD-9FFC-126CF6165225",
+                        "OutputUUID": "0F15730F-7619-49ED-8EFF-098DF596F79D",
                         "Type": "ActionOutput",
-                        "OutputName": "data.json"
+                        "OutputName": "minifiedJSON"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "today",
-                "UUID": "6E677BD8-44E6-4EEF-A5E1-DBF9B7F37810",
                 "WFDictionaryKey": {
                     "Value": {
                         "string": "￼",
@@ -113,47 +114,55 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6E677BD8-44E6-4EEF-A5E1-DBF9B7F37810"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6E677BD8-44E6-4EEF-A5E1-DBF9B7F37810",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "today"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDateFormatStyle": "None",
+                "WFTimeFormatStyle": "Short",
+                "UUID": "23FB4173-593A-43CF-945E-A16B40B8413B",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
                 }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
-                "WFItems": [
-                    {
-                        "WFItemType": 0,
-                        "WFValue": {
-                            "Value": {
-                                "string": "￼",
-                                "attachmentsByRange": {
-                                    "{0, 1}": {
-                                        "OutputUUID": "6E677BD8-44E6-4EEF-A5E1-DBF9B7F37810",
-                                        "Type": "ActionOutput",
-                                        "OutputName": "today"
-                                    }
-                                }
-                            },
-                            "WFSerializationType": "WFTextTokenString"
-                        }
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "23FB4173-593A-43CF-945E-A16B40B8413B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Date"
                     },
-                    {
-                        "WFItemType": 0,
-                        "WFValue": {
-                            "Value": {
-                                "string": "￼",
-                                "attachmentsByRange": {
-                                    "{0, 1}": {
-                                        "OutputUUID": "23FB4173-593A-43CF-945E-A16B40B8413B",
-                                        "Type": "ActionOutput",
-                                        "OutputName": "Formatted Date"
-                                    }
-                                }
-                            },
-                            "WFSerializationType": "WFTextTokenString"
-                        }
-                    }
-                ],
-                "UUID": "588A80D4-2A8F-42EC-99B5-99BDEDDD0A69"
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "today"
             }
         },
         {
@@ -164,9 +173,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "588A80D4-2A8F-42EC-99B5-99BDEDDD0A69",
-                                "Type": "ActionOutput",
-                                "OutputName": "List"
+                                "VariableName": "today",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -258,6 +266,28 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+            "WFWorkflowActionParameters": {
+                "format": "formatJSON",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "001DC763-176E-48A0-9B58-E7840D24C7E5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B772BA6E-2A82-4851-B3D9-8CD93BAE6170",
+                "CustomOutputName": "formattedJSON",
+                "ShowWhenRun": false
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
             "WFWorkflowActionParameters": {
                 "WFFolder": {
@@ -271,9 +301,9 @@
                 "WFAskWhereToSave": false,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "001DC763-176E-48A0-9B58-E7840D24C7E5",
+                        "OutputUUID": "B772BA6E-2A82-4851-B3D9-8CD93BAE6170",
                         "Type": "ActionOutput",
-                        "OutputName": "Updated Text"
+                        "OutputName": "formattedJSON"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -293,6 +323,10 @@
                     "WFSerializationType": "WFTextTokenString"
                 }
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
@@ -317,7 +351,9 @@
         "WFURLContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

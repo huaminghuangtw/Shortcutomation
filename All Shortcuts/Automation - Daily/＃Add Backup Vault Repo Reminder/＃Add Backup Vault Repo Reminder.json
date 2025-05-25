@@ -10,6 +10,62 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "Monday",
+                    "Wednesday",
+                    "Friday",
+                    "Sunday"
+                ],
+                "UUID": "C9072DF6-74E7-4681-9D47-EB61D607825C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+                    "workflowName": "getDayOfWeek",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "getDayOfWeek",
+                "UUID": "2F7BF521-8CFC-483B-B5F4-78494C8F1ACF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C9072DF6-74E7-4681-9D47-EB61D607825C",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2F7BF521-8CFC-483B-B5F4-78494C8F1ACF",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "24EF91F7-FDF0-49F0-9EC0-6418EA90ABDF",
+                "WFCondition": 99
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "💾 Backup My Vault Repos",
@@ -139,7 +195,7 @@
                     "IsAllCalendar": false
                 },
                 "UUID": "EC3AF436-11C7-4899-8460-A222E7B7B88E",
-                "WFAlertCustomTime": "Tomorrow",
+                "WFAlertCustomTime": "Today",
                 "WFURL": {
                     "Value": {
                         "string": "￼",
@@ -161,6 +217,13 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "26C7A957-9D15-4EE5-90F3-02C0DC8C6659",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "24EF91F7-FDF0-49F0-9EC0-6418EA90ABDF",
                 "WFControlFlowMode": 2
             }
         },

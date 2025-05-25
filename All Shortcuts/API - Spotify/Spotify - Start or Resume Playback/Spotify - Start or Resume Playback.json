@@ -6,7 +6,9 @@
         "WFWorkflowIconGlyphNumber": 61440
     },
     "WFWorkflowClientVersion": "3303.0.4",
-    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowOutputContentItemClasses": [
+        "WFGenericFileContentItem"
+    ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
@@ -19,7 +21,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "Spotify",
-                "UUID": "05AA8A65-B8C9-4944-817D-BF06FADA4D5E"
+                "UUID": "420EB016-2CEA-4C2F-B0BC-ED63B21623DB"
             }
         },
         {
@@ -27,32 +29,20 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "05AA8A65-B8C9-4944-817D-BF06FADA4D5E",
+                        "OutputUUID": "420EB016-2CEA-4C2F-B0BC-ED63B21623DB",
                         "Type": "ActionOutput",
                         "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "CustomOutputName": "accessToken",
-                "UUID": "10241E75-3E2C-49A5-96DB-6C9D5222CE3D",
+                "UUID": "CF3FAD64-8D72-488B-B37F-D2C9D50E2C9D",
                 "WFWorkflow": {
                     "workflowIdentifier": "2F0DF206-94E7-4B0B-932C-9218D668A5DD",
-                    "workflowName": "Refresh Access Token",
+                    "workflowName": "Get Access Token",
                     "isSelf": false
                 },
-                "WFWorkflowName": "Refresh Access Token"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "Request Body"
+                "WFWorkflowName": "Get Access Token"
             }
         },
         {
@@ -118,8 +108,7 @@
             "WFWorkflowActionParameters": {
                 "WFRequestVariable": {
                     "Value": {
-                        "VariableName": "Request Body",
-                        "Type": "Variable"
+                        "Type": "ExtensionInput"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -139,7 +128,7 @@
                                         "string": "Bearer ￼",
                                         "attachmentsByRange": {
                                             "{7, 1}": {
-                                                "OutputUUID": "10241E75-3E2C-49A5-96DB-6C9D5222CE3D",
+                                                "OutputUUID": "CF3FAD64-8D72-488B-B37F-D2C9D50E2C9D",
                                                 "Type": "ActionOutput",
                                                 "OutputName": "accessToken"
                                             }
@@ -169,6 +158,24 @@
                 },
                 "WFHTTPMethod": "PUT",
                 "WFHTTPBodyType": "File"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "5EE7EF47-80E1-4F9D-A9E3-1A0B95ACEE12",
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         }
     ],
