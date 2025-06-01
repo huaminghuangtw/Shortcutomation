@@ -1,0 +1,159 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.podcasts",
+                    "Name": "Podcasts",
+                    "TeamIdentifier": "243LU875E5"
+                },
+                "WFAppIdentifier": "com.apple.podcasts",
+                "UUID": "ECAB5498-66FE-48C5-8825-FBB09ACC7A2A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.IsAudioPlayingIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "87541C78-BD7A-43EA-BF6F-5E7CAD74018D",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "IsAudioPlayingIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Is Audio Playing",
+                            "OutputUUID": "87541C78-BD7A-43EA-BF6F-5E7CAD74018D",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "No",
+                "GroupingIdentifier": "1326EF11-FE8D-43B8-9EE6-2F32B37C5A78",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "UUID": "1157128F-F4DD-44AF-922B-E5DB72848768"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "⏯️ Resume Previous Podcast?",
+                "UUID": "8839982E-DA9C-4519-ABBC-7D3EC5907B37"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "8839982E-DA9C-4519-ABBC-7D3EC5907B37",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1157128F-F4DD-44AF-922B-E5DB72848768",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "BFAC828D-48D5-4F8D-8463-21F92F0EEA6A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BFAC828D-48D5-4F8D-8463-21F92F0EEA6A",
+                            "Type": "ActionOutput",
+                            "OutputName": "Chosen Item"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Yes",
+                "GroupingIdentifier": "665F6485-BE99-4964-B224-E3695074DF8C",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.playpodcast",
+            "WFWorkflowActionParameters": {
+                "UUID": "233ED26D-C6E6-41B8-8B08-B150985309ED"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "665F6485-BE99-4964-B224-E3695074DF8C",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1326EF11-FE8D-43B8-9EE6-2F32B37C5A78",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

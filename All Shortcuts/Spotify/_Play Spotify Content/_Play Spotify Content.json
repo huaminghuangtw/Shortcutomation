@@ -1,0 +1,438 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "709674E1-9DB5-4364-ABE1-841501F4F623",
+                    "workflowName": "Spotify - Pause Playback",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Spotify - Pause Playback",
+                "UUID": "F882E6BB-AF3A-465F-9794-573E6943AC05"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "7A93D601-071F-45FB-BA7D-80D1EAC91E21",
+                    "workflowName": "Spotify - Get Current Device ID",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Spotify - Get Current Device ID",
+                "UUID": "EB3DFFB5-4F2B-4FF9-81B6-83733C86C48E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "B01FBD65-B901-41AB-BD65-3B75C3404173",
+                    "workflowName": "Spotify - Transfer Playback",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Spotify - Transfer Playback",
+                "UUID": "819A70FC-7E1F-4DED-8940-B0B5B8D247BB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "iPhone SE",
+                "GroupingIdentifier": "EB65E819-1C80-498F-83CE-5DCBB16E87B1",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
+            "WFWorkflowActionParameters": {
+                "UUID": "C5D93E30-F56C-4F3F-AD32-60D92DC86219"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Current Focus",
+                            "OutputUUID": "C5D93E30-F56C-4F3F-AD32-60D92DC86219",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sleep",
+                "GroupingIdentifier": "D8B66018-8B1C-4BFF-A33D-875C57268291",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "35",
+                "UUID": "A71E10C9-93AD-4F4B-9147-6AA94DE6E5DB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D8B66018-8B1C-4BFF-A33D-875C57268291",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "My Focus Mode.￼.phase",
+                        "attachmentsByRange": {
+                            "{14, 1}": {
+                                "OutputUUID": "C5D93E30-F56C-4F3F-AD32-60D92DC86219",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Focus"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "phase",
+                "UUID": "DC6578E6-696B-4DE7-A94F-D454F5E8F4DE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "1",
+                    "4"
+                ],
+                "UUID": "BC4BCB7E-A3A8-4447-AA76-4BCF4E08D97E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "28FF3FF1-6818-4EA2-8A6D-3679FD7000D0",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BC4BCB7E-A3A8-4447-AA76-4BCF4E08D97E",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "phase",
+                                "OutputUUID": "DC6578E6-696B-4DE7-A94F-D454F5E8F4DE",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFNumberContentItem"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFNumberValue": "1",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "35",
+                "UUID": "858AFDF5-365B-4C95-94D4-F9CBE708681E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "28FF3FF1-6818-4EA2-8A6D-3679FD7000D0",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "WFNumberActionNumber": "50",
+                "UUID": "82218E18-D5E9-4A52-9EC1-C76D2744153C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "28FF3FF1-6818-4EA2-8A6D-3679FD7000D0",
+                "UUID": "E6E16E65-CE42-48DC-98CF-815B39069EBF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "D8B66018-8B1C-4BFF-A33D-875C57268291",
+                "UUID": "4AE4D45A-267C-4629-B829-289327AE307E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4AE4D45A-267C-4629-B829-289327AE307E",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB097065-D7B3-4ABB-B419-DB35E710B6ED",
+                    "workflowName": "Percentage → Decimals",
+                    "isSelf": false
+                },
+                "UUID": "8B63D710-EE75-478C-AE44-CA51F1CC764D",
+                "WFWorkflowName": "Percentage → Decimals"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
+            "WFWorkflowActionParameters": {
+                "WFVolume": {
+                    "Value": {
+                        "OutputUUID": "8B63D710-EE75-478C-AE44-CA51F1CC764D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4AE4D45A-267C-4629-B829-289327AE307E",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "F567C7D0-A436-4270-8F6F-8C7708624779",
+                    "workflowName": "Spotify - Set Playback Volume",
+                    "isSelf": false
+                },
+                "UUID": "AA549851-12A0-42B5-9FCE-A86C7B919B35",
+                "WFWorkflowName": "Spotify - Set Playback Volume"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "EB65E819-1C80-498F-83CE-5DCBB16E87B1",
+                "UUID": "C9EACE58-0532-4A42-9D59-F7F2E4579311"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "9702122F-5812-4D6B-B9C4-699BD8EB53F7",
+                    "workflowName": "Spotify - Toggle Playback Shuffle  ",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Spotify - Toggle Playback Shuffle  ",
+                "UUID": "B91C1730-4334-4FDC-BE5C-57FB8FE44179"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "FBBA8C19-485C-4023-ABA1-809BCBC766E9",
+                    "workflowName": "Spotify - Set Repeat Mode",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Spotify - Set Repeat Mode",
+                "UUID": "A65645DD-8457-44EE-9012-A1CF685A1B60"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C36796A4-31DB-4F69-99FB-AC651F88E638"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C36796A4-31DB-4F69-99FB-AC651F88E638",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "9FF5FC1E-1DC2-453E-84DA-439BA2BE9230",
+                    "workflowName": "Spotify - Start or Resume Playback",
+                    "isSelf": false
+                },
+                "UUID": "10241E75-3E2C-49A5-96DB-6C9D5222CE3D",
+                "WFWorkflowName": "Spotify - Start or Resume Playback"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "A4726382-D658-4EC1-BFE1-062DEF8023DA",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "A4726382-D658-4EC1-BFE1-062DEF8023DA",
+                "UUID": "A8FCA1E9-6B7B-4156-B65E-925BF43781EC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3F5381A9-BDD4-46C0-A461-94D02B276D4C",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.spotify.client",
+                    "Name": "Spotify",
+                    "TeamIdentifier": "2FNC3A47ZF"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3F5381A9-BDD4-46C0-A461-94D02B276D4C",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

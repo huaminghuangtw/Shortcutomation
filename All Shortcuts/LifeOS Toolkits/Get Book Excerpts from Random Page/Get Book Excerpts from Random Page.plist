@@ -11,14 +11,12 @@
 			<string>is.workflow.actions.file</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>CustomOutputName</key>
-				<string>AudiblePDFs</string>
 				<key>UUID</key>
 				<string>6DCEB9C7-D913-4955-B7CE-A06511989597</string>
 				<key>WFFile</key>
 				<dict>
 					<key>displayName</key>
-					<string>AudiblePDFs</string>
+					<string>PDFs</string>
 					<key>fileLocation</key>
 					<dict>
 						<key>WFFileLocationType</key>
@@ -49,7 +47,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>AudiblePDFs</string>
+						<string>File</string>
 						<key>OutputUUID</key>
 						<string>6DCEB9C7-D913-4955-B7CE-A06511989597</string>
 						<key>Type</key>
@@ -86,19 +84,6 @@
 								<dict>
 									<key>String</key>
 									<string>pdf</string>
-								</dict>
-							</dict>
-							<dict>
-								<key>Operator</key>
-								<integer>4</integer>
-								<key>Property</key>
-								<string>File Extension</string>
-								<key>Removable</key>
-								<true/>
-								<key>Values</key>
-								<dict>
-									<key>String</key>
-									<string>PDF</string>
 								</dict>
 							</dict>
 						</array>
@@ -158,12 +143,12 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.text</string>
+			<string>is.workflow.actions.text.split</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>B2BF6CA8-EFB7-46C0-AA80-8CC3BFB7212D</string>
-				<key>WFInput</key>
+				<string>3DEC1863-4120-4E8C-869F-AC1CB88F86F0</string>
+				<key>text</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -195,6 +180,8 @@
 				<string>F8CB225C-9648-4934-B9B8-A8C7C1C31877</string>
 				<key>WFChooseFromListActionPrompt</key>
 				<string>🤖 Which book?</string>
+				<key>WFChooseFromListActionSelectMultiple</key>
+				<true/>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -237,6 +224,31 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.each</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E73E7E2A-60C1-4E67-9CE2-0ACEB520CE55</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>If Result</string>
+						<key>OutputUUID</key>
+						<string>FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.filter.files</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -269,12 +281,10 @@
 											<dict>
 												<key>{0, 1}</key>
 												<dict>
-													<key>OutputName</key>
-													<string>If Result</string>
-													<key>OutputUUID</key>
-													<string>FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0</string>
 													<key>Type</key>
-													<string>ActionOutput</string>
+													<string>Variable</string>
+													<key>VariableName</key>
+													<string>Repeat Item</string>
 												</dict>
 											</dict>
 											<key>string</key>
@@ -581,12 +591,10 @@
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>OutputName</key>
-						<string>If Result</string>
-						<key>OutputUUID</key>
-						<string>FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0</string>
 						<key>Type</key>
-						<string>ActionOutput</string>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -1068,7 +1076,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>AudiblePDFs</string>
+						<string>File</string>
 						<key>OutputUUID</key>
 						<string>6DCEB9C7-D913-4955-B7CE-A06511989597</string>
 						<key>Type</key>
@@ -1164,12 +1172,10 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
-								<key>OutputName</key>
-								<string>If Result</string>
-								<key>OutputUUID</key>
-								<string>FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0</string>
 								<key>Type</key>
-								<string>ActionOutput</string>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -1228,23 +1234,10 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
-								<key>Aggrandizements</key>
-								<array>
-									<dict>
-										<key>PropertyName</key>
-										<string>Name</string>
-										<key>PropertyUserInfo</key>
-										<string>WFItemName</string>
-										<key>Type</key>
-										<string>WFPropertyVariableAggrandizement</string>
-									</dict>
-								</array>
-								<key>OutputName</key>
-								<string>If Result</string>
-								<key>OutputUUID</key>
-								<string>FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0</string>
 								<key>Type</key>
-								<string>ActionOutput</string>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -1385,7 +1378,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>AudiblePDFs</string>
+						<string>File</string>
 						<key>OutputUUID</key>
 						<string>6DCEB9C7-D913-4955-B7CE-A06511989597</string>
 						<key>Type</key>
@@ -1464,6 +1457,19 @@
 			<dict>
 				<key>GroupingIdentifier</key>
 				<string>14F862A6-FE7A-4CCA-9943-ADE141659C86</string>
+				<key>UUID</key>
+				<string>E7948785-7E7B-4BAF-82E4-8C5194F83898</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.each</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E73E7E2A-60C1-4E67-9CE2-0ACEB520CE55</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>

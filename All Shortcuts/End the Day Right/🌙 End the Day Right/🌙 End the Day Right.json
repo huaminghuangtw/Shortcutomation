@@ -285,6 +285,14 @@
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Flagged"
                             }
                         ]
                     },
@@ -336,8 +344,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "Review Memories",
-                "CustomOutputName": "Review Memories",
+                "WFTextActionText": "Review Photos",
+                "CustomOutputName": "Review Photos",
                 "UUID": "9B4BB8F0-BFD7-42C5-9E26-19E2BB2A81C8"
             }
         },
@@ -407,7 +415,7 @@
                     "Value": {
                         "OutputUUID": "9B4BB8F0-BFD7-42C5-9E26-19E2BB2A81C8",
                         "Type": "ActionOutput",
-                        "OutputName": "Review Memories"
+                        "OutputName": "Review Photos"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -417,8 +425,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "D0CBDF56-C158-4DC6-924E-4A514ABE71B2",
-                "WFControlFlowMode": 2
+                "UUID": "CF7B7466-7772-4098-8F8A-06854AF29A3D"
             }
         },
         {
@@ -522,7 +531,79 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "123B682D-AB02-4CE0-9571-A34E7AD0B46F",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "B1AC6655-0C00-4A17-B24D-F5177C9349DD",
+                    "workflowName": "isEndOfMonth",
+                    "isSelf": false
+                },
+                "UUID": "E39DE007-C6B6-43DB-B353-3FC7B3AF18F6",
+                "WFWorkflowName": "isEndOfMonth"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "E39DE007-C6B6-43DB-B353-3FC7B3AF18F6",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "4FB2EAD8-6D46-4ACD-8E5C-513F1D7F1EE3",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5C540A8A-BB65-46A1-B5B6-2774506E5C8B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Review Strava Activities"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "shortcutsToBeRun"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4FB2EAD8-6D46-4ACD-8E5C-513F1D7F1EE3",
                 "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "123B682D-AB02-4CE0-9571-A34E7AD0B46F",
+                "UUID": "F2A5381D-9B77-405C-BEB6-74CA18D29563"
             }
         },
         {
