@@ -12,7 +12,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.file",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "AudiblePDFs",
                 "WFFile": {
                     "fileLocation": {
                         "relativeSubpath": "com~apple~CloudDocs/MyFiles/AudiblePDFs",
@@ -21,7 +20,7 @@
                         "WFFileLocationType": "iCloud"
                     },
                     "filename": "AudiblePDFs",
-                    "displayName": "AudiblePDFs"
+                    "displayName": "PDFs"
                 },
                 "UUID": "6DCEB9C7-D913-4955-B7CE-A06511989597"
             }
@@ -33,7 +32,7 @@
                     "Value": {
                         "OutputUUID": "6DCEB9C7-D913-4955-B7CE-A06511989597",
                         "Type": "ActionOutput",
-                        "OutputName": "AudiblePDFs"
+                        "OutputName": "File"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -67,14 +66,6 @@
                                 },
                                 "Removable": true,
                                 "Property": "File Extension"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "String": "PDF"
-                                },
-                                "Removable": true,
-                                "Property": "File Extension"
                             }
                         ]
                     },
@@ -100,15 +91,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "text": {
                     "Value": {
                         "Type": "ExtensionInput"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "B2BF6CA8-EFB7-46C0-AA80-8CC3BFB7212D"
+                "UUID": "3DEC1863-4120-4E8C-869F-AC1CB88F86F0"
             }
         },
         {
@@ -121,7 +112,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Which book?",
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
@@ -137,7 +127,9 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "F8CB225C-9648-4934-B9B8-A8C7C1C31877"
+                "WFChooseFromListActionPrompt": "🤖 Which book?",
+                "UUID": "F8CB225C-9648-4934-B9B8-A8C7C1C31877",
+                "WFChooseFromListActionSelectMultiple": true
             }
         },
         {
@@ -146,6 +138,21 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "8443B6C8-A746-4003-ACE0-DFC1FDB62845",
                 "UUID": "FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "E73E7E2A-60C1-4E67-9CE2-0ACEB520CE55",
+                "WFControlFlowMode": 0
             }
         },
         {
@@ -176,9 +183,8 @@
                                             "string": "￼",
                                             "attachmentsByRange": {
                                                 "{0, 1}": {
-                                                    "OutputUUID": "FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0",
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "If Result"
+                                                    "VariableName": "Repeat Item",
+                                                    "Type": "Variable"
                                                 }
                                             }
                                         },
@@ -353,9 +359,8 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -647,7 +652,7 @@
                     "Value": {
                         "OutputUUID": "6DCEB9C7-D913-4955-B7CE-A06511989597",
                         "Type": "ActionOutput",
-                        "OutputName": "AudiblePDFs"
+                        "OutputName": "File"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -716,9 +721,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0",
-                                "Type": "ActionOutput",
-                                "OutputName": "If Result"
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -754,16 +758,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "If Result",
-                                "OutputUUID": "FCEE9C3D-F7AF-4964-894A-42DA33B4A0E0",
-                                "Aggrandizements": [
-                                    {
-                                        "PropertyUserInfo": "WFItemName",
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "Name"
-                                    }
-                                ]
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
                             }
                         }
                     },
@@ -835,7 +831,7 @@
                     "Value": {
                         "OutputUUID": "6DCEB9C7-D913-4955-B7CE-A06511989597",
                         "Type": "ActionOutput",
-                        "OutputName": "AudiblePDFs"
+                        "OutputName": "File"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -882,7 +878,15 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "14F862A6-FE7A-4CCA-9943-ADE141659C86",
+                "UUID": "E7948785-7E7B-4BAF-82E4-8C5194F83898"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E73E7E2A-60C1-4E67-9CE2-0ACEB520CE55",
                 "WFControlFlowMode": 2
             }
         },

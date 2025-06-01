@@ -457,6 +457,19 @@
 									<false/>
 								</dict>
 							</dict>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Is Flagged</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>Bool</key>
+									<false/>
+								</dict>
+							</dict>
 						</array>
 						<key>WFContentPredicateBoundedDate</key>
 						<false/>
@@ -546,11 +559,11 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
-				<string>Review Memories</string>
+				<string>Review Photos</string>
 				<key>UUID</key>
 				<string>9B4BB8F0-BFD7-42C5-9E26-19E2BB2A81C8</string>
 				<key>WFTextActionText</key>
-				<string>Review Memories</string>
+				<string>Review Photos</string>
 			</dict>
 		</dict>
 		<dict>
@@ -661,7 +674,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Review Memories</string>
+						<string>Review Photos</string>
 						<key>OutputUUID</key>
 						<string>9B4BB8F0-BFD7-42C5-9E26-19E2BB2A81C8</string>
 						<key>Type</key>
@@ -681,6 +694,8 @@
 			<dict>
 				<key>GroupingIdentifier</key>
 				<string>D0CBDF56-C158-4DC6-924E-4A514ABE71B2</string>
+				<key>UUID</key>
+				<string>CF7B7466-7772-4098-8F8A-06854AF29A3D</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -853,6 +868,124 @@
 			<dict>
 				<key>GroupingIdentifier</key>
 				<string>123B682D-AB02-4CE0-9571-A34E7AD0B46F</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>E39DE007-C6B6-43DB-B353-3FC7B3AF18F6</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>CurrentDate</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>B1AC6655-0C00-4A17-B24D-F5177C9349DD</string>
+					<key>workflowName</key>
+					<string>isEndOfMonth</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>isEndOfMonth</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4FB2EAD8-6D46-4ACD-8E5C-513F1D7F1EE3</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>CoercionItemClass</key>
+									<string>WFBooleanContentItem</string>
+									<key>Type</key>
+									<string>WFCoercionVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>OutputName</key>
+							<string>Shortcut Result</string>
+							<key>OutputUUID</key>
+							<string>E39DE007-C6B6-43DB-B353-3FC7B3AF18F6</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.appendvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Review Strava Activities</string>
+						<key>OutputUUID</key>
+						<string>5C540A8A-BB65-46A1-B5B6-2774506E5C8B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>shortcutsToBeRun</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4FB2EAD8-6D46-4ACD-8E5C-513F1D7F1EE3</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>123B682D-AB02-4CE0-9571-A34E7AD0B46F</string>
+				<key>UUID</key>
+				<string>F2A5381D-9B77-405C-BEB6-74CA18D29563</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>

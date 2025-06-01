@@ -1,0 +1,123 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDateContentItem"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "34048DC5-F479-465C-9069-C6AD0B0CFEA4",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "hr",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "BA42B064-2EC1-4C46-8610-1F6C424C30F2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BA42B064-2EC1-4C46-8610-1F6C424C30F2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Adjusted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+                    "workflowName": "Prefix Chinese AM or PM",
+                    "isSelf": false
+                },
+                "UUID": "2154A427-7F84-49F5-A934-AC7A39FBB607",
+                "WFWorkflowName": "Prefix Chinese AM or PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "今日￼ 點至￼ 點",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "34048DC5-F479-465C-9069-C6AD0B0CFEA4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "2154A427-7F84-49F5-A934-AC7A39FBB607",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

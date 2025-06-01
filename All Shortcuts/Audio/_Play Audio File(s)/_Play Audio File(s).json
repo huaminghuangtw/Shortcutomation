@@ -1,0 +1,261 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "0AFD6250-2311-4E1D-82A7-61228C3BDE74"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+            "WFWorkflowActionParameters": {
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "com~apple~CloudDocs/MyFiles/AudioFiles",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/5CAADC07-1E95-4D41-81DF-31C027139BFD/0a3fcbccac96b9aef6f200b9e3fb694f24a540cc",
+                        "WFFileLocationType": "iCloud"
+                    },
+                    "filename": "AudioFiles",
+                    "displayName": "AudioFiles"
+                },
+                "UUID": "B2D12C38-92F6-4EA2-8390-F0A33D16EB1A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "B2D12C38-92F6-4EA2-8390-F0A33D16EB1A",
+                        "Type": "ActionOutput",
+                        "OutputName": "File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "4234571E-4EB8-4C64-A5E7-971799F54C19",
+                "Recursive": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "4234571E-4EB8-4C64-A5E7-971799F54C19",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemSortProperty": "Name",
+                "UUID": "3D772293-CE0E-4D13-BCA7-A9EDC49BC8F4",
+                "WFContentItemSortOrder": "A to Z",
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 8,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Dictionary",
+                                                    "OutputUUID": "0AFD6250-2311-4E1D-82A7-61228C3BDE74",
+                                                    "Aggrandizements": [
+                                                        {
+                                                            "Type": "WFDictionaryValueVariableAggrandizement",
+                                                            "DictionaryKey": "filename"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0AFD6250-2311-4E1D-82A7-61228C3BDE74",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "setTimer",
+                "UUID": "2C2F33D8-3913-4745-9240-A6E9D1CCEF53",
+                "WFGetDictionaryValueType": "Value",
+                "WFDictionaryKey": "setTimer"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "setTimer",
+                            "OutputUUID": "2C2F33D8-3913-4745-9240-A6E9D1CCEF53",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "53B63971-CFC5-4765-B1F8-EF1696792CC5",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3D772293-CE0E-4D13-BCA7-A9EDC49BC8F4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BE60F58-7FC9-4DA6-86D2-31571B5A58E1",
+                    "workflowName": "Format Duration To Seconds",
+                    "isSelf": false
+                },
+                "UUID": "D66F45EB-829B-416C-9A8C-A51D6DA6A83D",
+                "WFWorkflowName": "Format Duration To Seconds"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
+            "WFWorkflowActionParameters": {
+                "IntentAppDefinition": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.clock",
+                    "Name": "Clock",
+                    "ExtensionBundleIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobiletimer",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "INCreateTimerIntent"
+                },
+                "UUID": "654F1D14-529C-4DFC-91E7-29B3824342E9",
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "sec",
+                        "Magnitude": {
+                            "OutputUUID": "D66F45EB-829B-416C-9A8C-A51D6DA6A83D",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "53B63971-CFC5-4765-B1F8-EF1696792CC5",
+                "UUID": "4A6B5A43-56CC-4889-9637-5CB78CD7E40E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3D772293-CE0E-4D13-BCA7-A9EDC49BC8F4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "8A9F6914-B60C-459F-AE8C-1611D23ACB14",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8A9F6914-B60C-459F-AE8C-1611D23ACB14",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

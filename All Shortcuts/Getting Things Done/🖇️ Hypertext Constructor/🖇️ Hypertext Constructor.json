@@ -21,6 +21,30 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.TruncateTextIntent",
+            "WFWorkflowActionParameters": {
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "TruncateTextIntent"
+                },
+                "UUID": "508E65FE-A6B5-4E53-93A2-645D53383390",
+                "maximumLength": "48",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -28,7 +52,9 @@
                         "string": "￼\n👉 ￼\n￼",
                         "attachmentsByRange": {
                             "{5, 1}": {
-                                "Type": "ExtensionInput"
+                                "OutputUUID": "508E65FE-A6B5-4E53-93A2-645D53383390",
+                                "Type": "ActionOutput",
+                                "OutputName": "Truncated Text"
                             },
                             "{7, 1}": {
                                 "OutputUUID": "835E10CA-A383-4EBA-B214-4AD19669567C",
@@ -253,9 +279,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAllowsMultilineText": false,
+                "WFAllowsMultilineText": true,
                 "UUID": "C82E6E4C-59E4-44B9-9A77-7B34C288F546",
-                "WFInputType": "URL",
+                "WFInputType": "Text",
                 "WFAskActionPrompt": {
                     "Value": {
                         "string": "￼",
@@ -370,9 +396,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "4FD6EE49-B7DF-4AA8-BC89-B47DF1D4CD35",
                             "Type": "ActionOutput",
-                            "OutputName": "Current App"
+                            "OutputName": "Current App",
+                            "OutputUUID": "4FD6EE49-B7DF-4AA8-BC89-B47DF1D4CD35",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -382,7 +415,7 @@
                     "Name": "Obsidian",
                     "TeamIdentifier": "6JSW4SJWN9"
                 },
-                "WFConditionalActionString": "Insert Custom Link",
+                "WFConditionalActionString": "Obsidian",
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "3D35A8EE-BD49-4992-8783-DB0AAC530F1B",
                 "WFCondition": 4

@@ -1,0 +1,647 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "761056E9-FCB0-4054-AF6F-6A166FE74987"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "5D98426C-B360-4E8B-BC2D-795BC3FC8066",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "0F81767E-0B51-4B20-835A-C774952C6054"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "5D98426C-B360-4E8B-BC2D-795BC3FC8066",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🔎 What are you looking for?\n      → Queries are case-sensitive\n￼\n📋 Tap \"Done\" to open Reminders",
+                        "attachmentsByRange": {
+                            "{64, 1}": {
+                                "OutputUUID": "761056E9-FCB0-4054-AF6F-6A166FE74987",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C3F26C0F-CACB-4AA1-AD14-844E5595302D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "WFAskActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C3F26C0F-CACB-4AA1-AD14-844E5595302D",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "99BCFF55-7290-4942-9633-2E7BD3E9D991"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "5D98426C-B360-4E8B-BC2D-795BC3FC8066",
+                "UUID": "DE67A79B-93EA-47BE-9C1E-10F1AA16642F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "DE67A79B-93EA-47BE-9C1E-10F1AA16642F",
+                            "Type": "ActionOutput",
+                            "OutputName": "If Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C8B64442-1983-478B-85D4-BF08BF8ECFD6",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": false,
+                "UUID": "A2AACC77-1E6D-4DB2-926F-C71EE2E41CEC",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 99,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "DE67A79B-93EA-47BE-9C1E-10F1AA16642F",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "If Result"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "A2AACC77-1E6D-4DB2-926F-C71EE2E41CEC",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "42B5896D-BC33-42B3-A9A0-070E84A9F624",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "A2AACC77-1E6D-4DB2-926F-C71EE2E41CEC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9900C9D7-B8AD-4127-A358-FF4B8A7D2F31"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "0FB1D7CD-DC72-42A0-8E2A-BE71DC2B7B5F",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "9900C9D7-B8AD-4127-A358-FF4B8A7D2F31",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A2AACC77-1E6D-4DB2-926F-C71EE2E41CEC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "6B101B55-0774-490C-B6CB-584FDF3AE920",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "Repeat Item",
+                            "Type": "Variable",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Notes"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C52EEBBF-C061-42E9-B5AB-6182F69CDD6F",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "[@ ￼] ￼",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Notes"
+                                    }
+                                ]
+                            },
+                            "{3, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "List"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C52EEBBF-C061-42E9-B5AB-6182F69CDD6F",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "[@ ￼]",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "List"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "3772A60C-AC75-45D7-A50C-C791A2018ED6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C52EEBBF-C061-42E9-B5AB-6182F69CDD6F",
+                "UUID": "A4260538-7952-4E8E-B612-F5F1A134DCCA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFDictionaryValue": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "A4260538-7952-4E8E-B612-F5F1A134DCCA",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6BCADDC3-3368-4BA3-9284-239EBE0156A1",
+                "WFDictionary": {
+                    "Value": {
+                        "VariableName": "dict",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6BCADDC3-3368-4BA3-9284-239EBE0156A1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "dict"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "6B101B55-0774-490C-B6CB-584FDF3AE920",
+                "UUID": "3C89956C-608E-4B6D-8E2C-51AEF5B2F12E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "💁🏽‍♂️ ￼ Results Found\n￼\n🤖 Which one?",
+                        "attachmentsByRange": {
+                            "{24, 1}": {
+                                "OutputUUID": "761056E9-FCB0-4054-AF6F-6A166FE74987",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{8, 1}": {
+                                "OutputUUID": "9900C9D7-B8AD-4127-A358-FF4B8A7D2F31",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C78905E4-8B51-4B64-B886-49E4E021023A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C78905E4-8B51-4B64-B886-49E4E021023A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "dict",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8E07AC6D-6233-4B3E-BB77-F8474A66AAA9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "0FB1D7CD-DC72-42A0-8E2A-BE71DC2B7B5F",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders",
+                        "OutputUUID": "A2AACC77-1E6D-4DB2-926F-C71EE2E41CEC",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "2063B83B-C9F8-4892-8780-875E94970E7D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "0FB1D7CD-DC72-42A0-8E2A-BE71DC2B7B5F",
+                "UUID": "3AB5FC68-5ED2-434B-9E31-89A27A5AD1F3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "A2AACC77-1E6D-4DB2-926F-C71EE2E41CEC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "UUID": "69A45D58-6A88-48E1-8E23-11A1072F47BE",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 99,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "If Result",
+                                                    "OutputUUID": "3AB5FC68-5ED2-434B-9E31-89A27A5AD1F3",
+                                                    "Aggrandizements": [
+                                                        {
+                                                            "PropertyUserInfo": "WFItemName",
+                                                            "Type": "WFPropertyVariableAggrandizement",
+                                                            "PropertyName": "Name"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetReminderIDIntent",
+            "WFWorkflowActionParameters": {
+                "list": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders",
+                        "OutputUUID": "69A45D58-6A88-48E1-8E23-11A1072F47BE",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "List"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "reminder": {
+                    "Value": {
+                        "OutputUUID": "69A45D58-6A88-48E1-8E23-11A1072F47BE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C664A5A5-52FB-4502-A5E2-E69C674F23A0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditReminderIntent",
+            "WFWorkflowActionParameters": {
+                "id": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C664A5A5-52FB-4502-A5E2-E69C674F23A0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Reminder UUID"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "editType": "Open",
+                "UUID": "3BFC9B47-FE00-4152-810C-0D05E280AC97"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "42B5896D-BC33-42B3-A9A0-070E84A9F624",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflowName": "Search Reminders",
+                "WFWorkflow": {
+                    "workflowIdentifier": "C5B5654C-E56D-4BC4-8DD1-7DCDB27FAC10",
+                    "workflowName": "Search Reminders",
+                    "isSelf": true
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "42B5896D-BC33-42B3-A9A0-070E84A9F624",
+                "UUID": "F4C65AF5-0889-40A2-BF25-BBACC15D63E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C8B64442-1983-478B-85D4-BF08BF8ECFD6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFAppIdentifier": "com.apple.reminders",
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.reminders",
+                    "Name": "Reminders",
+                    "TeamIdentifier": "0000000000"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C8B64442-1983-478B-85D4-BF08BF8ECFD6",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}
