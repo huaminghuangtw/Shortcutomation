@@ -1,36 +1,41 @@
-## ✨ 17 New Shortcuts
+## ✨ 19 New Shortcuts
 
-### 👉 [Utilities (1)](https://shortcutomation.com/gallery/utilities)
+### 👉 [Shared (10)](https://shortcutomation.com/gallery/shared)
 
-* [Return to current app until right swipe](https://shortcutomation.com/gallery/utilities/return-to-current-app-until-right-swipe)
+* [🍀 Weekly Mindware Update](https://shortcutomation.com/gallery/shared/weekly-mindware-update)
+* [✉️ Dear Today Me](https://shortcutomation.com/gallery/shared/dear-today-me)
+* [🥙 Brain Food](https://shortcutomation.com/gallery/shared/brain-food)
+* [🌳 Evergreen Lists](https://shortcutomation.com/gallery/shared/evergreen-lists)
+* [🤸‍♀️ Exercise Of The Day](https://shortcutomation.com/gallery/shared/exercise-of-the-day)
+* [🦾 Your Pocket Life Coach](https://shortcutomation.com/gallery/shared/your-pocket-life-coach)
+* [Check Daily Screen Time](https://shortcutomation.com/gallery/shared/check-daily-screen-time)
+* [TrainerDay](https://shortcutomation.com/gallery/shared/trainerday)
+* [Create Notification](https://shortcutomation.com/gallery/shared/create-notification)
+* [每日一句德語](https://shortcutomation.com/gallery/shared/)
 
-### 👉 [Date & Time (11)](https://shortcutomation.com/gallery/date-time)
+### 👉 [Utilities (2)](https://shortcutomation.com/gallery/utilities)
 
-* [isInTheFirstWeekOfTheMonth](https://shortcutomation.com/gallery/date-time/isinthefirstweekofthemonth)
-* [isInTheLastWeekOfTheMonth](https://shortcutomation.com/gallery/date-time/isinthelastweekofthemonth)
-* [isWorkday](https://shortcutomation.com/gallery/date-time/isworkday)
-* [isPublicHoliday](https://shortcutomation.com/gallery/date-time/ispublicholiday)
-* [isMyHoliday](https://shortcutomation.com/gallery/date-time/ismyholiday)
-* [isWeekend](https://shortcutomation.com/gallery/date-time/isweekend)
-* [isStartOfMonth](https://shortcutomation.com/gallery/date-time/isstartofmonth)
-* [isEndOfMonth](https://shortcutomation.com/gallery/date-time/isendofmonth)
-* [isEndOfQuarter](https://shortcutomation.com/gallery/date-time/isendofquarter)
-* [isNewYear'sDay](https://shortcutomation.com/gallery/date-time/isnewyear-sday)
-* [getDatesOnSpecificWeek](https://shortcutomation.com/gallery/date-time/getdatesonspecificweek)
+* [Take Screenshot](https://shortcutomation.com/gallery/utilities/take-screenshot)
+* [Choose AI Prompt](https://shortcutomation.com/gallery/utilities/choose-ai-prompt)
 
-### 👉 [Siri (1)](https://shortcutomation.com/gallery/siri)
+### 👉 [Mindware (1)](https://shortcutomation.com/gallery/mindware)
 
-* [語音諮詢 AI](https://shortcutomation.com/gallery/siri/ai)
+* [_Get Random WMU Item](https://shortcutomation.com/gallery/mindware/get-random-wmu-item)
 
-### 👉 [LifeOS Toolkits (1)](https://shortcutomation.com/gallery/lifeos-toolkits)
+### 👉 [Getting Things Done (1)](https://shortcutomation.com/gallery/getting-things-done)
 
-* [🤖 文字諮詢 AI](https://shortcutomation.com/gallery/lifeos-toolkits/ai)
+* [💾 Backup My Content Repos](https://shortcutomation.com/gallery/getting-things-done/backup-my-content-repos)
 
-### 👉 [Shortcutomation (2)](https://shortcutomation.com/gallery/shortcutomation)
+### 👉 [Automation - Daily (3)](https://shortcutomation.com/gallery/automation-daily)
 
-* [Prepare Folder](https://shortcutomation.com/gallery/shortcutomation/prepare-folder)
-* [Filter Shortcuts Categories](https://shortcutomation.com/gallery/shortcutomation/filter-shortcuts-categories)
+* [＃Add Reminder - Periodic Reflection](https://shortcutomation.com/gallery/automation-daily/add-reminder-periodic-reflection)
+* [＃Add Reminder - Backup Content Repos](https://shortcutomation.com/gallery/automation-daily/add-reminder-backup-content-repos)
+* [＃Add Reminder - Review Yesterday in My Life](https://shortcutomation.com/gallery/automation-daily/add-reminder-review-yesterday-in-my-life)
 
-### 👉 [End the Day Right (1)](https://shortcutomation.com/gallery/end-the-day-right)
+### 👉 [Automation - Weekly (1)](https://shortcutomation.com/gallery/automation-weekly)
 
-* [Celebrate Small Wins](https://shortcutomation.com/gallery/end-the-day-right/celebrate-small-wins)
+* [Sunday::Add Reminder - Backup Shortcuts Library](https://shortcutomation.com/gallery/automation-weekly/sunday-add-reminder-backup-shortcuts-library)
+
+### 👉 [Obsidian URI (1)](https://shortcutomation.com/gallery/obsidian-uri)
+
+* [Obsidian - Close Specific Tab(s) By Filepath](https://shortcutomation.com/gallery/obsidian-uri/obsidian-close-specific-tab-s-by-filepath)

@@ -80,9 +80,40 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.takescreenshot",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "UUID": "B0E82BD1-C50B-4EA0-8793-4DCCFA9329E1"
+                "WFWorkflow": {
+                    "workflowIdentifier": "538B4120-00FA-4E1D-8C95-A755F44F1310",
+                    "workflowName": "Extract Text from Screenshot",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Extract Text from Screenshot",
+                "UUID": "5C2A7A31-F745-49AE-84CB-E10737771F35"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "5C2A7A31-F745-49AE-84CB-E10737771F35",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "screenshotImage"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFEncodeMode": "Decode",
+                "UUID": "E49D6371-5373-4B85-9805-E72230FFDDC9"
             }
         },
         {
@@ -152,7 +183,7 @@
                                 },
                                 "WFValue": {
                                     "Value": [
-                                        "📥 Add to Inbox",
+                                        "🐧 Log Journal",
                                         "❝ Capture Quotes",
                                         "📋 Copy to Clipboard",
                                         "⤴️ Share with Others"
@@ -551,33 +582,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "6BF9D073-B7A1-4226-B9FF-522FE1E9B9EC",
-                        "Type": "ActionOutput",
-                        "OutputName": "Menu Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "328EB3FC-0980-46EC-AA21-855E3F90824F",
-                    "workflowName": "Strip Leading Symbol",
-                    "isSelf": false
-                },
-                "UUID": "0C34F971-1657-4648-A5DB-987D2AE9D1B8",
-                "WFWorkflowName": "Strip Leading Symbol"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.correctspelling",
             "WFWorkflowActionParameters": {
                 "text": {
                     "Value": {
-                        "OutputUUID": "0C34F971-1657-4648-A5DB-987D2AE9D1B8",
+                        "OutputUUID": "6BF9D073-B7A1-4226-B9FF-522FE1E9B9EC",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "Menu Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -801,36 +812,37 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "📥 Add to Inbox",
-                "GroupingIdentifier": "15514D57-8FE9-4637-91A2-4C38AB8CBFEE",
+                "WFConditionalActionString": "🐧 Log Journal",
+                "GroupingIdentifier": "297D75D0-D2F9-40EF-A971-0B7987E58435",
                 "WFCondition": 4
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFCalendarItemTitle": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "FCB2FD85-7EE2-424B-B720-5EACEB41E4E2",
-                                "Type": "ActionOutput",
-                                "OutputName": "Clipboard"
-                            }
-                        }
+                        "OutputUUID": "FCB2FD85-7EE2-424B-B720-5EACEB41E4E2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Clipboard"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "027C66B6-A3A2-445A-A34F-3C2FDBC2406A"
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "🐧 Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "02CC94E1-C38F-4122-B5C6-CA9E5DC2A56E",
+                "WFWorkflowName": "🐧 Log Journal"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "15514D57-8FE9-4637-91A2-4C38AB8CBFEE",
-                "UUID": "7244A346-C6E2-4098-84A5-735126957C87"
+                "GroupingIdentifier": "297D75D0-D2F9-40EF-A971-0B7987E58435",
+                "UUID": "E1BA388E-7DAF-4BDB-9505-48CA6A339C6A"
             }
         },
         {
@@ -883,59 +895,6 @@
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "C0D432CA-0F82-4041-ACAB-AA801F95F0AC",
                 "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "D344A3DA-71F8-410B-8240-4541E6806D70",
-                            "Type": "ActionOutput",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "🐧 Log Journal",
-                "GroupingIdentifier": "297D75D0-D2F9-40EF-A971-0B7987E58435",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "FCB2FD85-7EE2-424B-B720-5EACEB41E4E2",
-                        "Type": "ActionOutput",
-                        "OutputName": "Clipboard"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
-                    "workflowName": "🐧 Log Journal",
-                    "isSelf": false
-                },
-                "UUID": "02CC94E1-C38F-4122-B5C6-CA9E5DC2A56E",
-                "WFWorkflowName": "🐧 Log Journal"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "297D75D0-D2F9-40EF-A971-0B7987E58435",
-                "UUID": "E1BA388E-7DAF-4BDB-9505-48CA6A339C6A"
             }
         },
         {

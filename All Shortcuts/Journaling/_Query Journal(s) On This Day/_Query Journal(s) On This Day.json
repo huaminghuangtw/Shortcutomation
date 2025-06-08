@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -10,16 +10,27 @@
         "WFStringContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
-    "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "Current Date",
-                "UUID": "12780D1F-0079-4E8F-A81F-DDC12F0A6805",
-                "WFDateActionMode": "Current Date",
-                "WFDateActionDate": "Yesterday"
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date"
             }
-        },
+        }
+    },
+    "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
             "WFWorkflowActionParameters": {
@@ -32,9 +43,13 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "12780D1F-0079-4E8F-A81F-DDC12F0A6805",
-                                "Type": "ActionOutput",
-                                "OutputName": "Current Date"
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -129,15 +144,9 @@
                                             "string": "￼",
                                             "attachmentsByRange": {
                                                 "{0, 1}": {
-                                                    "Type": "CurrentDate",
-                                                    "Aggrandizements": [
-                                                        {
-                                                            "WFDateFormatStyle": "Custom",
-                                                            "Type": "WFDateFormatVariableAggrandizement",
-                                                            "WFDateFormat": "yyyy",
-                                                            "WFISO8601IncludeTime": false
-                                                        }
-                                                    ]
+                                                    "OutputUUID": "9BBF1E12-1470-4416-A33A-EE8CB2CCF6FB",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "This Year"
                                                 }
                                             }
                                         },
@@ -190,9 +199,13 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "12780D1F-0079-4E8F-A81F-DDC12F0A6805",
-                                "Type": "ActionOutput",
-                                "OutputName": "Current Date"
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -336,9 +349,9 @@
             "Text": "Database ID"
         }
     ],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch"
     ],
-    "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": false
+    "WFWorkflowHasShortcutInputVariables": true
 }

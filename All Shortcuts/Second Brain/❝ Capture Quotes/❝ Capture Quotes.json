@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1113",
-    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowMinimumClientVersionString": "3216",
+    "WFWorkflowMinimumClientVersion": 3216,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": -1448498689,
         "WFWorkflowIconGlyphNumber": 61440
@@ -53,13 +53,91 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getcurrentapp",
+            "WFWorkflowActionParameters": {
+                "UUID": "ED7AA74A-B9EF-4EE1-907B-B54027D4846A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "ED7AA74A-B9EF-4EE1-907B-B54027D4846A",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current App"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFApp": {
+                    "BundleIdentifier": "md.obsidian",
+                    "Name": "Obsidian",
+                    "TeamIdentifier": "6JSW4SJWN9"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B71A955F-5CAA-4936-AC7B-A8CFAD305D32",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "> _￼_",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "OutputUUID": "F1E69A3C-8D82-4692-9730-987BFEA5BEA8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6B52335B-F203-485F-BF0E-F705D127B64E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B71A955F-5CAA-4936-AC7B-A8CFAD305D32",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "F1E69A3C-8D82-4692-9730-987BFEA5BEA8",
                         "Type": "ActionOutput",
                         "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "1739F337-A598-400B-913F-CBB755B0D7E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B71A955F-5CAA-4936-AC7B-A8CFAD305D32",
+                "UUID": "04E40138-402A-4CB7-B619-0E51D0DB3BA6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "04E40138-402A-4CB7-B619-0E51D0DB3BA6",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -83,8 +161,8 @@
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
-        "ActionExtension",
-        "QuickActions"
+        "QuickActions",
+        "ActionExtension"
     ],
     "WFWorkflowHasShortcutInputVariables": true
 }
