@@ -1,10 +1,10 @@
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 579  
-* **Total Actions:** 8955  
-* **Categories Covered:** 69  
-* **Average Actions per Shortcut:** 15  
-* **A Typical Shortcut Uses 9+ Actions**  
+* **Total Shortcuts:** 586  
+* **Total Actions:** 9251  
+* **Categories Covered:** 70  
+* **Average Actions per Shortcut:** 16  
+* **A Typical Shortcut Uses 10+ Actions**  
 
 ### 🏅 Top 5 Most Complex Shortcuts
   
@@ -14,9 +14,9 @@
   | :---: | :---: | :---: |
   | 1️⃣ | [_EvergreenList to Markdown](https://shortcutomation.com/gallery/getting-things-done/evergreenlist-to-markdown) | 157 |
   | 2️⃣ | [5::Share Deep Work Stats](https://shortcutomation.com/gallery/automation-monthly/5-share-deep-work-stats) | 119 |
-  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 117 |
-  | 4️⃣ | [Backup All Shortcuts](https://shortcutomation.com/gallery/shortcutomation/backup-all-shortcuts) | 100 |
-  | 5️⃣ | [⤴️ Boot Up Sequence](https://shortcutomation.com/gallery/getting-things-done/boot-up-sequence) | 91 |
+  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 115 |
+  | 4️⃣ | [Backup All Shortcuts](https://shortcutomation.com/gallery/shortcutomation/backup-all-shortcuts) | 101 |
+  | 5️⃣ | [⤴️ Boot Up Sequence](https://shortcutomation.com/gallery/getting-things-done/boot-up-sequence) | 89 |
 
   </div>
 

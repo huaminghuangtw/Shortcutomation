@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -8,17 +8,43 @@
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date"
+            }
+        }
+    },
     "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "journal(s)",
+                "UUID": "AFCDBAF3-AE16-4C0C-B631-FEB966869D22",
                 "WFWorkflow": {
                     "workflowIdentifier": "DEBDD29E-F135-4ECE-AF74-CC2B8DC57AD5",
                     "workflowName": "_Query Journal(s) On This Day",
                     "isSelf": false
                 },
-                "CustomOutputName": "journal(s)",
-                "UUID": "AFCDBAF3-AE16-4C0C-B631-FEB966869D22",
                 "WFWorkflowName": "_Query Journal(s) On This Day"
             }
         },
@@ -134,8 +160,12 @@
                         "string": "💁🏽 ￼ on ￼",
                         "attachmentsByRange": {
                             "{10, 1}": {
-                                "Type": "CurrentDate",
+                                "Type": "ExtensionInput",
                                 "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
                                     {
                                         "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
@@ -155,15 +185,76 @@
                 },
                 "WFAlertActionTitle": ""
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3BA0CABC-457C-4350-ACBB-781626D4F1DF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "491C8783-AD6C-49E3-987F-A9B2D8F53525",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "filepath",
+                "UUID": "FB48ED71-180F-498E-ACE0-A0B0A12BEA6A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "491C8783-AD6C-49E3-987F-A9B2D8F53525",
+                "UUID": "555E5303-6F0D-4474-858C-8C1249B373E8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "555E5303-6F0D-4474-858C-8C1249B373E8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "6BD17801-7B40-4AE4-9D98-76537FC64E87",
+                    "workflowName": "Obsidian - Close Specific Tab By Filepath",
+                    "isSelf": false
+                },
+                "UUID": "090F36E9-5D5A-44BE-83A8-3962091A4AC8",
+                "WFWorkflowName": "Obsidian - Close Specific Tab By Filepath"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
         "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch"
     ],
-    "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": false
+    "WFWorkflowHasShortcutInputVariables": true
 }

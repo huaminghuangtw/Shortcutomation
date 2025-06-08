@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -8,17 +8,43 @@
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date"
+            }
+        }
+    },
     "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "activityIDs",
+                "UUID": "B2CF1611-0B32-4B32-A04B-776619169D10",
                 "WFWorkflow": {
                     "workflowIdentifier": "376531DB-1250-44A4-9615-A5F8701491B8",
                     "workflowName": "Get IDs Of Strava Activities With Media On This Day",
                     "isSelf": false
                 },
-                "CustomOutputName": "activityIDs",
-                "UUID": "B2CF1611-0B32-4B32-A04B-776619169D10",
                 "WFWorkflowName": "Get IDs Of Strava Activities With Media On This Day"
             }
         },
@@ -206,8 +232,12 @@
                         "string": "💁🏽 ￼ on ￼",
                         "attachmentsByRange": {
                             "{10, 1}": {
-                                "Type": "CurrentDate",
+                                "Type": "ExtensionInput",
                                 "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
                                     {
                                         "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
@@ -241,12 +271,12 @@
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFStringContentItem"
+        "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch"
     ],
-    "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": false
+    "WFWorkflowHasShortcutInputVariables": true
 }
