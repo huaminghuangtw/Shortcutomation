@@ -10,6 +10,16 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
+            "WFWorkflowActionParameters": {
+                "WFPlayPauseBehavior": "Pause",
+                "WFMediaRoute": {
+                    "routeUID": "Speaker",
+                    "isLocalDevice": true
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -28,12 +38,89 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "WFPlayPauseBehavior": "Pause",
-                "WFMediaRoute": {
-                    "routeUID": "Speaker",
-                    "isLocalDevice": true
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "topic"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Productivity"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "AB5CA3B5-3D0E-4517-905E-08A0182DCDDC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AB5CA3B5-3D0E-4517-905E-08A0182DCDDC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "B9AD53B7-9843-4075-9386-FC80989F9C27",
+                    "workflowName": "Get Random Journal Prompt Item(s)",
+                    "isSelf": false
+                },
+                "UUID": "DA7768DC-119C-49F8-97F3-404BEE807ACC",
+                "WFWorkflowName": "Get Random Journal Prompt Item(s)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DA7768DC-119C-49F8-97F3-404BEE807ACC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "FF2507D8-22D2-41D2-B62A-7EACF9B4D9AC",
+                    "workflowName": "Format Text with Text Divider Pair",
+                    "isSelf": false
+                },
+                "UUID": "9A00F52E-EF08-4879-ABAC-137F073CCFE0",
+                "WFWorkflowName": "Format Text with Text Divider Pair"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "9A00F52E-EF08-4879-ABAC-137F073CCFE0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
                 }
             }
         },

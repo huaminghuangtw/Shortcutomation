@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -8,67 +8,33 @@
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
-    "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "0607F58D-E737-4D3B-BBBA-EBC39B78D002",
-                "WFCondition": 100
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "9D0D8130-55F3-43C9-A620-23DC85D4B701"
+                "WFDateActionMode": "Specified Date"
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "0607F58D-E737-4D3B-BBBA-EBC39B78D002",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": "Today",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "BCB790D8-2E12-4643-B7F5-96FA056B9F95"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "0607F58D-E737-4D3B-BBBA-EBC39B78D002",
-                "UUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997"
-            }
-        },
+        }
+    },
+    "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                        "Type": "ActionOutput",
-                        "OutputName": "date"
+                        "Type": "ExtensionInput"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -158,9 +124,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -180,9 +144,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -250,6 +212,58 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼, ￼",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Location",
+                                "OutputUUID": "436F72C7-7CF0-41F8-B0DC-F4DBE8A4B736",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "country",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Country"
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Location",
+                                "OutputUUID": "436F72C7-7CF0-41F8-B0DC-F4DBE8A4B736",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "city",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "City"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AF3AA20B-31C3-43AE-9B32-54ADD0A833D4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AF3AA20B-31C3-43AE-9B32-54ADD0A833D4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "location"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
@@ -275,9 +289,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -303,9 +315,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -387,13 +397,19 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "diaryEntriesCal",
+                "UUID": "9DF4FE21-D15E-415F-86AA-1D8F54C5F901",
                 "WFWorkflow": {
                     "workflowIdentifier": "5CCA8A5A-1EBE-418D-977C-C7614DFD2C4F",
                     "workflowName": "Get Diary Entries for Today's Calendar Events",
                     "isSelf": false
                 },
-                "CustomOutputName": "diaryEntriesCal",
-                "UUID": "9DF4FE21-D15E-415F-86AA-1D8F54C5F901",
                 "WFWorkflowName": "Get Diary Entries for Today's Calendar Events"
             }
         },
@@ -678,43 +694,17 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "---\ndate: ￼\ndayOfWeek: ￼\nweekNumber: ￼\nlocation: ￼, ￼\n￼\n---\n\n# 📝 ￼\n\n◀ [￼](￼.md) | [￼](￼.md) ▶\n\n> _￼_  \n\n￼",
+                        "string": "---\ndate: ￼\ndayOfWeek: ￼\nweekNumber: ￼\nlocation: ￼\n￼\n---\n\n# 📝 ￼\n\n◀ [￼](￼.md) | [￼](￼.md) ▶\n\n> _￼_  \n\n￼",
                         "attachmentsByRange": {
-                            "{52, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Location",
-                                "OutputUUID": "436F72C7-7CF0-41F8-B0DC-F4DBE8A4B736",
-                                "Aggrandizements": [
-                                    {
-                                        "PropertyUserInfo": "country",
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "Country"
-                                    }
-                                ]
-                            },
-                            "{87, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Next",
-                                "OutputUUID": "0DF641A9-AAFA-401D-8AA4-1CB8D0AA6AF9",
-                                "Aggrandizements": [
-                                    {
-                                        "WFDateFormatStyle": "Custom",
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFDateFormat": "../../yyyy/MM-MMMM/yyyy_MM_dd",
-                                        "WFISO8601IncludeTime": false
-                                    }
-                                ]
-                            },
-                            "{75, 1}": {
+                            "{69, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Previous",
                                 "OutputUUID": "3C9BF0CD-48A0-476A-8DA1-3380B5935E44",
                                 "Aggrandizements": [
                                     {
-                                        "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFDateFormat": "../../yyyy/MM-MMMM/yyyy_MM_dd",
-                                        "WFISO8601IncludeTime": false
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
                                     }
                                 ]
                             },
@@ -723,29 +713,12 @@
                                 "Type": "ActionOutput",
                                 "OutputName": "yyyy-MM-dd"
                             },
-                            "{99, 1}": {
-                                "OutputUUID": "4BD9E3C9-CF65-42FC-A9A8-A59418855EB4",
+                            "{51, 1}": {
+                                "OutputUUID": "D331311C-7B84-4F4E-8846-DFCEDDE79AE4",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "Repeat Results"
                             },
-                            "{49, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Location",
-                                "OutputUUID": "436F72C7-7CF0-41F8-B0DC-F4DBE8A4B736",
-                                "Aggrandizements": [
-                                    {
-                                        "PropertyUserInfo": "city",
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "City"
-                                    }
-                                ]
-                            },
-                            "{37, 1}": {
-                                "OutputUUID": "538A133F-F9BA-457F-949C-4D91057770F2",
-                                "Type": "ActionOutput",
-                                "OutputName": "weekNumber"
-                            },
-                            "{84, 1}": {
+                            "{81, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Next",
                                 "OutputUUID": "0DF641A9-AAFA-401D-8AA4-1CB8D0AA6AF9",
@@ -757,10 +730,37 @@
                                     }
                                 ]
                             },
-                            "{66, 1}": {
+                            "{63, 1}": {
                                 "OutputUUID": "4E99DF06-AAC9-42F4-83CC-FEC8DA3D556E",
                                 "Type": "ActionOutput",
                                 "OutputName": "yyyy-MM-dd"
+                            },
+                            "{102, 1}": {
+                                "OutputUUID": "8625965F-F837-4BA3-B923-7137D2073235",
+                                "Type": "ActionOutput",
+                                "OutputName": "Repeat Results"
+                            },
+                            "{49, 1}": {
+                                "VariableName": "location",
+                                "Type": "Variable"
+                            },
+                            "{96, 1}": {
+                                "OutputUUID": "4BD9E3C9-CF65-42FC-A9A8-A59418855EB4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{84, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Next",
+                                "OutputUUID": "0DF641A9-AAFA-401D-8AA4-1CB8D0AA6AF9",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "../../yyyy/MM-MMMM/yyyy_MM_dd",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
                             },
                             "{72, 1}": {
                                 "Type": "ActionOutput",
@@ -768,21 +768,17 @@
                                 "OutputUUID": "3C9BF0CD-48A0-476A-8DA1-3380B5935E44",
                                 "Aggrandizements": [
                                     {
+                                        "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
+                                        "WFDateFormat": "../../yyyy/MM-MMMM/yyyy_MM_dd",
+                                        "WFISO8601IncludeTime": false
                                     }
                                 ]
                             },
-                            "{54, 1}": {
-                                "OutputUUID": "D331311C-7B84-4F4E-8846-DFCEDDE79AE4",
+                            "{37, 1}": {
+                                "OutputUUID": "538A133F-F9BA-457F-949C-4D91057770F2",
                                 "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
-                            },
-                            "{105, 1}": {
-                                "OutputUUID": "8625965F-F837-4BA3-B923-7137D2073235",
-                                "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
+                                "OutputName": "weekNumber"
                             },
                             "{23, 1}": {
                                 "OutputUUID": "CE2D5C0A-DB93-4CDC-B257-0C9284EA1788",
@@ -808,9 +804,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -830,9 +824,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D28DD4FF-C805-4DBB-896F-7C1E8FC32997",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -956,9 +948,9 @@
         "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch"
     ],
-    "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

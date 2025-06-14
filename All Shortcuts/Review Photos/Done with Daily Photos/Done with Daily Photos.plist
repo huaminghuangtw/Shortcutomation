@@ -202,6 +202,54 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.savetocameraroll</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>0F5A3F90-64F3-4884-96E5-2A030D4579DD</string>
+				<key>WFCameraRollSelectedGroup</key>
+				<string>Unsorted</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Shortcut Result</string>
+						<key>OutputUUID</key>
+						<string>84CB1EDB-D756-4671-9695-4A5C04FE0BAC</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.appendvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Saved Photo Media</string>
+						<key>OutputUUID</key>
+						<string>0F5A3F90-64F3-4884-96E5-2A030D4579DD</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>framedScreenshots</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.deletephotos</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -219,29 +267,6 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.appendvariable</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Shortcut Result</string>
-						<key>OutputUUID</key>
-						<string>84CB1EDB-D756-4671-9695-4A5C04FE0BAC</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-				<key>WFVariableName</key>
-				<string>framedScreenshots</string>
 			</dict>
 		</dict>
 		<dict>
@@ -361,13 +386,15 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>com.apple.mobileslideshow.OpenCollectionIntent</string>
+			<string>is.workflow.actions.openapp</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>AppIntentDescriptor</key>
+				<key>UUID</key>
+				<string>95355BE6-EA88-4F63-8072-511A7910C6E5</string>
+				<key>WFAppIdentifier</key>
+				<string>com.apple.mobileslideshow</string>
+				<key>WFSelectedApp</key>
 				<dict>
-					<key>AppIntentIdentifier</key>
-					<string>OpenCollectionIntent</string>
 					<key>BundleIdentifier</key>
 					<string>com.apple.mobileslideshow</string>
 					<key>Name</key>
@@ -375,32 +402,56 @@
 					<key>TeamIdentifier</key>
 					<string>0000000000</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.filter.photos</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
 				<key>UUID</key>
-				<string>85EC6F1E-8C54-4FFA-BD73-43FBB79656B0</string>
-				<key>target</key>
+				<string>3BDD4041-442C-4E25-AA3B-56BF6FB96E26</string>
+				<key>WFContentItemFilter</key>
 				<dict>
-					<key>identifier</key>
-					<string>092E2015-A7EF-40EB-BFA2-2AF0D94D1B1B</string>
-					<key>image</key>
+					<key>Value</key>
 					<dict>
-						<key>storageServiceIdentifier</key>
-						<string>com.apple.Intents.INImageServiceConnection</string>
-						<key>type</key>
-						<string>URL</string>
-						<key>uri</key>
-						<string>intents-remote-image-proxy:?proxyIdentifier=6CCCDE35-080B-CDC5-F09F-9A0716F6085B.png&amp;storageServiceIdentifier=com.apple.Intents.INImageServiceConnection</string>
+						<key>WFActionParameterFilterPrefix</key>
+						<integer>1</integer>
+						<key>WFActionParameterFilterTemplates</key>
+						<array>
+							<dict>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Album</string>
+								<key>Removable</key>
+								<true/>
+								<key>Values</key>
+								<dict>
+									<key>Enumeration</key>
+									<dict>
+										<key>Value</key>
+										<string>Unsorted</string>
+										<key>WFSerializationType</key>
+										<string>WFStringSubstitutableState</string>
+									</dict>
+									<key>Unit</key>
+									<integer>4</integer>
+								</dict>
+							</dict>
+						</array>
+						<key>WFContentPredicateBoundedDate</key>
+						<false/>
 					</dict>
-					<key>subtitle</key>
-					<dict>
-						<key>key</key>
-						<string>Recents</string>
-					</dict>
-					<key>title</key>
-					<dict>
-						<key>key</key>
-						<string>Recents</string>
-					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContentPredicateTableTemplate</string>
 				</dict>
+				<key>WFContentItemLimitEnabled</key>
+				<false/>
+				<key>WFContentItemSortOrder</key>
+				<string>Latest First</string>
+				<key>WFContentItemSortProperty</key>
+				<string>Last Modified Date</string>
 			</dict>
 		</dict>
 		<dict>
@@ -421,30 +472,48 @@
 					<string>WFTextTokenAttachment</string>
 				</dict>
 				<key>UUID</key>
-				<string>649F7E03-8565-42DA-BE36-CACFAB008657</string>
+				<string>2AE681A6-E814-41A2-9AFE-BE48329AE107</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.getlastphoto</string>
+			<string>is.workflow.actions.getitemfromlist</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>8BFB38D7-B175-4353-88F2-CEA22B640DFE</string>
-				<key>WFGetLatestPhotoCount</key>
+				<string>8F640492-EAD1-462A-9826-A16349DAE2FF</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Count</string>
+						<string>Photos</string>
 						<key>OutputUUID</key>
-						<string>649F7E03-8565-42DA-BE36-CACFAB008657</string>
+						<string>3BDD4041-442C-4E25-AA3B-56BF6FB96E26</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+				<key>WFItemRangeEnd</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Count</string>
+						<key>OutputUUID</key>
+						<string>2AE681A6-E814-41A2-9AFE-BE48329AE107</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFItemRangeStart</key>
+				<string>1</string>
+				<key>WFItemSpecifier</key>
+				<string>Items in Range</string>
 			</dict>
 		</dict>
 		<dict>
@@ -461,9 +530,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Latest Photos</string>
+						<string>Item from List</string>
 						<key>OutputUUID</key>
-						<string>8BFB38D7-B175-4353-88F2-CEA22B640DFE</string>
+						<string>8F640492-EAD1-462A-9826-A16349DAE2FF</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -480,13 +549,9 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.setitemname</string>
+			<string>is.workflow.actions.previewdocument</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>UUID</key>
-				<string>24F59003-A594-4FC8-B104-D7376D7FD9A1</string>
-				<key>WFDontIncludeFileExtension</key>
-				<true/>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -499,29 +564,29 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFName</key>
-				<string>‏‎</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.previewdocument</string>
+			<string>is.workflow.actions.removefromalbum</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>E920342C-8853-4EF7-9F89-C2D5C6DAD66C</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>OutputName</key>
-						<string>Renamed Item</string>
-						<key>OutputUUID</key>
-						<string>24F59003-A594-4FC8-B104-D7376D7FD9A1</string>
 						<key>Type</key>
-						<string>ActionOutput</string>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+				<key>WFRemoveAlbumSelectedGroup</key>
+				<string>Unsorted</string>
 			</dict>
 		</dict>
 		<dict>
@@ -534,12 +599,6 @@
 				<key>keyPath</key>
 				<string>My Albums</string>
 			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.vibrate</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict/>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
@@ -568,68 +627,6 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.setitemname</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>50DCF057-DD6F-4B7E-8C0A-D93B22CF9BD6</string>
-				<key>WFDontIncludeFileExtension</key>
-				<true/>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Repeat Item</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-				<key>WFName</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>Aggrandizements</key>
-								<array>
-									<dict>
-										<key>PropertyName</key>
-										<string>Date Taken</string>
-										<key>Type</key>
-										<string>WFPropertyVariableAggrandizement</string>
-									</dict>
-									<dict>
-										<key>Type</key>
-										<string>WFDateFormatVariableAggrandizement</string>
-										<key>WFDateFormat</key>
-										<string>yyyy_MM_dd_HH_mm_ss</string>
-										<key>WFDateFormatStyle</key>
-										<string>Custom</string>
-										<key>WFISO8601IncludeTime</key>
-										<false/>
-									</dict>
-								</array>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.savetocameraroll</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -653,12 +650,10 @@
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>OutputName</key>
-						<string>Renamed Item</string>
-						<key>OutputUUID</key>
-						<string>50DCF057-DD6F-4B7E-8C0A-D93B22CF9BD6</string>
 						<key>Type</key>
-						<string>ActionOutput</string>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
