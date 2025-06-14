@@ -14,6 +14,9 @@ That’s where **[Shortcutomation](https://shortcutomation.com)** comes in: **he
 We believe a world where your phone *serves* you, not *distracts* you.
 
 A world without cluttered apps.
+
 A world free of mindless doomscrolling.
+
 A world where people click less, scroll less, type less.
+
 A world where everyone lives a calmer, more present and intentional life—focused on what truly matters in the real world.

@@ -1,7 +1,7 @@
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 586  
-* **Total Actions:** 9251  
+* **Total Shortcuts:** 591  
+* **Total Actions:** 9344  
 * **Categories Covered:** 70  
 * **Average Actions per Shortcut:** 16  
 * **A Typical Shortcut Uses 10+ Actions**  
@@ -16,7 +16,7 @@
   | 2️⃣ | [5::Share Deep Work Stats](https://shortcutomation.com/gallery/automation-monthly/5-share-deep-work-stats) | 119 |
   | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 115 |
   | 4️⃣ | [Backup All Shortcuts](https://shortcutomation.com/gallery/shortcutomation/backup-all-shortcuts) | 101 |
-  | 5️⃣ | [⤴️ Boot Up Sequence](https://shortcutomation.com/gallery/getting-things-done/boot-up-sequence) | 89 |
+  | 5️⃣ | [＃Add Reminder - Periodic Reflection](https://shortcutomation.com/gallery/automation-daily/add-reminder-periodic-reflection) | 94 |
 
   </div>
 

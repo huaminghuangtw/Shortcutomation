@@ -20,9 +20,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "Format the following text into this format:\n\n“<quote>” — <author>\n\nMake sure to use smart quotes.\n\n￼",
+                        "string": "Format only the first quote from the following text in this exact format — using smart quotes and em dash:\n“<quote>” — <author>\nEnsure the quote ends with a period (add one if missing). Output only the formatted quote, with no explanation or extra text.\n\n￼",
                         "attachmentsByRange": {
-                            "{99, 1}": {
+                            "{255, 1}": {
                                 "Type": "ExtensionInput"
                             }
                         }
@@ -33,13 +33,48 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "prompt"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "416EF7F7-0F22-44B9-957F-ABE332F4D1DA",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "CEDC8870-4A5E-4E68-9525-41D8FC7DD80D"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "416EF7F7-0F22-44B9-957F-ABE332F4D1DA",
+                        "OutputUUID": "CEDC8870-4A5E-4E68-9525-41D8FC7DD80D",
                         "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
