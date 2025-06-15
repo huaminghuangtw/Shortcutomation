@@ -34,7 +34,7 @@ Automate the Boring Stuff with  Apple Shortcuts
 Crafted by
 <a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a>
 with 🌶️ in
-<a href="https://www.google.com/maps/place/K%C3%B8benhavn%20S,%20Denmark">Køʙᴇɴʜᴀᴠɴ S, Dᴇɴᴍᴀʀᴋ</a>
+<a href="https://www.google.com/maps/place/K%C3%B8benhavn%20S,%20Denmark">Køʙᴇɴʜᴀᴠɴ S, Dᴇɴᴍᴀʀᴋ :DK:</a>
 </p>
 
 <p>
