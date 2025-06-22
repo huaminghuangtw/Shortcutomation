@@ -10,6 +10,30 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4410CB20-6E47-4672-8131-05C37AE791C5",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetAudioOutputsIntent",
             "WFWorkflowActionParameters": {
                 "UUID": "14B77D30-946B-4D4C-9EC7-F5A8C4785802"
@@ -43,89 +67,38 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
             "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "🎧"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "BLE Headphone"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "🔊"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "BLE Speaker"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "FF1C1218-D7B5-4F7A-A68A-213A1BBFFB91"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
-            "WFWorkflowActionParameters": {
-                "WFTextCustomSeparator": "|",
-                "UUID": "A1F5668E-5EAB-4DD3-8937-7E9EC39CFFD7",
-                "WFTextSeparator": "Custom",
-                "text": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary",
-                        "OutputUUID": "FF1C1218-D7B5-4F7A-A68A-213A1BBFFB91",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Keys"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                "UUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
+                "Folder": {
+                    "Identifier": "D933A867-F678-4259-97E7-846580396B09",
+                    "DisplayString": "BLE Audio Devices"
                 }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFMatchTextCaseSensitive": false,
-                "WFMatchTextPattern": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "A1F5668E-5EAB-4DD3-8937-7E9EC39CFFD7",
-                                "Type": "ActionOutput",
-                                "OutputName": "Combined Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "My Shortcuts",
+                            "OutputUUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
                 },
-                "UUID": "0F5E4B73-33CB-418A-9B05-2C879C584FAB",
-                "text": {
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
@@ -144,27 +117,9 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "0F5E4B73-33CB-418A-9B05-2C879C584FAB",
-                            "Type": "ActionOutput",
-                            "OutputName": "Matches"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
                 },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "🎧",
                 "GroupingIdentifier": "E88843D4-446D-4089-94BE-C1AE8626A9E2",
-                "WFCondition": 101
+                "WFCondition": 999
             }
         },
         {
@@ -190,102 +145,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Which audio device?",
-                "WFInput": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary",
-                        "OutputUUID": "FF1C1218-D7B5-4F7A-A68A-213A1BBFFB91",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Keys"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "2E107663-1D5D-4B58-946E-5F53D59BEABB"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "FF1C1218-D7B5-4F7A-A68A-213A1BBFFB91",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFDictionaryKey": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "2E107663-1D5D-4B58-946E-5F53D59BEABB",
-                                "Type": "ActionOutput",
-                                "OutputName": "Chosen Item"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "3C6EE2FE-74EE-42D0-9806-B87340A9AE64"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
-            "WFWorkflowActionParameters": {
-                "UUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
-                "Folder": {
-                    "Value": {
-                        "OutputUUID": "3C6EE2FE-74EE-42D0-9806-B87340A9AE64",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
-            "WFWorkflowActionParameters": {
-                "Input": {
-                    "Value": {
-                        "OutputUUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
-                        "Type": "ActionOutput",
-                        "OutputName": "My Shortcuts"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "A159742B-4E7D-48F0-BC30-CDE8CDCD8604"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "42B0686C-113D-418F-9BFE-5090BBC6B90A",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "A159742B-4E7D-48F0-BC30-CDE8CDCD8604",
-                            "Type": "ActionOutput",
-                            "OutputName": "Count"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFNumberValue": "1",
-                "WFCondition": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
-            "WFWorkflowActionParameters": {
                 "WFChooseFromListActionPrompt": "🤖 Which one?",
                 "WFInput": {
                     "Value": {
@@ -306,57 +165,21 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "42B0686C-113D-418F-9BFE-5090BBC6B90A",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "My Shortcuts",
-                        "OutputUUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
-                        "Aggrandizements": [
-                            {
-                                "PropertyUserInfo": "WFItemName",
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Name"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "F911742D-93FA-423D-A37E-05AD6DEDBA68"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "42B0686C-113D-418F-9BFE-5090BBC6B90A",
-                "UUID": "2E71909C-4105-460E-BC5F-6C13FB3ED433"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
                     "Value": {
-                        "OutputUUID": "2E71909C-4105-460E-BC5F-6C13FB3ED433",
+                        "OutputUUID": "73264E14-E123-476C-84BE-80F80160A603",
                         "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "OutputName": "Selected Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflowName": {
                     "Value": {
-                        "OutputUUID": "2E71909C-4105-460E-BC5F-6C13FB3ED433",
+                        "OutputUUID": "73264E14-E123-476C-84BE-80F80160A603",
                         "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "OutputName": "Selected Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -395,6 +218,13 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "9AAEE5AC-0CBA-4123-9996-E2B9FC215407",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4410CB20-6E47-4672-8131-05C37AE791C5",
                 "WFControlFlowMode": 2
             }
         },

@@ -7,11 +7,11 @@
     },
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [
-        "WFStringContentItem",
-        "WFDateContentItem",
         "WFNumberContentItem",
         "WFBooleanContentItem",
-        "WFDictionaryContentItem"
+        "WFStringContentItem",
+        "WFDictionaryContentItem",
+        "WFDateContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -42,9 +42,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "let dict = {'output':[...new Set(￼.input)]}\ndocument.write(encodeURIComponent(JSON.stringify(dict)))",
+                        "string": "let input = ￼.input\n\nlet inputArray = Array.isArray(input) ? input : [input]\n\nlet dict = {'output':[...new Set(inputArray)]}\n\ndocument.write(encodeURIComponent(JSON.stringify(dict)))\n",
                         "attachmentsByRange": {
-                            "{33, 1}": {
+                            "{12, 1}": {
                                 "OutputUUID": "2CF2D91B-1F32-4FB4-8DF9-54C80ED1E017",
                                 "Type": "ActionOutput",
                                 "OutputName": "Dictionary"

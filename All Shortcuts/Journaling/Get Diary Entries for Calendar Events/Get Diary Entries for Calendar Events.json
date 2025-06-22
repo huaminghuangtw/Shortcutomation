@@ -498,6 +498,64 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "WFContentItemPropertyName": "Is All Day",
+                "UUID": "D1605C9B-0A8B-4DA4-8273-2FD738B2945D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "D1605C9B-0A8B-4DA4-8273-2FD738B2945D",
+                            "Type": "ActionOutput",
+                            "OutputName": "Is All Day"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "9B7D6BCB-5064-470A-8531-4CB7FAD34AB5",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "* 🗓️ ￼",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "OutputUUID": "070B44F7-214C-4BDD-B856-001240612320",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9B7D6BCB-5064-470A-8531-4CB7FAD34AB5",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.calendarevents",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFContentItemPropertyName": "Start Date",
                 "UUID": "CBF637E2-4650-4F0A-B775-EC749D268B81"
             }
@@ -559,6 +617,14 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "6123D6F6-E43A-478E-A271-A36215F0025A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9B7D6BCB-5064-470A-8531-4CB7FAD34AB5",
+                "UUID": "CB069E66-E661-4653-8A13-273F13D30461"
             }
         },
         {
@@ -689,9 +755,9 @@
                                 "OutputName": "Shortcut Result"
                             },
                             "{0, 1}": {
-                                "OutputUUID": "6123D6F6-E43A-478E-A271-A36215F0025A",
+                                "OutputUUID": "CB069E66-E661-4653-8A13-273F13D30461",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "If Result"
                             }
                         }
                     },
@@ -712,9 +778,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "6123D6F6-E43A-478E-A271-A36215F0025A",
+                        "OutputUUID": "CB069E66-E661-4653-8A13-273F13D30461",
                         "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -847,9 +913,8 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "3B243ECD-99AC-4834-A598-029E54DDFE3A",
-                                "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
+                                "VariableName": "diaryEntries",
+                                "Type": "Variable"
                             }
                         }
                     },

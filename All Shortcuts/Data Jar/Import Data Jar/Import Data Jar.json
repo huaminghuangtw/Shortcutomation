@@ -10,6 +10,104 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "My Apple Shortcuts",
+                    "⚙️ My Life Automation"
+                ],
+                "UUID": "030229DF-21DB-45E9-8ACB-43EFF9286ADF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetKeysIntent",
+            "WFWorkflowActionParameters": {
+                "errorWhenValueNotFound": true,
+                "source": "root",
+                "UUID": "8DCB28FE-3100-46F5-B08B-CA89BBF9440C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8DCB28FE-3100-46F5-B08B-CA89BBF9440C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Keys"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "124CE015-BC71-4576-B975-45AD02EE27D3",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "030229DF-21DB-45E9-8ACB-43EFF9286ADF",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "37511D23-D64D-44C7-ACE5-68F3A6B63679",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.DeleteValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "deleteStrategy": "alwaysAllow",
+                "UUID": "481051BF-DD9D-4465-9840-96AE0C8B70C7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "37511D23-D64D-44C7-ACE5-68F3A6B63679",
+                "UUID": "2A49A139-3939-4DFF-8345-856C483B4A50"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "124CE015-BC71-4576-B975-45AD02EE27D3",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.file",
             "WFWorkflowActionParameters": {
                 "CustomOutputName": "Backup",
@@ -65,16 +163,6 @@
                 },
                 "GroupingIdentifier": "FEF34E01-5FCA-485F-BCAB-E4C570914C1E",
                 "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
-            "WFWorkflowActionParameters": {
-                "WFItems": [
-                    "My Apple Shortcuts",
-                    "⚙️ My Life Automation"
-                ],
-                "UUID": "030229DF-21DB-45E9-8ACB-43EFF9286ADF"
             }
         },
         {
