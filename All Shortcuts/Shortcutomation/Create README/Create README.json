@@ -59,8 +59,95 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼, ￼",
+                        "string": "Given a country name - ￼, return the corresponding emoji flag. Do not explain—just return the emoji.",
                         "attachmentsByRange": {
+                            "{23, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Location",
+                                "OutputUUID": "8EE0031B-4CC1-40FC-9F9B-FD9459DA0554",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "country",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Country"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9EE67A47-D5DE-47C4-BB6A-DB9187C1FBD2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "prompt"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "9EE67A47-D5DE-47C4-BB6A-DB9187C1FBD2",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "33D00657-8667-4B76-8FA7-3991102664C7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "33D00657-8667-4B76-8FA7-3991102664C7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "emoji",
+                "UUID": "491529D1-E30B-4BD9-806F-6518B2367738",
+                "WFWorkflow": {
+                    "workflowIdentifier": "B329576B-928F-42A5-8F4C-888A727A1D7D",
+                    "workflowName": "Gemini - Generate Content",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Gemini - Generate Content"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼, ￼ ￼",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "491529D1-E30B-4BD9-806F-6518B2367738",
+                                "Type": "ActionOutput",
+                                "OutputName": "emoji"
+                            },
                             "{3, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Location",
@@ -112,6 +199,21 @@
                 },
                 "UUID": "CE2EEA51-53B2-4547-B07B-1913D615D079",
                 "format": "smallCaps"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Apple Shortcuts.backup.location",
+                "values": {
+                    "Value": {
+                        "OutputUUID": "CE2EEA51-53B2-4547-B07B-1913D615D079",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "310851DA-920A-475E-9FD4-661B9EBDC473"
             }
         },
         {

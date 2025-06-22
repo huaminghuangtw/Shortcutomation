@@ -28,6 +28,12 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 5
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -46,21 +52,211 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
-                "WFApp": {
-                    "BundleIdentifier": "com.microsoft.edgemac",
-                    "Name": "Microsoft Edge",
-                    "TeamIdentifier": "UBF8T346G9"
-                },
-                "WFAskToSaveChanges": false
+                "WFDelayTime": 5
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFHideAppMode": "All Apps",
-                "WFAppsExcept": []
+                "WFWorkflow": {
+                    "workflowIdentifier": "E15FED8F-054D-4FA7-80C1-75580DFB57F6",
+                    "workflowName": "🧺 Organize Idea Capture Inbox",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🧺 Organize Idea Capture Inbox",
+                "UUID": "5E8D7BDA-A09B-471A-9A1C-5D12A1C2AE8C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "Yesterday",
+                    "Today"
+                ],
+                "UUID": "DA15C148-4FCC-4254-8E2F-99183D820ACD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DA15C148-4FCC-4254-8E2F-99183D820ACD",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "EE65C8F7-7065-4FA7-9904-8F9259D0120A",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date",
+                "UUID": "9F7AF0BD-166D-4987-9E40-0433204040AB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "B4BB9858-5C35-45DB-8AF0-DD0767FA5EA8",
+                    "workflowName": "Log Journal Metadata",
+                    "isSelf": false
+                },
+                "UUID": "2662A06E-9F8F-4D3D-9923-CC326D8D45D0",
+                "WFWorkflowName": "Log Journal Metadata"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5CCA8A5A-1EBE-418D-977C-C7614DFD2C4F",
+                    "workflowName": "Get Diary Entries for Calendar Events",
+                    "isSelf": false
+                },
+                "UUID": "65BED16C-BF19-4AAE-9E9E-AB7AE9BB48E2",
+                "WFWorkflowName": "Get Diary Entries for Calendar Events"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "65BED16C-BF19-4AAE-9E9E-AB7AE9BB48E2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "3D79AF48-4FB8-425F-82CA-52731F64B8BB",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "date"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Date"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "diaryEntry"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "VariableName": "Repeat Item 2",
+                                                "Type": "Variable"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "8F5EE73E-73B3-4A7F-A144-08B8202C892A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8F5EE73E-73B3-4A7F-A144-08B8202C892A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "🐧 Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "C7B39D2B-8B46-4034-ACDA-82B953B102B8",
+                "WFWorkflowName": "🐧 Log Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3D79AF48-4FB8-425F-82CA-52731F64B8BB",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "EE65C8F7-7065-4FA7-9904-8F9259D0120A",
+                "UUID": "79945FC7-5864-4A39-9B17-51509B78AA44"
             }
         },
         {
@@ -319,193 +515,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
             "WFWorkflowActionParameters": {
-                "WFItems": [
-                    "Yesterday",
-                    "Today"
-                ],
-                "UUID": "DA15C148-4FCC-4254-8E2F-99183D820ACD"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "DA15C148-4FCC-4254-8E2F-99183D820ACD",
-                        "Type": "ActionOutput",
-                        "OutputName": "List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "EE65C8F7-7065-4FA7-9904-8F9259D0120A",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFDateActionMode": "Specified Date",
-                "UUID": "9F7AF0BD-166D-4987-9E40-0433204040AB"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "B4BB9858-5C35-45DB-8AF0-DD0767FA5EA8",
-                    "workflowName": "Log Journal Metadata",
-                    "isSelf": false
-                },
-                "UUID": "2662A06E-9F8F-4D3D-9923-CC326D8D45D0",
-                "WFWorkflowName": "Log Journal Metadata"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "5CCA8A5A-1EBE-418D-977C-C7614DFD2C4F",
-                    "workflowName": "Get Diary Entries for Calendar Events",
-                    "isSelf": false
-                },
-                "UUID": "65BED16C-BF19-4AAE-9E9E-AB7AE9BB48E2",
-                "WFWorkflowName": "Get Diary Entries for Calendar Events"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "65BED16C-BF19-4AAE-9E9E-AB7AE9BB48E2",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "3D79AF48-4FB8-425F-82CA-52731F64B8BB",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
-            "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "date"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "9F7AF0BD-166D-4987-9E40-0433204040AB",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Date"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "diaryEntry"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "VariableName": "Repeat Item",
-                                                "Type": "Variable"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "8F5EE73E-73B3-4A7F-A144-08B8202C892A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "8F5EE73E-73B3-4A7F-A144-08B8202C892A",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
-                    "workflowName": "🐧 Log Journal",
-                    "isSelf": false
-                },
-                "UUID": "C7B39D2B-8B46-4034-ACDA-82B953B102B8",
-                "WFWorkflowName": "🐧 Log Journal"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "3D79AF48-4FB8-425F-82CA-52731F64B8BB",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "EE65C8F7-7065-4FA7-9904-8F9259D0120A",
-                "UUID": "79945FC7-5864-4A39-9B17-51509B78AA44"
+                "WFHideAppMode": "All Apps",
+                "WFAppsExcept": []
             }
         },
         {
@@ -625,7 +638,7 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "GroupingIdentifier": "5AFDAFCD-CA50-4087-8EBF-6D8247A35740",
-                "WFCondition": 5
+                "WFCondition": 999
             }
         },
         {
@@ -950,42 +963,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "9F278CAA-DCA9-4675-82F5-C696523613DE",
-                    "workflowName": "Obsidian - Toggle Focus Mode",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Obsidian - Toggle Focus Mode",
-                "UUID": "656C69D4-FAA1-445B-898E-1220A8417C20"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "ED380F6A-D4A4-4B84-ABD6-79018E9D55AB",
-                    "workflowName": "Obsidian - Toggle Stacked Tabs",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Obsidian - Toggle Stacked Tabs",
-                "UUID": "6B6F8E08-7346-439D-90F1-95185E9725C1"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "F5EDF3D8-24B0-4F95-B57E-ED78D774BAA8",
-                    "workflowName": "Obsidian - Toggle Right Sidebar",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Obsidian - Toggle Right Sidebar",
-                "UUID": "E609B29C-6A0F-4994-9410-673F6C012828"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "5AFDAFCD-CA50-4087-8EBF-6D8247A35740",
@@ -1025,34 +1002,19 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Focus Mode",
-                "UUID": "CBCC3A8D-9EC4-4DB8-A8C3-E472A8225B07"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
             "WFWorkflowActionParameters": {
                 "UUID": "892A2BE4-2B3B-4FF8-82D0-BA105D0E3DD6"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "keyPath": {
                     "Value": {
-                        "OutputUUID": "CBCC3A8D-9EC4-4DB8-A8C3-E472A8225B07",
-                        "Type": "ActionOutput",
-                        "OutputName": "Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFDictionaryKey": {
-                    "Value": {
-                        "string": "￼.phase",
+                        "string": "My Focus Mode.￼.phase",
                         "attachmentsByRange": {
-                            "{0, 1}": {
+                            "{14, 1}": {
                                 "OutputUUID": "892A2BE4-2B3B-4FF8-82D0-BA105D0E3DD6",
                                 "Type": "ActionOutput",
                                 "OutputName": "Current Focus"
@@ -1061,7 +1023,8 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "B7F3B5FD-76EB-4D69-B0C2-1536BE6BB294"
+                "CustomOutputName": "phase",
+                "UUID": "CBCC3A8D-9EC4-4DB8-A8C3-E472A8225B07"
             }
         },
         {
@@ -1069,9 +1032,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "B7F3B5FD-76EB-4D69-B0C2-1536BE6BB294",
+                        "OutputUUID": "CBCC3A8D-9EC4-4DB8-A8C3-E472A8225B07",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
+                        "OutputName": "phase"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

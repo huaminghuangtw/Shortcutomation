@@ -85,6 +85,140 @@
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>9EE67A47-D5DE-47C4-BB6A-DB9187C1FBD2</string>
+				<key>WFTextActionText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{23, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>Country</string>
+										<key>PropertyUserInfo</key>
+										<string>country</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Location</string>
+								<key>OutputUUID</key>
+								<string>8EE0031B-4CC1-40FC-9F9B-FD9459DA0554</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>Given a country name - ￼, return the corresponding emoji flag. Do not explain—just return the emoji.</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.dictionary</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>33D00657-8667-4B76-8FA7-3991102664C7</string>
+				<key>WFItems</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>prompt</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>9EE67A47-D5DE-47C4-BB6A-DB9187C1FBD2</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>￼</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>emoji</string>
+				<key>UUID</key>
+				<string>491529D1-E30B-4BD9-806F-6518B2367738</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Dictionary</string>
+						<key>OutputUUID</key>
+						<string>33D00657-8667-4B76-8FA7-3991102664C7</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>B329576B-928F-42A5-8F4C-888A727A1D7D</string>
+					<key>workflowName</key>
+					<string>Gemini - Generate Content</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Gemini - Generate Content</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
 				<key>CustomOutputName</key>
 				<string>Location</string>
 				<key>UUID</key>
@@ -135,9 +269,18 @@
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
+							<key>{5, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>emoji</string>
+								<key>OutputUUID</key>
+								<string>491529D1-E30B-4BD9-806F-6518B2367738</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
 						</dict>
 						<key>string</key>
-						<string>￼, ￼</string>
+						<string>￼, ￼ ￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -176,6 +319,31 @@
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>dk.simonbs.DataJar.SetValueIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>310851DA-920A-475E-9FD4-661B9EBDC473</string>
+				<key>keyPath</key>
+				<string>My Apple Shortcuts.backup.location</string>
+				<key>values</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Formatted Text</string>
+						<key>OutputUUID</key>
+						<string>CE2EEA51-53B2-4547-B07B-1913D615D079</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>

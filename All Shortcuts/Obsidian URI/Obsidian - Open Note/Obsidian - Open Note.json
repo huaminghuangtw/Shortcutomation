@@ -136,6 +136,18 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "23E5B1F2-E5D6-4C31-9DC5-BBD20B3788E9",
+                    "workflowName": "Obsidian - Show File Properties",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Obsidian - Show File Properties",
+                "UUID": "5471DA9C-D4BA-4A5E-9F7F-6B86F928729E"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "644C1E83-2E3F-456B-B974-D432ED768FCB",
@@ -153,6 +165,36 @@
                 },
                 "GroupingIdentifier": "81A48B39-92A6-460B-894A-1EBB52D89D79",
                 "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "filepath"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "filepath",
+                "UUID": "79C9470E-FC14-4961-BA4E-724188EA5895",
+                "WFReplaceTextFind": ".md"
             }
         },
         {
@@ -202,53 +244,15 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "Second-Brain\\/(.*)\\/[^\\/]+$",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "filepath"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "564CD64C-4E1C-49D1-9FCF-AABE415ACF8B"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
                 "WFMatchTextPattern": "^(.*[\\\\/])",
                 "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "filepath"
-                                    }
-                                ]
+                                "OutputUUID": "79C9470E-FC14-4961-BA4E-724188EA5895",
+                                "Type": "ActionOutput",
+                                "OutputName": "filepath"
                             }
                         }
                     },
@@ -313,8 +317,8 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFSelectedApp": {
-                    "BundleIdentifier": "com.apple.DocumentsApp",
-                    "Name": "Files",
+                    "BundleIdentifier": "com.apple.finder",
+                    "Name": "Finder",
                     "TeamIdentifier": "0000000000"
                 },
                 "WFOpenInAppIdentifier": "com.apple.DocumentsApp"
@@ -435,18 +439,9 @@
                         "string": "￼.md",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "filepath"
-                                    }
-                                ]
+                                "OutputUUID": "79C9470E-FC14-4961-BA4E-724188EA5895",
+                                "Type": "ActionOutput",
+                                "OutputName": "filepath"
                             }
                         }
                     },
@@ -551,9 +546,16 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "93BAC78C-D202-4E81-A766-942664402E88",
                                 "Type": "ActionOutput",
-                                "OutputName": "If Result"
+                                "OutputName": "If Result",
+                                "OutputUUID": "93BAC78C-D202-4E81-A766-942664402E88",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "WFItemName",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Name"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -690,7 +692,7 @@
                     "Value": {
                         "OutputUUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -713,7 +715,7 @@
                     "Value": {
                         "OutputUUID": "7ACD47AE-38E8-4F91-B9B2-819C62DE139D",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -738,7 +740,7 @@
                             "{0, 1}": {
                                 "OutputUUID": "6159009B-1EE7-44C1-B811-F141546F06E5",
                                 "Type": "ActionOutput",
-                                "OutputName": "Dictionary"
+                                "OutputName": "If Result"
                             }
                         }
                     },

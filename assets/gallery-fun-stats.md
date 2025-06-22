@@ -1,8 +1,8 @@
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 591  
-* **Total Actions:** 9344  
-* **Categories Covered:** 70  
+* **Total Shortcuts:** 581  
+* **Total Actions:** 9397  
+* **Categories Covered:** 68  
 * **Average Actions per Shortcut:** 16  
 * **A Typical Shortcut Uses 10+ Actions**  
 
@@ -14,7 +14,7 @@
   | :---: | :---: | :---: |
   | 1️⃣ | [_EvergreenList to Markdown](https://shortcutomation.com/gallery/getting-things-done/evergreenlist-to-markdown) | 157 |
   | 2️⃣ | [5::Share Deep Work Stats](https://shortcutomation.com/gallery/automation-monthly/5-share-deep-work-stats) | 119 |
-  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 115 |
+  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 112 |
   | 4️⃣ | [Backup All Shortcuts](https://shortcutomation.com/gallery/shortcutomation/backup-all-shortcuts) | 101 |
   | 5️⃣ | [＃Add Reminder - Periodic Reflection](https://shortcutomation.com/gallery/automation-daily/add-reminder-periodic-reflection) | 94 |
 
@@ -30,6 +30,6 @@
   | 2️⃣ | [Year Progress](https://shortcutomation.com/gallery/standalone-fun/year-progress) | 1693 |
   | 3️⃣ | [iPhone Alarm Ringtone](https://shortcutomation.com/gallery/sound-files/iphone-alarm-ringtone) | 423 |
   | 4️⃣ | [Water Eject](https://shortcutomation.com/gallery/standalone-fun/water-eject) | 192 |
-  | 5️⃣ | [Time's Up!](https://shortcutomation.com/gallery/sound-files/time-s-up) | 125 |
+  | 5️⃣ | [Time's Up!](https://shortcutomation.com/gallery/sound-files/time-s-up) | 124 |
 
   </div>

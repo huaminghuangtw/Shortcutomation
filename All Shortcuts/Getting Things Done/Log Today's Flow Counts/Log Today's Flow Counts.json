@@ -65,35 +65,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
-            "WFWorkflowActionParameters": {
-                "format": "minifyJSON",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "9FD3DA7B-25E4-46AD-9FFC-126CF6165225",
-                                "Type": "ActionOutput",
-                                "OutputName": "data.json"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "0F15730F-7619-49ED-8EFF-098DF596F79D",
-                "CustomOutputName": "minifiedJSON",
-                "ShowWhenRun": false
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "0F15730F-7619-49ED-8EFF-098DF596F79D",
+                        "OutputUUID": "9FD3DA7B-25E4-46AD-9FFC-126CF6165225",
                         "Type": "ActionOutput",
-                        "OutputName": "minifiedJSON"
+                        "OutputName": "data.json"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -266,25 +244,51 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "format": "formatJSON",
-                "text": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "001DC763-176E-48A0-9B58-E7840D24C7E5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "0F135E84-71A6-46BF-BC50-10FC69B847A2",
+                    "workflowName": "Pretty Print Dictionary",
+                    "isSelf": false
+                },
+                "UUID": "AD996095-1DD1-4F62-9AAF-7D356F49CFF9",
+                "WFWorkflowName": "Pretty Print Dictionary"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFName": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "001DC763-176E-48A0-9B58-E7840D24C7E5",
+                                "OutputUUID": "DB5BB1F7-5CEE-4757-B15D-264B055EDB55",
                                 "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
+                                "OutputName": "data.json"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "B772BA6E-2A82-4851-B3D9-8CD93BAE6170",
-                "CustomOutputName": "formattedJSON",
-                "ShowWhenRun": false
+                "WFDontIncludeFileExtension": true,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AD996095-1DD1-4F62-9AAF-7D356F49CFF9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "74CEC907-7EDE-496E-90D7-294C8E83FF49"
             }
         },
         {
@@ -301,9 +305,9 @@
                 "WFAskWhereToSave": false,
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "B772BA6E-2A82-4851-B3D9-8CD93BAE6170",
+                        "OutputUUID": "74CEC907-7EDE-496E-90D7-294C8E83FF49",
                         "Type": "ActionOutput",
-                        "OutputName": "formattedJSON"
+                        "OutputName": "Renamed Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
