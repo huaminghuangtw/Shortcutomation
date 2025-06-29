@@ -64,6 +64,7 @@
 					<string>👉 Search Journal</string>
 					<string>👉 Go to Journal Backlog</string>
 					<string>👉 View Journal Metadata</string>
+					<string>👉 Journals On Specific Week</string>
 					<dict>
 						<key>WFItemType</key>
 						<integer>0</integer>
@@ -161,82 +162,11 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.ask</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>340F03D6-5575-4A70-BFE5-05E4F9F68CF3</string>
-				<key>WFAskActionPrompt</key>
-				<string>✍️ Jog down something…</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.split</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>5D3B41BC-87FA-4828-A150-3102A19AA2CB</string>
-				<key>text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Ask for Input</string>
-						<key>OutputUUID</key>
-						<string>340F03D6-5575-4A70-BFE5-05E4F9F68CF3</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.repeat.each</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>F9F5321D-6319-4359-BC4B-6A09746325B3</string>
-				<key>WFControlFlowMode</key>
-				<integer>0</integer>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Split Text</string>
-						<key>OutputUUID</key>
-						<string>5D3B41BC-87FA-4828-A150-3102A19AA2CB</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
 				<string>4599D514-70B0-4CEA-9927-0179E27FBC99</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Repeat Item</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
 				<key>WFWorkflow</key>
 				<dict>
 					<key>isSelf</key>
@@ -248,19 +178,6 @@
 				</dict>
 				<key>WFWorkflowName</key>
 				<string>✍️ Log Journal</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.repeat.each</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>F9F5321D-6319-4359-BC4B-6A09746325B3</string>
-				<key>UUID</key>
-				<string>07AAC095-ACF5-4EE8-80A6-A61F58290CFB</string>
-				<key>WFControlFlowMode</key>
-				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -940,7 +857,7 @@
 									<key>Value</key>
 									<dict>
 										<key>string</key>
-										<string>Daily-Bullet-Journal/JournalBacklog</string>
+										<string>Daily-Bullet-Journal/Journal-Backlog</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -996,6 +913,78 @@
 				<string>8072F88E-F6E6-4DBF-8880-A329A6B89BE7</string>
 				<key>UUID</key>
 				<string>204D9076-566B-45D0-B149-BC2683600929</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4A8CED15-044C-4982-8B97-68A5FEF8A26B</string>
+				<key>WFCondition</key>
+				<integer>99</integer>
+				<key>WFConditionalActionString</key>
+				<string>Journals On Specific Week</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>CoercionItemClass</key>
+									<string>WFStringContentItem</string>
+									<key>Type</key>
+									<string>WFCoercionVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>OutputUUID</key>
+							<string>ACF95507-0006-410F-B4C3-9B3326B4A4B1</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>FCA4BD40-985D-48BD-A1BA-4120EBD35EB3</string>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>98AA2825-46F0-42CB-96E6-C1C5BC4BEB39</string>
+					<key>workflowName</key>
+					<string>📇 Review Journals On Specific Week</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>📇 Review Journals On Specific Week</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4A8CED15-044C-4982-8B97-68A5FEF8A26B</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -1068,6 +1057,8 @@
 			<dict>
 				<key>GroupingIdentifier</key>
 				<string>AC37DBDA-F0D9-4CBD-ACC1-EF6B2598BE2E</string>
+				<key>UUID</key>
+				<string>AC44BCF9-15F1-4AD8-B338-A9B91067FCA9</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>

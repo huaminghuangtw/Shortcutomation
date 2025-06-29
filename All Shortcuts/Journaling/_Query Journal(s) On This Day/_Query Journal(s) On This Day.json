@@ -7,7 +7,7 @@
     },
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [
-        "WFStringContentItem"
+        "WFDictionaryContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -58,33 +58,18 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "Daily-Bullet-Journal",
-                "WFFile": {
+                "WFFolder": {
                     "fileLocation": {
                         "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
                         "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal",
                         "appContainerBundleIdentifier": "md.obsidian",
                         "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/C6B95D9A-866F-4DC8-B3DC-A35E1C24830D/2e2405e141a8d8e005fd02a6fa3c6db2c9babe0c"
                     },
                     "filename": "Daily-Bullet-Journal",
                     "displayName": "Daily-Bullet-Journal"
-                },
-                "UUID": "05228058-1E69-41B5-925E-FC0C9250F26D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
-            "WFWorkflowActionParameters": {
-                "WFFolder": {
-                    "Value": {
-                        "OutputUUID": "05228058-1E69-41B5-925E-FC0C9250F26D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Daily-Bullet-Journal"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36"
             }
@@ -183,7 +168,7 @@
                 "WFDateFormatStyle": "Custom",
                 "WFDateFormat": {
                     "Value": {
-                        "string": "MM-MMMM/￼_MM_dd",
+                        "string": "MMM dd, ￼",
                         "attachmentsByRange": {
                             "{8, 1}": {
                                 "VariableName": "Repeat Item",
@@ -214,27 +199,44 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": {
+                "WFDateActionDate": {
                     "Value": {
-                        "string": "￼/￼",
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{2, 1}": {
+                            "{0, 1}": {
                                 "OutputUUID": "0216A64E-C181-4939-9C46-174927D98EB4",
                                 "Type": "ActionOutput",
                                 "OutputName": "Formatted Date"
-                            },
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
+                "WFDateActionMode": "Specified Date",
+                "UUID": "6B68365D-2EE6-4E72-8A4A-B8CB7FD2F5C1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6B68365D-2EE6-4E72-8A4A-B8CB7FD2F5C1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "CustomOutputName": "filepath",
-                "UUID": "1D68B8A8-1268-410E-9A9C-E65C19113AB5"
+                "UUID": "344A61C3-EE69-4C7A-B008-A91D793CCC2B",
+                "WFWorkflow": {
+                    "workflowIdentifier": "C69C14F5-C839-4081-BFBB-85636C0A708B",
+                    "workflowName": "_Query Journal File Path On Specific Date",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "_Query Journal File Path On Specific Date"
             }
         },
         {
@@ -242,19 +244,22 @@
             "WFWorkflowActionParameters": {
                 "WFFileErrorIfNotFound": false,
                 "WFFile": {
-                    "Value": {
-                        "OutputUUID": "05228058-1E69-41B5-925E-FC0C9250F26D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Daily-Bullet-Journal"
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
                 },
                 "WFGetFilePath": {
                     "Value": {
-                        "string": "￼.md",
+                        "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "1D68B8A8-1268-410E-9A9C-E65C19113AB5",
+                                "OutputUUID": "344A61C3-EE69-4C7A-B008-A91D793CCC2B",
                                 "Type": "ActionOutput",
                                 "OutputName": "filepath"
                             }
@@ -285,13 +290,70 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "date"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "6B68365D-2EE6-4E72-8A4A-B8CB7FD2F5C1",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Date"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filepath"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "344A61C3-EE69-4C7A-B008-A91D793CCC2B",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "filepath"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "9BB06739-6026-4859-B64F-66EA9C783DB2"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "1D68B8A8-1268-410E-9A9C-E65C19113AB5",
+                        "OutputUUID": "9BB06739-6026-4859-B64F-66EA9C783DB2",
                         "Type": "ActionOutput",
-                        "OutputName": "filepath"
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

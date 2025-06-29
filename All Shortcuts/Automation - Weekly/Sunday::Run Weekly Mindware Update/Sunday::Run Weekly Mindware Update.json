@@ -133,16 +133,60 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "8A71662B-84A4-4E25-B6CD-89D7A8F8BCAB",
-                    "workflowName": "Get Latest WMU",
-                    "isSelf": false
+                "WFFolder": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Weekly-Mindware-Update",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/3438C552-7900-4D1C-BDC5-E1CF43886E3B/29d958dbcf2f63cc9e41b5db4fd1bc1dde45d4ec"
+                    },
+                    "filename": "Weekly-Mindware-Update",
+                    "displayName": "Weekly-Mindware-Update"
                 },
-                "CustomOutputName": "latestWMU",
-                "UUID": "4A7C39DE-8D81-4BD6-8907-213CCE899C7F",
-                "WFWorkflowName": "Get Latest WMU"
+                "UUID": "3361C9FF-7ED1-4EEE-8B73-37A296308D9A",
+                "Recursive": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": "README"
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemSortOrder": "Z to A",
+                "UUID": "2EFF3FD8-EE9A-4714-8A50-AFB98199ACC7",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "3361C9FF-7ED1-4EEE-8B73-37A296308D9A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Get Contents of Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": true,
+                "WFContentItemSortProperty": "Name"
             }
         },
         {
@@ -179,9 +223,16 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "4A7C39DE-8D81-4BD6-8907-213CCE899C7F",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "latestWMU"
+                                                "OutputName": "Files",
+                                                "OutputUUID": "2EFF3FD8-EE9A-4714-8A50-AFB98199ACC7",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "PropertyUserInfo": {},
+                                                        "Type": "WFPropertyVariableAggrandizement",
+                                                        "PropertyName": "File Path"
+                                                    }
+                                                ]
                                             }
                                         }
                                     },

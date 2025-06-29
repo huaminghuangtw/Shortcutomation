@@ -38,31 +38,14 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "CustomOutputName": "filepath",
+                "UUID": "FEF3227E-165B-4AF1-BBDD-0209BAC67FD5",
                 "WFWorkflow": {
                     "workflowIdentifier": "C69C14F5-C839-4081-BFBB-85636C0A708B",
                     "workflowName": "_Query Journal On Specific Date",
                     "isSelf": false
                 },
-                "UUID": "FEF3227E-165B-4AF1-BBDD-0209BAC67FD5",
                 "WFWorkflowName": "_Query Journal On Specific Date"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "Daily-Bullet-Journal",
-                "WFFile": {
-                    "fileLocation": {
-                        "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal",
-                        "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/C6B95D9A-866F-4DC8-B3DC-A35E1C24830D/2e2405e141a8d8e005fd02a6fa3c6db2c9babe0c"
-                    },
-                    "filename": "Daily-Bullet-Journal",
-                    "displayName": "Daily-Bullet-Journal"
-                },
-                "UUID": "7E3D308B-3E94-44D3-A5C5-C4BFA9524799"
             }
         },
         {
@@ -70,21 +53,24 @@
             "WFWorkflowActionParameters": {
                 "WFFileErrorIfNotFound": false,
                 "WFFile": {
-                    "Value": {
-                        "OutputUUID": "7E3D308B-3E94-44D3-A5C5-C4BFA9524799",
-                        "Type": "ActionOutput",
-                        "OutputName": "Daily-Bullet-Journal"
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
                 },
                 "WFGetFilePath": {
                     "Value": {
-                        "string": "￼.md",
+                        "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "FEF3227E-165B-4AF1-BBDD-0209BAC67FD5",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "filepath"
                             }
                         }
                     },
@@ -772,43 +758,52 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "yyyy/MM-MMMM",
-                "UUID": "CBE2E660-89C3-4EBF-AF99-48EFFD56EB0D",
-                "WFDateFormat": "yyyy/MM-MMMM",
-                "WFDate": {
+                "WFMatchTextPattern": "^(.+)/([^/]+)$",
+                "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ExtensionInput"
+                                "OutputUUID": "FEF3227E-165B-4AF1-BBDD-0209BAC67FD5",
+                                "Type": "ActionOutput",
+                                "OutputName": "filepath"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "960FE762-47EB-4682-9A56-82DE17C32F4E"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
             "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "yyyy_MM_dd",
-                "UUID": "194934FD-8F31-4826-BB10-3ABB7E7661D0",
-                "WFDateFormat": "yyyy_MM_dd",
-                "WFDate": {
+                "matches": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ExtensionInput"
-                            }
-                        }
+                        "OutputUUID": "960FE762-47EB-4682-9A56-82DE17C32F4E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
                     },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "27275590-3D2C-47B6-9B8A-3C86D40C2D41"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "960FE762-47EB-4682-9A56-82DE17C32F4E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFGroupIndex": "2",
+                "UUID": "54FE90FB-D920-4F89-9806-26B3A7D3BC2B"
             }
         },
         {
@@ -827,12 +822,12 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "Daily-Bullet-Journal/￼",
+                                        "string": "￼",
                                         "attachmentsByRange": {
-                                            "{21, 1}": {
-                                                "OutputUUID": "CBE2E660-89C3-4EBF-AF99-48EFFD56EB0D",
+                                            "{0, 1}": {
+                                                "OutputUUID": "27275590-3D2C-47B6-9B8A-3C86D40C2D41",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "yyyy/MM-MMMM"
+                                                "OutputName": "Text"
                                             }
                                         }
                                     },
@@ -852,9 +847,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "194934FD-8F31-4826-BB10-3ABB7E7661D0",
+                                                "OutputUUID": "54FE90FB-D920-4F89-9806-26B3A7D3BC2B",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "yyyy_MM_dd"
+                                                "OutputName": "Text"
                                             }
                                         }
                                     },
