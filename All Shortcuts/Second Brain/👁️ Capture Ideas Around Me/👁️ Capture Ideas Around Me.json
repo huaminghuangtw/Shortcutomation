@@ -29,8 +29,9 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
                 "WFItems": [
-                    "📱 From Screenshot ",
-                    "📸 From Camera"
+                    "📱 From Screenshot",
+                    "📸 From Camera",
+                    "📚 From Book"
                 ],
                 "UUID": "3C50D306-21D3-4FB1-9427-C344DFD3ED6D"
             }
@@ -74,7 +75,7 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "📱 From Screenshot ",
+                "WFConditionalActionString": "📱 From Screenshot",
                 "GroupingIdentifier": "837B18B7-A23F-461F-B038-1022991B585B",
                 "WFCondition": 4
             }
@@ -164,6 +165,54 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "20E270D8-ACA1-41FB-A282-C85071E958FA",
+                            "Type": "ActionOutput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "📚 From Book",
+                "GroupingIdentifier": "8CF464E6-FCE8-431C-85BE-137027F0FA6B",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "3E4D4A9F-1A0A-4323-BFB7-9425305E4529",
+                    "workflowName": "📬 Open Inbox",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "📬 Open Inbox",
+                "UUID": "98DA187E-1446-4A3C-B943-31BE439A03EC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8CF464E6-FCE8-431C-85BE-137027F0FA6B",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {}
         },
@@ -185,6 +234,7 @@
                                     "Value": [
                                         "🐧 Log Journal",
                                         "❝ Capture Quotes",
+                                        "📥 Add to Inbox",
                                         "📋 Copy to Clipboard",
                                         "⤴️ Share with Others"
                                     ],
@@ -954,6 +1004,59 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "D344A3DA-71F8-410B-8240-4541E6806D70"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Selected Item",
+                            "OutputUUID": "D344A3DA-71F8-410B-8240-4541E6806D70",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "📥 Add to Inbox",
+                "GroupingIdentifier": "4E7CD420-DEE5-4635-A947-99E635A54D46",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FCB2FD85-7EE2-424B-B720-5EACEB41E4E2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Clipboard"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
+                    "workflowName": "📥 Add to Inbox",
+                    "isSelf": false
+                },
+                "UUID": "C0445B42-9136-4AB8-A99C-3910CCBFE492",
+                "WFWorkflowName": "📥 Add to Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4E7CD420-DEE5-4635-A947-99E635A54D46",
+                "WFControlFlowMode": 2
             }
         },
         {

@@ -1,8 +1,8 @@
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 581  
-* **Total Actions:** 9397  
-* **Categories Covered:** 68  
+* **Total Shortcuts:** 577  
+* **Total Actions:** 9507  
+* **Categories Covered:** 70  
 * **Average Actions per Shortcut:** 16  
 * **A Typical Shortcut Uses 10+ Actions**  
 
@@ -12,11 +12,11 @@
 
   | Rank | Shortcut Name | Number of Actions |
   | :---: | :---: | :---: |
-  | 1️⃣ | [_EvergreenList to Markdown](https://shortcutomation.com/gallery/getting-things-done/evergreenlist-to-markdown) | 157 |
-  | 2️⃣ | [5::Share Deep Work Stats](https://shortcutomation.com/gallery/automation-monthly/5-share-deep-work-stats) | 119 |
-  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 112 |
+  | 1️⃣ | [_EvergreenList to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreenlist-to-markdown) | 157 |
+  | 2️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 124 |
+  | 3️⃣ | [5::Share Deep Work Stats](https://shortcutomation.com/gallery/automation-monthly/5-share-deep-work-stats) | 118 |
   | 4️⃣ | [Backup All Shortcuts](https://shortcutomation.com/gallery/shortcutomation/backup-all-shortcuts) | 101 |
-  | 5️⃣ | [＃Add Reminder - Periodic Reflection](https://shortcutomation.com/gallery/automation-daily/add-reminder-periodic-reflection) | 94 |
+  | 5️⃣ | [＃Add Reminder - Periodic Reflection](https://shortcutomation.com/gallery/automation-daily/add-reminder-periodic-reflection) | 95 |
 
   </div>
 

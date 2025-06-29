@@ -10,27 +10,12 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "BFAB96AC-5A27-4C27-A9BB-A7B785D220F6",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "iOS",
-                "WFCondition": 4
+                "CustomOutputName": "Today",
+                "UUID": "9171BD8C-D824-4AE8-8B7E-685DA37E8776",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": "Today"
             }
         },
         {
@@ -63,7 +48,9 @@
                                             "string": "￼",
                                             "attachmentsByRange": {
                                                 "{0, 1}": {
-                                                    "Type": "CurrentDate",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Today",
+                                                    "OutputUUID": "9171BD8C-D824-4AE8-8B7E-685DA37E8776",
                                                     "Aggrandizements": [
                                                         {
                                                             "Type": "WFDateFormatVariableAggrandizement",
@@ -87,14 +74,74 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BC89F2B7-F24A-4462-8878-5D908FE27EE6",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "31A4F03A-DB9C-4A87-B392-1B2686201F08",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFFlag": false,
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/C23B658A-63D4-432A-B58F-07430539F997>",
+                    "Title": "📥 Inbox",
+                    "IsAllCalendar": false
+                },
+                "UUID": "04091208-FE7C-4CAF-B009-D61BF36472ED",
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "✼ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Today",
+                                "OutputUUID": "9171BD8C-D824-4AE8-8B7E-685DA37E8776",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemCalendar": "📥 Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "31A4F03A-DB9C-4A87-B392-1B2686201F08",
+                "UUID": "8B292796-0EF6-46A4-8EAA-6C5A671A1E52"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetReminderIDIntent",
             "WFWorkflowActionParameters": {
                 "list": "📥 Inbox",
                 "reminder": {
                     "Value": {
-                        "OutputUUID": "BC89F2B7-F24A-4462-8878-5D908FE27EE6",
+                        "OutputUUID": "8B292796-0EF6-46A4-8EAA-6C5A671A1E52",
                         "Type": "ActionOutput",
-                        "OutputName": "Reminders"
+                        "OutputName": "Reminder"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -130,15 +177,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "BFAB96AC-5A27-4C27-A9BB-A7B785D220F6",
-                "UUID": "83427B84-2099-4DE2-A8E5-AF5087C74816"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "43FA0E73-6636-4DAA-9D3F-58634BB07873",
+                "GroupingIdentifier": "FDAF02AC-65A8-4FB7-954E-F5A0599070DC",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
@@ -160,13 +199,48 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.reminders.showlist",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Reminders",
+                "UUID": "FE0FC806-8D56-46EB-925B-F86907B8C522"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FE0FC806-8D56-46EB-925B-F86907B8C522",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "58BE2978-1107-455E-A1A2-F611C66CDE1F",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.alexhay.ToolboxProForShortcuts",
+                    "Name": "Toolbox Pro",
+                    "TeamIdentifier": "QRVYSKD5TN"
+                },
+                "WFAppsExcept": [],
+                "WFHideAppMode": "App"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "43FA0E73-6636-4DAA-9D3F-58634BB07873",
+                "GroupingIdentifier": "FDAF02AC-65A8-4FB7-954E-F5A0599070DC",
                 "WFControlFlowMode": 2
             }
         },

@@ -1,0 +1,120 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "(\\d{4})_Week_(\\d{2})",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "2A3ECF23-9F3F-431A-9A93-A1EEAEB98642"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "2A3ECF23-9F3F-431A-9A93-A1EEAEB98642",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "year",
+                "UUID": "C9FB43EC-E60A-4199-8FC4-2FB771008404"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "weekNumber",
+                "WFGroupIndex": "2",
+                "UUID": "32F82EB4-3D72-4D9A-9190-EEC4BD44E41B",
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "2A3ECF23-9F3F-431A-9A93-A1EEAEB98642",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "Weekly-Mindware-Update/￼/￼_Week_￼.md",
+                        "attachmentsByRange": {
+                            "{23, 1}": {
+                                "OutputUUID": "C9FB43EC-E60A-4199-8FC4-2FB771008404",
+                                "Type": "ActionOutput",
+                                "OutputName": "year"
+                            },
+                            "{25, 1}": {
+                                "OutputUUID": "C9FB43EC-E60A-4199-8FC4-2FB771008404",
+                                "Type": "ActionOutput",
+                                "OutputName": "year"
+                            },
+                            "{32, 1}": {
+                                "OutputUUID": "32F82EB4-3D72-4D9A-9190-EEC4BD44E41B",
+                                "Type": "ActionOutput",
+                                "OutputName": "weekNumber"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 3,
+            "Text": "Notion API Key"
+        },
+        {
+            "ParameterKey": "WFTextActionText",
+            "Category": "Parameter",
+            "ActionIndex": 5,
+            "Text": "Database ID"
+        }
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

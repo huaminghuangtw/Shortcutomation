@@ -1,0 +1,170 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C3751AF4-B347-479B-A462-E086D7AD0153",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.openai.chat.AskIntent",
+            "WFWorkflowActionParameters": {
+                "prompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "continuous": false,
+                "newChat": true,
+                "UUID": "82C6027C-05DE-4D7C-BE45-B66F2D680C00",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "2DC432GLL2",
+                    "BundleIdentifier": "com.openai.chat",
+                    "Name": "ChatGPT",
+                    "AppIntentIdentifier": "AskIntent"
+                },
+                "model": {
+                    "subtitle": {
+                        "key": "Auto"
+                    },
+                    "title": {
+                        "key": "Auto"
+                    },
+                    "identifier": "auto"
+                },
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C3751AF4-B347-479B-A462-E086D7AD0153",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.openai.chat.OpenNewChatInAppShortcutIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "1B58C367-06FA-4A47-AF13-1229200E97D0",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "2DC432GLL2",
+                    "BundleIdentifier": "com.openai.chat",
+                    "Name": "ChatGPT",
+                    "AppIntentIdentifier": "OpenNewChatInAppShortcutIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C3751AF4-B347-479B-A462-E086D7AD0153",
+                "UUID": "87E4DBC4-CF68-45BC-8468-184B224DD454"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "appName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "ChatGPT"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 4,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "fullScreen"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": true,
+                                    "WFSerializationType": "WFNumberSubstitutableState"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "ACE28E8C-CF23-4CF8-8E77-BF45E2516F34"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "ACE28E8C-CF23-4CF8-8E77-BF45E2516F34",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "87A1FDFC-8737-4EAD-AF54-AC7A5B9937AD",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": true
+}

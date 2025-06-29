@@ -516,7 +516,10 @@
                                         "Value": "Image",
                                         "WFSerializationType": "WFStringSubstitutableState"
                                     },
-                                    "Number": "300"
+                                    "Number": {
+                                        "Value": "300",
+                                        "WFSerializationType": "WFNumberStringSubstitutableState"
+                                    }
                                 },
                                 "Removable": true,
                                 "Property": "Media Type"
@@ -528,83 +531,75 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼.￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Images",
+                                "OutputUUID": "650A84EA-A37A-4DC5-BC00-3330EF06DF0F",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "WFFileExtensionProperty",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "File Extension"
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Images",
+                                "OutputUUID": "650A84EA-A37A-4DC5-BC00-3330EF06DF0F",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": {},
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "File Path"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B6D904D9-0932-4301-B7A1-A1D0C10B5C57"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B6D904D9-0932-4301-B7A1-A1D0C10B5C57",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "filepath"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "650A84EA-A37A-4DC5-BC00-3330EF06DF0F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Images"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "image"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "0D743EA3-A8AD-405A-B84E-0D0D027C75E0",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "3336F439-4339-4336-B5EB-03F8B2F53026",
-                    "workflowName": "isWeekend",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "isWeekend",
-                "UUID": "AAB2384A-7FFB-4F78-90FC-D48746B82F79"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "Shortcut Result",
-                            "OutputUUID": "AAB2384A-7FFB-4F78-90FC-D48746B82F79",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "F2376C9B-089C-4804-A285-7B9E7E911C39",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.photos",
-            "WFWorkflowActionParameters": {
-                "WFContentItemLimitEnabled": true,
-                "WFContentItemSortProperty": "Random",
-                "UUID": "736647F3-E7F6-4E94-A1BE-8536CB4D08A2",
-                "WFContentItemLimitNumber": 1,
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Unit": 4,
-                                    "Enumeration": {
-                                        "Value": "🫶🏻",
-                                        "WFSerializationType": "WFStringSubstitutableState"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "Album"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "F2376C9B-089C-4804-A285-7B9E7E911C39",
                 "WFControlFlowMode": 1
             }
         },
@@ -621,10 +616,74 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "_View Memories in Files",
-                "UUID": "2B83FBED-26A6-450C-9295-682D959BF6F2"
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "0D7A50D1-FAF8-4AF8-90B9-F13382DF9D38",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "filepath"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "filepath"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "0D7A50D1-FAF8-4AF8-90B9-F13382DF9D38",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "memory"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFEncodeMode": "Decode",
+                "UUID": "1816257F-84A7-4265-BC5F-2364D2527319"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1816257F-84A7-4265-BC5F-2364D2527319",
+                        "Type": "ActionOutput",
+                        "OutputName": "Base64 Encoded"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "image"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "0D743EA3-A8AD-405A-B84E-0D0D027C75E0",
+                "UUID": "CBCDBD70-60CD-4750-93E5-CBD28D94A05A"
             }
         },
         {
@@ -643,14 +702,7 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "2B83FBED-26A6-450C-9295-682D959BF6F2",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Text"
-                                            }
-                                        }
+                                        "string": "_View Image in Files"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
@@ -668,19 +720,8 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Shortcut Result",
-                                                "OutputUUID": "0D7A50D1-FAF8-4AF8-90B9-F13382DF9D38",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "filepath"
-                                                    }
-                                                ]
+                                                "VariableName": "filepath",
+                                                "Type": "Variable"
                                             }
                                         }
                                     },
@@ -712,46 +753,6 @@
                 },
                 "UUID": "5CE2873B-C425-4936-926F-8432397624EE",
                 "WFWorkflowName": "Build Run Shortcut URL"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result",
-                        "OutputUUID": "0D7A50D1-FAF8-4AF8-90B9-F13382DF9D38",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "image"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFEncodeMode": "Decode",
-                "UUID": "1816257F-84A7-4265-BC5F-2364D2527319"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "F2376C9B-089C-4804-A285-7B9E7E911C39",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "0D743EA3-A8AD-405A-B84E-0D0D027C75E0",
-                "UUID": "CBCDBD70-60CD-4750-93E5-CBD28D94A05A"
             }
         },
         {
@@ -848,9 +849,8 @@
                 "actionSet": "none",
                 "attachment": {
                     "Value": {
-                        "OutputUUID": "CBCDBD70-60CD-4750-93E5-CBD28D94A05A",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "VariableName": "image",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
@@ -888,7 +888,9 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

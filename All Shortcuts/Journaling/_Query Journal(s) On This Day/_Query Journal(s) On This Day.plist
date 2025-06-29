@@ -50,14 +50,12 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.file</string>
+			<string>is.workflow.actions.file.getfoldercontents</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>CustomOutputName</key>
-				<string>Daily-Bullet-Journal</string>
 				<key>UUID</key>
-				<string>05228058-1E69-41B5-925E-FC0C9250F26D</string>
-				<key>WFFile</key>
+				<string>D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36</string>
+				<key>WFFolder</key>
 				<dict>
 					<key>displayName</key>
 					<string>Daily-Bullet-Journal</string>
@@ -70,35 +68,12 @@
 						<key>crossDeviceItemID</key>
 						<string>docs.icloud.com:com.apple.CloudDocs/C6B95D9A-866F-4DC8-B3DC-A35E1C24830D/2e2405e141a8d8e005fd02a6fa3c6db2c9babe0c</string>
 						<key>fileProviderDomainID</key>
-						<string>com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185</string>
+						<string>com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577</string>
 						<key>relativeSubpath</key>
 						<string>iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal</string>
 					</dict>
 					<key>filename</key>
 					<string>Daily-Bullet-Journal</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.file.getfoldercontents</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>D5D6AA01-F7F3-4C4C-A6C0-6BE052C19E36</string>
-				<key>WFFolder</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Daily-Bullet-Journal</string>
-						<key>OutputUUID</key>
-						<string>05228058-1E69-41B5-925E-FC0C9250F26D</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -298,7 +273,7 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>MM-MMMM/￼_MM_dd</string>
+						<string>MMM dd, ￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -309,27 +284,18 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
+			<string>is.workflow.actions.date</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>CustomOutputName</key>
-				<string>filepath</string>
 				<key>UUID</key>
-				<string>1D68B8A8-1268-410E-9A9C-E65C19113AB5</string>
-				<key>WFTextActionText</key>
+				<string>6B68365D-2EE6-4E72-8A4A-B8CB7FD2F5C1</string>
+				<key>WFDateActionDate</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
 							<key>{0, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Repeat Item</string>
-							</dict>
-							<key>{2, 1}</key>
 							<dict>
 								<key>OutputName</key>
 								<string>Formatted Date</string>
@@ -340,11 +306,49 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>￼/￼</string>
+						<string>￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
+				<key>WFDateActionMode</key>
+				<string>Specified Date</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>filepath</string>
+				<key>UUID</key>
+				<string>344A61C3-EE69-4C7A-B008-A91D793CCC2B</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Date</string>
+						<key>OutputUUID</key>
+						<string>6B68365D-2EE6-4E72-8A4A-B8CB7FD2F5C1</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>C69C14F5-C839-4081-BFBB-85636C0A708B</string>
+					<key>workflowName</key>
+					<string>_Query Journal File Path On Specific Date</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>_Query Journal File Path On Specific Date</string>
 			</dict>
 		</dict>
 		<dict>
@@ -356,17 +360,23 @@
 				<string>154E4B97-EC0E-420E-8240-9216D9BB8F96</string>
 				<key>WFFile</key>
 				<dict>
-					<key>Value</key>
+					<key>displayName</key>
+					<string>Second-Brain</string>
+					<key>fileLocation</key>
 					<dict>
-						<key>OutputName</key>
-						<string>Daily-Bullet-Journal</string>
-						<key>OutputUUID</key>
-						<string>05228058-1E69-41B5-925E-FC0C9250F26D</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
+						<key>WFFileLocationType</key>
+						<string>iCloud</string>
+						<key>appContainerBundleIdentifier</key>
+						<string>md.obsidian</string>
+						<key>crossDeviceItemID</key>
+						<string>docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577</string>
+						<key>relativeSubpath</key>
+						<string>iCloud~md~obsidian/Documents/Second-Brain</string>
 					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
+					<key>filename</key>
+					<string>Second-Brain</string>
 				</dict>
 				<key>WFFileErrorIfNotFound</key>
 				<false/>
@@ -381,13 +391,13 @@
 								<key>OutputName</key>
 								<string>filepath</string>
 								<key>OutputUUID</key>
-								<string>1D68B8A8-1268-410E-9A9C-E65C19113AB5</string>
+								<string>344A61C3-EE69-4C7A-B008-A91D793CCC2B</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>￼.md</string>
+						<string>￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -428,6 +438,98 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.dictionary</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>9BB06739-6026-4859-B64F-66EA9C783DB2</string>
+				<key>WFItems</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>date</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Date</string>
+												<key>OutputUUID</key>
+												<string>6B68365D-2EE6-4E72-8A4A-B8CB7FD2F5C1</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>￼</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>filepath</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>filepath</string>
+												<key>OutputUUID</key>
+												<string>344A61C3-EE69-4C7A-B008-A91D793CCC2B</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>￼</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.appendvariable</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -436,9 +538,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>filepath</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68B8A8-1268-410E-9A9C-E65C19113AB5</string>
+						<string>9BB06739-6026-4859-B64F-66EA9C783DB2</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -582,7 +684,7 @@
 	</dict>
 	<key>WFWorkflowOutputContentItemClasses</key>
 	<array>
-		<string>WFStringContentItem</string>
+		<string>WFDictionaryContentItem</string>
 	</array>
 	<key>WFWorkflowTypes</key>
 	<array>

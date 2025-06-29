@@ -45,6 +45,7 @@
                     "👉 Search Journal",
                     "👉 Go to Journal Backlog",
                     "👉 View Journal Metadata",
+                    "👉 Journals On Specific Week",
                     {
                         "WFItemType": 0,
                         "WFValue": {
@@ -106,66 +107,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
-            "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "✍️ Jog down something…",
-                "UUID": "340F03D6-5575-4A70-BFE5-05E4F9F68CF3"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
-            "WFWorkflowActionParameters": {
-                "text": {
-                    "Value": {
-                        "OutputUUID": "340F03D6-5575-4A70-BFE5-05E4F9F68CF3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Ask for Input"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "5D3B41BC-87FA-4828-A150-3102A19AA2CB"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "5D3B41BC-87FA-4828-A150-3102A19AA2CB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Split Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "F9F5321D-6319-4359-BC4B-6A09746325B3",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFWorkflow": {
                     "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
                     "workflowName": "✍️ Log Journal",
                     "isSelf": false
                 },
-                "UUID": "4599D514-70B0-4CEA-9927-0179E27FBC99",
-                "WFWorkflowName": "✍️ Log Journal"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "F9F5321D-6319-4359-BC4B-6A09746325B3",
-                "UUID": "07AAC095-ACF5-4EE8-80A6-A61F58290CFB"
+                "WFWorkflowName": "✍️ Log Journal",
+                "UUID": "4599D514-70B0-4CEA-9927-0179E27FBC99"
             }
         },
         {
@@ -577,7 +527,7 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "Daily-Bullet-Journal/JournalBacklog"
+                                        "string": "Daily-Bullet-Journal/Journal-Backlog"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
@@ -637,6 +587,50 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Journals On Specific Week",
+                "GroupingIdentifier": "4A8CED15-044C-4982-8B97-68A5FEF8A26B",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "98AA2825-46F0-42CB-96E6-C1C5BC4BEB39",
+                    "workflowName": "📇 Review Journals On Specific Week",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "📇 Review Journals On Specific Week",
+                "UUID": "FCA4BD40-985D-48BD-A1BA-4120EBD35EB3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4A8CED15-044C-4982-8B97-68A5FEF8A26B",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "ACF95507-0006-410F-B4C3-9B3326B4A4B1",
+                            "Type": "ActionOutput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
                 "WFConditionalActionString": "Journals On This Day",
                 "GroupingIdentifier": "AC37DBDA-F0D9-4CBD-ACC1-EF6B2598BE2E",
                 "WFCondition": 99
@@ -657,8 +651,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "AC37DBDA-F0D9-4CBD-ACC1-EF6B2598BE2E",
-                "WFControlFlowMode": 2
+                "UUID": "AC44BCF9-15F1-4AD8-B338-A9B91067FCA9"
             }
         },
         {

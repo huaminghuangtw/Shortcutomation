@@ -10,6 +10,13 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode",
+                "UUID": "02459CDA-C511-4D0F-9046-291953FE8CDE"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dnd.getfocus",
             "WFWorkflowActionParameters": {
                 "UUID": "67D73E60-AE65-4F60-BB71-569B5356B6A6"
@@ -23,13 +30,16 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Current Focus",
-                            "OutputUUID": "67D73E60-AE65-4F60-BB71-569B5356B6A6",
+                            "OutputName": "Value",
+                            "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
                             "Aggrandizements": [
                                 {
-                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFDictionaryContentItem"
+                                },
+                                {
                                     "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
+                                    "PropertyName": "Keys"
                                 }
                             ]
                         },
@@ -37,32 +47,11 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Sleep",
-                "GroupingIdentifier": "F5F237A0-B0CB-4E10-A05F-30AA9C5E30D3",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
-            "WFWorkflowActionParameters": {
-                "WFVariableName": "widgetText"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "F5F237A0-B0CB-4E10-A05F-30AA9C5E30D3",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": {
+                "WFConditionalActionString": {
                     "Value": {
-                        "string": "My Focus Mode.￼",
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{14, 1}": {
+                            "{0, 1}": {
                                 "OutputUUID": "67D73E60-AE65-4F60-BB71-569B5356B6A6",
                                 "Type": "ActionOutput",
                                 "OutputName": "Current Focus"
@@ -71,8 +60,35 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "CustomOutputName": "myFocusMode",
-                "UUID": "02459CDA-C511-4D0F-9046-291953FE8CDE"
+                "GroupingIdentifier": "F5F237A0-B0CB-4E10-A05F-30AA9C5E30D3",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "67D73E60-AE65-4F60-BB71-569B5356B6A6",
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Focus"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8"
             }
         },
         {
@@ -81,8 +97,8 @@
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "myFocusMode",
-                        "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -331,8 +347,8 @@
                         "attachmentsByRange": {
                             "{2, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "myFocusMode",
-                                "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -467,8 +483,8 @@
                 "WFItemIndex": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "myFocusMode",
-                        "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                        "OutputName": "Dictionary Value",
+                        "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -621,14 +637,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "notification": {
-                    "Value": {
-                        "OutputUUID": "CF33A2B9-E221-4F60-9D82-C6C19330CC7B",
-                        "Type": "ActionOutput",
-                        "OutputName": "⏱️ Day Progress"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
+                "notification": "⏱️ Day Progress",
                 "eventType": "atTime",
                 "title": {
                     "Value": {
@@ -643,7 +652,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "EEE6764F-EE9E-462A-B6C5-A19515EEC0DE",
+                "UUID": "B9FECDED-67F5-4D14-969D-4BFCE5054B72",
                 "text": {
                     "Value": {
                         "string": "￼\n￼",
@@ -722,8 +731,8 @@
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "myFocusMode",
-                                "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -747,8 +756,8 @@
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "myFocusMode",
-                                "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -776,8 +785,8 @@
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "myFocusMode",
-                                "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -862,8 +871,8 @@
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "myFocusMode",
-                                "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -892,6 +901,33 @@
                 },
                 "UUID": "ADE74A1C-517D-4FEB-AB12-82BF428DFF18",
                 "WFTimeUntilUnit": "Total Time"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Charty",
+                "UUID": "BA1E2147-2141-416D-BDCB-B601DC3C9038"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BA1E2147-2141-416D-BDCB-B601DC3C9038",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "AA4590F4-F70F-4E74-84E8-F38AF8C4D5D6",
+                "WFWorkflowName": "Open App"
             }
         },
         {
@@ -924,8 +960,8 @@
                             },
                             "{3, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "myFocusMode",
-                                "OutputUUID": "02459CDA-C511-4D0F-9046-291953FE8CDE",
+                                "OutputName": "Dictionary Value",
+                                "OutputUUID": "47FB25D1-9302-4FF0-BA0F-26CF3DE463B8",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFCoercionVariableAggrandizement",
@@ -1121,6 +1157,17 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.brogrammers.charty",
+                    "Name": "Charty",
+                    "TeamIdentifier": "UKAZS68625"
+                },
+                "WFQuitAppMode": "App"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -1146,6 +1193,19 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "5501402A-8C2E-40CE-BE8F-3C4331277B22",
                 "UUID": "BB06AC18-EECC-41FF-BF14-02CC7436D532"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F5F237A0-B0CB-4E10-A05F-30AA9C5E30D3",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFVariableName": "widgetText"
             }
         },
         {
