@@ -10,10 +10,44 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "Finder",
-                "UUID": "F2D8C660-4335-476B-B848-47B5BC7127AD"
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "appName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Finder"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 4,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "fullScreen"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": true,
+                                    "WFSerializationType": "WFNumberSubstitutableState"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "CEDA5372-B004-46AD-A55D-DD197A5E6719"
             }
         },
         {
@@ -21,18 +55,46 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "F2D8C660-4335-476B-B848-47B5BC7127AD",
+                        "OutputUUID": "CEDA5372-B004-46AD-A55D-DD197A5E6719",
                         "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflowName": "Open App",
                 "WFWorkflow": {
                     "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
                     "workflowName": "Open App",
                     "isSelf": false
-                }
+                },
+                "UUID": "6E88B4CF-1384-47BE-B1F1-8FC88968E942",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": "/",
+                "CustomOutputName": "Shortcuts",
+                "UUID": "4D9EB7A0-C47C-4999-8BA6-0A10ACE92E35"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openin",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4D9EB7A0-C47C-4999-8BA6-0A10ACE92E35",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.finder",
+                    "Name": "Finder",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFOpenInAppIdentifier": "com.apple.finder"
             }
         },
         {
@@ -78,33 +140,6 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "Terminal",
-                "UUID": "01F27406-8E84-4820-8DE7-BEACDE76E526"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "01F27406-8E84-4820-8DE7-BEACDE76E526",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
-                    "workflowName": "Open App",
-                    "isSelf": false
-                },
-                "UUID": "721D14BF-CE93-425A-A017-3B00E2181E1A",
-                "WFWorkflowName": "Open App"
             }
         },
         {
@@ -225,6 +260,65 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": "CHANGELOG.md",
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "Shortcutomation",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "Shortcutomation",
+                    "displayName": "Shortcutomation"
+                },
+                "UUID": "9A94984A-596C-429A-B368-1E4C60274395"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "(?m)^>.*(?:\\n.*)*$",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "9A94984A-596C-429A-B368-1E4C60274395",
+                                "Type": "ActionOutput",
+                                "OutputName": "File"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "731D1F5B-E111-456D-BC52-B8C0831470B9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "731D1F5B-E111-456D-BC52-B8C0831470B9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Matches"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "FCA74B88-85E5-483D-BD6E-C4DDA013EE6D"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -242,7 +336,7 @@
                                 "OutputName": "tagName"
                             },
                             "{96, 1}": {
-                                "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
+                                "OutputUUID": "FCA74B88-85E5-483D-BD6E-C4DDA013EE6D",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
                             }
@@ -254,9 +348,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "text": {
+                "WFInput": {
                     "Value": {
                         "OutputUUID": "0BD81EC7-9761-41C6-B1A6-42141D7D8374",
                         "Type": "ActionOutput",
@@ -264,53 +358,13 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "66D2FD45-4808-4BED-A8E4-916007BD8437"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
-            "WFWorkflowActionParameters": {
-                "WFTextCustomSeparator": " && ",
-                "UUID": "9C3C9775-4B5A-454B-B030-D3C1D2C7B43F",
-                "WFTextSeparator": "Custom",
-                "text": {
-                    "Value": {
-                        "OutputUUID": "66D2FD45-4808-4BED-A8E4-916007BD8437",
-                        "Type": "ActionOutput",
-                        "OutputName": "Split Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "9C3C9775-4B5A-454B-B030-D3C1D2C7B43F",
-                        "Type": "ActionOutput",
-                        "OutputName": "Combined Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFWorkflow": {
-                    "workflowIdentifier": "4F01DBEE-6F75-4D25-A918-41F41C3A2A72",
-                    "workflowName": "Notify \"Copied to Clipboard!\"",
+                    "workflowIdentifier": "ADA5B0ED-A3C6-48E0-ADDA-DE12E3E9D677",
+                    "workflowName": "Template - Run Commands in Terminal",
                     "isSelf": false
                 },
                 "UUID": "4B06C9DC-8D64-4AAA-8680-59C8EA338CD9",
-                "WFWorkflowName": "Notify \"Copied to Clipboard!\""
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
-            "WFWorkflowActionParameters": {
-                "WFApp": {
-                    "BundleIdentifier": "com.apple.Terminal",
-                    "Name": "Terminal",
-                    "TeamIdentifier": "0000000000"
-                }
+                "WFWorkflowName": "Template - Run Commands in Terminal"
             }
         },
         {

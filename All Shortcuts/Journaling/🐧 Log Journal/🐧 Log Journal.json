@@ -145,6 +145,30 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3F4B5742-2341-4FA3-8118-A9315E508499",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -162,6 +186,13 @@
                 },
                 "UUID": "B4F2DE0E-75D9-431E-B6CF-A4EF92A46A89",
                 "WFWorkflowName": "📝 Create New Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3F4B5742-2341-4FA3-8118-A9315E508499",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -629,7 +660,8 @@
                         "Type": "ExtensionInput"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "UUID": "976811F7-BE85-4E30-817D-166D0B12A93C"
             }
         },
         {
@@ -648,14 +680,24 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
-            "WFWorkflowActionParameters": {}
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "✍️ Jog down something…",
+                "WFAskActionPrompt": "✍️ Jog something down…",
                 "UUID": "93E7BB81-7B01-46E3-8219-E462589D97F5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "OutputUUID": "93E7BB81-7B01-46E3-8219-E462589D97F5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Ask for Input"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "4C2AF6D3-C810-4B74-8053-96FC6875D2A1"
             }
         },
         {
@@ -667,27 +709,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
-            "WFWorkflowActionParameters": {
-                "text": {
-                    "Value": {
-                        "OutputUUID": "EA6DB02C-9B52-4DCC-B020-4D5A7CA94DCA",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "4C2AF6D3-C810-4B74-8053-96FC6875D2A1"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "4C2AF6D3-C810-4B74-8053-96FC6875D2A1",
+                        "OutputUUID": "EA6DB02C-9B52-4DCC-B020-4D5A7CA94DCA",
                         "Type": "ActionOutput",
-                        "OutputName": "Split Text"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -737,7 +765,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "“[^”]+”",
+                "WFMatchTextPattern": "^(“|\\[“)",
                 "text": {
                     "Value": {
                         "string": "￼",
@@ -1195,6 +1223,51 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "6E93165D-32A2-40BC-8FEC-EB15E6E36869",
                 "UUID": "A416EC84-7578-44EA-9516-B9A144750209"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B25E3FFB-5133-4561-913B-059A19BFA32D",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AE6E61E9-1AE4-4E20-9406-0146BBBFE89B",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A431180D-71BB-4AD8-8F8D-073B568D7CCC",
+                    "workflowName": "🙌 Brain Dump",
+                    "isSelf": false
+                },
+                "UUID": "297A05CE-F728-423D-ACFB-273F19870932",
+                "WFWorkflowName": "🙌 Brain Dump"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B25E3FFB-5133-4561-913B-059A19BFA32D",
+                "UUID": "10660151-315A-49C7-8D1F-D0AC086B7423"
             }
         },
         {

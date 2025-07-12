@@ -111,6 +111,19 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
+            "WFWorkflowActionParameters": {
+                "WFDeviceDetail": "Current Brightness",
+                "UUID": "F12AF03B-0660-4A9C-938F-09A3F3622B6C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": 0
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -142,6 +155,21 @@
                 },
                 "UUID": "47E82139-200D-47C7-A08E-EEFD5A16FD39",
                 "WFWorkflowName": "_Log Calendar Events to Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "47E82139-200D-47C7-A08E-EEFD5A16FD39",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "9CD700CC-C2C1-4B66-8A3A-F579D21F31A3",
+                "WFControlFlowMode": 0
             }
         },
         {
@@ -184,9 +212,8 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "47E82139-200D-47C7-A08E-EEFD5A16FD39",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Shortcut Result"
+                                                "VariableName": "Repeat Item 2",
+                                                "Type": "Variable"
                                             }
                                         }
                                     },
@@ -223,8 +250,29 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "15D4E690-96CB-4850-A09B-F9D5F08287C7",
+                "GroupingIdentifier": "9CD700CC-C2C1-4B66-8A3A-F579D21F31A3",
                 "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "15D4E690-96CB-4850-A09B-F9D5F08287C7",
+                "UUID": "6DB8C426-8B51-4850-B490-7826DABADBF8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": {
+                    "Value": {
+                        "OutputUUID": "F12AF03B-0660-4A9C-938F-09A3F3622B6C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {
@@ -320,6 +368,34 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "dates",
+                        "OutputUUID": "3BA0CABC-457C-4350-ACBB-781626D4F1DF",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDateContentItem"
+                            },
+                            {
+                                "WFDateFormatStyle": "Custom",
+                                "Type": "WFDateFormatVariableAggrandizement",
+                                "WFDateFormat": "yyyy (EEEE)",
+                                "WFISO8601IncludeTime": false
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemSortProperty": "Name",
+                "WFContentItemSortOrder": "Z to A",
+                "UUID": "5B6A753D-34E2-4E91-839B-F6A2F2DD0F6C"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
                 "WFAlertActionCancelButtonShown": false,
@@ -328,21 +404,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
+                                "OutputUUID": "5B6A753D-34E2-4E91-839B-F6A2F2DD0F6C",
                                 "Type": "ActionOutput",
-                                "OutputName": "dates",
-                                "OutputUUID": "3BA0CABC-457C-4350-ACBB-781626D4F1DF",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDateContentItem"
-                                    },
-                                    {
-                                        "WFDateFormatStyle": "Custom",
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFDateFormat": "yyyy-MM-dd (EEEE)",
-                                        "WFISO8601IncludeTime": false
-                                    }
-                                ]
+                                "OutputName": "Files"
                             }
                         }
                     },
@@ -506,6 +570,18 @@
                 },
                 "UUID": "7F45C273-DF26-40C4-B2EB-C714B89DBEA0",
                 "WFWorkflowName": "📔 View Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "DCBCC72D-2982-4BDA-9A2A-FDA8332008C1",
+                    "workflowName": "You Are All Set",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "You Are All Set",
+                "UUID": "E87BEEBA-2456-4239-BCD6-D88246CF0032"
             }
         },
         {

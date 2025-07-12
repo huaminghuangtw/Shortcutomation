@@ -12,9 +12,54 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
-                "WFCommentActionText": "http://numbersapi.com"
+                "CustomOutputName": "baseURL",
+                "WFURLActionURL": "http://numbersapi.com",
+                "UUID": "EEE6D42E-A98F-4F00-8146-6B346F9BEF00"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "F1322BB9-5821-4A59-AE61-84D4DF38EAE0",
+                    "workflowName": "isDictionary",
+                    "isSelf": false
+                },
+                "UUID": "AEB90979-F7CC-4673-9004-FAF3FF05EB93",
+                "WFWorkflowName": "isDictionary"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "AEB90979-F7CC-4673-9004-FAF3FF05EB93",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "8AEDE1F6-CD2C-466C-B40D-BBD38FF3AC97",
+                "WFCondition": 4
             }
         },
         {
@@ -58,9 +103,9 @@
                 "UUID": "EAF92C9D-C9CD-48CE-A5BA-B039339E6664",
                 "WFURL": {
                     "Value": {
-                        "string": "http://numbersapi.com/￼/￼",
+                        "string": "￼/￼/￼",
                         "attachmentsByRange": {
-                            "{22, 1}": {
+                            "{2, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Dictionary",
                                 "OutputUUID": "C3BE1E23-3E57-444A-A468-3B3BCDC7B4CF",
@@ -71,7 +116,7 @@
                                     }
                                 ]
                             },
-                            "{24, 1}": {
+                            "{4, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Dictionary",
                                 "OutputUUID": "C3BE1E23-3E57-444A-A468-3B3BCDC7B4CF",
@@ -81,11 +126,75 @@
                                         "DictionaryKey": "type"
                                     }
                                 ]
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "EEE6D42E-A98F-4F00-8146-6B346F9BEF00",
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8AEDE1F6-CD2C-466C-B40D-BBD38FF3AC97",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFHTTPHeaders": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "Content-Type"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "application/json"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "ShowHeaders": true,
+                "UUID": "0F6E75B0-EFB7-4600-B874-97A096873149",
+                "WFURL": {
+                    "Value": {
+                        "string": "￼/￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "Type": "ExtensionInput"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "EEE6D42E-A98F-4F00-8146-6B346F9BEF00",
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "8AEDE1F6-CD2C-466C-B40D-BBD38FF3AC97",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -204,12 +313,17 @@
                 "UUID": "2E66D63A-DE62-413B-B018-74C12FA35B2A",
                 "WFURL": {
                     "Value": {
-                        "string": "http://numbersapi.com/random/￼",
+                        "string": "￼/random/￼",
                         "attachmentsByRange": {
-                            "{29, 1}": {
+                            "{9, 1}": {
                                 "OutputUUID": "B3059310-BAE7-4748-8F68-941196224F22",
                                 "Type": "ActionOutput",
                                 "OutputName": "Item from List"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "EEE6D42E-A98F-4F00-8146-6B346F9BEF00",
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
                             }
                         }
                     },

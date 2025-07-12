@@ -36,6 +36,58 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Logger",
+                "UUID": "49A30533-4C9E-4060-ADDA-D7F8A1D25E8D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "49A30533-4C9E-4060-ADDA-D7F8A1D25E8D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "B6F94DE6-A027-4704-91D7-F159EEB32869",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.ClearMessagesIntent",
+            "WFWorkflowActionParameters": {
+                "ShowWhenRun": false,
+                "UUID": "A70C05FD-1E4E-4753-B187-2C822D2B9D10",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "ClearMessagesIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "EC262FBC-03FD-4929-BE8B-4C307CC3A1A8",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "StartLoggingIntent"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "My Reminders.evergreenLists",
@@ -92,6 +144,104 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
+            "WFWorkflowActionParameters": {
+                "key": {
+                    "subtitle": {
+                        "key": "Evergreen Lists"
+                    },
+                    "title": {
+                        "key": "Evergreen Lists"
+                    },
+                    "value": "Evergreen Lists"
+                },
+                "UUID": "07D14E7E-59B1-4005-95F9-DB9D433DB0B8",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableGetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "07D14E7E-59B1-4005-95F9-DB9D433DB0B8",
+                            "Type": "ActionOutput",
+                            "OutputName": "Global Variable — Text"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "4413EA2C-D2C3-4D02-B3DB-4F864CCB236E",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "A808EB05-0F25-4C0F-9580-41808EBDA259",
+                "title": {
+                    "Value": {
+                        "string": "🔄 ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            },
+                            "{3, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "info",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "title": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "value": "🌼 Share Evergreen Lists"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -108,6 +258,57 @@
                 },
                 "UUID": "C00BE80F-DB08-440D-99B8-A90FCB188B75",
                 "WFWorkflowName": "_EvergreenList2GoogleSheets"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "string": "￼ - Google Sheets",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "1D7AFDD1-6712-4EAA-87F0-772323BA81D3",
+                "title": {
+                    "Value": {
+                        "string": "✓ ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "success",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "title": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "value": "🌼 Share Evergreen Lists"
+                }
             }
         },
         {
@@ -130,6 +331,57 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "string": "￼ - Markdown",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "31B2351F-A92E-4E4F-B161-BAB5E8C87FBB",
+                "title": {
+                    "Value": {
+                        "string": "✓ ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "success",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "title": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "value": "🌼 Share Evergreen Lists"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -149,145 +401,165 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
             "WFWorkflowActionParameters": {
-                "WFItems": {
+                "messages": {
                     "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "current"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "VariableName": "Repeat Index",
-                                                "Type": "Variable"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "total"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Count"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "3E2541B4-9D35-449A-922D-5DCC656E8580"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "3E2541B4-9D35-449A-922D-5DCC656E8580",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "6168F0E9-9EDA-4F74-9B2F-74E63D3E4F2A",
-                    "workflowName": "Progress Bar Maker (without Text)",
-                    "isSelf": false
-                },
-                "UUID": "EE6A2F5B-663A-40A5-BAA5-690A5F40F1FD",
-                "WFWorkflowName": "Progress Bar Maker (without Text)"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼\n✅ ￼\n[ ￼ / ￼ ]\n￼",
+                        "string": "￼ - JSON",
                         "attachmentsByRange": {
-                            "{12, 1}": {
-                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
-                                "Type": "ActionOutput",
-                                "OutputName": "Count"
-                            },
-                            "{4, 1}": {
+                            "{0, 1}": {
                                 "VariableName": "Repeat Item",
                                 "Type": "Variable"
-                            },
-                            "{8, 1}": {
-                                "VariableName": "Repeat Index",
-                                "Type": "Variable"
-                            },
-                            "{16, 1}": {
-                                "OutputUUID": "EE6A2F5B-663A-40A5-BAA5-690A5F40F1FD",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "57FFF459-F0ED-4AA2-8A77-2156A5C13462",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text Divider"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "8FD7CAA8-EFF1-472C-B49A-39C4FD13418B"
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "1449BC8D-80FA-4A73-AC62-216DC41E374F",
+                "title": {
+                    "Value": {
+                        "string": "✓ ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "success",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "title": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "value": "🌼 Share Evergreen Lists"
+                }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "8FD7CAA8-EFF1-472C-B49A-39C4FD13418B",
+                        "OutputUUID": "07D14E7E-59B1-4005-95F9-DB9D433DB0B8",
                         "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "OutputName": "Global Variable — Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFNotificationActionBody": {
+                "WFVariableName": "Evergreen Lists"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "Evergreen Lists"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableSetText",
+            "WFWorkflowActionParameters": {
+                "value": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "8FD7CAA8-EFF1-472C-B49A-39C4FD13418B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "VariableName": "Evergreen Lists",
+                                "Type": "Variable"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "F9266052-45E7-4525-B05A-B4227AF1B9B3",
-                "WFNotificationActionSound": false,
-                "WFNotificationActionTitle": ""
+                "key": "Evergreen Lists",
+                "UUID": "E5496CEE-8545-4934-891C-649081CA24E4",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableSetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "34137400-F3A0-4506-AE46-7B23D5CEB05A",
+                "title": {
+                    "Value": {
+                        "string": "✅ ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "97C3D13E-CCE5-48FA-877E-FAAFFC839A44",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "success",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "title": {
+                        "key": "🌼 Share Evergreen Lists"
+                    },
+                    "value": "🌼 Share Evergreen Lists"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4413EA2C-D2C3-4D02-B3DB-4F864CCB236E",
+                "UUID": "2B427730-AD6A-459F-BAFF-0D5985368531"
             }
         },
         {
@@ -421,19 +693,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "# Evergreen Lists\n\n> **Last Update:** ￼\n\n## About\n\nThis repo maintains evergreen lists that I curated over time. Each list is available in three formats: **Google Sheets**, **JSON**, and **Markdown**, feel free to use them in the way that suits you best!\n\nContributions are welcome! If you have ideas to expand or improve these lists, please [open an issue](https://github.com/huaminghuangtw/Evergreen-Lists/issues/new) or [submit a pull request](https://github.com/huaminghuangtw/Evergreen-Lists/compare).\n\n## Overview\n\n￼",
+                        "string": "# Evergreen Lists\n\n## About\n\nThis repo maintains evergreen lists that I curated over time. Each list is available in three formats: **Google Sheets**, **JSON**, and **Markdown**, feel free to use them in the way that suits you best!\n\nContributions are welcome! If you have ideas to expand or improve these lists, please [open an issue](https://github.com/huaminghuangtw/Evergreen-Lists/issues/new) or [submit a pull request](https://github.com/huaminghuangtw/Evergreen-Lists/compare).\n\n## Overview\n\n￼",
                         "attachmentsByRange": {
-                            "{38, 1}": {
-                                "Type": "CurrentDate",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
-                                    }
-                                ]
-                            },
-                            "{521, 1}": {
+                            "{499, 1}": {
                                 "OutputUUID": "8EEB3E1D-9830-4984-830A-9571F7C8E1FE",
                                 "Type": "ActionOutput",
                                 "OutputName": "Repeat Results"
@@ -489,11 +751,92 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "E46E2D87-9766-463C-9FA8-58338B0DE8AD",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": "🌼 Share Evergreen Lists"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "E46E2D87-9766-463C-9FA8-58338B0DE8AD",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "77E38EDA-CC06-45FB-88B4-039D4802F3FF",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFReminderContentItemIsCompleted": 1,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E46E2D87-9766-463C-9FA8-58338B0DE8AD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Is Completed",
+                "Mode": "Set",
+                "UUID": "3E5EFBD6-AF30-46E3-B05C-6BE44DDFF0D1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "77E38EDA-CC06-45FB-88B4-039D4802F3FF",
+                "UUID": "7CAEA379-163B-4AD9-9FCE-0602A2B515C2"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n✅ README.md",
+                        "string": "￼\n✅ Complete!",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "57FFF459-F0ED-4AA2-8A77-2156A5C13462",
@@ -510,14 +853,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "5B117C33-47AB-4638-B07E-C50673CF9CF3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFNotificationActionBody": {
                     "Value": {
                         "string": "￼",
@@ -532,8 +867,46 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "D381EFD9-EA05-4FDB-9BCF-3C24EC74C0D0",
-                "WFNotificationActionSound": false,
+                "WFNotificationActionSound": true,
                 "WFNotificationActionTitle": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableSetText",
+            "WFWorkflowActionParameters": {
+                "value": "‏‎",
+                "key": "Evergreen Lists",
+                "UUID": "8EE7ED1C-BA7F-459C-AFA3-FEFE1F83069A",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableSetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "stop",
+                "UUID": "B7A2CF8F-A9EB-4C64-8EB2-25FC5139F3AD",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "StartLoggingIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "TeamIdentifier": "QRVYSKD5TN"
+                },
+                "WFAskToSaveChanges": false
             }
         },
         {

@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "3216",
+    "WFWorkflowMinimumClientVersion": 3216,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -13,6 +13,210 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
             "WFWorkflowActionParameters": {
                 "WFPlayPauseBehavior": "Pause"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.apps",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": false,
+                "UUID": "1A0B49DC-3A73-4374-B3D7-121CBF441EFD",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": true,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    },
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Running"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "1A0B49DC-3A73-4374-B3D7-121CBF441EFD",
+                            "Type": "ActionOutput",
+                            "OutputName": "Apps"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFApp": {
+                    "BundleIdentifier": "com.microsoft.edgemac",
+                    "Name": "Microsoft Edge",
+                    "TeamIdentifier": "UBF8T346G9"
+                },
+                "WFConditionalActionString": "Microsoft Edge",
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "43B4E7C7-844F-4F54-AEEC-D1EA5ACCE7DB",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.microsoft.edgemac",
+                    "Name": "Microsoft Edge",
+                    "TeamIdentifier": "UBF8T346G9"
+                },
+                "WFAppIdentifier": "com.microsoft.edgemac",
+                "UUID": "D36E0B94-48DA-4944-BE1E-7F0DB8A699AF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "👁️ Review All Tabs"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "43B4E7C7-844F-4F54-AEEC-D1EA5ACCE7DB",
+                "UUID": "AA4BBBB1-15A2-43E1-B6B2-A3EDD8FA75AD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "C8E5F7A4-9BFE-4F91-A0C6-03815E4C42DD",
+                    "workflowName": "關大燈",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "關大燈",
+                "UUID": "CDAD2557-58E3-432F-B412-615563ACB32E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "19D5C48A-EA31-40FD-9AB4-F8ECDC21AD0B",
+                    "workflowName": "🍻 Show Flow & Word Counts",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🍻 Show Flow & Word Counts",
+                "UUID": "3D5001EC-9B9D-4238-B044-EF0C5670CF3A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "557846D1-45B3-48CE-8E37-AED4C6274DA1",
+                    "workflowName": "📦 Reorganize Obsidian Vault For Consistency",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "📦 Reorganize Obsidian Vault For Consistency",
+                "UUID": "8CEBD0BA-43F4-4FA7-8FE4-FE5BE2BCA829"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFHideAppMode": "All Apps"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "1. Shortcuts\n2. Data Jar\n3. Reminders\n4. Calendar\n5. Notes\n6. Zotero\n7. ChatGPT\n8. Visual Studio Code\n9. Shortery\n10. Obsidian"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFQuitAppMode": "All Apps",
+                "WFAppsExcept": [
+                    {
+                        "BundleIdentifier": "com.apple.shortcuts",
+                        "Name": "Shortcuts",
+                        "TeamIdentifier": "0000000000"
+                    },
+                    {
+                        "BundleIdentifier": "dk.simonbs.DataJar",
+                        "Name": "Data Jar",
+                        "TeamIdentifier": "8NQFWJHC63"
+                    },
+                    {
+                        "BundleIdentifier": "com.apple.reminders",
+                        "Name": "Reminders",
+                        "TeamIdentifier": "0000000000"
+                    },
+                    {
+                        "BundleIdentifier": "com.apple.iCal",
+                        "Name": "Calendar",
+                        "TeamIdentifier": "0000000000"
+                    },
+                    {
+                        "BundleIdentifier": "com.apple.Notes",
+                        "Name": "Notes",
+                        "TeamIdentifier": "0000000000"
+                    },
+                    {
+                        "BundleIdentifier": "org.zotero.zotero",
+                        "Name": "Zotero",
+                        "TeamIdentifier": "8LAYR367YV"
+                    },
+                    {
+                        "BundleIdentifier": "com.openai.chat",
+                        "Name": "ChatGPT",
+                        "TeamIdentifier": "2DC432GLL2"
+                    },
+                    {
+                        "BundleIdentifier": "com.microsoft.VSCode",
+                        "Name": "Visual Studio Code",
+                        "TeamIdentifier": "UBF8T346G9"
+                    },
+                    {
+                        "BundleIdentifier": "com.shortery-app.Shortery",
+                        "Name": "Shortery",
+                        "TeamIdentifier": "HR22V4547K"
+                    },
+                    {
+                        "BundleIdentifier": "md.obsidian",
+                        "Name": "Obsidian",
+                        "TeamIdentifier": "6JSW4SJWN9"
+                    }
+                ],
+                "WFAskToSaveChanges": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 3
             }
         },
         {
@@ -40,109 +244,13 @@
             "WFWorkflowActionParameters": {}
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "C8E5F7A4-9BFE-4F91-A0C6-03815E4C42DD",
-                    "workflowName": "關大燈",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "關大燈",
-                "UUID": "CDAD2557-58E3-432F-B412-615563ACB32E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
-            "WFWorkflowActionParameters": {
-                "WFCommentActionText": "1. Shortcuts\n2. Data Jar\n3. Reminders\n4. Obsidian\n5. Calendar\n6. Notes\n7. Zotero\n8. ChatGPT\n9. Terminal\n10. Visual Studio Code\n11. Shortery"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
-            "WFWorkflowActionParameters": {
-                "WFQuitAppMode": "All Apps",
-                "WFAppsExcept": [
-                    {
-                        "BundleIdentifier": "com.apple.shortcuts",
-                        "Name": "Shortcuts",
-                        "TeamIdentifier": "0000000000"
-                    },
-                    {
-                        "BundleIdentifier": "dk.simonbs.DataJar",
-                        "Name": "Data Jar",
-                        "TeamIdentifier": "8NQFWJHC63"
-                    },
-                    {
-                        "BundleIdentifier": "com.apple.reminders",
-                        "Name": "Reminders",
-                        "TeamIdentifier": "0000000000"
-                    },
-                    {
-                        "BundleIdentifier": "md.obsidian",
-                        "Name": "Obsidian",
-                        "TeamIdentifier": "6JSW4SJWN9"
-                    },
-                    {
-                        "BundleIdentifier": "com.apple.iCal",
-                        "Name": "Calendar",
-                        "TeamIdentifier": "0000000000"
-                    },
-                    {
-                        "BundleIdentifier": "com.apple.Notes",
-                        "Name": "Notes",
-                        "TeamIdentifier": "0000000000"
-                    },
-                    {
-                        "BundleIdentifier": "org.zotero.zotero",
-                        "Name": "Zotero",
-                        "TeamIdentifier": "8LAYR367YV"
-                    },
-                    {
-                        "BundleIdentifier": "com.openai.chat",
-                        "Name": "ChatGPT",
-                        "TeamIdentifier": "2DC432GLL2"
-                    },
-                    {
-                        "BundleIdentifier": "com.apple.Terminal",
-                        "Name": "Terminal",
-                        "TeamIdentifier": "0000000000"
-                    },
-                    {
-                        "BundleIdentifier": "com.microsoft.VSCode",
-                        "Name": "Visual Studio Code",
-                        "TeamIdentifier": "UBF8T346G9"
-                    },
-                    {
-                        "BundleIdentifier": "com.shortery-app.Shortery",
-                        "Name": "Shortery",
-                        "TeamIdentifier": "HR22V4547K"
-                    }
-                ],
-                "WFAskToSaveChanges": false
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "557846D1-45B3-48CE-8E37-AED4C6274DA1",
-                    "workflowName": "📦 Reorganize Obsidian Vault For Consistency",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "📦 Reorganize Obsidian Vault For Consistency",
-                "UUID": "8CEBD0BA-43F4-4FA7-8FE4-FE5BE2BCA829"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
             "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [
-        "QuickActions"
-    ],
+    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }
