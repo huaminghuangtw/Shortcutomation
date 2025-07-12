@@ -152,15 +152,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "9C48945F-7E22-4EFA-9334-61777791A46C",
-                    "workflowName": "isOnline",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "isOnline",
-                "UUID": "566811E4-B499-4633-9926-091AD10B2D67"
+                "UUID": "D7C76B18-579A-49CE-8F99-94A88AFD6CD2"
             }
         },
         {
@@ -170,22 +164,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "D7C76B18-579A-49CE-8F99-94A88AFD6CD2",
                             "Type": "ActionOutput",
-                            "OutputName": "Shortcut Result",
-                            "OutputUUID": "566811E4-B499-4633-9926-091AD10B2D67",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
-                                }
-                            ]
+                            "OutputName": "Current IP Address"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "407418B5-89AE-4D05-A5EC-A555B194B46F",
-                "WFCondition": 4
+                "WFCondition": 100
             }
         },
         {
@@ -392,6 +380,65 @@
                 "WFConditionalActionString": "Daily Highlights",
                 "GroupingIdentifier": "B96487C5-A2C6-44ED-8C4E-9F068A485247",
                 "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "diaryEntriesCal",
+                "UUID": "406E546B-145D-4700-B165-74D7F917F446",
+                "WFWorkflow": {
+                    "workflowIdentifier": "7D500A76-6147-4306-AB98-8C3EAE0693C1",
+                    "workflowName": "Get Diary Entries for All-Day Calendar Events",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Get Diary Entries for All-Day Calendar Events"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "406E546B-145D-4700-B165-74D7F917F446",
+                            "Type": "ActionOutput",
+                            "OutputName": "diaryEntriesCal"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F153C8D2-79AB-4EBD-9E92-B394C08582F3",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "406E546B-145D-4700-B165-74D7F917F446",
+                        "Type": "ActionOutput",
+                        "OutputName": "diaryEntriesCal"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "diaryEntries"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F153C8D2-79AB-4EBD-9E92-B394C08582F3",
+                "WFControlFlowMode": 2
             }
         },
         {

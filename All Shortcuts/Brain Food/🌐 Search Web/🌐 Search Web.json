@@ -10,15 +10,9 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.IsOnlineIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "UUID": "866429D1-60AB-4CBA-B501-F7752038F720",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "IsOnlineIntent"
-                }
+                "UUID": "9984727A-C95D-4C23-8DBD-C4F454278E78"
             }
         },
         {
@@ -28,16 +22,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "866429D1-60AB-4CBA-B501-F7752038F720",
+                            "OutputUUID": "9984727A-C95D-4C23-8DBD-C4F454278E78",
                             "Type": "ActionOutput",
-                            "OutputName": "Is Online"
+                            "OutputName": "Current IP Address"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "4D7AF213-EEC1-447F-B321-7F0A3AEABA7B",
-                "WFCondition": 4
+                "WFCondition": 100
             }
         },
         {
@@ -313,6 +307,10 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "68C7243B-DEDC-44C7-8B50-649E58DD2BE8",
@@ -363,34 +361,14 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "CustomOutputName": "googleSearchURL",
+                "UUID": "16336C4C-859C-428F-9A2A-386B592FA067",
                 "WFWorkflow": {
                     "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
                     "workflowName": "Build Google Search URL",
                     "isSelf": false
                 },
-                "UUID": "16336C4C-859C-428F-9A2A-386B592FA067",
                 "WFWorkflowName": "Build Google Search URL"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "16336C4C-859C-428F-9A2A-386B592FA067",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFReplaceTextReplace": "%26",
-                "UUID": "BB21F901-7F48-47A4-9C25-6F6D397CBBE2",
-                "WFReplaceTextFind": "&"
             }
         },
         {
@@ -429,9 +407,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "BB21F901-7F48-47A4-9C25-6F6D397CBBE2",
+                        "OutputUUID": "16336C4C-859C-428F-9A2A-386B592FA067",
                         "Type": "ActionOutput",
-                        "OutputName": "Updated Text"
+                        "OutputName": "googleSearchURL"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -457,9 +435,9 @@
                                 "Type": "Variable"
                             },
                             "{4, 1}": {
-                                "OutputUUID": "BB21F901-7F48-47A4-9C25-6F6D397CBBE2",
+                                "OutputUUID": "16336C4C-859C-428F-9A2A-386B592FA067",
                                 "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
+                                "OutputName": "googleSearchURL"
                             }
                         }
                     },
@@ -491,17 +469,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "16336C4C-859C-428F-9A2A-386B592FA067",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "googleSearchURL"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "6DA77933-ACC6-49BD-A6C8-2ADBDAD1F42A"
+                "WFWorkflow": {
+                    "workflowIdentifier": "FF976D71-BFA7-4AA2-9937-677161CAB749",
+                    "workflowName": "(Batch) Open URL(s)",
+                    "isSelf": false
+                },
+                "UUID": "5AE7B4C1-638C-4D7A-813F-EED4D1AA59C8",
+                "WFWorkflowName": "(Batch) Open URL(s)"
             }
         },
         {

@@ -60,6 +60,49 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "09E776F4-7B03-4528-B420-FB26E31EBD4F",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "685F92F4-AD21-47AE-8C7C-4EE9A3A8DC37",
+                    "workflowName": "Edge",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Edge",
+                "UUID": "ECCCB378-DC4E-44D2-8BB6-F6196D732DD9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "09E776F4-7B03-4528-B420-FB26E31EBD4F",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
             "WFWorkflowActionParameters": {
                 "WFVolume": 0.1989898681640625
@@ -250,17 +293,30 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runshellscript",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "Input": {
                     "Value": {
-                        "OutputUUID": "F09DDCC7-7D9A-4742-BB9F-7068019B38CB",
+                        "OutputUUID": "EE0D29C9-1216-4A58-A966-5CC4956D51D3",
                         "Type": "ActionOutput",
-                        "OutputName": "URL"
+                        "OutputName": "If Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "DDE1893C-62D1-4EBB-AAC2-79A353462FA8"
+                "Script": {
+                    "Value": {
+                        "string": "open -a 'Microsoft Edge.app' --new --args --inprivate \"￼\"",
+                        "attachmentsByRange": {
+                            "{55, 1}": {
+                                "OutputUUID": "F09DDCC7-7D9A-4742-BB9F-7068019B38CB",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B2BE569C-A9CA-4435-BEA6-8BB6CCE7D1D4"
             }
         },
         {

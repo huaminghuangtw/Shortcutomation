@@ -10,6 +10,39 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+                    "workflowName": "getDayOfWeek",
+                    "isSelf": false
+                },
+                "CustomOutputName": "dayOfWeek",
+                "UUID": "07466AC6-CC42-49D9-AD51-02D8F2DF92CB",
+                "WFWorkflowName": "getDayOfWeek"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "07466AC6-CC42-49D9-AD51-02D8F2DF92CB",
+                            "Type": "ActionOutput",
+                            "OutputName": "dayOfWeek"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sunday",
+                "GroupingIdentifier": "2E1AE0AC-6268-4FFE-911A-C8A542DDBC63",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "My Apple Shortcuts.shortcutLastRunTime.Shortcutomation - Show Your Work",
@@ -97,7 +130,7 @@
             "WFWorkflowActionParameters": {
                 "keyPath": {
                     "Value": {
-                        "string": "￼.lastUpdateSnapshot",
+                        "string": "￼.thisUpdateSnapshot",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "2A90C95D-42AC-4EEE-917F-154CF7990249",
@@ -109,20 +142,6 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "EDCB1988-07F6-432D-A397-DE1C116DE08B"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
-            "WFWorkflowActionParameters": {
-                "Input": {
-                    "Value": {
-                        "OutputUUID": "EDCB1988-07F6-432D-A397-DE1C116DE08B",
-                        "Type": "ActionOutput",
-                        "OutputName": "Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "55FE87EE-9131-4AB8-B976-AD03168DBF1D"
             }
         },
         {
@@ -230,20 +249,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
-            "WFWorkflowActionParameters": {
-                "Input": {
-                    "Value": {
-                        "OutputUUID": "3BF15465-22CB-4CC1-87C9-A279CEC1CB5E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Repeat Results"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "B518ED63-ED17-4294-8614-815FCFAE10FC"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "96298599-55F7-4CE4-A144-3F8ADBB9D506",
@@ -251,9 +256,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "55FE87EE-9131-4AB8-B976-AD03168DBF1D",
                             "Type": "ActionOutput",
-                            "OutputName": "Count"
+                            "OutputName": "Value",
+                            "OutputUUID": "EDCB1988-07F6-432D-A397-DE1C116DE08B",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -264,9 +276,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "EDCB1988-07F6-432D-A397-DE1C116DE08B",
+                                "OutputUUID": "3BF15465-22CB-4CC1-87C9-A279CEC1CB5E",
                                 "Type": "ActionOutput",
-                                "OutputName": "Value"
+                                "OutputName": "Repeat Results"
                             }
                         }
                     },
@@ -303,7 +315,7 @@
                                 "Operator": 4,
                                 "Values": {
                                     "Enumeration": {
-                                        "Value": "🏛️ LifeOS Maintenance",
+                                        "Value": "🏛️ LifeOS",
                                         "WFSerializationType": "WFStringSubstitutableState"
                                     }
                                 },
@@ -340,6 +352,22 @@
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Date": {
+                                        "Value": {
+                                            "Value": {
+                                                "Type": "CurrentDate"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFDateSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Completion Date"
                             }
                         ]
                     },
@@ -407,7 +435,7 @@
                 "WFCalendarItemNotes": "",
                 "WFCalendarDescriptor": {
                     "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
-                    "Title": "🏛️ LifeOS Maintenance",
+                    "Title": "🏛️ LifeOS",
                     "IsAllCalendar": false
                 },
                 "UUID": "12A04036-5683-4BAC-AC9F-1112E3CE6830",
@@ -425,8 +453,8 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemCalendar": "🏛️ LifeOS Maintenance",
-                "WFPriority": "High"
+                "WFCalendarItemCalendar": "🏛️ LifeOS",
+                "WFPriority": "None"
             }
         },
         {
@@ -760,6 +788,13 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "B9984416-4F79-4CC2-84D6-1209B4393531",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2E1AE0AC-6268-4FFE-911A-C8A542DDBC63",
                 "WFControlFlowMode": 2
             }
         },

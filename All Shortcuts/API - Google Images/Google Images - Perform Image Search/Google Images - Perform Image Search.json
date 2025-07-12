@@ -7,16 +7,18 @@
     },
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [
+        "WFDateContentItem",
         "WFNumberContentItem",
         "WFBooleanContentItem",
         "WFStringContentItem",
-        "WFDictionaryContentItem",
-        "WFDateContentItem"
+        "WFDictionaryContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorShowError",
-        "Parameters": {}
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
     },
     "WFWorkflowActions": [
         {
@@ -222,63 +224,32 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.DownloadFileIntent",
             "WFWorkflowActionParameters": {
-                "WFRequestVariable": {
-                    "Value": {
-                        "OutputUUID": "986DD471-1521-4962-8761-BF46F666A40E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "DownloadFileIntent"
                 },
-                "WFHTTPHeaders": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "Authorization"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "Bearer ￼",
-                                        "attachmentsByRange": {
-                                            "{7, 1}": {
-                                                "OutputUUID": "44BB4E63-DA65-42E2-A683-0E069E660B8A",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "accessToken"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "Content-Type"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "application/json"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
+                "UUID": "87701A7E-6A60-473E-B3DF-1DFA4C7BA146",
+                "headers": [
+                    {
+                        "Value": {
+                            "string": "Authorization: Bearer ￼",
+                            "attachmentsByRange": {
+                                "{22, 1}": {
+                                    "OutputUUID": "44BB4E63-DA65-42E2-A683-0E069E660B8A",
+                                    "Type": "ActionOutput",
+                                    "OutputName": "accessToken"
                                 }
                             }
-                        ]
+                        },
+                        "WFSerializationType": "WFTextTokenString"
                     },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "8C7B1788-825A-4AF4-A877-BAC79121DA00",
-                "ShowHeaders": true,
-                "WFURL": {
+                    "Content-Type: application/json"
+                ],
+                "url": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
@@ -290,9 +261,7 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                },
-                "WFHTTPMethod": "GET",
-                "WFHTTPBodyType": "File"
+                }
             }
         },
         {
@@ -301,8 +270,8 @@
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "Contents of URL",
-                        "OutputUUID": "8C7B1788-825A-4AF4-A877-BAC79121DA00",
+                        "OutputName": "Downloaded File",
+                        "OutputUUID": "87701A7E-6A60-473E-B3DF-1DFA4C7BA146",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -345,7 +314,8 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "08C5CB1F-D771-432B-B426-3F56A15B04E0"
             }
         }
     ],

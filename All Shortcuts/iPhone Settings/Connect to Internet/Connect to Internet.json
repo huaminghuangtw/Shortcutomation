@@ -10,23 +10,9 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "attempts",
-                "CustomOutputName": "attempts",
-                "UUID": "4EBC7F51-E930-4476-A506-776F689133C4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.IsOnlineIntent",
-            "WFWorkflowActionParameters": {
-                "UUID": "D9996699-7B79-4B43-BB07-03CF1C3375ED",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "IsOnlineIntent"
-                }
+                "UUID": "EBB16C72-54F5-4F17-9E09-ECC65DD14B64"
             }
         },
         {
@@ -36,16 +22,47 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "D9996699-7B79-4B43-BB07-03CF1C3375ED",
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Is Locked"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D8D05D55-4D7C-4903-A613-4C3224138B3E",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "attempts",
+                "CustomOutputName": "attempts",
+                "UUID": "4EBC7F51-E930-4476-A506-776F689133C4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "EBB16C72-54F5-4F17-9E09-ECC65DD14B64",
                             "Type": "ActionOutput",
-                            "OutputName": "Is Online"
+                            "OutputName": "Current IP Address"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "3AF38719-B164-4E64-9E46-909E8B7D3231",
-                "WFCondition": 4
+                "WFCondition": 100
             }
         },
         {
@@ -198,12 +215,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.airplanemode.set",
-            "WFWorkflowActionParameters": {
-                "OnValue": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.wifi.set",
             "WFWorkflowActionParameters": {
                 "OnValue": 1
@@ -233,6 +244,60 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "3AF38719-B164-4E64-9E46-909E8B7D3231",
                 "UUID": "3AB6BE7C-8BCC-4CB4-BDD4-03946A687188"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D8D05D55-4D7C-4903-A613-4C3224138B3E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "EBB16C72-54F5-4F17-9E09-ECC65DD14B64",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current IP Address"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "No",
+                "GroupingIdentifier": "387DB03D-5D11-4D68-99B9-4EEC092C51A6",
+                "WFCondition": 101
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "08E022F0-2CC4-4F1F-984F-D6044B5F0ECC",
+                    "workflowName": "Join WiFi",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Join WiFi",
+                "UUID": "5F85D958-C98C-49FB-9A40-BF86B60F0CCA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "387DB03D-5D11-4D68-99B9-4EEC092C51A6",
+                "UUID": "A05B3501-2B03-4DE0-94A0-4BD2947F57F3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D8D05D55-4D7C-4903-A613-4C3224138B3E",
+                "WFControlFlowMode": 2
             }
         },
         {

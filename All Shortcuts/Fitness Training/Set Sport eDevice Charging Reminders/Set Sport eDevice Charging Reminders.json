@@ -10,19 +10,47 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
             "WFWorkflowActionParameters": {
-                "WFDateActionDate": "Yesterday 23:59",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "80531D2F-8485-4C6B-84C6-7C05ABCB1875"
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAdjustOperation": "Get Start of Day",
+                "UUID": "A314227D-005D-4F5A-B62A-CC92629A54BF"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
             "WFWorkflowActionParameters": {
-                "WFDateActionDate": "Today 23:59",
-                "WFDateActionMode": "Specified Date",
-                "UUID": "B9B1C3BC-990B-4BC0-923D-AED3D07C1AB0"
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "A314227D-005D-4F5A-B62A-CC92629A54BF",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "days",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "C1FF554D-E2E0-475E-90FB-379AA82C0D4C"
             }
         },
         {
@@ -40,9 +68,9 @@
                                     "Date": {
                                         "Value": {
                                             "Value": {
-                                                "OutputUUID": "80531D2F-8485-4C6B-84C6-7C05ABCB1875",
+                                                "OutputUUID": "A314227D-005D-4F5A-B62A-CC92629A54BF",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Date"
+                                                "OutputName": "Adjusted Date"
                                             },
                                             "WFSerializationType": "WFTextTokenAttachment"
                                         },
@@ -51,9 +79,9 @@
                                     "AnotherDate": {
                                         "Value": {
                                             "Value": {
-                                                "OutputUUID": "B9B1C3BC-990B-4BC0-923D-AED3D07C1AB0",
+                                                "OutputUUID": "C1FF554D-E2E0-475E-90FB-379AA82C0D4C",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Date"
+                                                "OutputName": "Adjusted Date"
                                             },
                                             "WFSerializationType": "WFTextTokenAttachment"
                                         },
@@ -438,7 +466,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
-                "WFContentItemLimitEnabled": true,
+                "WFContentItemLimitEnabled": false,
                 "UUID": "7B6D685C-FF82-4717-AA5C-107B11A1846F",
                 "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
@@ -494,6 +522,22 @@
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Date": {
+                                        "Value": {
+                                            "Value": {
+                                                "Type": "CurrentDate"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFDateSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Completion Date"
                             }
                         ]
                     },

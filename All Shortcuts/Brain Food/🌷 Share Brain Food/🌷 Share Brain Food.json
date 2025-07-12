@@ -36,6 +36,58 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Logger",
+                "UUID": "93BBB9C0-0A03-41FC-9C89-3E643044E687"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "93BBB9C0-0A03-41FC-9C89-3E643044E687",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "2AC794A5-9B94-4089-A2FF-51E82F3278D8",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.ClearMessagesIntent",
+            "WFWorkflowActionParameters": {
+                "ShowWhenRun": false,
+                "UUID": "8BC605D6-4A7C-4C92-B34F-6E8703A4BA7C",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "ClearMessagesIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "7132C5CB-0BAA-43B5-83D2-477BBAD9927A",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "StartLoggingIntent"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "My Reminders.brainFoodLists",
@@ -169,6 +221,104 @@
                 },
                 "GroupingIdentifier": "BD591831-389F-46A4-BD88-47BADCBDD361",
                 "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
+            "WFWorkflowActionParameters": {
+                "key": {
+                    "subtitle": {
+                        "key": "Brain Food"
+                    },
+                    "title": {
+                        "key": "Brain Food"
+                    },
+                    "value": "Brain Food"
+                },
+                "UUID": "3E00CA44-3318-425B-BF74-E596A38889C0",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableGetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "3E00CA44-3318-425B-BF74-E596A38889C0",
+                            "Type": "ActionOutput",
+                            "OutputName": "Global Variable — Text"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "54CFBAA8-59A5-4007-B206-83698D060374",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "169D2D2D-26E2-4BA6-9CA3-BD44404EFFF9",
+                "title": {
+                    "Value": {
+                        "string": "🔄 ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "OutputUUID": "BC32EB87-15B0-4608-96B7-BD437AD9C534",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            },
+                            "{3, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "info",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌷 Share Brain Food"
+                    },
+                    "title": {
+                        "key": "🌷 Share Brain Food"
+                    },
+                    "value": "🌷 Share Brain Food"
+                }
             }
         },
         {
@@ -1152,6 +1302,20 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "E129AFCA-152B-446A-B1F6-6E599991C3AD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "4C3A2741-7C6A-47EF-8B5C-D7ABA4EDF0CC"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFDictionaryValue": {
@@ -1275,137 +1439,118 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
-            "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "current"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "VariableName": "Repeat Index",
-                                                "Type": "Variable"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "total"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "BC32EB87-15B0-4608-96B7-BD437AD9C534",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Count"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "6DAFF503-F2F4-48BE-BAE9-0A4F085D6959"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "6DAFF503-F2F4-48BE-BAE9-0A4F085D6959",
+                        "OutputUUID": "3E00CA44-3318-425B-BF74-E596A38889C0",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "Global Variable — Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFWorkflow": {
-                    "workflowIdentifier": "6168F0E9-9EDA-4F74-9B2F-74E63D3E4F2A",
-                    "workflowName": "Progress Bar Maker (without Text)",
-                    "isSelf": false
-                },
-                "UUID": "67D71841-A1EB-4889-B2F8-D269A3607F4B",
-                "WFWorkflowName": "Progress Bar Maker (without Text)"
+                "WFVariableName": "Brain Food"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼\n✅ ￼\n[ ￼ / ￼ ]\n￼",
-                        "attachmentsByRange": {
-                            "{12, 1}": {
-                                "OutputUUID": "BC32EB87-15B0-4608-96B7-BD437AD9C534",
-                                "Type": "ActionOutput",
-                                "OutputName": "Count"
-                            },
-                            "{4, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            },
-                            "{8, 1}": {
-                                "VariableName": "Repeat Index",
-                                "Type": "Variable"
-                            },
-                            "{16, 1}": {
-                                "OutputUUID": "67D71841-A1EB-4889-B2F8-D269A3607F4B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "CF9C1370-C18C-4817-903C-9BBD3E59F9F2",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text Divider"
-                            }
-                        }
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "69AEFD88-5939-4875-AB25-5968DF7D59B8"
+                "WFVariableName": "Brain Food"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableSetText",
             "WFWorkflowActionParameters": {
-                "WFNotificationActionBody": {
+                "value": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "69AEFD88-5939-4875-AB25-5968DF7D59B8",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "VariableName": "Brain Food",
+                                "Type": "Variable"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "CD9C571A-45DF-467A-93C1-5436A855FDF7",
-                "WFNotificationActionSound": false,
-                "WFNotificationActionTitle": ""
+                "key": "Brain Food",
+                "UUID": "87CC8B3B-BAEA-40F2-808C-5C9EC18B7525",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableSetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+            "WFWorkflowActionParameters": {
+                "messages": {
+                    "Value": {
+                        "string": "￼ (￼)",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "OutputUUID": "4C3A2741-7C6A-47EF-8B5C-D7ABA4EDF0CC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            },
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "LogMessageIntent"
+                },
+                "UUID": "6B63E550-DE5A-4AB3-96CD-A24B20182AA9",
+                "title": {
+                    "Value": {
+                        "string": "✅ ￼ / ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "BC32EB87-15B0-4608-96B7-BD437AD9C534",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "category": "success",
+                "tag": {
+                    "subtitle": {
+                        "key": "🌷 Share Brain Food"
+                    },
+                    "title": {
+                        "key": "🌷 Share Brain Food"
+                    },
+                    "value": "🌷 Share Brain Food"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "54CFBAA8-59A5-4007-B206-83698D060374",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -1579,19 +1724,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "# Brain Food\n\n> **Last Update:** ￼\n\n## About\n\nThis repo holds content (or \"Brain Food 🧠\") that I've bookmarked on the Internet, and wanted to consume whenever I am mentally prepared.\n\nContributions are welcome! If you have ideas to expand or improve these lists, please [open an issue](https://github.com/huaminghuangtw/Brain-Food/issues/new) or [submit a pull request](https://github.com/huaminghuangtw/Brain-Food/compare).\n\n## APIs\n\nI utilized the following APIs to populate metadata in each list:\n\n￼\n\n[^1]: For read-it-later essays, I simply exported the reading list items via [ Apple Shortcuts](https://shortcutomation.com). No API calls here.\n",
+                        "string": "# Brain Food\n\n## About\n\nThis repo holds content (or \"Brain Food 🧠\") that I've bookmarked on the Internet, and wanted to consume whenever I am mentally prepared.\n\nContributions are welcome! If you have ideas to expand or improve these lists, please [open an issue](https://github.com/huaminghuangtw/Brain-Food/issues/new) or [submit a pull request](https://github.com/huaminghuangtw/Brain-Food/compare).\n\n## APIs\n\nI utilized the following APIs to populate metadata in each list:\n\n￼\n\n[^1]: For read-it-later essays, I simply exported the reading list items via [ Apple Shortcuts](https://shortcutomation.com). No API calls here.\n",
                         "attachmentsByRange": {
-                            "{33, 1}": {
-                                "Type": "CurrentDate",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
-                                    }
-                                ]
-                            },
-                            "{502, 1}": {
+                            "{480, 1}": {
                                 "OutputUUID": "22D85099-437F-425B-9F08-98BED6E4B6A6",
                                 "Type": "ActionOutput",
                                 "OutputName": "Repeat Results"
@@ -1647,11 +1782,91 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "1E5D0626-71A8-49B0-9846-109976C78DCF",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": "🌷 Share Brain Food"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "1E5D0626-71A8-49B0-9846-109976C78DCF",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "9CAC53DB-FD09-437E-A39F-78AB3802839A",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFReminderContentItemIsCompleted": 1,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1E5D0626-71A8-49B0-9846-109976C78DCF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Is Completed",
+                "Mode": "Set",
+                "UUID": "ED1791D7-F199-4696-8350-565A5B734ABA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9CAC53DB-FD09-437E-A39F-78AB3802839A",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n✅ README.md",
+                        "string": "￼\n✅ Complete!",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "CF9C1370-C18C-4817-903C-9BBD3E59F9F2",
@@ -1668,14 +1883,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "5B117C33-47AB-4638-B07E-C50673CF9CF3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFNotificationActionBody": {
                     "Value": {
                         "string": "￼",
@@ -1690,8 +1897,46 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "6333E07A-5A48-44FB-85BD-90C1F6087D11",
-                "WFNotificationActionSound": false,
+                "WFNotificationActionSound": true,
                 "WFNotificationActionTitle": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableSetText",
+            "WFWorkflowActionParameters": {
+                "value": "‏‎",
+                "key": "Brain Food",
+                "UUID": "6F5E5357-4998-42D8-9AD3-211BFD1B9AA9",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableSetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "stop",
+                "UUID": "4B000F8C-3FA4-49F0-80C2-EDBAA24A04CD",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "QRVYSKD5TN",
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "AppIntentIdentifier": "StartLoggingIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.alexhay.Console",
+                    "Name": "Logger",
+                    "TeamIdentifier": "QRVYSKD5TN"
+                },
+                "WFAskToSaveChanges": false
             }
         },
         {
