@@ -327,7 +327,7 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "Journal Metadata Fields",
+                "keyPath": "Journal Metadata",
                 "UUID": "1B79FB0A-63C6-42B0-83A9-1D1ED6238A11"
             }
         },
@@ -549,10 +549,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
                 "WFAskActionDefaultAnswerDateAndTime": {
@@ -656,51 +652,50 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "😢 Skip logging"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "(if e.g. staying up over 00:00)"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "😟 Type manually"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "(if bad sleep hygiene e.g. forgetting to charge my phone for any reasons)"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "53E7D91C-AA56-4E86-8C89-43573938DB5A"
+                "keyPath": "Text Divider",
+                "UUID": "09F868FA-31BB-4599-A82F-D002B0EC3383"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "⚠️ ￼ didn't exist\n￼\n￼",
+                        "attachmentsByRange": {
+                            "{18, 1}": {
+                                "OutputUUID": "09F868FA-31BB-4599-A82F-D002B0EC3383",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{20, 1}": {
+                                "OutputUUID": "C91F6589-7A26-47F5-AC5E-236D204BD7A5",
+                                "Type": "ActionOutput",
+                                "OutputName": "prompt"
+                            },
+                            "{3, 1}": {
+                                "OutputUUID": "15FE4A4C-9CF1-448A-AA17-6A47EEA8D0EF",
+                                "Type": "ActionOutput",
+                                "OutputName": "checkKey"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AE2A1893-C4DA-4008-B77B-6D0BD0E0168F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "1. Type manually",
+                    "2. Skip logging"
+                ],
+                "UUID": "4C2D8289-B5F2-4275-A42E-6570A13465A7"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
@@ -710,9 +705,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "C91F6589-7A26-47F5-AC5E-236D204BD7A5",
+                                "OutputUUID": "AE2A1893-C4DA-4008-B77B-6D0BD0E0168F",
                                 "Type": "ActionOutput",
-                                "OutputName": "prompt"
+                                "OutputName": "Text"
                             }
                         }
                     },
@@ -720,9 +715,9 @@
                 },
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "53E7D91C-AA56-4E86-8C89-43573938DB5A",
+                        "OutputUUID": "4C2D8289-B5F2-4275-A42E-6570A13465A7",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "List"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -736,24 +731,17 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "Selected Item",
                             "OutputUUID": "95FAF396-6517-4263-A6DE-C035D32FFC27",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
+                            "Type": "ActionOutput",
+                            "OutputName": "Selected Item"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Type manually",
+                "WFConditionalActionString": "1",
                 "GroupingIdentifier": "CF23C14C-CF30-40F1-8C11-4B13DA286754",
-                "WFCondition": 99
+                "WFCondition": 8
             }
         },
         {
@@ -785,10 +773,6 @@
                     "WFSerializationType": "WFTextTokenString"
                 }
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
@@ -869,7 +853,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "📝",
+                "WFAskActionPrompt": "📝 Why?",
                 "UUID": "5A896871-28E1-495C-8F5D-36E079BB9F5B"
             }
         },
@@ -1123,6 +1107,12 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "624B9D67-6B8D-4DC4-A6B4-4036D3DF8EF2",
                 "UUID": "425459C8-0A26-4190-B91E-8AA95121BBA6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFVariableName": "defaultValue"
             }
         },
         {

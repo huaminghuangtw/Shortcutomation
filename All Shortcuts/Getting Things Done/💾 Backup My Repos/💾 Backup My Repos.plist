@@ -47,6 +47,39 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.open</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>Second-Brain</string>
+				<key>UUID</key>
+				<string>36B68DAC-A01B-410D-B880-223E32DCAD67</string>
+				<key>WFFile</key>
+				<dict>
+					<key>displayName</key>
+					<string>Second-Brain</string>
+					<key>fileLocation</key>
+					<dict>
+						<key>WFFileLocationType</key>
+						<string>iCloud</string>
+						<key>appContainerBundleIdentifier</key>
+						<string>md.obsidian</string>
+						<key>crossDeviceItemID</key>
+						<string>docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577</string>
+						<key>relativeSubpath</key>
+						<string>iCloud~md~obsidian/Documents/Second-Brain</string>
+					</dict>
+					<key>filename</key>
+					<string>Second-Brain</string>
+				</dict>
+				<key>WFGetFilePath</key>
+				<string>/</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>dk.simonbs.DataJar.GetValueIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -136,33 +169,111 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.documentpicker.open</string>
+			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>absolutePath</string>
 				<key>UUID</key>
-				<string>36B68DAC-A01B-410D-B880-223E32DCAD67</string>
-				<key>WFFile</key>
+				<string>2C3064CE-DE35-46A2-B723-563D37CB0FC5</string>
+				<key>WFDictionaryKey</key>
 				<dict>
-					<key>displayName</key>
-					<string>Second-Brain</string>
-					<key>fileLocation</key>
+					<key>Value</key>
 					<dict>
-						<key>WFFileLocationType</key>
-						<string>iCloud</string>
-						<key>appContainerBundleIdentifier</key>
-						<string>md.obsidian</string>
-						<key>crossDeviceItemID</key>
-						<string>docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e</string>
-						<key>fileProviderDomainID</key>
-						<string>com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577</string>
-						<key>relativeSubpath</key>
-						<string>iCloud~md~obsidian/Documents/Second-Brain</string>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼.absolutePath</string>
 					</dict>
-					<key>filename</key>
-					<string>Second-Brain</string>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
 				</dict>
-				<key>WFGetFilePath</key>
-				<string>/</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Value</string>
+						<key>OutputUUID</key>
+						<string>35E15CD7-471B-4B75-A474-531A82A10FAE</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3CA64D75-313D-4514-885B-68BEC855FBC9</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>absolutePath</string>
+							<key>OutputUUID</key>
+							<string>2C3064CE-DE35-46A2-B723-563D37CB0FC5</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.detect.text</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>absolutePath</string>
+						<key>OutputUUID</key>
+						<string>2C3064CE-DE35-46A2-B723-563D37CB0FC5</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3CA64D75-313D-4514-885B-68BEC855FBC9</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -211,7 +322,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>File</string>
+						<string>Second-Brain</string>
 						<key>OutputUUID</key>
 						<string>36B68DAC-A01B-410D-B880-223E32DCAD67</string>
 						<key>Type</key>
@@ -258,7 +369,7 @@
 									</dict>
 								</array>
 								<key>OutputName</key>
-								<string>File</string>
+								<string>Second-Brain</string>
 								<key>OutputUUID</key>
 								<string>36B68DAC-A01B-410D-B880-223E32DCAD67</string>
 								<key>Type</key>
@@ -289,6 +400,19 @@
 				<string>4B6EAE36-44FF-42E6-BA35-A730D4CF93E7</string>
 				<key>UUID</key>
 				<string>36CFDF44-E83B-4974-A7C3-05861A38BE90</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3CA64D75-313D-4514-885B-68BEC855FBC9</string>
+				<key>UUID</key>
+				<string>6FA08A9F-4459-4058-B154-31FBF9D4549B</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -329,7 +453,27 @@
 								<key>VariableName</key>
 								<string>Repeat Item</string>
 							</dict>
-							<key>{35, 1}</key>
+							<key>{32, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>File Path</string>
+										<key>PropertyUserInfo</key>
+										<dict/>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Second-Brain</string>
+								<key>OutputUUID</key>
+								<string>36B68DAC-A01B-410D-B880-223E32DCAD67</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{59, 1}</key>
 							<dict>
 								<key>OutputName</key>
 								<string>If Result</string>
@@ -341,7 +485,7 @@
 						</dict>
 						<key>string</key>
 						<string>echo "🔄 (￼ / ￼) Backup: ￼..."
-cd "￼" &amp;&amp; git auto-push
+"￼/Scripts/auto-backup.sh" "￼"
 echo</string>
 					</dict>
 					<key>WFSerializationType</key>
@@ -425,217 +569,45 @@ echo</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.filter.reminders</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>9894A99A-DF97-4C30-95DB-8A7760C15572</string>
-				<key>WFContentItemFilter</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>WFActionParameterFilterPrefix</key>
-						<integer>1</integer>
-						<key>WFActionParameterFilterTemplates</key>
-						<array>
-							<dict>
-								<key>Operator</key>
-								<integer>4</integer>
-								<key>Property</key>
-								<string>Title</string>
-								<key>Removable</key>
-								<true/>
-								<key>Values</key>
-								<dict>
-									<key>String</key>
-									<string>💾 Backup My Repos</string>
-								</dict>
-							</dict>
-							<dict>
-								<key>Operator</key>
-								<integer>4</integer>
-								<key>Property</key>
-								<string>Is Completed</string>
-								<key>Removable</key>
-								<true/>
-								<key>Values</key>
-								<dict>
-									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
-								</dict>
-							</dict>
-						</array>
-						<key>WFContentPredicateBoundedDate</key>
-						<false/>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFContentPredicateTableTemplate</string>
-				</dict>
-				<key>WFContentItemInputParameter</key>
-				<string>Library</string>
-				<key>WFContentItemLimitEnabled</key>
-				<true/>
-				<key>WFContentItemLimitNumber</key>
-				<real>1</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>61AD9A77-C25A-477E-877E-03D7F82A1B49</string>
-				<key>WFCondition</key>
-				<integer>100</integer>
-				<key>WFControlFlowMode</key>
-				<integer>0</integer>
-				<key>WFInput</key>
-				<dict>
-					<key>Type</key>
-					<string>Variable</string>
-					<key>Variable</key>
-					<dict>
-						<key>Value</key>
-						<dict>
-							<key>OutputName</key>
-							<string>Reminders</string>
-							<key>OutputUUID</key>
-							<string>9894A99A-DF97-4C30-95DB-8A7760C15572</string>
-							<key>Type</key>
-							<string>ActionOutput</string>
-						</dict>
-						<key>WFSerializationType</key>
-						<string>WFTextTokenAttachment</string>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.setters.reminders</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>Mode</key>
-				<string>Set</string>
-				<key>UUID</key>
-				<string>CCBD8564-2D9E-4ACD-9D29-3A311FCD2048</string>
-				<key>WFContentItemPropertyName</key>
-				<string>Is Completed</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Reminders</string>
-						<key>OutputUUID</key>
-						<string>9894A99A-DF97-4C30-95DB-8A7760C15572</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-				<key>WFReminderContentItemIsCompleted</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>61AD9A77-C25A-477E-877E-03D7F82A1B49</string>
-				<key>UUID</key>
-				<string>75F1B6B9-E75F-489E-9D6B-E1D4B0575B1C</string>
-				<key>WFControlFlowMode</key>
-				<integer>2</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>dk.simonbs.DataJar.GetValueIntent</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>Text Divider</string>
-				<key>UUID</key>
-				<string>EF306A55-3BE2-4623-B291-25FCD64FFFC2</string>
-				<key>keyPath</key>
-				<string>Text Divider</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
 				<string>B089B65F-1266-4D9D-80F2-1357149B2225</string>
 				<key>WFTextActionText</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Text Divider</string>
-								<key>OutputUUID</key>
-								<string>EF306A55-3BE2-4623-B291-25FCD64FFFC2</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼
-✅ Complete!</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
+				<string>💾 Backup My Repos</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.notification</string>
+			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>UUID</key>
-				<string>9A3C68B2-7F9F-4842-B1B5-0C766F59CC2F</string>
-				<key>WFNotificationActionBody</key>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Text</string>
-								<key>OutputUUID</key>
-								<string>B089B65F-1266-4D9D-80F2-1357149B2225</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>B089B65F-1266-4D9D-80F2-1357149B2225</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
+					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFNotificationActionSound</key>
-				<true/>
-				<key>WFNotificationActionTitle</key>
-				<string></string>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>13D6344E-1286-4297-B559-4A99BF3BA432</string>
+					<key>workflowName</key>
+					<string>Template - Complete Task Reminder</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Template - Complete Task Reminder</string>
 			</dict>
 		</dict>
 		<dict>

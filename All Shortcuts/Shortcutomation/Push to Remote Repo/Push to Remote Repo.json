@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1106",
+    "WFWorkflowMinimumClientVersion": 1106,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -9,6 +9,132 @@
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "Shortcuts",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "",
+                        "appContainerBundleIdentifier": "com.apple.systemactions",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/documents/200603e0658211bcdfc3e062063502b84084a266"
+                    },
+                    "filename": "Documents",
+                    "displayName": "Shortcuts"
+                },
+                "WFGetFilePath": "Shortcutomation",
+                "CustomOutputName": "Shortcutomation",
+                "UUID": "D43CDB8F-63B8-4765-95E6-BDE44843BEF6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.makezip",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D43CDB8F-63B8-4765-95E6-BDE44843BEF6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcutomation"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFArchiveFormat": "tar.gz",
+                "UUID": "8439DE4F-B4AD-4838-BC21-99082BA57A5B",
+                "WFZIPName": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
+            "WFWorkflowActionParameters": {
+                "WFFilePath": "Shortcutomation",
+                "WFFolder": {
+                    "fileLocation": {
+                        "relativeSubpath": "",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "huaminghuang",
+                    "displayName": "huaminghuang"
+                },
+                "UUID": "5E5412B2-B35F-42E1-A504-7C43CE435CE8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "5E5412B2-B35F-42E1-A504-7C43CE435CE8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8439DE4F-B4AD-4838-BC21-99082BA57A5B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Archive"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "Archive",
+                "UUID": "34943CB1-647C-4D6C-A3F0-BFE0FB466EEF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.unzip",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "Shortcutomation",
+                "WFArchive": {
+                    "Value": {
+                        "OutputUUID": "34943CB1-647C-4D6C-A3F0-BFE0FB466EEF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Archive"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "71E5F6B8-32A5-4291-B573-8D668DBBFCB1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "Value": {
+                        "OutputUUID": "5E5412B2-B35F-42E1-A504-7C43CE435CE8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Folder"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "71E5F6B8-32A5-4291-B573-8D668DBBFCB1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcutomation"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E5DA63A3-C66A-4842-A2CA-F9EE86341FDD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.delete",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8439DE4F-B4AD-4838-BC21-99082BA57A5B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Archive"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDeleteImmediatelyDelete": true
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
@@ -73,9 +199,17 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
-                "WFGetFilePath": "/",
-                "CustomOutputName": "Shortcuts",
-                "UUID": "4D9EB7A0-C47C-4999-8BA6-0A10ACE92E35"
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "",
+                        "WFFileLocationType": "Home"
+                    },
+                    "filename": "huaminghuang",
+                    "displayName": "huaminghuang"
+                },
+                "WFGetFilePath": "Shortcutomation",
+                "CustomOutputName": "Shortcutomation",
+                "UUID": "B4D59D86-8796-4303-AC53-17A0AB44E7A9"
             }
         },
         {
@@ -83,9 +217,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "4D9EB7A0-C47C-4999-8BA6-0A10ACE92E35",
+                        "OutputUUID": "B4D59D86-8796-4303-AC53-17A0AB44E7A9",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcuts"
+                        "OutputName": "Shortcutomation"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -98,48 +232,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "48684743-D3A3-4FDD-803E-6ACB094F9BA7"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "💁‍♂️ Move /Shortcutomation to $HOME\n￼\n🙆🏽 Press the OK button when you're done!",
-                        "attachmentsByRange": {
-                            "{37, 1}": {
-                                "OutputUUID": "48684743-D3A3-4FDD-803E-6ACB094F9BA7",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "A20E13E0-C66F-4806-8712-AA0709135B3E"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
                 "WFAlertActionCancelButtonShown": false,
-                "WFAlertActionMessage": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "A20E13E0-C66F-4806-8712-AA0709135B3E",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
+                "WFAlertActionMessage": "💁‍♂️ Remove .txt"
             }
         },
         {
@@ -275,50 +371,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "(?m)^>.*(?:\\n.*)*$",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "9A94984A-596C-429A-B368-1E4C60274395",
-                                "Type": "ActionOutput",
-                                "OutputName": "File"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "731D1F5B-E111-456D-BC52-B8C0831470B9"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼\n￼",
-                        "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "731D1F5B-E111-456D-BC52-B8C0831470B9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Matches"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "ECD5CE15-596F-45B9-A875-765FE69E9B6C",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "FCA74B88-85E5-483D-BD6E-C4DDA013EE6D"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -336,9 +388,9 @@
                                 "OutputName": "tagName"
                             },
                             "{96, 1}": {
-                                "OutputUUID": "FCA74B88-85E5-483D-BD6E-C4DDA013EE6D",
+                                "OutputUUID": "9A94984A-596C-429A-B368-1E4C60274395",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "File"
                             }
                         }
                     },

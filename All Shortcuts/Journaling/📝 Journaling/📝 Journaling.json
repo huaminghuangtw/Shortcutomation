@@ -10,33 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "WFDateFormat": "(M/d)",
-                "UUID": "AF569E94-A559-4E2C-AAAE-E505F0ED4F5C",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "CurrentDate",
-                                "Aggrandizements": [
-                                    {
-                                        "WFDateFormatStyle": "Medium",
-                                        "WFISO8601IncludeTime": false,
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFTimeFormatStyle": "Short"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
                 "WFItems": [
@@ -53,9 +26,15 @@
                                 "string": "👉 Journals On This Day ￼",
                                 "attachmentsByRange": {
                                     "{24, 1}": {
-                                        "OutputUUID": "AF569E94-A559-4E2C-AAAE-E505F0ED4F5C",
-                                        "Type": "ActionOutput",
-                                        "OutputName": "Formatted Date"
+                                        "Type": "CurrentDate",
+                                        "Aggrandizements": [
+                                            {
+                                                "WFDateFormatStyle": "Custom",
+                                                "Type": "WFDateFormatVariableAggrandizement",
+                                                "WFDateFormat": "(M/d)",
+                                                "WFISO8601IncludeTime": false
+                                            }
+                                        ]
                                     }
                                 }
                             },
@@ -204,112 +183,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
-            "WFWorkflowActionParameters": {
-                "WFItems": [
-                    "🗓️ Today",
-                    "🗓️ Yesterday",
-                    "🗓️ Another Date"
-                ],
-                "UUID": "7C204A05-CA0E-4F89-884C-55E29634C686"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
-            "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Which one?",
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "7C204A05-CA0E-4F89-884C-55E29634C686",
-                        "Type": "ActionOutput",
-                        "OutputName": "List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "6E3E14DB-19F7-4D13-8460-E576CDE6DB3E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "6E3E14DB-19F7-4D13-8460-E576CDE6DB3E",
-                            "Type": "ActionOutput",
-                            "OutputName": "Chosen Item"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Another Date",
-                "GroupingIdentifier": "3E963EBD-9716-44CB-ABB0-6501234B489C",
-                "WFCondition": 99
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
-            "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "🤖 Which date?",
-                "WFInputType": "Date",
-                "UUID": "C134AA43-3A45-4E7C-80C5-2E336D0CF6B4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "3E963EBD-9716-44CB-ABB0-6501234B489C",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "6E3E14DB-19F7-4D13-8460-E576CDE6DB3E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Chosen Item"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFWorkflow": {
-                    "workflowIdentifier": "328EB3FC-0980-46EC-AA21-855E3F90824F",
-                    "workflowName": "Strip Leading Symbol",
+                    "workflowIdentifier": "BFA3F439-0E32-41A3-AF85-B6A51E0094F2",
+                    "workflowName": "Select Date",
                     "isSelf": false
                 },
-                "UUID": "30EC42EB-531B-4276-BA46-8A8AD05A9079",
-                "WFWorkflowName": "Strip Leading Symbol"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
-            "WFWorkflowActionParameters": {
-                "WFDateActionDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "30EC42EB-531B-4276-BA46-8A8AD05A9079",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFDateActionMode": "Specified Date",
-                "UUID": "3BA3A76A-2BFC-41BD-89C0-D68265EF87E4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "3E963EBD-9716-44CB-ABB0-6501234B489C",
-                "UUID": "FEE7A06C-C684-4E64-8ECA-FD65034922B8"
+                "CustomOutputName": "date",
+                "UUID": "250DDDB5-D3B0-46F8-BA3B-35384EE10B3D",
+                "WFWorkflowName": "Select Date"
             }
         },
         {
@@ -342,7 +225,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "FEE7A06C-C684-4E64-8ECA-FD65034922B8",
+                        "OutputUUID": "250DDDB5-D3B0-46F8-BA3B-35384EE10B3D",
                         "Type": "ActionOutput",
                         "OutputName": "date"
                     },
@@ -395,7 +278,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "FEE7A06C-C684-4E64-8ECA-FD65034922B8",
+                        "OutputUUID": "250DDDB5-D3B0-46F8-BA3B-35384EE10B3D",
                         "Type": "ActionOutput",
                         "OutputName": "date"
                     },

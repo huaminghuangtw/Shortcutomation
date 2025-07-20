@@ -34,6 +34,25 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
+                    },
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
+                },
+                "WFGetFilePath": "/",
+                "CustomOutputName": "Second-Brain",
+                "UUID": "36B68DAC-A01B-410D-B880-223E32DCAD67"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
                 "keyPath": "My Repos",
@@ -90,21 +109,69 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
-                "WFGetFilePath": "/",
-                "WFFile": {
-                    "fileLocation": {
-                        "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
-                        "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "35E15CD7-471B-4B75-A474-531A82A10FAE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
                     },
-                    "filename": "Second-Brain",
-                    "displayName": "Second-Brain"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "36B68DAC-A01B-410D-B880-223E32DCAD67"
+                "CustomOutputName": "absolutePath",
+                "UUID": "2C3064CE-DE35-46A2-B723-563D37CB0FC5",
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼.absolutePath",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2C3064CE-DE35-46A2-B723-563D37CB0FC5",
+                            "Type": "ActionOutput",
+                            "OutputName": "absolutePath"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "3CA64D75-313D-4514-885B-68BEC855FBC9",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2C3064CE-DE35-46A2-B723-563D37CB0FC5",
+                        "Type": "ActionOutput",
+                        "OutputName": "absolutePath"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3CA64D75-313D-4514-885B-68BEC855FBC9",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -133,7 +200,7 @@
                     "Value": {
                         "OutputUUID": "36B68DAC-A01B-410D-B880-223E32DCAD67",
                         "Type": "ActionOutput",
-                        "OutputName": "File"
+                        "OutputName": "Second-Brain"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -161,7 +228,7 @@
                             },
                             "{0, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "File",
+                                "OutputName": "Second-Brain",
                                 "OutputUUID": "36B68DAC-A01B-410D-B880-223E32DCAD67",
                                 "Aggrandizements": [
                                     {
@@ -186,17 +253,25 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "3CA64D75-313D-4514-885B-68BEC855FBC9",
+                "UUID": "6FA08A9F-4459-4058-B154-31FBF9D4549B"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "echo \"🔄 (￼ / ￼) Backup: ￼...\"\ncd \"￼\" && git auto-push\necho",
+                        "string": "echo \"🔄 (￼ / ￼) Backup: ￼...\"\n\"￼/Scripts/auto-backup.sh\" \"￼\"\necho",
                         "attachmentsByRange": {
                             "{25, 1}": {
                                 "VariableName": "Repeat Item",
                                 "Type": "Variable"
                             },
-                            "{35, 1}": {
+                            "{59, 1}": {
                                 "OutputUUID": "36CFDF44-E83B-4974-A7C3-05861A38BE90",
                                 "Type": "ActionOutput",
                                 "OutputName": "If Result"
@@ -204,6 +279,18 @@
                             "{10, 1}": {
                                 "VariableName": "Repeat Index",
                                 "Type": "Variable"
+                            },
+                            "{32, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Second-Brain",
+                                "OutputUUID": "36B68DAC-A01B-410D-B880-223E32DCAD67",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": {},
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "File Path"
+                                    }
+                                ]
                             },
                             "{14, 1}": {
                                 "OutputUUID": "C8097316-FE81-45AF-B202-5901574DE3C9",
@@ -262,132 +349,29 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
-            "WFWorkflowActionParameters": {
-                "WFContentItemInputParameter": "Library",
-                "WFContentItemLimitEnabled": true,
-                "UUID": "9894A99A-DF97-4C30-95DB-8A7760C15572",
-                "WFContentItemLimitNumber": 1,
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "String": "💾 Backup My Repos"
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "9894A99A-DF97-4C30-95DB-8A7760C15572",
-                            "Type": "ActionOutput",
-                            "OutputName": "Reminders"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "61AD9A77-C25A-477E-877E-03D7F82A1B49",
-                "WFCondition": 100
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
-            "WFWorkflowActionParameters": {
-                "WFReminderContentItemIsCompleted": 1,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "9894A99A-DF97-4C30-95DB-8A7760C15572",
-                        "Type": "ActionOutput",
-                        "OutputName": "Reminders"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemPropertyName": "Is Completed",
-                "Mode": "Set",
-                "UUID": "CCBD8564-2D9E-4ACD-9D29-3A311FCD2048"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "61AD9A77-C25A-477E-877E-03D7F82A1B49",
-                "UUID": "75F1B6B9-E75F-489E-9D6B-E1D4B0575B1C"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "CustomOutputName": "Text Divider",
-                "UUID": "EF306A55-3BE2-4623-B291-25FCD64FFFC2"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼\n✅ Complete!",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "EF306A55-3BE2-4623-B291-25FCD64FFFC2",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text Divider"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFTextActionText": "💾 Backup My Repos",
                 "UUID": "B089B65F-1266-4D9D-80F2-1357149B2225"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFNotificationActionBody": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "B089B65F-1266-4D9D-80F2-1357149B2225",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
+                        "OutputUUID": "B089B65F-1266-4D9D-80F2-1357149B2225",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "9A3C68B2-7F9F-4842-B1B5-0C766F59CC2F",
-                "WFNotificationActionSound": true,
-                "WFNotificationActionTitle": ""
+                "WFWorkflowName": "Template - Complete Task Reminder",
+                "WFWorkflow": {
+                    "workflowIdentifier": "13D6344E-1286-4297-B559-4A99BF3BA432",
+                    "workflowName": "Template - Complete Task Reminder",
+                    "isSelf": false
+                }
             }
         },
         {

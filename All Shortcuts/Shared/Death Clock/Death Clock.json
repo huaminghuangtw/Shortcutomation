@@ -1,0 +1,422 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "🎂 Birthday",
+                "UUID": "FF6AB20A-CC67-4107-A4D0-72F1AD56A129",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "ageDays",
+                "UUID": "0DFCF731-21E8-40D1-B796-6D5E24CE6A92",
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "FF6AB20A-CC67-4107-A4D0-72F1AD56A129",
+                                "Type": "ActionOutput",
+                                "OutputName": "🎂 Birthday"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilUnit": "Days"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "A “[tropical/solar year](https://www.google.com/search?q=tropical+year)” is ~365.2425 days* — slightly less than 365.25 days — and more accurate than just counting 365 or 366 days. It’s the time it takes the Earth to complete one cycle of seasons, meaning from one vernal equinox to the next. That’s why calendars add a leap day every four years (mostly) — to stay synced with Earth’s orbit and the seasons.\n\n* The Gregorian calendar (which most of the world uses) approximates the solar year as: 146097 days ÷ 400 years ≈ 365.2425 days/year"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ / (146097 / 400)",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0DFCF731-21E8-40D1-B796-6D5E24CE6A92",
+                                "Type": "ActionOutput",
+                                "OutputName": "ageDays"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "ageYears",
+                "UUID": "04F4A937-5C93-42C1-B026-FEDFCC3A24AA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "04F4A937-5C93-42C1-B026-FEDFCC3A24AA",
+                        "Type": "ActionOutput",
+                        "OutputName": "ageYears"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundTo": "Hundredths",
+                "UUID": "7F0A9CA4-F2BE-4918-936A-786347992503"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "Life Expectancy",
+                "UUID": "337D3090-D5A4-4B5F-B2EB-75FBB17462ED"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "years",
+                        "Magnitude": {
+                            "OutputUUID": "337D3090-D5A4-4B5F-B2EB-75FBB17462ED",
+                            "Type": "ActionOutput",
+                            "OutputName": "Life Expectancy"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "CustomOutputName": "⚰️ Expiry Date",
+                "UUID": "F28CE67D-D684-4509-8D90-AFA3DD079DF1",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "FF6AB20A-CC67-4107-A4D0-72F1AD56A129",
+                                "Type": "ActionOutput",
+                                "OutputName": "🎂 Birthday"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F28CE67D-D684-4509-8D90-AFA3DD079DF1",
+                                "Type": "ActionOutput",
+                                "OutputName": "⚰️ Expiry Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "current",
+                "UUID": "BB73A504-B97E-4F03-B967-89AB640BA4B6",
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilUnit": "Days"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "F28CE67D-D684-4509-8D90-AFA3DD079DF1",
+                                "Type": "ActionOutput",
+                                "OutputName": "⚰️ Expiry Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "total",
+                "UUID": "DC890FD9-3E68-457D-8743-5F420E54280E",
+                "WFTimeUntilFromDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "FF6AB20A-CC67-4107-A4D0-72F1AD56A129",
+                                "Type": "ActionOutput",
+                                "OutputName": "🎂 Birthday"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFTimeUntilUnit": "Days"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ / ￼",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "OutputUUID": "DC890FD9-3E68-457D-8743-5F420E54280E",
+                                "Type": "ActionOutput",
+                                "OutputName": "total"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "BB73A504-B97E-4F03-B967-89AB640BA4B6",
+                                "Type": "ActionOutput",
+                                "OutputName": "current"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "Percentage Left",
+                "UUID": "56748F31-6CB4-4F97-AACC-199800DF30DC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "56748F31-6CB4-4F97-AACC-199800DF30DC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Percentage Left"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "100",
+                "CustomOutputName": "Percentage Left Formatted",
+                "UUID": "D21D0ADC-315C-46A1-985B-E40307296A98",
+                "WFMathOperation": "×"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "D21D0ADC-315C-46A1-985B-E40307296A98",
+                        "Type": "ActionOutput",
+                        "OutputName": "Percentage Left Formatted"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundTo": "Thousandths",
+                "UUID": "F9A89BA8-8E46-428F-932E-4DEEB1178DCE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "• Today I am ￼ years old.\n• My life is only ￼% left.",
+                        "attachmentsByRange": {
+                            "{13, 1}": {
+                                "OutputUUID": "7F0A9CA4-F2BE-4918-936A-786347992503",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            },
+                            "{44, 1}": {
+                                "OutputUUID": "F9A89BA8-8E46-428F-932E-4DEEB1178DCE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "4A3ABDD8-3A50-4817-B6EA-A5B9437979DC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "title"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "⏳ Death Clock"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "body"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "4A3ABDD8-3A50-4817-B6EA-A5B9437979DC",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "openURL"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "https://shortcutomation.com"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "94012093-DDDA-44AB-88B1-7666DACE89FF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": "https://raw.githubusercontent.com/huaminghuangtw/Scriptable/main/Create%20Notification.js",
+                "UUID": "871363E5-C0E5-4DE8-BC86-4974F6F89F7B",
+                "ShowHeaders": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.RunScriptInlineIntent",
+            "WFWorkflowActionParameters": {
+                "script": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "871363E5-C0E5-4DE8-BC86-4974F6F89F7B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "7F4A9816-9FBA-4F64-8297-97D9A061F88F",
+                "parameter": {
+                    "Value": {
+                        "OutputUUID": "94012093-DDDA-44AB-88B1-7666DACE89FF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFAppStoreAppContentItem",
+        "WFArticleContentItem",
+        "WFContactContentItem",
+        "WFDateContentItem",
+        "WFEmailAddressContentItem",
+        "WFFolderContentItem",
+        "WFGenericFileContentItem",
+        "WFImageContentItem",
+        "WFiTunesProductContentItem",
+        "WFLocationContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFAVAssetContentItem",
+        "WFPDFContentItem",
+        "WFPhoneNumberContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFStringContentItem",
+        "WFURLContentItem"
+    ],
+    "WFWorkflowImportQuestions": [
+        {
+            "ParameterKey": "WFDateActionDate",
+            "Category": "Parameter",
+            "ActionIndex": 0,
+            "Text": "🎂 Enter your date of birth:\n(YYYY-MM-DD)"
+        },
+        {
+            "ParameterKey": "WFNumberActionNumber",
+            "Category": "Parameter",
+            "ActionIndex": 5,
+            "Text": "⚰️ Enter your expected life expectancy:"
+        }
+    ],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}
