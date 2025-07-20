@@ -27,14 +27,14 @@ Automate the Boring Stuff with  Apple Shortcuts
 <p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
 
 <p>
-<strong>Last Update:</strong> 2025-07-12
+<strong>Last Update:</strong> 2025-07-20
         
 <br>
 
 Crafted by
 <a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a>
 with 🌶️ in
-<a href="https://www.google.com/maps/place/Taibao%20City,%20Taiwan">Tᴀɪʙᴀᴏ Cɪᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼</a>
+<a href="https://www.google.com/maps/place/Yuanlin%20City,%20Taiwan">Yᴜᴀɴʟɪɴ Cɪᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼</a>
 </p>
 
 <p>
@@ -120,7 +120,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
 <summary>
    <strong>
-      <a href="https://shortcutomation.com/gallery">All Shortcuts (574)</a>
+      <a href="https://shortcutomation.com/gallery">All Shortcuts (580)</a>
    </strong>
 </summary>
 
@@ -135,7 +135,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/start-the-day-right/check-life-automation">Check Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7949ca9d4f1748e98aea78c7037ba57c">
+       <a href="https://www.icloud.com/shortcuts/51ca1b45ad524359b4155a5d2a2c1458">
        <kbd>
        <img src="All%20Shortcuts/Start%20the%20Day%20Right/Check%20Life%20Automation/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -146,7 +146,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/start-the-day-right/daily-check-in">Daily Check-in</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3882a96de63f418eaad4fa231c497d71">
+       <a href="https://www.icloud.com/shortcuts/6aaf39322ed74008869d0e091414f439">
        <kbd>
        <img src="All%20Shortcuts/Start%20the%20Day%20Right/Daily%20Check-in/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -157,7 +157,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/start-the-day-right/start-the-day-right">☀️ Start the Day Right</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b9ae496d380546748cd5eea4065281dd">
+       <a href="https://www.icloud.com/shortcuts/3b98c116c91046329778ae20e5995824">
        <kbd>
        <img src="All%20Shortcuts/Start%20the%20Day%20Right/%E2%98%80%EF%B8%8F%20Start%20the%20Day%20Right/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -176,7 +176,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/end-the-day-right/reflect-my-day">Reflect My Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5f246b82cac94ca59113e0dfa2df31ad">
+       <a href="https://www.icloud.com/shortcuts/80118809716d431d8b1b532f85e672fe">
        <kbd>
        <img src="All%20Shortcuts/End%20the%20Day%20Right/Reflect%20My%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -187,7 +187,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/end-the-day-right/end-the-day-right">🌙 End the Day Right</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/74d75a6a841140e79dd2637412d232c3">
+       <a href="https://www.icloud.com/shortcuts/d9e5b84cecc244f49f963e75b4d17d2b">
        <kbd>
        <img src="All%20Shortcuts/End%20the%20Day%20Right/%F0%9F%8C%99%20End%20the%20Day%20Right/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -206,7 +206,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/review-photos/review-daily-photos">Review Daily Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/849fffef5e5847428265fb3f11d62ae6">
+       <a href="https://www.icloud.com/shortcuts/1c48e9ae2d83479b820ad1577f755835">
        <kbd>
        <img src="All%20Shortcuts/Review%20Photos/Review%20Daily%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -217,7 +217,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/review-photos/done-with-daily-photos">Done with Daily Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f489aa50b6ae4962b11db4484735cf91">
+       <a href="https://www.icloud.com/shortcuts/fe13a646760443e4ae445727df4ded1a">
        <kbd>
        <img src="All%20Shortcuts/Review%20Photos/Done%20with%20Daily%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -228,7 +228,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/review-photos/archive-weekly-photos">Archive Weekly Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/51198b0c62ab455c8db3e1000252e34e">
+       <a href="https://www.icloud.com/shortcuts/2d23e01d967547d8969d7c5803b6506e">
        <kbd>
        <img src="All%20Shortcuts/Review%20Photos/Archive%20Weekly%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -239,7 +239,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/review-photos/review-weekly-photos">Review Weekly Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/decb10bf8c094e749f4baf3955504d00">
+       <a href="https://www.icloud.com/shortcuts/0703da3ccdc2424e85fd707005c88609">
        <kbd>
        <img src="All%20Shortcuts/Review%20Photos/Review%20Weekly%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -250,7 +250,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/review-photos/done-with-weekly-photos">Done with Weekly Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/face7707c6344f67b56387f34513f5be">
+       <a href="https://www.icloud.com/shortcuts/c8a133c0af034ec0a655eaeff19f7fc7">
        <kbd>
        <img src="All%20Shortcuts/Review%20Photos/Done%20with%20Weekly%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -261,7 +261,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/review-photos/review-photos">Review Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b2ec3d1ba9544833bbb833a4a2a47655">
+       <a href="https://www.icloud.com/shortcuts/5dd0c6c62b3a4cb899e62ac5174af561">
        <kbd>
        <img src="All%20Shortcuts/Review%20Photos/Review%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -280,7 +280,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/create-new-journal">✏️ Create New Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9848961615f04dc281288bbe99b3b9ab">
+       <a href="https://www.icloud.com/shortcuts/5bfe1c622be445679082fb425ed619b1">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%E2%9C%8F%EF%B8%8F%20Create%20New%20Journal/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -291,7 +291,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/journaling">📝 Journaling</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1a0a27e00aa140b3a73686126593d0e4">
+       <a href="https://www.icloud.com/shortcuts/6ef1d38119154a369de74620d71621ec">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%93%9D%20Journaling/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -302,7 +302,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/search-journals">🔎 Search Journals</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c0dd72992f124dd19ab92f5cdd34dccb">
+       <a href="https://www.icloud.com/shortcuts/ac849dfe45ad48568a5b0cb280291c48">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%94%8E%20Search%20Journals/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -313,7 +313,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/view-journal">📔 View Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3772730809054ffcbeec60f51bdf0d99">
+       <a href="https://www.icloud.com/shortcuts/61d392fb715d46858ec9fea62d5bb353">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%93%94%20View%20Journal/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -324,7 +324,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/log-journal">🐧 Log Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c361fc2ce1b84e188be8a1f518fad4ed">
+       <a href="https://www.icloud.com/shortcuts/f0d03b6247834b4d87ee3cc28287bd44">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%90%A7%20Log%20Journal/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -335,7 +335,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/add-to-journal-backlog">🧸 Add to Journal Backlog</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f676273585e1430394f5a79ce14171da">
+       <a href="https://www.icloud.com/shortcuts/b71633e84e6f48c29b3f4c8526d3787a">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%A7%B8%20Add%20to%20Journal%20Backlog/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -346,7 +346,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/attach-to-journal">🌠 Attach to Journal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/db48f345eb884e34920818ede11ed5dd">
+       <a href="https://www.icloud.com/shortcuts/bb0e742817b14c7aa987558bc7413429">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%8C%A0%20Attach%20to%20Journal/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -357,7 +357,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/review-journals-on-specific-week">📇 Review Journals On Specific Week</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4419859657f1454d8b011617ba5e10dc">
+       <a href="https://www.icloud.com/shortcuts/4aa9a1acac9c4c62af4316edf4f4e77e">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%93%87%20Review%20Journals%20On%20Specific%20Week/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -368,7 +368,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/journals-on-this-day">🍄 Journals On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f5bd00faca0248dfbd9452042985fc79">
+       <a href="https://www.icloud.com/shortcuts/911d3f7c4eb84cdca814bf2c7fd06f59">
        <kbd>
        <img src="All%20Shortcuts/Journaling/%F0%9F%8D%84%20Journals%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -379,7 +379,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/log-journal-metadata">_Log Journal Metadata</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/46c0e1302216426b9da9d5e3e728fa0f">
+       <a href="https://www.icloud.com/shortcuts/62498bca595843ae8ac12000923d655e">
        <kbd>
        <img src="All%20Shortcuts/Journaling/_Log%20Journal%20Metadata/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -390,7 +390,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/show-journal-metadata">_Show Journal Metadata</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/344a9f8705424f3c87607792c206ba53">
+       <a href="https://www.icloud.com/shortcuts/5c7a76ce350a428c8a5e2d6e729fe549">
        <kbd>
        <img src="All%20Shortcuts/Journaling/_Show%20Journal%20Metadata/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -401,7 +401,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/get-journal-file-path">_Get Journal File Path</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f885069a0b384739afa57f328e37478f">
+       <a href="https://www.icloud.com/shortcuts/e3159dfb37ed4594ba34483a25ddda3a">
        <kbd>
        <img src="All%20Shortcuts/Journaling/_Get%20Journal%20File%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -412,7 +412,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/query-journals-on-specific-week">_Query Journals On Specific Week</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ccc75307c34348bd9cf096c0f5787949">
+       <a href="https://www.icloud.com/shortcuts/d3f3995e463e457486fefe6522f1a41a">
        <kbd>
        <img src="All%20Shortcuts/Journaling/_Query%20Journals%20On%20Specific%20Week/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -423,7 +423,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/journaling/query-journal-s-on-this-day">_Query Journal(s) On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7fa899dc73b9481391511d7e7d4c0a4e">
+       <a href="https://www.icloud.com/shortcuts/4dca09122bbb4341b425e0d7fbd74329">
        <kbd>
        <img src="All%20Shortcuts/Journaling/_Query%20Journal(s)%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -434,7 +434,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/second-brain">Second Brain (15)</a>
+        <a href="https://shortcutomation.com/gallery/second-brain">Second Brain (18)</a>
       </strong>
     </summary>
 
@@ -442,7 +442,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/create-new-note">🗒️ Create New Note</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1e9aeb00c5ab43928d59044850ebe640">
+       <a href="https://www.icloud.com/shortcuts/378f6c67a9c24daba95116a6e6f218a6">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Create%20New%20Note/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -453,7 +453,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/prepend-or-append-to-note">🗒️ Prepend or Append to Note</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0cc43b292da341a9bd60fb4f9299649f">
+       <a href="https://www.icloud.com/shortcuts/512e73d7f7d6405a8e7df481fcc1c1fa">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%97%92%EF%B8%8F%20Prepend%20or%20Append%20to%20Note/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -464,7 +464,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/anotes">📑 ANotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b254235c08dc4c24a9de6b84a8e7c500">
+       <a href="https://www.icloud.com/shortcuts/8343dd9ad65d48a3bf60c5f785a0047a">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20ANotes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -475,7 +475,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/obsidian">📑 Obsidian</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/899eab2e023442cf849b50ee26d31b04">
+       <a href="https://www.icloud.com/shortcuts/bc61e596ac464fa4aa17ac302f40c275">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%91%20Obsidian/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -486,7 +486,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/apprem">👨🏽‍💼 AppRem</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4e596a54f49146f89fa52018876adee5">
+       <a href="https://www.icloud.com/shortcuts/1ee8ae3482724422a6acafe5f2403598">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BC%20AppRem/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -497,7 +497,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me">👁️ Capture Ideas Around Me</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9b1b759d56c24f6282eda9999d725852">
+       <a href="https://www.icloud.com/shortcuts/a376e6459999467791a0ffb04419896e">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%91%81%EF%B8%8F%20Capture%20Ideas%20Around%20Me/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -508,7 +508,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/capture-quotes">❝ Capture Quotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ea69b21394824df6a200cbfaa323b32e">
+       <a href="https://www.icloud.com/shortcuts/6325d7eb96b84e36a14f7c3d000765c4">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%E2%9D%9D%20Capture%20Quotes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -519,7 +519,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/go-to-homepage">🏡 Go to Homepage</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/32051d86ec074d0196daa08e8558e62e">
+       <a href="https://www.icloud.com/shortcuts/74a4e59b793f4a22af41045d2bd4a4b5">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%8F%A1%20Go%20to%20Homepage/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -530,7 +530,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/open-inbox">📬 Open Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9d489f3aaebf4a8580e2fd42c10e285b">
+       <a href="https://www.icloud.com/shortcuts/3dc3e3d322ff4a549add07167c2e0d0f">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%AC%20Open%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -541,7 +541,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/add-to-inbox">📥 Add to Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f612c26f5e4f44f1bcd3fb59bb117f4f">
+       <a href="https://www.icloud.com/shortcuts/879f06dfef344c249e1d8071105bd159">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%A5%20Add%20to%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -552,7 +552,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/review-inbox">👀 Review Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2f9f3850b72c4d588501d49801d3184b">
+       <a href="https://www.icloud.com/shortcuts/de3b20ea573f43139767b0833aa6d2a1">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%91%80%20Review%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -561,9 +561,20 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/second-brain/water-digital-garden">👨🏽‍🌾 Water Digital Garden</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/8ede9d178287443bb02a37f29c5e8e59">
+       <kbd>
+       <img src="All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%8C%BE%20Water%20Digital%20Garden/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/get-unorganized-inbox-reminders">Get Unorganized Inbox Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bfdf48559ce34970835ebb955e4cfd8b">
+       <a href="https://www.icloud.com/shortcuts/5de38e042be943d2bf1567bd561eae16">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/Get%20Unorganized%20Inbox%20Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -572,9 +583,31 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/second-brain/vs-code-open-note">VS Code - Open Note</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/4c36215b0a414e05aa9fda89010f61ec">
+       <kbd>
+       <img src="All%20Shortcuts/Second%20Brain/VS%20Code%20-%20Open%20Note/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/second-brain/get-second-brain-file-path">_Get Second-Brain File Path</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/6a1865268c1b41049574682333cf1eef">
+       <kbd>
+       <img src="All%20Shortcuts/Second%20Brain/_Get%20Second-Brain%20File%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/add-to-areminders">_Add to AReminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2fdcc5838c7043d1b5a57c79a38e862a">
+       <a href="https://www.icloud.com/shortcuts/afc5dac0472e4e758f5df5ae337d23d7">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/_Add%20to%20AReminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -585,7 +618,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/add-to-fleeting-notes">_Add to Fleeting Notes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b8d74b659ef14163886906394ab5073e">
+       <a href="https://www.icloud.com/shortcuts/9e0cfbf3dbed408e9beca52d1e76b878">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/_Add%20to%20Fleeting%20Notes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -596,7 +629,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/read-markdown-frontmatter">_Read Markdown Frontmatter</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fda90ae74ba8430f8179ce1650f0c5bc">
+       <a href="https://www.icloud.com/shortcuts/6e7d40f9f9af4da2a414ab2c47c083bd">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/_Read%20Markdown%20Frontmatter/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -615,7 +648,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/evergreen-lists/share-evergreen-lists">🌼 Share Evergreen Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c7640acb2eff4f9093dbe831969cd197">
+       <a href="https://www.icloud.com/shortcuts/edcfad3c0030462baa47d260d55c209f">
        <kbd>
        <img src="All%20Shortcuts/Evergreen%20Lists/%F0%9F%8C%BC%20Share%20Evergreen%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -624,33 +657,33 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/evergreen-lists/evergreenlist-to-markdown">_EvergreenList to Markdown</a>
+       <a href="https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown">_Evergreen List to Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/294c69027951463ba25e2ff4c44e2d17">
+       <a href="https://www.icloud.com/shortcuts/d9548cce5b594692a1437c13ade7717e">
        <kbd>
-       <img src="All%20Shortcuts/Evergreen%20Lists/_EvergreenList%20to%20Markdown/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Evergreen%20Lists/_Evergreen%20List%20to%20Markdown/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/evergreen-lists/evergreenlist-to-json">_EvergreenList to JSON</a>
+       <a href="https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-json">_Evergreen List to JSON</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d04f4bfe959c4df2b3b1152d0d353162">
+       <a href="https://www.icloud.com/shortcuts/c3d8a7cc41534a3d99add41583e21d33">
        <kbd>
-       <img src="All%20Shortcuts/Evergreen%20Lists/_EvergreenList%20to%20JSON/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Evergreen%20Lists/_Evergreen%20List%20to%20JSON/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/evergreen-lists/evergreenlist-to-googlesheets">_EvergreenList to GoogleSheets</a>
+       <a href="https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-google-sheets">_Evergreen List to Google Sheets</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/211395bc040c4d6daeb1cbd51195037b">
+       <a href="https://www.icloud.com/shortcuts/3a8b4ebbca7341cfb6deaaa1f79425f3">
        <kbd>
-       <img src="All%20Shortcuts/Evergreen%20Lists/_EvergreenList%20to%20GoogleSheets/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Evergreen%20Lists/_Evergreen%20List%20to%20Google%20Sheets/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -659,7 +692,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/evergreen-lists/show-random-item-from-evergreen-list">_Show Random Item from Evergreen List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ac77a2daa7d14f059afe29f4f40b0f27">
+       <a href="https://www.icloud.com/shortcuts/8dff2539ecd64a39ad36f595898060ab">
        <kbd>
        <img src="All%20Shortcuts/Evergreen%20Lists/_Show%20Random%20Item%20from%20Evergreen%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -670,7 +703,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/evergreen-lists/get-random-item-from-evergreen-list">_Get Random Item from Evergreen List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1b86208e0081464bb55622a718bec506">
+       <a href="https://www.icloud.com/shortcuts/191a5c8e1f414bb4940f0f6bef36f6dc">
        <kbd>
        <img src="All%20Shortcuts/Evergreen%20Lists/_Get%20Random%20Item%20from%20Evergreen%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -689,7 +722,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/mindware-update">🐐 Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a57644a68e80465eb30241564d74817c">
+       <a href="https://www.icloud.com/shortcuts/cf926794c1e94e07aeeb9531a0caf432">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/%F0%9F%90%90%20Mindware%20Update/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -700,7 +733,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/open-wmu">Open WMU</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/63c443ba097b4862bd16d4483fa98e03">
+       <a href="https://www.icloud.com/shortcuts/179cca3eb2cc4c60a481e7d90ffe6456">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/Open%20WMU/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -711,7 +744,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/get-wmu-file-path">_Get WMU File Path</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d1fe1c442e6f485080086c367bb15489">
+       <a href="https://www.icloud.com/shortcuts/fcb9e18f07ad4f09a1bc75adcf9f8f9b">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/_Get%20WMU%20File%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -722,7 +755,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/get-random-wmu-item">_Get Random WMU Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d63a3b056a9b4c2e842357905b366126">
+       <a href="https://www.icloud.com/shortcuts/7ee256e7f34649e9b16dbbb72f6a507f">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/_Get%20Random%20WMU%20Item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -733,7 +766,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/speak-random-wmu-item">_Speak Random WMU Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3588a91f8d2945988a8b6e76d0c4639e">
+       <a href="https://www.icloud.com/shortcuts/5c69bc9bd99648b688a36a6fd242338d">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/_Speak%20Random%20WMU%20Item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -744,7 +777,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/show-random-item-from-wmu-backlog">_Show Random Item from WMU Backlog</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7ace39e4c0614e44a7ce3afb3e1cd86d">
+       <a href="https://www.icloud.com/shortcuts/f3ef52622ce249e5ac0ebf272102698c">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/_Show%20Random%20Item%20from%20WMU%20Backlog/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -763,7 +796,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/share-brain-food">🌷 Share Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0ab4f20c54ec4635a4bc1fbc1708139f">
+       <a href="https://www.icloud.com/shortcuts/ad9e07b15c844f9abd38d57b49871570">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%8C%B7%20Share%20Brain%20Food/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -774,7 +807,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/brain-food">🧠 Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9069b7584a514a2492c12201a89f3eb5">
+       <a href="https://www.icloud.com/shortcuts/5777ae1bfc874a38bfc2fc0090891e01">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%A7%A0%20Brain%20Food/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -785,7 +818,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/export-safari-reading-list">⤴️ Export Safari Reading List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3c75d3c17d014d38b6677c8e18f1ffe5">
+       <a href="https://www.icloud.com/shortcuts/3ee2f935220a48f9b6ca316d9e5ea216">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%E2%A4%B4%EF%B8%8F%20Export%20Safari%20Reading%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -796,7 +829,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/readinglist2reminders">🔄 ReadingList2Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c4e4b5ceacdb4a079c18799b3878515f">
+       <a href="https://www.icloud.com/shortcuts/aae101d77a384b23839ac2b977a6f3f4">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%94%84%20ReadingList2Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -807,7 +840,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/export-youtube-watch-later-list">⤴️ Export YouTube Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/89ead910bd5a4248b5b9e9f8b021d250">
+       <a href="https://www.icloud.com/shortcuts/27cf63e342704ddb8eca892f1ea8ca9c">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%E2%A4%B4%EF%B8%8F%20Export%20YouTube%20Watch%20Later%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -818,7 +851,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/watchlaterlist2reminders">🔄 WatchLaterList2Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cc56c5aee720443aacac83efa70ae581">
+       <a href="https://www.icloud.com/shortcuts/7b5009f4429140c68886b2b631837292">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%94%84%20WatchLaterList2Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -829,7 +862,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/brain-food-delivery">🚛 Brain Food Delivery</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/be1f87472d464ad0a22a9fcc143906b1">
+       <a href="https://www.icloud.com/shortcuts/d08022a8909e4080ae230e5fe1486191">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%9A%9B%20Brain%20Food%20Delivery/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -840,7 +873,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-watch-later-list">📽️ Add to Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1d0c44e34b8248948ad2f3750605e0ae">
+       <a href="https://www.icloud.com/shortcuts/91e09fbb86d447029dbe257985a16e42">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%93%BD%EF%B8%8F%20Add%20to%20Watch%20Later%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -851,7 +884,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-reading-list">📗 Add to Reading List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a062511360247978abd15fbc5371622">
+       <a href="https://www.icloud.com/shortcuts/9997fa6df98a46feb6998bad27afbb3a">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%93%97%20Add%20to%20Reading%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -862,7 +895,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-book-list">📚 Add to Book List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/87772f6a1a1c4622a7c8a164871ac9e1">
+       <a href="https://www.icloud.com/shortcuts/dbc4613a6b314edf80c0f92c8f5aebb2">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%93%9A%20Add%20to%20Book%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -873,7 +906,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-movie-tv-list">🎬 Add to Movie & TV List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ca618f023c6d4e6cb27b715cd9458a9f">
+       <a href="https://www.icloud.com/shortcuts/c2d16276b2c643bd85a79ec34165fea8">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%8E%AC%20Add%20to%20Movie%20%26%20TV%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -884,7 +917,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-podcast-list">🎤 Add to Podcast List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a69399f777e94b65881061e142d1dc9f">
+       <a href="https://www.icloud.com/shortcuts/a8e702a2750c4b13beb184aaf1e5c776">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%8E%A4%20Add%20to%20Podcast%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -895,7 +928,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/enjoy-quality-brain-food">😉 Enjoy Quality Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/411b8de07b2a4acbb420d7d3fa55ec0f">
+       <a href="https://www.icloud.com/shortcuts/52679ee759f342b1bc475f62e39aafb3">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%98%89%20Enjoy%20Quality%20Brain%20Food/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -906,7 +939,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/the-enoughist-s-pick">🤌 The Enoughist's Pick</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9918e66ac025418d9d512267624dfab0">
+       <a href="https://www.icloud.com/shortcuts/856745b03aee41319912ca7b79c124bb">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%A4%8C%20The%20Enoughist's%20Pick/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -917,7 +950,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/read-random-saved-article">🍁 Read Random Saved Article</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4453aaa1128f44948eddf2e79de52f9f">
+       <a href="https://www.icloud.com/shortcuts/2976857ebbb14aae86aadd449525e558">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%8D%81%20Read%20Random%20Saved%20Article/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -928,7 +961,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/mindware-upgrade">🏁 Mindware Upgrade</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/189b892dafa04562bb350ce61d5b4ef2">
+       <a href="https://www.icloud.com/shortcuts/71697872d8284c64bef10c5b05a44b20">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%8F%81%20Mindware%20Upgrade/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -939,7 +972,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/summarize-youtube-video">📌 Summarize YouTube Video</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5af7b7364a3241e3807714e725f0cc58">
+       <a href="https://www.icloud.com/shortcuts/ea44a602729f435d8a64dfe750151b33">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%93%8C%20Summarize%20YouTube%20Video/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -950,7 +983,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/watch-youtube-video-without-ads">⚔️ Watch YouTube Video without Ads</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/30761fe6b75045ceb496a9f9df44e519">
+       <a href="https://www.icloud.com/shortcuts/35c29b1194104334bd988efc9889d3e3">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%E2%9A%94%EF%B8%8F%20Watch%20YouTube%20Video%20without%20Ads/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -961,7 +994,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/youtube-top-video">📹 YouTube Top Video</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4124d01931954255a0788821cfc84a12">
+       <a href="https://www.icloud.com/shortcuts/893dd732640440f3bf7cafedf096922e">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%93%B9%20YouTube%20Top%20Video/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -972,7 +1005,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/email-newsletter">📧 Email Newsletter</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c05a2660ad3e4ddb93ef0a68b975a7b0">
+       <a href="https://www.icloud.com/shortcuts/9c65f58266664853890461081720e82b">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%93%A7%20Email%20Newsletter/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -983,7 +1016,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/search-web">🌐 Search Web</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/04be5dcf7e3f4880a7ddf4340135a48b">
+       <a href="https://www.icloud.com/shortcuts/c5b2fbec04934e7a92df2d9c88318be6">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/%F0%9F%8C%90%20Search%20Web/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -994,7 +1027,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/floccus">Floccus</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/edc0b00e41df44749c3ed412a30e3b72">
+       <a href="https://www.icloud.com/shortcuts/d833297984dc4191aa094d2d80a64030">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/Floccus/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1005,7 +1038,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/edge">Edge</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e705e4fff1bd4952a523eea17ba02a15">
+       <a href="https://www.icloud.com/shortcuts/8b077b42e24b41108ecbbfc0f46b36fd">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/Edge/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1016,7 +1049,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/get-book-excerpts-from-random-page">Get Book Excerpts from Random Page</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f5ed3ade54934833ae3d4ecd6634b98e">
+       <a href="https://www.icloud.com/shortcuts/b4bde62f31d24b38b2870462ffc4cb9d">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/Get%20Book%20Excerpts%20from%20Random%20Page/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1027,7 +1060,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-book-list-via-google-books">_Add to Book List via Google Books</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bd622aff3d3041dfab206d867f1bcfde">
+       <a href="https://www.icloud.com/shortcuts/447fa465d36c4e1fa414c62dc6797865">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/_Add%20to%20Book%20List%20via%20Google%20Books/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1038,7 +1071,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-book-list-via-open-library">_Add to Book List via Open Library</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/32988e8f598a43ee88850cde66d2ad9c">
+       <a href="https://www.icloud.com/shortcuts/0e4fc5f37aac4e6195231065968aea0b">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/_Add%20to%20Book%20List%20via%20Open%20Library/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1049,7 +1082,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-movie-tv-list">_Add to Movie & TV List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9ede7e30ad8e4dbe9020e34c7aca42a4">
+       <a href="https://www.icloud.com/shortcuts/93dc569839f04f05b5426459c6d330ea">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/_Add%20to%20Movie%20%26%20TV%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1060,7 +1093,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/add-to-podcast-list">_Add to Podcast List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/46283859b90c4f4bb50e535a3ba9afa6">
+       <a href="https://www.icloud.com/shortcuts/b6a1a079e4704e2f8ceb30a64b957ccb">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/_Add%20to%20Podcast%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1071,7 +1104,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/extract-youtube-videoid-from-url">_Extract YouTube VideoID from URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/909e395c04d74d3d88a0a43186be6024">
+       <a href="https://www.icloud.com/shortcuts/9193a76be36e441c926704ba36eea356">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/_Extract%20YouTube%20VideoID%20from%20URL/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1082,7 +1115,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/brain-food/get-brain-food-title-and-url">Get Brain Food Title and URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/80722b8fcab449f7a9c7e1e789ac5f38">
+       <a href="https://www.icloud.com/shortcuts/d6d3b80fd2f6491a98cf6926be9daef9">
        <kbd>
        <img src="All%20Shortcuts/Brain%20Food/Get%20Brain%20Food%20Title%20and%20URL/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1093,7 +1126,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/getting-things-done">Getting Things Done (30)</a>
+        <a href="https://shortcutomation.com/gallery/getting-things-done">Getting Things Done (33)</a>
       </strong>
     </summary>
 
@@ -1101,7 +1134,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-reminders">💾 Backup My Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2f7e149727944da389b0c16a2adb4746">
+       <a href="https://www.icloud.com/shortcuts/7c1a6e224ac246d48d9b3126a38ac5ee">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1112,7 +1145,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-reminders-kernel">💾 Backup My Reminders - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c8271930e2af4f2cafed4a20c4d268d5">
+       <a href="https://www.icloud.com/shortcuts/afc0bb8e5f984c279838c651f433b53c">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Reminders%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1123,7 +1156,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-shortcuts-library">💾 Backup My Shortcuts Library</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d54c5956811e4bc5b528586ab6dac2c9">
+       <a href="https://www.icloud.com/shortcuts/35cf23e4b4234198a278174d3739f41f">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1134,7 +1167,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-repos">💾 Backup My Repos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d62c602d1b254688a44f554825c9ff71">
+       <a href="https://www.icloud.com/shortcuts/17e68b46ce3e474b804f11ddf2b73fb7">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Repos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1145,7 +1178,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/plan-my-day">🗓️ Plan My Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9b31437c343649a59b562871b9a7d787">
+       <a href="https://www.icloud.com/shortcuts/9161b8ee0a2c4dfcad513baf7b417f7b">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%97%93%EF%B8%8F%20Plan%20My%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1156,7 +1189,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/view-today-s-tasks">☑️ View Today's Tasks</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/320547cc53904203a1a3924feea544f8">
+       <a href="https://www.icloud.com/shortcuts/f4a56a6c954647c7b6f620f17c472d4c">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%98%91%EF%B8%8F%20View%20Today's%20Tasks/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1165,20 +1198,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/getting-things-done/my-writing-assistant">✍️ My Writing Assistant</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/e9d8645ae50c443ea5bb48af8d5b1262">
-       <kbd>
-       <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%9C%8D%EF%B8%8F%20My%20Writing%20Assistant/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/ask-ai-anything">🤖 Ask AI Anything</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d23ccbb3548c4caa8a5261b101712f28">
+       <a href="https://www.icloud.com/shortcuts/04aed29309754579ad47d61cfa0517c5">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%A4%96%20Ask%20AI%20Anything/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1189,7 +1211,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/url-shortener">🔗 URL Shortener</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/68762d8df7ec4c0d82dcdc53691513ec">
+       <a href="https://www.icloud.com/shortcuts/86bbaa379c854aa393e6a1a529916663">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%94%97%20URL%20Shortener/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1200,7 +1222,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/hypertext-constructor">🖇️ Hypertext Constructor</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/afd22f10cfcf4c87ac4b3686eb65b644">
+       <a href="https://www.icloud.com/shortcuts/6816c63eef664689a4d18ce865c520d5">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%96%87%EF%B8%8F%20Hypertext%20Constructor/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1211,7 +1233,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/deep-work-machine">🍅 Deep Work Machine</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b6eb11d2841647a681be51a019d39b62">
+       <a href="https://www.icloud.com/shortcuts/b88a7499a5df4c54a58199bc41ee3826">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%85%20Deep%20Work%20Machine/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1222,7 +1244,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/deep-work-session">⚛️ Deep Work Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2aa1f6ccc9a94ed1b73c050630900a89">
+       <a href="https://www.icloud.com/shortcuts/5aca7dd824624a71ab2e24dd59348ca1">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%9A%9B%EF%B8%8F%20Deep%20Work%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1233,7 +1255,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/boot-up-sequence">⤴️ Boot Up Sequence</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bdacdfb1157a44b3b37f4639a261f7b4">
+       <a href="https://www.icloud.com/shortcuts/2ad0c0089266487c8a6372d5254f3b48">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%A4%B4%EF%B8%8F%20Boot%20Up%20Sequence/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1244,7 +1266,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/shut-down-sequence">⤵️ Shut Down Sequence</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b20fafeb6ffe42578da8a066423e64fa">
+       <a href="https://www.icloud.com/shortcuts/b3f1fc4647e746e0b574f80efd8e61f2">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%A4%B5%EF%B8%8F%20Shut%20Down%20Sequence/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1255,7 +1277,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/gmail">📨 Gmail</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a06346e93344492a9f12db911fe893e0">
+       <a href="https://www.icloud.com/shortcuts/5a14a6c13aa044319a00bc0e0bb79641">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%93%A8%20Gmail/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1266,7 +1288,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/pay-the-bills">💳 Pay the Bills</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b27dc40260b409d8068f2897bb40e00">
+       <a href="https://www.icloud.com/shortcuts/38f565f050c64e02a13981cdb824a0f9">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%B3%20Pay%20the%20Bills/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1277,7 +1299,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/show-flow-word-counts">🍻 Show Flow & Word Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7ef8e53f22c04ba1abe361a3bb4276d6">
+       <a href="https://www.icloud.com/shortcuts/d1a09276d2934b07be94d6ae1f446c9f">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%8D%BB%20Show%20Flow%20%26%20Word%20Counts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1288,7 +1310,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/upload-to-imgur">⬆️ Upload to Imgur</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b42ffb18253d4207b48d2ecf679a2bda">
+       <a href="https://www.icloud.com/shortcuts/7bacee355c264ad994e9d14e8c3418b1">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%E2%AC%86%EF%B8%8F%20Upload%20to%20Imgur/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1299,7 +1321,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/ask-chatgpt">Ask ChatGPT</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0c2b5647a04540b085c7144d71d84a25">
+       <a href="https://www.icloud.com/shortcuts/a4dcb85a59f3469b905372f493de8ece">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/Ask%20ChatGPT/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1310,7 +1332,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/set-day-progress-timer">Set Day Progress Timer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8110b0535e1549eaa275bd4b89d75a93">
+       <a href="https://www.icloud.com/shortcuts/05aa96e9ae864ff593456bf489a26a3f">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/Set%20Day%20Progress%20Timer/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1321,7 +1343,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/show-day-progress">Show Day Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eed0c0f72a724475acc4a8d3ef2a8aaa">
+       <a href="https://www.icloud.com/shortcuts/f534280b48e140a389fd0ea711abef31">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/Show%20Day%20Progress/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1332,7 +1354,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/show-year-progress">Show Year Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d6e9f8ae5cc247249885073750cdb37c">
+       <a href="https://www.icloud.com/shortcuts/76593bbd170c4dc6a05fc78dc6f9e971">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/Show%20Year%20Progress/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1343,7 +1365,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/log-year-progress">Log Year Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3e3e3dad1a394e0e80c9c265284418fb">
+       <a href="https://www.icloud.com/shortcuts/0e3ca8442d2e451c9e1566860b3b6840">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/Log%20Year%20Progress/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1354,7 +1376,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/get-undone-action-items">_Get Undone Action Items</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/51c34f54445244b7949bdd0bf3bb491d">
+       <a href="https://www.icloud.com/shortcuts/1e238403bd66457797b79055f4c9a91b">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Get%20Undone%20Action%20Items/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1365,7 +1387,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/plot-number-of-words">_Plot Number of Words</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ca0decbd33e24c1d9842bbdced6c6397">
+       <a href="https://www.icloud.com/shortcuts/a93facd539fc4281a3bf88245ebb09a1">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Plot%20Number%20of%20Words/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1376,7 +1398,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/plot-number-of-flows">_Plot Number of Flows</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/865725d2a71d42c4ad23efaf1de95c97">
+       <a href="https://www.icloud.com/shortcuts/185fa2dadbe9471b9dc2048e5a0e3148">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Plot%20Number%20of%20Flows/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1387,7 +1409,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/get-daily-flow-word-counts">_Get Daily Flow & Word Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7ad554bd128044979351d40016279be3">
+       <a href="https://www.icloud.com/shortcuts/22e29f0db27d4090a6caeaef7d944a9e">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Get%20Daily%20Flow%20%26%20Word%20Counts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1398,7 +1420,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/export-monthly-flow-word-counts">_Export Monthly Flow & Word Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a542ae61d2a64bcca02b1155bc700f23">
+       <a href="https://www.icloud.com/shortcuts/dbfc5cfeb64b4f24a98978196c598d1b">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Export%20Monthly%20Flow%20%26%20Word%20Counts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1409,7 +1431,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/plot-deep-work-machine-charts">_Plot Deep Work Machine Charts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ff9dbebbea364cd69866b2dfab6bd46d">
+       <a href="https://www.icloud.com/shortcuts/6e3abda2f6e94b23b2f77afbcd035dc2">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/_Plot%20Deep%20Work%20Machine%20Charts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1420,9 +1442,53 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/getting-things-done/log-today-s-flow-counts">Log Today's Flow Counts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d2274b8a704e4f31af6905f01a215b9f">
+       <a href="https://www.icloud.com/shortcuts/26da66dfa906423db022ee327c0ecbc1">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/Log%20Today's%20Flow%20Counts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/getting-things-done/add-anniversary-to-calendar">Add Anniversary to Calendar</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/ccc16a1074214656850e77c04e741ce0">
+       <kbd>
+       <img src="All%20Shortcuts/Getting%20Things%20Done/Add%20Anniversary%20to%20Calendar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/getting-things-done/cleanup-calendar">Cleanup Calendar</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/dc07cdd074e54ab784c5c59e72223038">
+       <kbd>
+       <img src="All%20Shortcuts/Getting%20Things%20Done/Cleanup%20Calendar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/getting-things-done/abfuhrkalendar2reminders">Abfuhrkalendar2Reminders</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/a2d95a1e8df948b8a0bee9e06811368b">
+       <kbd>
+       <img src="All%20Shortcuts/Getting%20Things%20Done/Abfuhrkalendar2Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/getting-things-done/set-sport-edevice-charging-reminders">Set Sport eDevice Charging Reminders</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/83cc7baebdea4d03a7013f3c0986a089">
+       <kbd>
+       <img src="All%20Shortcuts/Getting%20Things%20Done/Set%20Sport%20eDevice%20Charging%20Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -1431,7 +1497,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/lifeos-toolkits">LifeOS Toolkits (50)</a>
+        <a href="https://shortcutomation.com/gallery/lifeos-toolkits">LifeOS Toolkits (47)</a>
       </strong>
     </summary>
 
@@ -1439,7 +1505,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/brain-recharger">🔌 Brain Recharger</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9738f009c92843e694583aee56e9ca7d">
+       <a href="https://www.icloud.com/shortcuts/fe166e2812204833add7c9669ed500c1">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%8C%20Brain%20Recharger/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1450,7 +1516,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/my-life-on-this-day">🌻 My Life On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cc0e52e2ef4c4585a8aeae5b93ed8ca4">
+       <a href="https://www.icloud.com/shortcuts/3de0ae8dd5e849e1a1ff88d15f746979">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%BB%20My%20Life%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1461,7 +1527,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/dear-today-me">🌟 Dear Today Me</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/724d5c35e3a14b609a95c84cfaef2be6">
+       <a href="https://www.icloud.com/shortcuts/49f990e1dfbf4f6c939a18aac309912e">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%9F%20Dear%20Today%20Me/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1472,7 +1538,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/call-people-i-love">❤️ Call People I Love</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/75e4522ed02c4bedad30170b3a067dc8">
+       <a href="https://www.icloud.com/shortcuts/bb19929547f24fc799447fd3b125ce28">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%9D%A4%EF%B8%8F%20Call%20People%20I%20Love/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1483,7 +1549,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/don-t-forget-siri">✋ Don't Forget Siri</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69a0ef1779a24dfcaee9afca171694cd">
+       <a href="https://www.icloud.com/shortcuts/7a80495a17a54aa6b47b15facfade963">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%9C%8B%20Don't%20Forget%20Siri/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1494,7 +1560,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/connect-to-headphone">🎧 Connect to Headphone</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/42f54b6ea7954d619cfec75b2a9c574b">
+       <a href="https://www.icloud.com/shortcuts/d4f9aa53da324550bc22ed5929269793">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A7%20Connect%20to%20Headphone/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1505,7 +1571,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/listen-to-something">🦻 Listen to Something</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/29354f2e897c45a5b456e1dad96a8c8f">
+       <a href="https://www.icloud.com/shortcuts/0225595931144ae78c258ea20eb83d99">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A6%BB%20Listen%20to%20Something/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1516,7 +1582,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/binaryquote">🌈 BinaryQuote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/aaedba171de94071a1a54ff15642eafa">
+       <a href="https://www.icloud.com/shortcuts/4831a65cb45c430fb0cc1ead36584116">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8C%88%20BinaryQuote/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1527,7 +1593,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/goodreadsquote">🗽 GoodreadsQuote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/897e52a03ba14d6b810b7263dbe5ec5c">
+       <a href="https://www.icloud.com/shortcuts/1851af412fce44d3b17a5d989dada9ec">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%97%BD%20GoodreadsQuote/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1538,7 +1604,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/visual-words">🖼️ Visual > Words</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d6404fcb523f490bb1c8a26f9454b851">
+       <a href="https://www.icloud.com/shortcuts/a806f662038b46d0850a1ace1937ff44">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%96%BC%EF%B8%8F%20Visual%20%3E%20Words/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1549,7 +1615,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/sketch-of-the-day">🎨 Sketch Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a2d1998f6b684178a240ad423fdf97e8">
+       <a href="https://www.icloud.com/shortcuts/b6be8a521ba14ebe926645d45428db24">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%A8%20Sketch%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1560,7 +1626,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/recipe-of-the-day">🥙 Recipe Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a3b969ed22e24526afc9d30591f9f47e">
+       <a href="https://www.icloud.com/shortcuts/9088d2da3ec14f4f9dfdd664e7cd2da2">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A5%99%20Recipe%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1571,7 +1637,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/exercise-of-the-day">🤸🏽‍♀️ Exercise Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2659e11401074297a480bb1791790791">
+       <a href="https://www.icloud.com/shortcuts/4efe851a501842d6ab41b50a3924bc2f">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A4%B8%F0%9F%8F%BD%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1582,7 +1648,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/workout-of-the-day">🦁 Workout Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/712787ba4833470fbebda05fd6fb208b">
+       <a href="https://www.icloud.com/shortcuts/2bcb98e82afb434f9d8747c4abe7c049">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A6%81%20Workout%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1593,7 +1659,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/number-of-the-day">🔢 Number Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cb4b5e0a6f024097ad3ff2e215cd13e7">
+       <a href="https://www.icloud.com/shortcuts/8005b49eae3f4de189e0620f08c0410a">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%94%A2%20Number%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1604,7 +1670,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/chindogu-of-the-day">🛠️ Chindogu Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/37712a037fc04c48b3fc765a6da30c8b">
+       <a href="https://www.icloud.com/shortcuts/3669e9b47cf14d8e923fb8b1584c1004">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9B%A0%EF%B8%8F%20Chindogu%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1615,7 +1681,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/word-of-the-day">🧑🏽‍🏫 Word Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c573e12598fc4806a455d9ff398e6c79">
+       <a href="https://www.icloud.com/shortcuts/d5fb3df8e559436ba712cb4857572569">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%A7%91%F0%9F%8F%BD%E2%80%8D%F0%9F%8F%AB%20Word%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1626,7 +1692,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/taegliches-deutsch">🇩🇪 Taegliches Deutsch</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cb724244a392437790ce9a74a205a6d5">
+       <a href="https://www.icloud.com/shortcuts/d0f6156e4b3e4e949ba7ad983af143b2">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%87%A9%F0%9F%87%AA%20Taegliches%20Deutsch/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1637,7 +1703,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/today-s-fun-fact">🎭 Today's Fun Fact</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/554ec96748a24c7c967af3aa342c8136">
+       <a href="https://www.icloud.com/shortcuts/280d5f45ea0641fdaaa7fa2b7be8bf10">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%AD%20Today's%20Fun%20Fact/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1648,7 +1714,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/today-s-good-fact">🍄 Today's Good Fact</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1db2feef39ae4235bf593d8d1d96d918">
+       <a href="https://www.icloud.com/shortcuts/34cd7bf9396548c39eb4c5d8d978732c">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8D%84%20Today's%20Good%20Fact/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1659,7 +1725,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/britannica">📰 Britannica</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fc5ca3ca6ae841a3ba95f164515f6953">
+       <a href="https://www.icloud.com/shortcuts/1a93f16c51fd47119c22706754e9932f">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B0%20Britannica/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1670,7 +1736,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/">👨🏽‍🔬 科學人雜誌</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7c3c40823ac74d658f76e380199beb04">
+       <a href="https://www.icloud.com/shortcuts/e6a4e64e7db94f4b9d79672ee71d0d32">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%94%AC%20%E7%A7%91%E5%AD%B8%E4%BA%BA%E9%9B%9C%E8%AA%8C/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1681,7 +1747,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/hn-top-post">🚀 HN Top Post</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/88347be8aa9b4ce9bf63fc9db7489ddc">
+       <a href="https://www.icloud.com/shortcuts/4f58724ddd904d3f95d5928062057fb7">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%9A%80%20HN%20Top%20Post/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1692,7 +1758,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/tell-me-more">🪭 Tell Me More!</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/76b67f69bff14dbd8c10ab4e4f6937f8">
+       <a href="https://www.icloud.com/shortcuts/ac7a17db463d4de9b1b176e905f7b5c6">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%AA%AD%20Tell%20Me%20More!/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1703,7 +1769,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/organize-my-photos">🎞️ Organize My Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c389b13e02a543889225d79bc31db827">
+       <a href="https://www.icloud.com/shortcuts/2c39076a4b064190b4cece308aa7b02d">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8E%9E%EF%B8%8F%20Organize%20My%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1714,7 +1780,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/relationships-reflection">💒 Relationships Reflection</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/29568e163b774791bc4ac74d4d630e73">
+       <a href="https://www.icloud.com/shortcuts/85da44ab700a4d3baf383cfbec834c22">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%92%20Relationships%20Reflection/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1725,7 +1791,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/you-deserve-it">🍭 You Deserve It</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/57ab3e8a7b3a432dbd2141f47b03bed5">
+       <a href="https://www.icloud.com/shortcuts/33e0d870ac024feabe62cea60f8d4ad9">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%8D%AD%20You%20Deserve%20It/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1736,7 +1802,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/log-phone-screen-time">📱 Log Phone Screen Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f3746a95f0074170a844583ade773e69">
+       <a href="https://www.icloud.com/shortcuts/998af81b29d94826b9b1b0c39ea74c19">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%93%B1%20Log%20Phone%20Screen%20Time/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1747,7 +1813,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/extract-insight-timer-quote">💬 Extract Insight Timer Quote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b0591c6649c24a45957a349b347e3721">
+       <a href="https://www.icloud.com/shortcuts/b93470defeab462cb3a6c0de46b7d29a">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%F0%9F%92%AC%20Extract%20Insight%20Timer%20Quote/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1758,7 +1824,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/log-health-data-bed-wakeup-time">Log Health Data - Bed & Wakeup Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/739214d6fd7e4c04994e5788d1896758">
+       <a href="https://www.icloud.com/shortcuts/0bb720901849475f82d6dc70921aaa7e">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Log%20Health%20Data%20-%20Bed%20%26%20Wakeup%20Time/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1769,7 +1835,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/memories-on-this-day">☘️ Memories On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cf66599d0bf141e18930e551c6b95288">
+       <a href="https://www.icloud.com/shortcuts/1dcb7117ced145708e1c25a6becb6596">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/%E2%98%98%EF%B8%8F%20Memories%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1780,7 +1846,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/memories-on-this-day">Memories On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1d3905d804e84c898cbd0d3746a17bb6">
+       <a href="https://www.icloud.com/shortcuts/d4143036e45343a980dfbfd1913f4422">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Memories%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1791,7 +1857,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/get-random-memory">Get Random Memory</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6419adf4fffe49b0b28d6480a54300c6">
+       <a href="https://www.icloud.com/shortcuts/745ad5d5278a4dcb94c06100f43d152a">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Memory/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1802,7 +1868,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/get-random-visual">Get Random Visual</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3ad3c91aae6a446ca4459654deaaa7fa">
+       <a href="https://www.icloud.com/shortcuts/25941f672e0b48a380069540d406bd1f">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Visual/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1813,7 +1879,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/get-random-quote-from-binaryquote">Get Random Quote from BinaryQuote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0d86cb1867744a209831bdb3da7cd415">
+       <a href="https://www.icloud.com/shortcuts/dded5ee0b0684bb5af5c0fde2eb17546">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20BinaryQuote/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1824,7 +1890,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/get-random-quote-from-goodreads">Get Random Quote from Goodreads</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b67a680b45c849779f4e456fdd2a84cf">
+       <a href="https://www.icloud.com/shortcuts/406f4131c58b4ad281cdb2a3495812fb">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Quote%20from%20Goodreads/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1835,7 +1901,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/speak-journal-prompt-s">Speak Journal Prompt(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1f810977b891457d8feec90025cb945b">
+       <a href="https://www.icloud.com/shortcuts/e34527d1e4f04bdc839b125d519cc79d">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Speak%20Journal%20Prompt(s)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1846,7 +1912,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/get-random-journal-prompt-s">Get Random Journal Prompt(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2d2a93227c7042d28eff441bfc2a2513">
+       <a href="https://www.icloud.com/shortcuts/47aa892b168648779befe4f137a5b492">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Journal%20Prompt(s)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1857,7 +1923,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/get-random-paragraph-from-my-polaris">Get Random Paragraph from My Polaris</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0fa99af2745b4db2a2d50acef2f2a635">
+       <a href="https://www.icloud.com/shortcuts/19a8b2ef74f1418f96e9b62c8880a3cc">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Get%20Random%20Paragraph%20from%20My%20Polaris/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1868,7 +1934,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/photos">Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9e200395929142c3b9875f40d382585f">
+       <a href="https://www.icloud.com/shortcuts/9f6a1a4112bc4c76be8fa943bf667b2b">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1879,7 +1945,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/morning-greetings">Morning Greetings</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0147266156c849099996ad0db218f293">
+       <a href="https://www.icloud.com/shortcuts/b7091921d67d4ef5ad35b130cdffd6db">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Morning%20Greetings/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1890,7 +1956,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/evening-greetings">Evening Greetings</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8accf9cadde049db806a5e2f10e469a3">
+       <a href="https://www.icloud.com/shortcuts/e1a2f9843a974702ac830ced51bfb1f3">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Evening%20Greetings/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1901,7 +1967,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/life-progress-calculator">Life Progress Calculator</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f526eb56bdc7489da544cfc68a2511dc">
+       <a href="https://www.icloud.com/shortcuts/778802b6100b4ea581278dcba2eb8f57">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Life%20Progress%20Calculator/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1912,7 +1978,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/update-life-progress">Update Life Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a91c54b00f9542da92e5fc8be2bb7570">
+       <a href="https://www.icloud.com/shortcuts/eb97ddc6e7af4e93adbc1b707d7f958d">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Update%20Life%20Progress/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1923,7 +1989,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/show-death-clock">Show Death Clock</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5aa32f3136404266913206cb437f568b">
+       <a href="https://www.icloud.com/shortcuts/a5e5f71c3c3f447c9bf4cd9a0e4a480e">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Show%20Death%20Clock/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1934,7 +2000,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/review-strava-activities">Review Strava Activities</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/587064eb66d14d9bb78ab3e7cdb49bba">
+       <a href="https://www.icloud.com/shortcuts/25586a4214fd4011a3201806978dbf0e">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Review%20Strava%20Activities/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -1945,42 +2011,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/lifeos-toolkits/review-podcast-shownotes">Review Podcast Shownotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8489260129b944ae95b135ddec20e153">
+       <a href="https://www.icloud.com/shortcuts/c2518f45fe854ce7b7d72d446afcf74e">
        <kbd>
        <img src="All%20Shortcuts/LifeOS%20Toolkits/Review%20Podcast%20Shownotes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/lifeos-toolkits/cleanup-calendar">Cleanup Calendar</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/3ae4c6131ee248bd9e7e966b5b73a728">
-       <kbd>
-       <img src="All%20Shortcuts/LifeOS%20Toolkits/Cleanup%20Calendar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/lifeos-toolkits/abfuhrkalendar2reminders">Abfuhrkalendar2Reminders</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/4f27f9c19d114f91b97a89fa5a28e843">
-       <kbd>
-       <img src="All%20Shortcuts/LifeOS%20Toolkits/Abfuhrkalendar2Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/lifeos-toolkits/add-anniversary-to-calendar">Add Anniversary to Calendar</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/96959677b1bd4285bc2bba24e8005641">
-       <kbd>
-       <img src="All%20Shortcuts/LifeOS%20Toolkits/Add%20Anniversary%20to%20Calendar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -1997,7 +2030,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-life-automation/my-life-automation">⚙️ My Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/985e65fbdb664047b16e8c4646344d0b">
+       <a href="https://www.icloud.com/shortcuts/f38ff59b35984af0b44007957f8a413b">
        <kbd>
        <img src="All%20Shortcuts/My%20Life%20Automation/%E2%9A%99%EF%B8%8F%20My%20Life%20Automation/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2008,7 +2041,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-life-automation/check-life-automation">✔ Check Life Automation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2baddd23f51d47eabf46111762f335c8">
+       <a href="https://www.icloud.com/shortcuts/62ebfbc51d7c40dd903654e9f92a6e35">
        <kbd>
        <img src="All%20Shortcuts/My%20Life%20Automation/%E2%9C%94%20Check%20Life%20Automation/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2019,7 +2052,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-life-automation/get-life-automation-shortcuts">Get Life Automation Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ce1518b92b35453fa81850e114e70a07">
+       <a href="https://www.icloud.com/shortcuts/5d1daa42d6f44cfbb53d38111bec75b4">
        <kbd>
        <img src="All%20Shortcuts/My%20Life%20Automation/Get%20Life%20Automation%20Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2030,7 +2063,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-life-automation/batch-run-life-automation-shortcuts">_Batch Run Life Automation Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1845f0602ee04fd88ff35e1b98f9098d">
+       <a href="https://www.icloud.com/shortcuts/3385d0ea68f246d7b5578a3acc899550">
        <kbd>
        <img src="All%20Shortcuts/My%20Life%20Automation/_Batch%20Run%20Life%20Automation%20Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2049,7 +2082,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-daily/log-health-data-steps-weight">Log Health Data - Steps & Weight</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4d6cebbf480b40cc895443a62163204e">
+       <a href="https://www.icloud.com/shortcuts/553a6b802881470d93a7f9602280ecf9">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Daily/Log%20Health%20Data%20-%20Steps%20%26%20Weight/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2060,7 +2093,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-daily/log-deep-work-machine-stats">Log Deep Work Machine Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/136d2c7b3aac4f5a8a714fcadf902289">
+       <a href="https://www.icloud.com/shortcuts/436bc67849ae435886389bd72161f03f">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Daily/Log%20Deep%20Work%20Machine%20Stats/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2071,7 +2104,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-daily/cleanup-album">Cleanup Album</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b73827d27e224d7f91c1f2cc7a1212c9">
+       <a href="https://www.icloud.com/shortcuts/5801b9d63cc74573995e7678cd11ffb2">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Daily/Cleanup%20Album/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2082,7 +2115,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-daily/check-wmu-backlog">Check WMU Backlog</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c8fba1b02acf466cbfdfb0d0db5ebc71">
+       <a href="https://www.icloud.com/shortcuts/14cde9b34ca14e2c985c78524a3c91d6">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Daily/Check%20WMU%20Backlog/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2091,11 +2124,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/automation-daily/fetch-new-emails">Fetch New Emails</a>
+       <a href="https://shortcutomation.com/gallery/automation-daily/fetch-new-emails-newsletters">Fetch New Emails & Newsletters</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ea0c9c09f8374627ab327e8257ef12a8">
+       <a href="https://www.icloud.com/shortcuts/2c9396f7c86240a1a1e69eba84c8f790">
        <kbd>
-       <img src="All%20Shortcuts/Automation%20-%20Daily/Fetch%20New%20Emails/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Automation%20-%20Daily/Fetch%20New%20Emails%20%26%20Newsletters/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2104,7 +2137,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-daily/i-love-you">I Love You</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/76759c7b1b3b4f4191e0731c55f039c1">
+       <a href="https://www.icloud.com/shortcuts/8a004c9755344ea383ad30d475ce541e">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Daily/I%20Love%20You/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2123,7 +2156,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-weekly/saturday-my-dear-yi">Saturday::My Dear Yi</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/492dd297df2d41f5a2cf83d89aba8bd7">
+       <a href="https://www.icloud.com/shortcuts/055a81c7a532493ab8bc0ac6e2ac50e2">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Weekly/Saturday::My%20Dear%20Yi/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2134,7 +2167,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-weekly/sunday-weekly-mindware-update">Sunday::Weekly Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/44e107dc5b564b96bb447a41aad103dd">
+       <a href="https://www.icloud.com/shortcuts/0baa77b46a224dffb293f5e6f478bd40">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Weekly/Sunday::Weekly%20Mindware%20Update/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2151,11 +2184,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/automation-monthly/5-share-deep-work-stats">5::Share Deep Work Stats</a>
+       <a href="https://shortcutomation.com/gallery/automation-monthly/5-deep-work-machine">5::Deep Work Machine</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6227ac3ba01c41d2a7131f97fadbf464">
+       <a href="https://www.icloud.com/shortcuts/01365f8611804fd39ae5591e77fd3888">
        <kbd>
-       <img src="All%20Shortcuts/Automation%20-%20Monthly/5::Share%20Deep%20Work%20Stats/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Automation%20-%20Monthly/5::Deep%20Work%20Machine/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2164,7 +2197,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-monthly/15-export-reading-watch-later-list">15::Export Reading & Watch Later List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e376e5ac54fc4927aecbcf9a1b778832">
+       <a href="https://www.icloud.com/shortcuts/49b9f1b10bf34af2aefcb12b5abac2a1">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Monthly/15::Export%20Reading%20%26%20Watch%20Later%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2183,7 +2216,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/reminders-automation/organize-idea-capture-inbox">🧺 Organize Idea Capture Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b954eb7770f24d2ca064ae352f39e6c0">
+       <a href="https://www.icloud.com/shortcuts/c7c375c5d4bf4f1483705f702a786e06">
        <kbd>
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%A7%BA%20Organize%20Idea%20Capture%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2194,7 +2227,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/reminders-automation/set-default-priority-for-tasks">❕Set Default Priority for Tasks</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6b2219f8ecb94a0b8fdba121ee50a875">
+       <a href="https://www.icloud.com/shortcuts/dc73184168994fc0946cba4980670236">
        <kbd>
        <img src="All%20Shortcuts/Reminders%20Automation/%E2%9D%95Set%20Default%20Priority%20for%20Tasks/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2205,7 +2238,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/reminders-automation/organize-brain-food-lists">🍫 Organize Brain Food Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fb824adb55984f6cab675a22ba62861b">
+       <a href="https://www.icloud.com/shortcuts/4266fdb5e698492eaa60f7312954302a">
        <kbd>
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%8D%AB%20Organize%20Brain%20Food%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2216,7 +2249,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/reminders-automation/organize-evergreen-lists">🚜 Organize Evergreen Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a59d27cbe14a4e8bb9d1024ae413afa0">
+       <a href="https://www.icloud.com/shortcuts/6843549f0ac54ffca33cb71897497c09">
        <kbd>
        <img src="All%20Shortcuts/Reminders%20Automation/%F0%9F%9A%9C%20Organize%20Evergreen%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2235,7 +2268,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-i-arrive-home">When I Arrive Home</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/24939597c96b48eaa2139d7c07b14c58">
+       <a href="https://www.icloud.com/shortcuts/7543a893d5764f94b4fd0847ea212972">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20I%20Arrive%20Home/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2246,7 +2279,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-i-leave-home">When I Leave Home</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/46968416aa5448c9978cc806eac747a0">
+       <a href="https://www.icloud.com/shortcuts/f3b7a486e4384e7d9080cf0fba35430b">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20I%20Leave%20Home/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2257,7 +2290,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/ask-if-connect-to-ble-audio-device">Ask If Connect to BLE Audio Device</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6987bcfc62314411b129da0599fef4d2">
+       <a href="https://www.icloud.com/shortcuts/5c642c796ff24578ba6b4581c4097e94">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/Ask%20If%20Connect%20to%20BLE%20Audio%20Device/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2268,7 +2301,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/ask-if-connect-to-ble-audio-device-kernel">Ask If Connect to BLE Audio Device - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b7d23949d1124fab825e3853a9c9af6d">
+       <a href="https://www.icloud.com/shortcuts/f859d5cad6cb463ea9f09e3ad5496a36">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/Ask%20If%20Connect%20to%20BLE%20Audio%20Device%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2279,7 +2312,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-komoot-is-opened">When "Komoot" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b5c8df45e28241d2b437dda8f5c7f8af">
+       <a href="https://www.icloud.com/shortcuts/8b14ec62ad354114a6462b72606fbad2">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2290,7 +2323,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-komoot-is-opened-kernel">When "Komoot" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c11471c675f547be873fcf1d7abf1d14">
+       <a href="https://www.icloud.com/shortcuts/bc88a0e01aeb43419c0fb47a18196bf7">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2301,7 +2334,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-my-apple-device-is-connected-to-power">When my Apple device is connected to power</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e91c306efe50465f800fae3d5db71203">
+       <a href="https://www.icloud.com/shortcuts/6b2f26a366c14fa491f409466eae265c">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20connected%20to%20power/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2312,7 +2345,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-my-apple-device-is-disconnected-from-power">When my Apple device is disconnected from power</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/14679e0cefd645f88663f659934ca757">
+       <a href="https://www.icloud.com/shortcuts/bbcb18f576aa43da91b0ecd3160b5b17">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20my%20Apple%20device%20is%20disconnected%20from%20power/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2323,7 +2356,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-reminders-is-opened">When "Reminders" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a5715b3416fb4b5b8cf05af6e1842a9c">
+       <a href="https://www.icloud.com/shortcuts/7ebedd7ebcb54250956b6b902b02ea22">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2334,7 +2367,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-reminders-is-opened-kernel">When "Reminders" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/78a0f35fdc814698948a7e8ac392f8d4">
+       <a href="https://www.icloud.com/shortcuts/c6a3c1693da04187ab949da2554bed51">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20opened%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2345,7 +2378,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-reminders-is-closed">When "Reminders" is closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bcffd801d7714e8aa7890c239a1555e3">
+       <a href="https://www.icloud.com/shortcuts/417fc93088cd44c496e59c52e2c194ed">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20closed/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2356,7 +2389,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-reminders-is-closed-kernel">When "Reminders" is closed - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e705bac563964c5880ac8d1d404576c0">
+       <a href="https://www.icloud.com/shortcuts/3f5e61340b5748f9b4721620ce7213ea">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Reminders%22%20is%20closed%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2367,7 +2400,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-kleinanzeigen-is-opened">When "Kleinanzeigen" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a54fb6c7d3ec4f2f990832ff2b6dd7b4">
+       <a href="https://www.icloud.com/shortcuts/065916accdf04f6cb94ec76a6289564c">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Kleinanzeigen%22%20is%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2378,7 +2411,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-kleinanzeigen-is-opened-kernel">When "Kleinanzeigen" is opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a97534a288c24cb29468c098ab3a36b0">
+       <a href="https://www.icloud.com/shortcuts/51ad565046f741309b4e750cd37d4a98">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Kleinanzeigen%22%20is%20opened%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2389,7 +2422,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-friendly-is-opened">When "Friendly" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7cb662910a1d4d62a5561f8ed5dea752">
+       <a href="https://www.icloud.com/shortcuts/11949d52d7d7428da66f4352acc27c76">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Friendly%22%20is%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2400,7 +2433,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened-kernel">When flagged apps are opened - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9e740febc93c487c923ecfe289830358">
+       <a href="https://www.icloud.com/shortcuts/3f8e57cb9e584b55bafe60ecee3e7884">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20flagged%20apps%20are%20opened%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2411,7 +2444,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-labeled-apps-are-opened">When labeled apps are opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c56aaeedab0d47c6826ef88f9bd81bbc">
+       <a href="https://www.icloud.com/shortcuts/faf9b96345834cc2a62cc04e272ff033">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20labeled%20apps%20are%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2422,7 +2455,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-labeled-apps-are-closed">When labeled apps are closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/00092ef108be43c7ae1cae315795721a">
+       <a href="https://www.icloud.com/shortcuts/ac5d81dd024f4d6f87ee804243cf2ddd">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20labeled%20apps%20are%20closed/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2433,7 +2466,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-renpho-health-is-opened-or-closed">When "Renpho Health" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9310a1b834c24a4abdc173d8d4af4eb1">
+       <a href="https://www.icloud.com/shortcuts/869db9759f614cffa0ddcdbd52761008">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Renpho%20Health%22%20is%20opened%20or%20closed/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2444,7 +2477,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-calendar-is-opened-or-closed">When "Calendar" is opened or closed</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/357e8d5b81524a56b9f8457c93e036fd">
+       <a href="https://www.icloud.com/shortcuts/4e70ccaa11f64851ab84d965d5609195">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Calendar%22%20is%20opened%20or%20closed/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2455,7 +2488,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-anki-is-opened">When "Anki" is opened</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3684d42e35fa4ebd97ed2d531ee17831">
+       <a href="https://www.icloud.com/shortcuts/0b9dc460861d4eee90aa4480041788f7">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Anki%22%20is%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2466,7 +2499,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on">When turning my focus mode on</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bc94e4def19d447b97c7b0357b1e72e9">
+       <a href="https://www.icloud.com/shortcuts/7c77647ddd0f49b6a8dbcbec4a2f6882">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20turning%20my%20focus%20mode%20on/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2477,7 +2510,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/log-device-info">_Log Device Info</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4da607498bd64cc68ce20e9751b6e886">
+       <a href="https://www.icloud.com/shortcuts/b56177f4b97b4c299ccb44feef5e2beb">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/_Log%20Device%20Info/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2488,7 +2521,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/template-shortcuts">Template Shortcuts (8)</a>
+        <a href="https://shortcutomation.com/gallery/template-shortcuts">Template Shortcuts (10)</a>
       </strong>
     </summary>
 
@@ -2496,7 +2529,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-folder-shortcuts-header">Template - Folder Shortcuts Header</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/75a916689b464374be299294d9559ffa">
+       <a href="https://www.icloud.com/shortcuts/939557b3e83e4d54a63c3ae0914e8ae7">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Folder%20Shortcuts%20Header/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2507,7 +2540,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-voice-assistant">Template - Voice Assistant</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1815adf3a85f4e7daeaa6829354a39b4">
+       <a href="https://www.icloud.com/shortcuts/56115ada663e4b0e8c000759562440a3">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Voice%20Assistant/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2518,7 +2551,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-morning-and-evening-routine-prep">Template - Morning and Evening Routine Prep</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4d602f5e326d4b7e8b3475773b68a9c1">
+       <a href="https://www.icloud.com/shortcuts/ed5b473f2bda47c1b077af19fb8d8d53">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Morning%20and%20Evening%20Routine%20Prep/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2529,7 +2562,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-rich-notification">Template - Rich Notification</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0a50ed4f0e664973bced59e828a95c4f">
+       <a href="https://www.icloud.com/shortcuts/761bf6bb33594ed887a6d28796744c7a">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Rich%20Notification/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2540,7 +2573,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-notification-for-quotes">Template - Notification for Quotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/83fd9201cf3d42b28c50a879b3fc1544">
+       <a href="https://www.icloud.com/shortcuts/1cae0cfc6dbb4032a6b8f1ef9e04c3dc">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Notification%20for%20Quotes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2551,7 +2584,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-notification-for-reddit">Template - Notification for Reddit</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5b3c4854e5a74f6cabf31d16a790c263">
+       <a href="https://www.icloud.com/shortcuts/f6abcb0562b54ceabfeaf7f873f06d1d">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Notification%20for%20Reddit/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2562,7 +2595,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-view-image-in-files">Template - View Image in Files</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1a2623a8b2984919a35155f1e7849767">
+       <a href="https://www.icloud.com/shortcuts/1184ea6002054865a4b5656b0d00d77f">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20View%20Image%20in%20Files/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2573,9 +2606,31 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/template-shortcuts/template-run-commands-in-terminal">Template - Run Commands in Terminal</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/84251990d1e743bf9eb3c05cf30e4e1c">
+       <a href="https://www.icloud.com/shortcuts/e14845e1353c4c298879c614b0a14f8d">
        <kbd>
        <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Run%20Commands%20in%20Terminal/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/template-shortcuts/template-complete">Template - Complete!</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/28cc82881d7c46a18a5de5f76bc85833">
+       <kbd>
+       <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Complete!/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/template-shortcuts/template-email">Template - Email</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/f4e2ebec64054df6a10865ffc8ea5649">
+       <kbd>
+       <img src="All%20Shortcuts/Template%20Shortcuts/Template%20-%20Email/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2592,7 +2647,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/color-picker">Color Picker</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/be3937bdc22d49feb6e46db6f2853ba5">
+       <a href="https://www.icloud.com/shortcuts/69f6d7fb1aa64f1891b625d09e9b434c">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Color%20Picker/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2603,7 +2658,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/what-s-in-the-image">What's In The Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fa30b85a15984759917e3fa43c7bfb19">
+       <a href="https://www.icloud.com/shortcuts/8c9fe7dcaccf47e99cebb4517cdda12c">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/What's%20In%20The%20Image/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2614,7 +2669,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/reverse-image-search">Reverse Image Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1b6bd406114c444cb66b469df7e25a11">
+       <a href="https://www.icloud.com/shortcuts/9c03e20b53e14f07b1813f9e986f780b">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Reverse%20Image%20Search/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2625,7 +2680,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/search-app-store">Search App Store</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/db5223d6dea247d0928107dbe90f7c06">
+       <a href="https://www.icloud.com/shortcuts/fdb9ab0ff1754ba9a19a41406dc79d0d">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Search%20App%20Store/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2636,7 +2691,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/iphone-screenshots-framer">iPhone Screenshots Framer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8dea490c61ec4f3880d471b77be5431a">
+       <a href="https://www.icloud.com/shortcuts/4d4c944eabd64ba28375b643cbd7632b">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/iPhone%20Screenshots%20Framer/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2647,7 +2702,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/year-progress">Year Progress</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9eb61cb41eae4a4d821e9914c0b872a5">
+       <a href="https://www.icloud.com/shortcuts/5c3622aa65d64c749631dcdd083004b3">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Year%20Progress/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2658,7 +2713,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/make-pdf-from-html">Make PDF from HTML</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8b8c5640345a49c38a7485304d7260b1">
+       <a href="https://www.icloud.com/shortcuts/2a4c6f92ca5547c19d50ccc52fde4300">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Make%20PDF%20from%20HTML/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2669,7 +2724,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/coin-flip">Coin Flip</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d7359f01ced34a74920688c9acf71bd2">
+       <a href="https://www.icloud.com/shortcuts/a881c3c8dc8a434f9db7e50b6a6f3b0f">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Coin%20Flip/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2680,7 +2735,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/get-directions">Get Directions</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/53f761346539492db3881634d29c57f8">
+       <a href="https://www.icloud.com/shortcuts/9120c5ae45084c269faa9e14ab979278">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Get%20Directions/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2691,7 +2746,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/share-wi-fi">Share Wi-Fi</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/574d7a337f594b8dae1b961f39fd89ae">
+       <a href="https://www.icloud.com/shortcuts/9d53a33d606b4391a61e4817cb3b3a83">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Share%20Wi-Fi/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2702,7 +2757,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/record-audio">Record Audio</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e5d201a7bb6043acba21cd4ba0117bb9">
+       <a href="https://www.icloud.com/shortcuts/4fed01a93bc84e44a30ed8892f60ced0">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Record%20Audio/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2713,7 +2768,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/whatsapp-click-to-chat">WhatsApp Click-to-Chat</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/831ba2b6841a4869a3db787c4a573305">
+       <a href="https://www.icloud.com/shortcuts/94b6b66356da4fd184cfa6455cb10fed">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/WhatsApp%20Click-to-Chat/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2724,7 +2779,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/calculate-tip">Calculate Tip</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/aa184314babd4981b99bd3eb6a6460c2">
+       <a href="https://www.icloud.com/shortcuts/6787e16229394b8cbf43268d737416a2">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Calculate%20Tip/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2735,7 +2790,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/water-eject">Water Eject</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3d18c3a0a87c4154a382cfcfcb5183c8">
+       <a href="https://www.icloud.com/shortcuts/78af8b495d1b4c9fac6b135c724f187f">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Water%20Eject/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2746,7 +2801,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/standalone-fun/live-photo-to-gif">Live Photo to GIF</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ea59b08ca76b4cbd895263f473b89d57">
+       <a href="https://www.icloud.com/shortcuts/035e7e10e51b4c879cccfc7b1465bbd3">
        <kbd>
        <img src="All%20Shortcuts/Standalone%20Fun/Live%20Photo%20to%20GIF/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2765,7 +2820,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/get-index-of-list-item">Get Index of List Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fff855bd155a4cb78aae4b7b251e8259">
+       <a href="https://www.icloud.com/shortcuts/82bef79fc1c940b5991cc8ed0144cd1f">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Get%20Index%20of%20List%20Item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2776,7 +2831,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/odd-or-even-number">Odd or Even Number</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1e0910fa911740639d807147ee758216">
+       <a href="https://www.icloud.com/shortcuts/4e6e4ffec67942ddb7ebf0809df46220">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Odd%20or%20Even%20Number/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2787,7 +2842,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/test-markdown2richtext">Test Markdown2RichText</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/52107f71c7144ddcbda0cdc1e51ab1e6">
+       <a href="https://www.icloud.com/shortcuts/0cb6323dbc1a4dcfb60a18efc42e0a9a">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Test%20Markdown2RichText/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2798,7 +2853,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/generate-play-audio-file-s">Generate & Play Audio File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e3f0b634059a4f71913b5342aba7270c">
+       <a href="https://www.icloud.com/shortcuts/b19fb470af3041598ba6943577012504">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Generate%20%26%20Play%20Audio%20File(s)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2809,7 +2864,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/tab">Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/100ba12a0553421e92fc8710632c97ca">
+       <a href="https://www.icloud.com/shortcuts/215ac5c5a86541a7a7c393efe828362e">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Tab/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2820,7 +2875,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/set-boolean-value-to-dictionary">Set Boolean Value to Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a2f3d92b58c64b0cb00571c982c58045">
+       <a href="https://www.icloud.com/shortcuts/122432d6a1084c8cbd58d43626847ded">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Set%20Boolean%20Value%20to%20Dictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2831,7 +2886,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/append-to-dictionary">Append To Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c8660d6d30124d61aa24ff44f4885f0a">
+       <a href="https://www.icloud.com/shortcuts/3a2da11e321f496690123987e8716e62">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Append%20To%20Dictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2842,7 +2897,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/dictionary-of-dictionary">Dictionary of Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/99ad0f781a38458c814a7ab0744f5ab5">
+       <a href="https://www.icloud.com/shortcuts/38bd96c2449b4f4ca642a9758980bf8a">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Dictionary%20of%20Dictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2853,7 +2908,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/adding-to-a-dictionary-txt">Adding To A Dictionary - txt</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ec867aeac54a454d97a66d97dac5e842">
+       <a href="https://www.icloud.com/shortcuts/38c344a011954349bd5ca3ada3dec330">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20txt/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2864,7 +2919,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-tutorials/adding-to-a-dictionary-json">Adding To A Dictionary - json</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/afe56977ec3f482682c75e1730646587">
+       <a href="https://www.icloud.com/shortcuts/307f5e9e667741bdad8108293e2e65f9">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20Tutorials/Adding%20To%20A%20Dictionary%20-%20json/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2883,7 +2938,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/build-run-shortcut-url">Build Run Shortcut URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9eef6c781eb9475c9e5cc2e930e0b5c8">
+       <a href="https://www.icloud.com/shortcuts/c05f70cd7d7b46f5a4533f0b78106561">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Build%20Run%20Shortcut%20URL/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2894,7 +2949,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/shortcuts">Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e2d327ba73524ffc9fd07d16386d7995">
+       <a href="https://www.icloud.com/shortcuts/47631058d0e048c3bd5d6c4bd28fc319">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2905,7 +2960,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/get-shortcuts-library-custom-folders">Get Shortcuts Library Custom Folders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e35d280e6e0b44a69173f887a610446a">
+       <a href="https://www.icloud.com/shortcuts/7859ff716fb749c2880f14376e7306f4">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Get%20Shortcuts%20Library%20Custom%20Folders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2916,7 +2971,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/archive-all-shortcuts-with-folders">Archive All Shortcuts (with Folders)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d898ba11529045fab49dcfedec45e880">
+       <a href="https://www.icloud.com/shortcuts/4e63c88d4575428b9673e365930c969e">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(with%20Folders)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2927,7 +2982,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/archive-all-shortcuts-without-folders">Archive All Shortcuts (without Folders)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3a6f081a97354e468b4e5369bd8b9171">
+       <a href="https://www.icloud.com/shortcuts/1733e5dcc3284e4d9a6025db6c7b8d0b">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Archive%20All%20Shortcuts%20(without%20Folders)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2938,7 +2993,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/shortcutomation-show-your-work">Shortcutomation - Show Your Work</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/867b0a466e7a48e8837727bd28b334f5">
+       <a href="https://www.icloud.com/shortcuts/d6c1685f4c25490fa03548531330ee56">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shortcutomation%20-%20Show%20Your%20Work/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2949,7 +3004,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/shorcutomation-export-required-apps">Shorcutomation - Export Required Apps</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/43c0308156334edbbdb1ec3239f004c7">
+       <a href="https://www.icloud.com/shortcuts/da7b628c35e647bcb030e9008d43491c">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shorcutomation%20-%20Export%20Required%20Apps/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2960,7 +3015,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/shorcutomation-calculate-gallery-fun-stats">Shorcutomation - Calculate Gallery Fun Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6d1f075ae6294593a114077d88375bf3">
+       <a href="https://www.icloud.com/shortcuts/4d759d3a9127428da365ec76c71bb80c">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shorcutomation%20-%20Calculate%20Gallery%20Fun%20Stats/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2971,7 +3026,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/shorcutomation-plot-gallery-history-chart">Shorcutomation - Plot Gallery History Chart</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/049100403858489b8c40dabc3c55f9f7">
+       <a href="https://www.icloud.com/shortcuts/14a16737405449a7a48d1f502a71e6bc">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shorcutomation%20-%20Plot%20Gallery%20History%20Chart/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2982,7 +3037,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/shorcutomation-generate-gallery-folder-tree">Shorcutomation - Generate Gallery Folder Tree</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/930721060f5d45e6a82989094321c5a1">
+       <a href="https://www.icloud.com/shortcuts/1e046860f00c4a639046dc648404887b">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Shorcutomation%20-%20Generate%20Gallery%20Folder%20Tree/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -2993,7 +3048,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/set-silent-alarm">Set Silent Alarm</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a8c3f2ded75044bca98b1d6655cc774e">
+       <a href="https://www.icloud.com/shortcuts/4817d9c2e9b140a9862ee9cc4940b72d">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Set%20Silent%20Alarm/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3004,7 +3059,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/autorun-shortcuts">Autorun Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b1976494b39a4444924877d875e63331">
+       <a href="https://www.icloud.com/shortcuts/10cccf13846f428a83115c21ba37ba73">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/Autorun%20Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3015,7 +3070,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/batch-run-shortcuts-continuous">_Batch Run Shortcuts (Continuous)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/29f0df8642ad4f82877fd98341afebb4">
+       <a href="https://www.icloud.com/shortcuts/75c0b46ca5e043239426dccffcd30399">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Batch%20Run%20Shortcuts%20(Continuous)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3026,7 +3081,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/batch-run-shortcuts-discrete">_Batch Run Shortcuts (Discrete)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/801b8aeecc0c4b599e7c4bd6cf51ae1d">
+       <a href="https://www.icloud.com/shortcuts/363ca53a875b4409aae9e9b35ec77da4">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Batch%20Run%20Shortcuts%20(Discrete)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3037,7 +3092,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/run-folder-shortcuts">_Run Folder Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/191d95a3ea734df59a831af4b904d39b">
+       <a href="https://www.icloud.com/shortcuts/8c80ff047a21426daaf126a755d8d506">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Run%20Folder%20Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3048,7 +3103,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/transform-type-of-shortcut-input">_Transform Type of Shortcut Input</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/27147008ebbd42c59e3b10e4c121252a">
+       <a href="https://www.icloud.com/shortcuts/edaeb6476a47443eb3eeef897124f461">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Transform%20Type%20of%20Shortcut%20Input/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3059,7 +3114,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/ask-if-run-shortcut-again">_Ask If Run Shortcut Again</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f32bf5457d5f4faf8b531ff152ab9c2a">
+       <a href="https://www.icloud.com/shortcuts/d1ae3be8f48741899977c0b8b991883e">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Ask%20If%20Run%20Shortcut%20Again/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3070,7 +3125,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/import-shortcut">_Import Shortcut</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/120729006e394f85bc57afef98d56d83">
+       <a href="https://www.icloud.com/shortcuts/ff35feae0253445fbb1392843261b334">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Import%20Shortcut/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3081,7 +3136,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcuts-of-shortcuts/filter-shortcuts">_Filter Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5273cf791fbb4dfea86e822a258616f3">
+       <a href="https://www.icloud.com/shortcuts/8879b4a100844cda8dd5bacfb2bb687e">
        <kbd>
        <img src="All%20Shortcuts/Shortcuts%20of%20Shortcuts/_Filter%20Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3100,7 +3155,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/prepare-folder">Prepare Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/efa61138e0f44a5bb2cd7d2e6e36ba69">
+       <a href="https://www.icloud.com/shortcuts/264c93acec9c47fc8adea4a2426f657b">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Prepare%20Folder/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3111,7 +3166,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/last-update-snapshot">Last Update Snapshot</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/26f6b42e4bae400daff748dde71b67a8">
+       <a href="https://www.icloud.com/shortcuts/20fb9bc515fd4e33a30f7fbfd7d391ed">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Last%20Update%20Snapshot/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3122,7 +3177,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/filter-shortcuts-categories">Filter Shortcuts Categories</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f84d5f679cd84dbba9d1d467a2080bc0">
+       <a href="https://www.icloud.com/shortcuts/fee632dd93114e0ba441036de855a1af">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Filter%20Shortcuts%20Categories/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3133,7 +3188,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/extract-all-shortcuts-metadata">Extract All Shortcuts Metadata</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7d18ec08591b44e3aa2e203b5fc2039f">
+       <a href="https://www.icloud.com/shortcuts/6bb73d0112954a489829a822ab386b2a">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Extract%20All%20Shortcuts%20Metadata/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3144,7 +3199,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/backup-all-shortcuts">Backup All Shortcuts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ba0a806f3a2d4a27a947e1f0866a4cd6">
+       <a href="https://www.icloud.com/shortcuts/d953975301a04c56a09de198055facab">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Backup%20All%20Shortcuts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3155,7 +3210,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/archive-all-shortcuts-with-folders">Archive All Shortcuts with Folders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d718a02df30d482cb1207303711bcf7a">
+       <a href="https://www.icloud.com/shortcuts/ba28ec3e2e4244c49b890e03edc9bd37">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Archive%20All%20Shortcuts%20with%20Folders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3166,7 +3221,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/archive-all-shortcuts-without-folders">Archive All Shortcuts without Folders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8f271dccd0414fcb95b8fc51df2de053">
+       <a href="https://www.icloud.com/shortcuts/df737ebc2b5944c89ab76052100c045d">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Archive%20All%20Shortcuts%20without%20Folders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3177,7 +3232,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/create-readme">Create README</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/55c26359f3004a5dbc3178f90e47f98b">
+       <a href="https://www.icloud.com/shortcuts/045d22d629be4d5abf1aeb8e66eea142">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Create%20README/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3188,7 +3243,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/create-changelog">Create CHANGELOG</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5b7ab212febc4ba4899051c5c4fce874">
+       <a href="https://www.icloud.com/shortcuts/6c3711b55bca4aa6bcefcedbf99d2f23">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Create%20CHANGELOG/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3199,7 +3254,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/create-contributing">Create CONTRIBUTING</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ab4e94f7198f447faa172477f67208a8">
+       <a href="https://www.icloud.com/shortcuts/7d49dc9e15724cfb922166b91fcfe5c0">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Create%20CONTRIBUTING/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3210,7 +3265,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/create-license">Create LICENSE</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/85518b1b102e43c0b3f9af739cf146bf">
+       <a href="https://www.icloud.com/shortcuts/f8ae8cf1227744b4871f61085a39d5d4">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Create%20LICENSE/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3221,7 +3276,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/push-to-remote-repo">Push to Remote Repo</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/80fa28271ba849aab5789e31d8af4bc7">
+       <a href="https://www.icloud.com/shortcuts/8affcd78b06149039c813f4d3829b4a8">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Push%20to%20Remote%20Repo/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3232,7 +3287,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation/finalize-backup">Finalize Backup</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a4b9f59f8af64d9db126dc3401be91b8">
+       <a href="https://www.icloud.com/shortcuts/77b3025d99624ac3b72acf9d4f09289b">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation/Finalize%20Backup/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3251,7 +3306,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-work-mode/short-focus-session">⏳ Short Focus Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cdac52b5f1d64b1b8aa7980d283e3eca">
+       <a href="https://www.icloud.com/shortcuts/304198cf11d44569bc6dbf24eb0f373d">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3262,7 +3317,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-work-mode/long-focus-session">⏳ Long Focus Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/903f7bbc285a489cb989616dce6be6f3">
+       <a href="https://www.icloud.com/shortcuts/621a3f0a3a7d4df498c99156a18bb9b6">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3273,7 +3328,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/fitness-training">Fitness Training (12)</a>
+        <a href="https://shortcutomation.com/gallery/fitness-training">Fitness Training (11)</a>
       </strong>
     </summary>
 
@@ -3281,7 +3336,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/schedule-my-training">💪 Schedule My Training</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1a13c5111f32475ba2115956e19992b0">
+       <a href="https://www.icloud.com/shortcuts/455292836f4d4c639546920c8b738631">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3292,7 +3347,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/schedule-my-training-kernel">💪 Schedule My Training - Kernel</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1bfe28440fd0430d9d16ed9b410b6b30">
+       <a href="https://www.icloud.com/shortcuts/d1c9771cc45442fdad8db6512b632454">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%92%AA%20Schedule%20My%20Training%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3303,7 +3358,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/indoor-cycling">🚴 Indoor Cycling</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f49b38173e4047b0846a90a65d922afc">
+       <a href="https://www.icloud.com/shortcuts/0223ff4c773542b4969762f7a82466ba">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%9A%B4%20Indoor%20Cycling/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3314,7 +3369,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/outdoor-cycling">🚴 Outdoor Cycling</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/caf37084a1dd497fb23deeb84f376f7f">
+       <a href="https://www.icloud.com/shortcuts/d949ae258592451fa89ccec4e7f4ba0d">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%9A%B4%20Outdoor%20Cycling/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3325,7 +3380,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/gym-session">🏋️ Gym Session</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c47665d418ce4f0db46b82dd3620d48a">
+       <a href="https://www.icloud.com/shortcuts/f023c9a5cf964f8eaf3d4c2c4617cfd4">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%8F%8B%EF%B8%8F%20Gym%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3336,7 +3391,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/running">🏃 Running</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1bef4b4a70d641c4ade07f0829ee4126">
+       <a href="https://www.icloud.com/shortcuts/1ef2ecbc41314dfb804b97390c47b651">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%8F%83%20Running/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3347,7 +3402,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/outdoor-training-preparation">_Outdoor Training Preparation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/409cfa0c9cc9418593a37ce663f92c0d">
+       <a href="https://www.icloud.com/shortcuts/74604ce3f26f417c9409b39fd27f7ae6">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/_Outdoor%20Training%20Preparation/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3358,7 +3413,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/open-fitness-app">_Open Fitness App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0038c9175d4743b298f681a0ee890b58">
+       <a href="https://www.icloud.com/shortcuts/0d531555d0094c7b9c666f3669de6503">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/_Open%20Fitness%20App/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3369,7 +3424,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/before-going-outside">⚠️ Before Going Outside</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6dcd83e7ac27448c9dd1cdf8abc8f8e2">
+       <a href="https://www.icloud.com/shortcuts/87d393508a55419ca5c5e26861911514">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%E2%9A%A0%EF%B8%8F%20Before%20Going%20Outside/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3380,7 +3435,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/upload-workout">☁ Upload Workout</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fe7afefee7ba480280fa09c18774b027">
+       <a href="https://www.icloud.com/shortcuts/e6f2d472e73a4c7d872e440ca79925d8">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%E2%98%81%20Upload%20Workout/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3391,20 +3446,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/fitness-training/trainerday">🌀 TrainerDay</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cda17939ecab4fcea95274aacc660174">
+       <a href="https://www.icloud.com/shortcuts/aa8c238d20b940e7bb454192b582ce42">
        <kbd>
        <img src="All%20Shortcuts/Fitness%20Training/%F0%9F%8C%80%20TrainerDay/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/fitness-training/set-sport-edevice-charging-reminders">Set Sport eDevice Charging Reminders</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/c7f88f718721425ba1ca48cf4bc8f8c5">
-       <kbd>
-       <img src="All%20Shortcuts/Fitness%20Training/Set%20Sport%20eDevice%20Charging%20Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -3413,7 +3457,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/utilities">Utilities (32)</a>
+        <a href="https://shortcutomation.com/gallery/utilities">Utilities (33)</a>
       </strong>
     </summary>
 
@@ -3421,7 +3465,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/gate-index-of-list-item-last-occurrence">Gate Index of List Item (Last Occurrence)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/657f088ef57345d4a8d58ad6e7265559">
+       <a href="https://www.icloud.com/shortcuts/6e87652b8e2649a8a7c2a2f7b363c2b8">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Gate%20Index%20of%20List%20Item%20(Last%20Occurrence)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3432,7 +3476,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/get-index-of-list-item-first-occurrence">Get Index of List Item (First Occurrence)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/95b4a167de80438086f61246965f6e26">
+       <a href="https://www.icloud.com/shortcuts/90f051a626704d5b84c28abd6e233033">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Get%20Index%20of%20List%20Item%20(First%20Occurrence)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3443,7 +3487,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/detect-system-language">Detect System Language</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ea1151c5182f49eba4ce06671c1e9586">
+       <a href="https://www.icloud.com/shortcuts/35348be58c554319b2f4e408761719fa">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Detect%20System%20Language/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3454,7 +3498,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/notify-copied-to-clipboard">Notify "Copied to Clipboard!"</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f8102203c99e46059cde3c43ce862487">
+       <a href="https://www.icloud.com/shortcuts/1e7ad92d68584e35ab1bb6ebe8e1ff8f">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Notify%20%22Copied%20to%20Clipboard!%22/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3465,7 +3509,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/generate-random-color-hex-code">Generate Random Color Hex Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a84e568838914faaa4029cee3dd5debf">
+       <a href="https://www.icloud.com/shortcuts/1cbbd85f009e4155bd56ad3ba7962b03">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Generate%20Random%20Color%20Hex%20Code/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3476,7 +3520,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/generate-random-color-rgb-code">Generate Random Color RGB Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2d1498e718614d6b950dee55fe65f3b6">
+       <a href="https://www.icloud.com/shortcuts/1c541cee25d34a838c6fea839a6e2720">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Generate%20Random%20Color%20RGB%20Code/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3487,7 +3531,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/take-screenshot">Take Screenshot</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a9ab5715ddc1424a81e808a428d4ba33">
+       <a href="https://www.icloud.com/shortcuts/c4bafe5db9074fad85f0103686acd447">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Take%20Screenshot/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3498,7 +3542,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/get-leading-symbols-dictionary">Get Leading Symbols Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b21deeaed9341ee91b810d9c038b375">
+       <a href="https://www.icloud.com/shortcuts/e9ccd110d01942498a945e1280133790">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Get%20Leading%20Symbols%20Dictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3509,7 +3553,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/progress-bar-maker-with-text">Progress Bar Maker (with Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e7fa8f6dc2c243749a743e8c77672861">
+       <a href="https://www.icloud.com/shortcuts/bd420f2718c94f029e05785f8303ff10">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Progress%20Bar%20Maker%20(with%20Text)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3520,7 +3564,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/progress-bar-maker-without-text">Progress Bar Maker (without Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/09b872f63e2e451f8eb123c3a81fdaf4">
+       <a href="https://www.icloud.com/shortcuts/6b2ed0592e4d48f39369671d1ad865e0">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Progress%20Bar%20Maker%20(without%20Text)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3531,7 +3575,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/filter-by-keyword">Filter By Keyword</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/77aad999aa8a4970ac5b9d82c56fe359">
+       <a href="https://www.icloud.com/shortcuts/a6b294262976426493a304e15a37a025">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Filter%20By%20Keyword/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3542,7 +3586,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/check-shortcut-last-run-time">Check Shortcut Last Run Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e0f36ec3323d4162b9e1737744370407">
+       <a href="https://www.icloud.com/shortcuts/a3a2cd17fbc941e8abe8be2c75b84048">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Check%20Shortcut%20Last%20Run%20Time/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3553,7 +3597,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/you-are-all-set">You Are All Set</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/dbb3011be23742a4bfbb4f18890d1585">
+       <a href="https://www.icloud.com/shortcuts/deeb272eb8cc40b59b248b05c3927007">
        <kbd>
        <img src="All%20Shortcuts/Utilities/You%20Are%20All%20Set/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3564,7 +3608,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/wait-until-right-swipe">Wait until right swipe</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8c917f496c5642d19221add4cecbda90">
+       <a href="https://www.icloud.com/shortcuts/6066ccc9d6154898aa8008ecc0deb1b0">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Wait%20until%20right%20swipe/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3575,7 +3619,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/play-music-with-timer">Play Music (with Timer)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/70a0e8ba97654292a09acf8a9ca7dce2">
+       <a href="https://www.icloud.com/shortcuts/05a8e2d3b6c945faa46b5895debe1d1e">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Play%20Music%20(with%20Timer)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3586,7 +3630,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/choose-calendar-event-time">Choose Calendar Event Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a5ddb8cbd315439cbd108033c16889d3">
+       <a href="https://www.icloud.com/shortcuts/ef5640eef7a94f94b5d5aa6bb32f0e80">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Choose%20Calendar%20Event%20Time/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3597,7 +3641,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/open-imessage-chat-window-for-contacts">Open iMessage Chat Window for Contacts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a99d4c40788f45488678585463662689">
+       <a href="https://www.icloud.com/shortcuts/f5a011befb8440c098aebfa0fd4d77ab">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Open%20iMessage%20Chat%20Window%20for%20Contacts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3608,7 +3652,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/run-javascript-code">Run JavaScript Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9e4ab19d7c40487584f88601d939fbbb">
+       <a href="https://www.icloud.com/shortcuts/43a4b8219be5477ba96de04c58eb1e45">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Run%20JavaScript%20Code/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3619,7 +3663,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/random-number-generator">Random Number Generator</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b9ff8b2a81b14c9784eec089fd46881b">
+       <a href="https://www.icloud.com/shortcuts/88d71b92903a4b9a8b225d4c253e9c09">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Random%20Number%20Generator/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3630,7 +3674,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/ishome">isHome</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/29e333ed0944440ab77d7e1c39d38f21">
+       <a href="https://www.icloud.com/shortcuts/7ab7fda490a8494fb5b4e1f636289788">
        <kbd>
        <img src="All%20Shortcuts/Utilities/isHome/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3641,7 +3685,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/isonline">isOnline</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/84c4221ca3124f8da696eb22e811892e">
+       <a href="https://www.icloud.com/shortcuts/5e5f9ea37339457e93b0028118e91217">
        <kbd>
        <img src="All%20Shortcuts/Utilities/isOnline/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3652,7 +3696,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/de-duplicate-list">De-Duplicate List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cd60f1200c974be7b116408165e9c8d0">
+       <a href="https://www.icloud.com/shortcuts/1bda6fab3e194ba2b5ad9cd41d8228bc">
        <kbd>
        <img src="All%20Shortcuts/Utilities/De-Duplicate%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3663,7 +3707,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/format-text-with-text-divider-pair">Format Text with Text Divider Pair</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/78bd98b359704a4488c0fa3c6a7d800a">
+       <a href="https://www.icloud.com/shortcuts/147a7d1b706d4543bceb94ecb95f4e4b">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Format%20Text%20with%20Text%20Divider%20Pair/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3674,7 +3718,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/open-app">Open App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/23c797c1058146d09b982510501e9720">
+       <a href="https://www.icloud.com/shortcuts/2eb35d0296774d36af2495c8fb395b95">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Open%20App/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3685,7 +3729,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/batch-open-url-s">(Batch) Open URL(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5d2a59607add4bc58d96a45afd8adbc8">
+       <a href="https://www.icloud.com/shortcuts/dfd30c3934804cddb090d900f29885fc">
        <kbd>
        <img src="All%20Shortcuts/Utilities/(Batch)%20Open%20URL(s)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3696,7 +3740,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/create-a-dictionary">Create A Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cdfc9851fa04490db0f3c65ce18a873e">
+       <a href="https://www.icloud.com/shortcuts/50dba34cbe6b40c2885229d1c4d2a212">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Create%20A%20Dictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3707,7 +3751,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/get-list-item-by-day-of-week">_Get List Item by Day of Week</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0d0217f6f7e64aab85a5226f0b808c12">
+       <a href="https://www.icloud.com/shortcuts/7b8b92aad10245bf9bc6eee6bfc8382b">
        <kbd>
        <img src="All%20Shortcuts/Utilities/_Get%20List%20Item%20by%20Day%20of%20Week/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3718,7 +3762,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/display-full-image">_Display Full Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/db9b37253c574ebca1823d59df6aecc6">
+       <a href="https://www.icloud.com/shortcuts/d65c2bae7460426281692abbf597faef">
        <kbd>
        <img src="All%20Shortcuts/Utilities/_Display%20Full%20Image/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3729,7 +3773,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/smart-quote-wrapper">_Smart Quote Wrapper</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9b1d6548e4dd49d19387bed36cc0c844">
+       <a href="https://www.icloud.com/shortcuts/53aafead17ec4d679cb2d4c978e51cb7">
        <kbd>
        <img src="All%20Shortcuts/Utilities/_Smart%20Quote%20Wrapper/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3740,7 +3784,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/choose-ai-prompt">Choose AI Prompt</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/52c44159b6144c8c86cd8e972e8e22b0">
+       <a href="https://www.icloud.com/shortcuts/e0df13a0e79041da9867f1754fc491d2">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Choose%20AI%20Prompt/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3749,9 +3793,20 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/utilities/select-date">Select Date</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/de62a749aa1b43b184b240ecac3a67eb">
+       <kbd>
+       <img src="All%20Shortcuts/Utilities/Select%20Date/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/utilities/open-brainwave-app">Open BRAINWAVE App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bd73212888044d5b8b4b7ded6b4e77aa">
+       <a href="https://www.icloud.com/shortcuts/bcd9dde139444819a466bffb1467214e">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Open%20BRAINWAVE%20App/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3762,7 +3817,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/utilities/brain-dump">🙌 Brain Dump</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/92f30ad880a349e184aa2beb5b24154c">
+       <a href="https://www.icloud.com/shortcuts/c40dc2e099ce470a89728af3eaddf781">
        <kbd>
        <img src="All%20Shortcuts/Utilities/%F0%9F%99%8C%20Brain%20Dump/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3781,7 +3836,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/sanity-check-markdown-content">Sanity Check Markdown Content</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b3fe6d27a814467abf43c705c6c9ea2f">
+       <a href="https://www.icloud.com/shortcuts/0e9dac920c8a4e32b97ccf776f23e03c">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Sanity%20Check%20Markdown%20Content/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3792,7 +3847,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/sanity-check-json-string">Sanity Check JSON String</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/48f2aaceb2eb40f3a6e0f30b479ee3ce">
+       <a href="https://www.icloud.com/shortcuts/e0a1e0cf81ae4e39903ecb5af6931fd3">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Sanity%20Check%20JSON%20String/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3803,7 +3858,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/decimals-percentage">Decimals → Percentage</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a9750896af8d401fa627df04167facd3">
+       <a href="https://www.icloud.com/shortcuts/cb8968f448f34bd0a3858bc06319155f">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Decimals%20%E2%86%92%20Percentage/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3814,7 +3869,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/percentage-decimals">Percentage → Decimals</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/763808f7000c4f0da069ce98999e537d">
+       <a href="https://www.icloud.com/shortcuts/d5996892fa0d49b69103c244d62dae1f">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Percentage%20%E2%86%92%20Decimals/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3825,7 +3880,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/remove-duplicate-lines-slow-order-preserved">Remove Duplicate Lines (Slow, Order Preserved)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/93baa9815cb4419c9e8f06efd8fd1ce4">
+       <a href="https://www.icloud.com/shortcuts/ac1b3aca36fc4a31939b2b3cee3856ae">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Remove%20Duplicate%20Lines%20(Slow,%20Order%20Preserved)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3836,7 +3891,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/remove-duplicate-lines-fast-order-not-preserved">Remove Duplicate Lines (Fast, Order Not Preserved)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d1d55ac5c2544b258ffe83a3ba39464e">
+       <a href="https://www.icloud.com/shortcuts/34277503883c4c1a88053dcdc4c4f1f7">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Remove%20Duplicate%20Lines%20(Fast,%20Order%20Not%20Preserved)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3847,7 +3902,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/formattedduration2seconds">FormattedDuration2Seconds</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b0c63852e85d4173afd60589af9162d2">
+       <a href="https://www.icloud.com/shortcuts/d554125d39ea4ecda6a4a54324ccd85d">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/FormattedDuration2Seconds/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3858,7 +3913,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/iso8601duration2numbers">ISO8601Duration2Numbers</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8a4ac316700642c78936ef9f8863f3df">
+       <a href="https://www.icloud.com/shortcuts/9fef2c26785140e2badb2ce676c60792">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/ISO8601Duration2Numbers/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3869,7 +3924,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/strip-leading-symbol">Strip Leading Symbol</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4a4b2ad4fbfa4a2b81c9e7f0426d4945">
+       <a href="https://www.icloud.com/shortcuts/cbdd22ba9d1249368cf67ebc1046bec3">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Strip%20Leading%20Symbol/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3880,7 +3935,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/remove-emojis">Remove Emojis</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bb8c381a24674d7994075c804716622f">
+       <a href="https://www.icloud.com/shortcuts/9e4a51fd179f47aeb9aae9910370a8a0">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Remove%20Emojis/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3889,20 +3944,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/text-processing/encode-search-query">Encode Search Query</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/289c45c0b6d048f19f45c6b1837c07d0">
-       <kbd>
-       <img src="All%20Shortcuts/Text%20Processing/Encode%20Search%20Query/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/create-query-item-from-dictionary-no-encoding">Create Query Item from Dictionary (No Encoding)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f4b28759e4eb412f8d211453442bcd20">
+       <a href="https://www.icloud.com/shortcuts/76e2391b58694a7591d2cbad67db60c7">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Create%20Query%20Item%20from%20Dictionary%20(No%20Encoding)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3911,9 +3955,20 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/text-processing/encode-search-query">Encode Search Query</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/ea5a1dbf0e3b4a37a40efd2801bc4a72">
+       <kbd>
+       <img src="All%20Shortcuts/Text%20Processing/Encode%20Search%20Query/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/slugify-text">Slugify Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6ef493692bce4e98bdf124fe2a835f0b">
+       <a href="https://www.icloud.com/shortcuts/7ef22588449a4b3eaa3235f28c3557c8">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Slugify%20Text/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3924,7 +3979,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/remove-empty-lines">Remove Empty Lines</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9ec8f1a3f7154a30bc1efcb43ab5400c">
+       <a href="https://www.icloud.com/shortcuts/80270814c69e4e81a26bcb43111245e6">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Remove%20Empty%20Lines/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3935,7 +3990,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/text-processing/get-plain-text-from-markdown">Get Plain Text from Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/205f5cda6d3347efb641853c05a122f0">
+       <a href="https://www.icloud.com/shortcuts/c474e92abc4b404fa2d887641a9dfaf9">
        <kbd>
        <img src="All%20Shortcuts/Text%20Processing/Get%20Plain%20Text%20from%20Markdown/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3954,7 +4009,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/good-morning">Good Morning</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/562136ad7dd04ecd96d14e2023e1a126">
+       <a href="https://www.icloud.com/shortcuts/318156af0dab47478958ff5ff6191599">
        <kbd>
        <img src="All%20Shortcuts/Siri/Good%20Morning/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3965,7 +4020,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/good-evening">Good Evening</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5686a804e5544dafb17867824360756c">
+       <a href="https://www.icloud.com/shortcuts/a03227bb59304bed91361f7ea0bf2a3b">
        <kbd>
        <img src="All%20Shortcuts/Siri/Good%20Evening/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3976,7 +4031,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/">開大燈</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e6485d711f774968951f7ac2983b15f2">
+       <a href="https://www.icloud.com/shortcuts/e8fc3fda1a9e4391ac9ced5e9f4ac8a5">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E9%96%8B%E5%A4%A7%E7%87%88/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3987,7 +4042,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/">關大燈</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eed6f141fe1748f2b032663abd048400">
+       <a href="https://www.icloud.com/shortcuts/054cf6b3cdfd43dcb52f02791c726a3f">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E9%97%9C%E5%A4%A7%E7%87%88/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -3998,7 +4053,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/">重新開機</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/89d3f6741ec04bcfaf7b2a3bc749ba7a">
+       <a href="https://www.icloud.com/shortcuts/73f0dc8812c94529bff51233115cd5e7">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E9%87%8D%E6%96%B0%E9%96%8B%E6%A9%9F/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4009,7 +4064,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/">量體重</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/636a2c7051924dfe988b65905a5e3973">
+       <a href="https://www.icloud.com/shortcuts/779e539bf873408f83a833f78cec56b5">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E9%87%8F%E9%AB%94%E9%87%8D/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4020,7 +4075,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/">打電話給重要的人</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a03bd6fbd35b461b9bdf47e2e6b85102">
+       <a href="https://www.icloud.com/shortcuts/69a4a0fd57974524bf13f2e74f79cce3">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E6%89%93%E9%9B%BB%E8%A9%B1%E7%B5%A6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4031,7 +4086,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/">播放音樂</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/20a08b415d884079982607bcb3edb074">
+       <a href="https://www.icloud.com/shortcuts/8fe0c93e72b9499486d367e1cfc3a3f9">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E6%92%AD%E6%94%BE%E9%9F%B3%E6%A8%82/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4042,7 +4097,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/siri/inbox">新增至 Inbox</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d1dc50a7976841739f59188bb8ed5ece">
+       <a href="https://www.icloud.com/shortcuts/ca5d7ce7a6644ab68f4a2e5c4cc3443a">
        <kbd>
        <img src="All%20Shortcuts/Siri/%E6%96%B0%E5%A2%9E%E8%87%B3%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4061,7 +4116,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/nasa-media-library">NASA Media Library</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ab275fd289f4498aa0d223df23535bd8">
+       <a href="https://www.icloud.com/shortcuts/846c201d346b4f288967d01d4eed3b2d">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/NASA%20Media%20Library/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4072,7 +4127,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/huberman-lab">Huberman Lab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e0b30f72b73c41a39250a9487980662f">
+       <a href="https://www.icloud.com/shortcuts/7deb7ec8f78049ffb1f86fe1a9059ee5">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Huberman%20Lab/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4083,7 +4138,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/sketchplanations">Sketchplanations</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7d82b865b6414fd1997d113ff6f70c44">
+       <a href="https://www.icloud.com/shortcuts/0068356a8f694b03bc25aed0ae3b155f">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Sketchplanations/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4094,7 +4149,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/spotify">Spotify</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/90fd7c96397f4f1587cdef9eff91981f">
+       <a href="https://www.icloud.com/shortcuts/732dba1d65f041f5a9e9047b76867650">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Spotify/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4105,7 +4160,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/ptt">PTT</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/606782a0630c402fb1fe5bc9dd22353d">
+       <a href="https://www.icloud.com/shortcuts/e79c30d68f0747e985fb3166e12d160a">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/PTT/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4116,7 +4171,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/dcard">Dcard</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d1de1c73372f44dd9593afc5b3e04634">
+       <a href="https://www.icloud.com/shortcuts/8152c5508a4647bca640b5df3919da28">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Dcard/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4127,7 +4182,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/reddit">Reddit</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/55624da213554d5f83aec60a6416e42b">
+       <a href="https://www.icloud.com/shortcuts/e8d478abee914def83d86c5d75d3e547">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Reddit/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4138,7 +4193,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/goodreads">Goodreads</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3bbac700964043d289fa776d1eb9a8ec">
+       <a href="https://www.icloud.com/shortcuts/6c7b7791913d41378d67bd333bf883b6">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Goodreads/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4149,7 +4204,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/youtube">YouTube</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b6764cbc9ba4409cb76f11b6bfede245">
+       <a href="https://www.icloud.com/shortcuts/0e21abe48a174650af39a37466485be4">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/YouTube/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4160,7 +4215,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/deep-links/amazon">Amazon</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f63942642fca4dd8a42cee9179b8717d">
+       <a href="https://www.icloud.com/shortcuts/b9a5137edb474311ae2ba057ac215e9d">
        <kbd>
        <img src="All%20Shortcuts/Deep%20Links/Amazon/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4179,7 +4234,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/build-urls/build-google-search-url">Build Google Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0ef06a1e50d742538935173614d1f3b6">
+       <a href="https://www.icloud.com/shortcuts/803451b1fb7142a98e3fee2dcddf524d">
        <kbd>
        <img src="All%20Shortcuts/Build%20URLs/Build%20Google%20Search%20URL/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4190,7 +4245,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/build-urls/build-google-maps-search-url">Build Google Maps Search URL</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3484601aa5a14a4b93efff370b052053">
+       <a href="https://www.icloud.com/shortcuts/6ab4a384a7134994a6fe2cc22be64079">
        <kbd>
        <img src="All%20Shortcuts/Build%20URLs/Build%20Google%20Maps%20Search%20URL/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4209,7 +4264,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-search-vault">Obsidian - Search Vault</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2394a6a7a75543f9b262cf75716bab8f">
+       <a href="https://www.icloud.com/shortcuts/7b987b190e574261a2f9c025bbfa0a96">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Search%20Vault/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4220,7 +4275,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-open-note">Obsidian - Open Note</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d1b706e991f343db9047a63fc6098627">
+       <a href="https://www.icloud.com/shortcuts/1c52ac13c24f42a59c1b8a49553d0572">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20Note/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4231,7 +4286,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-show-file-properties">Obsidian - Show File Properties</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/17e19f4c948442bc93e7c9276d3afdc5">
+       <a href="https://www.icloud.com/shortcuts/f707c02425dd42df8a724951a2f6dbe7">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Show%20File%20Properties/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4242,7 +4297,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-reload-app">Obsidian - Reload App</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8fcffd3bf7ad4f14ae983a19b38720c0">
+       <a href="https://www.icloud.com/shortcuts/ed21ae39b2114127aeeced9e18ecc277">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Reload%20App/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4253,7 +4308,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-force-refresh-dataview-views">Obsidian - Force Refresh Dataview Views</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/969f808d9c9641a8a0b70681a5e3ab97">
+       <a href="https://www.icloud.com/shortcuts/d710bfc77d03478984a7128d3190b1ef">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Force%20Refresh%20Dataview%20Views/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4264,7 +4319,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-close-all-tabs">Obsidian - Close All Tabs</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/54ac86ba241d4e0d91997367a04ec9f8">
+       <a href="https://www.icloud.com/shortcuts/eefd072a38094b19b32b8a90b7a73317">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20All%20Tabs/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4275,7 +4330,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-expand-search-view">Obsidian - Expand Search View</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/294dbc0d0c5042dfb71dfc892ac4af28">
+       <a href="https://www.icloud.com/shortcuts/50ef09bcfece44c8a2f586b1d90d0a4a">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Expand%20Search%20View/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4286,7 +4341,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-unfold-all-headings-and-lists">Obsidian - Unfold All Headings and Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9c4ea33b5a434296b7abd3dc8121c8a9">
+       <a href="https://www.icloud.com/shortcuts/83b7d0111aa14c0a830058f1ea34abf1">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Unfold%20All%20Headings%20and%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4297,7 +4352,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-close-specific-tab-s-by-filepath">Obsidian - Close Specific Tab(s) By Filepath</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9a038f4fd0004fc48558dc83a1c7e886">
+       <a href="https://www.icloud.com/shortcuts/47920a5cbd904b4b89d9680417f405e1">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Close%20Specific%20Tab(s)%20By%20Filepath/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4308,7 +4363,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-toggle-focus-mode">Obsidian - Toggle Focus Mode</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9012a90ca14b4b65a53386f825f63ce0">
+       <a href="https://www.icloud.com/shortcuts/93f0e01dd64b4512993f41d2c5a94bf6">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Toggle%20Focus%20Mode/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4319,7 +4374,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-toggle-stacked-tabs">Obsidian - Toggle Stacked Tabs</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bf3f0f0287f2422a9eb7c9c65c28cd86">
+       <a href="https://www.icloud.com/shortcuts/805c0c9b1d934eaf8caab26aece5691c">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Toggle%20Stacked%20Tabs/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4330,7 +4385,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-toggle-right-sidebar">Obsidian - Toggle Right Sidebar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/556cd4e6ffe34142afe5bca7fcb95c53">
+       <a href="https://www.icloud.com/shortcuts/2fdf47f3a23b46af86a3c216bb444575">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Toggle%20Right%20Sidebar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4341,7 +4396,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-open-hotkeys-settings-tab">Obsidian - Open "Hotkeys" Settings Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2a6834da1c3e47e4ab2121c8be78fdef">
+       <a href="https://www.icloud.com/shortcuts/81cb974a327448b2a70bf8a3a5f0176d">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Hotkeys%22%20Settings%20Tab/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4352,7 +4407,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-open-community-plugins-settings-tab">Obsidian - Open "Community Plugins" Settings Tab</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2bc057e1d33640d09defa3bf608385a2">
+       <a href="https://www.icloud.com/shortcuts/77da2251203a46ae9ee39244a8ff86bc">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Open%20%22Community%20Plugins%22%20Settings%20Tab/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4363,7 +4418,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-set-unique-attachments-names">Obsidian - Set Unique Attachments Names</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6eb9b4c48be248188a335db7b382d94d">
+       <a href="https://www.icloud.com/shortcuts/6d96a92f5d084c14b684f5f1c085e790">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Set%20Unique%20Attachments%20Names/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4374,7 +4429,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-convert-all-link-paths-to-relative-paths">Obsidian - Convert All Link Paths to Relative Paths</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/78fb4910d03042809d79b0f918451268">
+       <a href="https://www.icloud.com/shortcuts/b5b9806fea0e4c369a9a619f4d26b6e6">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Link%20Paths%20to%20Relative%20Paths/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4385,7 +4440,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-convert-all-embed-paths-to-relative-paths">Obsidian - Convert All Embed Paths to Relative Paths</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0515106cb69049ce86d993990046a02f">
+       <a href="https://www.icloud.com/shortcuts/2e37b26f91d740209f0c82c0d6726940">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Convert%20All%20Embed%20Paths%20to%20Relative%20Paths/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4396,7 +4451,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-lint-all-vault-files">Obsidian - Lint All Vault Files</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8c427da5ac854954952330eb29d497a3">
+       <a href="https://www.icloud.com/shortcuts/5919847f493e43c29801dd4223897c5b">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Lint%20All%20Vault%20Files/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4415,7 +4470,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-tools/maintain-obsidian-vault">💉 Maintain Obsidian Vault</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/558ac30808534d2c9fd0f7aca28e4ed0">
+       <a href="https://www.icloud.com/shortcuts/484b4b0a58ce4e668c5b28970911359b">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20Tools/%F0%9F%92%89%20Maintain%20Obsidian%20Vault/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4426,7 +4481,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-tools/obsidian-configure-mobile-settings">Obsidian - Configure Mobile Settings</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a323534cbec64b6bbcea14280bd95d85">
+       <a href="https://www.icloud.com/shortcuts/ed772cf744fe4878b922ecfc14f79168">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Configure%20Mobile%20Settings/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4437,7 +4492,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-tools/obsidian-toggle-community-plugins-on-mobile">Obsidian - Toggle Community Plugins on Mobile</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c0f8b762ca3a40e48b2db4da13596000">
+       <a href="https://www.icloud.com/shortcuts/160ec60673d64f399a8bb4d1ac7650d2">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Toggle%20Community%20Plugins%20on%20Mobile/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4448,7 +4503,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/obsidian-tools/obsidian-set-specific-setting-for-mobile">Obsidian - Set Specific Setting for Mobile</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/51f26fa534334d06bb0a33871e23416d">
+       <a href="https://www.icloud.com/shortcuts/49834213ca014bcd94e04b384ffb3933">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20Tools/Obsidian%20-%20Set%20Specific%20Setting%20for%20Mobile/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4467,7 +4522,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-oauth-dancing/get-authorization-code">_Get Authorization Code</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/58ec0b8d23e8436996ff54287bc29518">
+       <a href="https://www.icloud.com/shortcuts/e2da8068fd884417a814ad7d1e32df07">
        <kbd>
        <img src="All%20Shortcuts/API%20OAuth%20Dancing/_Get%20Authorization%20Code/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4478,7 +4533,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-oauth-dancing/exchange-tokens">Exchange Tokens</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/aac1677d1c6a477f87dce61b0914909c">
+       <a href="https://www.icloud.com/shortcuts/8806caa451124da6b9455644baa26369">
        <kbd>
        <img src="All%20Shortcuts/API%20OAuth%20Dancing/Exchange%20Tokens/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4489,7 +4544,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-oauth-dancing/get-access-token">Get Access Token</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/61ad8f0bf92f49efbae257b474be2f3f">
+       <a href="https://www.icloud.com/shortcuts/6f912d6f913641749a3ba1c46f3c91ab">
        <kbd>
        <img src="All%20Shortcuts/API%20OAuth%20Dancing/Get%20Access%20Token/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4508,7 +4563,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/notion-create-a-database">Notion - Create a database</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e118a93cb7a14634be9b97c8fde14ddb">
+       <a href="https://www.icloud.com/shortcuts/6ac7c2a81e404de39fecc6963a70f94a">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Create%20a%20database/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4519,7 +4574,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/notion-query-a-database">Notion - Query a database</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9eee96dccc1a480f8599c2a161ec3131">
+       <a href="https://www.icloud.com/shortcuts/1ffaa6ce988946b9abd083c62b9851a4">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Query%20a%20database/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4530,7 +4585,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/notion-retrieve-a-page-property-item">Notion - Retrieve a page property item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3ffe9b9ad34f45b5aebd044fbd2a033f">
+       <a href="https://www.icloud.com/shortcuts/e26235e25d9d4246ba612ebe6320757c">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Retrieve%20a%20page%20property%20item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4541,7 +4596,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/notion-update-page-properties">Notion - Update page properties</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6d9e632c0f924f6eafea20b5751a4fe1">
+       <a href="https://www.icloud.com/shortcuts/3f9ea86af4454a58afbf3934c4a95aa8">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/Notion%20-%20Update%20page%20properties/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4552,7 +4607,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/retrieve-plain-text">_Retrieve plain text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f09207c054954a3cbb129b8e35529a92">
+       <a href="https://www.icloud.com/shortcuts/b434fbde7e634974aa10113693ac965a">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/_Retrieve%20plain%20text/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4563,7 +4618,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/overwrite-plain-text">_Overwrite plain text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/dccd1146f9ff4943a24cf225026e8d68">
+       <a href="https://www.icloud.com/shortcuts/312678c233c6403688da31eb409a3e21">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/_Overwrite%20plain%20text/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4574,7 +4629,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-notion/append-plain-text">_Append plain text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6597c3196a1e40dfa51591d3c87c283b">
+       <a href="https://www.icloud.com/shortcuts/7bb27504eb75419cb1c7d81a522eb373">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Notion/_Append%20plain%20text/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4593,7 +4648,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-strava/review-my-training">💦 Review My Training</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/54bfe8897b6a42668ed6e54a0840128d">
+       <a href="https://www.icloud.com/shortcuts/601eb529071142cc945588fccd545f61">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Strava/%F0%9F%92%A6%20Review%20My%20Training/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4604,7 +4659,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-strava/workouts-on-this-day">🔭 Workouts On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7f22ec9258724f128c01da7715361b20">
+       <a href="https://www.icloud.com/shortcuts/a17dfd0c056f408bae5936d047076dc8">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Strava/%F0%9F%94%AD%20Workouts%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4615,7 +4670,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-strava/review-training-stats">📊 Review Training Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/971a93480fc24d369e3ed80ed6a8259e">
+       <a href="https://www.icloud.com/shortcuts/a9b86e6c297d401fa9ed2e04e392d962">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Strava/%F0%9F%93%8A%20Review%20Training%20Stats/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4626,7 +4681,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-strava/strava-get-activities-on-this-day">Strava - Get Activities On This Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7fa60ebacb3d4523acacab94b920cf1a">
+       <a href="https://www.icloud.com/shortcuts/22b7d24a937041edb535cf6f8ffee16a">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Strava/Strava%20-%20Get%20Activities%20On%20This%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4637,7 +4692,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-strava/strava-list-activities-on-specific-date">Strava - List Activities On Specific Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/64c11a60d6994cb9b520d65c2b9a380f">
+       <a href="https://www.icloud.com/shortcuts/6f2506c29e434c6a8a4b3cddaa73ac25">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Strava/Strava%20-%20List%20Activities%20On%20Specific%20Date/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4648,7 +4703,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-strava/strava-get-activity-stats">Strava - Get Activity Stats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1ac783bbe9724d409f809138739e4ac5">
+       <a href="https://www.icloud.com/shortcuts/80cef2a9f5854831aa0c03848d069501">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Strava/Strava%20-%20Get%20Activity%20Stats/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4667,7 +4722,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-get-random-channel-top-video">YouTube - Get Random Channel Top Video</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5e90ff0a6ac24c1f86191bf16392db31">
+       <a href="https://www.icloud.com/shortcuts/11d5af1ccd3e4f4ab0f7589ab8acd777">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Random%20Channel%20Top%20Video/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4678,7 +4733,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-get-all-playlist-items">YouTube - Get (All) Playlist Items</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bdcaacbf162e44778d451e6fcff8cbe6">
+       <a href="https://www.icloud.com/shortcuts/dc44bdffd033469c8729d31597fc7bd2">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20(All)%20Playlist%20Items/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4689,7 +4744,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-get-commentthreads-from-videoid">YouTube - Get commentThreads from videoID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/54686d0732ab4750b99667e9f3366d7c">
+       <a href="https://www.icloud.com/shortcuts/29ffc3f196904ba6b5426812ef4f7273">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20commentThreads%20from%20videoID/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4700,7 +4755,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-get-playlistitemid-from-videoid">YouTube - Get playlistItemID from videoID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/58581530ffa645eeb927319977975634">
+       <a href="https://www.icloud.com/shortcuts/985be7242e174fd88b102333c89e5343">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20playlistItemID%20from%20videoID/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4711,7 +4766,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-get-video-category-from-categoryid">YouTube - Get Video Category from categoryId</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/551593391f3640169351651b75b20a4a">
+       <a href="https://www.icloud.com/shortcuts/7956f66261d64a83aa614639183bb4f0">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Video%20Category%20from%20categoryId/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4722,7 +4777,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-check-if-video-exists-in-playlist">YouTube - Check If Video Exists In Playlist</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1375042adef1488dbf62e95039bc20da">
+       <a href="https://www.icloud.com/shortcuts/314efecc2b5d4613b3f94891d29d8ac5">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Check%20If%20Video%20Exists%20In%20Playlist/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4733,7 +4788,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-get-video-properties">YouTube - Get Video Properties</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7e0f66601c0c492caeeba4d49c58f771">
+       <a href="https://www.icloud.com/shortcuts/3e8bc3b9cb87493fae4728b700893baf">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Get%20Video%20Properties/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4744,7 +4799,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-insert-playlist-item">YouTube - Insert Playlist Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f2d9cdc4b95444fcb07370717fda3e0d">
+       <a href="https://www.icloud.com/shortcuts/a9e38475c2944e8fb279c7b31aca3143">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Insert%20Playlist%20Item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4755,7 +4810,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-youtube/youtube-delete-playlist-item">YouTube - Delete Playlist Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/31205a70400f46fe883973e532ce2a10">
+       <a href="https://www.icloud.com/shortcuts/b082cdc243574794a21829396b1b7801">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20YouTube/YouTube%20-%20Delete%20Playlist%20Item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4774,7 +4829,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-github/github-list-commits">GitHub - List commits</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a3d34a70791b4423bc7a22cc329cdf0d">
+       <a href="https://www.icloud.com/shortcuts/12553dbf5271405daf50b2e4afd9c537">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20GitHub/GitHub%20-%20List%20commits/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4793,7 +4848,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-gemini/gemini-generate-content">Gemini - Generate Content</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0a7f8173d60a403bb08fe348f78b4a07">
+       <a href="https://www.icloud.com/shortcuts/f275f66dd27049d18e3da4cb6d6d28a3">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Gemini/Gemini%20-%20Generate%20Content/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4812,7 +4867,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-gmail/gmail-get-number-of-listed-messages">Gmail - Get number of listed messages</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d3521f2acbe54551a9da2725a3d2f308">
+       <a href="https://www.icloud.com/shortcuts/9a9a8afe392146e7a76ce7a16c4ffff5">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Gmail/Gmail%20-%20Get%20number%20of%20listed%20messages/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4831,7 +4886,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-batch-update-cells">GSheets - Batch Update Cells</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f65d36700edb4254bbcc801d516f1b6c">
+       <a href="https://www.icloud.com/shortcuts/9c3d020bea6e40b18590fcb949c80d46">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Batch%20Update%20Cells/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4842,7 +4897,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-add-sheet">GSheets - Add Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c2df3704d08d47aaa302ac277eafc35e">
+       <a href="https://www.icloud.com/shortcuts/d3bde989f9df4167a708c51cacab41fd">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Add%20Sheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4853,7 +4908,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-delete-sheet">GSheets - Delete Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/70f3c95c1d3f4e909ad275951f043a87">
+       <a href="https://www.icloud.com/shortcuts/f0fb68dee29f43e89b5d0d8ed1977bcd">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Delete%20Sheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4864,7 +4919,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-hide-sheet">GSheets - Hide Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/807256b352364c7fa5f4c68df87ea9bb">
+       <a href="https://www.icloud.com/shortcuts/996347cb8ca54f11816388baa369e0bd">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Hide%20Sheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4875,7 +4930,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-unhide-sheet">GSheets - Unhide Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/598d9f23524348fcb4cec7c6bff32a20">
+       <a href="https://www.icloud.com/shortcuts/e769773833544cce86a2146e37116a97">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Unhide%20Sheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4886,7 +4941,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-clear-sheet">GSheets - Clear Sheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/57cdb398595748538f282b83d27b551b">
+       <a href="https://www.icloud.com/shortcuts/d95626d4149446f4ab37ce8d47b58986">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Clear%20Sheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4897,7 +4952,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-get-spreadsheet">GSheets - Get Spreadsheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/20468d49ccd84e21bad26579166d6452">
+       <a href="https://www.icloud.com/shortcuts/a39806e637dd434786d2a19102a50fba">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Get%20Spreadsheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4908,7 +4963,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-set-spreadsheet-title">GSheets - Set Spreadsheet Title</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9ba42938d6dc4ae4ae76a4c1d4b75bf8">
+       <a href="https://www.icloud.com/shortcuts/610007d1fd9445c49d42bd716e4e6569">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Set%20Spreadsheet%20Title/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4919,7 +4974,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-sheets/gsheets-cleanup-spreadsheet">GSheets - Cleanup Spreadsheet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/df854cb56f4b4df4b5b0369ff9790408">
+       <a href="https://www.icloud.com/shortcuts/771e37ad98184b9e9e1f67235016ebd7">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Sheets/GSheets%20-%20Cleanup%20Spreadsheet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4938,7 +4993,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-books/gbooks-perform-book-search">GBooks - Perform Book Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7c6a4da2a2e545c59772acfc84ca5d32">
+       <a href="https://www.icloud.com/shortcuts/3052f312e2df41c9b61fff6995d51370">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Books/GBooks%20-%20Perform%20Book%20Search/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4957,7 +5012,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-google-images/google-images-perform-image-search">Google Images - Perform Image Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1ebfeab6ac6b4a4693fe7292ccaf16f3">
+       <a href="https://www.icloud.com/shortcuts/301476cad14d46d5a45e398d4bf764d4">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Google%20Images/Google%20Images%20-%20Perform%20Image%20Search/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4976,7 +5031,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-deepl/deepl-translate-text">DeepL - Translate Text</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8f4332124f484da58e8fdf3eb191a4d7">
+       <a href="https://www.icloud.com/shortcuts/a3a8e4fc83d2422d8320ecc3ae4b6a3c">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20DeepL/DeepL%20-%20Translate%20Text/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -4995,7 +5050,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-open-library/open-library-perform-book-search">Open Library - Perform Book Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3dca37953f6e4a8ba9c0829b3c36a32a">
+       <a href="https://www.icloud.com/shortcuts/38c0e09706644130a7b4f1e3cf5e4f0c">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Open%20Library/Open%20Library%20-%20Perform%20Book%20Search/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5014,7 +5069,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-loc/loc-perform-item-search">LOC - Perform Item Search</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b8d2840f0b88465a9ee13cf0e260169b">
+       <a href="https://www.icloud.com/shortcuts/af08abc02a3349c5a44406b279638366">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20LOC/LOC%20-%20Perform%20Item%20Search/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5033,7 +5088,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/play-spotify-music">Play Spotify Music</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3a760fd03d80420b97864072ed320c97">
+       <a href="https://www.icloud.com/shortcuts/8a2061041b114524873c9a60638e2bd7">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Play%20Spotify%20Music/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5044,7 +5099,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotifyurl2spotifyuri">_SpotifyURL2SpotifyURI</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a612616597e64ba08a04aba61353a100">
+       <a href="https://www.icloud.com/shortcuts/bf204803553741d6bdbf51679f6bbe34">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/_SpotifyURL2SpotifyURI/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5055,7 +5110,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/play-spotify-content">_Play Spotify Content</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3955bc86def14189bfd5a5f9d066cec1">
+       <a href="https://www.icloud.com/shortcuts/065b5cd930114bb899f00fe772ec3dd8">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/_Play%20Spotify%20Content/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5066,7 +5121,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-search-for-item">Spotify - Search for Item</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/707d725c8e01444e985b2a084e138708">
+       <a href="https://www.icloud.com/shortcuts/e5f87e26162540269fff826b303c3883">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Search%20for%20Item/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5077,7 +5132,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-get-episode-by-id">Spotify - Get Episode By ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0c19d1d9507346528180c2bf09e7c6a3">
+       <a href="https://www.icloud.com/shortcuts/fc1a258c80174171ba26f81fc63bc962">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Episode%20By%20ID/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5088,7 +5143,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-get-current-device-id">Spotify - Get Current Device ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/394701c357ea4298b06237b39dea6002">
+       <a href="https://www.icloud.com/shortcuts/689ad6d1757d46c2af9539b0118aac81">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Get%20Current%20Device%20ID/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5099,7 +5154,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-transfer-playback">Spotify - Transfer Playback</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/61a32d7c89f64aed953e5cd8f7405581">
+       <a href="https://www.icloud.com/shortcuts/41497a16a0814e0fb6ea35b7200c260a">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Transfer%20Playback/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5110,7 +5165,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-toggle-playback-shuffle">Spotify - Toggle Playback Shuffle</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0d26183ead434c079a6bb5ba006fa6a9">
+       <a href="https://www.icloud.com/shortcuts/3d03dfbe036a453f8bfc856513ef5d0e">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Toggle%20Playback%20Shuffle/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5121,7 +5176,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-set-repeat-mode">Spotify - Set Repeat Mode</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2ca14d24c263459eb2f96f04a74c3cd6">
+       <a href="https://www.icloud.com/shortcuts/84851d84c70f450f9eb86f989012e58a">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Set%20Repeat%20Mode/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5132,7 +5187,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-start-or-resume-playback">Spotify - Start or Resume Playback</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5705c45ef8d140c690e4506ed53427ef">
+       <a href="https://www.icloud.com/shortcuts/99284ae972a0451589594b80ac14e6fa">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Start%20or%20Resume%20Playback/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5143,7 +5198,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-pause-playback">Spotify - Pause Playback</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ed0faa27976a492b87efb47fb2276b16">
+       <a href="https://www.icloud.com/shortcuts/afaf2edf9a1046b9962c5a806a82a472">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Pause%20Playback/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5154,7 +5209,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spotify/spotify-set-playback-volume">Spotify - Set Playback Volume</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c6dfe1807677471e89fe0de570aa2a0c">
+       <a href="https://www.icloud.com/shortcuts/1e0114a929bd49f49d92fb747fc200e9">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spotify/Spotify%20-%20Set%20Playback%20Volume/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5173,7 +5228,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-tmdb/tmdb-find-by-external-id">TMDb - Find By External ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ac92f5966b95458497ffa3e1539a3675">
+       <a href="https://www.icloud.com/shortcuts/7a527b8f53764e419e4e8eee001dd5d1">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20TMDb/TMDb%20-%20Find%20By%20External%20ID/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5184,7 +5239,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-tmdb/tmdb-get-media-details-by-id">TMDb - Get Media Details By ID</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/af9c9a247a98432abcb668d3cf667515">
+       <a href="https://www.icloud.com/shortcuts/5405da399ae14e06b5ae76dc7bb7abe3">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20TMDb/TMDb%20-%20Get%20Media%20Details%20By%20ID/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5203,7 +5258,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spoonacular/spoonacular-get-random-recipes">Spoonacular - Get Random Recipes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/990adf9a8b24490cad700a74a100b1bf">
+       <a href="https://www.icloud.com/shortcuts/921f829715734833ad64456d48a77e23">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Get%20Random%20Recipes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5214,7 +5269,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-spoonacular/spoonacular-create-recipe-card">Spoonacular - Create Recipe Card</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/712268aa5662444bbd4945328e982527">
+       <a href="https://www.icloud.com/shortcuts/ce5041c4cf304a32a6941e6f59e4e674">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Spoonacular/Spoonacular%20-%20Create%20Recipe%20Card/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5233,7 +5288,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-nasa/nasa-get-apod-object">NASA - Get APOD Object</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f56c963bc44a4a8e8a0a078b765047f1">
+       <a href="https://www.icloud.com/shortcuts/d599244ecc1f4f64a7709fd029e58b16">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Object/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5244,7 +5299,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-nasa/nasa-get-apod-image">NASA - Get APOD Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6587221fae3d497c8438a025f13662a7">
+       <a href="https://www.icloud.com/shortcuts/75e5d297c1064066ba634a0a68c71b93">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20APOD%20Image/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5255,7 +5310,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-nasa/nasa-get-epic-image">NASA - Get EPIC Image</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/95b6b4f5e59949e2a37989cb74abdd24">
+       <a href="https://www.icloud.com/shortcuts/a2bce384567441daa4296b933a110c57">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20EPIC%20Image/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5266,7 +5321,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-nasa/nasa-get-mars-rover-photo">NASA - Get Mars Rover Photo</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/215841d83b474f219e2e67c1defd5d72">
+       <a href="https://www.icloud.com/shortcuts/6dbe8d816da242d28c8b863862df7b12">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20NASA/NASA%20-%20Get%20Mars%20Rover%20Photo/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5285,7 +5340,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-flickr/flickr-search-photos">Flickr - Search Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/22b6b532704f4828a349d259c44eefce">
+       <a href="https://www.icloud.com/shortcuts/f06cc1453c2741b48404ce054bb6bc5b">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Flickr/Flickr%20-%20Search%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5296,7 +5351,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-flickr/flickr-get-popular-photos">Flickr - Get Popular Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e4d15eb2d3ad4b6e97910547bf516dea">
+       <a href="https://www.icloud.com/shortcuts/76f29c8ad55c4837a7ec1d24e625f1b0">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Flickr/Flickr%20-%20Get%20Popular%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5307,7 +5362,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-flickr/base58-enconding-for-photoid">_Base58 Enconding for photoId</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/79ff8bd6b39b46ea8c19e0770ac579c1">
+       <a href="https://www.icloud.com/shortcuts/eac22b7973bd4f568ac73104ac03888e">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Flickr/_Base58%20Enconding%20for%20photoId/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5326,7 +5381,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-unsplash/unsplash-search-photos">Unsplash - Search Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fdc75b7b1f8d4bc1a0c7c448b0544230">
+       <a href="https://www.icloud.com/shortcuts/ec6a3c19612641fc881a1c715a0abe7f">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Unsplash/Unsplash%20-%20Search%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5337,7 +5392,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-unsplash/unsplash-get-popular-photos">Unsplash - Get Popular Photos</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/31f523d2067d4f69a878f40dd2b5ab5e">
+       <a href="https://www.icloud.com/shortcuts/43eab10f14694c9d876c394ef08265e9">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Unsplash/Unsplash%20-%20Get%20Popular%20Photos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5356,7 +5411,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-reddit/reddit-get-random-subreddit-top-post">Reddit - Get Random Subreddit Top Post</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c176c941801b47f88170058a826d9a81">
+       <a href="https://www.icloud.com/shortcuts/0e1ab90566ef48c4b0c9f1367b67319d">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Reddit/Reddit%20-%20Get%20Random%20Subreddit%20Top%20Post/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5375,7 +5430,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-hacker-news/hacker-news-get-random-top-story">Hacker News - Get Random Top Story</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2e3ce96ff6b24e668ed23f9612b08949">
+       <a href="https://www.icloud.com/shortcuts/4548e29376b241298642a482b57615f1">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Hacker%20News/Hacker%20News%20-%20Get%20Random%20Top%20Story/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5394,7 +5449,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-others/playing-card-shuffler">Playing Card Shuffler</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5a7c69c3e0dc436b8f3ab2b2ed79e70a">
+       <a href="https://www.icloud.com/shortcuts/b922cd89c2ee4d4cafed0e6a63272c17">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Others/Playing%20Card%20Shuffler/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5405,7 +5460,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-others/find-emoji">Find Emoji</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ffc00b2e21854d32beaea353414ab0ea">
+       <a href="https://www.icloud.com/shortcuts/ee9acbbaa8714a1594cd1f02ed2fdfb1">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Others/Find%20Emoji/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5416,7 +5471,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-others/get-number-of-the-day">Get Number Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4574b6eaf87b4847be9f151472aa7a24">
+       <a href="https://www.icloud.com/shortcuts/ef9efe6b79cc4829b41591fdff212ad5">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Number%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5427,7 +5482,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-others/get-facts-about-numbers">Get Facts About Numbers</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f48c4c14c33543458acb2bbe9a0bc5e5">
+       <a href="https://www.icloud.com/shortcuts/4e6e9b80d263413eaf48578606e1b337">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Facts%20About%20Numbers/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5438,7 +5493,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-others/get-random-quote-from-zenquotes">Get Random Quote from ZenQuotes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/826cbe79992b4f35a815dbe448a65de7">
+       <a href="https://www.icloud.com/shortcuts/9ff97998525945ef9c432cdfc0496a6d">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Random%20Quote%20from%20ZenQuotes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5449,7 +5504,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/api-others/get-random-joke">Get Random Joke</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/76f3e286df1c44eaba4c7d1e33ae7074">
+       <a href="https://www.icloud.com/shortcuts/39e15f4eed6e43f3b597ead9603cb11e">
        <kbd>
        <img src="All%20Shortcuts/API%20-%20Others/Get%20Random%20Joke/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5468,7 +5523,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/round-time-to-nearest-xmin">Round Time to Nearest Xmin</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/61af62775fc24b32942255c731995c60">
+       <a href="https://www.icloud.com/shortcuts/42a2ff3ca59d46f5b697fb84f6e9603f">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/Round%20Time%20to%20Nearest%20Xmin/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5479,7 +5534,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/date2unixtimestamp">Date2UnixTimestamp</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c51904411315467d8fc095af6300c5ef">
+       <a href="https://www.icloud.com/shortcuts/469e2cd92cfd49ee8a5747621c86c6d4">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/Date2UnixTimestamp/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5490,7 +5545,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/unixtimestamp2date">UnixTimestamp2Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1583b8d1343a46598e5c13326be8721e">
+       <a href="https://www.icloud.com/shortcuts/73133db2266d48e6937e7b7e5efe52ef">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/UnixTimestamp2Date/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5501,7 +5556,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isinthefirstweekofthemonth">isInTheFirstWeekOfTheMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/82b058e748f7404e8bdfc3f2020bb770">
+       <a href="https://www.icloud.com/shortcuts/e3a7016bf63b49418ea31e3ab8f09b3f">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isInTheFirstWeekOfTheMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5512,7 +5567,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isinthelastweekofthemonth">isInTheLastWeekOfTheMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ac0474ca18c34514b42ac98fa9265796">
+       <a href="https://www.icloud.com/shortcuts/26b358a6e3e24651a663030488a780a5">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isInTheLastWeekOfTheMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5523,7 +5578,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isworkday">isWorkday</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6b022421f39346bbb7085c0ad2404e1c">
+       <a href="https://www.icloud.com/shortcuts/19e0be95c5784de8957ca75c6ad1d4d5">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isWorkday/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5534,7 +5589,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/ispublicholiday">isPublicHoliday</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e3cf70f009c1487c805b3464ca803a83">
+       <a href="https://www.icloud.com/shortcuts/91c7caf28100474e853a1915122d9324">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isPublicHoliday/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5545,7 +5600,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/ismyholiday">isMyHoliday</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/58e8dccd2b224c649c51cd7b0caf1829">
+       <a href="https://www.icloud.com/shortcuts/201619a8fe8346a9a1d361522f414024">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isMyHoliday/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5556,7 +5611,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isweekend">isWeekend</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f1cfff8d295248db894922be39a5a4d0">
+       <a href="https://www.icloud.com/shortcuts/806f02888b9643f0915166d3bc29e422">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isWeekend/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5567,7 +5622,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isstartofmonth">isStartOfMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/abc9b992b39e48a8ad3616b42e5cf2d8">
+       <a href="https://www.icloud.com/shortcuts/1de1518d04614534b4c2427c318026af">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isStartOfMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5578,7 +5633,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isendofmonth">isEndOfMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/62ac2a45bd934f668aa5e50c7c27d8a9">
+       <a href="https://www.icloud.com/shortcuts/60371dafe40c4c5eb087ae715a1c2f8c">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isEndOfMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5589,7 +5644,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isendofquarter">isEndOfQuarter</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3dcba11f07b4478fa129ae6b1223c27f">
+       <a href="https://www.icloud.com/shortcuts/41969f23423041d68f4d14b1e15be777">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isEndOfQuarter/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5600,7 +5655,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/isnewyear-sday">isNewYear'sDay</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bbb9f97d1ce44d0ba6094ee216ef1352">
+       <a href="https://www.icloud.com/shortcuts/68e1551e9e5e4bb2853c135a568b0d07">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/isNewYear'sDay/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5611,7 +5666,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getquarternumber">getQuarterNumber</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/eb545866bb8840688986486d58083fb9">
+       <a href="https://www.icloud.com/shortcuts/1818d78e27b04361a1b00e5634eb6bcb">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getQuarterNumber/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5622,7 +5677,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getweeknumber1">getWeekNumber1</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9afc2fcb34c5433aac137cce2fc354b4">
+       <a href="https://www.icloud.com/shortcuts/88585719640d467d8b0593c9820a5743">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getWeekNumber1/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5633,7 +5688,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getweeknumber2">getWeekNumber2</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/211045d535644ad4ba10b70a8a6bbce3">
+       <a href="https://www.icloud.com/shortcuts/de7ae43f33a04da4aa390f56501547bd">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getWeekNumber2/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5644,7 +5699,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getdatesonspecificweek">getDatesOnSpecificWeek</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d784ff3f5faf4d329bf43bb78565dcb5">
+       <a href="https://www.icloud.com/shortcuts/b62f89c9758544709eae385f8d5cd45a">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getDatesOnSpecificWeek/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5655,7 +5710,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getfirstandlastdayofmonth">getFirstAndLastDayOfMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/aafe072d84ce4f7ea7486c6d25c0f55b">
+       <a href="https://www.icloud.com/shortcuts/ba79afe602534e4cbebfbd627c031841">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getFirstAndLastDayOfMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5666,7 +5721,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getdayofweek">getDayOfWeek</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c0ed836c519141b1b4fa83e59869294b">
+       <a href="https://www.icloud.com/shortcuts/edac722fb1ce4095b8bc31b82acc2b2f">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getDayOfWeek/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5677,7 +5732,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/date-time/getdayofmonth">getDayOfMonth</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/71a2609043454df09c435529a9c5ba28">
+       <a href="https://www.icloud.com/shortcuts/ecfa7160e40b457c8c4f0fa75669381b">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getDayOfMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5696,7 +5751,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/files-folders/file-manager">📂 File Manager</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/23d91900e0cf4431b87b7324e99fd528">
+       <a href="https://www.icloud.com/shortcuts/e8898ea9d602452a91e23e5998904d7f">
        <kbd>
        <img src="All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%82%20File%20Manager/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5707,7 +5762,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/files-folders/save-files">📁 Save Files</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8be543d635fa4fac874a50b2357f5311">
+       <a href="https://www.icloud.com/shortcuts/e2c34448746447f89419100002599f7f">
        <kbd>
        <img src="All%20Shortcuts/Files%20%26%20Folders/%F0%9F%93%81%20Save%20Files/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5718,7 +5773,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/files-folders/cleanup-folder">Cleanup Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/12062104ab2a4716be7f46b5d251f81b">
+       <a href="https://www.icloud.com/shortcuts/7811f5a064da4512942edb9708c36e07">
        <kbd>
        <img src="All%20Shortcuts/Files%20%26%20Folders/Cleanup%20Folder/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5729,7 +5784,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/files-folders/create-empty-file-or-clear-file">Create Empty File or Clear File</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ea9a73c8b559417e80dcd205a8884bf9">
+       <a href="https://www.icloud.com/shortcuts/e75d6c2902b640898e8a9be8813906aa">
        <kbd>
        <img src="All%20Shortcuts/Files%20%26%20Folders/Create%20Empty%20File%20or%20Clear%20File/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5740,7 +5795,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/files-folders/move-file-or-folder">Move File or Folder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d6cd3c95a0dc40a496d7b7075e4e91aa">
+       <a href="https://www.icloud.com/shortcuts/d30dc750d027410288cd75126cea7018">
        <kbd>
        <img src="All%20Shortcuts/Files%20%26%20Folders/Move%20File%20or%20Folder/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5759,7 +5814,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/get-list-from-input">Get List from Input</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a78676229d504b3996f38ad1ba5a6af2">
+       <a href="https://www.icloud.com/shortcuts/f7460ead0e0248818508218f7a61328d">
        <kbd>
        <img src="All%20Shortcuts/List/Get%20List%20from%20Input/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5770,7 +5825,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/transform-to-list-string">Transform to List String</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/71bc8b4e25e54a318774e538b357677d">
+       <a href="https://www.icloud.com/shortcuts/4822807b1de04f588f3be62a32c3d587">
        <kbd>
        <img src="All%20Shortcuts/List/Transform%20to%20List%20String/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5781,7 +5836,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/islist">isList</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9a7af4a8419640c189c0505619a39ea9">
+       <a href="https://www.icloud.com/shortcuts/1bf12c0a2e2749c988d5b57730df0dce">
        <kbd>
        <img src="All%20Shortcuts/List/isList/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5792,7 +5847,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/merge-lists">Merge Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/877ed365316b46d69417db055fd83949">
+       <a href="https://www.icloud.com/shortcuts/bd0466c4006c419ca40f1e2f2db1ea24">
        <kbd>
        <img src="All%20Shortcuts/List/Merge%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5803,7 +5858,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/count-occurrence-of-unique-list-items">Count Occurrence Of Unique List Items</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8e858777af4a4fd484e1390aad3bc1fc">
+       <a href="https://www.icloud.com/shortcuts/291e6f5b7b5f470cbdca3b8dd71b706e">
        <kbd>
        <img src="All%20Shortcuts/List/Count%20Occurrence%20Of%20Unique%20List%20Items/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5814,7 +5869,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/get-random-index-from-list">_Get Random Index From List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/947eac53035040da8abfb65c1d908d20">
+       <a href="https://www.icloud.com/shortcuts/5970a799cff546a59ec06893a794a451">
        <kbd>
        <img src="All%20Shortcuts/List/_Get%20Random%20Index%20From%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5825,7 +5880,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/list/get-random-item-from-list">_Get Random Item From List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ebdd025906254ccf94d932f33eec6dd4">
+       <a href="https://www.icloud.com/shortcuts/f508a52f6be94e18a06fcb6fd1a94d58">
        <kbd>
        <img src="All%20Shortcuts/List/_Get%20Random%20Item%20From%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5844,7 +5899,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/dictionary/isdictionary">isDictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0cbe0ddc88a94cefaa8dca3d3a72523d">
+       <a href="https://www.icloud.com/shortcuts/3ced95ac8a4d4573858c1707b5fec611">
        <kbd>
        <img src="All%20Shortcuts/Dictionary/isDictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5855,7 +5910,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/dictionary/merge-dictionaries">Merge Dictionaries</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4c5ce066feb84213a2706f808db73acc">
+       <a href="https://www.icloud.com/shortcuts/17ad7c9c7bf64718a26f688829315371">
        <kbd>
        <img src="All%20Shortcuts/Dictionary/Merge%20Dictionaries/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5866,7 +5921,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/dictionary/pretty-print-dictionary">Pretty Print Dictionary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8da588bfddbe49c29e297a7324e8b8d9">
+       <a href="https://www.icloud.com/shortcuts/33326b724aa14242a4a2664f00b310b1">
        <kbd>
        <img src="All%20Shortcuts/Dictionary/Pretty%20Print%20Dictionary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5885,7 +5940,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/get-today-s-hourly-weather-forecast">Get Today's Hourly Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8c89a208182a49d095de53ac10418f5a">
+       <a href="https://www.icloud.com/shortcuts/1c2aeaba41ce4d139cec5227f6b282e1">
        <kbd>
        <img src="All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Forecast/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5896,7 +5951,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/get-today-s-hourly-weather-data">Get Today's Hourly Weather Data</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/22d1671f2a1b436fb4aa3bf4bd4458c2">
+       <a href="https://www.icloud.com/shortcuts/04ebd8548316401ba89673352a4b41ab">
        <kbd>
        <img src="All%20Shortcuts/Weather/Get%20Today's%20Hourly%20Weather%20Data/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5907,7 +5962,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/get-daily-weather-forecast">Get Daily Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b47c76c2781f474f9879df7910b5b2c5">
+       <a href="https://www.icloud.com/shortcuts/6aad51dc0f5d4d3bb066b88a98562b2d">
        <kbd>
        <img src="All%20Shortcuts/Weather/Get%20Daily%20Weather%20Forecast/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5918,7 +5973,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/get-daily-overall-pop">Get Daily Overall PoP</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9f5ce186ce7e4e14a0b6fb18e8456bd3">
+       <a href="https://www.icloud.com/shortcuts/8b47be20899e47eb8a543a6b2789f8f0">
        <kbd>
        <img src="All%20Shortcuts/Weather/Get%20Daily%20Overall%20PoP/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5929,7 +5984,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/show-brief-weather-summary">Show Brief Weather Summary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/13c1a9dbe6fd45349d189ea89963b2cc">
+       <a href="https://www.icloud.com/shortcuts/10050b68d4214ac2a46c8a0b192ea472">
        <kbd>
        <img src="All%20Shortcuts/Weather/Show%20Brief%20Weather%20Summary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5940,7 +5995,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/speak-weather-forecast">Speak Weather Forecast</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/50fbfce9c82b42c3a94d3b3b8e0bc1cd">
+       <a href="https://www.icloud.com/shortcuts/4cb41e2cd4314bd694e02e4ceffd985f">
        <kbd>
        <img src="All%20Shortcuts/Weather/Speak%20Weather%20Forecast/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5951,7 +6006,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/issunup">isSunUp</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3331532d40d64026af8f7824c1a6a44c">
+       <a href="https://www.icloud.com/shortcuts/9710e6dbf2a64bf1824d00b60c257fe2">
        <kbd>
        <img src="All%20Shortcuts/Weather/isSunUp/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5962,7 +6017,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/get-max-hourly-weather-data">_Get Max Hourly Weather Data</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fe59d5b01e9e4b6d865b1946fc9e58f7">
+       <a href="https://www.icloud.com/shortcuts/f213bc3d7307412fa9f129a1d28501cb">
        <kbd>
        <img src="All%20Shortcuts/Weather/_Get%20Max%20Hourly%20Weather%20Data/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5973,7 +6028,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/prefix-2time">_Prefix時辰2Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e01e7fb0d026413a90e0527c7b191e80">
+       <a href="https://www.icloud.com/shortcuts/a1f2026cf0a84380a8cbc3176d78fbe9">
        <kbd>
        <img src="All%20Shortcuts/Weather/_Prefix%E6%99%82%E8%BE%B02Time/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -5984,7 +6039,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/weather/x-x-1">_今日 X 點至 X + 1 點</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e05ec3b01e9847f6b4dd53bcdf245dba">
+       <a href="https://www.icloud.com/shortcuts/7376945ba273463bab5551e3e8705215">
        <kbd>
        <img src="All%20Shortcuts/Weather/_%E4%BB%8A%E6%97%A5%20X%20%E9%BB%9E%E8%87%B3%20X%20+%201%20%E9%BB%9E/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6003,7 +6058,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/play-background-sound">Play Background Sound</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3c42c8fa38f94ba8aaa7493916d97af2">
+       <a href="https://www.icloud.com/shortcuts/659e5d0eb81646a6b5c1ebe9020d6f8b">
        <kbd>
        <img src="All%20Shortcuts/Audio/Play%20Background%20Sound/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6014,7 +6069,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/audio-timer">_Audio Timer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a08c9a46c3694acbb02bff6cc1d738ff">
+       <a href="https://www.icloud.com/shortcuts/0c134d08cbf1454fa4d3d758000c1a81">
        <kbd>
        <img src="All%20Shortcuts/Audio/_Audio%20Timer/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6025,7 +6080,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/play-audio-file-s">_Play Audio File(s)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c58a7c3846064025a51e8ce543ba3d69">
+       <a href="https://www.icloud.com/shortcuts/baa4a232a3d64c3f8199ef8fc3c9a8f3">
        <kbd>
        <img src="All%20Shortcuts/Audio/_Play%20Audio%20File(s)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6036,7 +6091,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/makettsspokenaudio">_MakeTTSSpokenAudio</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/cd8437e110ef47b0b8304423f763e303">
+       <a href="https://www.icloud.com/shortcuts/108b91de0aec4fbdb3c9720deef69a90">
        <kbd>
        <img src="All%20Shortcuts/Audio/_MakeTTSSpokenAudio/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6047,7 +6102,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/text2speech">_Text2Speech</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4328948e44684928a4ea22336dc8ab48">
+       <a href="https://www.icloud.com/shortcuts/c262233c414643de8e5e0344a2c74cf8">
        <kbd>
        <img src="All%20Shortcuts/Audio/_Text2Speech/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6058,7 +6113,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/format-positional-duration-to-seconds">Format Positional Duration To Seconds</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/61206a9730904af99e825fc0132c5e8d">
+       <a href="https://www.icloud.com/shortcuts/7801f18795694be781ead8eb62b41068">
        <kbd>
        <img src="All%20Shortcuts/Audio/Format%20Positional%20Duration%20To%20Seconds/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6069,7 +6124,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/audio/convert-sound-file-to-base64">Convert Sound File to Base64</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9a8f473aceec4b4bbf047599d5af035c">
+       <a href="https://www.icloud.com/shortcuts/bfb6597144924ee891008ba4aa609739">
        <kbd>
        <img src="All%20Shortcuts/Audio/Convert%20Sound%20File%20to%20Base64/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6088,7 +6143,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/go-to-screen-time-summary">Go to Screen Time Summary</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/286497dddb944299842a33e46def8033">
+       <a href="https://www.icloud.com/shortcuts/b8e4533c3e964311acbfe8740dddde24">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20Screen%20Time%20Summary/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6099,7 +6154,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/go-to-bluetooth-setting">Go to Bluetooth Setting</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/550b64da35354349b36f72a4dc2e7781">
+       <a href="https://www.icloud.com/shortcuts/8f0f5cfe285b4fecbc3c170374f613d8">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20Bluetooth%20Setting/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6110,7 +6165,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/go-to-wifi-setting">Go to WiFi Setting</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/50024457ded9469cbde6f61a3a2aadaa">
+       <a href="https://www.icloud.com/shortcuts/33dbb0def68641d798515b25b9e95096">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Go%20to%20WiFi%20Setting/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6121,7 +6176,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/join-wifi">Join WiFi</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/9512fe417f6d4c74b3deb1df5ccd3303">
+       <a href="https://www.icloud.com/shortcuts/7081d261e2394384bacdeda9686280ca">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Join%20WiFi/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6132,7 +6187,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/connect-to-internet">Connect to Internet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0be4b3d908ff493cbc94d25cecb62c63">
+       <a href="https://www.icloud.com/shortcuts/c2f19baaf4e3481f9a249f022e4a2715">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Connect%20to%20Internet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6143,7 +6198,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/disconnect-from-internet">Disconnect from Internet</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/347f09f6dd1d47f695138ca482cd69a7">
+       <a href="https://www.icloud.com/shortcuts/adfda4fb4df74ac097424743db75b8a8">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Disconnect%20from%20Internet/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6154,7 +6209,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/ultra-low-power-saver">Ultra Low Power Saver</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6c4c594d3caa438ba8b1ba3c74d5a631">
+       <a href="https://www.icloud.com/shortcuts/5e25bc7a9f184ad294e8eeac974cc229">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Ultra%20Low%20Power%20Saver/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6165,7 +6220,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/recover-from-ultra-low-power-saver">Recover from Ultra Low Power Saver</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b451bda7f9264fddaec3b1483dba6c0a">
+       <a href="https://www.icloud.com/shortcuts/2a4c1540a7c44b7b83cfba16ec053a5f">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Recover%20from%20Ultra%20Low%20Power%20Saver/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6176,7 +6231,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/turn-on-color-filters">Turn on Color Filters</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/88a0a7b72fcc463ea9d631ff3953a1b1">
+       <a href="https://www.icloud.com/shortcuts/e510915b0c73460da782d3ed7c457e31">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Turn%20on%20Color%20Filters/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6187,7 +6242,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/turn-off-color-filters">Turn off Color Filters</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/47741f7dd6f1457380b42ca4f4a7f18d">
+       <a href="https://www.icloud.com/shortcuts/2dc79327413948ba8f179a6a65f2bd79">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Turn%20off%20Color%20Filters/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6198,7 +6253,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/toggle-low-power-mode-based-on-battery-level">Toggle Low Power Mode Based on Battery Level</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d5665aa4f25843ea91269bf56308ad54">
+       <a href="https://www.icloud.com/shortcuts/2dc7b664684e48d68a272b3fbea52957">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Toggle%20Low%20Power%20Mode%20Based%20on%20Battery%20Level/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6209,7 +6264,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/battery-charging-reminder">Battery Charging Reminder</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ed1a63a6ee0c4aa5943e87bf5775191c">
+       <a href="https://www.icloud.com/shortcuts/21aeaa405c504f9eb728295c7e10cad1">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Battery%20Charging%20Reminder/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6220,7 +6275,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/iphone-settings/smart-data-saver">Smart Data Saver</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3f58efe233634ea3860607b29b4b8f28">
+       <a href="https://www.icloud.com/shortcuts/f48fb62357a04bcea3748d5abb37b4b8">
        <kbd>
        <img src="All%20Shortcuts/iPhone%20Settings/Smart%20Data%20Saver/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6239,7 +6294,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/brighten-screen">Brighten Screen</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/439003944f174dcfb5613bdd7ba53299">
+       <a href="https://www.icloud.com/shortcuts/b449cb22be8643b193074c478a359200">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Brighten%20Screen/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6250,7 +6305,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/dim-screen">Dim Screen</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a66af4de511f44cdb9fd93682fd35c14">
+       <a href="https://www.icloud.com/shortcuts/264e3cd2bb6d480ab226a19307aadfae">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Dim%20Screen/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6261,7 +6316,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-minimum-brightness">Set Minimum Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f4d934bba3764da6853dca87deb6867b">
+       <a href="https://www.icloud.com/shortcuts/fb31c0f447f84c21a71918204247d514">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Minimum%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6272,7 +6327,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-zero-brightness">Set Zero Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/187155b548e84f5f9d1e3746f59fb46e">
+       <a href="https://www.icloud.com/shortcuts/5b6c1520678148e78ecc955f0931a94e">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Zero%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6283,7 +6338,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-ultra-low-brightness">Set Ultra Low Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f5baa732d61d4ed09ffb731235af0060">
+       <a href="https://www.icloud.com/shortcuts/0887745a7e534930b549ae90ccb43825">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Ultra%20Low%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6294,7 +6349,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-low-brightness">Set Low Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7cc2a313453f47ca89d51f3e560afc56">
+       <a href="https://www.icloud.com/shortcuts/f418ac7ccee54e52b0ecc66f74dad9b9">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Low%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6305,7 +6360,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-average-brightness">Set Average Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a6baf35c7bee4ef68a4c6f472639faa2">
+       <a href="https://www.icloud.com/shortcuts/fc936d91dbd54a6f8fb4be50da918c72">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Average%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6316,7 +6371,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-medium-brightness">Set Medium Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a5a76d64ab6c43e28205e4d7a431fbc4">
+       <a href="https://www.icloud.com/shortcuts/1bd87da7459e4f418fe7c18847c19fe6">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Medium%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6327,7 +6382,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-high-brightness">Set High Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/e0aedd651c6e4b22a352285f8335eaa4">
+       <a href="https://www.icloud.com/shortcuts/f7e3edb7b70d4544aeaa791746ce96e6">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20High%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6338,7 +6393,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/set-device-brightness/set-maximum-brightness">Set Maximum Brightness</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/311d1906f46f4eef840be7317a72e4e0">
+       <a href="https://www.icloud.com/shortcuts/b0fd6bd876014615aa240a91c8863174">
        <kbd>
        <img src="All%20Shortcuts/Set%20Device%20Brightness/Set%20Maximum%20Brightness/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6357,7 +6412,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/nsdr-10mins">💤 NSDR-10mins</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/82ec59d6545642178af86c09654ad235">
+       <a href="https://www.icloud.com/shortcuts/9cc84950f37a46e9837c5ce4f7140478">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-10mins/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6368,7 +6423,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/nsdr-20mins">💤 NSDR-20mins</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6782aa980e244ab2b8e50b52a31b27cf">
+       <a href="https://www.icloud.com/shortcuts/c05749d1014e432eaeab77c207939b40">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%92%A4%20NSDR-20mins/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6379,7 +6434,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/5-min-breathwork">🫁 5-Min Breathwork</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ae317d8106d645d1922e5729d4b5b497">
+       <a href="https://www.icloud.com/shortcuts/695640bbca49471a90c204901f49dc9b">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%AB%81%205-Min%20Breathwork/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6390,7 +6445,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/meditation">🧘🏽 Meditation</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/a9e9436713ab4fcea43cfd8cc253b144">
+       <a href="https://www.icloud.com/shortcuts/facf14a4f7e34780bc675840ab7d37a1">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/%F0%9F%A7%98%F0%9F%8F%BD%20Meditation/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6401,7 +6456,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/30-min-40-hz-binaural-beats"> ⏈ 30-Min 40-Hz Binaural Beats</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5d3897215c85497dbeafafdf4c8da163">
+       <a href="https://www.icloud.com/shortcuts/2e110c9793e14d43b83b1a487911dfc1">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/%20%E2%8F%88%2030-Min%2040-Hz%20Binaural%20Beats/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6412,7 +6467,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/vocal-countdown-timer">Vocal Countdown Timer</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c9e4aeb2bb4041a0ad45577c5b1b0c3d">
+       <a href="https://www.icloud.com/shortcuts/dfa396f1be694df7b41aa9ecd219e7b5">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/Vocal%20Countdown%20Timer/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6423,7 +6478,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/iphone-alarm-ringtone">iPhone Alarm Ringtone</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6a47570010e344d59cb95d662ad8ede9">
+       <a href="https://www.icloud.com/shortcuts/3e5230c5ad784553a60b76251d9d04dd">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/iPhone%20Alarm%20Ringtone/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6434,7 +6489,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/iphone-lock-sound-effect">iPhone Lock Sound Effect</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/bdc3fdb8a9154b0f887f4d1b62cb0580">
+       <a href="https://www.icloud.com/shortcuts/8280eccc0c704dc190efca1f194cbb83">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/iPhone%20Lock%20Sound%20Effect/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6445,7 +6500,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/sound-files/time-s-up">Time's Up!</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/f0cd43d57c2b44cfafe241999b6bdd72">
+       <a href="https://www.icloud.com/shortcuts/5650067a653c44b8973a8e2ce178acbe">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/Time's%20Up!/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6464,7 +6519,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/motivate-me/dear-today-me">🧭 Dear Today Me</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b05625972f35400bb9495c0543a7d079">
+       <a href="https://www.icloud.com/shortcuts/ebfe990d84a24f82bf664afd3da15d50">
        <kbd>
        <img src="All%20Shortcuts/Motivate%20Me/%F0%9F%A7%AD%20Dear%20Today%20Me/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6475,7 +6530,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/motivate-me/the-mamba-mentality">🦓 The Mamba Mentality</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/62e348d6e63c4d44bfdc3e01d851cfc3">
+       <a href="https://www.icloud.com/shortcuts/595ccd162cc5401cb8b7bb4e8f4e548e">
        <kbd>
        <img src="All%20Shortcuts/Motivate%20Me/%F0%9F%A6%93%20The%20Mamba%20Mentality/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6486,7 +6541,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/motivate-me/at-dawn">🌄 At Dawn</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/aa411ed19ad24ee8a3c5fcdfdbfa2aa4">
+       <a href="https://www.icloud.com/shortcuts/2de2c5742fda4bf8b3bb13bb123a8c9f">
        <kbd>
        <img src="All%20Shortcuts/Motivate%20Me/%F0%9F%8C%84%20At%20Dawn/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6505,7 +6560,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/ble-audio-devices/soundcore-navy-blue">🎧 Soundcore::Navy Blue</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d72e8cddeb924aa3a8e357a6e5d15415">
+       <a href="https://www.icloud.com/shortcuts/d1cc3769ae0646119dc2701ed9df6f8c">
        <kbd>
        <img src="All%20Shortcuts/BLE%20Audio%20Devices/%F0%9F%8E%A7%20Soundcore::Navy%20Blue/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6516,7 +6571,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/ble-audio-devices/tozo-t10">🎧 TOZO::T10</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d5d76cda3b574ff0a9d72569a85cc900">
+       <a href="https://www.icloud.com/shortcuts/f442a16f09e04ed899780d95879c24be">
        <kbd>
        <img src="All%20Shortcuts/BLE%20Audio%20Devices/%F0%9F%8E%A7%20TOZO::T10/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6535,7 +6590,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/podcasts/snipd">🎙️ Snipd</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/733fdbe3fdfb43a6939fae8e879739d4">
+       <a href="https://www.icloud.com/shortcuts/0b6360b398b74bc59906a241c660d3b1">
        <kbd>
        <img src="All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Snipd/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6546,7 +6601,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/podcasts/podcasts">🎙️ Podcasts</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/69367ebe0d3f462088d38fc53276187a">
+       <a href="https://www.icloud.com/shortcuts/d863a986f4114c3893565ce9227d7164">
        <kbd>
        <img src="All%20Shortcuts/Podcasts/%F0%9F%8E%99%EF%B8%8F%20Podcasts/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6557,7 +6612,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/data-jar">Data Jar (3)</a>
+        <a href="https://shortcutomation.com/gallery/data-jar">Data Jar (4)</a>
       </strong>
     </summary>
 
@@ -6565,7 +6620,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/data-jar/import-data-jar">Import Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/295090e9bfbe4a709c804cf3657dc037">
+       <a href="https://www.icloud.com/shortcuts/d7b45e082a3248978859730f206b544d">
        <kbd>
        <img src="All%20Shortcuts/Data%20Jar/Import%20Data%20Jar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6576,7 +6631,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/data-jar/export-data-jar">Export Data Jar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/242a28d7b71f4411b647dfb8619f8835">
+       <a href="https://www.icloud.com/shortcuts/13a9f771b92a4f0d8f95c359268508b2">
        <kbd>
        <img src="All%20Shortcuts/Data%20Jar/Export%20Data%20Jar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6585,9 +6640,20 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/data-jar/export-data-jar-kernel">Export Data Jar - Kernel</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/817ece62c9054adb87a8f208d2a38743">
+       <kbd>
+       <img src="All%20Shortcuts/Data%20Jar/Export%20Data%20Jar%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/data-jar/data-jar-view-value-at-key-path">Data Jar - View Value at Key Path</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/ae242f74332d4600a98bd717cf09cfda">
+       <a href="https://www.icloud.com/shortcuts/49e32568bfa84d2c8d1adc627b83ccab">
        <kbd>
        <img src="All%20Shortcuts/Data%20Jar/Data%20Jar%20-%20View%20Value%20at%20Key%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6606,7 +6672,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-notes/get-title-of-apple-notes">Get Title of Apple Notes</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/290a9a744e8e4e43a5dcdd5077fb87fd">
+       <a href="https://www.icloud.com/shortcuts/dd677b72b25e483dad7fe4f061e421ee">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Notes/Get%20Title%20of%20Apple%20Notes/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6617,7 +6683,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-notes/get-body-of-apple-notes-plain-text">Get Body of Apple Notes (Plain Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/14805a8d69744865a44120a22b0510be">
+       <a href="https://www.icloud.com/shortcuts/9f930f555dc24d97b471a67bd16adfbb">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Plain%20Text)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6628,7 +6694,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-notes/get-body-of-apple-notes-rich-text">Get Body of Apple Notes (Rich Text)</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/b3004757080e4a14a976fa1de024d7dc">
+       <a href="https://www.icloud.com/shortcuts/dc92bcef90094cdb8de8fd30a72ca6c2">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Notes/Get%20Body%20of%20Apple%20Notes%20(Rich%20Text)/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6647,7 +6713,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-calendar/smart-calendar-event-scheduler">📅 Smart Calendar Event Scheduler</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8ae9abd647d241b9be967a175d12ac83">
+       <a href="https://www.icloud.com/shortcuts/99d2d0ecc3c9449386f168a8fd0ed563">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Calendar/%F0%9F%93%85%20Smart%20Calendar%20Event%20Scheduler/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6658,7 +6724,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-calendar/open-calendar-on-specific-date">Open Calendar on Specific Date</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3b25e382ad0d4afd9655ccc663204bfd">
+       <a href="https://www.icloud.com/shortcuts/2b88669ebbab4d219261c8a75188fd5d">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Calendar/Open%20Calendar%20on%20Specific%20Date/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6669,7 +6735,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-calendar/speak-scheduled-calendar-events">Speak Scheduled Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0edc556d18c44263a4715b0a28f88aa6">
+       <a href="https://www.icloud.com/shortcuts/c20f0c32790847a09686518fe218078f">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Calendar/Speak%20Scheduled%20Calendar%20Events/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6680,7 +6746,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-calendar/get-diary-entries-for-scheduled-calendar-events">Get Diary Entries for Scheduled Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3a7e7b5fdcc241d19ec42cadceeb785c">
+       <a href="https://www.icloud.com/shortcuts/a4a42321d0de4dc781edf068f649afab">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Calendar/Get%20Diary%20Entries%20for%20Scheduled%20Calendar%20Events/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6691,7 +6757,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-calendar/get-diary-entries-for-all-day-calendar-events">Get Diary Entries for All-Day Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/513cae3c87044876b32a47bea540b54d">
+       <a href="https://www.icloud.com/shortcuts/246e8f7d7a014ab29bebbdb61f37b046">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Calendar/Get%20Diary%20Entries%20for%20All-Day%20Calendar%20Events/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6702,7 +6768,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-calendar/get-calendar-events">_Get Calendar Events</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/c120f618714e416c827d990acea4571c">
+       <a href="https://www.icloud.com/shortcuts/937f060bcfbe4406a9b98603c53c17b2">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Calendar/_Get%20Calendar%20Events/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6721,7 +6787,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/recover-from-reminders-backup">Recover from Reminders Backup</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/6a22e2f9cb384a60aa428baa9b322acf">
+       <a href="https://www.icloud.com/shortcuts/0c1e7e7fef364ec5a5ef03ce02c55bd2">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/Recover%20from%20Reminders%20Backup/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6732,7 +6798,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/batch-add-reminders">Batch Add Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/fcb5b95a76a44c4ea9752c492cfd1d64">
+       <a href="https://www.icloud.com/shortcuts/9972eb781ef74159ae92ec8b9d683323">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/Batch%20Add%20Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6743,7 +6809,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/search-reminders">Search Reminders</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/251183361f2046c9b9cab7c104bd362f">
+       <a href="https://www.icloud.com/shortcuts/f320899935944cddb06772f808983ad5">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/Search%20Reminders/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6754,7 +6820,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/show-reminders-list">_Show Reminders List</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8453edd47f834cf984a522b27172aaa7">
+       <a href="https://www.icloud.com/shortcuts/e632cd9388cb41c1b78cf3cd5faca417">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/_Show%20Reminders%20List/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6765,7 +6831,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/reminder2markdown">_Reminder2Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/8fdabe5846764e378532735f11f3a092">
+       <a href="https://www.icloud.com/shortcuts/b9142fcb12f74aa088351263d98d7794">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/_Reminder2Markdown/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6776,7 +6842,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/reminderlist2markdown">_ReminderList2Markdown</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5d3af088a71e47d7a52a24170775b2d3">
+       <a href="https://www.icloud.com/shortcuts/30f20a48eb204e029297571673b2527b">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/_ReminderList2Markdown/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6787,7 +6853,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/reminderlist2json">_ReminderList2JSON</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/7cb2e0860e734e4eb507e7514dff8ecc">
+       <a href="https://www.icloud.com/shortcuts/37a80fd308bd4436a57856f3ba561c27">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/_ReminderList2JSON/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6798,7 +6864,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/apple-reminders/filter-reminder-lists">_Filter Reminder Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/049581cd1b8b4b0f968b08625e61685c">
+       <a href="https://www.icloud.com/shortcuts/eaedb86fe5314b76aa4644569a37031d">
        <kbd>
        <img src="All%20Shortcuts/Apple%20Reminders/_Filter%20Reminder%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6809,7 +6875,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/my-dear-yi">My Dear Yi (5)</a>
+        <a href="https://shortcutomation.com/gallery/my-dear-yi">My Dear Yi (4)</a>
       </strong>
     </summary>
 
@@ -6817,7 +6883,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-dear-yi/journal-prompt-question">🤍 Journal Prompt Question</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/3cb34bc6d2514dbfb519140f2b643459">
+       <a href="https://www.icloud.com/shortcuts/7d6f1112913f41d78ef21dbdc5a6980a">
        <kbd>
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Journal%20Prompt%20Question/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6828,7 +6894,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-dear-yi/random-quote">🤍 Random Quote</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5f60427d11714e3caabd32e31290bba9">
+       <a href="https://www.icloud.com/shortcuts/8f87c3a7332d412389f24aab4fc9b02b">
        <kbd>
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Quote/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6837,20 +6903,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/my-dear-yi/random-visual">🤍 Random Visual</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/2f71c3be97d4441a9e35b277f503a92d">
-       <kbd>
-       <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Random%20Visual/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="https://shortcutomation.com/gallery/my-dear-yi/i-love-you">🤍 I Love You</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/1dfb9d9adaec48508a05637f7b42820b">
+       <a href="https://www.icloud.com/shortcuts/7114c3d766fe4ca78d9009c90961737f">
        <kbd>
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6861,7 +6916,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/my-dear-yi/memory-dividends-calendar">🤍 Memory Dividends Calendar</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/310731ab9eb045eca9a7118201bc7e55">
+       <a href="https://www.icloud.com/shortcuts/e5abef2d12464a5493f82f938794181e">
        <kbd>
        <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20Memory%20Dividends%20Calendar/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6872,7 +6927,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/shared">Shared (11)</a>
+        <a href="https://shortcutomation.com/gallery/shared">Shared (12)</a>
       </strong>
     </summary>
 
@@ -6880,7 +6935,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shared/check-daily-screen-time">Check Daily Screen Time</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0c5839c56e9d46a699d0198878a71138">
+       <a href="https://www.icloud.com/shortcuts/d2daa6848b394f6ebceb9d1ae66ac124">
        <kbd>
        <img src="All%20Shortcuts/Shared/Check%20Daily%20Screen%20Time/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6889,9 +6944,42 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/shared/death-clock">Death Clock</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/e480da8c319040e0a6f722f0937965a3">
+       <kbd>
+       <img src="All%20Shortcuts/Shared/Death%20Clock/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/shared/dear-today-me">Dear Today Me</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/9b7c25d3f04648ef8610db117978b7ec">
+       <kbd>
+       <img src="All%20Shortcuts/Shared/Dear%20Today%20Me/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/shared/your-pocket-life-coach">🦾 Your Pocket Life Coach</a>
+       </summary>
+       <a href="https://www.icloud.com/shortcuts/922d7ac50db54a70b551d45fcd8c29ee">
+       <kbd>
+       <img src="All%20Shortcuts/Shared/%F0%9F%A6%BE%20Your%20Pocket%20Life%20Coach/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/shared/grocery-shopping">🥗 Grocery Shopping</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0a2c9b154b1a4907b4b407592c253d29">
+       <a href="https://www.icloud.com/shortcuts/5116ccb6f2ab4b9a8ddd19dbb9af09ec">
        <kbd>
        <img src="All%20Shortcuts/Shared/%F0%9F%A5%97%20Grocery%20Shopping/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6902,7 +6990,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shared/weekly-mindware-update">🍀 Weekly Mindware Update</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/139837e2f20a427fb73083975343de0d">
+       <a href="https://www.icloud.com/shortcuts/faef5b5b2733461984518667e7fdc617">
        <kbd>
        <img src="All%20Shortcuts/Shared/%F0%9F%8D%80%20Weekly%20Mindware%20Update/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6911,20 +6999,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/shared/dear-today-me">✉️ Dear Today Me</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/5c34b392b20240c98b33c3057d86604e">
-       <kbd>
-       <img src="All%20Shortcuts/Shared/%E2%9C%89%EF%B8%8F%20Dear%20Today%20Me/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="https://shortcutomation.com/gallery/shared/brain-food">🥙 Brain Food</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/d29317323b5344188b42a3ba3fd20c6a">
+       <a href="https://www.icloud.com/shortcuts/d2b436dd74194ab6bcb257b80b6bd934">
        <kbd>
        <img src="All%20Shortcuts/Shared/%F0%9F%A5%99%20Brain%20Food/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6935,7 +7012,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shared/evergreen-lists">🌳 Evergreen Lists</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/2cd0b8ad22e54c21adcd87917d7686c0">
+       <a href="https://www.icloud.com/shortcuts/2e46c542a25c4215aa1a4800e5c18807">
        <kbd>
        <img src="All%20Shortcuts/Shared/%F0%9F%8C%B3%20Evergreen%20Lists/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6946,7 +7023,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shared/exercise-of-the-day">🤸‍♀️ Exercise Of The Day</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/0c32cdbfc3ec42da90e65999c772683d">
+       <a href="https://www.icloud.com/shortcuts/c02806c309634642a82266bbb331d8ed">
        <kbd>
        <img src="All%20Shortcuts/Shared/%F0%9F%A4%B8%E2%80%8D%E2%99%80%EF%B8%8F%20Exercise%20Of%20The%20Day/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6955,20 +7032,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/shared/your-pocket-life-coach">🦾 Your Pocket Life Coach</a>
-       </summary>
-       <a href="https://www.icloud.com/shortcuts/46c8862a3eed42b19d75d94674856f03">
-       <kbd>
-       <img src="All%20Shortcuts/Shared/%F0%9F%A6%BE%20Your%20Pocket%20Life%20Coach/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="https://shortcutomation.com/gallery/shared/trainerday">TrainerDay</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/4794fbe4f2b4442aa6286b9244c09f2d">
+       <a href="https://www.icloud.com/shortcuts/6548009995f04395ae0be9f38ed2bab3">
        <kbd>
        <img src="All%20Shortcuts/Shared/TrainerDay/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6979,7 +7045,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shared/create-notification">Create Notification</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/80a3906067394ef5915de26c38bde133">
+       <a href="https://www.icloud.com/shortcuts/0b18e5221ae24632aea5b036783db7f8">
        <kbd>
        <img src="All%20Shortcuts/Shared/Create%20Notification/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -6990,7 +7056,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <summary>
        <a href="https://shortcutomation.com/gallery/shared/">每日一句德語</a>
        </summary>
-       <a href="https://www.icloud.com/shortcuts/5932fb68ff3540bd8348966d94d2cffa">
+       <a href="https://www.icloud.com/shortcuts/08b10a68a1774966a6ffe93d0b2be669">
        <kbd>
        <img src="All%20Shortcuts/Shared/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5%E5%BE%B7%E8%AA%9E/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
@@ -7018,8 +7084,8 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 574  
-* **Total Actions:** 9822  
+* **Total Shortcuts:** 580  
+* **Total Actions:** 9879  
 * **Categories Covered:** 70  
 * **Average Actions per Shortcut:** 17  
 * **A Typical Shortcut Uses 10+ Actions**  
@@ -7030,10 +7096,10 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
   | Rank | Shortcut Name | Number of Actions |
   | :---: | :---: | :---: |
-  | 1️⃣ | [When "Reminders" is opened - Kernel](https://shortcutomation.com/gallery/automation-modules/when-reminders-is-opened-kernel) | 157 |
-  | 2️⃣ | [_EvergreenList to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreenlist-to-markdown) | 156 |
-  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 141 |
-  | 4️⃣ | [⚛️ Deep Work Session](https://shortcutomation.com/gallery/getting-things-done/deep-work-session) | 120 |
+  | 1️⃣ | [_Evergreen List to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown) | 156 |
+  | 2️⃣ | [When "Reminders" is opened - Kernel](https://shortcutomation.com/gallery/automation-modules/when-reminders-is-opened-kernel) | 147 |
+  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 138 |
+  | 4️⃣ | [⚛️ Deep Work Session](https://shortcutomation.com/gallery/getting-things-done/deep-work-session) | 123 |
   | 5️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me) | 105 |
 
   </div>
@@ -7048,7 +7114,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
   | 2️⃣ | [Year Progress](https://shortcutomation.com/gallery/standalone-fun/year-progress) | 1693 |
   | 3️⃣ | [iPhone Alarm Ringtone](https://shortcutomation.com/gallery/sound-files/iphone-alarm-ringtone) | 423 |
   | 4️⃣ | [Water Eject](https://shortcutomation.com/gallery/standalone-fun/water-eject) | 192 |
-  | 5️⃣ | [Time's Up!](https://shortcutomation.com/gallery/sound-files/time-s-up) | 125 |
+  | 5️⃣ | [Time's Up!](https://shortcutomation.com/gallery/sound-files/time-s-up) | 124 |
 
   </div>
 

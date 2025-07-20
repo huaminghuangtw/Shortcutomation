@@ -16,6 +16,105 @@
     },
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+            "WFWorkflowActionParameters": {
+                "UUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current IP Address"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "50A8B0EE-E6A2-4F8B-9373-3F494DF6B498",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "📴 Offline Mode?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✓ Yes",
+                    "✗ No"
+                ],
+                "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✓ Yes",
+                "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current IP Address"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "477FF895-4A2E-4A3F-A829-0519F59FE918",
+                    "workflowName": "Disconnect from Internet",
+                    "isSelf": false
+                },
+                "UUID": "5C88FF6A-05D1-4020-ADC3-CE86CCD7BD93",
+                "WFWorkflowName": "Disconnect from Internet"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✗ No",
+                "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {
+                "UUID": "1A215F37-FD9C-454A-AD96-D42A581D997C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A",
+                "UUID": "59D507DE-7028-4A2C-9248-4DE6A93D5383"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "50A8B0EE-E6A2-4F8B-9373-3F494DF6B498",
+                "UUID": "D7ED0E29-90C3-42F5-97D3-E70D5350F909"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -144,13 +243,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
-            "WFWorkflowActionParameters": {}
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "UUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0"
+                "UUID": "281490B5-DC17-479C-B33E-2037EC48808C"
             }
         },
         {
@@ -160,7 +255,98 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0",
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Morning",
+                "GroupingIdentifier": "3421567A-C971-4C47-8B23-2344A4CC17E5",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "281490B5-DC17-479C-B33E-2037EC48808C",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current IP Address"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "71F6E36F-C7A3-4311-93DB-565535A8A33D",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "1E761429-72A5-4469-95A5-223A22B0C352",
+                    "workflowName": "💬 Extract Insight Timer Quote",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "💬 Extract Insight Timer Quote",
+                "UUID": "2F4D6DB0-76A8-468A-A4D3-27C42E8FDD03"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "71F6E36F-C7A3-4311-93DB-565535A8A33D",
+                "UUID": "66E675FE-11CA-4D58-90FA-271F691B8A78"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3421567A-C971-4C47-8B23-2344A4CC17E5",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "F59E53BE-C056-4D61-A271-A1015B9030F5",
+                    "workflowName": "📱 Log Phone Screen Time",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "📱 Log Phone Screen Time",
+                "UUID": "E23851CA-D7E8-46A4-85CF-C6672BA90A15"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "3421567A-C971-4C47-8B23-2344A4CC17E5",
+                "UUID": "BAB473DE-EB1C-4D9D-A7C9-861D9646279B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "281490B5-DC17-479C-B33E-2037EC48808C",
                             "Type": "ActionOutput",
                             "OutputName": "Current IP Address"
                         },
