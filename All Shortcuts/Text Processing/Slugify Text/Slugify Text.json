@@ -11,10 +11,8 @@
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorAskForInput",
-        "Parameters": {
-            "ItemClass": "WFStringContentItem"
-        }
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
     },
     "WFWorkflowActions": [
         {
@@ -31,6 +29,116 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "974897D0-8A3C-4875-BB46-12AB4A4CB70C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "slugifiedText"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Replace known characters using charMap"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "&"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "and"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "@"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "at"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "0E62315F-BB48-40C4-A325-E9B450EA0758"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary",
+                        "OutputUUID": "0E62315F-BB48-40C4-A325-E9B450EA0758",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "03F9714C-538E-4196-B046-E11A20B27D4F",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0E62315F-BB48-40C4-A325-E9B450EA0758",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E162BAEA-FEEB-4D7A-9144-AC359E96747F"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -38,7 +146,105 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "974897D0-8A3C-4875-BB46-12AB4A4CB70C",
+                                "VariableName": "slugifiedText",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextReplace": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E162BAEA-FEEB-4D7A-9144-AC359E96747F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6CB71AA5-136E-47F0-B1BC-A9D1651600B4",
+                "WFReplaceTextFind": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6CB71AA5-136E-47F0-B1BC-A9D1651600B4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "slugifiedText"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "03F9714C-538E-4196-B046-E11A20B27D4F",
+                "UUID": "29C9C9C7-1220-4AD0-9783-DB047A8FB0EE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Replace whitespace and underscores with hyphens"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "slugifiedText",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "2716786D-16D4-4D09-9B0B-F40A518822AC",
+                "WFReplaceTextReplace": "-",
+                "WFReplaceTextFind": "[\\s_]+"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Remove any remaining non-alphanumeric characters (except hyphens)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2716786D-16D4-4D09-9B0B-F40A518822AC",
                                 "Type": "ActionOutput",
                                 "OutputName": "Updated Text"
                             }
@@ -48,8 +254,14 @@
                 },
                 "WFReplaceTextRegularExpression": true,
                 "UUID": "711796D1-3CA5-4BC3-975F-EE5A91C4FAF8",
-                "WFReplaceTextReplace": "-",
-                "WFReplaceTextFind": "[^a-z0-9]+"
+                "WFReplaceTextReplace": "",
+                "WFReplaceTextFind": "[^a-z0-9-]+"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Replace multiple consecutive hyphens with single hyphen"
             }
         },
         {
@@ -61,6 +273,34 @@
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "711796D1-3CA5-4BC3-975F-EE5A91C4FAF8",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "51BA0A0E-549D-4396-A703-3B18101F2986",
+                "WFReplaceTextReplace": "-",
+                "WFReplaceTextFind": "-+"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Remove leading and trailing hyphens"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "51BA0A0E-549D-4396-A703-3B18101F2986",
                                 "Type": "ActionOutput",
                                 "OutputName": "Updated Text"
                             }
@@ -117,6 +357,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "QuickActions"
+    ],
     "WFWorkflowHasShortcutInputVariables": true
 }

@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "3216",
+    "WFWorkflowMinimumClientVersion": 3216,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -427,8 +427,235 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "544DDE18-FA47-459B-8B37-34EF06157AB5",
+                "UUID": "E69B6F1C-FCD6-4361-BA4A-6F96A97D44A1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.windows",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
+                                    "String": "Microsoft Edge"
+                                },
+                                "Removable": true,
+                                "Property": "App Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "UUID": "134A2F5E-5612-4CFD-B129-9E03212C37DB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "134A2F5E-5612-4CFD-B129-9E03212C37DB",
+                            "Type": "ActionOutput",
+                            "OutputName": "Windows"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFApp": {
+                    "BundleIdentifier": "com.microsoft.edgemac",
+                    "Name": "Microsoft Edge",
+                    "TeamIdentifier": "UBF8T346G9"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "3A580CBB-A40A-45EC-983B-AEB1F9131119",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "appName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Microsoft Edge"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 4,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "fullScreen"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": true,
+                                    "WFSerializationType": "WFNumberSubstitutableState"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "0215C8F5-F3C9-417C-B758-50EC5868C898"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0215C8F5-F3C9-417C-B758-50EC5868C898",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "61C37241-5137-462C-AE6A-0D90C3504AAF",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "👁️ Review All Tabs"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
+            "WFWorkflowActionParameters": {
+                "key": {
+                    "subtitle": {
+                        "key": "My Life On This Day"
+                    },
+                    "title": {
+                        "key": "My Life On This Day"
+                    },
+                    "value": "My Life On This Day"
+                },
+                "UUID": "2A9D37F9-EA2F-4CF1-8F45-8CF41F4F9A2A",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableGetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2A9D37F9-EA2F-4CF1-8F45-8CF41F4F9A2A",
+                            "Type": "ActionOutput",
+                            "OutputName": "Global Variable — Text"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "C59488CA-4D77-4BC3-A8E1-D17766E7DEF4",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.microsoft.edgemac",
+                    "Name": "Microsoft Edge",
+                    "TeamIdentifier": "UBF8T346G9"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C59488CA-4D77-4BC3-A8E1-D17766E7DEF4",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.microsoft.edgemac",
+                    "Name": "Microsoft Edge",
+                    "TeamIdentifier": "UBF8T346G9"
+                },
+                "WFAskToSaveChanges": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C59488CA-4D77-4BC3-A8E1-D17766E7DEF4",
                 "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "3A580CBB-A40A-45EC-983B-AEB1F9131119",
+                "UUID": "4D8C6DC9-0DEC-407B-863B-0FC77C39464C"
             }
         },
         {

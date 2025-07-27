@@ -333,7 +333,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.reminders",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
@@ -342,10 +342,8 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFContentItemPropertyName": "Due Date",
-                "Mode": "Set",
-                "UUID": "86CE27C6-6F7E-46D1-939D-BE600C77FD6C",
-                "WFReminderContentItemDueDate": "Today"
+                "WFContentItemPropertyName": "Priority",
+                "UUID": "6DE7A23C-E02C-47DF-95B3-DF1FAAC8E58E"
             }
         },
         {
@@ -356,15 +354,9 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "6DE7A23C-E02C-47DF-95B3-DF1FAAC8E58E",
                             "Type": "ActionOutput",
-                            "OutputName": "Edited Reminder",
-                            "OutputUUID": "86CE27C6-6F7E-46D1-939D-BE600C77FD6C",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Priority"
-                                }
-                            ]
+                            "OutputName": "Priority"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -380,9 +372,8 @@
                 "WFReminderContentItemPriority": "Low",
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "86CE27C6-6F7E-46D1-939D-BE600C77FD6C",
-                        "Type": "ActionOutput",
-                        "OutputName": "Edited Reminder"
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -1280,7 +1271,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "✔️ Review journals\n✔️ Review dashboard\n✔️ Review reminders",
+                "WFTextActionText": "✔️ Review reminders\n✔️ Review journals\n✔️ Review dashboard",
                 "UUID": "44CD3F75-E648-4B0A-86A4-82E58BC7CC13"
             }
         },
@@ -1350,7 +1341,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "E4FD3EC5-E8BA-4F27-947D-5A5DF47669B6",
+                "GroupingIdentifier": "BA9DF324-D5C7-4462-8718-79B4DDFA5FA4",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
@@ -1362,8 +1353,22 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFNumberValue": "3",
-                "WFCondition": 5
+                "WFConditionalActionString": "journals",
+                "WFNumberValue": "1",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "📬 Open Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BA9DF324-D5C7-4462-8718-79B4DDFA5FA4",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -1382,7 +1387,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "journals",
-                "WFNumberValue": "1",
+                "WFNumberValue": "2",
                 "WFCondition": 4
             }
         },
@@ -1460,7 +1465,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "dashboard",
-                "WFNumberValue": "2",
+                "WFNumberValue": "3",
                 "WFCondition": 4
             }
         },
@@ -1526,14 +1531,6 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E4FD3EC5-E8BA-4F27-947D-5A5DF47669B6",
-                "UUID": "FA49315D-948A-40A0-A966-C280E92408ED"
             }
         },
         {

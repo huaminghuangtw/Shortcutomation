@@ -1,8 +1,8 @@
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 580  
-* **Total Actions:** 9879  
-* **Categories Covered:** 70  
+* **Total Shortcuts:** 586  
+* **Total Actions:** 9915  
+* **Categories Covered:** 71  
 * **Average Actions per Shortcut:** 17  
 * **A Typical Shortcut Uses 10+ Actions**  
 
@@ -13,9 +13,9 @@
   | Rank | Shortcut Name | Number of Actions |
   | :---: | :---: | :---: |
   | 1️⃣ | [_Evergreen List to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown) | 156 |
-  | 2️⃣ | [When "Reminders" is opened - Kernel](https://shortcutomation.com/gallery/automation-modules/when-reminders-is-opened-kernel) | 147 |
+  | 2️⃣ | [When "Reminders" is opened - Kernel](https://shortcutomation.com/gallery/automation-modules/when-reminders-is-opened-kernel) | 148 |
   | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 138 |
-  | 4️⃣ | [⚛️ Deep Work Session](https://shortcutomation.com/gallery/getting-things-done/deep-work-session) | 123 |
+  | 4️⃣ | [⚛️ Deep Work Session](https://shortcutomation.com/gallery/getting-things-done/deep-work-session) | 115 |
   | 5️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me) | 105 |
 
   </div>
@@ -26,10 +26,10 @@
 
   | Rank | Shortcut Name | File Size (KB) |
   | :---: | :---: | :---: |
-  | 1️⃣ | [Show Year Progress](https://shortcutomation.com/gallery/getting-things-done/show-year-progress) | 1697 |
+  | 1️⃣ | [Show Year Progress](https://shortcutomation.com/gallery/getting-things-done/show-year-progress) | 1696 |
   | 2️⃣ | [Year Progress](https://shortcutomation.com/gallery/standalone-fun/year-progress) | 1693 |
   | 3️⃣ | [iPhone Alarm Ringtone](https://shortcutomation.com/gallery/sound-files/iphone-alarm-ringtone) | 423 |
   | 4️⃣ | [Water Eject](https://shortcutomation.com/gallery/standalone-fun/water-eject) | 192 |
-  | 5️⃣ | [Time's Up!](https://shortcutomation.com/gallery/sound-files/time-s-up) | 124 |
+  | 5️⃣ | [Time's Up!](https://shortcutomation.com/gallery/sound-files/times-up) | 124 |
 
   </div>
