@@ -8,10 +8,10 @@
     "WFWorkflowClientVersion": "3303.0.4",
     "WFWorkflowOutputContentItemClasses": [
         "WFStringContentItem",
-        "WFBooleanContentItem",
         "WFDateContentItem",
-        "WFDictionaryContentItem",
-        "WFNumberContentItem"
+        "WFNumberContentItem",
+        "WFBooleanContentItem",
+        "WFDictionaryContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -210,6 +210,35 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Contents of URL",
+                            "OutputUUID": "7C6D4113-BE01-44DE-AEAF-A71E07B4C29E",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFDictionaryContentItem"
+                                },
+                                {
+                                    "Type": "WFDictionaryValueVariableAggrandizement",
+                                    "DictionaryKey": "items"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "E3E1D79C-695F-4776-9AA2-20947553D195",
+                "WFCondition": 100
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -242,6 +271,17 @@
                     "WFSerializationType": "WFTextTokenString"
                 }
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "E3E1D79C-695F-4776-9AA2-20947553D195",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

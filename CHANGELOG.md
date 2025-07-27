@@ -1,41 +1,29 @@
-### ✨ 14 New Shortcuts
+### ✨ 11 New Shortcuts
 
-> 📍 [Yᴜᴀɴʟɪɴ Cɪᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Yuanlin%20City,%20Taiwan)
+> 📍 [Tᴀɪʙᴀᴏ Cɪᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Taibao%20City,%20Taiwan)
 
-* [Shared (2)](https://shortcutomation.com/gallery/shared)
+* [Brain Food (1)](https://shortcutomation.com/gallery/brain-food)
 
-    * [Death Clock](https://shortcutomation.com/gallery/shared/death-clock)
-    * [Dear Today Me](https://shortcutomation.com/gallery/shared/dear-today-me)
+    * [Get Brain Food Reminder](https://shortcutomation.com/gallery/brain-food/get-brain-food-reminder)
 
-* [Evergreen Lists (3)](https://shortcutomation.com/gallery/evergreen-lists)
+* [Shortcutomation Helpers (3)](https://shortcutomation.com/gallery/shortcutomation-helpers)
 
-    * [_Evergreen List to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown)
-    * [_Evergreen List to JSON](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-json)
-    * [_Evergreen List to Google Sheets](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-google-sheets)
+    * [Shortcutomation - shortcut to json](https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-json)
+    * [Shortcutomation - shortcut to html](https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-html)
+    * [Shortcutomation - shortcut to plist](https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-plist)
 
-* [Utilities (1)](https://shortcutomation.com/gallery/utilities)
+* [Siri (1)](https://shortcutomation.com/gallery/siri)
 
-    * [Select Date](https://shortcutomation.com/gallery/utilities/select-date)
+    * [聽東西](https://shortcutomation.com/gallery/siri/)
 
-* [Template Shortcuts (2)](https://shortcutomation.com/gallery/template-shortcuts)
+* [Second Brain (4)](https://shortcutomation.com/gallery/second-brain)
 
-    * [Template - Complete!](https://shortcutomation.com/gallery/template-shortcuts/template-complete)
-    * [Template - Email](https://shortcutomation.com/gallery/template-shortcuts/template-email)
+    * [_Organize Inbox](https://shortcutomation.com/gallery/second-brain/organize-inbox)
+    * [VS Code - Open Note(s)](https://shortcutomation.com/gallery/second-brain/vs-code-open-notes)
+    * [_Get Second Brain File Path](https://shortcutomation.com/gallery/second-brain/get-second-brain-file-path)
+    * [_Remove Empty Frontmatter](https://shortcutomation.com/gallery/second-brain/remove-empty-frontmatter)
 
-* [Second Brain (3)](https://shortcutomation.com/gallery/second-brain)
+* [Obsidian URI (2)](https://shortcutomation.com/gallery/obsidian-uri)
 
-    * [👨🏽‍🌾 Water Digital Garden](https://shortcutomation.com/gallery/second-brain/water-digital-garden)
-    * [VS Code - Open Note](https://shortcutomation.com/gallery/second-brain/vs-code-open-note)
-    * [_Get Second-Brain File Path](https://shortcutomation.com/gallery/second-brain/get-second-brain-file-path)
-
-* [Automation - Daily (1)](https://shortcutomation.com/gallery/automation-daily)
-
-    * [Fetch New Emails & Newsletters](https://shortcutomation.com/gallery/automation-daily/fetch-new-emails-newsletters)
-
-* [Automation - Monthly (1)](https://shortcutomation.com/gallery/automation-monthly)
-
-    * [5::Deep Work Machine](https://shortcutomation.com/gallery/automation-monthly/5-deep-work-machine)
-
-* [Data Jar (1)](https://shortcutomation.com/gallery/data-jar)
-
-    * [Export Data Jar - Kernel](https://shortcutomation.com/gallery/data-jar/export-data-jar-kernel)
+    * [Obsidian - Open Note(s)](https://shortcutomation.com/gallery/obsidian-uri/obsidian-open-notes)
+    * [Obsidian - Rename File](https://shortcutomation.com/gallery/obsidian-uri/obsidian-rename-file)
