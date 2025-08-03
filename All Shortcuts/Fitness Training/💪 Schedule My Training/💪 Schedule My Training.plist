@@ -114,17 +114,6 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>A8FE97CD-7597-4E7E-A0A3-13775C9BE0D1</string>
-				<key>keyPath</key>
-				<string>My Training Plan</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>dk.simonbs.DataJar.GetValueIntent</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
 				<string>3AF7F532-CBFE-4381-B6A8-6AE0D9816AB9</string>
 				<key>keyPath</key>
 				<string>Slogan</string>
@@ -241,6 +230,17 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>dk.simonbs.DataJar.GetValueIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>A8FE97CD-7597-4E7E-A0A3-13775C9BE0D1</string>
+				<key>keyPath</key>
+				<string>My Training Plan</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.choosefromlist</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -328,51 +328,196 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getvalueforkey</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>listOfDicts</string>
+				<key>UUID</key>
+				<string>2F0D6BCA-BDD4-4F93-A83C-70910473BF98</string>
+				<key>WFDictionaryKey</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Value</string>
+						<key>OutputUUID</key>
+						<string>A8FE97CD-7597-4E7E-A0A3-13775C9BE0D1</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.match</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>C6BBC0B1-3EF9-42EB-9C96-8A8647215F09</string>
+				<key>WFMatchTextPattern</key>
+				<string>"workoutType"\s*:\s*"([^"]+)"</string>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>listOfDicts</string>
+								<key>OutputUUID</key>
+								<string>2F0D6BCA-BDD4-4F93-A83C-70910473BF98</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.match.getgroup</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>BC8D4096-3511-47E9-8138-94ABF6FA19AF</string>
+				<key>matches</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Matches</string>
+						<key>OutputUUID</key>
+						<string>C6BBC0B1-3EF9-42EB-9C96-8A8647215F09</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>01CA155F-F051-4C0C-8145-A73ADC4235E8</string>
+				<key>WFChooseFromListActionPrompt</key>
+				<string>🤖 Which one?</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>BC8D4096-3511-47E9-8138-94ABF6FA19AF</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.match</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>19C849DF-96AA-475B-8BC5-F8414E5832A9</string>
+				<key>WFMatchTextPattern</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{23, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Selected Item</string>
+								<key>OutputUUID</key>
+								<string>01CA155F-F051-4C0C-8145-A73ADC4235E8</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>.*"workoutType"\s*:\s*"￼".*</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>listOfDicts</string>
+								<key>OutputUUID</key>
+								<string>2F0D6BCA-BDD4-4F93-A83C-70910473BF98</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.dictionary</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>C6A51C65-9582-4CEE-B8C7-1EB94AD317BA</string>
+				<string>D4C0FA06-E8F8-4F95-825E-FC3F9F2D9033</string>
 				<key>WFItems</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>WFDictionaryFieldValueItems</key>
 						<array>
-							<dict>
-								<key>WFItemType</key>
-								<integer>0</integer>
-								<key>WFKey</key>
-								<dict>
-									<key>Value</key>
-									<dict>
-										<key>string</key>
-										<string>sportType</string>
-									</dict>
-									<key>WFSerializationType</key>
-									<string>WFTextTokenString</string>
-								</dict>
-								<key>WFValue</key>
-								<dict>
-									<key>Value</key>
-									<dict>
-										<key>attachmentsByRange</key>
-										<dict>
-											<key>{0, 1}</key>
-											<dict>
-												<key>Type</key>
-												<string>Variable</string>
-												<key>VariableName</key>
-												<string>Repeat Item</string>
-											</dict>
-										</dict>
-										<key>string</key>
-										<string>￼</string>
-									</dict>
-									<key>WFSerializationType</key>
-									<string>WFTextTokenString</string>
-								</dict>
-							</dict>
 							<dict>
 								<key>WFItemType</key>
 								<integer>0</integer>
@@ -395,9 +540,96 @@
 											<key>{0, 1}</key>
 											<dict>
 												<key>OutputName</key>
-												<string>date</string>
+												<string>If Result</string>
 												<key>OutputUUID</key>
 												<string>8884D75D-64BC-47E7-89F6-B1D6AF7492DA</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>￼</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>calEventTitle</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Selected Item</string>
+												<key>OutputUUID</key>
+												<string>01CA155F-F051-4C0C-8145-A73ADC4235E8</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>￼</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>defaultDuration</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>Aggrandizements</key>
+												<array>
+													<dict>
+														<key>CoercionItemClass</key>
+														<string>WFDictionaryContentItem</string>
+														<key>Type</key>
+														<string>WFCoercionVariableAggrandizement</string>
+													</dict>
+													<dict>
+														<key>DictionaryKey</key>
+														<string>defaultDuration</string>
+														<key>Type</key>
+														<string>WFDictionaryValueVariableAggrandizement</string>
+													</dict>
+												</array>
+												<key>OutputName</key>
+												<string>Matches</string>
+												<key>OutputUUID</key>
+												<string>19C849DF-96AA-475B-8BC5-F8414E5832A9</string>
 												<key>Type</key>
 												<string>ActionOutput</string>
 											</dict>
@@ -421,8 +653,10 @@
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>HH:mm</string>
 				<key>UUID</key>
-				<string>9847D6FC-2D55-4103-8B7B-DD3133B8E8E2</string>
+				<string>0A36231F-D240-458A-9A06-64CFB8622D88</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -430,7 +664,7 @@
 						<key>OutputName</key>
 						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>C6A51C65-9582-4CEE-B8C7-1EB94AD317BA</string>
+						<string>D4C0FA06-E8F8-4F95-825E-FC3F9F2D9033</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -442,12 +676,266 @@
 					<key>isSelf</key>
 					<false/>
 					<key>workflowIdentifier</key>
-					<string>99E70724-F203-4F4F-B95C-4B516591C83D</string>
+					<string>5758546B-C9BA-4BF9-96EF-34C84894007A</string>
 					<key>workflowName</key>
-					<string>Schedule My Compounders - Kernel</string>
+					<string>Choose Calendar Event Time</string>
 				</dict>
 				<key>WFWorkflowName</key>
-				<string>Schedule My Compounders - Kernel</string>
+				<string>Choose Calendar Event Time</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.addnewevent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>C43B255D-713C-4006-B721-15EDA4D616E9</string>
+				<key>WFCalendarDescriptor</key>
+				<dict>
+					<key>Identifier</key>
+					<string>33CB0FD6-78E7-4047-9BA7-F2FE2BD0BF3C</string>
+					<key>IsAllCalendar</key>
+					<false/>
+					<key>RGBAValue</key>
+					<integer>4291559679</integer>
+					<key>Title</key>
+					<string>Hua-Ming's Training Calendar</string>
+				</dict>
+				<key>WFCalendarItemCalendar</key>
+				<string>Hua-Ming's Training Calendar</string>
+				<key>WFCalendarItemEndDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFDictionaryContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>DictionaryKey</key>
+										<string>endTime</string>
+										<key>Type</key>
+										<string>WFDictionaryValueVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>HH:mm</string>
+								<key>OutputUUID</key>
+								<string>0A36231F-D240-458A-9A06-64CFB8622D88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFCalendarItemNotes</key>
+				<string></string>
+				<key>WFCalendarItemStartDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFDictionaryContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>DictionaryKey</key>
+										<string>startTime</string>
+										<key>Type</key>
+										<string>WFDictionaryValueVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>HH:mm</string>
+								<key>OutputUUID</key>
+								<string>0A36231F-D240-458A-9A06-64CFB8622D88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFCalendarItemTitle</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Selected Item</string>
+								<key>OutputUUID</key>
+								<string>01CA155F-F051-4C0C-8145-A73ADC4235E8</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>F543D479-C3EF-4261-B0F9-0C389B82F2D7</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Selected Item</string>
+						<key>OutputUUID</key>
+						<string>D483947B-D65A-4180-8700-952879E6A25B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>A4D0829E-EC6C-4E7E-8088-6EBD82EA8061</string>
+					<key>workflowName</key>
+					<string>Build Run Shortcut URL</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Build Run Shortcut URL</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setters.calendarevents</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Mode</key>
+				<string>Set</string>
+				<key>UUID</key>
+				<string>A1CC550F-CC09-4837-882B-DE64F330D112</string>
+				<key>WFCalendarEventContentItemURL</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Shortcut Result</string>
+								<key>OutputUUID</key>
+								<string>F543D479-C3EF-4261-B0F9-0C389B82F2D7</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFContentItemPropertyName</key>
+				<string>URL</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>New Event</string>
+						<key>OutputUUID</key>
+						<string>C43B255D-713C-4006-B721-15EDA4D616E9</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>2186348D-33CE-4686-9297-B32A7B3E4F62</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFDictionaryContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+							<dict>
+								<key>DictionaryKey</key>
+								<string>startTime</string>
+								<key>Type</key>
+								<string>WFDictionaryValueVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>HH:mm</string>
+						<key>OutputUUID</key>
+						<string>0A36231F-D240-458A-9A06-64CFB8622D88</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>1E2755DC-5836-4B9E-964E-D0065687339F</string>
+					<key>workflowName</key>
+					<string>Open Apple Calendar on Specific Date</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Open Apple Calendar on Specific Date</string>
 			</dict>
 		</dict>
 		<dict>
@@ -496,6 +984,8 @@
 	<key>WFWorkflowOutputContentItemClasses</key>
 	<array/>
 	<key>WFWorkflowTypes</key>
-	<array/>
+	<array>
+		<string>Watch</string>
+	</array>
 </dict>
 </plist>

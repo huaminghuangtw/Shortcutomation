@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1106",
-    "WFWorkflowMinimumClientVersion": 1106,
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -222,7 +222,10 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": false
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -476,7 +479,10 @@
                             {
                                 "Operator": 5,
                                 "Values": {
-                                    "Unit": 4,
+                                    "Unit": {
+                                        "Value": 4,
+                                        "WFSerializationType": "WFCalendarUnitSubstitutableState"
+                                    },
                                     "String": "README"
                                 },
                                 "Removable": true,
@@ -641,7 +647,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "---\ntitle: Week ￼, ￼\nissue: ￼\nyear: ￼\nweekNumber: ￼\nprev: \"[[￼]]\"\nnext: \"[[￼]]\"\n---\n\n￼",
+                        "string": "---\ntitle: Week ￼, ￼\nissue: ￼\nyear: ￼\nweekNumber: ￼\nprev: \"[[￼]]\"\nnext: \"[[￼]]\"\ncreated: ￼\n---\n\n￼",
                         "attachmentsByRange": {
                             "{19, 1}": {
                                 "OutputUUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
@@ -658,25 +664,36 @@
                                 "Type": "ActionOutput",
                                 "OutputName": "Next"
                             },
+                            "{96, 1}": {
+                                "OutputUUID": "BCA02CF5-17AD-4DE8-9015-D605096DF560",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
                             "{61, 1}": {
                                 "OutputUUID": "FE6530DB-8043-4003-951F-5CF0323350BA",
                                 "Type": "ActionOutput",
                                 "OutputName": "Previous"
+                            },
+                            "{50, 1}": {
+                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
+                                "Type": "ActionOutput",
+                                "OutputName": "WeekNumber1"
                             },
                             "{16, 1}": {
                                 "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
                                 "Type": "ActionOutput",
                                 "OutputName": "WeekNumber1"
                             },
-                            "{85, 1}": {
-                                "OutputUUID": "BCA02CF5-17AD-4DE8-9015-D605096DF560",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            },
-                            "{50, 1}": {
-                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
-                                "Type": "ActionOutput",
-                                "OutputName": "WeekNumber1"
+                            "{89, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "yyyy-MM-dd'T'HH:mm:ss",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
                             },
                             "{28, 1}": {
                                 "OutputUUID": "C8FF3661-2B21-4369-83DB-B29AA5A423D7",
@@ -769,88 +786,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "A5E1FCD0-CEDE-496F-B50D-6CA2BA414DC7",
-                                "Type": "ActionOutput",
-                                "OutputName": "filepath"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFReplaceTextFind": "Weekly-Mindware-Update",
-                "UUID": "8FB16879-07A4-45BF-BF10-E7DD5C23680D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "# Weekly Mindware Update\n\n[![Read Latest WMU](https://img.shields.io/badge/📖%20Read%20Latest%20WMU-3AA99F?style=for-the-badge&color=3AA99F)](￼)\n\n## About\n\nI came across throughout the web or conversation\n\ngenuine intellectual curiosity\n\n### Wisdom I Pondered This Week\n\nnuggets of wisdom\nfood for thought\n\n### Things I Learned This Week\n\n## All Issues\n\n<!-- INDEX-START -->\n<!-- INDEX-END -->\n",
-                        "attachmentsByRange": {
-                            "{142, 1}": {
-                                "OutputUUID": "8FB16879-07A4-45BF-BF10-E7DD5C23680D",
-                                "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "22FE658A-6EFE-4FF9-848E-633940729E33"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
-            "WFWorkflowActionParameters": {
-                "WFName": "README.md",
-                "WFDontIncludeFileExtension": true,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "22FE658A-6EFE-4FF9-848E-633940729E33",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "7F95E1A1-3680-4DD7-89C7-E29328EDE189"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
-            "WFWorkflowActionParameters": {
-                "WFFolder": {
-                    "fileLocation": {
-                        "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Weekly-Mindware-Update",
-                        "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/3438C552-7900-4D1C-BDC5-E1CF43886E3B/29d958dbcf2f63cc9e41b5db4fd1bc1dde45d4ec"
-                    },
-                    "filename": "Weekly-Mindware-Update",
-                    "displayName": "Weekly-Mindware-Update"
-                },
-                "WFAskWhereToSave": false,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "7F95E1A1-3680-4DD7-89C7-E29328EDE189",
-                        "Type": "ActionOutput",
-                        "OutputName": "Renamed Item"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "5DC8375C-7349-413F-AC05-8E5E1EEF948C",
-                "WFSaveFileOverwrite": true
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -904,7 +839,10 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": false
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
