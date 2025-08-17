@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1113",
-    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -10,11 +10,30 @@
         "WFStringContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
-    "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorShowError",
-        "Parameters": {}
-    },
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "8808B2AD-03C6-446F-B9A3-07F2972DB52E",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "@params:\n──────────────\n• Required parameters:\n    • listName (Text)\n• Optional parameters:\n    • numberOfListItems (Number)\n    • setAsCompleted (Boolean)"
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
             "WFWorkflowActionParameters": {
@@ -28,9 +47,66 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFCommentActionText": "@params:\n──────────────\n• Required parameters:\n    • listName (Text)\n• Optional parameters:\n    • numberOfListItems (Number)\n    • setAsCompleted (Boolean)"
+                "GroupingIdentifier": "8808B2AD-03C6-446F-B9A3-07F2972DB52E",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetReminderListsIntent",
+            "WFWorkflowActionParameters": {
+                "getType": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A6A2746F-FCD0-4ECD-88D3-76D8192B451F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A6A2746F-FCD0-4ECD-88D3-76D8192B451F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminder Lists"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFChooseFromListActionPrompt": "🤖 Which reminder list?",
+                "CustomOutputName": "Reminder List",
+                "UUID": "56675517-BAA3-4F10-81A4-19A498AFAA78"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFDictionaryValue": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "56675517-BAA3-4F10-81A4-19A498AFAA78",
+                                "Type": "ActionOutput",
+                                "OutputName": "Reminder List"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDictionaryKey": "listName",
+                "UUID": "EEA7A729-BE58-47D1-99ED-B116FF53874A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "8808B2AD-03C6-446F-B9A3-07F2972DB52E",
+                "UUID": "5CDD98EB-0998-4BB9-A459-E6A53C824783"
             }
         },
         {
@@ -48,8 +124,8 @@
                                         "Value": {
                                             "Value": {
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Dictionary",
-                                                "OutputUUID": "E79242FE-6643-4AB5-8EAF-B6F9ED3A8186",
+                                                "OutputName": "inputDict",
+                                                "OutputUUID": "5CDD98EB-0998-4BB9-A459-E6A53C824783",
                                                 "Aggrandizements": [
                                                     {
                                                         "Type": "WFDictionaryValueVariableAggrandizement",
@@ -68,7 +144,10 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": false
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -81,21 +160,31 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5CDD98EB-0998-4BB9-A459-E6A53C824783",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "numberOfListItems",
+                "UUID": "58048011-D197-49E7-8058-A308CE1EDEAB",
+                "WFDictionaryKey": "numberOfListItems"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "58048011-D197-49E7-8058-A308CE1EDEAB",
                             "Type": "ActionOutput",
-                            "OutputName": "Dictionary",
-                            "OutputUUID": "E79242FE-6643-4AB5-8EAF-B6F9ED3A8186",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFDictionaryValueVariableAggrandizement",
-                                    "DictionaryKey": "numberOfListItems"
-                                }
-                            ]
+                            "OutputName": "numberOfListItems"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -124,15 +213,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
+                        "OutputUUID": "58048011-D197-49E7-8058-A308CE1EDEAB",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary",
-                        "OutputUUID": "E79242FE-6643-4AB5-8EAF-B6F9ED3A8186",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "numberOfListItems"
-                            }
-                        ]
+                        "OutputName": "numberOfListItems"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -180,15 +263,9 @@
                 "WFItemSpecifier": "Items in Range",
                 "WFItemRangeEnd": {
                     "Value": {
+                        "OutputUUID": "58048011-D197-49E7-8058-A308CE1EDEAB",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary",
-                        "OutputUUID": "E79242FE-6643-4AB5-8EAF-B6F9ED3A8186",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "numberOfListItems"
-                            }
-                        ]
+                        "OutputName": "numberOfListItems"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -611,9 +688,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "E79242FE-6643-4AB5-8EAF-B6F9ED3A8186",
+                        "OutputUUID": "5CDD98EB-0998-4BB9-A459-E6A53C824783",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "inputDict"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -715,7 +792,7 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

@@ -1,0 +1,535 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "143C7662-9352-4DD5-99F1-F297D5AB4676",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "18147F90-431D-4A64-AB66-918A88186549",
+                    "workflowName": "_Get Daily Flow & Word Counts",
+                    "isSelf": false
+                },
+                "UUID": "EE82802C-C260-4248-94B9-8C07BBA9057E",
+                "WFWorkflowName": "_Get Daily Flow & Word Counts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "EE82802C-C260-4248-94B9-8C07BBA9057E",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "numberOfFlows"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C7860B85-04D2-411F-9281-1B1C02E46266"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "CCA1EA5B-F4FA-46CC-9D0F-2B9EF429BFAC",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C7860B85-04D2-411F-9281-1B1C02E46266",
+                            "Type": "ActionOutput",
+                            "OutputName": "Numbers"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "6",
+                "WFCondition": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "E1DC6F98-7FDE-4A07-8111-651BB12CF457",
+                    "workflowName": "Boot Up Sequence",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Boot Up Sequence",
+                "UUID": "AF899B2C-8DB0-4920-85BE-5A074DA7044F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "CCA1EA5B-F4FA-46CC-9D0F-2B9EF429BFAC",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+            "WFWorkflowActionParameters": {
+                "UUID": "12619184-4171-47C5-8627-58CA1E679955"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "12619184-4171-47C5-8627-58CA1E679955",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current IP Address"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "D87BAD83-CE41-48A5-B096-DCFCB02BF7C6",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
+            "WFWorkflowActionParameters": {
+                "key": {
+                    "subtitle": {
+                        "key": "My Life On This Day"
+                    },
+                    "title": {
+                        "key": "My Life On This Day"
+                    },
+                    "value": "My Life On This Day"
+                },
+                "UUID": "9E61788C-F447-4E2D-A008-8B9F36F9E44D",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableGetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "9E61788C-F447-4E2D-A008-8B9F36F9E44D",
+                            "Type": "ActionOutput",
+                            "OutputName": "Global Variable — Text"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "CE896F20-9AB8-471B-890D-E93D8E0C0ED5",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "CE4A5903-06F6-4122-B7E8-DCFFE192ED68",
+                    "workflowName": "⚛️ Deep Work Session",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "⚛️ Deep Work Session",
+                "UUID": "0203A429-EC0F-4C18-9963-03ECCF0942CB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "CE896F20-9AB8-471B-890D-E93D8E0C0ED5",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "2CDC52C2-F71E-4122-8C5B-65B49C7E8744"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🤖 回顧歷史上的今天？\n￼\n🗓️ ￼\n￼",
+                        "attachmentsByRange": {
+                            "{13, 1}": {
+                                "OutputUUID": "2CDC52C2-F71E-4122-8C5B-65B49C7E8744",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{19, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "M 月 d 日",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            },
+                            "{21, 1}": {
+                                "OutputUUID": "2CDC52C2-F71E-4122-8C5B-65B49C7E8744",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AB20CBDE-FC60-4479-8BBC-E7A565DEFE5C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "AB20CBDE-FC60-4479-8BBC-E7A565DEFE5C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "B6A6CB25-0240-4A86-BAC6-81610B7C2F34"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "B6A6CB25-0240-4A86-BAC6-81610B7C2F34",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "D3053823-44AB-445A-921D-6BCFBCE4C616",
+                    "workflowName": "🌻 My Life On This Day",
+                    "isSelf": false
+                },
+                "UUID": "468FDFC4-5E49-44C6-8C7D-7DEE7B264B74",
+                "WFWorkflowName": "🌻 My Life On This Day"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "579D4E36-702C-4A41-A31A-3A26E8C5CADE",
+                    "workflowName": "Deep Work Session - Post",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Deep Work Session - Post",
+                "UUID": "F17AA693-D7EB-42F3-9BA0-F2FBC2E91A3C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "B6A6CB25-0240-4A86-BAC6-81610B7C2F34",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "803751D8-C68C-48E9-9C61-12B3609161FD",
+                    "workflowName": "Deep Work Session - Pre",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Deep Work Session - Pre",
+                "UUID": "2A3E8674-2A62-44D3-9BDA-0029E358258D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "D1023609-72F8-4CBE-96AB-03DE67FF2538",
+                    "workflowName": "Deep Work Session - Mid",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Deep Work Session - Mid",
+                "UUID": "C7DDC719-EF28-46F0-8BA1-FAA9E014E40C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "579D4E36-702C-4A41-A31A-3A26E8C5CADE",
+                    "workflowName": "Deep Work Session - Post",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Deep Work Session - Post",
+                "UUID": "9C070897-34EB-4FC1-A937-20DBE1858287"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B6A6CB25-0240-4A86-BAC6-81610B7C2F34",
+                "UUID": "379B1AE2-2055-4969-8417-AD407BA28F54"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "CE896F20-9AB8-471B-890D-E93D8E0C0ED5",
+                "UUID": "5B6C7A04-FF98-4401-B93F-56463D6C122F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D87BAD83-CE41-48A5-B096-DCFCB02BF7C6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflowName": "⚛️ Deep Work Session",
+                "WFWorkflow": {
+                    "workflowIdentifier": "CE4A5903-06F6-4122-B7E8-DCFFE192ED68",
+                    "workflowName": "⚛️ Deep Work Session",
+                    "isSelf": false
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D87BAD83-CE41-48A5-B096-DCFCB02BF7C6",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "C8E5F7A4-9BFE-4F91-A0C6-03815E4C42DD",
+                    "workflowName": "關大燈",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "關大燈",
+                "UUID": "CA4B8350-FDAA-4AB1-98E5-43C88D8BD6B5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "143C7662-9352-4DD5-99F1-F297D5AB4676",
+                "UUID": "C6D81821-FB0D-4B4D-A239-5C390396B881"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B1FC59C1-8C6D-4874-AE5A-F2603EA4D8E2",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+            "WFWorkflowActionParameters": {
+                "UUID": "2EBE1278-9ED1-42C2-B042-ABDBED08FECA",
+                "Folder": {
+                    "Identifier": "780AE386-192A-44D5-ABAB-5D4FCEA7FB5D",
+                    "DisplayString": "Deep Work Mode"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "My Shortcuts",
+                        "OutputUUID": "2EBE1278-9ED1-42C2-B042-ABDBED08FECA",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "WFItemName",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8392323C-ED31-4562-812A-4D10731ABFF0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8392323C-ED31-4562-812A-4D10731ABFF0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "Value": {
+                        "OutputUUID": "8392323C-ED31-4562-812A-4D10731ABFF0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "31863640-C896-46C7-BE6D-DFD02287ED6F",
+                "WFWorkflowName": {
+                    "Value": {
+                        "OutputUUID": "8392323C-ED31-4562-812A-4D10731ABFF0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Chosen Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B1FC59C1-8C6D-4874-AE5A-F2603EA4D8E2",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

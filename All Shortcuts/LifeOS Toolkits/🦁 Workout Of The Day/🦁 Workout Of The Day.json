@@ -425,50 +425,65 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFTextCustomSeparator": "darebee.com",
-                "UUID": "89512BBA-CD15-44B2-9CE8-D3A04995EDC3",
-                "WFTextSeparator": "Custom",
+                "WFMatchTextCaseSensitive": false,
+                "WFMatchTextPattern": "EQUINOX",
+                "UUID": "05CC9A01-F642-4EFB-90A5-22DA20B03677",
                 "text": {
                     "Value": {
-                        "OutputUUID": "86DE4FD0-6E13-4167-BC1A-7815B7140BE5",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text from Image"
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "86DE4FD0-6E13-4167-BC1A-7815B7140BE5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text from Image"
+                            }
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFTextTokenString"
                 }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
-                    "Value": {
-                        "OutputUUID": "89512BBA-CD15-44B2-9CE8-D3A04995EDC3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Split Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Matches",
+                            "OutputUUID": "05CC9A01-F642-4EFB-90A5-22DA20B03677",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "text"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
                 },
-                "WFItemSpecifier": "Last Item",
-                "UUID": "E755C951-A4E0-4D9C-9052-2D456641D0B5"
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F3ED5794-50CC-451B-8413-BBBDEA094A50",
+                "WFCondition": 101
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextCaseSensitive": true,
-                "WFMatchTextPattern": "(?m)^\\d+.*|.*\\b(?:max|one|stretch)\\b.*",
+                "WFMatchTextPattern": "(?m)^\\d+.*|.*\\b(?:max|stretch)\\b.*",
                 "UUID": "6278E32F-78EF-43A4-BCE0-92E64953F992",
                 "text": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "E755C951-A4E0-4D9C-9052-2D456641D0B5",
+                                "OutputUUID": "86DE4FD0-6E13-4167-BC1A-7815B7140BE5",
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List"
+                                "OutputName": "Text from Image"
                             }
                         }
                     },
@@ -549,7 +564,7 @@
                 "WFReplaceTextRegularExpression": true,
                 "WFReplaceTextCaseSensitive": false,
                 "UUID": "77C9F982-6CC3-40EE-BADA-4641F9A5AE81",
-                "WFReplaceTextFind": "^[\\W\\dU]+|[.:\\W]+$|#\\d+|\\+"
+                "WFReplaceTextFind": "^[\\W\\d]+|[.:\\W]+$|#\\d+|\\+"
             }
         },
         {
@@ -678,6 +693,13 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "7377C521-D513-40B1-AF8B-858E54B940DC",
                 "UUID": "E4BE8BE9-1006-49DF-BC4B-AA2B9F6D0165"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F3ED5794-50CC-451B-8413-BBBDEA094A50",
+                "WFControlFlowMode": 2
             }
         },
         {

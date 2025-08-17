@@ -11,8 +11,10 @@
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorShowError",
-        "Parameters": {}
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
     },
     "WFWorkflowActions": [
         {
@@ -45,7 +47,10 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": false
+                                    "Bool": {
+                                        "Value": false,
+                                        "WFSerializationType": "WFBooleanSubstitutableState"
+                                    }
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -57,7 +62,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.reminders",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
@@ -67,30 +72,8 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "GroupingIdentifier": "E5647127-9A01-4127-A3F0-69681ECDE832",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.reminders",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFContentItemPropertyName": "Subtasks",
                 "UUID": "2F3BE4EB-CA3F-4904-B34B-706FF33FE702"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E5647127-9A01-4127-A3F0-69681ECDE832",
-                "UUID": "5DC7667F-1324-4367-9BAC-7DDC74B0EB91"
             }
         },
         {
@@ -104,42 +87,19 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "5DC7667F-1324-4367-9BAC-7DDC74B0EB91",
+                        "OutputUUID": "2F3BE4EB-CA3F-4904-B34B-706FF33FE702",
                         "Type": "ActionOutput",
-                        "OutputName": "Repeat Results"
+                        "OutputName": "Subtasks"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "68A63D4D-7450-49C4-962F-B7F608B749A8",
-                    "workflowName": "Get Random Index From List",
+                    "workflowIdentifier": "E625C6C1-A183-473F-82BB-06827A38FB78",
+                    "workflowName": "_Get Random Item From List",
                     "isSelf": false
                 },
                 "UUID": "9FB9C44A-B3AD-4C17-AA09-864BF0CCA195",
-                "WFWorkflowName": "Get Random Index From List"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "5DC7667F-1324-4367-9BAC-7DDC74B0EB91",
-                        "Type": "ActionOutput",
-                        "OutputName": "Repeat Results"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFItemIndex": {
-                    "Value": {
-                        "OutputUUID": "9FB9C44A-B3AD-4C17-AA09-864BF0CCA195",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "35E79EE1-0BAC-4D8C-ACA0-D46F8B90FFE8",
-                "WFItemSpecifier": "Item At Index"
+                "WFWorkflowName": "_Get Random Item From List"
             }
         },
         {
@@ -175,9 +135,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "35E79EE1-0BAC-4D8C-ACA0-D46F8B90FFE8",
+                        "OutputUUID": "9FB9C44A-B3AD-4C17-AA09-864BF0CCA195",
                         "Type": "ActionOutput",
-                        "OutputName": "Item from List"
+                        "OutputName": "Shortcut Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -306,9 +266,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "35E79EE1-0BAC-4D8C-ACA0-D46F8B90FFE8",
+                                "OutputUUID": "9FB9C44A-B3AD-4C17-AA09-864BF0CCA195",
                                 "Type": "ActionOutput",
-                                "OutputName": "Item from List"
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },

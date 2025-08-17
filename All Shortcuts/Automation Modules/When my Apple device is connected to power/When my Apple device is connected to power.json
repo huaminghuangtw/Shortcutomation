@@ -10,6 +10,12 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
+            "WFWorkflowActionParameters": {
+                "WFPlayPauseBehavior": "Pause"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
             "WFWorkflowActionParameters": {}
         },
@@ -21,23 +27,11 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
-                    "workflowIdentifier": "38076F1B-7774-4E0D-A6E3-7B8DB026DE6C",
-                    "workflowName": "Pause Audio",
+                    "workflowIdentifier": "5C5B16EE-7532-486D-BF9B-13C4EA20361E",
+                    "workflowName": "Set Zero Brightness",
                     "isSelf": false
                 },
-                "WFWorkflowName": "Pause Audio",
-                "UUID": "AC85E4BC-91B1-448D-83C6-A1F543A6101F"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "C9E98328-F7E4-4625-A9B7-C5678F274FAC",
-                    "workflowName": "Dim Screen",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Dim Screen",
+                "WFWorkflowName": "Set Zero Brightness",
                 "UUID": "C1BCA40E-012F-4AD2-B336-07C21C7F01CB"
             }
         },
@@ -107,10 +101,48 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Apple Shortcuts.shortcutLastRunTime.End the Day Right",
-                "UUID": "5C15ED8A-1B58-43B5-8380-0FFAB5FBDE56"
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Journal Metadata.history.￼",
+                        "attachmentsByRange": {
+                            "{25, 1}": {
+                                "Type": "CurrentDate",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "yyyy.MM.dd",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "keyPath",
+                "UUID": "689642D7-12F5-48B7-A25B-649ACA0594CF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.endTheDayAt",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "689642D7-12F5-48B7-A25B-649ACA0594CF",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "49C42F58-723E-421F-BCF3-79E474404CD4"
             }
         },
         {
@@ -122,12 +154,12 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Value",
-                            "OutputUUID": "5C15ED8A-1B58-43B5-8380-0FFAB5FBDE56",
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "49C42F58-723E-421F-BCF3-79E474404CD4",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFDateContentItem"
+                                    "CoercionItemClass": "WFBooleanContentItem"
                                 }
                             ]
                         },
@@ -136,7 +168,54 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFNumberValue": "0",
-                "WFCondition": 1002
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.lastPlugPhoneAt",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "689642D7-12F5-48B7-A25B-649ACA0594CF",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C54A75AB-CE05-4AED-8C01-D70FC92E65EC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F181F2C5-0C53-44DF-89DC-145E1B3E88DC",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "C54A75AB-CE05-4AED-8C01-D70FC92E65EC",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "No",
+                "WFNumberValue": "0",
+                "WFCondition": 4
             }
         },
         {
@@ -155,7 +234,12 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "Today"
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "Type": "CurrentDate"
+                                            }
+                                        }
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
@@ -233,6 +317,14 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "F181F2C5-0C53-44DF-89DC-145E1B3E88DC",
+                "UUID": "98FE294D-69D8-401F-9BE0-F005235BCD20"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "B42F705E-7287-4E50-9659-F08102F9DF63",
                 "WFControlFlowMode": 2
             }
@@ -243,6 +335,10 @@
                 "GroupingIdentifier": "E95DCC9E-2B73-444E-8E3C-37C7A35E27A3",
                 "WFControlFlowMode": 2
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
