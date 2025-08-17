@@ -1,0 +1,426 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.HomeIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "CDCFEE0C-D442-419D-93EF-999195BB177B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "design.yugen.Caffeinated.ActivateCaffeinatedIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "2B236D03-0101-411B-B9CB-EC3439B3B4A1",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "4WQK6AKPMW",
+                    "BundleIdentifier": "design.yugen.Caffeinated",
+                    "Name": "Caffeinated",
+                    "AppIntentIdentifier": "ActivateCaffeinatedIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+            "WFWorkflowActionParameters": {
+                "UUID": "9D1963A3-DB08-416B-9E7A-C70EEEBA52A5",
+                "Folder": {
+                    "Identifier": "820028C8-83FC-4D07-B81D-070658EE28E5",
+                    "DisplayString": "Shortcutomation"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "9D1963A3-DB08-416B-9E7A-C70EEEBA52A5",
+                        "Type": "ActionOutput",
+                        "OutputName": "My Shortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "#TotalShortcuts",
+                "UUID": "B4C64513-FB39-4D03-A13F-5DD465616596"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9D1963A3-DB08-416B-9E7A-C70EEEBA52A5",
+                        "Type": "ActionOutput",
+                        "OutputName": "My Shortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "30F9CEA3-88E2-4F2E-B660-85817FFC6CC0",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "My Apple Shortcuts.backup.status",
+                "CustomOutputName": "My Apple Shortcuts.backup.status",
+                "UUID": "AAEC5647-6974-44F1-B6C9-83844D0C49D4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "AAEC5647-6974-44F1-B6C9-83844D0C49D4",
+                                "Type": "ActionOutput",
+                                "OutputName": "My Apple Shortcuts.backup.status"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B92EE344-8B44-4C38-84C6-5C1D261F4FF2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Value",
+                            "OutputUUID": "B92EE344-8B44-4C38-84C6-5C1D261F4FF2",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "DB6B209D-5A88-4CFF-A238-449B596BDF68",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflowName": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "6521C0FA-AD9D-4A57-BAD7-1874150E0252"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AFF33C68-A5E6-4B68-9414-3241EC2EC620",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "Repeat Index",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": {
+                    "Value": {
+                        "OutputUUID": "B4C64513-FB39-4D03-A13F-5DD465616596",
+                        "Type": "ActionOutput",
+                        "OutputName": "#TotalShortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCondition": 5
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "current"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "VariableName": "Repeat Index",
+                                                "Type": "Variable"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "total"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "B4C64513-FB39-4D03-A13F-5DD465616596",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "#TotalShortcuts"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "F9FF1B52-DDE5-4532-B043-E3A88306482B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F9FF1B52-DDE5-4532-B043-E3A88306482B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "progressBar",
+                "UUID": "A837FF9E-4D84-4E67-A6A6-F4AC87F9F9E8",
+                "WFWorkflow": {
+                    "workflowIdentifier": "6168F0E9-9EDA-4F74-9B2F-74E63D3E4F2A",
+                    "workflowName": "Progress Bar Maker (without Text)",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Progress Bar Maker (without Text)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "CustomOutputName": "Text Divider",
+                "UUID": "3A4BB332-D554-41A1-A19C-101490705177"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n✅ ￼\n[ ￼ / ￼ ]\n￼",
+                        "attachmentsByRange": {
+                            "{12, 1}": {
+                                "OutputUUID": "B4C64513-FB39-4D03-A13F-5DD465616596",
+                                "Type": "ActionOutput",
+                                "OutputName": "#TotalShortcuts"
+                            },
+                            "{4, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            },
+                            "{8, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{16, 1}": {
+                                "OutputUUID": "A837FF9E-4D84-4E67-A6A6-F4AC87F9F9E8",
+                                "Type": "ActionOutput",
+                                "OutputName": "progressBar"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "3A4BB332-D554-41A1-A19C-101490705177",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text Divider"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "40E79383-5DFF-4C39-B4F8-0B7755F780A2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+            "WFWorkflowActionParameters": {
+                "WFNotificationActionBody": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "40E79383-5DFF-4C39-B4F8-0B7755F780A2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0A91287F-BDAB-47D0-BDE0-93E994775935",
+                "WFNotificationActionSound": true,
+                "WFNotificationActionTitle": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+            "WFWorkflowActionParameters": {
+                "values": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "WFItemName",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "valueConversionMode": "text",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "AAEC5647-6974-44F1-B6C9-83844D0C49D4",
+                                "Type": "ActionOutput",
+                                "OutputName": "My Apple Shortcuts.backup.status"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8458DB12-8B3A-4F91-B01D-BB18033D2A4D",
+                "insertionPoint": "end"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AFF33C68-A5E6-4B68-9414-3241EC2EC620",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DB6B209D-5A88-4CFF-A238-449B596BDF68",
+                "UUID": "E86EF5E0-655A-4438-8FE8-8A961D4D5EB1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "30F9CEA3-88E2-4F2E-B660-85817FFC6CC0",
+                "UUID": "2432474B-9FDE-45B4-BA76-2CD9797D323B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "design.yugen.Caffeinated.DeactivateCaffeinatedIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "B8683CE4-4306-415C-808F-59FF47283F7F",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "4WQK6AKPMW",
+                    "BundleIdentifier": "design.yugen.Caffeinated",
+                    "Name": "Caffeinated",
+                    "AppIntentIdentifier": "DeactivateCaffeinatedIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFImageContentItem",
+        "WFAVAssetContentItem",
+        "WFGenericFileContentItem",
+        "WFFolderContentItem",
+        "WFPDFContentItem",
+        "WFStringContentItem",
+        "WFRichTextContentItem",
+        "WFSafariWebPageContentItem",
+        "WFURLContentItem",
+        "WFArticleContentItem",
+        "WFDCMapsLinkContentItem",
+        "WFLocationContentItem",
+        "WFContactContentItem",
+        "WFEmailAddressContentItem",
+        "WFPhoneNumberContentItem",
+        "WFDateContentItem",
+        "WFAppStoreAppContentItem",
+        "WFiTunesProductContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

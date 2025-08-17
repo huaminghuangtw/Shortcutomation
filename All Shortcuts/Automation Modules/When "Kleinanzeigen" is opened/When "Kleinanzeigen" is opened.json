@@ -10,46 +10,78 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFItems": {
+                "keyPath": "Kleinanzeigen",
+                "UUID": "A3060A5F-4614-4947-AC7A-8F88291E681E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "WFInput": {
                     "Value": {
-                        "WFDictionaryFieldValueItems": [
+                        "Type": "ActionOutput",
+                        "OutputName": "Value",
+                        "OutputUUID": "A3060A5F-4614-4947-AC7A-8F88291E681E",
+                        "Aggrandizements": [
                             {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "shortcutName"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "When \"Kleinanzeigen\" is opened"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
                             },
                             {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "checkInterval"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "1 minute"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
                             }
                         ]
                     },
-                    "WFSerializationType": "WFDictionaryFieldValue"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "04145497-51F3-4982-A004-EC9F9CDF341A"
+                "UUID": "51FE9A2F-718D-4BDD-ADD6-AD8B6C774771"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A3060A5F-4614-4947-AC7A-8F88291E681E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "51FE9A2F-718D-4BDD-ADD6-AD8B6C774771",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chosen Item"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "58903B53-D8D8-4B2B-93F9-B4E541B2103A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "58903B53-D8D8-4B2B-93F9-B4E541B2103A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "UUID": "3A16E1A6-4095-458E-A77A-5A05963F4C33",
+                "WFChooseFromListActionSelectMultiple": true
             }
         },
         {
@@ -57,19 +89,19 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "04145497-51F3-4982-A004-EC9F9CDF341A",
+                        "OutputUUID": "3A16E1A6-4095-458E-A77A-5A05963F4C33",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "Chosen Item"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "A86201D2-8F83-4F02-A0E5-AB49C788A218",
-                    "workflowName": "Check Last Run Time",
+                    "workflowIdentifier": "4F01DBEE-6F75-4D25-A918-41F41C3A2A72",
+                    "workflowName": "Notify \"Copied to Clipboard!\"",
                     "isSelf": false
                 },
                 "UUID": "104BD500-DA12-42BC-BB99-ED8A89E1E0AD",
-                "WFWorkflowName": "Check Last Run Time"
+                "WFWorkflowName": "Notify \"Copied to Clipboard!\""
             }
         }
     ],
