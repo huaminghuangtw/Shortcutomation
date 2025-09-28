@@ -5,10 +5,62 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "4EF80C0B-143A-4E61-93B9-7B0C41A8EFE2",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "89936254-0AAA-4853-A36A-8AC5683DD6C0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4EF80C0B-143A-4E61-93B9-7B0C41A8EFE2",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Today",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "701AE22B-E0FB-495F-A394-F555C3B37214"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4EF80C0B-143A-4E61-93B9-7B0C41A8EFE2",
+                "UUID": "562275ED-81EE-4A3E-9CD5-DE6927299217"
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
             "WFWorkflowActionParameters": {
@@ -22,7 +74,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "OutputUUID": "562275ED-81EE-4A3E-9CD5-DE6927299217",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
                             }
                         }
                     },
@@ -41,7 +95,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "OutputUUID": "562275ED-81EE-4A3E-9CD5-DE6927299217",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
                             }
                         }
                     },
@@ -2122,23 +2178,7 @@
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFAppStoreAppContentItem",
-        "WFArticleContentItem",
-        "WFContactContentItem",
-        "WFDateContentItem",
-        "WFEmailAddressContentItem",
-        "WFGenericFileContentItem",
-        "WFImageContentItem",
-        "WFiTunesProductContentItem",
-        "WFLocationContentItem",
-        "WFDCMapsLinkContentItem",
-        "WFAVAssetContentItem",
-        "WFPDFContentItem",
-        "WFPhoneNumberContentItem",
-        "WFRichTextContentItem",
-        "WFSafariWebPageContentItem",
-        "WFStringContentItem",
-        "WFURLContentItem"
+        "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
@@ -2146,5 +2186,5 @@
         "NCWidget"
     ],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowHasShortcutInputVariables": false
+    "WFWorkflowHasShortcutInputVariables": true
 }

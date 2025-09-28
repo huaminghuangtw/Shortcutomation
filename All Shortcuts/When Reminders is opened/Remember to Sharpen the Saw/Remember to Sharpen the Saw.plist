@@ -86,17 +86,124 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.date</string>
+			<string>is.workflow.actions.number</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>CustomOutputName</key>
-				<string>Yesterday</string>
 				<key>UUID</key>
-				<string>365AADFA-A370-496B-A83A-28FB6AB2E389</string>
-				<key>WFDateActionDate</key>
-				<string>Yesterday</string>
-				<key>WFDateActionMode</key>
-				<string>Specified Date</string>
+				<string>8CF5F9EB-075E-4869-AECE-9144CCB9EB65</string>
+				<key>WFNumberActionNumber</key>
+				<string>30</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.count</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2FA6D8E9-A447-4544-ABC2-8FB725EB0EC5</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFRepeatCount</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Number</string>
+						<key>OutputUUID</key>
+						<string>8CF5F9EB-075E-4869-AECE-9144CCB9EB65</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.calculateexpression</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Input</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Number</string>
+								<key>OutputUUID</key>
+								<string>8CF5F9EB-075E-4869-AECE-9144CCB9EB65</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{4, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Index</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼ - ￼ + 1</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>UUID</key>
+				<string>21E30D96-C327-4217-A3CE-F7F333CA5440</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.adjustdate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2</string>
+				<key>WFAdjustOperation</key>
+				<string>Subtract</string>
+				<key>WFDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>CurrentDate</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFDuration</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Magnitude</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Calculation Result</string>
+							<key>OutputUUID</key>
+							<string>21E30D96-C327-4217-A3CE-F7F333CA5440</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>Unit</key>
+						<string>days</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFQuantityFieldValue</string>
+				</dict>
 			</dict>
 		</dict>
 		<dict>
@@ -163,9 +270,9 @@
 									</dict>
 								</array>
 								<key>OutputName</key>
-								<string>Yesterday</string>
+								<string>Adjusted Date</string>
 								<key>OutputUUID</key>
-								<string>365AADFA-A370-496B-A83A-28FB6AB2E389</string>
+								<string>B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -233,16 +340,18 @@
 									<dict>
 										<key>Type</key>
 										<string>WFDateFormatVariableAggrandizement</string>
+										<key>WFDateFormat</key>
+										<string>MMMM d</string>
 										<key>WFDateFormatStyle</key>
-										<string>ISO 8601</string>
+										<string>Custom</string>
 										<key>WFISO8601IncludeTime</key>
 										<false/>
 									</dict>
 								</array>
 								<key>OutputName</key>
-								<string>Yesterday</string>
+								<string>Adjusted Date</string>
 								<key>OutputUUID</key>
-								<string>365AADFA-A370-496B-A83A-28FB6AB2E389</string>
+								<string>B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -355,12 +464,7 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
+									<false/>
 									<key>String</key>
 									<dict>
 										<key>Value</key>
@@ -513,9 +617,9 @@
 											<key>{0, 1}</key>
 											<dict>
 												<key>OutputName</key>
-												<string>Yesterday</string>
+												<string>Adjusted Date</string>
 												<key>OutputUUID</key>
-												<string>365AADFA-A370-496B-A83A-28FB6AB2E389</string>
+												<string>B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2</string>
 												<key>Type</key>
 												<string>ActionOutput</string>
 											</dict>
@@ -661,6 +765,17 @@
 				<string>2F581FDC-DC6D-4D4E-BF24-D5FF7EAFE0F9</string>
 				<key>UUID</key>
 				<string>7DDE04D4-1CDB-4A16-85C6-DD700C49C866</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.count</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2FA6D8E9-A447-4544-ABC2-8FB725EB0EC5</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -870,12 +985,7 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
+									<false/>
 									<key>String</key>
 									<dict>
 										<key>Value</key>
@@ -1538,12 +1648,7 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
+									<false/>
 									<key>String</key>
 									<dict>
 										<key>Value</key>
@@ -1701,8 +1806,8 @@
 				<string>44CD3F75-E648-4B0A-86A4-82E58BC7CC13</string>
 				<key>WFTextActionText</key>
 				<string>✔️ Review reminders
-✔️ Review journals
-✔️ Review dashboard</string>
+✔️ Review dashboard
+✔️ Review journals</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1816,11 +1921,11 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>GroupingIdentifier</key>
-				<string>BA9DF324-D5C7-4462-8718-79B4DDFA5FA4</string>
+				<string>501A5F33-3E04-4ABD-98D7-424EFB1AF33A</string>
 				<key>WFCondition</key>
 				<integer>4</integer>
 				<key>WFConditionalActionString</key>
-				<string>journals</string>
+				<string>dashboard</string>
 				<key>WFControlFlowMode</key>
 				<integer>0</integer>
 				<key>WFInput</key>
@@ -1846,11 +1951,70 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
+			<string>is.workflow.actions.dictionary</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>WFTextActionText</key>
-				<string>📬 Open Inbox</string>
+				<key>UUID</key>
+				<string>D5C314C8-6720-4E18-9A9C-EFABA5C97446</string>
+				<key>WFItems</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutName</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Open App</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutInput</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Reminders</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
 			</dict>
 		</dict>
 		<dict>
@@ -1859,7 +2023,65 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>GroupingIdentifier</key>
-				<string>BA9DF324-D5C7-4462-8718-79B4DDFA5FA4</string>
+				<string>501A5F33-3E04-4ABD-98D7-424EFB1AF33A</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>dashboard</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>Repeat Index</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+				<key>WFNumberValue</key>
+				<string>2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>D03477DB-9C43-4F27-A3D2-18A65F345A90</string>
+				<key>WFTextActionText</key>
+				<string>🏡 Go to Homepage</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D</string>
+				<key>UUID</key>
+				<string>7D57A2CF-A011-423C-BE41-976F5DA7F986</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
 			</dict>
@@ -1895,7 +2117,7 @@
 					</dict>
 				</dict>
 				<key>WFNumberValue</key>
-				<string>2</string>
+				<string>3</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1993,64 +2215,6 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D</string>
-				<key>WFCondition</key>
-				<integer>4</integer>
-				<key>WFConditionalActionString</key>
-				<string>dashboard</string>
-				<key>WFControlFlowMode</key>
-				<integer>0</integer>
-				<key>WFInput</key>
-				<dict>
-					<key>Type</key>
-					<string>Variable</string>
-					<key>Variable</key>
-					<dict>
-						<key>Value</key>
-						<dict>
-							<key>Type</key>
-							<string>Variable</string>
-							<key>VariableName</key>
-							<string>Repeat Index</string>
-						</dict>
-						<key>WFSerializationType</key>
-						<string>WFTextTokenAttachment</string>
-					</dict>
-				</dict>
-				<key>WFNumberValue</key>
-				<string>3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>D03477DB-9C43-4F27-A3D2-18A65F345A90</string>
-				<key>WFTextActionText</key>
-				<string>🏡 Go to Homepage</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D</string>
-				<key>UUID</key>
-				<string>7D57A2CF-A011-423C-BE41-976F5DA7F986</string>
-				<key>WFControlFlowMode</key>
-				<integer>2</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -2063,7 +2227,7 @@
 						<key>OutputName</key>
 						<string>If Result</string>
 						<key>OutputUUID</key>
-						<string>7D57A2CF-A011-423C-BE41-976F5DA7F986</string>
+						<string>8A830C33-A8DF-47A7-9F41-00766F653C37</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2390,12 +2554,7 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
+									<false/>
 									<key>String</key>
 									<dict>
 										<key>Value</key>
@@ -2550,8 +2709,9 @@
 				<key>UUID</key>
 				<string>7F10C103-7FB7-4B8D-B94B-4361BCD4DC8B</string>
 				<key>WFTextActionText</key>
-				<string>✔️ Reread weekly review notes from the past 4 weeks.
-✔️ Reassess someday/maybe list.</string>
+				<string>✔️ Reread weekly review notes from the past 4 weeks
+✔️ Review LifeNotes
+✔️ Reassess someday/maybe list</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2904,12 +3064,7 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
+									<false/>
 									<key>String</key>
 									<dict>
 										<key>Value</key>
@@ -3526,12 +3681,7 @@
 								<key>Values</key>
 								<dict>
 									<key>Bool</key>
-									<dict>
-										<key>Value</key>
-										<false/>
-										<key>WFSerializationType</key>
-										<string>WFBooleanSubstitutableState</string>
-									</dict>
+									<false/>
 									<key>String</key>
 									<dict>
 										<key>Value</key>
@@ -3633,7 +3783,10 @@
 				<key>UUID</key>
 				<string>7961D3B7-9E08-4135-B40D-7C345A5B7DB2</string>
 				<key>WFTextActionText</key>
-				<string>• My "🧐 Past Year Review + 😉 Annual Planning" process naturally shifted from focusing on _what I wanted to accomplish_ to emphasizing _how I wanted to be_.</string>
+				<string>• At the end of every year, I like to do two things:
+    1. Conduct a reflection on the prior year.
+    2. Create a plan for the coming year.
+• My "🧐 Past Year Review + 😉 Annual Planning" process naturally shifted from focusing on _what I wanted to accomplish_ to emphasizing _how I wanted to be_.</string>
 			</dict>
 		</dict>
 		<dict>
@@ -3999,7 +4152,7 @@
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>3303.0.4</string>
+	<string>3612.0.2.1</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>

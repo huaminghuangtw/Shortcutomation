@@ -5,19 +5,33 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "WFAppIdentifier": "dk.simonbs.DataJar",
-                "WFSelectedApp": {
-                    "BundleIdentifier": "dk.simonbs.DataJar",
-                    "Name": "Data Jar",
-                    "TeamIdentifier": "8NQFWJHC63"
-                }
+                "UUID": "D1995A6E-8BF8-4E5A-BDA6-6C23DCC6A8F1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "D1995A6E-8BF8-4E5A-BDA6-6C23DCC6A8F1",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current IP Address"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "4AF1E1C8-E41C-4761-A1BA-C057CAC700BD",
+                "WFCondition": 100
             }
         },
         {
@@ -219,6 +233,17 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFAppIdentifier": "dk.simonbs.DataJar",
+                "WFSelectedApp": {
+                    "BundleIdentifier": "dk.simonbs.DataJar",
+                    "Name": "Data Jar",
+                    "TeamIdentifier": "8NQFWJHC63"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -244,6 +269,17 @@
                 "UUID": "C795AA93-122B-4B51-AC77-3562C6C7C6B1",
                 "WFWorkflowName": "Template - Complete!"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4AF1E1C8-E41C-4761-A1BA-C057CAC700BD",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

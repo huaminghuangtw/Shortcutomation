@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -65,9 +65,125 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "CustomOutputName": "parentReminderTitle",
+                "UUID": "6CC028ED-4CF9-41BA-8402-83F967C369A7",
+                "WFDictionaryKey": "parentReminderTitle"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CDDE6EA2-3BFD-4D8F-9A98-63C919967C7D",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "CustomOutputName": "reminderList",
                 "UUID": "F48D899E-F0FA-4B41-BF9C-04F7F68ABBB7",
                 "WFDictionaryKey": "reminderList"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "[￼](￼)",
+                        "attachmentsByRange": {
+                            "{1, 1}": {
+                                "OutputUUID": "AE82AC55-6002-4956-B0D6-8989D0232157",
+                                "Type": "ActionOutput",
+                                "OutputName": "brainFoodTitle"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "F7ABC1DF-F03D-4F44-A19A-2001363273B5",
+                                "Type": "ActionOutput",
+                                "OutputName": "brainFoodURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "219BFABF-ECB9-40CD-AFE3-21AA881833B2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "541D54D0-751D-4BE0-8120-C7C79F70C9AB",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "🗓️ Scheduled",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "219BFABF-ECB9-40CD-AFE3-21AA881833B2",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Text"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "541D54D0-751D-4BE0-8120-C7C79F70C9AB",
+                            "Type": "ActionOutput",
+                            "OutputName": "Reminders"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F2B01B04-CEBC-4AE3-8AD3-42641A40BF77",
+                "WFCondition": 101
             }
         },
         {
@@ -124,29 +240,14 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
             "WFWorkflowActionParameters": {
-                "WFCalendarItemNotes": "",
-                "UUID": "1B817EF3-CD2B-4EC0-BD5C-D3FE137C6DE4",
-                "WFImages": {
-                    "Value": {
-                        "OutputUUID": "FE27E4BA-4520-427A-B5A8-627273A13429",
-                        "Type": "ActionOutput",
-                        "OutputName": "Images"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFCalendarItemTitle": {
                     "Value": {
-                        "string": "[￼](￼)",
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{1, 1}": {
-                                "OutputUUID": "AE82AC55-6002-4956-B0D6-8989D0232157",
+                            "{0, 1}": {
+                                "OutputUUID": "219BFABF-ECB9-40CD-AFE3-21AA881833B2",
                                 "Type": "ActionOutput",
-                                "OutputName": "brainFoodTitle"
-                            },
-                            "{4, 1}": {
-                                "OutputUUID": "F7ABC1DF-F03D-4F44-A19A-2001363273B5",
-                                "Type": "ActionOutput",
-                                "OutputName": "brainFoodURL"
+                                "OutputName": "Text"
                             }
                         }
                     },
@@ -164,6 +265,24 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemNotes": "",
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
+                    "Title": "🗓️ Scheduled",
+                    "IsAllCalendar": false
+                },
+                "UUID": "1B817EF3-CD2B-4EC0-BD5C-D3FE137C6DE4",
+                "WFCalendarItemCalendar": "🗓️ Scheduled",
+                "WFAlertCustomTime": "Today",
+                "WFAlertEnabled": "Alert",
+                "WFImages": {
+                    "Value": {
+                        "OutputUUID": "FE27E4BA-4520-427A-B5A8-627273A13429",
+                        "Type": "ActionOutput",
+                        "OutputName": "Images"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 }
             }
         },
@@ -265,6 +384,13 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F2B01B04-CEBC-4AE3-8AD3-42641A40BF77",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "🏁 Mindware Upgrade",
@@ -357,6 +483,35 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "6CC028ED-4CF9-41BA-8402-83F967C369A7",
+                                "Type": "ActionOutput",
+                                "OutputName": "parentReminderTitle"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "6D2A992B-030B-4B2E-A45C-CBA8C8BAD42F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6D2A992B-030B-4B2E-A45C-CBA8C8BAD42F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E2192B5F-2CC2-498F-B46D-43E76B8ECC21"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -437,9 +592,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "6D2A992B-030B-4B2E-A45C-CBA8C8BAD42F",
+                                "OutputUUID": "E2192B5F-2CC2-498F-B46D-43E76B8ECC21",
                                 "Type": "ActionOutput",
-                                "OutputName": "Value"
+                                "OutputName": "Text"
                             }
                         }
                     },
@@ -491,58 +646,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "A8303129-FA00-4524-88CA-F61853E2C3B2",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "iOS",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
-            "WFWorkflowActionParameters": {
-                "WFDelayTime": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.ChangeReaderModeState",
-            "WFWorkflowActionParameters": {
-                "UUID": "33B011FD-DF5D-464B-A9D8-B2E0939C8F44",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.mobilesafari",
-                    "Name": "Safari",
-                    "AppIntentIdentifier": "ChangeReaderModeState"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "A8303129-FA00-4524-88CA-F61853E2C3B2",
-                "UUID": "F93E093E-BA4C-46C8-9360-16C6655AB30B"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "F43490F3-AD5C-4153-AE0F-8431E883116A",
-                "WFControlFlowMode": 2
+                "UUID": "E6EF1652-6697-4913-966E-D3D0B3964CD3"
             }
         },
         {

@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -58,12 +58,77 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.number",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "Yesterday",
-                "UUID": "365AADFA-A370-496B-A83A-28FB6AB2E389",
-                "WFDateActionMode": "Specified Date",
-                "WFDateActionDate": "Yesterday"
+                "WFNumberActionNumber": "30",
+                "UUID": "8CF5F9EB-075E-4869-AECE-9144CCB9EB65"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2FA6D8E9-A447-4544-ABC2-8FB725EB0EC5",
+                "WFRepeatCount": {
+                    "Value": {
+                        "OutputUUID": "8CF5F9EB-075E-4869-AECE-9144CCB9EB65",
+                        "Type": "ActionOutput",
+                        "OutputName": "Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ - ￼ + 1",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "8CF5F9EB-075E-4869-AECE-9144CCB9EB65",
+                                "Type": "ActionOutput",
+                                "OutputName": "Number"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "21E30D96-C327-4217-A3CE-F7F333CA5440"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "days",
+                        "Magnitude": {
+                            "OutputUUID": "21E30D96-C327-4217-A3CE-F7F333CA5440",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2",
+                "WFAdjustOperation": "Subtract",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
@@ -116,8 +181,8 @@
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Yesterday",
-                                "OutputUUID": "365AADFA-A370-496B-A83A-28FB6AB2E389",
+                                "OutputName": "Adjusted Date",
+                                "OutputUUID": "B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2",
                                 "Aggrandizements": [
                                     {
                                         "Type": "WFDateFormatVariableAggrandizement",
@@ -143,13 +208,14 @@
                         "attachmentsByRange": {
                             "{10, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Yesterday",
-                                "OutputUUID": "365AADFA-A370-496B-A83A-28FB6AB2E389",
+                                "OutputName": "Adjusted Date",
+                                "OutputUUID": "B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2",
                                 "Aggrandizements": [
                                     {
+                                        "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
+                                        "WFDateFormat": "MMMM d",
+                                        "WFISO8601IncludeTime": false
                                     }
                                 ]
                             }
@@ -227,10 +293,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -313,9 +376,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "365AADFA-A370-496B-A83A-28FB6AB2E389",
+                                                "OutputUUID": "B02E0BF7-D15D-4D0A-9CFF-9B9B00D374F2",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Yesterday"
+                                                "OutputName": "Adjusted Date"
                                             }
                                         }
                                     },
@@ -405,6 +468,13 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "2F581FDC-DC6D-4D4E-BF24-D5FF7EAFE0F9",
                 "UUID": "7DDE04D4-1CDB-4A16-85C6-DD700C49C866"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2FA6D8E9-A447-4544-ABC2-8FB725EB0EC5",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -537,10 +607,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -935,10 +1002,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -1022,7 +1086,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "✔️ Review reminders\n✔️ Review journals\n✔️ Review dashboard",
+                "WFTextActionText": "✔️ Review reminders\n✔️ Review dashboard\n✔️ Review journals",
                 "UUID": "44CD3F75-E648-4B0A-86A4-82E58BC7CC13"
             }
         },
@@ -1092,7 +1156,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "BA9DF324-D5C7-4462-8718-79B4DDFA5FA4",
+                "GroupingIdentifier": "501A5F33-3E04-4ABD-98D7-424EFB1AF33A",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
@@ -1104,22 +1168,94 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "journals",
+                "WFConditionalActionString": "dashboard",
                 "WFNumberValue": "1",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Open App"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Reminders"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "D5C314C8-6720-4E18-9A9C-EFABA5C97446"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "501A5F33-3E04-4ABD-98D7-424EFB1AF33A",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "Repeat Index",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "dashboard",
+                "WFNumberValue": "2",
                 "WFCondition": 4
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "📬 Open Inbox"
+                "WFTextActionText": "🏡 Go to Homepage",
+                "UUID": "D03477DB-9C43-4F27-A3D2-18A65F345A90"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "BA9DF324-D5C7-4462-8718-79B4DDFA5FA4",
-                "WFControlFlowMode": 2
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D",
+                "UUID": "7D57A2CF-A011-423C-BE41-976F5DA7F986"
             }
         },
         {
@@ -1138,7 +1274,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "journals",
-                "WFNumberValue": "2",
+                "WFNumberValue": "3",
                 "WFCondition": 4
             }
         },
@@ -1201,46 +1337,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Index",
-                            "Type": "Variable"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "dashboard",
-                "WFNumberValue": "3",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "🏡 Go to Homepage",
-                "UUID": "D03477DB-9C43-4F27-A3D2-18A65F345A90"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "38C22D7D-8CAB-42E2-BEBF-2947E7DDA10D",
-                "UUID": "7D57A2CF-A011-423C-BE41-976F5DA7F986"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "7D57A2CF-A011-423C-BE41-976F5DA7F986",
+                        "OutputUUID": "8A830C33-A8DF-47A7-9F41-00766F653C37",
                         "Type": "ActionOutput",
                         "OutputName": "If Result"
                     },
@@ -1448,10 +1549,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -1534,7 +1632,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "✔️ Reread weekly review notes from the past 4 weeks.\n✔️ Reassess someday/maybe list.",
+                "WFTextActionText": "✔️ Reread weekly review notes from the past 4 weeks\n✔️ Review LifeNotes\n✔️ Reassess someday/maybe list",
                 "UUID": "7F10C103-7FB7-4B8D-B94B-4361BCD4DC8B"
             }
         },
@@ -1757,10 +1855,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -2131,10 +2226,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -2186,7 +2278,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "• My \"🧐 Past Year Review + 😉 Annual Planning\" process naturally shifted from focusing on _what I wanted to accomplish_ to emphasizing _how I wanted to be_.",
+                "WFTextActionText": "• At the end of every year, I like to do two things:\n    1. Conduct a reflection on the prior year.\n    2. Create a plan for the coming year.\n• My \"🧐 Past Year Review + 😉 Annual Planning\" process naturally shifted from focusing on _what I wanted to accomplish_ to emphasizing _how I wanted to be_.",
                 "UUID": "7961D3B7-9E08-4135-B40D-7C345A5B7DB2"
             }
         },

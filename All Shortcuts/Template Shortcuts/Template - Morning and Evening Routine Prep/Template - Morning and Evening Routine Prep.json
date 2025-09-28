@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -18,31 +18,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
             "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
-            "WFWorkflowActionParameters": {
-                "UUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0",
-                            "Type": "ActionOutput",
-                            "OutputName": "Current IP Address"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "50A8B0EE-E6A2-4F8B-9373-3F494DF6B498",
-                "WFCondition": 100
-            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
@@ -97,9 +72,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "UUID": "1A215F37-FD9C-454A-AD96-D42A581D997C"
+                "WFWorkflow": {
+                    "workflowIdentifier": "DB53B8EE-E9F7-44E2-B523-098556EF3A38",
+                    "workflowName": "Connect to Internet",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Connect to Internet",
+                "UUID": "669EC93D-5B88-400F-A051-547337C90C3F"
             }
         },
         {
@@ -111,17 +92,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "50A8B0EE-E6A2-4F8B-9373-3F494DF6B498",
-                "UUID": "D7ED0E29-90C3-42F5-97D3-E70D5350F909"
+                "WFDelayTime": 1
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "WFDelayTime": 3
+                "UUID": "281490B5-DC17-479C-B33E-2037EC48808C"
             }
         },
         {
@@ -233,12 +212,24 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Focus Mode.#MakerMode.startTime",
+                "UUID": "F3C12C18-0AEF-4CD3-87D1-18EAB9B9D169"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.date",
             "WFWorkflowActionParameters": {
                 "WFDateActionDate": {
                     "Value": {
-                        "string": "￼",
+                        "string": "￼ at ￼",
                         "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "F3C12C18-0AEF-4CD3-87D1-18EAB9B9D169",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
                             "{0, 1}": {
                                 "OutputUUID": "E490ED2E-4438-45C0-A7B6-04B7B974FA1E",
                                 "Type": "ActionOutput",
@@ -250,12 +241,6 @@
                 },
                 "WFDateActionMode": "Specified Date",
                 "UUID": "1BBDE324-69BD-4C2E-BEEF-0F15813E0232"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
-            "WFWorkflowActionParameters": {
-                "UUID": "281490B5-DC17-479C-B33E-2037EC48808C"
             }
         },
         {
@@ -373,113 +358,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "743F72B9-3BDC-498D-A8F4-DEDCCA8C1BE7",
-                    "workflowName": "Turn off Color Filters",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Turn off Color Filters",
-                "UUID": "F29D49C7-E347-4541-9D43-B759868AE6C8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Morning",
-                "GroupingIdentifier": "04288BC2-EFC5-4C2C-9F49-13556155D5DC",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "868B5BF8-8F1C-4471-AE00-B789F6C9B917",
-                    "workflowName": "NASA - Get APOD Object",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "NASA - Get APOD Object",
-                "UUID": "E7B7CF08-43F7-4B7B-9081-B7B53EAC143C"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "E7B7CF08-43F7-4B7B-9081-B7B53EAC143C",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFDictionaryKey": "url"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "04288BC2-EFC5-4C2C-9F49-13556155D5DC",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "07EBF89A-F9E3-452E-A06E-A8EF3DB2A78F",
-                    "workflowName": "NASA - Get EPIC Image",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "NASA - Get EPIC Image",
-                "UUID": "781A5696-74E1-4822-A2B8-8764AE46E4E5"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "04288BC2-EFC5-4C2C-9F49-13556155D5DC",
-                "UUID": "E7B41FF9-AC92-4370-AEBF-15B6BBCC75CC"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "E7B41FF9-AC92-4370-AEBF-15B6BBCC75CC",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "823D607F-51C1-4383-B178-A311E681E4E4"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -592,10 +470,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -622,6 +496,109 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "F11C9377-D82C-468D-942C-31EE15279540"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Morning",
+                "GroupingIdentifier": "04288BC2-EFC5-4C2C-9F49-13556155D5DC",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "868B5BF8-8F1C-4471-AE00-B789F6C9B917",
+                    "workflowName": "NASA - Get APOD Object",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "NASA - Get APOD Object",
+                "UUID": "E7B7CF08-43F7-4B7B-9081-B7B53EAC143C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E7B7CF08-43F7-4B7B-9081-B7B53EAC143C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "url"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "04288BC2-EFC5-4C2C-9F49-13556155D5DC",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "07EBF89A-F9E3-452E-A06E-A8EF3DB2A78F",
+                    "workflowName": "NASA - Get EPIC Image",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "NASA - Get EPIC Image",
+                "UUID": "781A5696-74E1-4822-A2B8-8764AE46E4E5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "04288BC2-EFC5-4C2C-9F49-13556155D5DC",
+                "UUID": "E7B41FF9-AC92-4370-AEBF-15B6BBCC75CC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E7B41FF9-AC92-4370-AEBF-15B6BBCC75CC",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "823D607F-51C1-4383-B178-A311E681E4E4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "743F72B9-3BDC-498D-A8F4-DEDCCA8C1BE7",
+                    "workflowName": "Turn off Color Filters",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Turn off Color Filters",
+                "UUID": "101EAC3E-3789-4365-960D-DDF64BCBA8D9"
             }
         },
         {

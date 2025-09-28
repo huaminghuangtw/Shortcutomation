@@ -5,10 +5,34 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "57976D52-3801-4A39-8025-957FD9A62AC0",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
             "WFWorkflowActionParameters": {
@@ -73,39 +97,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "13137F9C-05A5-40AA-84E1-F6C69C2AD08D",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "macOS",
-                "WFCondition": 4
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F415F1B3-F9C0-4132-B334-0F085A470968",
+                        "Type": "ActionOutput",
+                        "OutputName": "date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFWorkflow": {
                     "workflowIdentifier": "5C4FAC3B-84A4-4320-ABAA-C94C61768134",
                     "workflowName": "Show Year Progress",
                     "isSelf": false
                 },
-                "WFWorkflowName": "Show Year Progress",
-                "UUID": "774966C9-D34E-4AFF-8D18-733FAF470630"
+                "UUID": "774966C9-D34E-4AFF-8D18-733FAF470630",
+                "WFWorkflowName": "Show Year Progress"
             }
         },
         {
@@ -367,21 +375,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "13137F9C-05A5-40AA-84E1-F6C69C2AD08D",
-                "UUID": "D4A127D2-96E5-481C-9752-071F716358EC"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "F415F1B3-F9C0-4132-B334-0F085A470968",
                         "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "OutputName": "date"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -402,7 +402,7 @@
                     "Value": {
                         "OutputUUID": "F415F1B3-F9C0-4132-B334-0F085A470968",
                         "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "OutputName": "date"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -455,7 +455,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "CurrentDate",
+                        "Type": "ActionOutput",
+                        "OutputName": "date",
+                        "OutputUUID": "F415F1B3-F9C0-4132-B334-0F085A470968",
                         "Aggrandizements": [
                             {
                                 "Type": "WFDateFormatVariableAggrandizement",
@@ -495,30 +497,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "82E0654F-5A4D-46EC-8655-2A8BFCA6B518",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "macOS",
-                "WFCondition": 4
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -541,9 +519,56 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🌻 Review ￼",
+                        "attachmentsByRange": {
+                            "{10, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "date",
+                                "OutputUUID": "F415F1B3-F9C0-4132-B334-0F085A470968",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "MMMM d",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "3C44CA0A-083A-4645-90A1-92C1F6B40711"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3C44CA0A-083A-4645-90A1-92C1F6B40711",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "13D6344E-1286-4297-B559-4A99BF3BA432",
+                    "workflowName": "Template - Complete Task Reminder",
+                    "isSelf": false
+                },
+                "UUID": "9529C4C6-25C3-403D-AD8D-7A9B385E2EA4",
+                "WFWorkflowName": "Template - Complete Task Reminder"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "82E0654F-5A4D-46EC-8655-2A8BFCA6B518",
+                "GroupingIdentifier": "57976D52-3801-4A39-8025-957FD9A62AC0",
                 "WFControlFlowMode": 2
             }
         },
