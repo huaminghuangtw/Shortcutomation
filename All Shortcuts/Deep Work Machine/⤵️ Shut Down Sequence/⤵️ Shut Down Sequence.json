@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -43,12 +43,254 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
+                    "workflowIdentifier": "19D5C48A-EA31-40FD-9AB4-F8ECDC21AD0B",
+                    "workflowName": "🍻 Show Flow & Word Counts",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "🍻 Show Flow & Word Counts",
+                "UUID": "3D5001EC-9B9D-4238-B044-EF0C5670CF3A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "18147F90-431D-4A64-AB66-918A88186549",
+                    "workflowName": "_Get Daily Flow & Word Counts",
+                    "isSelf": false
+                },
+                "UUID": "A06DF17A-7AC7-4954-8D18-663111EEED15",
+                "WFWorkflowName": "_Get Daily Flow & Word Counts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "A06DF17A-7AC7-4954-8D18-663111EEED15",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "numberOfWords"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "numberOfWords",
+                "UUID": "355A19A2-600C-43AF-9A07-29B7FE045E68"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B76C827E-45B0-43D9-8350-23CB842FA655",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "355A19A2-600C-43AF-9A07-29B7FE045E68",
+                            "Type": "ActionOutput",
+                            "OutputName": "numberOfWords"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1000",
+                "WFCondition": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "355A19A2-600C-43AF-9A07-29B7FE045E68",
+                        "Type": "ActionOutput",
+                        "OutputName": "numberOfWords"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "backupMyRepos"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B76C827E-45B0-43D9-8350-23CB842FA655",
+                "UUID": "15DDFB27-8A02-42F3-9002-B60DEAAB7F88"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "A06DF17A-7AC7-4954-8D18-663111EEED15",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "numberOfFlows"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "numberOfFlows",
+                "UUID": "C63FBA78-B584-4A7A-B31A-26C32D59BE0F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "460911D0-0F94-4997-AD14-9176CD462C77",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C63FBA78-B584-4A7A-B31A-26C32D59BE0F",
+                            "Type": "ActionOutput",
+                            "OutputName": "numberOfFlows"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "8",
+                "WFCondition": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C63FBA78-B584-4A7A-B31A-26C32D59BE0F",
+                        "Type": "ActionOutput",
+                        "OutputName": "numberOfFlows"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "backupMyRepos"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "460911D0-0F94-4997-AD14-9176CD462C77",
+                "UUID": "113CCD62-5A15-4422-B013-1D685E8D8828"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "backupMyRepos",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "5DF7A275-6C3B-45D8-942C-C8C0A0F0CBEA",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "4FBCC694-138B-4B04-AC42-6990860D5E39",
+                    "workflowName": "💾 Backup My Repos",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "💾 Backup My Repos",
+                "UUID": "672852DC-D3AB-4D30-AF1B-0CAD153E3758"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "5DF7A275-6C3B-45D8-942C-C8C0A0F0CBEA",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "12:34",
+                "UUID": "4047AE37-2F15-4207-9466-77529C666691",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": "12:34"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "4047AE37-2F15-4207-9466-77529C666691",
+                        "Type": "ActionOutput",
+                        "OutputName": "12:34"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentDate"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "FFCACB38-03E3-407F-8118-276E80F375C2",
+                "WFCondition": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
                     "workflowIdentifier": "7D922792-77AB-44F6-AFFB-4361D1A39496",
                     "workflowName": "☑️ View Today's Tasks",
                     "isSelf": false
                 },
                 "WFWorkflowName": "☑️ View Today's Tasks",
                 "UUID": "578C96D9-A2E6-459F-940A-DB1D566A9D11"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "FFCACB38-03E3-407F-8118-276E80F375C2",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -61,18 +303,6 @@
                 },
                 "WFWorkflowName": "關大燈",
                 "UUID": "CDAD2557-58E3-432F-B412-615563ACB32E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "19D5C48A-EA31-40FD-9AB4-F8ECDC21AD0B",
-                    "workflowName": "🍻 Show Flow & Word Counts",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "🍻 Show Flow & Word Counts",
-                "UUID": "3D5001EC-9B9D-4238-B044-EF0C5670CF3A"
             }
         },
         {

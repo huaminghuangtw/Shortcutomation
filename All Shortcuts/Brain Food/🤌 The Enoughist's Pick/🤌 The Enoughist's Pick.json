@@ -5,14 +5,10 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
-            "WFWorkflowActionParameters": {}
-        },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
@@ -23,7 +19,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Which type?",
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
@@ -49,9 +45,10 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
                 "WFContentItemLimitEnabled": false,
-                "WFContentItemSortProperty": "Random",
+                "WFContentItemSortProperty": "Title",
                 "UUID": "50444C6F-D1B6-4E31-82E7-5AB23B2AE9B5",
                 "WFContentItemLimitNumber": 1,
+                "WFContentItemSortOrder": "A to Z",
                 "WFContentItemFilter": {
                     "Value": {
                         "WFActionParameterFilterPrefix": 1,
@@ -78,10 +75,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -89,10 +83,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Flagged"
@@ -110,13 +101,29 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
             "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "50444C6F-D1B6-4E31-82E7-5AB23B2AE9B5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "CC985094-9C86-4214-8008-98C09AF5294C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "Reminders",
-                        "OutputUUID": "50444C6F-D1B6-4E31-82E7-5AB23B2AE9B5",
+                        "OutputName": "Selected Item",
+                        "OutputUUID": "CC985094-9C86-4214-8008-98C09AF5294C",
                         "Aggrandizements": [
                             {
                                 "Type": "WFPropertyVariableAggrandizement",
@@ -126,23 +133,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFItemSpecifier": "Random Item",
-                "UUID": "5FEB813B-835D-4BEB-95F0-DD4BC5C393EC"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.reminders",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "5FEB813B-835D-4BEB-95F0-DD4BC5C393EC",
-                        "Type": "ActionOutput",
-                        "OutputName": "Item from List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemPropertyName": "URL",
-                "UUID": "96872904-E432-4FE0-872A-27072781F046"
+                "UUID": "D3CE1242-AB02-4911-8936-AA40C6F9C776"
             }
         },
         {
@@ -150,13 +141,19 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "96872904-E432-4FE0-872A-27072781F046",
                         "Type": "ActionOutput",
-                        "OutputName": "URL"
+                        "OutputName": "Selected Item",
+                        "OutputUUID": "D3CE1242-AB02-4911-8936-AA40C6F9C776",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "URL"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "BB83415F-DC43-48AB-A493-8BFBAC9CC1B8"
+                "UUID": "3695DBB7-7BAF-4E6A-A730-1879D8FB6DB9"
             }
         },
         {
@@ -185,7 +182,9 @@
         "WFURLContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "Watch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

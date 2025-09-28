@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -349,6 +349,47 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.windows",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": false,
+                "UUID": "0C05CC06-0EA1-462C-8AE6-80B821D06104",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": "Shortcuts"
+                                },
+                                "Removable": true,
+                                "Property": "App Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.movewindow",
+            "WFWorkflowActionParameters": {
+                "WFWindow": {
+                    "Value": {
+                        "OutputUUID": "0C05CC06-0EA1-462C-8AE6-80B821D06104",
+                        "Type": "ActionOutput",
+                        "OutputName": "Windows"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "EB4D95A0-1664-4C10-8890-22E9E5F9796F"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {}
         },
@@ -437,13 +478,16 @@
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionParameters": {
+                "UUID": "B75DD39A-7064-4737-9B44-CF3CBF890DEB"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "BCC3302A-4430-4239-806E-37230BC7BDD3",
-                "WFControlFlowMode": 2
+                "UUID": "61A1CD9F-2BFF-47BE-9767-35B09F973951"
             }
         },
         {
@@ -454,23 +498,28 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "com.apple.shortcuts.SearchShortcutsAction",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "UUID": "AC846151-BA01-4DA1-A989-B19534077E72",
+                "searchPhrase": {
                     "Value": {
-                        "OutputUUID": "2FD52CF3-1375-4D3F-854E-3F14D0196EE1",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "80BA231C-2B76-48B6-8215-A6F3423595C7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Ask for Input"
+                            }
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "WFWorkflow": {
-                    "workflowIdentifier": "130DBC8F-B6A3-4A2D-9044-F9CA27591DD2",
-                    "workflowName": "Open Shortcut",
-                    "isSelf": true
-                },
-                "UUID": "8498B332-342F-437E-A820-204D2501491F",
-                "WFWorkflowName": "Open Shortcut"
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.shortcuts",
+                    "Name": "Shortcuts",
+                    "AppIntentIdentifier": "SearchShortcutsAction"
+                }
             }
         },
         {

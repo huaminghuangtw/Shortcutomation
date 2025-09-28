@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -37,6 +37,59 @@
                 "WFControlFlowMode": 0,
                 "WFEnumeration": "macOS",
                 "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "3C3C7201-27B4-442C-AAB9-08162E789A82"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C85DF40A-73A6-42AB-A2AB-F4AF1E3BEFDE",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "3C3C7201-27B4-442C-AAB9-08162E789A82",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
+            "WFWorkflowActionParameters": {
+                "WFDeviceDetail": "Current Brightness",
+                "UUID": "59C18CAB-0A6B-4F72-8E3B-A538000700E8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C85DF40A-73A6-42AB-A2AB-F4AF1E3BEFDE",
+                "UUID": "87CFE2B8-7143-41DB-891C-0B88371B590E"
             }
         },
         {
@@ -186,7 +239,60 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "C8C6A44E-1F2A-4EAC-BD62-8F3B63ADA8D7",
+                "UUID": "05D375FF-805B-41FE-98D8-5B6F7EF92967"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "0A0434B0-4EFF-4F9E-B379-AED02383FE53",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "3C3C7201-27B4-442C-AAB9-08162E789A82",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "1",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionParameters": {
+                "WFBrightness": {
+                    "Value": {
+                        "OutputUUID": "59C18CAB-0A6B-4F72-8E3B-A538000700E8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Current Brightness"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "09C6711D-3958-4AF4-91F8-CD89197F7213",
+                    "workflowName": "Alert Sound Effect",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Alert Sound Effect",
+                "UUID": "5916D4C8-35AF-4E46-9876-4D5BBA2B542B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "0A0434B0-4EFF-4F9E-B379-AED02383FE53",
                 "WFControlFlowMode": 2
             }
         },

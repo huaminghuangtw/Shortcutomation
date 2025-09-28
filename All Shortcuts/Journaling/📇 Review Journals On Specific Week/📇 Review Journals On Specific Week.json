@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -111,19 +111,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
-            "WFWorkflowActionParameters": {
-                "WFDeviceDetail": "Current Brightness",
-                "UUID": "1E39B796-8834-4646-9FB3-3E9D28C9B8CF"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -155,6 +142,122 @@
                 },
                 "UUID": "90914188-1021-4436-9931-B890EA94F195",
                 "WFWorkflowName": "Log Journal Metadata"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5CCA8A5A-1EBE-418D-977C-C7614DFD2C4F",
+                    "workflowName": "_Log Calendar Events to Journal",
+                    "isSelf": false
+                },
+                "UUID": "0D4B6E81-4A7B-4B4C-B826-BEF26C71CAA5",
+                "WFWorkflowName": "_Log Calendar Events to Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0D4B6E81-4A7B-4B4C-B826-BEF26C71CAA5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "C79B194C-6C66-4BA4-8342-40CC59C38526",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "date"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "VariableName": "Repeat Item",
+                                                "Type": "Variable"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "diaryEntry"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "VariableName": "Repeat Item 2",
+                                                "Type": "Variable"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "F3273244-C4F6-43EE-A688-B8B648DCA5C8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F3273244-C4F6-43EE-A688-B8B648DCA5C8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+                    "workflowName": "🐧 Log Journal",
+                    "isSelf": false
+                },
+                "UUID": "A6213C5B-BB86-45D8-9D36-17D67A6C459D",
+                "WFWorkflowName": "🐧 Log Journal"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C79B194C-6C66-4BA4-8342-40CC59C38526",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -386,19 +489,6 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "A8325498-3CFD-4D7A-A083-44464223E590"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": {
-                    "Value": {
-                        "OutputUUID": "1E39B796-8834-4646-9FB3-3E9D28C9B8CF",
-                        "Type": "ActionOutput",
-                        "OutputName": "Current Brightness"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
             }
         },
         {

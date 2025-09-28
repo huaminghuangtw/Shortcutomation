@@ -1,36 +1,33 @@
 {
-    "WFWorkflowMinimumClientVersionString": "1113",
-    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [
         "WFReminderContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
-    "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorAskForInput",
-        "Parameters": {
-            "ItemClass": "WFDateContentItem",
-            "SerializedParameters": {
-                "WFDateActionDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "Ask"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFDateActionMode": "Specified Date"
-            }
-        }
-    },
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "EC830413-CB98-43C4-AE3F-C515ABB6341A",
+                "WFCondition": 100
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.date",
             "WFWorkflowActionParameters": {
@@ -62,6 +59,29 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "EC830413-CB98-43C4-AE3F-C515ABB6341A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": "Today 23:59",
+                "WFDateActionMode": "Specified Date",
+                "UUID": "77462F8B-A696-43F3-93E0-E95945D51D8D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "EC830413-CB98-43C4-AE3F-C515ABB6341A",
+                "UUID": "BAF6DDFE-C936-4BC9-B7B9-1CDBE91A6F71"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
                 "WFContentItemFilter": {
@@ -74,14 +94,11 @@
                                 "Values": {
                                     "Date": {
                                         "Value": {
-                                            "Value": {
-                                                "OutputUUID": "A7AF63E7-AABB-438B-A240-D02A6C3CA458",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Date"
-                                            },
-                                            "WFSerializationType": "WFTextTokenAttachment"
+                                            "OutputUUID": "BAF6DDFE-C936-4BC9-B7B9-1CDBE91A6F71",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "If Result"
                                         },
-                                        "WFSerializationType": "WFDateSubstitutableState"
+                                        "WFSerializationType": "WFTextTokenAttachment"
                                     }
                                 },
                                 "Removable": true,
@@ -90,10 +107,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -345,7 +359,7 @@
         "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [],
+    "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

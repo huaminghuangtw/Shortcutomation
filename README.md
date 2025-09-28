@@ -27,7 +27,7 @@ Automate the Boring Stuff with  Apple Shortcuts
 <p>✨ ⸻ • ⸻ • ⸻ • ⸻ ✨</p>
 
 <p>
-<strong>Last Update:</strong> 2025-08-17
+<strong>Last Update:</strong> 2025-09-28
         
 <br>
 
@@ -120,7 +120,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
 <summary>
    <strong>
-      <a href="https://shortcutomation.com/gallery">All Shortcuts (587)</a>
+      <a href="https://shortcutomation.com/gallery">All Shortcuts (594)</a>
    </strong>
 </summary>
 
@@ -377,6 +377,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/journaling/get-journal-file-path">_Get Journal File Path</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/journaling/get-journal-file-path">
+       <kbd>
+       <img src="All%20Shortcuts/Journaling/_Get%20Journal%20File%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/journaling/log-journal-metadata">_Log Journal Metadata</a>
        </summary>
        <a href="https://shortcutomation.com/gallery/journaling/log-journal-metadata">
@@ -393,17 +404,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/journaling/show-journal-metadata">
        <kbd>
        <img src="All%20Shortcuts/Journaling/_Show%20Journal%20Metadata/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/journaling/get-journal-file-path">_Get Journal File Path</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/journaling/get-journal-file-path">
-       <kbd>
-       <img src="All%20Shortcuts/Journaling/_Get%20Journal%20File%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -550,17 +550,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/second-brain/open-inbox">📬 Open Inbox</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/second-brain/open-inbox">
-       <kbd>
-       <img src="All%20Shortcuts/Second%20Brain/%F0%9F%93%AC%20Open%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
        <a href="https://shortcutomation.com/gallery/second-brain/add-to-inbox">📥 Add to Inbox</a>
        </summary>
        <a href="https://shortcutomation.com/gallery/second-brain/add-to-inbox">
@@ -583,11 +572,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/second-brain/organize-inbox">_Organize Inbox</a>
+       <a href="https://shortcutomation.com/gallery/second-brain/organize-inbox-entry">_Organize Inbox Entry</a>
        </summary>
-       <a href="https://shortcutomation.com/gallery/second-brain/organize-inbox">
+       <a href="https://shortcutomation.com/gallery/second-brain/organize-inbox-entry">
        <kbd>
-       <img src="All%20Shortcuts/Second%20Brain/_Organize%20Inbox/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Second%20Brain/_Organize%20Inbox%20Entry/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -599,6 +588,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/second-brain/water-digital-garden">
        <kbd>
        <img src="All%20Shortcuts/Second%20Brain/%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%8C%BE%20Water%20Digital%20Garden/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/second-brain/brain-dump">🙌 Brain Dump</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/second-brain/brain-dump">
+       <kbd>
+       <img src="All%20Shortcuts/Second%20Brain/%F0%9F%99%8C%20Brain%20Dump/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -695,7 +695,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/weekly-mindware-update">Weekly Mindware Update (6)</a>
+        <a href="https://shortcutomation.com/gallery/weekly-mindware-update">Weekly Mindware Update (7)</a>
       </strong>
     </summary>
 
@@ -706,6 +706,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/weekly-mindware-update/mindware-update">
        <kbd>
        <img src="All%20Shortcuts/Weekly%20Mindware%20Update/%F0%9F%90%90%20Mindware%20Update/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/weekly-mindware-update/create-new-wmu-issue">Create New WMU Issue</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/weekly-mindware-update/create-new-wmu-issue">
+       <kbd>
+       <img src="All%20Shortcuts/Weekly%20Mindware%20Update/Create%20New%20WMU%20Issue/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -1376,7 +1387,37 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/getting-things-done">Getting Things Done (15)</a>
+        <a href="https://shortcutomation.com/gallery/deep-work-mode">Deep Work Mode (2)</a>
+      </strong>
+    </summary>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/deep-work-mode/short-focus-session">⏳ Short Focus Session</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/deep-work-mode/short-focus-session">
+       <kbd>
+       <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/deep-work-mode/long-focus-session">⏳ Long Focus Session</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/deep-work-mode/long-focus-session">
+       <kbd>
+       <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+  </details>
+
+- <details>
+    <summary>
+      <strong>
+        <a href="https://shortcutomation.com/gallery/getting-things-done">Getting Things Done (16)</a>
       </strong>
     </summary>
 
@@ -1387,6 +1428,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-repos">
        <kbd>
        <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Repos/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-repos-kernel">💾 Backup My Repos - Kernel</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/getting-things-done/backup-my-repos-kernel">
+       <kbd>
+       <img src="All%20Shortcuts/Getting%20Things%20Done/%F0%9F%92%BE%20Backup%20My%20Repos%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2093,7 +2145,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/automation-daily">Automation - Daily (6)</a>
+        <a href="https://shortcutomation.com/gallery/automation-daily">Automation - Daily (5)</a>
       </strong>
     </summary>
 
@@ -2148,17 +2200,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/automation-daily/fetch-new-emails">
        <kbd>
        <img src="All%20Shortcuts/Automation%20-%20Daily/Fetch%20New%20Emails/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/automation-daily/i-love-you">I Love You</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/automation-daily/i-love-you">
-       <kbd>
-       <img src="All%20Shortcuts/Automation%20-%20Daily/I%20Love%20You/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2255,11 +2296,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/when-reminders-is-opened/daily-inbox-zero">Daily Inbox Zero</a>
+       <a href="https://shortcutomation.com/gallery/when-reminders-is-opened/inbox-zero">Inbox Zero</a>
        </summary>
-       <a href="https://shortcutomation.com/gallery/when-reminders-is-opened/daily-inbox-zero">
+       <a href="https://shortcutomation.com/gallery/when-reminders-is-opened/inbox-zero">
        <kbd>
-       <img src="All%20Shortcuts/When%20Reminders%20is%20opened/Daily%20Inbox%20Zero/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/When%20Reminders%20is%20opened/Inbox%20Zero/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2364,7 +2405,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/when-calendar-is-opened">When Calendar Is opened (4)</a>
+        <a href="https://shortcutomation.com/gallery/when-calendar-is-opened">When Calendar Is opened (3)</a>
       </strong>
     </summary>
 
@@ -2381,11 +2422,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/when-calendar-is-opened/add-anniversary-with-yi">Add Anniversary with Yi</a>
+       <a href="https://shortcutomation.com/gallery/when-calendar-is-opened/our-days">Our Days</a>
        </summary>
-       <a href="https://shortcutomation.com/gallery/when-calendar-is-opened/add-anniversary-with-yi">
+       <a href="https://shortcutomation.com/gallery/when-calendar-is-opened/our-days">
        <kbd>
-       <img src="All%20Shortcuts/When%20Calendar%20Is%20opened/Add%20Anniversary%20with%20Yi/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/When%20Calendar%20Is%20opened/Our%20Days/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -2400,23 +2441,12 @@ A world where everyone lives a calmer, more present and intentional life—focus
        </kbd>
        </a>
        </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/when-calendar-is-opened/schedule-monthly-recurring-events">Schedule Monthly Recurring Events</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/when-calendar-is-opened/schedule-monthly-recurring-events">
-       <kbd>
-       <img src="All%20Shortcuts/When%20Calendar%20Is%20opened/Schedule%20Monthly%20Recurring%20Events/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
   </details>
 
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/automation-modules">Automation Modules (18)</a>
+        <a href="https://shortcutomation.com/gallery/automation-modules">Automation Modules (21)</a>
       </strong>
     </summary>
 
@@ -2532,6 +2562,28 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened">When flagged apps are opened</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened">
+       <kbd>
+       <img src="All%20Shortcuts/Automation%20Modules/When%20flagged%20apps%20are%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened-kernel">When flagged apps are opened - Kernel</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened-kernel">
+       <kbd>
+       <img src="All%20Shortcuts/Automation%20Modules/When%20flagged%20apps%20are%20opened%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-calendar-is-opened">When "Calendar" is opened</a>
        </summary>
        <a href="https://shortcutomation.com/gallery/automation-modules/when-calendar-is-opened">
@@ -2559,6 +2611,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/automation-modules/when-komoot-is-opened">
        <kbd>
        <img src="All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/automation-modules/when-komoot-is-opened-kernel">When "Komoot" is opened - Kernel</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/automation-modules/when-komoot-is-opened-kernel">
+       <kbd>
+       <img src="All%20Shortcuts/Automation%20Modules/When%20%22Komoot%22%20is%20opened%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -3210,6 +3273,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/backup-my-shortcuts-library">💾 Backup My Shortcuts Library</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/backup-my-shortcuts-library">
+       <kbd>
+       <img src="All%20Shortcuts/Shortcutomation%20Helpers/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shorcutomation-export-required-apps">Shorcutomation - Export Required Apps</a>
        </summary>
        <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shorcutomation-export-required-apps">
@@ -3221,22 +3295,33 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-html">Shortcutomation - shortcut to html</a>
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-plist">Shortcutomation - shortcut to plist</a>
        </summary>
-       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-html">
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-plist">
        <kbd>
-       <img src="All%20Shortcuts/Shortcutomation%20Helpers/Shortcutomation%20-%20shortcut%20to%20html/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Shortcutomation%20Helpers/Shortcutomation%20-%20shortcut%20to%20plist/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-plist">Shortcutomation - shortcut to plist</a>
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-json">Shortcutomation - shortcut to json</a>
        </summary>
-       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-plist">
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-json">
        <kbd>
-       <img src="All%20Shortcuts/Shortcutomation%20Helpers/Shortcutomation%20-%20shortcut%20to%20plist/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/Shortcutomation%20Helpers/Shortcutomation%20-%20shortcut%20to%20json/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-html">Shortcutomation - shortcut to html</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-html">
+       <kbd>
+       <img src="All%20Shortcuts/Shortcutomation%20Helpers/Shortcutomation%20-%20shortcut%20to%20html/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -3270,17 +3355,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/shorcutomation-generate-gallery-folder-tree">
        <kbd>
        <img src="All%20Shortcuts/Shortcutomation%20Helpers/Shorcutomation%20-%20Generate%20Gallery%20Folder%20Tree/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/backup-my-shortcuts-library">💾 Backup My Shortcuts Library</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/shortcutomation-helpers/backup-my-shortcuts-library">
-       <kbd>
-       <img src="All%20Shortcuts/Shortcutomation%20Helpers/%F0%9F%92%BE%20Backup%20My%20Shortcuts%20Library/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -3440,36 +3514,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/deep-work-mode">Deep Work Mode (2)</a>
-      </strong>
-    </summary>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/deep-work-mode/short-focus-session">⏳ Short Focus Session</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/deep-work-mode/short-focus-session">
-       <kbd>
-       <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Short%20Focus%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/deep-work-mode/long-focus-session">⏳ Long Focus Session</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/deep-work-mode/long-focus-session">
-       <kbd>
-       <img src="All%20Shortcuts/Deep%20Work%20Mode/%E2%8F%B3%20Long%20Focus%20Session/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-  </details>
-
-- <details>
-    <summary>
-      <strong>
         <a href="https://shortcutomation.com/gallery/fitness-training">Fitness Training (10)</a>
       </strong>
     </summary>
@@ -3588,7 +3632,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/utilities">Utilities (33)</a>
+        <a href="https://shortcutomation.com/gallery/utilities">Utilities (32)</a>
       </strong>
     </summary>
 
@@ -3940,17 +3984,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/utilities/open-brainwave-app">
        <kbd>
        <img src="All%20Shortcuts/Utilities/Open%20BRAINWAVE%20App/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/utilities/brain-dump">🙌 Brain Dump</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/utilities/brain-dump">
-       <kbd>
-       <img src="All%20Shortcuts/Utilities/%F0%9F%99%8C%20Brain%20Dump/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -4409,7 +4442,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/obsidian-uri">Obsidian URI (16)</a>
+        <a href="https://shortcutomation.com/gallery/obsidian-uri">Obsidian URI (17)</a>
       </strong>
     </summary>
 
@@ -4453,6 +4486,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-rename-file">
        <kbd>
        <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Rename%20File/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-lint-current-file">Obsidian - Lint Current File</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/obsidian-uri/obsidian-lint-current-file">
+       <kbd>
+       <img src="All%20Shortcuts/Obsidian%20URI/Obsidian%20-%20Lint%20Current%20File/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -5646,7 +5690,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/date-and-time">Date & Time (20)</a>
+        <a href="https://shortcutomation.com/gallery/date-and-time">Date & Time (21)</a>
       </strong>
     </summary>
 
@@ -5866,6 +5910,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/date-and-time/getdayofmonth">
        <kbd>
        <img src="All%20Shortcuts/Date%20%26%20Time/getDayOfMonth/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/date-and-time/get-sunday-of-the-week">Get Sunday of the Week</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/date-and-time/get-sunday-of-the-week">
+       <kbd>
+       <img src="All%20Shortcuts/Date%20%26%20Time/Get%20Sunday%20of%20the%20Week/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -6513,7 +6568,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/sound-files">Sound Files (9)</a>
+        <a href="https://shortcutomation.com/gallery/sound-files">Sound Files (10)</a>
       </strong>
     </summary>
 
@@ -6601,6 +6656,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/sound-files/success-sound-effect">
        <kbd>
        <img src="All%20Shortcuts/Sound%20Files/Success%20Sound%20Effect/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/sound-files/alert-sound-effect">Alert Sound Effect</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/sound-files/alert-sound-effect">
+       <kbd>
+       <img src="All%20Shortcuts/Sound%20Files/Alert%20Sound%20Effect/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -6738,6 +6804,17 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
+       <a href="https://shortcutomation.com/gallery/data-jar/data-jar-view-value-at-key-path">Data Jar - View Value at Key Path</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/data-jar/data-jar-view-value-at-key-path">
+       <kbd>
+       <img src="All%20Shortcuts/Data%20Jar/Data%20Jar%20-%20View%20Value%20at%20Key%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
+
+    - <details>
+       <summary>
        <a href="https://shortcutomation.com/gallery/data-jar/export-data-jar">Export Data Jar</a>
        </summary>
        <a href="https://shortcutomation.com/gallery/data-jar/export-data-jar">
@@ -6754,17 +6831,6 @@ A world where everyone lives a calmer, more present and intentional life—focus
        <a href="https://shortcutomation.com/gallery/data-jar/export-data-jar-kernel">
        <kbd>
        <img src="All%20Shortcuts/Data%20Jar/Export%20Data%20Jar%20-%20Kernel/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
-       </kbd>
-       </a>
-       </details>
-
-    - <details>
-       <summary>
-       <a href="https://shortcutomation.com/gallery/data-jar/data-jar-view-value-at-key-path">Data Jar - View Value at Key Path</a>
-       </summary>
-       <a href="https://shortcutomation.com/gallery/data-jar/data-jar-view-value-at-key-path">
-       <kbd>
-       <img src="All%20Shortcuts/Data%20Jar/Data%20Jar%20-%20View%20Value%20at%20Key%20Path/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -6984,9 +7050,20 @@ A world where everyone lives a calmer, more present and intentional life—focus
 - <details>
     <summary>
       <strong>
-        <a href="https://shortcutomation.com/gallery/my-dear-yi">My Dear Yi (4)</a>
+        <a href="https://shortcutomation.com/gallery/my-dear-yi">My Dear Yi (5)</a>
       </strong>
     </summary>
+
+    - <details>
+       <summary>
+       <a href="https://shortcutomation.com/gallery/my-dear-yi/i-love-you">🤍 I Love You</a>
+       </summary>
+       <a href="https://shortcutomation.com/gallery/my-dear-yi/i-love-you">
+       <kbd>
+       <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       </kbd>
+       </a>
+       </details>
 
     - <details>
        <summary>
@@ -7012,11 +7089,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
     - <details>
        <summary>
-       <a href="https://shortcutomation.com/gallery/my-dear-yi/i-love-you">🤍 I Love You</a>
+       <a href="https://shortcutomation.com/gallery/my-dear-yi/">🤍 交往天數計時器</a>
        </summary>
-       <a href="https://shortcutomation.com/gallery/my-dear-yi/i-love-you">
+       <a href="https://shortcutomation.com/gallery/my-dear-yi/">
        <kbd>
-       <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20I%20Love%20You/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
+       <img src="All%20Shortcuts/My%20Dear%20Yi/%F0%9F%A4%8D%20%E4%BA%A4%E5%BE%80%E5%A4%A9%E6%95%B8%E8%A8%88%E6%99%82%E5%99%A8/qrcode.png" width="150" title="💁‍♂️ Click or scan me to download the Shortcut!"/>
        </kbd>
        </a>
        </details>
@@ -7193,11 +7270,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 587  
-* **Total Actions:** 9984  
+* **Total Shortcuts:** 594  
+* **Total Actions:** 9948  
 * **Categories Covered:** 74  
 * **Average Actions per Shortcut:** 17  
-* **A Typical Shortcut Uses 11+ Actions**  
+* **A Typical Shortcut Uses 10+ Actions**  
 
 ### 🏅 Top 5 Most Complex Shortcuts
   
@@ -7205,11 +7282,11 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
   | Rank | Shortcut Name | Number of Actions |
   | :-: | :-: | :-: |
-  | 1️⃣ | [_Evergreen List to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown) | 158 |
-  | 2️⃣ | [Add Clickable URL to Inbox Items](https://shortcutomation.com/gallery/when-reminders-is-opened/add-clickable-url-to-inbox-items) | 148 |
-  | 3️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 132 |
-  | 4️⃣ | [Remember to Sharpen the Saw](https://shortcutomation.com/gallery/when-reminders-is-opened/remember-to-sharpen-the-saw) | 115 |
-  | 5️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me) | 105 |
+  | 1️⃣ | [_Evergreen List to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown) | 157 |
+  | 2️⃣ | [When turning my focus mode on](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 124 |
+  | 3️⃣ | [Remember to Sharpen the Saw](https://shortcutomation.com/gallery/when-reminders-is-opened/remember-to-sharpen-the-saw) | 119 |
+  | 4️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me) | 105 |
+  | 5️⃣ | [_Show Journal Metadata](https://shortcutomation.com/gallery/journaling/show-journal-metadata) | 85 |
 
   </div>
 
@@ -7222,7 +7299,7 @@ A world where everyone lives a calmer, more present and intentional life—focus
   | 1️⃣ | [Show Year Progress](https://shortcutomation.com/gallery/getting-things-done/show-year-progress) | 1697 |
   | 2️⃣ | [Year Progress](https://shortcutomation.com/gallery/standalone-fun/year-progress) | 1693 |
   | 3️⃣ | [iPhone Alarm Ringtone](https://shortcutomation.com/gallery/sound-files/iphone-alarm-ringtone) | 423 |
-  | 4️⃣ | [Success Sound Effect](https://shortcutomation.com/gallery/sound-files/success-sound-effect) | 281 |
+  | 4️⃣ | [Success Sound Effect](https://shortcutomation.com/gallery/sound-files/success-sound-effect) | 282 |
   | 5️⃣ | [Water Eject](https://shortcutomation.com/gallery/standalone-fun/water-eject) | 192 |
 
   </div>
@@ -7295,23 +7372,19 @@ _[🔗 Check out my other project →](https://github.com/huaminghuangtw/Scripta
 
 This library wouldn't be possible without the [r/shortcuts](https://www.reddit.com/r/shortcuts) community (especially [@gluebyte](https://www.reddit.com/user/gluebyte) 😉) and the following complementary apps:
 
-1. [One Sec](https://one-sec.app/)
-2. [a-Shell](https://holzschu.github.io/a-Shell_iOS)
-3. [Charty](https://chartyios.app)
-4. [Tapo](https://apps.apple.com/us/app/tp-link-tapo/id1472718009)
-5. [ChatGPT](https://openai.com/chatgpt/overview)
-6. [Working Copy](https://workingcopy.app)
-7. [Arc Browser](https://arc.net)
-8. [Microsoft Edge](https://www.microsoft.com/edge)
-9. [Pushcut](https://www.pushcut.io)
-10. [Audible](https://www.audible.com)
-11. [Actions](https://sindresorhus.com/actions)
-12. [Toolbox Pro](https://toolboxpro.app)
-13. [Caffeinated](https://caffeinated.app)
-14. [Any Text](https://sindresorhus.com/any-text)
-15. [Scriptable](https://scriptable.app)
-16. [Text Case](https://textcase.app)
-17. [Data Jar](https://datajar.app)
+1. [a-Shell](https://holzschu.github.io/a-Shell_iOS)
+2. [Charty](https://chartyios.app)
+3. [Tapo](https://apps.apple.com/us/app/tp-link-tapo/id1472718009)
+4. [ChatGPT](https://openai.com/chatgpt/overview)
+5. [Microsoft Edge](https://www.microsoft.com/edge)
+6. [Pushcut](https://www.pushcut.io)
+7. [Actions](https://sindresorhus.com/actions)
+8. [Scriptable](https://scriptable.app)
+9. [Toolbox Pro](https://toolboxpro.app)
+10. [Caffeinated](https://caffeinated.app)
+11. [Any Text](https://sindresorhus.com/any-text)
+12. [Text Case](https://textcase.app)
+13. [Data Jar](https://datajar.app)
 
 [contributors-shield]: https://img.shields.io/github/contributors/huaminghuangtw/Shortcutomation.svg?color=fafafa&logo=github&logoColor=fff&style=for-the-badge
 [contributors-url]: https://github.com/huaminghuangtw/Shortcutomation/graphs/contributors

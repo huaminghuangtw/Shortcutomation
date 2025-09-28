@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -44,6 +44,7 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "UUID": "8AA2DB00-7B6B-4F0B-A138-FAF37ABC15EF",
                 "GroupingIdentifier": "9C30C0B3-2CEA-4C40-9BA9-386BF028588B",
                 "WFCondition": 100
             }
@@ -162,6 +163,59 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "703DE577-4CB7-435E-9995-133AD515AAB7",
+                            "Type": "ActionOutput",
+                            "OutputName": "shortenedURL"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "www.google.com/maps",
+                "GroupingIdentifier": "926BC140-D9D8-40A8-9CB5-71B277DB92B0",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GetQueryItemValueFromURLIntent",
+            "WFWorkflowActionParameters": {
+                "queryItemName": "q",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GetQueryItemValueFromURLIntent"
+                },
+                "UUID": "2EB63A4C-6354-4FC5-B7EF-7A9BFBA64576",
+                "url": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "703DE577-4CB7-435E-9995-133AD515AAB7",
+                                "Type": "ActionOutput",
+                                "OutputName": "shortenedURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "926BC140-D9D8-40A8-9CB5-71B277DB92B0",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GetTitleOfURLIntent",
             "WFWorkflowActionParameters": {
                 "url": {
@@ -189,20 +243,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "14CB8A6B-821A-4F2B-A078-862C9F92A04F",
-                            "Type": "ActionOutput",
-                            "OutputName": "Title of URL"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "A65EA019-5CF4-45BD-B016-CD0A4F4CFE4A",
-                "WFCondition": 100
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "926BC140-D9D8-40A8-9CB5-71B277DB92B0",
+                "UUID": "83105C76-39BC-4DFE-84BF-236525E089EE"
             }
         },
         {
@@ -213,9 +256,9 @@
                         "string": "[￼](￼)",
                         "attachmentsByRange": {
                             "{1, 1}": {
-                                "OutputUUID": "14CB8A6B-821A-4F2B-A078-862C9F92A04F",
+                                "OutputUUID": "83105C76-39BC-4DFE-84BF-236525E089EE",
                                 "Type": "ActionOutput",
-                                "OutputName": "Title of URL"
+                                "OutputName": "If Result"
                             },
                             "{4, 1}": {
                                 "OutputUUID": "703DE577-4CB7-435E-9995-133AD515AAB7",
@@ -227,33 +270,6 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "21BF0A10-E786-43DF-BC4E-78862B060783"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "A65EA019-5CF4-45BD-B016-CD0A4F4CFE4A",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "703DE577-4CB7-435E-9995-133AD515AAB7",
-                        "Type": "ActionOutput",
-                        "OutputName": "shortenedURL"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "A65EA019-5CF4-45BD-B016-CD0A4F4CFE4A",
-                "WFControlFlowMode": 2
             }
         },
         {
@@ -339,6 +355,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictatetext",
             "WFWorkflowActionParameters": {
                 "WFSpeechLanguage": "zh-TW",
+                "WFDictateTextStopListening": "On Tap",
                 "UUID": "F9FFFB4D-26F5-4384-B836-5A807FD743D6"
             }
         },
@@ -684,10 +701,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -854,8 +868,8 @@
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
         "Watch",
-        "ActionExtension",
-        "QuickActions"
+        "QuickActions",
+        "ActionExtension"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true

@@ -5,10 +5,42 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3303.0.4",
+    "WFWorkflowClientVersion": "3612.0.2.1",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.bluetooth.set",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.wifi.set",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "9C4AFF70-642D-4E76-9B15-D5A5FDCC60DE",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
@@ -22,12 +54,69 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.bluetooth.set",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9C4AFF70-642D-4E76-9B15-D5A5FDCC60DE",
+                "UUID": "E4B80287-7E7C-4B0F-8D13-DB67285B1556"
+            }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.wifi.set",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "82FB11D5-9827-42D3-A1A2-5C17206B25F9",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "System Settings",
+                "UUID": "B59D94BA-ABD0-426B-A282-AC4CB70267DA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B59D94BA-ABD0-426B-A282-AC4CB70267DA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflowName": "Open App",
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "82FB11D5-9827-42D3-A1A2-5C17206B25F9",
+                "WFControlFlowMode": 2
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
