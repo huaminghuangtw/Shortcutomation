@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -95,6 +95,57 @@
             "WFWorkflowActionParameters": {}
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFName": "‏‎",
+                "UUID": "8567D559-6A63-4A9E-AB07-97581258B5BD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8567D559-6A63-4A9E-AB07-97581258B5BD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Renamed Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Which one?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "📥 Add to Reminder List",
+                    "🗃️ Export to Second Brain",
+                    "📝 Log to Journal",
+                    "📣 Share with Others",
+                    "✅ Mark as Completed",
+                    "⏩ Skip"
+                ],
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "📥 Add to Reminder List",
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -105,12 +156,262 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "BCD69AFA-35B2-49D9-9C51-143188FCD4B1",
-                    "workflowName": "_Organize Inbox",
+                    "workflowIdentifier": "8C70B6D1-9040-482A-BE98-056B3BC29C6E",
+                    "workflowName": "_Add to AReminders",
                     "isSelf": false
                 },
-                "UUID": "65A83B80-6BF0-4918-92E5-AE9ACEDB7CE8",
-                "WFWorkflowName": "_Organize Inbox"
+                "UUID": "F84B28EC-E863-474A-9311-C5C6FEDC0F4D",
+                "WFWorkflowName": "_Add to AReminders"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "🗃️ Export to Second Brain",
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "59A66174-44C9-4B26-A01B-CF87C79BD112",
+                    "workflowName": "Get Leading Symbols Dictionary",
+                    "isSelf": false
+                },
+                "CustomOutputName": "dict",
+                "UUID": "5C935DD1-3D7A-4149-93BE-0CF5B0D1B4A4",
+                "WFWorkflowName": "Get Leading Symbols Dictionary"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5C935DD1-3D7A-4149-93BE-0CF5B0D1B4A4",
+                        "Type": "ActionOutput",
+                        "OutputName": "dict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFChooseFromListActionPrompt": "🤖 Which one?",
+                "CustomOutputName": "leadingSymbol",
+                "UUID": "DEB622D9-F84F-4E64-98C9-32308C36A3FA",
+                "WFChooseFromListActionSelectMultiple": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Title",
+                "Mode": "Set",
+                "UUID": "3AF817A2-FA6E-4268-B263-EC73EBF0AAE1",
+                "WFReminderContentItemTitle": {
+                    "Value": {
+                        "string": "￼ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "leadingSymbol",
+                                "OutputUUID": "DEB622D9-F84F-4E64-98C9-32308C36A3FA",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "WFItemName",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Name"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "📝 Log to Journal",
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Is Flagged",
+                "Mode": "Set",
+                "UUID": "C1F2CD55-052D-4271-A3B3-6CC2AF4463A7",
+                "WFReminderContentItemIsFlagged": 1,
+                "WFReminderContentItemTitle": {
+                    "Value": {
+                        "string": "￼ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "DEB622D9-F84F-4E64-98C9-32308C36A3FA",
+                                "Type": "ActionOutput",
+                                "OutputName": "leadingSymbol"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "📣 Share with Others",
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFReminderContentItemIsCompleted": 1,
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Is Completed",
+                "Mode": "Set",
+                "UUID": "0C2BAC9A-1E60-4797-8A20-8623AB562A0B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "B854B076-F80E-4BFE-B204-13AB18133D2B",
+                    "workflowName": "_Reminder2Markdown",
+                    "isSelf": false
+                },
+                "UUID": "942F2949-716C-4F38-AC01-F6E6F8FA09E5",
+                "WFWorkflowName": "_Reminder2Markdown"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.WriteTextIntent",
+            "WFWorkflowActionParameters": {
+                "editorTitle": "👀",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "WriteTextIntent"
+                },
+                "UUID": "B3A864A3-1B00-42A2-9BFB-D3EE62DE875C",
+                "shouldEdit": 1,
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "942F2949-716C-4F38-AC01-F6E6F8FA09E5",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.share",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "Clipboard"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "90CFC1E9-BF99-4599-93CC-36FB6EADFCEB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Mark as Completed",
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionParameters": {
+                "WFReminderContentItemIsCompleted": 1,
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Is Completed",
+                "Mode": "Set",
+                "UUID": "E7340DDC-602E-4C03-9B96-37B59DDF3E6E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "⏩ Skip",
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {
+                "UUID": "4B123DEB-E04C-4B3F-A3F5-D6E721029FFD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "41147F9F-F967-405A-95EC-4C7403608878",
+                "UUID": "115AA396-F7DC-4530-AB6C-CB28DB4DE118"
             }
         },
         {
@@ -124,10 +425,6 @@
                 "GroupingIdentifier": "C7149C4C-13A7-4630-B298-E324DBE48B68",
                 "UUID": "84508016-0632-41DE-ACDC-F01177021EB2"
             }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
-            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetAudioIntent",

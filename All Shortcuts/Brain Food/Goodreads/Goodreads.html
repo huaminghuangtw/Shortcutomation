@@ -157,7 +157,7 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>Goodreads</b>
-  (60 actions, 42 KB)
+  (64 actions, 46 KB)
 </button>
 <button class="button gGray nonbottom" id="m0">
 0 If <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop">
@@ -180,7 +180,7 @@ hr {
 <button class="gGray nontop" id="m6">
 6 End If　» <span class="magic" onclick="magictap(8)">8</span> <span class="magic" onclick="magictap(9)">9</span></button><div></div>
 <button class="gBlue" id="m7">
-7 URL <span class="box">https://www.goodreads.com</span> <b>　➔ baseURL</b>　» <span class="magic" onclick="magictap(10)">10</span> <span class="magic" onclick="magictap(26)">26</span> <span class="magic" onclick="magictap(32)">32</span> <span class="magic" onclick="magictap(57)">57</span></button><div></div>
+7 URL <span class="box">https://www.goodreads.com</span> <b>　➔ baseURL</b>　» <span class="magic" onclick="magictap(10)">10</span> <span class="magic" onclick="magictap(37)">37</span> <span class="magic" onclick="magictap(61)">61</span></button><div></div>
 <button class="button gGray nonbottom" id="m8">
 8 If <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 If Result]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop">
 <button class="gBlue inside" id="m9">
@@ -188,11 +188,11 @@ hr {
 <hr><button class="gGreen inside" id="m10">
 10 Get Contents of URL <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 baseURL]</b></span>/search?q=<span class="var"><b>[9 URL Encoded Text]</b></span></span>　»</button>
 <hr><button class="gBlue inside" id="m11">
-11 Make HTML from Rich Text <span class="box"><span class="var"><b>[10 Contents of URL]</b></span></span>　» <i>12</i> <span class="magic" onclick="magictap(17)">17</span> <span class="magic" onclick="magictap(29)">29</span></button>
+11 Make HTML from Rich Text <span class="box"><span class="var"><b>[10 Contents of URL]</b></span></span>　» <i>12</i> <span class="magic" onclick="magictap(17)">17</span> <span class="magic" onclick="magictap(19)">19</span></button>
 <hr><button class="gYellow inside" id="m12">
 12 Match Text <span class="box">&lt;a class="greyText" rel="nofollow" href="/work/editions/(.*?)"></span> in <span class="box"><span class="var"><b>[11 HTML from Rich Text]</b></span></span>　»</button>
 <hr><button class="gYellow inside" id="m13">
-13 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[12 Matches]</b></span></span> <b>　➔ slugs</b>　» <i>14</i> <span class="magic" onclick="magictap(15)">15</span> <span class="magic" onclick="magictap(25)">25</span></button>
+13 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[12 Matches]</b></span></span> <b>　➔ slugs</b>　» <i>14</i> <span class="magic" onclick="magictap(15)">15</span> <span class="magic" onclick="magictap(36)">36</span></button>
 <hr><button class="button gGray nonbottom inside" id="m14">
 14 If <span class="box"><span class="var"><b>[13 slugs]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dotted inside">
 <button class=" inside" id="m15">
@@ -200,127 +200,134 @@ hr {
 <hr><button class="button gGray nonbottom inside" id="m16">
 16 If <span class="box"><span class="var"><b>[15 Count]</b></span></span> <span class="box">&gt;</span> <span class="box">1</span></button><div class="content contentloop dashed inside">
 <button class="gYellow inside" id="m17">
-17 Match Text <span class="box">&lt;a title="(.*?)"</span> in <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 HTML from Rich Text]</b></span></span>　»</button>
+17 Match Text <span class="box">&lt;span itemprop='author'[^>]*>[\s\S]*?&lt;span itemprop="name">(.*?)&lt;/span></span> in <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 HTML from Rich Text]</b></span></span>　»</button>
 <hr><button class="gYellow inside" id="m18">
-18 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[17 Matches]</b></span></span> <b>　➔ titles</b>　» <i>19</i> <span class="magic" onclick="magictap(20)">20</span></button>
-<hr><button class="button gOrange inside" id="m19">
-19 Choose from List <span class="box"><span class="var"><b>[18 titles]</b></span></span>　»</button><div class="content inside">
+18 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[17 Matches]</b></span></span> <b>　➔ authorNames</b>　» <span class="magic" onclick="magictap(25)">25</span></button><div></div>
+<button class="gYellow inside" id="m19">
+19 Match Text <span class="box">&lt;a title="(.*?)"</span> in <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 HTML from Rich Text]</b></span></span>　»</button>
+<hr><button class="gYellow inside" id="m20">
+20 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[19 Matches]</b></span></span> <b>　➔ bookTitles</b>　» <i>21</i> <span class="magic" onclick="magictap(31)">31</span></button>
+<hr><button class="button gGray nonbottom inside" id="m21">
+21 Repeat with Each in <span class="box"><span class="var"><b>[20 bookTitles]</b></span></span></button><div class="content contentloop inside">
+<button class="gBlue inside" id="m22">
+22 Make Rich Text from HTML <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　» <i>23</i> <span class="magic" onclick="magictap(26)">26</span></button>
+<hr><button class="gOrange inside" id="m23">
+23 Set Dictionary Value for <span class="box"><span class="var"><b>[22 Rich Text from HTML]</b></span></span> to <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> in <span class="box"><span class="var"><b>[dict]</b></span></span>　»</button>
+<hr><button class="gOrange inside" id="m24">
+24 Set Variable <span class="box">dict</span> to <span class="box"><span class="var"><b>[23 Dictionary]</b></span></span></button><div></div>
+<button class="gOrange inside" id="m25">
+25 Get <span class="box">Item At Index</span> <span class="box"><span class="var"><b>[Repeat Index]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(18)"><b>[18 authorNames]</b></span></span>　»</button>
+<hr><button class="gOrange inside" id="m26">
+26 Set Dictionary Value for <span class="box"><span class="magic" onclick="magictap(22)"><b>[22 Rich Text from HTML]</b></span></span> to <span class="box"><span class="var"><b>[25 Item from List]</b></span></span> in <span class="box"><span class="var"><b>[dictForDisplay]</b></span></span>　»</button>
+<hr><button class="gOrange inside" id="m27">
+27 Set Variable <span class="box">dictForDisplay</span> to <span class="box"><span class="var"><b>[26 Dictionary]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m28">
+28 End Repeat with Each　▵<span class="magic" onclick="magictap(21)">21</span></button><div></div>
+<button class="button gOrange inside" id="m29">
+29 Choose from List <span class="box"><span class="var"><b>[dictForDisplay]</b></span></span>　»</button><div class="content inside">
 <div class="row"><div class="col1">ChooseFromListActionPrompt</div><span style="display:none">: </span><div class="col2">🤖 Which one?</div></div></div>
-<hr><button class="button gOrange inside" id="m20">
-20 Dictionary　»</button><div class="content inside">
-<div class="col2">{  "list": "<span class="magic" onclick="magictap(18)"><b>[18 titles]</b></span>",
-   "item": "<span class="var"><b>[19 Selected Item]</b></span>"
+<hr><button class="gOrange inside" id="m30">
+30 Get Dictionary Value for <span class="box"><span class="var"><b>[29 Selected Item</b>’s Name<b>]</b></span></span> in <span class="box"><span class="var"><b>[dict]</b></span></span>　»</button>
+<hr><button class="button gOrange inside" id="m31">
+31 Dictionary　»</button><div class="content inside">
+<div class="col2">{  "list": "<span class="magic" onclick="magictap(20)"><b>[20 bookTitles]</b></span>",
+   "item": "<span class="var"><b>[30 Dictionary Value]</b></span>"
 }</div></div>
-<hr><button class="button  inside" id="m21">
-21 Run Shortcut <span class="box">Get Index of List Item (First Occurrence)</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[20 Dictionary]</b></span></div></div>
+<hr><button class="button  inside" id="m32">
+32 Run Shortcut <span class="box">Get Index of List Item (First Occurrence)</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[31 Dictionary]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "0E5FA7A2-FBEE-4233-8B9E-F9959F316120",
    "workflowName": "Get Index of List Item (First Occurrence)",
    "isSelf": false
 }</div></div></div></div>
-<button class="button gGray nonbottom nontop inside" id="m22">
-22 Otherwise　▵<span class="magic" onclick="magictap(16)">16</span></button><div class="content contentloop dashed inside">
-<button class=" inside" id="m23">
-23 Number <span class="box">1</span></button></div>
-<button class="gGray nontop inside" id="m24">
-24 End If　» <i>25</i> <span class="magic" onclick="magictap(31)">31</span></button>
-<hr><button class="gOrange inside" id="m25">
-25 Get <span class="box">Item At Index</span> <span class="box"><span class="var"><b>[24 idx]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(13)"><b>[13 slugs]</b></span></span>　»</button>
-<hr><button class="gBlue inside" id="m26">
-26 URL <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 baseURL]</b></span>/work/quotes/<span class="var"><b>[25 Item from List]</b></span></span>　» <i>27</i> <span class="magic" onclick="magictap(28)">28</span></button>
-<hr><button class="button  inside" id="m27">
-27 Run Shortcut <span class="box">📥 Add to Inbox</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[26 URL]</b></span></div></div>
-<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
-   "workflowName": "📥 Add to Inbox",
-   "isSelf": false
-}</div></div></div>
-<button class="gBlue inside" id="m28">
-28 Open URL <span class="box"><span class="magic" onclick="magictap(26)"><b>[26 URL]</b></span></span></button><div></div>
-<button class="gYellow inside" id="m29">
-29 Match Text <span class="box">&lt;a class="bookTitle" itemprop="url" href="(.*?)"</span> in <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 HTML from Rich Text]</b></span></span>　»</button>
-<hr><button class="gYellow inside" id="m30">
-30 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[29 Matches]</b></span></span>　»</button>
-<hr><button class="gOrange inside" id="m31">
-31 Get <span class="box">Item At Index</span> <span class="box"><span class="magic" onclick="magictap(24)"><b>[24 idx]</b></span></span> from List <span class="box"><span class="var"><b>[30 Text]</b></span></span>　»</button>
-<hr><button class="gGreen inside" id="m32">
-32 Get Contents of URL <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 baseURL]</b></span><span class="var"><b>[31 Item from List]</b></span></span>　»</button>
-<hr><button class="gBlue inside" id="m33">
-33 Make HTML from Rich Text <span class="box"><span class="var"><b>[32 Contents of URL]</b></span></span>　»</button>
-<hr><button class="gYellow inside" id="m34">
-34 Match Text <span class="box">&lt;script type="application/ld\+json">(.*?)&lt;/script></span> in <span class="box"><span class="var"><b>[33 HTML from Rich Text]</b></span></span>　»</button>
-<hr><button class="gYellow inside" id="m35">
-35 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[34 Matches]</b></span></span>　»</button>
+<button class="button gGray nonbottom nontop inside" id="m33">
+33 Otherwise　▵<span class="magic" onclick="magictap(16)">16</span></button><div class="content contentloop dashed inside">
+<button class=" inside" id="m34">
+34 Number <span class="box">1</span></button></div>
+<button class="gGray nontop inside" id="m35">
+35 End If　»</button>
 <hr><button class="gOrange inside" id="m36">
-36 Get Dictionary from <span class="box"><span class="var"><b>[35 Text]</b></span></span>　» <i>37</i> <span class="magic" onclick="magictap(38)">38</span> <span class="magic" onclick="magictap(44)">44</span></button>
-<hr><button class="gOrange inside" id="m37">
-37 Get Dictionary Value for <span class="box">author.1.name</span> in <span class="box"><span class="var"><b>[36 Dictionary]</b></span></span> <b>　➔ author</b>　» <span class="magic" onclick="magictap(41)">41</span> <span class="magic" onclick="magictap(46)">46</span></button><div></div>
-<button class="gOrange inside" id="m38">
-38 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="magic" onclick="magictap(36)"><b>[36 Dictionary]</b></span></span> <b>　➔ title</b>　»</button>
-<hr><button class="button gYellow inside" id="m39">
-39 Split Text <span class="box"><span class="var"><b>[38 title]</b></span></span> by <span class="box">Custom</span>　»</button><div class="content inside">
-<div class="row"><div class="col1">TextCustomSeparator</div><span style="display:none">: </span><div class="col2">:</div></div></div>
-<hr><button class="gOrange inside" id="m40">
-40 Get First Item from List <span class="box"><span class="var"><b>[39 Split Text]</b></span></span> <b>　➔ title</b>　» <i>41</i> <span class="magic" onclick="magictap(46)">46</span></button>
-<hr><button class="button gYellow inside" id="m41">
-41 Text　»</button><div class="content inside">
-<div class="col2"><span class="magic" onclick="magictap(37)"><b>[37 author]</b></span> | <span class="var"><b>[40 title]</b></span></div></div>
-<hr><button class="gBlue inside" id="m42">
-42 Make Rich Text from HTML <span class="box"><span class="var"><b>[41 Text]</b></span></span>　»</button>
-<hr><button class="button  inside" id="m43">
-43 Run Shortcut <span class="box">📥 Add to Inbox</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[42 Rich Text from HTML]</b></span></div></div>
+36 Get <span class="box">Item At Index</span> <span class="box"><span class="var"><b>[35 idx]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(13)"><b>[13 slugs]</b></span></span>　»</button>
+<hr><button class="gBlue inside" id="m37">
+37 URL <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 baseURL]</b></span>/work/quotes/<span class="var"><b>[36 Item from List]</b></span></span>　» <i>38</i> <span class="magic" onclick="magictap(39)">39</span> <span class="magic" onclick="magictap(40)">40</span></button>
+<hr><button class="gBlue inside" id="m38">
+38 Open URL <span class="box"><span class="var"><b>[37 URL]</b></span></span></button><div></div>
+<button class="button  inside" id="m39">
+39 Run Shortcut <span class="box">📥 Add to Inbox</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(37)"><b>[37 URL]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
    "workflowName": "📥 Add to Inbox",
    "isSelf": false
 }</div></div></div>
-<button class="gOrange inside" id="m44">
-44 Get Dictionary Value for <span class="box">isbn</span> in <span class="box"><span class="magic" onclick="magictap(36)"><b>[36 Dictionary]</b></span></span> <b>　➔ isbn</b>　»</button>
-<hr><button class="gBlue inside" id="m45">
-45 Copy <span class="box"><span class="var"><b>[44 isbn]</b></span></span> to Clipboard</button><div></div>
-<button class="button gYellow inside" id="m46">
-46 Text　» <span class="magic" onclick="magictap(48)">48</span> <span class="magic" onclick="magictap(51)">51</span></button><div class="content inside">
-<div class="col2">Summarize the book &lt;<span class="magic" onclick="magictap(40)"><b>[40 title]</b></span>> by <span class="magic" onclick="magictap(37)"><b>[37 author]</b></span>, and give me a list of the most important insights, takeaways, and actionable tips/advice from this book.</div></div>
-<button class="button gGray nonbottom inside" id="m47">
-47 If <span class="box"><span class="var"><b>[DeviceDetails</b>’s OS<b>]</b></span></span> <span class="box">is</span> <span class="box">macOS</span></button><div class="content contentloop dashed inside">
-<button class="button  inside" id="m48">
-48 Run Shortcut <span class="box" style="color:red;font-weight:bold">🤖 ChatGPT</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(46)"><b>[46 Text]</b></span></div></div>
+<button class="gGreen inside" id="m40">
+40 Get Contents of URL <span class="box"><span class="magic" onclick="magictap(37)"><b>[37 URL]</b></span></span>　»</button>
+<hr><button class="gBlue inside" id="m41">
+41 Make HTML from Rich Text <span class="box"><span class="var"><b>[40 Contents of URL]</b></span></span>　» <i>42</i> <span class="magic" onclick="magictap(44)">44</span></button>
+<hr><button class="gYellow inside" id="m42">
+42 Match Text <span class="box">&lt;a class="authorName" href="(.*?)">(.*?)&lt;/a></span> in <span class="box"><span class="var"><b>[41 HTML from Rich Text]</b></span></span>　»</button>
+<hr><button class="gYellow inside" id="m43">
+43 Get Match Group At Index <span class="box">2</span> in <span class="box"><span class="var"><b>[42 Matches]</b></span></span> <b>　➔ authorName</b>　» <span class="magic" onclick="magictap(47)">47</span> <span class="magic" onclick="magictap(50)">50</span></button><div></div>
+<button class="gYellow inside" id="m44">
+44 Match Text <span class="box">&lt;a class="bookTitle" href="(.*?)">(.*?)&lt;/a></span> in <span class="box"><span class="magic" onclick="magictap(41)"><b>[41 HTML from Rich Text]</b></span></span>　»</button>
+<hr><button class="gYellow inside" id="m45">
+45 Get Match Group At Index <span class="box">2</span> in <span class="box"><span class="var"><b>[44 Matches]</b></span></span> <b>　➔ bookTitle</b>　»</button>
+<hr><button class="gBlue inside" id="m46">
+46 Make Rich Text from HTML <span class="box"><span class="var"><b>[45 bookTitle]</b></span></span> <b>　➔ bookTitle</b>　» <i>47</i> <span class="magic" onclick="magictap(50)">50</span></button>
+<hr><button class="button gYellow inside" id="m47">
+47 Text　»</button><div class="content inside">
+<div class="col2"><span class="magic" onclick="magictap(43)"><b>[43 authorName]</b></span> | <span class="var"><b>[46 bookTitle]</b></span></div></div>
+<hr><button class="gBlue inside" id="m48">
+48 Make Rich Text from HTML <span class="box"><span class="var"><b>[47 Text]</b></span></span>　»</button>
+<hr><button class="button  inside" id="m49">
+49 Run Shortcut <span class="box">📥 Add to Inbox</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[48 Rich Text from HTML]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
+   "workflowName": "📥 Add to Inbox",
+   "isSelf": false
+}</div></div></div>
+<button class="button gYellow inside" id="m50">
+50 Text　» <span class="magic" onclick="magictap(52)">52</span> <span class="magic" onclick="magictap(55)">55</span></button><div class="content inside">
+<div class="col2">Summarize the book &lt;<span class="magic" onclick="magictap(46)"><b>[46 bookTitle]</b></span>> by <span class="magic" onclick="magictap(43)"><b>[43 authorName]</b></span>, and give me a list of the most important insights, takeaways, and actionable tips/advice from this book.</div></div>
+<button class="button gGray nonbottom inside" id="m51">
+51 If <span class="box"><span class="var"><b>[DeviceDetails</b>’s OS<b>]</b></span></span> <span class="box">is</span> <span class="box">macOS</span></button><div class="content contentloop dashed inside">
+<button class="button  inside" id="m52">
+52 Run Shortcut <span class="box" style="color:red;font-weight:bold">🤖 ChatGPT</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(50)"><b>[50 Text]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "13942EF3-5143-4EDC-A74F-9B0CD5711274",
    "workflowName": "🤖 ChatGPT",
    "isSelf": false
 }</div></div></div></div>
-<button class="gGray nontop inside" id="m49">
-49 End If</button><div></div>
-<button class="button gGray nonbottom inside" id="m50">
-50 If <span class="box"><span class="var"><b>[DeviceDetails</b>’s OS<b>]</b></span></span> <span class="box">is</span> <span class="box">iOS</span></button><div class="content contentloop dashed inside">
-<button class="button  inside" id="m51">
-51 Run Shortcut <span class="box">Gemini - Generate Content</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(46)"><b>[46 Text]</b></span></div></div>
+<button class="gGray nontop inside" id="m53">
+53 End If</button><div></div>
+<button class="button gGray nonbottom inside" id="m54">
+54 If <span class="box"><span class="var"><b>[DeviceDetails</b>’s OS<b>]</b></span></span> <span class="box">is</span> <span class="box">iOS</span></button><div class="content contentloop dashed inside">
+<button class="button  inside" id="m55">
+55 Run Shortcut <span class="box">Gemini - Generate Content</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(50)"><b>[50 Text]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "B329576B-928F-42A5-8F4C-888A727A1D7D",
    "workflowName": "Gemini - Generate Content",
    "isSelf": false
 }</div></div></div></div>
-<button class="gGray nontop inside" id="m52">
-52 End If</button></div>
-<button class="button gGray nonbottom nontop inside" id="m53">
-53 Otherwise　▵<span class="magic" onclick="magictap(14)">14</span></button><div class="content contentloop dotted inside">
-<button class="button  inside" id="m54">
-54 Run Shortcut <span class="box">Goodreads</span></button><div class="content inside">
+<button class="gGray nontop inside" id="m56">
+56 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m57">
+57 Otherwise　▵<span class="magic" onclick="magictap(14)">14</span></button><div class="content contentloop dotted inside">
+<button class="button  inside" id="m58">
+58 Run Shortcut <span class="box">Goodreads</span></button><div class="content inside">
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "EB6BC5BA-F766-4AE0-BC52-32048212E551",
    "workflowName": "Goodreads",
    "isSelf": true
 }</div></div></div></div>
-<button class="gGray nontop inside" id="m55">
-55 End If</button></div>
-<button class="button gGray nonbottom nontop" id="m56">
-56 Otherwise　▵<span class="magic" onclick="magictap(8)">8</span></button><div class="content contentloop">
-<button class="gBlue inside" id="m57">
-57 Open URL <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 baseURL]</b></span>/list</span></button></div>
-<button class="gGray nontop" id="m58">
-58 End If</button><div></div>
-<button class="gGray" id="m59">
-59 Stop This Shortcut</button>
+<button class="gGray nontop inside" id="m59">
+59 End If</button></div>
+<button class="button gGray nonbottom nontop" id="m60">
+60 Otherwise　▵<span class="magic" onclick="magictap(8)">8</span></button><div class="content contentloop">
+<button class="gBlue inside" id="m61">
+61 Open URL <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 baseURL]</b></span>/list</span></button></div>
+<button class="gGray nontop" id="m62">
+62 End If</button><div></div>
+<button class="gGray" id="m63">
+63 Stop This Shortcut</button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

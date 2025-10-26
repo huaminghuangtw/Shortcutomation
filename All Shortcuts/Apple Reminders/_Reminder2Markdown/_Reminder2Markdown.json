@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
         "WFStringContentItem"
     ],
@@ -257,13 +257,148 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "DF2D6C18-103F-4C57-9A8F-CBA462277A6A",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "OutputUUID": "AEC9C20B-4817-405F-8F46-77F95EECF9C0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Notes"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "18460ED8-C72E-4A4B-8298-9111090891AC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "18460ED8-C72E-4A4B-8298-9111090891AC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "C14D7F49-158E-4B1E-BEC0-A2781736DAE1",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n￼",
+                        "string": "\t￼",
                         "attachmentsByRange": {
-                            "{16, 1}": {
+                            "{1, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9D9813D5-A30C-4657-B19C-9011635B906E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C14D7F49-158E-4B1E-BEC0-A2781736DAE1",
+                "UUID": "CC0BFB3B-E0B0-4C08-8DED-E2C900212745"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "CC0BFB3B-E0B0-4C08-8DED-E2C900212745",
+                                "Type": "ActionOutput",
+                                "OutputName": "Repeat Results"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "716E6BAC-CD1B-4ED5-AFFE-C0F8DA723293",
+                                "Type": "ActionOutput",
+                                "OutputName": "Title"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F1CCE7F4-D498-47DB-97AC-B983C641DA44"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DF2D6C18-103F-4C57-9A8F-CBA462277A6A",
+                "UUID": "D224366C-6D54-4D4E-8D66-EFE62E7C8A2D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "EFA1E01A-9A74-401D-873F-E5EAAC3F13FD",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n￼",
+                        "attachmentsByRange": {
+                            "{21, 1}": {
                                 "OutputUUID": "AEC9C20B-4817-405F-8F46-77F95EECF9C0",
                                 "Type": "ActionOutput",
                                 "OutputName": "Notes"
@@ -276,7 +411,16 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "4D70B7CE-F280-4142-A0AC-43AE3E897723"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "EFA1E01A-9A74-401D-873F-E5EAAC3F13FD",
+                "UUID": "8B35B638-DCBA-423F-B11A-BC356A1DE057"
             }
         },
         {
@@ -351,10 +495,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"

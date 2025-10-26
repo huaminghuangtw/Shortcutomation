@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": -1448498689,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
         "WFStringContentItem"
     ],
@@ -18,21 +18,22 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "v=([^&]+)",
-                "text": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ExtensionInput"
-                            }
-                        }
+                        "Type": "ExtensionInput"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "4B4E46B2-C8B2-499A-92DC-50EFE0273F2C"
+                "CustomOutputName": "videoId",
+                "UUID": "B9D0FB04-4014-4EA1-88EC-FD17D6B43651",
+                "WFWorkflow": {
+                    "workflowIdentifier": "D3BF3993-27F9-414E-BB76-491ACE8A7F12",
+                    "workflowName": "_Extract YouTube VideoID from URL",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "_Extract YouTube VideoID from URL"
             }
         },
         {
@@ -42,9 +43,9 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "4B4E46B2-C8B2-499A-92DC-50EFE0273F2C",
+                            "OutputUUID": "B9D0FB04-4014-4EA1-88EC-FD17D6B43651",
                             "Type": "ActionOutput",
-                            "OutputName": "Matches"
+                            "OutputName": "videoId"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -55,21 +56,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
-            "WFWorkflowActionParameters": {
-                "matches": {
-                    "Value": {
-                        "OutputUUID": "4B4E46B2-C8B2-499A-92DC-50EFE0273F2C",
-                        "Type": "ActionOutput",
-                        "OutputName": "Matches"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "videoId",
-                "UUID": "3765711C-46CF-44A8-B213-AD6875AEF626"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
                 "WFURLActionURL": {
@@ -77,7 +63,7 @@
                         "string": " https://youtu.be/￼",
                         "attachmentsByRange": {
                             "{18, 1}": {
-                                "OutputUUID": "3765711C-46CF-44A8-B213-AD6875AEF626",
+                                "OutputUUID": "B9D0FB04-4014-4EA1-88EC-FD17D6B43651",
                                 "Type": "ActionOutput",
                                 "OutputName": "videoId"
                             }
@@ -565,8 +551,7 @@
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFURLContentItem",
-        "WFStringContentItem"
+        "WFURLContentItem"
     ],
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],

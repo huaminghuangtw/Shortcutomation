@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
         "WFContentItem"
     ],
@@ -38,10 +38,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
@@ -122,10 +119,7 @@
                             {
                                 "Operator": 99,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    },
+                                    "Bool": false,
                                     "String": {
                                         "Value": {
                                             "string": "￼",
@@ -177,38 +171,41 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
-            "WFWorkflowActionParameters": {
-                "key": {
-                    "subtitle": {
-                        "key": "End the Day Right"
-                    },
-                    "title": {
-                        "key": "End the Day Right"
-                    },
-                    "value": "End the Day Right"
-                },
-                "UUID": "E333DF4D-3A38-4674-9FCE-88E45A3A850A",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "GlobalVariableGetText"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "E333DF4D-3A38-4674-9FCE-88E45A3A850A",
-                        "Type": "ActionOutput",
-                        "OutputName": "Global Variable — Text"
+                        "Type": "CurrentDate"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "EF146484-3A72-4D63-8631-32184234C9FB"
+                "CustomOutputName": "keypath",
+                "UUID": "230DC6A1-C886-4D2A-B629-B8A43B38C9E2",
+                "WFWorkflow": {
+                    "workflowIdentifier": "172B2E5E-190F-4B6F-AD33-43BE46381D95",
+                    "workflowName": "_Get Key Path for Journal Metadata",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "_Get Key Path for Journal Metadata"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼.endTheDayAt",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "230DC6A1-C886-4D2A-B629-B8A43B38C9E2",
+                                "Type": "ActionOutput",
+                                "OutputName": "keypath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "57659939-E0F5-444D-8BDA-9C52CA1ABB29"
             }
         },
         {
@@ -216,7 +213,7 @@
             "WFWorkflowActionParameters": {
                 "WFDate": {
                     "Value": {
-                        "OutputUUID": "859F4A44-83AF-4D45-904F-9E8F5632F425",
+                        "OutputUUID": "591BD875-C4EA-4E51-9B9C-EA2EA566F099",
                         "Type": "ActionOutput",
                         "OutputName": "12:34"
                     },
@@ -226,9 +223,15 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "EF146484-3A72-4D63-8631-32184234C9FB",
                             "Type": "ActionOutput",
-                            "OutputName": "Dates"
+                            "OutputName": "Value Exists",
+                            "OutputUUID": "57659939-E0F5-444D-8BDA-9C52CA1ABB29",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -236,7 +239,7 @@
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "",
                 "GroupingIdentifier": "689EE2ED-F2A8-4CFE-A3A8-103AE5C03EB3",
-                "WFCondition": 1002
+                "WFCondition": 4
             }
         },
         {
@@ -368,10 +371,7 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Bool": {
-                                        "Value": false,
-                                        "WFSerializationType": "WFBooleanSubstitutableState"
-                                    }
+                                    "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Flagged"

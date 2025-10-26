@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -15,7 +15,7 @@
                 "WFDuration": {
                     "Value": {
                         "Unit": "months",
-                        "Magnitude": "6"
+                        "Magnitude": "3"
                     },
                     "WFSerializationType": "WFQuantityFieldValue"
                 },
@@ -32,6 +32,35 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetReminderListsIntent",
+            "WFWorkflowActionParameters": {
+                "getType": {
+                    "Value": {
+                        "OutputUUID": "5209AF34-8F07-4A48-AF93-FDDD7159E3EC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Adjusted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "458B37B8-3DA0-4DBC-B834-9CBF861A591E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "458B37B8-3DA0-4DBC-B834-9CBF861A591E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminder Lists"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "103E6168-F1AB-447E-9B96-59E0953C6065",
+                "WFControlFlowMode": 0
             }
         },
         {
@@ -64,11 +93,29 @@
                                 },
                                 "Removable": true,
                                 "Property": "Completion Date"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": {
+                                            "Value": {
+                                                "VariableName": "Repeat Item",
+                                                "Type": "Variable"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
                             }
                         ]
                     },
                     "WFSerializationType": "WFContentPredicateTableTemplate"
                 },
+                "WFContentItemLimitEnabled": false,
                 "UUID": "5B4C55F9-EE2E-4024-A302-B10DD09C0A63"
             }
         },
@@ -85,6 +132,17 @@
                 },
                 "UUID": "BBF6B0C4-95AD-40DF-9FB2-FD66182525CE"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "103E6168-F1AB-447E-9B96-59E0953C6065",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

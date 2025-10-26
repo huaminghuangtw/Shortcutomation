@@ -1,4 +1,4 @@
-### ✨ 13 New Shortcuts
+### ✨ 12 New Shortcuts
 
 ---
 
@@ -6,48 +6,38 @@
 
 ---
 
-* [When Reminders is opened (1)](https://shortcutomation.com/gallery/when-reminders-is-opened)
+* [API - Gmail (1)](https://shortcutomation.com/gallery/api-gmail)
 
-    * [Inbox Zero](https://shortcutomation.com/gallery/when-reminders-is-opened/inbox-zero)
+    * [📨 Fetch Email Newsletter](https://shortcutomation.com/gallery/api-gmail/fetch-email-newsletter)
 
-* [My Dear Yi (1)](https://shortcutomation.com/gallery/my-dear-yi)
+* [Shortcutomation (1)](https://shortcutomation.com/gallery/shortcutomation)
 
-    * [🤍 交往天數計時器](https://shortcutomation.com/gallery/my-dear-yi/)
+    * [Prep for Backup](https://shortcutomation.com/gallery/shortcutomation/prep-for-backup)
 
-* [Shortcutomation Helpers (1)](https://shortcutomation.com/gallery/shortcutomation-helpers)
+* [Motivate Me (1)](https://shortcutomation.com/gallery/motivate-me)
 
-    * [Shortcutomation - shortcut to json](https://shortcutomation.com/gallery/shortcutomation-helpers/shortcutomation-shortcut-to-json)
+    * [🏟️ The Man in the Area](https://shortcutomation.com/gallery/motivate-me/the-man-in-the-area)
 
-* [Weekly Mindware Update (1)](https://shortcutomation.com/gallery/weekly-mindware-update)
+* [Journaling (1)](https://shortcutomation.com/gallery/journaling)
 
-    * [Create New WMU Issue](https://shortcutomation.com/gallery/weekly-mindware-update/create-new-wmu-issue)
+    * [_Get Key Path for Journal Metadata](https://shortcutomation.com/gallery/journaling/get-key-path-for-journal-metadata)
 
-* [Second Brain (1)](https://shortcutomation.com/gallery/second-brain)
+* [API - NASA (3)](https://shortcutomation.com/gallery/api-nasa)
 
-    * [_Organize Inbox Entry](https://shortcutomation.com/gallery/second-brain/organize-inbox-entry)
+    * [NASA - Get Random APOD Image](https://shortcutomation.com/gallery/api-nasa/nasa-get-random-apod-image)
+    * [NASA - Get Random EPIC Image](https://shortcutomation.com/gallery/api-nasa/nasa-get-random-epic-image)
+    * [NASA - Get Random Mars Rover Photo](https://shortcutomation.com/gallery/api-nasa/nasa-get-random-mars-rover-photo)
 
-* [Getting Things Done (1)](https://shortcutomation.com/gallery/getting-things-done)
+* [Apple Calendar (1)](https://shortcutomation.com/gallery/apple-calendar)
 
-    * [💾 Backup My Repos - Kernel](https://shortcutomation.com/gallery/getting-things-done/backup-my-repos-kernel)
-
-* [When Calendar Is opened (1)](https://shortcutomation.com/gallery/when-calendar-is-opened)
-
-    * [Our Days](https://shortcutomation.com/gallery/when-calendar-is-opened/our-days)
+    * [_Log Diary Entries for Scheduled Calendar Events](https://shortcutomation.com/gallery/apple-calendar/log-diary-entries-for-scheduled-calendar-events)
 
 * [Obsidian URI (1)](https://shortcutomation.com/gallery/obsidian-uri)
 
-    * [Obsidian - Lint Current File](https://shortcutomation.com/gallery/obsidian-uri/obsidian-lint-current-file)
-
-* [Date & Time (1)](https://shortcutomation.com/gallery/date-and-time)
-
-    * [Get Sunday of the Week](https://shortcutomation.com/gallery/date-and-time/get-sunday-of-the-week)
+    * [Obsidian - Open Local Graph](https://shortcutomation.com/gallery/obsidian-uri/obsidian-open-local-graph)
 
 * [Automation Modules (3)](https://shortcutomation.com/gallery/automation-modules)
 
-    * [When flagged apps are opened](https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened)
-    * [When flagged apps are opened - Kernel](https://shortcutomation.com/gallery/automation-modules/when-flagged-apps-are-opened-kernel)
-    * [When "Komoot" is opened - Kernel](https://shortcutomation.com/gallery/automation-modules/when-komoot-is-opened-kernel)
-
-* [Sound Files (1)](https://shortcutomation.com/gallery/sound-files)
-
-    * [Alert Sound Effect](https://shortcutomation.com/gallery/sound-files/alert-sound-effect)
+    * [When "Photos" is opened](https://shortcutomation.com/gallery/automation-modules/when-photos-is-opened)
+    * [When Turning My Focus Mode On](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on)
+    * [When Any Alarm Goes Off](https://shortcutomation.com/gallery/automation-modules/when-any-alarm-goes-off)
