@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -473,8 +473,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "2FA6D8E9-A447-4544-ABC2-8FB725EB0EC5",
-                "WFControlFlowMode": 2
+                "UUID": "F7C1ABBF-07E3-41F6-82D7-57E4CDABF6A5"
             }
         },
         {
@@ -513,13 +514,19 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "weekNumber",
+                "UUID": "84021BFE-F59F-4149-AD9C-52EC8CA07C40",
                 "WFWorkflow": {
                     "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
                     "workflowName": "getWeekNumber1",
                     "isSelf": false
                 },
-                "CustomOutputName": "weekNumber",
-                "UUID": "84021BFE-F59F-4149-AD9C-52EC8CA07C40",
                 "WFWorkflowName": "getWeekNumber1"
             }
         },
@@ -657,6 +664,53 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "F3700916-2C20-487C-8969-CA4D0C1C6EE6",
+                    "workflowName": "Get Dates On Specific Week",
+                    "isSelf": false
+                },
+                "UUID": "94C29CA0-3CDA-4ADA-86CF-FFB367122616",
+                "WFWorkflowName": "Get Dates On Specific Week"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "94C29CA0-3CDA-4ADA-86CF-FFB367122616",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C2917027-54A7-4015-A800-C3E30D86A563"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "94C29CA0-3CDA-4ADA-86CF-FFB367122616",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "6E5D96D6-0FAE-4E78-8BCB-4685D62C0479"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
             "WFWorkflowActionParameters": {
                 "WFCalendarItemTitle": {
@@ -672,7 +726,46 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemNotes": "= Weekly Win Card = Weekly Scorecard",
+                "WFCalendarItemNotes": {
+                    "Value": {
+                        "string": "￼ ~ ￼\n──────────────\n= Weekly Win Card = Weekly Scorecard",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List",
+                                "OutputUUID": "6E5D96D6-0FAE-4E78-8BCB-4685D62C0479",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List",
+                                "OutputUUID": "C2917027-54A7-4015-A800-C3E30D86A563",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "WFCalendarDescriptor": {
                     "Value": {
                         "OutputUUID": "44606E3E-6F40-4B99-BB6C-198B6C11FCE2",
@@ -1052,6 +1145,55 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E560176A-E3D6-49F1-B0D0-4403EB4AE3E6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Adjusted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "F3700916-2C20-487C-8969-CA4D0C1C6EE6",
+                    "workflowName": "Get Dates On Specific Week",
+                    "isSelf": false
+                },
+                "UUID": "B14AC09E-87FF-474B-A56C-5DDB28EA331B",
+                "WFWorkflowName": "Get Dates On Specific Week"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B14AC09E-87FF-474B-A56C-5DDB28EA331B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "ED7F10AD-B6D8-4D5E-9042-BA5E970EA6FB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B14AC09E-87FF-474B-A56C-5DDB28EA331B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "A4275C98-AB0C-4A33-B27B-AF53AB5D1727"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
             "WFWorkflowActionParameters": {
                 "WFCalendarItemTitle": {
@@ -1067,7 +1209,46 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemNotes": "= Weekly Kaizen Card",
+                "WFCalendarItemNotes": {
+                    "Value": {
+                        "string": "￼ ~ ￼\n──────────────\n= Weekly Kaizen Card",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List",
+                                "OutputUUID": "A4275C98-AB0C-4A33-B27B-AF53AB5D1727",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List",
+                                "OutputUUID": "ED7F10AD-B6D8-4D5E-9042-BA5E970EA6FB",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "WFCalendarDescriptor": {
                     "Value": {
                         "OutputUUID": "44606E3E-6F40-4B99-BB6C-198B6C11FCE2",
@@ -2420,7 +2601,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "1. Stop X → Start Y, Things I want to minimize, What do I wish I'd done less of?\n2. Go All-In, Things I want to maximize, What do I wish I'd done more of?",
+                "WFTextActionText": "1. The Stop, Stay, Start Audit: Stop → Things I want to let go of, Stay → Habits and choices worth maintaining, Start → What I want to lean into.\n2. Go All-In, Things I want to maximize, What do I wish I'd done more of?",
                 "UUID": "4401D6A5-8BEE-4DF9-9DAE-81FB461D3113"
             }
         },

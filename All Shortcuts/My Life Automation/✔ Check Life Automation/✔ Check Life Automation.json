@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -57,7 +57,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "0F5286A0-A210-4A77-A033-A29B1EA28C1F"
+                "UUID": "B2DB4256-D3EE-4648-95F2-E26431B44E97"
             }
         },
         {
@@ -69,7 +69,7 @@
                         "Value": {
                             "Type": "ActionOutput",
                             "OutputName": "Value Exists",
-                            "OutputUUID": "0F5286A0-A210-4A77-A033-A29B1EA28C1F",
+                            "OutputUUID": "B2DB4256-D3EE-4648-95F2-E26431B44E97",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
@@ -81,7 +81,7 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "GroupingIdentifier": "E64AC261-86CE-4FDD-9E3C-CB8E9098095F",
+                "GroupingIdentifier": "2D9B2F68-1A1C-4332-91F0-58823EE7B9A4",
                 "WFCondition": 4
             }
         },
@@ -192,93 +192,51 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.DeleteValueIntent",
             "WFWorkflowActionParameters": {
-                "WFContentItemInputParameter": "Library",
-                "WFContentItemLimitEnabled": true,
-                "UUID": "219D9422-684B-46AF-BD5A-59D1F6594353",
-                "WFContentItemLimitNumber": 1,
-                "WFContentItemFilter": {
+                "errorWhenValueNotFound": false,
+                "UUID": "C895F837-6AC5-4CA2-A0DC-7E5DDFDBFAF6",
+                "keyPath": {
                     "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false,
-                                    "String": "✔ Check Life Automation"
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
+                                "Type": "ActionOutput",
+                                "OutputName": "⚙️ My Life Automation"
                             }
-                        ]
+                        }
                     },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "219D9422-684B-46AF-BD5A-59D1F6594353",
-                            "Type": "ActionOutput",
-                            "OutputName": "Reminders"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "CB4B0A02-7459-48B2-B16C-C673A9A482F6",
-                "WFCondition": 100
+                "deleteStrategy": "alwaysAllow"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setters.reminders",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFReminderContentItemIsCompleted": 1,
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "219D9422-684B-46AF-BD5A-59D1F6594353",
-                        "Type": "ActionOutput",
-                        "OutputName": "Reminders"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemPropertyName": "Is Completed",
-                "Mode": "Set",
-                "UUID": "D19FB22B-1AFC-49B9-8816-F8F8672CF5D8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "CB4B0A02-7459-48B2-B16C-C673A9A482F6",
-                "WFControlFlowMode": 2
+                "WFTextActionText": "✔ Check Life Automation",
+                "UUID": "9BCD44F7-1AF9-4055-8D6B-9F05304A69D4"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9BCD44F7-1AF9-4055-8D6B-9F05304A69D4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFWorkflow": {
-                    "workflowIdentifier": "DCBCC72D-2982-4BDA-9A2A-FDA8332008C1",
-                    "workflowName": "You Are All Set",
+                    "workflowIdentifier": "13D6344E-1286-4297-B559-4A99BF3BA432",
+                    "workflowName": "Template - Complete Task Reminder",
                     "isSelf": false
                 },
-                "WFWorkflowName": "You Are All Set",
-                "UUID": "CF611A9D-F5AE-4041-B48B-F96C2AAFC1E7"
+                "UUID": "CF611A9D-F5AE-4041-B48B-F96C2AAFC1E7",
+                "WFWorkflowName": "Template - Complete Task Reminder"
             }
         },
         {
@@ -555,8 +513,28 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "E64AC261-86CE-4FDD-9E3C-CB8E9098095F",
+                "GroupingIdentifier": "2D9B2F68-1A1C-4332-91F0-58823EE7B9A4",
                 "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "RemoveOneDelivered",
+                "deliveredID": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
+                                "Type": "ActionOutput",
+                                "OutputName": "⚙️ My Life Automation"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1F1C63A7-CDCF-40D9-AB19-6384700950E7"
             }
         },
         {
@@ -592,31 +570,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
-            "WFWorkflowActionParameters": {
-                "mode": "RemoveOneDelivered",
-                "deliveredID": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
-                                "Type": "ActionOutput",
-                                "OutputName": "⚙️ My Life Automation"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "1F1C63A7-CDCF-40D9-AB19-6384700950E7"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E64AC261-86CE-4FDD-9E3C-CB8E9098095F",
-                "UUID": "C5E5D818-6B2F-4231-91F8-516400EA1AF4"
+                "GroupingIdentifier": "2D9B2F68-1A1C-4332-91F0-58823EE7B9A4",
+                "WFControlFlowMode": 2
             }
         },
         {

@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 59681
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
         "WFCalendarEventContentItem"
     ],
@@ -15,6 +15,13 @@
         "Parameters": {}
     },
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "My Calendar",
+                "UUID": "8F0AF285-31C9-48D1-95C2-C092F49FCEA6"
+            }
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
             "WFWorkflowActionParameters": {
@@ -38,61 +45,13 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFDictionaryKey": "date",
-                "UUID": "6E7A1940-37B4-44B6-A18D-A83D80B36733"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "6E7A1940-37B4-44B6-A18D-A83D80B36733",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "A14B7AAB-96DF-45E0-BBA8-625255AA488A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "825392AE-A86E-42CD-A621-C37CB43B8A0E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "CustomOutputName": "calType",
                 "UUID": "23D301E9-5417-4797-83D0-91367215CD0A",
                 "WFDictionaryKey": "calType"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": {
-                    "Value": {
-                        "string": "My Calendar.￼",
-                        "attachmentsByRange": {
-                            "{12, 1}": {
-                                "OutputUUID": "23D301E9-5417-4797-83D0-91367215CD0A",
-                                "Type": "ActionOutput",
-                                "OutputName": "calType"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "8F0AF285-31C9-48D1-95C2-C092F49FCEA6"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
@@ -102,8 +61,55 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "23D301E9-5417-4797-83D0-91367215CD0A",
+                                "Type": "ActionOutput",
+                                "OutputName": "calType"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F9CFDD4E-C338-47F4-AA21-A66E828B18BE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F9CFDD4E-C338-47F4-AA21-A66E828B18BE",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "GroupingIdentifier": "1ABE32C0-6E46-4E17-9FAF-8E03FBD69194",
                 "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary",
+                        "OutputUUID": "825392AE-A86E-42CD-A621-C37CB43B8A0E",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "date"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A14B7AAB-96DF-45E0-BBA8-625255AA488A"
             }
         },
         {
@@ -175,25 +181,19 @@
                                 "Values": {
                                     "Date": {
                                         "Value": {
-                                            "Value": {
-                                                "OutputUUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "dayStart"
-                                            },
-                                            "WFSerializationType": "WFTextTokenAttachment"
+                                            "OutputUUID": "6CDDD12E-6137-43FD-A467-BC52830D5443",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "dayStart"
                                         },
-                                        "WFSerializationType": "WFDateSubstitutableState"
+                                        "WFSerializationType": "WFTextTokenAttachment"
                                     },
                                     "AnotherDate": {
                                         "Value": {
-                                            "Value": {
-                                                "OutputUUID": "84A010CD-76BA-444C-ABB5-B9E3E48AC6E1",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "dayEnd"
-                                            },
-                                            "WFSerializationType": "WFTextTokenAttachment"
+                                            "OutputUUID": "84A010CD-76BA-444C-ABB5-B9E3E48AC6E1",
+                                            "Type": "ActionOutput",
+                                            "OutputName": "dayEnd"
                                         },
-                                        "WFSerializationType": "WFDateSubstitutableState"
+                                        "WFSerializationType": "WFTextTokenAttachment"
                                     }
                                 },
                                 "Removable": false,
@@ -221,16 +221,15 @@
                     "WFSerializationType": "WFContentPredicateTableTemplate"
                 },
                 "WFContentItemInputParameter": "Library",
-                "UUID": "2480832C-5380-42A3-AA56-7EEDB2A6218A"
+                "UUID": "3D6ADB61-37E0-4A75-8ED3-50F7F594B80C"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "UUID": "213F32A0-87A4-474A-9931-C28D17A488EE",
-                "CustomOutputName": "unsortedCalEvents",
-                "GroupingIdentifier": "1ABE32C0-6E46-4E17-9FAF-8E03FBD69194"
+                "GroupingIdentifier": "1ABE32C0-6E46-4E17-9FAF-8E03FBD69194",
+                "UUID": "213F32A0-87A4-474A-9931-C28D17A488EE"
             }
         },
         {
@@ -240,7 +239,103 @@
                     "Value": {
                         "OutputUUID": "213F32A0-87A4-474A-9931-C28D17A488EE",
                         "Type": "ActionOutput",
-                        "OutputName": "unsortedCalEvents"
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "08B3CC3D-0B7E-4618-A62C-F59A7776872B",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8F0AF285-31C9-48D1-95C2-C092F49FCEA6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "ignore",
+                "UUID": "F94AAECA-E2C8-45C9-9B14-7A7FC1740002"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Dictionary Value",
+                            "OutputUUID": "F94AAECA-E2C8-45C9-9B14-7A7FC1740002",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "83BE2328-D1CB-4DBC-818C-D76DCD8B8393",
+                "WFCondition": 999
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "unsortedCalEvents"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "83BE2328-D1CB-4DBC-818C-D76DCD8B8393",
+                "UUID": "7BC08285-4BC8-438D-9BBD-C445B65F0A0F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "08B3CC3D-0B7E-4618-A62C-F59A7776872B",
+                "UUID": "61C097CD-E33B-48AF-BFAC-C11446ED2EF8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "unsortedCalEvents",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -407,9 +502,8 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "213F32A0-87A4-474A-9931-C28D17A488EE",
-                        "Type": "ActionOutput",
-                        "OutputName": "unsortedCalEvents"
+                        "VariableName": "unsortedCalEvents",
+                        "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -466,7 +560,6 @@
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
-        "Watch",
         "NCWidget"
     ],
     "WFWorkflowHasShortcutInputVariables": true

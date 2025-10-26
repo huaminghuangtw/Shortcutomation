@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.1",
+    "WFWorkflowClientVersion": "3612.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -119,6 +119,69 @@
                 "UUID": "8206C1F5-6101-4A4B-A44C-16BF1A44619E",
                 "WFWorkflowName": "❝ Capture Quotes"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.RemoveFromListIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "16372DD5-BE27-4A4D-B1D5-EA3666FA293D",
+                "rangeUpperBound": "3",
+                "list": {
+                    "Value": {
+                        "OutputUUID": "EA4EEB90-ECB1-44DD-B0A3-FEF785A8014D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "RemoveFromListIntent"
+                },
+                "rangeLowerBound": "1",
+                "action": "range"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "16372DD5-BE27-4A4D-B1D5-EA3666FA293D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Modified List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFChooseFromListActionPrompt": "👇Select one or multiple👇",
+                "UUID": "6126D9A5-9143-49F9-ABF6-33F1DBEAD73E",
+                "WFChooseFromListActionSelectMultiple": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6126D9A5-9143-49F9-ABF6-33F1DBEAD73E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Selected Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
+                    "workflowName": "📥 Add to Inbox",
+                    "isSelf": false
+                },
+                "UUID": "E79ED953-24EF-486C-B73C-CD6422D8CB9E",
+                "WFWorkflowName": "📥 Add to Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
