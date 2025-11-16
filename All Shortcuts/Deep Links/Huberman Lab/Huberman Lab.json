@@ -5,22 +5,10 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
-            "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "baseURL",
-                "WFURLActionURL": "https://www.hubermanlab.com",
-                "UUID": "67754FFD-471B-4CFF-93E1-634FFF1F9E04"
-            }
-        },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
@@ -33,7 +21,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "🔎 What are you looking for?\n￼\n💡Tap 'Done' to explore Podcast",
+                        "string": "🔎 What are you looking for?\n￼\n💡Tap \"Done\" to ask AI chatbot",
                         "attachmentsByRange": {
                             "{29, 1}": {
                                 "OutputUUID": "BFD32E34-2523-4D36-9B28-AC7EC2F4DC83",
@@ -50,7 +38,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAllowsMultilineText": true,
+                "WFAllowsMultilineText": false,
                 "WFAskActionPrompt": {
                     "Value": {
                         "string": "￼",
@@ -89,14 +77,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
             "WFWorkflowActionParameters": {
-                "WFInput": "hubermandev[query]",
-                "WFEncodeMode": "Encode",
-                "UUID": "A2B5236A-3D2F-4CDD-BD42-69B4A7FB2E09"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
-            "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "string": "￼",
@@ -119,22 +99,12 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "string": "￼/search-results?￼=￼",
+                        "string": "https://www.hubermanlab.com/search-results?q=￼",
                         "attachmentsByRange": {
-                            "{17, 1}": {
-                                "OutputUUID": "A2B5236A-3D2F-4CDD-BD42-69B4A7FB2E09",
-                                "Type": "ActionOutput",
-                                "OutputName": "URL Encoded Text"
-                            },
-                            "{19, 1}": {
+                            "{45, 1}": {
                                 "OutputUUID": "0B47996A-E12A-426C-8B85-4264349A161F",
                                 "Type": "ActionOutput",
                                 "OutputName": "URL Encoded Text"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "67754FFD-471B-4CFF-93E1-634FFF1F9E04",
-                                "Type": "ActionOutput",
-                                "OutputName": "baseURL"
                             }
                         }
                     },
@@ -153,19 +123,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "string": "￼/podcast",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "67754FFD-471B-4CFF-93E1-634FFF1F9E04",
-                                "Type": "ActionOutput",
-                                "OutputName": "baseURL"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFInput": "https://ai.hubermanlab.com",
                 "UUID": "58542AF9-93A5-4CF9-9931-109A0EE26F14"
             }
         },
@@ -185,7 +143,9 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

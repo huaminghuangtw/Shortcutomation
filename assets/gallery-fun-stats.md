@@ -1,10 +1,10 @@
 ### 👀 At a Glance
 
-* **Total Shortcuts:** 581  
-* **Total Actions:** 9969  
-* **Categories Covered:** 76  
+* **Total Shortcuts:** 566  
+* **Total Actions:** 9599  
+* **Categories Covered:** 77  
 * **Average Actions per Shortcut:** 17  
-* **A Typical Shortcut Uses 10+ Actions**  
+* **A Typical Shortcut Uses 11+ Actions**  
 
 ### 🏅 Top 5 Most Complex Shortcuts
   
@@ -14,9 +14,9 @@
   | :-: | :-: | :-: |
   | 1️⃣ | [When Turning My Focus Mode On](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on) | 214 |
   | 2️⃣ | [_Evergreen List to Markdown](https://shortcutomation.com/gallery/evergreen-lists/evergreen-list-to-markdown) | 157 |
-  | 3️⃣ | [Remember to Sharpen the Saw](https://shortcutomation.com/gallery/when-reminders-is-opened/remember-to-sharpen-the-saw) | 125 |
-  | 4️⃣ | [🗓️ Plan My Day](https://shortcutomation.com/gallery/getting-things-done/plan-my-day) | 109 |
-  | 5️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me) | 101 |
+  | 3️⃣ | [🗓️ Plan My Day](https://shortcutomation.com/gallery/getting-things-done/plan-my-day) | 144 |
+  | 4️⃣ | [Remember to Sharpen the Saw](https://shortcutomation.com/gallery/when-reminders-is-closed/remember-to-sharpen-the-saw) | 125 |
+  | 5️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/gallery/second-brain/capture-ideas-around-me) | 96 |
 
   </div>
 

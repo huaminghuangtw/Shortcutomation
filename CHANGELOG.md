@@ -1,4 +1,4 @@
-### ✨ 12 New Shortcuts
+### ✨ 8 New Shortcuts
 
 ---
 
@@ -6,38 +6,34 @@
 
 ---
 
-* [API - Gmail (1)](https://shortcutomation.com/gallery/api-gmail)
+* [Shared (1)](https://shortcutomation.com/gallery/shared)
 
-    * [📨 Fetch Email Newsletter](https://shortcutomation.com/gallery/api-gmail/fetch-email-newsletter)
+    * [Grocery Shopping](https://shortcutomation.com/gallery/shared/grocery-shopping)
 
-* [Shortcutomation (1)](https://shortcutomation.com/gallery/shortcutomation)
+* [Utilities (1)](https://shortcutomation.com/gallery/utilities)
 
-    * [Prep for Backup](https://shortcutomation.com/gallery/shortcutomation/prep-for-backup)
-
-* [Motivate Me (1)](https://shortcutomation.com/gallery/motivate-me)
-
-    * [🏟️ The Man in the Area](https://shortcutomation.com/gallery/motivate-me/the-man-in-the-area)
-
-* [Journaling (1)](https://shortcutomation.com/gallery/journaling)
-
-    * [_Get Key Path for Journal Metadata](https://shortcutomation.com/gallery/journaling/get-key-path-for-journal-metadata)
-
-* [API - NASA (3)](https://shortcutomation.com/gallery/api-nasa)
-
-    * [NASA - Get Random APOD Image](https://shortcutomation.com/gallery/api-nasa/nasa-get-random-apod-image)
-    * [NASA - Get Random EPIC Image](https://shortcutomation.com/gallery/api-nasa/nasa-get-random-epic-image)
-    * [NASA - Get Random Mars Rover Photo](https://shortcutomation.com/gallery/api-nasa/nasa-get-random-mars-rover-photo)
+    * [Batch Open URLs](https://shortcutomation.com/gallery/utilities/batch-open-urls)
 
 * [Apple Calendar (1)](https://shortcutomation.com/gallery/apple-calendar)
 
-    * [_Log Diary Entries for Scheduled Calendar Events](https://shortcutomation.com/gallery/apple-calendar/log-diary-entries-for-scheduled-calendar-events)
+    * [Log Diary Entries for Scheduled Calendar Events](https://shortcutomation.com/gallery/apple-calendar/log-diary-entries-for-scheduled-calendar-events)
 
-* [Obsidian URI (1)](https://shortcutomation.com/gallery/obsidian-uri)
+* [Second Brain (1)](https://shortcutomation.com/gallery/second-brain)
 
-    * [Obsidian - Open Local Graph](https://shortcutomation.com/gallery/obsidian-uri/obsidian-open-local-graph)
+    * [_Add to Reminder List](https://shortcutomation.com/gallery/second-brain/add-to-reminder-list)
 
-* [Automation Modules (3)](https://shortcutomation.com/gallery/automation-modules)
+* [API - Google Time Zone (1)](https://shortcutomation.com/gallery/api-google-time-zone)
 
-    * [When "Photos" is opened](https://shortcutomation.com/gallery/automation-modules/when-photos-is-opened)
-    * [When Turning My Focus Mode On](https://shortcutomation.com/gallery/automation-modules/when-turning-my-focus-mode-on)
-    * [When Any Alarm Goes Off](https://shortcutomation.com/gallery/automation-modules/when-any-alarm-goes-off)
+    * [Get Time Zone Data](https://shortcutomation.com/gallery/api-google-time-zone/get-time-zone-data)
+
+* [API - Sunlight Times (1)](https://shortcutomation.com/gallery/api-sunlight-times)
+
+    * [Get Sunlight Times](https://shortcutomation.com/gallery/api-sunlight-times/get-sunlight-times)
+
+* [Automation Modules (1)](https://shortcutomation.com/gallery/automation-modules)
+
+    * [When "Calendar" is closed](https://shortcutomation.com/gallery/automation-modules/when-calendar-is-closed)
+
+* [When Reminders is closed (1)](https://shortcutomation.com/gallery/when-reminders-is-closed)
+
+    * [Set Default Values for Task Lists](https://shortcutomation.com/gallery/when-reminders-is-closed/set-default-values-for-task-lists)

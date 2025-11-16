@@ -5,14 +5,10 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
             "WFWorkflowActionParameters": {
@@ -101,6 +97,78 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "Text Divider",
+                "UUID": "24E6ADC9-973D-44C8-B70F-93F7B17D0714"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼\n￼\n❝ Capture Quotes?",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "2169E343-DB2F-4361-99E8-4D4861BB688B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
+                            },
+                            "{4, 1}": {
+                                "OutputUUID": "24E6ADC9-973D-44C8-B70F-93F7B17D0714",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "24E6ADC9-973D-44C8-B70F-93F7B17D0714",
+                                "Type": "ActionOutput",
+                                "OutputName": "Value"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "290F40D2-5B38-4110-942B-71755465F4B6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "290F40D2-5B38-4110-942B-71755465F4B6",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "A1C3A6BA-CFF4-4E39-9859-231D842FB089"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "A1C3A6BA-CFF4-4E39-9859-231D842FB089",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -118,6 +186,28 @@
                 },
                 "UUID": "8206C1F5-6101-4A4B-A44C-16BF1A44619E",
                 "WFWorkflowName": "❝ Capture Quotes"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "A1C3A6BA-CFF4-4E39-9859-231D842FB089",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {
+                "UUID": "9A79DFDF-2F8F-43F7-B203-66C13B6272F4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "A1C3A6BA-CFF4-4E39-9859-231D842FB089",
+                "UUID": "B62BC2C2-FE8A-46B3-9673-33CF6A87A82F"
             }
         },
         {
@@ -160,6 +250,25 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "6126D9A5-9143-49F9-ABF6-33F1DBEAD73E",
+                            "Type": "ActionOutput",
+                            "OutputName": "Selected Item"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B8C23647-2132-497E-8B44-3746A9456088",
+                "WFCondition": 100
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -180,6 +289,14 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B8C23647-2132-497E-8B44-3746A9456088",
+                "UUID": "2E7190D6-FCF7-48B0-B342-D6F9572292D5"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
             "WFWorkflowActionParameters": {}
         }
@@ -189,7 +306,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch"
+        "Watch",
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false

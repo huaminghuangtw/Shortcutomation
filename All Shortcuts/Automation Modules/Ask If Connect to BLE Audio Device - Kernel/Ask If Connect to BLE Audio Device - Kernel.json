@@ -5,23 +5,31 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.IsAudioPlayingIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "CDB2E1E5-6794-4687-B306-81F7D4186DCE"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "4410CB20-6E47-4672-8131-05C37AE791C5",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "DeviceDetails",
+                            "Type": "ActionOutput",
+                            "OutputName": "Is Audio Playing Result",
+                            "OutputUUID": "CDB2E1E5-6794-4687-B306-81F7D4186DCE",
                             "Aggrandizements": [
                                 {
+                                    "PropertyUserInfo": "WFItemName",
                                     "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
+                                    "PropertyName": "Name"
                                 }
                             ]
                         },
@@ -29,7 +37,8 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFEnumeration": "iOS",
+                "WFConditionalActionString": "No",
+                "GroupingIdentifier": "C4150144-0622-4314-A36A-81E9616BCE7E",
                 "WFCondition": 4
             }
         },
@@ -61,65 +70,9 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Headphones",
+                "WFConditionalActionString": "Speaker",
                 "GroupingIdentifier": "9AAEE5AC-0CBA-4123-9996-E2B9FC215407",
-                "WFCondition": 5
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
-            "WFWorkflowActionParameters": {
-                "UUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
-                "Folder": {
-                    "Identifier": "D933A867-F678-4259-97E7-846580396B09",
-                    "DisplayString": "BLE Audio Devices"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "My Shortcuts",
-                            "OutputUUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Connections",
-                                "OutputUUID": "14B77D30-946B-4D4C-9EC7-F5A8C4785802",
-                                "Aggrandizements": [
-                                    {
-                                        "PropertyUserInfo": "WFItemName",
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "Name"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "GroupingIdentifier": "E88843D4-446D-4089-94BE-C1AE8626A9E2",
-                "WFCondition": 999
+                "WFCondition": 99
             }
         },
         {
@@ -140,6 +93,40 @@
                 "WFMenuItemTitle": "✅ Yes",
                 "GroupingIdentifier": "55C1AF0A-7F15-4C0A-8E94-BB44DBDAF324",
                 "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BA9D2024-5A7A-46E0-809D-F5C34CA1BF4C",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+            "WFWorkflowActionParameters": {
+                "UUID": "B25B812D-E7A6-4305-9059-57498B7B3C54",
+                "Folder": {
+                    "Identifier": "D933A867-F678-4259-97E7-846580396B09",
+                    "DisplayString": "BLE Audio Devices"
+                }
             }
         },
         {
@@ -187,6 +174,95 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BA9D2024-5A7A-46E0-809D-F5C34CA1BF4C",
+                "UUID": "F1125865-9D11-4E8F-B70A-6977E69773A4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "67593B84-9793-42AC-9E07-8EAFC68A3B21",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.bluetooth.set",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "System Settings",
+                "UUID": "A144C72D-EC8D-4339-B1B8-CB9333F4804B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A144C72D-EC8D-4339-B1B8-CB9333F4804B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "F7285B24-83F2-4C6D-8269-93CD4A1D55B3",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "🙆🏽 Press the OK button once done"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.systempreferences",
+                    "Name": "System Settings",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFAskToSaveChanges": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "67593B84-9793-42AC-9E07-8EAFC68A3B21",
+                "UUID": "1DCA6CC0-CE96-44E3-889C-C7B819F26284"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
                 "WFMenuItemTitle": "❌ No",
@@ -195,8 +271,50 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Which one?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "🎧 Wired headphone",
+                    "🔊 Built-in speaker"
+                ],
+                "GroupingIdentifier": "3ECCC844-556C-4E73-9484-54B1106A1B9C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "🎧 Wired headphone",
+                "GroupingIdentifier": "3ECCC844-556C-4E73-9484-54B1106A1B9C",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "🙆🏽 Press the OK button once done"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "🔊 Built-in speaker",
+                "GroupingIdentifier": "3ECCC844-556C-4E73-9484-54B1106A1B9C",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
             "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3ECCC844-556C-4E73-9484-54B1106A1B9C",
+                "WFControlFlowMode": 2
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
@@ -209,14 +327,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "E88843D4-446D-4089-94BE-C1AE8626A9E2",
-                "UUID": "9FA6B9C1-ED7E-496F-93C5-997BC8972F3C"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "9AAEE5AC-0CBA-4123-9996-E2B9FC215407",
                 "WFControlFlowMode": 2
             }
@@ -224,7 +334,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "4410CB20-6E47-4672-8131-05C37AE791C5",
+                "GroupingIdentifier": "C4150144-0622-4314-A36A-81E9616BCE7E",
                 "WFControlFlowMode": 2
             }
         },
@@ -235,7 +345,10 @@
     ],
     "WFWorkflowInputContentItemClasses": [],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

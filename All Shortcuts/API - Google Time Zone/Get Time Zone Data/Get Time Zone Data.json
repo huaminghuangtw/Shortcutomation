@@ -1,0 +1,155 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFGenericFileContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date"
+            }
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://developers.google.com/maps/documentation/timezone/overview"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getcurrentlocation",
+            "WFWorkflowActionParameters": {
+                "UUID": "6A872566-9DFA-425B-92D5-53CF37853F83"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "3866F63D-521C-48D3-A1D5-43C92F675832",
+                    "workflowName": "Date2UnixTimestamp",
+                    "isSelf": false
+                },
+                "UUID": "E456DAFC-0F04-487D-9183-CF870269A62C",
+                "WFWorkflowName": "Date2UnixTimestamp"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": "API Credentials.Google",
+                "UUID": "D5D2154C-3F6B-49B4-A46E-713B5836A618"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "https://maps.googleapis.com/maps/api/timezone/json?location=￼,￼&timestamp=￼&key=￼",
+                        "attachmentsByRange": {
+                            "{80, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Value",
+                                "OutputUUID": "D5D2154C-3F6B-49B4-A46E-713B5836A618",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "apiKeyMaps"
+                                    }
+                                ]
+                            },
+                            "{62, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Location",
+                                "OutputUUID": "6A872566-9DFA-425B-92D5-53CF37853F83",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Longitude"
+                                    }
+                                ]
+                            },
+                            "{74, 1}": {
+                                "OutputUUID": "E456DAFC-0F04-487D-9183-CF870269A62C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{60, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Location",
+                                "OutputUUID": "6A872566-9DFA-425B-92D5-53CF37853F83",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Latitude"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "960107DE-3890-4245-B647-3DE9ED6F3E9C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "960107DE-3890-4245-B647-3DE9ED6F3E9C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of URL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}
