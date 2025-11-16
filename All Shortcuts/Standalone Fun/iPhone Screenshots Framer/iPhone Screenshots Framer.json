@@ -1,71 +1,26 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "3216",
+    "WFWorkflowMinimumClientVersion": 3216,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61486
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
         "WFImageContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFPhotoMediaContentItem"
+        }
+    },
     "WFWorkflowActions": [
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
                 "WFCommentActionText": "🙏 Original by: [@gluebyte](https://www.reddit.com/user/gluebyte)"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "323F4685-99A9-47BD-97F9-7089A97DE06C",
-                "WFCondition": 100
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvariable",
-            "WFWorkflowActionParameters": {
-                "WFVariable": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "323F4685-99A9-47BD-97F9-7089A97DE06C",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.selectphoto",
-            "WFWorkflowActionParameters": {
-                "WFPhotoPickerTypes": "Images",
-                "WFSelectMultiplePhotos": true,
-                "UUID": "40225485-B3C7-4F41-917D-4428B27AE2FE"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "323F4685-99A9-47BD-97F9-7089A97DE06C",
-                "UUID": "3D49ADCA-01DA-45FD-AB15-AD9619CC999D"
             }
         },
         {
@@ -611,9 +566,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "3D49ADCA-01DA-45FD-AB15-AD9619CC999D",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "Type": "ExtensionInput"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -628,66 +581,41 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ExtensionInput"
+                            "Type": "CurrentApp"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "D4B128AC-0ED5-4F9A-AF75-751CFB160BBB",
-                "WFCondition": 101
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFName": "‏‎",
-                "UUID": "DB472C72-F4D3-4917-8731-D64C532EC2CB"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "DB472C72-F4D3-4917-8731-D64C532EC2CB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Renamed Item"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "D4B128AC-0ED5-4F9A-AF75-751CFB160BBB",
-                "UUID": "AEE6279C-EB81-402E-9362-D017417CC12A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.mobileslideshow",
+                    "Name": "Photos",
+                    "TeamIdentifier": "0000000000"
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "6ED7922D-A1B5-430A-8A12-9F453F771427",
-                "WFCondition": 100
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Frame color?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "43C24014-3679-4C44-8BBE-755CBAB0C596",
+                        "Type": "ActionOutput",
+                        "OutputName": "Colors"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "15A2D99B-3273-4DFD-8614-216AEC06F84A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "6ED7922D-A1B5-430A-8A12-9F453F771427",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -705,28 +633,6 @@
                 "UUID": "C449A17E-F32C-43B3-96A7-7883C6700F7E",
                 "WFItemRangeEnd": "12",
                 "WFItemSpecifier": "Item At Index"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "6ED7922D-A1B5-430A-8A12-9F453F771427",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
-            "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Frame color?",
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "43C24014-3679-4C44-8BBE-755CBAB0C596",
-                        "Type": "ActionOutput",
-                        "OutputName": "Colors"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "15A2D99B-3273-4DFD-8614-216AEC06F84A"
             }
         },
         {
@@ -758,14 +664,41 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ExtensionInput"
+                            "Type": "CurrentApp"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.mobileslideshow",
+                    "Name": "Photos",
+                    "TeamIdentifier": "0000000000"
+                },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "3BC1A67A-C478-485C-A4FF-AF683E6CA311",
-                "WFCondition": 100
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": "🤖 Bezel color?",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "43C24014-3679-4C44-8BBE-755CBAB0C596",
+                        "Type": "ActionOutput",
+                        "OutputName": "Colors"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "3B787262-56FC-4EEE-BB71-043188EE42DF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3BC1A67A-C478-485C-A4FF-AF683E6CA311",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -783,28 +716,6 @@
                 "UUID": "C9B3E7E8-8133-4149-920A-9043E6AE9693",
                 "WFItemRangeEnd": "12",
                 "WFItemSpecifier": "Item At Index"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "3BC1A67A-C478-485C-A4FF-AF683E6CA311",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
-            "WFWorkflowActionParameters": {
-                "WFChooseFromListActionPrompt": "🤖 Bezel color?",
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "43C24014-3679-4C44-8BBE-755CBAB0C596",
-                        "Type": "ActionOutput",
-                        "OutputName": "Colors"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "3B787262-56FC-4EEE-BB71-043188EE42DF"
             }
         },
         {
@@ -1809,48 +1720,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "B4EB116B-A9A8-4D01-A631-BDC44B222B7D",
-                "WFCondition": 100
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
-            "WFWorkflowActionParameters": {
-                "WFOutput": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "61B6D9DE-FD7D-4049-BEE5-B9F821091234",
-                                "Type": "ActionOutput",
-                                "OutputName": "Converted Image"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "B4EB116B-A9A8-4D01-A631-BDC44B222B7D",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.savetocameraroll",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -1862,6 +1731,41 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "6E7EEE9F-7156-4F6B-AD5D-81FDABDCDC87"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.deletephotos",
+            "WFWorkflowActionParameters": {
+                "photos": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "DE9938A5-AFEE-44AA-AE09-9C6C77A32AAD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentApp"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.mobileslideshow",
+                    "Name": "Photos",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B4EB116B-A9A8-4D01-A631-BDC44B222B7D",
+                "WFCondition": 4
             }
         },
         {
@@ -1922,6 +1826,31 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "B4EB116B-A9A8-4D01-A631-BDC44B222B7D",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "61B6D9DE-FD7D-4049-BEE5-B9F821091234",
+                                "Type": "ActionOutput",
+                                "OutputName": "Converted Image"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B4EB116B-A9A8-4D01-A631-BDC44B222B7D",
                 "WFControlFlowMode": 2
             }
         },
@@ -1950,7 +1879,10 @@
             "Text": "Where do you want to save images?"
         }
     ],
-    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "ActionExtension",
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFWorkflowHasShortcutInputVariables": true
 }

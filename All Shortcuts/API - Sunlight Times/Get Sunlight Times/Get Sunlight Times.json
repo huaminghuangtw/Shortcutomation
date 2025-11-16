@@ -1,0 +1,172 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem",
+        "WFDictionaryContentItem",
+        "WFDateContentItem",
+        "WFNumberContentItem",
+        "WFBooleanContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFDateContentItem",
+            "SerializedParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateActionMode": "Specified Date"
+            }
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "https://sunrise-sunset.org/api"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getcurrentlocation",
+            "WFWorkflowActionParameters": {
+                "UUID": "084E5BCF-1B14-4509-B22F-D20D7B50B41B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "D5EF1062-8F31-4AB8-8B78-FF7A7CA9D865",
+                    "workflowName": "Get Time Zone Data",
+                    "isSelf": false
+                },
+                "UUID": "47B807EE-9996-4EF1-B4A7-5FD7B2010929",
+                "WFWorkflowName": "Get Time Zone Data"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "https://api.sunrise-sunset.org/json?lat=￼&lng=￼&date=￼&tzid=￼&formatted=0",
+                        "attachmentsByRange": {
+                            "{53, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            },
+                            "{40, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Location",
+                                "OutputUUID": "084E5BCF-1B14-4509-B22F-D20D7B50B41B",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Latitude"
+                                    }
+                                ]
+                            },
+                            "{46, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Current Location",
+                                "OutputUUID": "084E5BCF-1B14-4509-B22F-D20D7B50B41B",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Longitude"
+                                    }
+                                ]
+                            },
+                            "{60, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "47B807EE-9996-4EF1-B4A7-5FD7B2010929",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "timeZoneId"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B8C17B11-7E67-4B2B-AEB0-9FD26548403B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Contents of URL",
+                                "OutputUUID": "B8C17B11-7E67-4B2B-AEB0-9FD26548403B",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "results"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFDateContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "Watch",
+        "WFWorkflowTypeShowInSearch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

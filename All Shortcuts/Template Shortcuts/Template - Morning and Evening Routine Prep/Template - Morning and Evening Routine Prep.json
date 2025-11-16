@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -360,6 +360,64 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Morning",
+                "GroupingIdentifier": "AA61055A-96D3-4939-826B-5490DFB2F217",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "💭 Journal Prompt",
+                "UUID": "EE0B24B0-D08E-4598-9B83-9676D1F87FA9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "EE0B24B0-D08E-4598-9B83-9676D1F87FA9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "ED37B86B-4096-4F9B-824E-55817FF7CC52",
+                    "workflowName": "_Show Random Item from Evergreen List",
+                    "isSelf": false
+                },
+                "UUID": "FFC0EA14-1224-4477-A1E9-2AA04F5E3981",
+                "WFWorkflowName": "_Show Random Item from Evergreen List"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AA61055A-96D3-4939-826B-5490DFB2F217",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -369,6 +427,13 @@
                 },
                 "WFWorkflowName": "⚰️ Death Clock",
                 "UUID": "0DF6E60A-EBB7-4B1C-9213-605D8F64A6C6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AA61055A-96D3-4939-826B-5490DFB2F217",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -513,11 +578,11 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFMenuPrompt": "📴 Offline Mode?",
+                "WFMenuPrompt": "🤖 Which one?",
                 "WFControlFlowMode": 0,
                 "WFMenuItems": [
-                    "✓ Yes",
-                    "✗ No"
+                    "📳 Online",
+                    "📴 Offline"
                 ],
                 "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A"
             }
@@ -525,35 +590,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
             "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "✓ Yes",
-                "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "B96EB206-59D2-4CEB-A6D2-B6E3B1708DA0",
-                        "Type": "ActionOutput",
-                        "OutputName": "Current IP Address"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "477FF895-4A2E-4A3F-A829-0519F59FE918",
-                    "workflowName": "Disconnect from Internet",
-                    "isSelf": false
-                },
-                "UUID": "5C88FF6A-05D1-4020-ADC3-CE86CCD7BD93",
-                "WFWorkflowName": "Disconnect from Internet"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
-            "WFWorkflowActionParameters": {
-                "WFMenuItemTitle": "✗ No",
+                "WFMenuItemTitle": "📳 Online",
                 "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A",
                 "WFControlFlowMode": 1
             }
@@ -698,18 +735,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "743F72B9-3BDC-498D-A8F4-DEDCCA8C1BE7",
-                    "workflowName": "Turn off Color Filters",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Turn off Color Filters",
-                "UUID": "101EAC3E-3789-4365-960D-DDF64BCBA8D9"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -746,10 +771,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
-            "WFWorkflowActionParameters": {}
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "📸 The World Is Amazing",
@@ -761,6 +782,99 @@
             "WFWorkflowActionParameters": {
                 "GroupingIdentifier": "A1375C7B-F027-4397-A1A3-E9D040C1FA35",
                 "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
+            "WFWorkflowActionParameters": {
+                "key": {
+                    "subtitle": {
+                        "key": "End the Day Right"
+                    },
+                    "title": {
+                        "key": "End the Day Right"
+                    },
+                    "value": "End the Day Right"
+                },
+                "UUID": "806BF80F-C8F3-4B9C-BA7D-625AFB3BFF41",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "GlobalVariableGetText"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "806BF80F-C8F3-4B9C-BA7D-625AFB3BFF41",
+                            "Type": "ActionOutput",
+                            "OutputName": "Global Variable — Text"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Strava",
+                "GroupingIdentifier": "4A5BB6E1-24B1-47B1-BCF1-4ED222EB610C",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "ELEMNT",
+                    "Connect"
+                ],
+                "UUID": "3440C71D-1C96-4C71-ACB9-BD51E193C458"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3440C71D-1C96-4C71-ACB9-BD51E193C458",
+                        "Type": "ActionOutput",
+                        "OutputName": "List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "10146880-9D03-48FF-B5A5-3CB8CDB07685",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+            "WFWorkflowActionParameters": {
+                "WFSelectedApp": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "D871B625-30AE-4791-9368-570E0ECAE0E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "10146880-9D03-48FF-B5A5-3CB8CDB07685",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4A5BB6E1-24B1-47B1-BCF1-4ED222EB610C",
+                "WFControlFlowMode": 2
             }
         },
         {
@@ -777,6 +891,10 @@
                 "GroupingIdentifier": "A1375C7B-F027-4397-A1A3-E9D040C1FA35",
                 "UUID": "6529BF04-8DAE-47F0-9ABC-A4ECB8246879"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
@@ -949,15 +1067,23 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "📴 Offline",
+                "GroupingIdentifier": "E7959540-0509-48C8-9BDA-2361AF47925A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
-                    "workflowIdentifier": "FDE42164-4FF0-490B-B04B-0959F81DE7DA",
-                    "workflowName": "Turn on Color Filters",
+                    "workflowIdentifier": "477FF895-4A2E-4A3F-A829-0519F59FE918",
+                    "workflowName": "Disconnect from Internet",
                     "isSelf": false
                 },
-                "WFWorkflowName": "Turn on Color Filters",
-                "UUID": "2C478B84-3F77-4B0C-AD05-0C49C2E7A18F"
+                "WFWorkflowName": "Disconnect from Internet",
+                "UUID": "5C88FF6A-05D1-4020-ADC3-CE86CCD7BD93"
             }
         },
         {
@@ -969,11 +1095,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
-            "WFWorkflowActionParameters": {}
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
             "WFWorkflowActionParameters": {}
         }
     ],
@@ -990,6 +1112,8 @@
         }
     ],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFWorkflowHasShortcutInputVariables": true
 }

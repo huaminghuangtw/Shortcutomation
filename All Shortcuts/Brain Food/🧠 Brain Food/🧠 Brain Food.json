@@ -5,20 +5,14 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "9C48945F-7E22-4EFA-9334-61777791A46C",
-                    "workflowName": "isOnline?",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "isOnline?",
-                "UUID": "CC0D1930-5B95-4D05-82E0-DF7375F53D48"
+                "UUID": "EF50CBA6-B52C-458A-B4FD-ACB5168B746A"
             }
         },
         {
@@ -28,22 +22,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "EF50CBA6-B52C-458A-B4FD-ACB5168B746A",
                             "Type": "ActionOutput",
-                            "OutputName": "Shortcut Result",
-                            "OutputUUID": "CC0D1930-5B95-4D05-82E0-DF7375F53D48",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
-                                }
-                            ]
+                            "OutputName": "Current IP Address"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "64ECF9BC-3FBB-4C95-8671-16332875BF3D",
-                "WFCondition": 4
+                "WFCondition": 100
             }
         },
         {
@@ -52,11 +40,11 @@
                 "WFItems": [
                     "👉 Goodreads",
                     "👉 Hacker News",
-                    "👉 Sketchplanations",
                     "👉 Evergreen Lists",
                     "👉 Brain Food Lists",
                     "👉 The Enoughist's Pick",
                     "👉 Weekly Mindware Update",
+                    "👉 Smarter Every Day",
                     "👉 Floccus"
                 ],
                 "UUID": "79890F68-46DC-4637-A896-3EE5EA15C084"
@@ -171,59 +159,6 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "C0663A45-705C-45FD-AE8D-F56AF6847292",
                 "UUID": "0344CDE6-61D8-4742-96C7-E0E0784441BC"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "1198A390-A898-4A19-96C7-5E6C153EE9BF",
-                            "Type": "ActionOutput",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Sketchplanations",
-                "GroupingIdentifier": "72B7A94E-5AB3-417E-BDBF-BBA73457A9A1",
-                "WFCondition": 99
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "CC0D1930-5B95-4D05-82E0-DF7375F53D48",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "6EB7F2A8-CE7F-4B8A-9FE3-E192289FA966",
-                    "workflowName": "Sketchplanation",
-                    "isSelf": false
-                },
-                "UUID": "122332D2-68B5-4EB8-977D-D77EBA22A7D8",
-                "WFWorkflowName": "Sketchplanation"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "72B7A94E-5AB3-417E-BDBF-BBA73457A9A1",
-                "UUID": "D73FBD01-8EE2-46B1-89AF-670D3A94B26C"
             }
         },
         {
@@ -897,6 +832,49 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Smarter Every Day",
+                "GroupingIdentifier": "B3147146-5203-4CE0-B53D-A520EB4DC763",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.reminders.showlist",
+            "WFWorkflowActionParameters": {
+                "WFList": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/3E85BC26-9280-401C-8B04-CAAE3D34D410>",
+                    "Title": "🔖 Smarter Every day",
+                    "IsAllCalendar": false
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B3147146-5203-4CE0-B53D-A520EB4DC763",
+                "UUID": "56693182-7F07-4E3A-828F-30BC700DC283"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "1198A390-A898-4A19-96C7-5E6C153EE9BF",
+                            "Type": "ActionOutput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
                 "WFConditionalActionString": "Floccus",
                 "GroupingIdentifier": "E06381D0-16B4-4941-8F68-A70E82D50505",
                 "WFCondition": 99
@@ -917,8 +895,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "E06381D0-16B4-4941-8F68-A70E82D50505",
-                "WFControlFlowMode": 2
+                "UUID": "B29A8571-3960-4170-874D-944E38115CD7"
             }
         },
         {
@@ -975,7 +954,7 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch"
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false

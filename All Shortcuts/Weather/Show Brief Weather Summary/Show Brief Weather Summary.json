@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -203,12 +203,13 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "CustomOutputName": "Weather Forecast",
+                "UUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                 "WFWorkflow": {
                     "workflowIdentifier": "43A1A85F-DF7C-441E-AECE-CE4A30B6F436",
                     "workflowName": "Get Daily Weather Forecast",
                     "isSelf": false
                 },
-                "UUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                 "WFWorkflowName": "Get Daily Weather Forecast"
             }
         },
@@ -219,7 +220,7 @@
                     "Value": {
                         "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "Weather Forecast"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -302,13 +303,121 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "2F95FD45-9D83-4F6D-8945-3A13D07635E1",
+                    "workflowName": "Get Sunrise & Sunset Times",
+                    "isSelf": false
+                },
+                "UUID": "BE4B93A4-C054-43C6-A641-14EE02E32755",
+                "WFWorkflowName": "Get Sunrise & Sunset Times"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "BE4B93A4-C054-43C6-A641-14EE02E32755",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "civil_twilight_begin"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateFormatStyle": "None",
+                "UUID": "E7A04AA7-A728-49A6-9538-CF5C9BDC8F61"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result",
+                                "OutputUUID": "BE4B93A4-C054-43C6-A641-14EE02E32755",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "civil_twilight_end"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDateFormatStyle": "None",
+                "UUID": "80B50890-AFE0-4D27-A93F-F04F9373DD60"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.properties.weather.conditions",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "Weather Forecast"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Sunrise Time",
+                "UUID": "D952D285-C4FC-4F3F-B195-7B324B445183"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.weather.conditions",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Weather Forecast"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Sunset Time",
+                "UUID": "782341ED-6591-487D-83E7-3C198B0D6DE8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.weather.conditions",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Weather Forecast"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -323,7 +432,7 @@
                     "Value": {
                         "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "Weather Forecast"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -338,7 +447,7 @@
                     "Value": {
                         "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "Weather Forecast"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -373,7 +482,7 @@
                     "Value": {
                         "OutputUUID": "635B7969-90D8-4C13-8BC3-5136B28097F7",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
+                        "OutputName": "Weather Forecast"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -404,32 +513,64 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "• ￼\n• 最高溫: ￼\n• 最低溫: ￼\n• 降雨機率: ￼%\n• 降水量: ￼",
+                        "string": "• ￼\n• 天亮 ￼／天黑 ￼\n• 日出 ￼／日落 ￼\n• 最高溫：￼／最低溫：￼\n• 降雨機率：￼%\n• 降水量：￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
                                 "OutputUUID": "8B11504B-E696-4A20-9031-E72438C53482",
                                 "Type": "ActionOutput",
                                 "OutputName": "Shortcut Result"
                             },
-                            "{30, 1}": {
+                            "{49, 1}": {
                                 "OutputUUID": "3E7390D6-7045-414B-89F2-84CE225C81C9",
                                 "Type": "ActionOutput",
                                 "OutputName": "Shortcut Result"
                             },
-                            "{11, 1}": {
-                                "OutputUUID": "FE532DC9-AD26-4A86-A383-FC60A155AC39",
-                                "Type": "ActionOutput",
-                                "OutputName": "High"
-                            },
                             "{40, 1}": {
+                                "OutputUUID": "72EFE3E2-C57A-4E1E-8F62-F9592C2C7600",
+                                "Type": "ActionOutput",
+                                "OutputName": "Low"
+                            },
+                            "{14, 1}": {
+                                "OutputUUID": "80B50890-AFE0-4D27-A93F-F04F9373DD60",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            },
+                            "{58, 1}": {
                                 "OutputUUID": "0D765CAE-568B-41F1-BEAC-1DA46ED9B720",
                                 "Type": "ActionOutput",
                                 "OutputName": "Converted Measurement"
                             },
-                            "{20, 1}": {
-                                "OutputUUID": "72EFE3E2-C57A-4E1E-8F62-F9592C2C7600",
+                            "{26, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Low"
+                                "OutputName": "Sunset Time",
+                                "OutputUUID": "782341ED-6591-487D-83E7-3C198B0D6DE8",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Time"
+                                    }
+                                ]
+                            },
+                            "{9, 1}": {
+                                "OutputUUID": "E7A04AA7-A728-49A6-9538-CF5C9BDC8F61",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            },
+                            "{34, 1}": {
+                                "OutputUUID": "FE532DC9-AD26-4A86-A383-FC60A155AC39",
+                                "Type": "ActionOutput",
+                                "OutputName": "High"
+                            },
+                            "{21, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Sunrise Time",
+                                "OutputUUID": "D952D285-C4FC-4F3F-B195-7B324B445183",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Time"
+                                    }
+                                ]
                             }
                         }
                     },
@@ -495,7 +636,7 @@
         {
             "Category": "Parameter",
             "ParameterKey": "WFTextActionText",
-            "ActionIndex": 0,
+            "ActionIndex": 12,
             "Text": "What is your first name?",
             "DefaultValue": ""
         }
@@ -503,7 +644,8 @@
     "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
         "Watch",
-        "NCWidget"
+        "NCWidget",
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFWorkflowHasShortcutInputVariables": true
 }

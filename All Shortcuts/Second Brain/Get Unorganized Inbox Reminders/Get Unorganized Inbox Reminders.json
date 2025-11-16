@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
         "WFReminderContentItem"
     ],
@@ -101,15 +101,6 @@
                                 "Property": "List"
                             },
                             {
-                                "Operator": 999,
-                                "Values": {
-                                    "Bool": false,
-                                    "String": "✼"
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            },
-                            {
                                 "Operator": 4,
                                 "Values": {
                                     "Bool": false
@@ -156,11 +147,63 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 999,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "📥 Inbox",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    },
+                                    "String": "✼"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 5,
+                                "Values": {
+                                    "Bool": false,
+                                    "String": "🍅"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
+                                "Operator": 999,
+                                "Values": {
+                                    "String": "imdb"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "1BAB51D8-7E7F-4CF5-A208-3FA19841740D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "AB9E4D35-685E-4742-A894-B75D282FBC12"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "1BAB51D8-7E7F-4CF5-A208-3FA19841740D",
+                        "OutputUUID": "AB9E4D35-685E-4742-A894-B75D282FBC12",
                         "Type": "ActionOutput",
                         "OutputName": "Reminders"
                     },
@@ -190,16 +233,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "59A66174-44C9-4B26-A01B-CF87C79BD112",
-                    "workflowName": "Get Leading Symbols Dictionary",
-                    "isSelf": false
-                },
-                "CustomOutputName": "dict",
-                "UUID": "47A4EF91-2FCD-48D9-BBFA-055D1088098B",
-                "WFWorkflowName": "Get Leading Symbols Dictionary"
+                "keyPath": "Leading Symbol for Inbox Automation",
+                "UUID": "BBE6A3E0-25B6-4C4E-BEF9-77C0A6DEF5A6"
             }
         },
         {
@@ -210,8 +247,8 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "dict",
-                            "OutputUUID": "47A4EF91-2FCD-48D9-BBFA-055D1088098B",
+                            "OutputName": "Value",
+                            "OutputUUID": "BBE6A3E0-25B6-4C4E-BEF9-77C0A6DEF5A6",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
@@ -269,32 +306,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "imdb",
-                "GroupingIdentifier": "976DB50C-DD41-4537-A5BB-BB158CD21734",
-                "WFCondition": 999
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -305,13 +316,6 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFVariableName": "Reminders"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "976DB50C-DD41-4537-A5BB-BB158CD21734",
-                "WFControlFlowMode": 2
             }
         },
         {
@@ -360,7 +364,7 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch"
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true

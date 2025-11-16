@@ -5,10 +5,14 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "3612.0.2.2",
+    "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+            "WFWorkflowActionParameters": {}
+        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
@@ -118,7 +122,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "📆 Add to ￼'s Calendar?",
+                        "string": "📆 Add to ￼’s Calendar?",
                         "attachmentsByRange": {
                             "{10, 1}": {
                                 "OutputUUID": "3E51159D-F07A-4091-9676-D043F0548C74",
@@ -261,6 +265,20 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "OutputUUID": "75D2D4F9-6DE7-42DD-B646-1BE33DC6DB43",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "F6F7C279-678A-4B74-A187-364F7AAB6C69"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -285,8 +303,24 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFName": "‏‎",
-                "UUID": "BB43514D-27DE-48B3-9C46-E4BCB505BF90"
+                "WFName": {
+                    "Value": {
+                        "string": "▍￼ / ￼",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "F6F7C279-678A-4B74-A187-364F7AAB6C69",
+                                "Type": "ActionOutput",
+                                "OutputName": "Count"
+                            },
+                            "{1, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "7B2A98B3-8A51-416B-98D7-F98BF8086CE9"
             }
         },
         {
@@ -294,7 +328,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "BB43514D-27DE-48B3-9C46-E4BCB505BF90",
+                        "OutputUUID": "7B2A98B3-8A51-416B-98D7-F98BF8086CE9",
                         "Type": "ActionOutput",
                         "OutputName": "Renamed Item"
                     },
@@ -634,8 +668,29 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "GroupingIdentifier": "E5A01DBA-5AB5-4B6B-B796-042371520294",
-                "WFControlFlowMode": 0
+                "WFControlFlowMode": 0,
+                "UUID": "20F31764-B25B-457F-9649-5E28666B5774",
+                "GroupingIdentifier": "E5A01DBA-5AB5-4B6B-B796-042371520294"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.TextCaseIntent",
+            "WFWorkflowActionParameters": {
+                "ShowWhenRun": false,
+                "text": {
+                    "Value": {
+                        "string": "@ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "96574B94-FB67-4F8B-8F43-2709969567B4",
+                "format": "italic"
             }
         },
         {
@@ -786,8 +841,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 1,
                 "GroupingIdentifier": "7F8CC913-397A-4FC9-A83F-38998973B858",
-                "WFControlFlowMode": 1
+                "UUID": "BCCECD8C-51E6-4C6A-BA7E-C19A962886EA"
             }
         },
         {
@@ -1061,26 +1117,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.TextCaseIntent",
-            "WFWorkflowActionParameters": {
-                "ShowWhenRun": false,
-                "text": {
-                    "Value": {
-                        "string": "@ ￼",
-                        "attachmentsByRange": {
-                            "{2, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "96574B94-FB67-4F8B-8F43-2709969567B4",
-                "format": "italic"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -1321,91 +1357,27 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
             "WFWorkflowActionParameters": {
-                "WFItems": {
+                "WFInput": {
                     "Value": {
-                        "WFDictionaryFieldValueItems": [
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches",
+                        "OutputUUID": "5D6B07F3-8D70-447C-9E29-E551A36E194E",
+                        "Aggrandizements": [
                             {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "date"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "ECE3285D-5664-48A8-B5FF-0345A3F8D7BB",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "If Result"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
                             },
                             {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "calEventTitle"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "VariableName": "calEventTitle",
-                                                "Type": "Variable"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "defaultDuration"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Matches",
-                                                "OutputUUID": "5D6B07F3-8D70-447C-9E29-E551A36E194E",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "defaultDuration"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "defaultDuration"
                             }
                         ]
                     },
-                    "WFSerializationType": "WFDictionaryFieldValue"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "70EBC0DC-E2A3-4C96-9EBF-7861C55548C1"
+                "WFVariableName": "defaultDuration"
             }
         },
         {
@@ -1437,6 +1409,7 @@
                     }
                 },
                 "WFControlFlowMode": 0,
+                "UUID": "0E7D52BA-4B99-4D46-AF60-2384DAE29789",
                 "WFConditionalActionString": {
                     "Value": {
                         "string": "￼",
@@ -1522,20 +1495,21 @@
                                 "Property": "List"
                             },
                             {
+                                "Operator": 8,
+                                "Values": {
+                                    "Bool": false,
+                                    "String": "👤"
+                                },
+                                "Removable": true,
+                                "Property": "Title"
+                            },
+                            {
                                 "Operator": 4,
                                 "Values": {
                                     "Bool": false
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": true
-                                },
-                                "Removable": true,
-                                "Property": "Is Flagged"
                             }
                         ]
                     },
@@ -1569,6 +1543,26 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2CA86D82-5427-45DF-8980-E1BA471EEB62",
+                        "Type": "ActionOutput",
+                        "OutputName": "Selected Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "328EB3FC-0980-46EC-AA21-855E3F90824F",
+                    "workflowName": "Strip Leading Symbol",
+                    "isSelf": false
+                },
+                "UUID": "41453103-F0A7-4893-BE70-3160BFE3B72F",
+                "WFWorkflowName": "Strip Leading Symbol"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -1576,9 +1570,9 @@
                         "string": "￼ - ￼",
                         "attachmentsByRange": {
                             "{4, 1}": {
-                                "OutputUUID": "2CA86D82-5427-45DF-8980-E1BA471EEB62",
+                                "OutputUUID": "41453103-F0A7-4893-BE70-3160BFE3B72F",
                                 "Type": "ActionOutput",
-                                "OutputName": "Selected Item"
+                                "OutputName": "Shortcut Result"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "6FD7FF08-220C-48E5-A92A-323CFA9E5BF1",
@@ -1633,6 +1627,14 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1BD40E3B-B63C-4061-8193-83E08DF83AFB",
+                "UUID": "53EB4A41-B7E6-4A80-9B2F-7441C54F502A"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -1656,111 +1658,952 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "📅 ￼\n￼\n￼\n￼",
+                        "attachmentsByRange": {
+                            "{9, 1}": {
+                                "OutputUUID": "947DA27F-2CC8-4110-81F8-0F319F41012B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text Divider"
+                            },
+                            "{3, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result",
+                                "OutputUUID": "ECE3285D-5664-48A8-B5FF-0345A3F8D7BB",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Relative",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None",
+                                        "WFRelativeDateFormatStyle": "Short"
+                                    }
+                                ]
+                            },
+                            "{5, 1}": {
+                                "OutputUUID": "947DA27F-2CC8-4110-81F8-0F319F41012B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text Divider"
+                            },
+                            "{7, 1}": {
+                                "OutputUUID": "7133A2F8-D2C9-4FD3-ACBD-8085331DE68A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "👇Choose Start Time (Hour)👇"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
                     "Value": {
                         "WFDictionaryFieldValueItems": [
                             {
-                                "WFItemType": 0,
+                                "WFItemType": 2,
                                 "WFKey": {
                                     "Value": {
-                                        "string": "date"
+                                        "string": "🕕 Early Morning〡6 • 7 • 8"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 },
                                 "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "ECE3285D-5664-48A8-B5FF-0345A3F8D7BB",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "If Result"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
+                                    "Value": [
+                                        "6",
+                                        "7",
+                                        "8"
+                                    ],
+                                    "WFSerializationType": "WFArrayParameterState"
                                 }
                             },
                             {
-                                "WFItemType": 0,
+                                "WFItemType": 2,
                                 "WFKey": {
                                     "Value": {
-                                        "string": "calEventTitle"
+                                        "string": "🕘 Morning〡9 • 10 • 11"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 },
                                 "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "7133A2F8-D2C9-4FD3-ACBD-8085331DE68A",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Text"
+                                    "Value": [
+                                        "9",
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "10"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "11"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
                                             }
                                         }
+                                    ],
+                                    "WFSerializationType": "WFArrayParameterState"
+                                }
+                            },
+                            {
+                                "WFItemType": 2,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "🕛 Midday〡12 • 13 • 14"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": [
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "12"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "13"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "14"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        }
+                                    ],
+                                    "WFSerializationType": "WFArrayParameterState"
+                                }
+                            },
+                            {
+                                "WFItemType": 2,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "🕒 Afternoon〡15 • 16 • 17"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": [
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "15"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "16"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "17"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        }
+                                    ],
+                                    "WFSerializationType": "WFArrayParameterState"
+                                }
+                            },
+                            {
+                                "WFItemType": 2,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "🕕 Evening〡18 • 19 • 20"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": [
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "18"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "19"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        },
+                                        {
+                                            "WFItemType": 3,
+                                            "WFValue": {
+                                                "Value": {
+                                                    "string": "20"
+                                                },
+                                                "WFSerializationType": "WFTextTokenString"
+                                            }
+                                        }
+                                    ],
+                                    "WFSerializationType": "WFArrayParameterState"
                                 }
                             }
                         ]
                     },
                     "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "UUID": "B1B9B0C3-FEBA-4905-9D62-D6333AD032D0"
+                "CustomOutputName": "mappingDict",
+                "UUID": "A3E3C3AD-DC26-47FB-8F1F-8898177BFCBF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n→ 🕰️ Which part of the day?",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "197C4F07-9141-4DF8-B34A-AA5720C22424"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "197C4F07-9141-4DF8-B34A-AA5720C22424",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "mappingDict",
+                        "OutputUUID": "A3E3C3AD-DC26-47FB-8F1F-8898177BFCBF",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Keys"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "B5113DC6-A41A-4828-B4EF-99F8CE1602BB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A3E3C3AD-DC26-47FB-8F1F-8898177BFCBF",
+                        "Type": "ActionOutput",
+                        "OutputName": "mappingDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B5113DC6-A41A-4828-B4EF-99F8CE1602BB",
+                                "Type": "ActionOutput",
+                                "OutputName": "Chosen Item"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E3647988-5BBC-407A-9F31-75F60513EAC6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n→ 🕰️ Start Time (Hour)?",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6875E9E7-4C4B-471C-BBFD-2C5624E38F4A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+            "WFWorkflowActionParameters": {
+                "WFChooseFromListActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "6875E9E7-4C4B-471C-BBFD-2C5624E38F4A",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E3647988-5BBC-407A-9F31-75F60513EAC6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "15D58AAD-24BE-4918-90E3-F2934524099E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "14062FD2-1201-4C29-AF52-B1D2DF129991",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "Selected Item",
+                            "OutputUUID": "15D58AAD-24BE-4918-90E3-F2934524099E",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "12",
+                "WFCondition": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "PM"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "14062FD2-1201-4C29-AF52-B1D2DF129991",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "AM"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "1BD40E3B-B63C-4061-8193-83E08DF83AFB",
-                "UUID": "53EB4A41-B7E6-4A80-9B2F-7441C54F502A"
+                "GroupingIdentifier": "14062FD2-1201-4C29-AF52-B1D2DF129991",
+                "UUID": "6F09A7C4-D66B-4B29-92AE-D1C70B7AC053"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "53EB4A41-B7E6-4A80-9B2F-7441C54F502A",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "15D58AAD-24BE-4918-90E3-F2934524099E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Selected Item"
+                            }
+                        }
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "WFWorkflow": {
-                    "workflowIdentifier": "5758546B-C9BA-4BF9-96EF-34C84894007A",
-                    "workflowName": "Choose Time",
-                    "isSelf": false
+                "WFReplaceTextRegularExpression": true,
+                "UUID": "888D1484-7C43-4299-9BB1-5E98EFC65146",
+                "WFReplaceTextReplace": "0$1",
+                "WFReplaceTextFind": "^(\\d)$"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼:00 ￼",
+                        "attachmentsByRange": {
+                            "{5, 1}": {
+                                "OutputUUID": "6F09A7C4-D66B-4B29-92AE-D1C70B7AC053",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "888D1484-7C43-4299-9BB1-5E98EFC65146",
+                                "Type": "ActionOutput",
+                                "OutputName": "Updated Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "D7865F0C-8D8B-49B4-8337-C2ECEE705EC4",
-                "WFWorkflowName": "Choose Time"
+                "WFDateActionMode": "Specified Date",
+                "UUID": "760ED360-2A5D-4F9E-82E9-D0CEC52412CC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "👇Choose Start Time (Minute)👇"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n→ 🕰️ Start Time (Minute)?",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0A1AEF80-B564-40B2-A5ED-E0E3BFD8B41C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "UUID": "CCD4A1F4-FE5A-49AB-99E9-C5FE2938D719",
+                "WFInputType": "Time",
+                "WFAskActionDefaultAnswerTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "760ED360-2A5D-4F9E-82E9-D0CEC52412CC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAskActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0A1AEF80-B564-40B2-A5ED-E0E3BFD8B41C",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "CCD4A1F4-FE5A-49AB-99E9-C5FE2938D719",
+                                "Type": "ActionOutput",
+                                "OutputName": "Ask for Input"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAdjustOperation": "Get Start of Hour",
+                "UUID": "618A8704-4865-452B-BA74-0625B84AEDF6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "floor(￼ / 5) * 5",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Ask for Input",
+                                "OutputUUID": "CCD4A1F4-FE5A-49AB-99E9-C5FE2938D719",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "m",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AC2EBC8B-8E17-4A21-A08F-13E676EDCF03"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "618A8704-4865-452B-BA74-0625B84AEDF6",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "min",
+                        "Magnitude": {
+                            "OutputUUID": "AC2EBC8B-8E17-4A21-A08F-13E676EDCF03",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "9D294AFF-651D-4A2E-BADF-250EAA66E067"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "startTime",
+                "UUID": "191DC978-76CD-4A2C-948B-52BE5B31DA38",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date",
+                                "OutputUUID": "9D294AFF-651D-4A2E-BADF-250EAA66E067",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "HH:mm a",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result",
+                                "OutputUUID": "ECE3285D-5664-48A8-B5FF-0345A3F8D7BB",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "👇Choose End Time👇"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "defaultDuration",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "0F1E17AB-648F-4FBC-B5AA-62D9173750B6",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "9D294AFF-651D-4A2E-BADF-250EAA66E067",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "min",
+                        "Magnitude": {
+                            "VariableName": "defaultDuration",
+                            "Type": "Variable"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "F7839043-D9A3-4C92-B55C-444964B928E8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "0F1E17AB-648F-4FBC-B5AA-62D9173750B6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "9D294AFF-651D-4A2E-BADF-250EAA66E067",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "min",
+                        "Magnitude": "15"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "3EDF1854-7E25-481B-9795-66DC8FD0FB83"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "0F1E17AB-648F-4FBC-B5AA-62D9173750B6",
+                "UUID": "80204AD2-4744-4622-A59F-398AB61512E3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n→ 🕰️ ￼ ~ End Time?",
+                        "attachmentsByRange": {
+                            "{8, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date",
+                                "OutputUUID": "9D294AFF-651D-4A2E-BADF-250EAA66E067",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Time"
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B2A5E20F-EBBF-45DD-ACB1-5EC938424AD3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "UUID": "C27D22A3-8423-414B-A3E9-7AE80DE52AE4",
+                "WFInputType": "Time",
+                "WFAskActionDefaultAnswerTime": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "80204AD2-4744-4622-A59F-398AB61512E3",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAskActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B2A5E20F-EBBF-45DD-ACB1-5EC938424AD3",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "C27D22A3-8423-414B-A3E9-7AE80DE52AE4",
+                                "Type": "ActionOutput",
+                                "OutputName": "Ask for Input"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAdjustOperation": "Get Start of Hour",
+                "UUID": "0EFCEC71-AB0A-4ED6-80CD-C06B2B060EE7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "floor(￼ / 5) * 5",
+                        "attachmentsByRange": {
+                            "{6, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Ask for Input",
+                                "OutputUUID": "C27D22A3-8423-414B-A3E9-7AE80DE52AE4",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "m",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "51D3056B-53CD-49C7-9D53-12CAB6C3D186"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "0EFCEC71-AB0A-4ED6-80CD-C06B2B060EE7",
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "min",
+                        "Magnitude": {
+                            "OutputUUID": "51D3056B-53CD-49C7-9D53-12CAB6C3D186",
+                            "Type": "ActionOutput",
+                            "OutputName": "Calculation Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "3EB272EE-DB03-4969-B52F-A90EE4CDD28D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "endTime",
+                "UUID": "7B003636-B30D-40EC-9153-0F3E25529AF2",
+                "WFDateActionMode": "Specified Date",
+                "WFDateActionDate": {
+                    "Value": {
+                        "string": "￼ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Adjusted Date",
+                                "OutputUUID": "3EB272EE-DB03-4969-B52F-A90EE4CDD28D",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "HH:mm a",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result",
+                                "OutputUUID": "ECE3285D-5664-48A8-B5FF-0345A3F8D7BB",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDateContentItem"
+                                    },
+                                    {
+                                        "WFDateFormatStyle": "Medium",
+                                        "WFISO8601IncludeTime": false,
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFTimeFormatStyle": "None"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.addnewevent",
             "WFWorkflowActionParameters": {
-                "WFCalendarItemEndDate": {
+                "WFCalendarItemTitle": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result",
-                                "OutputUUID": "D7865F0C-8D8B-49B4-8337-C2ECEE705EC4",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "endTime"
-                                    }
-                                ]
+                                "VariableName": "calEventTitle",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarItemNotes": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "Ask"
                             }
                         }
                     },
@@ -1774,36 +2617,27 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "82880E87-B1F7-4EEC-AAB6-9E52865ADF3C",
-                "WFCalendarItemStartDate": {
+                "WFCalendarItemEndDate": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
+                                "OutputUUID": "7B003636-B30D-40EC-9153-0F3E25529AF2",
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result",
-                                "OutputUUID": "D7865F0C-8D8B-49B4-8337-C2ECEE705EC4",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "startTime"
-                                    }
-                                ]
+                                "OutputName": "endTime"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemTitle": {
+                "WFCalendarItemStartDate": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "calEventTitle",
-                                "Type": "Variable"
+                                "OutputUUID": "191DC978-76CD-4A2C-948B-52BE5B31DA38",
+                                "Type": "ActionOutput",
+                                "OutputName": "startTime"
                             }
                         }
                     },
@@ -1930,9 +2764,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "2CA86D82-5427-45DF-8980-E1BA471EEB62",
+                                                "OutputUUID": "41453103-F0A7-4893-BE70-3160BFE3B72F",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Selected Item"
+                                                "OutputName": "Shortcut Result"
                                             }
                                         }
                                     },
@@ -2089,7 +2923,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch"
+        "Watch",
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
