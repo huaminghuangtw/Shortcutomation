@@ -7,16 +7,10 @@
     },
     "WFWorkflowClientVersion": "4042.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
-        "WFURLContentItem"
+        "WFStringContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
-            "WFWorkflowActionParameters": {
-                "WFCommentActionText": "Astronomy Picture of the Day (APOD): https://apod.nasa.gov/apod/astropix.html"
-            }
-        },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
@@ -131,20 +125,82 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
-                "WFURLActionURL": {
+                "CustomOutputName": "baseURL",
+                "WFURLActionURL": "https://apod.nasa.gov/apod",
+                "UUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
                     "Value": {
-                        "string": "https://apod.nasa.gov/apod/ap￼.html",
+                        "string": "￼/ap￼.html",
                         "attachmentsByRange": {
-                            "{29, 1}": {
+                            "{4, 1}": {
                                 "OutputUUID": "4CB335B6-0163-4A76-8149-B132F3C5FAFB",
                                 "Type": "ActionOutput",
                                 "OutputName": "Formatted Date"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254",
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254"
+                "UUID": "3CD3FFE3-C396-48E5-B823-0ADEB6F70B0B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gethtmlfromrichtext",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3CD3FFE3-C396-48E5-B823-0ADEB6F70B0B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E21DA4A2-7968-4C32-B6DA-263257EF444D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextCaseSensitive": true,
+                "WFMatchTextPattern": "<IMG SRC=\"(.*?)\"",
+                "UUID": "671367E4-C6CC-4A70-AF12-28342A1C4134",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E21DA4A2-7968-4C32-B6DA-263257EF444D",
+                                "Type": "ActionOutput",
+                                "OutputName": "HTML from Rich Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "671367E4-C6CC-4A70-AF12-28342A1C4134",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "06A77BAF-5DA7-4E11-A6A1-F8D93DE80BA1"
             }
         },
         {
@@ -152,18 +208,30 @@
             "WFWorkflowActionParameters": {
                 "WFOutput": {
                     "Value": {
-                        "string": "￼",
+                        "string": "￼/￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254",
+                            "{2, 1}": {
+                                "OutputUUID": "06A77BAF-5DA7-4E11-A6A1-F8D93DE80BA1",
                                 "Type": "ActionOutput",
-                                "OutputName": "URL"
+                                "OutputName": "Text"
+                            },
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL",
+                                "OutputUUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "WFItemName",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "Name"
+                                    }
+                                ]
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "8A6E13E4-D3E4-4284-A034-DEF25D683F3B"
+                "UUID": "0B23F180-3E10-4368-B897-C42DF21A3A37"
             }
         }
     ],

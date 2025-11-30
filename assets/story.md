@@ -1,5 +1,5 @@
 ---
-title: 📚 Story
+title: Story
 ---
 
 I first discovered  Apple Shortcuts in November 2022 while trying to streamline a few repetitive tasks on my iPhone.

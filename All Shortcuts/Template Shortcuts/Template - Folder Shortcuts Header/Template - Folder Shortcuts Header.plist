@@ -72,16 +72,16 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.split</string>
+			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>shortcuts</string>
 				<key>UUID</key>
-				<string>53828E1D-8ABB-4C83-AE24-62F96780165C</string>
-				<key>WFTextCustomSeparator</key>
-				<string>,</string>
-				<key>WFTextSeparator</key>
-				<string>Custom</string>
-				<key>text</key>
+				<string>70A61227-1D74-4195-9B47-ECCC4512C997</string>
+				<key>WFDictionaryKey</key>
+				<string>shortcuts</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -91,6 +91,31 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.count</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Input</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>shortcuts</string>
+						<key>OutputUUID</key>
+						<string>70A61227-1D74-4195-9B47-ECCC4512C997</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>UUID</key>
+				<string>8A7E9386-AB7B-4F5C-AC8D-68BDB471ACC5</string>
+				<key>WFCountType</key>
+				<string>Characters</string>
 			</dict>
 		</dict>
 		<dict>
@@ -131,15 +156,40 @@
 						<key>Value</key>
 						<dict>
 							<key>OutputName</key>
-							<string>Split Text</string>
+							<string>Count</string>
 							<key>OutputUUID</key>
-							<string>53828E1D-8ABB-4C83-AE24-62F96780165C</string>
+							<string>8A7E9386-AB7B-4F5C-AC8D-68BDB471ACC5</string>
 							<key>Type</key>
 							<string>ActionOutput</string>
 						</dict>
 						<key>WFSerializationType</key>
 						<string>WFTextTokenAttachment</string>
 					</dict>
+				</dict>
+				<key>WFNumberValue</key>
+				<string>0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getvalueforkey</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>title</string>
+				<key>UUID</key>
+				<string>7EA1F001-5323-401E-BAAA-7151A51B640C</string>
+				<key>WFDictionaryKey</key>
+				<string>title</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>ExtensionInput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -175,29 +225,17 @@
 									<string>WFPropertyVariableAggrandizement</string>
 								</dict>
 							</array>
+							<key>OutputName</key>
+							<string>title</string>
+							<key>OutputUUID</key>
+							<string>7EA1F001-5323-401E-BAAA-7151A51B640C</string>
 							<key>Type</key>
-							<string>ExtensionInput</string>
+							<string>ActionOutput</string>
 						</dict>
 						<key>WFSerializationType</key>
 						<string>WFTextTokenAttachment</string>
 					</dict>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.pausemusic</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>WFMediaRoute</key>
-				<dict>
-					<key>isLocalDevice</key>
-					<true/>
-					<key>routeUID</key>
-					<string>Speaker</string>
-				</dict>
-				<key>WFPlayPauseBehavior</key>
-				<string>Pause</string>
 			</dict>
 		</dict>
 		<dict>
@@ -231,6 +269,21 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFDictionaryContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+							<dict>
+								<key>DictionaryKey</key>
+								<string>title</string>
+								<key>Type</key>
+								<string>WFDictionaryValueVariableAggrandizement</string>
+							</dict>
+						</array>
 						<key>Type</key>
 						<string>ExtensionInput</string>
 					</dict>
@@ -308,121 +361,6 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>dk.simonbs.DataJar.GetValueIntent</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>timestamp</string>
-				<key>UUID</key>
-				<string>87593ADB-5191-49FF-AA59-CDB0FF17ACCB</string>
-				<key>keyPath</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{25, 1}</key>
-							<dict>
-								<key>Aggrandizements</key>
-								<array>
-									<dict>
-										<key>Type</key>
-										<string>WFDateFormatVariableAggrandizement</string>
-										<key>WFDateFormat</key>
-										<string>yyyy.MMMM.yyyy-MM-dd</string>
-										<key>WFDateFormatStyle</key>
-										<string>Custom</string>
-										<key>WFISO8601IncludeTime</key>
-										<false/>
-									</dict>
-								</array>
-								<key>Type</key>
-								<string>CurrentDate</string>
-							</dict>
-							<key>{27, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Updated Text</string>
-								<key>OutputUUID</key>
-								<string>E2B0FCF2-A5C2-4FAF-9CA8-666622475079</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>Journal Metadata.history.￼.￼TheDayAt</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettimebetweendates</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>01CAF185-9350-4EA0-BC5D-5AEFCFD26ADF</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>Aggrandizements</key>
-								<array>
-									<dict>
-										<key>Type</key>
-										<string>WFDateFormatVariableAggrandizement</string>
-										<key>WFDateFormatStyle</key>
-										<string>Medium</string>
-										<key>WFISO8601IncludeTime</key>
-										<false/>
-										<key>WFTimeFormatStyle</key>
-										<string>Medium</string>
-									</dict>
-								</array>
-								<key>Type</key>
-								<string>CurrentDate</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-				<key>WFTimeUntilFromDate</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>timestamp</string>
-								<key>OutputUUID</key>
-								<string>87593ADB-5191-49FF-AA59-CDB0FF17ACCB</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-				<key>WFTimeUntilUnit</key>
-				<string>Total Time</string>
 			</dict>
 		</dict>
 		<dict>
@@ -708,6 +646,49 @@
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getipaddress</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>434305FB-574F-4687-9751-BD57FAFCBBCA</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4EC50FA2-CE49-4D2D-BD90-1390CF15B8CE</string>
+				<key>UUID</key>
+				<string>D1EC33BE-BB6F-414D-B4CC-D28AFB3F785A</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Current IP Address</string>
+							<key>OutputUUID</key>
+							<string>434305FB-574F-4687-9751-BD57FAFCBBCA</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
 				</dict>
 			</dict>
 		</dict>
@@ -1151,6 +1132,19 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4EC50FA2-CE49-4D2D-BD90-1390CF15B8CE</string>
+				<key>UUID</key>
+				<string>44320AC1-EB78-4556-AFD2-7F34D4F6410E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.dictionary</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -1263,6 +1257,57 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>dk.simonbs.DataJar.GetValueIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>timestamp</string>
+				<key>UUID</key>
+				<string>87593ADB-5191-49FF-AA59-CDB0FF17ACCB</string>
+				<key>keyPath</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{25, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>Type</key>
+										<string>WFDateFormatVariableAggrandizement</string>
+										<key>WFDateFormat</key>
+										<string>yyyy.MMMM.yyyy-MM-dd</string>
+										<key>WFDateFormatStyle</key>
+										<string>Custom</string>
+										<key>WFISO8601IncludeTime</key>
+										<false/>
+									</dict>
+								</array>
+								<key>Type</key>
+								<string>CurrentDate</string>
+							</dict>
+							<key>{27, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Updated Text</string>
+								<key>OutputUUID</key>
+								<string>E2B0FCF2-A5C2-4FAF-9CA8-666622475079</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>Journal Metadata.history.￼.￼TheDayAt</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.format.date</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -1292,6 +1337,70 @@
 				</dict>
 				<key>WFDateFormatStyle</key>
 				<string>None</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettimebetweendates</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>01CAF185-9350-4EA0-BC5D-5AEFCFD26ADF</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>Type</key>
+										<string>WFDateFormatVariableAggrandizement</string>
+										<key>WFDateFormatStyle</key>
+										<string>Medium</string>
+										<key>WFISO8601IncludeTime</key>
+										<false/>
+										<key>WFTimeFormatStyle</key>
+										<string>Medium</string>
+									</dict>
+								</array>
+								<key>Type</key>
+								<string>CurrentDate</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFTimeUntilFromDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>timestamp</string>
+								<key>OutputUUID</key>
+								<string>87593ADB-5191-49FF-AA59-CDB0FF17ACCB</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFTimeUntilUnit</key>
+				<string>Total Time</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1397,7 +1506,7 @@
 								<key>OutputName</key>
 								<string>Shortcut Result</string>
 								<key>OutputUUID</key>
-								<string>A3D7E707-C191-4F51-80FF-13D01BE31130</string>
+								<string>FC8AF146-AA3F-433A-AD0C-0560D0414B37</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>

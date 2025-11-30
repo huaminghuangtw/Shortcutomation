@@ -557,15 +557,17 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "CA0DF4D6-1F76-4D9C-B149-C63E88A1CB65",
-                "WFControlFlowMode": 2
+                "UUID": "5E72511D-2A66-46CC-9AEE-A34636AB12AA"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "F2B01B04-CEBC-4AE3-8AD3-42641A40BF77",
-                "WFControlFlowMode": 2
+                "UUID": "BF07B5BC-5C37-49A0-8ECC-A9392D4E71C6"
             }
         },
         {
@@ -612,6 +614,30 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4043DBE0-14C1-4199-BA3C-BB1E2CAB0B80",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -623,6 +649,129 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "DCFB7BAA-1018-4D0A-916C-0CD4C97122A8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4043DBE0-14C1-4199-BA3C-BB1E2CAB0B80",
+                "UUID": "17EE8C66-8CC4-4418-96D0-7B82B000728D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "75221013-C43C-4E4D-A7FD-0EA9A808280F",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.ReadingListItemEntity",
+            "WFWorkflowActionParameters": {
+                "WFContentItemLimitEnabled": false,
+                "AppIntentDescriptor": {
+                    "ActionRequiresAppInstallation": true,
+                    "BundleIdentifier": "com.apple.mobilesafari",
+                    "AppIntentIdentifier": "ReadingListItemEntity",
+                    "Name": "Safari",
+                    "TeamIdentifier": "0000000000"
+                },
+                "UUID": "E69E5448-0C9B-4A28-90DC-28A08B9B8E16",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 99,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "AE82AC55-6002-4956-B0D6-8989D0232157",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "brainFoodTitle"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.OpenReadingListItem",
+            "WFWorkflowActionParameters": {
+                "target": {
+                    "Value": {
+                        "OutputUUID": "E69E5448-0C9B-4A28-90DC-28A08B9B8E16",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reading List Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8E9DA6F8-4F7E-4848-A8B3-C9C3D1F18205",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobilesafari",
+                    "Name": "Safari",
+                    "AppIntentIdentifier": "OpenReadingListItem"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.apple.mobilesafari.ChangeReaderModeState",
+            "WFWorkflowActionParameters": {
+                "UUID": "CEDCDA95-F10C-4DD3-A0A7-BDDAAF5D1C21",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobilesafari",
+                    "Name": "Safari",
+                    "AppIntentIdentifier": "ChangeReaderModeState"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "75221013-C43C-4E4D-A7FD-0EA9A808280F",
+                "UUID": "50BA8A5E-39F9-4289-8FCE-3DD9709D0F30"
             }
         },
         {

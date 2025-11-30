@@ -1902,7 +1902,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n→ 🕰️ Which part of the day?",
+                        "string": "￼\n🕰️ Which part of the day?",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
@@ -1981,7 +1981,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n→ 🕰️ Start Time (Hour)?",
+                        "string": "￼\n🕰️ Start Time (Hour)?",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
@@ -2402,9 +2402,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n→ 🕰️ ￼ ~ End Time?",
+                        "string": "￼\n🕰️ ￼ ~ End Time?",
                         "attachmentsByRange": {
-                            "{8, 1}": {
+                            "{6, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Adjusted Date",
                                 "OutputUUID": "9D294AFF-651D-4A2E-BADF-250EAA66E067",
@@ -2584,6 +2584,157 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "Run|Cycling",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "calEventTitle",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "AB11B365-CFF6-421D-9C5A-7BD15DCE3BDA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "AB11B365-CFF6-421D-9C5A-7BD15DCE3BDA",
+                            "Type": "ActionOutput",
+                            "OutputName": "Matches"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C14504A4-2B2E-411D-AB6E-34DFBAE9D8C7",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n🙌 How many kilometers?",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "DB203867-C706-49B0-BC67-6B9CCE8BD177",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "27CE7100-60B6-4D97-915E-7BD534BFD8BE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+            "WFWorkflowActionParameters": {
+                "WFAllowsMultilineText": false,
+                "WFAskActionAllowsNegativeNumbers": false,
+                "UUID": "2A3B8EFF-E2DC-4179-8072-1A763D08810E",
+                "WFInputType": "Number",
+                "WFAskActionPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "27CE7100-60B6-4D97-915E-7BD534BFD8BE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3EFD998A-03D7-4FB9-9D02-DE1EA5BF6EDC",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2A3B8EFF-E2DC-4179-8072-1A763D08810E",
+                            "Type": "ActionOutput",
+                            "OutputName": "Ask for Input"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "0",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ ￼ 公里",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "2A3B8EFF-E2DC-4179-8072-1A763D08810E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Ask for Input"
+                            },
+                            "{0, 1}": {
+                                "VariableName": "calEventTitle",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "5B835B14-96F0-4650-BE1D-7BEDBECB31F6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5B835B14-96F0-4650-BE1D-7BEDBECB31F6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "calEventTitle"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "3EFD998A-03D7-4FB9-9D02-DE1EA5BF6EDC",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C14504A4-2B2E-411D-AB6E-34DFBAE9D8C7",
+                "UUID": "6E92A8D7-E874-41FF-8DA9-1B85714485A0"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.addnewevent",
             "WFWorkflowActionParameters": {
                 "WFCalendarItemTitle": {
@@ -2598,17 +2749,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFCalendarItemNotes": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "Ask"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFCalendarItemNotes": "",
                 "WFCalendarDescriptor": {
                     "Value": {
                         "VariableName": "Repeat Item",
