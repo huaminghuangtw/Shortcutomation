@@ -1,5 +1,5 @@
 ---
-title: ⚡ What is Shortcuts?
+title: What is Shortcuts?
 ---
 
 Shortcuts is a powerful app built into Apple devices (iPhone, iPad, Mac, etc.) that lets you create custom automations, with One Single Tap.

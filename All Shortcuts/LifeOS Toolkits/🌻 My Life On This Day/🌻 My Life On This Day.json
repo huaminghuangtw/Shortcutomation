@@ -419,9 +419,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "text": {
                     "Value": {
                         "OutputUUID": "3D0847EC-A894-4798-AA59-FBD9E929A57F",
                         "Type": "ActionOutput",
@@ -429,7 +429,87 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFVariableName": "My Life On This Day"
+                "UUID": "A608B100-DDF0-48C1-8D51-528FADC4DAAD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A608B100-DDF0-48C1-8D51-528FADC4DAAD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "90683910-AC99-4691-BFC5-02843B87CB24",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "F6161BD7-A925-43B8-B608-96640F295F7A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "months",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "UUID": "FD2146C0-C082-4537-9B27-8791AF33DECD",
+                "WFAdjustOperation": "Subtract",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFDate": {
+                    "Value": {
+                        "OutputUUID": "FD2146C0-C082-4537-9B27-8791AF33DECD",
+                        "Type": "ActionOutput",
+                        "OutputName": "Adjusted Date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "F6161BD7-A925-43B8-B608-96640F295F7A",
+                            "Type": "ActionOutput",
+                            "OutputName": "Dates"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "1EAB212D-9AB3-40F4-B1C0-F5613D5D4A96",
+                "WFCondition": 2
             }
         },
         {
@@ -437,9 +517,36 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "date",
-                        "OutputUUID": "F415F1B3-F9C0-4132-B334-0F085A470968",
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "My Life On This Day"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1EAB212D-9AB3-40F4-B1C0-F5613D5D4A96",
+                "UUID": "62F32A44-9AB3-4076-9DF7-D3947FA4D311"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "90683910-AC99-4691-BFC5-02843B87CB24",
+                "UUID": "D4FDD5DF-2878-4E0A-B2BA-712674FF7419"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate",
                         "Aggrandizements": [
                             {
                                 "Type": "WFDateFormatVariableAggrandizement",
@@ -550,8 +657,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "57976D52-3801-4A39-8025-957FD9A62AC0",
-                "WFControlFlowMode": 2
+                "UUID": "19A786F2-8F60-4CDF-AC82-3635892098C6"
             }
         },
         {

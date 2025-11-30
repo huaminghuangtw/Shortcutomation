@@ -1,0 +1,235 @@
+{
+    "WFWorkflowMinimumClientVersionString": "900",
+    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+            "WFWorkflowActionParameters": {
+                "UUID": "4118418B-A250-4402-884A-4E31312F42E7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "4118418B-A250-4402-884A-4E31312F42E7",
+                            "Type": "ActionOutput",
+                            "OutputName": "Current IP Address"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B9EBE680-9248-4574-A249-5286A989A160",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "• API Documentation: https://epic.gsfc.nasa.gov/about/api\n• Earth Polychromatic Imaging Camera (EPIC): https://epic.gsfc.nasa.gov"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "enhanced",
+                "CustomOutputName": "collection",
+                "UUID": "FD7CF982-D3C6-4C5E-9D39-40F43AD81106"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": "https://epic.gsfc.nasa.gov/api/enhanced",
+                "UUID": "2E66D63A-DE62-413B-B018-74C12FA35B2A",
+                "ShowHeaders": true
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "2E66D63A-DE62-413B-B018-74C12FA35B2A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "BD879F1D-EEF4-43B7-BD06-8DADA7E0DCC1",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "date"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "B6D2D60B-313B-4AAA-8A79-2D1DB77AEEEA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "WFURLActionURL": {
+                    "Value": {
+                        "string": "https://epic.gsfc.nasa.gov/archive/￼/￼/￼/￼/png/￼.png",
+                        "attachmentsByRange": {
+                            "{37, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dates",
+                                "OutputUUID": "B6D2D60B-313B-4AAA-8A79-2D1DB77AEEEA",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "yyyy",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            },
+                            "{41, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dates",
+                                "OutputUUID": "B6D2D60B-313B-4AAA-8A79-2D1DB77AEEEA",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "dd",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            },
+                            "{35, 1}": {
+                                "OutputUUID": "FD7CF982-D3C6-4C5E-9D39-40F43AD81106",
+                                "Type": "ActionOutput",
+                                "OutputName": "collection"
+                            },
+                            "{47, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "image"
+                                    }
+                                ]
+                            },
+                            "{39, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Dates",
+                                "OutputUUID": "B6D2D60B-313B-4AAA-8A79-2D1DB77AEEEA",
+                                "Aggrandizements": [
+                                    {
+                                        "WFDateFormatStyle": "Custom",
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFDateFormat": "MM",
+                                        "WFISO8601IncludeTime": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "B5666FB9-B0AE-468A-A847-95FC3497B857"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BD879F1D-EEF4-43B7-BD06-8DADA7E0DCC1",
+                "UUID": "31F7510A-5DF1-4EF1-A9DC-5F2E5542EA67"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.makegif",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "31F7510A-5DF1-4EF1-A9DC-5F2E5542EA67",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMakeGIFActionDelayTime": "0.5",
+                "UUID": "3133E725-BBA6-4B32-B7C9-4A4BCC7A03E1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3133E725-BBA6-4B32-B7C9-4A4BCC7A03E1",
+                        "Type": "ActionOutput",
+                        "OutputName": "GIF"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFNotificationActionBody": "你很棒，放輕鬆，別太逼自己了。",
+                "UUID": "5EF9E6EC-F791-4E88-BDF0-052ACB5F1898",
+                "WFNotificationActionSound": false,
+                "WFNotificationActionTitle": "──────────────"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B9EBE680-9248-4574-A249-5286A989A160",
+                "UUID": "B75B72DA-594C-4F80-94B5-D4CA84E85845"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFWorkflowTypes": [
+        "NCWidget"
+    ],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowHasShortcutInputVariables": false
+}

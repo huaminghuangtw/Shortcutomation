@@ -1,5 +1,5 @@
 ---
-title: 🛤️ Mission
+title: Mission
 ---
 
 > “My central claim in this book is that these two trends—overprotection in the real world and underprotection in the virtual world—are the major reasons why children born after 1995 became the anxious generation.”
