@@ -6886,11 +6886,10 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
 ### At a Glance
 
-* **Total Shortcuts:** 559  
-* **Total Actions:** 3421  
-* **Categories Covered:** 75  
-* **Average Actions per Shortcut:** 6  
-* **A Typical Shortcut Uses 0+ Actions**  
+* **Total Shortcuts:** 559
+* **Total Actions:** 9670
+* **Categories Covered:** 75
+* **Average Actions per Shortcut:** 17
 
 ### Top 5 Most Complex Shortcuts
   
