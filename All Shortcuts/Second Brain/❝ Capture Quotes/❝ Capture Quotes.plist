@@ -47,16 +47,30 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{255, 1}</key>
+							<key>{561, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>ExtensionInput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>Format only the first quote from the following text in this exact format — using smart quotes and em dash:
-“&lt;quote&gt;” — &lt;author&gt;
-Ensure the quote ends with a period (add one if missing). Output only the formatted quote, with no explanation or extra text.
+						<string>Extract only the first quote from the following text and format it according to these rules:
+
+Case 1 — Known author explicitly provided:
+Output exactly:
+“&lt;quote&gt;.” — &lt;author&gt;
+(Use smart quotes and an em dash.)
+
+Case 2 — No author provided OR author is unknown:
+Output exactly:
+&lt;quote&gt;.
+(Do not use quotation marks, em dashes, or author names.)
+
+Global rules (apply to both cases):
+• Ensure the quote ends with a period (add one if missing).
+• Do not add, remove, or rephrase words.
+• Output only the formatted result.
+• No explanations, labels, or extra text.
 
 ￼</string>
 					</dict>
@@ -302,7 +316,7 @@ Ensure the quote ends with a period (add one if missing). Output only the format
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>4042.0.2.2</string>
+	<string>4046.0.2.2</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
@@ -340,9 +354,8 @@ Ensure the quote ends with a period (add one if missing). Output only the format
 	</array>
 	<key>WFWorkflowTypes</key>
 	<array>
-		<string>ActionExtension</string>
 		<string>QuickActions</string>
-		<string>WFWorkflowTypeShowInSearch</string>
+		<string>ActionExtension</string>
 	</array>
 </dict>
 </plist>

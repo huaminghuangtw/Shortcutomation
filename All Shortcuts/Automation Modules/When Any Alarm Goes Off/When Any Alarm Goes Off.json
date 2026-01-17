@@ -5,28 +5,21 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "Silent Alarm",
-                "CustomOutputName": "label",
-                "UUID": "C90E37BC-B301-4C84-96A1-32EEDF116ED4"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.date",
             "WFWorkflowActionParameters": {
-                "UUID": "4F8DD626-F52F-426C-ABA5-C8789A8DC5C4"
+                "UUID": "C8E14A07-D60F-47D9-93D2-725C7E04FEEF"
             }
         },
         {
             "WFWorkflowActionIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents.MTGetAlarmsIntent",
             "WFWorkflowActionParameters": {
-                "WFContentItemLimitEnabled": true,
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": false,
                 "AppIntentDescriptor": {
                     "ActionRequiresAppInstallation": true,
                     "BundleIdentifier": "com.apple.mobiletimer",
@@ -34,7 +27,7 @@
                     "Name": "Clock",
                     "TeamIdentifier": "0000000000"
                 },
-                "UUID": "C1B6EC91-A490-42B8-A99C-5905870D258A",
+                "UUID": "CC1D5242-C451-470E-8112-FA048CB61D37",
                 "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
                     "Value": {
@@ -44,32 +37,12 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "String": {
-                                        "Value": {
-                                            "string": "￼",
-                                            "attachmentsByRange": {
-                                                "{0, 1}": {
-                                                    "OutputUUID": "C90E37BC-B301-4C84-96A1-32EEDF116ED4",
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "label"
-                                                }
-                                            }
-                                        },
-                                        "WFSerializationType": "WFTextTokenString"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "label"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
                                     "Unit": 4,
                                     "Number": {
                                         "Value": {
                                             "Type": "ActionOutput",
                                             "OutputName": "Date",
-                                            "OutputUUID": "4F8DD626-F52F-426C-ABA5-C8789A8DC5C4",
+                                            "OutputUUID": "C8E14A07-D60F-47D9-93D2-725C7E04FEEF",
                                             "Aggrandizements": [
                                                 {
                                                     "WFDateFormatStyle": "Custom",
@@ -93,7 +66,7 @@
                                         "Value": {
                                             "Type": "ActionOutput",
                                             "OutputName": "Date",
-                                            "OutputUUID": "4F8DD626-F52F-426C-ABA5-C8789A8DC5C4",
+                                            "OutputUUID": "C8E14A07-D60F-47D9-93D2-725C7E04FEEF",
                                             "Aggrandizements": [
                                                 {
                                                     "WFDateFormatStyle": "Custom",
@@ -104,19 +77,6 @@
                                             ]
                                         },
                                         "WFSerializationType": "WFTextTokenAttachment"
-                                    },
-                                    "String": {
-                                        "Value": {
-                                            "string": "￼",
-                                            "attachmentsByRange": {
-                                                "{0, 1}": {
-                                                    "OutputUUID": "4F8DD626-F52F-426C-ABA5-C8789A8DC5C4",
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "Date"
-                                                }
-                                            }
-                                        },
-                                        "WFSerializationType": "WFTextTokenString"
                                     }
                                 },
                                 "Removable": true,
@@ -131,10 +91,10 @@
         {
             "WFWorkflowActionIdentifier": "com.apple.mobiletimer.DeleteAlarmIntent",
             "WFWorkflowActionParameters": {
-                "UUID": "E421094E-BBA8-49F7-B396-5994FB750BF0",
+                "UUID": "8AB8E5CF-69D4-4A70-A1A5-93DC506EA64E",
                 "entities": {
                     "Value": {
-                        "OutputUUID": "C1B6EC91-A490-42B8-A99C-5905870D258A",
+                        "OutputUUID": "CC1D5242-C451-470E-8112-FA048CB61D37",
                         "Type": "ActionOutput",
                         "OutputName": "Alarms"
                     },
@@ -149,9 +109,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "UUID": "EE97CDB2-702A-433F-B7CE-5A42850FF20B"
+                "WFWorkflow": {
+                    "workflowIdentifier": "652AD141-F55D-4149-BB65-20A18A1FC8D4",
+                    "workflowName": "isOnline",
+                    "isSelf": false
+                },
+                "CustomOutputName": "isOnline",
+                "UUID": "A33BD320-B459-455D-9B56-DCB16B6F9DF3",
+                "WFWorkflowName": "isOnline"
             }
         },
         {
@@ -161,16 +128,22 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "EE97CDB2-702A-433F-B7CE-5A42850FF20B",
                             "Type": "ActionOutput",
-                            "OutputName": "Current IP Address"
+                            "OutputName": "isOnline",
+                            "OutputUUID": "A33BD320-B459-455D-9B56-DCB16B6F9DF3",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "5355251C-80E9-44F0-87DF-989FD869E4FD",
-                "WFCondition": 100
+                "WFCondition": 4
             }
         },
         {

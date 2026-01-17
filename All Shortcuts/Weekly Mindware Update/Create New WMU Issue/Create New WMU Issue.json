@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -93,37 +93,16 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "E211994F-22A7-4419-96CD-3B76772CDFDD",
-                        "Type": "ActionOutput",
-                        "OutputName": "date"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "WeekNumber2",
-                "UUID": "CAAF3B9E-3485-4675-B0D5-C3C66261D6C2",
-                "WFWorkflow": {
-                    "workflowIdentifier": "0328B4D2-16E7-4A53-96F1-1F7336D18BC7",
-                    "workflowName": "getCurentWeekNumber2",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "getCurentWeekNumber2"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼_Week_￼",
+                        "string": "￼w￼",
                         "attachmentsByRange": {
-                            "{7, 1}": {
-                                "OutputUUID": "CAAF3B9E-3485-4675-B0D5-C3C66261D6C2",
+                            "{2, 1}": {
+                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
                                 "Type": "ActionOutput",
-                                "OutputName": "WeekNumber2"
+                                "OutputName": "WeekNumber1"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
@@ -349,15 +328,17 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "A4B5856D-06E3-4061-9D16-E7F5BF520337",
-                "WFControlFlowMode": 2
+                "UUID": "F8239D8A-6463-4163-98AC-2274F71F8CB9"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "33C33D83-E297-4B92-A4A9-E4CAA93FCEF5",
-                "WFControlFlowMode": 2
+                "UUID": "5229F87D-3372-449D-ADB5-D72239EA78F1"
             }
         },
         {
@@ -567,10 +548,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.SortListIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
             "WFWorkflowActionParameters": {
-                "UUID": "9CB6A259-D4DC-4F4B-98B0-949020B4A3FE",
-                "list": {
+                "WFContentItemInputParameter": {
                     "Value": {
                         "OutputUUID": "A5DE814F-8BCB-434E-A32C-F5FF1C2C9B7A",
                         "Type": "ActionOutput",
@@ -578,12 +558,9 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "SortListIntent"
-                }
+                "WFContentItemSortProperty": "Name",
+                "WFContentItemSortOrder": "A to Z",
+                "UUID": "158C16C5-54FC-4AF0-8454-B6D16802DADB"
             }
         },
         {
@@ -605,9 +582,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "9CB6A259-D4DC-4F4B-98B0-949020B4A3FE",
+                                                "OutputUUID": "158C16C5-54FC-4AF0-8454-B6D16802DADB",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Sorted List"
+                                                "OutputName": "Files"
                                             }
                                         }
                                     },
@@ -665,113 +642,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
-            "WFWorkflowActionParameters": {
-                "WFDuration": {
-                    "Value": {
-                        "Unit": "weeks",
-                        "Magnitude": "1"
-                    },
-                    "WFSerializationType": "WFQuantityFieldValue"
-                },
-                "CustomOutputName": "Previous",
-                "UUID": "6AEA7487-D145-495D-A7CB-B474734F76A5",
-                "WFAdjustOperation": "Subtract",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "E211994F-22A7-4419-96CD-3B76772CDFDD",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "UUID": "FE6530DB-8043-4003-951F-5CF0323350BA",
-                "WFDateFormat": "yyyy'_Week_'ww",
-                "CustomOutputName": "Previous",
-                "WFLocale": "en_GB",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "6AEA7487-D145-495D-A7CB-B474734F76A5",
-                                "Type": "ActionOutput",
-                                "OutputName": "Previous"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
-            "WFWorkflowActionParameters": {
-                "WFDuration": {
-                    "Value": {
-                        "Unit": "weeks",
-                        "Magnitude": "1"
-                    },
-                    "WFSerializationType": "WFQuantityFieldValue"
-                },
-                "CustomOutputName": "Next",
-                "UUID": "0F2F803B-3F5E-495F-AB58-AC15FEEDBF89",
-                "WFAdjustOperation": "Add",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "E211994F-22A7-4419-96CD-3B76772CDFDD",
-                                "Type": "ActionOutput",
-                                "OutputName": "date"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "UUID": "1F08C517-D1F8-43EE-8130-DB0ADB277210",
-                "WFDateFormat": "yyyy'_Week_'ww",
-                "CustomOutputName": "Next",
-                "WFLocale": "en_GB",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "0F2F803B-3F5E-495F-AB58-AC15FEEDBF89",
-                                "Type": "ActionOutput",
-                                "OutputName": "Next"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "---\ntitle: Week ￼, ￼\nissue: ￼\nyear: ￼\nweekNumber: ￼\nslug: ￼-week-￼\nprev: \"[[￼]]\"\nnext: \"[[￼]]\"\ncreated: ￼\n---\n￼",
+                        "string": "---\ntitle: Week ￼, ￼\nissue: ￼\nyear: ￼\nweekNumber: ￼\ncreated: ￼\n---\n￼",
                         "attachmentsByRange": {
                             "{19, 1}": {
                                 "OutputUUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
@@ -783,37 +658,12 @@
                                 "Type": "ActionOutput",
                                 "OutputName": "Year"
                             },
-                            "{110, 1}": {
-                                "OutputUUID": "6606FA5E-6D1E-4919-988F-149B659411FE",
+                            "{28, 1}": {
+                                "OutputUUID": "750EE404-290D-47C9-AE6B-8DDE13FDCFBB",
                                 "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
+                                "OutputName": "issue"
                             },
-                            "{58, 1}": {
-                                "OutputUUID": "11B66F9E-426F-497C-8E59-054F3EDE707D",
-                                "Type": "ActionOutput",
-                                "OutputName": "Year"
-                            },
-                            "{50, 1}": {
-                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
-                                "Type": "ActionOutput",
-                                "OutputName": "WeekNumber1"
-                            },
-                            "{65, 1}": {
-                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
-                                "Type": "ActionOutput",
-                                "OutputName": "WeekNumber1"
-                            },
-                            "{90, 1}": {
-                                "OutputUUID": "1F08C517-D1F8-43EE-8130-DB0ADB277210",
-                                "Type": "ActionOutput",
-                                "OutputName": "Next"
-                            },
-                            "{16, 1}": {
-                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
-                                "Type": "ActionOutput",
-                                "OutputName": "WeekNumber1"
-                            },
-                            "{104, 1}": {
+                            "{61, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "date",
                                 "OutputUUID": "E211994F-22A7-4419-96CD-3B76772CDFDD",
@@ -830,15 +680,20 @@
                                     }
                                 ]
                             },
-                            "{76, 1}": {
-                                "OutputUUID": "FE6530DB-8043-4003-951F-5CF0323350BA",
+                            "{16, 1}": {
+                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
                                 "Type": "ActionOutput",
-                                "OutputName": "Previous"
+                                "OutputName": "WeekNumber1"
                             },
-                            "{28, 1}": {
-                                "OutputUUID": "750EE404-290D-47C9-AE6B-8DDE13FDCFBB",
+                            "{50, 1}": {
+                                "OutputUUID": "CC8C7D35-3639-4750-8D84-C6C666102DA2",
                                 "Type": "ActionOutput",
-                                "OutputName": "issue"
+                                "OutputName": "WeekNumber1"
+                            },
+                            "{67, 1}": {
+                                "OutputUUID": "6606FA5E-6D1E-4919-988F-149B659411FE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Repeat Results"
                             }
                         }
                     },
@@ -928,8 +783,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "A90A5059-6E89-4EA1-A3C5-0C3EA08F3DEF",
-                "WFControlFlowMode": 2
+                "UUID": "EFAD7DC0-B2DD-4ADD-B0F4-CBE5ADB2845D"
             }
         },
         {

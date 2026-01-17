@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -39,6 +39,107 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "9FCEAD95-73E8-4838-A6DA-8E6DEADDBF79"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "My CMS.Safari",
+                "CustomOutputName": "keyPath",
+                "UUID": "134A06A6-9F3D-4F91-B2CC-CC03D32DA641"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Is Locked"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F44083DB-D4CB-47DE-A9BD-07AC90532CF0",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "F44083DB-D4CB-47DE-A9BD-07AC90532CF0",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.ViewValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "134A06A6-9F3D-4F91-B2CC-CC03D32DA641",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "BC85704B-1F14-49A5-B90E-87DFCCB7D96F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "F44083DB-D4CB-47DE-A9BD-07AC90532CF0",
+                "UUID": "FB13316E-5ECC-4120-A696-B76B7D61D5C1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "[]",
+                "CustomOutputName": "[]",
+                "UUID": "F0A89C5A-C47A-4FF6-9C1E-EF35914B2D80"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionParameters": {
+                "overwriteStrategy": "alwaysAllow",
+                "UUID": "81A2F291-1321-4F0D-8FBA-DE72D3062FBA",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "134A06A6-9F3D-4F91-B2CC-CC03D32DA641",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "values": {
+                    "Value": {
+                        "OutputUUID": "F0A89C5A-C47A-4FF6-9C1E-EF35914B2D80",
+                        "Type": "ActionOutput",
+                        "OutputName": "[]"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
             }
         },
         {
@@ -163,23 +264,8 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
             "WFWorkflowActionParameters": {
-                "overwriteStrategy": "alwaysAllow",
-                "UUID": "59342EA6-1F9C-4B75-B1D4-507327A71BD8",
-                "keyPath": {
-                    "Value": {
-                        "string": "My CMS.Safari.Reading List.￼",
-                        "attachmentsByRange": {
-                            "{27, 1}": {
-                                "VariableName": "Repeat Index",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "valueConversionMode": "text",
                 "values": {
                     "Value": {
                         "OutputUUID": "909DEC69-755B-488B-ABD4-84D3C87EE925",
@@ -187,7 +273,23 @@
                         "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "valueConversionMode": "text",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "134A06A6-9F3D-4F91-B2CC-CC03D32DA641",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "3A2D84B4-DE17-4B14-901E-F2C69BCB368A",
+                "insertionPoint": "end"
             }
         },
         {
@@ -226,8 +328,7 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch",
-        "WFWorkflowTypeShowInSearch"
+        "Watch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false

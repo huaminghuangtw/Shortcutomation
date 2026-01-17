@@ -1,10 +1,10 @@
 ### At a Glance
 
-* **Total Shortcuts:** 558  
-* **Total Actions:** 9064  
+* **Total Shortcuts:** 559  
+* **Total Actions:** 3421  
 * **Categories Covered:** 75  
-* **Average Actions per Shortcut:** 16  
-* **A Typical Shortcut Uses 10+ Actions**  
+* **Average Actions per Shortcut:** 6  
+* **A Typical Shortcut Uses 0+ Actions**  
 
 ### Top 5 Most Complex Shortcuts
   
@@ -12,11 +12,11 @@
 
   | Rank | Shortcut Name | Number of Actions |
   | :-: | :-: | :-: |
-  | 1️⃣ | [When Turning My Focus Mode On](https://shortcutomation.com/when-turning-my-focus-mode-on) | 214 |
-  | 2️⃣ | [_Evergreen List to Markdown](https://shortcutomation.com/evergreen-list-to-markdown) | 157 |
-  | 3️⃣ | [🗓️ Plan My Day](https://shortcutomation.com/plan-my-day) | 153 |
-  | 4️⃣ | [Remember to Sharpen the Saw](https://shortcutomation.com/remember-to-sharpen-the-saw) | 125 |
-  | 5️⃣ | [👁️ Capture Ideas Around Me](https://shortcutomation.com/capture-ideas-around-me) | 96 |
+  | 1️⃣ | [When Turning My Focus Mode On](https://shortcutomation.com/when-turning-my-focus-mode-on) | 189 |
+  | 2️⃣ | [🐧 Log Journal](https://shortcutomation.com/log-journal) | 79 |
+  | 3️⃣ | [_Add to Book List via Open Library](https://shortcutomation.com/add-to-book-list-via-open-library) | 66 |
+  | 4️⃣ | [Goodreads](https://shortcutomation.com/goodreads) | 61 |
+  | 5️⃣ | [_Add to Book List via Google Books](https://shortcutomation.com/add-to-book-list-via-google-books) | 61 |
 
   </div>
 

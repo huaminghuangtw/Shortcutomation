@@ -5,9 +5,9 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [
-        "WFStringContentItem"
+        "WFDictionaryContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -131,9 +131,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
-                "WFURL": {
+                "WFURLActionURL": {
                     "Value": {
                         "string": "￼/ap￼.html",
                         "attachmentsByRange": {
@@ -146,6 +146,25 @@
                                 "OutputUUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254",
                                 "Type": "ActionOutput",
                                 "OutputName": "baseURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "5D6C1A62-0822-405E-A958-2A3D79AAE508"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionParameters": {
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "5D6C1A62-0822-405E-A958-2A3D79AAE508",
+                                "Type": "ActionOutput",
+                                "OutputName": "URL"
                             }
                         }
                     },
@@ -204,9 +223,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
-                "WFOutput": {
+                "WFURLActionURL": {
                     "Value": {
                         "string": "￼/￼",
                         "attachmentsByRange": {
@@ -216,16 +235,114 @@
                                 "OutputName": "Text"
                             },
                             "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "baseURL",
                                 "OutputUUID": "7AC1DD98-6325-49BF-BDAD-727EE45E7254",
-                                "Aggrandizements": [
-                                    {
-                                        "PropertyUserInfo": "WFItemName",
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "Name"
-                                    }
-                                ]
+                                "Type": "ActionOutput",
+                                "OutputName": "baseURL"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "51602D02-C511-453C-BBF7-2B3B7D1776D8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.images",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "51602D02-C511-453C-BBF7-2B3B7D1776D8",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "7DAAAB50-EA67-4165-AA67-A5D49E89592B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
+            "WFWorkflowActionParameters": {
+                "WFBase64LineBreakMode": "None",
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7DAAAB50-EA67-4165-AA67-A5D49E89592B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Images"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "7036B732-7495-4383-8E8A-5124AB7E3199"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "image"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "7036B732-7495-4383-8E8A-5124AB7E3199",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Base64 Encoded"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "url"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "5D6C1A62-0822-405E-A958-2A3D79AAE508",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "URL"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "E093B95E-0C99-4649-9C74-AB8ED5004E66"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "E093B95E-0C99-4649-9C74-AB8ED5004E66",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary"
                             }
                         }
                     },
@@ -241,8 +358,7 @@
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
         "Watch",
-        "NCWidget",
-        "WFWorkflowTypeShowInSearch"
+        "NCWidget"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false

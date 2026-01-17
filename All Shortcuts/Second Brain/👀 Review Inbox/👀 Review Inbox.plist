@@ -285,6 +285,7 @@
 					<string>📥 Add to Reminder List</string>
 					<string>🗃️ Export to Second Brain</string>
 					<string>📝 Log to Journal</string>
+					<string>📋 Copy to Clipboard</string>
 					<string>📣 Share with Others</string>
 					<string>✅ Mark as Completed</string>
 					<string>⏩ Skip</string>
@@ -1085,6 +1086,112 @@
 				<key>WFControlFlowMode</key>
 				<integer>1</integer>
 				<key>WFMenuItemTitle</key>
+				<string>📋 Copy to Clipboard</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setters.reminders</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Mode</key>
+				<string>Set</string>
+				<key>UUID</key>
+				<string>70CB90E1-F4B3-418C-A507-74450DA9DEAA</string>
+				<key>WFContentItemPropertyName</key>
+				<string>Is Completed</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFReminderContentItemIsCompleted</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>2A20E574-C075-46A5-A9FB-0E868EB78A52</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>B854B076-F80E-4BFE-B204-13AB18133D2B</string>
+					<key>workflowName</key>
+					<string>_Reminder2Markdown</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>_Reminder2Markdown</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>0B16BDE2-6FA4-4E03-9976-DD0EBD7B6C6E</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Shortcut Result</string>
+						<key>OutputUUID</key>
+						<string>2A20E574-C075-46A5-A9FB-0E868EB78A52</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>4F01DBEE-6F75-4D25-A918-41F41C3A2A72</string>
+					<key>workflowName</key>
+					<string>Notify "Copied to Clipboard!"</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Notify "Copied to Clipboard!"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefrommenu</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>41147F9F-F967-405A-95EC-4C7403608878</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+				<key>WFMenuItemTitle</key>
 				<string>📣 Share with Others</string>
 			</dict>
 		</dict>
@@ -1297,6 +1404,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getdevicedetails</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>8D761807-26F0-4C33-A7FB-58C73560BCCE</string>
+				<key>WFDeviceDetail</key>
+				<string>Current Volume</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvolume</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFVolume</key>
+				<real>0.34646457433700562</real>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>com.alexhay.ToolboxProForShortcuts.GetAudioIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -1329,13 +1456,34 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvolume</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFVolume</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Current Volume</string>
+						<key>OutputUUID</key>
+						<string>8D761807-26F0-4C33-A7FB-58C73560BCCE</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.exit</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict/>
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>4042.0.2.2</string>
+	<string>4046.0.2.2</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
@@ -1362,7 +1510,6 @@
 	<key>WFWorkflowTypes</key>
 	<array>
 		<string>Watch</string>
-		<string>WFWorkflowTypeShowInSearch</string>
 	</array>
 </dict>
 </plist>
