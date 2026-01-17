@@ -54,14 +54,14 @@ def generate_chart(history_file, output_file):
     plt.rcParams['xtick.labelsize'] = 13
     plt.rcParams['ytick.labelsize'] = 13
     
-    fig, ax1 = plt.subplots(figsize=(16, 8), facecolor='white')
-    ax1.set_facecolor('#FAFAFA')
+    fig, ax1 = plt.subplots(figsize=(16, 8), facecolor='#1C1C1E')
+    ax1.set_facecolor('#1C1C1E')
     
-    color1 = '#0A7AFF'
-    color2 = '#FF3B30'
-    grid_color = '#D1D1D6'
-    text_color = '#000000'
-    label_color = '#3A3A3C'
+    color1 = '#30D158'  # Vibrant green for dark mode
+    color2 = '#BF5AF2'  # Vibrant purple for dark mode
+    grid_color = '#38383A'  # Subtle gray for dark background
+    text_color = '#FFFFFF'  # White text
+    label_color = '#E5E5EA'  # Light gray for labels
     
     line1 = ax1.plot(all_dates, all_shortcuts, 
                      color=color1, 
@@ -71,19 +71,19 @@ def generate_chart(history_file, output_file):
                      solid_capstyle='round')
     
     ax1.set_ylabel('Total Shortcuts', 
-                   color=label_color, 
+                   color=color1, 
                    fontsize=15, 
                    fontweight=600, 
                    labelpad=12)
     ax1.tick_params(axis='y', 
-                    labelcolor=label_color, 
-                    colors=label_color,
+                    labelcolor=color1, 
+                    colors=color1,
                     width=1.2,
                     length=5, 
                     pad=6)
     ax1.yaxis.set_major_locator(plt.MaxNLocator(nbins=15, integer=True, prune='both'))
     
-    ax1.spines['left'].set_color(label_color)
+    ax1.spines['left'].set_color(color1)
     ax1.spines['left'].set_linewidth(1.2)
     
     ax2 = ax1.twinx()
@@ -95,19 +95,19 @@ def generate_chart(history_file, output_file):
                      solid_capstyle='round')
     
     ax2.set_ylabel('Total Actions', 
-                   color=label_color, 
+                   color=color2, 
                    fontsize=15, 
                    fontweight=600, 
                    labelpad=12)
     ax2.tick_params(axis='y', 
-                    labelcolor=label_color, 
-                    colors=label_color,
+                    labelcolor=color2, 
+                    colors=color2,
                     width=1.2,
                     length=5, 
                     pad=6)
     ax2.yaxis.set_major_locator(plt.MaxNLocator(nbins=15, integer=True, prune='both'))
     
-    ax2.spines['right'].set_color(label_color)
+    ax2.spines['right'].set_color(color2)
     ax2.spines['right'].set_linewidth(1.2)
     
     ax1.set_xlabel('', fontsize=12)
@@ -146,7 +146,7 @@ def generate_chart(history_file, output_file):
                        shadow=False,
                        framealpha=0.95,
                        edgecolor=grid_color,
-                       facecolor='white',
+                       facecolor='#2C2C2E',
                        fontsize=11,
                        labelcolor=text_color,
                        handlelength=2.8,
@@ -163,7 +163,7 @@ def generate_chart(history_file, output_file):
     plt.savefig(output_file, 
                 dpi=600, 
                 bbox_inches='tight',
-                facecolor='white', 
+                facecolor='#1C1C1E', 
                 edgecolor='none',
                 pad_inches=0.2)
     
