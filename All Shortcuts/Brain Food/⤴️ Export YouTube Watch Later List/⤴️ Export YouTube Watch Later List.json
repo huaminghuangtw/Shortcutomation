@@ -5,14 +5,90 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "My CMS.YouTube.myWatchLaterList",
+                "CustomOutputName": "keyPath",
+                "UUID": "D0EBAD89-BCFC-495E-AA16-DE4E39B4F6C9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Is Locked"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C4C2F70B-29B5-4F70-863E-ADF6BBAEA223",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C4C2F70B-29B5-4F70-863E-ADF6BBAEA223",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.ViewValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D0EBAD89-BCFC-495E-AA16-DE4E39B4F6C9",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "230B4A32-F812-4647-9FF4-10ADBBF28703"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C4C2F70B-29B5-4F70-863E-ADF6BBAEA223",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
             "WFWorkflowActionParameters": {
-                "keyPath": "My CMS.YouTube.myWatchLaterList",
+                "keyPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D0EBAD89-BCFC-495E-AA16-DE4E39B4F6C9",
+                                "Type": "ActionOutput",
+                                "OutputName": "keyPath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "UUID": "42D2F4C1-22AC-4361-9718-F3FD5F3D9242"
             }
         },
@@ -80,6 +156,10 @@
                 "UUID": "5AD07586-C3E0-4DEB-B40D-91ED164F9A83",
                 "WFWorkflowName": "Get Playlist Items"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
@@ -104,9 +184,7 @@
         "WFURLContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [
-        "WFWorkflowTypeShowInSearch"
-    ],
+    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

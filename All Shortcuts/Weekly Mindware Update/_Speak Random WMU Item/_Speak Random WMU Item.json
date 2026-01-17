@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -25,6 +25,47 @@
                 },
                 "UUID": "41B8E1A2-D105-444F-AEF8-89C07D13C08A",
                 "WFWorkflowName": "_Get WMU Random Item"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": "—",
+                "UUID": "7C05965C-5910-4DB8-AD93-B399BFFA88A2",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "41B8E1A2-D105-444F-AEF8-89C07D13C08A",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "item"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7C05965C-5910-4DB8-AD93-B399BFFA88A2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "First Item",
+                "UUID": "1366160D-9ABA-4BEB-B415-1FB1184A98D6"
             }
         },
         {
@@ -64,19 +105,9 @@
                                 "string": "￼",
                                 "attachmentsByRange": {
                                     "{0, 1}": {
+                                        "OutputUUID": "1366160D-9ABA-4BEB-B415-1FB1184A98D6",
                                         "Type": "ActionOutput",
-                                        "OutputName": "Shortcut Result",
-                                        "OutputUUID": "41B8E1A2-D105-444F-AEF8-89C07D13C08A",
-                                        "Aggrandizements": [
-                                            {
-                                                "Type": "WFCoercionVariableAggrandizement",
-                                                "CoercionItemClass": "WFDictionaryContentItem"
-                                            },
-                                            {
-                                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                                "DictionaryKey": "item"
-                                            }
-                                        ]
+                                        "OutputName": "Item from List"
                                     }
                                 }
                             },
@@ -156,15 +187,17 @@
                 "UUID": "5669EA4E-1447-4759-8C19-B695F35D359F",
                 "WFWorkflowName": "_Text2Speech"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [
-        "WFWorkflowTypeShowInSearch"
-    ],
+    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }

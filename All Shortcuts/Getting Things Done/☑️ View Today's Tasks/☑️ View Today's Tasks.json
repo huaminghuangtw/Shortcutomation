@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -37,198 +37,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "FDA10115-0C49-4948-96EF-5B76FC106708",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "macOS",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
-            "WFWorkflowActionParameters": {
-                "WFDelayTime": 3
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "CustomOutputName": "Text Divider",
-                "UUID": "2128B34B-4ABC-4348-9127-45F92E7E46D8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "📋 Any new todos?\n￼\n⏩ Tap \"Done\" to continue",
-                        "attachmentsByRange": {
-                            "{18, 1}": {
-                                "OutputUUID": "2128B34B-4ABC-4348-9127-45F92E7E46D8",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text Divider"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "643E729C-3FA3-4E1E-AF62-AE2B9D799A00"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
-            "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "643E729C-3FA3-4E1E-AF62-AE2B9D799A00",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFInputType": "Text",
-                "UUID": "DD819557-779B-458F-96CE-29EF2AED3D98"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "DD819557-779B-458F-96CE-29EF2AED3D98",
-                            "Type": "ActionOutput",
-                            "OutputName": "Ask for Input"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "EF3418FC-5086-4CAD-8F74-4659DC03D398",
-                "WFCondition": 100
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
-            "WFWorkflowActionParameters": {
-                "text": {
-                    "Value": {
-                        "OutputUUID": "DD819557-779B-458F-96CE-29EF2AED3D98",
-                        "Type": "ActionOutput",
-                        "OutputName": "Ask for Input"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "35179D87-2DD3-4FCA-83D0-78C56988DA44"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "35179D87-2DD3-4FCA-83D0-78C56988DA44",
-                        "Type": "ActionOutput",
-                        "OutputName": "Split Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "40F3DDE1-7F6B-4A5D-A531-AF9965F7C01A",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
-            "WFWorkflowActionParameters": {
-                "WFCalendarItemTitle": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFCalendarDescriptor": {
-                    "Identifier": "<x-apple-reminderkit://REMCDList/3F687661-DE57-448A-86E0-82C95D7915CF>",
-                    "Title": "🗓️ Scheduled",
-                    "IsAllCalendar": false
-                },
-                "UUID": "A15173A7-2D44-401E-BC83-854D18ABAF81",
-                "WFCalendarItemCalendar": "🗓️ Scheduled",
-                "WFAlertCustomTime": "Today",
-                "WFAlertEnabled": "Alert",
-                "WFPriority": "Low"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "A431180D-71BB-4AD8-8F8D-073B568D7CCC",
-                    "workflowName": "🙌 Brain Dump",
-                    "isSelf": false
-                },
-                "UUID": "8C70E396-6A55-4E15-A39D-3C2C0FEAA1B8",
-                "WFWorkflowName": "🙌 Brain Dump"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "40F3DDE1-7F6B-4A5D-A531-AF9965F7C01A",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "EF3418FC-5086-4CAD-8F74-4659DC03D398",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "FDA10115-0C49-4948-96EF-5B76FC106708",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
             "WFWorkflowActionParameters": {}
         }
@@ -236,7 +44,6 @@
     "WFWorkflowInputContentItemClasses": [],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "QuickActions",
         "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],

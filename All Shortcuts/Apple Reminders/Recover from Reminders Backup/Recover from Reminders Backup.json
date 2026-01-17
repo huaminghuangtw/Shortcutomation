@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -134,6 +134,29 @@
                 },
                 "GroupingIdentifier": "8EFE5446-4917-4CB4-92F5-059297CB55E8",
                 "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item 2",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "due_date"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "B92BF5D0-7C31-458C-AF4A-D21E5526C448"
             }
         },
         {
@@ -269,29 +292,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item 2",
-                        "Type": "Variable",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "due_date"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "B92BF5D0-7C31-458C-AF4A-D21E5526C448"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -341,8 +341,8 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
             "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "ISO 8601",
-                "WFDateFormat": "",
+                "WFDateFormatStyle": "Custom",
+                "WFDateFormat": "MMMM d, yyyy",
                 "UUID": "1661EE37-B2D9-473A-8087-922E50E7B7A6",
                 "WFDate": {
                     "Value": {
@@ -433,45 +433,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "060D6E65-071C-416F-9185-72917A749F58",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "parentReminder"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "470910A6-DA73-408A-B6E5-2F995EDF4E8F",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "93D99019-8B70-4DE5-8958-84B4787FF541",
-                        "Type": "ActionOutput",
-                        "OutputName": "New Reminder"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "parentReminder"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "470910A6-DA73-408A-B6E5-2F995EDF4E8F",
-                "WFControlFlowMode": 2
+                "UUID": "5651F7E4-82DB-40BD-BD8A-CE8671D4F000"
             }
         },
         {
@@ -612,8 +578,9 @@
                 },
                 "WFParentTask": {
                     "Value": {
-                        "VariableName": "parentReminder",
-                        "Type": "Variable"
+                        "OutputUUID": "5651F7E4-82DB-40BD-BD8A-CE8671D4F000",
+                        "Type": "ActionOutput",
+                        "OutputName": "parentReminder"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -710,53 +677,8 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
             "WFWorkflowActionParameters": {
                 "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "YYYY",
+                "WFDateFormat": "MMMM d, yyyy",
                 "UUID": "D5BF7B32-99F2-4DC7-B508-0446EE758056",
-                "WFDateFormat": "YYYY",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "C74347A5-EEDC-4E2F-BF77-A5A4DAC4C929",
-                                "Type": "ActionOutput",
-                                "OutputName": "Dates"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "MMMM",
-                "UUID": "354C3EB9-C7AA-45CB-A4F7-EABCBD27AA8A",
-                "WFDateFormat": "MMMM",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "C74347A5-EEDC-4E2F-BF77-A5A4DAC4C929",
-                                "Type": "ActionOutput",
-                                "OutputName": "Dates"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Custom",
-                "CustomOutputName": "d",
-                "UUID": "513D0F88-2EA9-4591-B51B-49D7D8A99A11",
-                "WFDateFormat": "d",
                 "WFDate": {
                     "Value": {
                         "string": "￼",
@@ -788,22 +710,12 @@
                 "UUID": "A7AC7143-536A-4CD5-AD7E-B8B8B55B3CD0",
                 "WFReminderContentItemDueDate": {
                     "Value": {
-                        "string": "￼￼, ￼",
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{1, 1}": {
-                                "OutputUUID": "513D0F88-2EA9-4591-B51B-49D7D8A99A11",
-                                "Type": "ActionOutput",
-                                "OutputName": "d"
-                            },
-                            "{4, 1}": {
+                            "{0, 1}": {
                                 "OutputUUID": "D5BF7B32-99F2-4DC7-B508-0446EE758056",
                                 "Type": "ActionOutput",
-                                "OutputName": "YYYY"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "354C3EB9-C7AA-45CB-A4F7-EABCBD27AA8A",
-                                "Type": "ActionOutput",
-                                "OutputName": "MMMM"
+                                "OutputName": "Formatted Date"
                             }
                         }
                     },
@@ -850,8 +762,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "200E7F0C-3798-44AA-9C34-B87795462952",
-                "WFControlFlowMode": 2
+                "UUID": "A6111049-4EBE-4377-ADE7-30478C829F8E"
             }
         },
         {
@@ -865,22 +778,25 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "C27F28A8-41C0-4FBE-8730-967F61876379",
-                "WFControlFlowMode": 2
+                "UUID": "3E4B7A6F-98BA-46C7-B6B5-38EC536E0A9E"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "8EFE5446-4917-4CB4-92F5-059297CB55E8",
-                "WFControlFlowMode": 2
+                "UUID": "D8012AD6-0673-4448-922F-1A2FED5052C3"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "261AE7FD-1DCF-4CC4-ABD3-C15BAAC97315",
-                "WFControlFlowMode": 2
+                "UUID": "77233CCC-7DF1-4DED-ACC7-9D9A75841622"
             }
         },
         {
@@ -910,7 +826,9 @@
         "WFURLContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

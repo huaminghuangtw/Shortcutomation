@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4042.0.2.2",
+    "WFWorkflowClientVersion": "4046.0.2.2",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -28,9 +28,24 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "UUID": "3181A110-6F38-4483-A8EB-735602B80175"
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CD89B26F-E1BB-4285-9AC5-FD03A281FAE8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "isOnline",
+                "UUID": "2C350F04-B346-4A18-A136-8E1F2AFF4138",
+                "WFWorkflow": {
+                    "workflowIdentifier": "652AD141-F55D-4149-BB65-20A18A1FC8D4",
+                    "workflowName": "isOnline",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "isOnline"
             }
         },
         {
@@ -40,16 +55,29 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "3181A110-6F38-4483-A8EB-735602B80175",
                             "Type": "ActionOutput",
-                            "OutputName": "Current IP Address"
+                            "OutputName": "isOnline",
+                            "OutputUUID": "2C350F04-B346-4A18-A136-8E1F2AFF4138",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "2BDCB567-CE21-4087-A2A2-EC93E7C442E7",
-                "WFCondition": 100
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+            "WFWorkflowActionParameters": {
+                "WFInput": "strava://athletes/huaminghuang",
+                "UUID": "1017EDCE-8352-4D50-9BF1-B799AD538864"
             }
         },
         {
@@ -155,9 +183,7 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [
-        "WFWorkflowTypeShowInSearch"
-    ],
+    "WFWorkflowTypes": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true
 }
