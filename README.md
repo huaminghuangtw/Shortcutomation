@@ -2,7 +2,11 @@
 
 <img src="assets/favicon.png" width="200" height="auto" />
 
-<h1><a href="https://shortcutomation.com">Shortcutomation</a></h1>
+<h1>
+<a href="https://shortcutomation.com">
+Shortcutomation
+</a>
+</h1>
   
 <h3>
 Automate the Boring Stuff with  Apple Shortcuts
@@ -23,16 +27,11 @@ Automate the Boring Stuff with  Apple Shortcuts
 <strong>💁🏽 Explore & Download FREE Shortcuts »</strong>
 </a>
 </h3>
-        
-<br>
 
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<br>
-
-<p>
 <a href="https://github.com/huaminghuangtw/Shortcutomation">
 <img src="https://badges.frapsoft.com/os/v3/open-source-150x25.png?v=103">
 </a>
@@ -48,20 +47,12 @@ Automate the Boring Stuff with  Apple Shortcuts
 <a href="https://github.com/huaminghuangtw/Shortcutomation/blob/main/LICENSE">
 <img src="https://img.shields.io/badge/License-MIT-black.svg?style=flat">
 </a>
-</p>
-
-<p>
-<strong>Last Update:</strong> 2026-01-17
-</p>
-
-<p>
-Crafted by
-<a href="https://github.com/huaminghuangtw">Hua-Ming Huang</a>
-with 🌶️ in
-<a href="https://www.google.com/maps/place/Chiayi%20County,%20Taiwan">Cʜɪᴀʏɪ Cᴏᴜɴᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼</a>
-</p>
 
 </div>
+
+> [!NOTE]
+> **Last Update:** 2026-01-17  
+> Crafted by [Hua-Ming Huang](https://github.com/huaminghuangtw) with 🌶️ in [Cʜɪᴀʏɪ Cᴏᴜɴᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Chiayi%20County,%20Taiwan)
 
 ## What is Shortcuts?
 
