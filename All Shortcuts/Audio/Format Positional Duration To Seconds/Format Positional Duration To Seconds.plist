@@ -29,6 +29,134 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemtype</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>13712063-8A6D-42DD-BA85-033742995375</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>ExtensionInput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>44F3F77E-7E1E-4F62-A9A7-76A78A28A228</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>Text</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Type</string>
+							<key>OutputUUID</key>
+							<string>13712063-8A6D-42DD-BA85-033742995375</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.detect.text</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>ExtensionInput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>44F3F77E-7E1E-4F62-A9A7-76A78A28A228</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.detect.text</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFAVAssetContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+							<dict>
+								<key>PropertyName</key>
+								<string>Duration</string>
+								<key>Type</key>
+								<string>WFPropertyVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>44F3F77E-7E1E-4F62-A9A7-76A78A28A228</string>
+				<key>UUID</key>
+				<string>11F2B4A9-A103-4C58-AA6B-8F6D8B3FAC45</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.dictionary</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -61,25 +189,12 @@
 										<dict>
 											<key>{0, 1}</key>
 											<dict>
-												<key>Aggrandizements</key>
-												<array>
-													<dict>
-														<key>CoercionItemClass</key>
-														<string>WFAVAssetContentItem</string>
-														<key>Type</key>
-														<string>WFCoercionVariableAggrandizement</string>
-													</dict>
-													<dict>
-														<key>PropertyName</key>
-														<string>Duration</string>
-														<key>Type</key>
-														<string>WFPropertyVariableAggrandizement</string>
-													</dict>
-												</array>
+												<key>OutputName</key>
+												<string>If Result</string>
+												<key>OutputUUID</key>
+												<string>11F2B4A9-A103-4C58-AA6B-8F6D8B3FAC45</string>
 												<key>Type</key>
-												<string>Variable</string>
-												<key>VariableName</key>
-												<string>Repeat Item</string>
+												<string>ActionOutput</string>
 											</dict>
 										</dict>
 										<key>string</key>
@@ -127,13 +242,13 @@ const parts = dict.duration.split(":").map(Number)
 let totalSeconds = 0
 
 if (parts.length === 3) {
-    // HH:MM:SS format
+    // H:m:s format
     const hours = parts[0]
     const minutes = parts[1]
     const seconds = parts[2]
     totalSeconds = hours * 3600 + minutes * 60 + seconds
 } else if (parts.length === 2) {
-    // MM:SS format
+    // m:s format
     const minutes = parts[0]
     const seconds = parts[1]
     totalSeconds = minutes * 60 + seconds
@@ -299,6 +414,7 @@ document.write(totalSeconds)</string>
 	<key>WFWorkflowInputContentItemClasses</key>
 	<array>
 		<string>WFGenericFileContentItem</string>
+		<string>WFStringContentItem</string>
 	</array>
 	<key>WFWorkflowMinimumClientVersion</key>
 	<integer>1113</integer>
@@ -311,7 +427,7 @@ document.write(totalSeconds)</string>
 		<key>Parameters</key>
 		<dict>
 			<key>ItemClass</key>
-			<string>WFGenericFileContentItem</string>
+			<string>WFStringContentItem</string>
 		</dict>
 	</dict>
 	<key>WFWorkflowOutputContentItemClasses</key>

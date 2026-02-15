@@ -205,6 +205,32 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextCustomSeparator": " · ",
+                "UUID": "8A98E39E-A847-4B69-82A0-2F129E381C4C",
+                "WFTextSeparator": "Custom",
+                "text": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "dict",
+                        "OutputUUID": "06A0F1EB-B84E-496F-9127-9F67B7CB7D25",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "data"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -212,19 +238,9 @@
                         "string": "￼\n￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
+                                "OutputUUID": "8A98E39E-A847-4B69-82A0-2F129E381C4C",
                                 "Type": "ActionOutput",
-                                "OutputName": "dict",
-                                "OutputUUID": "06A0F1EB-B84E-496F-9127-9F67B7CB7D25",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "data"
-                                    }
-                                ]
+                                "OutputName": "Combined Text"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "CECED669-9CF8-441D-887C-67BA426CF06E",
@@ -283,6 +299,31 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "dict",
+                        "OutputUUID": "06A0F1EB-B84E-496F-9127-9F67B7CB7D25",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "data"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "86DC44AD-9715-46E8-92E3-FF4D0C61F20E"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent",
             "WFWorkflowActionParameters": {
                 "body": {
@@ -319,13 +360,9 @@
                         "string": "🕰️ ￼",
                         "attachmentsByRange": {
                             "{4, 1}": {
-                                "Type": "CurrentDate",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "Time"
-                                    }
-                                ]
+                                "OutputUUID": "86DC44AD-9715-46E8-92E3-FF4D0C61F20E",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
                             }
                         }
                     },
@@ -371,7 +408,9 @@
         "WFDateContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

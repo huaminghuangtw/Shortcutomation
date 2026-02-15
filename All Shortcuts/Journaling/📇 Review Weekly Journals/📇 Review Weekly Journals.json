@@ -30,6 +30,40 @@
     },
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "4949738B-32FD-49CD-AEAD-1247915EDEAD",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.finder",
+                    "Name": "Finder",
+                    "TeamIdentifier": "0000000000"
+                }
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
                 "WFFile": {
@@ -175,100 +209,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
-            "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "macOS"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "Finder"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "iOS"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "Files"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "33B8948C-BC72-42EF-AEEA-E78398F788BC"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "33B8948C-BC72-42EF-AEEA-E78398F788BC",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFDictionaryKey": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "DeviceDetails",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFPropertyVariableAggrandizement",
-                                        "PropertyName": "OS"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "274FDEFD-4616-41EB-AE06-D8245DB47E9E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "274FDEFD-4616-41EB-AE06-D8245DB47E9E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary Value"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
-                    "workflowName": "Open App",
-                    "isSelf": false
-                },
-                "UUID": "EDC1E7B6-9FDF-4691-841E-166947B36C4E",
-                "WFWorkflowName": "Open App"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.openin",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -278,6 +218,22 @@
                         "OutputName": "File"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFSelectedApp": {
+                    "BundleIdentifier": "com.apple.finder",
+                    "Name": "Finder",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFOpenInAppIdentifier": "com.apple.finder"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.iCal",
+                    "Name": "Calendar",
+                    "TeamIdentifier": "0000000000"
                 }
             }
         },
@@ -302,7 +258,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.splitscreen",
             "WFWorkflowActionParameters": {
-                "WFAppRatio": "⅔ + ⅓",
+                "WFAppRatio": "½ + ½",
                 "WFPrimaryAppIdentifier": {
                     "BundleIdentifier": "com.apple.finder",
                     "Name": "Finder",
@@ -313,6 +269,18 @@
                     "Name": "Calendar",
                     "TeamIdentifier": "0000000000"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "557F8553-1A19-4AAA-B1EA-3568F3D7E9A2",
+                    "workflowName": "Success Sound Effect",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Success Sound Effect",
+                "UUID": "11BA45E1-1315-47CD-ACD4-041A4CE9167C"
             }
         },
         {
@@ -350,22 +318,42 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "VariableName": "Repeat Item",
-                        "Type": "Variable",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "date"
-                            }
-                        ]
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "date",
+                "UUID": "0CFAA46D-CA1D-46DD-8703-40E39FD10725",
+                "WFDictionaryKey": "date"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0CFAA46D-CA1D-46DD-8703-40E39FD10725",
+                        "Type": "ActionOutput",
+                        "OutputName": "date"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "dates"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "0CFAA46D-CA1D-46DD-8703-40E39FD10725",
+                        "Type": "ActionOutput",
+                        "OutputName": "date"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -383,18 +371,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "date"
-                            }
-                        ]
+                        "OutputUUID": "0CFAA46D-CA1D-46DD-8703-40E39FD10725",
+                        "Type": "ActionOutput",
+                        "OutputName": "date"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -439,36 +418,32 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "557F8553-1A19-4AAA-B1EA-3568F3D7E9A2",
-                    "workflowName": "Success Sound Effect",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Success Sound Effect",
-                "UUID": "11BA45E1-1315-47CD-ACD4-041A4CE9167C"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
-            "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
+                        "Type": "ActionOutput",
+                        "OutputName": "date",
+                        "OutputUUID": "0CFAA46D-CA1D-46DD-8703-40E39FD10725",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
+                                "CoercionItemClass": "WFDateContentItem"
                             },
                             {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "date"
+                                "Type": "WFDateFormatVariableAggrandizement",
+                                "WFISO8601IncludeTime": false,
+                                "WFDateFormatStyle": "ISO 8601"
                             }
                         ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFVariableName": "dates"
+                "WFWorkflow": {
+                    "workflowIdentifier": "13D6344E-1286-4297-B559-4A99BF3BA432",
+                    "workflowName": "Template - Complete!",
+                    "isSelf": false
+                },
+                "UUID": "E4A16C02-31BA-4CAA-A12E-893C48AD2DDB",
+                "WFWorkflowName": "Template - Complete!"
             }
         },
         {
@@ -668,6 +643,28 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.finder",
+                    "Name": "Finder",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFAskToSaveChanges": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
+            "WFWorkflowActionParameters": {
+                "WFApp": {
+                    "BundleIdentifier": "com.apple.iCal",
+                    "Name": "Calendar",
+                    "TeamIdentifier": "0000000000"
+                },
+                "WFAskToSaveChanges": false
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "Review journals",
@@ -695,6 +692,14 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "4949738B-32FD-49CD-AEAD-1247915EDEAD",
+                "UUID": "F41A2306-2F9A-494B-8F18-5456B7AE320D"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
             "WFWorkflowActionParameters": {}
         }
@@ -704,6 +709,8 @@
     ],
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFWorkflowHasShortcutInputVariables": true
 }
