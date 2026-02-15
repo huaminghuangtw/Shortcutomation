@@ -49,8 +49,24 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "61D125BC-3510-448D-8A6C-0788A040D711",
+                        "Type": "ActionOutput",
+                        "OutputName": "keypath"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "3BBA8F10-A1B5-4412-B4DA-651F0694E371",
+                    "workflowName": "Data Jar - View Value at Key Path",
+                    "isSelf": false
+                },
+                "UUID": "E0C29517-08C6-414C-B32B-BBEA2F196C97",
+                "WFWorkflowName": "Data Jar - View Value at Key Path"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
@@ -1513,6 +1529,80 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
+            "WFWorkflowActionParameters": {
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "days",
+                        "Magnitude": "1"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "CustomOutputName": "Yesterday",
+                "UUID": "E2A3A0A8-A0DA-46BD-8FD4-76A69A2DA209",
+                "WFAdjustOperation": "Subtract",
+                "WFDate": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "CurrentDate"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFDateContentItem"
+                                },
+                                {
+                                    "Type": "WFDateFormatVariableAggrandizement",
+                                    "WFISO8601IncludeTime": false,
+                                    "WFDateFormatStyle": "ISO 8601"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "Yesterday",
+                                "OutputUUID": "E2A3A0A8-A0DA-46BD-8FD4-76A69A2DA209",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDateFormatVariableAggrandizement",
+                                        "WFISO8601IncludeTime": false,
+                                        "WFDateFormatStyle": "ISO 8601"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "BC2CC5F5-5BA3-4C88-95E3-9E09852CE9FD",
+                "WFCondition": 4
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -1716,6 +1806,7 @@
         {
             "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
             "WFWorkflowActionParameters": {
+                "Show-texts": false,
                 "fileName": "Create Notification",
                 "UUID": "F9DF243E-6C90-4F74-B34E-F224BBAE0E1E",
                 "parameter": {
@@ -1730,6 +1821,13 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BC2CC5F5-5BA3-4C88-95E3-9E09852CE9FD",
+                "WFControlFlowMode": 2
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
             "WFWorkflowActionParameters": {}
         }
@@ -1740,7 +1838,8 @@
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
-        "Watch"
+        "Watch",
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFWorkflowHasShortcutInputVariables": true
 }

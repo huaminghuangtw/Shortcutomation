@@ -109,6 +109,19 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFItemSpecifier": "Last Item",
+                "UUID": "40BF87C6-C7A0-4217-952D-726A09D78938"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextPattern": "^http",
@@ -117,7 +130,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ExtensionInput"
+                                "OutputUUID": "40BF87C6-C7A0-4217-952D-726A09D78938",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
                             }
                         }
                     },
@@ -154,7 +169,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ExtensionInput"
+                                "OutputUUID": "40BF87C6-C7A0-4217-952D-726A09D78938",
+                                "Type": "ActionOutput",
+                                "OutputName": "Item from List"
                             }
                         }
                     },
@@ -188,7 +205,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "OutputUUID": "40BF87C6-C7A0-4217-952D-726A09D78938",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -207,7 +226,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "OutputUUID": "40BF87C6-C7A0-4217-952D-726A09D78938",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -475,7 +496,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "OutputUUID": "40BF87C6-C7A0-4217-952D-726A09D78938",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -615,40 +638,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
-            "WFWorkflowActionParameters": {
-                "Input": {
-                    "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFCountType": "Characters",
-                "UUID": "3EA46AE5-EAA4-4B96-8401-6D67401ACB3F"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "44EC25D6-85C5-4916-89DB-83C65D1B1881",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "3EA46AE5-EAA4-4B96-8401-6D67401ACB3F",
-                            "Type": "ActionOutput",
-                            "OutputName": "Count"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFNumberValue": "0",
-                "WFCondition": 2
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -684,6 +673,26 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "C473260B-153C-4320-91D3-199946516913"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "44EC25D6-85C5-4916-89DB-83C65D1B1881",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C473260B-153C-4320-91D3-199946516913",
+                            "Type": "ActionOutput",
+                            "OutputName": "Updated Text"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "0",
+                "WFCondition": 100
             }
         },
         {
@@ -731,14 +740,6 @@
                                         },
                                         "WFSerializationType": "WFTextTokenString"
                                     }
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            },
-                            {
-                                "Operator": 999,
-                                "Values": {
-                                    "String": "✼"
                                 },
                                 "Removable": true,
                                 "Property": "Title"
@@ -925,7 +926,8 @@
     "WFWorkflowTypes": [
         "Watch",
         "QuickActions",
-        "ActionExtension"
+        "ActionExtension",
+        "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": true

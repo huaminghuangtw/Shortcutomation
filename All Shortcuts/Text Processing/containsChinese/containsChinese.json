@@ -1,0 +1,120 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "Check if the input string contains any Chinese characters:\n──────────────\n• \\u4E00-\\u9FFF: Common CJK Unified Ideographs (includes both Simplified and Traditional Chinese).\n• \\u3400-\\u4DBF: CJK Unified Ideographs Extension A.\n• \\uF900-\\uFAFF: CJK Compatibility Ideographs (contains some Traditional Chinese characters)."
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "[\\u4E00-\\u9FFF\\u3400-\\u4DBF\\uF900-\\uFAFF]",
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "E8E461A1-5CB9-42B5-827A-0E2A08492D1B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "E8E461A1-5CB9-42B5-827A-0E2A08492D1B",
+                            "Type": "ActionOutput",
+                            "OutputName": "Matches"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "58651EE1-BF6D-48C9-9729-E4DF7ED8EB10",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Yes",
+                "UUID": "422B3013-4BFA-4E2D-8D03-D803B9F4566C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "58651EE1-BF6D-48C9-9729-E4DF7ED8EB10",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "No",
+                "UUID": "9E9CDEF1-5726-4DF4-B455-627DCE0ECFDE"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "58651EE1-BF6D-48C9-9729-E4DF7ED8EB10",
+                "UUID": "2D46FD09-62C5-4304-9B3F-97FE85A2DDF1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "2D46FD09-62C5-4304-9B3F-97FE85A2DDF1",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

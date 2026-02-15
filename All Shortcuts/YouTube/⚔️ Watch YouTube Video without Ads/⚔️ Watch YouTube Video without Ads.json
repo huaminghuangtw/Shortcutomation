@@ -10,6 +10,12 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+            "WFWorkflowActionParameters": {
+                "WFCommentActionText": "LPT: If you want to avoid YouTube ads, Google the video title (or id) and watch it directly from the Google search results instead of opening it on YouTube. Ads don’t play this way—and it works on mobile too."
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -53,9 +59,10 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "🤖 YouTube video link?",
+                "WFAllowsMultilineText": false,
+                "UUID": "04C6F4CE-2678-4B66-9C43-E98F761B287C",
                 "WFInputType": "Text",
-                "UUID": "04C6F4CE-2678-4B66-9C43-E98F761B287C"
+                "WFAskActionPrompt": "🤖 YouTube video link?"
             }
         },
         {
@@ -88,22 +95,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFURLActionURL": {
+                "WFInput": {
                     "Value": {
-                        "string": "https://www.youtube.com/embed/￼",
-                        "attachmentsByRange": {
-                            "{30, 1}": {
-                                "OutputUUID": "8FE0EAB7-B863-4FFD-85A3-02417403EBF3",
-                                "Type": "ActionOutput",
-                                "OutputName": "videoId"
-                            }
-                        }
+                        "OutputUUID": "8FE0EAB7-B863-4FFD-85A3-02417403EBF3",
+                        "Type": "ActionOutput",
+                        "OutputName": "videoId"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "8E8475F9-45D0-4EF0-8AFD-1E2BB2089B9A"
+                "WFWorkflow": {
+                    "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
+                    "workflowName": "Build Google Search URL",
+                    "isSelf": false
+                },
+                "UUID": "0E29A342-082C-4A8A-A253-00015784C9AA",
+                "WFWorkflowName": "Build Google Search URL"
             }
         },
         {
@@ -111,9 +119,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "8E8475F9-45D0-4EF0-8AFD-1E2BB2089B9A",
+                        "OutputUUID": "0E29A342-082C-4A8A-A253-00015784C9AA",
                         "Type": "ActionOutput",
-                        "OutputName": "URL"
+                        "OutputName": "Shortcut Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },

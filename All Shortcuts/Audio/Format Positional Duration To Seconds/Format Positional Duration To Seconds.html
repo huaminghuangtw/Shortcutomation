@@ -157,50 +157,62 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>Format Positional Duration To Seconds</b>
-  (8 actions, 8 KB)
+  (14 actions, 11 KB)
 </button>
 <button class="button gGray nonbottom" id="m0">
 0 Repeat with Each in <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span></button><div class="content contentloop">
-<button class="button gOrange inside" id="m1">
-1 Dictionary　»</button><div class="content inside">
-<div class="col2">{  "duration": "<span class="var"><b>[Repeat Item</b> as AVAsset’s Duration<b>]</b></span>" }</div></div>
-<hr><button class="button gYellow inside" id="m2">
-2 Text　»</button><div class="content inside">
-<div class="col2">let dict = <span class="var"><b>[1 Dictionary]</b></span>
+<button class=" inside" id="m1">
+1 Get Type of <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button>
+<hr><button class="button gGray nonbottom inside" id="m2">
+2 If <span class="box"><span class="var"><b>[1 Type]</b></span></span> <span class="box">is</span> <span class="box">Text</span></button><div class="content contentloop dotted inside">
+<button class="gYellow inside" id="m3">
+3 Get Text from <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m4">
+4 Otherwise</button><div class="content contentloop dotted inside">
+<button class="gYellow inside" id="m5">
+5 Get Text from <span class="box"><span class="var"><b>[Repeat Item</b> as AVAsset’s Duration<b>]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m6">
+6 End If　»</button>
+<hr><button class="button gOrange inside" id="m7">
+7 Dictionary　»</button><div class="content inside">
+<div class="col2">{  "duration": "<span class="var"><b>[6 If Result]</b></span>" }</div></div>
+<hr><button class="button gYellow inside" id="m8">
+8 Text　»</button><div class="content inside">
+<div class="col2">let dict = <span class="var"><b>[7 Dictionary]</b></span>
 
 const parts = dict.duration.split(":").map(Number)
 
 let totalSeconds = 0
 
 if (parts.length === 3) {
-    // HH:MM:SS format
+    // H:m:s format
     const hours = parts[0]
     const minutes = parts[1]
     const seconds = parts[2]
     totalSeconds = hours * 3600 + minutes * 60 + seconds
 } else if (parts.length === 2) {
-    // MM:SS format
+    // m:s format
     const minutes = parts[0]
     const seconds = parts[1]
     totalSeconds = minutes * 60 + seconds
 }
 
 document.write(totalSeconds)</div></div>
-<hr><button class="button  inside" id="m3">
-3 Run Shortcut <span class="box">Run JavaScript Code</span>　»</button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[2 Text]</b></span></div></div>
+<hr><button class="button  inside" id="m9">
+9 Run Shortcut <span class="box">Run JavaScript Code</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[8 Text]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "E2CEB2A0-A1D2-4040-B3D2-804B9C84CAE8",
    "workflowName": "Run JavaScript Code",
    "isSelf": false
 }</div></div></div>
-<hr><button class=" inside" id="m4">
-4 Calculate <span class="box"><span class="var"><b>[3 Shortcut Result]</b></span></span> + <span class="box"><span class="var"><b>[totalDuration]</b></span></span>　»</button>
-<hr><button class="gOrange inside" id="m5">
-5 Set Variable <span class="box">totalDuration</span> to <span class="box"><span class="var"><b>[4 Calculation Result]</b></span></span></button></div>
-<button class="gGray nontop" id="m6">
-6 End Repeat with Each　▵<span class="magic" onclick="magictap(0)">0</span></button><div></div>
-<button class="gGray" id="m7">
-7 Stop and Output <span class="box"><span class="var"><b>[totalDuration]</b></span></span></button>
+<hr><button class=" inside" id="m10">
+10 Calculate <span class="box"><span class="var"><b>[9 Shortcut Result]</b></span></span> + <span class="box"><span class="var"><b>[totalDuration]</b></span></span>　»</button>
+<hr><button class="gOrange inside" id="m11">
+11 Set Variable <span class="box">totalDuration</span> to <span class="box"><span class="var"><b>[10 Calculation Result]</b></span></span></button></div>
+<button class="gGray nontop" id="m12">
+12 End Repeat with Each　▵<span class="magic" onclick="magictap(0)">0</span></button><div></div>
+<button class="gGray" id="m13">
+13 Stop and Output <span class="box"><span class="var"><b>[totalDuration]</b></span></span></button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

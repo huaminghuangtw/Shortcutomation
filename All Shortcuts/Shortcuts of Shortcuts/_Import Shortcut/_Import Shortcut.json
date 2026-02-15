@@ -14,30 +14,6 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "com.apple.shortcuts.OpenNavigationDestinationAction",
-            "WFWorkflowActionParameters": {
-                "target": {
-                    "symbol": {
-                        "systemName": "rectangle.stack"
-                    },
-                    "title": {
-                        "key": "All Shortcuts"
-                    },
-                    "subtitle": {
-                        "key": "All Shortcuts"
-                    },
-                    "identifier": "allshortcuts"
-                },
-                "UUID": "5A41B7A4-3B71-496A-9EC6-FB116D753C7C",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.shortcuts",
-                    "Name": "Shortcuts",
-                    "AppIntentIdentifier": "OpenNavigationDestinationAction"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.detect.link",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -92,53 +68,30 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "6F528966-B7C4-473E-A3AA-42DC43B6C4D9"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼\n🤖 Open Imported Shortcut?\n￼\n✅ Yes : \"OK\"\n❌ No : \"Cancel\"",
-                        "attachmentsByRange": {
-                            "{29, 1}": {
-                                "OutputUUID": "6F528966-B7C4-473E-A3AA-42DC43B6C4D9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "6F528966-B7C4-473E-A3AA-42DC43B6C4D9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "B4087B2D-7F10-4035-B779-F1E2F839D086"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
             "WFWorkflowActionParameters": {
-                "WFAlertActionMessage": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "B4087B2D-7F10-4035-B779-F1E2F839D086",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFAlertActionTitle": "After clicking \"Add Shortcut\"..."
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "💁‍♂️ Click \"Add Shortcut\""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "🤖 Open the imported shortcut?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "C7EEB4BF-BD98-4FC2-8FCD-9A80323194F5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "C7EEB4BF-BD98-4FC2-8FCD-9A80323194F5",
+                "WFControlFlowMode": 1
             }
         },
         {
@@ -164,14 +117,13 @@
         {
             "WFWorkflowActionIdentifier": "com.apple.shortcuts.OpenWorkflowAction",
             "WFWorkflowActionParameters": {
-                "target": {
-                    "Value": {
-                        "OutputUUID": "BAD4BCF8-396E-46A0-B600-EEE4CFA7DF97",
-                        "Type": "ActionOutput",
-                        "OutputName": "Item from List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.shortcuts",
+                    "Name": "Shortcuts",
+                    "AppIntentIdentifier": "OpenWorkflowAction"
                 },
+                "UUID": "A6628EDD-DF7D-49EB-A564-5ED0CEC31C61",
                 "WFWorkflow": {
                     "Value": {
                         "OutputUUID": "BAD4BCF8-396E-46A0-B600-EEE4CFA7DF97",
@@ -180,13 +132,41 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "0000000000",
-                    "BundleIdentifier": "com.apple.shortcuts",
-                    "Name": "Shortcuts",
-                    "AppIntentIdentifier": "OpenWorkflowAction"
+                "target": {
+                    "Value": {
+                        "OutputUUID": "BAD4BCF8-396E-46A0-B600-EEE4CFA7DF97",
+                        "Type": "ActionOutput",
+                        "OutputName": "Item from List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 }
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "C7EEB4BF-BD98-4FC2-8FCD-9A80323194F5",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {
+                "UUID": "8287FDA9-A029-4E2F-8ADB-59B0B674423C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C7EEB4BF-BD98-4FC2-8FCD-9A80323194F5",
+                "UUID": "57B5EAD7-09F6-40DD-BBE4-82F2C43E0766"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

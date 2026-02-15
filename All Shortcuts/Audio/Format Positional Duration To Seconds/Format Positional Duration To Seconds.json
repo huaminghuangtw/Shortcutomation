@@ -13,7 +13,7 @@
     "WFWorkflowNoInputBehavior": {
         "Name": "WFWorkflowNoInputBehaviorAskForInput",
         "Parameters": {
-            "ItemClass": "WFGenericFileContentItem"
+            "ItemClass": "WFStringContentItem"
         }
     },
     "WFWorkflowActions": [
@@ -28,6 +28,86 @@
                 },
                 "GroupingIdentifier": "8DDBDF4D-F84E-47FA-8408-FD11B43E57E2",
                 "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemtype",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "13712063-8A6D-42DD-BA85-033742995375"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "13712063-8A6D-42DD-BA85-033742995375",
+                            "Type": "ActionOutput",
+                            "OutputName": "Type"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Text",
+                "GroupingIdentifier": "44F3F77E-7E1E-4F62-A9A7-76A78A28A228",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "44F3F77E-7E1E-4F62-A9A7-76A78A28A228",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFAVAssetContentItem"
+                            },
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Duration"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "44F3F77E-7E1E-4F62-A9A7-76A78A28A228",
+                "UUID": "11F2B4A9-A103-4C58-AA6B-8F6D8B3FAC45"
             }
         },
         {
@@ -49,18 +129,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "VariableName": "Repeat Item",
-                                                "Type": "Variable",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFAVAssetContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFPropertyVariableAggrandizement",
-                                                        "PropertyName": "Duration"
-                                                    }
-                                                ]
+                                                "OutputUUID": "11F2B4A9-A103-4C58-AA6B-8F6D8B3FAC45",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "If Result"
                                             }
                                         }
                                     },
@@ -79,7 +150,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "let dict = ￼\n\nconst parts = dict.duration.split(\":\").map(Number)\n\nlet totalSeconds = 0\n\nif (parts.length === 3) {\n    // HH:MM:SS format\n    const hours = parts[0]\n    const minutes = parts[1]\n    const seconds = parts[2]\n    totalSeconds = hours * 3600 + minutes * 60 + seconds\n} else if (parts.length === 2) {\n    // MM:SS format\n    const minutes = parts[0]\n    const seconds = parts[1]\n    totalSeconds = minutes * 60 + seconds\n}\n\ndocument.write(totalSeconds)",
+                        "string": "let dict = ￼\n\nconst parts = dict.duration.split(\":\").map(Number)\n\nlet totalSeconds = 0\n\nif (parts.length === 3) {\n    // H:m:s format\n    const hours = parts[0]\n    const minutes = parts[1]\n    const seconds = parts[2]\n    totalSeconds = hours * 3600 + minutes * 60 + seconds\n} else if (parts.length === 2) {\n    // m:s format\n    const minutes = parts[0]\n    const seconds = parts[1]\n    totalSeconds = minutes * 60 + seconds\n}\n\ndocument.write(totalSeconds)",
                         "attachmentsByRange": {
                             "{11, 1}": {
                                 "OutputUUID": "F219B515-BA9B-449A-87C8-95A2E58229EC",
@@ -176,7 +247,8 @@
         }
     ],
     "WFWorkflowInputContentItemClasses": [
-        "WFGenericFileContentItem"
+        "WFGenericFileContentItem",
+        "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],

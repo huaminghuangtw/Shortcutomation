@@ -1,65 +1,47 @@
-### ✨ 19 New Shortcuts
+### ✨ 13 New Shortcuts
 
 ---
 
-**📍 [Cʜɪᴀʏɪ Cᴏᴜɴᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Chiayi%20County,%20Taiwan)**
+**📍 [Kᴀᴏʜsɪᴜɴɢ Cɪᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Kaohsiung%20City,%20Taiwan)**
 
 ---
 
-* [Deep Work Machine (1)](https://shortcutomation.com/categories/deep-work-machine)
+* [Shared (1)](https://shortcutomation.com/categories/shared)
 
-    * [😌 End-of-Day Ritual](https://shortcutomation.com/end-of-day-ritual)
+    * [🤑 持續買進]()
 
-* [Apple Reminders (1)](https://shortcutomation.com/categories/apple-reminders)
+* [Text Processing (1)](https://shortcutomation.com/categories/text-processing)
 
-    * [_Reminder2Markdown - Kernel](https://shortcutomation.com/reminder2markdown-kernel)
+    * [containsChinese]()
 
-* [Journaling (2)](https://shortcutomation.com/categories/journaling)
+* [BLE Audio Devices (2)](https://shortcutomation.com/categories/ble-audio-devices)
 
-    * [📇 Review Weekly Journals](https://shortcutomation.com/review-weekly-journals)
-    * [_Query Weekly Journals](https://shortcutomation.com/query-weekly-journals)
+    * [🎧 Soundcore]()
+    * [🎧 DTAudio]()
 
-* [Shared (2)](https://shortcutomation.com/categories/shared)
+* [Journaling (1)](https://shortcutomation.com/categories/journaling)
 
-    * [Goodreads Book Quotes](https://shortcutomation.com/goodreads-book-quotes)
-    * [Daily Exercise](https://shortcutomation.com/daily-exercise)
+    * [📔 Open Journal]()
 
-* [Automation Modules (4)](https://shortcutomation.com/categories/automation-modules)
+* [Motivate Me (2)](https://shortcutomation.com/categories/motivate-me)
 
-    * [When "Obsidian" is opened](https://shortcutomation.com/when-obsidian-is-opened)
-    * [When "Obsidian" is opened - Kernel](https://shortcutomation.com/when-obsidian-is-opened-kernel)
-    * [When "BrainWave" is opened](https://shortcutomation.com/when-brainwave-is-opened)
-    * [When "BrainWave" is opened - Kernel](https://shortcutomation.com/when-brainwave-is-opened-kernel)
+    * [🏟️ The Man in the Arena]()
+    * [✨ Our Deepest Fear]()
 
-* [Obsidian URI (1)](https://shortcutomation.com/categories/obsidian-uri)
+* [Getting Things Done (1)](https://shortcutomation.com/categories/getting-things-done)
 
-    * [Obsidian - Replace All Wiki Links with Markdown Links](https://shortcutomation.com/obsidian-replace-all-wiki-links-with-markdown-links)
+    * [_Get Done Action Items]()
 
-* [Template Shortcuts (1)](https://shortcutomation.com/categories/template-shortcuts)
+* [LifeOS Toolkits (1)](https://shortcutomation.com/categories/lifeos-toolkits)
 
-    * [Template - Morning and Evening Routine](https://shortcutomation.com/template-morning-and-evening-routine)
+    * [🤑 Keep Buying]()
 
-* [Date & Time (1)](https://shortcutomation.com/categories/date-and-time)
+* [Obsidian (1)](https://shortcutomation.com/categories/obsidian)
 
-    * [getWeekRange](https://shortcutomation.com/getweekrange)
+    * [Obsidian - Toggle Left Sidebar]()
 
-* [Utilities (1)](https://shortcutomation.com/categories/utilities)
+* [Automation Modules (3)](https://shortcutomation.com/categories/automation-modules)
 
-    * [isOnline](https://shortcutomation.com/isonline)
-
-* [Data Jar (1)](https://shortcutomation.com/categories/data-jar)
-
-    * [Export Data Jar](https://shortcutomation.com/export-data-jar)
-
-* [LifeOS Toolkits (2)](https://shortcutomation.com/categories/lifeos-toolkits)
-
-    * [⚰️ Memento Mori](https://shortcutomation.com/memento-mori)
-    * [Get Random Memory This Year](https://shortcutomation.com/get-random-memory-this-year)
-
-* [Evergreen Lists (1)](https://shortcutomation.com/categories/evergreen-lists)
-
-    * [_Evergreen List to PDF](https://shortcutomation.com/evergreen-list-to-pdf)
-
-* [Obsidian Tools (1)](https://shortcutomation.com/categories/obsidian-tools)
-
-    * [🏡 Go to Obsidian Homepage](https://shortcutomation.com/go-to-obsidian-homepage)
+    * [When "Reminders" is opened or closed]()
+    * [When "Reminders" is opened or closed - Kernel]()
+    * [When turning my focus mode on]()
