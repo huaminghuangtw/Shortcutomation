@@ -1,47 +1,28 @@
-### ✨ 13 New Shortcuts
+### ✨ 6 New Shortcuts
 
 ---
 
-**📍 [Kᴀᴏʜsɪᴜɴɢ Cɪᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Kaohsiung%20City,%20Taiwan)**
+**📍 [Cʜɪᴀʏɪ Cᴏᴜɴᴛʏ, Tᴀɪᴡᴀɴ 🇹🇼](https://www.google.com/maps/place/Chiayi%20County,%20Taiwan)**
 
 ---
 
-* [Shared (1)](https://shortcutomation.com/categories/shared)
+* [Deep Links (1)](https://shortcutomation.com/gallery/deep-links)
 
-    * [🤑 持續買進]()
+    * [Threads](https://shortcutomation.com/threads)
 
-* [Text Processing (1)](https://shortcutomation.com/categories/text-processing)
+* [Brain Food (1)](https://shortcutomation.com/gallery/brain-food)
 
-    * [containsChinese]()
+    * [📖 Summarize Blog Post](https://shortcutomation.com/summarize-blog-post)
 
-* [BLE Audio Devices (2)](https://shortcutomation.com/categories/ble-audio-devices)
+* [Shared (2)](https://shortcutomation.com/gallery/shared)
 
-    * [🎧 Soundcore]()
-    * [🎧 DTAudio]()
+    * [持續買進](https://shortcutomation.com/持續買進)
+    * [科學人雜誌](https://shortcutomation.com/科學人雜誌)
 
-* [Journaling (1)](https://shortcutomation.com/categories/journaling)
+* [LifeOS Toolkits (1)](https://shortcutomation.com/gallery/lifeos-toolkits)
 
-    * [📔 Open Journal]()
+    * [👨🏽‍🔬 研之有物](https://shortcutomation.com/研之有物)
 
-* [Motivate Me (2)](https://shortcutomation.com/categories/motivate-me)
+* [Text Processing (1)](https://shortcutomation.com/gallery/text-processing)
 
-    * [🏟️ The Man in the Arena]()
-    * [✨ Our Deepest Fear]()
-
-* [Getting Things Done (1)](https://shortcutomation.com/categories/getting-things-done)
-
-    * [_Get Done Action Items]()
-
-* [LifeOS Toolkits (1)](https://shortcutomation.com/categories/lifeos-toolkits)
-
-    * [🤑 Keep Buying]()
-
-* [Obsidian (1)](https://shortcutomation.com/categories/obsidian)
-
-    * [Obsidian - Toggle Left Sidebar]()
-
-* [Automation Modules (3)](https://shortcutomation.com/categories/automation-modules)
-
-    * [When "Reminders" is opened or closed]()
-    * [When "Reminders" is opened or closed - Kernel]()
-    * [When turning my focus mode on]()
+    * [containsChineseCharacters](https://shortcutomation.com/containschinesecharacters)

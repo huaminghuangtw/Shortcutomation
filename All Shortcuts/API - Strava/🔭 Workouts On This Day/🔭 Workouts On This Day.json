@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -304,6 +304,59 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "DFB46977-8CB0-4EF0-AC5A-C51D2A47BCC4",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "total_photo_count",
+                            "OutputUUID": "8F395F55-CEC8-4B75-B575-6FE85FE8661C",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "0",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ 📸",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "5EC1E5A1-7270-4E26-B2B0-94B75C10887F",
+                                "Type": "ActionOutput",
+                                "OutputName": "key"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "DB163B1B-4F44-463F-B854-313DD9BD2D87"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DFB46977-8CB0-4EF0-AC5A-C51D2A47BCC4",
+                "UUID": "62BA2631-43FF-41E1-91C8-A0168091B764"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -318,7 +371,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "5EC1E5A1-7270-4E26-B2B0-94B75C10887F",
+                                "OutputUUID": "62BA2631-43FF-41E1-91C8-A0168091B764",
                                 "Type": "ActionOutput",
                                 "OutputName": "key"
                             }
@@ -610,7 +663,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "* [￼~￼ | ￼](￼)\n\t* Distance: ￼ | Elevation: ￼",
+                        "string": "* [￼~￼ | ￼](￼)",
                         "attachmentsByRange": {
                             "{9, 1}": {
                                 "VariableName": "Repeat Item",
@@ -630,11 +683,6 @@
                                 "OutputUUID": "6BF0DF1F-5AC0-4B69-A217-1A788F81E1CF",
                                 "Type": "ActionOutput",
                                 "OutputName": "URL"
-                            },
-                            "{28, 1}": {
-                                "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
-                                "Type": "ActionOutput",
-                                "OutputName": "distance"
                             },
                             "{3, 1}": {
                                 "Type": "ActionOutput",
@@ -661,17 +709,75 @@
                                         "WFISO8601IncludeTime": false
                                     }
                                 ]
-                            },
-                            "{43, 1}": {
-                                "OutputUUID": "33C2157F-CDD0-47B9-BCEE-894DA656916F",
-                                "Type": "ActionOutput",
-                                "OutputName": "elevation"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "620C2EC3-4239-4F99-9995-453C213BB08B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
+                            "Type": "ActionOutput",
+                            "OutputName": "distance"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFMeasurement": {
+                    "Value": {
+                        "Unit": "m",
+                        "Magnitude": "0"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "GroupingIdentifier": "27A2313D-971E-47DD-8074-FB51781F398A",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n\t* Distance: ￼ | Elevation: ￼",
+                        "attachmentsByRange": {
+                            "{15, 1}": {
+                                "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
+                                "Type": "ActionOutput",
+                                "OutputName": "distance"
+                            },
+                            "{30, 1}": {
+                                "OutputUUID": "33C2157F-CDD0-47B9-BCEE-894DA656916F",
+                                "Type": "ActionOutput",
+                                "OutputName": "elevation"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "620C2EC3-4239-4F99-9995-453C213BB08B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "EE282991-727C-43A0-B987-E28378CB0932"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "27A2313D-971E-47DD-8074-FB51781F398A",
+                "UUID": "148C86E0-6F4F-455E-ACED-B7A9B6765D0F"
             }
         },
         {
@@ -721,9 +827,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "620C2EC3-4239-4F99-9995-453C213BB08B",
+                                                "OutputUUID": "148C86E0-6F4F-455E-ACED-B7A9B6765D0F",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Text"
+                                                "OutputName": "If Result"
                                             }
                                         }
                                     },
@@ -816,8 +922,13 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "• ￼ | ￼ | ￼ | ￼",
+                        "string": "• ￼ | ￼ | ￼",
                         "attachmentsByRange": {
+                            "{10, 1}": {
+                                "OutputUUID": "BC187A52-ECCC-4C7B-B1FC-21C4DEA561EE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Duration"
+                            },
                             "{2, 1}": {
                                 "OutputUUID": "532B2806-95C5-4F38-9516-D122CE41DE9E",
                                 "Type": "ActionOutput",
@@ -836,16 +947,6 @@
                                         "DictionaryKey": "sport_type"
                                     }
                                 ]
-                            },
-                            "{10, 1}": {
-                                "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
-                                "Type": "ActionOutput",
-                                "OutputName": "distance"
-                            },
-                            "{14, 1}": {
-                                "OutputUUID": "BC187A52-ECCC-4C7B-B1FC-21C4DEA561EE",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Duration"
                             }
                         }
                     },
@@ -855,13 +956,71 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
+                            "Type": "ActionOutput",
+                            "OutputName": "distance"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFMeasurement": {
+                    "Value": {
+                        "Unit": "m",
+                        "Magnitude": "0"
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                },
+                "GroupingIdentifier": "2A1BF4F3-DDB8-4B1D-AE26-3CB7A3C99868",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ | ￼",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
+                                "Type": "ActionOutput",
+                                "OutputName": "distance"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "6C53163E-036B-4E92-8AC3-D918D11DD951",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9A24DA21-4250-40FB-9F70-23CF398C52C9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "2A1BF4F3-DDB8-4B1D-AE26-3CB7A3C99868",
+                "UUID": "2FFBFC17-EF48-4B27-9435-8AC0B9794B5D"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "6C53163E-036B-4E92-8AC3-D918D11DD951",
+                        "OutputUUID": "2FFBFC17-EF48-4B27-9435-8AC0B9794B5D",
                         "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "OutputName": "value"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -897,7 +1056,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "5EC1E5A1-7270-4E26-B2B0-94B75C10887F",
+                                "OutputUUID": "62BA2631-43FF-41E1-91C8-A0168091B764",
                                 "Type": "ActionOutput",
                                 "OutputName": "key"
                             }
@@ -956,18 +1115,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "68E0D0DF-DEBF-41CF-8A6E-625E252D5A00"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "💁🏽 ￼ on ￼\n￼",
+                        "string": "💁🏽 ￼ on ￼\n──────────────",
                         "attachmentsByRange": {
                             "{10, 1}": {
                                 "Type": "ExtensionInput",
@@ -983,11 +1135,6 @@
                                         "WFISO8601IncludeTime": false
                                     }
                                 ]
-                            },
-                            "{12, 1}": {
-                                "OutputUUID": "68E0D0DF-DEBF-41CF-8A6E-625E252D5A00",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
                             },
                             "{5, 1}": {
                                 "OutputUUID": "C856BFF2-FC45-4C2D-A170-A5DB33AF3FA4",
@@ -1096,19 +1243,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "\n￼\n",
-                        "attachmentsByRange": {
-                            "{1, 1}": {
-                                "OutputUUID": "68E0D0DF-DEBF-41CF-8A6E-625E252D5A00",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFTextActionText": "\n──────────────\n",
                 "UUID": "4964135F-590E-44E2-AAB1-0532F63C3759"
             }
         },

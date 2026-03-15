@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -53,9 +53,10 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
             "WFWorkflowActionParameters": {
-                "WFAskActionPrompt": "🤖 Article link?",
+                "WFAllowsMultilineText": false,
+                "UUID": "51B3B84B-E4C5-40BF-99AD-A0D485ED1F63",
                 "WFInputType": "Text",
-                "UUID": "51B3B84B-E4C5-40BF-99AD-A0D485ED1F63"
+                "WFAskActionPrompt": "🤖 Article link?"
             }
         },
         {
@@ -67,35 +68,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
-            "WFWorkflowActionParameters": {
-                "text": {
-                    "Value": {
-                        "OutputUUID": "A0859408-0097-4650-9A16-3F4411655EBE",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "B859841D-984D-412A-A8DE-78B6510FBF23"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "B859841D-984D-412A-A8DE-78B6510FBF23",
-                        "Type": "ActionOutput",
-                        "OutputName": "Split Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "CB4E178B-9C7F-4BC5-ADA5-E48188492C1C",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getarticle",
             "WFWorkflowActionParameters": {
                 "WFWebPage": {
@@ -103,8 +75,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
+                                "OutputUUID": "A0859408-0097-4650-9A16-3F4411655EBE",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
                             }
                         }
                     },
@@ -134,13 +107,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "824BF7D9-8ECC-4CAF-99D6-6B216C2665EA"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -160,14 +126,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "✅ Added to Reading List\n￼\n￼",
+                        "string": "✅ Added to Reading List\n──────────────\n￼",
                         "attachmentsByRange": {
-                            "{24, 1}": {
-                                "OutputUUID": "824BF7D9-8ECC-4CAF-99D6-6B216C2665EA",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
-                            },
-                            "{26, 1}": {
+                            "{39, 1}": {
                                 "OutputUUID": "F882ED3B-FBA9-4B82-B9F5-9907782B56CF",
                                 "Type": "ActionOutput",
                                 "OutputName": "Title"
@@ -197,13 +158,6 @@
                 },
                 "UUID": "A4B2268F-1CF8-43BA-AE97-076BC5E97604",
                 "WFWorkflowName": "Feedback for Brain Dumping"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "CB4E178B-9C7F-4BC5-ADA5-E48188492C1C",
-                "WFControlFlowMode": 2
             }
         },
         {

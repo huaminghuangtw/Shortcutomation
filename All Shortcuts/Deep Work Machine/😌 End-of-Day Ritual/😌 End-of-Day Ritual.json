@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -13,6 +13,47 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
                 "WFCommentActionText": "Inspired by [Cal Newport’s](https://www.youtube.com/watch?v=NsNA8XHbQjQ) [“Work Shutdown Ritual”](https://calnewport.com/drastically-reduce-stress-with-a-work-shutdown-ritual/)"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                            {
+                                "WFDateFormatStyle": "Custom",
+                                "Type": "WFDateFormatVariableAggrandizement",
+                                "WFDateFormat": "H",
+                                "WFISO8601IncludeTime": false
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFCountType": "Characters",
+                "UUID": "451CD61A-D1C2-46A3-96FD-299A26A0F641"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "1570962E-B103-42EE-A866-576D66F26AA1",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "451CD61A-D1C2-46A3-96FD-299A26A0F641",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "2",
+                "WFCondition": 4
             }
         },
         {
@@ -81,6 +122,14 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "5DF7A275-6C3B-45D8-942C-C8C0A0F0CBEA",
                 "UUID": "B5478889-4283-4B6B-9346-43CD9428E6F6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "1570962E-B103-42EE-A866-576D66F26AA1",
+                "UUID": "B7A93DF1-754F-40B1-95CB-579714321D9D"
             }
         },
         {
@@ -226,6 +275,7 @@
     "WFWorkflowInputContentItemClasses": [],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
+        "QuickActions",
         "WFWorkflowTypeShowInSearch"
     ],
     "WFQuickActionSurfaces": [],

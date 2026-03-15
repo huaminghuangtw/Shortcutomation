@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -16,45 +16,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
-            "WFWorkflowActionParameters": {
-                "WFItems": [
-                    "Fleeting-Notes",
-                    "Permanent-Notes"
-                ],
-                "UUID": "C7CFC273-5E1E-49FA-A150-91D320EEC1B8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "C7CFC273-5E1E-49FA-A150-91D320EEC1B8",
-                        "Type": "ActionOutput",
-                        "OutputName": "List"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "3E12DAC6-181B-4BDF-B6F4-5A62B0D0E92C",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
-                "WFGetFilePath": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFGetFilePath": "Fleeting-Notes.md",
                 "WFFile": {
                     "fileLocation": {
                         "WFFileLocationType": "iCloud",
@@ -70,9 +34,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
-                "WFFolder": {
+                "WFInput": {
                     "Value": {
                         "OutputUUID": "86947893-3CD8-4DDE-BE6F-3BAEA2D4A9BB",
                         "Type": "ActionOutput",
@@ -80,21 +44,43 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "WFVariableName": "files"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Evergreen-Notes/Permanent-Notes",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/9E832A27-21CA-44AE-AB75-7020219608B3/f9f8d3e95ff2830a40b78a56d1bd86b33defd245"
+                    },
+                    "filename": "Permanent-Notes",
+                    "displayName": "Permanent-Notes"
+                },
                 "UUID": "48D38956-759F-4786-9E0C-D562BD5146DA"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PluraliseIntent",
             "WFWorkflowActionParameters": {
-                "Input": {
+                "output": "numberDigit",
+                "items": {
                     "Value": {
                         "OutputUUID": "48D38956-759F-4786-9E0C-D562BD5146DA",
                         "Type": "ActionOutput",
-                        "OutputName": "Get Contents of Folder"
+                        "OutputName": "Folder Contents"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "5F741138-EF96-4DC7-B178-8A9D03EA5601"
+                "typeCase": "title",
+                "count": 1,
+                "UUID": "A048B99F-2773-4BAB-BF2F-6BAEB91A23EB",
+                "countType": "items",
+                "word": "Zettel"
             }
         },
         {
@@ -104,7 +90,17 @@
                     "Value": {
                         "WFActionParameterFilterPrefix": 1,
                         "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": []
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": "md"
+                                },
+                                "Removable": true,
+                                "Property": "File Extension"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFContentPredicateTableTemplate"
                 },
@@ -124,7 +120,7 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.files",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
@@ -134,59 +130,7 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFContentItemPropertyName": "Name",
-                "UUID": "49CEFB1E-D6D8-481B-93BB-A4441E71A589"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "49CEFB1E-D6D8-481B-93BB-A4441E71A589",
-                        "Type": "ActionOutput",
-                        "OutputName": "Details of Files"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "filenames"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.files",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "DB10813B-17CD-4A0D-8812-8F7AF2AC11C1",
-                        "Type": "ActionOutput",
-                        "OutputName": "Files"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemPropertyName": "File Path",
-                "UUID": "92DF1A2A-5BC9-4460-971E-F27703B33F2A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "92DF1A2A-5BC9-4460-971E-F27703B33F2A",
-                        "Type": "ActionOutput",
-                        "OutputName": "Details of Files"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFVariableName": "filepaths"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "3E12DAC6-181B-4BDF-B6F4-5A62B0D0E92C",
-                "UUID": "CBF8992B-9D04-467B-834C-2258C9CA9F9B"
+                "WFVariableName": "files"
             }
         },
         {
@@ -194,7 +138,7 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "filepaths",
+                        "VariableName": "files",
                         "Type": "Variable"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
@@ -223,7 +167,14 @@
                                         "attachmentsByRange": {
                                             "{0, 1}": {
                                                 "VariableName": "Repeat Item",
-                                                "Type": "Variable"
+                                                "Type": "Variable",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "PropertyUserInfo": "WFFilePath",
+                                                        "Type": "WFPropertyVariableAggrandizement",
+                                                        "PropertyName": "File Path"
+                                                    }
+                                                ]
                                             }
                                         }
                                     },
@@ -293,55 +244,83 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "CustomOutputName": "Text Divider",
-                "UUID": "8B52CE75-EE1B-4717-8D81-439129BAC9CD"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "VariableName": "filenames",
-                        "Type": "Variable"
+                        "Type": "ActionOutput",
+                        "OutputName": "Files",
+                        "OutputUUID": "DB10813B-17CD-4A0D-8812-8F7AF2AC11C1",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "WFFilePath",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "File Path"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "GroupingIdentifier": "9DB44659-03B1-43DF-AEC8-5A016552F832",
-                "WFControlFlowMode": 0
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "￼. ￼",
-                        "attachmentsByRange": {
-                            "{3, 1}": {
-                                "VariableName": "Repeat Item",
-                                "Type": "Variable"
-                            },
-                            "{0, 1}": {
-                                "VariableName": "Repeat Index",
-                                "Type": "Variable"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
+                "WFWorkflow": {
+                    "workflowIdentifier": "1CEB61AE-D41A-4FF3-9926-40DCEBF069F7",
+                    "workflowName": "VS Code - Open Note(s)",
+                    "isSelf": false
                 },
-                "UUID": "D984CD5F-A55B-48CE-8399-024B4DC43B90"
+                "UUID": "FC3BC0CF-19CD-4EB5-AC60-A4A251DDA585",
+                "WFWorkflowName": "VS Code - Open Note(s)"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "9DB44659-03B1-43DF-AEC8-5A016552F832",
-                "UUID": "5BC47A41-CAFC-4B75-86D9-745BA2B9DA74"
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "48D38956-759F-4786-9E0C-D562BD5146DA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Folder Contents"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemLimitEnabled": false,
+                "WFContentItemSortProperty": "Creation Date",
+                "UUID": "202B133B-9B0D-49DE-95E8-5D6A4D424FB3",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 1001,
+                                "Values": {
+                                    "Unit": 16,
+                                    "Number": "7"
+                                },
+                                "Removable": true,
+                                "Property": "Creation Date"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PluraliseIntent",
+            "WFWorkflowActionParameters": {
+                "word": "new note",
+                "countType": "items",
+                "count": 1,
+                "UUID": "A44D4EF2-2D93-4472-8E27-C1606D41C010",
+                "items": {
+                    "Value": {
+                        "OutputUUID": "202B133B-9B0D-49DE-95E8-5D6A4D424FB3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Files"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "output": "numberDigit"
             }
         },
         {
@@ -349,22 +328,17 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n￼\n￼",
+                        "string": "🌱 ￼\n🗒️ ￼ in the last 7 days",
                         "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "5BC47A41-CAFC-4B75-86D9-745BA2B9DA74",
+                            "{9, 1}": {
+                                "OutputUUID": "A44D4EF2-2D93-4472-8E27-C1606D41C010",
                                 "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
+                                "OutputName": "Pluralised Result"
                             },
-                            "{4, 1}": {
-                                "OutputUUID": "8B52CE75-EE1B-4717-8D81-439129BAC9CD",
+                            "{3, 1}": {
+                                "OutputUUID": "A048B99F-2773-4BAB-BF2F-6BAEB91A23EB",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text Divider"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "8B52CE75-EE1B-4717-8D81-439129BAC9CD",
-                                "Type": "ActionOutput",
-                                "OutputName": "Text Divider"
+                                "OutputName": "Pluralised Result"
                             }
                         }
                     },
@@ -385,19 +359,6 @@
                                 "OutputUUID": "5B957FE8-9D08-46E9-90DE-0078E1BD2730",
                                 "Type": "ActionOutput",
                                 "OutputName": "Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "WFAlertActionTitle": {
-                    "Value": {
-                        "string": "🌱 ￼ Zettels",
-                        "attachmentsByRange": {
-                            "{3, 1}": {
-                                "OutputUUID": "5F741138-EF96-4DC7-B178-8A9D03EA5601",
-                                "Type": "ActionOutput",
-                                "OutputName": "Count"
                             }
                         }
                     },

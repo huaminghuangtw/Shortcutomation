@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -54,7 +54,7 @@
                     "isSelf": false
                 },
                 "WFWorkflowName": "Show Day Progress",
-                "UUID": "33A75300-FB00-47EA-86F8-437E7074262A"
+                "UUID": "FA355973-FF65-4442-81A2-0A0B2F2C16E2"
             }
         },
         {
@@ -263,6 +263,130 @@
             "WFWorkflowActionParameters": {
                 "WFURL": "https://monkeytype.com",
                 "UUID": "DAD79652-C5C5-4481-83F9-B808048636D5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getclipboard",
+            "WFWorkflowActionParameters": {
+                "UUID": "60098BE3-1998-478D-A0F9-47AC59CD7351"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "60098BE3-1998-478D-A0F9-47AC59CD7351",
+                            "Type": "ActionOutput",
+                            "OutputName": "Clipboard"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "390D4589-0B99-40C0-B888-55A890AE5735",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "────────────── \n￼\n──────────────\n📥 Add to Inbox?",
+                        "attachmentsByRange": {
+                            "{16, 1}": {
+                                "OutputUUID": "60098BE3-1998-478D-A0F9-47AC59CD7351",
+                                "Type": "ActionOutput",
+                                "OutputName": "Clipboard"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "151498A6-1938-4AE6-8AEE-9CCD13717475"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "151498A6-1938-4AE6-8AEE-9CCD13717475",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "E38B882C-260D-4414-9F32-91F05C5B8075"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "E38B882C-260D-4414-9F32-91F05C5B8075",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "Clipboard"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
+                    "workflowName": "📥 Add to Inbox",
+                    "isSelf": false
+                },
+                "UUID": "10A58CD6-FCF6-432E-A6F3-7C9C06C6FA6F",
+                "WFWorkflowName": "📥 Add to Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "E38B882C-260D-4414-9F32-91F05C5B8075",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.nothing",
+            "WFWorkflowActionParameters": {
+                "UUID": "77C24197-A76D-4F39-AB6D-E7F3866A873C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E38B882C-260D-4414-9F32-91F05C5B8075",
+                "UUID": "592CDEE5-E92C-46C3-92A9-C9177DA4A178"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "390D4589-0B99-40C0-B888-55A890AE5735",
+                "UUID": "65E5DC6B-2E7B-45F0-B840-E4D7B4B9BCE6"
             }
         },
         {
@@ -518,12 +642,12 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "D3053823-44AB-445A-921D-6BCFBCE4C616",
-                    "workflowName": "🌻 My Life On This Day",
+                    "workflowIdentifier": "B2F430B0-7EC1-401A-89B0-B31F95B9C0D5",
+                    "workflowName": "✏️ Create New Journal",
                     "isSelf": false
                 },
-                "UUID": "468FDFC4-5E49-44C6-8C7D-7DEE7B264B74",
-                "WFWorkflowName": "🌻 My Life On This Day"
+                "UUID": "BDE97179-ABA9-4781-AE8F-7EF8D8765FA7",
+                "WFWorkflowName": "✏️ Create New Journal"
             }
         },
         {
@@ -536,12 +660,12 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "B2F430B0-7EC1-401A-89B0-B31F95B9C0D5",
-                    "workflowName": "✏️ Create New Journal",
+                    "workflowIdentifier": "D3053823-44AB-445A-921D-6BCFBCE4C616",
+                    "workflowName": "🌻 My Life On This Day",
                     "isSelf": false
                 },
-                "UUID": "BDE97179-ABA9-4781-AE8F-7EF8D8765FA7",
-                "WFWorkflowName": "✏️ Create New Journal"
+                "UUID": "468FDFC4-5E49-44C6-8C7D-7DEE7B264B74",
+                "WFWorkflowName": "🌻 My Life On This Day"
             }
         },
         {
@@ -968,13 +1092,13 @@
                 "WFFolder": {
                     "fileLocation": {
                         "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals/Fitness/Darebee/ExerciseOfTheDay",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/BCF96BB5-C0C4-44A7-8C03-2D21A4ABEB46",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals/Fitness/Darebee",
                         "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/43B6DF9B-EA24-427B-A196-0A635628B03A/fe97822ba7e6cc51e10de70ab7d67b8b1fab080f"
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/44393660-57BA-418C-A491-43364D2C5144/60704bbc170b93f0563c275b00c7bbf1ac7b9cd6"
                     },
-                    "filename": "ExerciseOfTheDay",
-                    "displayName": "ExerciseOfTheDay"
+                    "filename": "Darebee",
+                    "displayName": "Darebee"
                 },
                 "UUID": "1B47D969-7940-4B66-B199-99D0D707D36D",
                 "Recursive": true
@@ -1171,9 +1295,8 @@
     "WFWorkflowInputContentItemClasses": [],
     "WFWorkflowImportQuestions": [],
     "WFWorkflowTypes": [
-        "Watch",
         "QuickActions",
-        "WFWorkflowTypeShowInSearch"
+        "Watch"
     ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false

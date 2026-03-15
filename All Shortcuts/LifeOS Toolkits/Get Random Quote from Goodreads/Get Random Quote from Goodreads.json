@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [
         "WFDictionaryContentItem"
     ],
@@ -15,7 +15,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.url",
             "WFWorkflowActionParameters": {
                 "CustomOutputName": "baseURL",
-                "WFURLActionURL": "https://www.goodreads.com",
+                "WFURLActionURL": "goodreads.com",
                 "UUID": "975F8846-9EA0-4693-943E-B6D905029CF9"
             }
         },
@@ -530,25 +530,51 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "OutputUUID": "CF639C4A-BEDD-4935-8752-A77C31772FB2",
+                        "Type": "ActionOutput",
+                        "OutputName": "quote"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "C7B8EB0C-A65C-47AC-9BDB-FCCBCE7107EC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.trimwhitespace",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "CF639C4A-BEDD-4935-8752-A77C31772FB2",
+                                "OutputUUID": "C7B8EB0C-A65C-47AC-9BDB-FCCBCE7107EC",
                                 "Type": "ActionOutput",
-                                "OutputName": "quote"
+                                "OutputName": "Split Text"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "WFReplaceTextRegularExpression": true,
-                "UUID": "6E6E2017-B699-4D5C-B722-759A0E095D53",
-                "WFReplaceTextReplace": " ",
-                "WFReplaceTextFind": "[\\r\\n]+"
+                "UUID": "D0566F31-EE5B-4B30-BF20-359CD70EA84A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+            "WFWorkflowActionParameters": {
+                "WFTextSeparator": "Spaces",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "D0566F31-EE5B-4B30-BF20-359CD70EA84A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "6A406627-9EE6-49EF-982E-871AB571AAB8"
             }
         },
         {
@@ -657,9 +683,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "6E6E2017-B699-4D5C-B722-759A0E095D53",
+                                                "OutputUUID": "6A406627-9EE6-49EF-982E-871AB571AAB8",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Updated Text"
+                                                "OutputName": "Combined Text"
                                             }
                                         }
                                     },

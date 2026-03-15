@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -37,7 +37,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "CurrentDate"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -48,7 +48,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ExtensionInput"
+                                "Type": "CurrentDate"
                             }
                         }
                     },
@@ -187,9 +187,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "UUID": "D7C76B18-579A-49CE-8F99-94A88AFD6CD2"
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "538A133F-F9BA-457F-949C-4D91057770F2",
+                        "Type": "ActionOutput",
+                        "OutputName": "weekNumber"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "652AD141-F55D-4149-BB65-20A18A1FC8D4",
+                    "workflowName": "isOnline",
+                    "isSelf": false
+                },
+                "UUID": "271C5833-F467-4F8D-9AC3-EE8A40D98808",
+                "WFWorkflowName": "isOnline"
             }
         },
         {
@@ -199,22 +213,28 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "D7C76B18-579A-49CE-8F99-94A88AFD6CD2",
                             "Type": "ActionOutput",
-                            "OutputName": "Current IP Address"
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "271C5833-F467-4F8D-9AC3-EE8A40D98808",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "407418B5-89AE-4D05-A5EC-A555B194B46F",
-                "WFCondition": 100
+                "WFCondition": 4
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFNumberValue": "0",
+                "GroupingIdentifier": "CDD6415B-95C6-43BA-9E84-72618D77AE74",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
@@ -227,59 +247,8 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFDate": {
-                    "Value": {
-                        "Type": "CurrentDate",
-                        "Aggrandizements": [
-                            {
-                                "WFDateFormatStyle": "Medium",
-                                "WFISO8601IncludeTime": false,
-                                "Type": "WFDateFormatVariableAggrandizement",
-                                "WFTimeFormatStyle": "None"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "GroupingIdentifier": "92F6AD53-064D-4430-91FC-A9036AFE69B7",
-                "WFCondition": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
-            "WFWorkflowActionParameters": {
-                "WFAllowsMultilineText": false,
-                "WFAskActionDefaultAnswer": "",
-                "UUID": "90F7C679-308B-4D85-8242-D633DF764325",
-                "WFAskActionPrompt": {
-                    "Value": {
-                        "string": "📍 Where were I on ￼?",
-                        "attachmentsByRange": {
-                            "{19, 1}": {
-                                "Type": "ExtensionInput",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDateContentItem"
-                                    },
-                                    {
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "92F6AD53-064D-4430-91FC-A9036AFE69B7",
-                "WFControlFlowMode": 1
+                "WFNumberValue": "0",
+                "WFCondition": 3
             }
         },
         {
@@ -342,11 +311,25 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B288C125-A3DB-41FD-A158-CDAA40E67DCB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "location"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "92F6AD53-064D-4430-91FC-A9036AFE69B7",
-                "UUID": "9BABB6FF-26E1-4F5E-A266-75E22F1C1D04"
+                "GroupingIdentifier": "CDD6415B-95C6-43BA-9E84-72618D77AE74",
+                "UUID": "CC7498A7-7998-498B-B359-66571A6A06B4"
             }
         },
         {
@@ -642,7 +625,7 @@
                 },
                 "UUID": "11713792-0A81-41A9-8A85-C01662D78183",
                 "WFCalendarItemCalendar": "🗓️ Scheduled",
-                "WFAlertCustomTime": "16:30",
+                "WFAlertCustomTime": "12:34",
                 "WFAlertEnabled": "Alert"
             }
         },
@@ -875,8 +858,9 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "10A27A05-4D9A-4DF2-8C8E-6DE3B24E9509",
-                "UUID": "8625965F-F837-4BA3-B923-7137D2073235"
+                "UUID": "8625965F-F837-4BA3-B923-7137D2073235",
+                "CustomOutputName": "mainContent",
+                "GroupingIdentifier": "10A27A05-4D9A-4DF2-8C8E-6DE3B24E9509"
             }
         },
         {
@@ -910,7 +894,7 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "GroupingIdentifier": "3CA6BD0E-071B-4DD8-B1E8-553F6723B19E",
-                "WFCondition": 1
+                "WFCondition": 3
             }
         },
         {
@@ -967,8 +951,30 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "79ED56F7-B905-43BF-92A1-8DECAB88BCAA",
-                "UUID": "D331311C-7B84-4F4E-8846-DFCEDDE79AE4"
+                "UUID": "D331311C-7B84-4F4E-8846-DFCEDDE79AE4",
+                "CustomOutputName": "metadata",
+                "GroupingIdentifier": "79ED56F7-B905-43BF-92A1-8DECAB88BCAA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "<!-- image-of-the-day -->",
+                "UUID": "8042FEBF-E38B-4378-9EE1-AD43F291AEA9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8042FEBF-E38B-4378-9EE1-AD43F291AEA9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "imageOfTheDay"
             }
         },
         {
@@ -984,7 +990,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "---\ndate: ￼\ndayOfWeek: ￼\nweekNumber: ￼\nlocation: ￼\n￼\n---\n\n# 📝 ￼ (￼)\n\n◀ [￼](￼.md) | [￼](￼.md) ▶\n\n> ￼\n\n￼",
+                        "string": "---\ndate: ￼\ndayOfWeek: ￼\nweekNumber: ￼\nlocation: ￼\n￼\n---\n\n# 📝 ￼ (￼)\n\n◀ [￼](￼.md) | [￼](￼.md) ▶\n\n> ￼\n\n￼\n\n￼",
                         "attachmentsByRange": {
                             "{76, 1}": {
                                 "Type": "ActionOutput",
@@ -1012,7 +1018,7 @@
                             "{51, 1}": {
                                 "OutputUUID": "D331311C-7B84-4F4E-8846-DFCEDDE79AE4",
                                 "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
+                                "OutputName": "metadata"
                             },
                             "{63, 1}": {
                                 "OutputUUID": "4E99DF06-AAC9-42F4-83CC-FEC8DA3D556E",
@@ -1032,14 +1038,12 @@
                                 ]
                             },
                             "{102, 1}": {
-                                "OutputUUID": "8625965F-F837-4BA3-B923-7137D2073235",
-                                "Type": "ActionOutput",
-                                "OutputName": "Repeat Results"
+                                "VariableName": "imageOfTheDay",
+                                "Type": "Variable"
                             },
                             "{49, 1}": {
-                                "OutputUUID": "9BABB6FF-26E1-4F5E-A266-75E22F1C1D04",
-                                "Type": "ActionOutput",
-                                "OutputName": "If Result"
+                                "VariableName": "location",
+                                "Type": "Variable"
                             },
                             "{73, 1}": {
                                 "Type": "ActionOutput",
@@ -1062,6 +1066,11 @@
                                 "OutputUUID": "CE2D5C0A-DB93-4CDC-B257-0C9284EA1788",
                                 "Type": "ActionOutput",
                                 "OutputName": "EEEE"
+                            },
+                            "{105, 1}": {
+                                "OutputUUID": "8625965F-F837-4BA3-B923-7137D2073235",
+                                "Type": "ActionOutput",
+                                "OutputName": "mainContent"
                             },
                             "{88, 1}": {
                                 "Type": "ActionOutput",

@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -25,19 +25,6 @@
                 },
                 "UUID": "0BDD8260-B343-4D53-AF90-1E3D2FC9814A",
                 "WFWorkflowName": "Template - Folder Shortcuts Header"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
-            "WFWorkflowActionParameters": {
-                "WFDeviceDetail": "Current Brightness",
-                "UUID": "A7E65C7E-505F-48A8-A6D8-95D546A33FC8"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
-            "WFWorkflowActionParameters": {
-                "WFBrightness": 0
             }
         },
         {
@@ -77,16 +64,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setbrightness",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFBrightness": {
-                    "Value": {
-                        "OutputUUID": "A7E65C7E-505F-48A8-A6D8-95D546A33FC8",
-                        "Type": "ActionOutput",
-                        "OutputName": "Current Brightness"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
+                "GroupingIdentifier": "2E7E5B73-1BFB-4986-8AB2-7516C2B36ADE",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "7CBF7FBA-4CB6-453C-97B8-FE6837E4A699",
+                            "Type": "ActionOutput",
+                            "OutputName": "Count"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFNumberValue": "3",
+                "WFCondition": 1
             }
         },
         {
@@ -136,18 +130,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "Text Divider",
-                "UUID": "05532A61-16F1-48E2-AD2B-AA560AA63B75"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "▍￼ / ￼\n￼\n🤖 Which one?",
+                        "string": "▍￼ / ￼\n──────────────\n🤖 Which one?",
                         "attachmentsByRange": {
                             "{5, 1}": {
                                 "OutputUUID": "7CBF7FBA-4CB6-453C-97B8-FE6837E4A699",
@@ -157,11 +144,6 @@
                             "{1, 1}": {
                                 "VariableName": "Repeat Index",
                                 "Type": "Variable"
-                            },
-                            "{7, 1}": {
-                                "OutputUUID": "05532A61-16F1-48E2-AD2B-AA560AA63B75",
-                                "Type": "ActionOutput",
-                                "OutputName": "Value"
                             }
                         }
                     },
@@ -845,10 +827,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.reminders.showlist",
-            "WFWorkflowActionParameters": {}
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
@@ -900,6 +878,14 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "2E7E5B73-1BFB-4986-8AB2-7516C2B36ADE",
+                "UUID": "7EA822FD-3012-42FD-BF8D-678F1D0559C3"
             }
         },
         {

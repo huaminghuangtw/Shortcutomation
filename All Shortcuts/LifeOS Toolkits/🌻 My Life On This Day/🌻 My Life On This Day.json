@@ -1,11 +1,11 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "1106",
+    "WFWorkflowMinimumClientVersion": 1106,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4046.0.2.2",
+    "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -274,30 +274,15 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "Marconi Union - Weightless",
-                "UUID": "82F57C01-4667-4FFE-933D-6C673B606EF3"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "82F57C01-4667-4FFE-933D-6C673B606EF3",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
                 "WFWorkflow": {
-                    "workflowIdentifier": "9B8C3053-A3BD-4CDF-91D3-753DC957EB9D",
-                    "workflowName": "▶️ Play Spotify Music By Topic",
+                    "workflowIdentifier": "35823B12-88E1-437C-AF56-CA9488AB93E2",
+                    "workflowName": "Play Background Sound",
                     "isSelf": false
                 },
-                "UUID": "583BA708-3DE7-4A01-B7DF-52E4672BFA16",
-                "WFWorkflowName": "▶️ Play Spotify Music By Topic"
+                "WFWorkflowName": "Play Background Sound",
+                "UUID": "583BA708-3DE7-4A01-B7DF-52E4672BFA16"
             }
         },
         {
@@ -450,6 +435,32 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+            "WFWorkflowActionParameters": {
+                "WFDelayTime": 3
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuPrompt": "📝 Image of the Day?",
+                "WFControlFlowMode": 0,
+                "WFMenuItems": [
+                    "✅ Yes",
+                    "❌ No"
+                ],
+                "GroupingIdentifier": "B4FA89AD-C320-4C21-A14A-C30E74797DFB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "✅ Yes",
+                "GroupingIdentifier": "B4FA89AD-C320-4C21-A14A-C30E74797DFB",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -494,17 +505,148 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFMenuItemTitle": "❌ No",
+                "GroupingIdentifier": "B4FA89AD-C320-4C21-A14A-C30E74797DFB",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "UUID": "24916406-7ED2-42BC-954D-A753F780408B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B4FA89AD-C320-4C21-A14A-C30E74797DFB",
+                "UUID": "1BEAA609-B1C2-4FD7-B0BC-074842E405F0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "9E30194E-01DD-4582-BE03-55B0B31CE488",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
+                        "Type": "CurrentDate"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "A19BDAC3-4E4C-4948-A64D-47A1E23B2C72"
+                "CustomOutputName": "filePath",
+                "UUID": "182D82F2-1625-4CC2-B5A1-05211ED5E509",
+                "WFWorkflow": {
+                    "workflowIdentifier": "C69C14F5-C839-4081-BFBB-85636C0A708B",
+                    "workflowName": "_Get Journal File Path",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "_Get Journal File Path"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFGetFilePath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "182D82F2-1625-4CC2-B5A1-05211ED5E509",
+                                "Type": "ActionOutput",
+                                "OutputName": "filePath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
+                    },
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
+                },
+                "UUID": "7DE3D119-FDD6-48C4-A2CC-0D8007CB5AA8"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "7DE3D119-FDD6-48C4-A2CC-0D8007CB5AA8",
+                                "Type": "ActionOutput",
+                                "OutputName": "File"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextReplace": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "1BEAA609-B1C2-4FD7-B0BC-074842E405F0",
+                                "Type": "ActionOutput",
+                                "OutputName": "Menu Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFReplaceTextCaseSensitive": false,
+                "UUID": "CF341818-4C9D-4A0C-A809-14E5F7725592",
+                "WFReplaceTextFind": "<!-- image-of-the-day -->"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/605C0ACE-E417-46F1-92D6-DCE07191E691/cd3551b64a22879ecb35ed82e0b007ce35786f8e"
+                    },
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CF341818-4C9D-4A0C-A809-14E5F7725592",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "B249D7CB-D872-4010-93B5-24925C6FC21A",
+                "WFSaveFileOverwrite": true,
+                "WFFileDestinationPath": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "182D82F2-1625-4CC2-B5A1-05211ED5E509",
+                                "Type": "ActionOutput",
+                                "OutputName": "filePath"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                }
             }
         },
         {
@@ -560,25 +702,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "com.apple.UniversalAccess.UASettingsShortcuts.UAToggleBackgroundSoundsIntent",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "709674E1-9DB5-4364-ABE1-841501F4F623",
-                    "workflowName": "Spotify - Pause Playback",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "Spotify - Pause Playback",
-                "UUID": "8CD1840B-68ED-47DC-8CCA-3F6BDD3571C2"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.quit.app",
-            "WFWorkflowActionParameters": {
-                "WFApp": {
-                    "BundleIdentifier": "com.spotify.client",
-                    "Name": "Spotify",
-                    "TeamIdentifier": "2FNC3A47ZF"
-                }
+                "UUID": "FC03B5D9-C2E2-41F8-A78C-E775FB0DD9F1"
             }
         },
         {
