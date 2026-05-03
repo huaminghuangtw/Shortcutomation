@@ -16,21 +16,22 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
+                "WFFile": {
+                    "fileLocation": {
+                        "WFFileLocationType": "iCloud",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Evergreen-Lists",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/8CD2CA57-2188-4E5D-837F-C5B0E5590615/71e8f2eb7ff89ae8da8b03f13278ef0f6e392d2a"
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "filename": "Evergreen-Lists",
+                    "displayName": "Evergreen-Lists"
                 },
-                "WFWorkflow": {
-                    "workflowIdentifier": "6D49EA2A-0E94-4DFA-9FE5-DD6ABA97B368",
-                    "workflowName": "Slugify Text",
-                    "isSelf": false
-                },
-                "UUID": "FB2D4527-0F99-4047-BE7A-FB5C911F1233",
-                "WFWorkflowName": "Slugify Text"
+                "WFGetFilePath": "/",
+                "CustomOutputName": "Evergreen-Lists",
+                "UUID": "E9DD770A-7860-4AF6-9B3A-24BADF303510"
             }
         },
         {
@@ -41,24 +42,19 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "FB2D4527-0F99-4047-BE7A-FB5C911F1233",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "WFFolder": {
-                    "fileLocation": {
-                        "WFFileLocationType": "iCloud",
-                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
-                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Evergreen-Lists",
-                        "appContainerBundleIdentifier": "md.obsidian",
-                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/70E84BB3-A9B1-4897-8FFA-8765BB8D22AD/081372c23c296cb9dad621c423628c7356f39415"
+                    "Value": {
+                        "OutputUUID": "E9DD770A-7860-4AF6-9B3A-24BADF303510",
+                        "Type": "ActionOutput",
+                        "OutputName": "Evergreen-Lists"
                     },
-                    "filename": "Evergreen-Lists",
-                    "displayName": "Evergreen-Lists"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "1EEE1390-1E2E-44B2-ACA2-F00B06A36196"
             }
@@ -68,19 +64,24 @@
             "WFWorkflowActionParameters": {
                 "Script": {
                     "Value": {
-                        "string": "pandoc \"￼/￼.md\" -o \"￼/￼.pdf\" \\\n  --pdf-engine=xelatex \\\n  -V geometry:margin=0.75in \\\n  --table-of-contents",
+                        "string": "SCRIPTS=\"￼/.scripts\"\npandoc \"￼/￼.md\" \\\n  -o \"￼/￼.pdf\" \\\n  --pdf-engine=xelatex \\\n  --lua-filter=\"$SCRIPTS/my_lua_filter.lua\" \\\n  --filter=\"$SCRIPTS/my_pandoc_filter.js\" \\\n  -V geometry:margin=0.75in \\\n  --table-of-contents \\\n  -H \"$SCRIPTS/my_header.tex\"",
                         "attachmentsByRange": {
-                            "{10, 1}": {
-                                "OutputUUID": "FB2D4527-0F99-4047-BE7A-FB5C911F1233",
+                            "{9, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                                "OutputName": "Evergreen-Lists",
+                                "OutputUUID": "E9DD770A-7860-4AF6-9B3A-24BADF303510",
+                                "Aggrandizements": [
+                                    {
+                                        "PropertyUserInfo": "WFFilePath",
+                                        "Type": "WFPropertyVariableAggrandizement",
+                                        "PropertyName": "File Path"
+                                    }
+                                ]
                             },
-                            "{22, 1}": {
-                                "OutputUUID": "FB2D4527-0F99-4047-BE7A-FB5C911F1233",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
+                            "{47, 1}": {
+                                "Type": "ExtensionInput"
                             },
-                            "{20, 1}": {
+                            "{29, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Created Folder",
                                 "OutputUUID": "1EEE1390-1E2E-44B2-ACA2-F00B06A36196",
@@ -92,7 +93,7 @@
                                     }
                                 ]
                             },
-                            "{8, 1}": {
+                            "{45, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Created Folder",
                                 "OutputUUID": "1EEE1390-1E2E-44B2-ACA2-F00B06A36196",
@@ -103,6 +104,9 @@
                                         "PropertyName": "File Path"
                                     }
                                 ]
+                            },
+                            "{31, 1}": {
+                                "Type": "ExtensionInput"
                             }
                         }
                     },
@@ -122,8 +126,7 @@
     "WFWorkflowImportQuestions": [],
     "WFQuickActionSurfaces": [],
     "WFWorkflowTypes": [
-        "Watch",
-        "WFWorkflowTypeShowInSearch"
+        "Watch"
     ],
     "WFWorkflowHasShortcutInputVariables": true
 }

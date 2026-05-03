@@ -141,6 +141,26 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                        "Type": "ActionOutput",
+                        "OutputName": "wordOfTheDay"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
+                    "workflowName": "Build Google Search URL",
+                    "isSelf": false
+                },
+                "UUID": "48BEF6B7-9434-48C8-AC33-0537664D6FE2",
+                "WFWorkflowName": "Build Google Search URL"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
@@ -380,41 +400,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "wordPfTheDayURL",
-                "WFURLActionURL": {
-                    "Value": {
-                        "string": "￼/￼-￼",
-                        "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
-                                "Type": "ActionOutput",
-                                "OutputName": "wordOfTheDay"
-                            },
-                            "{4, 1}": {
-                                "Type": "CurrentDate",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
-                                    }
-                                ]
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "27907921-5F28-475E-9AE5-47418DD0F3B2",
-                                "Type": "ActionOutput",
-                                "OutputName": "URL"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "3DB72667-CE14-43FD-9614-7EE4668B4891"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
             "WFWorkflowActionParameters": {
                 "WFGetGroupType": "Group At Index",
@@ -457,7 +442,7 @@
             "WFWorkflowActionParameters": {
                 "WFMatchTextPattern": {
                     "Value": {
-                        "string": "What It Means\\n￼\\nSee the entry",
+                        "string": "What It Means\\n￼\\n//",
                         "attachmentsByRange": {
                             "{15, 1}": {
                                 "OutputUUID": "FA25C935-30A6-4730-95D6-F9F9CBB215B2",
@@ -558,6 +543,21 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
+            "WFWorkflowActionParameters": {
+                "WFCaseType": "Capitalize with Title Case",
+                "text": {
+                    "Value": {
+                        "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                        "Type": "ActionOutput",
+                        "OutputName": "wordOfTheDay"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "3900A148-6F6F-409F-B86F-F3BC51C08E96"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -573,19 +573,22 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
+                "WFReplaceTextRegularExpression": true,
+                "WFReplaceTextCaseSensitive": false,
+                "UUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
                 "WFReplaceTextReplace": {
                     "Value": {
                         "string": "**[￼ ￼](￼)** (￼)",
                         "attachmentsByRange": {
                             "{8, 1}": {
-                                "OutputUUID": "3DB72667-CE14-43FD-9614-7EE4668B4891",
+                                "OutputUUID": "48BEF6B7-9434-48C8-AC33-0537664D6FE2",
                                 "Type": "ActionOutput",
-                                "OutputName": "wordPfTheDayURL"
+                                "OutputName": "Shortcut Result"
                             },
                             "{3, 1}": {
-                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
+                                "OutputUUID": "3900A148-6F6F-409F-B86F-F3BC51C08E96",
                                 "Type": "ActionOutput",
-                                "OutputName": "wordOfTheDay"
+                                "OutputName": "Updated Text"
                             },
                             "{5, 1}": {
                                 "OutputUUID": "99CC98DE-53B8-42D9-B917-07073779AEC7",
@@ -601,39 +604,19 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
                 "WFReplaceTextFind": {
                     "Value": {
-                        "string": "￼",
+                        "string": "^￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "730BF60C-ACC4-4CB1-97CA-75CBA99710F4",
-                                "Type": "ActionOutput",
-                                "OutputName": "wordOfTheDay"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "#BuJo/💡TIL  ￼",
-                        "attachmentsByRange": {
-                            "{13, 1}": {
-                                "OutputUUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
+                            "{1, 1}": {
+                                "OutputUUID": "3900A148-6F6F-409F-B86F-F3BC51C08E96",
                                 "Type": "ActionOutput",
                                 "OutputName": "Updated Text"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "4D7B8DCD-DD54-40DA-8D7C-106C9F45D86F"
+                }
             }
         },
         {
@@ -667,12 +650,12 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "￼",
+                                        "string": "#BuJo/💡TIL ￼",
                                         "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "4D7B8DCD-DD54-40DA-8D7C-106C9F45D86F",
+                                            "{12, 1}": {
+                                                "OutputUUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Text"
+                                                "OutputName": "Updated Text"
                                             }
                                         }
                                     },
@@ -769,9 +752,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "9B2D4F43-A99E-4475-9622-5C682946BE0F",
+                                                "OutputUUID": "9E8DD8B4-9769-4A6F-9AC7-DC4DB17C8C3B",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "definition"
+                                                "OutputName": "Updated Text"
                                             }
                                         }
                                     },

@@ -159,31 +159,32 @@ hr {
   <b>_Evergreen List to PDF</b>
   (4 actions, 6 KB)
 </button>
-<button class="button " id="m0">
-0 Run Shortcut <span class="box">Slugify Text</span>　» <i>1</i> <span class="magic" onclick="magictap(2)">2</span></button><div class="content">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div>
-<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "6D49EA2A-0E94-4DFA-9FE5-DD6ABA97B368",
-   "workflowName": "Slugify Text",
-   "isSelf": false
-}</div></div></div>
-<hr><button class="button gBlue" id="m1">
-1 Create Folder <span class="box"><span class="var"><b>[0 Shortcut Result]</b></span></span>　»</button><div class="content">
-<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
+<button class="button gBlue" id="m0">
+0 Get File at Path <span class="box">/</span> from Folder <b>　➔ Evergreen-Lists</b>　» <i>1</i> <span class="magic" onclick="magictap(2)">2</span></button><div class="content">
+<div class="row"><div class="col1">File</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
       "WFFileLocationType": "iCloud",
-      "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/94C360DB-8C66-408D-8531-5552FAD57577",
+      "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
       "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Evergreen-Lists",
       "appContainerBundleIdentifier": "md.obsidian",
-      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/70E84BB3-A9B1-4897-8FFA-8765BB8D22AD/081372c23c296cb9dad621c423628c7356f39415"
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/8CD2CA57-2188-4E5D-837F-C5B0E5590615/71e8f2eb7ff89ae8da8b03f13278ef0f6e392d2a"
    },
    "filename": "Evergreen-Lists",
    "displayName": "Evergreen-Lists"
 }</div></div></div>
+<hr><button class="button gBlue" id="m1">
+1 Create Folder <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button><div class="content">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[0 Evergreen-Lists]</b></span></div></div></div>
 <hr><button class="button " id="m2">
 2 Run Shell Script</button><div class="content">
-<div class="row"><div class="col1">Script</div><span style="display:none">: </span><div class="col2">pandoc "<span class="var"><b>[1 Created Folder</b>’s File Path<b>]</b></span>/<span class="magic" onclick="magictap(0)"><b>[0 Shortcut Result]</b></span>.md" -o "<span class="var"><b>[1 Created Folder</b>’s File Path<b>]</b></span>/<span class="magic" onclick="magictap(0)"><b>[0 Shortcut Result]</b></span>.pdf" \
+<div class="row"><div class="col1">Script</div><span style="display:none">: </span><div class="col2">SCRIPTS="<span class="magic" onclick="magictap(0)"><b>[0 Evergreen-Lists</b>’s File Path<b>]</b></span>/.scripts"
+pandoc "<span class="var"><b>[1 Created Folder</b>’s File Path<b>]</b></span>/<span class="var"><b>[Shortcut Input]</b></span>.md" \
+  -o "<span class="var"><b>[1 Created Folder</b>’s File Path<b>]</b></span>/<span class="var"><b>[Shortcut Input]</b></span>.pdf" \
   --pdf-engine=xelatex \
+  --lua-filter="$SCRIPTS/my_lua_filter.lua" \
+  --filter="$SCRIPTS/my_pandoc_filter.js" \
   -V geometry:margin=0.75in \
-  --table-of-contents</div></div></div>
+  --table-of-contents \
+  -H "$SCRIPTS/my_header.tex"</div></div></div>
 <button class="gGray" id="m3">
 3 Stop This Shortcut</button>
 <script>

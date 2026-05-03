@@ -269,7 +269,7 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼ 📝",
+                        "string": "￼ 📝💪",
                         "attachmentsByRange": {
                             "{0, 1}": {
                                 "OutputUUID": "20BDEB1E-E57E-457C-A959-BA23D38F7AF6",
@@ -291,6 +291,75 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.date",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "modified_date"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "modified_date",
+                "UUID": "53C33CC7-B91F-4DD4-9387-AD9408BB3271"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "53C33CC7-B91F-4DD4-9387-AD9408BB3271",
+                            "Type": "ActionOutput",
+                            "OutputName": "modified_date"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B4B5F793-B025-469D-AB92-C36604FEEFDD",
+                "WFCondition": 1002
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ 💪",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "20BDEB1E-E57E-457C-A959-BA23D38F7AF6",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1B36B71F-196C-4F06-84F9-61BBB47360D3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B4B5F793-B025-469D-AB92-C36604FEEFDD",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -302,6 +371,14 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "A3C5D48A-CAB6-47FB-AFA2-F9190CF791F0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B4B5F793-B025-469D-AB92-C36604FEEFDD",
+                "UUID": "D1D9D1CF-194E-4243-A93F-D4D05EF63ADE"
             }
         },
         {
@@ -409,6 +486,18 @@
                     "WFSerializationType": "WFTextTokenString"
                 },
                 "UUID": "42DC2949-DA11-41CA-BB34-5A4BFD0D7ADF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "09C6711D-3958-4AF4-91F8-CD89197F7213",
+                    "workflowName": "Alert Sound Effect",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Alert Sound Effect",
+                "UUID": "77FAEF0C-D7FA-4217-8084-41B571B5FCA7"
             }
         },
         {

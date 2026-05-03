@@ -34,7 +34,7 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "💭 Journal Prompt",
+                "WFConditionalActionString": "journal-prompt",
                 "GroupingIdentifier": "E7D9955A-3C85-465D-8C86-595D3F45A4AF",
                 "WFCondition": 4
             }
@@ -192,10 +192,119 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "🤔 **￼**> ￼",
+                        "attachmentsByRange": {
+                            "{10, 1}": {
+                                "OutputUUID": "690D3D8C-1418-4356-881A-4FD392BD94CD",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            },
+                            "{5, 1}": {
+                                "OutputUUID": "35D34830-893B-4E61-BBAB-C7EEE438A673",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "890F44BE-D98D-4E3C-991D-E4EEC60B3466"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "🐧 Log Journal"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "890F44BE-D98D-4E3C-991D-E4EEC60B3466",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Text"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "5411DA49-3145-455B-9226-AA3DED6EED94"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5411DA49-3145-455B-9226-AA3DED6EED94",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "AEF369CA-D36B-494B-A978-14DA61000A87",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AEF369CA-D36B-494B-A978-14DA61000A87",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "openURL"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "D36074C9-C7D1-4340-B63F-ACF3DFCEDE0C",
-                "WFControlFlowMode": 2
+                "UUID": "B848D93C-CA03-419F-A342-083B93787889"
             }
         },
         {
@@ -641,6 +750,24 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionParameters": {
+                "keyPath": {
+                    "Value": {
+                        "string": "My Reminders.evergreenLists.￼.title",
+                        "attachmentsByRange": {
+                            "{28, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "CustomOutputName": "title",
+                "UUID": "2144D804-13E9-4B9E-9BB3-DB3015DEBB5D"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -659,7 +786,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "Type": "ExtensionInput"
+                                                "OutputUUID": "2144D804-13E9-4B9E-9BB3-DB3015DEBB5D",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "title"
                                             }
                                         }
                                     },

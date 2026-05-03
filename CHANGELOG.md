@@ -1,4 +1,4 @@
-### ✨ 6 New Shortcuts
+### ✨ 11 New Shortcuts
 
 ---
 
@@ -6,23 +6,28 @@
 
 ---
 
-* [Deep Links (1)](https://shortcutomation.com/gallery/deep-links)
+* [Utilities (2)](https://shortcutomation.com/gallery/utilities)
 
-    * [Threads](https://shortcutomation.com/threads)
+    * [Gate Index of List Item - Last Occurrence](https://shortcutomation.com/gate-index-of-list-item-last-occurrence)
+    * [Get Index of List Item - First Occurrence](https://shortcutomation.com/get-index-of-list-item-first-occurrence)
 
-* [Brain Food (1)](https://shortcutomation.com/gallery/brain-food)
+* [Obsidian (4)](https://shortcutomation.com/gallery/obsidian)
 
-    * [📖 Summarize Blog Post](https://shortcutomation.com/summarize-blog-post)
+    * [Obsidian - Show Properties](https://shortcutomation.com/obsidian-show-properties)
+    * [Obsidian - Show Footnotes](https://shortcutomation.com/obsidian-show-footnotes)
+    * [Obsidian - Update All Relative Links](https://shortcutomation.com/obsidian-update-all-relative-links)
+    * [Obsidian - Lint All Files](https://shortcutomation.com/obsidian-lint-all-files)
 
-* [Shared (2)](https://shortcutomation.com/gallery/shared)
+* [LifeOS Toolkits (2)](https://shortcutomation.com/gallery/lifeos-toolkits)
 
-    * [持續買進](https://shortcutomation.com/持續買進)
-    * [科學人雜誌](https://shortcutomation.com/科學人雜誌)
+    * [🎭 Today in History](https://shortcutomation.com/today-in-history)
+    * [🍄 One Good Fact](https://shortcutomation.com/one-good-fact)
 
-* [LifeOS Toolkits (1)](https://shortcutomation.com/gallery/lifeos-toolkits)
+* [Automation Modules (1)](https://shortcutomation.com/gallery/automation-modules)
 
-    * [👨🏽‍🔬 研之有物](https://shortcutomation.com/研之有物)
+    * [When "Calendar" is opened](https://shortcutomation.com/when-calendar-is-opened)
 
-* [Text Processing (1)](https://shortcutomation.com/gallery/text-processing)
+* [Automation - Monthly (2)](https://shortcutomation.com/gallery/automation-monthly)
 
-    * [containsChineseCharacters](https://shortcutomation.com/containschinesecharacters)
+    * [25::Export Reddit Subscriptions](https://shortcutomation.com/25export-reddit-subscriptions)
+    * [25::Export YouTube Subscriptions](https://shortcutomation.com/25export-youtube-subscriptions)
