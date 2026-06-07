@@ -1,0 +1,207 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFBooleanContentItem",
+        "WFNumberContentItem",
+        "WFDictionaryContentItem",
+        "WFStringContentItem",
+        "WFDateContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+            "WFWorkflowActionParameters": {
+                "WFFileErrorIfNotFound": true,
+                "WFFile": {
+                    "fileLocation": {
+                        "relativeSubpath": "JSONFiles",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+                        "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/993EBF5F-802A-4C29-900B-2D92435BCE18/79140c8e5114718096d7264bc1dd0d2da9b586ba",
+                        "WFFileLocationType": "Documents"
+                    },
+                    "filename": "JSONFiles",
+                    "displayName": "JSONFiles"
+                },
+                "WFGetFilePath": {
+                    "Value": {
+                        "string": "￼.json",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "filename"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1F1879E8-42E9-4AB9-BAD7-574685F1BA8B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "key",
+                "UUID": "24951227-154E-4A23-A4AF-B265B4EC27DC",
+                "WFDictionaryKey": "key"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "24951227-154E-4A23-A4AF-B265B4EC27DC",
+                            "Type": "ActionOutput",
+                            "OutputName": "key"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "DDD4B1F8-8C8F-4D1E-BF8E-3F34AB5E0579",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1F1879E8-42E9-4AB9-BAD7-574685F1BA8B",
+                        "Type": "ActionOutput",
+                        "OutputName": "File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "Type": "ExtensionInput",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "key"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "989C948C-4061-4E61-A97C-5D2D020E3911"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "DDD4B1F8-8C8F-4D1E-BF8E-3F34AB5E0579",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1F1879E8-42E9-4AB9-BAD7-574685F1BA8B",
+                        "Type": "ActionOutput",
+                        "OutputName": "File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "D5BF0AE3-34B1-4435-A7BB-5A9D32451A88"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+            "WFWorkflowActionParameters": {
+                "ShowWhenRun": false,
+                "text": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "D5BF0AE3-34B1-4435-A7BB-5A9D32451A88",
+                                "Type": "ActionOutput",
+                                "OutputName": "Dictionary"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "8AB2FA81-8B27-40A4-991E-DCB7D5FA5BB7",
+                "format": "minifyJSON"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DDD4B1F8-8C8F-4D1E-BF8E-3F34AB5E0579",
+                "UUID": "68E5C950-13CE-4C26-A6D8-D9C501C3CC29"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "68E5C950-13CE-4C26-A6D8-D9C501C3CC29",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0BF9FCDD-BD42-4441-A299-789F84256AE3"
+            }
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

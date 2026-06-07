@@ -12,30 +12,6 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "91FF78D5-198E-4156-80E3-4799F31796E5",
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "DeviceDetails",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "OS"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFEnumeration": "iOS",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
@@ -92,22 +68,101 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "keyPath": {
+                "WFItems": {
                     "Value": {
-                        "string": "My Apple Shortcuts.shortcutLastRunTime.￼",
-                        "attachmentsByRange": {
-                            "{39, 1}": {
-                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
-                                "Type": "ActionOutput",
-                                "OutputName": "⚙️ My Life Automation"
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "my-life-automation"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
                             }
-                        }
+                        ]
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "UUID": "A2F0E2E5-D429-42B0-A1BC-219D2632DF51"
+                "UUID": "599DF9B0-E7EB-48F0-9978-F385FD06ACBF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "shortcut-last-run-time"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "⚙️ My Life Automation"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "B9C78A74-4132-4287-9569-55A0E5E2180E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "B9C78A74-4132-4287-9569-55A0E5E2180E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "364683A1-353A-4E89-BC49-D1A36B7E1F9A",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -118,8 +173,8 @@
                     "Variable": {
                         "Value": {
                             "Type": "ActionOutput",
-                            "OutputName": "Value",
-                            "OutputUUID": "A2F0E2E5-D429-42B0-A1BC-219D2632DF51",
+                            "OutputName": "Shortcut Result",
+                            "OutputUUID": "364683A1-353A-4E89-BC49-D1A36B7E1F9A",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
@@ -155,77 +210,117 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "keyPath": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
-                                "Type": "ActionOutput",
-                                "OutputName": "⚙️ My Life Automation"
-                            }
-                        }
+                        "OutputUUID": "599DF9B0-E7EB-48F0-9978-F385FD06ACBF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "C1730817-544C-4FF3-BBD8-A599547247EB"
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "87CDBDAD-8E26-4A87-9524-A832303158E1",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BB321EA9-3F41-4B09-A40A-4A1BD1869FF6",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "87CDBDAD-8E26-4A87-9524-A832303158E1",
                             "Type": "ActionOutput",
-                            "OutputName": "Value Exists",
-                            "OutputUUID": "C1730817-544C-4FF3-BBD8-A599547247EB",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
-                                }
-                            ]
+                            "OutputName": "Shortcut Result"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
-                "GroupingIdentifier": "BB321EA9-3F41-4B09-A40A-4A1BD1869FF6",
+                "WFConditionalActionString": "{}",
+                "WFNumberValue": "0",
                 "WFCondition": 4
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "keyPath": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
-                                "Type": "ActionOutput",
-                                "OutputName": "⚙️ My Life Automation"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
+                "WFWorkflow": {
+                    "workflowIdentifier": "466F6366-387F-4236-A774-BC4214C1B594",
+                    "workflowName": "My Shortcuts for Life Automation",
+                    "isSelf": false
                 },
-                "CustomOutputName": "⚙️ My Life Automation",
-                "UUID": "29BBBDC4-5714-4331-B3E2-69803D17EF64"
+                "WFWorkflowName": "My Shortcuts for Life Automation",
+                "UUID": "FEC664E9-AA28-40F8-B9D9-F97B542ECD84"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.TransformListsIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "list2": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FEC664E9-AA28-40F8-B9D9-F97B542ECD84",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "CCBADEAB-E8B7-453E-BB51-09170DC6F9BC",
+                    "workflowName": "⚙️ My Life Automation",
+                    "isSelf": false
+                },
+                "UUID": "5218737C-0ACB-4C55-AA99-2B1F3E51D5EA",
+                "WFWorkflowName": "⚙️ My Life Automation"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "BB321EA9-3F41-4B09-A40A-4A1BD1869FF6",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "text": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "⚙️ My Life Automation",
-                        "OutputUUID": "29BBBDC4-5714-4331-B3E2-69803D17EF64",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "87CDBDAD-8E26-4A87-9524-A832303158E1",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "shortcutsToBeChecked"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E5DE3C0D-6494-413C-A91F-C77372F96B91"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+            "WFWorkflowActionParameters": {
+                "text": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "87CDBDAD-8E26-4A87-9524-A832303158E1",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
@@ -239,6 +334,20 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
+                "UUID": "7BC291A6-E165-4577-8093-E67A374A8E18"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.TransformListsIntent",
+            "WFWorkflowActionParameters": {
+                "list2": {
+                    "Value": {
+                        "OutputUUID": "7BC291A6-E165-4577-8093-E67A374A8E18",
+                        "Type": "ActionOutput",
+                        "OutputName": "Split Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "AppIntentDescriptor": {
                     "TeamIdentifier": "YG56YK5RN5",
                     "BundleIdentifier": "com.sindresorhus.Actions",
@@ -249,19 +358,9 @@
                 "CustomOutputName": "shortcutsToBeRerun",
                 "list1": {
                     "Value": {
+                        "OutputUUID": "E5DE3C0D-6494-413C-A91F-C77372F96B91",
                         "Type": "ActionOutput",
-                        "OutputName": "⚙️ My Life Automation",
-                        "OutputUUID": "29BBBDC4-5714-4331-B3E2-69803D17EF64",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "shortcutsToBeChecked"
-                            }
-                        ]
+                        "OutputName": "Split Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -515,47 +614,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "F4DEB27A-05F7-4792-B90A-4B630A6FB6C3",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "BB321EA9-3F41-4B09-A40A-4A1BD1869FF6",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "466F6366-387F-4236-A774-BC4214C1B594",
-                    "workflowName": "My Shortcuts for Life Automation",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "My Shortcuts for Life Automation",
-                "UUID": "FEC664E9-AA28-40F8-B9D9-F97B542ECD84"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "FEC664E9-AA28-40F8-B9D9-F97B542ECD84",
-                        "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "CCBADEAB-E8B7-453E-BB51-09170DC6F9BC",
-                    "workflowName": "⚙️ My Life Automation",
-                    "isSelf": false
-                },
-                "UUID": "5218737C-0ACB-4C55-AA99-2B1F3E51D5EA",
-                "WFWorkflowName": "⚙️ My Life Automation"
+                "UUID": "B224B290-898D-4F59-B59D-630D743261EC"
             }
         },
         {
@@ -593,23 +654,39 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.DeleteValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
             "WFWorkflowActionParameters": {
-                "keyPath": {
+                "WFDictionaryValue": "{}",
+                "UUID": "63E8262B-8E29-4FDE-95F5-B53382A00D60",
+                "WFDictionary": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "2BBB1F1E-F3AF-498F-8ACA-9FA38F5F8990",
-                                "Type": "ActionOutput",
-                                "OutputName": "⚙️ My Life Automation"
-                            }
-                        }
+                        "OutputUUID": "599DF9B0-E7EB-48F0-9978-F385FD06ACBF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "deleteStrategy": "alwaysAllow",
-                "UUID": "734F7E54-6D04-4AA5-B321-7025E0F0050E"
+                "WFDictionaryKey": "value"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "63E8262B-8E29-4FDE-95F5-B53382A00D60",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "DF5A1061-70A7-4D06-899B-09352F694572",
+                    "workflowName": "_Set Value",
+                    "isSelf": false
+                },
+                "UUID": "73C450B1-D361-4314-8073-6B588187DC84",
+                "WFWorkflowName": "_Set Value"
             }
         },
         {
@@ -635,15 +712,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "F0F323D6-DAF9-4367-B886-77321128AA43",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "91FF78D5-198E-4156-80E3-4799F31796E5",
-                "WFControlFlowMode": 2
+                "UUID": "01A00C44-8568-4CCB-A1C8-D6BB7A80967D"
             }
         },
         {
@@ -655,7 +726,9 @@
         "WFStringContentItem"
     ],
     "WFWorkflowImportQuestions": [],
-    "WFWorkflowTypes": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
     "WFQuickActionSurfaces": [],
     "WFWorkflowHasShortcutInputVariables": false
 }

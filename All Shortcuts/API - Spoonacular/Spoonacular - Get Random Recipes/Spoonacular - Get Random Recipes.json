@@ -7,11 +7,11 @@
     },
     "WFWorkflowClientVersion": "4407",
     "WFWorkflowOutputContentItemClasses": [
-        "WFStringContentItem",
         "WFBooleanContentItem",
-        "WFDateContentItem",
+        "WFNumberContentItem",
         "WFDictionaryContentItem",
-        "WFNumberContentItem"
+        "WFStringContentItem",
+        "WFDateContentItem"
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -22,10 +22,66 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "keyPath": "API Credentials.Spoonacular",
-                "UUID": "FD7F0452-8A98-4209-8EB2-6BD3EFA509B9"
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "config"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "API Credentials.Spoonacular.apiKey"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "AB990120-2864-44F3-BFE7-85E1BD9426E4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "AB990120-2864-44F3-BFE7-85E1BD9426E4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "4DEC9AC5-3CA5-47FE-8B05-F49F1B03B9AF",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -180,40 +236,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.CreateQueryItemIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "inputType": "dictionary",
-                "UUID": "E04AECCC-25DE-49ED-A8DC-7F33DA43114F",
-                "dictionary": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "1AD3D31B-22BF-40C5-9F73-75EB353B754B",
-                                "Type": "ActionOutput",
-                                "OutputName": "Dictionary"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "name": "external_source"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.BuildURLIntent",
-            "WFWorkflowActionParameters": {
-                "path": "/recipes/complexSearch",
-                "host": "api.spoonacular.com",
-                "UUID": "3098AA9D-1F80-4354-A96A-01ED73A0536D",
-                "queryItems": {
-                    "Value": {
-                        "OutputUUID": "E04AECCC-25DE-49ED-A8DC-7F33DA43114F",
+                        "OutputUUID": "1AD3D31B-22BF-40C5-9F73-75EB353B754B",
                         "Type": "ActionOutput",
-                        "OutputName": "Query Item"
+                        "OutputName": "Dictionary"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "CFFCCE6F-343B-44A0-8F9F-1069BB9EEC6B",
+                    "workflowName": "Create Query Item from Dictionary",
+                    "isSelf": false
+                },
+                "UUID": "7B8DEF71-EB0B-42AB-B1C2-9B09AFD2E529",
+                "WFWorkflowName": "Create Query Item from Dictionary"
             }
         },
         {
@@ -258,19 +297,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
+                                                "OutputUUID": "4DEC9AC5-3CA5-47FE-8B05-F49F1B03B9AF",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Value",
-                                                "OutputUUID": "FD7F0452-8A98-4209-8EB2-6BD3EFA509B9",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "apiKey"
-                                                    }
-                                                ]
+                                                "OutputName": "Shortcut Result"
                                             }
                                         }
                                     },
@@ -285,12 +314,12 @@
                 "ShowHeaders": true,
                 "WFURL": {
                     "Value": {
-                        "string": "￼",
+                        "string": "https://api.spoonacular.com/recipes/complexSearch?￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "3098AA9D-1F80-4354-A96A-01ED73A0536D",
+                            "{50, 1}": {
+                                "OutputUUID": "7B8DEF71-EB0B-42AB-B1C2-9B09AFD2E529",
                                 "Type": "ActionOutput",
-                                "OutputName": "URL"
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },
@@ -340,7 +369,8 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "015E7E26-C2D7-4A7A-B27C-027D5C12EDB1"
             }
         }
     ],

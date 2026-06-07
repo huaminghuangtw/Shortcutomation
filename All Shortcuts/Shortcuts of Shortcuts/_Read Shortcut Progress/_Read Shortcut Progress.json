@@ -11,30 +11,56 @@
     ],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorAskForInput",
-        "Parameters": {
-            "ItemClass": "WFStringContentItem"
-        }
+        "Name": "WFWorkflowNoInputBehaviorShowError",
+        "Parameters": {}
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFItems": {
                     "Value": {
-                        "Type": "ExtensionInput"
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "temp"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
                     },
-                    "WFSerializationType": "WFTextTokenAttachment"
+                    "WFSerializationType": "WFDictionaryFieldValue"
                 },
-                "CustomOutputName": "inputDict",
-                "UUID": "7F7098CC-E7D4-4D47-A93D-AF66925E7123"
+                "UUID": "F8FF302D-8BEE-423B-B863-CAAA99B60155"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.CheckIfValueExistsIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "keyPath": "temp",
-                "UUID": "6CCD2166-DB98-4955-8849-8774DBCA97EB"
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F8FF302D-8BEE-423B-B863-CAAA99B60155",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "2F377397-A16A-4EDF-8734-7CED448A41EC",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -44,29 +70,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "2F377397-A16A-4EDF-8734-7CED448A41EC",
                             "Type": "ActionOutput",
-                            "OutputName": "Value Exists",
-                            "OutputUUID": "6CCD2166-DB98-4955-8849-8774DBCA97EB",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
-                                }
-                            ]
+                            "OutputName": "Shortcut Result"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "8AD11BFE-135C-46CF-8970-572958E402EE",
-                "WFCondition": 4
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "temp",
-                "UUID": "1F484997-C04D-48B6-A90F-509B90898270"
+                "WFCondition": 100
             }
         },
         {
@@ -74,9 +87,9 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "1F484997-C04D-48B6-A90F-509B90898270",
+                        "OutputUUID": "2F377397-A16A-4EDF-8734-7CED448A41EC",
                         "Type": "ActionOutput",
-                        "OutputName": "Value"
+                        "OutputName": "Shortcut Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -112,10 +125,12 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "inputDict",
-                                "OutputUUID": "7F7098CC-E7D4-4D47-A93D-AF66925E7123",
+                                "Type": "ExtensionInput",
                                 "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
                                     {
                                         "Type": "WFDictionaryValueVariableAggrandizement",
                                         "DictionaryKey": "shortcutName"
@@ -131,19 +146,27 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "1F484997-C04D-48B6-A90F-509B90898270",
                         "Type": "ActionOutput",
-                        "OutputName": "Value"
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "2F377397-A16A-4EDF-8734-7CED448A41EC",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "currentIdx"
+                            }
+                        ]
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "currentIdx",
-                "UUID": "94405C42-B31F-4548-AE06-71B54D863B61",
-                "WFDictionaryKey": "currentIdx"
+                "UUID": "AA6EC84E-8135-4B29-9DF2-C3027E877807"
             }
         },
         {
@@ -215,10 +238,12 @@
                 "UUID": "A85C6273-A17A-4B4E-BE39-FA61A347DA47",
                 "Input": {
                     "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "inputDict",
-                        "OutputUUID": "7F7098CC-E7D4-4D47-A93D-AF66925E7123",
+                        "Type": "ExtensionInput",
                         "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
                             {
                                 "Type": "WFDictionaryValueVariableAggrandizement",
                                 "DictionaryKey": "list"

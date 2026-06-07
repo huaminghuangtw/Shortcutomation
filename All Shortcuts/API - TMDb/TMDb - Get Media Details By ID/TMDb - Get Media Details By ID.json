@@ -18,10 +18,66 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "keyPath": "API Credentials.TMDb",
-                "UUID": "FD7F0452-8A98-4209-8EB2-6BD3EFA509B9"
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "config"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "API Credentials.TMDb.accessToken"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "C4385D18-F2A9-4446-8AFC-9779B61DD66B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C4385D18-F2A9-4446-8AFC-9779B61DD66B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "D0F7B9FB-44DE-4D5D-A532-687552603B98",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -54,24 +110,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.CreateQueryItemIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "inputType": "dictionary",
-                "UUID": "E04AECCC-25DE-49ED-A8DC-7F33DA43114F",
-                "dictionary": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "1AD3D31B-22BF-40C5-9F73-75EB353B754B",
-                                "Type": "ActionOutput",
-                                "OutputName": "queryDict"
-                            }
-                        }
+                        "OutputUUID": "1AD3D31B-22BF-40C5-9F73-75EB353B754B",
+                        "Type": "ActionOutput",
+                        "OutputName": "queryDict"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "name": "external_source"
+                "WFWorkflow": {
+                    "workflowIdentifier": "CFFCCE6F-343B-44A0-8F9F-1069BB9EEC6B",
+                    "workflowName": "Create Query Item from Dictionary",
+                    "isSelf": false
+                },
+                "UUID": "CBE79C55-B4EC-4401-98C4-B39B43570A1F",
+                "WFWorkflowName": "Create Query Item from Dictionary"
             }
         },
         {
@@ -85,51 +140,6 @@
                 },
                 "CustomOutputName": "inputDict",
                 "UUID": "7CB466A2-7007-428C-AACC-26F569654380"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.BuildURLIntent",
-            "WFWorkflowActionParameters": {
-                "path": {
-                    "Value": {
-                        "string": "/3/￼/￼",
-                        "attachmentsByRange": {
-                            "{5, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "inputDict",
-                                "OutputUUID": "7CB466A2-7007-428C-AACC-26F569654380",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "id"
-                                    }
-                                ]
-                            },
-                            "{3, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "inputDict",
-                                "OutputUUID": "7CB466A2-7007-428C-AACC-26F569654380",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                        "DictionaryKey": "media_type"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "host": "api.themoviedb.org",
-                "UUID": "3098AA9D-1F80-4354-A96A-01ED73A0536D",
-                "queryItems": {
-                    "Value": {
-                        "OutputUUID": "E04AECCC-25DE-49ED-A8DC-7F33DA43114F",
-                        "Type": "ActionOutput",
-                        "OutputName": "Query Item"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
             }
         },
         {
@@ -159,19 +169,9 @@
                                         "string": "Bearer ￼",
                                         "attachmentsByRange": {
                                             "{7, 1}": {
+                                                "OutputUUID": "D0F7B9FB-44DE-4D5D-A532-687552603B98",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Value",
-                                                "OutputUUID": "FD7F0452-8A98-4209-8EB2-6BD3EFA509B9",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "accessKey"
-                                                    }
-                                                ]
+                                                "OutputName": "Shortcut Result"
                                             }
                                         }
                                     },
@@ -201,12 +201,34 @@
                 "ShowHeaders": true,
                 "WFURL": {
                     "Value": {
-                        "string": "￼",
+                        "string": "https://api.themoviedb.org/3/￼/￼?￼",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "3098AA9D-1F80-4354-A96A-01ED73A0536D",
+                            "{29, 1}": {
                                 "Type": "ActionOutput",
-                                "OutputName": "URL"
+                                "OutputName": "inputDict",
+                                "OutputUUID": "7CB466A2-7007-428C-AACC-26F569654380",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "media_type"
+                                    }
+                                ]
+                            },
+                            "{31, 1}": {
+                                "Type": "ActionOutput",
+                                "OutputName": "inputDict",
+                                "OutputUUID": "7CB466A2-7007-428C-AACC-26F569654380",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "id"
+                                    }
+                                ]
+                            },
+                            "{33, 1}": {
+                                "OutputUUID": "CBE79C55-B4EC-4401-98C4-B39B43570A1F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },
@@ -231,7 +253,8 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "F4625091-2B3F-4888-AA55-51AC7063FECC"
             }
         }
     ],

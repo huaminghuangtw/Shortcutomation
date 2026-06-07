@@ -10,10 +10,66 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Reminders.brainFoodLists.external",
-                "UUID": "E3ACE6CB-7797-4DAA-9D19-9E1DDCD59CE3"
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "config"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "My Reminders.brainFoodLists"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "CA6ED4EC-FE21-4E8D-A882-76E3B597290A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "CA6ED4EC-FE21-4E8D-A882-76E3B597290A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "61D39E28-4F01-4EDF-81F4-33E43F768FB7",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -23,16 +79,16 @@
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "Value",
-                        "OutputUUID": "E3ACE6CB-7797-4DAA-9D19-9E1DDCD59CE3",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "61D39E28-4F01-4EDF-81F4-33E43F768FB7",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
                                 "CoercionItemClass": "WFDictionaryContentItem"
                             },
                             {
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Keys"
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "external"
                             }
                         ]
                     },

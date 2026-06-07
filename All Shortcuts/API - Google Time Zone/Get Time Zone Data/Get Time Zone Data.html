@@ -157,27 +157,50 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>Get Time Zone Data</b>
-  (6 actions, 6 KB)
+  (9 actions, 13 KB)
 </button>
 <button class="button gYellow" id="m0">
 0 Comment</button><div class="content commentcontent">
 <div class="col2">https://developers.google.com/maps/documentation/timezone/overview</div></div>
 <button class="gBlue" id="m1">
-1 Get Current Location　» <span class="magic" onclick="magictap(4)">4</span></button><div></div>
+1 Get Current Location　» <span class="magic" onclick="magictap(5)">5</span></button><div></div>
 <button class="button " id="m2">
-2 Run Shortcut <span class="box">Date2UnixTimestamp</span>　» <span class="magic" onclick="magictap(4)">4</span></button><div class="content">
+2 Run Shortcut <span class="box">Date2UnixTimestamp</span>　» <span class="magic" onclick="magictap(5)">5</span></button><div class="content">
 <div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "3866F63D-521C-48D3-A1D5-43C92F675832",
    "workflowName": "Date2UnixTimestamp",
    "isSelf": false
 }</div></div></div>
-<button class="button gUnknown" id="m3">
-3 DataJar &gt; GetValueIntent　»</button><div class="content">
-<div class="row"><div class="col1">keyPath</div><span style="display:none">: </span><div class="col2">API Credentials.Google</div></div></div>
-<hr><button class="gGreen" id="m4">
-4 Get Contents of URL <span class="box">https://maps.googleapis.com/maps/api/timezone/json?location=<span class="magic" onclick="magictap(1)"><b>[1 Current Location</b>’s Latitude<b>]</b></span>,<span class="magic" onclick="magictap(1)"><b>[1 Current Location</b>’s Longitude<b>]</b></span>&amp;timestamp=<span class="magic" onclick="magictap(2)"><b>[2 Shortcut Result]</b></span>&amp;key=<span class="var"><b>[3 Value</b> as Dictionary.apiKeyMaps<b>]</b></span></span>　»</button>
-<hr><button class="gGray" id="m5">
-5 Stop and Output <span class="box"><span class="var"><b>[4 Contents of URL]</b></span></span></button>
+<button class="button gOrange" id="m3">
+3 Dictionary　»</button><div class="content">
+<div class="col2">{  "filename": "config",
+   "key": "API Credentials.Google.apiKeyMaps"
+}</div></div>
+<hr><button class="button " id="m4">
+4 Run Shortcut <span class="box">_Get Value</span>　»</button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[3 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+   "workflowName": "_Get Value",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gOrange" id="m5">
+5 Dictionary　»</button><div class="content">
+<div class="col2">{  "location": "<span class="magic" onclick="magictap(1)"><b>[1 Current Location</b>’s Latitude<b>]</b></span>,<span class="magic" onclick="magictap(1)"><b>[1 Current Location</b>’s Longitude<b>]</b></span>",
+   "timestamp": "<span class="magic" onclick="magictap(2)"><b>[2 Shortcut Result]</b></span>",
+   "key": "<span class="var"><b>[4 Shortcut Result]</b></span>"
+}</div></div>
+<hr><button class="button " id="m6">
+6 Run Shortcut <span class="box">Create Query Item from Dictionary</span>　»</button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[5 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "CFFCCE6F-343B-44A0-8F9F-1069BB9EEC6B",
+   "workflowName": "Create Query Item from Dictionary",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gGreen" id="m7">
+7 Get Contents of URL <span class="box">https://maps.googleapis.com/maps/api/timezone/json?<span class="var"><b>[6 Shortcut Result]</b></span></span>　»</button><div class="content">
+<div class="row"><div class="col1">ShowHeaders</div><span style="display:none">: </span><div class="col2">false</div></div></div>
+<hr><button class="gGray" id="m8">
+8 Stop and Output <span class="box"><span class="var"><b>[7 Contents of URL]</b></span></span></button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

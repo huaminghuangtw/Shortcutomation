@@ -72,10 +72,66 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "keyPath": "My Reminders.brainFoodLists.internal",
-                "UUID": "0FBB8597-7FFD-429F-A15A-37741CFF6E13"
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "config"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "My Reminders.brainFoodLists"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "A952FA91-20D9-4C3B-962D-D5D48A22F61D"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A952FA91-20D9-4C3B-962D-D5D48A22F61D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "1977DFD0-BA41-48BF-A7DA-3C92F02E5446",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -84,16 +140,16 @@
                 "WFInput": {
                     "Value": {
                         "Type": "ActionOutput",
-                        "OutputName": "Value",
-                        "OutputUUID": "0FBB8597-7FFD-429F-A15A-37741CFF6E13",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "1977DFD0-BA41-48BF-A7DA-3C92F02E5446",
                         "Aggrandizements": [
                             {
                                 "Type": "WFCoercionVariableAggrandizement",
                                 "CoercionItemClass": "WFDictionaryContentItem"
                             },
                             {
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Keys"
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "internal"
                             }
                         ]
                     },
@@ -182,7 +238,14 @@
                     "Variable": {
                         "Value": {
                             "VariableName": "Repeat Item",
-                            "Type": "Variable"
+                            "Type": "Variable",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -228,7 +291,14 @@
                     "Variable": {
                         "Value": {
                             "VariableName": "Repeat Item",
-                            "Type": "Variable"
+                            "Type": "Variable",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -274,13 +344,20 @@
                     "Variable": {
                         "Value": {
                             "VariableName": "Repeat Item",
-                            "Type": "Variable"
+                            "Type": "Variable",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Podcast Episode",
+                "WFConditionalActionString": "Podcast",
                 "GroupingIdentifier": "F9BD4E32-9A6A-4E67-BCE2-A481EEFA73B9",
                 "WFCondition": 99
             }
@@ -331,29 +408,33 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "E101234C-AAFB-415D-8699-2F6C5BE2A4E6",
-                "WFControlFlowMode": 2
+                "UUID": "F0E50E48-7D51-4732-99EB-C99146782981"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "86494486-27B5-4A6D-A4B8-A6A1FE136903",
-                "WFControlFlowMode": 2
+                "UUID": "FB14D4E8-266A-4742-A939-C209CF9946A2"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "846578AB-3A0E-463E-A194-3D4FA3131528",
-                "WFControlFlowMode": 2
+                "UUID": "A119C663-EB01-4CC1-ABC5-A45B5C8A447A"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "9A443804-639B-4F8A-BA3B-77B879D71AED",
-                "WFControlFlowMode": 2
+                "UUID": "5EA46514-61D6-448D-83A6-8C22AE9DB822"
             }
         },
         {

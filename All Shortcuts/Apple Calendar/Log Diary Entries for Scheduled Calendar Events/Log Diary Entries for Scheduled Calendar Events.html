@@ -157,7 +157,7 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>Log Diary Entries for Scheduled Calendar Events</b>
-  (25 actions, 20 KB)
+  (26 actions, 22 KB)
 </button>
 <button class="button gGray nonbottom" id="m0">
 0 If <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop">
@@ -169,7 +169,7 @@ hr {
 3 Date <span class="box">Specified Date</span></button><div class="content inside">
 <div class="row"><div class="col1">DateActionDate</div><span style="display:none">: </span><div class="col2">Today</div></div></div></div>
 <button class="gGray nontop" id="m4">
-4 End If　» <i>5</i> <span class="magic" onclick="magictap(7)">7</span> <span class="magic" onclick="magictap(14)">14</span></button>
+4 End If　» <i>5</i> <span class="magic" onclick="magictap(7)">7</span> <span class="magic" onclick="magictap(15)">15</span></button>
 <hr><button class="button " id="m5">
 5 Run Shortcut <span class="box">Get Diary Entries for Scheduled Calendar Events</span>　»</button><div class="content">
 <div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[4 If Result]</b></span></div></div>
@@ -191,42 +191,51 @@ hr {
    "workflowName": "🐧 Log Journal",
    "isSelf": false
 }</div></div></div>
-<button class="button gUnknown inside" id="m9">
-9 DataJar &gt; GetValueIntent　»</button><div class="content inside">
-<div class="row"><div class="col1">keyPath</div><span style="display:none">: </span><div class="col2">My Training Plan</div></div></div>
-<hr><button class="gYellow inside" id="m10">
-10 Match Text <span class="box">(?m)^.</span> in <span class="box"><span class="var"><b>[9 Value</b> as Dictionary’s Keys<b>]</b></span></span>　»</button>
-<hr><button class="button gYellow inside" id="m11">
-11 Combine Text <span class="box"><span class="var"><b>[10 Matches]</b></span></span> with <span class="box">Custom</span>　»</button><div class="content inside">
+<button class="button gOrange inside" id="m9">
+9 Dictionary　»</button><div class="content inside">
+<div class="col2">{  "filename": "config",
+   "key": "My Training Plan"
+}</div></div>
+<hr><button class="button  inside" id="m10">
+10 Run Shortcut <span class="box">_Get Value</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[9 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+   "workflowName": "_Get Value",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="gYellow inside" id="m11">
+11 Match Text <span class="box">(?m)^.</span> in <span class="box"><span class="var"><b>[10 Shortcut Result</b> as Dictionary’s Keys<b>]</b></span></span>　»</button>
+<hr><button class="button gYellow inside" id="m12">
+12 Combine Text <span class="box"><span class="var"><b>[11 Matches]</b></span></span> with <span class="box">Custom</span>　»</button><div class="content inside">
 <div class="row"><div class="col1">TextCustomSeparator</div><span style="display:none">: </span><div class="col2">|</div></div></div>
-<hr><button class="gYellow inside" id="m12">
-12 Match Text <span class="box"><span class="var"><b>[11 Combined Text]</b></span></span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　»</button>
-<hr><button class="button gGray nonbottom inside" id="m13">
-13 If <span class="box"><span class="var"><b>[12 Matches]</b></span></span> <span class="box">does not have any value</span></button><div class="content contentloop dotted inside">
-<button class="gRed inside" id="m14">
-14 Adjust <span class="box">Get Start of Day</span> Date <span class="box"><span class="magic" onclick="magictap(4)"><b>[4 If Result]</b></span></span>　» <i>15</i> <span class="magic" onclick="magictap(16)">16</span></button>
-<hr><button class="button gRed inside" id="m15">
-15 Adjust Add Date <span class="box"><span class="var"><b>[14 Adjusted Date]</b></span></span>　»</button><div class="content inside">
+<hr><button class="gYellow inside" id="m13">
+13 Match Text <span class="box"><span class="var"><b>[12 Combined Text]</b></span></span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　»</button>
+<hr><button class="button gGray nonbottom inside" id="m14">
+14 If <span class="box"><span class="var"><b>[13 Matches]</b></span></span> <span class="box">does not have any value</span></button><div class="content contentloop dotted inside">
+<button class="gRed inside" id="m15">
+15 Adjust <span class="box">Get Start of Day</span> Date <span class="box"><span class="magic" onclick="magictap(4)"><b>[4 If Result]</b></span></span>　» <i>16</i> <span class="magic" onclick="magictap(17)">17</span></button>
+<hr><button class="button gRed inside" id="m16">
+16 Adjust Add Date <span class="box"><span class="var"><b>[15 Adjusted Date]</b></span></span>　»</button><div class="content inside">
 <div class="row"><div class="col1">Duration</div><span style="display:none">: </span><div class="col2">"1" days</div></div></div>
-<hr><button class="button  inside" id="m16">
-16 Find Calendar Events <span class="box">Library</span> where　»</button><div class="content inside">
-<div class="row"><div class="col1">ContentItemFilter</div><span style="display:none">: </span><div class="col2">Start Date is between <span class="magic" onclick="magictap(14)"><b>[14 Adjusted Date]</b></span> and <span class="var"><b>[15 Adjusted Date]</b></span></div></div></div>
-<hr><button class="button gGray nonbottom inside" id="m17">
-17 Repeat[2] with Each in <span class="box"><span class="var"><b>[16 Calendar Events]</b></span></span></button><div class="content contentloop dashed inside">
-<button class="button gGray nonbottom inside" id="m18">
-18 If <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span></button><div class="content contentloop inside">
-<button class=" inside" id="m19">
-19 Remove Events <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span></button></div>
-<button class="gGray nontop inside" id="m20">
-20 End If</button></div>
+<hr><button class="button  inside" id="m17">
+17 Find Calendar Events <span class="box">Library</span> where　»</button><div class="content inside">
+<div class="row"><div class="col1">ContentItemFilter</div><span style="display:none">: </span><div class="col2">Start Date is between <span class="magic" onclick="magictap(15)"><b>[15 Adjusted Date]</b></span> and <span class="var"><b>[16 Adjusted Date]</b></span></div></div></div>
+<hr><button class="button gGray nonbottom inside" id="m18">
+18 Repeat[2] with Each in <span class="box"><span class="var"><b>[17 Calendar Events]</b></span></span></button><div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m19">
+19 If <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span></button><div class="content contentloop inside">
+<button class=" inside" id="m20">
+20 Remove Events <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span></button></div>
 <button class="gGray nontop inside" id="m21">
-21 End Repeat[2] with Each</button></div>
+21 End If</button></div>
 <button class="gGray nontop inside" id="m22">
-22 End If　▵<span class="magic" onclick="magictap(13)">13</span></button></div>
-<button class="gGray nontop" id="m23">
-23 End Repeat with Each　▵<span class="magic" onclick="magictap(6)">6</span></button><div></div>
-<button class="gGray" id="m24">
-24 Stop This Shortcut</button>
+22 End Repeat[2] with Each</button></div>
+<button class="gGray nontop inside" id="m23">
+23 End If　▵<span class="magic" onclick="magictap(14)">14</span></button></div>
+<button class="gGray nontop" id="m24">
+24 End Repeat with Each　▵<span class="magic" onclick="magictap(6)">6</span></button><div></div>
+<button class="gGray" id="m25">
+25 Stop This Shortcut</button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

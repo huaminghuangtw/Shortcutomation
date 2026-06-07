@@ -393,8 +393,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "CC9F567E-F18E-43E1-A250-11D3E10CFD0C",
-                "WFControlFlowMode": 2
+                "UUID": "DE8FBAD3-6225-4F06-86FE-7A27DCECF158"
             }
         },
         {
@@ -528,8 +529,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "43491636-CF25-46DF-88FE-FCCBD9EDCD59",
-                "WFControlFlowMode": 2
+                "UUID": "4A275833-C918-4FFE-8C03-872BE0BEA6FB"
             }
         },
         {
@@ -569,10 +571,67 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
-                "keyPath": "My CMS.YouTube.myWatchLaterList",
-                "UUID": "538BFE6F-3BAF-4084-B4D4-5C7787B97A0F"
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "my-watch-later-list"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "id"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "5E478FB2-6EE1-4DAB-AF69-3CE353C8FAE5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5E478FB2-6EE1-4DAB-AF69-3CE353C8FAE5",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "playlistId",
+                "UUID": "4DDE465A-6E9B-4A2D-B70C-12136E987910",
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -615,19 +674,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
+                                                "OutputUUID": "4DDE465A-6E9B-4A2D-B70C-12136E987910",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Value",
-                                                "OutputUUID": "538BFE6F-3BAF-4084-B4D4-5C7787B97A0F",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "id"
-                                                    }
-                                                ]
+                                                "OutputName": "playlistId"
                                             }
                                         }
                                     },

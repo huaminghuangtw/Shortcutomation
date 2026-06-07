@@ -157,7 +157,7 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>25::Export YouTube Subscriptions</b>
-  (18 actions, 14 KB)
+  (19 actions, 16 KB)
 </button>
 <button class="button " id="m0">
 0 Run Shortcut <span class="box">isOnline</span>　»</button><div class="content">
@@ -167,50 +167,59 @@ hr {
 }</div></div></div>
 <hr><button class="button gGray nonbottom" id="m1">
 1 If <span class="box"><span class="var"><b>[0 Shortcut Result</b> as Boolean<b>]</b></span></span> is true</button><div class="content contentloop">
-<button class="button gUnknown inside" id="m2">
-2 DataJar &gt; GetValueIntent　»</button><div class="content inside">
-<div class="row"><div class="col1">keyPath</div><span style="display:none">: </span><div class="col2">My CMS.YouTube</div></div></div>
-<hr><button class="button gGray nonbottom inside" id="m3">
-3 Repeat with Each in <span class="box"><span class="var"><b>[2 Value</b> as Dictionary.Subscriptions<b>]</b></span></span></button><div class="content contentloop dotted inside">
-<button class="gGreen inside" id="m4">
-4 Get Contents of URL <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　»</button>
-<hr><button class="gBlue inside" id="m5">
-5 Make HTML from Rich Text <span class="box"><span class="var"><b>[4 Contents of URL]</b></span></span>　» <i>6</i> <span class="magic" onclick="magictap(8)">8</span></button>
-<hr><button class="button gYellow inside" id="m6">
-6 Match Text <span class="box">&lt;meta\s+property="og:title"\s+content="([^"]+)"></span> in <span class="box"><span class="var"><b>[5 HTML from Rich Text]</b></span></span>　»</button><div class="content inside">
+<button class="button gOrange inside" id="m2">
+2 Dictionary　»</button><div class="content inside">
+<div class="col2">{  "filename": "rss-subscriptions",
+   "key": "YouTube"
+}</div></div>
+<hr><button class="button  inside" id="m3">
+3 Run Shortcut <span class="box">_Get Value</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[2 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+   "workflowName": "_Get Value",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gGray nonbottom inside" id="m4">
+4 Repeat with Each in <span class="box"><span class="var"><b>[3 Shortcut Result]</b></span></span></button><div class="content contentloop dotted inside">
+<button class="gGreen inside" id="m5">
+5 Get Contents of URL <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　»</button>
+<hr><button class="gBlue inside" id="m6">
+6 Make HTML from Rich Text <span class="box"><span class="var"><b>[5 Contents of URL]</b></span></span>　» <i>7</i> <span class="magic" onclick="magictap(9)">9</span></button>
+<hr><button class="button gYellow inside" id="m7">
+7 Match Text <span class="box">&lt;meta\s+property="og:title"\s+content="([^"]+)"></span> in <span class="box"><span class="var"><b>[6 HTML from Rich Text]</b></span></span>　»</button><div class="content inside">
 <div class="row"><div class="col1">MatchTextCaseSensitive</div><span style="display:none">: </span><div class="col2">true</div></div></div>
-<hr><button class="gYellow inside" id="m7">
-7 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[6 Matches]</b></span></span>　» <span class="magic" onclick="magictap(11)">11</span></button><div></div>
-<button class="button gYellow inside" id="m8">
-8 Match Text <span class="box">channel_id=([A-Za-z0-9_-]+)</span> in <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 HTML from Rich Text]</b></span></span>　»</button><div class="content inside">
+<hr><button class="gYellow inside" id="m8">
+8 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[7 Matches]</b></span></span>　» <span class="magic" onclick="magictap(12)">12</span></button><div></div>
+<button class="button gYellow inside" id="m9">
+9 Match Text <span class="box">channel_id=([A-Za-z0-9_-]+)</span> in <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 HTML from Rich Text]</b></span></span>　»</button><div class="content inside">
 <div class="row"><div class="col1">MatchTextCaseSensitive</div><span style="display:none">: </span><div class="col2">true</div></div></div>
-<hr><button class="gYellow inside" id="m9">
-9 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[8 Matches]</b></span></span>　»</button>
-<hr><button class="button gYellow inside" id="m10">
-10 Replace Text <span class="box">^UC</span> with <span class="box">UULP</span> in <span class="box"><span class="var"><b>[9 Text]</b></span></span>　»</button><div class="content inside">
-<div class="row"><div class="col1">ReplaceTextRegularExpression</div><span style="display:none">: </span><div class="col2">true</div></div></div>
+<hr><button class="gYellow inside" id="m10">
+10 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[9 Matches]</b></span></span>　»</button>
 <hr><button class="button gYellow inside" id="m11">
-11 Text</button><div class="content inside">
+11 Replace Text <span class="box">^UC</span> with <span class="box">UULP</span> in <span class="box"><span class="var"><b>[10 Text]</b></span></span>　»</button><div class="content inside">
+<div class="row"><div class="col1">ReplaceTextRegularExpression</div><span style="display:none">: </span><div class="col2">true</div></div></div>
+<hr><button class="button gYellow inside" id="m12">
+12 Text</button><div class="content inside">
 <div class="col2">      &lt;outline
         type="rss"
-        title="<span class="magic" onclick="magictap(7)"><b>[7 Text]</b></span>"
-        xmlUrl="https://www.youtube.com/feeds/videos.xml?playlist_id=<span class="var"><b>[10 Updated Text]</b></span>"
+        title="<span class="magic" onclick="magictap(8)"><b>[8 Text]</b></span>"
+        xmlUrl="https://www.youtube.com/feeds/videos.xml?playlist_id=<span class="var"><b>[11 Updated Text]</b></span>"
       /></div></div></div>
-<button class="gGray nontop inside" id="m12">
-12 End Repeat with Each　▵<span class="magic" onclick="magictap(3)">3</span>　»</button>
-<hr><button class="button gYellow inside" id="m13">
-13 Text　»</button><div class="content inside">
+<button class="gGray nontop inside" id="m13">
+13 End Repeat with Each　▵<span class="magic" onclick="magictap(4)">4</span>　»</button>
+<hr><button class="button gYellow inside" id="m14">
+14 Text　»</button><div class="content inside">
 <div class="col2">&lt;opml>
   &lt;body>
     &lt;outline title="YouTube">
-<span class="var"><b>[12 Repeat Results]</b></span>
+<span class="var"><b>[13 Repeat Results]</b></span>
     &lt;/outline>
   &lt;/body>
 &lt;/opml></div></div>
-<hr><button class=" inside" id="m14">
-14 Set Name of <span class="box"><span class="var"><b>[13 Text]</b></span></span> to <span class="box">Subscriptions-YouTube.opml</span>　»</button>
-<hr><button class="button gBlue inside" id="m15">
-15 Save File <span class="box"><span class="var"><b>[14 Renamed Item]</b></span></span></button><div class="content inside">
+<hr><button class=" inside" id="m15">
+15 Set Name of <span class="box"><span class="var"><b>[14 Text]</b></span></span> to <span class="box">Subscriptions-YouTube.opml</span>　»</button>
+<hr><button class="button gBlue inside" id="m16">
+16 Save File <span class="box"><span class="var"><b>[15 Renamed Item]</b></span></span></button><div class="content inside">
 <div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
       "WFFileLocationType": "Documents",
       "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
@@ -218,15 +227,15 @@ hr {
       "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/F9835D0B-3AB5-4B45-BEAF-68705E6C7843/3d4ff01402a21ec56ff1f0e428fa5b02a5fe72ff"
    },
    "filename": "NetNewsWire",
-   "displayName": "NetNewsWire"
+   "displayName": "RSS"
 }</div></div>
 <div class="row"><div class="col1">AskWhereToSave</div><span style="display:none">: </span><div class="col2">false</div></div>
 <div class="row"><div class="col1">SaveFileOverwrite</div><span style="display:none">: </span><div class="col2">true</div></div>
 <div class="row"><div class="col1">FileDestinationPath</div><span style="display:none">: </span><div class="col2"></div></div></div></div>
-<button class="gGray nontop" id="m16">
-16 End If　▵<span class="magic" onclick="magictap(1)">1</span></button><div></div>
-<button class="gGray" id="m17">
-17 Stop This Shortcut</button>
+<button class="gGray nontop" id="m17">
+17 End If　▵<span class="magic" onclick="magictap(1)">1</span></button><div></div>
+<button class="gGray" id="m18">
+18 Stop This Shortcut</button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

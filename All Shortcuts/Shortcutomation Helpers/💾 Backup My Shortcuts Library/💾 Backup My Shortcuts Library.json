@@ -13,13 +13,8 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "💾 Backup My Shortcuts Library",
+                "CustomOutputName": "💾 Backup My Shortcuts Library",
                 "UUID": "2A35E5CD-FFD6-4397-B777-FEFA97C656A6"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.HomeIntent",
-            "WFWorkflowActionParameters": {
-                "UUID": "CDCFEE0C-D442-419D-93EF-999195BB177B"
             }
         },
         {
@@ -32,6 +27,49 @@
                     "Name": "Caffeinated",
                     "AppIntentIdentifier": "ActivateCaffeinatedIntent"
                 }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "filename"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "shortcuts-backup"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "key"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "status"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "CB106D68-2559-46B3-9438-49F04F50906A"
             }
         },
         {
@@ -75,30 +113,23 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "My Apple Shortcuts.backup.status",
-                "CustomOutputName": "My Apple Shortcuts.backup.status",
-                "UUID": "AAEC5647-6974-44F1-B6C9-83844D0C49D4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "AAEC5647-6974-44F1-B6C9-83844D0C49D4",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts.backup.status"
-                            }
-                        }
+                        "OutputUUID": "CB106D68-2559-46B3-9438-49F04F50906A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "B92EE344-8B44-4C38-84C6-5C1D261F4FF2"
+                "WFWorkflow": {
+                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+                    "workflowName": "_Get Value",
+                    "isSelf": false
+                },
+                "UUID": "E8744D75-B4D8-4C51-8D08-13B15810EEAA",
+                "WFWorkflowName": "_Get Value"
             }
         },
         {
@@ -108,16 +139,9 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "E8744D75-B4D8-4C51-8D08-13B15810EEAA",
                             "Type": "ActionOutput",
-                            "OutputName": "Value",
-                            "OutputUUID": "B92EE344-8B44-4C38-84C6-5C1D261F4FF2",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
+                            "OutputName": "Shortcut Result"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -298,7 +322,7 @@
                             "{0, 1}": {
                                 "OutputUUID": "2A35E5CD-FFD6-4397-B777-FEFA97C656A6",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "💾 Backup My Shortcuts Library"
                             }
                         }
                     },
@@ -311,7 +335,7 @@
                             "{0, 1}": {
                                 "OutputUUID": "2A35E5CD-FFD6-4397-B777-FEFA97C656A6",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "💾 Backup My Shortcuts Library"
                             }
                         }
                     },
@@ -322,45 +346,85 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
             "WFWorkflowActionParameters": {
-                "values": {
+                "WFInput": {
                     "Value": {
-                        "VariableName": "Repeat Item",
-                        "Type": "Variable",
-                        "Aggrandizements": [
-                            {
-                                "PropertyUserInfo": "WFItemName",
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Name"
-                            }
-                        ]
+                        "OutputUUID": "E8744D75-B4D8-4C51-8D08-13B15810EEAA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "valueConversionMode": "text",
-                "keyPath": {
+                "WFVariableName": "status"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "status"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFDictionaryValue": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "AAEC5647-6974-44F1-B6C9-83844D0C49D4",
-                                "Type": "ActionOutput",
-                                "OutputName": "My Apple Shortcuts.backup.status"
+                                "VariableName": "status",
+                                "Type": "Variable"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "8458DB12-8B3A-4F91-B01D-BB18033D2A4D",
-                "insertionPoint": "end"
+                "UUID": "EC2ACB07-9255-4288-8AA0-0CC3F15F6BB3",
+                "WFDictionary": {
+                    "Value": {
+                        "OutputUUID": "CB106D68-2559-46B3-9438-49F04F50906A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "value"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "EC2ACB07-9255-4288-8AA0-0CC3F15F6BB3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "DF5A1061-70A7-4D06-899B-09352F694572",
+                    "workflowName": "_Set Value",
+                    "isSelf": false
+                },
+                "UUID": "F8CF3531-69B6-4AC9-B520-F885B06E811D",
+                "WFWorkflowName": "_Set Value"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "AFF33C68-A5E6-4B68-9414-3241EC2EC620",
-                "WFControlFlowMode": 2
+                "UUID": "97BDD764-5351-4D97-BF82-CFD093CA22C1"
             }
         },
         {
@@ -377,6 +441,42 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "30F9CEA3-88E2-4F2E-B660-85817FFC6CC0",
                 "UUID": "2432474B-9FDE-45B4-BA76-2CD9797D323B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFDictionaryValue": "",
+                "UUID": "48C7BF9A-46F6-4774-8FF1-307EFDCAFDF7",
+                "WFDictionary": {
+                    "Value": {
+                        "OutputUUID": "CB106D68-2559-46B3-9438-49F04F50906A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFDictionaryKey": "value"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "48C7BF9A-46F6-4774-8FF1-307EFDCAFDF7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "DF5A1061-70A7-4D06-899B-09352F694572",
+                    "workflowName": "_Set Value",
+                    "isSelf": false
+                },
+                "UUID": "AB089DE4-5CFC-4448-986D-A76BE88F392F",
+                "WFWorkflowName": "_Set Value"
             }
         },
         {

@@ -118,6 +118,18 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+                    "workflowName": "getWeekNumber1",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "getWeekNumber1",
+                "UUID": "505644BE-5B72-461F-9C0A-0936E7AABC77"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
                 "UUID": "2582185F-1A68-4B1E-AA54-2A0AE706745A"
@@ -190,7 +202,19 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": ".*\"path\":\".*issues.*.md\".*",
+                "WFMatchTextPattern": {
+                    "Value": {
+                        "string": ".*\"path\":\".*issues.*w￼.md\".*",
+                        "attachmentsByRange": {
+                            "{21, 1}": {
+                                "OutputUUID": "505644BE-5B72-461F-9C0A-0936E7AABC77",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "text": {
                     "Value": {
                         "string": "￼",
@@ -331,13 +355,57 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 99,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": {
+                                        "Value": {
+                                            "string": "w￼",
+                                            "attachmentsByRange": {
+                                                "{1, 1}": {
+                                                    "OutputUUID": "505644BE-5B72-461F-9C0A-0936E7AABC77",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Shortcut Result"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "E1FC10BE-3033-490E-98C2-9B2B77774AA7",
+                        "Type": "ActionOutput",
+                        "OutputName": "Folder Contents"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "5A889D56-AEB8-4E38-905C-41A7E8B55467"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "E1FC10BE-3033-490E-98C2-9B2B77774AA7",
+                        "OutputUUID": "5A889D56-AEB8-4E38-905C-41A7E8B55467",
                         "Type": "ActionOutput",
-                        "OutputName": "Get Contents of Folder"
+                        "OutputName": "Files"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -994,7 +1062,8 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "D5ABA316-6695-4DEC-B711-CBEBD105EA98"
             }
         }
     ],

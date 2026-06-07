@@ -1,6 +1,6 @@
 {
-    "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowMinimumClientVersion": 900,
+    "WFWorkflowMinimumClientVersionString": "3216",
+    "WFWorkflowMinimumClientVersion": 3216,
     "WFWorkflowIcon": {
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
@@ -16,34 +16,18 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
-            "WFWorkflowActionParameters": {
-                "keyPath": "My Apple Shortcuts.shortcutLastRunTime.💾 Backup My Repos",
-                "UUID": "D94B3295-E779-4D4D-968E-70833B6555A5"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFDate": {
-                    "Value": {
-                        "OutputUUID": "F9F97B1D-5808-4BEA-BCB8-41CD0FC0C1B7",
-                        "Type": "ActionOutput",
-                        "OutputName": "16:30"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
+                "GroupingIdentifier": "9936D12F-056E-432F-A050-8A976DE4A64C",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "Value",
-                            "OutputUUID": "D94B3295-E779-4D4D-968E-70833B6555A5",
+                            "Type": "DeviceDetails",
                             "Aggrandizements": [
                                 {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFDateContentItem"
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
                                 }
                             ]
                         },
@@ -51,16 +35,8 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "",
-                "GroupingIdentifier": "5DF7A275-6C3B-45D8-942C-C8C0A0F0CBEA",
-                "WFCondition": 1002
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "5DF7A275-6C3B-45D8-942C-C8C0A0F0CBEA",
-                "WFControlFlowMode": 1
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
             }
         },
         {
@@ -76,11 +52,10 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
             "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "5DF7A275-6C3B-45D8-942C-C8C0A0F0CBEA",
-                "UUID": "B5478889-4283-4B6B-9346-43CD9428E6F6"
+                "mode": "RemoveDelivered",
+                "UUID": "8C5DA1C2-247B-4BF6-BDBF-FFBCE240F8C4"
             }
         },
         {
@@ -93,6 +68,95 @@
                 },
                 "WFWorkflowName": "Show Flow & Word Counts",
                 "UUID": "A5DFF43F-E89E-4377-B546-251F03A1BD22"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.apps",
+            "WFWorkflowActionParameters": {
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4
+                                },
+                                "Removable": true,
+                                "Property": "Is Running"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                },
+                "UUID": "BBA48BCD-CCE0-4ED7-878F-9AFCAC4EFAFF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BBA48BCD-CCE0-4ED7-878F-9AFCAC4EFAFF",
+                            "Type": "ActionOutput",
+                            "OutputName": "Apps"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFApp": {
+                    "BundleIdentifier": "com.brave.ios.browser",
+                    "Name": "Brave",
+                    "TeamIdentifier": "KL8N8XSYF4"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "35C0F6B6-46F6-4566-BD0C-0AF7CA6AEC25",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "Brave Browser",
+                "UUID": "6933AED8-5840-4C24-BC81-A71707D63E0F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "6933AED8-5840-4C24-BC81-A71707D63E0F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
+                    "workflowName": "Open App",
+                    "isSelf": false
+                },
+                "UUID": "AF6A9081-0AB6-492E-B753-9930D0296AF5",
+                "WFWorkflowName": "Open App"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "👁️ Review All Tabs"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "35C0F6B6-46F6-4566-BD0C-0AF7CA6AEC25",
+                "UUID": "B8CE7F6B-C968-4766-9DA8-F4815EAA108E"
             }
         },
         {
@@ -136,7 +200,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
             "WFWorkflowActionParameters": {
-                "WFCommentActionText": "1. Shortcuts\n2. Data Jar\n3. Notes\n4. Zotero\n5. ChatGPT\n6. Visual Studio Code\n7. Microsoft Edge\n8. Perplexity"
+                "WFCommentActionText": "1. Shortcuts\n2. Notes\n3. Zotero\n4. ChatGPT\n5. Visual Studio Code\n6. Microsoft Edge"
             }
         },
         {
@@ -145,29 +209,24 @@
                 "WFQuitAppMode": "All Apps",
                 "WFAppsExcept": [
                     {
-                        "BundleIdentifier": "com.openai.chat",
-                        "Name": "ChatGPT",
-                        "TeamIdentifier": "2DC432GLL2"
+                        "BundleIdentifier": "com.apple.shortcuts",
+                        "Name": "Shortcuts",
+                        "TeamIdentifier": "0000000000"
                     },
                     {
-                        "BundleIdentifier": "ai.perplexity.mac",
-                        "Name": "Perplexity",
-                        "TeamIdentifier": "7S8W4W365S"
-                    },
-                    {
-                        "BundleIdentifier": "dk.simonbs.DataJar",
-                        "Name": "Data Jar",
-                        "TeamIdentifier": "8NQFWJHC63"
-                    },
-                    {
-                        "BundleIdentifier": "com.apple.Notes",
+                        "BundleIdentifier": "com.apple.mobilenotes",
                         "Name": "Notes",
                         "TeamIdentifier": "0000000000"
                     },
                     {
-                        "BundleIdentifier": "com.microsoft.edgemac",
-                        "Name": "Microsoft Edge",
-                        "TeamIdentifier": "UBF8T346G9"
+                        "BundleIdentifier": "org.zotero.zotero",
+                        "Name": "Zotero",
+                        "TeamIdentifier": "8LAYR367YV"
+                    },
+                    {
+                        "BundleIdentifier": "com.openai.chat",
+                        "Name": "ChatGPT",
+                        "TeamIdentifier": "2DC432GLL2"
                     },
                     {
                         "BundleIdentifier": "com.microsoft.VSCode",
@@ -175,44 +234,18 @@
                         "TeamIdentifier": "UBF8T346G9"
                     },
                     {
-                        "BundleIdentifier": "com.apple.shortcuts",
-                        "Name": "Shortcuts",
-                        "TeamIdentifier": "0000000000"
-                    },
-                    {
-                        "BundleIdentifier": "org.zotero.zotero",
-                        "Name": "Zotero",
-                        "TeamIdentifier": "8LAYR367YV"
+                        "BundleIdentifier": "com.microsoft.edgemac",
+                        "Name": "Microsoft Edge",
+                        "TeamIdentifier": "UBF8T346G9"
                     }
                 ],
                 "WFAskToSaveChanges": false
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.hide.app",
             "WFWorkflowActionParameters": {
-                "WFTextActionText": "😌 End-of-Day Ritual",
-                "UUID": "48624A1F-FF6C-4BED-8A9C-BEB058A09164"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "48624A1F-FF6C-4BED-8A9C-BEB058A09164",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "13D6344E-1286-4297-B559-4A99BF3BA432",
-                    "workflowName": "Template - Complete!",
-                    "isSelf": false
-                },
-                "UUID": "D9A73714-BD88-41E4-973F-1554908F0A6B",
-                "WFWorkflowName": "Template - Complete!"
+                "WFHideAppMode": "All Apps"
             }
         },
         {
@@ -244,6 +277,83 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.sleep",
             "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9936D12F-056E-432F-A050-8A976DE4A64C",
+                "UUID": "D8A8C3A4-FD5D-40FE-9562-71760EBF00C6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "379C893D-0B92-41C1-9E95-17697D00E7EB",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "io.pushcut.Pushcut.CancelNotificationIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "D89A9D48-207A-46F9-BD73-5608E6BE2F1B",
+                "reminderIdentifier": "⏱️ Day Progress",
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.RunScriptInlineIntent",
+            "WFWorkflowActionParameters": {
+                "script": "Notification.removeAllDelivered()\nScript.complete()",
+                "UUID": "534ADE0C-8490-47D8-9BE6-15798E67992A",
+                "parameter": [],
+                "ShowWhenRun": false
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.RemoveNotificationsIntent",
+            "WFWorkflowActionParameters": {
+                "UUID": "6B64347F-E44E-46A3-8283-6AEE818AE4B8",
+                "action": "allDelivered",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "RemoveNotificationsIntent"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent",
+            "WFWorkflowActionParameters": {
+                "mode": "RemoveDelivered",
+                "UUID": "D24EF330-59FB-4194-A4F7-5EDFDC31CE20"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "379C893D-0B92-41C1-9E95-17697D00E7EB",
+                "UUID": "3F480C3B-C4E2-404E-A1C0-2EC2AA7EE34A"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
