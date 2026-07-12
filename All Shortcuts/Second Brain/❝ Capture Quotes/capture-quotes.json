@@ -1,0 +1,186 @@
+{
+    "WFWorkflowMinimumClientVersionString": "3216",
+    "WFWorkflowMinimumClientVersion": 3216,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": -1448498689,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowOutputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ExtensionInput"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "3176BE41-7263-40BF-A026-A24AB3360C01",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ExtensionInput"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "8A387811-B3EC-4576-A239-25CB0F4A16C5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Extract quote (and author) from the following text and format it according to these rules:\n\nCase 1 — Known author explicitly provided:\nOutput exactly:\n“<quote>.” — <author>\n(Use smart quotes and an em dash.)\n\nCase 2 — No author provided OR author is unknown:\nOutput exactly:\n<quote>.\n(Do not use quotation marks, em dashes, or author names.)\n\nGlobal rules (apply to both cases):\n• Ensure the quote ends with a period (add one if missing).\n• Do not add, remove, or rephrase words.\n• Output only the formatted result.\n• No explanations, labels, or extra text.\n\n￼",
+                        "attachmentsByRange": {
+                            "{559, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "DBC7ECB1-6C0F-4206-853F-20D8DD149F45"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "DBC7ECB1-6C0F-4206-853F-20D8DD149F45",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "947FC61C-DA20-466B-8468-E21CF3AE7780",
+                    "workflowName": "Gemini - Generate Content",
+                    "isSelf": false
+                },
+                "UUID": "42B22496-FCC6-4215-8CD8-C562706E9488",
+                "WFWorkflowName": "Gemini - Generate Content"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "CurrentApp"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFApp": {
+                    "BundleIdentifier": "md.obsidian",
+                    "Name": "Obsidian",
+                    "TeamIdentifier": "6JSW4SJWN9"
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B71A955F-5CAA-4936-AC7B-A8CFAD305D32",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+            "WFWorkflowActionParameters": {
+                "WFOutput": {
+                    "Value": {
+                        "string": "> ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "OutputUUID": "42B22496-FCC6-4215-8CD8-C562706E9488",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1501AC29-98D8-4357-97E3-B2E1DCEADA65"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B71A955F-5CAA-4936-AC7B-A8CFAD305D32",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "42B22496-FCC6-4215-8CD8-C562706E9488",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
+                    "workflowName": "📥 Add to Inbox",
+                    "isSelf": false
+                },
+                "UUID": "05CE00FC-378E-4E99-AE36-7C8422D1A409",
+                "WFWorkflowName": "📥 Add to Inbox"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B71A955F-5CAA-4936-AC7B-A8CFAD305D32",
+                "UUID": "04E40138-402A-4CB7-B619-0E51D0DB3BA6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "3176BE41-7263-40BF-A026-A24AB3360C01",
+                "UUID": "60E15C06-8AE7-40B9-9336-670B029CF71C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "ActionExtension",
+        "QuickActions",
+        "WFWorkflowTypeShowInSearch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}
