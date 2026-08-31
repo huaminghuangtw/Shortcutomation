@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -19,6 +19,67 @@
                 },
                 "WFWorkflowName": "Ask If Connect to BLE Audio Device",
                 "UUID": "6E72DB35-C008-4C32-8124-29262CC91D89"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "CurrentDate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "18147F90-431D-4A64-AB66-918A88186549",
+                    "workflowName": "_Get Daily Flow & Word Counts",
+                    "isSelf": false
+                },
+                "UUID": "F9B10DE2-696A-4673-B153-2E94A516D649",
+                "WFWorkflowName": "_Get Daily Flow & Word Counts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F9B10DE2-696A-4673-B153-2E94A516D649",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "numberOfFlows",
+                "UUID": "4BF4F2A9-5FA0-4E40-867B-457689D818C5",
+                "WFDictionaryKey": "numberOfFlows"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "7A872411-F22E-4A17-A56A-92D552DBD9B2",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "numberOfFlows",
+                            "OutputUUID": "4BF4F2A9-5FA0-4E40-867B-457689D818C5",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "4",
+                "WFNumberValue": "4",
+                "WFCondition": 4
             }
         },
         {
@@ -60,30 +121,6 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "CD0A25F4-AC1F-48F7-B3CB-668A789CE5E2",
                 "UUID": "E85DC270-5E24-43AF-91FB-9CE8D0B369F3"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "Type": "ExtensionInput",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Long",
-                "GroupingIdentifier": "7A872411-F22E-4A17-A56A-92D552DBD9B2",
-                "WFCondition": 4
             }
         },
         {
@@ -133,42 +170,13 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "CurrentDate"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "numberOfFlows",
-                "UUID": "10A14E68-D144-4152-8FCB-0F7B62B3100D",
-                "WFWorkflow": {
-                    "workflowIdentifier": "18147F90-431D-4A64-AB66-918A88186549",
-                    "workflowName": "_Get Daily Flow & Word Counts",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "_Get Daily Flow & Word Counts"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.math",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
+                        "OutputUUID": "4BF4F2A9-5FA0-4E40-867B-457689D818C5",
                         "Type": "ActionOutput",
-                        "OutputName": "numberOfFlows",
-                        "OutputUUID": "10A14E68-D144-4152-8FCB-0F7B62B3100D",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "numberOfFlows"
-                            }
-                        ]
+                        "OutputName": "numberOfFlows"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
@@ -256,15 +264,18 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "2F9127E6-404C-4518-B33B-C8C3785A62FF",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ExtensionInput",
+                            "Type": "ActionOutput",
+                            "OutputName": "numberOfFlows",
+                            "OutputUUID": "4BF4F2A9-5FA0-4E40-867B-457689D818C5",
                             "Aggrandizements": [
                                 {
                                     "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFStringContentItem"
+                                    "CoercionItemClass": "WFNumberContentItem"
                                 }
                             ]
                         },
@@ -273,7 +284,7 @@
                 },
                 "WFControlFlowMode": 0,
                 "WFConditionalActionString": "Long",
-                "GroupingIdentifier": "2F9127E6-404C-4518-B33B-C8C3785A62FF",
+                "WFNumberValue": "4",
                 "WFCondition": 4
             }
         },

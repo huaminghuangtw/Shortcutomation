@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -18,43 +18,59 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
             "WFWorkflowActionParameters": {
-                "WFCaseType": "lowercase",
-                "text": {
-                    "Value": {
-                        "Type": "CurrentDate",
-                        "Aggrandizements": [
-                            {
-                                "WFDateFormatStyle": "Custom",
-                                "Type": "WFDateFormatVariableAggrandizement",
-                                "WFDateFormat": "yyyy/MMMMd",
-                                "WFISO8601IncludeTime": false
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "CDDEC815-7ACE-4043-A64B-D9AA31CB0D58"
+                "WFURL": "https://www.darebee.com",
+                "UUID": "B8266700-D8A6-4509-B2F4-BED84D7E96E1"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gethtmlfromrichtext",
             "WFWorkflowActionParameters": {
-                "WFURLActionURL": {
+                "WFInput": {
                     "Value": {
-                        "string": "https://www.darebee.com/images/exercise/￼.gif",
+                        "OutputUUID": "B8266700-D8A6-4509-B2F4-BED84D7E96E1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Contents of URL"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "6770ED1C-B93E-4DA5-A6C9-091F5B04F7B7"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+            "WFWorkflowActionParameters": {
+                "WFMatchTextPattern": "href=\"(.+?)\".*Exercise of the Day",
+                "text": {
+                    "Value": {
+                        "string": "￼",
                         "attachmentsByRange": {
-                            "{40, 1}": {
-                                "OutputUUID": "CDDEC815-7ACE-4043-A64B-D9AA31CB0D58",
+                            "{0, 1}": {
+                                "OutputUUID": "6770ED1C-B93E-4DA5-A6C9-091F5B04F7B7",
                                 "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
+                                "OutputName": "HTML from Rich Text"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "6ABD00BA-AC37-49ED-9038-45CE83A6C5F1"
+                "UUID": "9027F79F-9A87-4133-AA96-BAC4ED5FCABA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+            "WFWorkflowActionParameters": {
+                "matches": {
+                    "Value": {
+                        "OutputUUID": "9027F79F-9A87-4133-AA96-BAC4ED5FCABA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Matches"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "href",
+                "UUID": "9DD950FF-2A81-4391-BD6B-9CF113F73D26"
             }
         },
         {
@@ -65,15 +81,15 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "6ABD00BA-AC37-49ED-9038-45CE83A6C5F1",
+                                "OutputUUID": "9DD950FF-2A81-4391-BD6B-9CF113F73D26",
                                 "Type": "ActionOutput",
-                                "OutputName": "URL"
+                                "OutputName": "href"
                             }
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "1394CA7C-9FF9-460B-ADB2-77C501622F31"
+                "UUID": "00D9CA0B-FEA5-488C-8BA1-345D1359B26A"
             }
         },
         {
@@ -81,53 +97,28 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "1394CA7C-9FF9-460B-ADB2-77C501622F31",
+                        "OutputUUID": "00D9CA0B-FEA5-488C-8BA1-345D1359B26A",
                         "Type": "ActionOutput",
                         "OutputName": "Contents of URL"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "B238564A-BF05-4AB9-81EE-3E6C028A1AAD"
+                "UUID": "D74EE9BC-4F03-4598-AC93-0CBAB159C5E0"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
             "WFWorkflowActionParameters": {
-                "WFCaseType": "lowercase",
-                "text": {
+                "WFBase64LineBreakMode": "None",
+                "WFInput": {
                     "Value": {
-                        "Type": "CurrentDate",
-                        "Aggrandizements": [
-                            {
-                                "WFDateFormatStyle": "Custom",
-                                "Type": "WFDateFormatVariableAggrandizement",
-                                "WFDateFormat": "MMMM-d-yyyy",
-                                "WFISO8601IncludeTime": false
-                            }
-                        ]
+                        "OutputUUID": "D74EE9BC-4F03-4598-AC93-0CBAB159C5E0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Images"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "AED2CBDF-2F0A-4EE8-95BD-C1D78B752857"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
-            "WFWorkflowActionParameters": {
-                "WFURLActionURL": {
-                    "Value": {
-                        "string": "https://www.darebee.com/daily/￼",
-                        "attachmentsByRange": {
-                            "{30, 1}": {
-                                "OutputUUID": "AED2CBDF-2F0A-4EE8-95BD-C1D78B752857",
-                                "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "8A94D758-02D4-478D-8F2D-9B2AAFF536F9"
+                "UUID": "B13DC5C9-9877-4159-A471-C0E6B9B54010"
             }
         },
         {
@@ -171,9 +162,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "6ABD00BA-AC37-49ED-9038-45CE83A6C5F1",
+                                                "OutputUUID": "B13DC5C9-9877-4159-A471-C0E6B9B54010",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "URL"
+                                                "OutputName": "Base64 Encoded"
                                             }
                                         }
                                     },
@@ -193,9 +184,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "8A94D758-02D4-478D-8F2D-9B2AAFF536F9",
+                                                "OutputUUID": "9DD950FF-2A81-4391-BD6B-9CF113F73D26",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "URL"
+                                                "OutputName": "href"
                                             }
                                         }
                                     },

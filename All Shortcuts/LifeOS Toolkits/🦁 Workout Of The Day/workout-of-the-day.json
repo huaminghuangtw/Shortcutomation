@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -18,29 +18,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "baseURL",
-                "WFURLActionURL": "https://www.darebee.com",
-                "UUID": "78BA29D6-4762-4987-A613-B79CD04833EC"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
             "WFWorkflowActionParameters": {
-                "WFURL": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "78BA29D6-4762-4987-A613-B79CD04833EC",
-                                "Type": "ActionOutput",
-                                "OutputName": "baseURL"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
+                "WFURL": "https://www.darebee.com",
                 "UUID": "7EA149A8-1777-4A98-AEC5-BF0968D554FB"
             }
         },
@@ -61,7 +41,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "<a title=\"Workout of the Day\" href=\"(.*?)\"",
+                "WFMatchTextPattern": "href=\"(.+?)\".*Workout of the Day",
                 "text": {
                     "Value": {
                         "string": "￼",
@@ -94,9 +74,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
             "WFWorkflowActionParameters": {
-                "WFURL": {
+                "WFInput": {
                     "Value": {
                         "string": "￼",
                         "attachmentsByRange": {
@@ -109,169 +89,11 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "BADEAEC8-DD68-4FCA-8AB6-51922983CD3E"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gethtmlfromrichtext",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "BADEAEC8-DD68-4FCA-8AB6-51922983CD3E",
-                        "Type": "ActionOutput",
-                        "OutputName": "Contents of URL"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "34BE7C16-5744-431F-BE66-0476CFEA98AB"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "<title>(.*?)\\sWorkout</title>",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "34BE7C16-5744-431F-BE66-0476CFEA98AB",
-                                "Type": "ActionOutput",
-                                "OutputName": "HTML from Rich Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "E9F30770-715E-4696-9E0C-D4E995C8C26A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
-            "WFWorkflowActionParameters": {
-                "matches": {
-                    "Value": {
-                        "OutputUUID": "E9F30770-715E-4696-9E0C-D4E995C8C26A",
-                        "Type": "ActionOutput",
-                        "OutputName": "Matches"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
-            "WFWorkflowActionParameters": {
-                "WFHTML": {
-                    "Value": {
-                        "OutputUUID": "B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "workoutName",
-                "UUID": "C6F91E86-2799-4EE9-A029-336A2DB531A5"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
-            "WFWorkflowActionParameters": {
-                "WFCaseType": "Capitalize with Title Case",
-                "CustomOutputName": "workoutName",
-                "UUID": "544FFC03-96F5-4BBC-886E-13C5345725EA",
-                "text": {
-                    "Value": {
-                        "OutputUUID": "C6F91E86-2799-4EE9-A029-336A2DB531A5",
-                        "Type": "ActionOutput",
-                        "OutputName": "workoutName"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "<div class=\"infotext\">([\\s\\S]*?)</div>",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "34BE7C16-5744-431F-BE66-0476CFEA98AB",
-                                "Type": "ActionOutput",
-                                "OutputName": "HTML from Rich Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "A9CCB34E-B551-4D16-A50E-6608CD0BD710"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
-            "WFWorkflowActionParameters": {
-                "matches": {
-                    "Value": {
-                        "OutputUUID": "A9CCB34E-B551-4D16-A50E-6608CD0BD710",
-                        "Type": "ActionOutput",
-                        "OutputName": "Matches"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "C98E8F4E-6CBA-4FC2-BB49-4A43694D2260"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
-            "WFWorkflowActionParameters": {
-                "WFHTML": {
-                    "Value": {
-                        "OutputUUID": "C98E8F4E-6CBA-4FC2-BB49-4A43694D2260",
-                        "Type": "ActionOutput",
-                        "OutputName": "Text"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "8E9A08F9-6B28-447F-AA45-D5096B80BFC4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
-            "WFWorkflowActionParameters": {
-                "WFMatchTextPattern": "item-image\\S+\\s+<img src=\"(.*?)\"",
-                "text": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "34BE7C16-5744-431F-BE66-0476CFEA98AB",
-                                "Type": "ActionOutput",
-                                "OutputName": "HTML from Rich Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "340A073F-D497-4029-8807-333007B441DB"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
-            "WFWorkflowActionParameters": {
-                "matches": {
-                    "Value": {
-                        "OutputUUID": "340A073F-D497-4029-8807-333007B441DB",
-                        "Type": "ActionOutput",
-                        "OutputName": "Matches"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "img_src",
-                "UUID": "8005F56D-2722-4A89-A340-E53F46D55BFB"
+                "WFReplaceTextRegularExpression": true,
+                "CustomOutputName": "imageUrl",
+                "UUID": "4E0F20F5-B383-4459-BF50-6AD8648214D9",
+                "WFReplaceTextReplace": "/images/workouts/$1.jpg",
+                "WFReplaceTextFind": "/workouts/(.+)\\.html"
             }
         },
         {
@@ -312,17 +134,12 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "￼￼",
+                                        "string": "￼",
                                         "attachmentsByRange": {
-                                            "{1, 1}": {
-                                                "OutputUUID": "8005F56D-2722-4A89-A340-E53F46D55BFB",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "img_src"
-                                            },
                                             "{0, 1}": {
-                                                "OutputUUID": "78BA29D6-4762-4987-A613-B79CD04833EC",
+                                                "OutputUUID": "4E0F20F5-B383-4459-BF50-6AD8648214D9",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "baseURL"
+                                                "OutputName": "imageUrl"
                                             }
                                         }
                                     },

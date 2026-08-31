@@ -157,69 +157,112 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>attach-to-journal</b>
-  (19 actions, 14 KB)
+  (37 actions, 28 KB)
 </button>
 <button class="button gGray nonbottom" id="m0">
-0 Repeat with Each in <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span></button><div class="content contentloop">
-<button class="button gGray nonbottom inside" id="m1">
-1 If <span class="box"><span class="var"><b>[Repeat Item</b>’s Name<b>]</b></span></span> <span class="box">begins with</span> <span class="box">http</span></button><div class="content contentloop dotted inside">
-<button class="button gUnknown inside" id="m2">
-2 Actions &gt; DownloadFileIntent　»</button><div class="content inside">
+0 If <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop">
+<button class="gOrange inside" id="m1">
+1 Set Variable <span class="box">attachments</span> to <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m2">
+2 Otherwise</button><div class="content contentloop">
+<button class="gUnknown inside" id="m3">
+3 Actions &gt; ScanDocumentsIntent</button><div></div>
+<button class="gGray inside" id="m4">
+4 Wait to Return</button><div></div>
+<button class="gOrange inside" id="m5">
+5 Set Variable <span class="box">attachments</span> to <span class="box"><span class="var"><b>[Clipboard]</b></span></span></button></div>
+<button class="gGray nontop" id="m6">
+6 End If</button><div></div>
+<button class="button gGray nonbottom" id="m7">
+7 Repeat with Each in <span class="box"><span class="var"><b>[attachments]</b></span></span></button><div class="content contentloop">
+<button class="gYellow inside" id="m8">
+8 Match Text <span class="box">reddit.*com.*comments</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　»</button>
+<hr><button class="button gGray nonbottom inside" id="m9">
+9 If <span class="box"><span class="var"><b>[8 Matches]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dotted inside">
+<div class="row"><div class="col1">ConditionalActionString</div><span style="display:none">: </span><div class="col2">reddit.com</div></div>
+<button class="gBlue inside" id="m10">
+10 Get URLs from <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>　» <i>11</i> <span class="magic" onclick="magictap(16)">16</span></button>
+<hr><button class="gYellow inside" id="m11">
+11 Match Text <span class="box">/comments/([^/?]+)</span> in <span class="box"><span class="var"><b>[10 URLs]</b></span></span>　»</button>
+<hr><button class="gYellow inside" id="m12">
+12 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[11 Matches]</b></span></span>　» <span class="magic" onclick="magictap(14)">14</span></button><div></div>
+<button class="button gYellow inside" id="m13">
+13 Comment</button><div class="content inside commentcontent">
+<div class="col2">• https://www.reddit.com/dev/api/#fullnames
+• https://www.reddit.com/dev/api/#GET_api_info</div></div>
+<button class="gGreen inside" id="m14">
+14 Get Contents of URL <span class="box">https://www.reddit.com/api/info.json?id=t3_<span class="magic" onclick="magictap(12)"><b>[12 Text]</b></span></span>　» <i>15</i> <span class="magic" onclick="magictap(16)">16</span></button>
+<hr><button class="gBlue inside" id="m15">
+15 Make Rich Text from HTML <span class="box"><span class="var"><b>[14 Contents of URL</b> as Dictionary.data.children.1.data.preview.images.1.source.url<b>]</b></span></span>　»</button>
+<hr><button class="button gYellow inside" id="m16">
+16 Text</button><div class="content inside">
+<div class="col2">| ![](<span class="var"><b>[15 Rich Text from HTML]</b></span>) |
+| :-: |
+| &lt;sub>[<span class="magic" onclick="magictap(14)"><b>[14 Contents of URL</b> as Dictionary.data.children.1.data.subreddit_name_prefixed<b>]</b></span>: <span class="magic" onclick="magictap(14)"><b>[14 Contents of URL</b> as Dictionary.data.children.1.data.title<b>]</b></span>](<span class="magic" onclick="magictap(10)"><b>[10 URLs]</b></span>)&lt;/sub> |</div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m17">
+17 Otherwise　▵<span class="magic" onclick="magictap(9)">9</span></button><div class="content contentloop dotted inside">
+<button class="button gGray nonbottom inside" id="m18">
+18 If <span class="box"><span class="var"><b>[Repeat Item</b>’s Name<b>]</b></span></span> <span class="box">begins with</span> <span class="box">http</span></button><div class="content contentloop dashed inside">
+<button class="button gUnknown inside" id="m19">
+19 Actions &gt; DownloadFileIntent　»</button><div class="content inside">
 <div class="row"><div class="col1">url</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div></div>
-<hr><button class="gBlue inside" id="m3">
-3 Get Images from <span class="box"><span class="var"><b>[2 Downloaded File]</b></span></span></button></div>
-<button class="button gGray nonbottom nontop inside" id="m4">
-4 Otherwise</button><div class="content contentloop dotted inside">
-<button class="gBlue inside" id="m5">
-5 Get Images from <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button></div>
-<button class="gGray nontop inside" id="m6">
-6 End If　» <i>7</i> <span class="magic" onclick="magictap(8)">8</span></button>
-<hr><button class="button gYellow inside" id="m7">
-7 Text <b>　➔ filename</b>　» <i>8</i> <span class="magic" onclick="magictap(11)">11</span> <span class="magic" onclick="magictap(13)">13</span></button><div class="content inside">
-<div class="col2"><span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"yyyy_MM_dd_HH_mm_ss","WFISO8601IncludeTime":false}<b>]</b></span>.<span class="var"><b>[6 If Result</b>’s File Extension<b>]</b></span></div></div>
-<hr><button class="button  inside" id="m8">
-8 Set Name of <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 If Result]</b></span></span> to <span class="box"><span class="var"><b>[7 filename]</b></span></span>　»</button><div class="content inside">
+<hr><button class="gBlue inside" id="m20">
+20 Get Images from <span class="box"><span class="var"><b>[19 Downloaded File]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m21">
+21 Otherwise</button><div class="content contentloop dashed inside">
+<button class="gBlue inside" id="m22">
+22 Get Images from <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m23">
+23 End If　» <i>24</i> <span class="magic" onclick="magictap(25)">25</span></button>
+<hr><button class="button gYellow inside" id="m24">
+24 Text <b>　➔ filename</b>　» <i>25</i> <span class="magic" onclick="magictap(29)">29</span> <span class="magic" onclick="magictap(31)">31</span></button><div class="content inside">
+<div class="col2"><span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"yyyy_MM_dd_HH_mm_ss","WFISO8601IncludeTime":false}<b>]</b></span>.<span class="var"><b>[23 If Result</b>’s File Extension<b>]</b></span></div></div>
+<hr><button class="button  inside" id="m25">
+25 Set Name of <span class="box"><span class="magic" onclick="magictap(23)"><b>[23 If Result]</b></span></span> to <span class="box"><span class="var"><b>[24 filename]</b></span></span>　» <span class="magic" onclick="magictap(27)">27</span></button><div class="content inside">
 <div class="row"><div class="col1">DontIncludeFileExtension</div><span style="display:none">: </span><div class="col2">false</div></div></div>
-<hr><button class="button gBlue inside" id="m9">
-9 Save File <span class="box"><span class="var"><b>[8 Renamed Item]</b></span></span></button><div class="content inside">
+<button class="button gBlue inside" id="m26">
+26 Create Folder <span class="box"><span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"yyyy/MM-MMMM","WFISO8601IncludeTime":false}<b>]</b></span>/_attachments</span>　»</button><div class="content inside">
 <div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
       "WFFileLocationType": "iCloud",
       "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/BCF96BB5-C0C4-44A7-8C03-2D21A4ABEB46",
-      "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal/_attachments",
+      "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal/journals",
       "appContainerBundleIdentifier": "md.obsidian",
-      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/703FC34F-072D-480B-B6E3-366273D66B07/9748c3c63a29b32069125bd3d7159f465733b396"
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/737C59D7-EE90-4A01-918C-AFEB0E5FB45F/b504d873ae7e0b70b98b656b83c8fb0eaae64c92"
    },
-   "filename": "_attachments",
-   "displayName": "_attachments"
-}</div></div>
+   "filename": "journals",
+   "displayName": "journals"
+}</div></div></div>
+<hr><button class="button gBlue inside" id="m27">
+27 Save File <span class="box"><span class="magic" onclick="magictap(25)"><b>[25 Renamed Item]</b></span></span></button><div class="content inside">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[26 Created Folder]</b></span></div></div>
 <div class="row"><div class="col1">AskWhereToSave</div><span style="display:none">: </span><div class="col2">false</div></div></div>
-<button class="button gGray nonbottom inside" id="m10">
-10 If <span class="box"><span class="var"><b>[Repeat Item</b>’s Name<b>]</b></span></span> <span class="box">begins with</span> <span class="box">http</span></button><div class="content contentloop dotted inside">
-<button class="button gYellow inside" id="m11">
-11 Text</button><div class="content inside">
-<div class="col2">| ![](../../../_attachments/<span class="magic" onclick="magictap(7)"><b>[7 filename]</b></span>) |
+<button class="button gGray nonbottom inside" id="m28">
+28 If <span class="box"><span class="var"><b>[Repeat Item</b>’s Name<b>]</b></span></span> <span class="box">begins with</span> <span class="box">http</span></button><div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m29">
+29 Text</button><div class="content inside">
+<div class="col2">| ![](_attachments/<span class="magic" onclick="magictap(24)"><b>[24 filename]</b></span>) |
 | :-: |
 | &lt;sub>[Source](<span class="var"><b>[Repeat Item]</b></span>)&lt;/sub> |</div></div></div>
-<button class="button gGray nonbottom nontop inside" id="m12">
-12 Otherwise</button><div class="content contentloop dotted inside">
-<button class="button gYellow inside" id="m13">
-13 Text</button><div class="content inside">
-<div class="col2">![](../../../_attachments/<span class="magic" onclick="magictap(7)"><b>[7 filename]</b></span>)</div></div></div>
-<button class="gGray nontop inside" id="m14">
-14 End If　»</button>
-<hr><button class="button  inside" id="m15">
-15 Run Shortcut <span class="box" style="color:red;font-weight:bold">✍️ Log Journal</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[14 If Result]</b></span></div></div>
+<button class="button gGray nonbottom nontop inside" id="m30">
+30 Otherwise</button><div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m31">
+31 Text</button><div class="content inside">
+<div class="col2">![](_attachments/<span class="magic" onclick="magictap(24)"><b>[24 filename]</b></span>)</div></div></div>
+<button class="gGray nontop inside" id="m32">
+32 End If</button></div>
+<button class="gGray nontop inside" id="m33">
+33 End If　▵<span class="magic" onclick="magictap(17)">17</span>　»</button>
+<hr><button class="button  inside" id="m34">
+34 Run Shortcut <span class="box" style="color:red;font-weight:bold">✍️ Log Journal</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[33 If Result]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
    "workflowName": "✍️ Log Journal",
    "isSelf": false
-}</div></div></div>
-<button class="gRed inside" id="m16">
-16 Vibrate Device</button></div>
-<button class="gGray nontop" id="m17">
-17 End Repeat with Each　▵<span class="magic" onclick="magictap(0)">0</span></button><div></div>
-<button class="gGray" id="m18">
-18 Stop This Shortcut</button>
+}</div></div></div></div>
+<button class="gGray nontop" id="m35">
+35 End Repeat with Each　▵<span class="magic" onclick="magictap(7)">7</span></button><div></div>
+<button class="gGray" id="m36">
+36 Stop This Shortcut</button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -195,7 +195,7 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextCaseSensitive": true,
-                "WFMatchTextPattern": "SketchplanationCard_title\\S+\">(.*?)</span>",
+                "WFMatchTextPattern": "\"title\":\"(.*?)\"",
                 "UUID": "195EF467-90B4-43AA-8D69-778EE5C3047A",
                 "text": {
                     "Value": {
@@ -228,10 +228,30 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionParameters": {
+                "CustomOutputName": "https://images.prismic.io/sketchplanations",
+                "WFURLActionURL": "https://images.prismic.io/sketchplanations",
+                "UUID": "F0406F29-0091-4365-BB0E-4115603D6C1C"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextCaseSensitive": true,
-                "WFMatchTextPattern": "SketchplanationCard_root.*?href=\"(/[^\"]+)\"",
+                "WFMatchTextPattern": {
+                    "Value": {
+                        "string": "\"url\":\"￼/([^\"]+)\"",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "OutputUUID": "F0406F29-0091-4365-BB0E-4115603D6C1C",
+                                "Type": "ActionOutput",
+                                "OutputName": "https://images.prismic.io/sketchplanations"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
                 "UUID": "D6C9CECD-DAB4-4777-8BFF-FF6F09800CAA",
                 "text": {
                     "Value": {
@@ -264,31 +284,11 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "https://images.prismic.io/sketchplanations",
-                "WFURLActionURL": "https://images.prismic.io/sketchplanations",
-                "UUID": "F0406F29-0091-4365-BB0E-4115603D6C1C"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
             "WFWorkflowActionParameters": {
                 "WFMatchTextCaseSensitive": true,
-                "WFMatchTextPattern": {
-                    "Value": {
-                        "string": "srcSet=\"￼/([^?]+)?",
-                        "attachmentsByRange": {
-                            "{8, 1}": {
-                                "OutputUUID": "F0406F29-0091-4365-BB0E-4115603D6C1C",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://images.prismic.io/sketchplanations"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "12B9E315-767D-4BD5-AFB1-8CEE62E8E261",
+                "WFMatchTextPattern": "\"uid\":\"(.*?)\"",
+                "UUID": "E5200D1B-16E5-4219-97C9-7080E45872B0",
                 "text": {
                     "Value": {
                         "string": "￼",
@@ -307,17 +307,16 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
             "WFWorkflowActionParameters": {
-                "WFGetGroupType": "Group At Index",
-                "CustomOutputName": "sketchFilenames",
-                "UUID": "0DE5955F-D1CA-452B-92BD-12FF1F02FC63",
                 "matches": {
                     "Value": {
-                        "OutputUUID": "12B9E315-767D-4BD5-AFB1-8CEE62E8E261",
+                        "OutputUUID": "E5200D1B-16E5-4219-97C9-7080E45872B0",
                         "Type": "ActionOutput",
                         "OutputName": "Matches"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                }
+                },
+                "CustomOutputName": "sketchSlugs",
+                "UUID": "03213608-09D7-427F-9DCE-8ADFDB25DE7F"
             }
         },
         {
@@ -368,87 +367,8 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "CustomOutputName": "sketchTitle",
                 "UUID": "79649E5F-ECD5-4A83-9A20-DF0CC56B2C5C",
                 "WFItemSpecifier": "Item At Index"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfromhtml",
-            "WFWorkflowActionParameters": {
-                "WFHTML": {
-                    "Value": {
-                        "OutputUUID": "79649E5F-ECD5-4A83-9A20-DF0CC56B2C5C",
-                        "Type": "ActionOutput",
-                        "OutputName": "sketchTitle"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "sketchTitle",
-                "UUID": "3CE2B03A-2EC5-4317-BDF7-01029E061567"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
-            "WFWorkflowActionParameters": {
-                "WFCaseType": "Capitalize with sentence case",
-                "text": {
-                    "Value": {
-                        "OutputUUID": "3CE2B03A-2EC5-4317-BDF7-01029E061567",
-                        "Type": "ActionOutput",
-                        "OutputName": "sketchTitle"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "548B4006-8576-4C7F-BA4B-A33121043674"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "0DE5955F-D1CA-452B-92BD-12FF1F02FC63",
-                        "Type": "ActionOutput",
-                        "OutputName": "sketchFilenames"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFItemIndex": {
-                    "Value": {
-                        "OutputUUID": "F0FF41D3-60F2-46F6-BB27-DBA96C965095",
-                        "Type": "ActionOutput",
-                        "OutputName": "Random Number"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "166A88BD-0109-4AEC-800D-2AC247FAC57A",
-                "WFItemSpecifier": "Item At Index"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
-            "WFWorkflowActionParameters": {
-                "CustomOutputName": "imageURL",
-                "WFURLActionURL": {
-                    "Value": {
-                        "string": "￼/￼",
-                        "attachmentsByRange": {
-                            "{2, 1}": {
-                                "OutputUUID": "166A88BD-0109-4AEC-800D-2AC247FAC57A",
-                                "Type": "ActionOutput",
-                                "OutputName": "Item from List"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "F0406F29-0091-4365-BB0E-4115603D6C1C",
-                                "Type": "ActionOutput",
-                                "OutputName": "https://images.prismic.io/sketchplanations"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "9A5196C5-39F1-48A1-AED9-343B150EE8D8"
             }
         },
         {
@@ -470,33 +390,31 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "E040A06A-B662-4CC9-83AE-51CCEACB92B9",
+                "UUID": "E16DBE7B-9BC0-435B-80BF-39BE65DABC88",
                 "WFItemSpecifier": "Item At Index"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
             "WFWorkflowActionParameters": {
-                "CustomOutputName": "sketchURL",
-                "WFURLActionURL": {
+                "WFInput": {
                     "Value": {
-                        "string": "￼￼",
-                        "attachmentsByRange": {
-                            "{1, 1}": {
-                                "OutputUUID": "E040A06A-B662-4CC9-83AE-51CCEACB92B9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Item from List"
-                            },
-                            "{0, 1}": {
-                                "OutputUUID": "44E5ABCF-F6C5-4A59-BA90-799C545537B0",
-                                "Type": "ActionOutput",
-                                "OutputName": "baseURL"
-                            }
-                        }
+                        "OutputUUID": "03213608-09D7-427F-9DCE-8ADFDB25DE7F",
+                        "Type": "ActionOutput",
+                        "OutputName": "sketchSlugs"
                     },
-                    "WFSerializationType": "WFTextTokenString"
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "UUID": "F4A96D3E-FB03-40DB-9AAE-6158A62F32E1"
+                "WFItemIndex": {
+                    "Value": {
+                        "OutputUUID": "F0FF41D3-60F2-46F6-BB27-DBA96C965095",
+                        "Type": "ActionOutput",
+                        "OutputName": "Random Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "E040A06A-B662-4CC9-83AE-51CCEACB92B9",
+                "WFItemSpecifier": "Item At Index"
             }
         },
         {
@@ -540,9 +458,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "3CE2B03A-2EC5-4317-BDF7-01029E061567",
+                                                "OutputUUID": "79649E5F-ECD5-4A83-9A20-DF0CC56B2C5C",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "sketchTitle"
+                                                "OutputName": "Item from List"
                                             }
                                         }
                                     },
@@ -559,12 +477,17 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "￼",
+                                        "string": "￼/￼",
                                         "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "9A5196C5-39F1-48A1-AED9-343B150EE8D8",
+                                            "{2, 1}": {
+                                                "OutputUUID": "E16DBE7B-9BC0-435B-80BF-39BE65DABC88",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "imageURL"
+                                                "OutputName": "Item from List"
+                                            },
+                                            "{0, 1}": {
+                                                "OutputUUID": "F0406F29-0091-4365-BB0E-4115603D6C1C",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "https://images.prismic.io/sketchplanations"
                                             }
                                         }
                                     },
@@ -581,12 +504,17 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "￼",
+                                        "string": "￼/￼",
                                         "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "F4A96D3E-FB03-40DB-9AAE-6158A62F32E1",
+                                            "{2, 1}": {
+                                                "OutputUUID": "E040A06A-B662-4CC9-83AE-51CCEACB92B9",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "sketchURL"
+                                                "OutputName": "Item from List"
+                                            },
+                                            "{0, 1}": {
+                                                "OutputUUID": "44E5ABCF-F6C5-4A59-BA90-799C545537B0",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "baseURL"
                                             }
                                         }
                                     },
@@ -619,6 +547,10 @@
                 "UUID": "2FA437E1-0912-4BE9-B00A-E6D9001B1F78",
                 "WFWorkflowName": "Template - Rich Notification"
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
         }
     ],
     "WFWorkflowInputContentItemClasses": [

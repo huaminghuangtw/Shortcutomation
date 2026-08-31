@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
@@ -431,6 +431,18 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "09C6711D-3958-4AF4-91F8-CD89197F7213",
+                    "workflowName": "Alert Sound Effect",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Alert Sound Effect",
+                "UUID": "76206072-EDC4-49FF-B89F-503E818A0E24"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
             "WFWorkflowActionParameters": {
                 "WFContentItemInputParameter": {
@@ -499,25 +511,6 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "output": "numberDigit"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "🗒️ ￼ in the last 7 days",
-                        "attachmentsByRange": {
-                            "{4, 1}": {
-                                "OutputUUID": "A44D4EF2-2D93-4472-8E27-C1606D41C010",
-                                "Type": "ActionOutput",
-                                "OutputName": "Pluralised Result"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "UUID": "BE0E4F58-E9EB-4A40-A6A9-F52249C04C1A"
             }
         },
         {
@@ -618,12 +611,12 @@
                 },
                 "WFAlertActionTitle": {
                     "Value": {
-                        "string": "￼",
+                        "string": "🗒️ ￼ in the last 7 days",
                         "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "BE0E4F58-E9EB-4A40-A6A9-F52249C04C1A",
+                            "{4, 1}": {
+                                "OutputUUID": "A44D4EF2-2D93-4472-8E27-C1606D41C010",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "Pluralised Result"
                             }
                         }
                     },
@@ -676,6 +669,170 @@
                 },
                 "WFWorkflowName": "Obsidian - Close All Tabs",
                 "UUID": "433A549A-15F3-4615-A27E-38976D1527AA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "isWeekend",
+                            "OutputUUID": "DD312D1F-49D8-417F-A552-C27DA703245E",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFBooleanContentItem"
+                                },
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "No",
+                "GroupingIdentifier": "E2566614-4C7C-4F2F-9CC1-A701DF155FBE",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.properties.files",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "94F2FDA2-7A3D-4C02-9518-FC3D217983B5",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFContentItemPropertyName": "Name",
+                "UUID": "E22E2E12-83E6-48E2-814A-59694C5BF7AC"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionParameters": {
+                "WFItems": {
+                    "Value": {
+                        "WFDictionaryFieldValueItems": [
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutName"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "Obsidian - Open Note(s)"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "shortcutInput"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "￼",
+                                        "attachmentsByRange": {
+                                            "{0, 1}": {
+                                                "OutputUUID": "8F75E6EF-5FE3-4C57-9976-CD31DE242797",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "Dictionary"
+                                            }
+                                        }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFDictionaryFieldValue"
+                },
+                "UUID": "7E61050B-05B8-4A35-B9A2-04B85907327E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "7E61050B-05B8-4A35-B9A2-04B85907327E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "A4D0829E-EC6C-4E7E-8088-6EBD82EA8061",
+                    "workflowName": "Build Run Shortcut URL",
+                    "isSelf": false
+                },
+                "UUID": "538CCDCA-9A75-435F-97A8-5E1D1083CC7B",
+                "WFWorkflowName": "Build Run Shortcut URL"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+            "WFWorkflowActionParameters": {
+                "WFCalendarItemTitle": {
+                    "Value": {
+                        "string": "🌱 ￼",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "OutputUUID": "E22E2E12-83E6-48E2-814A-59694C5BF7AC",
+                                "Type": "ActionOutput",
+                                "OutputName": "Name"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFCalendarDescriptor": {
+                    "Identifier": "<x-apple-reminderkit://REMCDList/1E8226AF-52CC-43E2-AD89-0E9010ACA706>",
+                    "Title": "🏛️ LifeOS",
+                    "IsAllCalendar": false
+                },
+                "UUID": "1E6D3F38-F0A4-47E3-BDF3-B6798CE01C77",
+                "WFCalendarItemCalendar": "🏛️ LifeOS",
+                "WFURL": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "538CCDCA-9A75-435F-97A8-5E1D1083CC7B",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "WFAlertEnabled": "Alert",
+                "WFAlertCustomTime": "Today"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E2566614-4C7C-4F2F-9CC1-A701DF155FBE",
+                "UUID": "3291B0D2-B886-4C83-812E-FE17C45E68EE"
             }
         },
         {

@@ -435,10 +435,102 @@ Sample URLs (Both point to the same location):
 			<string>is.workflow.actions.text.match</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>baseURL</string>
 				<key>UUID</key>
-				<string>D65A80D7-B7D0-4C23-B238-5620C03795A7</string>
+				<string>C9A53E30-A6BE-43A5-A058-113FADF17840</string>
 				<key>WFMatchTextPattern</key>
-				<string>www.google.com/search</string>
+				<string>^[^?]+</string>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>ExtensionInput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.list</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>9E13F307-B071-4C38-B71D-E1CA1D47698E</string>
+				<key>WFItems</key>
+				<array>
+					<string>google.com/search</string>
+					<string>youtube.com/results</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.combine</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>28457306-BD1C-4659-90DA-8B1895EB421B</string>
+				<key>WFTextCustomSeparator</key>
+				<string>|</string>
+				<key>WFTextSeparator</key>
+				<string>Custom</string>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>List</string>
+						<key>OutputUUID</key>
+						<string>9E13F307-B071-4C38-B71D-E1CA1D47698E</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.match</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>5E57B49E-61F3-48CB-88B5-8651234E6C25</string>
+				<key>WFMatchTextPattern</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Combined Text</string>
+								<key>OutputUUID</key>
+								<string>28457306-BD1C-4659-90DA-8B1895EB421B</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
 				<key>text</key>
 				<dict>
 					<key>Value</key>
@@ -481,7 +573,7 @@ Sample URLs (Both point to the same location):
 							<key>OutputName</key>
 							<string>Matches</string>
 							<key>OutputUUID</key>
-							<string>D65A80D7-B7D0-4C23-B238-5620C03795A7</string>
+							<string>5E57B49E-61F3-48CB-88B5-8651234E6C25</string>
 							<key>Type</key>
 							<string>ActionOutput</string>
 						</dict>
@@ -493,13 +585,13 @@ Sample URLs (Both point to the same location):
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>com.sindresorhus.Actions.GetQueryItemValueFromURLIntent</string>
+			<string>com.sindresorhus.Actions.GetQueryItemsFromURLIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>AppIntentDescriptor</key>
 				<dict>
 					<key>AppIntentIdentifier</key>
-					<string>GetQueryItemValueFromURLIntent</string>
+					<string>GetQueryItemsFromURLIntent</string>
 					<key>BundleIdentifier</key>
 					<string>com.sindresorhus.Actions</string>
 					<key>Name</key>
@@ -508,9 +600,7 @@ Sample URLs (Both point to the same location):
 					<string>YG56YK5RN5</string>
 				</dict>
 				<key>UUID</key>
-				<string>638C786B-E640-4981-A4C7-E445E2187455</string>
-				<key>queryItemName</key>
-				<string>q</string>
+				<string>669CA4F8-76F9-4D33-B0B2-07984546D0DD</string>
 				<key>url</key>
 				<dict>
 					<key>Value</key>
@@ -533,36 +623,102 @@ Sample URLs (Both point to the same location):
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.runworkflow</string>
+			<string>is.workflow.actions.getitemfromlist</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>F2F52E5C-1835-43DC-B9FA-67B3C8FEC7BB</string>
+				<string>09EA8D74-2A0C-4A55-9F79-0848CF5C1408</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>URL Query Item Value</string>
+						<string>URL Query Items</string>
 						<key>OutputUUID</key>
-						<string>638C786B-E640-4981-A4C7-E445E2187455</string>
+						<string>669CA4F8-76F9-4D33-B0B2-07984546D0DD</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFWorkflow</key>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.url</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>9F1B1E12-9BBA-42F8-B15B-A5F2BF98CF0B</string>
+				<key>WFURLActionURL</key>
 				<dict>
-					<key>isSelf</key>
-					<false/>
-					<key>workflowIdentifier</key>
-					<string>FD05EE44-4826-451C-A235-7F0A9F1BAFBC</string>
-					<key>workflowName</key>
-					<string>Build Google Search URL</string>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>baseURL</string>
+								<key>OutputUUID</key>
+								<string>C9A53E30-A6BE-43A5-A058-113FADF17840</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{2, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>name</string>
+										<key>PropertyUserInfo</key>
+										<dict>
+											<key>WFLinkEntityContentPropertyUserInfoPropertyIdentifier</key>
+											<string>name</string>
+										</dict>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Item from List</string>
+								<key>OutputUUID</key>
+								<string>09EA8D74-2A0C-4A55-9F79-0848CF5C1408</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{4, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>value</string>
+										<key>PropertyUserInfo</key>
+										<dict>
+											<key>WFLinkEntityContentPropertyUserInfoPropertyIdentifier</key>
+											<string>value</string>
+										</dict>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Item from List</string>
+								<key>OutputUUID</key>
+								<string>09EA8D74-2A0C-4A55-9F79-0848CF5C1408</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼?￼=￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
 				</dict>
-				<key>WFWorkflowName</key>
-				<string>Build Google Search URL</string>
 			</dict>
 		</dict>
 		<dict>
@@ -578,178 +734,25 @@ Sample URLs (Both point to the same location):
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.geturlcomponent</string>
+			<string>is.workflow.actions.url</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>7AB84B35-525F-4A1F-9A54-CE0A746D28CD</string>
-				<key>WFURL</key>
+				<string>63AE4000-1194-4A4D-A5DC-82E038D71C63</string>
+				<key>WFURLActionURL</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>ExtensionInput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
+						<key>OutputName</key>
+						<string>baseURL</string>
+						<key>OutputUUID</key>
+						<string>C9A53E30-A6BE-43A5-A058-113FADF17840</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
+					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFURLComponent</key>
-				<string>Query</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>E8CBE75B-635E-48A2-AF6B-9305173DC53C</string>
-				<key>WFCondition</key>
-				<integer>99</integer>
-				<key>WFConditionalActionString</key>
-				<string>&amp;</string>
-				<key>WFControlFlowMode</key>
-				<integer>0</integer>
-				<key>WFInput</key>
-				<dict>
-					<key>Type</key>
-					<string>Variable</string>
-					<key>Variable</key>
-					<dict>
-						<key>Value</key>
-						<dict>
-							<key>OutputName</key>
-							<string>Component of URL</string>
-							<key>OutputUUID</key>
-							<string>7AB84B35-525F-4A1F-9A54-CE0A746D28CD</string>
-							<key>Type</key>
-							<string>ActionOutput</string>
-						</dict>
-						<key>WFSerializationType</key>
-						<string>WFTextTokenAttachment</string>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>baseURL</string>
-				<key>UUID</key>
-				<string>C9A53E30-A6BE-43A5-A058-113FADF17840</string>
-				<key>WFMatchTextPattern</key>
-				<string>^[^?]+</string>
-				<key>text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>ExtensionInput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.link</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>C91BA4DD-EE07-48FF-8428-3463F4D01E10</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>baseURL</string>
-								<key>OutputUUID</key>
-								<string>C9A53E30-A6BE-43A5-A058-113FADF17840</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>E8CBE75B-635E-48A2-AF6B-9305173DC53C</string>
-				<key>WFControlFlowMode</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.link</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>0490A5D2-F546-4AD0-BC8E-48D3A3DA0961</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>ExtensionInput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>E8CBE75B-635E-48A2-AF6B-9305173DC53C</string>
-				<key>UUID</key>
-				<string>03258C7A-4AD7-465F-B192-751EA391F4A0</string>
-				<key>WFControlFlowMode</key>
-				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -824,7 +827,7 @@ Sample URLs (Both point to the same location):
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>4407</string>
+	<string>4610</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>

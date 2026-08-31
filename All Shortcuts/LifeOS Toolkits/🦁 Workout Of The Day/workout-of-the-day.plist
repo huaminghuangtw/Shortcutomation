@@ -21,46 +21,13 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.url</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>baseURL</string>
-				<key>UUID</key>
-				<string>78BA29D6-4762-4987-A613-B79CD04833EC</string>
-				<key>WFURLActionURL</key>
-				<string>https://www.darebee.com</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.downloadurl</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
 				<string>7EA149A8-1777-4A98-AEC5-BF0968D554FB</string>
 				<key>WFURL</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>baseURL</string>
-								<key>OutputUUID</key>
-								<string>78BA29D6-4762-4987-A613-B79CD04833EC</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
+				<string>https://www.darebee.com</string>
 			</dict>
 		</dict>
 		<dict>
@@ -94,7 +61,7 @@
 				<key>UUID</key>
 				<string>5AB41DA1-3210-4CE3-9E0F-CA1FEF54C75E</string>
 				<key>WFMatchTextPattern</key>
-				<string>&lt;a title="Workout of the Day" href="(.*?)"</string>
+				<string>href="(.+?)".*Workout of the Day</string>
 				<key>text</key>
 				<dict>
 					<key>Value</key>
@@ -146,12 +113,14 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.downloadurl</string>
+			<string>is.workflow.actions.text.replace</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>imageUrl</string>
 				<key>UUID</key>
-				<string>BADEAEC8-DD68-4FCA-8AB6-51922983CD3E</string>
-				<key>WFURL</key>
+				<string>4E0F20F5-B383-4459-BF50-6AD8648214D9</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -173,274 +142,12 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gethtmlfromrichtext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>34BE7C16-5744-431F-BE66-0476CFEA98AB</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Contents of URL</string>
-						<key>OutputUUID</key>
-						<string>BADEAEC8-DD68-4FCA-8AB6-51922983CD3E</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>E9F30770-715E-4696-9E0C-D4E995C8C26A</string>
-				<key>WFMatchTextPattern</key>
-				<string>&lt;title&gt;(.*?)\sWorkout&lt;/title&gt;</string>
-				<key>text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>HTML from Rich Text</string>
-								<key>OutputUUID</key>
-								<string>34BE7C16-5744-431F-BE66-0476CFEA98AB</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match.getgroup</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B</string>
-				<key>matches</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Matches</string>
-						<key>OutputUUID</key>
-						<string>E9F30770-715E-4696-9E0C-D4E995C8C26A</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.getrichtextfromhtml</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>workoutName</string>
-				<key>UUID</key>
-				<string>C6F91E86-2799-4EE9-A029-336A2DB531A5</string>
-				<key>WFHTML</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Text</string>
-						<key>OutputUUID</key>
-						<string>B395E7F2-1A74-4459-8E1D-B2AFFF0CA64B</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.changecase</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>workoutName</string>
-				<key>UUID</key>
-				<string>544FFC03-96F5-4BBC-886E-13C5345725EA</string>
-				<key>WFCaseType</key>
-				<string>Capitalize with Title Case</string>
-				<key>text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>workoutName</string>
-						<key>OutputUUID</key>
-						<string>C6F91E86-2799-4EE9-A029-336A2DB531A5</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>A9CCB34E-B551-4D16-A50E-6608CD0BD710</string>
-				<key>WFMatchTextPattern</key>
-				<string>&lt;div class="infotext"&gt;([\s\S]*?)&lt;/div&gt;</string>
-				<key>text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>HTML from Rich Text</string>
-								<key>OutputUUID</key>
-								<string>34BE7C16-5744-431F-BE66-0476CFEA98AB</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match.getgroup</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>C98E8F4E-6CBA-4FC2-BB49-4A43694D2260</string>
-				<key>matches</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Matches</string>
-						<key>OutputUUID</key>
-						<string>A9CCB34E-B551-4D16-A50E-6608CD0BD710</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.getrichtextfromhtml</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>8E9A08F9-6B28-447F-AA45-D5096B80BFC4</string>
-				<key>WFHTML</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Text</string>
-						<key>OutputUUID</key>
-						<string>C98E8F4E-6CBA-4FC2-BB49-4A43694D2260</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>340A073F-D497-4029-8807-333007B441DB</string>
-				<key>WFMatchTextPattern</key>
-				<string>item-image\S+\s+&lt;img src="(.*?)"</string>
-				<key>text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>HTML from Rich Text</string>
-								<key>OutputUUID</key>
-								<string>34BE7C16-5744-431F-BE66-0476CFEA98AB</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.match.getgroup</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>CustomOutputName</key>
-				<string>img_src</string>
-				<key>UUID</key>
-				<string>8005F56D-2722-4A89-A340-E53F46D55BFB</string>
-				<key>matches</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Matches</string>
-						<key>OutputUUID</key>
-						<string>340A073F-D497-4029-8807-333007B441DB</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
+				<key>WFReplaceTextFind</key>
+				<string>/workouts/(.+)\.html</string>
+				<key>WFReplaceTextRegularExpression</key>
+				<true/>
+				<key>WFReplaceTextReplace</key>
+				<string>/images/workouts/$1.jpg</string>
 			</dict>
 		</dict>
 		<dict>
@@ -514,24 +221,15 @@
 											<key>{0, 1}</key>
 											<dict>
 												<key>OutputName</key>
-												<string>baseURL</string>
+												<string>imageUrl</string>
 												<key>OutputUUID</key>
-												<string>78BA29D6-4762-4987-A613-B79CD04833EC</string>
-												<key>Type</key>
-												<string>ActionOutput</string>
-											</dict>
-											<key>{1, 1}</key>
-											<dict>
-												<key>OutputName</key>
-												<string>img_src</string>
-												<key>OutputUUID</key>
-												<string>8005F56D-2722-4A89-A340-E53F46D55BFB</string>
+												<string>4E0F20F5-B383-4459-BF50-6AD8648214D9</string>
 												<key>Type</key>
 												<string>ActionOutput</string>
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>￼￼</string>
+										<string>￼</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -781,7 +479,7 @@
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>4407</string>
+	<string>4610</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>

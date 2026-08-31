@@ -3,7 +3,7 @@ title: Mission
 ---
 
 > “My central claim in this book is that these two trends—overprotection in the real world and underprotection in the virtual world—are the major reasons why children born after 1995 became the anxious generation.”
-― Jonathan Haidt, _The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness_
+― Jonathan Haidt, _The Anxious Generation_
 
 We live in a digital age where technology has reshaped nearly every aspect of our daily lives.
 

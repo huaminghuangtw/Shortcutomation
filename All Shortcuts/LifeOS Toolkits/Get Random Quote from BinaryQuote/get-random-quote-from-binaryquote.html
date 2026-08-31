@@ -157,50 +157,60 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>get-random-quote-from-binaryquote</b>
-  (19 actions, 18 KB)
+  (24 actions, 22 KB)
 </button>
 <button class="gBlue" id="m0">
-0 URL <span class="box">brainyquote.com</span> <b>　➔ baseURL</b>　» <i>1</i> <span class="magic" onclick="magictap(16)">16</span></button>
+0 URL <span class="box">brainyquote.com</span> <b>　➔ baseURL</b>　» <i>1</i> <span class="magic" onclick="magictap(6)">6</span> <span class="magic" onclick="magictap(21)">21</span></button>
 <hr><button class="gGreen" id="m1">
-1 Get Contents of URL <span class="box"><span class="var"><b>[0 baseURL]</b></span>/quote_of_the_day</span>　»</button>
+1 Get Contents of URL <span class="box"><span class="var"><b>[0 baseURL]</b></span>/topics</span>　»</button>
 <hr><button class="gBlue" id="m2">
-2 Make HTML from Rich Text <span class="box"><span class="var"><b>[1 Contents of URL]</b></span></span>　» <i>3</i> <span class="magic" onclick="magictap(5)">5</span> <span class="magic" onclick="magictap(7)">7</span></button>
+2 Make HTML from Rich Text <span class="box"><span class="var"><b>[1 Contents of URL]</b></span></span>　»</button>
 <hr><button class="gYellow" id="m3">
-3 Match Text <span class="box">"view quote">[\s\S]*?>\n(.*?)\n</span> in <span class="box"><span class="var"><b>[2 HTML from Rich Text]</b></span></span>　»</button>
+3 Match Text <span class="box">href="(/topics/[^"]+)"</span> in <span class="box"><span class="var"><b>[2 HTML from Rich Text]</b></span></span>　»</button>
 <hr><button class="gYellow" id="m4">
-4 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[3 Matches]</b></span></span> <b>　➔ quotes</b>　» <span class="magic" onclick="magictap(11)">11</span></button><div></div>
-<button class="gYellow" id="m5">
-5 Match Text <span class="box">"view author">(.*?)&lt;</span> in <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 HTML from Rich Text]</b></span></span>　»</button>
-<hr><button class="gYellow" id="m6">
-6 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[5 Matches]</b></span></span> <b>　➔ authors</b>　» <span class="magic" onclick="magictap(13)">13</span></button><div></div>
-<button class="gYellow" id="m7">
-7 Match Text <span class="box">&lt;a href="/quotes/(.*?)"</span> in <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 HTML from Rich Text]</b></span></span>　»</button>
+4 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[3 Matches]</b></span></span>　»</button>
+<hr><button class="gOrange" id="m5">
+5 Get <span class="box">Random Item</span> from List <span class="box"><span class="var"><b>[4 Text]</b></span></span>　»</button>
+<hr><button class="gGreen" id="m6">
+6 Get Contents of URL <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 baseURL]</b></span><span class="var"><b>[5 Item from List]</b></span></span>　»</button>
+<hr><button class="gBlue" id="m7">
+7 Make HTML from Rich Text <span class="box"><span class="var"><b>[6 Contents of URL]</b></span></span>　» <i>8</i> <span class="magic" onclick="magictap(10)">10</span> <span class="magic" onclick="magictap(12)">12</span></button>
 <hr><button class="gYellow" id="m8">
-8 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[7 Matches]</b></span></span> <b>　➔ hrefs</b>　» <i>9</i> <span class="magic" onclick="magictap(15)">15</span></button>
-<hr><button class="" id="m9">
-9 Count Items in <span class="box"><span class="var"><b>[8 hrefs]</b></span></span>　»</button>
-<hr><button class="" id="m10">
-10 Random Number between <span class="box">1</span> and <span class="box"><span class="var"><b>[9 Count]</b></span></span>　» <i>11</i> <span class="magic" onclick="magictap(13)">13</span> <span class="magic" onclick="magictap(15)">15</span></button>
-<hr><button class="gOrange" id="m11">
-11 Get <span class="box">Item At Index</span> <span class="box"><span class="var"><b>[10 Random Number]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(4)"><b>[4 quotes]</b></span></span> <b>　➔ quote</b>　»</button>
-<hr><button class="gBlue" id="m12">
-12 Make Rich Text from HTML <span class="box"><span class="var"><b>[11 quote]</b></span></span> <b>　➔ quote</b>　» <span class="magic" onclick="magictap(17)">17</span></button><div></div>
-<button class="gOrange" id="m13">
-13 Get <span class="box">Item At Index</span> <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Random Number]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 authors]</b></span></span> <b>　➔ author</b>　»</button>
-<hr><button class="gBlue" id="m14">
-14 Make Rich Text from HTML <span class="box"><span class="var"><b>[13 author]</b></span></span> <b>　➔ author</b>　» <span class="magic" onclick="magictap(17)">17</span></button><div></div>
-<button class="gOrange" id="m15">
-15 Get <span class="box">Item At Index</span> <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Random Number]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(8)"><b>[8 hrefs]</b></span></span>　»</button>
-<hr><button class="gBlue" id="m16">
-16 URL <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 baseURL]</b></span>/quotes/<span class="var"><b>[15 Item from List]</b></span></span>　»</button>
-<hr><button class="button gOrange" id="m17">
-17 Dictionary　»</button><div class="content">
-<div class="col2">{  "quote": "<span class="magic" onclick="magictap(12)"><b>[12 quote]</b></span>",
-   "author": "<span class="magic" onclick="magictap(14)"><b>[14 author]</b></span>",
-   "url": "<span class="var"><b>[16 URL]</b></span>"
+8 Match Text <span class="box">"view quote">(.*?)&lt;</span> in <span class="box"><span class="var"><b>[7 HTML from Rich Text]</b></span></span>　»</button>
+<hr><button class="gYellow" id="m9">
+9 Get Match <span class="box">Group At Index</span> 1 in <span class="box"><span class="var"><b>[8 Matches]</b></span></span> <b>　➔ quotes</b>　» <span class="magic" onclick="magictap(16)">16</span></button><div></div>
+<button class="gYellow" id="m10">
+10 Match Text <span class="box">"view author">(.*?)&lt;</span> in <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 HTML from Rich Text]</b></span></span>　»</button>
+<hr><button class="gYellow" id="m11">
+11 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[10 Matches]</b></span></span> <b>　➔ authors</b>　» <span class="magic" onclick="magictap(18)">18</span></button><div></div>
+<button class="gYellow" id="m12">
+12 Match Text <span class="box">a href="/quotes/(.*?)"</span> in <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 HTML from Rich Text]</b></span></span>　»</button>
+<hr><button class="gYellow" id="m13">
+13 Get Match Group At Index 1 in <span class="box"><span class="var"><b>[12 Matches]</b></span></span> <b>　➔ hrefs</b>　» <i>14</i> <span class="magic" onclick="magictap(20)">20</span></button>
+<hr><button class="" id="m14">
+14 Count Items in <span class="box"><span class="var"><b>[13 hrefs]</b></span></span>　»</button>
+<hr><button class="" id="m15">
+15 Random Number between <span class="box">1</span> and <span class="box"><span class="var"><b>[14 Count]</b></span></span>　» <i>16</i> <span class="magic" onclick="magictap(18)">18</span> <span class="magic" onclick="magictap(20)">20</span></button>
+<hr><button class="gOrange" id="m16">
+16 Get <span class="box">Item At Index</span> <span class="box"><span class="var"><b>[15 Random Number]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 quotes]</b></span></span> <b>　➔ quote</b>　»</button>
+<hr><button class="gBlue" id="m17">
+17 Make Rich Text from HTML <span class="box"><span class="var"><b>[16 quote]</b></span></span> <b>　➔ quote</b>　» <span class="magic" onclick="magictap(22)">22</span></button><div></div>
+<button class="gOrange" id="m18">
+18 Get <span class="box">Item At Index</span> <span class="box"><span class="magic" onclick="magictap(15)"><b>[15 Random Number]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 authors]</b></span></span> <b>　➔ author</b>　»</button>
+<hr><button class="gBlue" id="m19">
+19 Make Rich Text from HTML <span class="box"><span class="var"><b>[18 author]</b></span></span> <b>　➔ author</b>　» <span class="magic" onclick="magictap(22)">22</span></button><div></div>
+<button class="gOrange" id="m20">
+20 Get <span class="box">Item At Index</span> <span class="box"><span class="magic" onclick="magictap(15)"><b>[15 Random Number]</b></span></span> from List <span class="box"><span class="magic" onclick="magictap(13)"><b>[13 hrefs]</b></span></span>　»</button>
+<hr><button class="gBlue" id="m21">
+21 URL <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 baseURL]</b></span>/quotes/<span class="var"><b>[20 Item from List]</b></span></span>　»</button>
+<hr><button class="button gOrange" id="m22">
+22 Dictionary　»</button><div class="content">
+<div class="col2">{  "quote": "<span class="magic" onclick="magictap(17)"><b>[17 quote]</b></span>",
+   "author": "<span class="magic" onclick="magictap(19)"><b>[19 author]</b></span>",
+   "url": "<span class="var"><b>[21 URL]</b></span>"
 }</div></div>
-<hr><button class="gGray" id="m18">
-18 Stop and Output <span class="box"><span class="var"><b>[17 Dictionary]</b></span></span></button>
+<hr><button class="gGray" id="m23">
+23 Stop and Output <span class="box"><span class="var"><b>[22 Dictionary]</b></span></span></button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

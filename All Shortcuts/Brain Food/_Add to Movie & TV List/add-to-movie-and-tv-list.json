@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [
         "WFReminderContentItem"
     ],
@@ -41,25 +41,6 @@
                 "UUID": "3600A4E3-DDAF-4747-AF1A-CA964D4F4000",
                 "WFMatchTextCaseSensitive": false,
                 "WFMatchTextPattern": "tt\\d+"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "3600A4E3-DDAF-4747-AF1A-CA964D4F4000",
-                            "Type": "ActionOutput",
-                            "OutputName": "imdb_id"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "0F43ED5E-FFA3-437D-9C08-D8E681753DFA",
-                "WFCondition": 100
             }
         },
         {
@@ -213,6 +194,134 @@
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "819A0FED-32B4-48F8-B8D2-1D3D9DF839ED",
                 "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": "◻️ Movie & TV",
+                "CustomOutputName": "◻️ Movie & TV",
+                "UUID": "485EE93D-E948-4210-AB78-B62BB93B57E9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemLimitEnabled": false,
+                "UUID": "82AC9300-02C8-4289-82AF-36F815BF9FED",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": {
+                                            "Value": {
+                                                "OutputUUID": "485EE93D-E948-4210-AB78-B62BB93B57E9",
+                                                "Type": "ActionOutput",
+                                                "OutputName": "◻️ Movie & TV"
+                                            },
+                                            "WFSerializationType": "WFTextTokenAttachment"
+                                        },
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+            "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders",
+                        "OutputUUID": "82AC9300-02C8-4289-82AF-36F815BF9FED",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "Subtasks"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "subtasks",
+                "UUID": "D83ED692-058D-45C7-81F9-84BFAD035DF0",
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Bool": false
+                                },
+                                "Removable": true,
+                                "Property": "Is Completed"
+                            },
+                            {
+                                "Operator": 99,
+                                "Values": {
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "3600A4E3-DDAF-4747-AF1A-CA964D4F4000",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "imdb_id"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "URL"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "D83ED692-058D-45C7-81F9-84BFAD035DF0",
+                            "Type": "ActionOutput",
+                            "OutputName": "subtasks"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "B9ED2AE0-6288-458E-853F-F89E18378DD2",
+                "WFCondition": 101
             }
         },
         {
@@ -482,16 +591,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "◻️ Movie & TV",
-                "CustomOutputName": "◻️ Movie & TV",
-                "UUID": "485EE93D-E948-4210-AB78-B62BB93B57E9"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
             "WFWorkflowActionParameters": {
+                "CustomOutputName": "parentReminder",
                 "text": {
                     "Value": {
                         "VariableName": "dict",
@@ -509,30 +611,17 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": {
-                    "Value": {
-                        "string": "👉 ￼",
-                        "attachmentsByRange": {
-                            "{3, 1}": {
-                                "OutputUUID": "D80EC396-CCAA-43EF-A6D1-54B8D57AD756",
-                                "Type": "ActionOutput",
-                                "OutputName": "Updated Text"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                },
-                "CustomOutputName": "parentReminderTitle",
-                "UUID": "CD870E8C-4C05-4C12-B277-F3D57F3CAC63"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
             "WFWorkflowActionParameters": {
+                "WFContentItemInputParameter": {
+                    "Value": {
+                        "OutputUUID": "82AC9300-02C8-4289-82AF-36F815BF9FED",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminders"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
                 "WFContentItemLimitEnabled": true,
-                "CustomOutputName": "parentReminder",
                 "UUID": "0930D8D3-D7E7-4F62-9517-BAB89974C9E1",
                 "WFContentItemLimitNumber": 1,
                 "WFContentItemFilter": {
@@ -543,32 +632,14 @@
                             {
                                 "Operator": 4,
                                 "Values": {
-                                    "Enumeration": {
-                                        "Value": {
-                                            "Value": {
-                                                "OutputUUID": "485EE93D-E948-4210-AB78-B62BB93B57E9",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "◻️ Movie & TV"
-                                            },
-                                            "WFSerializationType": "WFTextTokenAttachment"
-                                        },
-                                        "WFSerializationType": "WFStringSubstitutableState"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "List"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
                                     "String": {
                                         "Value": {
                                             "string": "￼",
                                             "attachmentsByRange": {
                                                 "{0, 1}": {
-                                                    "OutputUUID": "CD870E8C-4C05-4C12-B277-F3D57F3CAC63",
+                                                    "OutputUUID": "D80EC396-CCAA-43EF-A6D1-54B8D57AD756",
                                                     "Type": "ActionOutput",
-                                                    "OutputName": "parentReminderTitle"
+                                                    "OutputName": "parentReminder"
                                                 }
                                             }
                                         },
@@ -577,14 +648,6 @@
                                 },
                                 "Removable": true,
                                 "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
                             }
                         ]
                     },
@@ -601,7 +664,7 @@
                         "Value": {
                             "OutputUUID": "0930D8D3-D7E7-4F62-9517-BAB89974C9E1",
                             "Type": "ActionOutput",
-                            "OutputName": "parentReminder"
+                            "OutputName": "Reminders"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -627,9 +690,9 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "CD870E8C-4C05-4C12-B277-F3D57F3CAC63",
+                                "OutputUUID": "D80EC396-CCAA-43EF-A6D1-54B8D57AD756",
                                 "Type": "ActionOutput",
-                                "OutputName": "parentReminderTitle"
+                                "OutputName": "parentReminder"
                             }
                         }
                     },
@@ -743,7 +806,8 @@
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
-                "WFDictionaryKey": "name"
+                "WFDictionaryKey": "name",
+                "UUID": "D8BA0013-8850-460F-A118-EC04DB6B1BE1"
             }
         },
         {
@@ -773,7 +837,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
             "WFWorkflowActionParameters": {
-                "WFTextCustomSeparator": " • ",
+                "WFTextCustomSeparator": " · ",
                 "CustomOutputName": "genre(s)",
                 "UUID": "A9C3768E-391B-4629-9C67-0354CC997C6C",
                 "WFTextSeparator": "Custom",
@@ -884,8 +948,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "C81F0364-773A-45CE-BC84-A69FE9BCF8D3",
-                "WFControlFlowMode": 2
+                "UUID": "03714C01-FB73-4501-9928-BCC0C5A09305"
             }
         },
         {
@@ -999,7 +1064,8 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
+                },
+                "UUID": "92050AAD-5196-43D7-9639-F12CB975A738"
             }
         },
         {
@@ -1055,107 +1121,17 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "488EC231-5F76-4E2F-8598-30112D6B0639",
-                "WFControlFlowMode": 1
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "AC124C72-346E-4E6C-AE2B-9D55E4EBCF72",
-                        "Type": "ActionOutput",
-                        "OutputName": "If Result"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "488EC231-5F76-4E2F-8598-30112D6B0639",
                 "UUID": "0AC5B987-501E-4F65-BFBB-21AE7644B826"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
-            "WFWorkflowActionParameters": {
-                "WFContentItemInputParameter": {
-                    "Value": {
-                        "Type": "ActionOutput",
-                        "OutputName": "parentReminder",
-                        "OutputUUID": "0930D8D3-D7E7-4F62-9517-BAB89974C9E1",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFPropertyVariableAggrandizement",
-                                "PropertyName": "Subtasks"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFContentItemLimitEnabled": true,
-                "UUID": "82A3DC38-8D8B-4ACA-89DA-EDD0062F1AF8",
-                "WFContentItemLimitNumber": 1,
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "String": {
-                                        "Value": {
-                                            "string": "￼",
-                                            "attachmentsByRange": {
-                                                "{0, 1}": {
-                                                    "OutputUUID": "0AC5B987-501E-4F65-BFBB-21AE7644B826",
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "reminderTitle"
-                                                }
-                                            }
-                                        },
-                                        "WFSerializationType": "WFTextTokenString"
-                                    }
-                                },
-                                "Removable": true,
-                                "Property": "Title"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Completed"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                }
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "OutputUUID": "82A3DC38-8D8B-4ACA-89DA-EDD0062F1AF8",
-                            "Type": "ActionOutput",
-                            "OutputName": "Reminders"
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "GroupingIdentifier": "E20756E7-8E95-48B7-9236-D6BA3974E596",
-                "WFCondition": 101
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B9ED2AE0-6288-458E-853F-F89E18378DD2",
+                "UUID": "E4EA0977-8FAB-47ED-B885-DF8965DC8A74"
             }
         },
         {
@@ -1174,7 +1150,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "UUID": "D5923FD0-A6A9-4A6A-AF44-38D5964FFE57"
+                "UUID": "8CFCDB66-42BB-45AE-9D00-E277F1741DE7"
             }
         },
         {
@@ -1337,8 +1313,9 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
                 "GroupingIdentifier": "543DEA6E-CBE7-4CD8-B1F2-0DA04FF3146C",
-                "WFControlFlowMode": 2
+                "UUID": "100B0236-6E9F-445A-8CFE-0697D2F08E65"
             }
         },
         {
@@ -1623,7 +1600,7 @@
                         "string": "￼",
                         "attachmentsByRange": {
                             "{0, 1}": {
-                                "OutputUUID": "D5923FD0-A6A9-4A6A-AF44-38D5964FFE57",
+                                "OutputUUID": "8CFCDB66-42BB-45AE-9D00-E277F1741DE7",
                                 "Type": "ActionOutput",
                                 "OutputName": "URL"
                             }
@@ -1693,29 +1670,16 @@
                         }
                     },
                     "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "E20756E7-8E95-48B7-9236-D6BA3974E596",
-                "WFControlFlowMode": 2
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "819A0FED-32B4-48F8-B8D2-1D3D9DF839ED",
-                "WFControlFlowMode": 2
+                },
+                "UUID": "6804824F-3CC3-4FE7-A062-DCF0EBEB41B5"
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "0F43ED5E-FFA3-437D-9C08-D8E681753DFA",
-                "UUID": "16D9EABF-787F-466D-8B30-4F6AD682E860"
+                "GroupingIdentifier": "819A0FED-32B4-48F8-B8D2-1D3D9DF839ED",
+                "UUID": "A7AA4EE5-90CB-4F17-9935-DB5AE2A9EC76"
             }
         },
         {

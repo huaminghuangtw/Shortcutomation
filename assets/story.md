@@ -2,6 +2,8 @@
 title: Story
 ---
 
+> The people who are crazy enough to think they can change the world are the ones that do.” — Steve Jobs
+
 I first discovered  Apple Shortcuts in November 2022 while trying to streamline a few repetitive tasks on my iPhone.
 
 Over time, I realized how much these simple “applets” were transforming my daily life. What started as a curiosity quickly turned into a game changer—the more I built and used them, the more they help me to _save time_, _reduce friction_, and _reclaim control over how I use my phone_.

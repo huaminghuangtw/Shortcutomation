@@ -5,7 +5,7 @@
         "WFWorkflowIconStartColor": 2846468607,
         "WFWorkflowIconGlyphNumber": 61440
     },
-    "WFWorkflowClientVersion": "4407",
+    "WFWorkflowClientVersion": "4610",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
@@ -30,84 +30,6 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
-            "WFWorkflowActionParameters": {
-                "WFDateFormatStyle": "Relative",
-                "WFTimeFormatStyle": "None",
-                "UUID": "A23CEAF3-AAAA-4188-8DC5-3B2686319A1A",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ExtensionInput"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.text.translate",
-            "WFWorkflowActionParameters": {
-                "WFSelectedFromLanguage": "en_US",
-                "WFSelectedLanguage": "zh_TW",
-                "UUID": "1958B1E5-2B61-480E-A231-A2FD0DFB31D3",
-                "WFInputText": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "A23CEAF3-AAAA-4188-8DC5-3B2686319A1A",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Date"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "dayOfWeek",
-                "UUID": "36582845-C76D-4D1D-A41E-80A379B04B94",
-                "WFWorkflow": {
-                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
-                    "workflowName": "getDayOfWeek",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "getDayOfWeek"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "weekNumber",
-                "UUID": "09B9797E-7826-494B-802B-1899FC9946E5",
-                "WFWorkflow": {
-                    "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
-                    "workflowName": "getWeekNumber1",
-                    "isSelf": false
-                },
-                "WFWorkflowName": "getWeekNumber1"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.location",
             "WFWorkflowActionParameters": {
                 "WFLocation": {
@@ -121,14 +43,9 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "📢 ￼氣象預報\n🗓️ ￼, ￼\n📍 ￼, ￼\n──────────────",
+                        "string": "🗓️ ￼\n📍 ￼, ￼\n──────────────",
                         "attachmentsByRange": {
-                            "{13, 1}": {
-                                "OutputUUID": "36582845-C76D-4D1D-A41E-80A379B04B94",
-                                "Type": "ActionOutput",
-                                "OutputName": "dayOfWeek"
-                            },
-                            "{24, 1}": {
+                            "{12, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Location",
                                 "OutputUUID": "C5CD195A-CFB9-4A92-9D19-57E956735C52",
@@ -140,7 +57,7 @@
                                     }
                                 ]
                             },
-                            "{16, 1}": {
+                            "{4, 1}": {
                                 "Type": "ExtensionInput",
                                 "Aggrandizements": [
                                     {
@@ -148,13 +65,14 @@
                                         "CoercionItemClass": "WFDateContentItem"
                                     },
                                     {
+                                        "WFDateFormatStyle": "Custom",
                                         "Type": "WFDateFormatVariableAggrandizement",
-                                        "WFISO8601IncludeTime": false,
-                                        "WFDateFormatStyle": "ISO 8601"
+                                        "WFDateFormat": "yyyy-MM-dd (EEEE)",
+                                        "WFISO8601IncludeTime": false
                                     }
                                 ]
                             },
-                            "{21, 1}": {
+                            "{9, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Location",
                                 "OutputUUID": "C5CD195A-CFB9-4A92-9D19-57E956735C52",
@@ -165,11 +83,6 @@
                                         "PropertyName": "State"
                                     }
                                 ]
-                            },
-                            "{3, 1}": {
-                                "OutputUUID": "1958B1E5-2B61-480E-A231-A2FD0DFB31D3",
-                                "Type": "ActionOutput",
-                                "OutputName": "Translated Text"
                             }
                         }
                     },
@@ -210,32 +123,6 @@
                 },
                 "WFContentItemPropertyName": "Condition",
                 "UUID": "B9D4894D-C5D9-4951-9CC3-E9608E291872"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GenerateEmojisIntent",
-            "WFWorkflowActionParameters": {
-                "allowCombinations": false,
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "GenerateEmojisIntent"
-                },
-                "UUID": "F9CD78E5-505E-4827-87AC-54AC02A2B866",
-                "description": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "OutputUUID": "B9D4894D-C5D9-4951-9CC3-E9608E291872",
-                                "Type": "ActionOutput",
-                                "OutputName": "Condition"
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
             }
         },
         {
@@ -449,19 +336,14 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "• ￼ ￼\n• 天亮 ￼／天黑 ￼\n• 日出 ￼／日落 ￼\n• 最高溫：￼／最低溫：￼\n• 降雨機率：￼%\n• 降水量：￼",
+                        "string": "• ￼\n• ￼ → ￼ → ￼ → ￼\n• 最高溫：￼〡最低溫：￼\n• 降雨機率：￼%\n• 降水量：￼",
                         "attachmentsByRange": {
                             "{2, 1}": {
-                                "OutputUUID": "F9CD78E5-505E-4827-87AC-54AC02A2B866",
+                                "OutputUUID": "B9D4894D-C5D9-4951-9CC3-E9608E291872",
                                 "Type": "ActionOutput",
-                                "OutputName": "Generated Emojis"
+                                "OutputName": "Condition"
                             },
-                            "{36, 1}": {
-                                "OutputUUID": "FE532DC9-AD26-4A86-A383-FC60A155AC39",
-                                "Type": "ActionOutput",
-                                "OutputName": "High"
-                            },
-                            "{23, 1}": {
+                            "{10, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Sunrise Time",
                                 "OutputUUID": "D952D285-C4FC-4F3F-B195-7B324B445183",
@@ -472,37 +354,17 @@
                                     }
                                 ]
                             },
-                            "{4, 1}": {
-                                "OutputUUID": "B9D4894D-C5D9-4951-9CC3-E9608E291872",
-                                "Type": "ActionOutput",
-                                "OutputName": "Condition"
-                            },
-                            "{60, 1}": {
-                                "OutputUUID": "0D765CAE-568B-41F1-BEAC-1DA46ED9B720",
-                                "Type": "ActionOutput",
-                                "OutputName": "Converted Measurement"
-                            },
-                            "{51, 1}": {
-                                "OutputUUID": "3E7390D6-7045-414B-89F2-84CE225C81C9",
-                                "Type": "ActionOutput",
-                                "OutputName": "Shortcut Result"
-                            },
-                            "{16, 1}": {
-                                "OutputUUID": "80B50890-AFE0-4D27-A93F-F04F9373DD60",
-                                "Type": "ActionOutput",
-                                "OutputName": "Formatted Date"
-                            },
-                            "{42, 1}": {
+                            "{32, 1}": {
                                 "OutputUUID": "72EFE3E2-C57A-4E1E-8F62-F9592C2C7600",
                                 "Type": "ActionOutput",
                                 "OutputName": "Low"
                             },
-                            "{11, 1}": {
-                                "OutputUUID": "E7A04AA7-A728-49A6-9538-CF5C9BDC8F61",
+                            "{18, 1}": {
+                                "OutputUUID": "80B50890-AFE0-4D27-A93F-F04F9373DD60",
                                 "Type": "ActionOutput",
                                 "OutputName": "Formatted Date"
                             },
-                            "{28, 1}": {
+                            "{14, 1}": {
                                 "Type": "ActionOutput",
                                 "OutputName": "Sunset Time",
                                 "OutputUUID": "782341ED-6591-487D-83E7-3C198B0D6DE8",
@@ -512,6 +374,26 @@
                                         "PropertyName": "Time"
                                     }
                                 ]
+                            },
+                            "{26, 1}": {
+                                "OutputUUID": "FE532DC9-AD26-4A86-A383-FC60A155AC39",
+                                "Type": "ActionOutput",
+                                "OutputName": "High"
+                            },
+                            "{6, 1}": {
+                                "OutputUUID": "E7A04AA7-A728-49A6-9538-CF5C9BDC8F61",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Date"
+                            },
+                            "{50, 1}": {
+                                "OutputUUID": "0D765CAE-568B-41F1-BEAC-1DA46ED9B720",
+                                "Type": "ActionOutput",
+                                "OutputName": "Converted Measurement"
+                            },
+                            "{41, 1}": {
+                                "OutputUUID": "3E7390D6-7045-414B-89F2-84CE225C81C9",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
                             }
                         }
                     },

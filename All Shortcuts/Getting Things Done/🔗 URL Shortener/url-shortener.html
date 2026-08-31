@@ -157,7 +157,7 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>url-shortener</b>
-  (33 actions, 21 KB)
+  (31 actions, 22 KB)
 </button>
 <button class="button " id="m0">
 0 Run Shortcut <span class="box">_Extract YouTube VideoID from URL</span> <b>　➔ videoId</b>　» <i>1</i> <span class="magic" onclick="magictap(2)">2</span></button><div class="content">
@@ -214,44 +214,37 @@ Sample URLs (Both point to the same location):
 <button class="button gGray nonbottom nontop inside" id="m16">
 16 Otherwise　▵<span class="magic" onclick="magictap(6)">6</span></button><div class="content contentloop dotted inside">
 <button class="gYellow inside" id="m17">
-17 Match Text <span class="box">www.google.com/search</span> in <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button>
-<hr><button class="button gGray nonbottom inside" id="m18">
-18 If <span class="box"><span class="var"><b>[17 Matches]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dashed inside">
-<button class="button gUnknown inside" id="m19">
-19 Actions &gt; GetQueryItemValueFromURLIntent　»</button><div class="content inside">
-<div class="row"><div class="col1">queryItemName</div><span style="display:none">: </span><div class="col2">q</div></div>
+17 Match Text <span class="box">^[^?]+</span> in <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <b>　➔ baseURL</b>　» <span class="magic" onclick="magictap(24)">24</span> <span class="magic" onclick="magictap(26)">26</span></button><div></div>
+<button class="button gOrange inside" id="m18">
+18 List　»</button><div class="content inside">
+<div class="col2">[google.com/search,
+youtube.com/results]</div></div>
+<hr><button class="button gYellow inside" id="m19">
+19 Combine Text <span class="box"><span class="var"><b>[18 List]</b></span></span> with <span class="box">Custom</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">TextCustomSeparator</div><span style="display:none">: </span><div class="col2">|</div></div></div>
+<hr><button class="gYellow inside" id="m20">
+20 Match Text <span class="box"><span class="var"><b>[19 Combined Text]</b></span></span> in <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button>
+<hr><button class="button gGray nonbottom inside" id="m21">
+21 If <span class="box"><span class="var"><b>[20 Matches]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dashed inside">
+<button class="button gUnknown inside" id="m22">
+22 Actions &gt; GetQueryItemsFromURLIntent　»</button><div class="content inside">
 <div class="row"><div class="col1">url</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div></div>
-<hr><button class="button  inside" id="m20">
-20 Run Shortcut <span class="box">Build Google Search URL</span></button><div class="content inside">
-<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[19 URL Query Item Value]</b></span></div></div>
-<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
-   "workflowName": "Build Google Search URL",
-   "isSelf": false
-}</div></div></div></div>
-<button class="button gGray nonbottom nontop inside" id="m21">
-21 Otherwise</button><div class="content contentloop dashed inside">
-<button class="gBlue inside" id="m22">
-22 Get <span class="box">Query</span> of URL <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button>
-<hr><button class="button gGray nonbottom inside" id="m23">
-23 If <span class="box"><span class="var"><b>[22 Component of URL]</b></span></span> <span class="box">contains</span> <span class="box">&amp;</span></button><div class="content contentloop inside">
-<button class="gYellow inside" id="m24">
-24 Match Text <span class="box">^[^?]+</span> in <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <b>　➔ baseURL</b>　»</button>
-<hr><button class="gBlue inside" id="m25">
-25 Get URLs from <span class="box"><span class="var"><b>[24 baseURL]</b></span></span></button></div>
-<button class="button gGray nonbottom nontop inside" id="m26">
-26 Otherwise</button><div class="content contentloop inside">
-<button class="gBlue inside" id="m27">
-27 Get URLs from <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span></button></div>
+<hr><button class="gOrange inside" id="m23">
+23 Get First Item from List <span class="box"><span class="var"><b>[22 URL Query Items]</b></span></span>　»</button>
+<hr><button class="gBlue inside" id="m24">
+24 URL <span class="box"><span class="magic" onclick="magictap(17)"><b>[17 baseURL]</b></span>?<span class="var"><b>[23 Item from List</b>’s name<b>]</b></span>=<span class="var"><b>[23 Item from List</b>’s value<b>]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m25">
+25 Otherwise</button><div class="content contentloop dashed inside">
+<button class="gBlue inside" id="m26">
+26 URL <span class="box"><span class="magic" onclick="magictap(17)"><b>[17 baseURL]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m27">
+27 End If</button></div>
 <button class="gGray nontop inside" id="m28">
-28 End If</button></div>
-<button class="gGray nontop inside" id="m29">
-29 End If　▵<span class="magic" onclick="magictap(21)">21</span></button></div>
-<button class="gGray nontop inside" id="m30">
-30 End If　▵<span class="magic" onclick="magictap(16)">16</span></button></div>
-<button class="gGray nontop" id="m31">
-31 End If　▵<span class="magic" onclick="magictap(3)">3</span>　»</button>
-<hr><button class="gGray" id="m32">
-32 Stop and Output <span class="box"><span class="var"><b>[31 If Result]</b></span></span></button>
+28 End If　▵<span class="magic" onclick="magictap(16)">16</span></button></div>
+<button class="gGray nontop" id="m29">
+29 End If　▵<span class="magic" onclick="magictap(3)">3</span>　»</button>
+<hr><button class="gGray" id="m30">
+30 Stop and Output <span class="box"><span class="var"><b>[29 If Result]</b></span></span></button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

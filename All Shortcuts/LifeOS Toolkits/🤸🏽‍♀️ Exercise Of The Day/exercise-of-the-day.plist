@@ -21,32 +21,32 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.changecase</string>
+			<string>is.workflow.actions.downloadurl</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>CDDEC815-7ACE-4043-A64B-D9AA31CB0D58</string>
-				<key>WFCaseType</key>
-				<string>lowercase</string>
-				<key>text</key>
+				<string>B8266700-D8A6-4509-B2F4-BED84D7E96E1</string>
+				<key>WFURL</key>
+				<string>https://www.darebee.com</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gethtmlfromrichtext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>6770ED1C-B93E-4DA5-A6C9-091F5B04F7B7</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>Aggrandizements</key>
-						<array>
-							<dict>
-								<key>Type</key>
-								<string>WFDateFormatVariableAggrandizement</string>
-								<key>WFDateFormat</key>
-								<string>yyyy/MMMMd</string>
-								<key>WFDateFormatStyle</key>
-								<string>Custom</string>
-								<key>WFISO8601IncludeTime</key>
-								<false/>
-							</dict>
-						</array>
+						<key>OutputName</key>
+						<string>Contents of URL</string>
+						<key>OutputUUID</key>
+						<string>B8266700-D8A6-4509-B2F4-BED84D7E96E1</string>
 						<key>Type</key>
-						<string>CurrentDate</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -55,32 +55,59 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.url</string>
+			<string>is.workflow.actions.text.match</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>6ABD00BA-AC37-49ED-9038-45CE83A6C5F1</string>
-				<key>WFURLActionURL</key>
+				<string>9027F79F-9A87-4133-AA96-BAC4ED5FCABA</string>
+				<key>WFMatchTextPattern</key>
+				<string>href="(.+?)".*Exercise of the Day</string>
+				<key>text</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{40, 1}</key>
+							<key>{0, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Updated Text</string>
+								<string>HTML from Rich Text</string>
 								<key>OutputUUID</key>
-								<string>CDDEC815-7ACE-4043-A64B-D9AA31CB0D58</string>
+								<string>6770ED1C-B93E-4DA5-A6C9-091F5B04F7B7</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>https://www.darebee.com/images/exercise/￼.gif</string>
+						<string>￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.match.getgroup</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>href</string>
+				<key>UUID</key>
+				<string>9DD950FF-2A81-4391-BD6B-9CF113F73D26</string>
+				<key>matches</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Matches</string>
+						<key>OutputUUID</key>
+						<string>9027F79F-9A87-4133-AA96-BAC4ED5FCABA</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -90,7 +117,7 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>1394CA7C-9FF9-460B-ADB2-77C501622F31</string>
+				<string>00D9CA0B-FEA5-488C-8BA1-345D1359B26A</string>
 				<key>WFURL</key>
 				<dict>
 					<key>Value</key>
@@ -100,9 +127,9 @@
 							<key>{0, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>URL</string>
+								<string>href</string>
 								<key>OutputUUID</key>
-								<string>6ABD00BA-AC37-49ED-9038-45CE83A6C5F1</string>
+								<string>9DD950FF-2A81-4391-BD6B-9CF113F73D26</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -121,7 +148,7 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>B238564A-BF05-4AB9-81EE-3E6C028A1AAD</string>
+				<string>D74EE9BC-4F03-4598-AC93-0CBAB159C5E0</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -129,7 +156,7 @@
 						<key>OutputName</key>
 						<string>Contents of URL</string>
 						<key>OutputUUID</key>
-						<string>1394CA7C-9FF9-460B-ADB2-77C501622F31</string>
+						<string>00D9CA0B-FEA5-488C-8BA1-345D1359B26A</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -140,66 +167,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.text.changecase</string>
+			<string>is.workflow.actions.base64encode</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>AED2CBDF-2F0A-4EE8-95BD-C1D78B752857</string>
-				<key>WFCaseType</key>
-				<string>lowercase</string>
-				<key>text</key>
+				<string>B13DC5C9-9877-4159-A471-C0E6B9B54010</string>
+				<key>WFBase64LineBreakMode</key>
+				<string>None</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>Aggrandizements</key>
-						<array>
-							<dict>
-								<key>Type</key>
-								<string>WFDateFormatVariableAggrandizement</string>
-								<key>WFDateFormat</key>
-								<string>MMMM-d-yyyy</string>
-								<key>WFDateFormatStyle</key>
-								<string>Custom</string>
-								<key>WFISO8601IncludeTime</key>
-								<false/>
-							</dict>
-						</array>
+						<key>OutputName</key>
+						<string>Images</string>
+						<key>OutputUUID</key>
+						<string>D74EE9BC-4F03-4598-AC93-0CBAB159C5E0</string>
 						<key>Type</key>
-						<string>CurrentDate</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.url</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>8A94D758-02D4-478D-8F2D-9B2AAFF536F9</string>
-				<key>WFURLActionURL</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{30, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Updated Text</string>
-								<key>OutputUUID</key>
-								<string>AED2CBDF-2F0A-4EE8-95BD-C1D78B752857</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>https://www.darebee.com/daily/￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
 				</dict>
 			</dict>
 		</dict>
@@ -274,9 +261,9 @@
 											<key>{0, 1}</key>
 											<dict>
 												<key>OutputName</key>
-												<string>URL</string>
+												<string>Base64 Encoded</string>
 												<key>OutputUUID</key>
-												<string>6ABD00BA-AC37-49ED-9038-45CE83A6C5F1</string>
+												<string>B13DC5C9-9877-4159-A471-C0E6B9B54010</string>
 												<key>Type</key>
 												<string>ActionOutput</string>
 											</dict>
@@ -310,9 +297,9 @@
 											<key>{0, 1}</key>
 											<dict>
 												<key>OutputName</key>
-												<string>URL</string>
+												<string>href</string>
 												<key>OutputUUID</key>
-												<string>8A94D758-02D4-478D-8F2D-9B2AAFF536F9</string>
+												<string>9DD950FF-2A81-4391-BD6B-9CF113F73D26</string>
 												<key>Type</key>
 												<string>ActionOutput</string>
 											</dict>
@@ -532,7 +519,7 @@
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>4407</string>
+	<string>4610</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
