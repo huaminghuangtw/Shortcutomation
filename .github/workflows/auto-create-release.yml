@@ -3,22 +3,18 @@ name: Auto Create Release
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Build All_Shortcuts_with_Folders.zip
+      - name: Build shortcut backup zips
         run: |
-          ( cd "All Shortcuts" && zip -r -q ../All_Shortcuts_with_Folders.zip . )
-
-      - name: Build All_Shortcuts_without_Folders.zip
-        run: |
-          ( cd "All Shortcuts" && find . -name '*.shortcut' -print0 | xargs -0 zip -q -j ../All_Shortcuts_without_Folders.zip )
+          python3 .scripts/build_release_zips.py
 
       - name: Release
         uses: softprops/action-gh-release@v2
