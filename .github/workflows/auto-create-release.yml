@@ -11,10 +11,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Build All_Shortcuts_with_Folders.zip
+        run: |
+          ( cd "All Shortcuts" && zip -r -q ../All_Shortcuts_with_Folders.zip . )
+
+      - name: Build All_Shortcuts_without_Folders.zip
+        run: |
+          ( cd "All Shortcuts" && find . -name '*.shortcut' -print0 | xargs -0 zip -q -j ../All_Shortcuts_without_Folders.zip )
+
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           body_path: CHANGELOG.md
+          files: |
+            All_Shortcuts_with_Folders.zip
+            All_Shortcuts_without_Folders.zip
           draft: false
           prerelease: false
           discussion_category_name: Show and tell
