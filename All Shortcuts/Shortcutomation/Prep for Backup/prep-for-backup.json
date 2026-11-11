@@ -12,7 +12,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
             "WFWorkflowActionParameters": {
-                "WFGetFilePath": "All Shortcuts",
+                "WFGetFilePath": "assets/data.json",
                 "WFFile": {
                     "fileLocation": {
                         "relativeSubpath": "Shortcutomation",
@@ -24,53 +24,6 @@
                     "displayName": "Shortcutomation"
                 },
                 "UUID": "91C4E7D9-2B00-48A7-9494-EC479C707BA4"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
-            "WFWorkflowActionParameters": {
-                "WFFolder": {
-                    "Value": {
-                        "OutputUUID": "91C4E7D9-2B00-48A7-9494-EC479C707BA4",
-                        "Type": "ActionOutput",
-                        "OutputName": "File"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "18DBA027-70F9-4686-9725-9A8670D85AEA",
-                "Recursive": true
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
-            "WFWorkflowActionParameters": {
-                "WFContentItemFilter": {
-                    "Value": {
-                        "WFActionParameterFilterPrefix": 1,
-                        "WFContentPredicateBoundedDate": false,
-                        "WFActionParameterFilterTemplates": [
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Unit": 4,
-                                    "String": "shortcut"
-                                },
-                                "Removable": true,
-                                "Property": "File Extension"
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFContentPredicateTableTemplate"
-                },
-                "WFContentItemInputParameter": {
-                    "Value": {
-                        "OutputUUID": "18DBA027-70F9-4686-9725-9A8670D85AEA",
-                        "Type": "ActionOutput",
-                        "OutputName": "Folder Contents"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "711C4ABD-E9BE-41B9-AE55-1167653EE598"
             }
         },
         {
@@ -89,7 +42,7 @@
                                 },
                                 "WFValue": {
                                     "Value": {
-                                        "string": "shortcuts-backup"
+                                        "string": "data"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }
@@ -122,9 +75,19 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "711C4ABD-E9BE-41B9-AE55-1167653EE598",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Files"
+                                                "OutputName": "File",
+                                                "OutputUUID": "91C4E7D9-2B00-48A7-9494-EC479C707BA4",
+                                                "Aggrandizements": [
+                                                    {
+                                                        "Type": "WFCoercionVariableAggrandizement",
+                                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                                    },
+                                                    {
+                                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                                        "DictionaryKey": "thisUpdateSnapshot"
+                                                    }
+                                                ]
                                             }
                                         }
                                     },

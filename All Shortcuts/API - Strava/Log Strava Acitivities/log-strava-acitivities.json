@@ -9,8 +9,10 @@
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowNoInputBehavior": {
-        "Name": "WFWorkflowNoInputBehaviorShowError",
-        "Parameters": {}
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
     },
     "WFWorkflowActions": [
         {
@@ -61,39 +63,6 @@
                 },
                 "CustomOutputName": "date",
                 "UUID": "3A9EC887-9B33-4CFC-AC21-AFCC76C54E7A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.adjustdate",
-            "WFWorkflowActionParameters": {
-                "WFDuration": {
-                    "Value": {
-                        "Unit": "days",
-                        "Magnitude": "1"
-                    },
-                    "WFSerializationType": "WFQuantityFieldValue"
-                },
-                "UUID": "7FBCFCF4-5F23-4B28-ADFD-E6C200346D2F",
-                "WFAdjustOperation": "Subtract",
-                "WFDate": {
-                    "Value": {
-                        "string": "￼",
-                        "attachmentsByRange": {
-                            "{0, 1}": {
-                                "Type": "ActionOutput",
-                                "OutputName": "date",
-                                "OutputUUID": "3A9EC887-9B33-4CFC-AC21-AFCC76C54E7A",
-                                "Aggrandizements": [
-                                    {
-                                        "Type": "WFCoercionVariableAggrandizement",
-                                        "CoercionItemClass": "WFDateContentItem"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "WFSerializationType": "WFTextTokenString"
-                }
             }
         },
         {
@@ -284,69 +253,1410 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.measurement.create",
-            "WFWorkflowActionParameters": {
-                "WFMeasurementUnit": {
-                    "Value": {
-                        "Unit": "m",
-                        "Magnitude": {
-                            "Type": "ActionOutput",
-                            "OutputName": "inputDict",
-                            "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFDictionaryValueVariableAggrandizement",
-                                    "DictionaryKey": "distance"
-                                }
-                            ]
-                        }
-                    },
-                    "WFSerializationType": "WFQuantityFieldValue"
-                },
-                "UUID": "2F387C4B-E583-46DF-B95E-6A91450E8D49"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.measurement.convert",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
-                        "OutputUUID": "2F387C4B-E583-46DF-B95E-6A91450E8D49",
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
                         "Type": "ActionOutput",
-                        "OutputName": "Measurement"
+                        "OutputName": "inputDict"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "CustomOutputName": "distance",
-                "UUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
-                "WFMeasurementUnit": {
-                    "WFNSUnitType": "Length",
-                    "WFNSUnitSymbol": "km"
+                "UUID": "94956054-79FC-44AC-A607-ED02109CA980",
+                "WFDictionaryKey": "distance"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "total_elevation_gain",
+                "UUID": "E171AF61-9AEB-453A-A67F-57822CB16806",
+                "WFDictionaryKey": "total_elevation_gain"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "sport_type",
+                "UUID": "10509B17-8446-4D89-9BB6-BEBCA9A681CA",
+                "WFDictionaryKey": "sport_type"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+            "WFWorkflowActionParameters": {
+                "WFItems": [
+                    "Ride",
+                    "Run"
+                ],
+                "UUID": "C182B929-25CF-46C7-B57B-DE37E5B17307"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "C182B929-25CF-46C7-B57B-DE37E5B17307",
+                            "Type": "ActionOutput",
+                            "OutputName": "List"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": {
+                    "Value": {
+                        "string": "￼",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "10509B17-8446-4D89-9BB6-BEBCA9A681CA",
+                                "Type": "ActionOutput",
+                                "OutputName": "sport_type"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "GroupingIdentifier": "B3F12975-A1C9-4217-9615-C13F9AFB7583",
+                "WFCondition": 99
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_speed",
+                "UUID": "73C58A7D-BB3E-4AD6-9571-C7B323551880",
+                "WFDictionaryKey": "average_speed"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "average_speed",
+                            "OutputUUID": "73C58A7D-BB3E-4AD6-9571-C7B323551880",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "F7A60E57-46CB-40A8-8140-41CAEFE59832",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "sport_type",
+                            "OutputUUID": "10509B17-8446-4D89-9BB6-BEBCA9A681CA",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Ride",
+                "GroupingIdentifier": "47F063D9-2AE6-4D1D-AF2B-5313D30C8171",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ * 3.6",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "73C58A7D-BB3E-4AD6-9571-C7B323551880",
+                                "Type": "ActionOutput",
+                                "OutputName": "average_speed"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F9409772-9653-4C4C-AF6E-D3BCA1AF709B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "F9409772-9653-4C4C-AF6E-D3BCA1AF709B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundTo": "Tenths",
+                "UUID": "81FB0032-FEE0-490E-851E-7643BE843B42"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Avg Speed = ￼ km/h",
+                        "attachmentsByRange": {
+                            "{12, 1}": {
+                                "OutputUUID": "81FB0032-FEE0-490E-851E-7643BE843B42",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "22F22B5D-501F-4B81-9836-F78E7BF7E082"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "47F063D9-2AE6-4D1D-AF2B-5313D30C8171",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "1000 / ￼",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "OutputUUID": "73C58A7D-BB3E-4AD6-9571-C7B323551880",
+                                "Type": "ActionOutput",
+                                "OutputName": "average_speed"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "95185D37-D96F-4678-9C44-20F941C795D3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatDurationIntent",
+            "WFWorkflowActionParameters": {
+                "maximumUnitCount": "6",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "FormatDurationIntent"
+                },
+                "UUID": "9770B0AE-EBEC-4E26-933F-194544510BF2",
+                "showDays": false,
+                "unitStyle": "positional",
+                "duration": {
+                    "Value": {
+                        "OutputUUID": "95185D37-D96F-4678-9C44-20F941C795D3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 }
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.measurement.create",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
-                "WFMeasurementUnit": {
+                "WFTextActionText": {
                     "Value": {
-                        "Unit": "m",
-                        "Magnitude": {
-                            "Type": "ActionOutput",
-                            "OutputName": "inputDict",
-                            "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFDictionaryValueVariableAggrandizement",
-                                    "DictionaryKey": "total_elevation_gain"
-                                }
-                            ]
+                        "string": "Avg Pace @ ￼",
+                        "attachmentsByRange": {
+                            "{11, 1}": {
+                                "OutputUUID": "9770B0AE-EBEC-4E26-933F-194544510BF2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Duration"
+                            }
                         }
                     },
-                    "WFSerializationType": "WFQuantityFieldValue"
+                    "WFSerializationType": "WFTextTokenString"
                 },
-                "CustomOutputName": "elevation",
-                "UUID": "33C2157F-CDD0-47B9-BCEE-894DA656916F"
+                "UUID": "E36C8873-1B18-4987-8E42-1B7EF1D062A6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "47F063D9-2AE6-4D1D-AF2B-5313D30C8171",
+                "UUID": "A111FF89-A132-4E9B-A99D-577794A36210"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A111FF89-A132-4E9B-A99D-577794A36210",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "average_speed"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "F7A60E57-46CB-40A8-8140-41CAEFE59832",
+                "UUID": "B30DEF0A-DED0-4C3B-91AC-6E9F4FF46913"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_heartrate",
+                "UUID": "51564CA1-CCE6-4C6C-9D72-CA6EDD52613E",
+                "WFDictionaryKey": "average_heartrate"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "average_heartrate",
+                            "OutputUUID": "51564CA1-CCE6-4C6C-9D72-CA6EDD52613E",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "9B9FDAB9-D45C-4968-9974-23480A785E49",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "51564CA1-CCE6-4C6C-9D72-CA6EDD52613E",
+                        "Type": "ActionOutput",
+                        "OutputName": "average_heartrate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9C4C4F6F-6058-455F-BF06-FFB1FEE5D35C"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "9C4C4F6F-6058-455F-BF06-FFB1FEE5D35C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rounded Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "average_heartrate"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9B9FDAB9-D45C-4968-9974-23480A785E49",
+                "UUID": "F6C96F54-C0F0-42EF-A409-44C06A2C2AEA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_watts",
+                "UUID": "A5E54E16-346D-4ACD-AAA8-D36812D68A0E",
+                "WFDictionaryKey": "average_watts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "average_watts",
+                            "OutputUUID": "A5E54E16-346D-4ACD-AAA8-D36812D68A0E",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "516060E1-E18E-41FC-9A57-99662FB73270",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A5E54E16-346D-4ACD-AAA8-D36812D68A0E",
+                        "Type": "ActionOutput",
+                        "OutputName": "average_watts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "5E23519D-0559-42B4-9E80-AF474F013C35"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "5E23519D-0559-42B4-9E80-AF474F013C35",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rounded Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "average_watts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "516060E1-E18E-41FC-9A57-99662FB73270",
+                "UUID": "C51B1676-56B7-4EA1-BCD0-03A975C9A4B6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_cadence",
+                "UUID": "8A6867A2-2BEA-4AB7-8C9A-96D71147BCE6",
+                "WFDictionaryKey": "average_cadence"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "average_cadence",
+                            "OutputUUID": "8A6867A2-2BEA-4AB7-8C9A-96D71147BCE6",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "A6219318-B296-4F09-9D4B-D2BB00A2145A",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "sport_type",
+                            "OutputUUID": "10509B17-8446-4D89-9BB6-BEBCA9A681CA",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Ride",
+                "GroupingIdentifier": "B0047DB9-2E6E-4314-8007-13FA33D43606",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8A6867A2-2BEA-4AB7-8C9A-96D71147BCE6",
+                        "Type": "ActionOutput",
+                        "OutputName": "average_cadence"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "EDDB2E16-9215-4B91-A6D6-A74FDBE2D960"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B0047DB9-2E6E-4314-8007-13FA33D43606",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "8A6867A2-2BEA-4AB7-8C9A-96D71147BCE6",
+                        "Type": "ActionOutput",
+                        "OutputName": "average_cadence"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFMathOperand": "2",
+                "UUID": "FEF68418-86DC-4776-A49F-EEBAFF0E2E21",
+                "WFMathOperation": "×"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B0047DB9-2E6E-4314-8007-13FA33D43606",
+                "UUID": "C9FC4E33-60EE-4D83-BD1C-6DF847BC6032"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C9FC4E33-60EE-4D83-BD1C-6DF847BC6032",
+                        "Type": "ActionOutput",
+                        "OutputName": "If Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "403D9C42-34A9-40DA-A63C-077AF0186609"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "403D9C42-34A9-40DA-A63C-077AF0186609",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rounded Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "average_cadence"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "A6219318-B296-4F09-9D4B-D2BB00A2145A",
+                "UUID": "1993FAFD-073F-41D4-B2C4-E14AAA441B99"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B3F12975-A1C9-4217-9615-C13F9AFB7583",
+                "UUID": "8A1E85A0-1ED3-4B14-8078-9E5D4E7301DB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict",
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "id"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "laps",
+                "UUID": "BDF95182-4E0E-4EF6-984D-FE83CBA3F9BC",
+                "WFWorkflow": {
+                    "workflowIdentifier": "77F9C8BD-0355-4EA2-BEEF-C88B930FE484",
+                    "workflowName": "Strava - List Activity Laps",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Strava - List Activity Laps"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "BDF95182-4E0E-4EF6-984D-FE83CBA3F9BC",
+                            "Type": "ActionOutput",
+                            "OutputName": "laps"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "BB506CCC-00E4-44DD-887C-8D478ABAF146",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "BDF95182-4E0E-4EF6-984D-FE83CBA3F9BC",
+                        "Type": "ActionOutput",
+                        "OutputName": "laps"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "5094F579-9EEC-46C4-85E7-2528CE048D12",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ / 1000",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "distance"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C0FC3644-D4B1-4737-8264-92AAF1D15A1E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C0FC3644-D4B1-4737-8264-92AAF1D15A1E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundTo": "Hundredths",
+                "CustomOutputName": "LapDistance",
+                "UUID": "F10062EC-C014-494F-ABED-532DB554836B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatDurationIntent",
+            "WFWorkflowActionParameters": {
+                "showDays": false,
+                "UUID": "CCB0B69E-6937-42C2-B711-092E8CA5E41B",
+                "unitStyle": "brief",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "FormatDurationIntent"
+                },
+                "duration": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "elapsed_time"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "maximumUnitCount": "6",
+                "CustomOutputName": "LapTime"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_speed",
+                "UUID": "440B0DCE-38FD-428E-BD55-60BF07BE60C6",
+                "WFDictionaryKey": "average_speed"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "sport_type",
+                            "OutputUUID": "10509B17-8446-4D89-9BB6-BEBCA9A681CA",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Ride",
+                "GroupingIdentifier": "5C930DE7-956F-4D2A-8253-A7B5C50A29BE",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ * 3.6",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "440B0DCE-38FD-428E-BD55-60BF07BE60C6",
+                                "Type": "ActionOutput",
+                                "OutputName": "average_speed"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "490E1456-143C-426A-95EF-04A004A41500"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "490E1456-143C-426A-95EF-04A004A41500",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundTo": "Tenths",
+                "UUID": "B2981012-E128-4C64-A320-535D025F62B2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ km/h",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "B2981012-E128-4C64-A320-535D025F62B2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "0345C1D0-07B7-4698-8187-BEEA9DD72737"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "5C930DE7-956F-4D2A-8253-A7B5C50A29BE",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "1000 / ￼",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "OutputUUID": "440B0DCE-38FD-428E-BD55-60BF07BE60C6",
+                                "Type": "ActionOutput",
+                                "OutputName": "average_speed"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "7CF8C34F-18B0-4487-8CED-0760C8030BB3"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatDurationIntent",
+            "WFWorkflowActionParameters": {
+                "maximumUnitCount": "6",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "FormatDurationIntent"
+                },
+                "UUID": "AF4EBC53-BF25-44F3-9014-ECC0D75FE962",
+                "showDays": false,
+                "unitStyle": "positional",
+                "duration": {
+                    "Value": {
+                        "OutputUUID": "7CF8C34F-18B0-4487-8CED-0760C8030BB3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "5C930DE7-956F-4D2A-8253-A7B5C50A29BE",
+                "UUID": "E4BFA023-B57F-4093-B333-20753AEF297B"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_heartrate",
+                "UUID": "86ED6C49-0BF1-43C7-BAE7-B44ACE97A686",
+                "WFDictionaryKey": "average_heartrate"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "average_watts",
+                "UUID": "C18AF2A4-13EB-4233-8998-F10D4F4D0626",
+                "WFDictionaryKey": "average_watts"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "\t\t￼. ￼ km, ￼ @ ￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            },
+                            "{11, 1}": {
+                                "OutputUUID": "CCB0B69E-6937-42C2-B711-092E8CA5E41B",
+                                "Type": "ActionOutput",
+                                "OutputName": "LapTime"
+                            },
+                            "{15, 1}": {
+                                "OutputUUID": "E4BFA023-B57F-4093-B333-20753AEF297B",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            },
+                            "{5, 1}": {
+                                "OutputUUID": "F10062EC-C014-494F-ABED-532DB554836B",
+                                "Type": "ActionOutput",
+                                "OutputName": "LapDistance"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1C933B48-CC16-466F-9456-6C5796643B52"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "average_heartrate",
+                            "OutputUUID": "86ED6C49-0BF1-43C7-BAE7-B44ACE97A686",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "0D8F008B-C4BC-4889-84E0-DA04C8C38857",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "86ED6C49-0BF1-43C7-BAE7-B44ACE97A686",
+                        "Type": "ActionOutput",
+                        "OutputName": "average_heartrate"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "0ECC5E82-1F08-4D14-AF11-E391E8A0954F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼, ￼ bpm",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "OutputUUID": "0ECC5E82-1F08-4D14-AF11-E391E8A0954F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "1C933B48-CC16-466F-9456-6C5796643B52",
+                                "Type": "ActionOutput",
+                                "OutputName": "Text"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F1AEE6BC-8220-4D18-8F12-649515DABEE0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "0D8F008B-C4BC-4889-84E0-DA04C8C38857",
+                "UUID": "F4F83EC5-8B05-40C9-8995-AF827FEBC3C9"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "average_watts",
+                            "OutputUUID": "C18AF2A4-13EB-4233-8998-F10D4F4D0626",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFStringContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "9432B275-D13D-46CC-B30F-97AC0F0E216A",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "C18AF2A4-13EB-4233-8998-F10D4F4D0626",
+                        "Type": "ActionOutput",
+                        "OutputName": "average_watts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "012E076B-5A05-4C9D-BDC6-7FD1DDE355D2"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼, ￼w",
+                        "attachmentsByRange": {
+                            "{3, 1}": {
+                                "OutputUUID": "012E076B-5A05-4C9D-BDC6-7FD1DDE355D2",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "F4F83EC5-8B05-40C9-8995-AF827FEBC3C9",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "BEC6377D-8086-44F0-9799-D8EAD1A56D5E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "9432B275-D13D-46CC-B30F-97AC0F0E216A",
+                "UUID": "98CD53F9-5EE6-4A2A-B6A6-BE04E8D4419E"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "5094F579-9EEC-46C4-85E7-2528CE048D12",
+                "UUID": "4AF9F5D5-F8EB-4903-92FB-EC79329F41AA"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "4AF9F5D5-F8EB-4903-92FB-EC79329F41AA",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "laps"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BB506CCC-00E4-44DD-887C-8D478ABAF146",
+                "UUID": "730D0AC0-11F8-4E0A-A26D-5FBC34A53951"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "sport_type",
+                            "OutputUUID": "10509B17-8446-4D89-9BB6-BEBCA9A681CA",
+                            "Aggrandizements": [
+                                {
+                                    "PropertyUserInfo": "WFItemName",
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "Name"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Run",
+                "GroupingIdentifier": "463E8546-AA43-4E9E-9CD0-237ED51D065F",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "CustomOutputName": "workout_type",
+                "UUID": "B12E12DA-0A69-4352-A1E0-64D7E1B6393F",
+                "WFDictionaryKey": "workout_type"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "C1791389-B32B-48EC-B182-1DAEA6E3C72C",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "ActionOutput",
+                            "OutputName": "workout_type",
+                            "OutputUUID": "B12E12DA-0A69-4352-A1E0-64D7E1B6393F",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "null",
+                "WFNumberValue": "0",
+                "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "inputDict",
+                        "OutputUUID": "3872FAB7-C8C5-4D37-987A-49F3CDF9E543",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "id"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "FE728303-F331-46DF-A868-3332B707BBC1",
+                    "workflowName": "Strava - Get Activity Details",
+                    "isSelf": false
+                },
+                "UUID": "493A0DBC-49E8-451B-9C52-014030EB791D",
+                "WFWorkflowName": "Strava - Get Activity Details"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result",
+                        "OutputUUID": "493A0DBC-49E8-451B-9C52-014030EB791D",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "splits_metric"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "GroupingIdentifier": "DF53C1B8-64A3-4B4A-8BB3-293D6E6E33B6",
+                "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "average_heartrate"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "7A789959-7AF2-4B4B-BAB7-C74E67A0D84F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "1000 / ￼",
+                        "attachmentsByRange": {
+                            "{7, 1}": {
+                                "VariableName": "Repeat Item",
+                                "Type": "Variable",
+                                "Aggrandizements": [
+                                    {
+                                        "Type": "WFCoercionVariableAggrandizement",
+                                        "CoercionItemClass": "WFDictionaryContentItem"
+                                    },
+                                    {
+                                        "Type": "WFDictionaryValueVariableAggrandizement",
+                                        "DictionaryKey": "average_speed"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "ABF82493-B079-4B7D-BAF0-380575899907"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatDurationIntent",
+            "WFWorkflowActionParameters": {
+                "showDays": false,
+                "showHours": false,
+                "UUID": "C055DA46-C0C3-48B4-BA74-BD78513A87CE",
+                "unitStyle": "positional",
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "FormatDurationIntent"
+                },
+                "duration": {
+                    "Value": {
+                        "OutputUUID": "ABF82493-B079-4B7D-BAF0-380575899907",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "maximumUnitCount": "6"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼. ￼ bpm @ ￼",
+                        "attachmentsByRange": {
+                            "{11, 1}": {
+                                "OutputUUID": "C055DA46-C0C3-48B4-BA74-BD78513A87CE",
+                                "Type": "ActionOutput",
+                                "OutputName": "Formatted Duration"
+                            },
+                            "{3, 1}": {
+                                "OutputUUID": "7A789959-7AF2-4B4B-BAB7-C74E67A0D84F",
+                                "Type": "ActionOutput",
+                                "OutputName": "Rounded Number"
+                            },
+                            "{0, 1}": {
+                                "VariableName": "Repeat Index",
+                                "Type": "Variable"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "6F8E48B5-C9BC-4F1E-892A-68584A148059"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DF53C1B8-64A3-4B4A-8BB3-293D6E6E33B6",
+                "UUID": "358CE722-7913-44F2-B5E6-FED516CD6419"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "358CE722-7913-44F2-B5E6-FED516CD6419",
+                        "Type": "ActionOutput",
+                        "OutputName": "Repeat Results"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFVariableName": "splits"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C1791389-B32B-48EC-B182-1DAEA6E3C72C",
+                "UUID": "2DFD3849-9CCA-4440-A02B-6A51BE4D4560"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "463E8546-AA43-4E9E-9CD0-237ED51D065F",
+                "UUID": "8AB2A926-08C5-4423-971F-E8C8D2B8665B"
             }
         },
         {
@@ -414,13 +1724,20 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "27A2313D-971E-47DD-8074-FB51781F398A",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
                             "Type": "ActionOutput",
-                            "OutputName": "distance"
+                            "OutputName": "distance",
+                            "OutputUUID": "94956054-79FC-44AC-A607-ED02109CA980",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -433,8 +1750,42 @@
                     },
                     "WFSerializationType": "WFQuantityFieldValue"
                 },
-                "GroupingIdentifier": "27A2313D-971E-47DD-8074-FB51781F398A",
+                "WFNumberValue": "0",
                 "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+            "WFWorkflowActionParameters": {
+                "Input": {
+                    "Value": {
+                        "string": "￼ / 1000",
+                        "attachmentsByRange": {
+                            "{0, 1}": {
+                                "OutputUUID": "94956054-79FC-44AC-A607-ED02109CA980",
+                                "Type": "ActionOutput",
+                                "OutputName": "distance"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "A564F9F1-CEBB-49C1-AA1E-20142E6DA422"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A564F9F1-CEBB-49C1-AA1E-20142E6DA422",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFRoundTo": "Tenths",
+                "UUID": "260B7EE5-6085-4314-BCCE-0DA7897B8F45"
             }
         },
         {
@@ -442,12 +1793,12 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼\n\t* Distance: ￼",
+                        "string": "￼\n\t* Distance = ￼ km",
                         "attachmentsByRange": {
-                            "{15, 1}": {
-                                "OutputUUID": "2EDDD6A1-6373-42DE-8762-686E44921A1D",
+                            "{16, 1}": {
+                                "OutputUUID": "260B7EE5-6085-4314-BCCE-0DA7897B8F45",
                                 "Type": "ActionOutput",
-                                "OutputName": "distance"
+                                "OutputName": "Rounded Number"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "620C2EC3-4239-4F99-9995-453C213BB08B",
@@ -464,13 +1815,20 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "AAC4F724-0A80-4369-A8A6-1FC298C64D5C",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "33C2157F-CDD0-47B9-BCEE-894DA656916F",
                             "Type": "ActionOutput",
-                            "OutputName": "elevation"
+                            "OutputName": "total_elevation_gain",
+                            "OutputUUID": "E171AF61-9AEB-453A-A67F-57822CB16806",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFCoercionVariableAggrandizement",
+                                    "CoercionItemClass": "WFNumberContentItem"
+                                }
+                            ]
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
@@ -483,8 +1841,37 @@
                     },
                     "WFSerializationType": "WFQuantityFieldValue"
                 },
-                "GroupingIdentifier": "AAC4F724-0A80-4369-A8A6-1FC298C64D5C",
+                "WFNumberValue": "0",
                 "WFCondition": 2
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.round",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "E171AF61-9AEB-453A-A67F-57822CB16806",
+                        "Type": "ActionOutput",
+                        "OutputName": "total_elevation_gain"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "AE30BEE9-F9B1-440A-A184-A1D76EEB56B4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.format.number",
+            "WFWorkflowActionParameters": {
+                "WFNumber": {
+                    "Value": {
+                        "OutputUUID": "AE30BEE9-F9B1-440A-A184-A1D76EEB56B4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rounded Number"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFNumberFormatDecimalPlaces": 0,
+                "UUID": "56855BFF-BC3A-489C-B7E6-C44590DB363B"
             }
         },
         {
@@ -492,12 +1879,12 @@
             "WFWorkflowActionParameters": {
                 "WFTextActionText": {
                     "Value": {
-                        "string": "￼ | Elevation: ￼",
+                        "string": "￼ | Elevation = ￼ m",
                         "attachmentsByRange": {
-                            "{15, 1}": {
-                                "OutputUUID": "33C2157F-CDD0-47B9-BCEE-894DA656916F",
+                            "{16, 1}": {
+                                "OutputUUID": "56855BFF-BC3A-489C-B7E6-C44590DB363B",
                                 "Type": "ActionOutput",
-                                "OutputName": "elevation"
+                                "OutputName": "Formatted Number"
                             },
                             "{0, 1}": {
                                 "OutputUUID": "EE282991-727C-43A0-B987-E28378CB0932",
@@ -517,6 +1904,300 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "AAC4F724-0A80-4369-A8A6-1FC298C64D5C",
                 "UUID": "4ACBD707-A0FC-4709-B373-FED24A47B821"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "average_speed",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "DACDED65-7ECC-4E40-AC9D-8FD2057464F5",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ | ￼",
+                        "attachmentsByRange": {
+                            "{4, 1}": {
+                                "VariableName": "average_speed",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "4ACBD707-A0FC-4709-B373-FED24A47B821",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "79E87EA2-0D79-4EB4-9BCA-D879CF979AC5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DACDED65-7ECC-4E40-AC9D-8FD2057464F5",
+                "UUID": "AAAD1370-54F4-4776-925A-D382242B8897"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "average_heartrate",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "BFE492AF-85DA-4010-82EE-E9AE166EA02F",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ | Avg HR = ￼",
+                        "attachmentsByRange": {
+                            "{13, 1}": {
+                                "VariableName": "average_heartrate",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "AAAD1370-54F4-4776-925A-D382242B8897",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "412D7023-46C5-4405-9C3B-582F7FEDC796"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "BFE492AF-85DA-4010-82EE-E9AE166EA02F",
+                "UUID": "2B685C30-F49F-4B32-AE01-FECDFFE9F1FF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "average_watts",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "C62302D7-4C66-4CF7-8FAC-29A4797A1B6F",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ | Avg Power = ￼ w",
+                        "attachmentsByRange": {
+                            "{16, 1}": {
+                                "VariableName": "average_watts",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "2B685C30-F49F-4B32-AE01-FECDFFE9F1FF",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "9D6EF392-1585-4B17-ACAA-942CEE2DD1ED"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "C62302D7-4C66-4CF7-8FAC-29A4797A1B6F",
+                "UUID": "F88D0A48-86E7-4B8F-9A34-B3BA6298F269"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "average_cadence",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "E7052B55-AA1C-4ADE-8439-1E5F3B0189AB",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼ | Avg Cadence = ￼",
+                        "attachmentsByRange": {
+                            "{18, 1}": {
+                                "VariableName": "average_cadence",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "F88D0A48-86E7-4B8F-9A34-B3BA6298F269",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "20450655-49D6-4383-8248-02478AE103EF"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "E7052B55-AA1C-4ADE-8439-1E5F3B0189AB",
+                "UUID": "4EC8A313-62D9-4120-ADCF-A2E6954A6671"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "laps",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "51216EE9-9143-4A31-8BCA-59D6F17AF958",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "laps",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "4EC8A313-62D9-4120-ADCF-A2E6954A6671",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "F7E2A573-6F27-431B-8DB2-648292A9CA9F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "51216EE9-9143-4A31-8BCA-59D6F17AF958",
+                "UUID": "3699AEF0-7AD6-4081-B738-DB2536F16222"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "VariableName": "splits",
+                            "Type": "Variable"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "911EA734-233B-48FC-A583-9F06273A64D8",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "￼\n￼",
+                        "attachmentsByRange": {
+                            "{2, 1}": {
+                                "VariableName": "splits",
+                                "Type": "Variable"
+                            },
+                            "{0, 1}": {
+                                "OutputUUID": "3699AEF0-7AD6-4081-B738-DB2536F16222",
+                                "Type": "ActionOutput",
+                                "OutputName": "If Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "C9634D66-CE1E-4C24-AB9D-53F75B482525"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "911EA734-233B-48FC-A583-9F06273A64D8",
+                "UUID": "BEDF382A-27B6-4A5D-A9C2-1DC91C026911"
             }
         },
         {

@@ -1,0 +1,529 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>template-bookend-routines</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gApple { background-color: #f6f6ff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dotted { border-left-style: dotted; }
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gApple { background-color: #2c2842; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="nonbutton gParams">
+  <b>template-bookend-routines</b>
+  (89 actions, 74 KB)
+</button>
+<button class="button gOrange" id="m0">
+0 Dictionary <b>　➔ mappingDict</b>　» <i>1</i> <span class="magic" onclick="magictap(14)">14</span> <span class="magic" onclick="magictap(29)">29</span></button><div class="content">
+<div class="col2">{  "Morning": {
+      "date": "Today",
+      "frontmatterKey": "startTheDayAt",
+      "reminderList": "Scheduled"
+   },
+   "Evening": {
+      "date": "Tomorrow",
+      "frontmatterKey": "endTheDayAt",
+      "reminderList": "Completed"
+   }
+}</div></div>
+<hr><button class="gOrange" id="m1">
+1 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.frontmatterKey</span> in <span class="box"><span class="var"><b>[0 mappingDict]</b></span></span> <b>　➔ fromtmatterKey</b>　»</button>
+<hr><button class="button gOrange" id="m2">
+2 Dictionary　»</button><div class="content">
+<div class="col2">{  "date": "Today",
+   "frontmatterKey": "<span class="var"><b>[1 fromtmatterKey]</b></span>",
+   "frontmatterValue": "<span class="var"><b>[CurrentDate</b>{\"Date Style\":\"Custom\",\"WFDateFormat\":\"yyyy-MM-dd'T'HH:mm:ss\",\"WFISO8601IncludeTime\":false}<b>]</b></span>" }</div></div>
+<hr><button class="button " id="m3">
+3 Run Shortcut <span class="box" style="color:red;font-weight:bold">🐧 Log Journal</span></button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[2 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+   "workflowName": "🐧 Log Journal",
+   "isSelf": false
+}</div></div></div>
+<button class="button " id="m4">
+4 Run Shortcut <span class="box" style="color:red;font-weight:bold">Show Year Progress</span></button><div class="content">
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "5C4FAC3B-84A4-4320-ABAA-C94C61768134",
+   "workflowName": "Show Year Progress",
+   "isSelf": false
+}</div></div></div>
+<button class="button gGray nonbottom" id="m5">
+5 If <span class="box"><span class="var"><b>[Shortcut Input</b>’s Name<b>]</b></span></span> <span class="box">is</span> <span class="box" style="display:inline-grid; line-height:normal;"><div class="row"><div class="col1">ConditionalActionString</div>
+<div class="col2">Morning</div></div><div class="row"><div class="col1">NumberValue</div>
+<div class="col2">1</div></div></span></button><div class="content contentloop">
+<button class="button gBlue inside" id="m6">
+6 Get Contents of Folder　»</button><div class="content inside">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
+      "WFFileLocationType": "iCloud",
+      "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/BCF96BB5-C0C4-44A7-8C03-2D21A4ABEB46",
+      "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Visuals",
+      "appContainerBundleIdentifier": "md.obsidian",
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/24208356-A7F2-4CEA-8E4D-4BFD3F850B74/bf47839512a0e865eb2fe630e4662098a3427020"
+   },
+   "filename": "Visuals",
+   "displayName": "Visuals"
+}</div></div>
+<div class="row"><div class="col1">Recursive</div><span style="display:none">: </span><div class="col2">true</div></div></div>
+<hr><button class="button gBlue inside" id="m7">
+7 Filter Images <span class="box"><span class="var"><b>[6 Folder Contents]</b></span></span></button><div class="content inside">
+<div class="row"><div class="col1">ContentItemFilter</div><span style="display:none">: </span><div class="col2">• All the following are true
+Media Type is Image
+File Path does not contain Darebee</div></div></div></div>
+<button class="button gGray nonbottom nontop" id="m8">
+8 Otherwise</button><div class="content contentloop">
+<button class="button gBlue inside" id="m9">
+9 Get File at Path <span class="box"><span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"yyyy","WFISO8601IncludeTime":false}<b>]</b></span></span> from Folder <b>　➔ This Year</b>　»</button><div class="content inside">
+<div class="row"><div class="col1">File</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
+      "WFFileLocationType": "iCloud",
+      "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/BCF96BB5-C0C4-44A7-8C03-2D21A4ABEB46",
+      "relativeSubpath": "com~apple~CloudDocs/Life Is Short",
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/A89226BB-5373-4F66-A182-C05B3965EA4A/d97748557d8d9ac765d94680d5175c84a073207b"
+   },
+   "filename": "Life Is Short",
+   "displayName": "Life Is Short"
+}</div></div></div>
+<hr><button class="button gBlue inside" id="m10">
+10 Get Contents of Folder</button><div class="content inside">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[9 This Year]</b></span></div></div>
+<div class="row"><div class="col1">Recursive</div><span style="display:none">: </span><div class="col2">true</div></div></div></div>
+<button class="gGray nontop" id="m11">
+11 End If　»</button>
+<hr><button class="button " id="m12">
+12 Run Shortcut <span class="box">_Get Random Item From List</span>　»</button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[11 If Result]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "E625C6C1-A183-473F-82BB-06827A38FB78",
+   "workflowName": "_Get Random Item From List",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button " id="m13">
+13 Run Shortcut <span class="box">_View File</span></button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[12 Shortcut Result</b> as GenericFile<b>]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "1677672F-4F1E-4CE7-8BE3-104007D8EBF3",
+   "workflowName": "_View File",
+   "isSelf": false
+}</div></div></div>
+<button class="gOrange" id="m14">
+14 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.reminderList</span> in <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 mappingDict]</b></span></span> <b>　➔ reminderList</b>　»</button>
+<hr><button class="button " id="m15">
+15 Open Smart Reminder List <span class="box"></span>&nbsp;</button><div class="content">
+<div class="row"><div class="col1">targetEntity</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[14 reminderList]</b></span></div></div></div>
+<button class="button " id="m16">
+16 Run Shortcut <span class="box">Wait until right swipe</span></button><div class="content">
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "5742A0EC-3719-45B3-8492-557ADC417341",
+   "workflowName": "Wait until right swipe",
+   "isSelf": false
+}</div></div></div>
+<button class="button " id="m17">
+17 Run Shortcut <span class="box">Log Health Data - Bed &amp; Wakeup Time</span></button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[CurrentDate]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "57ECE414-9168-49CF-B9D5-49414D276589",
+   "workflowName": "Log Health Data - Bed &amp; Wakeup Time",
+   "isSelf": false
+}</div></div></div>
+<button class="button gGray nonbottom" id="m18">
+18 If <span class="box"><span class="var"><b>[Shortcut Input</b> as Text<b>]</b></span></span> <span class="box">is</span> <span class="box">Morning</span></button><div class="content contentloop">
+<button class="button gRed inside" id="m19">
+19 Date <span class="box">Specified Date</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">DateActionDate</div><span style="display:none">: </span><div class="col2">Yesterday</div></div></div>
+<hr><button class="button  inside" id="m20">
+20 Run Shortcut <span class="box" style="color:red;font-weight:bold">Show Yesterday's Metadata</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[19 Date]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "77A908EF-9A99-4783-9750-D3A79E80DF6D",
+   "workflowName": "Show Yesterday's Metadata",
+   "isSelf": false
+}</div></div></div></div>
+<button class="button gGray nonbottom nontop" id="m21">
+21 Otherwise</button><div class="content contentloop">
+<button class="button  inside" id="m22">
+22 Run Shortcut <span class="box">Go to Screen Time Summary</span></button><div class="content inside">
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "4FB02A30-1FE7-45AB-9794-37BD197F7DC4",
+   "workflowName": "Go to Screen Time Summary",
+   "isSelf": false
+}</div></div></div></div>
+<button class="gGray nontop" id="m23">
+23 End If</button><div></div>
+<button class="button gOrange" id="m24">
+24 Dictionary　»</button><div class="content">
+<div class="col2">{  "topic": "<span class="var"><b>[Shortcut Input]</b></span>" }</div></div>
+<hr><button class="button " id="m25">
+25 Run Shortcut <span class="box">Get Random Journal Prompt(s)</span>　»</button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[24 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "B9AD53B7-9843-4075-9386-FC80989F9C27",
+   "workflowName": "Get Random Journal Prompt(s)",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button " id="m26">
+26 Run Shortcut <span class="box">Format Text with Text Divider Pair</span>　» <span class="magic" onclick="magictap(28)">28</span></button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[25 Shortcut Result]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "FF2507D8-22D2-41D2-B62A-7EACF9B4D9AC",
+   "workflowName": "Format Text with Text Divider Pair",
+   "isSelf": false
+}</div></div></div>
+<button class="gRed" id="m27">
+27 Vibrate Device</button><div></div>
+<button class="button gYellow" id="m28">
+28 Show Alert <span class="box"><span class="magic" onclick="magictap(26)"><b>[26 Shortcut Result]</b></span></span></button><div class="content">
+<div class="row"><div class="col1">AlertActionCancelButtonShown</div><span style="display:none">: </span><div class="col2">false</div></div></div>
+<button class="gOrange" id="m29">
+29 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.date</span> in <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 mappingDict]</b></span></span> <b>　➔ date</b>　» <span class="magic" onclick="magictap(43)">43</span> <span class="magic" onclick="magictap(67)">67</span> <span class="magic" onclick="magictap(84)">84</span></button><div></div>
+<button class="gBlue" id="m30">
+30 Get Current IP Address　»</button>
+<hr><button class="button gGray nonbottom" id="m31">
+31 If <span class="box"><span class="var"><b>[30 Current IP Address]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop">
+<button class="button gOrange inside" id="m32">
+32 List　»</button><div class="content inside">
+<div class="col2">[Podcasts,
+ConnectIQ,
+Connect]</div></div>
+<hr><button class="button gGray nonbottom inside" id="m33">
+33 Repeat with Each in <span class="box"><span class="var"><b>[32 List]</b></span></span></button><div class="content contentloop dotted inside">
+<button class="button  inside" id="m34">
+34 Open App <span class="box"></span>&nbsp;</button><div class="content inside">
+<div class="row"><div class="col1">SelectedApp</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div></div>
+<button class="gGray inside" id="m35">
+35 Wait <span class="box">5</span> seconds</button></div>
+<button class="gGray nontop inside" id="m36">
+36 End Repeat with Each</button><div></div>
+<button class="button  inside" id="m37">
+37 Show Weather</button><div class="content inside">
+<div class="row"><div class="col1">location</div><span style="display:none">: </span><div class="col2">{  "identifier": "localCity",
+   "displayString": "My Location"
+}</div></div></div>
+<button class="gGray inside" id="m38">
+38 Wait <span class="box">2</span> seconds</button><div></div>
+<button class="button gGray nonbottom inside" id="m39">
+39 Choose from Menu</button><div class="content contentloop dotted inside">
+<div class="row"><div class="col1">MenuPrompt</div><span style="display:none">: </span><div class="col2">🤖 Play Voice Assistant?</div></div>
+<div class="row"><div class="col1">MenuItems</div><span style="display:none">: </span><div class="col2">[✅ Yes,
+❌ No]</div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m40">
+40 Menu Item <span class="box">✅ Yes</span></button><div class="content contentloop dotted inside">
+<button class="button  inside" id="m41">
+41 Run Shortcut <span class="box">Template - Voice Assistant</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "09BC05A1-61B9-40E9-B53C-19C90A2AC8EF",
+   "workflowName": "Template - Voice Assistant",
+   "isSelf": false
+}</div></div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m42">
+42 Menu Item <span class="box">❌ No</span></button><div class="content contentloop dotted inside">
+<button class="button  inside" id="m43">
+43 Run Shortcut <span class="box" style="color:red;font-weight:bold">Generate Brief Weather Summary</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(29)"><b>[29 date]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "B2F79960-2597-430A-A945-4A7412C2BD3B",
+   "workflowName": "Generate Brief Weather Summary",
+   "isSelf": false
+}</div></div></div></div>
+<button class="gGray nontop inside" id="m44">
+44 End Menu</button><div></div>
+<button class=" inside" id="m45">
+45 Go to Home Screen</button><div></div>
+<button class="button gYellow inside" id="m46">
+46 Text　»</button><div class="content inside">
+<div class="col2">journal-prompt</div></div>
+<hr><button class="button  inside" id="m47">
+47 Run Shortcut <span class="box">Get Random Item from Evergreen List</span>　» <i>48</i> <span class="magic" onclick="magictap(51)">51</span> <span class="magic" onclick="magictap(57)">57</span> <span class="magic" onclick="magictap(63)">63</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[46 Text]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "44E22719-1625-4B9D-9D44-6FF229127533",
+   "workflowName": "Get Random Item from Evergreen List",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gYellow inside" id="m48">
+48 Text　»</button><div class="content inside">
+<div class="col2">Imagine you’re in my position. How would you respond to this question?<b>\u{space}</b>
+&lt;question>
+<span class="var"><b>[47 Shortcut Result</b> as Dictionary.Title<b>]</b></span>
+&lt;/question>
+Be honest, thoughtful, and concise.</div></div>
+<hr><button class="button  inside" id="m49">
+49 Run Shortcut <span class="box">Gemini - Generate Content</span> <b>　➔ answer</b>　» <i>50</i> <span class="magic" onclick="magictap(51)">51</span> <span class="magic" onclick="magictap(57)">57</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[48 Text]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "947FC61C-DA20-466B-8468-E21CF3AE7780",
+   "workflowName": "Gemini - Generate Content",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gGray nonbottom inside" id="m50">
+50 If <span class="box"><span class="var"><b>[49 answer]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dotted inside">
+<button class="button gYellow inside" id="m51">
+51 Text　»</button><div class="content inside">
+<div class="col2"><span class="magic" onclick="magictap(47)"><b>[47 Shortcut Result</b> as Dictionary.Title<b>]</b></span>
+──────────────
+<span class="magic" onclick="magictap(49)"><b>[49 answer]</b></span></div></div>
+<hr><button class=" inside" id="m52">
+52 Set Name of <span class="box"><span class="var"><b>[51 Text]</b></span></span> to <span class="box">‏‎</span>　» <span class="magic" onclick="magictap(54)">54</span></button><div></div>
+<button class="gRed inside" id="m53">
+53 Vibrate Device</button><div></div>
+<button class="gYellow inside" id="m54">
+54 Quick Look <span class="box"><span class="magic" onclick="magictap(52)"><b>[52 Renamed Item]</b></span></span></button><div></div>
+<button class="button gGray nonbottom inside" id="m55">
+55 Choose from Menu</button><div class="content contentloop dashed inside">
+<div class="row"><div class="col1">MenuPrompt</div><span style="display:none">: </span><div class="col2">📝 Log Journal?</div></div>
+<div class="row"><div class="col1">MenuItems</div><span style="display:none">: </span><div class="col2">[✅ Yes,
+❌ No]</div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m56">
+56 Menu Item <span class="box">✅ Yes</span></button><div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m57">
+57 Text　»</button><div class="content inside">
+<div class="col2">🤔 **<span class="magic" onclick="magictap(47)"><b>[47 Shortcut Result</b> as Dictionary.Title<b>]</b></span>**> <span class="magic" onclick="magictap(49)"><b>[49 answer]</b></span></div></div>
+<hr><button class="button  inside" id="m58">
+58 Run Shortcut <span class="box">📝 Log Journal</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[57 Text]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "5BAE1DA2-FC30-4FFA-9A44-466C405DA925",
+   "workflowName": "📝 Log Journal",
+   "isSelf": false
+}</div></div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m59">
+59 Menu Item <span class="box">❌ No</span></button><div class="content contentloop dashed inside">
+<button class="gGray inside" id="m60">
+60 Nothing</button></div>
+<button class="gGray nontop inside" id="m61">
+61 End Menu</button></div>
+<button class="button gGray nonbottom nontop inside" id="m62">
+62 Otherwise　▵<span class="magic" onclick="magictap(50)">50</span></button><div class="content contentloop dotted inside">
+<button class="button gYellow inside" id="m63">
+63 Show Alert <span class="box">🤔 <span class="magic" onclick="magictap(47)"><b>[47 Shortcut Result</b> as Dictionary.Title<b>]</b></span></span></button><div class="content inside">
+<div class="row"><div class="col1">AlertActionCancelButtonShown</div><span style="display:none">: </span><div class="col2">false</div></div></div></div>
+<button class="gGray nontop inside" id="m64">
+64 End If</button></div>
+<button class="gGray nontop" id="m65">
+65 End If　▵<span class="magic" onclick="magictap(31)">31</span></button><div></div>
+<button class="button gGray nonbottom" id="m66">
+66 If <span class="box"><span class="var"><b>[Shortcut Input</b> as Text<b>]</b></span></span> <span class="box">is</span> <span class="box">Morning</span></button><div class="content contentloop">
+<button class="button  inside" id="m67">
+67 Run Shortcut <span class="box">🗓️ Plan My Day</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(29)"><b>[29 date]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "41D9051E-6756-4B00-B2A5-8AD9946691B2",
+   "workflowName": "🗓️ Plan My Day",
+   "isSelf": false
+}</div></div></div>
+<button class="button gOrange inside" id="m68">
+68 Dictionary　»</button><div class="content inside">
+<div class="col2">{  "filename": "config",
+   "key": "My Reminders.evergreenLists"
+}</div></div>
+<hr><button class="button  inside" id="m69">
+69 Run Shortcut <span class="box">_Get Value</span>　» <i>70</i> <span class="magic" onclick="magictap(71)">71</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[68 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+   "workflowName": "_Get Value",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gGray nonbottom inside" id="m70">
+70 Repeat with Each in <span class="box"><span class="var"><b>[69 Shortcut Result</b> as Dictionary’s Keys<b>]</b></span></span></button><div class="content contentloop dotted inside">
+<button class="gOrange inside" id="m71">
+71 Get Dictionary Value for <span class="box"><span class="var"><b>[Repeat Item]</b></span>.title</span> in <span class="box"><span class="magic" onclick="magictap(69)"><b>[69 Shortcut Result]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m72">
+72 End Repeat with Each　» <span class="magic" onclick="magictap(75)">75</span></button><div></div>
+<button class="button  inside" id="m73">
+73 Find Reminders　»</button><div class="content inside">
+<div class="row"><div class="col1">ContentItemFilter</div><span style="display:none">: </span><div class="col2">• All the following are true
+Creation Date is in the last 7 days
+Is Not Completed</div></div></div>
+<hr><button class="button gGray nonbottom inside" id="m74">
+74 Repeat with Each in <span class="box"><span class="var"><b>[73 Reminders]</b></span></span></button><div class="content contentloop dotted inside">
+<button class="button gGray nonbottom inside" id="m75">
+75 If <span class="box"><span class="magic" onclick="magictap(72)"><b>[72 Repeat Results</b> as Text’s Name<b>]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[Repeat Item</b>’s List<b>]</b></span></span></button><div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m76">
+76 Add <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Variable <span class="box">reminders</span></button></div>
+<button class="gGray nontop inside" id="m77">
+77 End If</button></div>
+<button class="gGray nontop inside" id="m78">
+78 End Repeat with Each</button><div></div>
+<button class="button gGray nonbottom inside" id="m79">
+79 If <span class="box"><span class="var"><b>[reminders]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dotted inside">
+<button class="gRed inside" id="m80">
+80 Vibrate Device</button><div></div>
+<button class="gYellow inside" id="m81">
+81 Quick Look <span class="box"><span class="var"><b>[reminders]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m82">
+82 End If</button></div>
+<button class="button gGray nonbottom nontop" id="m83">
+83 Otherwise　▵<span class="magic" onclick="magictap(66)">66</span></button><div class="content contentloop">
+<button class="button  inside" id="m84">
+84 Run Shortcut <span class="box">_Show Reminder List</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(29)"><b>[29 date]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "1284B20D-B7D6-4CB1-9060-5467967BA104",
+   "workflowName": "_Show Reminder List",
+   "isSelf": false
+}</div></div></div>
+<button class="button  inside" id="m85">
+85 Open App <span class="box">com.garmin.connect.mobile</span></button><div class="content inside">
+<div class="row"><div class="col1">SelectedApp</div><span style="display:none">: </span><div class="col2">{  "BundleIdentifier": "com.garmin.connect.mobile",
+   "Name": "Connect",
+   "TeamIdentifier": "72ES32VZUA"
+}</div></div></div></div>
+<button class="gGray nontop" id="m86">
+86 End If</button><div></div>
+<button class="button " id="m87">
+87 Run Shortcut <span class="box">Template - Complete!</span></button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "13D6344E-1286-4297-B559-4A99BF3BA432",
+   "workflowName": "Template - Complete!",
+   "isSelf": false
+}</div></div></div>
+<button class="gGray" id="m88">
+88 Stop This Shortcut</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

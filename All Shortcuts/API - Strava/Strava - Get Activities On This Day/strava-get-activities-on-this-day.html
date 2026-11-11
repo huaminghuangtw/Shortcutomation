@@ -157,7 +157,7 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>strava-get-activities-on-this-day</b>
-  (16 actions, 12 KB)
+  (21 actions, 16 KB)
 </button>
 <button class="gRed" id="m0">
 0 Adjust <span class="box">Get Start of Year</span> Date <span class="box">January 1, 2014</span>　» <span class="magic" onclick="magictap(2)">2</span></button><div></div>
@@ -170,7 +170,7 @@ hr {
 <button class=" inside" id="m4">
 4 Calculate Expression <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 Time Between Dates]</b></span> - <span class="var"><b>[Repeat Index]</b></span> + 1</span>　»</button>
 <hr><button class="button gRed inside" id="m5">
-5 Adjust <span class="box">Subtract</span> Date <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button><div class="content inside">
+5 Adjust <span class="box">Subtract</span> Date <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　» <i>6</i> <span class="magic" onclick="magictap(15)">15</span></button><div class="content inside">
 <div class="row"><div class="col1">Duration</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[4 Calculation Result]</b></span> years</div></div></div>
 <hr><button class="button  inside" id="m6">
 6 Run Shortcut <span class="box" style="color:red;font-weight:bold">List Strava Activities on Date</span>　»</button><div class="content inside">
@@ -193,11 +193,21 @@ hr {
 <button class="gGray nontop inside" id="m12">
 12 End If</button></div>
 <button class="gGray nontop inside" id="m13">
-13 End Repeat[2] with Each　▵<span class="magic" onclick="magictap(7)">7</span></button></div>
-<button class="gGray nontop" id="m14">
-14 End Repeat Times　▵<span class="magic" onclick="magictap(3)">3</span></button><div></div>
-<button class="gGray" id="m15">
-15 Stop and Output <span class="box"><span class="var"><b>[activities]</b></span></span></button>
+13 End Repeat[2] with Each　▵<span class="magic" onclick="magictap(7)">7</span></button><div></div>
+<button class="button gGray nonbottom inside" id="m14">
+14 If <span class="box"><span class="var"><b>[activities]</b></span></span> <span class="box">has any value</span></button><div class="content contentloop dotted inside">
+<button class="gOrange inside" id="m15">
+15 Set Dictionary Value for <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 Adjusted Date</b>{"WFISO8601IncludeTime":false,"Date Style":"ISO 8601"}<b>]</b></span></span> to <span class="box"><span class="var"><b>[activities]</b></span></span> in <span class="box"><span class="var"><b>[dict]</b></span></span>　»</button>
+<hr><button class="gOrange inside" id="m16">
+16 Set Variable <span class="box">dict</span> to <span class="box"><span class="var"><b>[15 Dictionary]</b></span></span></button><div></div>
+<button class="gOrange inside" id="m17">
+17 Set Variable <span class="box">activities</span> to <span class="box"></span>&nbsp;</button></div>
+<button class="gGray nontop inside" id="m18">
+18 End If</button></div>
+<button class="gGray nontop" id="m19">
+19 End Repeat Times　▵<span class="magic" onclick="magictap(3)">3</span></button><div></div>
+<button class="gGray" id="m20">
+20 Stop and Output <span class="box"><span class="var"><b>[dict]</b></span></span></button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

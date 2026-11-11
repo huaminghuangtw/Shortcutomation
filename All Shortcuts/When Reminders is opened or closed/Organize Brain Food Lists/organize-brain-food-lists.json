@@ -34,16 +34,9 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
             "WFWorkflowActionParameters": {
-                "WFWorkflow": {
-                    "workflowIdentifier": "652AD141-F55D-4149-BB65-20A18A1FC8D4",
-                    "workflowName": "isOnline",
-                    "isSelf": false
-                },
-                "CustomOutputName": "isOnline",
-                "UUID": "D9338D14-A9E7-4E20-AFF7-0432237146F3",
-                "WFWorkflowName": "isOnline"
+                "UUID": "CB8507E5-305D-47FF-B6C3-9107AC80B550"
             }
         },
         {
@@ -53,85 +46,26 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
+                            "OutputUUID": "CB8507E5-305D-47FF-B6C3-9107AC80B550",
                             "Type": "ActionOutput",
-                            "OutputName": "isOnline",
-                            "OutputUUID": "D9338D14-A9E7-4E20-AFF7-0432237146F3",
-                            "Aggrandizements": [
-                                {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
-                                }
-                            ]
+                            "OutputName": "Current IP Address"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
                 "GroupingIdentifier": "846578AB-3A0E-463E-A194-3D4FA3131528",
-                "WFCondition": 4
+                "WFCondition": 100
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.list",
             "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "filename"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "config"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "key"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "My Reminders.brainFoodLists"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "A952FA91-20D9-4C3B-962D-D5D48A22F61D"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "A952FA91-20D9-4C3B-962D-D5D48A22F61D",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
-                    "workflowName": "_Get Value",
-                    "isSelf": false
-                },
-                "UUID": "1977DFD0-BA41-48BF-A7DA-3C92F02E5446",
-                "WFWorkflowName": "_Get Value"
+                "WFItems": [
+                    "◻️ Book",
+                    "◻️ Movie & TV"
+                ],
+                "UUID": "3F3382C1-D040-4D67-B918-CE7CAA6D75FA"
             }
         },
         {
@@ -139,24 +73,52 @@
             "WFWorkflowActionParameters": {
                 "WFInput": {
                     "Value": {
+                        "OutputUUID": "3F3382C1-D040-4D67-B918-CE7CAA6D75FA",
                         "Type": "ActionOutput",
-                        "OutputName": "Shortcut Result",
-                        "OutputUUID": "1977DFD0-BA41-48BF-A7DA-3C92F02E5446",
-                        "Aggrandizements": [
-                            {
-                                "Type": "WFCoercionVariableAggrandizement",
-                                "CoercionItemClass": "WFDictionaryContentItem"
-                            },
-                            {
-                                "Type": "WFDictionaryValueVariableAggrandizement",
-                                "DictionaryKey": "internal"
-                            }
-                        ]
+                        "OutputName": "List"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "GroupingIdentifier": "86494486-27B5-4A6D-A4B8-A6A1FE136903",
                 "WFControlFlowMode": 0
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "328EB3FC-0980-46EC-AA21-855E3F90824F",
+                    "workflowName": "Strip Leading Symbol",
+                    "isSelf": false
+                },
+                "UUID": "D7C4F0BF-6035-48F3-B4C6-9418079B5AED",
+                "WFWorkflowName": "Strip Leading Symbol"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "_Add to ￼ List",
+                        "attachmentsByRange": {
+                            "{8, 1}": {
+                                "OutputUUID": "D7C4F0BF-6035-48F3-B4C6-9418079B5AED",
+                                "Type": "ActionOutput",
+                                "OutputName": "Shortcut Result"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1A5DC1DE-29AA-4DFF-BD9A-D9A4E96705EC"
             }
         },
         {
@@ -199,14 +161,6 @@
                                 },
                                 "Removable": true,
                                 "Property": "Is Completed"
-                            },
-                            {
-                                "Operator": 4,
-                                "Values": {
-                                    "Bool": false
-                                },
-                                "Removable": true,
-                                "Property": "Is Flagged"
                             }
                         ]
                     },
@@ -231,32 +185,6 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Book",
-                "GroupingIdentifier": "41957048-4D5A-4BF4-9655-38D446F8E374",
-                "WFCondition": 99
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFInput": {
@@ -267,126 +195,22 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "187C8BBD-5BF3-4EEB-AD0A-2C47D3536420",
-                    "workflowName": "📚 Add to Book List",
-                    "isSelf": false
+                    "Value": {
+                        "OutputUUID": "1A5DC1DE-29AA-4DFF-BD9A-D9A4E96705EC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "UUID": "9FDBB695-D485-4F10-A1E4-8F3FEFBB5FF8",
-                "WFWorkflowName": "📚 Add to Book List"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "41957048-4D5A-4BF4-9655-38D446F8E374",
-                "UUID": "33ADAF21-93FC-4BCF-8155-6B2851E74F6A"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Movie & TV",
-                "GroupingIdentifier": "573E3BF1-BD65-47B9-89A1-0F3047ADB6E6",
-                "WFCondition": 99
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFWorkflowName": {
                     "Value": {
-                        "VariableName": "Repeat Item 2",
-                        "Type": "Variable"
+                        "OutputUUID": "1A5DC1DE-29AA-4DFF-BD9A-D9A4E96705EC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "AA9CCDD9-70EC-42A0-83E5-EBAB200078F6",
-                    "workflowName": "🎬 Add to Movie&TV List",
-                    "isSelf": false
-                },
-                "UUID": "65C9FFD4-C109-4738-BE90-5FD7A15AB822",
-                "WFWorkflowName": "🎬 Add to Movie&TV List"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "573E3BF1-BD65-47B9-89A1-0F3047ADB6E6",
-                "UUID": "12ED833F-ED74-4DC2-81E4-3ACAE1DB7D24"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Type": "Variable",
-                    "Variable": {
-                        "Value": {
-                            "VariableName": "Repeat Item",
-                            "Type": "Variable",
-                            "Aggrandizements": [
-                                {
-                                    "PropertyUserInfo": "WFItemName",
-                                    "Type": "WFPropertyVariableAggrandizement",
-                                    "PropertyName": "Name"
-                                }
-                            ]
-                        },
-                        "WFSerializationType": "WFTextTokenAttachment"
-                    }
-                },
-                "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Podcast",
-                "GroupingIdentifier": "F9BD4E32-9A6A-4E67-BCE2-A481EEFA73B9",
-                "WFCondition": 99
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "VariableName": "Repeat Item 2",
-                        "Type": "Variable"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "A28528A1-A2CA-4A56-9AE6-3D228FC39BBE",
-                    "workflowName": "🎤 Add to Podcast List",
-                    "isSelf": false
-                },
-                "UUID": "F58C9C79-7095-4083-8AE4-DDCBE98BC04D",
-                "WFWorkflowName": "🎤 Add to Podcast List"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-            "WFWorkflowActionParameters": {
-                "WFControlFlowMode": 2,
-                "GroupingIdentifier": "F9BD4E32-9A6A-4E67-BCE2-A481EEFA73B9",
-                "UUID": "315EEF9A-3FCF-4B11-8B07-70A1E7C5D159"
+                }
             }
         },
         {

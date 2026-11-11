@@ -14,30 +14,6 @@
     },
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
-            "WFWorkflowActionParameters": {
-                "WFPlayPauseBehavior": "Pause"
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
-            "WFWorkflowActionParameters": {
-                "WFVolume": 0.6026298152075873
-            }
-        },
-        {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "Type": "ExtensionInput"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "UUID": "0AFD6250-2311-4E1D-82A7-61228C3BDE74"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.file.getfoldercontents",
             "WFWorkflowActionParameters": {
                 "WFFolder": {
@@ -74,7 +50,7 @@
                         "WFContentPredicateBoundedDate": false,
                         "WFActionParameterFilterTemplates": [
                             {
-                                "Operator": 8,
+                                "Operator": 99,
                                 "Values": {
                                     "Unit": 4,
                                     "String": {
@@ -82,15 +58,7 @@
                                             "string": "￼",
                                             "attachmentsByRange": {
                                                 "{0, 1}": {
-                                                    "Type": "ActionOutput",
-                                                    "OutputName": "Dictionary",
-                                                    "OutputUUID": "0AFD6250-2311-4E1D-82A7-61228C3BDE74",
-                                                    "Aggrandizements": [
-                                                        {
-                                                            "Type": "WFDictionaryValueVariableAggrandizement",
-                                                            "DictionaryKey": "filename"
-                                                        }
-                                                    ]
+                                                    "Type": "ExtensionInput"
                                                 }
                                             }
                                         },
@@ -107,36 +75,18 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-            "WFWorkflowActionParameters": {
-                "WFInput": {
-                    "Value": {
-                        "OutputUUID": "0AFD6250-2311-4E1D-82A7-61228C3BDE74",
-                        "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
-                    },
-                    "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "CustomOutputName": "setTimer",
-                "UUID": "2C2F33D8-3913-4745-9240-A6E9D1CCEF53",
-                "WFGetDictionaryValueType": "Value",
-                "WFDictionaryKey": "setTimer"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B65EBC47-082D-41F7-AFD5-640C81159CFA",
                 "WFInput": {
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "Type": "ActionOutput",
-                            "OutputName": "setTimer",
-                            "OutputUUID": "2C2F33D8-3913-4745-9240-A6E9D1CCEF53",
+                            "Type": "DeviceDetails",
                             "Aggrandizements": [
                                 {
-                                    "Type": "WFCoercionVariableAggrandizement",
-                                    "CoercionItemClass": "WFBooleanContentItem"
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
                                 }
                             ]
                         },
@@ -144,9 +94,13 @@
                     }
                 },
                 "WFControlFlowMode": 0,
-                "GroupingIdentifier": "53B63971-CFC5-4765-B1F8-EF1696792CC5",
+                "WFEnumeration": "iOS",
                 "WFCondition": 4
             }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
+            "WFWorkflowActionParameters": {}
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
@@ -160,20 +114,55 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "F4491D4E-B909-4C62-B2DB-6860423316D5",
-                    "workflowName": "_Audio Timer",
+                    "workflowIdentifier": "5BE60F58-7FC9-4DA6-86D2-31571B5A58E1",
+                    "workflowName": "Format Duration To Seconds",
                     "isSelf": false
                 },
-                "UUID": "D66F45EB-829B-416C-9A8C-A51D6DA6A83D",
-                "WFWorkflowName": "_Audio Timer"
+                "UUID": "F95852DC-2646-4C4B-BF77-4BA232DA281F",
+                "WFWorkflowName": "Format Duration To Seconds"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
+            "WFWorkflowActionParameters": {
+                "IntentAppDefinition": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.clock",
+                    "Name": "Clock",
+                    "ExtensionBundleIdentifier": "com.apple.mobiletimer-framework.MobileTimerIntents"
+                },
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "0000000000",
+                    "BundleIdentifier": "com.apple.mobiletimer",
+                    "Name": "Clock",
+                    "AppIntentIdentifier": "INCreateTimerIntent"
+                },
+                "UUID": "1AB13109-120F-428B-BE2C-77F8C0550935",
+                "WFDuration": {
+                    "Value": {
+                        "Unit": "sec",
+                        "Magnitude": {
+                            "OutputUUID": "F95852DC-2646-4C4B-BF77-4BA232DA281F",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        }
+                    },
+                    "WFSerializationType": "WFQuantityFieldValue"
+                }
             }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "53B63971-CFC5-4765-B1F8-EF1696792CC5",
-                "UUID": "4A6B5A43-56CC-4889-9637-5CB78CD7E40E"
+                "GroupingIdentifier": "B65EBC47-082D-41F7-AFD5-640C81159CFA",
+                "UUID": "93773BD9-A5E6-468F-BAD1-18C7D3763FC4"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setvolume",
+            "WFWorkflowActionParameters": {
+                "WFVolume": 0.798788669374254
             }
         },
         {

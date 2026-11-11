@@ -10,14 +10,6 @@
     "WFWorkflowHasOutputFallback": false,
     "WFWorkflowActions": [
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
-            "WFWorkflowActionParameters": {
-                "WFTextActionText": "🥙 Recipe Of The Day",
-                "CustomOutputName": "🥙 Recipe Of The Day",
-                "UUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1"
-            }
-        },
-        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
             "WFWorkflowActionParameters": {
                 "WFWorkflow": {
@@ -562,6 +554,36 @@
             }
         },
         {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "recipe",
+                        "OutputUUID": "3F590929-B8AC-4B36-B791-9FD559064E27",
+                        "Aggrandizements": [
+                            {
+                                "Type": "WFCoercionVariableAggrandizement",
+                                "CoercionItemClass": "WFDictionaryContentItem"
+                            },
+                            {
+                                "Type": "WFDictionaryValueVariableAggrandizement",
+                                "DictionaryKey": "title"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "FD05EE44-4826-451C-A235-7F0A9F1BAFBC",
+                    "workflowName": "Build Google Search URL",
+                    "isSelf": false
+                },
+                "UUID": "6FB9036C-B7E2-4E77-ABC7-60768AE4B6E6",
+                "WFWorkflowName": "Build Google Search URL"
+            }
+        },
+        {
             "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
             "WFWorkflowActionParameters": {
                 "WFItems": {
@@ -572,28 +594,6 @@
                                 "WFKey": {
                                     "Value": {
                                         "string": "title"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "D23DE983-4F24-4012-B483-3CCBDED7E2A1",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "🥙 Recipe Of The Day"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "subtitle"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 },
@@ -659,7 +659,7 @@
                                 "WFItemType": 0,
                                 "WFKey": {
                                     "Value": {
-                                        "string": "actionShortcutInput"
+                                        "string": "openURL"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 },
@@ -668,21 +668,26 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
+                                                "OutputUUID": "6FB9036C-B7E2-4E77-ABC7-60768AE4B6E6",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "recipe",
-                                                "OutputUUID": "3F590929-B8AC-4B36-B791-9FD559064E27",
-                                                "Aggrandizements": [
-                                                    {
-                                                        "Type": "WFCoercionVariableAggrandizement",
-                                                        "CoercionItemClass": "WFDictionaryContentItem"
-                                                    },
-                                                    {
-                                                        "Type": "WFDictionaryValueVariableAggrandizement",
-                                                        "DictionaryKey": "title"
-                                                    }
-                                                ]
+                                                "OutputName": "Shortcut Result"
                                             }
                                         }
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                }
+                            },
+                            {
+                                "WFItemType": 0,
+                                "WFKey": {
+                                    "Value": {
+                                        "string": "threadID"
+                                    },
+                                    "WFSerializationType": "WFTextTokenString"
+                                },
+                                "WFValue": {
+                                    "Value": {
+                                        "string": "🥙"
                                     },
                                     "WFSerializationType": "WFTextTokenString"
                                 }

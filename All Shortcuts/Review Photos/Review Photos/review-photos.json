@@ -19,33 +19,35 @@
                     "WFSerializationType": "WFTextTokenAttachment"
                 },
                 "WFWorkflow": {
-                    "workflowIdentifier": "BD897E87-A0A3-4C4F-9296-86FC041FBA38",
-                    "workflowName": "Template - Folder Shortcuts Header",
+                    "workflowIdentifier": "99573F76-D85C-4B05-AF1C-34D750D89B78",
+                    "workflowName": "_Batch Run Shortcuts (Discrete)",
                     "isSelf": false
                 },
                 "UUID": "0B0F8AF4-2501-4285-8164-9B23E004BA4E",
-                "WFWorkflowName": "Template - Folder Shortcuts Header"
+                "WFWorkflowName": "_Batch Run Shortcuts (Discrete)"
             }
         },
         {
-            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GlobalVariableGetText",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.photos",
             "WFWorkflowActionParameters": {
-                "key": {
-                    "subtitle": {
-                        "key": "Review Photos"
+                "WFContentItemFilter": {
+                    "Value": {
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 1002,
+                                "Values": {
+                                    "Unit": 4
+                                },
+                                "Removable": true,
+                                "Property": "Date Taken"
+                            }
+                        ]
                     },
-                    "title": {
-                        "key": "Review Photos"
-                    },
-                    "value": "Review Photos"
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
                 },
-                "UUID": "16545A67-8BF1-47A3-BAF4-73FCFFC94B9E",
-                "AppIntentDescriptor": {
-                    "TeamIdentifier": "YG56YK5RN5",
-                    "BundleIdentifier": "com.sindresorhus.Actions",
-                    "Name": "Actions",
-                    "AppIntentIdentifier": "GlobalVariableGetText"
-                }
+                "UUID": "71746E06-82C3-499B-9758-35BCCEB65F72"
             }
         },
         {
@@ -55,17 +57,16 @@
                     "Type": "Variable",
                     "Variable": {
                         "Value": {
-                            "OutputUUID": "16545A67-8BF1-47A3-BAF4-73FCFFC94B9E",
+                            "OutputUUID": "71746E06-82C3-499B-9758-35BCCEB65F72",
                             "Type": "ActionOutput",
-                            "OutputName": "Global Variable — Text"
+                            "OutputName": "Photos"
                         },
                         "WFSerializationType": "WFTextTokenAttachment"
                     }
                 },
                 "WFControlFlowMode": 0,
-                "WFConditionalActionString": "Daily",
-                "GroupingIdentifier": "BAF828E4-E8F0-48BF-80E8-51F618CFFAEF",
-                "WFCondition": 99
+                "GroupingIdentifier": "2219A4B0-88BB-4649-A2F8-078EA3C9DE4E",
+                "WFCondition": 100
             }
         },
         {
@@ -99,7 +100,7 @@
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
-                "GroupingIdentifier": "BAF828E4-E8F0-48BF-80E8-51F618CFFAEF",
+                "GroupingIdentifier": "2219A4B0-88BB-4649-A2F8-078EA3C9DE4E",
                 "WFControlFlowMode": 1
             }
         },
@@ -111,8 +112,178 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
             "WFWorkflowActionParameters": {
                 "WFControlFlowMode": 2,
-                "GroupingIdentifier": "BAF828E4-E8F0-48BF-80E8-51F618CFFAEF",
-                "UUID": "C56EBE4D-AAAA-4E14-94A4-557BE51D9AB6"
+                "GroupingIdentifier": "2219A4B0-88BB-4649-A2F8-078EA3C9DE4E",
+                "UUID": "AB42792D-FFA4-462E-8554-61695FC5BC95"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+            "WFWorkflowActionParameters": {
+                "UUID": "4D5C99A4-3A3C-451B-AE44-A920270FC7EC",
+                "Folder": {
+                    "Identifier": "083AF0B9-E798-4707-902A-00DC9D80ABE7",
+                    "DisplayString": "Review Photos"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.RemoveFromListIntent",
+            "WFWorkflowActionParameters": {
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "RemoveFromListIntent"
+                },
+                "UUID": "83A57707-BFAE-4794-929F-9391B71ACF95",
+                "list": {
+                    "Value": {
+                        "OutputUUID": "4D5C99A4-3A3C-451B-AE44-A920270FC7EC",
+                        "Type": "ActionOutput",
+                        "OutputName": "My Shortcuts"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "action": "lastItem"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+                    "workflowName": "getDayOfWeek",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "getDayOfWeek",
+                "UUID": "95B32710-3345-4A22-AAE6-E2AAE130DF40"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "95B32710-3345-4A22-AAE6-E2AAE130DF40",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFConditionalActionString": "Sunday",
+                "GroupingIdentifier": "39EBD221-38FB-44B8-B4C1-8A976D808490",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "71746E06-82C3-499B-9758-35BCCEB65F72",
+                            "Type": "ActionOutput",
+                            "OutputName": "Photos"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "79F987C0-03BA-4693-98C9-BAE6240B740A",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "83A57707-BFAE-4794-929F-9391B71ACF95",
+                        "Type": "ActionOutput",
+                        "OutputName": "Modified List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "2C15F44D-BD25-4873-94D4-BB207A587853"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "79F987C0-03BA-4693-98C9-BAE6240B740A",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FilterListIntent",
+            "WFWorkflowActionParameters": {
+                "shouldKeep": 0,
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "FilterListIntent"
+                },
+                "UUID": "13A0BC79-50DB-4C7B-BB48-A18D925AB612",
+                "list": {
+                    "Value": {
+                        "OutputUUID": "83A57707-BFAE-4794-929F-9391B71ACF95",
+                        "Type": "ActionOutput",
+                        "OutputName": "Modified List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "matchText": "Daily"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "79F987C0-03BA-4693-98C9-BAE6240B740A",
+                "UUID": "D20C1F7D-94F1-4292-B08C-9279CEC488C0"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "39EBD221-38FB-44B8-B4C1-8A976D808490",
+                "WFControlFlowMode": 1
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FilterListIntent",
+            "WFWorkflowActionParameters": {
+                "shouldKeep": 0,
+                "AppIntentDescriptor": {
+                    "TeamIdentifier": "YG56YK5RN5",
+                    "BundleIdentifier": "com.sindresorhus.Actions",
+                    "Name": "Actions",
+                    "AppIntentIdentifier": "FilterListIntent"
+                },
+                "UUID": "AD09E311-06B1-4EB8-8E87-6DA9F6D76D12",
+                "list": {
+                    "Value": {
+                        "OutputUUID": "83A57707-BFAE-4794-929F-9391B71ACF95",
+                        "Type": "ActionOutput",
+                        "OutputName": "Modified List"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "matchText": "Weekly"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "39EBD221-38FB-44B8-B4C1-8A976D808490",
+                "UUID": "2D8193C0-C0E9-4896-9B57-A5BD53950BC0"
             }
         },
         {
@@ -149,9 +320,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "16545A67-8BF1-47A3-BAF4-73FCFFC94B9E",
+                                                "OutputUUID": "2D8193C0-C0E9-4896-9B57-A5BD53950BC0",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Global Variable — Text"
+                                                "OutputName": "If Result"
                                             }
                                         }
                                     },
@@ -171,9 +342,9 @@
                                         "string": "￼",
                                         "attachmentsByRange": {
                                             "{0, 1}": {
-                                                "OutputUUID": "16545A67-8BF1-47A3-BAF4-73FCFFC94B9E",
+                                                "OutputUUID": "2D8193C0-C0E9-4896-9B57-A5BD53950BC0",
                                                 "Type": "ActionOutput",
-                                                "OutputName": "Global Variable — Text"
+                                                "OutputName": "If Result"
                                             }
                                         }
                                     },

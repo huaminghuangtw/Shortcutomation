@@ -1,0 +1,310 @@
+{
+    "WFWorkflowMinimumClientVersionString": "1113",
+    "WFWorkflowMinimumClientVersion": 1113,
+    "WFWorkflowIcon": {
+        "WFWorkflowIconStartColor": 2846468607,
+        "WFWorkflowIconGlyphNumber": 61440
+    },
+    "WFWorkflowClientVersion": "4610",
+    "WFWorkflowOutputContentItemClasses": [],
+    "WFWorkflowHasOutputFallback": false,
+    "WFWorkflowNoInputBehavior": {
+        "Name": "WFWorkflowNoInputBehaviorAskForInput",
+        "Parameters": {
+            "ItemClass": "WFStringContentItem"
+        }
+    },
+    "WFWorkflowActions": [
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+            "WFWorkflowActionParameters": {
+                "WFTextActionText": {
+                    "Value": {
+                        "string": "Ask me 5 open-ended, short-answer questions to test my understanding of the provided material.\n\nRequirements:\n\n• Questions should require me to recall, explain, apply, or connect ideas from the material—not merely recognize facts.\n• Keep each question short and minimally worded.\n• Do not provide hints or multiple-choice options.\n• After each question, provide its answer, but hide the answer by default using an HTML <details> / <summary> toggle. The answer should only become visible when I expand the toggle. Use exactly this structure for each question:\n\n1. [Question]\n\n<details>\n<summary>Answer</summary>\n\n[Answer]\n\n</details>\n\nKeep answers concise but sufficient to verify whether my response is correct.\n\nBase all questions and answers strictly on the provided material. Do not introduce outside information.\n\n<material>\n￼\n</material>\n",
+                        "attachmentsByRange": {
+                            "{829, 1}": {
+                                "Type": "ExtensionInput"
+                            }
+                        }
+                    },
+                    "WFSerializationType": "WFTextTokenString"
+                },
+                "UUID": "1D9BDB21-2BFB-4823-8C14-10FC1B769B2F"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "1D9BDB21-2BFB-4823-8C14-10FC1B769B2F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "947FC61C-DA20-466B-8468-E21CF3AE7780",
+                    "workflowName": "Gemini - Generate Content",
+                    "isSelf": false
+                },
+                "UUID": "528E9B0C-35FF-47B5-95A3-9DA274317AAC",
+                "WFWorkflowName": "Gemini - Generate Content"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "OutputUUID": "528E9B0C-35FF-47B5-95A3-9DA274317AAC",
+                            "Type": "ActionOutput",
+                            "OutputName": "Shortcut Result"
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "GroupingIdentifier": "0AA0B8E8-D089-4FD0-B085-DC793D714C1F",
+                "WFCondition": 100
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "B93D0C4A-1571-4628-ABF6-82B649D45908",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "iOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfrommarkdown",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "528E9B0C-35FF-47B5-95A3-9DA274317AAC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "26E83573-1557-4646-9902-0D22B5176F74"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFName": "‏‎",
+                "WFDontIncludeFileExtension": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "26E83573-1557-4646-9902-0D22B5176F74",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rich Text from Markdown"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "A53B6DAB-EBEB-4FE3-8236-F3F815032E0A"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+            "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "A53B6DAB-EBEB-4FE3-8236-F3F815032E0A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Renamed Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "B93D0C4A-1571-4628-ABF6-82B649D45908",
+                "UUID": "1B53FB61-6282-4FB2-8D38-96C1C9419093"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "DD1EDA62-CBD4-4684-BC5E-665B7904ED76",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+            "WFWorkflowActionParameters": {
+                "WFName": "temp.md",
+                "WFDontIncludeFileExtension": true,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "528E9B0C-35FF-47B5-95A3-9DA274317AAC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shortcut Result"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "81B091B7-4EE1-44B5-AFEC-80CD63A6C1EB"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+            "WFWorkflowActionParameters": {
+                "WFFolder": {
+                    "fileLocation": {
+                        "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain",
+                        "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+                        "appContainerBundleIdentifier": "md.obsidian",
+                        "WFFileLocationType": "iCloud"
+                    },
+                    "filename": "Second-Brain",
+                    "displayName": "Second-Brain"
+                },
+                "WFAskWhereToSave": false,
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "81B091B7-4EE1-44B5-AFEC-80CD63A6C1EB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Renamed Item"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "FA48E62A-4235-413C-83B0-796AE623E408",
+                "WFSaveFileOverwrite": true,
+                "WFFileDestinationPath": ""
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Saved File",
+                        "OutputUUID": "FA48E62A-4235-413C-83B0-796AE623E408",
+                        "Aggrandizements": [
+                            {
+                                "PropertyUserInfo": "WFFilePath",
+                                "Type": "WFPropertyVariableAggrandizement",
+                                "PropertyName": "File Path"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "WFWorkflow": {
+                    "workflowIdentifier": "2EFCE47D-B1E1-4C88-AA1C-C455C2C13913",
+                    "workflowName": "Obsidian - Open Note",
+                    "isSelf": false
+                },
+                "UUID": "8A813584-C0FF-49DE-B924-87B480148C96",
+                "WFWorkflowName": "Obsidian - Open Note"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "09C6711D-3958-4AF4-91F8-CD89197F7213",
+                    "workflowName": "Alert Sound Effect",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Alert Sound Effect",
+                "UUID": "769497D6-B7B1-4B38-A5E1-309CC5B8E538"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+            "WFWorkflowActionParameters": {
+                "WFAlertActionCancelButtonShown": false,
+                "WFAlertActionMessage": "👀"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.file.delete",
+            "WFWorkflowActionParameters": {
+                "WFInput": {
+                    "Value": {
+                        "OutputUUID": "FA48E62A-4235-413C-83B0-796AE623E408",
+                        "Type": "ActionOutput",
+                        "OutputName": "Saved File"
+                    },
+                    "WFSerializationType": "WFTextTokenAttachment"
+                },
+                "UUID": "9DA725DC-A2E1-4CCF-93B8-2055359E9EC1"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "DD1EDA62-CBD4-4684-BC5E-665B7904ED76",
+                "UUID": "7E926D66-EC5C-4026-9D5C-6AF82207DAFD"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "0AA0B8E8-D089-4FD0-B085-DC793D714C1F",
+                "UUID": "CA50836D-A224-4994-BCB4-031DF88A3F94"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+            "WFWorkflowActionParameters": {}
+        }
+    ],
+    "WFWorkflowInputContentItemClasses": [
+        "WFStringContentItem"
+    ],
+    "WFWorkflowImportQuestions": [],
+    "WFQuickActionSurfaces": [],
+    "WFWorkflowTypes": [
+        "WFWorkflowTypeShowInSearch"
+    ],
+    "WFWorkflowHasShortcutInputVariables": true
+}

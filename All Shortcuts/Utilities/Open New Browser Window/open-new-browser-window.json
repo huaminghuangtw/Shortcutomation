@@ -13,7 +13,8 @@
             "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
             "WFWorkflowActionParameters": {
                 "WFTextActionText": "Brave Browser",
-                "UUID": "2DB3C347-1D0F-4B09-BA19-B218CFD917D9"
+                "CustomOutputName": "Brave Browser",
+                "UUID": "0B9F57AE-3C10-4929-A63B-C56CDCA37FA4"
             }
         },
         {
@@ -24,9 +25,9 @@
                         "string": "open -na \"￼\" --args --new-window \"￼\"",
                         "attachmentsByRange": {
                             "{10, 1}": {
-                                "OutputUUID": "2DB3C347-1D0F-4B09-BA19-B218CFD917D9",
+                                "OutputUUID": "0B9F57AE-3C10-4929-A63B-C56CDCA37FA4",
                                 "Type": "ActionOutput",
-                                "OutputName": "Text"
+                                "OutputName": "Brave Browser"
                             },
                             "{34, 1}": {
                                 "Type": "ExtensionInput"
@@ -39,71 +40,62 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
             "WFWorkflowActionParameters": {
-                "WFItems": {
-                    "Value": {
-                        "WFDictionaryFieldValueItems": [
-                            {
-                                "WFItemType": 0,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "appName"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": {
-                                        "string": "￼",
-                                        "attachmentsByRange": {
-                                            "{0, 1}": {
-                                                "OutputUUID": "2DB3C347-1D0F-4B09-BA19-B218CFD917D9",
-                                                "Type": "ActionOutput",
-                                                "OutputName": "Text"
-                                            }
-                                        }
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                }
-                            },
-                            {
-                                "WFItemType": 4,
-                                "WFKey": {
-                                    "Value": {
-                                        "string": "fullScreen"
-                                    },
-                                    "WFSerializationType": "WFTextTokenString"
-                                },
-                                "WFValue": {
-                                    "Value": true,
-                                    "WFSerializationType": "WFNumberSubstitutableState"
-                                }
-                            }
-                        ]
-                    },
-                    "WFSerializationType": "WFDictionaryFieldValue"
-                },
-                "UUID": "6CF02168-641C-4C0D-A056-1A8084BB295C"
+                "WFDelayTime": 2
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionIdentifier": "is.workflow.actions.filter.windows",
             "WFWorkflowActionParameters": {
-                "WFInput": {
+                "WFContentItemInputParameter": "Library",
+                "WFContentItemLimitEnabled": true,
+                "UUID": "64C21491-3475-4B4E-8309-DBB321CFFE85",
+                "WFContentItemLimitNumber": 1,
+                "WFContentItemFilter": {
                     "Value": {
-                        "OutputUUID": "6CF02168-641C-4C0D-A056-1A8084BB295C",
+                        "WFActionParameterFilterPrefix": 1,
+                        "WFContentPredicateBoundedDate": false,
+                        "WFActionParameterFilterTemplates": [
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Unit": 4,
+                                    "String": {
+                                        "Value": {
+                                            "string": "￼",
+                                            "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                    "OutputUUID": "0B9F57AE-3C10-4929-A63B-C56CDCA37FA4",
+                                                    "Type": "ActionOutput",
+                                                    "OutputName": "Brave Browser"
+                                                }
+                                            }
+                                        },
+                                        "WFSerializationType": "WFTextTokenString"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "App Name"
+                            }
+                        ]
+                    },
+                    "WFSerializationType": "WFContentPredicateTableTemplate"
+                }
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.resizewindow",
+            "WFWorkflowActionParameters": {
+                "WFConfiguration": "Fit Screen",
+                "WFWindow": {
+                    "Value": {
+                        "OutputUUID": "64C21491-3475-4B4E-8309-DBB321CFFE85",
                         "Type": "ActionOutput",
-                        "OutputName": "Dictionary"
+                        "OutputName": "Windows"
                     },
                     "WFSerializationType": "WFTextTokenAttachment"
-                },
-                "WFWorkflow": {
-                    "workflowIdentifier": "61283333-9676-47B3-829F-E11E83BDBFDA",
-                    "workflowName": "Open App",
-                    "isSelf": false
-                },
-                "UUID": "E1A36437-0D79-4C41-93BD-EC31B9E4AFBB",
-                "WFWorkflowName": "Open App"
+                }
             }
         },
         {

@@ -157,12 +157,12 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>backup-my-reminders</b>
-  (11 actions, 8 KB)
+  (31 actions, 24 KB)
 </button>
 <button class="button gGray nonbottom" id="m0">
 0 If <span class="box"><span class="var"><b>[DeviceDetails</b>’s OS<b>]</b></span></span> <span class="box">is</span> <span class="box">macOS</span></button><div class="content contentloop">
 <button class="button gBlue inside" id="m1">
-1 Create Folder <span class="box">MyRemindersBackup</span>　» <i>2</i> <span class="magic" onclick="magictap(3)">3</span> <span class="magic" onclick="magictap(7)">7</span></button><div class="content inside">
+1 Create Folder <span class="box">MyRemindersBackup</span>　» <i>2</i> <span class="magic" onclick="magictap(9)">9</span> <span class="magic" onclick="magictap(26)">26</span></button><div class="content inside">
 <div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
       "WFFileLocationType": "Documents",
       "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
@@ -179,32 +179,114 @@ hr {
    "workflowName": "Cleanup Folder",
    "isSelf": false
 }</div></div></div>
-<button class="button gUnknown inside" id="m3">
-3 ToolboxProForShortcuts &gt; GetReminderListsIntent　»</button><div class="content inside">
+<button class="button gOrange inside" id="m3">
+3 Dictionary　»</button><div class="content inside">
+<div class="col2">{  "filename": "config",
+   "key": "My Reminders.evergreenLists"
+}</div></div>
+<hr><button class="button  inside" id="m4">
+4 Run Shortcut <span class="box">_Get Value</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[3 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "AB765028-4AD4-42A4-8A38-A4620DDCEC47",
+   "workflowName": "_Get Value",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="gOrange inside" id="m5">
+5 Add <span class="box"><span class="var"><b>[4 Shortcut Result</b> as Dictionary’s Keys<b>]</b></span></span> to Variable <span class="box">public</span></button><div></div>
+<button class="button gYellow inside" id="m6">
+6 Text　»</button><div class="content inside">
+<div class="col2">◻️</div></div>
+<hr><button class="button  inside" id="m7">
+7 Run Shortcut <span class="box">_Filter Reminder Lists</span>　»</button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[6 Text]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "51A51D7D-F81D-496D-9074-3B3D2F68CE9E",
+   "workflowName": "_Filter Reminder Lists",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="gOrange inside" id="m8">
+8 Add <span class="box"><span class="var"><b>[7 Shortcut Result]</b></span></span> to Variable <span class="box">public</span></button><div></div>
+<button class="button gUnknown inside" id="m9">
+9 ToolboxProForShortcuts &gt; GetReminderListsIntent　»</button><div class="content inside">
 <div class="row"><div class="col1">getType</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(1)"><b>[1 Created Folder]</b></span></div></div></div>
-<hr><button class="button gGray nonbottom inside" id="m4">
-4 Repeat with Each in <span class="box"><span class="var"><b>[3 Reminder Lists]</b></span></span></button><div class="content contentloop dotted inside">
-<button class="button  inside" id="m5">
-5 Run Shortcut <span class="box" style="color:red;font-weight:bold">Reminders2JSON</span> <b>　➔ jsonFile</b>　»</button><div class="content inside">
+<hr><button class="button gGray nonbottom inside" id="m10">
+10 Repeat with Each in <span class="box"><span class="var"><b>[9 Reminder Lists]</b></span></span></button><div class="content contentloop dotted inside">
+<button class="button  inside" id="m11">
+11 Run Shortcut <span class="box" style="color:red;font-weight:bold">Reminders2JSON</span> <b>　➔ jsonFile</b>　» <span class="magic" onclick="magictap(17)">17</span></button><div class="content inside">
 <div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "C4DCFD9E-D080-4E50-83FD-E4F76202513B",
    "workflowName": "Reminders2JSON",
    "isSelf": false
 }</div></div></div>
-<hr><button class="button  inside" id="m6">
-6 Set Name of <span class="box"><span class="var"><b>[5 jsonFile]</b></span></span> to <span class="box"><span class="var"><b>[Repeat Item]</b></span>.json</span>　»</button><div class="content inside">
+<button class="button gGray nonbottom inside" id="m12">
+12 If <span class="box"><span class="var"><b>[public</b>’s Name<b>]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button><div class="content contentloop dashed inside">
+<button class="button  inside" id="m13">
+13 Run Shortcut <span class="box">Slugify Text</span>　» <span class="magic" onclick="magictap(22)">22</span></button><div class="content inside">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "6D49EA2A-0E94-4DFA-9FE5-DD6ABA97B368",
+   "workflowName": "Slugify Text",
+   "isSelf": false
+}</div></div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m14">
+14 Otherwise</button><div class="content contentloop dashed inside">
+<button class="gYellow inside" id="m15">
+15 Get Text from <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m16">
+16 End If　»</button>
+<hr><button class="button  inside" id="m17">
+17 Set Name of <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 jsonFile]</b></span></span> to <span class="box"><span class="var"><b>[16 If Result]</b></span>.json</span>　» <span class="magic" onclick="magictap(20)">20</span> <span class="magic" onclick="magictap(23)">23</span> <span class="magic" onclick="magictap(26)">26</span></button><div class="content inside">
 <div class="row"><div class="col1">DontIncludeFileExtension</div><span style="display:none">: </span><div class="col2">true</div></div></div>
-<hr><button class="button gBlue inside" id="m7">
-7 Save File <span class="box"><span class="var"><b>[6 Renamed Item]</b></span></span></button><div class="content inside">
+<button class="button gGray nonbottom inside" id="m18">
+18 If <span class="box"><span class="var"><b>[public</b>’s Name<b>]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button><div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m19">
+19 If <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <span class="box">begins with</span> <span class="box">◻️</span></button><div class="content contentloop inside">
+<button class="button gBlue inside" id="m20">
+20 Save File <span class="box"><span class="magic" onclick="magictap(17)"><b>[17 Renamed Item]</b></span></span></button><div class="content inside">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
+      "WFFileLocationType": "iCloud",
+      "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+      "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Bookmarks",
+      "appContainerBundleIdentifier": "md.obsidian"
+   },
+   "filename": "Bookmarks",
+   "displayName": "Bookmarks"
+}</div></div>
+<div class="row"><div class="col1">AskWhereToSave</div><span style="display:none">: </span><div class="col2">false</div></div>
+<div class="row"><div class="col1">SaveFileOverwrite</div><span style="display:none">: </span><div class="col2">true</div></div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m21">
+21 Otherwise</button><div class="content contentloop inside">
+<button class="button gBlue inside" id="m22">
+22 Create Folder <span class="box"><span class="magic" onclick="magictap(13)"><b>[13 Shortcut Result]</b></span></span>　»</button><div class="content inside">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2">{  "fileLocation": {
+      "WFFileLocationType": "iCloud",
+      "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/DD6037C7-E2B8-4911-9A70-67B825FE49EB",
+      "relativeSubpath": "iCloud~md~obsidian/Documents/Second-Brain/Evergreen-Lists",
+      "appContainerBundleIdentifier": "md.obsidian"
+   },
+   "filename": "Evergreen-Lists",
+   "displayName": "Evergreen-Lists"
+}</div></div></div>
+<hr><button class="button gBlue inside" id="m23">
+23 Save File <span class="box"><span class="magic" onclick="magictap(17)"><b>[17 Renamed Item]</b></span></span></button><div class="content inside">
+<div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[22 Created Folder]</b></span></div></div>
+<div class="row"><div class="col1">AskWhereToSave</div><span style="display:none">: </span><div class="col2">false</div></div>
+<div class="row"><div class="col1">SaveFileOverwrite</div><span style="display:none">: </span><div class="col2">true</div></div></div></div>
+<button class="gGray nontop inside" id="m24">
+24 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m25">
+25 Otherwise　▵<span class="magic" onclick="magictap(18)">18</span></button><div class="content contentloop dashed inside">
+<button class="button gBlue inside" id="m26">
+26 Save File <span class="box"><span class="magic" onclick="magictap(17)"><b>[17 Renamed Item]</b></span></span></button><div class="content inside">
 <div class="row"><div class="col1">Folder</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(1)"><b>[1 Created Folder]</b></span></div></div>
 <div class="row"><div class="col1">AskWhereToSave</div><span style="display:none">: </span><div class="col2">false</div></div>
 <div class="row"><div class="col1">SaveFileOverwrite</div><span style="display:none">: </span><div class="col2">true</div></div></div></div>
-<button class="gGray nontop inside" id="m8">
-8 End Repeat with Each</button></div>
-<button class="gGray nontop" id="m9">
-9 End If　▵<span class="magic" onclick="magictap(0)">0</span></button><div></div>
-<button class="gGray" id="m10">
-10 Stop This Shortcut</button>
+<button class="gGray nontop inside" id="m27">
+27 End If</button></div>
+<button class="gGray nontop inside" id="m28">
+28 End Repeat with Each　▵<span class="magic" onclick="magictap(10)">10</span></button></div>
+<button class="gGray nontop" id="m29">
+29 End If　▵<span class="magic" onclick="magictap(0)">0</span></button><div></div>
+<button class="gGray" id="m30">
+30 Stop This Shortcut</button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

@@ -157,26 +157,58 @@ hr {
 </style></head><body>
 <button class="nonbutton gParams">
   <b>template-voice-assistant</b>
-  (39 actions, 37 KB)
+  (36 actions, 41 KB)
 </button>
-<button class="gUnknown" id="m0">
-0 Actions &gt; IsAudioPlayingIntent　» <i>1</i> <span class="magic" onclick="magictap(35)">35</span></button>
-<hr><button class="button gGray nonbottom" id="m1">
-1 If <span class="box"><span class="var"><b>[0 Is Audio Playing]</b></span></span> <span class="box">is</span></button><div class="content contentloop">
-<button class="gRed inside" id="m2">
-2 Play/Pause <span class="box">Pause</span></button></div>
-<button class="gGray nontop" id="m3">
-3 End If</button><div></div>
-<button class="gRed" id="m4">
-4 Set Media Volume to <span class="box">0.5989898443222046</span></button><div></div>
-<button class="button gYellow" id="m5">
-5 Text　»</button><div class="content">
-<div class="col2"><span class="var"><b>[Shortcut Input]</b></span> Greetings</div></div>
+<button class="button gOrange" id="m0">
+0 Dictionary <b>　➔ mappingDict</b>　» <i>1</i> <span class="magic" onclick="magictap(13)">13</span> <span class="magic" onclick="magictap(21)">21</span> <span class="magic" onclick="magictap(25)">25</span> <span class="magic" onclick="magictap(26)">26</span></button><div class="content">
+<div class="col2">{  "Morning": {
+      "date": "Today",
+      "opener": 1,
+      "questionEN": "What good shall I do today?",
+      "questionZH": "什麼事讓我有「使命感」？",
+      "greeting": "早安"
+   },
+   "Evening": {
+      "date": "Tomorrow",
+      "opener": 1,
+      "questionEN": "What good have I done today?",
+      "questionZH": "什麼事讓我有「成就感」？",
+      "greating": "晚安"
+   }
+}</div></div>
+<hr><button class="gOrange" id="m1">
+1 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.greeting</span> in <span class="box"><span class="var"><b>[0 mappingDict]</b></span></span>　» <span class="magic" onclick="magictap(4)">4</span></button><div></div>
+<button class="button gRed" id="m2">
+2 Format Date <span class="box"><span class="var"><b>[CurrentDate]</b></span></span>　»</button><div class="content">
+<div class="row"><div class="col1">DateFormatStyle</div><span style="display:none">: </span><div class="col2">None</div></div></div>
+<hr><button class="button " id="m3">
+3 Run Shortcut <span class="box">_Prefix時辰2Time</span>　»</button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[2 Formatted Date]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "EE62FF64-BD98-40D0-A39C-181F77C7DABA",
+   "workflowName": "_Prefix時辰2Time",
+   "isSelf": false
+}</div></div></div>
+<hr><button class="button gYellow" id="m4">
+4 Text　»</button><div class="content">
+<div class="col2"><span class="magic" onclick="magictap(1)"><b>[1 Dictionary Value]</b></span>，樺明
+
+現在時間，<span class="var"><b>[3 Shortcut Result]</b></span>
+
+記得隨時心存感恩，知足常樂。</div></div>
+<hr><button class="button gOrange" id="m5">
+5 Dictionary　»</button><div class="content">
+<div class="col2">{  "text": "<span class="var"><b>[4 Text]</b></span>",
+   "language": "ZH"
+}</div></div>
 <hr><button class="button " id="m6">
-6 Run Shortcut <span class="box"><span class="var"><b>[5 Text]</b></span></span></button><div class="content">
-<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[5 Text]</b></span></div></div></div>
+6 Run Shortcut <span class="box">_Text2Speech</span></button><div class="content">
+<div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[5 Dictionary]</b></span></div></div>
+<div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "9E67FDF1-AE7E-4051-8D46-DDFD104CB87C",
+   "workflowName": "_Text2Speech",
+   "isSelf": false
+}</div></div></div>
 <button class="gGray" id="m7">
-7 Wait <span class="box">3</span> seconds</button><div></div>
+7 Wait <span class="box">2</span> seconds</button><div></div>
 <button class="button gUnknown" id="m8">
 8 ToolboxProForShortcuts &gt; GetAudioIntent　»</button><div class="content">
 <div class="row"><div class="col1">systemSounds</div><span style="display:none">: </span><div class="col2">shortLowHigh</div></div></div>
@@ -186,29 +218,16 @@ hr {
 10 Text　»</button><div class="content">
 <div class="col2">Wisdom I Pondered This Week</div></div>
 <hr><button class="button " id="m11">
-11 Run Shortcut <span class="box">_Speak Random WMU Item</span></button><div class="content">
+11 Run Shortcut <span class="box" style="color:red;font-weight:bold">_Speak Random WMU Item</span></button><div class="content">
 <div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[10 Text]</b></span></div></div>
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "B144C8ED-F615-4987-A4DB-4DE1D4274BFA",
    "workflowName": "_Speak Random WMU Item",
    "isSelf": false
 }</div></div></div>
-<button class="button gOrange" id="m12">
-12 Dictionary <b>　➔ mappingDict</b>　» <i>13</i> <span class="magic" onclick="magictap(21)">21</span> <span class="magic" onclick="magictap(25)">25</span> <span class="magic" onclick="magictap(26)">26</span></button><div class="content">
-<div class="col2">{  "Morning": {
-      "date": "Today",
-      "opener": 1,
-      "questionEN": "What good shall I do today?",
-      "questionZH": "什麼事讓我有「使命感」？"
-   },
-   "Evening": {
-      "date": "Tomorrow",
-      "opener": 1,
-      "questionEN": "What good have I done today?",
-      "questionZH": "什麼事讓我有「成就感」？"
-   }
-}</div></div>
-<hr><button class="gOrange" id="m13">
-13 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.date</span> in <span class="box"><span class="var"><b>[12 mappingDict]</b></span></span> <b>　➔ date</b>　»</button>
+<button class="gGray" id="m12">
+12 Wait <span class="box">2</span> seconds</button><div></div>
+<button class="gOrange" id="m13">
+13 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.date</span> in <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 mappingDict]</b></span></span> <b>　➔ date</b>　»</button>
 <hr><button class="button gRed" id="m14">
 14 Date <span class="box">Specified Date</span>　» <span class="magic" onclick="magictap(17)">17</span> <span class="magic" onclick="magictap(19)">19</span></button><div class="content">
 <div class="row"><div class="col1">DateActionDate</div><span style="display:none">: </span><div class="col2"><span class="var"><b>[13 date]</b></span></div></div></div>
@@ -225,7 +244,7 @@ hr {
    "isSelf": false
 }</div></div></div>
 <button class="gGray" id="m18">
-18 Wait <span class="box">3</span> seconds</button><div></div>
+18 Wait <span class="box">2</span> seconds</button><div></div>
 <button class="button " id="m19">
 19 Run Shortcut <span class="box" style="color:red;font-weight:bold">Speak All Calendar Events</span></button><div class="content">
 <div class="row"><div class="col1">Input</div><span style="display:none">: </span><div class="col2"><span class="magic" onclick="magictap(14)"><b>[14 Date]</b></span></div></div>
@@ -234,9 +253,9 @@ hr {
    "isSelf": false
 }</div></div></div>
 <button class="gGray" id="m20">
-20 Wait <span class="box">3</span> seconds</button><div></div>
+20 Wait <span class="box">2</span> seconds</button><div></div>
 <button class="gOrange" id="m21">
-21 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.opener</span> in <span class="box"><span class="magic" onclick="magictap(12)"><b>[12 mappingDict]</b></span></span> <b>　➔ opener</b>　»</button>
+21 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.opener</span> in <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 mappingDict]</b></span></span> <b>　➔ opener</b>　»</button>
 <hr><button class="button gOrange" id="m22">
 22 Dictionary　»</button><div class="content">
 <div class="col2">{  "opener": "<span class="var"><b>[21 opener]</b></span>",
@@ -250,18 +269,18 @@ hr {
    "isSelf": false
 }</div></div></div>
 <button class="gGray" id="m24">
-24 Wait <span class="box">3</span> seconds</button><div></div>
+24 Wait <span class="box">2</span> seconds</button><div></div>
 <button class="gOrange" id="m25">
-25 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.questionEN</span> in <span class="box"><span class="magic" onclick="magictap(12)"><b>[12 mappingDict]</b></span></span> <b>　➔ questionEN</b>　» <span class="magic" onclick="magictap(30)">30</span></button><div></div>
+25 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.questionEN</span> in <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 mappingDict]</b></span></span> <b>　➔ questionEN</b>　» <span class="magic" onclick="magictap(30)">30</span></button><div></div>
 <button class="gOrange" id="m26">
-26 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.questionZH</span> in <span class="box"><span class="magic" onclick="magictap(12)"><b>[12 mappingDict]</b></span></span> <b>　➔ questionZH</b>　» <span class="magic" onclick="magictap(30)">30</span></button><div></div>
+26 Get Dictionary Value for <span class="box"><span class="var"><b>[Shortcut Input]</b></span>.questionZH</span> in <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 mappingDict]</b></span></span> <b>　➔ questionZH</b>　» <span class="magic" onclick="magictap(30)">30</span></button><div></div>
 <button class="button gUnknown" id="m27">
 27 ToolboxProForShortcuts &gt; GetAudioIntent　»</button><div class="content">
 <div class="row"><div class="col1">systemSounds</div><span style="display:none">: </span><div class="col2">shake</div></div></div>
 <hr><button class="gRed" id="m28">
 28 Play Sound <span class="box"><span class="var"><b>[27 Sound]</b></span></span></button><div></div>
 <button class="gGray" id="m29">
-29 Wait <span class="box">3</span> seconds</button><div></div>
+29 Wait <span class="box">2</span> seconds</button><div></div>
 <button class="button gOrange" id="m30">
 30 List　»</button><div class="content">
 <div class="col2">["<span class="magic" onclick="magictap(25)"><b>[25 questionEN]</b></span>",
@@ -279,21 +298,15 @@ hr {
    "isSelf": false
 }</div></div></div>
 <button class="gGray" id="m33">
-33 Wait <span class="box">3</span> seconds</button><div></div>
+33 Wait <span class="box">2</span> seconds</button><div></div>
 <button class="button " id="m34">
 34 Run Shortcut <span class="box">Time's Up!</span></button><div class="content">
 <div class="row"><div class="col1">Workflow</div><span style="display:none">: </span><div class="col2">{  "workflowIdentifier": "773AAE63-7A8F-4D23-BB1C-DE291F12C5F8",
    "workflowName": "Time's Up!",
    "isSelf": false
 }</div></div></div>
-<button class="button gGray nonbottom" id="m35">
-35 If <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 Is Audio Playing]</b></span></span> <span class="box">is</span></button><div class="content contentloop">
-<button class="gRed inside" id="m36">
-36 Play/Pause <span class="box">Play</span></button></div>
-<button class="gGray nontop" id="m37">
-37 End If</button><div></div>
-<button class="gGray" id="m38">
-38 Stop This Shortcut</button>
+<button class="gGray" id="m35">
+35 Stop This Shortcut</button>
 <script>
 for (b of document.getElementsByClassName('button')) {
 	b.addEventListener('click', function() {

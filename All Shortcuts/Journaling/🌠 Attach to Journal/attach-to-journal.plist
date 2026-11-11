@@ -338,30 +338,17 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.getrichtextfromhtml</string>
+			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>28A65350-2C20-4C65-AD9A-16362119927C</string>
-				<key>WFHTML</key>
+				<string>92A01D5E-1261-4E0D-AFD1-20FF6E562979</string>
+				<key>WFDictionaryKey</key>
+				<string>data.children.1.data</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>Aggrandizements</key>
-						<array>
-							<dict>
-								<key>CoercionItemClass</key>
-								<string>WFDictionaryContentItem</string>
-								<key>Type</key>
-								<string>WFCoercionVariableAggrandizement</string>
-							</dict>
-							<dict>
-								<key>DictionaryKey</key>
-								<string>data.children.1.data.preview.images.1.source.url</string>
-								<key>Type</key>
-								<string>WFDictionaryValueVariableAggrandizement</string>
-							</dict>
-						</array>
 						<key>OutputName</key>
 						<string>Contents of URL</string>
 						<key>OutputUUID</key>
@@ -372,6 +359,42 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>thumbnail</string>
+				<key>UUID</key>
+				<string>4684D4EE-B585-43F0-BB26-8B6302136B04</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Dictionary Value</string>
+						<key>OutputUUID</key>
+						<string>92A01D5E-1261-4E0D-AFD1-20FF6E562979</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>7BE7B1D7-9C08-4BB2-8743-2E61C9B2FDD5</string>
+					<key>workflowName</key>
+					<string>Reddit - Get Post Thumbmail</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Reddit - Get Post Thumbmail</string>
 			</dict>
 		</dict>
 		<dict>
@@ -447,9 +470,9 @@
 							<key>{6, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Rich Text from HTML</string>
+								<string>thumbnail</string>
 								<key>OutputUUID</key>
-								<string>28A65350-2C20-4C65-AD9A-16362119927C</string>
+								<string>4684D4EE-B585-43F0-BB26-8B6302136B04</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -594,6 +617,90 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>549C7C34-E7E5-4810-87AB-A1D6DC1E5481</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>http</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>PropertyName</key>
+									<string>Is a Screenshot</string>
+									<key>Type</key>
+									<string>WFPropertyVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>Repeat Item</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>7C3967A0-B7FB-4233-BE57-EE099068C6EB</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>9A7D716A-241F-4888-9E27-F4FC16B98D26</string>
+					<key>workflowName</key>
+					<string>iPhone Screenshots Framer</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>iPhone Screenshots Framer</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>549C7C34-E7E5-4810-87AB-A1D6DC1E5481</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.detect.images</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -611,6 +718,19 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>549C7C34-E7E5-4810-87AB-A1D6DC1E5481</string>
+				<key>UUID</key>
+				<string>7699FC6E-FDAF-4A90-BC04-E77F45F890B2</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -737,6 +857,78 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7A76F52B-99F0-4C16-9E1A-22A88303B2A7</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFEnumeration</key>
+				<string>macOS</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>PropertyName</key>
+									<string>OS</string>
+									<key>Type</key>
+									<string>WFPropertyVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>Type</key>
+							<string>DeviceDetails</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.open</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>journals</string>
+				<key>UUID</key>
+				<string>A7250BEE-8136-4532-9CCB-3D993621B83E</string>
+				<key>WFFile</key>
+				<dict>
+					<key>displayName</key>
+					<string>Daily-Bullet-Journal</string>
+					<key>fileLocation</key>
+					<dict>
+						<key>WFFileLocationType</key>
+						<string>iCloud</string>
+						<key>appContainerBundleIdentifier</key>
+						<string>md.obsidian</string>
+						<key>crossDeviceItemID</key>
+						<string>docs.icloud.com:com.apple.CloudDocs/C6B95D9A-866F-4DC8-B3DC-A35E1C24830D/2e2405e141a8d8e005fd02a6fa3c6db2c9babe0c</string>
+						<key>fileProviderDomainID</key>
+						<string>com.apple.CloudDocs.iCloudDriveFileProvider/BCF96BB5-C0C4-44A7-8C03-2D21A4ABEB46</string>
+						<key>relativeSubpath</key>
+						<string>iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal</string>
+					</dict>
+					<key>filename</key>
+					<string>Daily-Bullet-Journal</string>
+				</dict>
+				<key>WFGetFilePath</key>
+				<string>journals</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.file.createfolder</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -775,23 +967,17 @@
 				</dict>
 				<key>WFFolder</key>
 				<dict>
-					<key>displayName</key>
-					<string>journals</string>
-					<key>fileLocation</key>
+					<key>Value</key>
 					<dict>
-						<key>WFFileLocationType</key>
-						<string>iCloud</string>
-						<key>appContainerBundleIdentifier</key>
-						<string>md.obsidian</string>
-						<key>crossDeviceItemID</key>
-						<string>docs.icloud.com:com.apple.CloudDocs/737C59D7-EE90-4A01-918C-AFEB0E5FB45F/b504d873ae7e0b70b98b656b83c8fb0eaae64c92</string>
-						<key>fileProviderDomainID</key>
-						<string>com.apple.CloudDocs.iCloudDriveFileProvider/BCF96BB5-C0C4-44A7-8C03-2D21A4ABEB46</string>
-						<key>relativeSubpath</key>
-						<string>iCloud~md~obsidian/Documents/Second-Brain/Daily-Bullet-Journal/journals</string>
+						<key>OutputName</key>
+						<string>journals</string>
+						<key>OutputUUID</key>
+						<string>A7250BEE-8136-4532-9CCB-3D993621B83E</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
 					</dict>
-					<key>filename</key>
-					<string>journals</string>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -831,6 +1017,179 @@
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7A76F52B-99F0-4C16-9E1A-22A88303B2A7</string>
+				<key>UUID</key>
+				<string>5D402BFF-0090-4476-A3A2-D51F7637F782</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>1DE72F72-7762-48A5-AD45-788C40489184</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFEnumeration</key>
+				<string>iOS</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>PropertyName</key>
+									<string>OS</string>
+									<key>Type</key>
+									<string>WFPropertyVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>Type</key>
+							<string>DeviceDetails</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.sendemail</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>5433AB8F-FDC2-413B-B6C6-2B6BAC826BC8</string>
+				<key>WFEmailAccountActionSelectedAccount</key>
+				<string>huaming.huang.tw@gmail.com</string>
+				<key>WFSendEmailActionInputAttachments</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Renamed Item</string>
+								<key>OutputUUID</key>
+								<string>A32FFA64-5B6F-4ED7-9D29-ADB38255262D</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFSendEmailActionShowComposeSheet</key>
+				<false/>
+				<key>WFSendEmailActionSubject</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>filename</string>
+								<key>OutputUUID</key>
+								<string>C84D511D-C146-4719-B44F-891938BAE9BE</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFSendEmailActionToRecipients</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFContactFieldValues</key>
+						<array>
+							<dict>
+								<key>EntryType</key>
+								<integer>2</integer>
+								<key>SerializedEntry</key>
+								<dict>
+									<key>link.contentkit.emailaddress</key>
+									<string>huaming.huang.tw@gmail.com</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContactFieldValue</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>1DE72F72-7762-48A5-AD45-788C40489184</string>
+				<key>UUID</key>
+				<string>FA8F54E5-1129-4700-93CA-55831B479D37</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>25C69802-1E25-4993-97C9-9CB2428D91E4</string>
+				<key>WFTextActionText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{17, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>filename</string>
+								<key>OutputUUID</key>
+								<string>C84D511D-C146-4719-B44F-891938BAE9BE</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>![](_attachments/￼)</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
 				</dict>
 			</dict>
 		</dict>
@@ -890,16 +1249,16 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{19, 1}</key>
+							<key>{2, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>filename</string>
+								<string>Text</string>
 								<key>OutputUUID</key>
-								<string>C84D511D-C146-4719-B44F-891938BAE9BE</string>
+								<string>25C69802-1E25-4993-97C9-9CB2428D91E4</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
-							<key>{48, 1}</key>
+							<key>{30, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
@@ -908,51 +1267,9 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>| ![](_attachments/￼) |
+						<string>| ￼ |
 | :-: |
 | &lt;sub&gt;[Source](￼)&lt;/sub&gt; |</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>935E7231-1C16-4D0A-BF5D-389B71A8186B</string>
-				<key>WFControlFlowMode</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>25C69802-1E25-4993-97C9-9CB2428D91E4</string>
-				<key>WFTextActionText</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{17, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>filename</string>
-								<key>OutputUUID</key>
-								<string>C84D511D-C146-4719-B44F-891938BAE9BE</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>![](_attachments/￼)</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -1059,6 +1376,7 @@
 		<string>WFImageContentItem</string>
 		<string>WFURLContentItem</string>
 		<string>WFSafariWebPageContentItem</string>
+		<string>WFStringContentItem</string>
 	</array>
 	<key>WFWorkflowMinimumClientVersion</key>
 	<integer>1106</integer>
@@ -1068,8 +1386,8 @@
 	<array/>
 	<key>WFWorkflowTypes</key>
 	<array>
-		<string>ActionExtension</string>
 		<string>Watch</string>
+		<string>ActionExtension</string>
 		<string>WFWorkflowTypeShowInSearch</string>
 	</array>
 </dict>

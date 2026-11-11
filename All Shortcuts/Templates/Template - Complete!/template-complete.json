@@ -30,7 +30,7 @@
                     },
                     "WFSerializationType": "WFTextTokenString"
                 },
-                "soundType": "default",
+                "soundType": "none",
                 "notificationID": {
                     "Value": {
                         "string": "￼",
@@ -86,12 +86,24 @@
             }
         },
         {
-            "WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
-            "WFWorkflowActionParameters": {}
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "D882636A-A4A1-4768-8816-6AD23794792F",
+                "WFRepeatCount": 3,
+                "WFControlFlowMode": 0
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
             "WFWorkflowActionParameters": {}
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "D882636A-A4A1-4768-8816-6AD23794792F",
+                "UUID": "783C2B41-1777-4DC5-AF75-B62AF106C6F8"
+            }
         },
         {
             "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
@@ -99,6 +111,50 @@
                 "WFControlFlowMode": 2,
                 "GroupingIdentifier": "45087DE5-3DA2-4E5C-B66C-AE4F68662965",
                 "UUID": "0EEE8774-8164-42A7-A0E1-90521BC037E5"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "GroupingIdentifier": "55EE7A5B-E8F3-4DD9-A1F6-C1B726F56D8C",
+                "WFInput": {
+                    "Type": "Variable",
+                    "Variable": {
+                        "Value": {
+                            "Type": "DeviceDetails",
+                            "Aggrandizements": [
+                                {
+                                    "Type": "WFPropertyVariableAggrandizement",
+                                    "PropertyName": "OS"
+                                }
+                            ]
+                        },
+                        "WFSerializationType": "WFTextTokenAttachment"
+                    }
+                },
+                "WFControlFlowMode": 0,
+                "WFEnumeration": "macOS",
+                "WFCondition": 4
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+            "WFWorkflowActionParameters": {
+                "WFWorkflow": {
+                    "workflowIdentifier": "557F8553-1A19-4AAA-B1EA-3568F3D7E9A2",
+                    "workflowName": "Success Sound Effect",
+                    "isSelf": false
+                },
+                "WFWorkflowName": "Success Sound Effect",
+                "UUID": "028A8BC1-03B6-4270-9985-C50F9075D956"
+            }
+        },
+        {
+            "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+            "WFWorkflowActionParameters": {
+                "WFControlFlowMode": 2,
+                "GroupingIdentifier": "55EE7A5B-E8F3-4DD9-A1F6-C1B726F56D8C",
+                "UUID": "773CA71C-23D4-4217-BA23-258DA1202BD0"
             }
         },
         {
@@ -113,7 +169,7 @@
                                 "Operator": 4,
                                 "Values": {
                                     "Enumeration": {
-                                        "Value": "🏛️ LifeOS",
+                                        "Value": "☑️ To-do List",
                                         "WFSerializationType": "WFStringSubstitutableState"
                                     }
                                 },
@@ -124,7 +180,40 @@
                                 "Operator": 4,
                                 "Values": {
                                     "Enumeration": {
-                                        "Value": "☑️ To-do List",
+                                        "Value": "🧐 Zoom Out",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "💻 macOS",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "📱 iOS",
+                                        "WFSerializationType": "WFStringSubstitutableState"
+                                    }
+                                },
+                                "Removable": true,
+                                "Property": "List"
+                            },
+                            {
+                                "Operator": 4,
+                                "Values": {
+                                    "Enumeration": {
+                                        "Value": "♻️ Recurring Task",
                                         "WFSerializationType": "WFStringSubstitutableState"
                                     }
                                 },
@@ -159,7 +248,7 @@
                         "WFContentPredicateBoundedDate": false,
                         "WFActionParameterFilterTemplates": [
                             {
-                                "Operator": 8,
+                                "Operator": 99,
                                 "Values": {
                                     "String": {
                                         "Value": {
