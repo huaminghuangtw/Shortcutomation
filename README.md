@@ -5471,9 +5471,9 @@ A world where everyone lives a calmer, more present and intentional life—focus
 
 **Contributions are always welcome!**
 
-If you have any new shortcut or automation ideas, feel free to [fork the repository](https://github.com/huaminghuangtw/Shortcutomation/fork) and [submit a pull request](https://github.com/huaminghuangtw/Shortcutomation/compare).
+If you have an idea for a shortcut you'd like to see, [open an issue](https://github.com/huaminghuangtw/Shortcutomation/issues/new).
 
-Alternatively, you can [open an issue](https://github.com/huaminghuangtw/Shortcutomation/issues/new) to suggest a shortcut or automation idea.
+If you want to share your own shortcut, post it in [Discussions](https://github.com/huaminghuangtw/Shortcutomation/discussions).
 
 ## License
 
